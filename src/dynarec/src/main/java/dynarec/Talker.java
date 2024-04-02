@@ -1,6 +1,6 @@
 // Talker.java
 
-package net.gewaltig.cultris;
+package dynarec;
 
 public class Talker {
     private final Object additionalInput;

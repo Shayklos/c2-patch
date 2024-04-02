@@ -1,6 +1,6 @@
 // Dynarec.java
 
-package net.gewaltig.cultris;
+package dynarec;
 
 import com.javax0.sourcebuddy.Compiler;
 
