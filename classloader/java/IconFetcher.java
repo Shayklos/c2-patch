@@ -34,7 +34,7 @@ public class IconFetcher implements Talker<String> {
         Files.createDirectories(Paths.get("icons"));
 
         // Generate a filename based on the MD5 hash
-        String filename = "icons/" + md5Hash + ".png";
+        String filename = "icons/" + md5Hash;
         
         // Check if the file already exists
         if (Files.exists(Paths.get(filename))) {
