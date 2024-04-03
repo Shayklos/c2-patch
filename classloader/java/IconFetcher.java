@@ -17,7 +17,7 @@ public class Fetch implements Talker<String> {
             return fetchIcon(md5Hash);
         } catch (IOException e) {
             System.err.println("Error fetching icon: " + e.getMessage());
-            return "https://i.imgur.com/Gms07El.png";
+            return "https://secure.gravatar.com/avatar/";
         }
     }
 
@@ -40,7 +40,7 @@ public class Fetch implements Talker<String> {
         }
     
         // Generate a filename based on the MD5 hash
-        String filename = "icons/" + md5Hash;
+        String filename = "icons/" + md5Hash + ".png";
     
         // Check if the file already exists
         Path path = Paths.get(filename);
