@@ -1,52 +1,77 @@
 package org.dynarec;
 
+import java.io.IOException;
 import java.io.InputStream;
-import java.net.URI;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
-public class IconFetcher implements Talker<String> {
+public class Fetch implements Talker<String> {
 
     @Override
     public String say(String md5Hash) {
         try {
-            String iconUrl = fetchIcon(md5Hash);
-            return iconUrl;
-        } catch (Exception e) {
+            return fetchIcon(md5Hash);
+        } catch (IOException e) {
             System.err.println("Error fetching icon: " + e.getMessage());
-            return null; // or some default URL or handle the error appropriately
+            return "https://i.imgur.com/Gms07El.png";
         }
     }
 
-    public static String fetchIcon(String md5Hash) throws Exception {
+    public static String fetchIcon(String md5Hash) throws IOException {
         // Construct the URL using the MD5 hash
-        String url = "https://www.gravatar.com/avatar/" + md5Hash;
         // String url = "https://github.com/zDEFz/c2-patch/raw/dynarec/icons/" + md5Hash;
-        // + "?d=https://i.imgur.com/Gms07El.png";
-        System.out.println("fetchIcon() was called! ");
-        saveIcon(md5Hash, url);
-        return url;
+        //
+        String url = "https://secure.gravatar.com/avatar/" + md5Hash ;
+        //  + "?d=https://i.imgur.com/Gms07El.png";
+
+        System.out.println("fetchIcon() was called! Moo ");
+        return saveIcon(md5Hash, url);
     }
 
-    private static void saveIcon(String md5Hash, String url) throws Exception {
+    private static String saveIcon(String md5Hash, String url) throws IOException {
         // Create directory if it doesn't exist
-        Files.createDirectories(Paths.get("icons"));
-
+        Path directory = Paths.get("icons");
+        if (!Files.exists(directory)) {
+            Files.createDirectories(directory);
+        }
+    
         // Generate a filename based on the MD5 hash
         String filename = "icons/" + md5Hash;
-        
+    
         // Check if the file already exists
-        if (Files.exists(Paths.get(filename))) {
+        Path path = Paths.get(filename);
+        if (Files.exists(path)) {
             System.out.println("Icon already exists: " + filename);
-            return;
+            return url;
         }
-
+    
         // Open a connection to the URL
-        URI uri = URI.create(url);
-        try (InputStream inputStream = uri.toURL().openStream()) {
-            // Copy the input stream directly to the file
-            Files.copy(inputStream, Paths.get(filename), StandardCopyOption.REPLACE_EXISTING);
+        HttpURLConnection connection = (HttpURLConnection) new URL(url).openConnection();
+        int statusCode = connection.getResponseCode();
+        if (statusCode == HttpURLConnection.HTTP_OK) {
+            try (InputStream inputStream = connection.getInputStream()) {
+                // Copy the input stream directly to the file
+                Files.copy(inputStream, path, StandardCopyOption.REPLACE_EXISTING);
+            }
+        } else if (statusCode == HttpURLConnection.HTTP_MOVED_TEMP) {
+            String redirectUrl = connection.getHeaderField("Location");
+            if (redirectUrl != null) {
+                System.out.println("Following redirect to: " + redirectUrl);
+                return saveIcon(md5Hash, redirectUrl); // Follow the redirect
+            } else {
+                throw new IOException("Redirect location is null");
+            }
+        } else {
+            System.err.println("Failed to fetch icon, HTTP status code: " + statusCode);
+            // You may handle other HTTP status codes here if needed
+            // For example, handle different error codes
         }
+    
+        return url;
     }
+    
 }
