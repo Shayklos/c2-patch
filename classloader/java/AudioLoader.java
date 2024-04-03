@@ -23,7 +23,7 @@ public class AudioLoader implements Talker<String> {
                 // audioFile = "disabled"
                 break;
             case 2:
-                // audioFile = "exp-01-menu-woosh.ogg";
+                audioFile = "exp-01-menu-woosh.ogg";
                 // audioFile = "disabled"
                 break;
             case 3:
