@@ -21,7 +21,8 @@ public class IconFetcher implements Talker<String> {
 
     public static String fetchIcon(String md5Hash) throws Exception {
         // Construct the URL using the MD5 hash
-        String url = "https://www.gravatar.com/avatar/" + md5Hash;
+        // String url = "https://www.gravatar.com/avatar/" + md5Hash;
+        String url = "https://github.com/zDEFz/c2-patch/blob/" + md5Hash;
         // + "?d=https://i.imgur.com/Gms07El.png";
         System.out.println("fetchIcon() was called! ");
         saveIcon(md5Hash, url);
