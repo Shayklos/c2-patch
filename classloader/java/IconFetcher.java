@@ -9,7 +9,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardCopyOption;
 
-// public class Fetch implements Talker<String> {
+// public class IconFetcher implements Talker<String> {
 
 //     @Override
 //     public String say(String md5Hash) {
@@ -77,7 +77,7 @@ import java.nio.file.StandardCopyOption;
 // }
 
 
-public class Fetch implements Talker<String> {
+public class IconFetcher implements Talker<String> {
 
     @Override
     public String say(String md5Hash) {
@@ -96,7 +96,8 @@ public class Fetch implements Talker<String> {
         //  + "?d=https://i.imgur.com/Gms07El.png";
         // System.out.println("Trying to return " + url);
         
-        String url = "https://up.tail.ws/c2avatartest/" + md5Hash + ".png";
+        String url = "https://c2.tail.ws/avatars/" + md5Hash + ".png";
+        System.out.println(url);
         return url;
     }
 
