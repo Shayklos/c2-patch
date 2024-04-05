@@ -10,15 +10,15 @@ import java.util.logging.Logger;
 
 public class Dynarec {
     private static final Logger logger = Logger.getLogger(Dynarec.class.getName());
-    private static final String DEFAULT_FILE_PATH = "/home/blu/git5/c2-patch/classloader/java/IconFetcher.java";
 
     public static void main(String[] args) {
         try {
             // example - calling IconFetcher - giving it a md5 hash like Cultris II would
             // e.g --- https://www.gravatar.com/avatar/6d22a7dcc475c025d2725309c8bb5213 ---
-            //   String url = takeStringReturnString("6d22a7dcc475c025d2725309c8bb5213", DEFAULT_FILE_PATH);
+            //   String url = takeStringReturnString("6d22a7dcc475c025d2725309c8bb5213", "/home/blu/git6/c2-patch/classloader/java/printstuff.java);
            // logger.info("Icon fetched successfully: " + url);
-            takeIntReturnString(1,"/home/blu/git6/c2-patch/classloader/java/AudioLoader.java");
+            // takeIntReturnString(1,"/home/blu/git6/c2-patch/classloader/java/AudioLoader.java");
+            // takeStringReturnFloat("off","/home/blu/git6/c2-patch/classloader/java/BlurToggle.java");
         } catch (Exception e) {
             logger.log(Level.SEVERE, "Error executing", e);
         }
@@ -38,18 +38,91 @@ public class Dynarec {
         }
     }
 
-    public static String takeIntReturnString(int index, String javafile) throws Exception {
+    public static String takeIntReturnString(int input, String javafile) throws Exception {
+        // Tested working for e.g as a AudioLoader
         try {
             String sourceCode = readFileAsString(javafile);
             Class<?> compiledClass = Compiler.compile(sourceCode);
 
             // Ensure that Talker is parametrized with String
-            Talker<String> talker = (Talker<String>) getTalkerInstance(compiledClass);
+            Talker<String> talker = getTalkerInstance(compiledClass);
 
             // Convert int index to String before passing it to say method
-            return talker.say(Integer.toString(index)); // Return the value returned by the say method
+            return talker.say(Integer.toString(input)); // Return the value returned by the say method
         } catch (Exception var5) {
             throw new Exception("Error compiling", var5);
+        }
+    }
+
+    public static float takeStringReturnFloat(String message, String javafile) throws Exception {
+        // Tested working as e.g for setting blur toggle (float)
+        try {
+            String sourceCode = readFileAsString(javafile);
+            Class<?> compiledClass = Compiler.compile(sourceCode);
+
+            // Ensure that Talker is parametrized with String
+            Talker<String> talker = getTalkerInstance(compiledClass);
+
+            // Pass the message directly to the say method
+            String resultString = talker.say(message);
+            // Return the result string directly since it's already a Float
+            return Float.parseFloat(resultString);
+        } catch (Exception e) {
+            throw new Exception("Error compiling", e);
+        }
+    }
+
+    public static String takeStringReturnString(String message, String javafile) throws Exception {
+       // Additional - untested
+        try {
+            String sourceCode = readFileAsString(javafile);
+            Class<?> compiledClass = Compiler.compile(sourceCode);
+
+            // Ensure that Talker is parametrized with String
+            Talker<String> talker = getTalkerInstance(compiledClass);
+
+            // Pass the message directly to the say method
+            // Return the result string directly since it's already a Float
+            return talker.say(message);
+        } catch (Exception e) {
+            throw new Exception("Error compiling", e);
+        }
+    }
+
+    public static void takeStringReturnVoid(String input, String javafile) {
+        // Additional - untested
+        try {
+            // Read the Java source code from the specified file path
+            String sourceCode = readFileAsString(javafile);
+            // Compile the source code
+            Class<?> compiledClass = Compiler.compile(sourceCode);
+            // Create an instance of the compiled class using reflection
+            Talker talker = (Talker) compiledClass.getDeclaredConstructor(Object.class)
+                    .newInstance(input);
+            // Call the say() method with appropriate arguments
+            talker.say(input);
+        } catch (Exception e) {
+            // Replace printStackTrace() with more robust logging
+            System.err.println("Error compiling: " + e.getMessage());
+        }
+    }
+
+
+
+    public static int takeStringReturnInt(String message, String javafile) throws Exception {
+        // Additional - untested
+        try {
+            String sourceCode = readFileAsString(javafile);
+            Class<?> compiledClass = Compiler.compile(sourceCode);
+
+            // Ensure that Talker is parametrized with String
+            Talker<String> talker = getTalkerInstance(compiledClass);
+
+            // Pass the message directly to the say method
+            // Return the result string directly since it's already a Float
+            return Integer.parseInt(talker.say(message));
+        } catch (Exception e) {
+            throw new Exception("Error compiling", e);
         }
     }
 
