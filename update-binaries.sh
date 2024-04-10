@@ -3,6 +3,7 @@
 # requires fd-find
 # requires realpath
 # requires zip
+# requires krakatau2
 
 # might replace fd with find ...
 
