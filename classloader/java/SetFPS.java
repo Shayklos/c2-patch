@@ -1,9 +1,5 @@
 package org.dynarec;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-
 public class SetFPS implements Talker<String> {
 
     // default

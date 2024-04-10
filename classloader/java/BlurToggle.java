@@ -1,9 +1,5 @@
 package org.dynarec;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-
 public class BlurToggle implements Talker<String> {
 
     private static String blurStatus = null;
