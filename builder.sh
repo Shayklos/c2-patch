@@ -27,16 +27,16 @@ case "$1" in
     --repackjar)
     if [ -d ./binary ]; then
         echo binary folder exists, continueing
-            rm -f ../cultris2.jar   
+            rm -f ../cultris2.jar
             cd binary || exit
             zip -r ../cultris2.jar * && cd ..
-    else 
+    else
         echo binary folder doesnt exist ... unzipping cultris2.jar
-            unzip -o ./cultris2.jar -d binary   
+            unzip -o ./cultris2.jar -d binary
     fi
         ;;
     --regenerate-jasm-files)
-        unzip -o ./cultris2.jar -d binary    
+        unzip -o ./cultris2.jar -d binary
         cd binary || exit
         # shellcheck disable=SC2046
         # passing the paths of all files ending on .class to krak2.
@@ -46,7 +46,7 @@ case "$1" in
         git add *
         ;;
     --create-binary-folder)
-        unzip -o ./cultris2.jar -d binary    
+        unzip -o ./cultris2.jar -d binary
         ;;
     *)
         display_help
