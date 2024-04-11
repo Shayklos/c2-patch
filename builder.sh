@@ -11,7 +11,7 @@ display_help() {
     echo "Usage: $0 [--repackjar | --regenerate-jasm-files | --create-binary | --make-cultris2jar]"
     echo "Options:"
     echo "  --repackjar               Repack the cultris2 JAR file"
-    echo "  --regenerate-jasm-files   Regenerate .jasm files"
+    echo "  --regenerate-jasm-files   Regenerate jasm files (.j)"
     echo "  --create-binary           Create binary"
     echo "  --help                    show help"
     exit 1
