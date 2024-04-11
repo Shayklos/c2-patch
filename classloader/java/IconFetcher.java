@@ -85,7 +85,7 @@ public class Fetch implements Talker<String> {
             return fetchIcon(md5Hash);
         } catch (IOException e) {
             System.err.println("Error fetching icon: " + e.getMessage());
-            return "https://up.tail.ws/c2avatartest/avatar_none.png";
+            return "https://c2.tail.ws/avatars/avatar_none.png";
         }
     }
 
@@ -96,7 +96,7 @@ public class Fetch implements Talker<String> {
         //  + "?d=https://i.imgur.com/Gms07El.png";
         // System.out.println("Trying to return " + url);
         
-        String url = "https://up.tail.ws/c2avatartest/" + md5Hash + ".png";
+        String url = "https://c2.tail.ws/avatars/" + md5Hash + ".png";
         return url;
     }
 
