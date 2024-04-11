@@ -13,6 +13,7 @@ display_help() {
     echo "  --repackjar               Repack the cultris2 JAR file"
     echo "  --regenerate-jasm-files   Regenerate .jasm files"
     echo "  --create-binary           Create binary"
+    echo "  --help                    show help"
     exit 1
 }
 
@@ -24,9 +25,15 @@ fi
 # Handle different options
 case "$1" in
     --repackjar)
-        rm -f ../cultris2.jar
-        cd binary || exit
-        zip -r ../cultris2.jar * && cd ..
+    if [ -d ./binary ]; then
+        echo folder exists, continueing
+            rm -f ../cultris2.jar   
+            cd binary || exit
+            zip -r ../cultris2.jar * && cd ..
+    else 
+        echo folder doesnt exist ... unzipping cultris2.jar
+            unzip -o ./cultris2.jar -d binary   
+    fi
         ;;
     --regenerate-jasm-files)
         unzip -o ./cultris2.jar -d binary    
