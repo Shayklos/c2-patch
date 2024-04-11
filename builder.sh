@@ -26,12 +26,12 @@ fi
 case "$1" in
     --repackjar)
     if [ -d ./binary ]; then
-        echo folder exists, continueing
+        echo binary folder exists, continueing
             rm -f ../cultris2.jar   
             cd binary || exit
             zip -r ../cultris2.jar * && cd ..
     else 
-        echo folder doesnt exist ... unzipping cultris2.jar
+        echo binary folder doesnt exist ... unzipping cultris2.jar
             unzip -o ./cultris2.jar -d binary   
     fi
         ;;
@@ -39,6 +39,8 @@ case "$1" in
         unzip -o ./cultris2.jar -d binary    
         cd binary || exit
         # shellcheck disable=SC2046
+        # passing the paths of all files ending on .class to krak2.
+        # Once for the output ending on .j, and one for the .class file themselves
         fd -e class -x krak2 dis --out $(realpath {}).j $(realpath {})
         # shellcheck disable=SC2035
         git add *
