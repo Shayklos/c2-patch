@@ -21,7 +21,7 @@ public class Dynarec {
             //   String url = takeStringReturnString("6d22a7dcc475c025d2725309c8bb5213", "/home/blu/git6/c2-patch/classloader/java/printstuff.java);
            // logger.info("Icon fetched successfully: " + url);
             // takeIntReturnString(1,"/home/blu/git6/c2-patch/classloader/java/AudioLoader.java");
-            takeStringReturnFloat("off","/home/blu/c2-dynarec-unstable/c2-patch/classloader/java/BlurToggle.java");
+            // takeStringReturnFloat("off","/home/blu/c2-dynarec-unstable/c2-patch/classloader/java/BlurToggle.java");
         } catch (Exception e) {
             logger.log(Level.SEVERE, "Error executing", e);
         }
@@ -64,6 +64,23 @@ public class Dynarec {
         Talker<String> talker = getTalkerInstance(getCompiledClass(javafile));
         return talker.say(message);
     }
+
+    public static int takeIntReturnInt(int number, String javafile) throws Exception {
+        Talker<Integer> talker = getTalkerInstanceInteger(getCompiledClass(javafile));
+        return (int) talker.say(number);
+    }
+
+
+    @SuppressWarnings("unchecked")
+    private static Talker<Integer> getTalkerInstanceInteger(Class<?> compiledClass) throws Exception {
+        Object newInstance = compiledClass.getDeclaredConstructor().newInstance();
+        if (newInstance instanceof Talker<?>) {
+            return (Talker<Integer>) newInstance;
+        } else {
+            throw new Exception("Error: Talker does not implement correct interface");
+        }
+    }
+
 
     public static void takeStringReturnVoid(String input, String javafile) {
         try {
