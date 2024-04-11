@@ -8,7 +8,7 @@
 # might replace fd with find ...
 
 
-rm -rf binary
+#rm -rf binary
 unzip ./cultris2.jar -d binary    
 cd binary || exit
 git add *
