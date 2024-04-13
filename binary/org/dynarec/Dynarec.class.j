@@ -22,35 +22,14 @@ L5:
 .end method
 
 .method public static main : ([Ljava/lang/String;)V
-    .code stack 4 locals 2
-        .catch java/lang/Exception from L0 to L8 using L11
-L0:     ldc "off"
-L2:     ldc "/home/blu/c2-dynarec-unstable/c2-patch/classloader/java/BlurToggle.java"
-L4:     invokestatic Method org/dynarec/Dynarec takeStringReturnFloat (Ljava/lang/String;Ljava/lang/String;)F
-L7:     pop
-L8:     goto L24
-
-        .stack stack_1 Object java/lang/Exception
-L11:    astore_1
-L12:    getstatic Field org/dynarec/Dynarec logger Ljava/util/logging/Logger;
-L15:    getstatic Field java/util/logging/Level SEVERE Ljava/util/logging/Level;
-L18:    ldc "Error executing"
-L20:    aload_1
-L21:    invokevirtual Method java/util/logging/Logger log (Ljava/util/logging/Level;Ljava/lang/String;Ljava/lang/Throwable;)V
-
-        .stack same
-L24:    return
-L25:    
+    .code stack 0 locals 1
+L0:     return
+L1:     
         .linenumbertable
-            L0 24
-            L8 27
-            L11 25
-            L12 26
-            L24 28
+            L0 28
         .end linenumbertable
         .localvariabletable
-            1 is e Ljava/lang/Exception; from L12 to L24
-            0 is args [Ljava/lang/String; from L0 to L25
+            0 is args [Ljava/lang/String; from L0 to L1
         .end localvariabletable
     .end code
 .end method
@@ -236,6 +215,78 @@ L19:
     .exceptions java/lang/Exception
 .end method
 
+.method public static takeIntReturnInt : (ILjava/lang/String;)I
+    .code stack 2 locals 3
+L0:     aload_1
+L1:     invokestatic Method org/dynarec/Dynarec getCompiledClass (Ljava/lang/String;)Ljava/lang/Class;
+L4:     invokestatic Method org/dynarec/Dynarec getTalkerInstanceInteger (Ljava/lang/Class;)Lorg/dynarec/Talker;
+L7:     astore_2
+L8:     aload_2
+L9:     iload_0
+L10:    invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
+L13:    invokeinterface InterfaceMethod org/dynarec/Talker say (Ljava/lang/Object;)Ljava/lang/Object; 2
+L18:    checkcast java/lang/Integer
+L21:    invokevirtual Method java/lang/Integer intValue ()I
+L24:    ireturn
+L25:    
+        .linenumbertable
+            L0 69
+            L8 70
+        .end linenumbertable
+        .localvariabletable
+            0 is number I from L0 to L25
+            1 is javafile Ljava/lang/String; from L0 to L25
+            2 is talker Lorg/dynarec/Talker; from L8 to L25
+        .end localvariabletable
+        .localvariabletypetable
+            2 is talker Lorg/dynarec/Talker<Ljava/lang/Integer;>; from L8 to L25
+        .end localvariabletypetable
+    .end code
+    .exceptions java/lang/Exception
+.end method
+
+.method private static getTalkerInstanceInteger : (Ljava/lang/Class;)Lorg/dynarec/Talker;
+    .code stack 3 locals 2
+L0:     aload_0
+L1:     iconst_0
+L2:     anewarray java/lang/Class
+L5:     invokevirtual Method java/lang/Class getDeclaredConstructor ([Ljava/lang/Class;)Ljava/lang/reflect/Constructor;
+L8:     iconst_0
+L9:     anewarray java/lang/Object
+L12:    invokevirtual Method java/lang/reflect/Constructor newInstance ([Ljava/lang/Object;)Ljava/lang/Object;
+L15:    astore_1
+L16:    aload_1
+L17:    instanceof org/dynarec/Talker
+L20:    ifeq L28
+L23:    aload_1
+L24:    checkcast org/dynarec/Talker
+L27:    areturn
+
+        .stack append Object java/lang/Object
+L28:    new java/lang/Exception
+L31:    dup
+L32:    ldc "Error: Talker does not implement correct interface"
+L34:    invokespecial Method java/lang/Exception <init> (Ljava/lang/String;)V
+L37:    athrow
+L38:    
+        .linenumbertable
+            L0 76
+            L16 77
+            L23 78
+            L28 80
+        .end linenumbertable
+        .localvariabletable
+            0 is compiledClass Ljava/lang/Class; from L0 to L38
+            1 is newInstance Ljava/lang/Object; from L16 to L38
+        .end localvariabletable
+        .localvariabletypetable
+            0 is compiledClass Ljava/lang/Class<*>; from L0 to L38
+        .end localvariabletypetable
+    .end code
+    .exceptions java/lang/Exception
+    .signature (Ljava/lang/Class<*>;)Lorg/dynarec/Talker<Ljava/lang/Integer;>;
+.end method
+
 .method public static takeStringReturnVoid : (Ljava/lang/String;Ljava/lang/String;)V
     .code stack 5 locals 3
         .catch java/lang/Exception from L0 to L39 using L42
@@ -268,20 +319,20 @@ L42:    astore_2
 L43:    getstatic Field java/lang/System err Ljava/io/PrintStream;
 L46:    aload_2
 L47:    invokevirtual Method java/lang/Exception getMessage ()Ljava/lang/String;
-L50:    invokedynamic [_113]
+L50:    invokedynamic [_103]
 L55:    invokevirtual Method java/io/PrintStream println (Ljava/lang/String;)V
 
         .stack same
 L58:    return
 L59:    
         .linenumbertable
-            L0 70
-            L24 71
-            L31 72
-            L39 75
-            L42 73
-            L43 74
-            L58 76
+            L0 87
+            L24 88
+            L31 89
+            L39 92
+            L42 90
+            L43 91
+            L58 93
         .end linenumbertable
         .localvariabletable
             2 is talker Lorg/dynarec/Talker; from L31 to L39
@@ -306,8 +357,8 @@ L18:    invokestatic Method java/lang/Integer parseInt (Ljava/lang/String;)I
 L21:    ireturn
 L22:    
         .linenumbertable
-            L0 79
-            L8 80
+            L0 96
+            L8 97
         .end linenumbertable
         .localvariabletable
             0 is message Ljava/lang/String; from L0 to L22
@@ -345,11 +396,11 @@ L36:    aload_1
 L37:    areturn
 L38:    
         .linenumbertable
-            L0 84
-            L13 85
-            L17 86
-            L25 87
-            L36 89
+            L0 101
+            L13 102
+            L17 103
+            L25 104
+            L36 106
         .end linenumbertable
         .localvariabletable
             0 is javafile Ljava/lang/String; from L0 to L38
@@ -376,7 +427,7 @@ L15:    invokespecial Method java/lang/String <init> ([B)V
 L18:    areturn
 L19:    
         .linenumbertable
-            L0 94
+            L0 111
         .end linenumbertable
         .localvariabletable
             0 is fileName Ljava/lang/String; from L0 to L19
@@ -410,10 +461,10 @@ L34:    invokespecial Method java/lang/Exception <init> (Ljava/lang/String;)V
 L37:    athrow
 L38:    
         .linenumbertable
-            L0 100
-            L16 101
-            L23 102
-            L28 104
+            L0 117
+            L16 118
+            L23 119
+            L28 121
         .end linenumbertable
         .localvariabletable
             0 is compiledClass Ljava/lang/Class; from L0 to L38
@@ -451,5 +502,5 @@ L22:
     com/javax0/sourcebuddy/Compiler$CompileException com/javax0/sourcebuddy/Compiler CompileException public static
     java/lang/invoke/MethodHandles$Lookup java/lang/invoke/MethodHandles Lookup public static final
 .end innerclasses
-.const [_113] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Error compiling: \u0001" : makeConcatWithConstants (Ljava/lang/String;)Ljava/lang/String;
+.const [_103] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Error compiling: \u0001" : makeConcatWithConstants (Ljava/lang/String;)Ljava/lang/String;
 .end class
