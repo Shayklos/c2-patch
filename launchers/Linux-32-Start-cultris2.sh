@@ -5,7 +5,8 @@ export javaexec="$DIR/resources/jdk-17.0.8+7/bin/java"
 cd "$DIR"
 
 if [ -f "$javaexec" ]; then
-    "$javaexec" -Djava.library.path="$DIR/resources/libs/" -jar "$DIR/cultris2.jar"
+"$javaexec" -Dsun.java2d.opengl=True -Djava.library.path="$DIR/resources/libs/" -jar "$DIR/cultris2.jar"
+
 else
     echo "Java executable not found."
 fi
