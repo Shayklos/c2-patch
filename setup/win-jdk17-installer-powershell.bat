@@ -1,4 +1,7 @@
 @echo off
+:: Copy launcher batch files to a specified directory (e.g., one level up from resources)
+copy ..\launchers\*.bat ..
+
 cd ..\resources\
 
 :: Download the GraalVM JDK
@@ -17,21 +20,4 @@ $latestVersion = $directories | Sort-Object { [Version]($_.Name -replace 'graalv
 $directories | Where-Object { $_ -ne $latestVersion } | Remove-Item -Recurse -Force
 "
 
-:: Copy launcher batch files to a specified directory (e.g., one level up from resources)
-copy *.bat ..\
-
 echo "Installation completed. GraalVM JDK is ready to use."
-
-
-
-
-
-
-
-
-
-
-
-
-
-
