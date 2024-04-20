@@ -129,7 +129,7 @@ L101:   athrow
 L102:   invokestatic Method ib else ()V
 L105:   return
 L106:   
-        .attribute StackMap b'\x00\x0A\x00\x27\x00\x01\x07\x00\x41\x00\x00\x00\x30\x00\x00\x00\x01\x07\x00\x1B\x00\x31\x00\x01\x07\x00\x41\x00\x01\x07\x00\x1B\x00\x39\x00\x00\x00\x01\x07\x00\x1B\x00\x3A\x00\x02\x07\x00\x41\x07\x00\x1B\x00\x01\x07\x00\x1B\x00\x3C\x00\x02\x07\x00\x41\x07\x00\x1B\x00\x01\x07\x00\x1B\x00\x4E\x00\x02\x07\x00\x41\x07\x00\x1B\x00\x01\x07\x00\x1B\x00\x5A\x00\x02\x07\x00\x41\x07\x00\x1B\x00\x00\x00\x60\x00\x01\x07\x00\x41\x00\x01\x07\x00\x1B\x00\x66\x00\x01\x07\x00\x41\x00\x00'
+        .attribute StackMap b'\x00\x0A\x00\x27\x00\x01\x07\x00\x54\x00\x00\x00\x30\x00\x00\x00\x01\x07\x00\x1B\x00\x31\x00\x01\x07\x00\x54\x00\x01\x07\x00\x1B\x00\x39\x00\x00\x00\x01\x07\x00\x1B\x00\x3A\x00\x02\x07\x00\x54\x07\x00\x1B\x00\x01\x07\x00\x1B\x00\x3C\x00\x02\x07\x00\x54\x07\x00\x1B\x00\x01\x07\x00\x1B\x00\x4E\x00\x02\x07\x00\x54\x07\x00\x1B\x00\x01\x07\x00\x1B\x00\x5A\x00\x02\x07\x00\x54\x07\x00\x1B\x00\x00\x00\x60\x00\x01\x07\x00\x54\x00\x01\x07\x00\x1B\x00\x66\x00\x01\x07\x00\x54\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method
@@ -248,125 +248,131 @@ L171:   iconst_1
 L172:   dup
 L173:   pop2
 L174:   invokestatic Method java/lang/System exit (I)V
-L177:   invokestatic Method UE try ()V
-L180:   invokestatic Method QD const ()V
-L183:   invokestatic Method java/util/Calendar getInstance ()Ljava/util/Calendar;
-L186:   dup
-L187:   astore_0
-L188:   iconst_5
-L189:   iconst_1
-L190:   dup
-L191:   pop2
-L192:   invokevirtual Method java/util/Calendar get (I)I
-L195:   iconst_1
-L196:   dup
-L197:   dup
-L198:   pop2
-L199:   if_icmpne L229
-L202:   aload_0
-L203:   iconst_2
-L204:   iconst_1
-L205:   dup
-L206:   pop2
-L207:   invokevirtual Method java/util/Calendar get (I)I
-L210:   bipush 7
-L212:   iconst_1
-L213:   dup
-L214:   pop2
-L215:   if_icmpne L229
-L218:   new QE
-L221:   dup
-L222:   invokespecial Method QE <init> ()V
-L225:   astore_1
-L226:   goto L280
-L229:   aload_0
-L230:   iconst_5
-L231:   iconst_1
-L232:   dup
-L233:   pop2
-L234:   invokevirtual Method java/util/Calendar get (I)I
-L237:   bipush 22
-L239:   iconst_1
-L240:   dup
-L241:   pop2
-L242:   if_icmple L272
-L245:   aload_0
-L246:   iconst_2
-L247:   iconst_1
-L248:   dup
-L249:   pop2
-L250:   invokevirtual Method java/util/Calendar get (I)I
-L253:   bipush 11
-L255:   iconst_1
-L256:   dup
-L257:   pop2
-L258:   if_icmpne L272
-L261:   new SF
-L264:   dup
-L265:   invokespecial Method SF <init> ()V
-L268:   astore_1
-L269:   goto L280
-L272:   new fe
-L275:   dup
-L276:   invokespecial Method fe <init> ()V
-L279:   astore_1
-L280:   new md
-L283:   dup
-L284:   ldc "server1.gewaltig.net"
-L286:   invokespecial Method md <init> (Ljava/lang/String;)V
-L289:   putstatic Field Kc else LKc;
-L292:   new cb
-L295:   dup
-L296:   invokespecial Method cb <init> ()V
-L299:   astore_2
-L300:   new kD
-L303:   dup
-L304:   aload_2
-L305:   aload_1
-L306:   invokespecial Method kD <init> (LbC;Lgg;)V
-L309:   astore_3
-L310:   getstatic Field net/gewaltig/cultris/Cultris "enum" Z
-L313:   ifeq L351
-L316:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
-L319:   new CF
-L322:   dup
-L323:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
-L326:   aload_3
-L327:   aload_2
-L328:   aload_1
-L329:   invokespecial Method CF <init> (LFE;LbC;LbC;Lgg;)V
-L332:   invokevirtual Method FE break (Lgg;)V
-L335:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
-L338:   aload_3
-L339:   invokevirtual Method FE else (LbC;)V
-L342:   invokestatic Method cD break ()LcD;
-L345:   invokevirtual Method cD else ()V
-L348:   goto L365
-L351:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
-L354:   aload_1
-L355:   invokevirtual Method FE break (Lgg;)V
-L358:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
-L361:   aload_2
-L362:   invokevirtual Method FE else (LbC;)V
-L365:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
-L368:   invokestatic Method cD break ()LcD;
-L371:   invokevirtual Method FE else (LbC;)V
-L374:   invokestatic Method UE for ()V
-L377:   ldc "load_successful"
-L379:   iconst_1
-L380:   dup
-L381:   dup
-L382:   pop2
-L383:   invokestatic Method JB break (Ljava/lang/String;I)V
-L386:   invokestatic Method JB new ()V
-L389:   getstatic Field Kc else LKc;
-L392:   checkcast md
-L395:   invokevirtual Method md do ()V
-L398:   return
-L399:   
-        .attribute StackMap b'\x00\x0D\x00\x1C\x00\x00\x00\x00\x00\x62\x00\x00\x00\x01\x07\x00\x1B\x00\x63\x00\x00\x00\x01\x07\x00\x10\x00\x68\x00\x01\x07\x00\x04\x00\x00\x00\x6D\x00\x00\x00\x00\x00\xA8\x00\x00\x00\x01\x07\x00\x1B\x00\xA9\x00\x00\x00\x01\x07\x00\x79\x00\xB1\x00\x00\x00\x00\x00\xE5\x00\x01\x07\x00\xD4\x00\x00\x01\x10\x00\x01\x07\x00\xD4\x00\x00\x01\x18\x00\x02\x07\x00\xD4\x07\x00\xE7\x00\x00\x01\x5F\x00\x04\x07\x00\xD4\x07\x00\xE7\x07\x00\xF3\x07\x00\xF6\x00\x00\x01\x6D\x00\x04\x07\x00\xD4\x07\x00\xE7\x07\x00\xF3\x07\x00\xF6\x00\x00'
+L177:   invokestatic Method QD const ()V
+L180:   invokestatic Method java/util/Calendar getInstance ()Ljava/util/Calendar;
+L183:   dup
+L184:   astore_0
+L185:   iconst_5
+L186:   iconst_1
+L187:   dup
+L188:   pop2
+L189:   invokevirtual Method java/util/Calendar get (I)I
+L192:   iconst_1
+L193:   dup
+L194:   dup
+L195:   pop2
+L196:   if_icmpne L226
+L199:   aload_0
+L200:   iconst_2
+L201:   iconst_1
+L202:   dup
+L203:   pop2
+L204:   invokevirtual Method java/util/Calendar get (I)I
+L207:   bipush 7
+L209:   iconst_1
+L210:   dup
+L211:   pop2
+L212:   if_icmpne L226
+L215:   new QE
+L218:   dup
+L219:   invokespecial Method QE <init> ()V
+L222:   astore_1
+L223:   goto L277
+L226:   aload_0
+L227:   iconst_5
+L228:   iconst_1
+L229:   dup
+L230:   pop2
+L231:   invokevirtual Method java/util/Calendar get (I)I
+L234:   bipush 22
+L236:   iconst_1
+L237:   dup
+L238:   pop2
+L239:   if_icmple L269
+L242:   aload_0
+L243:   iconst_2
+L244:   iconst_1
+L245:   dup
+L246:   pop2
+L247:   invokevirtual Method java/util/Calendar get (I)I
+L250:   bipush 11
+L252:   iconst_1
+L253:   dup
+L254:   pop2
+L255:   if_icmpne L269
+L258:   new SF
+L261:   dup
+L262:   invokespecial Method SF <init> ()V
+L265:   astore_1
+L266:   goto L277
+L269:   new fe
+L272:   dup
+L273:   invokespecial Method fe <init> ()V
+L276:   astore_1
+L277:   new md
+L280:   dup
+L281:   ldc "server1.gewaltig.net"
+L283:   invokespecial Method md <init> (Ljava/lang/String;)V
+L286:   putstatic Field Kc else LKc;
+L289:   new cb
+L292:   dup
+L293:   invokespecial Method cb <init> ()V
+L296:   astore_2
+L297:   new kD
+L300:   dup
+L301:   aload_2
+L302:   aload_1
+L303:   invokespecial Method kD <init> (LbC;Lgg;)V
+L306:   astore_3
+L307:   getstatic Field net/gewaltig/cultris/Cultris "enum" Z
+L310:   ifeq L348
+L313:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L316:   new CF
+L319:   dup
+L320:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L323:   aload_3
+L324:   aload_2
+L325:   aload_1
+L326:   invokespecial Method CF <init> (LFE;LbC;LbC;Lgg;)V
+L329:   invokevirtual Method FE break (Lgg;)V
+L332:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L335:   aload_3
+L336:   invokevirtual Method FE else (LbC;)V
+L339:   invokestatic Method cD break ()LcD;
+L342:   invokevirtual Method cD else ()V
+L345:   goto L362
+L348:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L351:   aload_1
+L352:   invokevirtual Method FE break (Lgg;)V
+L355:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L358:   aload_2
+L359:   invokevirtual Method FE else (LbC;)V
+L362:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L365:   invokestatic Method cD break ()LcD;
+L368:   invokevirtual Method FE else (LbC;)V
+L371:   ldc "load_successful"
+L373:   iconst_1
+L374:   dup
+L375:   dup
+L376:   pop2
+L377:   invokestatic Method JB break (Ljava/lang/String;I)V
+L380:   invokestatic Method JB new ()V
+L383:   getstatic Field Kc else LKc;
+L386:   checkcast md
+L389:   invokevirtual Method md do ()V
+L392:   return
+L393:   
+        .attribute StackMap b'\x00\x0D\x00\x1C\x00\x00\x00\x00\x00\x62\x00\x00\x00\x01\x07\x00\x1B\x00\x63\x00\x00\x00\x01\x07\x00\x10\x00\x68\x00\x01\x07\x00\x04\x00\x00\x00\x6D\x00\x00\x00\x00\x00\xA8\x00\x00\x00\x01\x07\x00\x1B\x00\xA9\x00\x00\x00\x01\x07\x00\x7E\x00\xB1\x00\x00\x00\x00\x00\xE2\x00\x01\x07\x00\xD8\x00\x00\x01\x0D\x00\x01\x07\x00\xD8\x00\x00\x01\x15\x00\x02\x07\x00\xD8\x07\x01\x0F\x00\x00\x01\x5C\x00\x04\x07\x00\xD8\x07\x01\x0F\x07\x00\xF5\x07\x00\xF8\x00\x00\x01\x6A\x00\x04\x07\x00\xD8\x07\x01\x0F\x07\x00\xF5\x07\x00\xF8\x00\x00'
     .end code
     .exceptions java/lang/Exception
+    .runtime visible annotations
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_87 = string "fINVOKESTATIC UE.try()V"
+        .end annotation
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_194 = string "INVOKESTATIC UE.for()V"
+        .end annotation
+    .end runtime
 .end method
 .innerclasses
     net/gewaltig/cultris/i [0] [0] static

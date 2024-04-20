@@ -8,115 +8,31 @@
 .field private do Lqc;
 
 .method public int : ()V
-    .code stack 7 locals 2
-L0:     aload_0
-L1:     dup
-L2:     dup2
-L3:     invokespecial Method bC int ()V
-L6:     getfield Field cb "enum" F
-L9:     f2i
-L10:    istore_1
-L11:    dup
-L12:    getfield Field cb "enum" F
-L15:    getstatic Field ib do F
-L18:    ldc 1e-1f
-L20:    fmul
-L21:    fadd
-L22:    putfield Field cb "enum" F
-L25:    getfield Field cb "enum" F
-L28:    fconst_2
-L29:    fcmpl
-L30:    iflt L48
-L33:    aload_0
-L34:    dup
-L35:    dup
-L36:    getfield Field cb "enum" F
-L39:    fconst_2
-L40:    fsub
-L41:    putfield Field cb "enum" F
-L44:    goto L25
-L47:    athrow
-L48:    iload_1
-L49:    aload_0
-L50:    getfield Field cb "enum" F
-L53:    f2i
-L54:    if_icmpeq L197
-L57:    aload_0
-L58:    getfield Field cb "enum" F
-L61:    f2i
-L62:    lookupswitch
-            0 : L88
-            1 : L115
-            default : L197
-L88:    aload_0
-L89:    iconst_0
-L90:    ifne L89
-L93:    dup
-L94:    dup_x1
-L95:    getfield Field cb else LDF;
-L98:    invokevirtual Method DF break ()V
-L101:   getfield Field cb else LDF;
-L104:   aload_0
-L105:   invokespecial Method cb break ()Ljava/lang/String;
-L108:   invokevirtual Method DF break (Ljava/lang/String;)V
-L111:   goto L198
-L114:   athrow
-L115:   aload_0
-L116:   getfield Field cb else LDF;
-L119:   new java/lang/StringBuilder
-L122:   dup
-L123:   invokespecial Method java/lang/StringBuilder <init> ()V
-L126:   iconst_0
-L127:   ldc "You're "
-L129:   invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
-L132:   invokestatic Method JB float ()F
-L135:   fconst_0
-L136:   fcmpl
-L137:   ifne L145
-L140:   ldc "sadly not "
-L142:   goto L147
-L145:   ldc ""
-L147:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-L150:   ldc "listening to "
-L152:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-L155:   invokestatic Method UE const ()Ljava/lang/String;
-L158:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-L161:   ldc " by "
-L163:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-L166:   invokestatic Method UE float ()Ljava/lang/String;
-L169:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-L172:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
-L175:   invokevirtual Method DF break (Ljava/lang/String;)V
-L178:   invokestatic Method UE catch ()Ljava/lang/String;
-L181:   ifnull L197
-L184:   aload_0
-L185:   getfield Field cb else LDF;
-L188:   invokestatic Method UE float ()Ljava/lang/String;
-L191:   invokestatic Method UE catch ()Ljava/lang/String;
-L194:   invokevirtual Method DF break (Ljava/lang/String;Ljava/lang/String;)V
-L197:   aload_0
-L198:   getfield Field cb else LDF;
-L201:   fconst_1
-L202:   dup
-L203:   dup_x1
-L204:   aload_0
-L205:   getfield Field cb "enum" F
-L208:   fconst_1
-L209:   frem
-L210:   ldc 5e-1f
-L212:   dup_x1
-L213:   fsub
-L214:   invokestatic Method java/lang/Math abs (F)F
-L217:   fsub
-L218:   ldc 2.3e0f
-L220:   fmul
-L221:   ldc 5e-1f
-L223:   invokestatic Method java/lang/Math min (FF)F
-L226:   invokevirtual Method DF else (FFFF)V
-L229:   return
-L230:   
-        .attribute StackMap b'\x00\x0B\x00\x19\x00\x02\x07\x00\x02\x01\x00\x01\x07\x00\x02\x00\x2F\x00\x00\x00\x01\x07\x00\x2D\x00\x30\x00\x02\x07\x00\x02\x01\x00\x00\x00\x58\x00\x02\x07\x00\x02\x01\x00\x00\x00\x59\x00\x02\x07\x00\x02\x01\x00\x01\x07\x00\x02\x00\x72\x00\x00\x00\x01\x07\x00\x2D\x00\x73\x00\x02\x07\x00\x02\x01\x00\x00\x00\x91\x00\x02\x07\x00\x02\x01\x00\x02\x07\x00\x12\x07\x00\x3A\x00\x93\x00\x02\x07\x00\x02\x01\x00\x03\x07\x00\x12\x07\x00\x3A\x07\x00\x4F\x00\xC5\x00\x02\x07\x00\x02\x01\x00\x00\x00\xC6\x00\x02\x07\x00\x02\x01\x00\x01\x07\x00\x02'
+    .code stack 5 locals 2
+L0:     goto L3
+L3:     aload_0
+L4:     dup
+L5:     dup2
+L6:     invokespecial Method bC int ()V
+L9:     getfield Field cb "enum" F
+L12:    f2i
+L13:    istore_1
+L14:    dup
+L15:    getfield Field cb "enum" F
+L18:    getstatic Field ib do F
+L21:    ldc 1e-1f
+L23:    fmul
+L24:    fadd
+L25:    putfield Field cb "enum" F
+L28:    return
+L29:    
+        .attribute StackMap b'\x00\x01\x00\x03\x00\x01\x07\x00\x02\x00\x00'
     .end code
+    .runtime visible annotations
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_16 = string [_37]
+        .end annotation
+    .end runtime
 .end method
 
 .method public break : (LgB;I)Z
@@ -165,7 +81,7 @@ L60:    dup
 L61:    pop2
 L62:    ireturn
 L63:    
-        .attribute StackMap b'\x00\x05\x00\x0C\x00\x00\x00\x01\x07\x00\x2D\x00\x0D\x00\x03\x07\x00\x02\x07\x00\x79\x01\x00\x00\x00\x2C\x00\x00\x00\x01\x07\x00\x2D\x00\x2D\x00\x03\x07\x00\x02\x07\x00\x79\x01\x00\x00\x00\x3A\x00\x03\x07\x00\x02\x07\x00\x79\x01\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x0C\x00\x00\x00\x01\x07\x00\x44\x00\x0D\x00\x03\x07\x00\x02\x07\x00\x46\x01\x00\x00\x00\x2C\x00\x00\x00\x01\x07\x00\x44\x00\x2D\x00\x03\x07\x00\x02\x07\x00\x46\x01\x00\x00\x00\x3A\x00\x03\x07\x00\x02\x07\x00\x46\x01\x00\x00'
     .end code
 .end method
 
@@ -463,15 +379,15 @@ L477:   getfield Field cb else LDF;
 L480:   fconst_0
 L481:   dup
 L482:   dup_x1
-L483:   ldc_w 5e-2f
-L486:   invokespecial Method SB <init> (LgB;FFFF)V
-L489:   getstatic Field VD else Ljava/lang/Object;
-L492:   invokevirtual Method cb break (LgB;Ljava/lang/Object;)V
+L483:   ldc 5e-2f
+L485:   invokespecial Method SB <init> (LgB;FFFF)V
+L488:   getstatic Field VD else Ljava/lang/Object;
+L491:   invokevirtual Method cb break (LgB;Ljava/lang/Object;)V
+L494:   pop2
 L495:   pop2
-L496:   pop2
-L497:   return
-L498:   
-        .attribute StackMap b'\x00\x03\x00\xE2\x00\x00\x00\x01\x07\x00\x2D\x00\xE3\x00\x04\x07\x00\x02\x07\x00\xA4\x07\x00\xA4\x07\x00\xA4\x00\x00\x01\x16\x00\x04\x07\x00\x02\x07\x00\xA4\x07\x00\xA4\x07\x00\xA4\x00\x01\x07\x00\x02'
+L496:   return
+L497:   
+        .attribute StackMap b'\x00\x03\x00\xE2\x00\x00\x00\x01\x07\x00\x44\x00\xE3\x00\x04\x07\x00\x02\x07\x00\x62\x07\x00\x62\x07\x00\x62\x00\x00\x01\x16\x00\x04\x07\x00\x02\x07\x00\x62\x07\x00\x62\x07\x00\x62\x00\x01\x07\x00\x02'
     .end code
 .end method
 
@@ -515,9 +431,9 @@ L5:
 
 .method private break : ()Ljava/lang/String;
     .code stack 1 locals 1
-L0:     ldc_w "Copyright \u00A92013 GEWALTIG entertainment. All rights reserved. Release 1.4c."
-L3:     areturn
-L4:     
+L0:     ldc "Copyright \u00A92013 GEWALTIG entertainment. All rights reserved. Release 1.4c."
+L2:     areturn
+L3:     
     .end code
 .end method
 
@@ -551,4 +467,5 @@ L8:
     vD DF [0] public static final enum
     zg UE [0] public static final enum
 .end innerclasses
+.const [_37] = Utf8 "B:\u000AGETFIELD cb.enum F\u000AFCONST_2\u000AFCMPL\u000AIFLT C\u000AALOAD this\u000ADUP\u000ADUP\u000AGETFIELD cb.enum F\u000AFCONST_2\u000AFSUB\u000APUTFIELD cb.enum F\u000AGOTO B\u000AATHROW\u000AC:\u000AILOAD 1\u000AALOAD this\u000AGETFIELD cb.enum F\u000AF2I\u000AIF_ICMPEQ I\u000AALOAD this\u000AGETFIELD cb.enum F\u000AF2I\u000ALOOKUPSWITCH mapping[0=D, 1=F] default[I]\u000AD:\u000AALOAD this\u000AE:\u000AICONST_0\u000AIFNE E\u000ADUP\u000ADUP_X1\u000AGETFIELD cb.else LDF;\u000AINVOKEVIRTUAL DF.break()V\u000AGETFIELD cb.else LDF;\u000AALOAD this\u000AINVOKESPECIAL cb.break()Ljava/lang/String;\u000AINVOKEVIRTUAL DF.break(Ljava/lang/String;)V\u000AGOTO J\u000AATHROW\u000AF:\u000AALOAD this\u000AGETFIELD cb.else LDF;\u000ANEW java/lang/StringBuilder\u000ADUP\u000AINVOKESPECIAL java/lang/StringBuilder.<init>()V\u000AICONST_0\u000ALDC \"You're \"\u000AINVOKEVIRTUAL java/lang/StringBuilder.insert(ILjava/lang/String;)Ljava/lang/StringBuilder;\u000AINVOKESTATIC JB.float()F\u000AFCONST_0\u000AFCMPL\u000AIFNE G\u000ALDC \"sadly not \"\u000AGOTO H\u000AG:\u000ALDC \"\"\u000AH:\u000AINVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;\u000ALDC \"listening to \"\u000AINVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;\u000AINVOKESTATIC UE.const()Ljava/lang/String;\u000AINVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;\u000ALDC \" by \"\u000AINVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;\u000AINVOKESTATIC UE.float()Ljava/lang/String;\u000AINVOKEVIRTUAL java/lang/StringBuilder.append(Ljava/lang/String;)Ljava/lang/StringBuilder;\u000AINVOKEVIRTUAL java/lang/StringBuilder.toString()Ljava/lang/String;\u000AINVOKEVIRTUAL DF.break(Ljava/lang/String;)V\u000AINVOKESTATIC UE.catch()Ljava/lang/String;\u000AIFNULL I\u000AALOAD this\u000AGETFIELD cb.else LDF;\u000AINVOKESTATIC UE.float()Ljava/lang/String;\u000AINVOKESTATIC UE.catch()Ljava/lang/String;\u000AINVOKEVIRTUAL DF.break(Ljava/lang/String;Ljava/lang/String;)V\u000AI:\u000AALOAD this\u000AJ:\u000AGETFIELD cb.else LDF;\u000AFCONST_1\u000ADUP\u000ADUP_X1\u000AALOAD this\u000AGETFIELD cb.enum F\u000AFCONST_1\u000AFREM\u000ALDC 0.5F\u000ADUP_X1\u000AFSUB\u000AINVOKESTATIC java/lang/Math.abs(F)F\u000AFSUB\u000ALDC 2.3F\u000AFMUL\u000ALDC 0.5F\u000AINVOKESTATIC java/lang/Math.min(FF)F\u000AINVOKEVIRTUAL DF.else(FFFF)V"
 .end class
