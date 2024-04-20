@@ -22,6 +22,7 @@ public class Dynarec {
            // logger.info("Icon fetched successfully: " + url);
             // takeIntReturnString(1,"/home/blu/git6/c2-patch/classloader/java/AudioLoader.java");
             // takeStringReturnFloat("off","/home/blu/c2-dynarec-unstable/c2-patch/classloader/java/BlurToggle.java");
+            takeStringReturnVoid("/home/blu/c2/dyn/c2-patch/classloader/java/SimplePrint.java","Moo");
         } catch (Exception e) {
             logger.log(Level.SEVERE, "Error executing", e);
         }
@@ -82,13 +83,14 @@ public class Dynarec {
     }
 
 
-    public static void takeStringReturnVoid(String input, String javafile) {
+    public static void takeStringReturnVoid(String javafile,String input) {
         try {
             Talker talker = (Talker) getCompiledClass(javafile).getDeclaredConstructor(Object.class)
                     .newInstance(input);
             talker.say(input);
         } catch (Exception e) {
-            System.err.println("Error compiling: " + e.getMessage());
+            System.err.println("General error: " + e.getMessage());
+            e.printStackTrace(); // Catch-all for any other exceptions.
         }
     }
 
