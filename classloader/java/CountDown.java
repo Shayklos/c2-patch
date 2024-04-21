@@ -31,11 +31,11 @@ public class CountDown implements Talker<Integer> {
 
         // Apply modulo check to trigger messages at start, midpoint, and endpoint
         if (positionInCycle == 1) {  // Adjusted for start message (1, 161, 321, ...)
-            printQueue.offer("Starting countdown: " + formattedMessage);
+            printQueue.offer("Starting countdown:");
         } else if (positionInCycle == 80) {  // Consistent for midpoint (80, 240, 400, ...)
-            printQueue.offer("Midpoint of countdown: " + formattedMessage);
+            printQueue.offer("Midpoint of countdown");
         } else if (positionInCycle == 0) {  // Adjusted for end message (160, 320, 480, ...)
-            printQueue.offer("Ending countdown: " + formattedMessage);
+            printQueue.offer("Ending countdown: ");
         }
 
         return message;
