@@ -1,4 +1,7 @@
-# c2-patch stable
+# c2-patch stable noaudio
+
+# removed BASS audio backend for better perf
+
 
 Non-Invasive, trimmed down version with only minor tweaks. 
 
