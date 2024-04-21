@@ -3625,99 +3625,103 @@ L4:     invokespecial Method Cg <init> ()V
 L7:     astore_1
 L8:     new Te
 L11:    dup
-L12:    ldc_w "Ruggu"
-L15:    ldc_w "Try to clear each stage with as few pieces as possible."
-L18:    ldc_w "stages"
-L21:    new gF
-L24:    dup
-L25:    aload_1
-L26:    invokespecial Method gF <init> (LCg;)V
-L29:    iconst_0
-L30:    iconst_1
-L31:    dup
-L32:    pop2
-L33:    fconst_1
-L34:    ldc 2147483647
-L36:    iconst_1
-L37:    dup
-L38:    dup
-L39:    pop2
-L40:    anewarray Uf
-L43:    iconst_1
-L44:    dup
-L45:    pop2
+L12:    iconst_1
+L13:    ldc_w "settings/ruggu/Cg-current_ruggu.txt"
+L16:    invokestatic Method rugguUtils getNthLn (ILjava/lang/String;)Ljava/lang/String;
+L19:    iconst_2
+L20:    ldc_w "settings/ruggu/Cg-current_ruggu.txt"
+L23:    invokestatic Method rugguUtils getNthLn (ILjava/lang/String;)Ljava/lang/String;
+L26:    ldc_w "stages"
+L29:    new gF
+L32:    dup
+L33:    aload_1
+L34:    invokespecial Method gF <init> (LCg;)V
+L37:    iconst_0
+L38:    iconst_1
+L39:    dup
+L40:    pop2
+L41:    fconst_1
+L42:    ldc 2147483647
+L44:    iconst_1
+L45:    dup
 L46:    dup
-L47:    iconst_0
-L48:    iconst_1
-L49:    dup
-L50:    pop2
-L51:    aload_1
-L52:    aastore
-L53:    iconst_2
-L54:    iconst_1
-L55:    dup
-L56:    pop2
-L57:    anewarray Uf
-L60:    iconst_1
-L61:    dup
-L62:    pop2
+L47:    pop2
+L48:    anewarray Uf
+L51:    iconst_1
+L52:    dup
+L53:    pop2
+L54:    dup
+L55:    iconst_0
+L56:    iconst_1
+L57:    dup
+L58:    pop2
+L59:    aload_1
+L60:    aastore
+L61:    iconst_2
+L62:    iconst_1
 L63:    dup
-L64:    iconst_0
-L65:    iconst_1
-L66:    dup
-L67:    pop2
-L68:    new ee
+L64:    pop2
+L65:    anewarray Uf
+L68:    iconst_1
+L69:    dup
+L70:    pop2
 L71:    dup
-L72:    aconst_null
-L73:    dup
-L74:    dup_x1
-L75:    aload_1
-L76:    getfield Field Cg do Ljava/util/ArrayList;
-L79:    invokevirtual Method java/util/ArrayList size ()I
-L82:    iconst_1
-L83:    dup
-L84:    dup
-L85:    pop2
-L86:    iadd
-L87:    iconst_0
-L88:    iconst_1
-L89:    dup
-L90:    pop2
-L91:    iconst_0
-L92:    iconst_1
-L93:    dup
-L94:    pop2
-L95:    invokespecial Method ee <init> [_86]
-L98:    aastore
-L99:    dup
+L72:    iconst_0
+L73:    iconst_1
+L74:    dup
+L75:    pop2
+L76:    new ee
+L79:    dup
+L80:    aconst_null
+L81:    dup
+L82:    dup_x1
+L83:    aload_1
+L84:    getfield Field Cg pieces Ljava/util/ArrayList;
+L87:    invokevirtual Method java/util/ArrayList size ()I
+L90:    iconst_1
+L91:    dup
+L92:    dup
+L93:    pop2
+L94:    iadd
+L95:    iconst_0
+L96:    iconst_1
+L97:    dup
+L98:    pop2
+L99:    iconst_0
 L100:   iconst_1
 L101:   dup
-L102:   dup
-L103:   pop2
-L104:   new yg
+L102:   pop2
+L103:   invokespecial Method ee <init> [_86]
+L106:   aastore
 L107:   dup
-L108:   aconst_null
+L108:   iconst_1
 L109:   dup
-L110:   dup_x1
-L111:   iconst_0
-L112:   iconst_1
-L113:   dup
-L114:   pop2
-L115:   iconst_0
-L116:   iconst_1
+L110:   dup
+L111:   pop2
+L112:   new yg
+L115:   dup
+L116:   aconst_null
 L117:   dup
-L118:   pop2
-L119:   invokespecial Method yg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-L122:   aastore
-L123:   invokespecial Method Te <init> [_89]
-L126:   dup
-L127:   getfield Field Te char Ljava/util/LinkedList;
-L130:   aload_0
-L131:   invokestatic Method java/util/Arrays asList ([Ljava/lang/Object;)Ljava/util/List;
-L134:   invokevirtual Method java/util/LinkedList addAll (Ljava/util/Collection;)Z
-L137:   pop
-L138:   areturn
-L139:   
+L118:   dup_x1
+L119:   iconst_0
+L120:   iconst_1
+L121:   dup
+L122:   pop2
+L123:   iconst_0
+L124:   iconst_1
+L125:   dup
+L126:   pop2
+L127:   invokespecial Method yg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
+L130:   aastore
+L131:   invokespecial Method Te <init> [_89]
+L134:   dup
+L135:   getfield Field Te char Ljava/util/LinkedList;
+L138:   aload_0
+L139:   invokestatic Method java/util/Arrays asList ([Ljava/lang/Object;)Ljava/util/List;
+L142:   invokevirtual Method java/util/LinkedList addAll (Ljava/util/Collection;)Z
+L145:   pop
+L146:   areturn
+L147:   
     .end code
 .end method
 
