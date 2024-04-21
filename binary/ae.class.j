@@ -67,7 +67,7 @@ L124:   areturn
 L125:   getstatic Field Fe "enum" LFe;
 L128:   areturn
 L129:   
-        .attribute StackMap b'\x00\x06\x00\x24\x00\x00\x00\x01\x07\x00\x33\x00\x25\x00\x01\x07\x00\x02\x00\x00\x00\x42\x00\x00\x00\x01\x07\x00\x33\x00\x43\x00\x01\x07\x00\x02\x00\x00\x00\x60\x00\x01\x07\x00\x02\x00\x00\x00\x7D\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x24\x00\x00\x00\x01\x07\x00\x3D\x00\x25\x00\x01\x07\x00\x02\x00\x00\x00\x42\x00\x00\x00\x01\x07\x00\x3D\x00\x43\x00\x01\x07\x00\x02\x00\x00\x00\x60\x00\x01\x07\x00\x02\x00\x00\x00\x7D\x00\x01\x07\x00\x02\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method
@@ -235,7 +235,7 @@ L165:   invokevirtual Method java/util/concurrent/ThreadPoolExecutor submit (Lja
 L168:   putfield Field ae this Ljava/util/concurrent/Future;
 L171:   return
 L172:   
-        .attribute StackMap b'\x00\x06\x00\x0B\x00\x00\x00\x01\x07\x00\x33\x00\x0C\x00\x01\x07\x00\x02\x00\x00\x00\x1D\x00\x01\x07\x00\x02\x00\x00\x00\x30\x00\x01\x07\x00\x02\x00\x00\x00\x3F\x00\x01\x07\x00\x02\x00\x00\x00\x4E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x0B\x00\x00\x00\x01\x07\x00\x3D\x00\x0C\x00\x01\x07\x00\x02\x00\x00\x00\x1D\x00\x01\x07\x00\x02\x00\x00\x00\x30\x00\x01\x07\x00\x02\x00\x00\x00\x3F\x00\x01\x07\x00\x02\x00\x00\x00\x4E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
@@ -243,24 +243,35 @@ L172:
     .code stack 10 locals 0
 L0:     new java/util/concurrent/ThreadPoolExecutor
 L3:     dup
-L4:     bipush 8
-L6:     iconst_1
-L7:     dup
-L8:     pop2
-L9:     ldc 2147483647
-L11:    ldc2_w 8L
-L14:    getstatic Field java/util/concurrent/TimeUnit SECONDS Ljava/util/concurrent/TimeUnit;
-L17:    new java/util/concurrent/SynchronousQueue
-L20:    dup
-L21:    invokespecial Method java/util/concurrent/SynchronousQueue <init> ()V
-L24:    new gG
-L27:    dup
-L28:    invokespecial Method gG <init> ()V
-L31:    invokespecial Method java/util/concurrent/ThreadPoolExecutor <init> (IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
-L34:    putstatic Field ae do Ljava/util/concurrent/ThreadPoolExecutor;
-L37:    return
-L38:    
+L4:     sipush 500
+L7:     sipush 1000
+L10:    dup
+L11:    pop2
+L12:    ldc 2147483647
+L14:    ldc2_w 8L
+L17:    getstatic Field java/util/concurrent/TimeUnit SECONDS Ljava/util/concurrent/TimeUnit;
+L20:    new java/util/concurrent/SynchronousQueue
+L23:    dup
+L24:    invokespecial Method java/util/concurrent/SynchronousQueue <init> ()V
+L27:    new gG
+L30:    dup
+L31:    invokespecial Method gG <init> ()V
+L34:    invokespecial Method java/util/concurrent/ThreadPoolExecutor <init> (IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
+L37:    putstatic Field ae do Ljava/util/concurrent/ThreadPoolExecutor;
+L40:    return
+L41:    
     .end code
+    .runtime visible annotations
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_2 = string "core pool size"
+        .end annotation
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_3 = string "max pool size"
+        .end annotation
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_6 = string timeout
+        .end annotation
+    .end runtime
 .end method
 
 .method public break : (LqE;)V
@@ -435,7 +446,7 @@ L131:   dup
 L132:   pop2
 L133:   ireturn
 L134:   
-        .attribute StackMap b'\x00\x0A\x00\x18\x00\x00\x00\x01\x07\x00\x33\x00\x19\x00\x01\x07\x00\x02\x00\x00\x00\x2C\x00\x02\x07\x00\x02\x03\x00\x01\x07\x00\x02\x00\x4F\x00\x00\x00\x01\x07\x00\x33\x00\x50\x00\x03\x07\x00\x02\x03\x07\x00\x08\x00\x00\x00\x54\x00\x03\x07\x00\x02\x03\x07\x00\x08\x00\x01\x03\x00\x63\x00\x02\x07\x00\x02\x03\x00\x01\x07\x00\x1E\x00\x68\x00\x02\x07\x00\x02\x03\x00\x00\x00\x69\x00\x02\x07\x00\x02\x03\x00\x01\x07\x00\x02\x00\x76\x00\x02\x07\x00\x02\x03\x00\x00'
+        .attribute StackMap b'\x00\x0A\x00\x18\x00\x00\x00\x01\x07\x00\x3D\x00\x19\x00\x01\x07\x00\x02\x00\x00\x00\x2C\x00\x02\x07\x00\x02\x03\x00\x01\x07\x00\x02\x00\x4F\x00\x00\x00\x01\x07\x00\x3D\x00\x50\x00\x03\x07\x00\x02\x03\x07\x00\x08\x00\x00\x00\x54\x00\x03\x07\x00\x02\x03\x07\x00\x08\x00\x01\x03\x00\x63\x00\x02\x07\x00\x02\x03\x00\x01\x07\x00\x1E\x00\x68\x00\x02\x07\x00\x02\x03\x00\x00\x00\x69\x00\x02\x07\x00\x02\x03\x00\x01\x07\x00\x02\x00\x76\x00\x02\x07\x00\x02\x03\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method
@@ -460,7 +471,7 @@ L24:    putfield Field ae this Ljava/util/concurrent/Future;
 L27:    pop
 L28:    return
 L29:    
-        .attribute StackMap b'\x00\x02\x00\x08\x00\x00\x00\x01\x07\x00\x33\x00\x09\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x08\x00\x00\x00\x01\x07\x00\x3D\x00\x09\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 .innerclasses
