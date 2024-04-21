@@ -2,6 +2,7 @@
 
 # removed BASS audio backend for better perf
 
+known - next song crashes game (F6)
 
 Non-Invasive, trimmed down version with only minor tweaks. 
 
