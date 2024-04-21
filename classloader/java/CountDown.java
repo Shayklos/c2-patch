@@ -26,35 +26,23 @@ public class CountDown implements Talker<Integer> {
         int currentCallNumber = incrementAndGet();
         String formattedMessage = "CountDown call= " + currentCallNumber + " value=" + message;
 
-        // Check for specific moments to print a special message
-        if (currentCallNumber == 1) {
+        // Using modulo to determine the current cycle position
+        int positionInCycle = currentCallNumber % 160;
+
+        // Apply modulo check to trigger messages at start, midpoint, and endpoint
+        if (positionInCycle == 1) {  // Adjusted for start message (1, 161, 321, ...)
             printQueue.offer("Starting countdown: " + formattedMessage);
-        } else if (currentCallNumber == 80) {
+        } else if (positionInCycle == 80) {  // Consistent for midpoint (80, 240, 400, ...)
             printQueue.offer("Midpoint of countdown: " + formattedMessage);
-        } else if (currentCallNumber == 160) {
+        } else if (positionInCycle == 0) {  // Adjusted for end message (160, 320, 480, ...)
             printQueue.offer("Ending countdown: " + formattedMessage);
-        } else {
-            // printQueue.offer(formattedMessage);
         }
 
         return message;
     }
 
     private static int incrementAndGet() {
-        return ++callNumber;
+        callNumber = (callNumber + 1) % 160;  // Ensure the cycle continues by wrapping around every 160
+        return callNumber;
     }
 }
-
-
-
-
-
-// public class InputMachine implements Talker<Float> {
-
-//     @Override
-//     public Float say(Float message) {
-//         System.out.println("InputMachine: " + message);
-//         return message;
-//     }
-// }
-
