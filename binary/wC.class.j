@@ -40,7 +40,7 @@ L4:     aload_0
 L5:     dup_x1
 L6:     getfield Field wC else Ljava/lang/String;
 L9:     invokestatic Method JB break (Ljava/lang/String;)I
-L12:    bipush 8
+L12:    bipush 47
 L14:    iconst_1
 L15:    dup
 L16:    pop2
