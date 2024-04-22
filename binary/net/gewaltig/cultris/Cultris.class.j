@@ -5,6 +5,12 @@
 .field public static else LFE;
 .field public static "enum" Z
 .field public static do Z
+.field public static framerate I = 60
+.field public static refreshrate I = 60
+.field public static blurtoggle F = 0e0f
+.field public static backgroundcolorGreen F = 1e-1f
+.field public static backgroundcolorBlue F = 5e-1f
+.field public static backgroundcolorRed F = 5e-1f
 
 .method static short : ()V
     .code stack 1 locals 0
@@ -15,7 +21,7 @@ L9:     goto L3
 L12:    athrow
 L13:    return
 L14:    
-        .attribute StackMap b'\x00\x03\x00\x03\x00\x00\x00\x00\x00\x0C\x00\x00\x00\x01\x07\x00\x1B\x00\x0D\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x03\x00\x00\x00\x00\x00\x0C\x00\x00\x00\x01\x07\x00\x27\x00\x0D\x00\x00\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method
@@ -26,7 +32,7 @@ L0:     goto L4
 L3:     athrow
 L4:     return
 L5:     
-        .attribute StackMap b'\x00\x02\x00\x03\x00\x00\x00\x01\x07\x00\x1B\x00\x04\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x03\x00\x00\x00\x01\x07\x00\x27\x00\x04\x00\x00\x00\x00'
     .end code
 .end method
 
@@ -51,7 +57,7 @@ L28:    return
 L29:    astore_0
 L30:    return
 L31:    
-        .attribute StackMap b'\x00\x07\x00\x0F\x00\x00\x00\x01\x07\x00\x1B\x00\x10\x00\x00\x00\x01\x07\x00\x1B\x00\x11\x00\x00\x00\x00\x00\x17\x00\x00\x00\x01\x07\x00\x1B\x00\x18\x00\x00\x00\x01\x07\x00\x1B\x00\x19\x00\x00\x00\x00\x00\x1D\x00\x00\x00\x01\x07\x00\x1B'
+        .attribute StackMap b'\x00\x07\x00\x0F\x00\x00\x00\x01\x07\x00\x27\x00\x10\x00\x00\x00\x01\x07\x00\x27\x00\x11\x00\x00\x00\x00\x00\x17\x00\x00\x00\x01\x07\x00\x27\x00\x18\x00\x00\x00\x01\x07\x00\x27\x00\x19\x00\x00\x00\x00\x00\x1D\x00\x00\x00\x01\x07\x00\x27'
     .end code
 .end method
 
@@ -67,71 +73,103 @@ L5:
 .method public static main : ([Ljava/lang/String;)V
     .code stack 5 locals 4
 L0:     invokestatic Method net/gewaltig/cultris/Cultris const ()V
-        .catch java/lang/Throwable from L3 to L42 using L49
-L3:     invokestatic Method net/gewaltig/cultris/Cultris break ()V
-L6:     aload_0
-L7:     arraylength
-L8:     iconst_1
-L9:     dup
-L10:    dup
-L11:    pop2
-L12:    if_icmpne L39
-L15:    ldc "profile_run"
-L17:    aload_0
-L18:    iconst_0
-L19:    iconst_1
-L20:    dup
-L21:    pop2
-L22:    aaload
-L23:    invokevirtual Method java/lang/String equals (Ljava/lang/Object;)Z
-L26:    ifeq L39
-L29:    new net/gewaltig/cultris/i
-L32:    dup
-L33:    invokespecial Method net/gewaltig/cultris/i <init> ()V
-L36:    invokestatic Method ib break (LM;)V
-L39:    invokestatic Method net/gewaltig/cultris/Cultris short ()V
-L42:    invokestatic Method net/gewaltig/cultris/Cultris else ()V
-L45:    goto L102
-L48:    athrow
-L49:    astore_1
-        .catch java/lang/Throwable from L50 to L53 using L58
-L50:    invokestatic Method org/lwjgl/opengl/Display "public" ()V
-L53:    aload_1
-L54:    goto L60
-L57:    athrow
-L58:    astore_2
-L59:    aload_1
-L60:    invokevirtual Method java/lang/Throwable printStackTrace ()V
-        .catch java/lang/Throwable from L63 to L75 using L78
-        .catch [0] from L3 to L42 using L96
-        .catch [0] from L49 to L57 using L96
-        .catch [0] from L58 to L90 using L96
-L63:    new sD
-L66:    dup
-L67:    getstatic Field net/gewaltig/cultris/Cultris else LFE;
-L70:    aload_1
-L71:    invokespecial Method sD <init> (LFE;Ljava/lang/Throwable;)V
-L74:    pop
-L75:    goto L90
-L78:    astore_2
-L79:    aload_2
-L80:    invokevirtual Method java/lang/Throwable printStackTrace ()V
-L83:    getstatic Field net/gewaltig/cultris/Cultris else LFE;
-L86:    aload_1
-L87:    invokestatic Method sD break (LFE;Ljava/lang/Throwable;)V
-L90:    invokestatic Method net/gewaltig/cultris/Cultris else ()V
-L93:    goto L102
-        .catch [0] from L96 to L97 using L96
-L96:    astore_3
-L97:    invokestatic Method net/gewaltig/cultris/Cultris else ()V
-L100:   aload_3
-L101:   athrow
-L102:   invokestatic Method ib else ()V
-L105:   return
-L106:   
-        .attribute StackMap b'\x00\x0A\x00\x27\x00\x01\x07\x00\x41\x00\x00\x00\x30\x00\x00\x00\x01\x07\x00\x1B\x00\x31\x00\x01\x07\x00\x41\x00\x01\x07\x00\x1B\x00\x39\x00\x00\x00\x01\x07\x00\x1B\x00\x3A\x00\x02\x07\x00\x41\x07\x00\x1B\x00\x01\x07\x00\x1B\x00\x3C\x00\x02\x07\x00\x41\x07\x00\x1B\x00\x01\x07\x00\x1B\x00\x4E\x00\x02\x07\x00\x41\x07\x00\x1B\x00\x01\x07\x00\x1B\x00\x5A\x00\x02\x07\x00\x41\x07\x00\x1B\x00\x00\x00\x60\x00\x01\x07\x00\x41\x00\x01\x07\x00\x1B\x00\x66\x00\x01\x07\x00\x41\x00\x00'
+        .catch java/lang/Throwable from L3 to L78 using L85
+L3:     invokestatic Method FE readfpsvalue ()I
+L6:     putstatic Field net/gewaltig/cultris/Cultris framerate I
+L9:     invokestatic Method FE readhzvalue ()I
+L12:    putstatic Field net/gewaltig/cultris/Cultris refreshrate I
+L15:    invokestatic Method FE readblurtoggle ()F
+L18:    putstatic Field net/gewaltig/cultris/Cultris blurtoggle F
+L21:    invokestatic Method ReadBackgroundColor getRed ()F
+L24:    putstatic Field net/gewaltig/cultris/Cultris backgroundcolorRed F
+L27:    invokestatic Method ReadBackgroundColor getGreen ()F
+L30:    putstatic Field net/gewaltig/cultris/Cultris backgroundcolorGreen F
+L33:    invokestatic Method ReadBackgroundColor getBlue ()F
+L36:    putstatic Field net/gewaltig/cultris/Cultris backgroundcolorBlue F
+L39:    invokestatic Method net/gewaltig/cultris/Cultris break ()V
+L42:    aload_0
+L43:    arraylength
+L44:    iconst_1
+L45:    dup
+L46:    dup
+L47:    pop2
+L48:    if_icmpne L75
+L51:    ldc "profile_run"
+L53:    aload_0
+L54:    iconst_0
+L55:    iconst_1
+L56:    dup
+L57:    pop2
+L58:    aaload
+L59:    invokevirtual Method java/lang/String equals (Ljava/lang/Object;)Z
+L62:    ifeq L75
+L65:    new net/gewaltig/cultris/i
+L68:    dup
+L69:    invokespecial Method net/gewaltig/cultris/i <init> ()V
+L72:    invokestatic Method ib break (LM;)V
+L75:    invokestatic Method net/gewaltig/cultris/Cultris short ()V
+L78:    invokestatic Method net/gewaltig/cultris/Cultris else ()V
+L81:    goto L138
+L84:    athrow
+L85:    astore_1
+        .catch java/lang/Throwable from L86 to L89 using L94
+L86:    invokestatic Method org/lwjgl/opengl/Display "public" ()V
+L89:    aload_1
+L90:    goto L96
+L93:    athrow
+L94:    astore_2
+L95:    aload_1
+L96:    invokevirtual Method java/lang/Throwable printStackTrace ()V
+        .catch java/lang/Throwable from L99 to L111 using L114
+        .catch [0] from L3 to L78 using L132
+        .catch [0] from L85 to L93 using L132
+        .catch [0] from L94 to L126 using L132
+L99:    new sD
+L102:   dup
+L103:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L106:   aload_1
+L107:   invokespecial Method sD <init> (LFE;Ljava/lang/Throwable;)V
+L110:   pop
+L111:   goto L126
+L114:   astore_2
+L115:   aload_2
+L116:   invokevirtual Method java/lang/Throwable printStackTrace ()V
+L119:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L122:   aload_1
+L123:   invokestatic Method sD break (LFE;Ljava/lang/Throwable;)V
+L126:   invokestatic Method net/gewaltig/cultris/Cultris else ()V
+L129:   goto L138
+        .catch [0] from L132 to L133 using L132
+L132:   astore_3
+L133:   invokestatic Method net/gewaltig/cultris/Cultris else ()V
+L136:   aload_3
+L137:   athrow
+L138:   invokestatic Method ib else ()V
+L141:   return
+L142:   
+        .attribute StackMap b'\x00\x0A\x00\x4B\x00\x01\x07\x00\x8F\x00\x00\x00\x54\x00\x00\x00\x01\x07\x00\x27\x00\x55\x00\x01\x07\x00\x8F\x00\x01\x07\x00\x27\x00\x5D\x00\x00\x00\x01\x07\x00\x27\x00\x5E\x00\x02\x07\x00\x8F\x07\x00\x27\x00\x01\x07\x00\x27\x00\x60\x00\x02\x07\x00\x8F\x07\x00\x27\x00\x01\x07\x00\x27\x00\x72\x00\x02\x07\x00\x8F\x07\x00\x27\x00\x01\x07\x00\x27\x00\x7E\x00\x02\x07\x00\x8F\x07\x00\x27\x00\x00\x00\x84\x00\x01\x07\x00\x8F\x00\x01\x07\x00\x27\x00\x8A\x00\x01\x07\x00\x8F\x00\x00'
     .end code
     .exceptions java/lang/Exception
+    .runtime visible annotations
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_2 = string "save framerate value onto a field to read it later from FE"
+        .end annotation
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_4 = string "save refreshrate value onto a field to read it later from FE"
+        .end annotation
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_6 = string "save blurtoggle value onto a field to read it later from FE"
+        .end annotation
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_8 = string "save backgroundcolor Red value onto a field to read it later from FE"
+        .end annotation
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_10 = string "save backgroundcolor Green value onto a field to read it later from FE"
+        .end annotation
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_12 = string "save backgroundcolor Blue value onto a field to read it later from FE"
+        .end annotation
+    .end runtime
 .end method
 
 .method static <clinit> : ()V
@@ -312,59 +350,59 @@ L276:   invokespecial Method fe <init> ()V
 L279:   astore_1
 L280:   new md
 L283:   dup
-L284:   ldc "server1.gewaltig.net"
-L286:   invokespecial Method md <init> (Ljava/lang/String;)V
-L289:   putstatic Field Kc else LKc;
-L292:   new cb
-L295:   dup
-L296:   invokespecial Method cb <init> ()V
-L299:   astore_2
-L300:   new kD
-L303:   dup
-L304:   aload_2
-L305:   aload_1
-L306:   invokespecial Method kD <init> (LbC;Lgg;)V
-L309:   astore_3
-L310:   getstatic Field net/gewaltig/cultris/Cultris "enum" Z
-L313:   ifeq L351
-L316:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
-L319:   new CF
-L322:   dup
-L323:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
-L326:   aload_3
-L327:   aload_2
-L328:   aload_1
-L329:   invokespecial Method CF <init> (LFE;LbC;LbC;Lgg;)V
-L332:   invokevirtual Method FE break (Lgg;)V
-L335:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
-L338:   aload_3
-L339:   invokevirtual Method FE else (LbC;)V
-L342:   invokestatic Method cD break ()LcD;
-L345:   invokevirtual Method cD else ()V
-L348:   goto L365
-L351:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
-L354:   aload_1
-L355:   invokevirtual Method FE break (Lgg;)V
-L358:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
-L361:   aload_2
-L362:   invokevirtual Method FE else (LbC;)V
-L365:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
-L368:   invokestatic Method cD break ()LcD;
-L371:   invokevirtual Method FE else (LbC;)V
-L374:   invokestatic Method UE for ()V
-L377:   ldc "load_successful"
-L379:   iconst_1
-L380:   dup
+L284:   ldc_w "server1.gewaltig.net"
+L287:   invokespecial Method md <init> (Ljava/lang/String;)V
+L290:   putstatic Field Kc else LKc;
+L293:   new cb
+L296:   dup
+L297:   invokespecial Method cb <init> ()V
+L300:   astore_2
+L301:   new kD
+L304:   dup
+L305:   aload_2
+L306:   aload_1
+L307:   invokespecial Method kD <init> (LbC;Lgg;)V
+L310:   astore_3
+L311:   getstatic Field net/gewaltig/cultris/Cultris "enum" Z
+L314:   ifeq L352
+L317:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L320:   new CF
+L323:   dup
+L324:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L327:   aload_3
+L328:   aload_2
+L329:   aload_1
+L330:   invokespecial Method CF <init> (LFE;LbC;LbC;Lgg;)V
+L333:   invokevirtual Method FE break (Lgg;)V
+L336:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L339:   aload_3
+L340:   invokevirtual Method FE else (LbC;)V
+L343:   invokestatic Method cD break ()LcD;
+L346:   invokevirtual Method cD else ()V
+L349:   goto L366
+L352:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L355:   aload_1
+L356:   invokevirtual Method FE break (Lgg;)V
+L359:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L362:   aload_2
+L363:   invokevirtual Method FE else (LbC;)V
+L366:   getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L369:   invokestatic Method cD break ()LcD;
+L372:   invokevirtual Method FE else (LbC;)V
+L375:   invokestatic Method UE for ()V
+L378:   ldc "load_successful"
+L380:   iconst_1
 L381:   dup
-L382:   pop2
-L383:   invokestatic Method JB break (Ljava/lang/String;I)V
-L386:   invokestatic Method JB new ()V
-L389:   getstatic Field Kc else LKc;
-L392:   checkcast md
-L395:   invokevirtual Method md do ()V
-L398:   return
-L399:   
-        .attribute StackMap b'\x00\x0D\x00\x1C\x00\x00\x00\x00\x00\x62\x00\x00\x00\x01\x07\x00\x1B\x00\x63\x00\x00\x00\x01\x07\x00\x10\x00\x68\x00\x01\x07\x00\x04\x00\x00\x00\x6D\x00\x00\x00\x00\x00\xA8\x00\x00\x00\x01\x07\x00\x1B\x00\xA9\x00\x00\x00\x01\x07\x00\x79\x00\xB1\x00\x00\x00\x00\x00\xE5\x00\x01\x07\x00\xD4\x00\x00\x01\x10\x00\x01\x07\x00\xD4\x00\x00\x01\x18\x00\x02\x07\x00\xD4\x07\x00\xE7\x00\x00\x01\x5F\x00\x04\x07\x00\xD4\x07\x00\xE7\x07\x00\xF3\x07\x00\xF6\x00\x00\x01\x6D\x00\x04\x07\x00\xD4\x07\x00\xE7\x07\x00\xF3\x07\x00\xF6\x00\x00'
+L382:   dup
+L383:   pop2
+L384:   invokestatic Method JB break (Ljava/lang/String;I)V
+L387:   invokestatic Method JB new ()V
+L390:   getstatic Field Kc else LKc;
+L393:   checkcast md
+L396:   invokevirtual Method md do ()V
+L399:   return
+L400:   
+        .attribute StackMap b'\x00\x0D\x00\x1C\x00\x00\x00\x00\x00\x62\x00\x00\x00\x01\x07\x00\x27\x00\x63\x00\x00\x00\x01\x07\x00\x1C\x00\x68\x00\x01\x07\x00\x04\x00\x00\x00\x6D\x00\x00\x00\x00\x00\xA8\x00\x00\x00\x01\x07\x00\x27\x00\xA9\x00\x00\x00\x01\x07\x00\xB4\x00\xB1\x00\x00\x00\x00\x00\xE5\x00\x01\x07\x01\x0F\x00\x00\x01\x10\x00\x01\x07\x01\x0F\x00\x00\x01\x18\x00\x02\x07\x01\x0F\x07\x01\x49\x00\x00\x01\x60\x00\x04\x07\x01\x0F\x07\x01\x49\x07\x01\x2C\x07\x01\x2F\x00\x00\x01\x6E\x00\x04\x07\x01\x0F\x07\x01\x49\x07\x01\x2C\x07\x01\x2F\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method
