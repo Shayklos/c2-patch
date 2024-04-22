@@ -19,186 +19,148 @@
 .field private static final null F = 1.2e-1f
 .field public this I
 .field private char F
-.field private static final blue F = 0e0f
-.field private static final red F = 0e0f
-.field private static final green F = 0e0f
-.field private static final animstate I = -1
 
 .method public background : (ZF)V
-    .code stack 6 locals 3
-L0:     invokestatic Method fe readanimstate ()I
-L3:     sipush -1
-L6:     if_icmplt L15
-L9:     invokestatic Method fe readanimstate ()I
-L12:    putstatic Field fe animstate I
-L15:    iload_1
-L16:    ifne L41
-L19:    bipush 7
-L21:    iconst_1
-L22:    dup
-L23:    pop2
-L24:    invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
-L27:    getstatic Field fe red F
-L30:    fconst_0
-L31:    fcmpl
-L32:    ifne L55
-L35:    invokestatic Method ReadBackgroundColor getRed ()F
-L38:    putstatic Field fe red F
-L41:    getstatic Field fe green F
+    .code stack 6 locals 4
+L0:     invokestatic Method fe readanimtoggle ()I
+L3:     istore_3
+L4:     iload_1
+L5:     ifne L72
+L8:     bipush 7
+L10:    iconst_1
+L11:    dup
+L12:    pop2
+L13:    invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
+L16:    ldc 1e-1f
+L18:    ldc 3.5e-1f
+L20:    ldc 5e-1f
+L22:    fconst_1
+L23:    invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L26:    ldc -3.2e1f
+L28:    ldc 2.4e1f
+L30:    ldc 7.9e1f
+L32:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L35:    ldc 3.2e1f
+L37:    ldc 2.4e1f
+L39:    ldc 7.9e1f
+L41:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
 L44:    fconst_0
-L45:    fcmpl
-L46:    ifne L55
-L49:    invokestatic Method ReadBackgroundColor getGreen ()F
-L52:    putstatic Field fe green F
-L55:    getstatic Field fe blue F
-L58:    fconst_0
-L59:    fcmpl
-L60:    ifne L69
-L63:    invokestatic Method ReadBackgroundColor getBlue ()F
-L66:    putstatic Field fe blue F
-L69:    getstatic Field fe red F
-L72:    getstatic Field fe green F
-L75:    getstatic Field fe blue F
-L78:    fconst_1
-L79:    invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L82:    ldc -3.2e1f
-L84:    ldc 2.4e1f
-L86:    ldc 7.9e1f
-L88:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L91:    ldc 3.2e1f
-L93:    ldc 2.4e1f
-L95:    ldc 7.9e1f
-L97:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L100:   fconst_0
-L101:   dup
-L102:   dup_x1
-L103:   fconst_1
-L104:   invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L107:   ldc 3.2e1f
-L109:   ldc -2.4e1f
-L111:   ldc 7.9e1f
-L113:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L116:   ldc -3.2e1f
-L118:   ldc -2.4e1f
-L120:   ldc 7.9e1f
-L122:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L125:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
-L128:   invokestatic Method FE goto ()V
-L131:   invokestatic Method org/lwjgl/opengl/GL11 char ()V
-L134:   ldc 1.2e1f
-L136:   fconst_1
-L137:   fconst_0
-L138:   dup
-L139:   invokestatic Method org/lwjgl/opengl/GL11 for (FFFF)V
-L142:   ldc -3.55e1f
-L144:   aload_0
-L145:   getfield Field fe byte F
-L148:   fsub
-L149:   ldc 5e0f
-L151:   ldc 8e0f
-L153:   aload_0
-L154:   getfield Field fe char F
-L157:   fsub
-L158:   invokestatic Method org/lwjgl/opengl/GL11 const (FFF)V
-L161:   iload_1
-L162:   ifeq L169
-L165:   aload_0
-L166:   invokespecial Method fe else ()V
-L169:   iconst_3
-L170:   iconst_1
-L171:   dup
-L172:   pop2
-L173:   iconst_0
-L174:   iconst_1
-L175:   dup
-L176:   pop2
-L177:   aload_0
-L178:   getfield Field fe int Ljava/nio/FloatBuffer;
-L181:   invokestatic Method org/lwjgl/opengl/GL11 break (IILjava/nio/FloatBuffer;)V
-L184:   iconst_0
-L185:   iconst_1
-L186:   dup
-L187:   pop2
-L188:   dup
-L189:   istore_1
+L45:    dup
+L46:    dup_x1
+L47:    fconst_1
+L48:    invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L51:    ldc 3.2e1f
+L53:    ldc -2.4e1f
+L55:    ldc 7.9e1f
+L57:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L60:    ldc -3.2e1f
+L62:    ldc -2.4e1f
+L64:    ldc 7.9e1f
+L66:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L69:    invokestatic Method org/lwjgl/opengl/GL11 float ()V
+L72:    invokestatic Method FE goto ()V
+L75:    invokestatic Method org/lwjgl/opengl/GL11 char ()V
+L78:    ldc 1.2e1f
+L80:    fconst_1
+L81:    fconst_0
+L82:    dup
+L83:    invokestatic Method org/lwjgl/opengl/GL11 for (FFFF)V
+L86:    ldc -3.55e1f
+L88:    aload_0
+L89:    getfield Field fe byte F
+L92:    fsub
+L93:    ldc 5e0f
+L95:    ldc 8e0f
+L97:    aload_0
+L98:    getfield Field fe char F
+L101:   fsub
+L102:   invokestatic Method org/lwjgl/opengl/GL11 const (FFF)V
+L105:   iload_1
+L106:   ifeq L113
+L109:   aload_0
+L110:   invokespecial Method fe else ()V
+L113:   iconst_3
+L114:   iconst_1
+L115:   dup
+L116:   pop2
+L117:   iconst_0
+L118:   iconst_1
+L119:   dup
+L120:   pop2
+L121:   aload_0
+L122:   getfield Field fe int Ljava/nio/FloatBuffer;
+L125:   invokestatic Method org/lwjgl/opengl/GL11 break (IILjava/nio/FloatBuffer;)V
+L128:   iconst_0
+L129:   iconst_1
+L130:   dup
+L131:   pop2
+L132:   dup
+L133:   istore_1
+L134:   iconst_1
+L135:   dup
+L136:   pop2
+L137:   iload_3
+L138:   if_icmpge L211
+L141:   fconst_1
+L142:   dup
+L143:   dup_x1
+L144:   dup_x2
+L145:   iload_1
+L146:   i2f
+L147:   aload_0
+L148:   getfield Field fe char F
+L151:   fsub
+L152:   ldc 7.5e1f
+L154:   fdiv
+L155:   fsub
+L156:   ldc 1e-1f
+L158:   fmul
+L159:   invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L162:   iconst_3
+L163:   iconst_1
+L164:   dup
+L165:   pop2
+L166:   aload_0
+L167:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L170:   iload_1
+L171:   iconst_2
+L172:   iconst_1
+L173:   dup
+L174:   pop2
+L175:   imul
+L176:   aaload
+L177:   invokestatic Method org/lwjgl/opengl/GL11 break (ILjava/nio/ShortBuffer;)V
+L180:   iconst_3
+L181:   iconst_1
+L182:   dup
+L183:   pop2
+L184:   aload_0
+L185:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L188:   iload_1
+L189:   iconst_2
 L190:   iconst_1
 L191:   dup
 L192:   pop2
-L193:   getstatic Field fe animstate I
-L196:   if_icmpge L268
-L199:   fconst_1
-L200:   dup
-L201:   dup_x1
-L202:   dup_x2
-L203:   iload_1
-L204:   i2f
-L205:   aload_0
-L206:   getfield Field fe char F
-L209:   fsub
-L210:   ldc 7.5e1f
-L212:   fdiv
-L213:   fsub
-L214:   ldc 1e-1f
-L216:   fmul
-L217:   invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L220:   iconst_3
-L221:   iconst_1
-L222:   dup
-L223:   pop2
-L224:   aload_0
-L225:   getfield Field fe const [Ljava/nio/ShortBuffer;
-L228:   iload_1
-L229:   iconst_2
-L230:   iconst_1
-L231:   dup
-L232:   pop2
-L233:   imul
-L234:   aaload
-L235:   invokestatic Method org/lwjgl/opengl/GL11 break (ILjava/nio/ShortBuffer;)V
-L238:   iconst_3
-L239:   iconst_1
-L240:   dup
-L241:   pop2
-L242:   aload_0
-L243:   getfield Field fe const [Ljava/nio/ShortBuffer;
-L246:   iload_1
-L247:   iconst_2
-L248:   iconst_1
-L249:   dup
-L250:   pop2
-L251:   imul
-L252:   iconst_1
-L253:   dup
-L254:   dup
-L255:   pop2
-L256:   iadd
-L257:   iinc 1 1
-L260:   aaload
-L261:   invokestatic Method org/lwjgl/opengl/GL11 break (ILjava/nio/ShortBuffer;)V
-L264:   iload_1
-L265:   goto L190
-L268:   invokestatic Method org/lwjgl/opengl/GL11 do ()V
-L271:   return
-L272:   
-        .attribute StackMap b'\x00\x07\x00\x0F\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x29\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x37\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x45\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\xA9\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\xBE\x00\x03\x07\x00\x02\x01\x02\x00\x01\x01\x01\x0C\x00\x03\x07\x00\x02\x01\x02\x00\x00'
+L193:   imul
+L194:   iconst_1
+L195:   dup
+L196:   dup
+L197:   pop2
+L198:   iadd
+L199:   iinc 1 1
+L202:   aaload
+L203:   invokestatic Method org/lwjgl/opengl/GL11 break (ILjava/nio/ShortBuffer;)V
+L206:   iload_1
+L207:   goto L134
+L210:   athrow
+L211:   invokestatic Method org/lwjgl/opengl/GL11 do ()V
+L214:   return
+L215:   
+        .attribute StackMap b'\x00\x05\x00\x48\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00\x00\x71\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00\x00\x86\x00\x04\x07\x00\x02\x01\x02\x01\x00\x01\x01\x00\xD2\x00\x00\x00\x01\x07\x00\x68\x00\xD3\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00'
+        .localvariabletable
+            3 is animtoggle I from L0 to L211
+        .end localvariabletable
     .end code
-    .runtime visible annotations
-        .annotation Lme/coley/recaf/metadata/InsnComment;
-            At_2 = string "if (fe.readanimstate() >= -1) {"
-        .end annotation
-        .annotation Lme/coley/recaf/metadata/InsnComment;
-            At_14 = string "Check if red is initialized"
-        .end annotation
-        .annotation Lme/coley/recaf/metadata/InsnComment;
-            At_21 = string "Check if green is initialized"
-        .end annotation
-        .annotation Lme/coley/recaf/metadata/InsnComment;
-            At_28 = string "Check if blue is initialized"
-        .end annotation
-        .annotation Lme/coley/recaf/metadata/InsnComment;
-            At_35 = string "Use the stored color values"
-        .end annotation
-    .end runtime
 .end method
 
 .method public break : ()V
@@ -465,7 +427,7 @@ L377:   invokevirtual Method java/nio/FloatBuffer flip ()Ljava/nio/Buffer;
 L380:   pop
 L381:   return
 L382:   
-        .attribute StackMap b'\x00\x0F\x00\x18\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\x32\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x00\x56\x00\x00\x00\x01\x07\x00\xC8\x00\x57\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x5E\x00\x00\x00\x01\x07\x00\xC8\x00\x5F\x00\x02\x07\x00\x02\x01\x00\x00\x00\x67\x00\x02\x07\x00\x02\x07\x00\x9B\x00\x00\x00\xA0\x00\x05\x07\x00\x02\x07\x00\x9B\x07\x00\xA5\x02\x01\x00\x01\x01\x00\xD7\x00\x08\x07\x00\x02\x07\x00\x9B\x07\x00\xA5\x02\x01\x01\x02\x01\x00\x01\x01\x01\x36\x00\x09\x07\x00\x02\x07\x00\x9B\x07\x00\xA5\x02\x01\x01\x02\x01\x02\x00\x00\x01\x3E\x00\x08\x07\x00\x02\x07\x00\x9B\x07\x00\xA5\x02\x01\x01\x02\x01\x00\x00\x01\x46\x00\x00\x00\x01\x07\x00\xC8\x01\x49\x00\x02\x07\x00\x02\x07\x00\x9B\x00\x00\x01\x57\x00\x02\x07\x00\x02\x01\x00\x01\x01\x01\x75\x00\x02\x07\x00\x02\x01\x00\x00'
+        .attribute StackMap b'\x00\x0F\x00\x18\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\x32\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x00\x56\x00\x00\x00\x01\x07\x00\x68\x00\x57\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x5E\x00\x00\x00\x01\x07\x00\x68\x00\x5F\x00\x02\x07\x00\x02\x01\x00\x00\x00\x67\x00\x02\x07\x00\x02\x07\x00\x7B\x00\x00\x00\xA0\x00\x05\x07\x00\x02\x07\x00\x7B\x07\x00\x85\x02\x01\x00\x01\x01\x00\xD7\x00\x08\x07\x00\x02\x07\x00\x7B\x07\x00\x85\x02\x01\x01\x02\x01\x00\x01\x01\x01\x36\x00\x09\x07\x00\x02\x07\x00\x7B\x07\x00\x85\x02\x01\x01\x02\x01\x02\x00\x00\x01\x3E\x00\x08\x07\x00\x02\x07\x00\x7B\x07\x00\x85\x02\x01\x01\x02\x01\x00\x00\x01\x46\x00\x00\x00\x01\x07\x00\x68\x01\x49\x00\x02\x07\x00\x02\x07\x00\x7B\x00\x00\x01\x57\x00\x02\x07\x00\x02\x01\x00\x01\x01\x01\x75\x00\x02\x07\x00\x02\x01\x00\x00'
     .end code
 .end method
 
@@ -1109,7 +1071,7 @@ L846:   iload_1
 L847:   goto L774
 L850:   return
 L851:   
-        .attribute StackMap b'\x00\x12\x00\x49\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\x5B\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x00\x7F\x00\x00\x00\x01\x07\x00\xC8\x00\x80\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x87\x00\x00\x00\x01\x07\x00\xC8\x00\x88\x00\x02\x07\x00\x02\x01\x00\x00\x00\x8E\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\xC6\x00\x02\x07\x00\x02\x01\x00\x00\x01\x3B\x00\x02\x07\x00\x02\x01\x00\x01\x01\x01\xAD\x00\x04\x07\x00\x02\x01\x01\x01\x00\x01\x01\x02\x1D\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00\x02\x60\x00\x04\x07\x00\x02\x01\x01\x01\x00\x01\x01\x02\xE5\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00\x03\x00\x00\x02\x07\x00\x02\x01\x00\x00\x03\x06\x00\x02\x07\x00\x02\x01\x00\x01\x01\x03\x14\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x03\x4B\x00\x03\x07\x00\x02\x01\x01\x00\x00\x03\x52\x00\x02\x07\x00\x02\x01\x00\x00'
+        .attribute StackMap b'\x00\x12\x00\x49\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\x5B\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x00\x7F\x00\x00\x00\x01\x07\x00\x68\x00\x80\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x87\x00\x00\x00\x01\x07\x00\x68\x00\x88\x00\x02\x07\x00\x02\x01\x00\x00\x00\x8E\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\xC6\x00\x02\x07\x00\x02\x01\x00\x00\x01\x3B\x00\x02\x07\x00\x02\x01\x00\x01\x01\x01\xAD\x00\x04\x07\x00\x02\x01\x01\x01\x00\x01\x01\x02\x1D\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00\x02\x60\x00\x04\x07\x00\x02\x01\x01\x01\x00\x01\x01\x02\xE5\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00\x03\x00\x00\x02\x07\x00\x02\x01\x00\x00\x03\x06\x00\x02\x07\x00\x02\x01\x00\x01\x01\x03\x14\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x03\x4B\x00\x03\x07\x00\x02\x01\x01\x00\x00\x03\x52\x00\x02\x07\x00\x02\x01\x00\x00'
     .end code
 .end method
 
@@ -1243,228 +1205,228 @@ L181:   aload_0
 L182:   dup
 L183:   fconst_1
 L184:   getstatic Field ib do F
-L187:   ldc_w 4e0f
-L190:   fmul
-L191:   fsub
-L192:   aload_0
-L193:   dup_x2
-L194:   getfield Field fe short F
-L197:   fmul
-L198:   getstatic Field ib do F
-L201:   ldc_w 4e0f
-L204:   fmul
-L205:   ldc_w 8e-1f
-L208:   fmul
-L209:   fadd
-L210:   putfield Field fe short F
-L213:   dup
-L214:   getfield Field fe char F
-L217:   aload_0
-L218:   getfield Field fe short F
-L221:   getstatic Field ib do F
-L224:   fmul
-L225:   fadd
-L226:   putfield Field fe char F
-L229:   getfield Field fe char F
-L232:   fconst_1
-L233:   fcmpl
-L234:   ifle L297
-L237:   aload_0
-L238:   dup
-L239:   dup
-L240:   getfield Field fe char F
-L243:   fconst_1
-L244:   fsub
-L245:   putfield Field fe char F
-L248:   getfield Field fe try Ljava/util/ArrayList;
-L251:   invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
-L254:   dup
-L255:   astore_1
-L256:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
-L261:   ifeq L297
-L264:   aload_1
-L265:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
-L270:   checkcast Dc
-L273:   dup
-L274:   astore_2
-L275:   getfield Field Dc "enum" Ljava/lang/Object;
-L278:   checkcast [I
-L281:   iconst_1
-L282:   dup
-L283:   dup
-L284:   pop2
-L285:   dup2
-L286:   iaload
-L287:   iconst_1
-L288:   dup
-L289:   dup
-L290:   pop2
-L291:   isub
-L292:   iastore
-L293:   aload_1
-L294:   goto L256
-L297:   aload_0
-L298:   getfield Field fe char F
-L301:   fconst_0
-L302:   fcmpg
-L303:   ifge L366
-L306:   aload_0
-L307:   dup
-L308:   dup
-L309:   getfield Field fe char F
-L312:   fconst_1
-L313:   fadd
-L314:   putfield Field fe char F
-L317:   getfield Field fe try Ljava/util/ArrayList;
-L320:   invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
-L323:   dup
-L324:   astore_1
-L325:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
-L330:   ifeq L366
-L333:   aload_1
-L334:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
-L339:   checkcast Dc
-L342:   dup
-L343:   astore_2
-L344:   getfield Field Dc "enum" Ljava/lang/Object;
-L347:   checkcast [I
-L350:   iconst_1
-L351:   dup
-L352:   dup
-L353:   pop2
-L354:   dup2
-L355:   iaload
-L356:   iconst_1
-L357:   dup
-L358:   dup
-L359:   pop2
-L360:   iadd
-L361:   iastore
-L362:   aload_1
-L363:   goto L325
-L366:   aload_0
-L367:   getfield Field fe try Ljava/util/ArrayList;
-L370:   invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
-L373:   astore_1
-L374:   aload_1
-L375:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
-L380:   ifeq L444
-L383:   aload_1
-L384:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
-L389:   checkcast Dc
-L392:   dup
-L393:   astore_2
-L394:   getfield Field Dc do Ljava/lang/Object;
-L397:   checkcast [F
-L400:   iconst_0
-L401:   iconst_1
-L402:   dup
-L403:   pop2
-L404:   dup2
-L405:   faload
-L406:   getstatic Field ib do F
-L409:   fconst_2
-L410:   fmul
-L411:   fadd
-L412:   fastore
-L413:   aload_2
-L414:   getfield Field Dc do Ljava/lang/Object;
-L417:   checkcast [F
-L420:   iconst_0
-L421:   iconst_1
-L422:   dup
-L423:   pop2
-L424:   faload
-L425:   ldc 2e-1f
-L427:   fmul
-L428:   ldc_w 1.752e1f
-L431:   fcmpl
-L432:   ifle L374
-L435:   aload_1
-L436:   invokeinterface InterfaceMethod java/util/Iterator remove ()V 1
-L441:   goto L374
-L444:   aload_0
-L445:   getfield Field fe break I
-L448:   sipush 512
-L451:   iconst_1
-L452:   dup
-L453:   pop2
-L454:   if_icmpne L544
-L457:   aload_0
-L458:   getfield Field fe try Ljava/util/ArrayList;
-L461:   new Dc
-L464:   dup
-L465:   iconst_2
-L466:   iconst_1
-L467:   dup
-L468:   pop2
-L469:   newarray int
-L471:   iconst_1
-L472:   dup
-L473:   pop2
-L474:   dup
-L475:   iconst_0
-L476:   iconst_1
-L477:   dup
-L478:   pop2
-L479:   invokestatic Method java/lang/Math random ()D
-L482:   ldc2_w 7.1e1
-L485:   dmul
-L486:   d2i
-L487:   iastore
-L488:   dup
-L489:   iconst_1
-L490:   dup
-L491:   dup
-L492:   pop2
-L493:   invokestatic Method java/lang/Math random ()D
-L496:   ldc2_w 7.5e1
-L499:   dmul
-L500:   d2i
-L501:   iastore
-L502:   iconst_2
-L503:   iconst_1
-L504:   dup
-L505:   pop2
-L506:   newarray float
-L508:   iconst_1
-L509:   dup
-L510:   pop2
-L511:   dup
-L512:   iconst_0
-L513:   iconst_1
-L514:   dup
-L515:   pop2
-L516:   ldc_w -2.5e1f
-L519:   fastore
-L520:   dup
-L521:   iconst_1
-L522:   dup
-L523:   dup
-L524:   pop2
-L525:   ldc_w 2.5e-1f
-L528:   fastore
-L529:   invokespecial Method Dc <init> (Ljava/lang/Object;Ljava/lang/Object;)V
-L532:   invokevirtual Method java/util/ArrayList add (Ljava/lang/Object;)Z
-L535:   aload_0
-L536:   iconst_0
-L537:   iconst_1
-L538:   dup
-L539:   pop2
-L540:   putfield Field fe break I
-L543:   pop
-L544:   aload_0
+L187:   ldc 4e0f
+L189:   fmul
+L190:   fsub
+L191:   aload_0
+L192:   dup_x2
+L193:   getfield Field fe short F
+L196:   fmul
+L197:   getstatic Field ib do F
+L200:   ldc 4e0f
+L202:   fmul
+L203:   ldc 8e-1f
+L205:   fmul
+L206:   fadd
+L207:   putfield Field fe short F
+L210:   dup
+L211:   getfield Field fe char F
+L214:   aload_0
+L215:   getfield Field fe short F
+L218:   getstatic Field ib do F
+L221:   fmul
+L222:   fadd
+L223:   putfield Field fe char F
+L226:   getfield Field fe char F
+L229:   fconst_1
+L230:   fcmpl
+L231:   ifle L294
+L234:   aload_0
+L235:   dup
+L236:   dup
+L237:   getfield Field fe char F
+L240:   fconst_1
+L241:   fsub
+L242:   putfield Field fe char F
+L245:   getfield Field fe try Ljava/util/ArrayList;
+L248:   invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
+L251:   dup
+L252:   astore_1
+L253:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
+L258:   ifeq L294
+L261:   aload_1
+L262:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
+L267:   checkcast Dc
+L270:   dup
+L271:   astore_2
+L272:   getfield Field Dc "enum" Ljava/lang/Object;
+L275:   checkcast [I
+L278:   iconst_1
+L279:   dup
+L280:   dup
+L281:   pop2
+L282:   dup2
+L283:   iaload
+L284:   iconst_1
+L285:   dup
+L286:   dup
+L287:   pop2
+L288:   isub
+L289:   iastore
+L290:   aload_1
+L291:   goto L253
+L294:   aload_0
+L295:   getfield Field fe char F
+L298:   fconst_0
+L299:   fcmpg
+L300:   ifge L363
+L303:   aload_0
+L304:   dup
+L305:   dup
+L306:   getfield Field fe char F
+L309:   fconst_1
+L310:   fadd
+L311:   putfield Field fe char F
+L314:   getfield Field fe try Ljava/util/ArrayList;
+L317:   invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
+L320:   dup
+L321:   astore_1
+L322:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
+L327:   ifeq L363
+L330:   aload_1
+L331:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
+L336:   checkcast Dc
+L339:   dup
+L340:   astore_2
+L341:   getfield Field Dc "enum" Ljava/lang/Object;
+L344:   checkcast [I
+L347:   iconst_1
+L348:   dup
+L349:   dup
+L350:   pop2
+L351:   dup2
+L352:   iaload
+L353:   iconst_1
+L354:   dup
+L355:   dup
+L356:   pop2
+L357:   iadd
+L358:   iastore
+L359:   aload_1
+L360:   goto L322
+L363:   aload_0
+L364:   getfield Field fe try Ljava/util/ArrayList;
+L367:   invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
+L370:   astore_1
+L371:   aload_1
+L372:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
+L377:   ifeq L440
+L380:   aload_1
+L381:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
+L386:   checkcast Dc
+L389:   dup
+L390:   astore_2
+L391:   getfield Field Dc do Ljava/lang/Object;
+L394:   checkcast [F
+L397:   iconst_0
+L398:   iconst_1
+L399:   dup
+L400:   pop2
+L401:   dup2
+L402:   faload
+L403:   getstatic Field ib do F
+L406:   fconst_2
+L407:   fmul
+L408:   fadd
+L409:   fastore
+L410:   aload_2
+L411:   getfield Field Dc do Ljava/lang/Object;
+L414:   checkcast [F
+L417:   iconst_0
+L418:   iconst_1
+L419:   dup
+L420:   pop2
+L421:   faload
+L422:   ldc 2e-1f
+L424:   fmul
+L425:   ldc 1.752e1f
+L427:   fcmpl
+L428:   ifle L371
+L431:   aload_1
+L432:   invokeinterface InterfaceMethod java/util/Iterator remove ()V 1
+L437:   goto L371
+L440:   aload_0
+L441:   getfield Field fe break I
+L444:   sipush 512
+L447:   iconst_1
+L448:   dup
+L449:   pop2
+L450:   if_icmpne L538
+L453:   aload_0
+L454:   getfield Field fe try Ljava/util/ArrayList;
+L457:   new Dc
+L460:   dup
+L461:   iconst_2
+L462:   iconst_1
+L463:   dup
+L464:   pop2
+L465:   newarray int
+L467:   iconst_1
+L468:   dup
+L469:   pop2
+L470:   dup
+L471:   iconst_0
+L472:   iconst_1
+L473:   dup
+L474:   pop2
+L475:   invokestatic Method java/lang/Math random ()D
+L478:   ldc2_w 7.1e1
+L481:   dmul
+L482:   d2i
+L483:   iastore
+L484:   dup
+L485:   iconst_1
+L486:   dup
+L487:   dup
+L488:   pop2
+L489:   invokestatic Method java/lang/Math random ()D
+L492:   ldc2_w 7.5e1
+L495:   dmul
+L496:   d2i
+L497:   iastore
+L498:   iconst_2
+L499:   iconst_1
+L500:   dup
+L501:   pop2
+L502:   newarray float
+L504:   iconst_1
+L505:   dup
+L506:   pop2
+L507:   dup
+L508:   iconst_0
+L509:   iconst_1
+L510:   dup
+L511:   pop2
+L512:   ldc -2.5e1f
+L514:   fastore
+L515:   dup
+L516:   iconst_1
+L517:   dup
+L518:   dup
+L519:   pop2
+L520:   ldc 2.5e-1f
+L522:   fastore
+L523:   invokespecial Method Dc <init> (Ljava/lang/Object;Ljava/lang/Object;)V
+L526:   invokevirtual Method java/util/ArrayList add (Ljava/lang/Object;)Z
+L529:   aload_0
+L530:   iconst_0
+L531:   iconst_1
+L532:   dup
+L533:   pop2
+L534:   putfield Field fe break I
+L537:   pop
+L538:   aload_0
+L539:   dup
+L540:   getfield Field fe break I
+L543:   iconst_1
+L544:   dup
 L545:   dup
-L546:   getfield Field fe break I
-L549:   iconst_1
-L550:   dup
-L551:   dup
-L552:   pop2
-L553:   iadd
-L554:   putfield Field fe break I
-L557:   return
-L558:   
-        .attribute StackMap b'\x00\x0D\x00\x45\x00\x02\x07\x00\x02\x07\x00\x9B\x00\x01\x07\x00\x9B\x00\x6E\x00\x00\x00\x01\x07\x00\xC8\x00\x6F\x00\x01\x07\x00\x02\x00\x00\x00\x8B\x00\x02\x07\x00\x02\x07\x00\x9B\x00\x01\x07\x00\x9B\x00\xB4\x00\x00\x00\x01\x07\x00\xC8\x00\xB5\x00\x01\x07\x00\x02\x00\x00\x01\x00\x00\x02\x07\x00\x02\x07\x00\x9B\x00\x01\x07\x00\x9B\x01\x29\x00\x01\x07\x00\x02\x00\x00\x01\x45\x00\x02\x07\x00\x02\x07\x00\x9B\x00\x01\x07\x00\x9B\x01\x6E\x00\x01\x07\x00\x02\x00\x00\x01\x76\x00\x02\x07\x00\x02\x07\x00\x9B\x00\x00\x01\xBC\x00\x02\x07\x00\x02\x07\x00\x9B\x00\x00\x02\x20\x00\x02\x07\x00\x02\x07\x00\x9B\x00\x00'
+L546:   pop2
+L547:   iadd
+L548:   putfield Field fe break I
+L551:   return
+L552:   
+        .attribute StackMap b'\x00\x0D\x00\x45\x00\x02\x07\x00\x02\x07\x00\x7B\x00\x01\x07\x00\x7B\x00\x6E\x00\x00\x00\x01\x07\x00\x68\x00\x6F\x00\x01\x07\x00\x02\x00\x00\x00\x8B\x00\x02\x07\x00\x02\x07\x00\x7B\x00\x01\x07\x00\x7B\x00\xB4\x00\x00\x00\x01\x07\x00\x68\x00\xB5\x00\x01\x07\x00\x02\x00\x00\x00\xFD\x00\x02\x07\x00\x02\x07\x00\x7B\x00\x01\x07\x00\x7B\x01\x26\x00\x01\x07\x00\x02\x00\x00\x01\x42\x00\x02\x07\x00\x02\x07\x00\x7B\x00\x01\x07\x00\x7B\x01\x6B\x00\x01\x07\x00\x02\x00\x00\x01\x73\x00\x02\x07\x00\x02\x07\x00\x7B\x00\x00\x01\xB8\x00\x02\x07\x00\x02\x07\x00\x7B\x00\x00\x02\x1A\x00\x02\x07\x00\x02\x07\x00\x7B\x00\x00'
     .end code
 .end method
 
@@ -1494,55 +1456,55 @@ L34:
     .end code
 .end method
 
-.method private static readanimstate : ()I
+.method private static readanimtoggle : ()I
     .code stack 5 locals 3
 L0:     iconst_0
 L1:     istore_0
-        .catch java/io/IOException from L2 to L30 using L33
+        .catch java/io/IOException from L2 to L29 using L32
 L2:     new java/io/BufferedReader
 L5:     dup
 L6:     new java/io/FileReader
 L9:     dup
-L10:    ldc_w "settings/fe-animtoggle.txt"
-L13:    invokespecial Method java/io/FileReader <init> (Ljava/lang/String;)V
-L16:    invokespecial Method java/io/BufferedReader <init> (Ljava/io/Reader;)V
-L19:    astore_1
-L20:    aload_1
-L21:    invokevirtual Method java/io/BufferedReader readLine ()Ljava/lang/String;
-L24:    astore_2
-L25:    aload_2
-L26:    invokestatic Method java/lang/Integer parseInt (Ljava/lang/String;)I
-L29:    istore_0
-L30:    goto L38
-L33:    astore_1
-L34:    aload_1
-L35:    invokevirtual Method java/io/IOException printStackTrace ()V
-L38:    iload_0
-L39:    ifne L44
-L42:    iconst_0
-L43:    ireturn
-L44:    iload_0
-L45:    iconst_1
-L46:    if_icmpne L52
-L49:    bipush 74
-L51:    ireturn
-L52:    iload_0
-L53:    ireturn
-L54:    
-        .attribute StackMap b'\x00\x04\x00\x21\x00\x01\x01\x00\x01\x07\x01\x1A\x00\x26\x00\x02\x01\x07\x01\x35\x00\x00\x00\x2C\x00\x02\x01\x07\x01\x35\x00\x00\x00\x34\x00\x02\x01\x07\x01\x35\x00\x00'
+L10:    ldc "settings/fe-animtoggle.txt"
+L12:    invokespecial Method java/io/FileReader <init> (Ljava/lang/String;)V
+L15:    invokespecial Method java/io/BufferedReader <init> (Ljava/io/Reader;)V
+L18:    astore_1
+L19:    aload_1
+L20:    invokevirtual Method java/io/BufferedReader readLine ()Ljava/lang/String;
+L23:    astore_2
+L24:    aload_2
+L25:    invokestatic Method java/lang/Integer parseInt (Ljava/lang/String;)I
+L28:    istore_0
+L29:    goto L37
+L32:    astore_1
+L33:    aload_1
+L34:    invokevirtual Method java/io/IOException printStackTrace ()V
+L37:    iload_0
+L38:    ifne L43
+L41:    iconst_0
+L42:    ireturn
+L43:    iload_0
+L44:    iconst_1
+L45:    if_icmpne L51
+L48:    bipush 74
+L50:    ireturn
+L51:    iload_0
+L52:    ireturn
+L53:    
+        .attribute StackMap b'\x00\x04\x00\x20\x00\x01\x01\x00\x01\x07\x00\xF7\x00\x25\x00\x02\x01\x07\x01\x12\x00\x00\x00\x2B\x00\x02\x01\x07\x01\x12\x00\x00\x00\x33\x00\x02\x01\x07\x01\x12\x00\x00'
         .linenumbertable
             L0 13
             L2 15
-            L20 16
-            L25 17
-            L30 22
-            L33 20
-            L34 21
-            L38 23
-            L42 25
-            L44 28
-            L49 30
-            L52 33
+            L19 16
+            L24 17
+            L29 22
+            L32 20
+            L33 21
+            L37 23
+            L41 25
+            L43 28
+            L48 30
+            L51 33
         .end linenumbertable
     .end code
 .end method
