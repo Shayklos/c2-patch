@@ -4,6 +4,7 @@
 .implements javax/swing/event/ChangeListener
 .field static frame Ljavax/swing/JFrame;
 .field static coloredTextField Ljavax/swing/JTextField;
+.field static hexTextField Ljavax/swing/JTextField;
 .field static colorComboList Ljavax/swing/JComboBox; .fieldattributes
     .signature Ljavax/swing/JComboBox<Ljava/lang/String;>;
 .end fieldattributes
@@ -11,6 +12,7 @@
 .field sliderRLabel Ljavax/swing/JLabel;
 .field sliderGLabel Ljavax/swing/JLabel;
 .field sliderBLabel Ljavax/swing/JLabel;
+.field hexLabel Ljavax/swing/JLabel;
 .field sliderR Ljavax/swing/JSlider;
 .field sliderG Ljavax/swing/JSlider;
 .field sliderB Ljavax/swing/JSlider;
@@ -30,62 +32,83 @@ L14:    invokespecial Method java/awt/Font <init> (Ljava/lang/String;II)V
 L17:    putfield Field ColorPicker uiFont Ljava/awt/Font;
 L20:    aload_0
 L21:    invokevirtual Method ColorPicker setupFrame ()V
-L24:    aload_0
-L25:    invokevirtual Method ColorPicker setupUIComponents ()V
-L28:    aload_0
-L29:    invokevirtual Method ColorPicker loadColorPresets ()V
-L32:    getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L35:    iconst_1
-L36:    invokevirtual Method javax/swing/JFrame setVisible (Z)V
-L39:    return
-L40:    
+L24:    getstatic Field ColorPicker frame Ljavax/swing/JFrame;
+L27:    iconst_1
+L28:    invokevirtual Method javax/swing/JFrame setVisible (Z)V
+L31:    return
+L32:    
         .linenumbertable
             L0 19
             L4 17
             L20 20
             L24 21
-            L28 22
-            L32 23
-            L39 24
+            L31 22
         .end linenumbertable
     .end code
 .end method
 
 .method private setupFrame : ()V
-    .code stack 3 locals 1
+    .code stack 5 locals 2
 L0:     new javax/swing/JFrame
 L3:     dup
 L4:     ldc "Color Picker Tool"
 L6:     invokespecial Method javax/swing/JFrame <init> (Ljava/lang/String;)V
 L9:     putstatic Field ColorPicker frame Ljavax/swing/JFrame;
 L12:    getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L15:    aconst_null
-L16:    invokevirtual Method javax/swing/JFrame setLayout (Ljava/awt/LayoutManager;)V
+L15:    iconst_3
+L16:    invokevirtual Method javax/swing/JFrame setDefaultCloseOperation (I)V
 L19:    getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L22:    iconst_3
-L23:    invokevirtual Method javax/swing/JFrame setDefaultCloseOperation (I)V
-L26:    getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L29:    sipush 800
-L32:    sipush 600
-L35:    invokevirtual Method javax/swing/JFrame setSize (II)V
+L22:    sipush 800
+L25:    sipush 600
+L28:    invokevirtual Method javax/swing/JFrame setSize (II)V
+L31:    getstatic Field ColorPicker frame Ljavax/swing/JFrame;
+L34:    aconst_null
+L35:    invokevirtual Method javax/swing/JFrame setLocationRelativeTo (Ljava/awt/Component;)V
 L38:    getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L41:    aconst_null
-L42:    invokevirtual Method javax/swing/JFrame setLocationRelativeTo (Ljava/awt/Component;)V
-L45:    return
-L46:    
+L41:    new java/awt/BorderLayout
+L44:    dup
+L45:    invokespecial Method java/awt/BorderLayout <init> ()V
+L48:    invokevirtual Method javax/swing/JFrame setLayout (Ljava/awt/LayoutManager;)V
+L51:    new javax/swing/JPanel
+L54:    dup
+L55:    invokespecial Method javax/swing/JPanel <init> ()V
+L58:    astore_1
+L59:    aload_1
+L60:    new java/awt/GridLayout
+L63:    dup
+L64:    iconst_0
+L65:    iconst_1
+L66:    invokespecial Method java/awt/GridLayout <init> (II)V
+L69:    invokevirtual Method javax/swing/JPanel setLayout (Ljava/awt/LayoutManager;)V
+L72:    getstatic Field ColorPicker frame Ljavax/swing/JFrame;
+L75:    aload_1
+L76:    ldc "Center"
+L78:    invokevirtual Method javax/swing/JFrame add (Ljava/awt/Component;Ljava/lang/Object;)V
+L81:    aload_0
+L82:    aload_1
+L83:    invokevirtual Method ColorPicker setupUIComponents (Ljavax/swing/JPanel;)V
+L86:    aload_0
+L87:    invokevirtual Method ColorPicker loadColorPresets ()V
+L90:    return
+L91:    
         .linenumbertable
-            L0 27
-            L12 28
-            L19 29
-            L26 30
-            L38 31
-            L45 32
+            L0 25
+            L12 26
+            L19 27
+            L31 28
+            L38 29
+            L51 31
+            L59 32
+            L72 33
+            L81 35
+            L86 36
+            L90 37
         .end linenumbertable
     .end code
 .end method
 
-.method private setupUIComponents : ()V
-    .code stack 6 locals 1
+.method private setupUIComponents : (Ljavax/swing/JPanel;)V
+    .code stack 4 locals 2
 L0:     new javax/swing/JComboBox
 L3:     dup
 L4:     invokespecial Method javax/swing/JComboBox <init> ()V
@@ -94,486 +117,296 @@ L10:    getstatic Field ColorPicker colorComboList Ljavax/swing/JComboBox;
 L13:    aload_0
 L14:    getfield Field ColorPicker uiFont Ljava/awt/Font;
 L17:    invokevirtual Method javax/swing/JComboBox setFont (Ljava/awt/Font;)V
-L20:    getstatic Field ColorPicker colorComboList Ljavax/swing/JComboBox;
-L23:    bipush 50
-L25:    bipush 50
-L27:    sipush 200
-L30:    bipush 40
-L32:    invokevirtual Method javax/swing/JComboBox setBounds (IIII)V
-L35:    getstatic Field ColorPicker colorComboList Ljavax/swing/JComboBox;
-L38:    ldc "Select a predefined color"
-L40:    invokevirtual Method javax/swing/JComboBox setToolTipText (Ljava/lang/String;)V
-L43:    getstatic Field ColorPicker colorComboList Ljavax/swing/JComboBox;
-L46:    aload_0
-L47:    invokedynamic [_80]
-L52:    invokevirtual Method javax/swing/JComboBox addActionListener (Ljava/awt/event/ActionListener;)V
-L55:    getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L58:    getstatic Field ColorPicker colorComboList Ljavax/swing/JComboBox;
-L61:    invokevirtual Method javax/swing/JFrame add (Ljava/awt/Component;)Ljava/awt/Component;
-L64:    pop
-L65:    new javax/swing/JTextField
-L68:    dup
-L69:    invokespecial Method javax/swing/JTextField <init> ()V
-L72:    putstatic Field ColorPicker coloredTextField Ljavax/swing/JTextField;
-L75:    getstatic Field ColorPicker coloredTextField Ljavax/swing/JTextField;
-L78:    aload_0
-L79:    getfield Field ColorPicker uiFont Ljava/awt/Font;
-L82:    invokevirtual Method javax/swing/JTextField setFont (Ljava/awt/Font;)V
-L85:    getstatic Field ColorPicker coloredTextField Ljavax/swing/JTextField;
-L88:    sipush 300
-L91:    bipush 50
-L93:    sipush 200
-L96:    bipush 40
-L98:    invokevirtual Method javax/swing/JTextField setBounds (IIII)V
-L101:   getstatic Field ColorPicker coloredTextField Ljavax/swing/JTextField;
-L104:   iconst_0
-L105:   invokevirtual Method javax/swing/JTextField setEditable (Z)V
-L108:   getstatic Field ColorPicker coloredTextField Ljavax/swing/JTextField;
-L111:   ldc "Selected color display"
-L113:   invokevirtual Method javax/swing/JTextField setToolTipText (Ljava/lang/String;)V
-L116:   getstatic Field ColorPicker frame Ljavax/swing/JFrame;
+L20:    aload_1
+L21:    getstatic Field ColorPicker colorComboList Ljavax/swing/JComboBox;
+L24:    invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L27:    pop
+L28:    aload_0
+L29:    new javax/swing/JLabel
+L32:    dup
+L33:    ldc "HEX:"
+L35:    invokespecial Method javax/swing/JLabel <init> (Ljava/lang/String;)V
+L38:    putfield Field ColorPicker hexLabel Ljavax/swing/JLabel;
+L41:    aload_0
+L42:    getfield Field ColorPicker hexLabel Ljavax/swing/JLabel;
+L45:    aload_0
+L46:    getfield Field ColorPicker uiFont Ljava/awt/Font;
+L49:    invokevirtual Method javax/swing/JLabel setFont (Ljava/awt/Font;)V
+L52:    aload_1
+L53:    aload_0
+L54:    getfield Field ColorPicker hexLabel Ljavax/swing/JLabel;
+L57:    invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L60:    pop
+L61:    new javax/swing/JTextField
+L64:    dup
+L65:    invokespecial Method javax/swing/JTextField <init> ()V
+L68:    putstatic Field ColorPicker hexTextField Ljavax/swing/JTextField;
+L71:    getstatic Field ColorPicker hexTextField Ljavax/swing/JTextField;
+L74:    aload_0
+L75:    getfield Field ColorPicker uiFont Ljava/awt/Font;
+L78:    invokevirtual Method javax/swing/JTextField setFont (Ljava/awt/Font;)V
+L81:    getstatic Field ColorPicker hexTextField Ljavax/swing/JTextField;
+L84:    ldc "Enter HEX color code"
+L86:    invokevirtual Method javax/swing/JTextField setToolTipText (Ljava/lang/String;)V
+L89:    getstatic Field ColorPicker hexTextField Ljavax/swing/JTextField;
+L92:    aload_0
+L93:    invokedynamic [_115]
+L98:    invokevirtual Method javax/swing/JTextField addActionListener (Ljava/awt/event/ActionListener;)V
+L101:   aload_1
+L102:   getstatic Field ColorPicker hexTextField Ljavax/swing/JTextField;
+L105:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L108:   pop
+L109:   new javax/swing/JTextField
+L112:   dup
+L113:   invokespecial Method javax/swing/JTextField <init> ()V
+L116:   putstatic Field ColorPicker coloredTextField Ljavax/swing/JTextField;
 L119:   getstatic Field ColorPicker coloredTextField Ljavax/swing/JTextField;
-L122:   invokevirtual Method javax/swing/JFrame add (Ljava/awt/Component;)Ljava/awt/Component;
-L125:   pop
-L126:   aload_0
-L127:   new javax/swing/JSlider
-L130:   dup
-L131:   iconst_0
-L132:   sipush 255
-L135:   sipush 128
-L138:   invokespecial Method javax/swing/JSlider <init> (III)V
-L141:   putfield Field ColorPicker sliderR Ljavax/swing/JSlider;
+L122:   aload_0
+L123:   getfield Field ColorPicker uiFont Ljava/awt/Font;
+L126:   invokevirtual Method javax/swing/JTextField setFont (Ljava/awt/Font;)V
+L129:   getstatic Field ColorPicker coloredTextField Ljavax/swing/JTextField;
+L132:   iconst_0
+L133:   invokevirtual Method javax/swing/JTextField setEditable (Z)V
+L136:   aload_1
+L137:   getstatic Field ColorPicker coloredTextField Ljavax/swing/JTextField;
+L140:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L143:   pop
 L144:   aload_0
-L145:   getfield Field ColorPicker sliderR Ljavax/swing/JSlider;
-L148:   aload_0
-L149:   getfield Field ColorPicker uiFont Ljava/awt/Font;
-L152:   invokevirtual Method javax/swing/JSlider setFont (Ljava/awt/Font;)V
-L155:   aload_0
-L156:   getfield Field ColorPicker sliderR Ljavax/swing/JSlider;
-L159:   bipush 50
-L161:   bipush 120
-L163:   sipush 700
-L166:   bipush 40
-L168:   invokevirtual Method javax/swing/JSlider setBounds (IIII)V
-L171:   aload_0
-L172:   getfield Field ColorPicker sliderR Ljavax/swing/JSlider;
-L175:   aload_0
-L176:   invokevirtual Method javax/swing/JSlider addChangeListener (Ljavax/swing/event/ChangeListener;)V
-L179:   aload_0
-L180:   getfield Field ColorPicker sliderR Ljavax/swing/JSlider;
-L183:   ldc "Adjust red component"
-L185:   invokevirtual Method javax/swing/JSlider setToolTipText (Ljava/lang/String;)V
-L188:   getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L191:   aload_0
-L192:   getfield Field ColorPicker sliderR Ljavax/swing/JSlider;
-L195:   invokevirtual Method javax/swing/JFrame add (Ljava/awt/Component;)Ljava/awt/Component;
-L198:   pop
-L199:   aload_0
-L200:   new javax/swing/JSlider
-L203:   dup
-L204:   iconst_0
-L205:   sipush 255
-L208:   sipush 128
-L211:   invokespecial Method javax/swing/JSlider <init> (III)V
-L214:   putfield Field ColorPicker sliderG Ljavax/swing/JSlider;
-L217:   aload_0
-L218:   getfield Field ColorPicker sliderG Ljavax/swing/JSlider;
-L221:   aload_0
-L222:   getfield Field ColorPicker uiFont Ljava/awt/Font;
-L225:   invokevirtual Method javax/swing/JSlider setFont (Ljava/awt/Font;)V
-L228:   aload_0
-L229:   getfield Field ColorPicker sliderG Ljavax/swing/JSlider;
-L232:   bipush 50
-L234:   sipush 190
-L237:   sipush 700
-L240:   bipush 40
-L242:   invokevirtual Method javax/swing/JSlider setBounds (IIII)V
-L245:   aload_0
-L246:   getfield Field ColorPicker sliderG Ljavax/swing/JSlider;
-L249:   aload_0
-L250:   invokevirtual Method javax/swing/JSlider addChangeListener (Ljavax/swing/event/ChangeListener;)V
-L253:   aload_0
-L254:   getfield Field ColorPicker sliderG Ljavax/swing/JSlider;
-L257:   ldc "Adjust green component"
-L259:   invokevirtual Method javax/swing/JSlider setToolTipText (Ljava/lang/String;)V
-L262:   getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L265:   aload_0
-L266:   getfield Field ColorPicker sliderG Ljavax/swing/JSlider;
-L269:   invokevirtual Method javax/swing/JFrame add (Ljava/awt/Component;)Ljava/awt/Component;
-L272:   pop
-L273:   aload_0
-L274:   new javax/swing/JSlider
-L277:   dup
-L278:   iconst_0
-L279:   sipush 255
-L282:   sipush 128
-L285:   invokespecial Method javax/swing/JSlider <init> (III)V
-L288:   putfield Field ColorPicker sliderB Ljavax/swing/JSlider;
-L291:   aload_0
-L292:   getfield Field ColorPicker sliderB Ljavax/swing/JSlider;
-L295:   aload_0
-L296:   getfield Field ColorPicker uiFont Ljava/awt/Font;
-L299:   invokevirtual Method javax/swing/JSlider setFont (Ljava/awt/Font;)V
-L302:   aload_0
-L303:   getfield Field ColorPicker sliderB Ljavax/swing/JSlider;
-L306:   bipush 50
-L308:   sipush 260
-L311:   sipush 700
-L314:   bipush 40
-L316:   invokevirtual Method javax/swing/JSlider setBounds (IIII)V
-L319:   aload_0
-L320:   getfield Field ColorPicker sliderB Ljavax/swing/JSlider;
-L323:   aload_0
-L324:   invokevirtual Method javax/swing/JSlider addChangeListener (Ljavax/swing/event/ChangeListener;)V
-L327:   aload_0
-L328:   getfield Field ColorPicker sliderB Ljavax/swing/JSlider;
-L331:   ldc "Adjust blue component"
-L333:   invokevirtual Method javax/swing/JSlider setToolTipText (Ljava/lang/String;)V
-L336:   getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L339:   aload_0
-L340:   getfield Field ColorPicker sliderB Ljavax/swing/JSlider;
-L343:   invokevirtual Method javax/swing/JFrame add (Ljava/awt/Component;)Ljava/awt/Component;
-L346:   pop
-L347:   aload_0
-L348:   new javax/swing/JLabel
-L351:   dup
-L352:   ldc "Red:"
-L354:   invokespecial Method javax/swing/JLabel <init> (Ljava/lang/String;)V
-L357:   putfield Field ColorPicker sliderRLabel Ljavax/swing/JLabel;
-L360:   aload_0
-L361:   getfield Field ColorPicker sliderRLabel Ljavax/swing/JLabel;
-L364:   aload_0
-L365:   getfield Field ColorPicker uiFont Ljava/awt/Font;
-L368:   invokevirtual Method javax/swing/JLabel setFont (Ljava/awt/Font;)V
-L371:   aload_0
-L372:   getfield Field ColorPicker sliderRLabel Ljavax/swing/JLabel;
-L375:   bipush 10
-L377:   bipush 120
-L379:   bipush 40
-L381:   bipush 40
-L383:   invokevirtual Method javax/swing/JLabel setBounds (IIII)V
-L386:   getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L389:   aload_0
-L390:   getfield Field ColorPicker sliderRLabel Ljavax/swing/JLabel;
-L393:   invokevirtual Method javax/swing/JFrame add (Ljava/awt/Component;)Ljava/awt/Component;
-L396:   pop
-L397:   aload_0
-L398:   new javax/swing/JLabel
-L401:   dup
-L402:   ldc "Green:"
-L404:   invokespecial Method javax/swing/JLabel <init> (Ljava/lang/String;)V
-L407:   putfield Field ColorPicker sliderGLabel Ljavax/swing/JLabel;
-L410:   aload_0
-L411:   getfield Field ColorPicker sliderGLabel Ljavax/swing/JLabel;
-L414:   aload_0
-L415:   getfield Field ColorPicker uiFont Ljava/awt/Font;
-L418:   invokevirtual Method javax/swing/JLabel setFont (Ljava/awt/Font;)V
-L421:   aload_0
-L422:   getfield Field ColorPicker sliderGLabel Ljavax/swing/JLabel;
-L425:   bipush 10
-L427:   sipush 190
-L430:   bipush 60
-L432:   bipush 40
-L434:   invokevirtual Method javax/swing/JLabel setBounds (IIII)V
-L437:   getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L440:   aload_0
-L441:   getfield Field ColorPicker sliderGLabel Ljavax/swing/JLabel;
-L444:   invokevirtual Method javax/swing/JFrame add (Ljava/awt/Component;)Ljava/awt/Component;
-L447:   pop
-L448:   aload_0
-L449:   new javax/swing/JLabel
-L452:   dup
-L453:   ldc "Blue:"
-L455:   invokespecial Method javax/swing/JLabel <init> (Ljava/lang/String;)V
-L458:   putfield Field ColorPicker sliderBLabel Ljavax/swing/JLabel;
-L461:   aload_0
-L462:   getfield Field ColorPicker sliderBLabel Ljavax/swing/JLabel;
-L465:   aload_0
-L466:   getfield Field ColorPicker uiFont Ljava/awt/Font;
-L469:   invokevirtual Method javax/swing/JLabel setFont (Ljava/awt/Font;)V
-L472:   aload_0
-L473:   getfield Field ColorPicker sliderBLabel Ljavax/swing/JLabel;
-L476:   bipush 10
-L478:   sipush 260
-L481:   bipush 40
-L483:   bipush 40
-L485:   invokevirtual Method javax/swing/JLabel setBounds (IIII)V
-L488:   getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L491:   aload_0
-L492:   getfield Field ColorPicker sliderBLabel Ljavax/swing/JLabel;
-L495:   invokevirtual Method javax/swing/JFrame add (Ljava/awt/Component;)Ljava/awt/Component;
-L498:   pop
-L499:   aload_0
-L500:   new javax/swing/JButton
-L503:   dup
-L504:   ldc "Save Color"
-L506:   invokespecial Method javax/swing/JButton <init> (Ljava/lang/String;)V
-L509:   putfield Field ColorPicker saveButton Ljavax/swing/JButton;
-L512:   aload_0
-L513:   getfield Field ColorPicker saveButton Ljavax/swing/JButton;
-L516:   aload_0
-L517:   getfield Field ColorPicker uiFont Ljava/awt/Font;
-L520:   invokevirtual Method javax/swing/JButton setFont (Ljava/awt/Font;)V
-L523:   aload_0
-L524:   getfield Field ColorPicker saveButton Ljavax/swing/JButton;
-L527:   sipush 600
-L530:   sipush 320
-L533:   sipush 150
-L536:   bipush 40
-L538:   invokevirtual Method javax/swing/JButton setBounds (IIII)V
-L541:   aload_0
-L542:   getfield Field ColorPicker saveButton Ljavax/swing/JButton;
-L545:   ldc "Save the current color to file"
-L547:   invokevirtual Method javax/swing/JButton setToolTipText (Ljava/lang/String;)V
-L550:   aload_0
-L551:   getfield Field ColorPicker saveButton Ljavax/swing/JButton;
-L554:   aload_0
-L555:   invokedynamic [_170]
-L560:   invokevirtual Method javax/swing/JButton addActionListener (Ljava/awt/event/ActionListener;)V
-L563:   getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L566:   aload_0
-L567:   getfield Field ColorPicker saveButton Ljavax/swing/JButton;
-L570:   invokevirtual Method javax/swing/JFrame add (Ljava/awt/Component;)Ljava/awt/Component;
-L573:   pop
-L574:   return
-L575:   
+L145:   aload_1
+L146:   invokevirtual Method ColorPicker setupSliders (Ljavax/swing/JPanel;)V
+L149:   aload_0
+L150:   new javax/swing/JButton
+L153:   dup
+L154:   ldc "Save Color"
+L156:   invokespecial Method javax/swing/JButton <init> (Ljava/lang/String;)V
+L159:   putfield Field ColorPicker saveButton Ljavax/swing/JButton;
+L162:   aload_0
+L163:   getfield Field ColorPicker saveButton Ljavax/swing/JButton;
+L166:   aload_0
+L167:   getfield Field ColorPicker uiFont Ljava/awt/Font;
+L170:   invokevirtual Method javax/swing/JButton setFont (Ljava/awt/Font;)V
+L173:   aload_0
+L174:   getfield Field ColorPicker saveButton Ljavax/swing/JButton;
+L177:   aload_0
+L178:   invokedynamic [_142]
+L183:   invokevirtual Method javax/swing/JButton addActionListener (Ljava/awt/event/ActionListener;)V
+L186:   aload_1
+L187:   aload_0
+L188:   getfield Field ColorPicker saveButton Ljavax/swing/JButton;
+L191:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L194:   pop
+L195:   return
+L196:   
         .linenumbertable
-            L0 35
-            L10 36
-            L20 37
-            L35 38
-            L43 39
-            L55 40
-            L65 42
-            L75 43
-            L85 44
-            L101 45
-            L108 46
-            L116 47
-            L126 49
-            L144 50
-            L155 51
-            L171 52
-            L179 53
-            L188 54
-            L199 56
-            L217 57
-            L228 58
-            L245 59
-            L253 60
-            L262 61
-            L273 63
-            L291 64
-            L302 65
-            L319 66
-            L327 67
-            L336 68
-            L347 70
-            L360 71
-            L371 72
-            L386 73
-            L397 75
-            L410 76
-            L421 77
-            L437 78
-            L448 80
-            L461 81
-            L472 82
-            L488 83
-            L499 85
-            L512 86
-            L523 87
-            L541 88
-            L550 89
-            L563 90
-            L574 91
+            L0 40
+            L10 41
+            L20 42
+            L28 44
+            L41 45
+            L52 46
+            L61 48
+            L71 49
+            L81 50
+            L89 51
+            L101 52
+            L109 54
+            L119 55
+            L129 56
+            L136 57
+            L144 59
+            L149 61
+            L162 62
+            L173 63
+            L186 64
+            L195 65
         .end linenumbertable
     .end code
 .end method
 
-.method private loadColorPresets : ()V
-    .code stack 5 locals 5
-L0:     ldc "settings/colorPresets.txt"
-L2:     astore_1
-L3:     new java/io/BufferedReader
-L6:     dup
-L7:     new java/io/FileReader
-L10:    dup
-L11:    aload_1
-L12:    invokespecial Method java/io/FileReader <init> (Ljava/lang/String;)V
-L15:    invokespecial Method java/io/BufferedReader <init> (Ljava/io/Reader;)V
-L18:    astore_2
-        .catch java/lang/Throwable from L19 to L38 using L45
-
-        .stack append Object java/lang/String Object java/io/BufferedReader
-L19:    aload_2
-L20:    invokevirtual Method java/io/BufferedReader readLine ()Ljava/lang/String;
-L23:    dup
-L24:    astore_3
-L25:    ifnull L38
-L28:    getstatic Field ColorPicker colorComboList Ljavax/swing/JComboBox;
-L31:    aload_3
-L32:    invokevirtual Method javax/swing/JComboBox addItem (Ljava/lang/Object;)V
-L35:    goto L19
-
-        .stack same
-L38:    aload_2
-L39:    invokevirtual Method java/io/BufferedReader close ()V
-L42:    goto L63
-
-        .stack stack_1 Object java/lang/Throwable
-L45:    astore_3
-        .catch java/lang/Throwable from L46 to L50 using L53
-        .catch java/io/IOException from L3 to L63 using L66
-L46:    aload_2
-L47:    invokevirtual Method java/io/BufferedReader close ()V
-L50:    goto L61
-
-        .stack full
-            locals Object ColorPicker Object java/lang/String Object java/io/BufferedReader Object java/lang/Throwable
-            stack Object java/lang/Throwable
-        .end stack
-L53:    astore 4
-L55:    aload_3
-L56:    aload 4
-L58:    invokevirtual Method java/lang/Throwable addSuppressed (Ljava/lang/Throwable;)V
-
-        .stack same
-L61:    aload_3
-L62:    athrow
-
-        .stack chop 2
-L63:    goto L71
-
-        .stack stack_1 Object java/io/IOException
-L66:    astore_2
-L67:    aload_2
-L68:    invokevirtual Method java/io/IOException printStackTrace ()V
-
-        .stack same
-L71:    return
-L72:    
-        .linenumbertable
-            L0 94
-            L3 95
-            L19 97
-            L28 98
-            L38 100
-            L45 95
-            L63 102
-            L66 100
-            L67 101
-            L71 103
-        .end linenumbertable
-    .end code
-.end method
-
-.method private updateColorFromPreset : ()V
-    .code stack 4 locals 6
-L0:     getstatic Field ColorPicker colorComboList Ljavax/swing/JComboBox;
-L3:     invokevirtual Method javax/swing/JComboBox getSelectedItem ()Ljava/lang/Object;
-L6:     checkcast java/lang/String
-L9:     astore_1
-L10:    aload_1
-L11:    ifnull L107
-L14:    aload_1
-L15:    ldc ","
-L17:    invokevirtual Method java/lang/String split (Ljava/lang/String;)[Ljava/lang/String;
-L20:    astore_2
-L21:    aload_2
-L22:    arraylength
-L23:    iconst_4
-L24:    if_icmplt L107
-        .catch java/lang/NumberFormatException from L27 to L92 using L95
-L27:    aload_2
-L28:    iconst_1
-L29:    aaload
-L30:    invokestatic Method java/lang/Float parseFloat (Ljava/lang/String;)F
-L33:    fstore_3
-L34:    aload_2
-L35:    iconst_2
-L36:    aaload
-L37:    invokestatic Method java/lang/Float parseFloat (Ljava/lang/String;)F
-L40:    fstore 4
-L42:    aload_2
-L43:    iconst_3
-L44:    aaload
-L45:    invokestatic Method java/lang/Float parseFloat (Ljava/lang/String;)F
-L48:    fstore 5
-L50:    aload_0
-L51:    getfield Field ColorPicker sliderR Ljavax/swing/JSlider;
-L54:    fload_3
-L55:    ldc 2.55e2f
-L57:    fmul
-L58:    f2i
-L59:    invokevirtual Method javax/swing/JSlider setValue (I)V
+.method private setupSliders : (Ljavax/swing/JPanel;)V
+    .code stack 6 locals 2
+L0:     aload_0
+L1:     new javax/swing/JLabel
+L4:     dup
+L5:     ldc "Red: 128"
+L7:     invokespecial Method javax/swing/JLabel <init> (Ljava/lang/String;)V
+L10:    putfield Field ColorPicker sliderRLabel Ljavax/swing/JLabel;
+L13:    aload_0
+L14:    getfield Field ColorPicker sliderRLabel Ljavax/swing/JLabel;
+L17:    aload_0
+L18:    getfield Field ColorPicker uiFont Ljava/awt/Font;
+L21:    invokevirtual Method javax/swing/JLabel setFont (Ljava/awt/Font;)V
+L24:    aload_1
+L25:    aload_0
+L26:    getfield Field ColorPicker sliderRLabel Ljavax/swing/JLabel;
+L29:    invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L32:    pop
+L33:    aload_0
+L34:    new javax/swing/JSlider
+L37:    dup
+L38:    iconst_0
+L39:    sipush 255
+L42:    sipush 128
+L45:    invokespecial Method javax/swing/JSlider <init> (III)V
+L48:    putfield Field ColorPicker sliderR Ljavax/swing/JSlider;
+L51:    aload_0
+L52:    getfield Field ColorPicker sliderR Ljavax/swing/JSlider;
+L55:    aload_0
+L56:    getfield Field ColorPicker uiFont Ljava/awt/Font;
+L59:    invokevirtual Method javax/swing/JSlider setFont (Ljava/awt/Font;)V
 L62:    aload_0
-L63:    getfield Field ColorPicker sliderG Ljavax/swing/JSlider;
-L66:    fload 4
-L68:    ldc 2.55e2f
-L70:    fmul
-L71:    f2i
-L72:    invokevirtual Method javax/swing/JSlider setValue (I)V
-L75:    aload_0
-L76:    getfield Field ColorPicker sliderB Ljavax/swing/JSlider;
-L79:    fload 5
-L81:    ldc 2.55e2f
-L83:    fmul
-L84:    f2i
-L85:    invokevirtual Method javax/swing/JSlider setValue (I)V
-L88:    aload_0
-L89:    invokevirtual Method ColorPicker updateColor ()V
-L92:    goto L107
-
-        .stack full
-            locals Object ColorPicker Object java/lang/String Object [Ljava/lang/String;
-            stack Object java/lang/NumberFormatException
-        .end stack
-L95:    astore_3
-L96:    getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L99:    ldc "Invalid color format"
-L101:   ldc "Error"
-L103:   iconst_0
-L104:   invokestatic Method javax/swing/JOptionPane showMessageDialog (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V
-
-        .stack chop 1
-L107:   return
-L108:   
+L63:    getfield Field ColorPicker sliderR Ljavax/swing/JSlider;
+L66:    aload_0
+L67:    invokevirtual Method javax/swing/JSlider addChangeListener (Ljavax/swing/event/ChangeListener;)V
+L70:    aload_1
+L71:    aload_0
+L72:    getfield Field ColorPicker sliderR Ljavax/swing/JSlider;
+L75:    invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L78:    pop
+L79:    aload_0
+L80:    new javax/swing/JLabel
+L83:    dup
+L84:    ldc "Green: 128"
+L86:    invokespecial Method javax/swing/JLabel <init> (Ljava/lang/String;)V
+L89:    putfield Field ColorPicker sliderGLabel Ljavax/swing/JLabel;
+L92:    aload_0
+L93:    getfield Field ColorPicker sliderGLabel Ljavax/swing/JLabel;
+L96:    aload_0
+L97:    getfield Field ColorPicker uiFont Ljava/awt/Font;
+L100:   invokevirtual Method javax/swing/JLabel setFont (Ljava/awt/Font;)V
+L103:   aload_1
+L104:   aload_0
+L105:   getfield Field ColorPicker sliderGLabel Ljavax/swing/JLabel;
+L108:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L111:   pop
+L112:   aload_0
+L113:   new javax/swing/JSlider
+L116:   dup
+L117:   iconst_0
+L118:   sipush 255
+L121:   sipush 128
+L124:   invokespecial Method javax/swing/JSlider <init> (III)V
+L127:   putfield Field ColorPicker sliderG Ljavax/swing/JSlider;
+L130:   aload_0
+L131:   getfield Field ColorPicker sliderG Ljavax/swing/JSlider;
+L134:   aload_0
+L135:   getfield Field ColorPicker uiFont Ljava/awt/Font;
+L138:   invokevirtual Method javax/swing/JSlider setFont (Ljava/awt/Font;)V
+L141:   aload_0
+L142:   getfield Field ColorPicker sliderG Ljavax/swing/JSlider;
+L145:   aload_0
+L146:   invokevirtual Method javax/swing/JSlider addChangeListener (Ljavax/swing/event/ChangeListener;)V
+L149:   aload_1
+L150:   aload_0
+L151:   getfield Field ColorPicker sliderG Ljavax/swing/JSlider;
+L154:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L157:   pop
+L158:   aload_0
+L159:   new javax/swing/JLabel
+L162:   dup
+L163:   ldc "Blue: 128"
+L165:   invokespecial Method javax/swing/JLabel <init> (Ljava/lang/String;)V
+L168:   putfield Field ColorPicker sliderBLabel Ljavax/swing/JLabel;
+L171:   aload_0
+L172:   getfield Field ColorPicker sliderBLabel Ljavax/swing/JLabel;
+L175:   aload_0
+L176:   getfield Field ColorPicker uiFont Ljava/awt/Font;
+L179:   invokevirtual Method javax/swing/JLabel setFont (Ljava/awt/Font;)V
+L182:   aload_1
+L183:   aload_0
+L184:   getfield Field ColorPicker sliderBLabel Ljavax/swing/JLabel;
+L187:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L190:   pop
+L191:   aload_0
+L192:   new javax/swing/JSlider
+L195:   dup
+L196:   iconst_0
+L197:   sipush 255
+L200:   sipush 128
+L203:   invokespecial Method javax/swing/JSlider <init> (III)V
+L206:   putfield Field ColorPicker sliderB Ljavax/swing/JSlider;
+L209:   aload_0
+L210:   getfield Field ColorPicker sliderB Ljavax/swing/JSlider;
+L213:   aload_0
+L214:   getfield Field ColorPicker uiFont Ljava/awt/Font;
+L217:   invokevirtual Method javax/swing/JSlider setFont (Ljava/awt/Font;)V
+L220:   aload_0
+L221:   getfield Field ColorPicker sliderB Ljavax/swing/JSlider;
+L224:   aload_0
+L225:   invokevirtual Method javax/swing/JSlider addChangeListener (Ljavax/swing/event/ChangeListener;)V
+L228:   aload_1
+L229:   aload_0
+L230:   getfield Field ColorPicker sliderB Ljavax/swing/JSlider;
+L233:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L236:   pop
+L237:   return
+L238:   
         .linenumbertable
-            L0 106
-            L10 107
-            L14 108
-            L21 109
-            L27 111
-            L34 112
-            L42 113
-            L50 115
-            L62 116
-            L75 117
-            L88 118
-            L92 121
-            L95 119
-            L96 120
-            L107 124
+            L0 68
+            L13 69
+            L24 70
+            L33 72
+            L51 73
+            L62 74
+            L70 75
+            L79 77
+            L92 78
+            L103 79
+            L112 81
+            L130 82
+            L141 83
+            L149 84
+            L158 86
+            L171 87
+            L182 88
+            L191 90
+            L209 91
+            L220 92
+            L228 93
+            L237 94
         .end linenumbertable
     .end code
 .end method
 
 .method public stateChanged : (Ljavax/swing/event/ChangeEvent;)V
-    .code stack 1 locals 2
+    .code stack 2 locals 2
 L0:     aload_0
 L1:     invokevirtual Method ColorPicker updateColor ()V
-L4:     return
-L5:     
+L4:     aload_0
+L5:     getfield Field ColorPicker sliderRLabel Ljavax/swing/JLabel;
+L8:     aload_0
+L9:     getfield Field ColorPicker sliderR Ljavax/swing/JSlider;
+L12:    invokevirtual Method javax/swing/JSlider getValue ()I
+L15:    invokedynamic [_186]
+L20:    invokevirtual Method javax/swing/JLabel setText (Ljava/lang/String;)V
+L23:    aload_0
+L24:    getfield Field ColorPicker sliderGLabel Ljavax/swing/JLabel;
+L27:    aload_0
+L28:    getfield Field ColorPicker sliderG Ljavax/swing/JSlider;
+L31:    invokevirtual Method javax/swing/JSlider getValue ()I
+L34:    invokedynamic [_193]
+L39:    invokevirtual Method javax/swing/JLabel setText (Ljava/lang/String;)V
+L42:    aload_0
+L43:    getfield Field ColorPicker sliderBLabel Ljavax/swing/JLabel;
+L46:    aload_0
+L47:    getfield Field ColorPicker sliderB Ljavax/swing/JSlider;
+L50:    invokevirtual Method javax/swing/JSlider getValue ()I
+L53:    invokedynamic [_194]
+L58:    invokevirtual Method javax/swing/JLabel setText (Ljava/lang/String;)V
+L61:    return
+L62:    
         .linenumbertable
-            L0 127
-            L4 128
+            L0 97
+            L4 98
+            L23 99
+            L42 100
+            L61 101
         .end linenumbertable
     .end code
 .end method
 
 .method private updateColor : ()V
-    .code stack 5 locals 5
+    .code stack 6 locals 4
 L0:     aload_0
 L1:     getfield Field ColorPicker sliderR Ljavax/swing/JSlider;
 L4:     invokevirtual Method javax/swing/JSlider getValue ()I
@@ -586,25 +419,150 @@ L16:    aload_0
 L17:    getfield Field ColorPicker sliderB Ljavax/swing/JSlider;
 L20:    invokevirtual Method javax/swing/JSlider getValue ()I
 L23:    istore_3
-L24:    new java/awt/Color
-L27:    dup
-L28:    iload_1
-L29:    iload_2
-L30:    iload_3
-L31:    invokespecial Method java/awt/Color <init> (III)V
-L34:    astore 4
-L36:    getstatic Field ColorPicker coloredTextField Ljavax/swing/JTextField;
-L39:    aload 4
-L41:    invokevirtual Method javax/swing/JTextField setBackground (Ljava/awt/Color;)V
-L44:    return
-L45:    
+L24:    getstatic Field ColorPicker coloredTextField Ljavax/swing/JTextField;
+L27:    new java/awt/Color
+L30:    dup
+L31:    iload_1
+L32:    iload_2
+L33:    iload_3
+L34:    invokespecial Method java/awt/Color <init> (III)V
+L37:    invokevirtual Method javax/swing/JTextField setBackground (Ljava/awt/Color;)V
+L40:    return
+L41:    
         .linenumbertable
-            L0 131
-            L8 132
-            L16 133
-            L24 134
-            L36 135
-            L44 136
+            L0 104
+            L8 105
+            L16 106
+            L24 107
+            L40 108
+        .end linenumbertable
+    .end code
+.end method
+
+.method private loadColorPresets : ()V
+    .code stack 5 locals 4
+L0:     new java/io/BufferedReader
+L3:     dup
+L4:     new java/io/FileReader
+L7:     dup
+L8:     ldc "settings/colorPresets.txt"
+L10:    invokespecial Method java/io/FileReader <init> (Ljava/lang/String;)V
+L13:    invokespecial Method java/io/BufferedReader <init> (Ljava/io/Reader;)V
+L16:    astore_1
+        .catch java/lang/Throwable from L17 to L36 using L43
+
+        .stack append Object java/io/BufferedReader
+L17:    aload_1
+L18:    invokevirtual Method java/io/BufferedReader readLine ()Ljava/lang/String;
+L21:    dup
+L22:    astore_2
+L23:    ifnull L36
+L26:    getstatic Field ColorPicker colorComboList Ljavax/swing/JComboBox;
+L29:    aload_2
+L30:    invokevirtual Method javax/swing/JComboBox addItem (Ljava/lang/Object;)V
+L33:    goto L17
+
+        .stack same
+L36:    aload_1
+L37:    invokevirtual Method java/io/BufferedReader close ()V
+L40:    goto L59
+
+        .stack stack_1 Object java/lang/Throwable
+L43:    astore_2
+        .catch java/lang/Throwable from L44 to L48 using L51
+        .catch java/io/IOException from L0 to L59 using L62
+L44:    aload_1
+L45:    invokevirtual Method java/io/BufferedReader close ()V
+L48:    goto L57
+
+        .stack full
+            locals Object ColorPicker Object java/io/BufferedReader Object java/lang/Throwable
+            stack Object java/lang/Throwable
+        .end stack
+L51:    astore_3
+L52:    aload_2
+L53:    aload_3
+L54:    invokevirtual Method java/lang/Throwable addSuppressed (Ljava/lang/Throwable;)V
+
+        .stack same
+L57:    aload_2
+L58:    athrow
+
+        .stack chop 2
+L59:    goto L74
+
+        .stack stack_1 Object java/io/IOException
+L62:    astore_1
+L63:    getstatic Field ColorPicker frame Ljavax/swing/JFrame;
+L66:    ldc "Error loading color presets"
+L68:    ldc "File Read Error"
+L70:    iconst_0
+L71:    invokestatic Method javax/swing/JOptionPane showMessageDialog (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V
+
+        .stack same
+L74:    return
+L75:    
+        .linenumbertable
+            L0 111
+            L17 113
+            L26 114
+            L36 116
+            L43 111
+            L59 118
+            L62 116
+            L63 117
+            L74 119
+        .end linenumbertable
+    .end code
+.end method
+
+.method private updateColorFromHex : ()V
+    .code stack 4 locals 2
+        .catch java/lang/NumberFormatException from L0 to L47 using L50
+L0:     getstatic Field ColorPicker hexTextField Ljavax/swing/JTextField;
+L3:     invokevirtual Method javax/swing/JTextField getText ()Ljava/lang/String;
+L6:     invokestatic Method java/awt/Color decode (Ljava/lang/String;)Ljava/awt/Color;
+L9:     astore_1
+L10:    aload_0
+L11:    getfield Field ColorPicker sliderR Ljavax/swing/JSlider;
+L14:    aload_1
+L15:    invokevirtual Method java/awt/Color getRed ()I
+L18:    invokevirtual Method javax/swing/JSlider setValue (I)V
+L21:    aload_0
+L22:    getfield Field ColorPicker sliderG Ljavax/swing/JSlider;
+L25:    aload_1
+L26:    invokevirtual Method java/awt/Color getGreen ()I
+L29:    invokevirtual Method javax/swing/JSlider setValue (I)V
+L32:    aload_0
+L33:    getfield Field ColorPicker sliderB Ljavax/swing/JSlider;
+L36:    aload_1
+L37:    invokevirtual Method java/awt/Color getBlue ()I
+L40:    invokevirtual Method javax/swing/JSlider setValue (I)V
+L43:    aload_0
+L44:    invokevirtual Method ColorPicker updateColor ()V
+L47:    goto L64
+
+        .stack stack_1 Object java/lang/NumberFormatException
+L50:    astore_1
+L51:    getstatic Field ColorPicker frame Ljavax/swing/JFrame;
+L54:    ldc_w "Invalid HEX code"
+L57:    ldc_w "Error"
+L60:    iconst_0
+L61:    invokestatic Method javax/swing/JOptionPane showMessageDialog (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V
+
+        .stack same
+L64:    return
+L65:    
+        .linenumbertable
+            L0 123
+            L10 124
+            L21 125
+            L32 126
+            L43 127
+            L47 130
+            L50 128
+            L51 129
+            L64 131
         .end linenumbertable
     .end code
 .end method
@@ -615,96 +573,98 @@ L0:     aload_0
 L1:     getfield Field ColorPicker sliderR Ljavax/swing/JSlider;
 L4:     invokevirtual Method javax/swing/JSlider getValue ()I
 L7:     i2f
-L8:     ldc 2.55e2f
-L10:    fdiv
-L11:    fstore_1
-L12:    aload_0
-L13:    getfield Field ColorPicker sliderG Ljavax/swing/JSlider;
-L16:    invokevirtual Method javax/swing/JSlider getValue ()I
-L19:    i2f
-L20:    ldc 2.55e2f
-L22:    fdiv
-L23:    fstore_2
-L24:    aload_0
-L25:    getfield Field ColorPicker sliderB Ljavax/swing/JSlider;
-L28:    invokevirtual Method javax/swing/JSlider getValue ()I
-L31:    i2f
-L32:    ldc 2.55e2f
-L34:    fdiv
-L35:    fstore_3
-L36:    ldc "%.9f,%.9f,%.9f"
-L38:    iconst_3
-L39:    anewarray java/lang/Object
-L42:    dup
-L43:    iconst_0
-L44:    fload_1
-L45:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
-L48:    aastore
-L49:    dup
-L50:    iconst_1
-L51:    fload_2
-L52:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
-L55:    aastore
-L56:    dup
-L57:    iconst_2
-L58:    fload_3
-L59:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
-L62:    aastore
-L63:    invokestatic Method java/lang/String format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-L66:    astore 4
-        .catch java/io/IOException from L68 to L97 using L100
-L68:    ldc_w "settings/background-color.txt"
-L71:    iconst_0
-L72:    anewarray java/lang/String
-L75:    invokestatic Method java/nio/file/Paths get (Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
-L78:    aload 4
-L80:    iconst_0
-L81:    anewarray java/nio/file/OpenOption
-L84:    invokestatic Method java/nio/file/Files writeString (Ljava/nio/file/Path;Ljava/lang/CharSequence;[Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;
-L87:    pop
-L88:    getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L91:    ldc_w "Color saved successfully!"
-L94:    invokestatic Method javax/swing/JOptionPane showMessageDialog (Ljava/awt/Component;Ljava/lang/Object;)V
-L97:    goto L114
+L8:     ldc_w 2.55e2f
+L11:    fdiv
+L12:    fstore_1
+L13:    aload_0
+L14:    getfield Field ColorPicker sliderG Ljavax/swing/JSlider;
+L17:    invokevirtual Method javax/swing/JSlider getValue ()I
+L20:    i2f
+L21:    ldc_w 2.55e2f
+L24:    fdiv
+L25:    fstore_2
+L26:    aload_0
+L27:    getfield Field ColorPicker sliderB Ljavax/swing/JSlider;
+L30:    invokevirtual Method javax/swing/JSlider getValue ()I
+L33:    i2f
+L34:    ldc_w 2.55e2f
+L37:    fdiv
+L38:    fstore_3
+L39:    ldc_w "%.9f,%.9f,%.9f"
+L42:    iconst_3
+L43:    anewarray java/lang/Object
+L46:    dup
+L47:    iconst_0
+L48:    fload_1
+L49:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
+L52:    aastore
+L53:    dup
+L54:    iconst_1
+L55:    fload_2
+L56:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
+L59:    aastore
+L60:    dup
+L61:    iconst_2
+L62:    fload_3
+L63:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
+L66:    aastore
+L67:    invokestatic Method java/lang/String format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+L70:    astore 4
+        .catch java/io/IOException from L72 to L105 using L108
+L72:    ldc_w "settings/background-color.txt"
+L75:    iconst_0
+L76:    anewarray java/lang/String
+L79:    invokestatic Method java/nio/file/Paths get (Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+L82:    aload 4
+L84:    iconst_0
+L85:    anewarray java/nio/file/OpenOption
+L88:    invokestatic Method java/nio/file/Files writeString (Ljava/nio/file/Path;Ljava/lang/CharSequence;[Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;
+L91:    pop
+L92:    getstatic Field ColorPicker frame Ljavax/swing/JFrame;
+L95:    ldc_w "Color saved successfully!"
+L98:    ldc_w "Success"
+L101:   iconst_1
+L102:   invokestatic Method javax/swing/JOptionPane showMessageDialog (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V
+L105:   goto L123
 
         .stack full
             locals Object ColorPicker Float Float Float Object java/lang/String
             stack Object java/io/IOException
         .end stack
-L100:   astore 5
-L102:   getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L105:   ldc_w "Failed to save color!"
-L108:   ldc "Error"
-L110:   iconst_0
-L111:   invokestatic Method javax/swing/JOptionPane showMessageDialog (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V
+L108:   astore 5
+L110:   getstatic Field ColorPicker frame Ljavax/swing/JFrame;
+L113:   ldc_w "Failed to save color!"
+L116:   ldc_w "Error"
+L119:   iconst_0
+L120:   invokestatic Method javax/swing/JOptionPane showMessageDialog (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V
 
         .stack same
-L114:   return
-L115:   
+L123:   return
+L124:   
         .linenumbertable
-            L0 139
-            L12 140
-            L24 141
-            L36 142
-            L68 145
-            L88 146
-            L97 149
-            L100 147
-            L102 148
-            L114 150
+            L0 134
+            L13 135
+            L26 136
+            L39 137
+            L72 139
+            L92 140
+            L105 143
+            L108 141
+            L110 142
+            L123 144
         .end linenumbertable
     .end code
 .end method
 
 .method public static main : ([Ljava/lang/String;)V
     .code stack 1 locals 1
-L0:     invokedynamic [_285]
+L0:     invokedynamic [_303]
 L5:     invokestatic Method javax/swing/SwingUtilities invokeLater (Ljava/lang/Runnable;)V
 L8:     return
 L9:     
         .linenumbertable
-            L0 153
-            L8 154
+            L0 147
+            L8 148
         .end linenumbertable
     .end code
 .end method
@@ -716,7 +676,7 @@ L1:     invokevirtual Method ColorPicker saveColorToFile ()V
 L4:     return
 L5:     
         .linenumbertable
-            L0 89
+            L0 63
         .end linenumbertable
     .end code
 .end method
@@ -724,11 +684,11 @@ L5:
 .method private synthetic lambda$setupUIComponents$0 : (Ljava/awt/event/ActionEvent;)V
     .code stack 1 locals 2
 L0:     aload_0
-L1:     invokevirtual Method ColorPicker updateColorFromPreset ()V
+L1:     invokevirtual Method ColorPicker updateColorFromHex ()V
 L4:     return
 L5:     
         .linenumbertable
-            L0 39
+            L0 51
         .end linenumbertable
     .end code
 .end method
@@ -737,10 +697,13 @@ L5:
 .innerclasses
     java/lang/invoke/MethodHandles$Lookup java/lang/invoke/MethodHandles Lookup public static final
 .end innerclasses
-.const [_80] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType (Ljava/awt/event/ActionEvent;)V [_328] MethodType (Ljava/awt/event/ActionEvent;)V : actionPerformed (LColorPicker;)Ljava/awt/event/ActionListener;
-.const [_170] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType (Ljava/awt/event/ActionEvent;)V [_331] MethodType (Ljava/awt/event/ActionEvent;)V : actionPerformed (LColorPicker;)Ljava/awt/event/ActionListener;
-.const [_285] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType ()V [_335] MethodType ()V : run ()Ljava/lang/Runnable;
-.const [_328] = MethodHandle invokeVirtual Method ColorPicker lambda$setupUIComponents$0 (Ljava/awt/event/ActionEvent;)V
-.const [_331] = MethodHandle invokeVirtual Method ColorPicker lambda$setupUIComponents$1 (Ljava/awt/event/ActionEvent;)V
-.const [_335] = MethodHandle newInvokeSpecial Method ColorPicker <init> ()V
+.const [_115] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType (Ljava/awt/event/ActionEvent;)V [_344] MethodType (Ljava/awt/event/ActionEvent;)V : actionPerformed (LColorPicker;)Ljava/awt/event/ActionListener;
+.const [_142] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType (Ljava/awt/event/ActionEvent;)V [_347] MethodType (Ljava/awt/event/ActionEvent;)V : actionPerformed (LColorPicker;)Ljava/awt/event/ActionListener;
+.const [_186] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Red: \u0001" : makeConcatWithConstants (I)Ljava/lang/String;
+.const [_193] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Green: \u0001" : makeConcatWithConstants (I)Ljava/lang/String;
+.const [_194] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Blue: \u0001" : makeConcatWithConstants (I)Ljava/lang/String;
+.const [_303] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType ()V [_363] MethodType ()V : run ()Ljava/lang/Runnable;
+.const [_344] = MethodHandle invokeVirtual Method ColorPicker lambda$setupUIComponents$0 (Ljava/awt/event/ActionEvent;)V
+.const [_347] = MethodHandle invokeVirtual Method ColorPicker lambda$setupUIComponents$1 (Ljava/awt/event/ActionEvent;)V
+.const [_363] = MethodHandle newInvokeSpecial Method ColorPicker <init> ()V
 .end class
