@@ -51,8 +51,6 @@
 .field private static else Z
 .field private "enum" D
 .field private static do Z
-.field private static final blurstate F = -1e0f
-.field public static fpsvalue I = 240
 
 .method public byte : ()V
     .code stack 2 locals 1
@@ -143,7 +141,7 @@ L69:    astore_3
 L70:    iload_2
 L71:    ireturn
 L72:    
-        .attribute StackMap b'\x00\x06\x00\x14\x00\x00\x00\x01\x07\x00\x8A\x00\x15\x00\x04\x07\x00\x02\x01\x01\x07\x00\x8B\x00\x00\x00\x29\x00\x04\x07\x00\x02\x07\x00\x75\x01\x07\x00\x8B\x00\x00\x00\x32\x00\x04\x07\x00\x02\x07\x00\x75\x01\x07\x00\x8B\x00\x00\x00\x44\x00\x00\x00\x01\x07\x00\x8A\x00\x45\x00\x03\x07\x00\x02\x00\x01\x00\x01\x07\x00\x69'
+        .attribute StackMap b'\x00\x06\x00\x14\x00\x00\x00\x01\x07\x00\x86\x00\x15\x00\x04\x07\x00\x02\x01\x01\x07\x00\x87\x00\x00\x00\x29\x00\x04\x07\x00\x02\x07\x00\x71\x01\x07\x00\x87\x00\x00\x00\x32\x00\x04\x07\x00\x02\x07\x00\x71\x01\x07\x00\x87\x00\x00\x00\x44\x00\x00\x00\x01\x07\x00\x86\x00\x45\x00\x03\x07\x00\x02\x00\x01\x00\x01\x07\x00\x65'
     .end code
 .end method
 
@@ -167,7 +165,7 @@ L26:    pop2
 L27:    invokestatic Method org/lwjgl/opengl/GL11 float (I)V
 L30:    return
 L31:    
-        .attribute StackMap b'\x00\x03\x00\x0C\x00\x00\x00\x00\x00\x0D\x00\x00\x00\x01\x07\x00\x8A\x00\x0E\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x0C\x00\x00\x00\x00\x00\x0D\x00\x00\x00\x01\x07\x00\x86\x00\x0E\x00\x00\x00\x00'
     .end code
 .end method
 
@@ -203,7 +201,7 @@ L53:    invokevirtual Method FE break (ZII)Z
 L56:    pop
 L57:    return
 L58:    
-        .attribute StackMap b'\x00\x06\x00\x16\x00\x00\x00\x01\x07\x00\x8A\x00\x17\x00\x01\x07\x00\x02\x00\x01\x07\x00\x02\x00\x1B\x00\x01\x07\x00\x02\x00\x02\x07\x00\x02\x01\x00\x2F\x00\x00\x00\x01\x07\x00\x8A\x00\x30\x00\x01\x07\x00\x02\x00\x03\x07\x00\x02\x01\x01\x00\x35\x00\x01\x07\x00\x02\x00\x04\x07\x00\x02\x01\x01\x01'
+        .attribute StackMap b'\x00\x06\x00\x16\x00\x00\x00\x01\x07\x00\x86\x00\x17\x00\x01\x07\x00\x02\x00\x01\x07\x00\x02\x00\x1B\x00\x01\x07\x00\x02\x00\x02\x07\x00\x02\x01\x00\x2F\x00\x00\x00\x01\x07\x00\x86\x00\x30\x00\x01\x07\x00\x02\x00\x03\x07\x00\x02\x01\x01\x00\x35\x00\x01\x07\x00\x02\x00\x04\x07\x00\x02\x01\x01\x01'
     .end code
 .end method
 
@@ -341,7 +339,7 @@ L307:   athrow
 L308:   astore_2
 L309:   return
 L310:   
-        .attribute StackMap b'\x00\x0D\x00\x0C\x00\x03\x07\x00\x02\x01\x07\x00\xBB\x00\x00\x00\x6B\x00\x00\x00\x01\x07\x00\x8A\x00\x6F\x00\x00\x00\x01\x07\x00\x8A\x00\x70\x00\x02\x07\x00\x02\x01\x00\x01\x07\x00\xAB\x00\x71\x00\x03\x07\x00\x02\x01\x07\x00\x04\x00\x00\x00\x7D\x00\x03\x07\x00\x02\x01\x07\x00\xBB\x00\x00\x00\xD0\x00\x00\x00\x01\x07\x00\x8A\x00\xD3\x00\x03\x07\x00\x02\x01\x07\x00\x04\x00\x01\x07\x00\xAB\x00\xD4\x00\x03\x07\x00\x02\x01\x07\x00\x04\x00\x00\x00\xE0\x00\x03\x07\x00\x02\x01\x07\x00\xBB\x00\x00\x01\x33\x00\x00\x00\x01\x07\x00\x8A\x01\x34\x00\x03\x07\x00\x02\x01\x07\x00\x04\x00\x01\x07\x00\xAB\x01\x35\x00\x03\x07\x00\x02\x01\x07\x00\x04\x00\x00'
+        .attribute StackMap b'\x00\x0D\x00\x0C\x00\x03\x07\x00\x02\x01\x07\x00\xB7\x00\x00\x00\x6B\x00\x00\x00\x01\x07\x00\x86\x00\x6F\x00\x00\x00\x01\x07\x00\x86\x00\x70\x00\x02\x07\x00\x02\x01\x00\x01\x07\x00\xA7\x00\x71\x00\x03\x07\x00\x02\x01\x07\x00\x04\x00\x00\x00\x7D\x00\x03\x07\x00\x02\x01\x07\x00\xB7\x00\x00\x00\xD0\x00\x00\x00\x01\x07\x00\x86\x00\xD3\x00\x03\x07\x00\x02\x01\x07\x00\x04\x00\x01\x07\x00\xA7\x00\xD4\x00\x03\x07\x00\x02\x01\x07\x00\x04\x00\x00\x00\xE0\x00\x03\x07\x00\x02\x01\x07\x00\xB7\x00\x00\x01\x33\x00\x00\x00\x01\x07\x00\x86\x01\x34\x00\x03\x07\x00\x02\x01\x07\x00\x04\x00\x01\x07\x00\xA7\x01\x35\x00\x03\x07\x00\x02\x01\x07\x00\x04\x00\x00'
     .end code
 .end method
 
@@ -476,7 +474,7 @@ L146:   invokespecial Method FE catch ()V
 L149:   goto L139
 L152:   return
 L153:   
-        .attribute StackMap b'\x00\x0A\x00\x19\x00\x03\x07\x00\x02\x07\x00\xC7\x02\x00\x00\x00\x28\x00\x04\x07\x00\x02\x07\x00\xC7\x02\x07\x00\xBB\x00\x00\x00\x49\x00\x00\x00\x01\x07\x00\x8A\x00\x4D\x00\x04\x07\x00\x02\x07\x00\xC7\x02\x07\x00\xBB\x00\x00\x00\x5C\x00\x00\x00\x01\x07\x00\x8A\x00\x5D\x00\x04\x07\x00\x02\x07\x00\xC7\x02\x07\x00\xBB\x00\x00\x00\x63\x00\x04\x07\x00\x02\x07\x00\xC7\x02\x07\x00\xBB\x00\x01\x07\x00\xC7\x00\x87\x00\x04\x07\x00\x02\x07\x00\xC7\x02\x07\x00\xBB\x00\x00\x00\x8B\x00\x04\x07\x00\x02\x07\x00\xC7\x02\x07\x00\xBB\x00\x00\x00\x98\x00\x04\x07\x00\x02\x07\x00\xC7\x02\x07\x00\xBB\x00\x00'
+        .attribute StackMap b'\x00\x0A\x00\x19\x00\x03\x07\x00\x02\x07\x00\xC3\x02\x00\x00\x00\x28\x00\x04\x07\x00\x02\x07\x00\xC3\x02\x07\x00\xB7\x00\x00\x00\x49\x00\x00\x00\x01\x07\x00\x86\x00\x4D\x00\x04\x07\x00\x02\x07\x00\xC3\x02\x07\x00\xB7\x00\x00\x00\x5C\x00\x00\x00\x01\x07\x00\x86\x00\x5D\x00\x04\x07\x00\x02\x07\x00\xC3\x02\x07\x00\xB7\x00\x00\x00\x63\x00\x04\x07\x00\x02\x07\x00\xC3\x02\x07\x00\xB7\x00\x01\x07\x00\xC3\x00\x87\x00\x04\x07\x00\x02\x07\x00\xC3\x02\x07\x00\xB7\x00\x00\x00\x8B\x00\x04\x07\x00\x02\x07\x00\xC3\x02\x07\x00\xB7\x00\x00\x00\x98\x00\x04\x07\x00\x02\x07\x00\xC3\x02\x07\x00\xB7\x00\x00'
     .end code
 .end method
 
@@ -711,7 +709,7 @@ L387:   invokespecial Method FE else (I)V
 L390:   pop
 L391:   return
 L392:   
-        .attribute StackMap b'\x00\x0A\x00\x07\x00\x00\x00\x01\x07\x00\x8A\x00\x08\x00\x01\x07\x00\x02\x00\x00\x00\x29\x00\x00\x00\x01\x07\x00\x8A\x00\x2A\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x5C\x00\x04\x07\x00\x02\x01\x01\x04\x00\x01\x02\x00\x5F\x00\x04\x07\x00\x02\x01\x01\x04\x00\x02\x02\x02\x00\x65\x00\x04\x07\x00\x02\x01\x01\x04\x00\x00\x01\x41\x00\x04\x07\x00\x02\x01\x01\x04\x00\x00\x01\x6C\x00\x03\x07\x00\x02\x01\x01\x00\x00\x01\x87\x00\x03\x07\x00\x02\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x0A\x00\x07\x00\x00\x00\x01\x07\x00\x86\x00\x08\x00\x01\x07\x00\x02\x00\x00\x00\x29\x00\x00\x00\x01\x07\x00\x86\x00\x2A\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x5C\x00\x04\x07\x00\x02\x01\x01\x04\x00\x01\x02\x00\x5F\x00\x04\x07\x00\x02\x01\x01\x04\x00\x02\x02\x02\x00\x65\x00\x04\x07\x00\x02\x01\x01\x04\x00\x00\x01\x41\x00\x04\x07\x00\x02\x01\x01\x04\x00\x00\x01\x6C\x00\x03\x07\x00\x02\x01\x01\x00\x00\x01\x87\x00\x03\x07\x00\x02\x01\x01\x00\x00'
     .end code
 .end method
 
@@ -783,7 +781,7 @@ L98:    aload_0
 L99:    invokespecial Method FE short ()V
 L102:   return
 L103:   
-        .attribute StackMap b'\x00\x02\x00\x32\x00\x02\x07\x00\x02\x07\x00\xF3\x00\x00\x00\x62\x00\x02\x07\x00\x02\x07\x00\xF3\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x32\x00\x02\x07\x00\x02\x07\x00\xEF\x00\x00\x00\x62\x00\x02\x07\x00\x02\x07\x00\xEF\x00\x00'
     .end code
 .end method
 
@@ -933,7 +931,7 @@ L270:   aload_0
 L271:   invokevirtual Method FE this ()V
 L274:   return
 L275:   
-        .attribute StackMap b'\x00\x0E\x00\x10\x00\x04\x07\x00\x02\x07\x00\xC7\x07\x00\xC7\x02\x00\x00\x00\x37\x00\x04\x07\x00\x02\x07\x00\xC7\x07\x00\xC7\x02\x00\x00\x00\x4A\x00\x04\x07\x00\x02\x07\x00\xC7\x07\x00\xC7\x02\x00\x00\x00\x67\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xC7\x02\x01\x00\x00\x00\x86\x00\x00\x00\x01\x07\x00\x8A\x00\x87\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xC7\x02\x01\x00\x00\x00\xAB\x00\x00\x00\x01\x07\x00\x8A\x00\xAC\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xC7\x02\x01\x00\x00\x00\xBB\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xC7\x02\x01\x00\x01\x02\x00\xCA\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xC7\x02\x01\x00\x01\x07\x00\xC7\x00\xCF\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xC7\x02\x01\x00\x01\x07\x00\xC7\x00\xFD\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xC7\x02\x01\x00\x00\x01\x01\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xC7\x02\x01\x00\x00\x01\x0E\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xC7\x02\x01\x00\x00'
+        .attribute StackMap b'\x00\x0E\x00\x10\x00\x04\x07\x00\x02\x07\x00\xC3\x07\x00\xC3\x02\x00\x00\x00\x37\x00\x04\x07\x00\x02\x07\x00\xC3\x07\x00\xC3\x02\x00\x00\x00\x4A\x00\x04\x07\x00\x02\x07\x00\xC3\x07\x00\xC3\x02\x00\x00\x00\x67\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xC3\x02\x01\x00\x00\x00\x86\x00\x00\x00\x01\x07\x00\x86\x00\x87\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xC3\x02\x01\x00\x00\x00\xAB\x00\x00\x00\x01\x07\x00\x86\x00\xAC\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xC3\x02\x01\x00\x00\x00\xBB\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xC3\x02\x01\x00\x01\x02\x00\xCA\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xC3\x02\x01\x00\x01\x07\x00\xC3\x00\xCF\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xC3\x02\x01\x00\x01\x07\x00\xC3\x00\xFD\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xC3\x02\x01\x00\x00\x01\x01\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xC3\x02\x01\x00\x00\x01\x0E\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xC3\x02\x01\x00\x00'
     .end code
 .end method
 
@@ -982,100 +980,85 @@ L91:    goto L67
 L94:    athrow
 L95:    return
 L96:    
-        .attribute StackMap b'\x00\x06\x00\x12\x00\x03\x07\x00\x02\x07\x01\x53\x07\x00\xBB\x00\x00\x00\x3A\x00\x00\x00\x01\x07\x00\x8A\x00\x3B\x00\x03\x07\x00\x02\x07\x01\x53\x07\x00\xBB\x00\x00\x00\x43\x00\x03\x07\x00\x02\x07\x01\x53\x07\x00\xBB\x00\x01\x07\x00\xBB\x00\x5E\x00\x00\x00\x01\x07\x00\x8A\x00\x5F\x00\x03\x07\x00\x02\x07\x01\x53\x07\x00\xBB\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x12\x00\x03\x07\x00\x02\x07\x01\x4F\x07\x00\xB7\x00\x00\x00\x3A\x00\x00\x00\x01\x07\x00\x86\x00\x3B\x00\x03\x07\x00\x02\x07\x01\x4F\x07\x00\xB7\x00\x00\x00\x43\x00\x03\x07\x00\x02\x07\x01\x4F\x07\x00\xB7\x00\x01\x07\x00\xB7\x00\x5E\x00\x00\x00\x01\x07\x00\x86\x00\x5F\x00\x03\x07\x00\x02\x07\x01\x4F\x07\x00\xB7\x00\x00'
     .end code
 .end method
 
 .method private blurmethod : (FFII)V
-    .code stack 3 locals 6
-L0:     invokestatic Method FE readblurtoggle ()F
+    .code stack 3 locals 5
+L0:     bipush 7
+L2:     iconst_1
 L3:     dup
-L4:     putstatic Field FE blurstate F
-L7:     fstore 5
-L9:     bipush 7
-L11:    iconst_1
-L12:    dup
-L13:    pop2
-L14:    invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
-L17:    fconst_0
-L18:    fload_1
-L19:    fadd
-L20:    fconst_0
-L21:    fload_2
-L22:    fadd
-L23:    invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
-L26:    ldc_w -8e0f
-L29:    ldc_w 8e0f
-L32:    getstatic Field FE instanceof F
-L35:    fmul
-L36:    fload 5
-L38:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L41:    iload_3
-L42:    i2f
-L43:    ldc_w 2.56e2f
-L46:    fdiv
-L47:    fload_1
-L48:    fadd
-L49:    fconst_0
-L50:    fload_2
-L51:    fadd
-L52:    invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
-L55:    ldc_w 8e0f
-L58:    dup
-L59:    getstatic Field FE instanceof F
-L62:    fmul
-L63:    fload 5
-L65:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L68:    iload_3
-L69:    i2f
-L70:    ldc_w 2.56e2f
-L73:    fdiv
-L74:    fload_1
-L75:    fadd
-L76:    iload 4
-L78:    i2f
-L79:    ldc_w 2.56e2f
-L82:    fdiv
-L83:    fload_2
-L84:    fadd
-L85:    invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
-L88:    ldc_w 8e0f
-L91:    ldc_w -8e0f
-L94:    getstatic Field FE instanceof F
-L97:    fmul
-L98:    fload 5
-L100:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L103:   fconst_0
-L104:   fload_1
-L105:   fadd
-L106:   iload 4
-L108:   i2f
-L109:   ldc_w 2.56e2f
-L112:   fdiv
-L113:   fload_2
-L114:   fadd
-L115:   invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
-L118:   ldc_w -8e0f
-L121:   dup
-L122:   getstatic Field FE instanceof F
-L125:   fmul
-L126:   fload 5
-L128:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L131:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
-L134:   return
-L135:   
-        .localvariabletable
-            5 is blurstate F from L0 to L135
-        .end localvariabletable
+L4:     pop2
+L5:     invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
+L8:     fconst_0
+L9:     fload_1
+L10:    fadd
+L11:    fconst_0
+L12:    fload_2
+L13:    fadd
+L14:    invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
+L17:    ldc_w -8e0f
+L20:    ldc_w 8e0f
+L23:    getstatic Field FE instanceof F
+L26:    fmul
+L27:    getstatic Field net/gewaltig/cultris/Cultris blurtoggle F
+L30:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L33:    iload_3
+L34:    i2f
+L35:    ldc_w 2.56e2f
+L38:    fdiv
+L39:    fload_1
+L40:    fadd
+L41:    fconst_0
+L42:    fload_2
+L43:    fadd
+L44:    invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
+L47:    ldc_w 8e0f
+L50:    dup
+L51:    getstatic Field FE instanceof F
+L54:    fmul
+L55:    getstatic Field net/gewaltig/cultris/Cultris blurtoggle F
+L58:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L61:    iload_3
+L62:    i2f
+L63:    ldc_w 2.56e2f
+L66:    fdiv
+L67:    fload_1
+L68:    fadd
+L69:    iload 4
+L71:    i2f
+L72:    ldc_w 2.56e2f
+L75:    fdiv
+L76:    fload_2
+L77:    fadd
+L78:    invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
+L81:    ldc_w 8e0f
+L84:    ldc_w -8e0f
+L87:    getstatic Field FE instanceof F
+L90:    fmul
+L91:    getstatic Field net/gewaltig/cultris/Cultris blurtoggle F
+L94:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L97:    fconst_0
+L98:    fload_1
+L99:    fadd
+L100:   iload 4
+L102:   i2f
+L103:   ldc_w 2.56e2f
+L106:   fdiv
+L107:   fload_2
+L108:   fadd
+L109:   invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
+L112:   ldc_w -8e0f
+L115:   dup
+L116:   getstatic Field FE instanceof F
+L119:   fmul
+L120:   getstatic Field net/gewaltig/cultris/Cultris blurtoggle F
+L123:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L126:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
+L129:   return
+L130:   
     .end code
-    .runtime visible annotations
-        .annotation Lme/coley/recaf/metadata/InsnComment;
-            At_1 = string "Always read the new blur state from the method"
-        .end annotation
-        .annotation Lme/coley/recaf/metadata/InsnComment;
-            At_2 = string "Duplicate the result for both storing and using"
-        .end annotation
-    .end runtime
 .end method
 
 .method public break : (LAe;Ljava/lang/String;F)LjC;
@@ -1111,7 +1094,7 @@ L19:    f2i
 L20:    invokespecial Method FE break (II)Z
 L23:    ireturn
 L24:    
-        .attribute StackMap b'\x00\x02\x00\x0A\x00\x00\x00\x01\x07\x00\x8A\x00\x0B\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0A\x00\x00\x00\x01\x07\x00\x86\x00\x0B\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00'
     .end code
 .end method
 
@@ -1168,7 +1151,7 @@ L78:    astore_1
 L79:    iload_3
 L80:    ireturn
 L81:    
-        .attribute StackMap b'\x00\x04\x00\x3E\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00\x00\x4D\x00\x00\x00\x01\x07\x00\x8A\x00\x4E\x00\x04\x07\x00\x02\x01\x01\x01\x00\x01\x07\x00\x69\x00\x4F\x00\x04\x07\x00\x02\x00\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x3E\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00\x00\x4D\x00\x00\x00\x01\x07\x00\x86\x00\x4E\x00\x04\x07\x00\x02\x01\x01\x01\x00\x01\x07\x00\x65\x00\x4F\x00\x04\x07\x00\x02\x00\x01\x01\x00\x00'
     .end code
 .end method
 
@@ -1425,22 +1408,22 @@ L404:   fconst_1
 L405:   fconst_0
 L406:   invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
 L409:   fconst_2
-L410:   ldc -1e0f
-L412:   ldc_w 2e1f
-L415:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L418:   fconst_0
-L419:   dup
-L420:   invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
-L423:   ldc_w -2e0f
-L426:   ldc -1e0f
-L428:   ldc_w 2e1f
-L431:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L434:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
-L437:   invokestatic Method org/lwjgl/opengl/Display class ()V
-L440:   pop
-L441:   return
-L442:   
-        .attribute StackMap b'\x00\x06\x00\x2B\x00\x03\x07\x00\x02\x07\x02\x4F\x07\x02\x02\x00\x01\x07\x02\x02\x00\x48\x00\x00\x00\x01\x07\x00\x8A\x00\x49\x00\x03\x07\x00\x02\x07\x02\x4F\x07\x02\x02\x00\x00\x00\x7C\x00\x05\x07\x00\x02\x07\x02\x1D\x07\x02\x2C\x01\x01\x00\x01\x01\x00\x92\x00\x00\x00\x01\x07\x00\x8A\x00\x93\x00\x05\x07\x00\x02\x07\x02\x1D\x07\x02\x2C\x01\x01\x00\x00'
+L410:   ldc_w -1e0f
+L413:   ldc_w 2e1f
+L416:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L419:   fconst_0
+L420:   dup
+L421:   invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
+L424:   ldc_w -2e0f
+L427:   ldc_w -1e0f
+L430:   ldc_w 2e1f
+L433:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L436:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
+L439:   invokestatic Method org/lwjgl/opengl/Display class ()V
+L442:   pop
+L443:   return
+L444:   
+        .attribute StackMap b'\x00\x06\x00\x2B\x00\x03\x07\x00\x02\x07\x02\x44\x07\x01\xF6\x00\x01\x07\x01\xF6\x00\x48\x00\x00\x00\x01\x07\x00\x86\x00\x49\x00\x03\x07\x00\x02\x07\x02\x44\x07\x01\xF6\x00\x00\x00\x7C\x00\x05\x07\x00\x02\x07\x02\x11\x07\x02\x20\x01\x01\x00\x01\x01\x00\x92\x00\x00\x00\x01\x07\x00\x86\x00\x93\x00\x05\x07\x00\x02\x07\x02\x11\x07\x02\x20\x01\x01\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method
@@ -1548,7 +1531,7 @@ L230:   dup
 L231:   pop2
 L232:   ireturn
 L233:   
-        .attribute StackMap b'\x00\x0E\x00\x30\x00\x00\x00\x01\x07\x00\x8A\x00\x31\x00\x01\x07\x00\x02\x00\x00\x00\x47\x00\x01\x07\x00\x02\x00\x00\x00\x48\x00\x01\x07\x00\x02\x00\x01\x07\x00\x02\x00\x5C\x00\x01\x07\x00\x02\x00\x01\x07\x00\x02\x00\x8C\x00\x01\x07\x00\x02\x00\x00\x00\x8F\x00\x00\x00\x01\x07\x00\x8A\x00\x90\x00\x01\x07\x00\x02\x00\x00\x00\x93\x00\x01\x07\x00\x02\x00\x00\x00\x96\x00\x01\x07\x00\x02\x00\x00\x00\xA3\x00\x01\x07\x00\x02\x00\x00\x00\xB3\x00\x01\x07\x00\x02\x00\x00\x00\xCA\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\xE4\x00\x02\x07\x00\x02\x01\x00\x00'
+        .attribute StackMap b'\x00\x0E\x00\x30\x00\x00\x00\x01\x07\x00\x86\x00\x31\x00\x01\x07\x00\x02\x00\x00\x00\x47\x00\x01\x07\x00\x02\x00\x00\x00\x48\x00\x01\x07\x00\x02\x00\x01\x07\x00\x02\x00\x5C\x00\x01\x07\x00\x02\x00\x01\x07\x00\x02\x00\x8C\x00\x01\x07\x00\x02\x00\x00\x00\x8F\x00\x00\x00\x01\x07\x00\x86\x00\x90\x00\x01\x07\x00\x02\x00\x00\x00\x93\x00\x01\x07\x00\x02\x00\x00\x00\x96\x00\x01\x07\x00\x02\x00\x00\x00\xA3\x00\x01\x07\x00\x02\x00\x00\x00\xB3\x00\x01\x07\x00\x02\x00\x00\x00\xCA\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\xE4\x00\x02\x07\x00\x02\x01\x00\x00'
     .end code
 .end method
 
@@ -1577,7 +1560,7 @@ L47:    goto L37
 L50:    athrow
 L51:    return
 L52:    
-        .attribute StackMap b'\x00\x06\x00\x09\x00\x01\x07\x00\x02\x00\x00\x00\x16\x00\x00\x00\x01\x07\x00\x8A\x00\x17\x00\x01\x07\x00\x02\x00\x00\x00\x25\x00\x01\x07\x00\x02\x00\x00\x00\x32\x00\x00\x00\x01\x07\x00\x8A\x00\x33\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x09\x00\x01\x07\x00\x02\x00\x00\x00\x16\x00\x00\x00\x01\x07\x00\x86\x00\x17\x00\x01\x07\x00\x02\x00\x00\x00\x25\x00\x01\x07\x00\x02\x00\x00\x00\x32\x00\x00\x00\x01\x07\x00\x86\x00\x33\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
@@ -2801,7 +2784,7 @@ L1535:  pop2
 L1536:  invokestatic Method org/lwjgl/opengl/EXTFramebufferObject break (II)V
 L1539:  return
 L1540:  
-        .attribute StackMap b'\x00\x16\x00\x1D\x00\x01\x07\x00\x02\x00\x00\x00\x2C\x00\x01\x07\x00\x02\x00\x00\x00\x52\x00\x01\x07\x00\x02\x00\x00\x00\x6B\x00\x00\x00\x01\x07\x00\x8A\x00\x6C\x00\x01\x07\x00\x02\x00\x01\x07\x00\x69\x00\x81\x00\x01\x07\x00\x02\x00\x00\x00\xF3\x00\x00\x00\x01\x07\x00\x8A\x00\xF4\x00\x01\x07\x00\x02\x00\x01\x07\x01\xEA\x00\xF9\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00\x01\x63\x00\x02\x07\x00\x02\x07\x02\xD3\x00\x00\x01\x67\x00\x02\x07\x00\x02\x07\x02\xD3\x00\x01\x01\x01\x6A\x00\x02\x07\x00\x02\x07\x02\xD3\x00\x00\x01\x7D\x00\x02\x07\x00\x02\x07\x02\xD3\x00\x00\x01\x84\x00\x02\x07\x00\x02\x07\x02\xD3\x00\x00\x05\x49\x00\x02\x07\x00\x02\x07\x02\xD3\x00\x00\x05\x8A\x00\x02\x07\x00\x02\x07\x02\xD3\x00\x00\x05\x8E\x00\x02\x07\x00\x02\x07\x02\xD3\x00\x01\x01\x05\xA1\x00\x02\x07\x00\x02\x07\x02\xD3\x00\x00\x05\xAB\x00\x02\x07\x00\x02\x07\x02\xD3\x00\x00\x05\xEC\x00\x02\x07\x00\x02\x07\x02\xD3\x00\x00\x05\xF0\x00\x02\x07\x00\x02\x07\x02\xD3\x00\x01\x01\x06\x03\x00\x02\x07\x00\x02\x07\x02\xD3\x00\x00'
+        .attribute StackMap b'\x00\x16\x00\x1D\x00\x01\x07\x00\x02\x00\x00\x00\x2C\x00\x01\x07\x00\x02\x00\x00\x00\x52\x00\x01\x07\x00\x02\x00\x00\x00\x6B\x00\x00\x00\x01\x07\x00\x86\x00\x6C\x00\x01\x07\x00\x02\x00\x01\x07\x00\x65\x00\x81\x00\x01\x07\x00\x02\x00\x00\x00\xF3\x00\x00\x00\x01\x07\x00\x86\x00\xF4\x00\x01\x07\x00\x02\x00\x01\x07\x01\xDE\x00\xF9\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00\x01\x63\x00\x02\x07\x00\x02\x07\x02\xC8\x00\x00\x01\x67\x00\x02\x07\x00\x02\x07\x02\xC8\x00\x01\x01\x01\x6A\x00\x02\x07\x00\x02\x07\x02\xC8\x00\x00\x01\x7D\x00\x02\x07\x00\x02\x07\x02\xC8\x00\x00\x01\x84\x00\x02\x07\x00\x02\x07\x02\xC8\x00\x00\x05\x49\x00\x02\x07\x00\x02\x07\x02\xC8\x00\x00\x05\x8A\x00\x02\x07\x00\x02\x07\x02\xC8\x00\x00\x05\x8E\x00\x02\x07\x00\x02\x07\x02\xC8\x00\x01\x01\x05\xA1\x00\x02\x07\x00\x02\x07\x02\xC8\x00\x00\x05\xAB\x00\x02\x07\x00\x02\x07\x02\xC8\x00\x00\x05\xEC\x00\x02\x07\x00\x02\x07\x02\xC8\x00\x00\x05\xF0\x00\x02\x07\x00\x02\x07\x02\xC8\x00\x01\x01\x06\x03\x00\x02\x07\x00\x02\x07\x02\xC8\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method
@@ -2896,7 +2879,7 @@ L131:   iload_3
 L132:   goto L16
 L135:   return
 L136:   
-        .attribute StackMap b'\x00\x0A\x00\x10\x00\x04\x07\x00\x02\x01\x01\x01\x00\x01\x01\x00\x38\x00\x00\x00\x01\x07\x00\x8A\x00\x39\x00\x05\x07\x00\x02\x01\x01\x01\x07\x00\xC7\x00\x00\x00\x41\x00\x06\x07\x00\x02\x01\x01\x01\x07\x00\xC7\x07\x00\xE3\x00\x01\x07\x00\xE3\x00\x5C\x00\x00\x00\x01\x07\x00\x8A\x00\x5D\x00\x06\x07\x00\x02\x01\x01\x01\x07\x00\xC7\x07\x00\xE3\x00\x00\x00\x68\x00\x06\x07\x00\x02\x01\x01\x01\x07\x00\xC7\x07\x00\xE3\x00\x00\x00\x77\x00\x05\x07\x00\x02\x01\x01\x01\x07\x00\xC7\x00\x00\x00\x80\x00\x05\x07\x00\x02\x01\x01\x01\x07\x00\xC7\x00\x00\x00\x87\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x0A\x00\x10\x00\x04\x07\x00\x02\x01\x01\x01\x00\x01\x01\x00\x38\x00\x00\x00\x01\x07\x00\x86\x00\x39\x00\x05\x07\x00\x02\x01\x01\x01\x07\x00\xC3\x00\x00\x00\x41\x00\x06\x07\x00\x02\x01\x01\x01\x07\x00\xC3\x07\x00\xDF\x00\x01\x07\x00\xDF\x00\x5C\x00\x00\x00\x01\x07\x00\x86\x00\x5D\x00\x06\x07\x00\x02\x01\x01\x01\x07\x00\xC3\x07\x00\xDF\x00\x00\x00\x68\x00\x06\x07\x00\x02\x01\x01\x01\x07\x00\xC3\x07\x00\xDF\x00\x00\x00\x77\x00\x05\x07\x00\x02\x01\x01\x01\x07\x00\xC3\x00\x00\x00\x80\x00\x05\x07\x00\x02\x01\x01\x01\x07\x00\xC3\x00\x00\x00\x87\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00'
     .end code
 .end method
 
@@ -2922,7 +2905,7 @@ L40:    invokestatic Method org/lwjgl/opengl/Display "public" ()V
 L43:    invokestatic Method org/lwjgl/input/k case ()V
 L46:    return
 L47:    
-        .attribute StackMap b'\x00\x03\x00\x0B\x00\x02\x07\x00\x02\x07\x00\xBB\x00\x01\x07\x00\xBB\x00\x23\x00\x00\x00\x01\x07\x00\x8A\x00\x24\x00\x02\x07\x00\x02\x07\x00\xBB\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x0B\x00\x02\x07\x00\x02\x07\x00\xB7\x00\x01\x07\x00\xB7\x00\x23\x00\x00\x00\x01\x07\x00\x86\x00\x24\x00\x02\x07\x00\x02\x07\x00\xB7\x00\x00'
     .end code
 .end method
 
@@ -2971,7 +2954,7 @@ L91:    goto L67
 L94:    athrow
 L95:    return
 L96:    
-        .attribute StackMap b'\x00\x06\x00\x12\x00\x03\x07\x00\x02\x07\x01\x53\x07\x00\xBB\x00\x00\x00\x3A\x00\x00\x00\x01\x07\x00\x8A\x00\x3B\x00\x03\x07\x00\x02\x07\x01\x53\x07\x00\xBB\x00\x00\x00\x43\x00\x03\x07\x00\x02\x07\x01\x53\x07\x00\xBB\x00\x01\x07\x00\xBB\x00\x5E\x00\x00\x00\x01\x07\x00\x8A\x00\x5F\x00\x03\x07\x00\x02\x07\x01\x53\x07\x00\xBB\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x12\x00\x03\x07\x00\x02\x07\x01\x4F\x07\x00\xB7\x00\x00\x00\x3A\x00\x00\x00\x01\x07\x00\x86\x00\x3B\x00\x03\x07\x00\x02\x07\x01\x4F\x07\x00\xB7\x00\x00\x00\x43\x00\x03\x07\x00\x02\x07\x01\x4F\x07\x00\xB7\x00\x01\x07\x00\xB7\x00\x5E\x00\x00\x00\x01\x07\x00\x86\x00\x5F\x00\x03\x07\x00\x02\x07\x01\x4F\x07\x00\xB7\x00\x00'
     .end code
 .end method
 
@@ -2993,7 +2976,7 @@ L20:    pop2
 L21:    invokestatic Method org/lwjgl/opengl/GL11 break (I)V
 L24:    return
 L25:    
-        .attribute StackMap b'\x00\x02\x00\x07\x00\x00\x00\x01\x07\x00\x8A\x00\x08\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x07\x00\x00\x00\x01\x07\x00\x86\x00\x08\x00\x00\x00\x00'
     .end code
 .end method
 
@@ -3055,7 +3038,7 @@ L69:    ldc_w -4e0f
 L72:    putfield Field jC do F
 L75:    return
 L76:    
-        .attribute StackMap b'\x00\x04\x00\x2E\x00\x02\x07\x00\x02\x07\x00\xF3\x00\x00\x00\x36\x00\x02\x07\x00\x02\x07\x00\xF3\x00\x00\x00\x43\x00\x00\x00\x01\x07\x00\x8A\x00\x44\x00\x02\x07\x00\x02\x07\x00\xF3\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x2E\x00\x02\x07\x00\x02\x07\x00\xEF\x00\x00\x00\x36\x00\x02\x07\x00\x02\x07\x00\xEF\x00\x00\x00\x43\x00\x00\x00\x01\x07\x00\x86\x00\x44\x00\x02\x07\x00\x02\x07\x00\xEF\x00\x00'
     .end code
 .end method
 
@@ -3191,27 +3174,27 @@ L127:   fconst_0
 L128:   fcmpl
 L129:   aload_1
 L130:   swap
-L131:   ifne L145
+L131:   ifne L146
 L134:   fconst_0
 L135:   putfield Field bC this F
 L138:   aload_1
-L139:   ldc -1e0f
-L141:   putfield Field bC do F
-L144:   return
-L145:   fload_2
-L146:   fneg
-L147:   putfield Field bC do F
-L150:   return
-L151:   
-        .attribute StackMap b'\x00\x09\x00\x2C\x00\x03\x07\x00\x02\x07\x00\xC7\x02\x00\x01\x07\x01\xEA\x00\x32\x00\x00\x00\x01\x07\x00\x8A\x00\x33\x00\x03\x07\x00\x02\x07\x00\xC7\x02\x00\x00\x00\x48\x00\x03\x07\x00\x02\x07\x00\xC7\x02\x00\x00\x00\x68\x00\x03\x07\x00\x02\x07\x00\xC7\x02\x00\x00\x00\x70\x00\x03\x07\x00\x02\x07\x00\xC7\x02\x00\x00\x00\x7D\x00\x00\x00\x01\x07\x00\x8A\x00\x7E\x00\x03\x07\x00\x02\x07\x00\xC7\x02\x00\x00\x00\x91\x00\x03\x07\x00\x02\x07\x00\xC7\x02\x00\x01\x07\x00\xC7'
+L139:   ldc_w -1e0f
+L142:   putfield Field bC do F
+L145:   return
+L146:   fload_2
+L147:   fneg
+L148:   putfield Field bC do F
+L151:   return
+L152:   
+        .attribute StackMap b'\x00\x09\x00\x2C\x00\x03\x07\x00\x02\x07\x00\xC3\x02\x00\x01\x07\x01\xDE\x00\x32\x00\x00\x00\x01\x07\x00\x86\x00\x33\x00\x03\x07\x00\x02\x07\x00\xC3\x02\x00\x00\x00\x48\x00\x03\x07\x00\x02\x07\x00\xC3\x02\x00\x00\x00\x68\x00\x03\x07\x00\x02\x07\x00\xC3\x02\x00\x00\x00\x70\x00\x03\x07\x00\x02\x07\x00\xC3\x02\x00\x00\x00\x7D\x00\x00\x00\x01\x07\x00\x86\x00\x7E\x00\x03\x07\x00\x02\x07\x00\xC3\x02\x00\x00\x00\x92\x00\x03\x07\x00\x02\x07\x00\xC3\x02\x00\x01\x07\x00\xC3'
     .end code
 .end method
 
 .method public static hzfoundhere : ()[Lorg/lwjgl/opengl/DisplayMode;
-    .code stack 5 locals 8
+    .code stack 5 locals 7
 L0:     getstatic Field FE switch [Lorg/lwjgl/opengl/DisplayMode;
-L3:     ifnonnull L268
-        .catch org/lwjgl/LWJGLException from L6 to L176 using L258
+L3:     ifnonnull L275
+        .catch org/lwjgl/LWJGLException from L6 to L183 using L265
 L6:     new java/util/LinkedHashMap
 L9:     dup
 L10:    invokespecial Method java/util/LinkedHashMap <init> ()V
@@ -3227,132 +3210,136 @@ L23:    dup
 L24:    pop2
 L25:    dup
 L26:    istore_3
-L27:    invokestatic Method FE readhzvalue ()I
-L30:    istore 7
-L32:    iload_2
-L33:    if_icmpge L177
-L36:    aload_1
-L37:    iload_3
-L38:    aaload
-L39:    dup
-L40:    astore 4
-L42:    invokevirtual Method org/lwjgl/opengl/DisplayMode else ()Z
-L45:    ifeq L169
-L48:    aload 4
-L50:    invokevirtual Method org/lwjgl/opengl/DisplayMode const ()I
-L53:    i2l
-L54:    bipush 32
-L56:    iconst_1
-L57:    dup
-L58:    pop2
-L59:    lshl
-L60:    aload 4
-L62:    invokevirtual Method org/lwjgl/opengl/DisplayMode break ()I
-L65:    i2l
-L66:    ladd
-L67:    invokestatic Method java/lang/Long valueOf (J)Ljava/lang/Long;
-L70:    astore 5
-L72:    aload_0
-L73:    aload 5
-L75:    invokeinterface InterfaceMethod java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object; 2
-L80:    checkcast org/lwjgl/opengl/DisplayMode
-L83:    dup
-L84:    astore 6
-L86:    ifnull L158
-L89:    aload 4
-L91:    invokevirtual Method org/lwjgl/opengl/DisplayMode short ()I
-L94:    iload 7
-L96:    if_icmpne L112
-L99:    aload 4
-L101:   invokevirtual Method org/lwjgl/opengl/DisplayMode float ()I
-L104:   bipush 32
-L106:   iconst_1
-L107:   dup
-L108:   pop2
-L109:   if_icmpeq L158
-L112:   aload 6
-L114:   invokevirtual Method org/lwjgl/opengl/DisplayMode short ()I
-L117:   iload 7
-L119:   if_icmpeq L132
-L122:   aload 4
-L124:   invokevirtual Method org/lwjgl/opengl/DisplayMode short ()I
-L127:   iload 7
-L129:   if_icmpeq L158
-L132:   aload 6
-L134:   invokevirtual Method org/lwjgl/opengl/DisplayMode float ()I
-L137:   bipush 32
-L139:   iconst_1
-L140:   dup
-L141:   pop2
-L142:   if_icmpeq L169
-L145:   aload 4
-L147:   invokevirtual Method org/lwjgl/opengl/DisplayMode float ()I
-L150:   bipush 32
-L152:   iconst_1
-L153:   dup
-L154:   pop2
-L155:   if_icmpne L169
-L158:   aload_0
-L159:   aload 5
-L161:   aload 4
-L163:   invokeinterface InterfaceMethod java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
-L168:   pop
-L169:   iinc 3 1
-L172:   iload_3
-L173:   goto L27
-L176:   athrow
-        .catch org/lwjgl/LWJGLException from L177 to L241 using L258
-L177:   aload_0
-L178:   invokeinterface InterfaceMethod java/util/Map size ()I 1
-L183:   anewarray org/lwjgl/opengl/DisplayMode
-L186:   iconst_1
-L187:   dup
-L188:   pop2
-L189:   putstatic Field FE switch [Lorg/lwjgl/opengl/DisplayMode;
-L192:   iconst_0
+L27:    iload_2
+L28:    if_icmpge L184
+L31:    aload_1
+L32:    iload_3
+L33:    aaload
+L34:    dup
+L35:    astore 4
+L37:    invokevirtual Method org/lwjgl/opengl/DisplayMode else ()Z
+L40:    ifeq L176
+L43:    aload 4
+L45:    invokevirtual Method org/lwjgl/opengl/DisplayMode const ()I
+L48:    i2l
+L49:    bipush 32
+L51:    iconst_1
+L52:    dup
+L53:    pop2
+L54:    lshl
+L55:    aload 4
+L57:    invokevirtual Method org/lwjgl/opengl/DisplayMode break ()I
+L60:    i2l
+L61:    ladd
+L62:    invokestatic Method java/lang/Long valueOf (J)Ljava/lang/Long;
+L65:    astore 5
+L67:    aload_0
+L68:    aload 5
+L70:    invokeinterface InterfaceMethod java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object; 2
+L75:    checkcast org/lwjgl/opengl/DisplayMode
+L78:    dup
+L79:    astore 6
+L81:    ifnull L165
+L84:    aload 4
+L86:    invokevirtual Method org/lwjgl/opengl/DisplayMode short ()I
+L89:    getstatic Field net/gewaltig/cultris/Cultris framerate I
+L92:    iconst_1
+L93:    dup
+L94:    pop2
+L95:    if_icmpne L111
+L98:    aload 4
+L100:   invokevirtual Method org/lwjgl/opengl/DisplayMode float ()I
+L103:   bipush 32
+L105:   iconst_1
+L106:   dup
+L107:   pop2
+L108:   if_icmpeq L165
+L111:   aload 6
+L113:   invokevirtual Method org/lwjgl/opengl/DisplayMode short ()I
+L116:   getstatic Field net/gewaltig/cultris/Cultris framerate I
+L119:   iconst_1
+L120:   dup
+L121:   pop2
+L122:   if_icmpeq L139
+L125:   aload 4
+L127:   invokevirtual Method org/lwjgl/opengl/DisplayMode short ()I
+L130:   getstatic Field net/gewaltig/cultris/Cultris framerate I
+L133:   iconst_1
+L134:   dup
+L135:   pop2
+L136:   if_icmpeq L165
+L139:   aload 6
+L141:   invokevirtual Method org/lwjgl/opengl/DisplayMode float ()I
+L144:   bipush 32
+L146:   iconst_1
+L147:   dup
+L148:   pop2
+L149:   if_icmpeq L176
+L152:   aload 4
+L154:   invokevirtual Method org/lwjgl/opengl/DisplayMode float ()I
+L157:   bipush 32
+L159:   iconst_1
+L160:   dup
+L161:   pop2
+L162:   if_icmpne L176
+L165:   aload_0
+L166:   aload 5
+L168:   aload 4
+L170:   invokeinterface InterfaceMethod java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+L175:   pop
+L176:   iinc 3 1
+L179:   iload_3
+L180:   goto L27
+L183:   athrow
+        .catch org/lwjgl/LWJGLException from L184 to L248 using L265
+L184:   aload_0
+L185:   invokeinterface InterfaceMethod java/util/Map size ()I 1
+L190:   anewarray org/lwjgl/opengl/DisplayMode
 L193:   iconst_1
 L194:   dup
 L195:   pop2
-L196:   istore_1
-L197:   aload_0
-L198:   invokeinterface InterfaceMethod java/util/Map values ()Ljava/util/Collection; 1
-L203:   invokeinterface InterfaceMethod java/util/Collection iterator ()Ljava/util/Iterator; 1
-L208:   dup
-L209:   astore_2
-L210:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
-L215:   ifeq L242
-L218:   aload_2
-L219:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
-L224:   checkcast org/lwjgl/opengl/DisplayMode
-L227:   astore_3
-L228:   getstatic Field FE switch [Lorg/lwjgl/opengl/DisplayMode;
-L231:   iload_1
-L232:   aload_3
-L233:   iinc 1 1
-L236:   aastore
-L237:   aload_2
-L238:   goto L210
-L241:   athrow
-        .catch org/lwjgl/LWJGLException from L242 to L255 using L258
-L242:   getstatic Field FE switch [Lorg/lwjgl/opengl/DisplayMode;
-L245:   new eF
-L248:   dup
-L249:   invokespecial Method eF <init> ()V
-L252:   invokestatic Method java/util/Arrays sort ([Ljava/lang/Object;Ljava/util/Comparator;)V
-L255:   goto L268
-L258:   astore_0
-L259:   new java/lang/RuntimeException
-L262:   dup
-L263:   aload_0
-L264:   invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/Throwable;)V
-L267:   athrow
-L268:   getstatic Field FE switch [Lorg/lwjgl/opengl/DisplayMode;
-L271:   areturn
-L272:   
-        .attribute StackMap b'\x00\x0C\x00\x1B\x00\x04\x07\x00\xAF\x07\x00\x8B\x01\x01\x00\x01\x01\x00\x70\x00\x08\x07\x00\xAF\x07\x00\x8B\x01\x01\x07\x00\x75\x07\x03\x79\x07\x00\x75\x01\x00\x00\x00\x84\x00\x08\x07\x00\xAF\x07\x00\x8B\x01\x01\x07\x00\x75\x07\x03\x79\x07\x00\x75\x01\x00\x00\x00\x9E\x00\x08\x07\x00\xAF\x07\x00\x8B\x01\x01\x07\x00\x75\x07\x03\x79\x07\x00\x75\x01\x00\x00\x00\xA9\x00\x08\x07\x00\xAF\x07\x00\x8B\x01\x01\x07\x00\x75\x00\x00\x01\x00\x00\x00\xB0\x00\x00\x00\x01\x07\x00\x8A\x00\xB1\x00\x08\x07\x00\xAF\x07\x00\x8B\x01\x01\x00\x00\x00\x01\x00\x00\x00\xD2\x00\x08\x07\x00\xAF\x01\x07\x00\xBB\x00\x00\x00\x00\x01\x00\x01\x07\x00\xBB\x00\xF1\x00\x00\x00\x01\x07\x00\x8A\x00\xF2\x00\x08\x07\x00\xAF\x01\x07\x00\xBB\x00\x00\x00\x00\x01\x00\x00\x01\x02\x00\x00\x00\x01\x07\x00\x69\x01\x0C\x00\x00\x00\x00'
-        .localvariabletable
-            7 is refreshrate I from L27 to L268
-        .end localvariabletable
+L196:   putstatic Field FE switch [Lorg/lwjgl/opengl/DisplayMode;
+L199:   iconst_0
+L200:   iconst_1
+L201:   dup
+L202:   pop2
+L203:   istore_1
+L204:   aload_0
+L205:   invokeinterface InterfaceMethod java/util/Map values ()Ljava/util/Collection; 1
+L210:   invokeinterface InterfaceMethod java/util/Collection iterator ()Ljava/util/Iterator; 1
+L215:   dup
+L216:   astore_2
+L217:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
+L222:   ifeq L249
+L225:   aload_2
+L226:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
+L231:   checkcast org/lwjgl/opengl/DisplayMode
+L234:   astore_3
+L235:   getstatic Field FE switch [Lorg/lwjgl/opengl/DisplayMode;
+L238:   iload_1
+L239:   aload_3
+L240:   iinc 1 1
+L243:   aastore
+L244:   aload_2
+L245:   goto L217
+L248:   athrow
+        .catch org/lwjgl/LWJGLException from L249 to L262 using L265
+L249:   getstatic Field FE switch [Lorg/lwjgl/opengl/DisplayMode;
+L252:   new eF
+L255:   dup
+L256:   invokespecial Method eF <init> ()V
+L259:   invokestatic Method java/util/Arrays sort ([Ljava/lang/Object;Ljava/util/Comparator;)V
+L262:   goto L275
+L265:   astore_0
+L266:   new java/lang/RuntimeException
+L269:   dup
+L270:   aload_0
+L271:   invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/Throwable;)V
+L274:   athrow
+L275:   getstatic Field FE switch [Lorg/lwjgl/opengl/DisplayMode;
+L278:   areturn
+L279:   
+        .attribute StackMap b'\x00\x0C\x00\x1B\x00\x04\x07\x00\xAB\x07\x00\x87\x01\x01\x00\x01\x01\x00\x6F\x00\x07\x07\x00\xAB\x07\x00\x87\x01\x01\x07\x00\x71\x07\x03\x6B\x07\x00\x71\x00\x00\x00\x8B\x00\x07\x07\x00\xAB\x07\x00\x87\x01\x01\x07\x00\x71\x07\x03\x6B\x07\x00\x71\x00\x00\x00\xA5\x00\x07\x07\x00\xAB\x07\x00\x87\x01\x01\x07\x00\x71\x07\x03\x6B\x07\x00\x71\x00\x00\x00\xB0\x00\x05\x07\x00\xAB\x07\x00\x87\x01\x01\x07\x00\x71\x00\x00\x00\xB7\x00\x00\x00\x01\x07\x00\x86\x00\xB8\x00\x04\x07\x00\xAB\x07\x00\x87\x01\x01\x00\x00\x00\xD9\x00\x03\x07\x00\xAB\x01\x07\x00\xB7\x00\x01\x07\x00\xB7\x00\xF8\x00\x00\x00\x01\x07\x00\x86\x00\xF9\x00\x03\x07\x00\xAB\x01\x07\x00\xB7\x00\x00\x01\x09\x00\x00\x00\x01\x07\x00\x65\x01\x13\x00\x00\x00\x00'
     .end code
 .end method
 
@@ -3387,7 +3374,7 @@ L57:    goto L11
 L60:    athrow
 L61:    return
 L62:    
-        .attribute StackMap b'\x00\x03\x00\x0B\x00\x03\x07\x00\x02\x07\x03\x9B\x07\x00\xBB\x00\x01\x07\x00\xBB\x00\x3C\x00\x00\x00\x01\x07\x00\x8A\x00\x3D\x00\x03\x07\x00\x02\x07\x03\x9B\x07\x00\xBB\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x0B\x00\x03\x07\x00\x02\x07\x03\x8F\x07\x00\xB7\x00\x01\x07\x00\xB7\x00\x3C\x00\x00\x00\x01\x07\x00\x86\x00\x3D\x00\x03\x07\x00\x02\x07\x03\x8F\x07\x00\xB7\x00\x00'
     .end code
 .end method
 
@@ -3758,7 +3745,7 @@ L716:   fsub
 L717:   invokevirtual Method gB float (FF)V
 L720:   return
 L721:   
-        .attribute StackMap b'\x00\x18\x00\x4F\x00\x00\x00\x01\x07\x00\x8A\x00\x50\x00\x01\x07\x00\x02\x00\x00\x00\x85\x00\x01\x07\x00\x02\x00\x01\x07\x00\x02\x00\xBE\x00\x04\x07\x00\x02\x05\x05\x01\x00\x01\x01\x00\xF4\x00\x00\x00\x01\x07\x00\x8A\x00\xF5\x00\x05\x07\x00\x02\x05\x05\x01\x07\x00\xE3\x00\x00\x01\x0B\x00\x05\x07\x00\x02\x05\x05\x01\x07\x00\xE3\x00\x00\x01\x12\x00\x04\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x01\x00\x00\x01\x1D\x00\x04\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x00\x00\x01\x3A\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x00\x01\x50\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x00\x01\x62\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x00\x01\x8C\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x00\x01\x8D\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x01\x07\x00\x02\x01\xD5\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x01\x07\x00\x02\x01\xD8\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x00\x01\xF9\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x00\x01\xFA\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x01\x07\x00\x02\x02\x3D\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x00\x02\x70\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x00\x02\x75\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x00\x02\x86\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x00\x02\xA0\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x00\x02\xD0\x00\x05\x07\x00\x02\x07\x00\xC7\x07\x00\xE3\x07\x00\xE3\x07\x00\xE3\x00\x00'
+        .attribute StackMap b'\x00\x18\x00\x4F\x00\x00\x00\x01\x07\x00\x86\x00\x50\x00\x01\x07\x00\x02\x00\x00\x00\x85\x00\x01\x07\x00\x02\x00\x01\x07\x00\x02\x00\xBE\x00\x04\x07\x00\x02\x05\x05\x01\x00\x01\x01\x00\xF4\x00\x00\x00\x01\x07\x00\x86\x00\xF5\x00\x05\x07\x00\x02\x05\x05\x01\x07\x00\xDF\x00\x00\x01\x0B\x00\x05\x07\x00\x02\x05\x05\x01\x07\x00\xDF\x00\x00\x01\x12\x00\x04\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x01\x00\x00\x01\x1D\x00\x04\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x00\x00\x01\x3A\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x00\x01\x50\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x00\x01\x62\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x00\x01\x8C\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x00\x01\x8D\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x01\x07\x00\x02\x01\xD5\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x01\x07\x00\x02\x01\xD8\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x00\x01\xF9\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x00\x01\xFA\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x01\x07\x00\x02\x02\x3D\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x00\x02\x70\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x00\x02\x75\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x00\x02\x86\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x00\x02\xA0\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x00\x02\xD0\x00\x05\x07\x00\x02\x07\x00\xC3\x07\x00\xDF\x07\x00\xDF\x07\x00\xDF\x00\x00'
     .end code
 .end method
 
@@ -3822,12 +3809,12 @@ L47:    goto L1
 L50:    athrow
 L51:    return
 L52:    
-        .attribute StackMap b'\x00\x03\x00\x01\x00\x01\x07\x00\x02\x00\x01\x07\x00\x02\x00\x32\x00\x00\x00\x01\x07\x00\x8A\x00\x33\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x01\x00\x01\x07\x00\x02\x00\x01\x07\x00\x02\x00\x32\x00\x00\x00\x01\x07\x00\x86\x00\x33\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
 .method public fpsfoundhere : (F)Z
-    .code stack 21 locals 9
+    .code stack 21 locals 8
 L0:     invokestatic Method org/lwjgl/opengl/Display continue ()Z
 L3:     ifeq L12
 L6:     iconst_1
@@ -3836,1016 +3823,1001 @@ L8:     dup
 L9:     pop2
 L10:    ireturn
 L11:    athrow
-L12:    invokestatic Method FE readfpsvalue ()I
-L15:    dup
-L16:    putstatic Field FE fpsvalue I
-L19:    istore 8
-L21:    aload_0
-L22:    getfield Field FE boolean Z
-L25:    ifeq L34
-L28:    iconst_1
-L29:    dup
-L30:    dup
-L31:    pop2
-L32:    ireturn
-L33:    athrow
-L34:    invokestatic Method org/lwjgl/opengl/Display short ()Z
-L37:    ifne L50
-        .catch java/lang/InterruptedException from L40 to L46 using L49
-L40:    ldc2_w 50L
-L43:    invokestatic Method java/lang/Thread sleep (J)V
-L46:    goto L50
-L49:    astore_1
-L50:    invokestatic Method org/lwjgl/opengl/Display int ()Z
-L53:    ifeq L151
-L56:    aload_0
-L57:    dup
-L58:    dup2
-L59:    invokestatic Method org/lwjgl/opengl/Display import ()I
-L62:    putfield Field FE "abstract" I
-L65:    invokestatic Method org/lwjgl/opengl/Display "interface" ()I
-L68:    putfield Field FE float I
-L71:    getfield Field FE "abstract" I
-L74:    istore_1
-L75:    getfield Field FE float I
-L78:    i2f
-L79:    getstatic Field FE instanceof F
-L82:    fdiv
-L83:    iload_1
+L12:    aload_0
+L13:    getfield Field FE boolean Z
+L16:    ifeq L25
+L19:    iconst_1
+L20:    dup
+L21:    dup
+L22:    pop2
+L23:    ireturn
+L24:    athrow
+L25:    invokestatic Method org/lwjgl/opengl/Display short ()Z
+L28:    ifne L41
+        .catch java/lang/InterruptedException from L31 to L37 using L40
+L31:    ldc2_w 50L
+L34:    invokestatic Method java/lang/Thread sleep (J)V
+L37:    goto L41
+L40:    astore_1
+L41:    invokestatic Method org/lwjgl/opengl/Display int ()Z
+L44:    ifeq L142
+L47:    aload_0
+L48:    dup
+L49:    dup2
+L50:    invokestatic Method org/lwjgl/opengl/Display import ()I
+L53:    putfield Field FE "abstract" I
+L56:    invokestatic Method org/lwjgl/opengl/Display "interface" ()I
+L59:    putfield Field FE float I
+L62:    getfield Field FE "abstract" I
+L65:    istore_1
+L66:    getfield Field FE float I
+L69:    i2f
+L70:    getstatic Field FE instanceof F
+L73:    fdiv
+L74:    iload_1
+L75:    i2f
+L76:    fcmpg
+L77:    ifge L91
+L80:    aload_0
+L81:    getfield Field FE float I
 L84:    i2f
-L85:    fcmpg
-L86:    ifge L100
-L89:    aload_0
-L90:    getfield Field FE float I
-L93:    i2f
-L94:    getstatic Field FE instanceof F
-L97:    fdiv
-L98:    f2i
-L99:    istore_1
-L100:   iload_1
-L101:   sipush 320
-L104:   iconst_1
-L105:   dup
-L106:   pop2
-L107:   invokestatic Method org/lwjgl/opengl/Display "super" ()Lorg/lwjgl/opengl/DisplayMode;
-L110:   invokevirtual Method org/lwjgl/opengl/DisplayMode const ()I
-L113:   bipush 64
-L115:   iconst_1
-L116:   dup
-L117:   pop2
-L118:   isub
-L119:   invokestatic Method org/lwjgl/opengl/Display "super" ()Lorg/lwjgl/opengl/DisplayMode;
-L122:   invokevirtual Method org/lwjgl/opengl/DisplayMode break ()I
-L125:   i2f
-L126:   getstatic Field FE instanceof F
-L129:   fdiv
-L130:   f2i
-L131:   sipush 128
-L134:   iconst_1
-L135:   dup
-L136:   pop2
-L137:   isub
-L138:   invokestatic Method java/lang/Math min (II)I
-L141:   invokestatic Method OC break (III)I
-L144:   istore_1
-L145:   ldc "k"
-L147:   iload_1
-L148:   invokestatic Method JB break (Ljava/lang/String;I)V
-L151:   aload_0
-L152:   dup
-L153:   dup2
-L154:   iconst_0
-L155:   iconst_1
-L156:   dup
-L157:   pop2
-L158:   putfield Field FE true Z
-L161:   getfield Field FE for Z
-L164:   istore_1
-L165:   iconst_0
-L166:   iconst_1
-L167:   dup
-L168:   pop2
-L169:   putfield Field FE for Z
-L172:   getfield Field FE byte Ljava/util/List;
-L175:   invokeinterface InterfaceMethod java/util/List iterator ()Ljava/util/Iterator; 1
-L180:   astore_2
-L181:   iconst_0
-L182:   iconst_1
-L183:   dup
-L184:   pop2
-L185:   istore_3
+L85:    getstatic Field FE instanceof F
+L88:    fdiv
+L89:    f2i
+L90:    istore_1
+L91:    iload_1
+L92:    sipush 320
+L95:    iconst_1
+L96:    dup
+L97:    pop2
+L98:    invokestatic Method org/lwjgl/opengl/Display "super" ()Lorg/lwjgl/opengl/DisplayMode;
+L101:   invokevirtual Method org/lwjgl/opengl/DisplayMode const ()I
+L104:   bipush 64
+L106:   iconst_1
+L107:   dup
+L108:   pop2
+L109:   isub
+L110:   invokestatic Method org/lwjgl/opengl/Display "super" ()Lorg/lwjgl/opengl/DisplayMode;
+L113:   invokevirtual Method org/lwjgl/opengl/DisplayMode break ()I
+L116:   i2f
+L117:   getstatic Field FE instanceof F
+L120:   fdiv
+L121:   f2i
+L122:   sipush 128
+L125:   iconst_1
+L126:   dup
+L127:   pop2
+L128:   isub
+L129:   invokestatic Method java/lang/Math min (II)I
+L132:   invokestatic Method OC break (III)I
+L135:   istore_1
+L136:   ldc "k"
+L138:   iload_1
+L139:   invokestatic Method JB break (Ljava/lang/String;I)V
+L142:   aload_0
+L143:   dup
+L144:   dup2
+L145:   iconst_0
+L146:   iconst_1
+L147:   dup
+L148:   pop2
+L149:   putfield Field FE true Z
+L152:   getfield Field FE for Z
+L155:   istore_1
+L156:   iconst_0
+L157:   iconst_1
+L158:   dup
+L159:   pop2
+L160:   putfield Field FE for Z
+L163:   getfield Field FE byte Ljava/util/List;
+L166:   invokeinterface InterfaceMethod java/util/List iterator ()Ljava/util/Iterator; 1
+L171:   astore_2
+L172:   iconst_0
+L173:   iconst_1
+L174:   dup
+L175:   pop2
+L176:   istore_3
+L177:   aload_2
+L178:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
+L183:   ifeq L245
 L186:   aload_2
-L187:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
-L192:   ifeq L254
-L195:   aload_2
-L196:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
-L201:   checkcast bC
-L204:   dup
-L205:   astore 4
-L207:   getfield Field bC do F
-L210:   fconst_0
-L211:   fcmpl
-L212:   ifeq L220
-L215:   iconst_1
-L216:   dup
-L217:   dup
-L218:   pop2
-L219:   istore_3
-L220:   aload 4
-L222:   getfield Field bC this F
-L225:   fconst_0
-L226:   fcmpl
-L227:   ifne L186
-L230:   aload 4
-L232:   getfield Field bC do F
-L235:   fconst_0
-L236:   fcmpl
-L237:   ifne L186
-L240:   aload 4
-L242:   aload_2
-L243:   invokeinterface InterfaceMethod java/util/Iterator remove ()V 1
-L248:   invokevirtual Method bC case ()V
-L251:   goto L186
-L254:   iload_3
-L255:   ifne L265
-L258:   iconst_0
+L187:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
+L192:   checkcast bC
+L195:   dup
+L196:   astore 4
+L198:   getfield Field bC do F
+L201:   fconst_0
+L202:   fcmpl
+L203:   ifeq L211
+L206:   iconst_1
+L207:   dup
+L208:   dup
+L209:   pop2
+L210:   istore_3
+L211:   aload 4
+L213:   getfield Field bC this F
+L216:   fconst_0
+L217:   fcmpl
+L218:   ifne L177
+L221:   aload 4
+L223:   getfield Field bC do F
+L226:   fconst_0
+L227:   fcmpl
+L228:   ifne L177
+L231:   aload 4
+L233:   aload_2
+L234:   invokeinterface InterfaceMethod java/util/Iterator remove ()V 1
+L239:   invokevirtual Method bC case ()V
+L242:   goto L177
+L245:   iload_3
+L246:   ifne L256
+L249:   iconst_0
+L250:   iconst_1
+L251:   dup
+L252:   pop2
+L253:   putstatic Field FE "super" Z
+L256:   sipush 384
 L259:   iconst_1
 L260:   dup
 L261:   pop2
-L262:   putstatic Field FE "super" Z
-L265:   sipush 384
-L268:   iconst_1
-L269:   dup
-L270:   pop2
-L271:   sipush 256
-L274:   iconst_1
-L275:   dup
-L276:   pop2
-L277:   invokestatic Method java/lang/Math min (II)I
-L280:   dup
-L281:   istore 4
-L283:   i2f
-L284:   getstatic Field FE instanceof F
-L287:   fmul
-L288:   f2i
-L289:   sipush 256
-L292:   iconst_1
-L293:   dup
-L294:   pop2
-L295:   invokestatic Method java/lang/Math min (II)I
-L298:   istore_2
-L299:   iconst_1
-L300:   dup
+L262:   sipush 256
+L265:   iconst_1
+L266:   dup
+L267:   pop2
+L268:   invokestatic Method java/lang/Math min (II)I
+L271:   dup
+L272:   istore 4
+L274:   i2f
+L275:   getstatic Field FE instanceof F
+L278:   fmul
+L279:   f2i
+L280:   sipush 256
+L283:   iconst_1
+L284:   dup
+L285:   pop2
+L286:   invokestatic Method java/lang/Math min (II)I
+L289:   istore_2
+L290:   iconst_1
+L291:   dup
+L292:   dup
+L293:   pop2
+L294:   putstatic Field FE null Z
+L297:   sipush 770
+L300:   iconst_1
 L301:   dup
 L302:   pop2
-L303:   putstatic Field FE null Z
-L306:   sipush 770
-L309:   iconst_1
-L310:   dup
-L311:   pop2
-L312:   sipush 771
-L315:   iconst_1
-L316:   dup
-L317:   pop2
-L318:   invokestatic Method org/lwjgl/opengl/GL11 char (II)V
-L321:   iconst_0
-L322:   iconst_1
-L323:   dup
-L324:   pop2
-L325:   iconst_0
-L326:   iconst_1
-L327:   dup
-L328:   pop2
-L329:   iload 4
-L331:   iload_2
-L332:   invokestatic Method org/lwjgl/opengl/GL11 const (IIII)V
-L335:   getstatic Field FE "private" Z
-L338:   ifeq L351
-L341:   ldc_w 36160
-L344:   aload_0
-L345:   getfield Field FE while I
-L348:   invokestatic Method org/lwjgl/opengl/yb short (II)V
-L351:   getstatic Field FE do Z
-L354:   ifeq L367
-L357:   ldc_w 36160
-L360:   aload_0
-L361:   getfield Field FE while I
-L364:   invokestatic Method org/lwjgl/opengl/EXTFramebufferObject break (II)V
-L367:   sipush 16384
-L370:   iconst_1
-L371:   dup
-L372:   pop2
-L373:   invokestatic Method org/lwjgl/opengl/GL11 new (I)V
-L376:   aload_0
-L377:   getfield Field FE assert Lgg;
-L380:   ifnull L395
-L383:   aload_0
-L384:   getfield Field FE assert Lgg;
+L303:   sipush 771
+L306:   iconst_1
+L307:   dup
+L308:   pop2
+L309:   invokestatic Method org/lwjgl/opengl/GL11 char (II)V
+L312:   iconst_0
+L313:   iconst_1
+L314:   dup
+L315:   pop2
+L316:   iconst_0
+L317:   iconst_1
+L318:   dup
+L319:   pop2
+L320:   iload 4
+L322:   iload_2
+L323:   invokestatic Method org/lwjgl/opengl/GL11 const (IIII)V
+L326:   getstatic Field FE "private" Z
+L329:   ifeq L342
+L332:   ldc_w 36160
+L335:   aload_0
+L336:   getfield Field FE while I
+L339:   invokestatic Method org/lwjgl/opengl/yb short (II)V
+L342:   getstatic Field FE do Z
+L345:   ifeq L358
+L348:   ldc_w 36160
+L351:   aload_0
+L352:   getfield Field FE while I
+L355:   invokestatic Method org/lwjgl/opengl/EXTFramebufferObject break (II)V
+L358:   sipush 16384
+L361:   iconst_1
+L362:   dup
+L363:   pop2
+L364:   invokestatic Method org/lwjgl/opengl/GL11 new (I)V
+L367:   aload_0
+L368:   getfield Field FE assert Lgg;
+L371:   ifnull L386
+L374:   aload_0
+L375:   getfield Field FE assert Lgg;
+L378:   iconst_1
+L379:   dup
+L380:   dup
+L381:   pop2
+L382:   fconst_1
+L383:   invokevirtual Method gg else (ZF)V
+L386:   iconst_0
 L387:   iconst_1
 L388:   dup
-L389:   dup
-L390:   pop2
-L391:   fconst_1
-L392:   invokevirtual Method gg else (ZF)V
-L395:   iconst_0
-L396:   iconst_1
-L397:   dup
-L398:   pop2
-L399:   dup
-L400:   istore_3
-L401:   aload_0
-L402:   getfield Field FE byte Ljava/util/List;
-L405:   invokeinterface InterfaceMethod java/util/List size ()I 1
-L410:   if_icmpge L572
-L413:   aload_0
-L414:   getfield Field FE byte Ljava/util/List;
-L417:   iload_3
-L418:   invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
-L423:   checkcast bC
-L426:   dup
-L427:   astore 5
-L429:   dup
-L430:   getfield Field bC this F
-L433:   swap
-L434:   getfield Field bC this F
-L437:   fmul
-L438:   aload 5
-L440:   dup_x1
-L441:   invokevirtual Method bC "enum" ()F
-L444:   fmul
-L445:   fstore 6
-L447:   invokevirtual Method bC throws ()F
-L450:   fconst_0
-L451:   fcmpl
-L452:   ifeq L544
-L455:   fconst_0
-L456:   dup
-L457:   dup_x1
-L458:   ldc_w 4e-1f
-L461:   aload 5
-L463:   invokevirtual Method bC throws ()F
-L466:   fmul
-L467:   fload 6
-L469:   fmul
-L470:   invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L473:   bipush 7
-L475:   iconst_1
-L476:   dup
-L477:   pop2
-L478:   invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
-L481:   ldc_w -8e0f
-L484:   ldc_w 8e0f
-L487:   getstatic Field FE instanceof F
-L490:   fmul
-L491:   ldc_w 2e1f
-L494:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L497:   ldc_w 8e0f
-L500:   dup
-L501:   getstatic Field FE instanceof F
-L504:   fmul
-L505:   ldc_w 2e1f
-L508:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L511:   ldc_w 8e0f
-L514:   ldc_w -8e0f
-L517:   getstatic Field FE instanceof F
-L520:   fmul
-L521:   ldc_w 2e1f
-L524:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L527:   ldc_w -8e0f
-L530:   dup
-L531:   getstatic Field FE instanceof F
-L534:   fmul
-L535:   ldc_w 2e1f
-L538:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L541:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
-L544:   invokestatic Method org/lwjgl/opengl/GL11 char ()V
-L547:   iconst_1
-L548:   aload 5
-L550:   dup_x1
-L551:   invokevirtual Method bC instanceof ()V
-L554:   iconst_1
-L555:   dup
-L556:   pop2
-L557:   iinc 3 1
-L560:   fload 6
-L562:   invokevirtual Method bC else (ZF)V
-L565:   invokestatic Method org/lwjgl/opengl/GL11 do ()V
-L568:   iload_3
-L569:   goto L401
-L572:   iconst_0
-L573:   iconst_1
-L574:   dup
-L575:   pop2
-L576:   putstatic Field FE null Z
-L579:   getstatic Field FE "private" Z
-L582:   ifne L636
-L585:   getstatic Field FE do Z
-L588:   ifne L636
-L591:   sipush 3553
-L594:   iconst_1
-L595:   dup
-L596:   pop2
-L597:   aload_0
-L598:   getfield Field FE catch I
-L601:   invokestatic Method org/lwjgl/opengl/GL11 goto (II)V
-L604:   sipush 3553
-L607:   iconst_1
-L608:   dup
-L609:   pop2
-L610:   iconst_1
-L611:   dup
-L612:   pop2
-L613:   iconst_1
-L614:   dup
-L615:   pop2
-L616:   iconst_0
-L617:   iconst_1
-L618:   dup
-L619:   pop2
-L620:   iconst_0
-L621:   dup_x1
-L622:   dup_x2
-L623:   iconst_1
-L624:   dup
-L625:   pop2
-L626:   iconst_0
-L627:   iconst_1
-L628:   dup
-L629:   pop2
-L630:   iload 4
-L632:   iload_2
-L633:   invokestatic Method org/lwjgl/opengl/GL11 else (IIIIIIII)V
-L636:   getstatic Field FE "private" Z
-L639:   ifeq L652
-L642:   ldc_w 36160
-L645:   iconst_0
-L646:   iconst_1
-L647:   dup
-L648:   pop2
-L649:   invokestatic Method org/lwjgl/opengl/yb short (II)V
-L652:   getstatic Field FE do Z
-L655:   ifeq L668
-L658:   ldc_w 36160
-L661:   iconst_0
-L662:   iconst_1
-L663:   dup
-L664:   pop2
-L665:   invokestatic Method org/lwjgl/opengl/EXTFramebufferObject break (II)V
-L668:   aload_0
-L669:   sipush 16384
-L672:   aload_0
-L673:   invokespecial Method FE const ()V
-L676:   iconst_1
-L677:   dup
-L678:   pop2
-L679:   invokestatic Method org/lwjgl/opengl/GL11 new (I)V
-L682:   getfield Field FE assert Lgg;
-L685:   ifnull L700
-L688:   aload_0
-L689:   getfield Field FE assert Lgg;
-L692:   iconst_0
-L693:   iconst_1
-L694:   dup
-L695:   pop2
-L696:   fconst_1
-L697:   invokevirtual Method gg else (ZF)V
-L700:   aload_0
-L701:   dup
-L702:   getfield Field FE byte Ljava/util/List;
-L705:   invokeinterface InterfaceMethod java/util/List size ()I 1
-L710:   newarray float
-L712:   iconst_1
-L713:   dup
-L714:   pop2
-L715:   astore_3
-L716:   fconst_1
-L717:   fstore 5
-L719:   getfield Field FE byte Ljava/util/List;
-L722:   invokeinterface InterfaceMethod java/util/List size ()I 1
-L727:   iconst_1
-L728:   dup
-L729:   dup
-L730:   pop2
-L731:   isub
-L732:   dup
-L733:   istore 6
-L735:   iflt L811
-L738:   aload_3
-L739:   iload 6
-L741:   fload 5
-L743:   dup_x2
-L744:   fastore
-L745:   fconst_1
-L746:   aload_0
-L747:   getfield Field FE byte Ljava/util/List;
-L750:   iload 6
-L752:   invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
-L757:   checkcast bC
-L760:   invokevirtual Method bC switch ()F
-L763:   aload_0
-L764:   getfield Field FE byte Ljava/util/List;
-L767:   iload 6
-L769:   invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
-L774:   checkcast bC
-L777:   invokevirtual Method bC "enum" ()F
-L780:   fmul
-L781:   aload_0
-L782:   getfield Field FE byte Ljava/util/List;
-L785:   iload 6
-L787:   invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
-L792:   checkcast bC
-L795:   getfield Field bC this F
-L798:   fmul
-L799:   iinc 6 -1
-L802:   fsub
-L803:   fmul
-L804:   fstore 5
-L806:   iload 6
-L808:   goto L735
-L811:   iconst_0
-L812:   iconst_1
-L813:   dup
-L814:   pop2
-L815:   dup
-L816:   istore 6
-L818:   aload_0
-L819:   getfield Field FE byte Ljava/util/List;
-L822:   invokeinterface InterfaceMethod java/util/List size ()I 1
-L827:   if_icmpge L1006
-L830:   aload_3
-L831:   iload 6
-L833:   faload
-L834:   fconst_0
-L835:   fcmpl
-L836:   ifle L998
-L839:   aload_0
-L840:   getfield Field FE byte Ljava/util/List;
-L843:   iload 6
-L845:   invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
-L850:   checkcast bC
-L853:   astore 7
-L855:   aload_3
-L856:   iload 6
-L858:   faload
-L859:   aload 7
-L861:   getfield Field bC this F
-L864:   fmul
-L865:   aload 7
-L867:   getfield Field bC this F
-L870:   fmul
-L871:   aload 7
-L873:   dup_x1
-L874:   invokevirtual Method bC "enum" ()F
-L877:   fmul
-L878:   fstore 5
-L880:   invokevirtual Method bC throws ()F
-L883:   fconst_0
-L884:   fcmpl
-L885:   ifeq L977
-L888:   fconst_0
-L889:   dup
-L890:   dup_x1
-L891:   ldc_w 4e-1f
-L894:   aload 7
-L896:   invokevirtual Method bC throws ()F
-L899:   fmul
-L900:   fload 5
-L902:   fmul
-L903:   invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L906:   bipush 7
-L908:   iconst_1
-L909:   dup
-L910:   pop2
-L911:   invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
-L914:   ldc_w -8e0f
-L917:   ldc_w 8e0f
-L920:   getstatic Field FE instanceof F
-L923:   fmul
-L924:   ldc_w 2e1f
-L927:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L930:   ldc_w 8e0f
-L933:   dup
-L934:   getstatic Field FE instanceof F
-L937:   fmul
-L938:   ldc_w 2e1f
-L941:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L944:   ldc_w 8e0f
-L947:   ldc_w -8e0f
-L950:   getstatic Field FE instanceof F
-L953:   fmul
-L954:   ldc_w 2e1f
-L957:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L960:   ldc_w -8e0f
-L963:   dup
-L964:   getstatic Field FE instanceof F
-L967:   fmul
-L968:   ldc_w 2e1f
-L971:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L974:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
-L977:   invokestatic Method org/lwjgl/opengl/GL11 char ()V
-L980:   iconst_0
-L981:   aload 7
-L983:   dup_x1
-L984:   invokevirtual Method bC instanceof ()V
-L987:   iconst_1
-L988:   dup
-L989:   pop2
-L990:   fload 5
-L992:   invokevirtual Method bC else (ZF)V
-L995:   invokestatic Method org/lwjgl/opengl/GL11 do ()V
-L998:   iinc 6 1
-L1001:  iload 6
-L1003:  goto L818
-L1006:  sipush 770
-L1009:  iconst_1
-L1010:  dup
-L1011:  pop2
-L1012:  iconst_1
-L1013:  dup
-L1014:  dup
-L1015:  pop2
-L1016:  invokestatic Method org/lwjgl/opengl/GL11 char (II)V
-L1019:  aload_0
-L1020:  getfield Field FE case D
-L1023:  ldc2_w -1e0
-L1026:  dcmpl
-L1027:  ifne L1037
-L1030:  aload_0
-L1031:  getstatic Field FE "protected" D
-L1034:  putfield Field FE case D
-L1037:  getstatic Field FE short I
-L1040:  ifeq L1163
-L1043:  invokestatic Method OC else ()D
-L1046:  aload_0
-L1047:  getfield Field FE case D
-L1050:  dsub
-L1051:  dup2
-L1052:  dstore 6
-L1054:  dconst_1
-L1055:  dcmpg
-L1056:  ifge L1163
+L389:   pop2
+L390:   dup
+L391:   istore_3
+L392:   aload_0
+L393:   getfield Field FE byte Ljava/util/List;
+L396:   invokeinterface InterfaceMethod java/util/List size ()I 1
+L401:   if_icmpge L563
+L404:   aload_0
+L405:   getfield Field FE byte Ljava/util/List;
+L408:   iload_3
+L409:   invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
+L414:   checkcast bC
+L417:   dup
+L418:   astore 5
+L420:   dup
+L421:   getfield Field bC this F
+L424:   swap
+L425:   getfield Field bC this F
+L428:   fmul
+L429:   aload 5
+L431:   dup_x1
+L432:   invokevirtual Method bC "enum" ()F
+L435:   fmul
+L436:   fstore 6
+L438:   invokevirtual Method bC throws ()F
+L441:   fconst_0
+L442:   fcmpl
+L443:   ifeq L535
+L446:   fconst_0
+L447:   dup
+L448:   dup_x1
+L449:   ldc_w 4e-1f
+L452:   aload 5
+L454:   invokevirtual Method bC throws ()F
+L457:   fmul
+L458:   fload 6
+L460:   fmul
+L461:   invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L464:   bipush 7
+L466:   iconst_1
+L467:   dup
+L468:   pop2
+L469:   invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
+L472:   ldc_w -8e0f
+L475:   ldc_w 8e0f
+L478:   getstatic Field FE instanceof F
+L481:   fmul
+L482:   ldc_w 2e1f
+L485:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L488:   ldc_w 8e0f
+L491:   dup
+L492:   getstatic Field FE instanceof F
+L495:   fmul
+L496:   ldc_w 2e1f
+L499:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L502:   ldc_w 8e0f
+L505:   ldc_w -8e0f
+L508:   getstatic Field FE instanceof F
+L511:   fmul
+L512:   ldc_w 2e1f
+L515:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L518:   ldc_w -8e0f
+L521:   dup
+L522:   getstatic Field FE instanceof F
+L525:   fmul
+L526:   ldc_w 2e1f
+L529:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L532:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
+L535:   invokestatic Method org/lwjgl/opengl/GL11 char ()V
+L538:   iconst_1
+L539:   aload 5
+L541:   dup_x1
+L542:   invokevirtual Method bC instanceof ()V
+L545:   iconst_1
+L546:   dup
+L547:   pop2
+L548:   iinc 3 1
+L551:   fload 6
+L553:   invokevirtual Method bC else (ZF)V
+L556:   invokestatic Method org/lwjgl/opengl/GL11 do ()V
+L559:   iload_3
+L560:   goto L392
+L563:   iconst_0
+L564:   iconst_1
+L565:   dup
+L566:   pop2
+L567:   putstatic Field FE null Z
+L570:   getstatic Field FE "private" Z
+L573:   ifne L627
+L576:   getstatic Field FE do Z
+L579:   ifne L627
+L582:   sipush 3553
+L585:   iconst_1
+L586:   dup
+L587:   pop2
+L588:   aload_0
+L589:   getfield Field FE catch I
+L592:   invokestatic Method org/lwjgl/opengl/GL11 goto (II)V
+L595:   sipush 3553
+L598:   iconst_1
+L599:   dup
+L600:   pop2
+L601:   iconst_1
+L602:   dup
+L603:   pop2
+L604:   iconst_1
+L605:   dup
+L606:   pop2
+L607:   iconst_0
+L608:   iconst_1
+L609:   dup
+L610:   pop2
+L611:   iconst_0
+L612:   dup_x1
+L613:   dup_x2
+L614:   iconst_1
+L615:   dup
+L616:   pop2
+L617:   iconst_0
+L618:   iconst_1
+L619:   dup
+L620:   pop2
+L621:   iload 4
+L623:   iload_2
+L624:   invokestatic Method org/lwjgl/opengl/GL11 else (IIIIIIII)V
+L627:   getstatic Field FE "private" Z
+L630:   ifeq L643
+L633:   ldc_w 36160
+L636:   iconst_0
+L637:   iconst_1
+L638:   dup
+L639:   pop2
+L640:   invokestatic Method org/lwjgl/opengl/yb short (II)V
+L643:   getstatic Field FE do Z
+L646:   ifeq L659
+L649:   ldc_w 36160
+L652:   iconst_0
+L653:   iconst_1
+L654:   dup
+L655:   pop2
+L656:   invokestatic Method org/lwjgl/opengl/EXTFramebufferObject break (II)V
+L659:   aload_0
+L660:   sipush 16384
+L663:   aload_0
+L664:   invokespecial Method FE const ()V
+L667:   iconst_1
+L668:   dup
+L669:   pop2
+L670:   invokestatic Method org/lwjgl/opengl/GL11 new (I)V
+L673:   getfield Field FE assert Lgg;
+L676:   ifnull L691
+L679:   aload_0
+L680:   getfield Field FE assert Lgg;
+L683:   iconst_0
+L684:   iconst_1
+L685:   dup
+L686:   pop2
+L687:   fconst_1
+L688:   invokevirtual Method gg else (ZF)V
+L691:   aload_0
+L692:   dup
+L693:   getfield Field FE byte Ljava/util/List;
+L696:   invokeinterface InterfaceMethod java/util/List size ()I 1
+L701:   newarray float
+L703:   iconst_1
+L704:   dup
+L705:   pop2
+L706:   astore_3
+L707:   fconst_1
+L708:   fstore 5
+L710:   getfield Field FE byte Ljava/util/List;
+L713:   invokeinterface InterfaceMethod java/util/List size ()I 1
+L718:   iconst_1
+L719:   dup
+L720:   dup
+L721:   pop2
+L722:   isub
+L723:   dup
+L724:   istore 6
+L726:   iflt L802
+L729:   aload_3
+L730:   iload 6
+L732:   fload 5
+L734:   dup_x2
+L735:   fastore
+L736:   fconst_1
+L737:   aload_0
+L738:   getfield Field FE byte Ljava/util/List;
+L741:   iload 6
+L743:   invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
+L748:   checkcast bC
+L751:   invokevirtual Method bC switch ()F
+L754:   aload_0
+L755:   getfield Field FE byte Ljava/util/List;
+L758:   iload 6
+L760:   invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
+L765:   checkcast bC
+L768:   invokevirtual Method bC "enum" ()F
+L771:   fmul
+L772:   aload_0
+L773:   getfield Field FE byte Ljava/util/List;
+L776:   iload 6
+L778:   invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
+L783:   checkcast bC
+L786:   getfield Field bC this F
+L789:   fmul
+L790:   iinc 6 -1
+L793:   fsub
+L794:   fmul
+L795:   fstore 5
+L797:   iload 6
+L799:   goto L726
+L802:   iconst_0
+L803:   iconst_1
+L804:   dup
+L805:   pop2
+L806:   dup
+L807:   istore 6
+L809:   aload_0
+L810:   getfield Field FE byte Ljava/util/List;
+L813:   invokeinterface InterfaceMethod java/util/List size ()I 1
+L818:   if_icmpge L997
+L821:   aload_3
+L822:   iload 6
+L824:   faload
+L825:   fconst_0
+L826:   fcmpl
+L827:   ifle L989
+L830:   aload_0
+L831:   getfield Field FE byte Ljava/util/List;
+L834:   iload 6
+L836:   invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
+L841:   checkcast bC
+L844:   astore 7
+L846:   aload_3
+L847:   iload 6
+L849:   faload
+L850:   aload 7
+L852:   getfield Field bC this F
+L855:   fmul
+L856:   aload 7
+L858:   getfield Field bC this F
+L861:   fmul
+L862:   aload 7
+L864:   dup_x1
+L865:   invokevirtual Method bC "enum" ()F
+L868:   fmul
+L869:   fstore 5
+L871:   invokevirtual Method bC throws ()F
+L874:   fconst_0
+L875:   fcmpl
+L876:   ifeq L968
+L879:   fconst_0
+L880:   dup
+L881:   dup_x1
+L882:   ldc_w 4e-1f
+L885:   aload 7
+L887:   invokevirtual Method bC throws ()F
+L890:   fmul
+L891:   fload 5
+L893:   fmul
+L894:   invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L897:   bipush 7
+L899:   iconst_1
+L900:   dup
+L901:   pop2
+L902:   invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
+L905:   ldc_w -8e0f
+L908:   ldc_w 8e0f
+L911:   getstatic Field FE instanceof F
+L914:   fmul
+L915:   ldc_w 2e1f
+L918:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L921:   ldc_w 8e0f
+L924:   dup
+L925:   getstatic Field FE instanceof F
+L928:   fmul
+L929:   ldc_w 2e1f
+L932:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L935:   ldc_w 8e0f
+L938:   ldc_w -8e0f
+L941:   getstatic Field FE instanceof F
+L944:   fmul
+L945:   ldc_w 2e1f
+L948:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L951:   ldc_w -8e0f
+L954:   dup
+L955:   getstatic Field FE instanceof F
+L958:   fmul
+L959:   ldc_w 2e1f
+L962:   invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L965:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
+L968:   invokestatic Method org/lwjgl/opengl/GL11 char ()V
+L971:   iconst_0
+L972:   aload 7
+L974:   dup_x1
+L975:   invokevirtual Method bC instanceof ()V
+L978:   iconst_1
+L979:   dup
+L980:   pop2
+L981:   fload 5
+L983:   invokevirtual Method bC else (ZF)V
+L986:   invokestatic Method org/lwjgl/opengl/GL11 do ()V
+L989:   iinc 6 1
+L992:   iload 6
+L994:   goto L809
+L997:   sipush 770
+L1000:  iconst_1
+L1001:  dup
+L1002:  pop2
+L1003:  iconst_1
+L1004:  dup
+L1005:  dup
+L1006:  pop2
+L1007:  invokestatic Method org/lwjgl/opengl/GL11 char (II)V
+L1010:  aload_0
+L1011:  getfield Field FE case D
+L1014:  ldc2_w -1e0
+L1017:  dcmpl
+L1018:  ifne L1028
+L1021:  aload_0
+L1022:  getstatic Field FE "protected" D
+L1025:  putfield Field FE case D
+L1028:  getstatic Field FE short I
+L1031:  ifeq L1156
+L1034:  invokestatic Method OC else ()D
+L1037:  aload_0
+L1038:  getfield Field FE case D
+L1041:  dsub
+L1042:  dup2
+L1043:  dstore 6
+L1045:  dconst_1
+L1046:  dcmpg
+L1047:  ifge L1156
+L1050:  sipush 3553
+L1053:  iconst_1
+L1054:  dup
+L1055:  pop2
+L1056:  invokestatic Method org/lwjgl/opengl/GL11 break (I)V
 L1059:  sipush 3553
 L1062:  iconst_1
 L1063:  dup
 L1064:  pop2
-L1065:  invokestatic Method org/lwjgl/opengl/GL11 break (I)V
-L1068:  sipush 3553
-L1071:  iconst_1
+L1065:  getstatic Field FE short I
+L1068:  invokestatic Method org/lwjgl/opengl/GL11 goto (II)V
+L1071:  fconst_1
 L1072:  dup
-L1073:  pop2
-L1074:  getstatic Field FE short I
-L1077:  invokestatic Method org/lwjgl/opengl/GL11 goto (II)V
-L1080:  fconst_1
-L1081:  dup
-L1082:  dup_x1
-L1083:  dup_x2
-L1084:  dload 6
-L1086:  invokestatic Method OC break (D)D
-L1089:  d2f
-L1090:  fsub
-L1091:  invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L1094:  bipush 7
-L1096:  iconst_1
-L1097:  dup
-L1098:  pop2
-L1099:  invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
-L1102:  fconst_0
-L1103:  fconst_1
-L1104:  invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
-L1107:  ldc_w -2e0f
-L1110:  fconst_1
-L1111:  ldc_w 2e1f
-L1114:  invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L1117:  fconst_1
-L1118:  dup
-L1119:  invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
-L1122:  fconst_2
-L1123:  fconst_1
-L1124:  ldc_w 2e1f
-L1127:  invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L1130:  fconst_1
-L1131:  fconst_0
-L1132:  invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
-L1135:  fconst_2
-L1136:  ldc -1e0f
-L1138:  ldc_w 2e1f
-L1141:  invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L1144:  fconst_0
-L1145:  dup
-L1146:  invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
-L1149:  ldc_w -2e0f
-L1152:  ldc -1e0f
-L1154:  ldc_w 2e1f
-L1157:  invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L1160:  invokestatic Method org/lwjgl/opengl/GL11 float ()V
-L1163:  ldc_w 5e-1f
-L1166:  iload 4
-L1168:  i2f
-L1169:  fdiv
-L1170:  fstore 6
-L1172:  ldc_w 5e-1f
-L1175:  iload_2
-L1176:  i2f
-L1177:  fdiv
-L1178:  fstore 7
-L1180:  ldc_w 2e-1f
-L1183:  fstore 5
-L1185:  sipush 3553
-L1188:  iconst_1
-L1189:  dup
-L1190:  pop2
-L1191:  aload_0
-L1192:  getfield Field FE catch I
-L1195:  invokestatic Method org/lwjgl/opengl/GL11 goto (II)V
-L1198:  getstatic Field FE "final" I
-L1201:  bipush 40
-L1203:  iconst_1
-L1204:  dup
-L1205:  pop2
-L1206:  if_icmpge L1360
-L1209:  sipush 3553
-L1212:  iconst_1
-L1213:  dup
-L1214:  pop2
-L1215:  invokestatic Method org/lwjgl/opengl/GL11 break (I)V
-L1218:  fconst_1
-L1219:  dup
-L1220:  dup_x1
-L1221:  ldc 2.5e-1f
-L1223:  fload 5
-L1225:  fmul
-L1226:  invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L1229:  sipush 3553
+L1073:  dup_x1
+L1074:  dup_x2
+L1075:  dload 6
+L1077:  invokestatic Method OC break (D)D
+L1080:  d2f
+L1081:  fsub
+L1082:  invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L1085:  bipush 7
+L1087:  iconst_1
+L1088:  dup
+L1089:  pop2
+L1090:  invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
+L1093:  fconst_0
+L1094:  fconst_1
+L1095:  invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
+L1098:  ldc_w -2e0f
+L1101:  fconst_1
+L1102:  ldc_w 2e1f
+L1105:  invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L1108:  fconst_1
+L1109:  dup
+L1110:  invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
+L1113:  fconst_2
+L1114:  fconst_1
+L1115:  ldc_w 2e1f
+L1118:  invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L1121:  fconst_1
+L1122:  fconst_0
+L1123:  invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
+L1126:  fconst_2
+L1127:  ldc_w -1e0f
+L1130:  ldc_w 2e1f
+L1133:  invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L1136:  fconst_0
+L1137:  dup
+L1138:  invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
+L1141:  ldc_w -2e0f
+L1144:  ldc_w -1e0f
+L1147:  ldc_w 2e1f
+L1150:  invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L1153:  invokestatic Method org/lwjgl/opengl/GL11 float ()V
+L1156:  ldc_w 5e-1f
+L1159:  iload 4
+L1161:  i2f
+L1162:  fdiv
+L1163:  fstore 6
+L1165:  ldc_w 5e-1f
+L1168:  iload_2
+L1169:  i2f
+L1170:  fdiv
+L1171:  fstore 7
+L1173:  ldc_w 2e-1f
+L1176:  fstore 5
+L1178:  sipush 3553
+L1181:  iconst_1
+L1182:  dup
+L1183:  pop2
+L1184:  aload_0
+L1185:  getfield Field FE catch I
+L1188:  invokestatic Method org/lwjgl/opengl/GL11 goto (II)V
+L1191:  getstatic Field FE "final" I
+L1194:  bipush 40
+L1196:  iconst_1
+L1197:  dup
+L1198:  pop2
+L1199:  if_icmpge L1353
+L1202:  sipush 3553
+L1205:  iconst_1
+L1206:  dup
+L1207:  pop2
+L1208:  invokestatic Method org/lwjgl/opengl/GL11 break (I)V
+L1211:  fconst_1
+L1212:  dup
+L1213:  dup_x1
+L1214:  ldc 2.5e-1f
+L1216:  fload 5
+L1218:  fmul
+L1219:  invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L1222:  sipush 3553
+L1225:  fconst_1
+L1226:  aload_0
+L1227:  dup_x1
+L1228:  fconst_0
+L1229:  dup
+L1230:  aload_0
+L1231:  dup_x1
 L1232:  fconst_1
-L1233:  aload_0
-L1234:  dup_x1
-L1235:  fconst_0
-L1236:  dup
-L1237:  aload_0
-L1238:  dup_x1
-L1239:  fconst_1
-L1240:  fload 6
+L1233:  fload 6
+L1235:  aload_0
+L1236:  dup_x2
+L1237:  dup_x1
+L1238:  aload_0
+L1239:  fload 6
+L1241:  dup_x1
 L1242:  aload_0
-L1243:  dup_x2
-L1244:  dup_x1
-L1245:  aload_0
-L1246:  fload 6
-L1248:  dup_x1
-L1249:  aload_0
-L1250:  fload 6
-L1252:  fneg
-L1253:  fload 7
-L1255:  fneg
-L1256:  iload 4
-L1258:  iload_2
-L1259:  invokespecial Method FE blurmethod (FFII)V
-L1262:  fload 7
+L1243:  fload 6
+L1245:  fneg
+L1246:  fload 7
+L1248:  fneg
+L1249:  iload 4
+L1251:  iload_2
+L1252:  invokespecial Method FE blurmethod (FFII)V
+L1255:  fload 7
+L1257:  fneg
+L1258:  iload 4
+L1260:  iload_2
+L1261:  invokespecial Method FE blurmethod (FFII)V
 L1264:  fneg
-L1265:  iload 4
-L1267:  iload_2
-L1268:  invokespecial Method FE blurmethod (FFII)V
-L1271:  fneg
-L1272:  fload 7
-L1274:  iload 4
-L1276:  iload_2
-L1277:  invokespecial Method FE blurmethod (FFII)V
-L1280:  fload 7
-L1282:  iload 4
-L1284:  iload_2
-L1285:  invokespecial Method FE blurmethod (FFII)V
-L1288:  fconst_1
-L1289:  dup
-L1290:  ldc_w 5e-1f
-L1293:  fload 5
-L1295:  fmul
-L1296:  invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L1299:  fload 6
-L1301:  dup_x1
-L1302:  fneg
+L1265:  fload 7
+L1267:  iload 4
+L1269:  iload_2
+L1270:  invokespecial Method FE blurmethod (FFII)V
+L1273:  fload 7
+L1275:  iload 4
+L1277:  iload_2
+L1278:  invokespecial Method FE blurmethod (FFII)V
+L1281:  fconst_1
+L1282:  dup
+L1283:  ldc_w 5e-1f
+L1286:  fload 5
+L1288:  fmul
+L1289:  invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L1292:  fload 6
+L1294:  dup_x1
+L1295:  fneg
+L1296:  fconst_0
+L1297:  iload 4
+L1299:  iload_2
+L1300:  invokespecial Method FE blurmethod (FFII)V
 L1303:  fconst_0
 L1304:  iload 4
 L1306:  iload_2
 L1307:  invokespecial Method FE blurmethod (FFII)V
-L1310:  fconst_0
-L1311:  iload 4
-L1313:  iload_2
-L1314:  invokespecial Method FE blurmethod (FFII)V
-L1317:  fload 7
-L1319:  fneg
-L1320:  iload 4
-L1322:  iload_2
-L1323:  invokespecial Method FE blurmethod (FFII)V
-L1326:  fload 7
-L1328:  iload 4
-L1330:  iload_2
-L1331:  invokespecial Method FE blurmethod (FFII)V
-L1334:  fconst_1
-L1335:  dup
-L1336:  dup_x1
-L1337:  fload 5
-L1339:  fmul
-L1340:  invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L1343:  fconst_0
-L1344:  dup
-L1345:  iload 4
-L1347:  iload_2
-L1348:  invokespecial Method FE blurmethod (FFII)V
-L1351:  iconst_1
-L1352:  dup
-L1353:  pop2
-L1354:  invokestatic Method org/lwjgl/opengl/GL11 float (I)V
-L1357:  goto L1702
-L1360:  ldc_w 33984
-L1363:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
-L1366:  sipush 3553
-L1369:  iconst_1
-L1370:  dup
-L1371:  pop2
-L1372:  invokestatic Method org/lwjgl/opengl/GL11 break (I)V
-L1375:  ldc_w 33985
-L1378:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
-L1381:  sipush 3553
-L1384:  iconst_1
-L1385:  dup
-L1386:  pop2
-L1387:  invokestatic Method org/lwjgl/opengl/GL11 break (I)V
-L1390:  ldc_w 33986
-L1393:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
-L1396:  sipush 3553
-L1399:  iconst_1
-L1400:  dup
-L1401:  pop2
-L1402:  invokestatic Method org/lwjgl/opengl/GL11 break (I)V
-L1405:  ldc_w 33987
-L1408:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
-L1411:  sipush 3553
-L1414:  iconst_1
-L1415:  dup
-L1416:  pop2
-L1417:  invokestatic Method org/lwjgl/opengl/GL11 break (I)V
-L1420:  fconst_1
-L1421:  dup
-L1422:  dup_x1
-L1423:  ldc 2.5e-1f
-L1425:  fload 5
-L1427:  fmul
-L1428:  invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L1431:  ldc_w 33984
-L1434:  ldc_w 33985
-L1437:  aload_0
-L1438:  dup_x1
-L1439:  aload_0
-L1440:  iconst_4
-L1441:  iconst_1
+L1310:  fload 7
+L1312:  fneg
+L1313:  iload 4
+L1315:  iload_2
+L1316:  invokespecial Method FE blurmethod (FFII)V
+L1319:  fload 7
+L1321:  iload 4
+L1323:  iload_2
+L1324:  invokespecial Method FE blurmethod (FFII)V
+L1327:  fconst_1
+L1328:  dup
+L1329:  dup_x1
+L1330:  fload 5
+L1332:  fmul
+L1333:  invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L1336:  fconst_0
+L1337:  dup
+L1338:  iload 4
+L1340:  iload_2
+L1341:  invokespecial Method FE blurmethod (FFII)V
+L1344:  iconst_1
+L1345:  dup
+L1346:  pop2
+L1347:  invokestatic Method org/lwjgl/opengl/GL11 float (I)V
+L1350:  goto L1695
+L1353:  ldc_w 33984
+L1356:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
+L1359:  sipush 3553
+L1362:  iconst_1
+L1363:  dup
+L1364:  pop2
+L1365:  invokestatic Method org/lwjgl/opengl/GL11 break (I)V
+L1368:  ldc_w 33985
+L1371:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
+L1374:  sipush 3553
+L1377:  iconst_1
+L1378:  dup
+L1379:  pop2
+L1380:  invokestatic Method org/lwjgl/opengl/GL11 break (I)V
+L1383:  ldc_w 33986
+L1386:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
+L1389:  sipush 3553
+L1392:  iconst_1
+L1393:  dup
+L1394:  pop2
+L1395:  invokestatic Method org/lwjgl/opengl/GL11 break (I)V
+L1398:  ldc_w 33987
+L1401:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
+L1404:  sipush 3553
+L1407:  iconst_1
+L1408:  dup
+L1409:  pop2
+L1410:  invokestatic Method org/lwjgl/opengl/GL11 break (I)V
+L1413:  fconst_1
+L1414:  dup
+L1415:  dup_x1
+L1416:  ldc 2.5e-1f
+L1418:  fload 5
+L1420:  fmul
+L1421:  invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L1424:  ldc_w 33984
+L1427:  ldc_w 33985
+L1430:  aload_0
+L1431:  dup_x1
+L1432:  aload_0
+L1433:  iconst_4
+L1434:  iconst_1
+L1435:  dup
+L1436:  pop2
+L1437:  newarray float
+L1439:  iconst_1
+L1440:  dup
+L1441:  pop2
 L1442:  dup
-L1443:  pop2
-L1444:  newarray float
-L1446:  iconst_1
-L1447:  dup
-L1448:  pop2
-L1449:  dup
-L1450:  iconst_0
-L1451:  iconst_1
-L1452:  dup
-L1453:  pop2
-L1454:  fload 6
-L1456:  fneg
-L1457:  fastore
-L1458:  dup
-L1459:  iconst_1
-L1460:  dup
-L1461:  dup
-L1462:  pop2
-L1463:  fload 6
-L1465:  fastore
-L1466:  dup
-L1467:  iconst_2
-L1468:  iconst_1
-L1469:  dup
-L1470:  pop2
-L1471:  fload 6
-L1473:  fneg
-L1474:  fastore
-L1475:  dup
-L1476:  iconst_3
+L1443:  iconst_0
+L1444:  iconst_1
+L1445:  dup
+L1446:  pop2
+L1447:  fload 6
+L1449:  fneg
+L1450:  fastore
+L1451:  dup
+L1452:  iconst_1
+L1453:  dup
+L1454:  dup
+L1455:  pop2
+L1456:  fload 6
+L1458:  fastore
+L1459:  dup
+L1460:  iconst_2
+L1461:  iconst_1
+L1462:  dup
+L1463:  pop2
+L1464:  fload 6
+L1466:  fneg
+L1467:  fastore
+L1468:  dup
+L1469:  iconst_3
+L1470:  iconst_1
+L1471:  dup
+L1472:  pop2
+L1473:  fload 6
+L1475:  fastore
+L1476:  iconst_4
 L1477:  iconst_1
 L1478:  dup
 L1479:  pop2
-L1480:  fload 6
-L1482:  fastore
-L1483:  iconst_4
-L1484:  iconst_1
+L1480:  newarray float
+L1482:  iconst_1
+L1483:  dup
+L1484:  pop2
 L1485:  dup
-L1486:  pop2
-L1487:  newarray float
-L1489:  iconst_1
-L1490:  dup
-L1491:  pop2
-L1492:  dup
-L1493:  iconst_0
-L1494:  iconst_1
-L1495:  dup
-L1496:  pop2
-L1497:  fload 7
-L1499:  fneg
-L1500:  fastore
-L1501:  dup
-L1502:  iconst_1
+L1486:  iconst_0
+L1487:  iconst_1
+L1488:  dup
+L1489:  pop2
+L1490:  fload 7
+L1492:  fneg
+L1493:  fastore
+L1494:  dup
+L1495:  iconst_1
+L1496:  dup
+L1497:  dup
+L1498:  pop2
+L1499:  fload 7
+L1501:  fneg
+L1502:  fastore
 L1503:  dup
-L1504:  dup
-L1505:  pop2
-L1506:  fload 7
-L1508:  fneg
-L1509:  fastore
-L1510:  dup
-L1511:  iconst_2
-L1512:  iconst_1
-L1513:  dup
-L1514:  pop2
-L1515:  fload 7
-L1517:  fastore
-L1518:  dup
-L1519:  iconst_3
-L1520:  iconst_1
-L1521:  dup
-L1522:  pop2
-L1523:  fload 7
-L1525:  fastore
-L1526:  iload 4
-L1528:  iload_2
-L1529:  invokespecial Method FE break ([F[FII)V
-L1532:  fconst_1
-L1533:  dup
-L1534:  dup_x1
-L1535:  ldc_w 5e-1f
-L1538:  fload 5
-L1540:  fmul
-L1541:  invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L1544:  iconst_4
-L1545:  iconst_1
+L1504:  iconst_2
+L1505:  iconst_1
+L1506:  dup
+L1507:  pop2
+L1508:  fload 7
+L1510:  fastore
+L1511:  dup
+L1512:  iconst_3
+L1513:  iconst_1
+L1514:  dup
+L1515:  pop2
+L1516:  fload 7
+L1518:  fastore
+L1519:  iload 4
+L1521:  iload_2
+L1522:  invokespecial Method FE break ([F[FII)V
+L1525:  fconst_1
+L1526:  dup
+L1527:  dup_x1
+L1528:  ldc_w 5e-1f
+L1531:  fload 5
+L1533:  fmul
+L1534:  invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L1537:  iconst_4
+L1538:  iconst_1
+L1539:  dup
+L1540:  pop2
+L1541:  newarray float
+L1543:  iconst_1
+L1544:  dup
+L1545:  pop2
 L1546:  dup
-L1547:  pop2
-L1548:  newarray float
-L1550:  iconst_1
-L1551:  dup
-L1552:  pop2
-L1553:  dup
-L1554:  iconst_0
-L1555:  iconst_1
-L1556:  dup
-L1557:  pop2
-L1558:  fload 6
-L1560:  fneg
-L1561:  fastore
-L1562:  dup
-L1563:  iconst_1
-L1564:  dup
-L1565:  dup
-L1566:  pop2
-L1567:  fload 6
+L1547:  iconst_0
+L1548:  iconst_1
+L1549:  dup
+L1550:  pop2
+L1551:  fload 6
+L1553:  fneg
+L1554:  fastore
+L1555:  dup
+L1556:  iconst_1
+L1557:  dup
+L1558:  dup
+L1559:  pop2
+L1560:  fload 6
+L1562:  fastore
+L1563:  dup
+L1564:  iconst_2
+L1565:  iconst_1
+L1566:  dup
+L1567:  pop2
+L1568:  fconst_0
 L1569:  fastore
 L1570:  dup
-L1571:  iconst_2
+L1571:  iconst_3
 L1572:  iconst_1
 L1573:  dup
 L1574:  pop2
 L1575:  fconst_0
 L1576:  fastore
-L1577:  dup
-L1578:  iconst_3
-L1579:  iconst_1
-L1580:  dup
-L1581:  pop2
-L1582:  fconst_0
-L1583:  fastore
-L1584:  iconst_4
-L1585:  iconst_1
+L1577:  iconst_4
+L1578:  iconst_1
+L1579:  dup
+L1580:  pop2
+L1581:  newarray float
+L1583:  iconst_1
+L1584:  dup
+L1585:  pop2
 L1586:  dup
-L1587:  pop2
-L1588:  newarray float
-L1590:  iconst_1
-L1591:  dup
-L1592:  pop2
+L1587:  iconst_0
+L1588:  iconst_1
+L1589:  dup
+L1590:  pop2
+L1591:  fconst_0
+L1592:  fastore
 L1593:  dup
-L1594:  iconst_0
-L1595:  iconst_1
+L1594:  iconst_1
+L1595:  dup
 L1596:  dup
 L1597:  pop2
 L1598:  fconst_0
 L1599:  fastore
 L1600:  dup
-L1601:  iconst_1
-L1602:  dup
+L1601:  iconst_2
+L1602:  iconst_1
 L1603:  dup
 L1604:  pop2
-L1605:  fconst_0
-L1606:  fastore
-L1607:  dup
-L1608:  iconst_2
-L1609:  iconst_1
-L1610:  dup
-L1611:  pop2
-L1612:  fload 7
-L1614:  fneg
-L1615:  fastore
-L1616:  dup
-L1617:  iconst_3
-L1618:  iconst_1
-L1619:  dup
-L1620:  pop2
-L1621:  fload 7
-L1623:  fastore
-L1624:  iload 4
-L1626:  iload_2
-L1627:  invokespecial Method FE break ([F[FII)V
-L1630:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
-L1633:  sipush 3553
-L1636:  iconst_1
-L1637:  dup
-L1638:  pop2
-L1639:  invokestatic Method org/lwjgl/opengl/GL11 float (I)V
-L1642:  ldc_w 33986
-L1645:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
-L1648:  sipush 3553
-L1651:  iconst_1
-L1652:  dup
-L1653:  pop2
-L1654:  invokestatic Method org/lwjgl/opengl/GL11 float (I)V
-L1657:  ldc_w 33987
-L1660:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
-L1663:  sipush 3553
-L1666:  iconst_1
-L1667:  dup
-L1668:  pop2
-L1669:  invokestatic Method org/lwjgl/opengl/GL11 float (I)V
-L1672:  fconst_1
-L1673:  dup
-L1674:  dup_x1
-L1675:  dup_x2
-L1676:  fload 5
-L1678:  fmul
-L1679:  invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L1682:  fconst_0
-L1683:  dup
-L1684:  iload 4
-L1686:  iload_2
-L1687:  invokespecial Method FE blurmethod (FFII)V
-L1690:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
-L1693:  sipush 3553
-L1696:  iconst_1
-L1697:  dup
-L1698:  pop2
-L1699:  invokestatic Method org/lwjgl/opengl/GL11 float (I)V
-L1702:  invokestatic Method org/lwjgl/opengl/Display return ()Lorg/lwjgl/opengl/DisplayMode;
-L1705:  invokevirtual Method org/lwjgl/opengl/DisplayMode short ()I
-L1708:  dup
-L1709:  istore_2
-L1710:  ifne L1719
-L1713:  iload 8
-L1715:  iconst_1
-L1716:  dup
-L1717:  pop2
-L1718:  istore_2
-L1719:  iload 8
-L1721:  invokestatic Method org/lwjgl/opengl/Display break (I)V
-        .catch java/lang/Exception from L1724 to L1750 using L1753
-L1724:  aload_0
-L1725:  getfield Field FE for Z
-L1728:  iload_1
-L1729:  if_icmpeq L1758
-L1732:  aload_0
-L1733:  getfield Field FE for Z
-L1736:  ifeq L1745
-L1739:  getstatic Field FE extends Lorg/lwjgl/input/K;
-L1742:  goto L1746
-L1745:  aconst_null
-L1746:  invokestatic Method org/lwjgl/input/k break (Lorg/lwjgl/input/K;)Lorg/lwjgl/input/K;
-L1749:  pop
-L1750:  goto L1758
-L1753:  astore_1
-L1754:  aload_1
-L1755:  invokevirtual Method java/lang/Exception printStackTrace ()V
-L1758:  invokestatic Method org/lwjgl/opengl/Display class ()V
-L1761:  iconst_0
-L1762:  iconst_1
-L1763:  dup
-L1764:  pop2
-L1765:  ireturn
-L1766:  
-        .attribute StackMap b'\x00\x25\x00\x0B\x00\x00\x00\x01\x07\x00\x8A\x00\x0C\x00\x02\x07\x00\x02\x02\x00\x00\x00\x21\x00\x00\x00\x01\x07\x00\x8A\x00\x22\x00\x09\x07\x00\x02\x02\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x31\x00\x09\x07\x00\x02\x02\x00\x00\x00\x00\x00\x00\x01\x00\x01\x07\x03\xDA\x00\x32\x00\x09\x07\x00\x02\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x64\x00\x09\x07\x00\x02\x01\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\x97\x00\x09\x07\x00\x02\x00\x00\x00\x00\x00\x00\x00\x01\x00\x00\x00\xBA\x00\x09\x07\x00\x02\x01\x07\x00\xBB\x01\x00\x00\x00\x00\x01\x00\x00\x00\xDC\x00\x09\x07\x00\x02\x01\x07\x00\xBB\x01\x07\x00\xC7\x00\x00\x00\x01\x00\x00\x00\xFE\x00\x09\x07\x00\x02\x01\x07\x00\xBB\x01\x00\x00\x00\x00\x01\x00\x00\x01\x09\x00\x09\x07\x00\x02\x01\x07\x00\xBB\x01\x00\x00\x00\x00\x01\x00\x00\x01\x5F\x00\x09\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x01\x00\x00\x01\x6F\x00\x09\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x01\x00\x00\x01\x8B\x00\x09\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x01\x00\x00\x01\x91\x00\x09\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x01\x00\x01\x01\x02\x20\x00\x09\x07\x00\x02\x01\x01\x01\x01\x07\x00\xC7\x02\x00\x01\x00\x00\x02\x3C\x00\x09\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x01\x00\x00\x02\x7C\x00\x09\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x01\x00\x00\x02\x8C\x00\x09\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x01\x00\x00\x02\x9C\x00\x09\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x01\x00\x00\x02\xBC\x00\x09\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x01\x00\x00\x02\xDF\x00\x09\x07\x00\x02\x01\x01\x07\x04\x19\x01\x02\x01\x00\x01\x00\x01\x01\x03\x2B\x00\x09\x07\x00\x02\x01\x01\x07\x04\x19\x01\x02\x01\x00\x01\x00\x00\x03\x32\x00\x09\x07\x00\x02\x01\x01\x07\x04\x19\x01\x02\x01\x00\x01\x00\x01\x01\x03\xD1\x00\x09\x07\x00\x02\x01\x01\x07\x04\x19\x01\x02\x01\x07\x00\xC7\x01\x00\x00\x03\xE6\x00\x09\x07\x00\x02\x01\x01\x07\x04\x19\x01\x02\x01\x00\x01\x00\x00\x03\xEE\x00\x09\x07\x00\x02\x01\x01\x07\x04\x19\x01\x02\x01\x00\x01\x00\x00\x04\x0D\x00\x09\x07\x00\x02\x01\x01\x07\x04\x19\x01\x02\x01\x00\x01\x00\x00\x04\x8B\x00\x09\x07\x00\x02\x01\x01\x07\x04\x19\x01\x02\x00\x00\x01\x00\x00\x05\x50\x00\x09\x07\x00\x02\x01\x01\x07\x04\x19\x01\x02\x02\x02\x01\x00\x00\x06\xA6\x00\x09\x07\x00\x02\x01\x01\x07\x04\x19\x01\x02\x02\x02\x01\x00\x00\x06\xB7\x00\x09\x07\x00\x02\x01\x01\x07\x04\x19\x01\x02\x02\x02\x01\x00\x00\x06\xD1\x00\x09\x07\x00\x02\x01\x01\x07\x04\x19\x01\x02\x02\x02\x01\x00\x00\x06\xD2\x00\x09\x07\x00\x02\x01\x01\x07\x04\x19\x01\x02\x02\x02\x01\x00\x01\x07\x02\xC2\x06\xD9\x00\x09\x07\x00\x02\x01\x01\x07\x04\x19\x01\x02\x02\x02\x01\x00\x01\x07\x01\xEA\x06\xDE\x00\x09\x07\x00\x02\x00\x01\x07\x04\x19\x01\x02\x02\x02\x01\x00\x00'
-        .localvariabletable
-            8 is framerate I from L12 to L1758
-        .end localvariabletable
+L1605:  fload 7
+L1607:  fneg
+L1608:  fastore
+L1609:  dup
+L1610:  iconst_3
+L1611:  iconst_1
+L1612:  dup
+L1613:  pop2
+L1614:  fload 7
+L1616:  fastore
+L1617:  iload 4
+L1619:  iload_2
+L1620:  invokespecial Method FE break ([F[FII)V
+L1623:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
+L1626:  sipush 3553
+L1629:  iconst_1
+L1630:  dup
+L1631:  pop2
+L1632:  invokestatic Method org/lwjgl/opengl/GL11 float (I)V
+L1635:  ldc_w 33986
+L1638:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
+L1641:  sipush 3553
+L1644:  iconst_1
+L1645:  dup
+L1646:  pop2
+L1647:  invokestatic Method org/lwjgl/opengl/GL11 float (I)V
+L1650:  ldc_w 33987
+L1653:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
+L1656:  sipush 3553
+L1659:  iconst_1
+L1660:  dup
+L1661:  pop2
+L1662:  invokestatic Method org/lwjgl/opengl/GL11 float (I)V
+L1665:  fconst_1
+L1666:  dup
+L1667:  dup_x1
+L1668:  dup_x2
+L1669:  fload 5
+L1671:  fmul
+L1672:  invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L1675:  fconst_0
+L1676:  dup
+L1677:  iload 4
+L1679:  iload_2
+L1680:  invokespecial Method FE blurmethod (FFII)V
+L1683:  invokestatic Method org/lwjgl/opengl/ARBMultitexture else (I)V
+L1686:  sipush 3553
+L1689:  iconst_1
+L1690:  dup
+L1691:  pop2
+L1692:  invokestatic Method org/lwjgl/opengl/GL11 float (I)V
+L1695:  invokestatic Method org/lwjgl/opengl/Display return ()Lorg/lwjgl/opengl/DisplayMode;
+L1698:  invokevirtual Method org/lwjgl/opengl/DisplayMode short ()I
+L1701:  dup
+L1702:  istore_2
+L1703:  ifne L1713
+L1706:  getstatic Field net/gewaltig/cultris/Cultris framerate I
+L1709:  iconst_1
+L1710:  dup
+L1711:  pop2
+L1712:  istore_2
+L1713:  getstatic Field net/gewaltig/cultris/Cultris framerate I
+L1716:  invokestatic Method org/lwjgl/opengl/Display break (I)V
+        .catch java/lang/Exception from L1719 to L1745 using L1748
+L1719:  aload_0
+L1720:  getfield Field FE for Z
+L1723:  iload_1
+L1724:  if_icmpeq L1753
+L1727:  aload_0
+L1728:  getfield Field FE for Z
+L1731:  ifeq L1740
+L1734:  getstatic Field FE extends Lorg/lwjgl/input/K;
+L1737:  goto L1741
+L1740:  aconst_null
+L1741:  invokestatic Method org/lwjgl/input/k break (Lorg/lwjgl/input/K;)Lorg/lwjgl/input/K;
+L1744:  pop
+L1745:  goto L1753
+L1748:  astore_1
+L1749:  aload_1
+L1750:  invokevirtual Method java/lang/Exception printStackTrace ()V
+L1753:  invokestatic Method org/lwjgl/opengl/Display class ()V
+L1756:  iconst_0
+L1757:  iconst_1
+L1758:  dup
+L1759:  pop2
+L1760:  ireturn
+L1761:  
+        .attribute StackMap b'\x00\x25\x00\x0B\x00\x00\x00\x01\x07\x00\x86\x00\x0C\x00\x02\x07\x00\x02\x02\x00\x00\x00\x18\x00\x00\x00\x01\x07\x00\x86\x00\x19\x00\x02\x07\x00\x02\x02\x00\x00\x00\x28\x00\x02\x07\x00\x02\x02\x00\x01\x07\x03\xCC\x00\x29\x00\x01\x07\x00\x02\x00\x00\x00\x5B\x00\x02\x07\x00\x02\x01\x00\x00\x00\x8E\x00\x01\x07\x00\x02\x00\x00\x00\xB1\x00\x04\x07\x00\x02\x01\x07\x00\xB7\x01\x00\x00\x00\xD3\x00\x05\x07\x00\x02\x01\x07\x00\xB7\x01\x07\x00\xC3\x00\x00\x00\xF5\x00\x04\x07\x00\x02\x01\x07\x00\xB7\x01\x00\x00\x01\x00\x00\x04\x07\x00\x02\x01\x07\x00\xB7\x01\x00\x00\x01\x56\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x01\x66\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x01\x82\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x01\x88\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x01\x01\x02\x17\x00\x07\x07\x00\x02\x01\x01\x01\x01\x07\x00\xC3\x02\x00\x00\x02\x33\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x02\x73\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x02\x83\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x02\x93\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x02\xB3\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x02\xD6\x00\x07\x07\x00\x02\x01\x01\x07\x04\x05\x01\x02\x01\x00\x01\x01\x03\x22\x00\x07\x07\x00\x02\x01\x01\x07\x04\x05\x01\x02\x01\x00\x00\x03\x29\x00\x07\x07\x00\x02\x01\x01\x07\x04\x05\x01\x02\x01\x00\x01\x01\x03\xC8\x00\x08\x07\x00\x02\x01\x01\x07\x04\x05\x01\x02\x01\x07\x00\xC3\x00\x00\x03\xDD\x00\x07\x07\x00\x02\x01\x01\x07\x04\x05\x01\x02\x01\x00\x00\x03\xE5\x00\x07\x07\x00\x02\x01\x01\x07\x04\x05\x01\x02\x01\x00\x00\x04\x04\x00\x07\x07\x00\x02\x01\x01\x07\x04\x05\x01\x02\x01\x00\x00\x04\x84\x00\x06\x07\x00\x02\x01\x01\x07\x04\x05\x01\x02\x00\x00\x05\x49\x00\x08\x07\x00\x02\x01\x01\x07\x04\x05\x01\x02\x02\x02\x00\x00\x06\x9F\x00\x08\x07\x00\x02\x01\x01\x07\x04\x05\x01\x02\x02\x02\x00\x00\x06\xB1\x00\x08\x07\x00\x02\x01\x01\x07\x04\x05\x01\x02\x02\x02\x00\x00\x06\xCC\x00\x08\x07\x00\x02\x01\x01\x07\x04\x05\x01\x02\x02\x02\x00\x00\x06\xCD\x00\x08\x07\x00\x02\x01\x01\x07\x04\x05\x01\x02\x02\x02\x00\x01\x07\x02\xB7\x06\xD4\x00\x08\x07\x00\x02\x01\x01\x07\x04\x05\x01\x02\x02\x02\x00\x01\x07\x01\xDE\x06\xD9\x00\x08\x07\x00\x02\x00\x01\x07\x04\x05\x01\x02\x02\x02\x00\x00'
     .end code
     .exceptions java/lang/Exception
-    .runtime visible annotations
-        .annotation Lme/coley/recaf/metadata/InsnComment;
-            At_9 = string "Always read the current fps value from the method"
-        .end annotation
-        .annotation Lme/coley/recaf/metadata/InsnComment;
-            At_10 = string "Duplicate the result for both storing and using"
-        .end annotation
-    .end runtime
 .end method
 
 .method private break : (I)V
@@ -5011,7 +4983,7 @@ L314:   iload_2
 L315:   goto L16
 L318:   return
 L319:   
-        .attribute StackMap b'\x00\x10\x00\x10\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x00\x53\x00\x00\x00\x01\x07\x00\x8A\x00\x54\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC7\x00\x00\x00\x64\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC7\x00\x01\x07\x00\xC7\x00\x70\x00\x00\x00\x01\x07\x00\x8A\x00\x71\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC7\x00\x00\x00\x7F\x00\x05\x07\x00\x02\x01\x01\x07\x00\xC7\x07\x00\xE3\x00\x01\x07\x00\xE3\x00\xB8\x00\x05\x07\x00\x02\x01\x01\x07\x00\xC7\x07\x00\xE3\x00\x00\x00\xCA\x00\x05\x07\x00\x02\x01\x01\x07\x00\xC7\x07\x00\xE3\x00\x01\x07\x00\xE3\x00\xD6\x00\x05\x07\x00\x02\x01\x01\x07\x00\xC7\x07\x00\xE3\x00\x00\x00\xE1\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC7\x00\x00\x01\x13\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC7\x00\x00\x01\x23\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC7\x00\x01\x07\x00\xC7\x01\x2F\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC7\x00\x00\x01\x37\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC7\x00\x00\x01\x3E\x00\x03\x07\x00\x02\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x10\x00\x10\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x00\x53\x00\x00\x00\x01\x07\x00\x86\x00\x54\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC3\x00\x00\x00\x64\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC3\x00\x01\x07\x00\xC3\x00\x70\x00\x00\x00\x01\x07\x00\x86\x00\x71\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC3\x00\x00\x00\x7F\x00\x05\x07\x00\x02\x01\x01\x07\x00\xC3\x07\x00\xDF\x00\x01\x07\x00\xDF\x00\xB8\x00\x05\x07\x00\x02\x01\x01\x07\x00\xC3\x07\x00\xDF\x00\x00\x00\xCA\x00\x05\x07\x00\x02\x01\x01\x07\x00\xC3\x07\x00\xDF\x00\x01\x07\x00\xDF\x00\xD6\x00\x05\x07\x00\x02\x01\x01\x07\x00\xC3\x07\x00\xDF\x00\x00\x00\xE1\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC3\x00\x00\x01\x13\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC3\x00\x00\x01\x23\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC3\x00\x01\x07\x00\xC3\x01\x2F\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC3\x00\x00\x01\x37\x00\x04\x07\x00\x02\x01\x01\x07\x00\xC3\x00\x00\x01\x3E\x00\x03\x07\x00\x02\x01\x01\x00\x00'
     .end code
 .end method
 
@@ -5141,7 +5113,7 @@ L109:   getfield Field FE float I
 L112:   invokestatic Method org/lwjgl/opengl/GL11 const (IIII)V
 L115:   return
 L116:   
-        .attribute StackMap b'\x00\x02\x00\x44\x00\x00\x00\x01\x07\x00\x8A\x00\x45\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x44\x00\x00\x00\x01\x07\x00\x86\x00\x45\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
@@ -5333,11 +5305,11 @@ L347:   pop2
 L348:   pop2
 L349:   return
 L350:   
-        .attribute StackMap b'\x00\x09\x00\x15\x00\x00\x00\x01\x07\x00\x8A\x00\x16\x00\x04\x02\x02\x02\x02\x00\x00\x00\x59\x00\x04\x02\x02\x02\x02\x00\x01\x02\x00\x6D\x00\x00\x00\x01\x07\x00\x8A\x00\x6E\x00\x04\x02\x02\x02\x02\x00\x00\x00\xB2\x00\x04\x02\x02\x02\x02\x00\x01\x02\x00\xC6\x00\x04\x02\x02\x02\x02\x00\x00\x01\x09\x00\x04\x02\x02\x02\x02\x00\x01\x02\x01\x1A\x00\x04\x02\x02\x02\x02\x00\x00'
+        .attribute StackMap b'\x00\x09\x00\x15\x00\x00\x00\x01\x07\x00\x86\x00\x16\x00\x04\x02\x02\x02\x02\x00\x00\x00\x59\x00\x04\x02\x02\x02\x02\x00\x01\x02\x00\x6D\x00\x00\x00\x01\x07\x00\x86\x00\x6E\x00\x04\x02\x02\x02\x02\x00\x00\x00\xB2\x00\x04\x02\x02\x02\x02\x00\x01\x02\x00\xC6\x00\x04\x02\x02\x02\x02\x00\x00\x01\x09\x00\x04\x02\x02\x02\x02\x00\x01\x02\x01\x1A\x00\x04\x02\x02\x02\x02\x00\x00'
     .end code
 .end method
 
-.method private static readblurtoggle : ()F
+.method public static readblurtoggle : ()F
     .code stack 5 locals 3
 L0:     fconst_0
 L1:     fstore_0
@@ -5376,16 +5348,25 @@ L56:    freturn
 L57:    fload_0
 L58:    freturn
 L59:    
-        .attribute StackMap b'\x00\x04\x00\x22\x00\x01\x02\x00\x01\x07\x04\x40\x00\x27\x00\x02\x02\x07\x00\x04\x00\x00\x00\x2F\x00\x02\x02\x07\x00\x04\x00\x00\x00\x39\x00\x02\x02\x07\x00\x04\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x22\x00\x01\x02\x00\x01\x07\x04\x2D\x00\x27\x00\x02\x02\x07\x00\x04\x00\x00\x00\x2F\x00\x02\x02\x07\x00\x04\x00\x00\x00\x39\x00\x02\x02\x07\x00\x04\x00\x00'
         .linenumbertable
+            L0 7
             L2 9
+            L20 10
+            L25 11
             L31 14
             L34 12
+            L35 13
+            L39 15
+            L45 16
+            L47 18
+            L53 19
+            L57 21
         .end linenumbertable
     .end code
 .end method
 
-.method private static readfpsvalue : ()I
+.method public static readfpsvalue : ()I
     .code stack 5 locals 3
 L0:     bipush 60
 L2:     istore_0
@@ -5411,7 +5392,7 @@ L36:    invokevirtual Method java/io/IOException printStackTrace ()V
 L39:    iload_0
 L40:    ireturn
 L41:    
-        .attribute StackMap b'\x00\x02\x00\x22\x00\x01\x01\x00\x01\x07\x04\x40\x00\x27\x00\x02\x01\x07\x00\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x22\x00\x01\x01\x00\x01\x07\x04\x2D\x00\x27\x00\x02\x01\x07\x00\x04\x00\x00'
         .linenumbertable
             L0 13
             L3 15
@@ -5425,7 +5406,7 @@ L41:
     .end code
 .end method
 
-.method private static readhzvalue : ()I
+.method public static readhzvalue : ()I
     .code stack 5 locals 3
 L0:     bipush 60
 L2:     istore_0
@@ -5451,7 +5432,7 @@ L36:    invokevirtual Method java/io/IOException printStackTrace ()V
 L39:    iload_0
 L40:    ireturn
 L41:    
-        .attribute StackMap b'\x00\x02\x00\x22\x00\x01\x01\x00\x01\x07\x04\x40\x00\x27\x00\x02\x01\x07\x00\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x22\x00\x01\x01\x00\x01\x07\x04\x2D\x00\x27\x00\x02\x01\x07\x00\x04\x00\x00'
         .linenumbertable
             L0 13
             L3 15
