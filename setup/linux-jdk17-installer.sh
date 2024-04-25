@@ -1,7 +1,17 @@
 #!/bin/bash
 
+# Check required tools are installed
+required_tools=("curl" "wget" "tar")
+for tool in "${required_tools[@]}"; do
+    if ! command -v "$tool" &> /dev/null; then
+        echo "$tool is required but not installed. Aborting."
+        exit 1
+    fi
+done
+
+
 # Define the base directory relative to the script's location
-cd "$(dirname "$0")"
+cd "$(dirname "$0")" || exit
 
 # Define the target directory for JDKs one level down
 TARGET_DIR="../resources"
@@ -45,7 +55,7 @@ for dir in $TARGET_DIR/jdk-* $TARGET_DIR/graalvm-jdk-17*; do
             if [[ -z "$newest_temurin" || $(version_greater "$current_version" "${newest_temurin#$TARGET_DIR/jdk-}") ]]; then
                 newest_temurin="$dir"
             fi
-        elif [[ "$dir" =~ $TARGET_DIR/graalvm-jdk-17.* ]]; then
+            elif [[ "$dir" =~ $TARGET_DIR/graalvm-jdk-17.* ]]; then
             current_version="${dir#$TARGET_DIR/graalvm-jdk-17.}"  # Extract version from directory name
             if [[ -z "$newest_graalvm" || $(version_greater "$current_version" "${newest_graalvm#$TARGET_DIR/graalvm-jdk-17.}") ]]; then
                 newest_graalvm="$dir"
