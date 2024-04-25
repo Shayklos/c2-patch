@@ -1042,14 +1042,14 @@ L54:
 .end method
 
 .method public int : ()V
-    .code stack 5 locals 5
+    .code stack 5 locals 4
 L0:     aload_0
 L1:     dup
 L2:     invokespecial Method qc int ()V
 L5:     getfield Field sb try F
 L8:     fconst_0
 L9:     fcmpl
-L10:    ifle L88
+L10:    ifle L78
 L13:    aload_0
 L14:    dup
 L15:    dup2
@@ -1074,125 +1074,123 @@ L49:    ifne L59
 L52:    getstatic Field zg const Lzg;
 L55:    fconst_1
 L56:    invokestatic Method UE break (Lzg;F)V
-L59:    bipush 0
-L61:    ldc_w "classloader/java/CountDown.java"
-L64:    invokestatic Method org/dynarec/Dynarec takeIntReturnInt (ILjava/lang/String;)I
-L67:    istore 4
-L69:    iload_2
-L70:    iload_1
-L71:    if_icmpeq L88
-L74:    aload_0
-L75:    getfield Field sb const Z
-L78:    ifne L88
-L81:    getstatic Field zg char Lzg;
-L84:    fconst_1
-L85:    invokestatic Method UE break (Lzg;F)V
-L88:    aload_0
-L89:    getfield Field sb null Ljava/util/LinkedHashMap;
-L92:    invokevirtual Method java/util/LinkedHashMap entrySet ()Ljava/util/Set;
-L95:    invokeinterface InterfaceMethod java/util/Set iterator ()Ljava/util/Iterator; 1
-L100:   astore_1
-L101:   aload_1
-L102:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
-L107:   ifeq L327
-L110:   aload_1
-L111:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
-L116:   checkcast java/util/Map$Entry
-L119:   dup
-L120:   astore_2
-L121:   invokeinterface InterfaceMethod java/util/Map$Entry getValue ()Ljava/lang/Object; 1
-L126:   checkcast Dc
-L129:   getfield Field Dc do Ljava/lang/Object;
-L132:   checkcast java/util/LinkedList
-L135:   invokevirtual Method java/util/LinkedList isEmpty ()Z
-L138:   ifeq L151
-L141:   aload_1
-L142:   invokeinterface InterfaceMethod java/util/Iterator remove ()V 1
-L147:   goto L101
-L150:   athrow
-L151:   aload_2
-L152:   invokeinterface InterfaceMethod java/util/Map$Entry getValue ()Ljava/lang/Object; 1
-L157:   checkcast Dc
-L160:   dup
-L161:   astore_3
-L162:   dup
-L163:   getfield Field Dc "enum" Ljava/lang/Object;
-L166:   checkcast java/lang/Float
-L169:   invokevirtual Method java/lang/Float floatValue ()F
-L172:   getstatic Field ib do F
-L175:   fsub
-L176:   invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
-L179:   dup_x1
-L180:   putfield Field Dc "enum" Ljava/lang/Object;
-L183:   pop
-L184:   aload_2
-L185:   invokeinterface InterfaceMethod java/util/Map$Entry getValue ()Ljava/lang/Object; 1
-L190:   checkcast Dc
-L193:   getfield Field Dc "enum" Ljava/lang/Object;
-L196:   checkcast java/lang/Float
-L199:   invokevirtual Method java/lang/Float floatValue ()F
-L202:   fconst_0
-L203:   fcmpg
-L204:   ifge L101
-L207:   aload_2
-L208:   invokeinterface InterfaceMethod java/util/Map$Entry getValue ()Ljava/lang/Object; 1
-L213:   checkcast Dc
-L216:   getfield Field Dc do Ljava/lang/Object;
-L219:   checkcast java/util/LinkedList
-L222:   invokevirtual Method java/util/LinkedList isEmpty ()Z
-L225:   ifne L101
-L228:   aload_2
-L229:   invokeinterface InterfaceMethod java/util/Map$Entry getValue ()Ljava/lang/Object; 1
-L234:   checkcast Dc
-L237:   dup
-L238:   astore_3
-L239:   dup
-L240:   getfield Field Dc "enum" Ljava/lang/Object;
-L243:   checkcast java/lang/Float
-L246:   invokevirtual Method java/lang/Float floatValue ()F
-L249:   ldc_w 2e-2f
-L252:   invokestatic Method java/lang/Math random ()D
-L255:   d2f
-L256:   ldc_w 9e-2f
-L259:   fmul
-L260:   fadd
-L261:   fadd
-L262:   invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
-L265:   dup_x1
-L266:   putfield Field Dc "enum" Ljava/lang/Object;
-L269:   pop
-L270:   aload_2
-L271:   invokeinterface InterfaceMethod java/util/Map$Entry getValue ()Ljava/lang/Object; 1
-L276:   checkcast Dc
-L279:   getfield Field Dc do Ljava/lang/Object;
-L282:   checkcast java/util/LinkedList
-L285:   invokevirtual Method java/util/LinkedList removeFirst ()Ljava/lang/Object;
-L288:   checkcast Dc
-L291:   astore_3
-L292:   aload_0
-L293:   aload_2
-L294:   invokeinterface InterfaceMethod java/util/Map$Entry getKey ()Ljava/lang/Object; 1
-L299:   checkcast ed
-L302:   aload_3
-L303:   getfield Field Dc "enum" Ljava/lang/Object;
-L306:   checkcast ed
-L309:   aload_3
-L310:   getfield Field Dc do Ljava/lang/Object;
-L313:   checkcast [I
-L316:   invokespecial Method sb break (Led;Led;[I)V
-L319:   aload_2
-L320:   goto L185
-L323:   nop
-L324:   nop
-L325:   nop
-L326:   athrow
-L327:   return
-L328:   
-        .attribute StackMap b'\x00\x08\x00\x3B\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x58\x00\x01\x07\x00\x02\x00\x00\x00\x65\x00\x02\x07\x00\x02\x07\x00\x66\x00\x00\x00\x96\x00\x00\x00\x01\x07\x01\x17\x00\x97\x00\x03\x07\x00\x02\x07\x00\x66\x07\x00\x16\x00\x00\x00\xB9\x00\x04\x07\x00\x02\x07\x00\x66\x07\x00\x16\x07\x00\xF7\x00\x01\x07\x00\x16\x01\x43\x00\x00\x00\x01\x07\x01\x17\x01\x47\x00\x02\x07\x00\x02\x07\x00\x66\x00\x00'
-        .localvariabletable
-            4 is MOO I from L59 to L327
-        .end localvariabletable
+L59:    iload_2
+L60:    iload_1
+L61:    if_icmpeq L78
+L64:    aload_0
+L65:    getfield Field sb const Z
+L68:    ifne L78
+L71:    getstatic Field zg char Lzg;
+L74:    fconst_1
+L75:    invokestatic Method UE break (Lzg;F)V
+L78:    aload_0
+L79:    getfield Field sb null Ljava/util/LinkedHashMap;
+L82:    invokevirtual Method java/util/LinkedHashMap entrySet ()Ljava/util/Set;
+L85:    invokeinterface InterfaceMethod java/util/Set iterator ()Ljava/util/Iterator; 1
+L90:    astore_1
+L91:    aload_1
+L92:    invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
+L97:    ifeq L317
+L100:   aload_1
+L101:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
+L106:   checkcast java/util/Map$Entry
+L109:   dup
+L110:   astore_2
+L111:   invokeinterface InterfaceMethod java/util/Map$Entry getValue ()Ljava/lang/Object; 1
+L116:   checkcast Dc
+L119:   getfield Field Dc do Ljava/lang/Object;
+L122:   checkcast java/util/LinkedList
+L125:   invokevirtual Method java/util/LinkedList isEmpty ()Z
+L128:   ifeq L141
+L131:   aload_1
+L132:   invokeinterface InterfaceMethod java/util/Iterator remove ()V 1
+L137:   goto L91
+L140:   athrow
+L141:   aload_2
+L142:   invokeinterface InterfaceMethod java/util/Map$Entry getValue ()Ljava/lang/Object; 1
+L147:   checkcast Dc
+L150:   dup
+L151:   astore_3
+L152:   dup
+L153:   getfield Field Dc "enum" Ljava/lang/Object;
+L156:   checkcast java/lang/Float
+L159:   invokevirtual Method java/lang/Float floatValue ()F
+L162:   getstatic Field ib do F
+L165:   fsub
+L166:   invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
+L169:   dup_x1
+L170:   putfield Field Dc "enum" Ljava/lang/Object;
+L173:   pop
+L174:   aload_2
+L175:   invokeinterface InterfaceMethod java/util/Map$Entry getValue ()Ljava/lang/Object; 1
+L180:   checkcast Dc
+L183:   getfield Field Dc "enum" Ljava/lang/Object;
+L186:   checkcast java/lang/Float
+L189:   invokevirtual Method java/lang/Float floatValue ()F
+L192:   fconst_0
+L193:   fcmpg
+L194:   ifge L91
+L197:   aload_2
+L198:   invokeinterface InterfaceMethod java/util/Map$Entry getValue ()Ljava/lang/Object; 1
+L203:   checkcast Dc
+L206:   getfield Field Dc do Ljava/lang/Object;
+L209:   checkcast java/util/LinkedList
+L212:   invokevirtual Method java/util/LinkedList isEmpty ()Z
+L215:   ifne L91
+L218:   aload_2
+L219:   invokeinterface InterfaceMethod java/util/Map$Entry getValue ()Ljava/lang/Object; 1
+L224:   checkcast Dc
+L227:   dup
+L228:   astore_3
+L229:   dup
+L230:   getfield Field Dc "enum" Ljava/lang/Object;
+L233:   checkcast java/lang/Float
+L236:   invokevirtual Method java/lang/Float floatValue ()F
+L239:   ldc_w 2e-2f
+L242:   invokestatic Method java/lang/Math random ()D
+L245:   d2f
+L246:   ldc_w 9e-2f
+L249:   fmul
+L250:   fadd
+L251:   fadd
+L252:   invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
+L255:   dup_x1
+L256:   putfield Field Dc "enum" Ljava/lang/Object;
+L259:   pop
+L260:   aload_2
+L261:   invokeinterface InterfaceMethod java/util/Map$Entry getValue ()Ljava/lang/Object; 1
+L266:   checkcast Dc
+L269:   getfield Field Dc do Ljava/lang/Object;
+L272:   checkcast java/util/LinkedList
+L275:   invokevirtual Method java/util/LinkedList removeFirst ()Ljava/lang/Object;
+L278:   checkcast Dc
+L281:   astore_3
+L282:   aload_0
+L283:   aload_2
+L284:   invokeinterface InterfaceMethod java/util/Map$Entry getKey ()Ljava/lang/Object; 1
+L289:   checkcast ed
+L292:   aload_3
+L293:   getfield Field Dc "enum" Ljava/lang/Object;
+L296:   checkcast ed
+L299:   aload_3
+L300:   getfield Field Dc do Ljava/lang/Object;
+L303:   checkcast [I
+L306:   invokespecial Method sb break (Led;Led;[I)V
+L309:   aload_2
+L310:   goto L175
+L313:   nop
+L314:   nop
+L315:   nop
+L316:   athrow
+L317:   return
+L318:   
+        .attribute StackMap b'\x00\x08\x00\x3B\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x4E\x00\x01\x07\x00\x02\x00\x00\x00\x5B\x00\x02\x07\x00\x02\x07\x00\x66\x00\x00\x00\x8C\x00\x00\x00\x01\x07\x01\x17\x00\x8D\x00\x03\x07\x00\x02\x07\x00\x66\x07\x00\x16\x00\x00\x00\xAF\x00\x04\x07\x00\x02\x07\x00\x66\x07\x00\x16\x07\x00\xF7\x00\x01\x07\x00\x16\x01\x39\x00\x00\x00\x01\x07\x01\x17\x01\x3D\x00\x02\x07\x00\x02\x07\x00\x66\x00\x00'
     .end code
+    .runtime visible annotations
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_33 = string "BIPUSH 0\u000ALDC \"classloader/java/CountDown.java\"\u000AINVOKESTATIC org/dynarec/Dynarec.takeIntReturnInt(ILjava/lang/String;)I\u000AISTORE MOO"
+        .end annotation
+    .end runtime
 .end method
 
 .method public break : (Lqc;)V
@@ -1669,7 +1667,7 @@ L376:   goto L328
 L379:   iload_1
 L380:   ireturn
 L381:   
-        .attribute StackMap b'\x00\x11\x00\x0F\x00\x00\x00\x01\x07\x01\x17\x00\x10\x00\x03\x07\x00\x02\x07\x01\x39\x01\x00\x00\x00\x1D\x00\x00\x00\x01\x07\x01\x17\x00\x1E\x00\x03\x07\x00\x02\x07\x01\x39\x01\x00\x00\x00\x53\x00\x03\x07\x00\x02\x07\x02\x2E\x01\x00\x00\x00\x79\x00\x03\x07\x00\x02\x07\x02\x2E\x01\x00\x00\x00\x8D\x00\x03\x07\x00\x02\x07\x02\x2E\x01\x00\x00\x00\xA6\x00\x03\x07\x00\x02\x07\x02\x2E\x01\x00\x00\x00\xBF\x00\x03\x07\x00\x02\x07\x02\x2E\x01\x00\x00\x00\xD8\x00\x03\x07\x00\x02\x07\x02\x2E\x01\x00\x00\x00\xDD\x00\x03\x07\x00\x02\x07\x02\x2E\x01\x00\x00\x00\xF9\x00\x03\x07\x00\x02\x07\x02\x2E\x01\x00\x00\x01\x0C\x00\x03\x07\x00\x02\x07\x02\x2E\x01\x00\x00\x01\x28\x00\x03\x07\x00\x02\x07\x02\x2E\x01\x00\x00\x01\x3B\x00\x03\x07\x00\x02\x07\x02\x2E\x01\x00\x00\x01\x48\x00\x04\x07\x00\x02\x01\x01\x07\x00\x66\x00\x00\x01\x7B\x00\x04\x07\x00\x02\x01\x01\x07\x00\x66\x00\x00'
+        .attribute StackMap b'\x00\x11\x00\x0F\x00\x00\x00\x01\x07\x01\x17\x00\x10\x00\x03\x07\x00\x02\x07\x01\x39\x01\x00\x00\x00\x1D\x00\x00\x00\x01\x07\x01\x17\x00\x1E\x00\x03\x07\x00\x02\x07\x01\x39\x01\x00\x00\x00\x53\x00\x03\x07\x00\x02\x07\x02\x28\x01\x00\x00\x00\x79\x00\x03\x07\x00\x02\x07\x02\x28\x01\x00\x00\x00\x8D\x00\x03\x07\x00\x02\x07\x02\x28\x01\x00\x00\x00\xA6\x00\x03\x07\x00\x02\x07\x02\x28\x01\x00\x00\x00\xBF\x00\x03\x07\x00\x02\x07\x02\x28\x01\x00\x00\x00\xD8\x00\x03\x07\x00\x02\x07\x02\x28\x01\x00\x00\x00\xDD\x00\x03\x07\x00\x02\x07\x02\x28\x01\x00\x00\x00\xF9\x00\x03\x07\x00\x02\x07\x02\x28\x01\x00\x00\x01\x0C\x00\x03\x07\x00\x02\x07\x02\x28\x01\x00\x00\x01\x28\x00\x03\x07\x00\x02\x07\x02\x28\x01\x00\x00\x01\x3B\x00\x03\x07\x00\x02\x07\x02\x28\x01\x00\x00\x01\x48\x00\x04\x07\x00\x02\x01\x01\x07\x00\x66\x00\x00\x01\x7B\x00\x04\x07\x00\x02\x01\x01\x07\x00\x66\x00\x00'
     .end code
 .end method
 
@@ -1980,7 +1978,7 @@ L342:   getfield Field Rg short LsE;
 L345:   invokevirtual Method bb break (FFFFLsE;)V
 L348:   return
 L349:   
-        .attribute StackMap b'\x00\x0F\x00\x10\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x01\xD7\x07\x01\xD7\x01\x00\x01\x01\x00\x2B\x00\x00\x00\x01\x07\x01\x17\x00\x2C\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x01\xD7\x07\x01\xD7\x01\x00\x00\x00\x42\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD7\x07\x00\x73\x00\x00\x00\x43\x00\x00\x00\x01\x07\x01\x17\x00\x44\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD7\x07\x00\x73\x00\x00\x00\x74\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD7\x07\x00\x73\x00\x00\x00\x85\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD7\x07\x00\x73\x00\x00\x00\x86\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD7\x07\x00\x73\x00\x01\x07\x00\x02\x00\xB5\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD7\x07\x00\x73\x00\x00\x00\xB6\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD7\x07\x00\x73\x00\x00\x00\xF4\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD7\x07\x00\x73\x00\x00\x00\xF5\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD7\x07\x00\x73\x00\x00\x01\x2A\x00\x06\x07\x00\x02\x02\x02\x02\x07\x01\xD7\x07\x00\x73\x00\x00\x01\x5C\x00\x06\x07\x00\x02\x02\x02\x02\x07\x01\xD7\x07\x00\x73\x00\x00'
+        .attribute StackMap b'\x00\x0F\x00\x10\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x01\xD2\x07\x01\xD2\x01\x00\x01\x01\x00\x2B\x00\x00\x00\x01\x07\x01\x17\x00\x2C\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x01\xD2\x07\x01\xD2\x01\x00\x00\x00\x42\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD2\x07\x00\x73\x00\x00\x00\x43\x00\x00\x00\x01\x07\x01\x17\x00\x44\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD2\x07\x00\x73\x00\x00\x00\x74\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD2\x07\x00\x73\x00\x00\x00\x85\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD2\x07\x00\x73\x00\x00\x00\x86\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD2\x07\x00\x73\x00\x01\x07\x00\x02\x00\xB5\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD2\x07\x00\x73\x00\x00\x00\xB6\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD2\x07\x00\x73\x00\x00\x00\xF4\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD2\x07\x00\x73\x00\x00\x00\xF5\x00\x06\x07\x00\x02\x07\x01\xA0\x07\x01\xA0\x07\x00\x73\x07\x01\xD2\x07\x00\x73\x00\x00\x01\x2A\x00\x06\x07\x00\x02\x02\x02\x02\x07\x01\xD2\x07\x00\x73\x00\x00\x01\x5C\x00\x06\x07\x00\x02\x02\x02\x02\x07\x01\xD2\x07\x00\x73\x00\x00'
     .end code
 .end method
 
