@@ -79,7 +79,7 @@ L82:    ldc "Survivor"
 L84:    iconst_1
 L85:    dup
 L86:    pop2
-L87:    iconst_0
+L87:    iconst_1
 L88:    iconst_1
 L89:    dup_x1
 L90:    dup
@@ -195,7 +195,7 @@ L26:    aload_1
 L27:    invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/Throwable;)V
 L30:    athrow
 L31:    
-        .attribute StackMap b'\x00\x02\x00\x14\x00\x00\x00\x01\x07\x00\x63\x00\x15\x00\x01\x01\x00\x01\x07\x00\x5B'
+        .attribute StackMap b'\x00\x02\x00\x14\x00\x00\x00\x01\x07\x00\x68\x00\x15\x00\x01\x01\x00\x01\x07\x00\x5B'
     .end code
 .end method
 
