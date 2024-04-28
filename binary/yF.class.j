@@ -108,5 +108,5 @@ L2:
 .innerclasses
     yF [0] [0] static
 .end innerclasses
-.enclosing method SE "public" ([LTe;)LTe;
+.enclosing method SE shep ([LTe;)LTe;
 .end class

@@ -28,5 +28,5 @@ L14:
 .innerclasses
     jf [0] [0] static
 .end innerclasses
-.enclosing method SE case ([LTe;)LTe;
+.enclosing method SE elvis ([LTe;)LTe;
 .end class

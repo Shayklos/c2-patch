@@ -64,5 +64,5 @@ L5:
     EF eb [0] public static final enum
     bG [0] [0] static
 .end innerclasses
-.enclosing method SE "super" ([LTe;)LTe;
+.enclosing method SE maserati ([LTe;)LTe;
 .end class

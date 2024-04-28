@@ -21,5 +21,5 @@ L5:
 .innerclasses
     Qe [0] [0] static
 .end innerclasses
-.enclosing method SE return ([LTe;)LTe;
+.enclosing method SE tgm ([LTe;)LTe;
 .end class

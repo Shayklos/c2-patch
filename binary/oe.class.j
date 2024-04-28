@@ -20,5 +20,5 @@ L5:
 .innerclasses
     oe [0] [0] static
 .end innerclasses
-.enclosing method SE break ([LTe;)LTe;
+.enclosing method SE veyron ([LTe;)LTe;
 .end class

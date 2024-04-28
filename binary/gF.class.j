@@ -53,7 +53,7 @@ L24:    aload_2
 L25:    invokespecial Method Qb break (ZLRg;)Lff;
 L28:    areturn
 L29:    
-        .attribute StackMap b'\x00\x02\x00\x15\x00\x00\x00\x01\x07\x00\x25\x00\x16\x00\x04\x07\x00\x02\x01\x07\x00\x27\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x15\x00\x00\x00\x01\x07\x00\x27\x00\x16\x00\x04\x07\x00\x02\x01\x07\x00\x29\x01\x00\x00'
     .end code
 .end method
 
@@ -72,5 +72,5 @@ L13:
 .innerclasses
     gF [0] [0] static
 .end innerclasses
-.enclosing method SE short ([LTe;)LTe;
+.enclosing method SE ruggu ([LTe;)LTe;
 .end class

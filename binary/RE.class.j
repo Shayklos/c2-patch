@@ -55,5 +55,5 @@ L49:
 .innerclasses
     RE [0] [0] static
 .end innerclasses
-.enclosing method SE int ([LTe;)LTe;
+.enclosing method SE emptyhouse ([LTe;)LTe;
 .end class

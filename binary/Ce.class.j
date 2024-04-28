@@ -38,5 +38,5 @@ L5:
 .innerclasses
     Ce [0] [0] static
 .end innerclasses
-.enclosing method SE goto ([LTe;)LTe;
+.enclosing method SE unbreakable ([LTe;)LTe;
 .end class

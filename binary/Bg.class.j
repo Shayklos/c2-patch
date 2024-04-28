@@ -21,5 +21,5 @@ L3:
 .innerclasses
     Bg [0] [0] static
 .end innerclasses
-.enclosing method SE byte ([LTe;)LTe;
+.enclosing method SE e123 ([LTe;)LTe;
 .end class

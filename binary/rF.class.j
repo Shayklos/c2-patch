@@ -28,5 +28,5 @@ L5:
 .innerclasses
     rF [0] [0] static
 .end innerclasses
-.enclosing method SE do ([LTe;)LTe;
+.enclosing method SE quickstart ([LTe;)LTe;
 .end class

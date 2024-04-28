@@ -21,5 +21,5 @@ L3:
 .innerclasses
     Pe [0] [0] static
 .end innerclasses
-.enclosing method SE "final" ([LTe;)LTe;
+.enclosing method SE abc ([LTe;)LTe;
 .end class

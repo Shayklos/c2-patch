@@ -5,7 +5,7 @@
 .field public static final "enum" LTe;
 .field public static final do Ljava/util/Map;
 
-.method private static varargs "volatile" : ([LTe;)LTe;
+.method private static varargs kajitani : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -73,7 +73,7 @@ L89:
     .end code
 .end method
 
-.method private static varargs extends : ([LTe;)LTe;
+.method private static varargs booring : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -144,7 +144,7 @@ L92:
     .end code
 .end method
 
-.method private static varargs continue : ([LTe;)LTe;
+.method private static varargs brrr : ([LTe;)LTe;
     .code stack 24 locals 1
 L0:     new Te
 L3:     dup
@@ -231,7 +231,7 @@ L113:
     .end code
 .end method
 
-.method private static varargs return : ([LTe;)LTe;
+.method private static varargs tgm : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -308,7 +308,7 @@ L102:
     .end code
 .end method
 
-.method private static varargs "public" : ([LTe;)LTe;
+.method private static varargs shep : ([LTe;)LTe;
     .code stack 24 locals 1
 L0:     new Te
 L3:     dup
@@ -405,7 +405,7 @@ L122:
     .end code
 .end method
 
-.method private static varargs default : ([LTe;)LTe;
+.method private static varargs portalftw : ([LTe;)LTe;
     .code stack 24 locals 1
 L0:     new Te
 L3:     dup
@@ -478,7 +478,7 @@ L94:
     .end code
 .end method
 
-.method private static varargs "super" : ([LTe;)LTe;
+.method private static varargs maserati : ([LTe;)LTe;
     .code stack 25 locals 1
 L0:     new Te
 L3:     dup
@@ -658,7 +658,7 @@ L99:    anewarray Te
 L102:   iconst_1
 L103:   dup
 L104:   pop2
-L105:   invokestatic Method SE void ([LTe;)LTe;
+L105:   invokestatic Method SE pocall2 ([LTe;)LTe;
 L108:   aastore
 L109:   dup
 L110:   iconst_1
@@ -673,9 +673,9 @@ L118:   anewarray Te
 L121:   iconst_1
 L122:   dup
 L123:   pop2
-L124:   invokestatic Method SE if ([LTe;)LTe;
+L124:   invokestatic Method SE winterbottom ([LTe;)LTe;
 L127:   aastore
-L128:   invokestatic Method SE extends ([LTe;)LTe;
+L128:   invokestatic Method SE booring ([LTe;)LTe;
 L131:   aastore
 L132:   dup
 L133:   iconst_1
@@ -703,7 +703,7 @@ L156:   anewarray Te
 L159:   iconst_1
 L160:   dup
 L161:   pop2
-L162:   invokestatic Method SE "final" ([LTe;)LTe;
+L162:   invokestatic Method SE abc ([LTe;)LTe;
 L165:   aastore
 L166:   dup
 L167:   iconst_1
@@ -718,11 +718,11 @@ L175:   anewarray Te
 L178:   iconst_1
 L179:   dup
 L180:   pop2
-L181:   invokestatic Method SE byte ([LTe;)LTe;
+L181:   invokestatic Method SE e123 ([LTe;)LTe;
 L184:   aastore
-L185:   invokestatic Method SE catch ([LTe;)LTe;
+L185:   invokestatic Method SE easyaspie ([LTe;)LTe;
 L188:   aastore
-L189:   invokestatic Method SE do ([LTe;)LTe;
+L189:   invokestatic Method SE quickstart ([LTe;)LTe;
 L192:   aastore
 L193:   dup
 L194:   iconst_1
@@ -763,7 +763,7 @@ L232:   anewarray Te
 L235:   iconst_1
 L236:   dup
 L237:   pop2
-L238:   invokestatic Method SE float ([LTe;)LTe;
+L238:   invokestatic Method SE garbageman ([LTe;)LTe;
 L241:   aastore
 L242:   dup
 L243:   iconst_1
@@ -778,9 +778,9 @@ L251:   anewarray Te
 L254:   iconst_1
 L255:   dup
 L256:   pop2
-L257:   invokestatic Method SE break ([LTe;)LTe;
+L257:   invokestatic Method SE veyron ([LTe;)LTe;
 L260:   aastore
-L261:   invokestatic Method SE else ([LTe;)LTe;
+L261:   invokestatic Method SE speed ([LTe;)LTe;
 L264:   aastore
 L265:   dup
 L266:   iconst_1
@@ -808,7 +808,7 @@ L289:   anewarray Te
 L292:   iconst_1
 L293:   dup
 L294:   pop2
-L295:   invokestatic Method SE "public" ([LTe;)LTe;
+L295:   invokestatic Method SE shep ([LTe;)LTe;
 L298:   aastore
 L299:   dup
 L300:   iconst_1
@@ -823,13 +823,13 @@ L308:   anewarray Te
 L311:   iconst_1
 L312:   dup
 L313:   pop2
-L314:   invokestatic Method SE continue ([LTe;)LTe;
+L314:   invokestatic Method SE brrr ([LTe;)LTe;
 L317:   aastore
-L318:   invokestatic Method SE for ([LTe;)LTe;
+L318:   invokestatic Method SE cleveland ([LTe;)LTe;
 L321:   aastore
-L322:   invokestatic Method SE try ([LTe;)LTe;
+L322:   invokestatic Method SE mampf ([LTe;)LTe;
 L325:   aastore
-L326:   invokestatic Method SE return ([LTe;)LTe;
+L326:   invokestatic Method SE tgm ([LTe;)LTe;
 L329:   aastore
 L330:   dup
 L331:   iconst_1
@@ -883,7 +883,7 @@ L384:   anewarray Te
 L387:   iconst_1
 L388:   dup
 L389:   pop2
-L390:   invokestatic Method SE true ([LTe;)LTe;
+L390:   invokestatic Method SE fast ([LTe;)LTe;
 L393:   aastore
 L394:   dup
 L395:   iconst_1
@@ -898,9 +898,9 @@ L403:   anewarray Te
 L406:   iconst_1
 L407:   dup
 L408:   pop2
-L409:   invokestatic Method SE goto ([LTe;)LTe;
+L409:   invokestatic Method SE unbreakable ([LTe;)LTe;
 L412:   aastore
-L413:   invokestatic Method SE class ([LTe;)LTe;
+L413:   invokestatic Method SE omnomnom ([LTe;)LTe;
 L416:   aastore
 L417:   dup
 L418:   iconst_1
@@ -928,7 +928,7 @@ L441:   anewarray Te
 L444:   iconst_1
 L445:   dup
 L446:   pop2
-L447:   invokestatic Method SE char ([LTe;)LTe;
+L447:   invokestatic Method SE wtf ([LTe;)LTe;
 L450:   aastore
 L451:   dup
 L452:   iconst_1
@@ -943,11 +943,11 @@ L460:   anewarray Te
 L463:   iconst_1
 L464:   dup
 L465:   pop2
-L466:   invokestatic Method SE short ([LTe;)LTe;
+L466:   invokestatic Method SE ruggu ([LTe;)LTe;
 L469:   aastore
-L470:   invokestatic Method SE new ([LTe;)LTe;
+L470:   invokestatic Method SE angularmomentum ([LTe;)LTe;
 L473:   aastore
-L474:   invokestatic Method SE long ([LTe;)LTe;
+L474:   invokestatic Method SE melee ([LTe;)LTe;
 L477:   aastore
 L478:   dup
 L479:   iconst_1
@@ -988,7 +988,7 @@ L517:   anewarray Te
 L520:   iconst_1
 L521:   dup
 L522:   pop2
-L523:   invokestatic Method SE false ([LTe;)LTe;
+L523:   invokestatic Method SE appezoell1 ([LTe;)LTe;
 L526:   aastore
 L527:   dup
 L528:   iconst_1
@@ -1003,9 +1003,9 @@ L536:   anewarray Te
 L539:   iconst_1
 L540:   dup
 L541:   pop2
-L542:   invokestatic Method SE "volatile" ([LTe;)LTe;
+L542:   invokestatic Method SE kajitani ([LTe;)LTe;
 L545:   aastore
-L546:   invokestatic Method SE default ([LTe;)LTe;
+L546:   invokestatic Method SE portalftw ([LTe;)LTe;
 L549:   aastore
 L550:   dup
 L551:   iconst_1
@@ -1033,7 +1033,7 @@ L574:   anewarray Te
 L577:   iconst_1
 L578:   dup
 L579:   pop2
-L580:   invokestatic Method SE this ([LTe;)LTe;
+L580:   invokestatic Method SE twscombos ([LTe;)LTe;
 L583:   aastore
 L584:   dup
 L585:   iconst_1
@@ -1048,17 +1048,17 @@ L593:   anewarray Te
 L596:   iconst_1
 L597:   dup
 L598:   pop2
-L599:   invokestatic Method SE case ([LTe;)LTe;
+L599:   invokestatic Method SE elvis ([LTe;)LTe;
 L602:   aastore
-L603:   invokestatic Method SE const ([LTe;)LTe;
+L603:   invokestatic Method SE travoltafever ([LTe;)LTe;
 L606:   aastore
-L607:   invokestatic Method SE int ([LTe;)LTe;
+L607:   invokestatic Method SE emptyhouse ([LTe;)LTe;
 L610:   aastore
-L611:   invokestatic Method SE "super" ([LTe;)LTe;
+L611:   invokestatic Method SE maserati ([LTe;)LTe;
 L614:   aastore
-L615:   invokestatic Method SE "enum" ([LTe;)LTe;
+L615:   invokestatic Method SE grandefinale ([LTe;)LTe;
 L618:   aastore
-L619:   invokestatic Method SE null ([LTe;)LTe;
+L619:   invokestatic Method SE uberleet ([LTe;)LTe;
 L622:   putstatic Field SE "enum" LTe;
 L625:   getstatic Field SE "enum" LTe;
 L628:   invokestatic Method SE else (LTe;)V
@@ -1731,7 +1731,7 @@ L1558:  dup_x1
 L1559:  iconst_1
 L1560:  dup
 L1561:  pop2
-L1562:  invokespecial Method uD <init> [_86]
+L1562:  invokespecial Method uD <init> [_85]
 L1565:  aastore
 L1566:  iconst_2
 L1567:  iconst_1
@@ -1763,7 +1763,7 @@ L1596:  dup_x1
 L1597:  iconst_1
 L1598:  dup
 L1599:  pop2
-L1600:  invokespecial Method YE <init> [_86]
+L1600:  invokespecial Method YE <init> [_85]
 L1603:  aastore
 L1604:  dup
 L1605:  iconst_1
@@ -1787,7 +1787,7 @@ L1634:
     .end code
 .end method
 
-.method private static varargs case : ([LTe;)LTe;
+.method private static varargs elvis : ([LTe;)LTe;
     .code stack 23 locals 1
 L0:     new Te
 L3:     dup
@@ -1859,7 +1859,7 @@ L96:
     .end code
 .end method
 
-.method private static varargs null : ([LTe;)LTe;
+.method private static varargs uberleet : ([LTe;)LTe;
     .code stack 23 locals 2
 L0:     new Te
 L3:     dup
@@ -2016,11 +2016,11 @@ L125:   goto L104
 L128:   athrow
 L129:   return
 L130:   
-        .attribute StackMap b'\x00\x05\x00\x2F\x00\x01\x07\x00\x43\x00\x00\x00\x5F\x00\x01\x07\x00\x43\x00\x00\x00\x68\x00\x02\x07\x00\x43\x07\x01\xB3\x00\x01\x07\x01\xB3\x00\x80\x00\x00\x00\x01\x07\x01\xBD\x00\x81\x00\x02\x07\x00\x43\x07\x01\xB3\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x2F\x00\x01\x07\x00\x43\x00\x00\x00\x5F\x00\x01\x07\x00\x43\x00\x00\x00\x68\x00\x02\x07\x00\x43\x07\x01\xB6\x00\x01\x07\x01\xB6\x00\x80\x00\x00\x00\x01\x07\x01\xC0\x00\x81\x00\x02\x07\x00\x43\x07\x01\xB6\x00\x00'
     .end code
 .end method
 
-.method private static varargs false : ([LTe;)LTe;
+.method private static varargs appezoell1 : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -2066,7 +2066,7 @@ L58:    dup_x1
 L59:    iconst_1
 L60:    dup
 L61:    pop2
-L62:    invokespecial Method uD <init> [_86]
+L62:    invokespecial Method uD <init> [_85]
 L65:    aastore
 L66:    iconst_0
 L67:    iconst_1
@@ -2088,7 +2088,7 @@ L92:
     .end code
 .end method
 
-.method private static varargs true : ([LTe;)LTe;
+.method private static varargs fast : ([LTe;)LTe;
     .code stack 24 locals 1
 L0:     new Te
 L3:     dup
@@ -2149,7 +2149,7 @@ L75:    anewarray Uf
 L78:    iconst_1
 L79:    dup
 L80:    pop2
-L81:    invokespecial Method Te <init> [_89]
+L81:    invokespecial Method Te <init> [_88]
 L84:    dup
 L85:    getfield Field Te char Ljava/util/LinkedList;
 L88:    aload_0
@@ -2161,7 +2161,7 @@ L97:
     .end code
 .end method
 
-.method private static varargs byte : ([LTe;)LTe;
+.method private static varargs e123 : ([LTe;)LTe;
     .code stack 25 locals 1
 L0:     new Te
 L3:     dup
@@ -2250,7 +2250,7 @@ L107:   dup
 L108:   pop2
 L109:   invokespecial Method mg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FZZIZ)V
 L112:   aastore
-L113:   invokespecial Method Te <init> [_89]
+L113:   invokespecial Method Te <init> [_88]
 L116:   dup
 L117:   getfield Field Te char Ljava/util/LinkedList;
 L120:   aload_0
@@ -2262,7 +2262,7 @@ L129:
     .end code
 .end method
 
-.method private static varargs void : ([LTe;)LTe;
+.method private static varargs pocall2 : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -2308,7 +2308,7 @@ L58:    iconst_0
 L59:    iconst_1
 L60:    dup
 L61:    pop2
-L62:    invokespecial Method YE <init> [_86]
+L62:    invokespecial Method YE <init> [_85]
 L65:    aastore
 L66:    iconst_0
 L67:    iconst_1
@@ -2318,7 +2318,7 @@ L70:    anewarray Uf
 L73:    iconst_1
 L74:    dup
 L75:    pop2
-L76:    invokespecial Method Te <init> [_89]
+L76:    invokespecial Method Te <init> [_88]
 L79:    dup
 L80:    getfield Field Te char Ljava/util/LinkedList;
 L83:    aload_0
@@ -2377,7 +2377,7 @@ L96:
     .end code
 .end method
 
-.method private static varargs "final" : ([LTe;)LTe;
+.method private static varargs abc : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -2423,7 +2423,7 @@ L59:    dup_x1
 L60:    iconst_1
 L61:    dup
 L62:    pop2
-L63:    invokespecial Method uD <init> [_86]
+L63:    invokespecial Method uD <init> [_85]
 L66:    aastore
 L67:    iconst_0
 L68:    iconst_1
@@ -2433,7 +2433,7 @@ L71:    anewarray Uf
 L74:    iconst_1
 L75:    dup
 L76:    pop2
-L77:    invokespecial Method Te <init> [_89]
+L77:    invokespecial Method Te <init> [_88]
 L80:    dup
 L81:    getfield Field Te char Ljava/util/LinkedList;
 L84:    aload_0
@@ -2445,7 +2445,7 @@ L93:
     .end code
 .end method
 
-.method private static varargs int : ([LTe;)LTe;
+.method private static varargs emptyhouse : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -2491,7 +2491,7 @@ L57:    iconst_1
 L58:    dup_x2
 L59:    dup
 L60:    pop2
-L61:    invokespecial Method bE <init> [_86]
+L61:    invokespecial Method bE <init> [_85]
 L64:    aastore
 L65:    iconst_0
 L66:    iconst_1
@@ -2501,7 +2501,7 @@ L69:    anewarray Uf
 L72:    iconst_1
 L73:    dup
 L74:    pop2
-L75:    invokespecial Method Te <init> [_89]
+L75:    invokespecial Method Te <init> [_88]
 L78:    dup
 L79:    getfield Field Te char Ljava/util/LinkedList;
 L82:    aload_0
@@ -2513,7 +2513,7 @@ L91:
     .end code
 .end method
 
-.method private static varargs "enum" : ([LTe;)LTe;
+.method private static varargs grandefinale : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -2559,7 +2559,7 @@ L58:    iconst_0
 L59:    iconst_1
 L60:    dup
 L61:    pop2
-L62:    invokespecial Method YE <init> [_86]
+L62:    invokespecial Method YE <init> [_85]
 L65:    aastore
 L66:    iconst_1
 L67:    dup
@@ -2583,7 +2583,7 @@ L88:    pop2
 L89:    ldc_w 1e1f
 L92:    invokespecial Method ve <init> (IF)V
 L95:    aastore
-L96:    invokespecial Method Te <init> [_89]
+L96:    invokespecial Method Te <init> [_88]
 L99:    dup
 L100:   dup_x1
 L101:   iconst_1
@@ -2601,7 +2601,7 @@ L120:
     .end code
 .end method
 
-.method private static varargs long : ([LTe;)LTe;
+.method private static varargs melee : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -2647,7 +2647,7 @@ L60:    dup_x1
 L61:    iconst_1
 L62:    dup
 L63:    pop2
-L64:    invokespecial Method uD <init> [_86]
+L64:    invokespecial Method uD <init> [_85]
 L67:    aastore
 L68:    iconst_1
 L69:    dup
@@ -2666,7 +2666,7 @@ L83:    new TF
 L86:    dup
 L87:    invokespecial Method TF <init> ()V
 L90:    aastore
-L91:    invokespecial Method Te <init> [_89]
+L91:    invokespecial Method Te <init> [_88]
 L94:    dup
 L95:    getfield Field Te char Ljava/util/LinkedList;
 L98:    aload_0
@@ -2678,7 +2678,7 @@ L107:
     .end code
 .end method
 
-.method private static varargs class : ([LTe;)LTe;
+.method private static varargs omnomnom : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -2724,7 +2724,7 @@ L58:    iconst_0
 L59:    iconst_1
 L60:    dup
 L61:    pop2
-L62:    invokespecial Method YE <init> [_86]
+L62:    invokespecial Method YE <init> [_85]
 L65:    aastore
 L66:    iconst_1
 L67:    dup
@@ -2743,7 +2743,7 @@ L81:    new AG
 L84:    dup
 L85:    invokespecial Method AG <init> ()V
 L88:    aastore
-L89:    invokespecial Method Te <init> [_89]
+L89:    invokespecial Method Te <init> [_88]
 L92:    dup
 L93:    getfield Field Te char Ljava/util/LinkedList;
 L96:    aload_0
@@ -2755,7 +2755,7 @@ L105:
     .end code
 .end method
 
-.method private static varargs if : ([LTe;)LTe;
+.method private static varargs winterbottom : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -2801,7 +2801,7 @@ L57:    dup_x1
 L58:    iconst_1
 L59:    dup
 L60:    pop2
-L61:    invokespecial Method uD <init> [_86]
+L61:    invokespecial Method uD <init> [_85]
 L64:    aastore
 L65:    iconst_0
 L66:    iconst_1
@@ -2811,7 +2811,7 @@ L69:    anewarray Uf
 L72:    iconst_1
 L73:    dup
 L74:    pop2
-L75:    invokespecial Method Te <init> [_89]
+L75:    invokespecial Method Te <init> [_88]
 L78:    dup
 L79:    getfield Field Te char Ljava/util/LinkedList;
 L82:    aload_0
@@ -2823,7 +2823,7 @@ L91:
     .end code
 .end method
 
-.method private static varargs char : ([LTe;)LTe;
+.method private static varargs wtf : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -2869,7 +2869,7 @@ L58:    iconst_0
 L59:    iconst_1
 L60:    dup
 L61:    pop2
-L62:    invokespecial Method ee <init> [_86]
+L62:    invokespecial Method ee <init> [_85]
 L65:    aastore
 L66:    iconst_0
 L67:    iconst_1
@@ -2879,7 +2879,7 @@ L70:    anewarray Uf
 L73:    iconst_1
 L74:    dup
 L75:    pop2
-L76:    invokespecial Method Te <init> [_89]
+L76:    invokespecial Method Te <init> [_88]
 L79:    dup
 L80:    getfield Field Te char Ljava/util/LinkedList;
 L83:    aload_0
@@ -2891,7 +2891,7 @@ L92:
     .end code
 .end method
 
-.method private static varargs new : ([LTe;)LTe;
+.method private static varargs angularmomentum : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -2937,7 +2937,7 @@ L59:    dup_x1
 L60:    iconst_1
 L61:    dup
 L62:    pop2
-L63:    invokespecial Method uD <init> [_86]
+L63:    invokespecial Method uD <init> [_85]
 L66:    aastore
 L67:    iconst_1
 L68:    dup
@@ -2956,7 +2956,7 @@ L82:    new Xf
 L85:    dup
 L86:    invokespecial Method Xf <init> ()V
 L89:    aastore
-L90:    invokespecial Method Te <init> [_89]
+L90:    invokespecial Method Te <init> [_88]
 L93:    dup
 L94:    getfield Field Te char Ljava/util/LinkedList;
 L97:    aload_0
@@ -2968,7 +2968,7 @@ L106:
     .end code
 .end method
 
-.method private static varargs try : ([LTe;)LTe;
+.method private static varargs mampf : ([LTe;)LTe;
     .code stack 25 locals 1
 L0:     new Te
 L3:     dup
@@ -3014,7 +3014,7 @@ L57:    dup_x1
 L58:    iconst_1
 L59:    dup
 L60:    pop2
-L61:    invokespecial Method uD <init> [_86]
+L61:    invokespecial Method uD <init> [_85]
 L64:    aastore
 L65:    iconst_1
 L66:    dup
@@ -3053,7 +3053,7 @@ L104:   dup
 L105:   pop2
 L106:   invokespecial Method mg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FZZIZ)V
 L109:   aastore
-L110:   invokespecial Method Te <init> [_89]
+L110:   invokespecial Method Te <init> [_88]
 L113:   dup
 L114:   getfield Field Te char Ljava/util/LinkedList;
 L117:   aload_0
@@ -3065,7 +3065,7 @@ L126:
     .end code
 .end method
 
-.method private static varargs this : ([LTe;)LTe;
+.method private static varargs twscombos : ([LTe;)LTe;
     .code stack 26 locals 1
 L0:     new Te
 L3:     dup
@@ -3189,7 +3189,7 @@ L140:   anewarray Uf
 L143:   iconst_1
 L144:   dup
 L145:   pop2
-L146:   invokespecial Method Te <init> [_89]
+L146:   invokespecial Method Te <init> [_88]
 L149:   dup
 L150:   getfield Field Te char Ljava/util/LinkedList;
 L153:   aload_0
@@ -3201,7 +3201,7 @@ L162:
     .end code
 .end method
 
-.method private static varargs goto : ([LTe;)LTe;
+.method private static varargs unbreakable : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -3247,7 +3247,7 @@ L58:    dup_x1
 L59:    iconst_1
 L60:    dup
 L61:    pop2
-L62:    invokespecial Method uD <init> [_86]
+L62:    invokespecial Method uD <init> [_85]
 L65:    aastore
 L66:    iconst_0
 L67:    iconst_1
@@ -3257,7 +3257,7 @@ L70:    anewarray Uf
 L73:    iconst_1
 L74:    dup
 L75:    pop2
-L76:    invokespecial Method Te <init> [_89]
+L76:    invokespecial Method Te <init> [_88]
 L79:    dup
 L80:    getfield Field Te char Ljava/util/LinkedList;
 L83:    aload_0
@@ -3269,7 +3269,7 @@ L92:
     .end code
 .end method
 
-.method private static varargs do : ([LTe;)LTe;
+.method private static varargs quickstart : ([LTe;)LTe;
     .code stack 25 locals 1
 L0:     new Te
 L3:     dup
@@ -3315,7 +3315,7 @@ L59:    dup_x1
 L60:    iconst_1
 L61:    dup
 L62:    pop2
-L63:    invokespecial Method uD <init> [_86]
+L63:    invokespecial Method uD <init> [_85]
 L66:    aastore
 L67:    iconst_1
 L68:    dup
@@ -3354,7 +3354,7 @@ L106:   dup
 L107:   pop2
 L108:   invokespecial Method mg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FZZIZ)V
 L111:   aastore
-L112:   invokespecial Method Te <init> [_89]
+L112:   invokespecial Method Te <init> [_88]
 L115:   dup
 L116:   getfield Field Te char Ljava/util/LinkedList;
 L119:   aload_0
@@ -3366,7 +3366,7 @@ L128:
     .end code
 .end method
 
-.method private static varargs for : ([LTe;)LTe;
+.method private static varargs cleveland : ([LTe;)LTe;
     .code stack 22 locals 1
 L0:     new Te
 L3:     dup
@@ -3412,7 +3412,7 @@ L58:    dup_x1
 L59:    iconst_1
 L60:    dup
 L61:    pop2
-L62:    invokespecial Method uD <init> [_86]
+L62:    invokespecial Method uD <init> [_85]
 L65:    aastore
 L66:    iconst_1
 L67:    dup
@@ -3431,7 +3431,7 @@ L81:    new je
 L84:    dup
 L85:    invokespecial Method je <init> ()V
 L88:    aastore
-L89:    invokespecial Method Te <init> [_89]
+L89:    invokespecial Method Te <init> [_88]
 L92:    dup
 L93:    getfield Field Te char Ljava/util/LinkedList;
 L96:    aload_0
@@ -3443,7 +3443,7 @@ L105:
     .end code
 .end method
 
-.method private static varargs catch : ([LTe;)LTe;
+.method private static varargs easyaspie : ([LTe;)LTe;
     .code stack 25 locals 1
 L0:     new Te
 L3:     dup
@@ -3532,7 +3532,7 @@ L107:   dup
 L108:   pop2
 L109:   invokespecial Method mg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FZZIZ)V
 L112:   aastore
-L113:   invokespecial Method Te <init> [_89]
+L113:   invokespecial Method Te <init> [_88]
 L116:   dup
 L117:   getfield Field Te char Ljava/util/LinkedList;
 L120:   aload_0
@@ -3544,7 +3544,7 @@ L129:
     .end code
 .end method
 
-.method private static varargs float : ([LTe;)LTe;
+.method private static varargs garbageman : ([LTe;)LTe;
     .code stack 24 locals 1
 L0:     new Te
 L3:     dup
@@ -3595,7 +3595,7 @@ L63:    iconst_0
 L64:    iconst_1
 L65:    dup
 L66:    pop2
-L67:    invokespecial Method mg <init> [_129]
+L67:    invokespecial Method mg <init> [_126]
 L70:    aastore
 L71:    iconst_0
 L72:    iconst_1
@@ -3605,7 +3605,7 @@ L75:    anewarray Uf
 L78:    iconst_1
 L79:    dup
 L80:    pop2
-L81:    invokespecial Method Te <init> [_89]
+L81:    invokespecial Method Te <init> [_88]
 L84:    dup
 L85:    getfield Field Te char Ljava/util/LinkedList;
 L88:    aload_0
@@ -3617,7 +3617,7 @@ L97:
     .end code
 .end method
 
-.method private static varargs short : ([LTe;)LTe;
+.method private static varargs ruggu : ([LTe;)LTe;
     .code stack 23 locals 2
 L0:     new Cg
 L3:     dup
@@ -3691,7 +3691,7 @@ L99:    iconst_0
 L100:   iconst_1
 L101:   dup
 L102:   pop2
-L103:   invokespecial Method ee <init> [_86]
+L103:   invokespecial Method ee <init> [_85]
 L106:   aastore
 L107:   dup
 L108:   iconst_1
@@ -3713,7 +3713,7 @@ L125:   dup
 L126:   pop2
 L127:   invokespecial Method yg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
 L130:   aastore
-L131:   invokespecial Method Te <init> [_89]
+L131:   invokespecial Method Te <init> [_88]
 L134:   dup
 L135:   getfield Field Te char Ljava/util/LinkedList;
 L138:   aload_0
@@ -3734,7 +3734,7 @@ L5:
     .end code
 .end method
 
-.method private static varargs const : ([LTe;)LTe;
+.method private static varargs travoltafever : ([LTe;)LTe;
     .code stack 24 locals 1
 L0:     new Te
 L3:     dup
@@ -3785,7 +3785,7 @@ L63:    iconst_0
 L64:    iconst_1
 L65:    dup
 L66:    pop2
-L67:    invokespecial Method mg <init> [_129]
+L67:    invokespecial Method mg <init> [_126]
 L70:    aastore
 L71:    iconst_0
 L72:    iconst_1
@@ -3795,7 +3795,7 @@ L75:    anewarray Uf
 L78:    iconst_1
 L79:    dup
 L80:    pop2
-L81:    invokespecial Method Te <init> [_89]
+L81:    invokespecial Method Te <init> [_88]
 L84:    dup
 L85:    getfield Field Te char Ljava/util/LinkedList;
 L88:    aload_0
@@ -3807,7 +3807,7 @@ L97:
     .end code
 .end method
 
-.method private static varargs else : ([LTe;)LTe;
+.method private static varargs speed : ([LTe;)LTe;
     .code stack 24 locals 1
 L0:     new Te
 L3:     dup
@@ -3858,7 +3858,7 @@ L65:    iconst_0
 L66:    iconst_1
 L67:    dup
 L68:    pop2
-L69:    invokespecial Method mg <init> [_129]
+L69:    invokespecial Method mg <init> [_126]
 L72:    aastore
 L73:    iconst_1
 L74:    dup
@@ -3893,7 +3893,7 @@ L109:   dup
 L110:   pop2
 L111:   invokespecial Method wf <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IFIZ)V
 L114:   aastore
-L115:   invokespecial Method Te <init> [_89]
+L115:   invokespecial Method Te <init> [_88]
 L118:   dup
 L119:   getfield Field Te char Ljava/util/LinkedList;
 L122:   aload_0
@@ -3905,7 +3905,7 @@ L131:
     .end code
 .end method
 
-.method private static varargs break : ([LTe;)LTe;
+.method private static varargs veyron : ([LTe;)LTe;
     .code stack 23 locals 1
 L0:     new Te
 L3:     dup
@@ -3951,7 +3951,7 @@ L59:    iconst_0
 L60:    iconst_1
 L61:    dup
 L62:    pop2
-L63:    invokespecial Method ee <init> [_86]
+L63:    invokespecial Method ee <init> [_85]
 L66:    aastore
 L67:    iconst_1
 L68:    dup
@@ -3983,9 +3983,9 @@ L98:    iconst_0
 L99:    iconst_1
 L100:   dup
 L101:   pop2
-L102:   invokespecial Method Ee <init> [_86]
+L102:   invokespecial Method Ee <init> [_85]
 L105:   aastore
-L106:   invokespecial Method Te <init> [_89]
+L106:   invokespecial Method Te <init> [_88]
 L109:   dup
 L110:   getfield Field Te char Ljava/util/LinkedList;
 L113:   aload_0
@@ -4025,7 +4025,7 @@ L122:
     tE [0] [0] static
     yF [0] [0] static
 .end innerclasses
-.const [_86] = Utf8 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ)V
-.const [_89] = Utf8 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Leb;IFI[LUf;[LUf;)V
-.const [_129] = Utf8 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FZZIZ)V
+.const [_85] = Utf8 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ)V
+.const [_88] = Utf8 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Leb;IFI[LUf;[LUf;)V
+.const [_126] = Utf8 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FZZIZ)V
 .end class
