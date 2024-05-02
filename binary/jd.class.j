@@ -43,7 +43,7 @@ L34:    sipush 30000
 L37:    aload_2
 L38:    dup_x1
 L39:    dup_x2
-L40:    sipush 8000
+L40:    sipush 30000
 L43:    aload_2
 L44:    iconst_0
 L45:    iconst_1
