@@ -2,13 +2,13 @@
 .class final super org/lwjgl/g
 .super java/lang/Object
 .implements java/security/PrivilegedExceptionAction
-.field final synthetic do [Ljava/lang/String;
+.field final synthetic field2473 [Ljava/lang/String;
 
-.method public break : ()Ljava/lang/Process;
+.method public method1761 : ()Ljava/lang/Process;
     .code stack 2 locals 1
 L0:     invokestatic Method java/lang/Runtime getRuntime ()Ljava/lang/Runtime;
 L3:     aload_0
-L4:     getfield Field org/lwjgl/g do [Ljava/lang/String;
+L4:     getfield Field org/lwjgl/g field2473 [Ljava/lang/String;
 L7:     invokevirtual Method java/lang/Runtime exec ([Ljava/lang/String;)Ljava/lang/Process;
 L10:    areturn
 L11:    
@@ -21,7 +21,7 @@ L11:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field org/lwjgl/g do [Ljava/lang/String;
+L3:     putfield Field org/lwjgl/g field2473 [Ljava/lang/String;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    
@@ -31,7 +31,7 @@ L10:
 .method public bridge synthetic run : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/g break ()Ljava/lang/Process;
+L1:     invokevirtual Method org/lwjgl/g method1761 ()Ljava/lang/Process;
 L4:     areturn
 L5:     
     .end code

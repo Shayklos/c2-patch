@@ -1,7 +1,7 @@
 .version 49 0
 .class final super org/lwjgl/opengl/mA
 .super org/lwjgl/opengl/MacOSXCanvasPeerInfo
-.field private do Z
+.field private field4426 Z
 
 .method <init> : (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/CB;Z)V
     .code stack 4 locals 4
@@ -16,10 +16,10 @@ L8:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method protected catch : ()V
+.method protected method4672 : ()V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/mA do Z
+L1:     getfield Field org/lwjgl/opengl/mA field4426 Z
 L4:     ifeq L17
 L7:     new java/lang/RuntimeException
 L10:    dup
@@ -36,11 +36,11 @@ L31:    iconst_1
 L32:    aload_0
 L33:    dup_x1
 L34:    aload_1
-L35:    invokevirtual Method org/lwjgl/opengl/mA break (Ljava/awt/Canvas;)V
+L35:    invokevirtual Method org/lwjgl/opengl/mA method4687 (Ljava/awt/Canvas;)V
 L38:    iconst_1
 L39:    dup
 L40:    pop2
-L41:    putfield Field org/lwjgl/opengl/mA do Z
+L41:    putfield Field org/lwjgl/opengl/mA field4426 Z
 L44:    return
 L45:    
         .attribute StackMap b'\x00\x02\x00\x11\x00\x01\x07\x00\x02\x00\x00\x00\x2C\x00\x02\x07\x00\x02\x07\x00\x29\x00\x00'
@@ -48,19 +48,19 @@ L45:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method protected const : ()V
+.method protected method4671 : ()V
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/mA do Z
+L1:     getfield Field org/lwjgl/opengl/mA field4426 Z
 L4:     ifeq L19
 L7:     iconst_0
 L8:     aload_0
 L9:     dup_x1
-L10:    invokespecial Method org/lwjgl/opengl/MacOSXCanvasPeerInfo const ()V
+L10:    invokespecial Method org/lwjgl/opengl/MacOSXCanvasPeerInfo method4671 ()V
 L13:    iconst_1
 L14:    dup
 L15:    pop2
-L16:    putfield Field org/lwjgl/opengl/mA do Z
+L16:    putfield Field org/lwjgl/opengl/mA field4426 Z
 L19:    return
 L20:    
         .attribute StackMap b'\x00\x01\x00\x13\x00\x01\x07\x00\x02\x00\x00'

@@ -1,8 +1,8 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/Qd
 .super java/lang/Object
-.field public static final "enum" I = 35087
-.field public static final do I = 35086
+.field public static final field5011 I = 35087
+.field public static final field5012 I = 35086
 
 .method private <init> : ()V
     .code stack 1 locals 1

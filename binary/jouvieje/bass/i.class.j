@@ -2,7 +2,7 @@
 .class public final super jouvieje/bass/i
 .super jouvieje/bass/utils/m
 
-.method public static class : ()I
+.method public static method1221 : ()I
     .code stack 1 locals 0
 L0:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_GetVersion ()I
 L3:     ireturn
@@ -10,12 +10,12 @@ L4:
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/c;Ljouvieje/bass/utils/m;I)Z
+.method public static method1406 : (Ljouvieje/bass/structures/c;Ljouvieje/bass/utils/m;I)Z
     .code stack 5 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
-L5:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L5:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L8:     iload_2
 L9:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_FontUnpack (JJI)Z
 L12:    ireturn
@@ -23,19 +23,19 @@ L13:
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/structures/a;Ljouvieje/bass/utils/m;)Z
+.method public static method1407 : (Ljouvieje/bass/structures/a;Ljouvieje/bass/utils/m;)Z
     .code stack 4 locals 2
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
-L5:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L5:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L8:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FXSetParameters (JJ)Z
 L11:    ireturn
 L12:    
     .end code
 .end method
 
-.method public static if : (II)Ljouvieje/bass/structures/G;
+.method public static method1408 : (II)Ljouvieje/bass/structures/G;
     .code stack 4 locals 4
 L0:     iload_0
 L1:     iload_1
@@ -49,20 +49,20 @@ L12:    aconst_null
 L13:    areturn
 L14:    athrow
 L15:    lload_2
-L16:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L19:    invokestatic Method jouvieje/bass/structures/G else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+L16:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L19:    invokestatic Method jouvieje/bass/structures/G method1599 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
 L22:    areturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0E\x00\x00\x00\x01\x07\x00\x22\x00\x0F\x00\x03\x01\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0E\x00\x00\x00\x01\x07\x00\x23\x00\x0F\x00\x03\x01\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/G;Ljouvieje/bass/utils/m;I)I
+.method public static method1409 : (Ljouvieje/bass/structures/G;Ljouvieje/bass/utils/m;I)I
     .code stack 5 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
-L5:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L5:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L8:     iload_2
 L9:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_StreamPutFileData (JJI)I
 L12:    ireturn
@@ -70,24 +70,24 @@ L13:
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/E;[Ljouvieje/bass/structures/J;)I
+.method public static method1410 : (Ljouvieje/bass/structures/E;[Ljouvieje/bass/structures/J;)I
     .code stack 6 locals 2
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
 L5:     iconst_0
 L6:     iconst_1
 L7:     dup
 L8:     pop2
 L9:     aaload
-L10:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L10:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L13:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_SampleGetChannels (JJ)I
 L16:    ireturn
 L17:    
     .end code
 .end method
 
-.method public static char : (II)Z
+.method public static method1411 : (II)Z
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
@@ -97,7 +97,7 @@ L6:
     .end code
 .end method
 
-.method public static if : ()F
+.method public static method1412 : ()F
     .code stack 1 locals 0
 L0:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_GetVolume ()F
 L3:     freturn
@@ -105,7 +105,7 @@ L4:
     .end code
 .end method
 
-.method public static float : (Ljava/lang/String;IILjouvieje/bass/callbacks/E;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1413 : (Ljava/lang/String;IILjouvieje/bass/callbacks/E;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 7
 L0:     iconst_3
 L1:     iconst_1
@@ -113,7 +113,7 @@ L2:     dup
 L3:     pop2
 L4:     aload_3
 L5:     lconst_0
-L6:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L6:     invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L9:     aload_0
 L10:    ifnonnull L19
 L13:    aconst_null
@@ -138,7 +138,7 @@ L40:    dup
 L41:    dup
 L42:    pop2
 L43:    aload 4
-L45:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L45:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L48:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_AAC_StreamCreateURL ([BIIZJ)J
 L51:    dup2
 L52:    lstore 5
@@ -148,15 +148,15 @@ L56:    ifne L61
 L59:    aconst_null
 L60:    areturn
 L61:    lload 5
-L63:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L66:    invokestatic Method jouvieje/bass/structures/G else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+L63:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L66:    invokestatic Method jouvieje/bass/structures/G method1599 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
 L69:    areturn
 L70:    
-        .attribute StackMap b'\x00\x07\x00\x12\x00\x00\x00\x01\x07\x00\x22\x00\x13\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x00\x00\x18\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x02\x07\x00\x4E\x01\x00\x26\x00\x00\x00\x01\x07\x00\x22\x00\x27\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x03\x07\x00\x4E\x01\x01\x00\x2D\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x05\x07\x00\x4E\x01\x01\x01\x07\x00\x04\x00\x3D\x00\x06\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x12\x00\x00\x00\x01\x07\x00\x23\x00\x13\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x00\x00\x18\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x02\x07\x00\x55\x01\x00\x26\x00\x00\x00\x01\x07\x00\x23\x00\x27\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x03\x07\x00\x55\x01\x01\x00\x2D\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x05\x07\x00\x55\x01\x01\x01\x07\x00\x04\x00\x3D\x00\x06\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static "super" : (I)Ljouvieje/bass/structures/G;
+.method public static method1414 : (I)Ljouvieje/bass/structures/G;
     .code stack 4 locals 3
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Mixer_ChannelGetMixer (I)J
@@ -169,15 +169,15 @@ L11:    aconst_null
 L12:    areturn
 L13:    athrow
 L14:    lload_1
-L15:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L18:    invokestatic Method jouvieje/bass/structures/G else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+L15:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L18:    invokestatic Method jouvieje/bass/structures/G method1599 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
 L21:    areturn
 L22:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x22\x00\x0E\x00\x02\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x23\x00\x0E\x00\x02\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static else : (ZLjava/lang/String;JIII)Ljouvieje/bass/structures/E;
+.method public static method1415 : (ZLjava/lang/String;JIII)Ljouvieje/bass/structures/E;
     .code stack 7 locals 7
 L0:     iload_0
 L1:     aload_1
@@ -202,19 +202,19 @@ L32:    aconst_null
 L33:    areturn
 L34:    athrow
 L35:    lload_2
-L36:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L39:    invokestatic Method jouvieje/bass/structures/E else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/E;
+L36:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L39:    invokestatic Method jouvieje/bass/structures/E method1595 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/E;
 L42:    areturn
 L43:    
-        .attribute StackMap b'\x00\x05\x00\x0A\x00\x00\x00\x01\x07\x00\x22\x00\x0B\x00\x06\x01\x07\x00\x46\x04\x01\x01\x01\x00\x01\x01\x00\x10\x00\x06\x01\x07\x00\x46\x04\x01\x01\x01\x00\x03\x01\x07\x00\x4E\x04\x00\x22\x00\x00\x00\x01\x07\x00\x22\x00\x23\x00\x06\x01\x07\x00\x46\x04\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x0A\x00\x00\x00\x01\x07\x00\x23\x00\x0B\x00\x06\x01\x07\x00\x4D\x04\x01\x01\x01\x00\x01\x01\x00\x10\x00\x06\x01\x07\x00\x4D\x04\x01\x01\x01\x00\x03\x01\x07\x00\x55\x04\x00\x22\x00\x00\x00\x01\x07\x00\x23\x00\x23\x00\x06\x01\x07\x00\x4D\x04\x01\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (ZLjouvieje/bass/utils/m;JJII)Ljouvieje/bass/structures/G;
+.method public static method1416 : (ZLjouvieje/bass/utils/m;JJII)Ljouvieje/bass/structures/G;
     .code stack 9 locals 8
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     lload_2
 L6:     lload 4
 L8:     iload 6
@@ -229,11 +229,11 @@ L22:    aconst_null
 L23:    areturn
 L24:    athrow
 L25:    lload_2
-L26:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L29:    invokestatic Method jouvieje/bass/structures/G else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+L26:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L29:    invokestatic Method jouvieje/bass/structures/G method1599 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
 L32:    areturn
 L33:    
-        .attribute StackMap b'\x00\x02\x00\x18\x00\x00\x00\x01\x07\x00\x22\x00\x19\x00\x06\x01\x07\x00\x04\x04\x04\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x18\x00\x00\x00\x01\x07\x00\x23\x00\x19\x00\x06\x01\x07\x00\x04\x04\x04\x01\x01\x00\x00'
     .end code
 .end method
 
@@ -247,7 +247,7 @@ L6:
     .end code
 .end method
 
-.method public static break : (ILjava/nio/ByteBuffer;I)I
+.method public static method1417 : (ILjava/nio/ByteBuffer;I)I
     .code stack 5 locals 3
 L0:     aload_1
 L1:     ifnull L19
@@ -261,21 +261,21 @@ L18:    athrow
 L19:    iload_0
 L20:    aload_1
 L21:    dup
-L22:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L22:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L25:    i2l
 L26:    iload_2
 L27:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelGetData (ILjava/nio/ByteBuffer;JI)I
 L30:    ireturn
 L31:    
-        .attribute StackMap b'\x00\x01\x00\x13\x00\x03\x01\x07\x00\x6E\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x13\x00\x03\x01\x07\x00\x79\x01\x00\x00'
     .end code
 .end method
 
-.method public static else : (ILjouvieje/bass/utils/m;I)I
+.method public static method1418 : (ILjouvieje/bass/utils/m;I)I
     .code stack 4 locals 3
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     iload_2
 L6:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Mixer_ChannelGetData (IJI)I
 L9:     ireturn
@@ -283,38 +283,38 @@ L10:
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;)Z
+.method public static method1419 : (Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;)Z
     .code stack 8 locals 4
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
-L5:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L5:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L8:     aload_2
-L9:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L9:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L12:    aload_3
-L13:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L13:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L16:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Get3DPosition (JJJJ)Z
 L19:    ireturn
 L20:    
     .end code
 .end method
 
-.method public static break : (IIILjouvieje/bass/utils/m;Ljouvieje/bass/utils/m;)Z
+.method public static method1420 : (IIILjouvieje/bass/utils/m;Ljouvieje/bass/utils/m;)Z
     .code stack 7 locals 5
 L0:     iload_0
 L1:     iload_1
 L2:     iload_2
 L3:     aload_3
-L4:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L4:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L7:     aload 4
-L9:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L9:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L12:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Init (IIIJJ)Z
 L15:    ireturn
 L16:    
     .end code
 .end method
 
-.method public static case : (I)Z
+.method public static method1421 : (I)Z
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_RecordInit (I)Z
@@ -323,17 +323,17 @@ L5:
     .end code
 .end method
 
-.method public static catch : (Ljouvieje/bass/structures/G;)F
+.method public static method1422 : (Ljouvieje/bass/structures/G;)F
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FX_TempoGetRateRatio (J)F
 L7:     freturn
 L8:     
     .end code
 .end method
 
-.method public static null : (I)Z
+.method public static method1423 : (I)Z
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Update (I)Z
@@ -342,10 +342,10 @@ L5:
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/G;III)Z
+.method public static method1424 : (Ljouvieje/bass/structures/G;III)Z
     .code stack 5 locals 4
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     iload_1
 L5:     iload_2
 L6:     iload_3
@@ -355,7 +355,7 @@ L11:
     .end code
 .end method
 
-.method public static else : (IJI)Z
+.method public static method1425 : (IJI)Z
     .code stack 4 locals 4
 L0:     iload_0
 L1:     lload_1
@@ -393,23 +393,23 @@ L5:
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/a;)Z
+.method public static method1426 : (Ljouvieje/bass/structures/a;)Z
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FXReset (J)Z
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/G;ILjouvieje/bass/utils/m;I)I
+.method public static method1427 : (Ljouvieje/bass/structures/G;ILjouvieje/bass/utils/m;I)I
     .code stack 6 locals 4
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     iload_1
 L5:     aload_2
-L6:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L6:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L9:     iload_3
 L10:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_StreamEvents (JIJI)I
 L13:    ireturn
@@ -417,10 +417,10 @@ L14:
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/structures/G;II)Z
+.method public static method1428 : (Ljouvieje/bass/structures/G;II)Z
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     iload_1
 L5:     iload_2
 L6:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Mixer_StreamAddChannel (JII)Z
@@ -429,11 +429,11 @@ L10:
     .end code
 .end method
 
-.method public static do : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
+.method public static method1429 : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
     .code stack 8 locals 7
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     lload_2
 L6:     lload 4
 L8:     iload 6
@@ -447,15 +447,15 @@ L20:    aconst_null
 L21:    areturn
 L22:    athrow
 L23:    lload_2
-L24:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L27:    invokestatic Method jouvieje/bass/structures/G else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+L24:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L27:    invokestatic Method jouvieje/bass/structures/G method1599 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
 L30:    areturn
 L31:    
-        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x22\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x23\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (ZLjava/lang/String;JIII)Ljouvieje/bass/structures/b;
+.method public static method1430 : (ZLjava/lang/String;JIII)Ljouvieje/bass/structures/b;
     .code stack 7 locals 7
 L0:     iload_0
 L1:     aload_1
@@ -480,15 +480,15 @@ L32:    aconst_null
 L33:    areturn
 L34:    athrow
 L35:    lload_2
-L36:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L39:    invokestatic Method jouvieje/bass/structures/b else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/b;
+L36:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L39:    invokestatic Method jouvieje/bass/structures/b method1260 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/b;
 L42:    areturn
 L43:    
-        .attribute StackMap b'\x00\x05\x00\x0A\x00\x00\x00\x01\x07\x00\x22\x00\x0B\x00\x06\x01\x07\x00\x46\x04\x01\x01\x01\x00\x01\x01\x00\x10\x00\x06\x01\x07\x00\x46\x04\x01\x01\x01\x00\x03\x01\x07\x00\x4E\x04\x00\x22\x00\x00\x00\x01\x07\x00\x22\x00\x23\x00\x06\x01\x07\x00\x46\x04\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x0A\x00\x00\x00\x01\x07\x00\x23\x00\x0B\x00\x06\x01\x07\x00\x4D\x04\x01\x01\x01\x00\x01\x01\x00\x10\x00\x06\x01\x07\x00\x4D\x04\x01\x01\x01\x00\x03\x01\x07\x00\x55\x04\x00\x22\x00\x00\x00\x01\x07\x00\x23\x00\x23\x00\x06\x01\x07\x00\x4D\x04\x01\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public static char : ()Z
+.method public static method1431 : ()Z
     .code stack 1 locals 0
 L0:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Pause ()Z
 L3:     ireturn
@@ -506,14 +506,14 @@ L6:
     .end code
 .end method
 
-.method public static do : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1432 : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 6
 L0:     iload_0
 L1:     iload_1
 L2:     aload_2
-L3:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L3:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L6:     aload_3
-L7:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L7:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L10:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_AC3_StreamCreateFileUser (IIJJ)J
 L13:    dup2
 L14:    lstore 4
@@ -524,15 +524,15 @@ L21:    aconst_null
 L22:    areturn
 L23:    athrow
 L24:    lload 4
-L26:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L29:    invokestatic Method jouvieje/bass/structures/G else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+L26:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L29:    invokestatic Method jouvieje/bass/structures/G method1599 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
 L32:    areturn
 L33:    
-        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x22\x00\x18\x00\x05\x01\x01\x07\x00\xDD\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x23\x00\x18\x00\x05\x01\x01\x07\x00\xF5\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (IJ)D
+.method public static method1433 : (IJ)D
     .code stack 3 locals 3
 L0:     iload_0
 L1:     lload_1
@@ -542,7 +542,7 @@ L6:
     .end code
 .end method
 
-.method public static short : (Ljava/lang/String;IILjouvieje/bass/callbacks/E;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1434 : (Ljava/lang/String;IILjouvieje/bass/callbacks/E;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 7
 L0:     iconst_3
 L1:     iconst_1
@@ -550,7 +550,7 @@ L2:     dup
 L3:     pop2
 L4:     aload_3
 L5:     lconst_0
-L6:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L6:     invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L9:     aload_0
 L10:    ifnonnull L19
 L13:    aconst_null
@@ -575,7 +575,7 @@ L40:    dup
 L41:    dup
 L42:    pop2
 L43:    aload 4
-L45:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L45:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L48:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_StreamCreateURL ([BIIZJ)J
 L51:    dup2
 L52:    lstore 5
@@ -585,15 +585,15 @@ L56:    ifne L61
 L59:    aconst_null
 L60:    areturn
 L61:    lload 5
-L63:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L66:    invokestatic Method jouvieje/bass/structures/G else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+L63:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L66:    invokestatic Method jouvieje/bass/structures/G method1599 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
 L69:    areturn
 L70:    
-        .attribute StackMap b'\x00\x07\x00\x12\x00\x00\x00\x01\x07\x00\x22\x00\x13\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x00\x00\x18\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x02\x07\x00\x4E\x01\x00\x26\x00\x00\x00\x01\x07\x00\x22\x00\x27\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x03\x07\x00\x4E\x01\x01\x00\x2D\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x05\x07\x00\x4E\x01\x01\x01\x07\x00\x04\x00\x3D\x00\x06\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x12\x00\x00\x00\x01\x07\x00\x23\x00\x13\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x00\x00\x18\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x02\x07\x00\x55\x01\x00\x26\x00\x00\x00\x01\x07\x00\x23\x00\x27\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x03\x07\x00\x55\x01\x01\x00\x2D\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x05\x07\x00\x55\x01\x01\x01\x07\x00\x04\x00\x3D\x00\x06\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static short : (IZ)Z
+.method public static method1435 : (IZ)Z
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
@@ -603,15 +603,15 @@ L6:
     .end code
 .end method
 
-.method public static break : (IIILjouvieje/bass/enumerations/M;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1436 : (IIILjouvieje/bass/enumerations/M;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 7
 L0:     iload_0
 L1:     iload_1
 L2:     iload_2
 L3:     aload_3
-L4:     invokevirtual Method jouvieje/bass/enumerations/M break ()I
+L4:     invokevirtual Method jouvieje/bass/enumerations/M method247 ()I
 L7:     aload 4
-L9:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L9:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L12:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_StreamCreate (IIIIJ)J
 L15:    dup2
 L16:    lstore 5
@@ -622,15 +622,15 @@ L23:    aconst_null
 L24:    areturn
 L25:    athrow
 L26:    lload 5
-L28:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L31:    invokestatic Method jouvieje/bass/structures/G else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+L28:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L31:    invokestatic Method jouvieje/bass/structures/G method1599 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
 L34:    areturn
 L35:    
-        .attribute StackMap b'\x00\x02\x00\x19\x00\x00\x00\x01\x07\x00\x22\x00\x1A\x00\x06\x01\x01\x01\x07\x00\xEC\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x19\x00\x00\x00\x01\x07\x00\x23\x00\x1A\x00\x06\x01\x01\x01\x07\x01\x07\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static byte : (I)Z
+.method public static method1437 : (I)Z
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelPause (I)Z
@@ -639,17 +639,17 @@ L5:
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/structures/f;)Z
+.method public static method1438 : (Ljouvieje/bass/structures/f;)Z
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_PluginFree (J)Z
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static void : (I)I
+.method public static method1439 : (I)I
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelIsActive (I)I
@@ -668,17 +668,17 @@ L6:
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/b;)Z
+.method public static method1440 : (Ljouvieje/bass/structures/b;)Z
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MusicFree (J)Z
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static catch : (III)Ljouvieje/bass/structures/G;
+.method public static method1441 : (III)Ljouvieje/bass/structures/G;
     .code stack 4 locals 5
 L0:     iload_0
 L1:     iload_1
@@ -693,22 +693,22 @@ L13:    aconst_null
 L14:    areturn
 L15:    athrow
 L16:    lload_3
-L17:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L20:    invokestatic Method jouvieje/bass/structures/G else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+L17:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L20:    invokestatic Method jouvieje/bass/structures/G method1599 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
 L23:    areturn
 L24:    
-        .attribute StackMap b'\x00\x02\x00\x0F\x00\x00\x00\x01\x07\x00\x22\x00\x10\x00\x04\x01\x01\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0F\x00\x00\x00\x01\x07\x00\x23\x00\x10\x00\x04\x01\x01\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (IIILjouvieje/bass/callbacks/m;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1442 : (IIILjouvieje/bass/callbacks/m;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 7
 L0:     bipush 15
 L2:     iconst_1
 L3:     dup
 L4:     pop2
 L5:     aload_3
-L6:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;)V
+L6:     invokestatic Method jouvieje/bass/callbacks/a method1632 (ILjava/lang/Object;)V
 L9:     iload_0
 L10:    iload_1
 L11:    iload_2
@@ -726,7 +726,7 @@ L27:    dup
 L28:    dup
 L29:    pop2
 L30:    aload 4
-L32:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L32:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L35:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_StreamCreate (IIIZJ)J
 L38:    lstore 5
 L40:    bipush 15
@@ -735,7 +735,7 @@ L43:    dup
 L44:    pop2
 L45:    aload_3
 L46:    lload 5
-L48:    invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L48:    invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L51:    aload_3
 L52:    ifnonnull L62
 L55:    lconst_0
@@ -744,7 +744,7 @@ L58:    goto L65
 L61:    athrow
 L62:    lload 5
 L64:    dup2
-L65:    invokestatic Method jouvieje/bass/callbacks/a break (JJ)V
+L65:    invokestatic Method jouvieje/bass/callbacks/a method1627 (JJ)V
 L68:    lload 5
 L70:    lconst_0
 L71:    lcmp
@@ -752,25 +752,25 @@ L72:    ifne L77
 L75:    aconst_null
 L76:    areturn
 L77:    lload 5
-L79:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L82:    invokestatic Method jouvieje/bass/structures/G else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+L79:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L82:    invokestatic Method jouvieje/bass/structures/G method1599 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
 L85:    areturn
 L86:    
-        .attribute StackMap b'\x00\x07\x00\x19\x00\x00\x00\x01\x07\x00\x22\x00\x1A\x00\x05\x01\x01\x01\x07\x01\x12\x07\x00\x04\x00\x03\x01\x01\x01\x00\x20\x00\x05\x01\x01\x01\x07\x01\x12\x07\x00\x04\x00\x05\x01\x01\x01\x01\x07\x00\x04\x00\x3D\x00\x00\x00\x01\x07\x00\x22\x00\x3E\x00\x06\x01\x01\x01\x07\x01\x12\x07\x00\x04\x04\x00\x00\x00\x41\x00\x06\x01\x01\x01\x07\x01\x12\x07\x00\x04\x04\x00\x02\x04\x04\x00\x4D\x00\x06\x01\x01\x01\x07\x01\x12\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x19\x00\x00\x00\x01\x07\x00\x23\x00\x1A\x00\x05\x01\x01\x01\x07\x01\x33\x07\x00\x04\x00\x03\x01\x01\x01\x00\x20\x00\x05\x01\x01\x01\x07\x01\x33\x07\x00\x04\x00\x05\x01\x01\x01\x01\x07\x00\x04\x00\x3D\x00\x00\x00\x01\x07\x00\x23\x00\x3E\x00\x06\x01\x01\x01\x07\x01\x33\x07\x00\x04\x04\x00\x00\x00\x41\x00\x06\x01\x01\x01\x07\x01\x33\x07\x00\x04\x04\x00\x02\x04\x04\x00\x4D\x00\x06\x01\x01\x01\x07\x01\x33\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static float : (Ljouvieje/bass/structures/G;)I
+.method public static method1443 : (Ljouvieje/bass/structures/G;)I
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FX_ReverseGetSource (J)I
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static break : (F)Z
+.method public static method1444 : (F)Z
     .code stack 1 locals 1
 L0:     fload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_SetVolume (F)Z
@@ -779,7 +779,7 @@ L5:
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/G;IILjava/nio/IntBuffer;)Z
+.method public static method1445 : (Ljouvieje/bass/structures/G;IILjava/nio/IntBuffer;)Z
     .code stack 7 locals 4
 L0:     aload_3
 L1:     ifnull L19
@@ -791,17 +791,17 @@ L14:    dup
 L15:    invokespecial Method XG <init> ()V
 L18:    athrow
 L19:    aload_0
-L20:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L20:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L23:    iload_1
 L24:    iload_2
 L25:    aload_3
 L26:    dup
-L27:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L27:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L30:    i2l
 L31:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_StreamGetMark (JIILjava/nio/IntBuffer;J)Z
 L34:    ireturn
 L35:    
-        .attribute StackMap b'\x00\x01\x00\x13\x00\x04\x07\x00\x27\x01\x01\x07\x01\x24\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x13\x00\x04\x07\x00\x29\x01\x01\x07\x01\x49\x00\x00'
     .end code
 .end method
 
@@ -813,7 +813,7 @@ L4:
     .end code
 .end method
 
-.method public static goto : (II)Z
+.method public static method1446 : (II)Z
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
@@ -823,7 +823,7 @@ L6:
     .end code
 .end method
 
-.method public static float : (III)J
+.method public static method1447 : (III)J
     .code stack 3 locals 3
 L0:     iload_0
 L1:     iload_1
@@ -834,7 +834,7 @@ L7:
     .end code
 .end method
 
-.method public static break : (IIFFIIF)Z
+.method public static method1448 : (IIFFIIF)Z
     .code stack 7 locals 7
 L0:     iload_0
 L1:     iload_1
@@ -849,7 +849,7 @@ L14:
     .end code
 .end method
 
-.method public static break : (IFFF)Z
+.method public static method1449 : (IFFF)Z
     .code stack 4 locals 4
 L0:     iload_0
 L1:     fload_1
@@ -861,11 +861,11 @@ L8:
     .end code
 .end method
 
-.method public static for : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
+.method public static method1450 : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
     .code stack 8 locals 7
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     lload_2
 L6:     lload 4
 L8:     iload 6
@@ -879,15 +879,15 @@ L20:    aconst_null
 L21:    areturn
 L22:    athrow
 L23:    lload_2
-L24:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L27:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L24:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L27:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L30:    areturn
 L31:    
-        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x22\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x23\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
     .end code
 .end method
 
-.method public static const : (IZ)Z
+.method public static method1451 : (IZ)Z
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
@@ -905,17 +905,17 @@ L4:
     .end code
 .end method
 
-.method public static short : (Ljouvieje/bass/structures/G;)Z
+.method public static method1452 : (Ljouvieje/bass/structures/G;)Z
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_StreamLoadSamples (J)Z
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static else : (IZ)Z
+.method public static method1453 : (IZ)Z
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
@@ -925,7 +925,7 @@ L6:
     .end code
 .end method
 
-.method public static const : (Ljava/lang/String;IILjouvieje/bass/callbacks/E;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1454 : (Ljava/lang/String;IILjouvieje/bass/callbacks/E;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 7
 L0:     iconst_3
 L1:     iconst_1
@@ -933,7 +933,7 @@ L2:     dup
 L3:     pop2
 L4:     aload_3
 L5:     lconst_0
-L6:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L6:     invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L9:     aload_0
 L10:    ifnonnull L19
 L13:    aconst_null
@@ -958,7 +958,7 @@ L40:    dup
 L41:    dup
 L42:    pop2
 L43:    aload 4
-L45:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L45:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L48:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_AC3_StreamCreateURL ([BIIZJ)J
 L51:    dup2
 L52:    lstore 5
@@ -968,20 +968,20 @@ L56:    ifne L61
 L59:    aconst_null
 L60:    areturn
 L61:    lload 5
-L63:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L66:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L63:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L66:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L69:    areturn
 L70:    
-        .attribute StackMap b'\x00\x07\x00\x12\x00\x00\x00\x01\x07\x00\x22\x00\x13\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x00\x00\x18\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x02\x07\x00\x4E\x01\x00\x26\x00\x00\x00\x01\x07\x00\x22\x00\x27\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x03\x07\x00\x4E\x01\x01\x00\x2D\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x05\x07\x00\x4E\x01\x01\x01\x07\x00\x04\x00\x3D\x00\x06\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x12\x00\x00\x00\x01\x07\x00\x23\x00\x13\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x00\x00\x18\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x02\x07\x00\x55\x01\x00\x26\x00\x00\x00\x01\x07\x00\x23\x00\x27\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x03\x07\x00\x55\x01\x01\x00\x2D\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x05\x07\x00\x55\x01\x01\x01\x07\x00\x04\x00\x3D\x00\x06\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/structures/G;Ljouvieje/bass/structures/Q;I)I
+.method public static method1455 : (Ljouvieje/bass/structures/G;Ljouvieje/bass/structures/Q;I)I
     .code stack 5 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
-L5:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L5:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L8:     iload_2
 L9:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_StreamGetFonts (JJI)I
 L12:    ireturn
@@ -989,7 +989,7 @@ L13:
     .end code
 .end method
 
-.method public static short : (III)Ljouvieje/bass/structures/a;
+.method public static method1456 : (III)Ljouvieje/bass/structures/a;
     .code stack 4 locals 5
 L0:     iload_0
 L1:     iload_1
@@ -1004,15 +1004,15 @@ L13:    aconst_null
 L14:    areturn
 L15:    athrow
 L16:    lload_3
-L17:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L20:    invokestatic Method jouvieje/bass/structures/a else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/a;
+L17:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L20:    invokestatic Method jouvieje/bass/structures/a method1261 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/a;
 L23:    areturn
 L24:    
-        .attribute StackMap b'\x00\x02\x00\x0F\x00\x00\x00\x01\x07\x00\x22\x00\x10\x00\x04\x01\x01\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0F\x00\x00\x00\x01\x07\x00\x23\x00\x10\x00\x04\x01\x01\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (ILjouvieje/bass/callbacks/b;Ljouvieje/bass/utils/m;)Z
+.method public static method1457 : (ILjouvieje/bass/callbacks/b;Ljouvieje/bass/utils/m;)Z
     .code stack 4 locals 3
 L0:     iconst_0
 L1:     iconst_1
@@ -1021,7 +1021,7 @@ L3:     pop2
 L4:     aload_1
 L5:     iload_0
 L6:     i2l
-L7:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L7:     invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L10:    iload_0
 L11:    aload_1
 L12:    ifnonnull L24
@@ -1037,27 +1037,27 @@ L25:    dup
 L26:    dup
 L27:    pop2
 L28:    aload_2
-L29:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L29:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L32:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FX_BPM_BeatCallbackSet (IZJ)Z
 L35:    ireturn
 L36:    
-        .attribute StackMap b'\x00\x03\x00\x17\x00\x00\x00\x01\x07\x00\x22\x00\x18\x00\x03\x01\x07\x01\x60\x07\x00\x04\x00\x01\x01\x00\x1D\x00\x03\x01\x07\x01\x60\x07\x00\x04\x00\x03\x01\x01\x07\x00\x04'
+        .attribute StackMap b'\x00\x03\x00\x17\x00\x00\x00\x01\x07\x00\x23\x00\x18\x00\x03\x01\x07\x01\x8F\x07\x00\x04\x00\x01\x01\x00\x1D\x00\x03\x01\x07\x01\x8F\x07\x00\x04\x00\x03\x01\x01\x07\x00\x04'
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/structures/E;Ljouvieje/bass/utils/m;)Z
+.method public static method1458 : (Ljouvieje/bass/structures/E;Ljouvieje/bass/utils/m;)Z
     .code stack 4 locals 2
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
-L5:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L5:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L8:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_SampleSetData (JJ)Z
 L11:    ireturn
 L12:    
     .end code
 .end method
 
-.method public static const : (III)I
+.method public static method1459 : (III)I
     .code stack 3 locals 3
 L0:     iload_0
 L1:     iload_1
@@ -1068,7 +1068,7 @@ L7:
     .end code
 .end method
 
-.method public static "final" : (I)I
+.method public static method1460 : (I)I
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Mixer_ChannelGetLevel (I)I
@@ -1077,7 +1077,7 @@ L5:
     .end code
 .end method
 
-.method public static int : (I)Z
+.method public static method1461 : (I)Z
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelStop (I)Z
@@ -1086,7 +1086,7 @@ L5:
     .end code
 .end method
 
-.method public static do : (II)J
+.method public static method1462 : (II)J
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
@@ -1096,7 +1096,7 @@ L6:
     .end code
 .end method
 
-.method public static else : (IFI)Ljouvieje/bass/structures/G;
+.method public static method1463 : (IFI)Ljouvieje/bass/structures/G;
     .code stack 4 locals 5
 L0:     iload_0
 L1:     fload_1
@@ -1111,15 +1111,15 @@ L13:    aconst_null
 L14:    areturn
 L15:    athrow
 L16:    lload_3
-L17:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L20:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L17:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L20:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L23:    areturn
 L24:    
-        .attribute StackMap b'\x00\x02\x00\x0F\x00\x00\x00\x01\x07\x00\x22\x00\x10\x00\x04\x01\x02\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0F\x00\x00\x00\x01\x07\x00\x23\x00\x10\x00\x04\x01\x02\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (IDDIILjouvieje/bass/callbacks/j;)F
+.method public static method1464 : (IDDIILjouvieje/bass/callbacks/j;)F
     .code stack 10 locals 8
 L0:     iconst_2
 L1:     iconst_1
@@ -1128,7 +1128,7 @@ L3:     pop2
 L4:     aload 7
 L6:     iload_0
 L7:     i2l
-L8:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L8:     invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L11:    iload_0
 L12:    dload_1
 L13:    dload_3
@@ -1149,14 +1149,14 @@ L34:    pop2
 L35:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FX_BPM_DecodeGet (IDDIIZ)F
 L38:    freturn
 L39:    
-        .attribute StackMap b'\x00\x03\x00\x1E\x00\x00\x00\x01\x07\x00\x22\x00\x1F\x00\x06\x01\x03\x03\x01\x01\x07\x01\x7F\x00\x05\x01\x03\x03\x01\x01\x00\x23\x00\x06\x01\x03\x03\x01\x01\x07\x01\x7F\x00\x06\x01\x03\x03\x01\x01\x01'
+        .attribute StackMap b'\x00\x03\x00\x1E\x00\x00\x00\x01\x07\x00\x23\x00\x1F\x00\x06\x01\x03\x03\x01\x01\x07\x01\xB3\x00\x05\x01\x03\x03\x01\x01\x00\x23\x00\x06\x01\x03\x03\x01\x01\x07\x01\xB3\x00\x06\x01\x03\x03\x01\x01\x01'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/f;)Ljouvieje/bass/structures/B;
+.method public static method1465 : (Ljouvieje/bass/structures/f;)Ljouvieje/bass/structures/B;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_PluginGetInfo (J)J
 L7:     dup2
 L8:     lstore_1
@@ -1167,18 +1167,18 @@ L14:    aconst_null
 L15:    areturn
 L16:    athrow
 L17:    lload_1
-L18:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L21:    invokestatic Method jouvieje/bass/structures/B else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/B;
+L18:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L21:    invokestatic Method jouvieje/bass/structures/B method1394 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/B;
 L24:    areturn
 L25:    
-        .attribute StackMap b'\x00\x02\x00\x10\x00\x00\x00\x01\x07\x00\x22\x00\x11\x00\x02\x07\x01\x8A\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x10\x00\x00\x00\x01\x07\x00\x23\x00\x11\x00\x02\x07\x01\xBF\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/c;F)Z
+.method public static method1466 : (Ljouvieje/bass/structures/c;F)Z
     .code stack 3 locals 2
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     fload_1
 L5:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_FontSetVolume (JF)Z
 L8:     ireturn
@@ -1186,7 +1186,7 @@ L9:
     .end code
 .end method
 
-.method public static break : (I[Ljouvieje/bass/structures/G;I)I
+.method public static method1467 : (I[Ljouvieje/bass/structures/G;I)I
     .code stack 5 locals 3
 L0:     iload_0
 L1:     aload_1
@@ -1195,7 +1195,7 @@ L3:     iconst_1
 L4:     dup
 L5:     pop2
 L6:     aaload
-L7:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L7:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L10:    iload_2
 L11:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Split_StreamGetSplits (IJI)I
 L14:    ireturn
@@ -1203,22 +1203,22 @@ L15:
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/a;Ljouvieje/bass/utils/m;)Z
+.method public static method1468 : (Ljouvieje/bass/structures/a;Ljouvieje/bass/utils/m;)Z
     .code stack 4 locals 2
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
-L5:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L5:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L8:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FXGetParameters (JJ)Z
 L11:    ireturn
 L12:    
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/A;Ljava/lang/String;Ljouvieje/bass/utils/m;I)Z
+.method public static method1469 : (Ljouvieje/bass/structures/A;Ljava/lang/String;Ljouvieje/bass/utils/m;I)Z
     .code stack 6 locals 4
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
 L5:     ifnonnull L14
 L8:     aconst_null
@@ -1228,23 +1228,23 @@ L13:    athrow
 L14:    aload_1
 L15:    invokevirtual Method java/lang/String getBytes ()[B
 L18:    aload_2
-L19:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L19:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L22:    iload_3
 L23:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Encode_AddChunk (J[BJI)Z
 L26:    ireturn
 L27:    
-        .attribute StackMap b'\x00\x03\x00\x0D\x00\x00\x00\x01\x07\x00\x22\x00\x0E\x00\x04\x07\x01\x9E\x07\x00\x46\x07\x00\x04\x01\x00\x01\x04\x00\x13\x00\x04\x07\x01\x9E\x07\x00\x46\x07\x00\x04\x01\x00\x03\x04\x07\x00\x4E\x07\x00\x04'
+        .attribute StackMap b'\x00\x03\x00\x0D\x00\x00\x00\x01\x07\x00\x23\x00\x0E\x00\x04\x07\x01\xD8\x07\x00\x4D\x07\x00\x04\x01\x00\x01\x04\x00\x13\x00\x04\x07\x01\xD8\x07\x00\x4D\x07\x00\x04\x01\x00\x03\x04\x07\x00\x55\x07\x00\x04'
     .end code
 .end method
 
-.method public static break : (ILjava/lang/String;ILjouvieje/bass/callbacks/F;Ljouvieje/bass/utils/m;I)Ljouvieje/bass/structures/A;
+.method public static method1470 : (ILjava/lang/String;ILjouvieje/bass/callbacks/F;Ljouvieje/bass/utils/m;I)Ljouvieje/bass/structures/A;
     .code stack 7 locals 8
 L0:     bipush 7
 L2:     iconst_1
 L3:     dup
 L4:     pop2
 L5:     aload_3
-L6:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;)V
+L6:     invokestatic Method jouvieje/bass/callbacks/a method1632 (ILjava/lang/Object;)V
 L9:     iload_0
 L10:    aload_1
 L11:    ifnonnull L20
@@ -1269,7 +1269,7 @@ L40:    dup
 L41:    dup
 L42:    pop2
 L43:    aload 4
-L45:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L45:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L48:    iload 5
 L50:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Encode_StartLimit (I[BIZJI)J
 L53:    lstore 6
@@ -1279,7 +1279,7 @@ L58:    dup
 L59:    pop2
 L60:    aload_3
 L61:    lload 6
-L63:    invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L63:    invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L66:    aload_3
 L67:    ifnonnull L76
 L70:    lconst_0
@@ -1287,7 +1287,7 @@ L71:    lload 6
 L73:    goto L79
 L76:    lload 6
 L78:    dup2
-L79:    invokestatic Method jouvieje/bass/callbacks/a break (JJ)V
+L79:    invokestatic Method jouvieje/bass/callbacks/a method1627 (JJ)V
 L82:    lload 6
 L84:    lconst_0
 L85:    lcmp
@@ -1295,22 +1295,22 @@ L86:    ifne L91
 L89:    aconst_null
 L90:    areturn
 L91:    lload 6
-L93:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L96:    invokestatic Method jouvieje/bass/structures/A else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/A;
+L93:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L96:    invokestatic Method jouvieje/bass/structures/A method1397 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/A;
 L99:    areturn
 L100:   
-        .attribute StackMap b'\x00\x09\x00\x13\x00\x00\x00\x01\x07\x00\x22\x00\x14\x00\x06\x01\x07\x00\x46\x01\x07\x01\xA5\x07\x00\x04\x01\x00\x01\x01\x00\x19\x00\x06\x01\x07\x00\x46\x01\x07\x01\xA5\x07\x00\x04\x01\x00\x03\x01\x07\x00\x4E\x01\x00\x26\x00\x00\x00\x01\x07\x00\x22\x00\x27\x00\x06\x01\x07\x00\x46\x01\x07\x01\xA5\x07\x00\x04\x01\x00\x03\x01\x07\x00\x4E\x01\x00\x2D\x00\x06\x01\x07\x00\x46\x01\x07\x01\xA5\x07\x00\x04\x01\x00\x05\x01\x07\x00\x4E\x01\x01\x07\x00\x04\x00\x4C\x00\x07\x01\x07\x00\x46\x01\x07\x01\xA5\x07\x00\x04\x01\x04\x00\x00\x00\x4F\x00\x07\x01\x07\x00\x46\x01\x07\x01\xA5\x07\x00\x04\x01\x04\x00\x02\x04\x04\x00\x5B\x00\x07\x01\x07\x00\x46\x01\x07\x01\xA5\x07\x00\x04\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x09\x00\x13\x00\x00\x00\x01\x07\x00\x23\x00\x14\x00\x06\x01\x07\x00\x4D\x01\x07\x01\xE0\x07\x00\x04\x01\x00\x01\x01\x00\x19\x00\x06\x01\x07\x00\x4D\x01\x07\x01\xE0\x07\x00\x04\x01\x00\x03\x01\x07\x00\x55\x01\x00\x26\x00\x00\x00\x01\x07\x00\x23\x00\x27\x00\x06\x01\x07\x00\x4D\x01\x07\x01\xE0\x07\x00\x04\x01\x00\x03\x01\x07\x00\x55\x01\x00\x2D\x00\x06\x01\x07\x00\x4D\x01\x07\x01\xE0\x07\x00\x04\x01\x00\x05\x01\x07\x00\x55\x01\x01\x07\x00\x04\x00\x4C\x00\x07\x01\x07\x00\x4D\x01\x07\x01\xE0\x07\x00\x04\x01\x04\x00\x00\x00\x4F\x00\x07\x01\x07\x00\x4D\x01\x07\x01\xE0\x07\x00\x04\x01\x04\x00\x02\x04\x04\x00\x5B\x00\x07\x01\x07\x00\x4D\x01\x07\x01\xE0\x07\x00\x04\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;I)Ljouvieje/bass/structures/G;
+.method public static method1471 : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;I)Ljouvieje/bass/structures/G;
     .code stack 7 locals 7
 L0:     iload_0
 L1:     iload_1
 L2:     aload_2
-L3:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L3:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L6:     aload_3
-L7:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L7:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L10:    iload 4
 L12:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_StreamCreateFileUser (IIJJI)J
 L15:    dup2
@@ -1322,31 +1322,31 @@ L23:    aconst_null
 L24:    areturn
 L25:    athrow
 L26:    lload 5
-L28:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L31:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L28:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L31:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L34:    areturn
 L35:    
-        .attribute StackMap b'\x00\x02\x00\x19\x00\x00\x00\x01\x07\x00\x22\x00\x1A\x00\x06\x01\x01\x07\x00\xDD\x07\x00\x04\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x19\x00\x00\x00\x01\x07\x00\x23\x00\x1A\x00\x06\x01\x01\x07\x00\xF5\x07\x00\x04\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;)Z
+.method public static method1472 : (Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;)Z
     .code stack 8 locals 4
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
-L5:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L5:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L8:     aload_2
-L9:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L9:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L12:    aload_3
-L13:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L13:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L16:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Set3DPosition (JJJJ)Z
 L19:    ireturn
 L20:    
     .end code
 .end method
 
-.method public static "enum" : (I)Ljava/lang/String;
+.method public static method1473 : (I)Ljava/lang/String;
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_RecordGetInputName (I)Ljava/lang/String;
@@ -1355,7 +1355,7 @@ L5:
     .end code
 .end method
 
-.method public static for : (II)J
+.method public static method1474 : (II)J
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
@@ -1365,36 +1365,36 @@ L6:
     .end code
 .end method
 
-.method public static else : (ILjouvieje/bass/structures/T;)Z
+.method public static method1475 : (ILjouvieje/bass/structures/T;)Z
     .code stack 3 locals 2
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_RecordGetDeviceInfo (IJ)Z
 L8:     ireturn
 L9:     
     .end code
 .end method
 
-.method public static else : (ILjouvieje/bass/structures/K;)Z
+.method public static method1476 : (ILjouvieje/bass/structures/K;)Z
     .code stack 3 locals 2
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Mixer_ChannelRemoveSync (IJ)Z
 L8:     ireturn
 L9:     
     .end code
 .end method
 
-.method public static for : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1477 : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 6
 L0:     iload_0
 L1:     iload_1
 L2:     aload_2
-L3:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L3:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L6:     aload_3
-L7:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L7:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L10:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ALAC_StreamCreateFileUser (IIJJ)J
 L13:    dup2
 L14:    lstore 4
@@ -1405,11 +1405,11 @@ L21:    aconst_null
 L22:    areturn
 L23:    athrow
 L24:    lload 4
-L26:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L29:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L26:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L29:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L32:    areturn
 L33:    
-        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x22\x00\x18\x00\x05\x01\x01\x07\x00\xDD\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x23\x00\x18\x00\x05\x01\x01\x07\x00\xF5\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
@@ -1421,7 +1421,7 @@ L4:
     .end code
 .end method
 
-.method public static else : (Ljava/lang/String;IILjouvieje/bass/callbacks/E;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1478 : (Ljava/lang/String;IILjouvieje/bass/callbacks/E;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 7
 L0:     iconst_3
 L1:     iconst_1
@@ -1429,7 +1429,7 @@ L2:     dup
 L3:     pop2
 L4:     aload_3
 L5:     lconst_0
-L6:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L6:     invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L9:     aload_0
 L10:    ifnonnull L19
 L13:    aconst_null
@@ -1454,7 +1454,7 @@ L40:    dup
 L41:    dup
 L42:    pop2
 L43:    aload 4
-L45:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L45:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L48:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MPC_StreamCreateURL ([BIIZJ)J
 L51:    dup2
 L52:    lstore 5
@@ -1464,15 +1464,15 @@ L56:    ifne L61
 L59:    aconst_null
 L60:    areturn
 L61:    lload 5
-L63:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L66:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L63:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L66:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L69:    areturn
 L70:    
-        .attribute StackMap b'\x00\x07\x00\x12\x00\x00\x00\x01\x07\x00\x22\x00\x13\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x00\x00\x18\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x02\x07\x00\x4E\x01\x00\x26\x00\x00\x00\x01\x07\x00\x22\x00\x27\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x03\x07\x00\x4E\x01\x01\x00\x2D\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x05\x07\x00\x4E\x01\x01\x01\x07\x00\x04\x00\x3D\x00\x06\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x12\x00\x00\x00\x01\x07\x00\x23\x00\x13\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x00\x00\x18\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x02\x07\x00\x55\x01\x00\x26\x00\x00\x00\x01\x07\x00\x23\x00\x27\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x03\x07\x00\x55\x01\x01\x00\x2D\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x05\x07\x00\x55\x01\x01\x01\x07\x00\x04\x00\x3D\x00\x06\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static long : (I)Z
+.method public static method1479 : (I)Z
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Mixer_ChannelRemove (I)Z
@@ -1481,7 +1481,7 @@ L5:
     .end code
 .end method
 
-.method public static goto : ()I
+.method public static method1228 : ()I
     .code stack 1 locals 0
 L0:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Mixer_GetVersion ()I
 L3:     ireturn
@@ -1489,10 +1489,10 @@ L4:
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/A;ILjava/lang/String;)Ljava/lang/String;
+.method public static method1480 : (Ljouvieje/bass/structures/A;ILjava/lang/String;)Ljava/lang/String;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     iload_1
 L5:     aload_2
 L6:     ifnonnull L14
@@ -1504,15 +1504,15 @@ L15:    invokevirtual Method java/lang/String getBytes ()[B
 L18:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Encode_CastGetStats (JI[B)Ljava/lang/String;
 L21:    areturn
 L22:    
-        .attribute StackMap b'\x00\x03\x00\x0D\x00\x00\x00\x01\x07\x00\x22\x00\x0E\x00\x03\x07\x01\x9E\x01\x07\x00\x46\x00\x02\x04\x01\x00\x12\x00\x03\x07\x01\x9E\x01\x07\x00\x46\x00\x03\x04\x01\x07\x00\x4E'
+        .attribute StackMap b'\x00\x03\x00\x0D\x00\x00\x00\x01\x07\x00\x23\x00\x0E\x00\x03\x07\x01\xD8\x01\x07\x00\x4D\x00\x02\x04\x01\x00\x12\x00\x03\x07\x01\xD8\x01\x07\x00\x4D\x00\x03\x04\x01\x07\x00\x55'
     .end code
 .end method
 
-.method public static catch : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
+.method public static method1481 : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
     .code stack 8 locals 7
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     lload_2
 L6:     lload 4
 L8:     iload 6
@@ -1526,18 +1526,18 @@ L20:    aconst_null
 L21:    areturn
 L22:    athrow
 L23:    lload_2
-L24:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L27:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L24:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L27:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L30:    areturn
 L31:    
-        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x22\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x23\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/structures/c;II)Z
+.method public static method1482 : (Ljouvieje/bass/structures/c;II)Z
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     iload_1
 L5:     iload_2
 L6:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_FontLoad (JII)Z
@@ -1546,7 +1546,7 @@ L10:
     .end code
 .end method
 
-.method public static break : (IZ)Z
+.method public static method1483 : (IZ)Z
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
@@ -1556,7 +1556,7 @@ L6:
     .end code
 .end method
 
-.method public static catch : (II)J
+.method public static method1484 : (II)J
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
@@ -1566,11 +1566,11 @@ L6:
     .end code
 .end method
 
-.method public static float : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
+.method public static method1485 : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
     .code stack 8 locals 7
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     lload_2
 L6:     lload 4
 L8:     iload 6
@@ -1584,20 +1584,20 @@ L20:    aconst_null
 L21:    areturn
 L22:    athrow
 L23:    lload_2
-L24:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L27:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L24:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L27:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L30:    areturn
 L31:    
-        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x22\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x23\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/G;Ljouvieje/bass/structures/Q;I)Z
+.method public static method1486 : (Ljouvieje/bass/structures/G;Ljouvieje/bass/structures/Q;I)Z
     .code stack 5 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
-L5:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L5:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L8:     iload_2
 L9:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_StreamSetFonts (JJI)Z
 L12:    ireturn
@@ -1605,22 +1605,22 @@ L13:
     .end code
 .end method
 
-.method public static else : (ILjouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;)Z
+.method public static method1487 : (ILjouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;)Z
     .code stack 7 locals 4
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     aload_2
-L6:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L6:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L9:     aload_3
-L10:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L10:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L13:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelGet3DPosition (IJJJ)Z
 L16:    ireturn
 L17:    
     .end code
 .end method
 
-.method public static break : (IIFI)Z
+.method public static method1488 : (IIFI)Z
     .code stack 4 locals 4
 L0:     iload_0
 L1:     iload_1
@@ -1632,18 +1632,18 @@ L8:
     .end code
 .end method
 
-.method public static break : (ILjouvieje/bass/structures/U;)Z
+.method public static method1489 : (ILjouvieje/bass/structures/U;)Z
     .code stack 3 locals 2
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_InGetDeviceInfo (IJ)Z
 L8:     ireturn
 L9:     
     .end code
 .end method
 
-.method public static else : (III)Ljouvieje/bass/structures/G;
+.method public static method1490 : (III)Ljouvieje/bass/structures/G;
     .code stack 4 locals 5
 L0:     iload_0
 L1:     iload_1
@@ -1658,26 +1658,26 @@ L13:    aconst_null
 L14:    areturn
 L15:    athrow
 L16:    lload_3
-L17:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L20:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L17:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L20:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L23:    areturn
 L24:    
-        .attribute StackMap b'\x00\x02\x00\x0F\x00\x00\x00\x01\x07\x00\x22\x00\x10\x00\x04\x01\x01\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0F\x00\x00\x00\x01\x07\x00\x23\x00\x10\x00\x04\x01\x01\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (ILjouvieje/bass/structures/K;)Z
+.method public static method1491 : (ILjouvieje/bass/structures/K;)Z
     .code stack 3 locals 2
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelRemoveSync (IJ)Z
 L8:     ireturn
 L9:     
     .end code
 .end method
 
-.method public static float : (II)Z
+.method public static method1492 : (II)Z
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
@@ -1687,7 +1687,7 @@ L6:
     .end code
 .end method
 
-.method public static break : (III)I
+.method public static method1493 : (III)I
     .code stack 3 locals 3
 L0:     iload_0
 L1:     iload_1
@@ -1698,19 +1698,19 @@ L7:
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/c;Ljouvieje/bass/structures/V;)Z
+.method public static method1494 : (Ljouvieje/bass/structures/c;Ljouvieje/bass/structures/V;)Z
     .code stack 4 locals 2
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
-L5:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L5:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L8:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_FontGetInfo (JJ)Z
 L11:    ireturn
 L12:    
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/G;Ljava/nio/ByteBuffer;I)I
+.method public static method1495 : (Ljouvieje/bass/structures/G;Ljava/nio/ByteBuffer;I)I
     .code stack 6 locals 3
 L0:     aload_1
 L1:     ifnull L19
@@ -1722,27 +1722,27 @@ L14:    dup
 L15:    invokespecial Method XG <init> ()V
 L18:    athrow
 L19:    aload_0
-L20:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L20:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L23:    aload_1
 L24:    dup
-L25:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L25:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L28:    i2l
 L29:    iload_2
 L30:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_StreamPutData (JLjava/nio/ByteBuffer;JI)I
 L33:    ireturn
 L34:    
-        .attribute StackMap b'\x00\x01\x00\x13\x00\x03\x07\x00\x27\x07\x00\x6E\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x13\x00\x03\x07\x00\x29\x07\x00\x79\x01\x00\x00'
     .end code
 .end method
 
-.method public static catch : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1496 : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 6
 L0:     iload_0
 L1:     iload_1
 L2:     aload_2
-L3:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L3:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L6:     aload_3
-L7:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L7:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L10:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FLAC_StreamCreateFileUser (IIJJ)J
 L13:    dup2
 L14:    lstore 4
@@ -1753,26 +1753,26 @@ L21:    aconst_null
 L22:    areturn
 L23:    athrow
 L24:    lload 4
-L26:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L29:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L26:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L29:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L32:    areturn
 L33:    
-        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x22\x00\x18\x00\x05\x01\x01\x07\x00\xDD\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x23\x00\x18\x00\x05\x01\x01\x07\x00\xF5\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (ILjouvieje/bass/utils/m;)Z
+.method public static method1497 : (ILjouvieje/bass/utils/m;)Z
     .code stack 3 locals 2
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_SetConfigPtr (IJ)Z
 L8:     ireturn
 L9:     
     .end code
 .end method
 
-.method public static do : ()I
+.method public static method1189 : ()I
     .code stack 1 locals 0
 L0:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Encode_GetVersion ()I
 L3:     ireturn
@@ -1780,7 +1780,7 @@ L4:
     .end code
 .end method
 
-.method public static else : (IILjava/nio/FloatBuffer;)J
+.method public static method1498 : (IILjava/nio/FloatBuffer;)J
     .code stack 5 locals 3
 L0:     aload_2
 L1:     ifnull L19
@@ -1795,16 +1795,16 @@ L19:    iload_0
 L20:    iload_1
 L21:    aload_2
 L22:    dup
-L23:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L23:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L26:    i2l
 L27:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Mixer_ChannelGetEnvelopePos (IILjava/nio/FloatBuffer;J)J
 L30:    lreturn
 L31:    
-        .attribute StackMap b'\x00\x01\x00\x13\x00\x03\x01\x01\x07\x02\x1D\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x13\x00\x03\x01\x01\x07\x02\x75\x00\x00'
     .end code
 .end method
 
-.method public static class : (I)I
+.method public static method1499 : (I)I
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelGetLevel (I)I
@@ -1813,7 +1813,7 @@ L5:
     .end code
 .end method
 
-.method public static break : (Ljava/lang/String;I)Ljouvieje/bass/structures/f;
+.method public static method1500 : (Ljava/lang/String;I)Ljouvieje/bass/structures/f;
     .code stack 4 locals 4
 L0:     aload_0
 L1:     ifnonnull L10
@@ -1834,22 +1834,22 @@ L25:    aconst_null
 L26:    areturn
 L27:    athrow
 L28:    lload_2
-L29:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L32:    invokestatic Method jouvieje/bass/structures/f else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/f;
+L29:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L32:    invokestatic Method jouvieje/bass/structures/f method1285 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/f;
 L35:    areturn
 L36:    
-        .attribute StackMap b'\x00\x05\x00\x09\x00\x00\x00\x01\x07\x00\x22\x00\x0A\x00\x02\x07\x00\x46\x01\x00\x00\x00\x0F\x00\x02\x07\x00\x46\x01\x00\x02\x07\x00\x4E\x01\x00\x1B\x00\x00\x00\x01\x07\x00\x22\x00\x1C\x00\x03\x07\x00\x46\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x09\x00\x00\x00\x01\x07\x00\x23\x00\x0A\x00\x02\x07\x00\x4D\x01\x00\x00\x00\x0F\x00\x02\x07\x00\x4D\x01\x00\x02\x07\x00\x55\x01\x00\x1B\x00\x00\x00\x01\x07\x00\x23\x00\x1C\x00\x03\x07\x00\x4D\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (ILjava/lang/String;ILjouvieje/bass/callbacks/F;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/A;
+.method public static method1501 : (ILjava/lang/String;ILjouvieje/bass/callbacks/F;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/A;
     .code stack 6 locals 7
 L0:     bipush 7
 L2:     iconst_1
 L3:     dup
 L4:     pop2
 L5:     aload_3
-L6:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;)V
+L6:     invokestatic Method jouvieje/bass/callbacks/a method1632 (ILjava/lang/Object;)V
 L9:     iload_0
 L10:    aload_1
 L11:    ifnonnull L20
@@ -1874,7 +1874,7 @@ L40:    dup
 L41:    dup
 L42:    pop2
 L43:    aload 4
-L45:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L45:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L48:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Encode_Start (I[BIZJ)J
 L51:    lstore 5
 L53:    bipush 7
@@ -1883,7 +1883,7 @@ L56:    dup
 L57:    pop2
 L58:    aload_3
 L59:    lload 5
-L61:    invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L61:    invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L64:    aload_3
 L65:    ifnonnull L74
 L68:    lconst_0
@@ -1891,7 +1891,7 @@ L69:    lload 5
 L71:    goto L77
 L74:    lload 5
 L76:    dup2
-L77:    invokestatic Method jouvieje/bass/callbacks/a break (JJ)V
+L77:    invokestatic Method jouvieje/bass/callbacks/a method1627 (JJ)V
 L80:    lload 5
 L82:    lconst_0
 L83:    lcmp
@@ -1899,22 +1899,22 @@ L84:    ifne L89
 L87:    aconst_null
 L88:    areturn
 L89:    lload 5
-L91:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L94:    invokestatic Method jouvieje/bass/structures/A else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/A;
+L91:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L94:    invokestatic Method jouvieje/bass/structures/A method1397 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/A;
 L97:    areturn
 L98:    
-        .attribute StackMap b'\x00\x09\x00\x13\x00\x00\x00\x01\x07\x00\x22\x00\x14\x00\x05\x01\x07\x00\x46\x01\x07\x01\xA5\x07\x00\x04\x00\x01\x01\x00\x19\x00\x05\x01\x07\x00\x46\x01\x07\x01\xA5\x07\x00\x04\x00\x03\x01\x07\x00\x4E\x01\x00\x26\x00\x00\x00\x01\x07\x00\x22\x00\x27\x00\x05\x01\x07\x00\x46\x01\x07\x01\xA5\x07\x00\x04\x00\x03\x01\x07\x00\x4E\x01\x00\x2D\x00\x05\x01\x07\x00\x46\x01\x07\x01\xA5\x07\x00\x04\x00\x05\x01\x07\x00\x4E\x01\x01\x07\x00\x04\x00\x4A\x00\x06\x01\x07\x00\x46\x01\x07\x01\xA5\x07\x00\x04\x04\x00\x00\x00\x4D\x00\x06\x01\x07\x00\x46\x01\x07\x01\xA5\x07\x00\x04\x04\x00\x02\x04\x04\x00\x59\x00\x06\x01\x07\x00\x46\x01\x07\x01\xA5\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x09\x00\x13\x00\x00\x00\x01\x07\x00\x23\x00\x14\x00\x05\x01\x07\x00\x4D\x01\x07\x01\xE0\x07\x00\x04\x00\x01\x01\x00\x19\x00\x05\x01\x07\x00\x4D\x01\x07\x01\xE0\x07\x00\x04\x00\x03\x01\x07\x00\x55\x01\x00\x26\x00\x00\x00\x01\x07\x00\x23\x00\x27\x00\x05\x01\x07\x00\x4D\x01\x07\x01\xE0\x07\x00\x04\x00\x03\x01\x07\x00\x55\x01\x00\x2D\x00\x05\x01\x07\x00\x4D\x01\x07\x01\xE0\x07\x00\x04\x00\x05\x01\x07\x00\x55\x01\x01\x07\x00\x04\x00\x4A\x00\x06\x01\x07\x00\x4D\x01\x07\x01\xE0\x07\x00\x04\x04\x00\x00\x00\x4D\x00\x06\x01\x07\x00\x4D\x01\x07\x01\xE0\x07\x00\x04\x04\x00\x02\x04\x04\x00\x59\x00\x06\x01\x07\x00\x4D\x01\x07\x01\xE0\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static float : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1502 : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 6
 L0:     iload_0
 L1:     iload_1
 L2:     aload_2
-L3:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L3:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L6:     aload_3
-L7:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L7:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L10:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_AAC_StreamCreateFileUser (IIJJ)J
 L13:    dup2
 L14:    lstore 4
@@ -1925,15 +1925,15 @@ L21:    aconst_null
 L22:    areturn
 L23:    athrow
 L24:    lload 4
-L26:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L29:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L26:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L29:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L32:    areturn
 L33:    
-        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x22\x00\x18\x00\x05\x01\x01\x07\x00\xDD\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x23\x00\x18\x00\x05\x01\x01\x07\x00\xF5\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (ILjouvieje/bass/callbacks/K;Ljouvieje/bass/utils/m;)Z
+.method public static method1503 : (ILjouvieje/bass/callbacks/K;Ljouvieje/bass/utils/m;)Z
     .code stack 4 locals 3
 L0:     bipush 6
 L2:     iconst_1
@@ -1942,7 +1942,7 @@ L4:     pop2
 L5:     aload_1
 L6:     iload_0
 L7:     i2l
-L8:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L8:     invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L11:    iload_0
 L12:    aload_1
 L13:    ifnonnull L25
@@ -1958,18 +1958,18 @@ L26:    dup
 L27:    dup
 L28:    pop2
 L29:    aload_2
-L30:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L30:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L33:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Encode_SetNotify (IZJ)Z
 L36:    ireturn
 L37:    
-        .attribute StackMap b'\x00\x03\x00\x18\x00\x00\x00\x01\x07\x00\x22\x00\x19\x00\x03\x01\x07\x02\x38\x07\x00\x04\x00\x01\x01\x00\x1E\x00\x03\x01\x07\x02\x38\x07\x00\x04\x00\x03\x01\x01\x07\x00\x04'
+        .attribute StackMap b'\x00\x03\x00\x18\x00\x00\x00\x01\x07\x00\x23\x00\x19\x00\x03\x01\x07\x02\x96\x07\x00\x04\x00\x01\x01\x00\x1E\x00\x03\x01\x07\x02\x96\x07\x00\x04\x00\x03\x01\x01\x07\x00\x04'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/A;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)Z
+.method public static method1504 : (Ljouvieje/bass/structures/A;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)Z
     .code stack 12 locals 11
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
 L5:     ifnonnull L14
 L8:     aconst_null
@@ -2033,11 +2033,11 @@ L128:   iload 10
 L130:   invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Encode_CastInit (J[B[B[B[B[B[B[B[BIZ)Z
 L133:   ireturn
 L134:   
-        .attribute StackMap b'\x00\x12\x00\x0D\x00\x00\x00\x01\x07\x00\x22\x00\x0E\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x01\x04\x00\x13\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x03\x04\x07\x00\x4E\x07\x00\x46\x00\x1B\x00\x00\x00\x01\x07\x00\x22\x00\x1C\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x02\x04\x07\x00\x4E\x00\x21\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x04\x04\x07\x00\x4E\x07\x00\x4E\x07\x00\x46\x00\x2A\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x03\x04\x07\x00\x4E\x07\x00\x4E\x00\x30\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x05\x04\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x46\x00\x39\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x04\x04\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x00\x40\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x06\x04\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x46\x00\x49\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x05\x04\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x00\x50\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x07\x04\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x46\x00\x59\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x06\x04\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x00\x60\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x08\x04\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x46\x00\x69\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x07\x04\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x00\x70\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x09\x04\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x46\x00\x79\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x08\x04\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x00\x80\x00\x0B\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x07\x00\x46\x01\x01\x00\x0A\x04\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x07\x00\x4E\x01'
+        .attribute StackMap b'\x00\x12\x00\x0D\x00\x00\x00\x01\x07\x00\x23\x00\x0E\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x01\x04\x00\x13\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x03\x04\x07\x00\x55\x07\x00\x4D\x00\x1B\x00\x00\x00\x01\x07\x00\x23\x00\x1C\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x02\x04\x07\x00\x55\x00\x21\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x04\x04\x07\x00\x55\x07\x00\x55\x07\x00\x4D\x00\x2A\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x03\x04\x07\x00\x55\x07\x00\x55\x00\x30\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x05\x04\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x4D\x00\x39\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x04\x04\x07\x00\x55\x07\x00\x55\x07\x00\x55\x00\x40\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x06\x04\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x4D\x00\x49\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x05\x04\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x00\x50\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x07\x04\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x4D\x00\x59\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x06\x04\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x00\x60\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x08\x04\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x4D\x00\x69\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x07\x04\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x00\x70\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x09\x04\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x4D\x00\x79\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x08\x04\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x00\x80\x00\x0B\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x07\x00\x4D\x01\x01\x00\x0A\x04\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x07\x00\x55\x01'
     .end code
 .end method
 
-.method public static for : ()I
+.method public static method1191 : ()I
     .code stack 1 locals 0
 L0:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FX_GetVersion ()I
 L3:     ireturn
@@ -2045,7 +2045,7 @@ L4:
     .end code
 .end method
 
-.method public static break : (ILjava/nio/IntBuffer;Ljava/nio/FloatBuffer;Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;Ljava/nio/FloatBuffer;)Z
+.method public static method1505 : (ILjava/nio/IntBuffer;Ljava/nio/FloatBuffer;Ljava/nio/FloatBuffer;Ljava/nio/IntBuffer;Ljava/nio/IntBuffer;Ljava/nio/FloatBuffer;)Z
     .code stack 19 locals 7
 L0:     aload_1
 L1:     ifnull L19
@@ -2104,36 +2104,36 @@ L119:   athrow
 L120:   iload_0
 L121:   aload_1
 L122:   dup
-L123:   invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L123:   invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L126:   i2l
 L127:   aload_2
 L128:   dup
-L129:   invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L129:   invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L132:   i2l
 L133:   aload_3
 L134:   dup
-L135:   invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L135:   invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L138:   i2l
 L139:   aload 4
 L141:   dup
-L142:   invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L142:   invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L145:   i2l
 L146:   aload 5
 L148:   dup
-L149:   invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L149:   invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L152:   i2l
 L153:   aload 6
 L155:   dup
-L156:   invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L156:   invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L159:   i2l
 L160:   invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelGet3DAttributes (ILjava/nio/IntBuffer;JLjava/nio/FloatBuffer;JLjava/nio/FloatBuffer;JLjava/nio/IntBuffer;JLjava/nio/IntBuffer;JLjava/nio/FloatBuffer;J)Z
 L163:   ireturn
 L164:   
-        .attribute StackMap b'\x00\x06\x00\x13\x00\x07\x01\x07\x01\x24\x07\x02\x1D\x07\x02\x1D\x07\x01\x24\x07\x01\x24\x07\x02\x1D\x00\x00\x00\x26\x00\x07\x01\x07\x01\x24\x07\x02\x1D\x07\x02\x1D\x07\x01\x24\x07\x01\x24\x07\x02\x1D\x00\x00\x00\x39\x00\x07\x01\x07\x01\x24\x07\x02\x1D\x07\x02\x1D\x07\x01\x24\x07\x01\x24\x07\x02\x1D\x00\x00\x00\x4E\x00\x07\x01\x07\x01\x24\x07\x02\x1D\x07\x02\x1D\x07\x01\x24\x07\x01\x24\x07\x02\x1D\x00\x00\x00\x63\x00\x07\x01\x07\x01\x24\x07\x02\x1D\x07\x02\x1D\x07\x01\x24\x07\x01\x24\x07\x02\x1D\x00\x00\x00\x78\x00\x07\x01\x07\x01\x24\x07\x02\x1D\x07\x02\x1D\x07\x01\x24\x07\x01\x24\x07\x02\x1D\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x13\x00\x07\x01\x07\x01\x49\x07\x02\x75\x07\x02\x75\x07\x01\x49\x07\x01\x49\x07\x02\x75\x00\x00\x00\x26\x00\x07\x01\x07\x01\x49\x07\x02\x75\x07\x02\x75\x07\x01\x49\x07\x01\x49\x07\x02\x75\x00\x00\x00\x39\x00\x07\x01\x07\x01\x49\x07\x02\x75\x07\x02\x75\x07\x01\x49\x07\x01\x49\x07\x02\x75\x00\x00\x00\x4E\x00\x07\x01\x07\x01\x49\x07\x02\x75\x07\x02\x75\x07\x01\x49\x07\x01\x49\x07\x02\x75\x00\x00\x00\x63\x00\x07\x01\x07\x01\x49\x07\x02\x75\x07\x02\x75\x07\x01\x49\x07\x01\x49\x07\x02\x75\x00\x00\x00\x78\x00\x07\x01\x07\x01\x49\x07\x02\x75\x07\x02\x75\x07\x01\x49\x07\x01\x49\x07\x02\x75\x00\x00'
     .end code
 .end method
 
-.method public static short : (II)Z
+.method public static method1506 : (II)Z
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
@@ -2143,7 +2143,7 @@ L6:
     .end code
 .end method
 
-.method public static if : (I)Ljouvieje/bass/utils/m;
+.method public static method1507 : (I)Ljouvieje/bass/utils/m;
     .code stack 4 locals 3
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_GetConfigPtr (I)J
@@ -2156,17 +2156,17 @@ L11:    aconst_null
 L12:    areturn
 L13:    athrow
 L14:    lload_1
-L15:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
+L15:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
 L18:    areturn
 L19:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x22\x00\x0E\x00\x02\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x23\x00\x0E\x00\x02\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/c;II)Ljava/lang/String;
+.method public static method1508 : (Ljouvieje/bass/structures/c;II)Ljava/lang/String;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     iload_1
 L5:     iload_2
 L6:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_FontGetPreset (JII)Ljava/lang/String;
@@ -2175,7 +2175,7 @@ L10:
     .end code
 .end method
 
-.method public static catch : ()I
+.method public static method1192 : ()I
     .code stack 1 locals 0
 L0:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ErrorGetCode ()I
 L3:     ireturn
@@ -2183,10 +2183,10 @@ L4:
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/G;IIJJ)Z
+.method public static method1509 : (Ljouvieje/bass/structures/G;IIJJ)Z
     .code stack 8 locals 7
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     iload_1
 L5:     iload_2
 L6:     lload_3
@@ -2197,17 +2197,17 @@ L13:
     .end code
 .end method
 
-.method public static const : (Ljouvieje/bass/structures/c;)F
+.method public static method1510 : (Ljouvieje/bass/structures/c;)F
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_FontGetVolume (J)F
 L7:     freturn
 L8:     
     .end code
 .end method
 
-.method public static break : (IILjava/nio/IntBuffer;)Ljouvieje/bass/structures/G;
+.method public static method1511 : (IILjava/nio/IntBuffer;)Ljouvieje/bass/structures/G;
     .code stack 5 locals 5
 L0:     aload_2
 L1:     ifnull L19
@@ -2222,7 +2222,7 @@ L19:    iload_0
 L20:    iload_1
 L21:    aload_2
 L22:    dup
-L23:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L23:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L26:    i2l
 L27:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Split_StreamCreate (IILjava/nio/IntBuffer;J)J
 L30:    dup2
@@ -2234,18 +2234,18 @@ L37:    aconst_null
 L38:    areturn
 L39:    athrow
 L40:    lload_3
-L41:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L44:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L41:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L44:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L47:    areturn
 L48:    
-        .attribute StackMap b'\x00\x03\x00\x13\x00\x03\x01\x01\x07\x01\x24\x00\x00\x00\x27\x00\x00\x00\x01\x07\x00\x22\x00\x28\x00\x04\x01\x01\x07\x01\x24\x04\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x13\x00\x03\x01\x01\x07\x01\x49\x00\x00\x00\x27\x00\x00\x00\x01\x07\x00\x23\x00\x28\x00\x04\x01\x01\x07\x01\x49\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/A;Ljava/lang/String;Ljava/lang/String;)Z
+.method public static method1512 : (Ljouvieje/bass/structures/A;Ljava/lang/String;Ljava/lang/String;)Z
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
 L5:     ifnonnull L14
 L8:     aconst_null
@@ -2264,11 +2264,11 @@ L28:    invokevirtual Method java/lang/String getBytes ()[B
 L31:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Encode_CastSetTitle (J[B[B)Z
 L34:    ireturn
 L35:    
-        .attribute StackMap b'\x00\x06\x00\x0D\x00\x00\x00\x01\x07\x00\x22\x00\x0E\x00\x03\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x00\x01\x04\x00\x13\x00\x03\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x00\x03\x04\x07\x00\x4E\x07\x00\x46\x00\x1A\x00\x00\x00\x01\x07\x00\x22\x00\x1B\x00\x03\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x00\x02\x04\x07\x00\x4E\x00\x1F\x00\x03\x07\x01\x9E\x07\x00\x46\x07\x00\x46\x00\x03\x04\x07\x00\x4E\x07\x00\x4E'
+        .attribute StackMap b'\x00\x06\x00\x0D\x00\x00\x00\x01\x07\x00\x23\x00\x0E\x00\x03\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x00\x01\x04\x00\x13\x00\x03\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x00\x03\x04\x07\x00\x55\x07\x00\x4D\x00\x1A\x00\x00\x00\x01\x07\x00\x23\x00\x1B\x00\x03\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x00\x02\x04\x07\x00\x55\x00\x1F\x00\x03\x07\x01\xD8\x07\x00\x4D\x07\x00\x4D\x00\x03\x04\x07\x00\x55\x07\x00\x55'
     .end code
 .end method
 
-.method public static char : (I)Z
+.method public static method1513 : (I)Z
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FX_BPM_BeatFree (I)Z
@@ -2277,14 +2277,14 @@ L5:
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/c;Ljouvieje/bass/utils/m;Ljouvieje/bass/utils/m;I)Z
+.method public static method1514 : (Ljouvieje/bass/structures/c;Ljouvieje/bass/utils/m;Ljouvieje/bass/utils/m;I)Z
     .code stack 7 locals 4
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
-L5:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L5:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L8:     aload_2
-L9:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L9:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L12:    iload_3
 L13:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_FontPack (JJJI)Z
 L16:    ireturn
@@ -2292,11 +2292,11 @@ L17:
     .end code
 .end method
 
-.method public static break : (ILjouvieje/bass/structures/L;)Z
+.method public static method1515 : (ILjouvieje/bass/structures/L;)Z
     .code stack 4 locals 5
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelRemoveDSP (IJ)Z
 L8:     istore_2
 L9:     aload_1
@@ -2310,25 +2310,25 @@ L20:    lcmp
 L21:    ifeq L29
 L24:    lconst_0
 L25:    lload_3
-L26:    invokestatic Method jouvieje/bass/callbacks/a break (JJ)V
+L26:    invokestatic Method jouvieje/bass/callbacks/a method1627 (JJ)V
 L29:    iload_2
 L30:    ireturn
 L31:    
-        .attribute StackMap b'\x00\x01\x00\x1D\x00\x03\x01\x07\x02\x78\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x1D\x00\x03\x01\x07\x02\xE4\x01\x00\x00'
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/structures/E;)Z
+.method public static method1516 : (Ljouvieje/bass/structures/E;)Z
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_SampleStop (J)Z
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static break : (IJI)Z
+.method public static method1517 : (IJI)Z
     .code stack 4 locals 4
 L0:     iload_0
 L1:     lload_1
@@ -2348,7 +2348,7 @@ L5:
     .end code
 .end method
 
-.method public static const : (II)Ljouvieje/bass/utils/m;
+.method public static method1518 : (II)Ljouvieje/bass/utils/m;
     .code stack 4 locals 4
 L0:     iload_0
 L1:     iload_1
@@ -2362,14 +2362,14 @@ L12:    aconst_null
 L13:    areturn
 L14:    athrow
 L15:    lload_2
-L16:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
+L16:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
 L19:    areturn
 L20:    
-        .attribute StackMap b'\x00\x02\x00\x0E\x00\x00\x00\x01\x07\x00\x22\x00\x0F\x00\x03\x01\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0E\x00\x00\x00\x01\x07\x00\x23\x00\x0F\x00\x03\x01\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/structures/E;Ljava/nio/IntBuffer;)Z
+.method public static method1519 : (Ljouvieje/bass/structures/E;Ljava/nio/IntBuffer;)Z
     .code stack 5 locals 2
 L0:     aload_1
 L1:     ifnull L19
@@ -2381,35 +2381,35 @@ L14:    dup
 L15:    invokespecial Method XG <init> ()V
 L18:    athrow
 L19:    aload_0
-L20:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L20:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L23:    aload_1
 L24:    dup
-L25:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L25:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L28:    i2l
 L29:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_SampleGetInfo (JLjava/nio/IntBuffer;J)Z
 L32:    ireturn
 L33:    
-        .attribute StackMap b'\x00\x01\x00\x13\x00\x02\x07\x00\x5F\x07\x01\x24\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x13\x00\x02\x07\x00\x67\x07\x01\x49\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/E;Ljouvieje/bass/utils/m;)Z
+.method public static method1520 : (Ljouvieje/bass/structures/E;Ljouvieje/bass/utils/m;)Z
     .code stack 4 locals 2
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
-L5:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L5:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L8:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_SampleGetData (JJ)Z
 L11:    ireturn
 L12:    
     .end code
 .end method
 
-.method public static break : (ILjouvieje/bass/utils/m;I)Z
+.method public static method1521 : (ILjouvieje/bass/utils/m;I)Z
     .code stack 4 locals 3
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     iload_2
 L6:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Encode_Write (IJI)Z
 L9:     ireturn
@@ -2417,11 +2417,11 @@ L10:
     .end code
 .end method
 
-.method public static short : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
+.method public static method1522 : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
     .code stack 8 locals 7
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     lload_2
 L6:     lload 4
 L8:     iload 6
@@ -2435,15 +2435,15 @@ L20:    aconst_null
 L21:    areturn
 L22:    athrow
 L23:    lload_2
-L24:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L27:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L24:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L27:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L30:    areturn
 L31:    
-        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x22\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x23\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (IDDILjouvieje/bass/callbacks/b;Ljouvieje/bass/utils/m;)Z
+.method public static method1523 : (IDDILjouvieje/bass/callbacks/b;Ljouvieje/bass/utils/m;)Z
     .code stack 9 locals 8
 L0:     iconst_0
 L1:     iconst_1
@@ -2452,7 +2452,7 @@ L3:     pop2
 L4:     aload 6
 L6:     iload_0
 L7:     i2l
-L8:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L8:     invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L11:    iload_0
 L12:    dload_1
 L13:    dload_3
@@ -2471,19 +2471,19 @@ L32:    dup
 L33:    dup
 L34:    pop2
 L35:    aload 7
-L37:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L37:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L40:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FX_BPM_BeatDecodeGet (IDDIZJ)Z
 L43:    ireturn
 L44:    
-        .attribute StackMap b'\x00\x03\x00\x1E\x00\x00\x00\x01\x07\x00\x22\x00\x1F\x00\x06\x01\x03\x03\x01\x07\x01\x60\x07\x00\x04\x00\x04\x01\x03\x03\x01\x00\x25\x00\x06\x01\x03\x03\x01\x07\x01\x60\x07\x00\x04\x00\x06\x01\x03\x03\x01\x01\x07\x00\x04'
+        .attribute StackMap b'\x00\x03\x00\x1E\x00\x00\x00\x01\x07\x00\x23\x00\x1F\x00\x06\x01\x03\x03\x01\x07\x01\x8F\x07\x00\x04\x00\x04\x01\x03\x03\x01\x00\x25\x00\x06\x01\x03\x03\x01\x07\x01\x8F\x07\x00\x04\x00\x06\x01\x03\x03\x01\x01\x07\x00\x04'
     .end code
 .end method
 
-.method public static const : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
+.method public static method1524 : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
     .code stack 8 locals 7
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     lload_2
 L6:     lload 4
 L8:     iload 6
@@ -2497,11 +2497,11 @@ L20:    aconst_null
 L21:    areturn
 L22:    athrow
 L23:    lload_2
-L24:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L27:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L24:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L27:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L30:    areturn
 L31:    
-        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x22\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x23\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
     .end code
 .end method
 
@@ -2514,7 +2514,7 @@ L5:
     .end code
 .end method
 
-.method public static break : (IILjava/nio/FloatBuffer;)Z
+.method public static method1525 : (IILjava/nio/FloatBuffer;)Z
     .code stack 5 locals 3
 L0:     aload_2
 L1:     ifnull L19
@@ -2529,19 +2529,19 @@ L19:    iload_0
 L20:    iload_1
 L21:    aload_2
 L22:    dup
-L23:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L23:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L26:    i2l
 L27:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelGetAttribute (IILjava/nio/FloatBuffer;J)Z
 L30:    ireturn
 L31:    
-        .attribute StackMap b'\x00\x01\x00\x13\x00\x03\x01\x01\x07\x02\x1D\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x13\x00\x03\x01\x01\x07\x02\x75\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/A;Ljava/lang/String;IIILjouvieje/bass/callbacks/G;Ljouvieje/bass/utils/m;)I
+.method public static method1526 : (Ljouvieje/bass/structures/A;Ljava/lang/String;IIILjouvieje/bass/callbacks/G;Ljouvieje/bass/utils/m;)I
     .code stack 9 locals 7
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
 L5:     ifnonnull L14
 L8:     aconst_null
@@ -2567,18 +2567,18 @@ L38:    dup
 L39:    dup
 L40:    pop2
 L41:    aload 6
-L43:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L43:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L46:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Encode_ServerInit (J[BIIIZJ)I
 L49:    ireturn
 L50:    
-        .attribute StackMap b'\x00\x06\x00\x0D\x00\x00\x00\x01\x07\x00\x22\x00\x0E\x00\x07\x07\x01\x9E\x07\x00\x46\x01\x01\x01\x07\x02\xAC\x07\x00\x04\x00\x01\x04\x00\x13\x00\x07\x07\x01\x9E\x07\x00\x46\x01\x01\x01\x07\x02\xAC\x07\x00\x04\x00\x03\x04\x07\x00\x4E\x01\x00\x24\x00\x00\x00\x01\x07\x00\x22\x00\x25\x00\x07\x07\x01\x9E\x07\x00\x46\x01\x01\x01\x07\x02\xAC\x07\x00\x04\x00\x05\x04\x07\x00\x4E\x01\x01\x01\x00\x2B\x00\x07\x07\x01\x9E\x07\x00\x46\x01\x01\x01\x07\x02\xAC\x07\x00\x04\x00\x07\x04\x07\x00\x4E\x01\x01\x01\x01\x07\x00\x04'
+        .attribute StackMap b'\x00\x06\x00\x0D\x00\x00\x00\x01\x07\x00\x23\x00\x0E\x00\x07\x07\x01\xD8\x07\x00\x4D\x01\x01\x01\x07\x03\x23\x07\x00\x04\x00\x01\x04\x00\x13\x00\x07\x07\x01\xD8\x07\x00\x4D\x01\x01\x01\x07\x03\x23\x07\x00\x04\x00\x03\x04\x07\x00\x55\x01\x00\x24\x00\x00\x00\x01\x07\x00\x23\x00\x25\x00\x07\x07\x01\xD8\x07\x00\x4D\x01\x01\x01\x07\x03\x23\x07\x00\x04\x00\x05\x04\x07\x00\x55\x01\x01\x01\x00\x2B\x00\x07\x07\x01\xD8\x07\x00\x4D\x01\x01\x01\x07\x03\x23\x07\x00\x04\x00\x07\x04\x07\x00\x55\x01\x01\x01\x01\x07\x00\x04'
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/structures/G;I)Ljouvieje/bass/structures/G;
+.method public static method1527 : (Ljouvieje/bass/structures/G;I)Ljouvieje/bass/structures/G;
     .code stack 4 locals 4
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     iload_1
 L5:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_StreamGetChannel (JI)J
 L8:     dup2
@@ -2590,40 +2590,40 @@ L15:    aconst_null
 L16:    areturn
 L17:    athrow
 L18:    lload_2
-L19:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L22:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L19:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L22:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L25:    areturn
 L26:    
-        .attribute StackMap b'\x00\x02\x00\x11\x00\x00\x00\x01\x07\x00\x22\x00\x12\x00\x03\x07\x00\x27\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x11\x00\x00\x00\x01\x07\x00\x23\x00\x12\x00\x03\x07\x00\x29\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (ILjouvieje/bass/structures/T;)Z
+.method public static method1528 : (ILjouvieje/bass/structures/T;)Z
     .code stack 3 locals 2
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_GetDeviceInfo (IJ)Z
 L8:     ireturn
 L9:     
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/structures/c;)Z
+.method public static method1529 : (Ljouvieje/bass/structures/c;)Z
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_FontFree (J)Z
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static else : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
+.method public static method1530 : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
     .code stack 8 locals 7
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     lload_2
 L6:     lload 4
 L8:     iload 6
@@ -2637,15 +2637,15 @@ L20:    aconst_null
 L21:    areturn
 L22:    athrow
 L23:    lload_2
-L24:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L27:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L24:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L27:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L30:    areturn
 L31:    
-        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x22\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x23\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
     .end code
 .end method
 
-.method public static const : (ILjava/nio/FloatBuffer;)Z
+.method public static method1531 : (ILjava/nio/FloatBuffer;)Z
     .code stack 4 locals 2
 L0:     aload_1
 L1:     ifnull L19
@@ -2659,12 +2659,12 @@ L18:    athrow
 L19:    iload_0
 L20:    aload_1
 L21:    dup
-L22:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L22:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L25:    i2l
 L26:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Mixer_ChannelGetMatrix (ILjava/nio/FloatBuffer;J)Z
 L29:    ireturn
 L30:    
-        .attribute StackMap b'\x00\x01\x00\x13\x00\x02\x01\x07\x02\x1D\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x13\x00\x02\x01\x07\x02\x75\x00\x00'
     .end code
 .end method
 
@@ -2677,7 +2677,7 @@ L5:
     .end code
 .end method
 
-.method public static goto : (I)I
+.method public static method1532 : (I)I
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_GetConfig (I)I
@@ -2686,7 +2686,7 @@ L5:
     .end code
 .end method
 
-.method public static break : (ZLjava/lang/String;JJI)Ljouvieje/bass/structures/G;
+.method public static method1533 : (ZLjava/lang/String;JJI)Ljouvieje/bass/structures/G;
     .code stack 7 locals 7
 L0:     iload_0
 L1:     aload_1
@@ -2710,36 +2710,36 @@ L30:    aconst_null
 L31:    areturn
 L32:    athrow
 L33:    lload_2
-L34:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L37:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L34:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L37:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L40:    areturn
 L41:    
-        .attribute StackMap b'\x00\x05\x00\x0A\x00\x00\x00\x01\x07\x00\x22\x00\x0B\x00\x05\x01\x07\x00\x46\x04\x04\x01\x00\x01\x01\x00\x10\x00\x05\x01\x07\x00\x46\x04\x04\x01\x00\x03\x01\x07\x00\x4E\x04\x00\x20\x00\x00\x00\x01\x07\x00\x22\x00\x21\x00\x05\x01\x07\x00\x46\x04\x04\x01\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x0A\x00\x00\x00\x01\x07\x00\x23\x00\x0B\x00\x05\x01\x07\x00\x4D\x04\x04\x01\x00\x01\x01\x00\x10\x00\x05\x01\x07\x00\x4D\x04\x04\x01\x00\x03\x01\x07\x00\x55\x04\x00\x20\x00\x00\x00\x01\x07\x00\x23\x00\x21\x00\x05\x01\x07\x00\x4D\x04\x04\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (ILjouvieje/bass/structures/a;)Z
+.method public static method1534 : (ILjouvieje/bass/structures/a;)Z
     .code stack 3 locals 2
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelRemoveFX (IJ)Z
 L8:     ireturn
 L9:     
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/c;)Z
+.method public static method1535 : (Ljouvieje/bass/structures/c;)Z
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_FontCompact (J)Z
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static else : (IIF)Z
+.method public static method1536 : (IIF)Z
     .code stack 3 locals 3
 L0:     iload_0
 L1:     iload_1
@@ -2750,14 +2750,14 @@ L7:
     .end code
 .end method
 
-.method public static short : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1537 : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 6
 L0:     iload_0
 L1:     iload_1
 L2:     aload_2
-L3:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L3:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L6:     aload_3
-L7:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L7:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L10:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MPC_StreamCreateFileUser (IIJJ)J
 L13:    dup2
 L14:    lstore 4
@@ -2768,40 +2768,40 @@ L21:    aconst_null
 L22:    areturn
 L23:    athrow
 L24:    lload 4
-L26:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L29:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L26:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L29:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L32:    areturn
 L33:    
-        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x22\x00\x18\x00\x05\x01\x01\x07\x00\xDD\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x23\x00\x18\x00\x05\x01\x01\x07\x00\xF5\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (ILjouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;)Z
+.method public static method1538 : (ILjouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;Ljouvieje/bass/structures/gA;)Z
     .code stack 7 locals 4
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     aload_2
-L6:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L6:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L9:     aload_3
-L10:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L10:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L13:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelSet3DPosition (IJJJ)Z
 L16:    ireturn
 L17:    
     .end code
 .end method
 
-.method public static const : (Ljouvieje/bass/structures/G;)I
+.method public static method1539 : (Ljouvieje/bass/structures/G;)I
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Split_StreamGetSource (J)I
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static do : (I)Z
+.method public static method1540 : (I)Z
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_InFree (I)Z
@@ -2810,14 +2810,14 @@ L5:
     .end code
 .end method
 
-.method public static else : (IIJLjouvieje/bass/callbacks/i;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/K;
+.method public static method1541 : (IIJLjouvieje/bass/callbacks/i;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/K;
     .code stack 7 locals 6
 L0:     bipush 16
 L2:     iconst_1
 L3:     dup
 L4:     pop2
 L5:     aload 4
-L7:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;)V
+L7:     invokestatic Method jouvieje/bass/callbacks/a method1632 (ILjava/lang/Object;)V
 L10:    iload_0
 L11:    iload_1
 L12:    lload_2
@@ -2835,7 +2835,7 @@ L29:    dup
 L30:    dup
 L31:    pop2
 L32:    aload 5
-L34:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L34:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L37:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelSetSync (IIJZJ)J
 L40:    lstore_2
 L41:    bipush 16
@@ -2844,7 +2844,7 @@ L44:    dup
 L45:    pop2
 L46:    aload 4
 L48:    lload_2
-L49:    invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L49:    invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L52:    aload 4
 L54:    ifnonnull L63
 L57:    lconst_0
@@ -2853,7 +2853,7 @@ L59:    goto L65
 L62:    athrow
 L63:    lload_2
 L64:    dup2
-L65:    invokestatic Method jouvieje/bass/callbacks/a break (JJ)V
+L65:    invokestatic Method jouvieje/bass/callbacks/a method1627 (JJ)V
 L68:    lload_2
 L69:    lconst_0
 L70:    lcmp
@@ -2861,25 +2861,25 @@ L71:    ifne L76
 L74:    aconst_null
 L75:    areturn
 L76:    lload_2
-L77:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L80:    invokestatic Method jouvieje/bass/structures/K else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/K;
+L77:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L80:    invokestatic Method jouvieje/bass/structures/K method1606 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/K;
 L83:    areturn
 L84:    
-        .attribute StackMap b'\x00\x07\x00\x1B\x00\x00\x00\x01\x07\x00\x22\x00\x1C\x00\x05\x01\x01\x04\x07\x02\xE9\x07\x00\x04\x00\x03\x01\x01\x04\x00\x22\x00\x05\x01\x01\x04\x07\x02\xE9\x07\x00\x04\x00\x05\x01\x01\x04\x01\x07\x00\x04\x00\x3E\x00\x00\x00\x01\x07\x00\x22\x00\x3F\x00\x05\x01\x01\x04\x07\x02\xE9\x07\x00\x04\x00\x00\x00\x41\x00\x05\x01\x01\x04\x07\x02\xE9\x07\x00\x04\x00\x02\x04\x04\x00\x4C\x00\x05\x01\x01\x04\x07\x02\xE9\x07\x00\x04\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x1B\x00\x00\x00\x01\x07\x00\x23\x00\x1C\x00\x05\x01\x01\x04\x07\x03\x6F\x07\x00\x04\x00\x03\x01\x01\x04\x00\x22\x00\x05\x01\x01\x04\x07\x03\x6F\x07\x00\x04\x00\x05\x01\x01\x04\x01\x07\x00\x04\x00\x3E\x00\x00\x00\x01\x07\x00\x23\x00\x3F\x00\x05\x01\x01\x04\x07\x03\x6F\x07\x00\x04\x00\x00\x00\x41\x00\x05\x01\x01\x04\x07\x03\x6F\x07\x00\x04\x00\x02\x04\x04\x00\x4C\x00\x05\x01\x01\x04\x07\x03\x6F\x07\x00\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/l;)Z
+.method public static method1542 : (Ljouvieje/bass/structures/l;)Z
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_RecordGetInfo (J)Z
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static break : (Ljava/lang/String;IILjouvieje/bass/callbacks/E;Ljouvieje/bass/utils/m;I)Ljouvieje/bass/structures/G;
+.method public static method1543 : (Ljava/lang/String;IILjouvieje/bass/callbacks/E;Ljouvieje/bass/utils/m;I)Ljouvieje/bass/structures/G;
     .code stack 7 locals 8
 L0:     iconst_3
 L1:     iconst_1
@@ -2887,7 +2887,7 @@ L2:     dup
 L3:     pop2
 L4:     aload_3
 L5:     lconst_0
-L6:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L6:     invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L9:     aload_0
 L10:    ifnonnull L19
 L13:    aconst_null
@@ -2912,7 +2912,7 @@ L40:    dup
 L41:    dup
 L42:    pop2
 L43:    aload 4
-L45:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L45:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L48:    iload 5
 L50:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_StreamCreateURL ([BIIZJI)J
 L53:    dup2
@@ -2923,15 +2923,15 @@ L58:    ifne L63
 L61:    aconst_null
 L62:    areturn
 L63:    lload 6
-L65:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L68:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L65:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L68:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L71:    areturn
 L72:    
-        .attribute StackMap b'\x00\x07\x00\x12\x00\x00\x00\x01\x07\x00\x22\x00\x13\x00\x06\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x01\x00\x00\x00\x18\x00\x06\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x01\x00\x02\x07\x00\x4E\x01\x00\x26\x00\x00\x00\x01\x07\x00\x22\x00\x27\x00\x06\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x01\x00\x03\x07\x00\x4E\x01\x01\x00\x2D\x00\x06\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x01\x00\x05\x07\x00\x4E\x01\x01\x01\x07\x00\x04\x00\x3F\x00\x07\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x12\x00\x00\x00\x01\x07\x00\x23\x00\x13\x00\x06\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x01\x00\x00\x00\x18\x00\x06\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x01\x00\x02\x07\x00\x55\x01\x00\x26\x00\x00\x00\x01\x07\x00\x23\x00\x27\x00\x06\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x01\x00\x03\x07\x00\x55\x01\x01\x00\x2D\x00\x06\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x01\x00\x05\x07\x00\x55\x01\x01\x01\x07\x00\x04\x00\x3F\x00\x07\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (ILjouvieje/bass/callbacks/f;DIILjouvieje/bass/utils/m;)Z
+.method public static method1544 : (ILjouvieje/bass/callbacks/f;DIILjouvieje/bass/utils/m;)Z
     .code stack 8 locals 7
 L0:     iconst_1
 L1:     dup
@@ -2940,7 +2940,7 @@ L3:     pop2
 L4:     aload_1
 L5:     iload_0
 L6:     i2l
-L7:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L7:     invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L10:    iload_0
 L11:    aload_1
 L12:    ifnonnull L24
@@ -2959,15 +2959,15 @@ L28:    dload_2
 L29:    iload 4
 L31:    iload 5
 L33:    aload 6
-L35:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L35:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L38:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FX_BPM_CallbackSet (IZDIIJ)Z
 L41:    ireturn
 L42:    
-        .attribute StackMap b'\x00\x03\x00\x17\x00\x00\x00\x01\x07\x00\x22\x00\x18\x00\x06\x01\x07\x02\xFE\x03\x01\x01\x07\x00\x04\x00\x01\x01\x00\x1D\x00\x06\x01\x07\x02\xFE\x03\x01\x01\x07\x00\x04\x00\x03\x01\x01\x03'
+        .attribute StackMap b'\x00\x03\x00\x17\x00\x00\x00\x01\x07\x00\x23\x00\x18\x00\x06\x01\x07\x03\x88\x03\x01\x01\x07\x00\x04\x00\x01\x01\x00\x1D\x00\x06\x01\x07\x03\x88\x03\x01\x01\x07\x00\x04\x00\x03\x01\x01\x03'
     .end code
 .end method
 
-.method public static for : (I)Z
+.method public static method1545 : (I)Z
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FX_BPM_CallbackReset (I)Z
@@ -2976,7 +2976,7 @@ L5:
     .end code
 .end method
 
-.method public static break : (IIIII)Ljouvieje/bass/structures/E;
+.method public static method1546 : (IIIII)Ljouvieje/bass/structures/E;
     .code stack 5 locals 7
 L0:     iload_0
 L1:     iload_1
@@ -2993,22 +2993,22 @@ L17:    aconst_null
 L18:    areturn
 L19:    athrow
 L20:    lload 5
-L22:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L25:    invokestatic Method jouvieje/bass/structures/E else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/E;
+L22:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L25:    invokestatic Method jouvieje/bass/structures/E method1595 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/E;
 L28:    areturn
 L29:    
-        .attribute StackMap b'\x00\x02\x00\x13\x00\x00\x00\x01\x07\x00\x22\x00\x14\x00\x06\x01\x01\x01\x01\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x13\x00\x00\x00\x01\x07\x00\x23\x00\x14\x00\x06\x01\x01\x01\x01\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static const : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1547 : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 6
 L0:     iload_0
 L1:     iload_1
 L2:     aload_2
-L3:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L3:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L6:     aload_3
-L7:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L7:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L10:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_WV_StreamCreateFileUser (IIJJ)J
 L13:    dup2
 L14:    lstore 4
@@ -3019,15 +3019,15 @@ L21:    aconst_null
 L22:    areturn
 L23:    athrow
 L24:    lload 4
-L26:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L29:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L26:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L29:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L32:    areturn
 L33:    
-        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x22\x00\x18\x00\x05\x01\x01\x07\x00\xDD\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x23\x00\x18\x00\x05\x01\x01\x07\x00\xF5\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static float : ()V
+.method public static method1203 : ()V
     .code stack 0 locals 0
 L0:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Apply3D ()V
 L3:     return
@@ -3035,7 +3035,7 @@ L4:
     .end code
 .end method
 
-.method public static break : (ID)J
+.method public static method1548 : (ID)J
     .code stack 3 locals 3
 L0:     iload_0
 L1:     dload_1
@@ -3045,7 +3045,7 @@ L6:
     .end code
 .end method
 
-.method public static short : ()F
+.method public static method1255 : ()F
     .code stack 1 locals 0
 L0:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_GetCPU ()F
 L3:     freturn
@@ -3053,7 +3053,7 @@ L4:
     .end code
 .end method
 
-.method public static else : (ILjava/nio/FloatBuffer;)I
+.method public static method1549 : (ILjava/nio/FloatBuffer;)I
     .code stack 4 locals 2
 L0:     aload_1
 L1:     ifnull L19
@@ -3067,16 +3067,16 @@ L18:    athrow
 L19:    iload_0
 L20:    aload_1
 L21:    dup
-L22:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L22:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L25:    i2l
 L26:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_RecordGetInput (ILjava/nio/FloatBuffer;J)I
 L29:    ireturn
 L30:    
-        .attribute StackMap b'\x00\x01\x00\x13\x00\x02\x01\x07\x02\x1D\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x13\x00\x02\x01\x07\x02\x75\x00\x00'
     .end code
 .end method
 
-.method public static catch : (I)Z
+.method public static method1550 : (I)Z
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_RecordSetDevice (I)Z
@@ -3085,11 +3085,11 @@ L5:
     .end code
 .end method
 
-.method public static break : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
+.method public static method1551 : (ZLjouvieje/bass/utils/m;JJI)Ljouvieje/bass/structures/G;
     .code stack 8 locals 7
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     lload_2
 L6:     lload 4
 L8:     iload 6
@@ -3103,25 +3103,25 @@ L20:    aconst_null
 L21:    areturn
 L22:    athrow
 L23:    lload_2
-L24:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L27:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L24:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L27:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L30:    areturn
 L31:    
-        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x22\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x23\x00\x17\x00\x05\x01\x07\x00\x04\x04\x04\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/A;)I
+.method public static method1552 : (Ljouvieje/bass/structures/A;)I
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Encode_GetChannel (J)I
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static break : (IFI)F
+.method public static method1553 : (IFI)F
     .code stack 3 locals 3
 L0:     iload_0
 L1:     fload_1
@@ -3132,7 +3132,7 @@ L7:
     .end code
 .end method
 
-.method public static else : (II)Z
+.method public static method1554 : (II)Z
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
@@ -3142,7 +3142,7 @@ L6:
     .end code
 .end method
 
-.method public static float : (I)Z
+.method public static method1555 : (I)Z
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_InStop (I)Z
@@ -3151,7 +3151,7 @@ L5:
     .end code
 .end method
 
-.method public static break : (ZLjava/nio/ByteBuffer;JJI)Ljouvieje/bass/structures/G;
+.method public static method1556 : (ZLjava/nio/ByteBuffer;JJI)Ljouvieje/bass/structures/G;
     .code stack 9 locals 7
 L0:     aload_1
 L1:     ifnull L19
@@ -3165,7 +3165,7 @@ L18:    athrow
 L19:    iload_0
 L20:    aload_1
 L21:    dup
-L22:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L22:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L25:    i2l
 L26:    lload_2
 L27:    lload 4
@@ -3180,18 +3180,18 @@ L41:    aconst_null
 L42:    areturn
 L43:    athrow
 L44:    lload_2
-L45:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L48:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L45:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L48:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L51:    areturn
 L52:    
-        .attribute StackMap b'\x00\x03\x00\x13\x00\x05\x01\x07\x00\x6E\x04\x04\x01\x00\x00\x00\x2B\x00\x00\x00\x01\x07\x00\x22\x00\x2C\x00\x05\x01\x07\x00\x6E\x04\x04\x01\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x13\x00\x05\x01\x07\x00\x79\x04\x04\x01\x00\x00\x00\x2B\x00\x00\x00\x01\x07\x00\x23\x00\x2C\x00\x05\x01\x07\x00\x79\x04\x04\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/A;Ljava/lang/String;)Z
+.method public static method1557 : (Ljouvieje/bass/structures/A;Ljava/lang/String;)Z
     .code stack 3 locals 2
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     aload_1
 L5:     ifnonnull L13
 L8:     aconst_null
@@ -3202,11 +3202,11 @@ L14:    invokevirtual Method java/lang/String getBytes ()[B
 L17:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Encode_ServerKick (J[B)Z
 L20:    ireturn
 L21:    
-        .attribute StackMap b'\x00\x03\x00\x0C\x00\x00\x00\x01\x07\x00\x22\x00\x0D\x00\x02\x07\x01\x9E\x07\x00\x46\x00\x01\x04\x00\x11\x00\x02\x07\x01\x9E\x07\x00\x46\x00\x02\x04\x07\x00\x4E'
+        .attribute StackMap b'\x00\x03\x00\x0C\x00\x00\x00\x01\x07\x00\x23\x00\x0D\x00\x02\x07\x01\xD8\x07\x00\x4D\x00\x01\x04\x00\x11\x00\x02\x07\x01\xD8\x07\x00\x4D\x00\x02\x04\x07\x00\x55'
     .end code
 .end method
 
-.method public static break : (FFF)Z
+.method public static method1558 : (FFF)Z
     .code stack 3 locals 3
 L0:     fload_0
 L1:     fload_1
@@ -3217,7 +3217,7 @@ L7:
     .end code
 .end method
 
-.method public static break : (Ljava/nio/FloatBuffer;Ljava/nio/FloatBuffer;Ljava/nio/FloatBuffer;)Z
+.method public static method1559 : (Ljava/nio/FloatBuffer;Ljava/nio/FloatBuffer;Ljava/nio/FloatBuffer;)Z
     .code stack 9 locals 3
 L0:     aload_0
 L1:     ifnull L19
@@ -3248,24 +3248,24 @@ L53:    invokespecial Method XG <init> ()V
 L56:    athrow
 L57:    aload_0
 L58:    dup
-L59:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L59:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L62:    i2l
 L63:    aload_1
 L64:    dup
-L65:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L65:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L68:    i2l
 L69:    aload_2
 L70:    dup
-L71:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L71:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L74:    i2l
 L75:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Get3DFactors (Ljava/nio/FloatBuffer;JLjava/nio/FloatBuffer;JLjava/nio/FloatBuffer;J)Z
 L78:    ireturn
 L79:    
-        .attribute StackMap b'\x00\x03\x00\x13\x00\x03\x07\x02\x1D\x07\x02\x1D\x07\x02\x1D\x00\x00\x00\x26\x00\x03\x07\x02\x1D\x07\x02\x1D\x07\x02\x1D\x00\x00\x00\x39\x00\x03\x07\x02\x1D\x07\x02\x1D\x07\x02\x1D\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x13\x00\x03\x07\x02\x75\x07\x02\x75\x07\x02\x75\x00\x00\x00\x26\x00\x03\x07\x02\x75\x07\x02\x75\x07\x02\x75\x00\x00\x00\x39\x00\x03\x07\x02\x75\x07\x02\x75\x07\x02\x75\x00\x00'
     .end code
 .end method
 
-.method public static short : (I)Z
+.method public static method1560 : (I)Z
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_InStart (I)Z
@@ -3274,7 +3274,7 @@ L5:
     .end code
 .end method
 
-.method public static const : (I)I
+.method public static method1561 : (I)I
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Split_StreamGetAvailable (I)I
@@ -3283,7 +3283,7 @@ L5:
     .end code
 .end method
 
-.method public static break : (II)Z
+.method public static method1562 : (II)Z
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
@@ -3293,14 +3293,14 @@ L6:
     .end code
 .end method
 
-.method public static else : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1563 : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 6
 L0:     iload_0
 L1:     iload_1
 L2:     aload_2
-L3:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L3:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L6:     aload_3
-L7:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L7:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L10:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_StreamCreateFileUser (IIJJ)J
 L13:    dup2
 L14:    lstore 4
@@ -3311,15 +3311,15 @@ L21:    aconst_null
 L22:    areturn
 L23:    athrow
 L24:    lload 4
-L26:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L29:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L26:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L29:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L32:    areturn
 L33:    
-        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x22\x00\x18\x00\x05\x01\x01\x07\x00\xDD\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x23\x00\x18\x00\x05\x01\x01\x07\x00\xF5\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (ILjava/nio/FloatBuffer;)Z
+.method public static method1564 : (ILjava/nio/FloatBuffer;)Z
     .code stack 4 locals 2
 L0:     aload_1
 L1:     ifnull L19
@@ -3333,16 +3333,16 @@ L18:    athrow
 L19:    iload_0
 L20:    aload_1
 L21:    dup
-L22:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L22:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L25:    i2l
 L26:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Mixer_ChannelSetMatrix (ILjava/nio/FloatBuffer;J)Z
 L29:    ireturn
 L30:    
-        .attribute StackMap b'\x00\x01\x00\x13\x00\x02\x01\x07\x02\x1D\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x13\x00\x02\x01\x07\x02\x75\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/E;Ljava/nio/IntBuffer;)Z
+.method public static method1565 : (Ljouvieje/bass/structures/E;Ljava/nio/IntBuffer;)Z
     .code stack 5 locals 2
 L0:     aload_1
 L1:     ifnull L19
@@ -3354,23 +3354,23 @@ L14:    dup
 L15:    invokespecial Method XG <init> ()V
 L18:    athrow
 L19:    aload_0
-L20:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L20:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L23:    aload_1
 L24:    dup
-L25:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L25:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L28:    i2l
 L29:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_SampleSetInfo (JLjava/nio/IntBuffer;J)Z
 L32:    ireturn
 L33:    
-        .attribute StackMap b'\x00\x01\x00\x13\x00\x02\x07\x00\x5F\x07\x01\x24\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x13\x00\x02\x07\x00\x67\x07\x01\x49\x00\x00'
     .end code
 .end method
 
-.method public static else : (ZLjouvieje/bass/utils/m;JIII)Ljouvieje/bass/structures/E;
+.method public static method1566 : (ZLjouvieje/bass/utils/m;JIII)Ljouvieje/bass/structures/E;
     .code stack 8 locals 7
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     lload_2
 L6:     iload 4
 L8:     iload 5
@@ -3385,18 +3385,18 @@ L22:    aconst_null
 L23:    areturn
 L24:    athrow
 L25:    lload_2
-L26:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L29:    invokestatic Method jouvieje/bass/structures/E else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/E;
+L26:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L29:    invokestatic Method jouvieje/bass/structures/E method1595 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/E;
 L32:    areturn
 L33:    
-        .attribute StackMap b'\x00\x02\x00\x18\x00\x00\x00\x01\x07\x00\x22\x00\x19\x00\x06\x01\x07\x00\x04\x04\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x18\x00\x00\x00\x01\x07\x00\x23\x00\x19\x00\x06\x01\x07\x00\x04\x04\x01\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/G;I)J
+.method public static method1567 : (Ljouvieje/bass/structures/G;I)J
     .code stack 3 locals 2
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     iload_1
 L5:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_StreamGetFilePosition (JI)J
 L8:     lreturn
@@ -3404,22 +3404,22 @@ L9:
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/structures/G;)I
+.method public static method1568 : (Ljouvieje/bass/structures/G;)I
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FX_TempoGetSource (J)I
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static break : (IILjouvieje/bass/structures/H;I)Z
+.method public static method1569 : (IILjouvieje/bass/structures/H;I)Z
     .code stack 5 locals 4
 L0:     iload_0
 L1:     iload_1
 L2:     aload_2
-L3:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L3:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L6:     iload_3
 L7:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Mixer_ChannelSetEnvelope (IIJI)Z
 L10:    ireturn
@@ -3427,10 +3427,10 @@ L11:
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/utils/m;I)Ljouvieje/bass/structures/c;
+.method public static method1570 : (Ljouvieje/bass/utils/m;I)Ljouvieje/bass/structures/c;
     .code stack 4 locals 4
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     iload_1
 L5:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_FontInit (JI)J
 L8:     dup2
@@ -3442,32 +3442,32 @@ L15:    aconst_null
 L16:    areturn
 L17:    athrow
 L18:    lload_2
-L19:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L22:    invokestatic Method jouvieje/bass/structures/c else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/c;
+L19:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L22:    invokestatic Method jouvieje/bass/structures/c method1284 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/c;
 L25:    areturn
 L26:    
-        .attribute StackMap b'\x00\x02\x00\x11\x00\x00\x00\x01\x07\x00\x22\x00\x12\x00\x03\x07\x00\x04\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x11\x00\x00\x00\x01\x07\x00\x23\x00\x12\x00\x03\x07\x00\x04\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/E;)Z
+.method public static method1571 : (Ljouvieje/bass/structures/E;)Z
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_SampleFree (J)Z
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static break : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1572 : (IILjouvieje/bass/structures/w;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 6
 L0:     iload_0
 L1:     iload_1
 L2:     aload_2
-L3:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L3:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L6:     aload_3
-L7:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L7:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L10:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MP4_StreamCreateFileUser (IIJJ)J
 L13:    dup2
 L14:    lstore 4
@@ -3478,15 +3478,15 @@ L21:    aconst_null
 L22:    areturn
 L23:    athrow
 L24:    lload 4
-L26:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L29:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L26:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L29:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L32:    areturn
 L33:    
-        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x22\x00\x18\x00\x05\x01\x01\x07\x00\xDD\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x23\x00\x18\x00\x05\x01\x01\x07\x00\xF5\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static else : (I)Z
+.method public static method1573 : (I)Z
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_SetDevice (I)Z
@@ -3495,7 +3495,7 @@ L5:
     .end code
 .end method
 
-.method public static break : (Ljava/lang/String;IILjouvieje/bass/callbacks/E;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.method public static method1574 : (Ljava/lang/String;IILjouvieje/bass/callbacks/E;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
     .code stack 6 locals 7
 L0:     iconst_3
 L1:     iconst_1
@@ -3503,7 +3503,7 @@ L2:     dup
 L3:     pop2
 L4:     aload_3
 L5:     lconst_0
-L6:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L6:     invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L9:     aload_0
 L10:    ifnonnull L19
 L13:    aconst_null
@@ -3528,7 +3528,7 @@ L40:    dup
 L41:    dup
 L42:    pop2
 L43:    aload 4
-L45:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L45:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L48:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FLAC_StreamCreateURL ([BIIZJ)J
 L51:    dup2
 L52:    lstore 5
@@ -3538,15 +3538,15 @@ L56:    ifne L61
 L59:    aconst_null
 L60:    areturn
 L61:    lload 5
-L63:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L66:    invokestatic Method jouvieje/bass/structures/G else [_40]
+L63:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L66:    invokestatic Method jouvieje/bass/structures/G method1599 [_43]
 L69:    areturn
 L70:    
-        .attribute StackMap b'\x00\x07\x00\x12\x00\x00\x00\x01\x07\x00\x22\x00\x13\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x00\x00\x18\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x02\x07\x00\x4E\x01\x00\x26\x00\x00\x00\x01\x07\x00\x22\x00\x27\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x03\x07\x00\x4E\x01\x01\x00\x2D\x00\x05\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x00\x05\x07\x00\x4E\x01\x01\x01\x07\x00\x04\x00\x3D\x00\x06\x07\x00\x46\x01\x01\x07\x00\x48\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x12\x00\x00\x00\x01\x07\x00\x23\x00\x13\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x00\x00\x18\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x02\x07\x00\x55\x01\x00\x26\x00\x00\x00\x01\x07\x00\x23\x00\x27\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x03\x07\x00\x55\x01\x01\x00\x2D\x00\x05\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x00\x05\x07\x00\x55\x01\x01\x01\x07\x00\x04\x00\x3D\x00\x06\x07\x00\x4D\x01\x01\x07\x00\x4F\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (ILjava/nio/FloatBuffer;Ljava/nio/FloatBuffer;Ljava/nio/FloatBuffer;)Z
+.method public static method1575 : (ILjava/nio/FloatBuffer;Ljava/nio/FloatBuffer;Ljava/nio/FloatBuffer;)Z
     .code stack 10 locals 4
 L0:     aload_1
 L1:     ifnull L19
@@ -3578,31 +3578,31 @@ L56:    athrow
 L57:    iload_0
 L58:    aload_1
 L59:    dup
-L60:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L60:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L63:    i2l
 L64:    aload_2
 L65:    dup
-L66:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L66:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L69:    i2l
 L70:    aload_3
 L71:    dup
-L72:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L72:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L75:    i2l
 L76:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_FX_BPM_BeatGetParameters (ILjava/nio/FloatBuffer;JLjava/nio/FloatBuffer;JLjava/nio/FloatBuffer;J)Z
 L79:    ireturn
 L80:    
-        .attribute StackMap b'\x00\x03\x00\x13\x00\x04\x01\x07\x02\x1D\x07\x02\x1D\x07\x02\x1D\x00\x00\x00\x26\x00\x04\x01\x07\x02\x1D\x07\x02\x1D\x07\x02\x1D\x00\x00\x00\x39\x00\x04\x01\x07\x02\x1D\x07\x02\x1D\x07\x02\x1D\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x13\x00\x04\x01\x07\x02\x75\x07\x02\x75\x07\x02\x75\x00\x00\x00\x26\x00\x04\x01\x07\x02\x75\x07\x02\x75\x07\x02\x75\x00\x00\x00\x39\x00\x04\x01\x07\x02\x75\x07\x02\x75\x07\x02\x75\x00\x00'
     .end code
 .end method
 
-.method public static break : (IIILjouvieje/bass/callbacks/M;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/j;
+.method public static method1576 : (IIILjouvieje/bass/callbacks/M;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/j;
     .code stack 6 locals 7
 L0:     bipush 14
 L2:     iconst_1
 L3:     dup
 L4:     pop2
 L5:     aload_3
-L6:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;)V
+L6:     invokestatic Method jouvieje/bass/callbacks/a method1632 (ILjava/lang/Object;)V
 L9:     iload_0
 L10:    iload_1
 L11:    iload_2
@@ -3620,7 +3620,7 @@ L27:    dup
 L28:    dup
 L29:    pop2
 L30:    aload 4
-L32:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L32:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L35:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_RecordStart (IIIZJ)J
 L38:    lstore 5
 L40:    bipush 14
@@ -3629,7 +3629,7 @@ L43:    dup
 L44:    pop2
 L45:    aload_3
 L46:    lload 5
-L48:    invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L48:    invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L51:    aload_3
 L52:    ifnonnull L62
 L55:    lconst_0
@@ -3638,7 +3638,7 @@ L58:    goto L65
 L61:    athrow
 L62:    lload 5
 L64:    dup2
-L65:    invokestatic Method jouvieje/bass/callbacks/a break (JJ)V
+L65:    invokestatic Method jouvieje/bass/callbacks/a method1627 (JJ)V
 L68:    lload 5
 L70:    lconst_0
 L71:    lcmp
@@ -3646,18 +3646,18 @@ L72:    ifne L77
 L75:    aconst_null
 L76:    areturn
 L77:    lload 5
-L79:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L82:    invokestatic Method jouvieje/bass/structures/j else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/j;
+L79:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L82:    invokestatic Method jouvieje/bass/structures/j method1337 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/j;
 L85:    areturn
 L86:    
-        .attribute StackMap b'\x00\x07\x00\x19\x00\x00\x00\x01\x07\x00\x22\x00\x1A\x00\x05\x01\x01\x01\x07\x03\x81\x07\x00\x04\x00\x03\x01\x01\x01\x00\x20\x00\x05\x01\x01\x01\x07\x03\x81\x07\x00\x04\x00\x05\x01\x01\x01\x01\x07\x00\x04\x00\x3D\x00\x00\x00\x01\x07\x00\x22\x00\x3E\x00\x06\x01\x01\x01\x07\x03\x81\x07\x00\x04\x04\x00\x00\x00\x41\x00\x06\x01\x01\x01\x07\x03\x81\x07\x00\x04\x04\x00\x02\x04\x04\x00\x4D\x00\x06\x01\x01\x01\x07\x03\x81\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x19\x00\x00\x00\x01\x07\x00\x23\x00\x1A\x00\x05\x01\x01\x01\x07\x04\x2E\x07\x00\x04\x00\x03\x01\x01\x01\x00\x20\x00\x05\x01\x01\x01\x07\x04\x2E\x07\x00\x04\x00\x05\x01\x01\x01\x01\x07\x00\x04\x00\x3D\x00\x00\x00\x01\x07\x00\x23\x00\x3E\x00\x06\x01\x01\x01\x07\x04\x2E\x07\x00\x04\x04\x00\x00\x00\x41\x00\x06\x01\x01\x01\x07\x04\x2E\x07\x00\x04\x04\x00\x02\x04\x04\x00\x4D\x00\x06\x01\x01\x01\x07\x04\x2E\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/G;II)I
+.method public static method1577 : (Ljouvieje/bass/structures/G;II)I
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     iload_1
 L5:     iload_2
 L6:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_StreamGetEvent (JII)I
@@ -3666,32 +3666,32 @@ L10:
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/u;)Z
+.method public static method1578 : (Ljouvieje/bass/structures/u;)Z
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_GetInfo (J)Z
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static break : (ILjouvieje/bass/structures/q;)Z
+.method public static method1579 : (ILjouvieje/bass/structures/q;)Z
     .code stack 3 locals 2
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelGetInfo (IJ)Z
 L8:     ireturn
 L9:     
     .end code
 .end method
 
-.method public static break : (ZLjouvieje/bass/utils/m;JIII)Ljouvieje/bass/structures/b;
+.method public static method1580 : (ZLjouvieje/bass/utils/m;JIII)Ljouvieje/bass/structures/b;
     .code stack 8 locals 7
 L0:     iload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L5:     lload_2
 L6:     iload 4
 L8:     iload 5
@@ -3706,25 +3706,25 @@ L22:    aconst_null
 L23:    areturn
 L24:    athrow
 L25:    lload_2
-L26:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L29:    invokestatic Method jouvieje/bass/structures/b else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/b;
+L26:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L29:    invokestatic Method jouvieje/bass/structures/b method1260 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/b;
 L32:    areturn
 L33:    
-        .attribute StackMap b'\x00\x02\x00\x18\x00\x00\x00\x01\x07\x00\x22\x00\x19\x00\x06\x01\x07\x00\x04\x04\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x18\x00\x00\x00\x01\x07\x00\x23\x00\x19\x00\x06\x01\x07\x00\x04\x04\x01\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/G;)Z
+.method public static method1581 : (Ljouvieje/bass/structures/G;)Z
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_StreamFree (J)Z
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static break : (ILjouvieje/bass/callbacks/D;Ljouvieje/bass/utils/m;)Z
+.method public static method1582 : (ILjouvieje/bass/callbacks/D;Ljouvieje/bass/utils/m;)Z
     .code stack 4 locals 3
 L0:     iload_0
 L1:     aload_1
@@ -3741,15 +3741,15 @@ L15:    dup
 L16:    dup
 L17:    pop2
 L18:    aload_2
-L19:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L19:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L22:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_InInit (IZJ)Z
 L25:    ireturn
 L26:    
-        .attribute StackMap b'\x00\x03\x00\x0D\x00\x00\x00\x01\x07\x00\x22\x00\x0E\x00\x03\x01\x07\x03\x9F\x07\x00\x04\x00\x01\x01\x00\x13\x00\x03\x01\x07\x03\x9F\x07\x00\x04\x00\x03\x01\x01\x07\x00\x04'
+        .attribute StackMap b'\x00\x03\x00\x0D\x00\x00\x00\x01\x07\x00\x23\x00\x0E\x00\x03\x01\x07\x04\x53\x07\x00\x04\x00\x01\x01\x00\x13\x00\x03\x01\x07\x04\x53\x07\x00\x04\x00\x03\x01\x01\x07\x00\x04'
     .end code
 .end method
 
-.method public static const : ()Z
+.method public static method1583 : ()Z
     .code stack 1 locals 0
 L0:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Stop ()Z
 L3:     ireturn
@@ -3757,7 +3757,7 @@ L4:
     .end code
 .end method
 
-.method public static else : ()Z
+.method public static method1584 : ()Z
     .code stack 1 locals 0
 L0:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Free ()Z
 L3:     ireturn
@@ -3765,14 +3765,14 @@ L4:
     .end code
 .end method
 
-.method public static break : (IIJLjouvieje/bass/callbacks/i;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/K;
+.method public static method1585 : (IIJLjouvieje/bass/callbacks/i;Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/K;
     .code stack 7 locals 6
 L0:     bipush 16
 L2:     iconst_1
 L3:     dup
 L4:     pop2
 L5:     aload 4
-L7:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;)V
+L7:     invokestatic Method jouvieje/bass/callbacks/a method1632 (ILjava/lang/Object;)V
 L10:    iload_0
 L11:    iload_1
 L12:    lload_2
@@ -3790,7 +3790,7 @@ L29:    dup
 L30:    dup
 L31:    pop2
 L32:    aload 5
-L34:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L34:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L37:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Mixer_ChannelSetSync (IIJZJ)J
 L40:    lstore_2
 L41:    bipush 16
@@ -3799,7 +3799,7 @@ L44:    dup
 L45:    pop2
 L46:    aload 4
 L48:    lload_2
-L49:    invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L49:    invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L52:    aload 4
 L54:    ifnonnull L63
 L57:    lconst_0
@@ -3808,7 +3808,7 @@ L59:    goto L65
 L62:    athrow
 L63:    lload_2
 L64:    dup2
-L65:    invokestatic Method jouvieje/bass/callbacks/a break (JJ)V
+L65:    invokestatic Method jouvieje/bass/callbacks/a method1627 (JJ)V
 L68:    lload_2
 L69:    lconst_0
 L70:    lcmp
@@ -3816,29 +3816,29 @@ L71:    ifne L76
 L74:    aconst_null
 L75:    areturn
 L76:    lload_2
-L77:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L80:    invokestatic Method jouvieje/bass/structures/K else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/K;
+L77:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L80:    invokestatic Method jouvieje/bass/structures/K method1606 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/K;
 L83:    areturn
 L84:    
-        .attribute StackMap b'\x00\x07\x00\x1B\x00\x00\x00\x01\x07\x00\x22\x00\x1C\x00\x05\x01\x01\x04\x07\x02\xE9\x07\x00\x04\x00\x03\x01\x01\x04\x00\x22\x00\x05\x01\x01\x04\x07\x02\xE9\x07\x00\x04\x00\x05\x01\x01\x04\x01\x07\x00\x04\x00\x3E\x00\x00\x00\x01\x07\x00\x22\x00\x3F\x00\x05\x01\x01\x04\x07\x02\xE9\x07\x00\x04\x00\x00\x00\x41\x00\x05\x01\x01\x04\x07\x02\xE9\x07\x00\x04\x00\x02\x04\x04\x00\x4C\x00\x05\x01\x01\x04\x07\x02\xE9\x07\x00\x04\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x1B\x00\x00\x00\x01\x07\x00\x23\x00\x1C\x00\x05\x01\x01\x04\x07\x03\x6F\x07\x00\x04\x00\x03\x01\x01\x04\x00\x22\x00\x05\x01\x01\x04\x07\x03\x6F\x07\x00\x04\x00\x05\x01\x01\x04\x01\x07\x00\x04\x00\x3E\x00\x00\x00\x01\x07\x00\x23\x00\x3F\x00\x05\x01\x01\x04\x07\x03\x6F\x07\x00\x04\x00\x00\x00\x41\x00\x05\x01\x01\x04\x07\x03\x6F\x07\x00\x04\x00\x02\x04\x04\x00\x4C\x00\x05\x01\x01\x04\x07\x03\x6F\x07\x00\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/G;IILjouvieje/bass/structures/o;)I
+.method public static method1586 : (Ljouvieje/bass/structures/G;IILjouvieje/bass/structures/o;)I
     .code stack 6 locals 4
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     iload_1
 L5:     iload_2
 L6:     aload_3
-L7:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L7:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L10:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_MIDI_StreamGetEvents (JIIJ)I
 L13:    ireturn
 L14:    
     .end code
 .end method
 
-.method public static break : ()I
+.method public static method1184 : ()I
     .code stack 1 locals 0
 L0:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_RecordGetDevice ()I
 L3:     ireturn
@@ -3846,7 +3846,7 @@ L4:
     .end code
 .end method
 
-.method public static break : (I)Z
+.method public static method1587 : (I)Z
     .code stack 1 locals 1
 L0:     iload_0
 L1:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_Split_StreamReset (I)Z
@@ -3855,7 +3855,7 @@ L5:
     .end code
 .end method
 
-.method public static break : (IIJ)Z
+.method public static method1588 : (IIJ)Z
     .code stack 4 locals 4
 L0:     iload_0
 L1:     iload_1
@@ -3866,14 +3866,14 @@ L7:
     .end code
 .end method
 
-.method public static break : (ILjouvieje/bass/callbacks/c;Ljouvieje/bass/utils/m;I)Ljouvieje/bass/structures/L;
+.method public static method1589 : (ILjouvieje/bass/callbacks/c;Ljouvieje/bass/utils/m;I)Ljouvieje/bass/structures/L;
     .code stack 5 locals 6
 L0:     iconst_4
 L1:     iconst_1
 L2:     dup
 L3:     pop2
 L4:     aload_1
-L5:     invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;)V
+L5:     invokestatic Method jouvieje/bass/callbacks/a method1632 (ILjava/lang/Object;)V
 L8:     iload_0
 L9:     aload_1
 L10:    ifnonnull L22
@@ -3889,7 +3889,7 @@ L23:    dup
 L24:    dup
 L25:    pop2
 L26:    aload_2
-L27:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L27:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L30:    iload_3
 L31:    invokestatic Method jouvieje/bass/BassJNI Bass_BASS_ChannelSetDSP (IZJI)J
 L34:    lstore 4
@@ -3899,7 +3899,7 @@ L38:    dup
 L39:    pop2
 L40:    aload_1
 L41:    lload 4
-L43:    invokestatic Method jouvieje/bass/callbacks/a break (ILjava/lang/Object;J)V
+L43:    invokestatic Method jouvieje/bass/callbacks/a method1628 (ILjava/lang/Object;J)V
 L46:    aload_1
 L47:    ifnonnull L57
 L50:    lconst_0
@@ -3908,7 +3908,7 @@ L53:    goto L60
 L56:    athrow
 L57:    lload 4
 L59:    dup2
-L60:    invokestatic Method jouvieje/bass/callbacks/a break (JJ)V
+L60:    invokestatic Method jouvieje/bass/callbacks/a method1627 (JJ)V
 L63:    lload 4
 L65:    lconst_0
 L66:    lcmp
@@ -3916,15 +3916,15 @@ L67:    ifne L72
 L70:    aconst_null
 L71:    areturn
 L72:    lload 4
-L74:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L77:    invokestatic Method jouvieje/bass/structures/L else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/L;
+L74:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L77:    invokestatic Method jouvieje/bass/structures/L method1605 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/L;
 L80:    areturn
 L81:    
-        .attribute StackMap b'\x00\x07\x00\x15\x00\x00\x00\x01\x07\x00\x22\x00\x16\x00\x04\x01\x07\x03\xBD\x07\x00\x04\x01\x00\x01\x01\x00\x1B\x00\x04\x01\x07\x03\xBD\x07\x00\x04\x01\x00\x03\x01\x01\x07\x00\x04\x00\x38\x00\x00\x00\x01\x07\x00\x22\x00\x39\x00\x05\x01\x07\x03\xBD\x07\x00\x04\x01\x04\x00\x00\x00\x3C\x00\x05\x01\x07\x03\xBD\x07\x00\x04\x01\x04\x00\x02\x04\x04\x00\x48\x00\x05\x01\x07\x03\xBD\x07\x00\x04\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x15\x00\x00\x00\x01\x07\x00\x23\x00\x16\x00\x04\x01\x07\x04\x79\x07\x00\x04\x01\x00\x01\x01\x00\x1B\x00\x04\x01\x07\x04\x79\x07\x00\x04\x01\x00\x03\x01\x01\x07\x00\x04\x00\x38\x00\x00\x00\x01\x07\x00\x23\x00\x39\x00\x05\x01\x07\x04\x79\x07\x00\x04\x01\x04\x00\x00\x00\x3C\x00\x05\x01\x07\x04\x79\x07\x00\x04\x01\x04\x00\x02\x04\x04\x00\x48\x00\x05\x01\x07\x04\x79\x07\x00\x04\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (IIF)Z
+.method public static method1590 : (IIF)Z
     .code stack 3 locals 3
 L0:     iload_0
 L1:     iload_1
@@ -3935,10 +3935,10 @@ L7:
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/structures/E;Z)Ljouvieje/bass/structures/J;
+.method public static method1591 : (Ljouvieje/bass/structures/E;Z)Ljouvieje/bass/structures/J;
     .code stack 4 locals 4
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     iload_1
 L5:     invokestatic Method jouvieje/bass/BassJNI Bass_BASS_SampleGetChannel (JZ)J
 L8:     dup2
@@ -3950,12 +3950,12 @@ L15:    aconst_null
 L16:    areturn
 L17:    athrow
 L18:    lload_2
-L19:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L22:    invokestatic Method jouvieje/bass/structures/J else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/J;
+L19:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L22:    invokestatic Method jouvieje/bass/structures/J method1600 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/J;
 L25:    areturn
 L26:    
-        .attribute StackMap b'\x00\x02\x00\x11\x00\x00\x00\x01\x07\x00\x22\x00\x12\x00\x03\x07\x00\x5F\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x11\x00\x00\x00\x01\x07\x00\x23\x00\x12\x00\x03\x07\x00\x67\x01\x04\x00\x00'
     .end code
 .end method
-.const [_40] = Utf8 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
+.const [_43] = Utf8 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/G;
 .end class

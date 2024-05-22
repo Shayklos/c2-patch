@@ -2,10 +2,10 @@
 .class public final super Wc
 .super java/awt/event/WindowAdapter
 .field public final synthetic this LsD;
-.field public final synthetic char LFE;
-.field public final synthetic else Ljava/lang/Throwable;
-.field public final synthetic "enum" Ljava/awt/TextArea;
-.field public final synthetic do Ljava/awt/TextField;
+.field public final synthetic field579 LFE;
+.field public final synthetic field580 Ljava/lang/Throwable;
+.field public final synthetic field581 Ljava/awt/TextArea;
+.field public final synthetic field582 Ljava/awt/TextField;
 
 .method public windowClosing : (Ljava/awt/event/WindowEvent;)V
     .code stack 1 locals 2
@@ -31,10 +31,10 @@ L10:    aload_2
 L11:    aload_0
 L12:    aload_1
 L13:    putfield Field Wc this LsD;
-L16:    putfield Field Wc char LFE;
-L19:    putfield Field Wc else Ljava/lang/Throwable;
-L22:    putfield Field Wc "enum" Ljava/awt/TextArea;
-L25:    putfield Field Wc do Ljava/awt/TextField;
+L16:    putfield Field Wc field579 LFE;
+L19:    putfield Field Wc field580 Ljava/lang/Throwable;
+L22:    putfield Field Wc field581 Ljava/awt/TextArea;
+L25:    putfield Field Wc field582 Ljava/awt/TextField;
 L28:    invokespecial Method java/awt/event/WindowAdapter <init> ()V
 L31:    return
 L32:    
@@ -47,17 +47,17 @@ L0:     aload_0
 L1:     dup
 L2:     getfield Field Wc this LsD;
 L5:     swap
-L6:     getfield Field Wc char LFE;
+L6:     getfield Field Wc field579 LFE;
 L9:     aload_0
 L10:    dup
-L11:    getfield Field Wc else Ljava/lang/Throwable;
+L11:    getfield Field Wc field580 Ljava/lang/Throwable;
 L14:    swap
-L15:    getfield Field Wc "enum" Ljava/awt/TextArea;
+L15:    getfield Field Wc field581 Ljava/awt/TextArea;
 L18:    invokevirtual Method java/awt/TextArea getText ()Ljava/lang/String;
 L21:    aload_0
-L22:    getfield Field Wc do Ljava/awt/TextField;
+L22:    getfield Field Wc field582 Ljava/awt/TextField;
 L25:    invokevirtual Method java/awt/TextField getText ()Ljava/lang/String;
-L28:    invokevirtual Method sD else (LFE;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+L28:    invokevirtual Method sD method333 (LFE;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
 L31:    return
 L32:    
     .end code

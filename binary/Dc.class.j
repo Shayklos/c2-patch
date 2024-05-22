@@ -1,8 +1,8 @@
 .version 49 0
 .class public final super Dc
 .super java/lang/Object
-.field public "enum" Ljava/lang/Object;
-.field public do Ljava/lang/Object;
+.field public field1793 Ljava/lang/Object;
+.field public field1794 Ljava/lang/Object;
 
 .method public <init> : (Ljava/lang/Object;Ljava/lang/Object;)V
     .code stack 5 locals 3
@@ -12,8 +12,8 @@ L2:     dup_x1
 L3:     aload_1
 L4:     aload_0
 L5:     invokespecial Method java/lang/Object <init> ()V
-L8:     putfield Field Dc "enum" Ljava/lang/Object;
-L11:    putfield Field Dc do Ljava/lang/Object;
+L8:     putfield Field Dc field1793 Ljava/lang/Object;
+L11:    putfield Field Dc field1794 Ljava/lang/Object;
 L14:    return
 L15:    
     .end code
@@ -34,21 +34,21 @@ L13:    aload_1
 L14:    checkcast Dc
 L17:    astore_1
 L18:    aload_0
-L19:    getfield Field Dc "enum" Ljava/lang/Object;
+L19:    getfield Field Dc field1793 Ljava/lang/Object;
 L22:    ifnull L71
 L25:    aload_0
-L26:    getfield Field Dc do Ljava/lang/Object;
+L26:    getfield Field Dc field1794 Ljava/lang/Object;
 L29:    ifnull L71
 L32:    aload_0
-L33:    getfield Field Dc "enum" Ljava/lang/Object;
+L33:    getfield Field Dc field1793 Ljava/lang/Object;
 L36:    aload_1
-L37:    getfield Field Dc "enum" Ljava/lang/Object;
+L37:    getfield Field Dc field1793 Ljava/lang/Object;
 L40:    invokevirtual Method java/lang/Object equals (Ljava/lang/Object;)Z
 L43:    ifeq L66
 L46:    aload_0
-L47:    getfield Field Dc do Ljava/lang/Object;
+L47:    getfield Field Dc field1794 Ljava/lang/Object;
 L50:    aload_1
-L51:    getfield Field Dc do Ljava/lang/Object;
+L51:    getfield Field Dc field1794 Ljava/lang/Object;
 L54:    invokevirtual Method java/lang/Object equals (Ljava/lang/Object;)Z
 L57:    ifeq L66
 L60:    iconst_1
@@ -63,18 +63,18 @@ L68:    dup
 L69:    pop2
 L70:    ireturn
 L71:    aload_0
-L72:    getfield Field Dc "enum" Ljava/lang/Object;
+L72:    getfield Field Dc field1793 Ljava/lang/Object;
 L75:    ifnull L113
 L78:    aload_0
-L79:    getfield Field Dc "enum" Ljava/lang/Object;
+L79:    getfield Field Dc field1793 Ljava/lang/Object;
 L82:    aload_1
-L83:    getfield Field Dc "enum" Ljava/lang/Object;
+L83:    getfield Field Dc field1793 Ljava/lang/Object;
 L86:    invokevirtual Method java/lang/Object equals (Ljava/lang/Object;)Z
 L89:    ifeq L108
 L92:    aload_0
-L93:    getfield Field Dc do Ljava/lang/Object;
+L93:    getfield Field Dc field1794 Ljava/lang/Object;
 L96:    aload_1
-L97:    getfield Field Dc do Ljava/lang/Object;
+L97:    getfield Field Dc field1794 Ljava/lang/Object;
 L100:   if_acmpne L108
 L103:   iconst_1
 L104:   dup
@@ -87,18 +87,18 @@ L110:   dup
 L111:   pop2
 L112:   ireturn
 L113:   aload_0
-L114:   getfield Field Dc do Ljava/lang/Object;
+L114:   getfield Field Dc field1794 Ljava/lang/Object;
 L117:   ifnull L155
 L120:   aload_0
-L121:   getfield Field Dc do Ljava/lang/Object;
+L121:   getfield Field Dc field1794 Ljava/lang/Object;
 L124:   aload_1
-L125:   getfield Field Dc do Ljava/lang/Object;
+L125:   getfield Field Dc field1794 Ljava/lang/Object;
 L128:   invokevirtual Method java/lang/Object equals (Ljava/lang/Object;)Z
 L131:   ifeq L150
 L134:   aload_0
-L135:   getfield Field Dc "enum" Ljava/lang/Object;
+L135:   getfield Field Dc field1793 Ljava/lang/Object;
 L138:   aload_1
-L139:   getfield Field Dc "enum" Ljava/lang/Object;
+L139:   getfield Field Dc field1793 Ljava/lang/Object;
 L142:   if_acmpne L150
 L145:   iconst_1
 L146:   dup
@@ -111,14 +111,14 @@ L152:   dup
 L153:   pop2
 L154:   ireturn
 L155:   aload_0
-L156:   getfield Field Dc "enum" Ljava/lang/Object;
+L156:   getfield Field Dc field1793 Ljava/lang/Object;
 L159:   aload_1
-L160:   getfield Field Dc "enum" Ljava/lang/Object;
+L160:   getfield Field Dc field1793 Ljava/lang/Object;
 L163:   if_acmpne L182
 L166:   aload_0
-L167:   getfield Field Dc do Ljava/lang/Object;
+L167:   getfield Field Dc field1794 Ljava/lang/Object;
 L170:   aload_1
-L171:   getfield Field Dc do Ljava/lang/Object;
+L171:   getfield Field Dc field1794 Ljava/lang/Object;
 L174:   if_acmpne L182
 L177:   iconst_1
 L178:   dup
@@ -138,10 +138,10 @@ L187:
 .method public hashCode : ()I
     .code stack 5 locals 1
 L0:     aload_0
-L1:     getfield Field Dc "enum" Ljava/lang/Object;
+L1:     getfield Field Dc field1793 Ljava/lang/Object;
 L4:     ifnonnull L20
 L7:     aload_0
-L8:     getfield Field Dc do Ljava/lang/Object;
+L8:     getfield Field Dc field1794 Ljava/lang/Object;
 L11:    ifnonnull L20
 L14:    iconst_0
 L15:    iconst_1
@@ -150,10 +150,10 @@ L17:    pop2
 L18:    ireturn
 L19:    athrow
 L20:    aload_0
-L21:    getfield Field Dc "enum" Ljava/lang/Object;
+L21:    getfield Field Dc field1793 Ljava/lang/Object;
 L24:    ifnonnull L56
 L27:    aload_0
-L28:    getfield Field Dc do Ljava/lang/Object;
+L28:    getfield Field Dc field1794 Ljava/lang/Object;
 L31:    invokevirtual Method java/lang/Object hashCode ()I
 L34:    bipush 16
 L36:    iconst_1
@@ -161,7 +161,7 @@ L37:    dup
 L38:    pop2
 L39:    ishl
 L40:    aload_0
-L41:    getfield Field Dc do Ljava/lang/Object;
+L41:    getfield Field Dc field1794 Ljava/lang/Object;
 L44:    invokevirtual Method java/lang/Object hashCode ()I
 L47:    bipush 16
 L49:    iconst_1
@@ -172,17 +172,17 @@ L53:    ixor
 L54:    ireturn
 L55:    athrow
 L56:    aload_0
-L57:    getfield Field Dc do Ljava/lang/Object;
+L57:    getfield Field Dc field1794 Ljava/lang/Object;
 L60:    ifnonnull L71
 L63:    aload_0
-L64:    getfield Field Dc "enum" Ljava/lang/Object;
+L64:    getfield Field Dc field1793 Ljava/lang/Object;
 L67:    invokevirtual Method java/lang/Object hashCode ()I
 L70:    ireturn
 L71:    aload_0
-L72:    getfield Field Dc "enum" Ljava/lang/Object;
+L72:    getfield Field Dc field1793 Ljava/lang/Object;
 L75:    invokevirtual Method java/lang/Object hashCode ()I
 L78:    aload_0
-L79:    getfield Field Dc do Ljava/lang/Object;
+L79:    getfield Field Dc field1794 Ljava/lang/Object;
 L82:    invokevirtual Method java/lang/Object hashCode ()I
 L85:    bipush 16
 L87:    iconst_1
@@ -191,7 +191,7 @@ L89:    pop2
 L90:    ishl
 L91:    ixor
 L92:    aload_0
-L93:    getfield Field Dc do Ljava/lang/Object;
+L93:    getfield Field Dc field1794 Ljava/lang/Object;
 L96:    invokevirtual Method java/lang/Object hashCode ()I
 L99:    bipush 16
 L101:   iconst_1

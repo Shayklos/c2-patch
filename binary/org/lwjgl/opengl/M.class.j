@@ -2,37 +2,37 @@
 .class interface abstract org/lwjgl/opengl/M
 .super java/lang/Object
 
-.method public abstract const : (Ljava/nio/ByteBuffer;)Z
+.method public abstract method4688 : (Ljava/nio/ByteBuffer;)Z
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract break : (Lorg/lwjgl/opengl/a;Ljava/nio/IntBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
+.method public abstract method4696 : (Lorg/lwjgl/opengl/a;Ljava/nio/IntBuffer;Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract else : (Ljava/nio/ByteBuffer;)V
+.method public abstract method4694 : (Ljava/nio/ByteBuffer;)V
 .end method
 
-.method public abstract else : (Lorg/lwjgl/opengl/a;Ljava/nio/ByteBuffer;)V
+.method public abstract method4692 : (Lorg/lwjgl/opengl/a;Ljava/nio/ByteBuffer;)V
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract else : ()V
+.method public abstract method4693 : ()V
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract break : (Ljava/nio/ByteBuffer;)V
+.method public abstract method4691 : (Ljava/nio/ByteBuffer;)V
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract break : ()V
+.method public abstract method4690 : ()V
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract break : (Lorg/lwjgl/opengl/a;Ljava/nio/ByteBuffer;)V
+.method public abstract method4689 : (Lorg/lwjgl/opengl/a;Ljava/nio/ByteBuffer;)V
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract break : (I)V
+.method public abstract method4695 : (I)V
 .end method
 .end class

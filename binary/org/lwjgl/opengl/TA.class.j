@@ -4,12 +4,12 @@
 .implements java/awt/event/ComponentListener
 .implements java/awt/event/HierarchyListener
 .field private this I
-.field private final char Ljava/awt/Canvas;
-.field private else Z
-.field private "enum" I
-.field private do Z
+.field private final field539 Ljava/awt/Canvas;
+.field private field540 Z
+.field private field541 I
+.field private field542 Z
 
-.method public catch : ()I
+.method public method330 : ()I
     .code stack 2 locals 3
 L0:     aload_0
 L1:     dup
@@ -36,13 +36,13 @@ L17:
 .method public hierarchyChanged : (Ljava/awt/event/HierarchyEvent;)V
     .code stack 1 locals 2
 L0:     aload_0
-L1:     invokespecial Method org/lwjgl/opengl/TA else ()V
+L1:     invokespecial Method org/lwjgl/opengl/TA method56 ()V
 L4:     return
 L5:     
     .end code
 .end method
 
-.method public float : ()I
+.method public method331 : ()I
     .code stack 2 locals 3
 L0:     aload_0
 L1:     dup
@@ -50,7 +50,7 @@ L2:     astore_1
 L3:     monitorenter
         .catch [0] from L4 to L10 using L12
 L4:     aload_0
-L5:     getfield Field org/lwjgl/opengl/TA "enum" I
+L5:     getfield Field org/lwjgl/opengl/TA field541 I
 L8:     aload_1
 L9:     monitorexit
 L10:    ireturn
@@ -75,12 +75,12 @@ L3:     dup_x2
 L4:     aload_1
 L5:     aload_0
 L6:     invokespecial Method java/lang/Object <init> ()V
-L9:     putfield Field org/lwjgl/opengl/TA char Ljava/awt/Canvas;
+L9:     putfield Field org/lwjgl/opengl/TA field539 Ljava/awt/Canvas;
 L12:    aload_1
 L13:    aload_0
 L14:    invokevirtual Method java/awt/Canvas addComponentListener (Ljava/awt/event/ComponentListener;)V
 L17:    invokevirtual Method java/awt/Canvas addHierarchyListener (Ljava/awt/event/HierarchyListener;)V
-L20:    invokespecial Method org/lwjgl/opengl/TA else ()V
+L20:    invokespecial Method org/lwjgl/opengl/TA method56 ()V
 L23:    return
 L24:    
     .end code
@@ -89,13 +89,13 @@ L24:
 .method public componentMoved : (Ljava/awt/event/ComponentEvent;)V
     .code stack 1 locals 2
 L0:     aload_0
-L1:     invokespecial Method org/lwjgl/opengl/TA else ()V
+L1:     invokespecial Method org/lwjgl/opengl/TA method56 ()V
 L4:     return
 L5:     
     .end code
 .end method
 
-.method public short : ()V
+.method public method71 : ()V
     .code stack 3 locals 1
 L0:     new org/lwjgl/opengl/WA
 L3:     dup
@@ -107,10 +107,10 @@ L12:
     .end code
 .end method
 
-.method public const : ()Z
+.method public method263 : ()Z
     .code stack 5 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/TA else Z
+L1:     getfield Field org/lwjgl/opengl/TA field540 Z
 L4:     ifeq L21
 L7:     aload_0
 L8:     iconst_0
@@ -118,7 +118,7 @@ L9:     iconst_1
 L10:    dup_x2
 L11:    dup
 L12:    pop2
-L13:    putfield Field org/lwjgl/opengl/TA else Z
+L13:    putfield Field org/lwjgl/opengl/TA field540 Z
 L16:    iconst_1
 L17:    dup
 L18:    pop2
@@ -134,7 +134,7 @@ L26:
     .end code
 .end method
 
-.method private synchronized else : ()V
+.method private synchronized method56 : ()V
     .code stack 6 locals 3
 L0:     aload_0
 L1:     dup
@@ -146,16 +146,16 @@ L5:     iconst_1
 L6:     aload_0
 L7:     dup
 L8:     dup2
-L9:     getfield Field org/lwjgl/opengl/TA char Ljava/awt/Canvas;
+L9:     getfield Field org/lwjgl/opengl/TA field539 Ljava/awt/Canvas;
 L12:    invokevirtual Method java/awt/Canvas getWidth ()I
 L15:    putfield Field org/lwjgl/opengl/TA this I
-L18:    getfield Field org/lwjgl/opengl/TA char Ljava/awt/Canvas;
+L18:    getfield Field org/lwjgl/opengl/TA field539 Ljava/awt/Canvas;
 L21:    invokevirtual Method java/awt/Canvas getHeight ()I
-L24:    putfield Field org/lwjgl/opengl/TA "enum" I
+L24:    putfield Field org/lwjgl/opengl/TA field541 I
 L27:    iconst_1
 L28:    dup
 L29:    pop2
-L30:    putfield Field org/lwjgl/opengl/TA do Z
+L30:    putfield Field org/lwjgl/opengl/TA field542 Z
 L33:    aload_1
 L34:    monitorexit
 L35:    return
@@ -177,11 +177,11 @@ L43:
 L0:     iconst_1
 L1:     aload_0
 L2:     dup_x1
-L3:     invokespecial Method org/lwjgl/opengl/TA else ()V
+L3:     invokespecial Method org/lwjgl/opengl/TA method56 ()V
 L6:     iconst_1
 L7:     dup
 L8:     pop2
-L9:     putfield Field org/lwjgl/opengl/TA else Z
+L9:     putfield Field org/lwjgl/opengl/TA field540 Z
 L12:    return
 L13:    
     .end code
@@ -194,7 +194,7 @@ L1:
     .end code
 .end method
 
-.method public break : ()Z
+.method public method227 : ()Z
     .code stack 4 locals 4
 L0:     aload_0
 L1:     dup
@@ -203,13 +203,13 @@ L3:     monitorenter
         .catch [0] from L4 to L19 using L22
 L4:     aload_0
 L5:     dup
-L6:     getfield Field org/lwjgl/opengl/TA do Z
+L6:     getfield Field org/lwjgl/opengl/TA field542 Z
 L9:     istore_1
 L10:    iconst_0
 L11:    iconst_1
 L12:    dup
 L13:    pop2
-L14:    putfield Field org/lwjgl/opengl/TA do Z
+L14:    putfield Field org/lwjgl/opengl/TA field542 Z
 L17:    aload_2
 L18:    monitorexit
 L19:    iload_1
@@ -228,10 +228,10 @@ L29:
     .end code
 .end method
 
-.method static synthetic break : (Lorg/lwjgl/opengl/TA;)Ljava/awt/Canvas;
+.method static synthetic method332 : (Lorg/lwjgl/opengl/TA;)Ljava/awt/Canvas;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/TA char Ljava/awt/Canvas;
+L1:     getfield Field org/lwjgl/opengl/TA field539 Ljava/awt/Canvas;
 L4:     areturn
 L5:     
     .end code

@@ -1,10 +1,10 @@
 .version 49 0
 .class public final super HG
 .super java/lang/Object
-.field public char F
-.field public else F
-.field public "enum" F
-.field public do F
+.field public field1841 F
+.field public field1842 F
+.field public field1843 F
+.field public field1844 F
 
 .method public <init> : ()V
     .code stack 1 locals 1

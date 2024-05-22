@@ -1,12 +1,12 @@
 .version 49 0
 .class public final super nA
 .super java/lang/Object
-.field public null F
+.field public field2386 F
 .field public this F
-.field public char F
-.field public else F
-.field public "enum" F
-.field public do F
+.field public field2387 F
+.field public field2388 F
+.field public field2389 F
+.field public field2390 F
 
 .method public <init> : (FFFFFF)V
     .code stack 13 locals 7
@@ -24,11 +24,11 @@ L13:    dup_x1
 L14:    fload_1
 L15:    aload_0
 L16:    invokespecial Method java/lang/Object <init> ()V
-L19:    putfield Field nA char F
-L22:    putfield Field nA null F
-L25:    putfield Field nA "enum" F
-L28:    putfield Field nA else F
-L31:    putfield Field nA do F
+L19:    putfield Field nA field2387 F
+L22:    putfield Field nA field2386 F
+L25:    putfield Field nA field2389 F
+L28:    putfield Field nA field2388 F
+L31:    putfield Field nA field2390 F
 L34:    putfield Field nA this F
 L37:    return
 L38:    

@@ -1,11 +1,11 @@
 .version 49 0
 .class public final super Zb
 .super vB
-.field private else LYg;
-.field private "enum" LPc;
-.field private do Lab;
+.field private field1023 LYg;
+.field private field1024 LPc;
+.field private field1025 Lab;
 
-.method public break : (LgB;IC)Z
+.method public method57 : (LgB;IC)Z
     .code stack 4 locals 4
 L0:     iload_2
 L1:     iconst_1
@@ -14,45 +14,45 @@ L3:     dup
 L4:     pop2
 L5:     if_icmpne L16
 L8:     aload_0
-L9:     getfield Field Zb null LFE;
+L9:     getfield Field Zb field1136 LFE;
 L12:    aload_0
-L13:    invokevirtual Method FE break (LbC;)V
+L13:    invokevirtual Method FE method203 (LbC;)V
 L16:    iconst_1
 L17:    dup
 L18:    dup
 L19:    pop2
 L20:    ireturn
 L21:    
-        .attribute StackMap b'\x00\x01\x00\x10\x00\x04\x07\x00\x02\x07\x00\x1F\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x10\x00\x04\x07\x00\x02\x07\x00\x20\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public static synthetic break : (LZb;)LFE;
+.method public static synthetic method513 : (LZb;)LFE;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field Zb null LFE;
+L1:     getfield Field Zb field1136 LFE;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method public "final" : ()V
+.method public method10 : ()V
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     getfield Field Zb else LYg;
+L2:     getfield Field Zb field1023 LYg;
 L5:     invokevirtual Method Zb try (LgB;)V
 L8:     return
 L9:     
     .end code
 .end method
 
-.method public case : ()V
+.method public method2 : ()V
     .code stack 3 locals 3
 L0:     aload_0
 L1:     dup
-L2:     invokespecial Method vB case ()V
-L5:     getfield Field Zb do Lab;
+L2:     invokespecial Method vB method2 ()V
+L5:     getfield Field Zb field1025 Lab;
 L8:     getfield Field ab new Ljava/util/LinkedHashMap;
 L11:    invokevirtual Method java/util/LinkedHashMap keySet ()Ljava/util/Set;
 L14:    invokeinterface InterfaceMethod java/util/Set iterator ()Ljava/util/Iterator; 1
@@ -66,23 +66,23 @@ L35:    checkcast ed
 L38:    astore_2
 L39:    aload_1
 L40:    aload_0
-L41:    getfield Field Zb do Lab;
+L41:    getfield Field Zb field1025 Lab;
 L44:    aload_2
-L45:    invokevirtual Method ab else (Led;)V
+L45:    invokevirtual Method ab method410 (Led;)V
 L48:    goto L21
 L51:    athrow
 L52:    return
 L53:    
-        .attribute StackMap b'\x00\x03\x00\x15\x00\x02\x07\x00\x02\x07\x00\x41\x00\x01\x07\x00\x41\x00\x33\x00\x00\x00\x01\x07\x00\x50\x00\x34\x00\x02\x07\x00\x02\x07\x00\x41\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x15\x00\x02\x07\x00\x02\x07\x00\x43\x00\x01\x07\x00\x43\x00\x33\x00\x00\x00\x01\x07\x00\x53\x00\x34\x00\x02\x07\x00\x02\x07\x00\x43\x00\x00'
     .end code
 .end method
 
-.method public "strictfp" : ()V
+.method public method49 : ()V
     .code stack 10 locals 2
 L0:     new ed
 L3:     dup
 L4:     aload_0
-L5:     getfield Field Zb "enum" LPc;
+L5:     getfield Field Zb field1024 LPc;
 L8:     invokespecial Method ed <init> (LPc;)V
 L11:    astore_1
 L12:    new ab
@@ -108,8 +108,8 @@ L41:    iconst_1
 L42:    dup
 L43:    pop2
 L44:    invokespecial Method ab <init> (Leb;Led;Ljava/util/List;Z)V
-L47:    putfield Field Zb do Lab;
-L50:    getfield Field Zb do Lab;
+L47:    putfield Field Zb field1025 Lab;
+L50:    getfield Field Zb field1025 Lab;
 L53:    aload_1
 L54:    iconst_0
 L55:    iconst_1
@@ -123,18 +123,18 @@ L64:    pop2
 L65:    dup
 L66:    aload_0
 L67:    invokespecial Method Uc <init> (LZb;)V
-L70:    invokevirtual Method ab break (Led;ZLjava/lang/String;LK;)V
+L70:    invokevirtual Method ab method400 (Led;ZLjava/lang/String;LK;)V
 L73:    return
 L74:    
     .end code
 .end method
 
-.method public static synthetic break : (LZb;LYg;)LYg;
+.method public static synthetic method514 : (LZb;LYg;)LYg;
     .code stack 3 locals 2
 L0:     aload_0
 L1:     aload_1
 L2:     dup_x1
-L3:     putfield Field Zb else LYg;
+L3:     putfield Field Zb field1023 LYg;
 L6:     areturn
 L7:     
     .end code
@@ -146,13 +146,13 @@ L0:     aload_1
 L1:     aload_0
 L2:     dup_x1
 L3:     invokespecial Method vB <init> ()V
-L6:     putfield Field Zb "enum" LPc;
+L6:     putfield Field Zb field1024 LPc;
 L9:     return
 L10:    
     .end code
 .end method
 
-.method public else : (LgB;I)Z
+.method public method47 : (LgB;I)Z
     .code stack 3 locals 5
 L0:     iconst_0
 L1:     iconst_1
@@ -160,7 +160,7 @@ L2:     dup
 L3:     pop2
 L4:     istore_1
 L5:     aload_0
-L6:     getfield Field Zb do Lab;
+L6:     getfield Field Zb field1025 Lab;
 L9:     getfield Field ab new Ljava/util/LinkedHashMap;
 L12:    invokevirtual Method java/util/LinkedHashMap values ()Ljava/util/Collection;
 L15:    invokeinterface InterfaceMethod java/util/Collection iterator ()Ljava/util/Iterator; 1
@@ -179,7 +179,7 @@ L48:    iload_1
 L49:    aload 4
 L51:    checkcast oF
 L54:    iload_2
-L55:    invokevirtual Method oF else (I)Z
+L55:    invokevirtual Method oF method383 (I)Z
 L58:    ior
 L59:    istore_1
 L60:    goto L21
@@ -187,14 +187,14 @@ L63:    athrow
 L64:    iload_1
 L65:    ireturn
 L66:    
-        .attribute StackMap b'\x00\x03\x00\x15\x00\x04\x07\x00\x02\x01\x01\x07\x00\x41\x00\x00\x00\x3F\x00\x00\x00\x01\x07\x00\x50\x00\x40\x00\x04\x07\x00\x02\x01\x01\x07\x00\x41\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x15\x00\x04\x07\x00\x02\x01\x01\x07\x00\x43\x00\x00\x00\x3F\x00\x00\x00\x01\x07\x00\x53\x00\x40\x00\x04\x07\x00\x02\x01\x01\x07\x00\x43\x00\x00'
     .end code
 .end method
 
-.method public const : (LgB;I)V
+.method public method40 : (LgB;I)V
     .code stack 2 locals 4
 L0:     aload_0
-L1:     getfield Field Zb do Lab;
+L1:     getfield Field Zb field1025 Lab;
 L4:     getfield Field ab new Ljava/util/LinkedHashMap;
 L7:     invokevirtual Method java/util/LinkedHashMap values ()Ljava/util/Collection;
 L10:    invokeinterface InterfaceMethod java/util/Collection iterator ()Ljava/util/Iterator; 1
@@ -212,12 +212,12 @@ L39:    ifeq L16
 L42:    aload_3
 L43:    checkcast oF
 L46:    iload_2
-L47:    invokevirtual Method oF float (I)V
+L47:    invokevirtual Method oF method125 (I)V
 L50:    goto L16
 L53:    athrow
 L54:    return
 L55:    
-        .attribute StackMap b'\x00\x03\x00\x10\x00\x03\x07\x00\x02\x07\x00\x41\x01\x00\x00\x00\x35\x00\x00\x00\x01\x07\x00\x50\x00\x36\x00\x03\x07\x00\x02\x07\x00\x41\x01\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x10\x00\x03\x07\x00\x02\x07\x00\x43\x01\x00\x00\x00\x35\x00\x00\x00\x01\x07\x00\x53\x00\x36\x00\x03\x07\x00\x02\x07\x00\x43\x01\x00\x00'
     .end code
 .end method
 .innerclasses

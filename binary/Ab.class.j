@@ -3,7 +3,7 @@
 .super java/lang/Object
 .implements e
 
-.method public else : ([B)V
+.method public method710 : ([B)V
     .code stack 6 locals 3
 L0:     iconst_1
 L1:     dup
@@ -35,7 +35,7 @@ L33:
     .end code
 .end method
 
-.method public break : ([B)V
+.method public method711 : ([B)V
     .code stack 6 locals 3
 L0:     iconst_1
 L1:     dup

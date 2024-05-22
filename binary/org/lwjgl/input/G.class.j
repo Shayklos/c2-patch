@@ -2,23 +2,23 @@
 .class public final super org/lwjgl/input/G
 .super java/lang/Object
 .field private static this Z
-.field private static char Ljava/util/ArrayList;
-.field private static else Ljava/util/ArrayList;
-.field private static "enum" Lorg/lwjgl/input/c;
-.field private static do I
+.field private static field2558 Ljava/util/ArrayList;
+.field private static field2559 Ljava/util/ArrayList;
+.field private static field2560 Lorg/lwjgl/input/c;
+.field private static field2561 I
 
-.method public static long : ()J
+.method public static method1912 : ()J
     .code stack 2 locals 0
-L0:     getstatic Field org/lwjgl/input/G "enum" Lorg/lwjgl/input/c;
-L3:     invokevirtual Method org/lwjgl/input/c break ()J
+L0:     getstatic Field org/lwjgl/input/G field2560 Lorg/lwjgl/input/c;
+L3:     invokevirtual Method org/lwjgl/input/c method1967 ()J
 L6:     lreturn
 L7:     
     .end code
 .end method
 
-.method public static break : (I)Lorg/lwjgl/input/i;
+.method public static method1913 : (I)Lorg/lwjgl/input/i;
     .code stack 2 locals 1
-L0:     getstatic Field org/lwjgl/input/G char Ljava/util/ArrayList;
+L0:     getstatic Field org/lwjgl/input/G field2558 Ljava/util/ArrayList;
 L3:     iload_0
 L4:     invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L7:     checkcast org/lwjgl/input/i
@@ -27,16 +27,16 @@ L11:
     .end code
 .end method
 
-.method public static class : ()I
+.method public static method1914 : ()I
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/input/G "enum" Lorg/lwjgl/input/c;
-L3:     invokevirtual Method org/lwjgl/input/c for ()I
+L0:     getstatic Field org/lwjgl/input/G field2560 Lorg/lwjgl/input/c;
+L3:     invokevirtual Method org/lwjgl/input/c method1961 ()I
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method public static if : ()V
+.method public static method1915 : ()V
     .code stack 3 locals 1
 L0:     iconst_0
 L1:     iconst_1
@@ -44,25 +44,25 @@ L2:     dup
 L3:     pop2
 L4:     dup
 L5:     istore_0
-L6:     getstatic Field org/lwjgl/input/G char Ljava/util/ArrayList;
+L6:     getstatic Field org/lwjgl/input/G field2558 Ljava/util/ArrayList;
 L9:     invokevirtual Method java/util/ArrayList size ()I
 L12:    if_icmpge L32
 L15:    iload_0
 L16:    iinc 0 1
-L19:    invokestatic Method org/lwjgl/input/G break (I)Lorg/lwjgl/input/i;
-L22:    invokeinterface InterfaceMethod org/lwjgl/input/i goto ()V 1
+L19:    invokestatic Method org/lwjgl/input/G method1913 (I)Lorg/lwjgl/input/i;
+L22:    invokeinterface InterfaceMethod org/lwjgl/input/i method1988 ()V 1
 L27:    iload_0
 L28:    goto L6
 L31:    athrow
 L32:    return
 L33:    
-        .attribute StackMap b'\x00\x03\x00\x06\x00\x01\x01\x00\x01\x01\x00\x1F\x00\x00\x00\x01\x07\x00\x37\x00\x20\x00\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x06\x00\x01\x01\x00\x01\x01\x00\x1F\x00\x00\x00\x01\x07\x00\x38\x00\x20\x00\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public static char : ()I
+.method public static method1916 : ()I
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/input/G char Ljava/util/ArrayList;
+L0:     getstatic Field org/lwjgl/input/G field2558 Ljava/util/ArrayList;
 L3:     invokevirtual Method java/util/ArrayList size ()I
 L6:     ireturn
 L7:     
@@ -71,8 +71,8 @@ L7:
 
 .method public static new : ()Z
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/input/G "enum" Lorg/lwjgl/input/c;
-L3:     invokevirtual Method org/lwjgl/input/c else ()Z
+L0:     getstatic Field org/lwjgl/input/G field2560 Lorg/lwjgl/input/c;
+L3:     invokevirtual Method org/lwjgl/input/c method1966 ()Z
 L6:     ireturn
 L7:     
     .end code
@@ -80,7 +80,7 @@ L7:
 
 .method public static try : ()V
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/input/G else Ljava/util/ArrayList;
+L0:     getstatic Field org/lwjgl/input/G field2559 Ljava/util/ArrayList;
 L3:     invokevirtual Method java/util/ArrayList clear ()V
 L6:     return
 L7:     
@@ -89,26 +89,26 @@ L7:
 
 .method public static this : ()Z
     .code stack 4 locals 0
-L0:     getstatic Field org/lwjgl/input/G else Ljava/util/ArrayList;
+L0:     getstatic Field org/lwjgl/input/G field2559 Ljava/util/ArrayList;
 L3:     invokevirtual Method java/util/ArrayList size ()I
 L6:     ifne L19
 L9:     aconst_null
-L10:    putstatic Field org/lwjgl/input/G "enum" Lorg/lwjgl/input/c;
+L10:    putstatic Field org/lwjgl/input/G field2560 Lorg/lwjgl/input/c;
 L13:    iconst_0
 L14:    iconst_1
 L15:    dup
 L16:    pop2
 L17:    ireturn
 L18:    athrow
-L19:    getstatic Field org/lwjgl/input/G else Ljava/util/ArrayList;
+L19:    getstatic Field org/lwjgl/input/G field2559 Ljava/util/ArrayList;
 L22:    iconst_0
 L23:    iconst_1
 L24:    dup
 L25:    pop2
 L26:    invokevirtual Method java/util/ArrayList remove (I)Ljava/lang/Object;
 L29:    checkcast org/lwjgl/input/c
-L32:    putstatic Field org/lwjgl/input/G "enum" Lorg/lwjgl/input/c;
-L35:    getstatic Field org/lwjgl/input/G "enum" Lorg/lwjgl/input/c;
+L32:    putstatic Field org/lwjgl/input/G field2560 Lorg/lwjgl/input/c;
+L35:    getstatic Field org/lwjgl/input/G field2560 Lorg/lwjgl/input/c;
 L38:    ifnull L47
 L41:    iconst_1
 L42:    dup
@@ -122,20 +122,20 @@ L49:    dup
 L50:    pop2
 L51:    ireturn
 L52:    
-        .attribute StackMap b'\x00\x04\x00\x12\x00\x00\x00\x01\x07\x00\x37\x00\x13\x00\x00\x00\x00\x00\x2E\x00\x00\x00\x01\x07\x00\x37\x00\x2F\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x12\x00\x00\x00\x01\x07\x00\x38\x00\x13\x00\x00\x00\x00\x00\x2E\x00\x00\x00\x01\x07\x00\x38\x00\x2F\x00\x00\x00\x00'
     .end code
 .end method
 
-.method public static goto : ()Z
+.method public static method1917 : ()Z
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/input/G "enum" Lorg/lwjgl/input/c;
-L3:     invokevirtual Method org/lwjgl/input/c catch ()Z
+L0:     getstatic Field org/lwjgl/input/G field2560 Lorg/lwjgl/input/c;
+L3:     invokevirtual Method org/lwjgl/input/c method1962 ()Z
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method private static break : (Lnet/java/games/input/Controller;)V
+.method private static method1918 : (Lnet/java/games/input/Controller;)V
     .code stack 5 locals 4
 L0:     aload_0
 L1:     invokeinterface InterfaceMethod net/java/games/input/Controller getControllers ()[Lnet/java/games/input/Controller; 1
@@ -145,20 +145,20 @@ L8:     arraylength
 L9:     ifne L45
 L12:    new org/lwjgl/input/d
 L15:    dup
-L16:    getstatic Field org/lwjgl/input/G do I
+L16:    getstatic Field org/lwjgl/input/G field2561 I
 L19:    aload_0
 L20:    invokespecial Method org/lwjgl/input/d <init> (ILnet/java/games/input/Controller;)V
 L23:    astore_2
-L24:    getstatic Field org/lwjgl/input/G char Ljava/util/ArrayList;
+L24:    getstatic Field org/lwjgl/input/G field2558 Ljava/util/ArrayList;
 L27:    aload_2
 L28:    invokevirtual Method java/util/ArrayList add (Ljava/lang/Object;)Z
-L31:    getstatic Field org/lwjgl/input/G do I
+L31:    getstatic Field org/lwjgl/input/G field2561 I
 L34:    iconst_1
 L35:    dup
 L36:    dup
 L37:    pop2
 L38:    iadd
-L39:    putstatic Field org/lwjgl/input/G do I
+L39:    putstatic Field org/lwjgl/input/G field2561 I
 L42:    pop
 L43:    return
 L44:    athrow
@@ -179,44 +179,44 @@ L60:    aload_2
 L61:    iload_3
 L62:    iinc 3 1
 L65:    aaload
-L66:    invokestatic Method org/lwjgl/input/G break (Lnet/java/games/input/Controller;)V
+L66:    invokestatic Method org/lwjgl/input/G method1918 (Lnet/java/games/input/Controller;)V
 L69:    iload_3
 L70:    goto L56
 L73:    athrow
 L74:    return
 L75:    
-        .attribute StackMap b'\x00\x05\x00\x2C\x00\x00\x00\x01\x07\x00\x37\x00\x2D\x00\x02\x07\x00\x08\x07\x00\x5A\x00\x00\x00\x38\x00\x04\x07\x00\x08\x01\x07\x00\x5A\x01\x00\x01\x01\x00\x49\x00\x00\x00\x01\x07\x00\x37\x00\x4A\x00\x04\x07\x00\x08\x01\x07\x00\x5A\x01\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x2C\x00\x00\x00\x01\x07\x00\x38\x00\x2D\x00\x02\x07\x00\x08\x07\x00\x5F\x00\x00\x00\x38\x00\x04\x07\x00\x08\x01\x07\x00\x5F\x01\x00\x01\x01\x00\x49\x00\x00\x00\x01\x07\x00\x38\x00\x4A\x00\x04\x07\x00\x08\x01\x07\x00\x5F\x01\x00\x00'
     .end code
 .end method
 
-.method public static do : ()Z
+.method public static method1919 : ()Z
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/input/G "enum" Lorg/lwjgl/input/c;
-L3:     invokevirtual Method org/lwjgl/input/c do ()Z
+L0:     getstatic Field org/lwjgl/input/G field2560 Lorg/lwjgl/input/c;
+L3:     invokevirtual Method org/lwjgl/input/c method1960 ()Z
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method public static for : ()Z
+.method public static method1920 : ()Z
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/input/G "enum" Lorg/lwjgl/input/c;
-L3:     invokevirtual Method org/lwjgl/input/c short ()Z
+L0:     getstatic Field org/lwjgl/input/G field2560 Lorg/lwjgl/input/c;
+L3:     invokevirtual Method org/lwjgl/input/c method1964 ()Z
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method public static catch : ()Lorg/lwjgl/input/i;
+.method public static method1921 : ()Lorg/lwjgl/input/i;
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/input/G "enum" Lorg/lwjgl/input/c;
-L3:     invokevirtual Method org/lwjgl/input/c const ()Lorg/lwjgl/input/i;
+L0:     getstatic Field org/lwjgl/input/G field2560 Lorg/lwjgl/input/c;
+L3:     invokevirtual Method org/lwjgl/input/c method1965 ()Lorg/lwjgl/input/i;
 L6:     areturn
 L7:     
     .end code
 .end method
 
-.method public static float : ()V
+.method public static method1922 : ()V
     .code stack 4 locals 6
 L0:     getstatic Field org/lwjgl/input/G this Z
 L3:     ifeq L8
@@ -280,7 +280,7 @@ L114:   checkcast net/java/games/input/Controller
 L117:   astore_3
 L118:   aload_1
 L119:   aload_3
-L120:   invokestatic Method org/lwjgl/input/G break (Lnet/java/games/input/Controller;)V
+L120:   invokestatic Method org/lwjgl/input/G method1918 (Lnet/java/games/input/Controller;)V
 L123:   goto L100
 L126:   iconst_1
 L127:   dup
@@ -297,7 +297,7 @@ L142:   invokespecial Method org/lwjgl/LWJGLException <init> (Ljava/lang/String;
 L145:   athrow
 L146:   athrow
 L147:   
-        .attribute StackMap b'\x00\x0A\x00\x07\x00\x00\x00\x01\x07\x00\x37\x00\x08\x00\x00\x00\x00\x00\x25\x00\x05\x07\x00\x6C\x07\x00\x5A\x07\x00\x20\x01\x01\x00\x01\x01\x00\x55\x00\x06\x07\x00\x6C\x07\x00\x5A\x07\x00\x20\x01\x01\x07\x00\x08\x00\x00\x00\x5D\x00\x00\x00\x01\x07\x00\x37\x00\x5E\x00\x05\x07\x00\x6C\x07\x00\x5A\x07\x00\x20\x01\x01\x00\x00\x00\x64\x00\x05\x07\x00\x6C\x07\x00\x87\x07\x00\x20\x00\x01\x00\x01\x07\x00\x87\x00\x7E\x00\x05\x07\x00\x6C\x07\x00\x87\x07\x00\x20\x00\x01\x00\x00\x00\x86\x00\x00\x00\x01\x07\x00\x37\x00\x92\x00\x00\x00\x01\x07\x00\x37'
+        .attribute StackMap b'\x00\x0A\x00\x07\x00\x00\x00\x01\x07\x00\x38\x00\x08\x00\x00\x00\x00\x00\x25\x00\x05\x07\x00\x75\x07\x00\x5F\x07\x00\x21\x01\x01\x00\x01\x01\x00\x55\x00\x06\x07\x00\x75\x07\x00\x5F\x07\x00\x21\x01\x01\x07\x00\x08\x00\x00\x00\x5D\x00\x00\x00\x01\x07\x00\x38\x00\x5E\x00\x05\x07\x00\x75\x07\x00\x5F\x07\x00\x21\x01\x01\x00\x00\x00\x64\x00\x05\x07\x00\x75\x07\x00\x90\x07\x00\x21\x00\x01\x00\x01\x07\x00\x90\x00\x7E\x00\x05\x07\x00\x75\x07\x00\x90\x07\x00\x21\x00\x01\x00\x00\x00\x86\x00\x00\x00\x01\x07\x00\x38\x00\x92\x00\x00\x00\x01\x07\x00\x38'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
@@ -311,23 +311,23 @@ L5:
     .end code
 .end method
 
-.method public static short : ()V
+.method public static method1923 : ()V
     .code stack 0 locals 0
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public static const : ()Z
+.method public static method1924 : ()Z
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/input/G "enum" Lorg/lwjgl/input/c;
-L3:     invokevirtual Method org/lwjgl/input/c goto ()Z
+L0:     getstatic Field org/lwjgl/input/G field2560 Lorg/lwjgl/input/c;
+L3:     invokevirtual Method org/lwjgl/input/c method1959 ()Z
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method public static else : ()Z
+.method public static method1925 : ()Z
     .code stack 1 locals 0
 L0:     getstatic Field org/lwjgl/input/G this Z
 L3:     ireturn
@@ -335,11 +335,11 @@ L4:
     .end code
 .end method
 
-.method static break : (Lorg/lwjgl/input/c;)V
+.method static method1926 : (Lorg/lwjgl/input/c;)V
     .code stack 2 locals 1
 L0:     aload_0
 L1:     ifnull L12
-L4:     getstatic Field org/lwjgl/input/G else Ljava/util/ArrayList;
+L4:     getstatic Field org/lwjgl/input/G field2559 Ljava/util/ArrayList;
 L7:     aload_0
 L8:     invokevirtual Method java/util/ArrayList add (Ljava/lang/Object;)Z
 L11:    pop
@@ -354,20 +354,20 @@ L13:
 L0:     new java/util/ArrayList
 L3:     dup
 L4:     invokespecial Method java/util/ArrayList <init> ()V
-L7:     putstatic Field org/lwjgl/input/G char Ljava/util/ArrayList;
+L7:     putstatic Field org/lwjgl/input/G field2558 Ljava/util/ArrayList;
 L10:    new java/util/ArrayList
 L13:    dup
 L14:    invokespecial Method java/util/ArrayList <init> ()V
-L17:    putstatic Field org/lwjgl/input/G else Ljava/util/ArrayList;
+L17:    putstatic Field org/lwjgl/input/G field2559 Ljava/util/ArrayList;
 L20:    return
 L21:    
     .end code
 .end method
 
-.method public static break : ()Z
+.method public static method1927 : ()Z
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/input/G "enum" Lorg/lwjgl/input/c;
-L3:     invokevirtual Method org/lwjgl/input/c float ()Z
+L0:     getstatic Field org/lwjgl/input/G field2560 Lorg/lwjgl/input/c;
+L3:     invokevirtual Method org/lwjgl/input/c method1963 ()Z
 L6:     ireturn
 L7:     
     .end code

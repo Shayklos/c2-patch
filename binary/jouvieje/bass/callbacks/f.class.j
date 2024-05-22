@@ -2,6 +2,6 @@
 .class public interface abstract jouvieje/bass/callbacks/f
 .super java/lang/Object
 
-.method public abstract break : (IFLjouvieje/bass/utils/m;)V
+.method public abstract method1637 : (IFLjouvieje/bass/utils/m;)V
 .end method
 .end class

@@ -21,7 +21,7 @@ L5:
     .end code
 .end method
 
-.method public break : (Ljava/nio/Buffer;)J
+.method public method1887 : (Ljava/nio/Buffer;)J
     .code stack 2 locals 2
 L0:     aload_1
 L1:     invokestatic Method org/lwjgl/BufferUtils getBufferAddress (Ljava/nio/Buffer;)J

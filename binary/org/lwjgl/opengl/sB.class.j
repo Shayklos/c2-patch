@@ -1,17 +1,17 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/sB
 .super java/lang/Object
-.field public static final "enum" I = 36662
-.field public static final do I = 36663
+.field public static final field5598 I = 36662
+.field public static final field5599 I = 36663
 
-.method public static break : (IIJJJ)V
+.method public static method5737 : (IIJJJ)V
     .code stack 8 locals 8
 L0:     iload_0
 L1:     iload_1
 L2:     lload_2
 L3:     lload 4
 L5:     lload 6
-L7:     invokestatic Method org/lwjgl/opengl/GL31 break (IIJJJ)V
+L7:     invokestatic Method org/lwjgl/opengl/GL31 method4252 (IIJJJ)V
 L10:    return
 L11:    
     .end code

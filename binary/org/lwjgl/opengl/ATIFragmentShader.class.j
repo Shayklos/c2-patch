@@ -42,7 +42,7 @@
 .field public static final G I = 35118
 .field public static final B I = 35136
 .field public static final c I = 35186
-.field public static final "synchronized" I = 35139
+.field public static final field3098 I = 35139
 .field public static final i I = 35162
 .field public static final m I = 35110
 .field public static final h I = 35130
@@ -53,58 +53,58 @@
 .field public static final j I = 35194
 .field public static final I I = 35153
 .field public static final b I = 35131
-.field public static final implements I = 35134
+.field public static final field3099 I = 35134
 .field public static final return I = 35135
-.field public static final default I = 35169
+.field public static final field3100 I = 35169
 .field public static final switch I = 35180
-.field public static final "interface" I = 35155
-.field public static final "private" I = 1
-.field public static final assert I = 35175
-.field public static final boolean I = 35171
-.field public static final "strictfp" I = 35115
-.field public static final "abstract" I = 8
-.field public static final "public" I = 35185
-.field public static final "volatile" I = 4
-.field public static final double I = 35138
+.field public static final field3101 I = 35155
+.field public static final field3102 I = 1
+.field public static final field3103 I = 35175
+.field public static final field3104 I = 35171
+.field public static final field3105 I = 35115
+.field public static final field3106 I = 8
+.field public static final field3107 I = 35185
+.field public static final field3108 I = 4
+.field public static final field3109 I = 35138
 .field public static final throw I = 32
 .field public static final package I = 35188
-.field public static final finally I = 35178
-.field public static final "transient" I = 16
+.field public static final field3110 I = 35178
+.field public static final field3111 I = 16
 .field public static final while I = 35107
-.field public static final instanceof I = 35165
-.field public static final "protected" I = 35164
-.field public static final import I = 2
-.field public static final "native" I = 35109
-.field public static final throws I = 35167
-.field public static final "static" I = 35142
-.field public static final continue I = 35151
-.field public static final extends I = 35145
-.field public static final float I = 35152
-.field public static final "final" I = 35189
-.field public static final catch I = 35104
+.field public static final field3112 I = 35165
+.field public static final field3113 I = 35164
+.field public static final field3114 I = 2
+.field public static final field3115 I = 35109
+.field public static final field3116 I = 35167
+.field public static final field3117 I = 35142
+.field public static final field3118 I = 35151
+.field public static final field3119 I = 35145
+.field public static final field3120 I = 35152
+.field public static final field3121 I = 35189
+.field public static final field3122 I = 35104
 .field public static final false I = 35184
-.field public static final class I = 35122
-.field public static final if I = 35157
+.field public static final field3123 I = 35122
+.field public static final field3124 I = 35157
 .field public static final true I = 35147
-.field public static final for I = 35141
-.field public static final case I = 35129
-.field public static final byte I = 35176
-.field public static final "super" I = 35106
-.field public static final int I = 35177
-.field public static final short I = 35159
-.field public static final goto I = 35161
-.field public static final break I = 35117
-.field public static final long I = 35144
-.field public static final void I = 35183
+.field public static final field3125 I = 35141
+.field public static final field3126 I = 35129
+.field public static final field3127 I = 35176
+.field public static final field3128 I = 35106
+.field public static final field3129 I = 35177
+.field public static final field3130 I = 35159
+.field public static final field3131 I = 35161
+.field public static final field3132 I = 35117
+.field public static final field3133 I = 35144
+.field public static final field3134 I = 35183
 .field public static final try I = 35181
-.field public static final const I = 35193
+.field public static final field3135 I = 35193
 .field public static final new I = 35146
-.field public static final null I = 35132
+.field public static final field3136 I = 35132
 .field public static final this I = 35182
-.field public static final char I = 35156
-.field public static final else I = 35143
-.field public static final "enum" I = 35166
-.field public static final do I = 35192
+.field public static final field3137 I = 35156
+.field public static final field3138 I = 35143
+.field public static final field3139 I = 35166
+.field public static final field3140 I = 35192
 
 .method private <init> : ()V
     .code stack 1 locals 1
@@ -118,13 +118,13 @@ L5:
 .method static native nglBeginFragmentShaderATI : (J)V
 .end method
 
-.method public static break : (IIIIIII)V
+.method public static method2871 : (IIIIIII)V
     .code stack 9 locals 9
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb Wl J
 L6:     dup2
 L7:     lstore 7
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -139,13 +139,13 @@ L28:
     .end code
 .end method
 
-.method public static else : ()V
+.method public static method2872 : ()V
     .code stack 4 locals 2
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
-L3:     getfield Field org/lwjgl/opengl/kb "synchronized" J
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
+L3:     getfield Field org/lwjgl/opengl/kb field5406 J
 L6:     dup2
 L7:     lstore_0
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    lload_0
 L12:    invokestatic Method org/lwjgl/opengl/ATIFragmentShader nglEndFragmentShaderATI (J)V
 L15:    return
@@ -156,13 +156,13 @@ L16:
 .method static native nglSetFragmentShaderConstantATI : (IJJ)V
 .end method
 
-.method public static const : (I)V
+.method public static method2873 : (I)V
     .code stack 4 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb kc J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    lload_1
 L13:    invokestatic Method org/lwjgl/opengl/ATIFragmentShader nglDeleteFragmentShaderATI (IJ)V
@@ -171,13 +171,13 @@ L17:
     .end code
 .end method
 
-.method public static break : (IIIIIIIII)V
+.method public static method2874 : (IIIIIIIII)V
     .code stack 11 locals 11
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb am J
 L6:     dup2
 L7:     lstore 9
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -194,13 +194,13 @@ L32:
     .end code
 .end method
 
-.method public static break : (IIIIIIIIIIII)V
+.method public static method2875 : (IIIIIIIIIIII)V
     .code stack 14 locals 14
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb FE J
 L6:     dup2
 L7:     lstore 12
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -226,13 +226,13 @@ L38:
 .method static native nglBindFragmentShaderATI : (IJ)V
 .end method
 
-.method public static break : ()V
+.method public static method2876 : ()V
     .code stack 4 locals 2
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb Dc J
 L6:     dup2
 L7:     lstore_0
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    lload_0
 L12:    invokestatic Method org/lwjgl/opengl/ATIFragmentShader nglBeginFragmentShaderATI (J)V
 L15:    return
@@ -243,13 +243,13 @@ L16:
 .method static native nglPassTexCoordATI : (IIIJ)V
 .end method
 
-.method public static break : (IIIIII)V
+.method public static method2877 : (IIIIII)V
     .code stack 8 locals 8
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb oR J
 L6:     dup2
 L7:     lstore 6
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -263,13 +263,13 @@ L26:
     .end code
 .end method
 
-.method public static else : (III)V
+.method public static method2878 : (III)V
     .code stack 5 locals 5
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb mb J
 L6:     dup2
 L7:     lstore_3
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    iload_1
 L13:    iload_2
@@ -280,22 +280,22 @@ L19:
     .end code
 .end method
 
-.method public static break : (ILjava/nio/FloatBuffer;)V
+.method public static method2879 : (ILjava/nio/FloatBuffer;)V
     .code stack 5 locals 4
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb LJ J
 L6:     dup2
 L7:     lstore_2
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    aload_1
 L13:    iconst_4
 L14:    iconst_1
 L15:    dup
 L16:    pop2
-L17:    invokestatic Method org/lwjgl/l break (Ljava/nio/FloatBuffer;I)V
+L17:    invokestatic Method org/lwjgl/l method2044 (Ljava/nio/FloatBuffer;I)V
 L20:    aload_1
-L21:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/FloatBuffer;)J
+L21:    invokestatic Method org/lwjgl/MemoryUtil method1878 (Ljava/nio/FloatBuffer;)J
 L24:    lload_2
 L25:    invokestatic Method org/lwjgl/opengl/ATIFragmentShader nglSetFragmentShaderConstantATI (IJJ)V
 L28:    return
@@ -312,13 +312,13 @@ L29:
 .method static native nglDeleteFragmentShaderATI : (IJ)V
 .end method
 
-.method public static break : (IIIIIIIIIIIII)V
+.method public static method2880 : (IIIIIIIIIIIII)V
     .code stack 15 locals 15
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb aN J
 L6:     dup2
 L7:     lstore 13
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -339,13 +339,13 @@ L40:
     .end code
 .end method
 
-.method public static break : (IIIIIIIIII)V
+.method public static method2881 : (IIIIIIIIII)V
     .code stack 12 locals 12
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb Ep J
 L6:     dup2
 L7:     lstore 10
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -363,13 +363,13 @@ L34:
     .end code
 .end method
 
-.method public static else : (I)I
+.method public static method2882 : (I)I
     .code stack 4 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb jB J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    lload_1
 L13:    invokestatic Method org/lwjgl/opengl/ATIFragmentShader nglGenFragmentShadersATI (IJ)I
@@ -381,13 +381,13 @@ L17:
 .method static native nglColorFragmentOp3ATI : (IIIIIIIIIIIIIJ)V
 .end method
 
-.method public static break : (III)V
+.method public static method2883 : (III)V
     .code stack 5 locals 5
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb bF J
 L6:     dup2
 L7:     lstore_3
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    iload_1
 L13:    iload_2
@@ -407,13 +407,13 @@ L19:
 .method static native nglSampleMapATI : (IIIJ)V
 .end method
 
-.method public static break : (I)V
+.method public static method2884 : (I)V
     .code stack 4 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb NB J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    lload_1
 L13:    invokestatic Method org/lwjgl/opengl/ATIFragmentShader nglBindFragmentShaderATI (IJ)V

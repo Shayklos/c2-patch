@@ -7,7 +7,7 @@
 .field private final bpp I
 .field private final width I
 
-.method public float : ()I
+.method public method3045 : ()I
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/DisplayMode bpp I
@@ -16,7 +16,7 @@ L5:
     .end code
 .end method
 
-.method public short : ()I
+.method public method3046 : ()I
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/DisplayMode freq I
@@ -77,7 +77,7 @@ L77:
     .end code
 .end method
 
-.method public const : ()I
+.method public method3047 : ()I
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/DisplayMode width I
@@ -86,7 +86,7 @@ L5:
     .end code
 .end method
 
-.method public else : ()Z
+.method public method3048 : ()Z
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/DisplayMode fullscreen Z
@@ -112,7 +112,7 @@ L14:
     .end code
 .end method
 
-.method public break : ()I
+.method public method3049 : ()I
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/DisplayMode height I

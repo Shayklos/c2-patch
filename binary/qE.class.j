@@ -2,14 +2,14 @@
 .class public final super enum qE
 .super java/lang/Enum
 .field public static final enum try LqE;
-.field public static final enum const LqE;
+.field public static final enum field626 LqE;
 .field public static final enum new LqE;
-.field public static final enum null LqE;
+.field public static final enum field627 LqE;
 .field public static final enum this LqE;
-.field public static final enum char LqE;
-.field private static final synthetic else [LqE;
-.field public static final enum "enum" LqE;
-.field public static final enum do LqE;
+.field public static final enum field628 LqE;
+.field private static final synthetic field629 [LqE;
+.field public static final enum field630 LqE;
+.field public static final enum field631 LqE;
 
 .method public static <clinit> : ()V
     .code stack 6 locals 0
@@ -21,7 +21,7 @@ L7:     iconst_1
 L8:     dup
 L9:     pop2
 L10:    invokespecial Method qE <init> (Ljava/lang/String;I)V
-L13:    putstatic Field qE char LqE;
+L13:    putstatic Field qE field628 LqE;
 L16:    new qE
 L19:    dup
 L20:    ldc "COUNTDOWN"
@@ -30,7 +30,7 @@ L23:    dup
 L24:    dup
 L25:    pop2
 L26:    invokespecial Method qE <init> (Ljava/lang/String;I)V
-L29:    putstatic Field qE const LqE;
+L29:    putstatic Field qE field626 LqE;
 L32:    new qE
 L35:    dup
 L36:    ldc "PLAYING"
@@ -48,7 +48,7 @@ L55:    iconst_1
 L56:    dup
 L57:    pop2
 L58:    invokespecial Method qE <init> (Ljava/lang/String;I)V
-L61:    putstatic Field qE null LqE;
+L61:    putstatic Field qE field627 LqE;
 L64:    new qE
 L67:    dup
 L68:    ldc "GAME_OVER_UNRANKED"
@@ -66,7 +66,7 @@ L87:    iconst_1
 L88:    dup
 L89:    pop2
 L90:    invokespecial Method qE <init> (Ljava/lang/String;I)V
-L93:    putstatic Field qE do LqE;
+L93:    putstatic Field qE field631 LqE;
 L96:    new qE
 L99:    dup
 L100:   ldc "TEAM_SELECTION"
@@ -75,7 +75,7 @@ L104:   iconst_1
 L105:   dup
 L106:   pop2
 L107:   invokespecial Method qE <init> (Ljava/lang/String;I)V
-L110:   putstatic Field qE "enum" LqE;
+L110:   putstatic Field qE field630 LqE;
 L113:   new qE
 L116:   dup
 L117:   ldc "PREVIEWING"
@@ -98,14 +98,14 @@ L142:   iconst_0
 L143:   iconst_1
 L144:   dup
 L145:   pop2
-L146:   getstatic Field qE char LqE;
+L146:   getstatic Field qE field628 LqE;
 L149:   aastore
 L150:   dup
 L151:   iconst_1
 L152:   dup
 L153:   dup
 L154:   pop2
-L155:   getstatic Field qE const LqE;
+L155:   getstatic Field qE field626 LqE;
 L158:   aastore
 L159:   dup
 L160:   iconst_2
@@ -119,7 +119,7 @@ L169:   iconst_3
 L170:   iconst_1
 L171:   dup
 L172:   pop2
-L173:   getstatic Field qE null LqE;
+L173:   getstatic Field qE field627 LqE;
 L176:   aastore
 L177:   dup
 L178:   iconst_4
@@ -133,14 +133,14 @@ L187:   iconst_5
 L188:   iconst_1
 L189:   dup
 L190:   pop2
-L191:   getstatic Field qE do LqE;
+L191:   getstatic Field qE field631 LqE;
 L194:   aastore
 L195:   dup
 L196:   bipush 6
 L198:   iconst_1
 L199:   dup
 L200:   pop2
-L201:   getstatic Field qE "enum" LqE;
+L201:   getstatic Field qE field630 LqE;
 L204:   aastore
 L205:   dup
 L206:   bipush 7
@@ -149,7 +149,7 @@ L209:   dup
 L210:   pop2
 L211:   getstatic Field qE try LqE;
 L214:   aastore
-L215:   putstatic Field qE else [LqE;
+L215:   putstatic Field qE field629 [LqE;
 L218:   return
 L219:   
     .end code
@@ -168,7 +168,7 @@ L7:
 
 .method public static values : ()[LqE;
     .code stack 1 locals 0
-L0:     getstatic Field qE else [LqE;
+L0:     getstatic Field qE field629 [LqE;
 L3:     invokevirtual Method [LqE; clone ()Ljava/lang/Object;
 L6:     checkcast [LqE;
 L9:     areturn

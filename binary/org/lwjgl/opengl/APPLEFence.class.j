@@ -1,19 +1,19 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/APPLEFence
 .super java/lang/Object
-.field public static final "enum" I = 35338
-.field public static final do I = 35339
+.field public static final field2715 I = 35338
+.field public static final field2716 I = 35339
 
 .method static native nglTestObjectAPPLE : (IIJ)Z
 .end method
 
-.method public static float : (I)Z
+.method public static method2157 : (I)Z
     .code stack 4 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb aH J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    lload_1
 L13:    invokestatic Method org/lwjgl/opengl/APPLEFence nglIsFenceAPPLE (IJ)Z
@@ -25,13 +25,13 @@ L17:
 .method static native nglFinishFenceAPPLE : (IJ)V
 .end method
 
-.method public static short : (I)Z
+.method public static method2158 : (I)Z
     .code stack 4 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb yL J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    lload_1
 L13:    invokestatic Method org/lwjgl/opengl/APPLEFence nglTestFenceAPPLE (IJ)Z
@@ -46,19 +46,19 @@ L17:
 .method static native nglSetFenceAPPLE : (IJ)V
 .end method
 
-.method public static else : (Ljava/nio/IntBuffer;)V
+.method public static method2159 : (Ljava/nio/IntBuffer;)V
     .code stack 5 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb Gd J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    aload_0
 L12:    dup
-L13:    invokestatic Method org/lwjgl/l else (Ljava/nio/IntBuffer;)V
+L13:    invokestatic Method org/lwjgl/l method2043 (Ljava/nio/IntBuffer;)V
 L16:    invokevirtual Method java/nio/IntBuffer remaining ()I
 L19:    aload_0
-L20:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/IntBuffer;)J
+L20:    invokestatic Method org/lwjgl/MemoryUtil method1884 (Ljava/nio/IntBuffer;)J
 L23:    lload_1
 L24:    invokestatic Method org/lwjgl/opengl/APPLEFence nglGenFencesAPPLE (IJJ)V
 L27:    return
@@ -72,13 +72,13 @@ L28:
 .method static native nglDeleteFencesAPPLE : (IJJ)V
 .end method
 
-.method public static const : (I)V
+.method public static method2160 : (I)V
     .code stack 4 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb LK J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    lload_1
 L13:    invokestatic Method org/lwjgl/opengl/APPLEFence nglSetFenceAPPLE (IJ)V
@@ -87,22 +87,22 @@ L17:
     .end code
 .end method
 
-.method public static else : (I)V
+.method public static method2161 : (I)V
     .code stack 5 locals 4
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     dup
 L4:     astore_1
 L5:     getfield Field org/lwjgl/opengl/kb wB J
 L8:     dup2
 L9:     lstore_2
-L10:    invokestatic Method org/lwjgl/l break (J)V
+L10:    invokestatic Method org/lwjgl/l method2052 (J)V
 L13:    iconst_1
 L14:    dup
 L15:    dup
 L16:    pop2
 L17:    aload_1
 L18:    iload_0
-L19:    invokestatic Method org/lwjgl/opengl/bB const (Lorg/lwjgl/opengl/kb;I)J
+L19:    invokestatic Method org/lwjgl/opengl/bB method5479 (Lorg/lwjgl/opengl/kb;I)J
 L22:    lload_2
 L23:    invokestatic Method org/lwjgl/opengl/APPLEFence nglDeleteFencesAPPLE (IJJ)V
 L26:    return
@@ -110,22 +110,22 @@ L27:
     .end code
 .end method
 
-.method public static break : ()I
+.method public static method2162 : ()I
     .code stack 5 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     dup
 L4:     getfield Field org/lwjgl/opengl/kb Gd J
 L7:     dup2
 L8:     lstore_0
-L9:     invokestatic Method org/lwjgl/l break (J)V
-L12:    invokestatic Method org/lwjgl/opengl/bB short (Lorg/lwjgl/opengl/kb;)Ljava/nio/IntBuffer;
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
+L12:    invokestatic Method org/lwjgl/opengl/bB method5467 (Lorg/lwjgl/opengl/kb;)Ljava/nio/IntBuffer;
 L15:    astore_2
 L16:    iconst_1
 L17:    dup
 L18:    dup
 L19:    pop2
 L20:    aload_2
-L21:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/IntBuffer;)J
+L21:    invokestatic Method org/lwjgl/MemoryUtil method1884 (Ljava/nio/IntBuffer;)J
 L24:    lload_0
 L25:    invokestatic Method org/lwjgl/opengl/APPLEFence nglGenFencesAPPLE (IJJ)V
 L28:    aload_2
@@ -148,19 +148,19 @@ L5:
     .end code
 .end method
 
-.method public static break : (Ljava/nio/IntBuffer;)V
+.method public static method2163 : (Ljava/nio/IntBuffer;)V
     .code stack 5 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb wB J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    aload_0
 L12:    dup
-L13:    invokestatic Method org/lwjgl/l else (Ljava/nio/IntBuffer;)V
+L13:    invokestatic Method org/lwjgl/l method2043 (Ljava/nio/IntBuffer;)V
 L16:    invokevirtual Method java/nio/IntBuffer remaining ()I
 L19:    aload_0
-L20:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/IntBuffer;)J
+L20:    invokestatic Method org/lwjgl/MemoryUtil method1884 (Ljava/nio/IntBuffer;)J
 L23:    lload_1
 L24:    invokestatic Method org/lwjgl/opengl/APPLEFence nglDeleteFencesAPPLE (IJJ)V
 L27:    return
@@ -168,13 +168,13 @@ L28:
     .end code
 .end method
 
-.method public static else : (II)V
+.method public static method2164 : (II)V
     .code stack 4 locals 4
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb WL J
 L6:     dup2
 L7:     lstore_2
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    iload_1
 L13:    lload_2
@@ -184,13 +184,13 @@ L18:
     .end code
 .end method
 
-.method public static break : (II)Z
+.method public static method2165 : (II)Z
     .code stack 4 locals 4
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb FK J
 L6:     dup2
 L7:     lstore_2
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    iload_1
 L13:    lload_2
@@ -206,13 +206,13 @@ L18:
 .method static native nglGenFencesAPPLE : (IJJ)V
 .end method
 
-.method public static break : (I)V
+.method public static method2166 : (I)V
     .code stack 4 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb CF J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    lload_1
 L13:    invokestatic Method org/lwjgl/opengl/APPLEFence nglFinishFenceAPPLE (IJ)V

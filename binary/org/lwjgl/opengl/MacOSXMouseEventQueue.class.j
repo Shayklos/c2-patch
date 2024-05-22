@@ -1,16 +1,16 @@
 .version 49 0
 .class final super org/lwjgl/opengl/MacOSXMouseEventQueue
 .super org/lwjgl/opengl/MA
-.field private else Z
-.field private static "enum" Z
-.field private final do Ljava/nio/IntBuffer;
+.field private field605 Z
+.field private static field606 Z
+.field private final field607 Ljava/nio/IntBuffer;
 
-.method protected float : ()V
+.method protected method69 : ()V
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     invokespecial Method org/lwjgl/opengl/MA float ()V
-L5:     getfield Field org/lwjgl/opengl/MacOSXMouseEventQueue do Ljava/nio/IntBuffer;
+L2:     invokespecial Method org/lwjgl/opengl/MA method69 ()V
+L5:     getfield Field org/lwjgl/opengl/MacOSXMouseEventQueue field607 Ljava/nio/IntBuffer;
 L8:     invokestatic Method org/lwjgl/opengl/MacOSXMouseEventQueue getMouseDeltas (Ljava/nio/IntBuffer;)V
 L11:    return
 L12:    
@@ -28,7 +28,7 @@ L7:     iconst_1
 L8:     dup
 L9:     pop2
 L10:    invokestatic Method org/lwjgl/BufferUtils createIntBuffer (I)Ljava/nio/IntBuffer;
-L13:    putfield Field org/lwjgl/opengl/MacOSXMouseEventQueue do Ljava/nio/IntBuffer;
+L13:    putfield Field org/lwjgl/opengl/MacOSXMouseEventQueue field607 Ljava/nio/IntBuffer;
 L16:    return
 L17:    
     .end code
@@ -40,12 +40,12 @@ L17:
 .method private static native getMouseDeltas : (Ljava/nio/IntBuffer;)V
 .end method
 
-.method protected break : (J)V
+.method protected method234 : (J)V
     .code stack 10 locals 7
 L0:     aload_0
 L1:     dup
 L2:     lload_1
-L3:     invokespecial Method org/lwjgl/opengl/MA break (J)V
+L3:     invokespecial Method org/lwjgl/opengl/MA method234 (J)V
 L6:     dup
 L7:     astore_3
 L8:     monitorenter
@@ -53,16 +53,16 @@ L8:     monitorenter
 L9:     aload_0
 L10:    dup
 L11:    dup2
-L12:    getfield Field org/lwjgl/opengl/MacOSXMouseEventQueue do Ljava/nio/IntBuffer;
+L12:    getfield Field org/lwjgl/opengl/MacOSXMouseEventQueue field607 Ljava/nio/IntBuffer;
 L15:    invokestatic Method org/lwjgl/opengl/MacOSXMouseEventQueue getMouseDeltas (Ljava/nio/IntBuffer;)V
-L18:    getfield Field org/lwjgl/opengl/MacOSXMouseEventQueue do Ljava/nio/IntBuffer;
+L18:    getfield Field org/lwjgl/opengl/MacOSXMouseEventQueue field607 Ljava/nio/IntBuffer;
 L21:    iconst_0
 L22:    iconst_1
 L23:    dup
 L24:    pop2
 L25:    invokevirtual Method java/nio/IntBuffer get (I)I
 L28:    istore 4
-L30:    getfield Field org/lwjgl/opengl/MacOSXMouseEventQueue do Ljava/nio/IntBuffer;
+L30:    getfield Field org/lwjgl/opengl/MacOSXMouseEventQueue field607 Ljava/nio/IntBuffer;
 L33:    iconst_1
 L34:    dup
 L35:    dup
@@ -70,7 +70,7 @@ L36:    pop2
 L37:    invokevirtual Method java/nio/IntBuffer get (I)I
 L40:    ineg
 L41:    istore 5
-L43:    getfield Field org/lwjgl/opengl/MacOSXMouseEventQueue else Z
+L43:    getfield Field org/lwjgl/opengl/MacOSXMouseEventQueue field605 Z
 L46:    ifeq L68
 L49:    aload_3
 L50:    aload_0
@@ -79,8 +79,8 @@ L52:    iconst_0
 L53:    iconst_1
 L54:    dup
 L55:    pop2
-L56:    putfield Field org/lwjgl/opengl/MacOSXMouseEventQueue else Z
-L59:    invokevirtual Method org/lwjgl/opengl/MacOSXMouseEventQueue catch ()Z
+L56:    putfield Field org/lwjgl/opengl/MacOSXMouseEventQueue field605 Z
+L59:    invokevirtual Method org/lwjgl/opengl/MacOSXMouseEventQueue method327 ()Z
 L62:    invokestatic Method org/lwjgl/opengl/MacOSXMouseEventQueue nGrabMouse (Z)V
 L65:    monitorexit
 L66:    return
@@ -108,9 +108,9 @@ L95:    iconst_1
 L96:    dup
 L97:    pop2
 L98:    lload_1
-L99:    invokevirtual Method org/lwjgl/opengl/MacOSXMouseEventQueue break (BBIIIJ)V
+L99:    invokevirtual Method org/lwjgl/opengl/MacOSXMouseEventQueue method377 (BBIIIJ)V
 L102:   iload 5
-L104:   invokevirtual Method org/lwjgl/opengl/MacOSXMouseEventQueue break (II)V
+L104:   invokevirtual Method org/lwjgl/opengl/MacOSXMouseEventQueue method236 (II)V
 L107:   aload_3
 L108:   monitorexit
 L109:   return
@@ -130,10 +130,10 @@ L119:
 .method private static native nWarpCursor : (II)V
 .end method
 
-.method private static synchronized else : (Z)V
+.method private static synchronized method95 : (Z)V
     .code stack 1 locals 1
 L0:     iload_0
-L1:     putstatic Field org/lwjgl/opengl/MacOSXMouseEventQueue "enum" Z
+L1:     putstatic Field org/lwjgl/opengl/MacOSXMouseEventQueue field606 Z
 L4:     iload_0
 L5:     ifne L12
 L8:     iload_0
@@ -144,7 +144,7 @@ L13:
     .end code
 .end method
 
-.method for : ()V
+.method method61 : ()V
     .code stack 2 locals 3
 L0:     aload_0
 L1:     dup
@@ -153,8 +153,8 @@ L3:     monitorenter
         .catch [0] from L4 to L14 using L16
 L4:     aload_0
 L5:     dup
-L6:     invokevirtual Method org/lwjgl/opengl/MacOSXMouseEventQueue catch ()Z
-L9:     putfield Field org/lwjgl/opengl/MacOSXMouseEventQueue else Z
+L6:     invokevirtual Method org/lwjgl/opengl/MacOSXMouseEventQueue method327 ()Z
+L9:     putfield Field org/lwjgl/opengl/MacOSXMouseEventQueue field605 Z
 L12:    aload_1
 L13:    monitorexit
 L14:    return
@@ -171,18 +171,18 @@ L22:
     .end code
 .end method
 
-.method public break : (Z)V
+.method public method238 : (Z)V
     .code stack 4 locals 2
-L0:     getstatic Field org/lwjgl/opengl/MacOSXMouseEventQueue "enum" Z
+L0:     getstatic Field org/lwjgl/opengl/MacOSXMouseEventQueue field606 Z
 L3:     iload_1
 L4:     if_icmpeq L20
 L7:     aload_0
 L8:     dup
 L9:     iload_1
 L10:    dup_x2
-L11:    invokespecial Method org/lwjgl/opengl/MA break (Z)V
-L14:    invokevirtual Method org/lwjgl/opengl/MacOSXMouseEventQueue for ()V
-L17:    invokestatic Method org/lwjgl/opengl/MacOSXMouseEventQueue else (Z)V
+L11:    invokespecial Method org/lwjgl/opengl/MA method238 (Z)V
+L14:    invokevirtual Method org/lwjgl/opengl/MacOSXMouseEventQueue method61 ()V
+L17:    invokestatic Method org/lwjgl/opengl/MacOSXMouseEventQueue method95 (Z)V
 L20:    return
 L21:    
         .attribute StackMap b'\x00\x01\x00\x14\x00\x02\x07\x00\x02\x01\x00\x00'

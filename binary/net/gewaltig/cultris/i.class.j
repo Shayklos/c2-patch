@@ -2,7 +2,7 @@
 .class final super net/gewaltig/cultris/i
 .super java/lang/Object
 .implements M
-.field do D
+.field field804 D
 
 .method <init> : ()V
     .code stack 4 locals 1
@@ -10,7 +10,7 @@ L0:     dconst_0
 L1:     aload_0
 L2:     dup_x2
 L3:     invokespecial Method java/lang/Object <init> ()V
-L6:     putfield Field net/gewaltig/cultris/i do D
+L6:     putfield Field net/gewaltig/cultris/i field804 D
 L9:     return
 L10:    
     .end code
@@ -28,17 +28,17 @@ L5:
     .exceptions java/lang/Exception
 .end method
 
-.method public break : ()Z
+.method public method227 : ()Z
     .code stack 6 locals 1
 L0:     aload_0
 L1:     dup
 L2:     dup
-L3:     getfield Field net/gewaltig/cultris/i do D
-L6:     getstatic Field ib do F
+L3:     getfield Field net/gewaltig/cultris/i field804 D
+L6:     getstatic Field ib field2312 F
 L9:     f2d
 L10:    dadd
-L11:    putfield Field net/gewaltig/cultris/i do D
-L14:    getfield Field net/gewaltig/cultris/i do D
+L11:    putfield Field net/gewaltig/cultris/i field804 D
+L14:    getfield Field net/gewaltig/cultris/i field804 D
 L17:    ldc2_w 1e1
 L20:    dcmpl
 L21:    ifle L30
@@ -54,7 +54,7 @@ L32:    dup
 L33:    pop2
 L34:    ireturn
 L35:    
-        .attribute StackMap b'\x00\x02\x00\x1D\x00\x00\x00\x01\x07\x00\x22\x00\x1E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x1D\x00\x00\x00\x01\x07\x00\x23\x00\x1E\x00\x01\x07\x00\x02\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method

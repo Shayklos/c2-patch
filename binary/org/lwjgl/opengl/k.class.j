@@ -2,22 +2,22 @@
 .class public interface abstract org/lwjgl/opengl/k
 .super java/lang/Object
 
-.method public abstract short : ()V
+.method public abstract method71 : ()V
 .end method
 
-.method public abstract const : ()Z
+.method public abstract method263 : ()Z
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract else : ()V
+.method public abstract method56 : ()V
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract break : (Lorg/lwjgl/h;)V
+.method public abstract method311 : (Lorg/lwjgl/h;)V
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract break : ()V
+.method public abstract method74 : ()V
     .exceptions org/lwjgl/LWJGLException
 .end method
 .end class

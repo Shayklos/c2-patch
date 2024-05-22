@@ -1,9 +1,9 @@
 .version 49 0
 .class public final super wA
 .super java/lang/Object
-.field public else I
-.field public "enum" I
-.field public do I
+.field public field5827 I
+.field public field5828 I
+.field public field5829 I
 
 .method public <init> : (III)V
     .code stack 7 locals 4
@@ -15,9 +15,9 @@ L4:     iload_1
 L5:     aload_0
 L6:     dup_x1
 L7:     invokespecial Method java/lang/Object <init> ()V
-L10:    putfield Field wA else I
-L13:    putfield Field wA "enum" I
-L16:    putfield Field wA do I
+L10:    putfield Field wA field5827 I
+L13:    putfield Field wA field5828 I
+L16:    putfield Field wA field5829 I
 L19:    return
 L20:    
     .end code

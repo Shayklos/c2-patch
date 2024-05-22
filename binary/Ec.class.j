@@ -3,18 +3,18 @@
 .super java/lang/Object
 .implements G
 
-.method public break : (LD;)V
+.method public method8 : (LD;)V
     .code stack 3 locals 2
 L0:     aload_1
 L1:     instanceof Td
 L4:     ifeq L21
-L7:     invokestatic Method CD short ()Ljava/util/LinkedList;
+L7:     invokestatic Method CD method18 ()Ljava/util/LinkedList;
 L10:    invokevirtual Method java/util/LinkedList clear ()V
 L13:    iconst_0
 L14:    iconst_1
 L15:    dup
 L16:    pop2
-L17:    invokestatic Method CD else (I)I
+L17:    invokestatic Method CD method19 (I)I
 L20:    pop
 L21:    return
 L22:    

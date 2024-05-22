@@ -1,12 +1,12 @@
 .version 49 0
 .class public final super mg
 .super Uf
-.field public null F
+.field public field1385 F
 .field public this LDF;
-.field public char Z
-.field public "enum" Z
+.field public field1386 Z
+.field public field1387 Z
 
-.method public break : ()LgB;
+.method public method700 : ()LgB;
     .code stack 7 locals 2
 L0:     new qc
 L3:     dup
@@ -26,19 +26,19 @@ L24:    dup
 L25:    ldc "Remaining time"
 L27:    getstatic Field We try LWe;
 L30:    invokespecial Method DF <init> (Ljava/lang/String;LWe;)V
-L33:    getstatic Field VD do Ljava/lang/Object;
-L36:    invokevirtual Method qc break (LgB;Ljava/lang/Object;)V
+L33:    getstatic Field VD field150 Ljava/lang/Object;
+L36:    invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
 L39:    new DF
 L42:    aload_0
 L43:    dup
 L44:    pop2
 L45:    dup
 L46:    ldc " "
-L48:    getstatic Field We extends LWe;
+L48:    getstatic Field We field475 LWe;
 L51:    invokespecial Method DF <init> (Ljava/lang/String;LWe;)V
 L54:    dup_x1
 L55:    putfield Field mg this LDF;
-L58:    invokevirtual Method qc float (LgB;)LgB;
+L58:    invokevirtual Method qc method36 (LgB;)LgB;
 L61:    pop
 L62:    aload_1
 L63:    areturn
@@ -46,12 +46,12 @@ L64:
     .end code
 .end method
 
-.method public break : (LRg;)Z
+.method public method704 : (LRg;)Z
     .code stack 9 locals 4
 L0:     aload_0
-L1:     getfield Field mg null F
+L1:     getfield Field mg field1385 F
 L4:     aload_1
-L5:     getfield Field Rg do F
+L5:     getfield Field Rg field241 F
 L8:     fsub
 L9:     dup
 L10:    fstore_2
@@ -99,9 +99,9 @@ L66:    frem
 L67:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
 L70:    aastore
 L71:    invokestatic Method java/lang/String format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-L74:    invokevirtual Method DF break (Ljava/lang/String;)V
+L74:    invokevirtual Method DF method12 (Ljava/lang/String;)V
 L77:    aload_0
-L78:    getfield Field mg "enum" Z
+L78:    getfield Field mg field1387 Z
 L81:    ifne L135
 L84:    fload_2
 L85:    ldc 5e0f
@@ -111,7 +111,7 @@ L90:    fdiv
 L91:    fconst_0
 L92:    fconst_1
 L93:    dup_x2
-L94:    invokestatic Method OC else (FFF)F
+L94:    invokestatic Method OC method1001 (FFF)F
 L97:    fsub
 L98:    dup
 L99:    fstore_3
@@ -140,13 +140,13 @@ L128:   fconst_1
 L129:   dup_x1
 L130:   fload_3
 L131:   fsub
-L132:   invokevirtual Method DF else (FFF)V
+L132:   invokevirtual Method DF method606 (FFF)V
 L135:   aload_0
-L136:   getfield Field mg char Z
+L136:   getfield Field mg field1386 Z
 L139:   ifeq L167
 L142:   aload_1
-L143:   getfield Field Rg else Lqd;
-L146:   getfield Field qd "enum" Ljava/util/Map;
+L143:   getfield Field Rg field239 Lqd;
+L146:   getfield Field qd field766 Ljava/util/Map;
 L149:   invokeinterface InterfaceMethod java/util/Map size ()I 1
 L154:   iconst_2
 L155:   iconst_1
@@ -160,13 +160,13 @@ L164:   pop2
 L165:   ireturn
 L166:   athrow
 L167:   aload_1
-L168:   getfield Field Rg case LqE;
+L168:   getfield Field Rg field227 LqE;
 L171:   getstatic Field qE this LqE;
 L174:   if_acmpne L195
 L177:   aload_1
-L178:   getfield Field Rg do F
+L178:   getfield Field Rg field241 F
 L181:   aload_0
-L182:   getfield Field mg null F
+L182:   getfield Field mg field1385 F
 L185:   fcmpl
 L186:   ifle L195
 L189:   iconst_1
@@ -181,7 +181,7 @@ L197:   dup
 L198:   pop2
 L199:   ireturn
 L200:   
-        .attribute StackMap b'\x00\x06\x00\x12\x00\x03\x07\x00\x02\x07\x00\x3C\x02\x00\x00\x00\x87\x00\x03\x07\x00\x02\x07\x00\x3C\x02\x00\x00\x00\xA6\x00\x00\x00\x01\x07\x00\x7F\x00\xA7\x00\x03\x07\x00\x02\x07\x00\x3C\x02\x00\x00\x00\xC2\x00\x00\x00\x01\x07\x00\x7F\x00\xC3\x00\x03\x07\x00\x02\x07\x00\x3C\x02\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x12\x00\x03\x07\x00\x02\x07\x00\x3E\x02\x00\x00\x00\x87\x00\x03\x07\x00\x02\x07\x00\x3E\x02\x00\x00\x00\xA6\x00\x00\x00\x01\x07\x00\x86\x00\xA7\x00\x03\x07\x00\x02\x07\x00\x3E\x02\x00\x00\x00\xC2\x00\x00\x00\x01\x07\x00\x86\x00\xC3\x00\x03\x07\x00\x02\x07\x00\x3E\x02\x00\x00'
     .end code
 .end method
 
@@ -238,9 +238,9 @@ L65:    dup_x1
 L66:    iload 5
 L68:    aload_0
 L69:    fload 4
-L71:    putfield Field mg null F
-L74:    putfield Field mg "enum" Z
-L77:    putfield Field mg char Z
+L71:    putfield Field mg field1385 F
+L74:    putfield Field mg field1387 Z
+L77:    putfield Field mg field1386 Z
 L80:    return
 L81:    
     .end code

@@ -1,19 +1,19 @@
 .version 49 0
 .class public final super wb
 .super java/lang/Object
-.field public goto Ljava/util/concurrent/LinkedBlockingQueue;
-.field public break Lbc;
-.field public long I
-.field private static void I
+.field public field5830 Ljava/util/concurrent/LinkedBlockingQueue;
+.field public field5831 Lbc;
+.field public field5832 I
+.field private static field5833 I
 .field public try Z
-.field public const Z
+.field public field5834 Z
 .field public new Ljava/net/Socket;
-.field public null Ljava/lang/Runnable;
+.field public field5835 Ljava/lang/Runnable;
 .field public this Ljava/lang/Thread;
-.field public char Z
-.field public else Ljava/lang/String;
-.field public "enum" Ljava/lang/Thread;
-.field public do Ljava/lang/Runnable;
+.field public field5836 Z
+.field public field5837 Ljava/lang/String;
+.field public field5838 Ljava/lang/Thread;
+.field public field5839 Ljava/lang/Runnable;
 
 .method public static <clinit> : ()V
     .code stack 3 locals 0
@@ -21,7 +21,7 @@ L0:     iconst_0
 L1:     iconst_1
 L2:     dup
 L3:     pop2
-L4:     putstatic Field wb void I
+L4:     putstatic Field wb field5833 I
 L7:     return
 L8:     
     .end code
@@ -47,16 +47,16 @@ L18:    dup
 L19:    pop2
 L20:    dup
 L21:    invokespecial Method java/util/concurrent/LinkedBlockingQueue <init> ()V
-L24:    putfield Field wb goto Ljava/util/concurrent/LinkedBlockingQueue;
-L27:    getstatic Field wb void I
+L24:    putfield Field wb field5830 Ljava/util/concurrent/LinkedBlockingQueue;
+L27:    getstatic Field wb field5833 I
 L30:    dup
 L31:    iconst_1
 L32:    dup
 L33:    dup
 L34:    pop2
 L35:    iadd
-L36:    putstatic Field wb void I
-L39:    putfield Field wb long I
+L36:    putstatic Field wb field5833 I
+L39:    putfield Field wb field5832 I
 L42:    new Sd
 L45:    aload_0
 L46:    dup
@@ -64,7 +64,7 @@ L47:    pop2
 L48:    dup
 L49:    aload_0
 L50:    invokespecial Method Sd <init> (Lwb;)V
-L53:    putfield Field wb do Ljava/lang/Runnable;
+L53:    putfield Field wb field5839 Ljava/lang/Runnable;
 L56:    new ad
 L59:    aload_0
 L60:    dup
@@ -72,13 +72,13 @@ L61:    pop2
 L62:    dup
 L63:    aload_0
 L64:    invokespecial Method ad <init> (Lwb;)V
-L67:    putfield Field wb null Ljava/lang/Runnable;
-L70:    putfield Field wb break Lbc;
+L67:    putfield Field wb field5835 Ljava/lang/Runnable;
+L70:    putfield Field wb field5831 Lbc;
 L73:    putfield Field wb new Ljava/net/Socket;
 L76:    getfield Field wb new Ljava/net/Socket;
 L79:    invokevirtual Method java/net/Socket getInetAddress ()Ljava/net/InetAddress;
 L82:    invokevirtual Method java/net/InetAddress getHostAddress ()Ljava/lang/String;
-L85:    putfield Field wb else Ljava/lang/String;
+L85:    putfield Field wb field5837 Ljava/lang/String;
 L88:    getstatic Field java/lang/System out Ljava/io/PrintStream;
 L91:    new java/lang/StringBuilder
 L94:    dup
@@ -87,7 +87,7 @@ L98:    iconst_0
 L99:    ldc "Connection with "
 L101:   invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
 L104:   aload_0
-L105:   getfield Field wb else Ljava/lang/String;
+L105:   getfield Field wb field5837 Ljava/lang/String;
 L108:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L111:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L114:   invokevirtual Method java/io/PrintStream println (Ljava/lang/String;)V
@@ -112,10 +112,10 @@ L144:   astore_1
 L145:   aload_0
 L146:   aload_1
 L147:   invokevirtual Method java/lang/Exception printStackTrace ()V
-L150:   getfield Field wb break Lbc;
+L150:   getfield Field wb field5831 Lbc;
 L153:   getfield Field bc this Ljava/util/HashMap;
 L156:   aload_0
-L157:   getfield Field wb long I
+L157:   getfield Field wb field5832 I
 L160:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L163:   aload_0
 L164:   invokevirtual Method java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -130,7 +130,7 @@ L176:   pop2
 L177:   dup
 L178:   aload_0
 L179:   dup_x2
-L180:   getfield Field wb do Ljava/lang/Runnable;
+L180:   getfield Field wb field5839 Ljava/lang/Runnable;
 L183:   invokespecial Method java/lang/Thread <init> (Ljava/lang/Runnable;)V
 L186:   putfield Field wb this Ljava/lang/Thread;
 L189:   new java/lang/Thread
@@ -140,9 +140,9 @@ L194:   dup
 L195:   pop2
 L196:   dup
 L197:   aload_0
-L198:   getfield Field wb null Ljava/lang/Runnable;
+L198:   getfield Field wb field5835 Ljava/lang/Runnable;
 L201:   invokespecial Method java/lang/Thread <init> (Ljava/lang/Runnable;)V
-L204:   putfield Field wb "enum" Ljava/lang/Thread;
+L204:   putfield Field wb field5838 Ljava/lang/Thread;
 L207:   getfield Field wb this Ljava/lang/Thread;
 L210:   bipush 10
 L212:   iconst_1
@@ -155,13 +155,13 @@ L222:   dup
 L223:   dup
 L224:   pop2
 L225:   invokevirtual Method java/lang/Thread setDaemon (Z)V
-L228:   getfield Field wb "enum" Ljava/lang/Thread;
+L228:   getfield Field wb field5838 Ljava/lang/Thread;
 L231:   bipush 10
 L233:   iconst_1
 L234:   dup
 L235:   pop2
 L236:   invokevirtual Method java/lang/Thread setPriority (I)V
-L239:   getfield Field wb "enum" Ljava/lang/Thread;
+L239:   getfield Field wb field5838 Ljava/lang/Thread;
 L242:   iconst_1
 L243:   dup
 L244:   dup
@@ -169,7 +169,7 @@ L245:   pop2
 L246:   invokevirtual Method java/lang/Thread setDaemon (Z)V
 L249:   getfield Field wb this Ljava/lang/Thread;
 L252:   invokevirtual Method java/lang/Thread start ()V
-L255:   getfield Field wb "enum" Ljava/lang/Thread;
+L255:   getfield Field wb field5838 Ljava/lang/Thread;
 L258:   invokevirtual Method java/lang/Thread start ()V
 L261:   pop
 L262:   return
@@ -179,7 +179,7 @@ L263:
     .exceptions java/net/SocketException
 .end method
 
-.method public synchronized break : ()V
+.method public synchronized method5822 : ()V
     .code stack 6 locals 2
 L0:     aload_0
 L1:     getfield Field wb new Ljava/net/Socket;
@@ -195,9 +195,9 @@ L14:    dup_x2
 L15:    getfield Field wb this Ljava/lang/Thread;
 L18:    invokevirtual Method java/lang/Thread interrupt ()V
 L21:    putfield Field wb this Ljava/lang/Thread;
-L24:    getfield Field wb "enum" Ljava/lang/Thread;
+L24:    getfield Field wb field5838 Ljava/lang/Thread;
 L27:    invokevirtual Method java/lang/Thread interrupt ()V
-L30:    putfield Field wb "enum" Ljava/lang/Thread;
+L30:    putfield Field wb field5838 Ljava/lang/Thread;
         .catch java/io/IOException from L33 to L40 using L45
 L33:    aload_0
 L34:    getfield Field wb new Ljava/net/Socket;
@@ -212,8 +212,8 @@ L48:    invokevirtual Method java/io/IOException printStackTrace ()V
 L51:    aconst_null
 L52:    putfield Field wb new Ljava/net/Socket;
 L55:    aload_0
-L56:    getfield Field wb break Lbc;
-L59:    getfield Field bc char Ljava/util/concurrent/LinkedBlockingQueue;
+L56:    getfield Field wb field5831 Lbc;
+L59:    getfield Field bc field796 Ljava/util/concurrent/LinkedBlockingQueue;
 L62:    aload_0
 L63:    invokevirtual Method java/util/concurrent/LinkedBlockingQueue add (Ljava/lang/Object;)Z
 L66:    getstatic Field java/lang/System out Ljava/io/PrintStream;
@@ -224,14 +224,14 @@ L76:    iconst_0
 L77:    ldc "Closing connection with "
 L79:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
 L82:    aload_0
-L83:    getfield Field wb else Ljava/lang/String;
+L83:    getfield Field wb field5837 Ljava/lang/String;
 L86:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L89:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L92:    invokevirtual Method java/io/PrintStream println (Ljava/lang/String;)V
 L95:    pop
 L96:    return
 L97:    
-        .attribute StackMap b'\x00\x05\x00\x08\x00\x00\x00\x01\x07\x00\x70\x00\x09\x00\x01\x07\x00\x02\x00\x00\x00\x2C\x00\x00\x00\x01\x07\x00\x70\x00\x2D\x00\x01\x07\x00\x02\x00\x01\x07\x00\x98\x00\x33\x00\x01\x07\x00\x02\x00\x01\x07\x00\x02'
+        .attribute StackMap b'\x00\x05\x00\x08\x00\x00\x00\x01\x07\x00\x70\x00\x09\x00\x01\x07\x00\x02\x00\x00\x00\x2C\x00\x00\x00\x01\x07\x00\x70\x00\x2D\x00\x01\x07\x00\x02\x00\x01\x07\x00\x99\x00\x33\x00\x01\x07\x00\x02\x00\x01\x07\x00\x02'
     .end code
 .end method
 .innerclasses

@@ -2,10 +2,10 @@
 .class final super org/lwjgl/opengl/wA
 .super java/lang/Object
 .implements org/lwjgl/opengl/d
-.field final synthetic "enum" Lorg/lwjgl/opengl/XA;
-.field private static final do Ljava/lang/String;
+.field final synthetic field4932 Lorg/lwjgl/opengl/XA;
+.field private static final field4933 Ljava/lang/String;
 
-.method public break : (Z)V
+.method public method5286 : (Z)V
     .code stack 6 locals 2
 L0:     bipush 6
 L2:     iconst_1
@@ -66,7 +66,7 @@ L70:    invokestatic Method java/lang/Boolean toString (Z)Ljava/lang/String;
 L73:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L76:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L79:    aastore
-L80:    invokestatic Method org/lwjgl/opengl/sA break ([Ljava/lang/String;)Ljava/util/List;
+L80:    invokestatic Method org/lwjgl/opengl/sA method5731 ([Ljava/lang/String;)Ljava/util/List;
 L83:    ifnonnull L96
 L86:    new org/lwjgl/LWJGLException
 L89:    dup
@@ -83,13 +83,13 @@ L97:
 .method static <clinit> : ()V
     .code stack 1 locals 0
 L0:     ldc "/org/freedesktop/compiz/workarounds/allscreens/legacy_fullscreen"
-L2:     putstatic Field org/lwjgl/opengl/wA do Ljava/lang/String;
+L2:     putstatic Field org/lwjgl/opengl/wA field4933 Ljava/lang/String;
 L5:     return
 L6:     
     .end code
 .end method
 
-.method public break : ()Z
+.method public method5287 : ()Z
     .code stack 6 locals 3
 L0:     bipush 6
 L2:     iconst_1
@@ -141,7 +141,7 @@ L54:    dup
 L55:    pop2
 L56:    ldc "org.freedesktop.compiz.get"
 L58:    aastore
-L59:    invokestatic Method org/lwjgl/opengl/sA break ([Ljava/lang/String;)Ljava/util/List;
+L59:    invokestatic Method org/lwjgl/opengl/sA method5731 ([Ljava/lang/String;)Ljava/util/List;
 L62:    dup
 L63:    astore_1
 L64:    ifnull L80
@@ -212,7 +212,7 @@ L184:   invokevirtual Method java/lang/String substring (I)Ljava/lang/String;
 L187:   invokevirtual Method java/lang/String equalsIgnoreCase (Ljava/lang/String;)Z
 L190:   ireturn
 L191:   
-        .attribute StackMap b'\x00\x05\x00\x50\x00\x02\x07\x00\x02\x07\x00\x4E\x00\x00\x00\x5A\x00\x02\x07\x00\x02\x07\x00\x4E\x00\x00\x00\x7B\x00\x03\x07\x00\x02\x07\x00\x4E\x07\x00\x19\x00\x00\x00\xA1\x00\x03\x07\x00\x02\x07\x00\x4E\x07\x00\x19\x00\x00\x00\xAB\x00\x03\x07\x00\x02\x07\x00\x4E\x07\x00\x19\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x50\x00\x02\x07\x00\x02\x07\x00\x50\x00\x00\x00\x5A\x00\x02\x07\x00\x02\x07\x00\x50\x00\x00\x00\x7B\x00\x03\x07\x00\x02\x07\x00\x50\x07\x00\x19\x00\x00\x00\xA1\x00\x03\x07\x00\x02\x07\x00\x50\x07\x00\x19\x00\x00\x00\xAB\x00\x03\x07\x00\x02\x07\x00\x50\x07\x00\x19\x00\x00'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
@@ -222,7 +222,7 @@ L191:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field org/lwjgl/opengl/wA "enum" Lorg/lwjgl/opengl/XA;
+L3:     putfield Field org/lwjgl/opengl/wA field4932 Lorg/lwjgl/opengl/XA;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    

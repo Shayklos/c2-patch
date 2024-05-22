@@ -1,7 +1,7 @@
 .version 49 0
 .class public final super synthetic oA
 .super java/lang/Object
-.field public static final synthetic do [I
+.field public static final synthetic field2417 [I
 
 .method public static <clinit> : ()V
     .code stack 5 locals 1
@@ -11,10 +11,10 @@ L4:     newarray int
 L6:     iconst_1
 L7:     dup
 L8:     pop2
-L9:     putstatic Field oA do [I
+L9:     putstatic Field oA field2417 [I
         .catch java/lang/NoSuchFieldError from L12 to L26 using L30
-L12:    getstatic Field oA do [I
-L15:    getstatic Field tA "enum" LtA;
+L12:    getstatic Field oA field2417 [I
+L15:    getstatic Field tA field354 LtA;
 L18:    invokevirtual Method tA ordinal ()I
 L21:    iconst_1
 L22:    dup
@@ -25,8 +25,8 @@ L26:    goto L31
 L29:    athrow
 L30:    astore_0
         .catch java/lang/NoSuchFieldError from L31 to L45 using L47
-L31:    getstatic Field oA do [I
-L34:    getstatic Field tA else LtA;
+L31:    getstatic Field oA field2417 [I
+L34:    getstatic Field tA field353 LtA;
 L37:    invokevirtual Method tA ordinal ()I
 L40:    iconst_2
 L41:    iconst_1

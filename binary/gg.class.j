@@ -1,11 +1,11 @@
 .version 49 0
 .class public super abstract gg
 .super uB
-.field public static final else F = 3.5e-1f
-.field public static final "enum" F = 5e-1f
-.field public static final do F = 1e-1f
+.field public static final field92 F = 3.5e-1f
+.field public static final field977 F = 5e-1f
+.field public static final field70 F = 1e-1f
 
-.method public break : (I)V
+.method public method14 : (I)V
     .code stack 0 locals 2
 L0:     return
 L1:     
@@ -21,7 +21,7 @@ L5:
     .end code
 .end method
 
-.method public break : ()V
+.method public method74 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     

@@ -2,13 +2,13 @@
 .class final super org/lwjgl/MemoryUtil$CharSequenceNT
 .super java/lang/Object
 .implements java/lang/CharSequence
-.field final do Ljava/lang/CharSequence;
+.field final field2545 Ljava/lang/CharSequence;
 
 .method public charAt : (I)C
     .code stack 3 locals 2
 L0:     iload_1
 L1:     aload_0
-L2:     getfield Field org/lwjgl/MemoryUtil$CharSequenceNT do Ljava/lang/CharSequence;
+L2:     getfield Field org/lwjgl/MemoryUtil$CharSequenceNT field2545 Ljava/lang/CharSequence;
 L5:     invokeinterface InterfaceMethod java/lang/CharSequence length ()I 1
 L10:    if_icmpne L19
 L13:    iconst_0
@@ -18,7 +18,7 @@ L16:    pop2
 L17:    ireturn
 L18:    athrow
 L19:    aload_0
-L20:    getfield Field org/lwjgl/MemoryUtil$CharSequenceNT do Ljava/lang/CharSequence;
+L20:    getfield Field org/lwjgl/MemoryUtil$CharSequenceNT field2545 Ljava/lang/CharSequence;
 L23:    iload_1
 L24:    invokeinterface InterfaceMethod java/lang/CharSequence charAt (I)C 2
 L29:    ireturn
@@ -30,7 +30,7 @@ L30:
 .method public length : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/MemoryUtil$CharSequenceNT do Ljava/lang/CharSequence;
+L1:     getfield Field org/lwjgl/MemoryUtil$CharSequenceNT field2545 Ljava/lang/CharSequence;
 L4:     invokeinterface InterfaceMethod java/lang/CharSequence length ()I 1
 L9:     iconst_1
 L10:    dup
@@ -48,7 +48,7 @@ L0:     aload_1
 L1:     aload_0
 L2:     dup_x1
 L3:     invokespecial Method java/lang/Object <init> ()V
-L6:     putfield Field org/lwjgl/MemoryUtil$CharSequenceNT do Ljava/lang/CharSequence;
+L6:     putfield Field org/lwjgl/MemoryUtil$CharSequenceNT field2545 Ljava/lang/CharSequence;
 L9:     return
 L10:    
     .end code
@@ -59,11 +59,11 @@ L10:
 L0:     new org/lwjgl/MemoryUtil$CharSequenceNT
 L3:     dup
 L4:     aload_0
-L5:     getfield Field org/lwjgl/MemoryUtil$CharSequenceNT do Ljava/lang/CharSequence;
+L5:     getfield Field org/lwjgl/MemoryUtil$CharSequenceNT field2545 Ljava/lang/CharSequence;
 L8:     iload_1
 L9:     iload_2
 L10:    aload_0
-L11:    getfield Field org/lwjgl/MemoryUtil$CharSequenceNT do Ljava/lang/CharSequence;
+L11:    getfield Field org/lwjgl/MemoryUtil$CharSequenceNT field2545 Ljava/lang/CharSequence;
 L14:    invokeinterface InterfaceMethod java/lang/CharSequence length ()I 1
 L19:    invokestatic Method java/lang/Math min (II)I
 L22:    invokeinterface InterfaceMethod java/lang/CharSequence subSequence (II)Ljava/lang/CharSequence; 3

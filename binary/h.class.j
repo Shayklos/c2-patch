@@ -2,6 +2,6 @@
 .class public interface abstract h
 .super java/lang/Object
 
-.method public abstract break : (LgB;)V
+.method public abstract method728 : (LgB;)V
 .end method
 .end class

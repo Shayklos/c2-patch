@@ -1,8 +1,8 @@
 .version 49 0
 .class final super org/lwjgl/opengl/iB
 .super java/lang/Object
-.field "enum" Lorg/lwjgl/opengl/kb;
-.field do Ljava/lang/Thread;
+.field field5386 Lorg/lwjgl/opengl/kb;
+.field field5387 Ljava/lang/Thread;
 
 .method private <init> : ()V
     .code stack 1 locals 1

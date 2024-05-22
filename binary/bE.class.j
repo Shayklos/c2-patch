@@ -1,13 +1,13 @@
 .version 49 0
 .class public final super bE
 .super Uf
-.field public "enum" I
-.field public do I
+.field public field1401 I
+.field public field1402 I
 
-.method public break : (LRg;[[ILff;[I)Z
+.method public method699 : (LRg;[[ILff;[I)Z
     .code stack 6 locals 5
 L0:     aload_1
-L1:     getfield Field Rg byte I
+L1:     getfield Field Rg field228 I
 L4:     ifne L13
 L7:     iconst_0
 L8:     iconst_1
@@ -59,14 +59,14 @@ L69:    goto L19
 L72:    aload_0
 L73:    dup
 L74:    dup
-L75:    getfield Field bE do I
+L75:    getfield Field bE field1402 I
 L78:    iconst_1
 L79:    dup
 L80:    dup
 L81:    pop2
 L82:    isub
-L83:    putfield Field bE do I
-L86:    getfield Field bE do I
+L83:    putfield Field bE field1402 I
+L86:    getfield Field bE field1402 I
 L89:    ifne L97
 L92:    iconst_1
 L93:    dup
@@ -95,18 +95,18 @@ L7:     aconst_null
 L8:     iload 5
 L10:    iload 6
 L12:    invokespecial Method Uf <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-L15:    putfield Field bE "enum" I
+L15:    putfield Field bE field1401 I
 L18:    return
 L19:    
     .end code
 .end method
 
-.method public else : (LRg;)V
+.method public method703 : (LRg;)V
     .code stack 2 locals 2
 L0:     aload_0
 L1:     dup
-L2:     getfield Field bE "enum" I
-L5:     putfield Field bE do I
+L2:     getfield Field bE field1401 I
+L5:     putfield Field bE field1402 I
 L8:     return
 L9:     
     .end code

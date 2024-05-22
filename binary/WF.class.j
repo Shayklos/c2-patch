@@ -1,8 +1,8 @@
 .version 49 0
 .class public final super WF
 .super Uf
-.field public else F
-.field public "enum" Z
+.field public field1367 F
+.field public field1368 Z
 
 .method public <init> : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FZIZ)V
     .code stack 11 locals 8
@@ -18,18 +18,18 @@ L10:    aconst_null
 L11:    iload 6
 L13:    iload 7
 L15:    invokespecial Method Uf <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-L18:    putfield Field WF else F
-L21:    putfield Field WF "enum" Z
+L18:    putfield Field WF field1367 F
+L21:    putfield Field WF field1368 Z
 L24:    return
 L25:    
     .end code
 .end method
 
-.method public break : (LRg;)Z
+.method public method704 : (LRg;)Z
     .code stack 4 locals 2
 L0:     aload_1
-L1:     getfield Field Rg case LqE;
-L4:     getstatic Field qE do LqE;
+L1:     getfield Field Rg field227 LqE;
+L4:     getstatic Field qE field631 LqE;
 L7:     if_acmpeq L16
 L10:    iconst_0
 L11:    iconst_1
@@ -38,8 +38,8 @@ L13:    pop2
 L14:    ireturn
 L15:    athrow
 L16:    aload_1
-L17:    getfield Field Rg else Lqd;
-L20:    getfield Field qd void Leb;
+L17:    getfield Field Rg field239 Lqd;
+L20:    getfield Field qd field761 Leb;
 L23:    instanceof sg
 L26:    ifne L35
 L29:    iconst_0
@@ -49,9 +49,9 @@ L32:    pop2
 L33:    ireturn
 L34:    athrow
 L35:    aload_1
-L36:    getfield Field Rg do F
+L36:    getfield Field Rg field241 F
 L39:    aload_0
-L40:    getfield Field WF else F
+L40:    getfield Field WF field1367 F
 L43:    fcmpl
 L44:    ifle L52
 L47:    iconst_0
@@ -72,11 +72,11 @@ L65:    dup
 L66:    pop2
 L67:    ireturn
 L68:    aload_0
-L69:    getfield Field WF "enum" Z
+L69:    getfield Field WF field1368 Z
 L72:    ifeq L99
 L75:    aload_1
-L76:    getfield Field Rg else Lqd;
-L79:    getfield Field qd "enum" Ljava/util/Map;
+L76:    getfield Field Rg field239 Lqd;
+L79:    getfield Field qd field766 Ljava/util/Map;
 L82:    invokeinterface InterfaceMethod java/util/Map size ()I 1
 L87:    iconst_2
 L88:    iconst_1
@@ -89,7 +89,7 @@ L96:    dup
 L97:    pop2
 L98:    ireturn
 L99:    aload_1
-L100:   invokevirtual Method Rg goto ()I
+L100:   invokevirtual Method Rg method237 ()I
 L103:   ifle L111
 L106:   iconst_0
 L107:   iconst_1

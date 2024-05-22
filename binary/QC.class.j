@@ -2,15 +2,15 @@
 .class public final super QC
 .super java/lang/Object
 .implements h
-.field public final synthetic "enum" Lrb;
-.field public final synthetic do Ljava/lang/String;
+.field public final synthetic field1461 Lrb;
+.field public final synthetic field1462 Ljava/lang/String;
 
-.method public break : (LgB;)V
+.method public method728 : (LgB;)V
     .code stack 1 locals 3
         .catch java/lang/Exception from L0 to L8 using L10
 L0:     aload_0
-L1:     getfield Field QC do Ljava/lang/String;
-L4:     invokestatic Method org/lwjgl/Sys const (Ljava/lang/String;)Z
+L1:     getfield Field QC field1462 Ljava/lang/String;
+L4:     invokestatic Method org/lwjgl/Sys method1892 (Ljava/lang/String;)Z
 L7:     pop
 L8:     return
 L9:     athrow
@@ -28,8 +28,8 @@ L1:     aload_0
 L2:     dup_x1
 L3:     dup_x2
 L4:     aload_1
-L5:     putfield Field QC "enum" Lrb;
-L8:     putfield Field QC do Ljava/lang/String;
+L5:     putfield Field QC field1461 Lrb;
+L8:     putfield Field QC field1462 Ljava/lang/String;
 L11:    invokespecial Method java/lang/Object <init> ()V
 L14:    return
 L15:    
@@ -39,5 +39,5 @@ L15:
     QC [0] [0]
     rb [0] [0]
 .end innerclasses
-.enclosing method rb break (LgB;)V
+.enclosing method rb method728 (LgB;)V
 .end class

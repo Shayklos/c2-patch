@@ -1,13 +1,13 @@
 .version 46 0
 .class public final super jouvieje/bass/BassInit
 .super java/lang/Object
-.field protected static else Z
-.field protected static "enum" [Z
-.field public static do Z
+.field protected static field2315 Z
+.field protected static field2316 [Z
+.field public static field2317 Z
 
-.method public static final int : ()Z
+.method public static final method1158 : ()Z
     .code stack 4 locals 0
-L0:     getstatic Field jouvieje/bass/BassInit "enum" [Z
+L0:     getstatic Field jouvieje/bass/BassInit field2316 [Z
 L3:     bipush 10
 L5:     iconst_1
 L6:     dup
@@ -18,16 +18,16 @@ L10:
     .end code
 .end method
 
-.method public static final "enum" : ()I
+.method public static final method1159 : ()I
     .code stack 1 locals 0
-L0:     invokestatic Method jouvieje/bass/BassInit break ()V
-L3:     invokestatic Method jouvieje/bass/BassInit long ()I
+L0:     invokestatic Method jouvieje/bass/BassInit method1172 ()V
+L3:     invokestatic Method jouvieje/bass/BassInit method1160 ()I
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method protected static final long : ()I
+.method protected static final method1160 : ()I
     .code stack 1 locals 0
 L0:     ldc 65793
 L2:     ireturn
@@ -35,9 +35,9 @@ L3:
     .end code
 .end method
 
-.method public static final class : ()Z
+.method public static final method1161 : ()Z
     .code stack 4 locals 0
-L0:     getstatic Field jouvieje/bass/BassInit "enum" [Z
+L0:     getstatic Field jouvieje/bass/BassInit field2316 [Z
 L3:     iconst_0
 L4:     iconst_1
 L5:     dup
@@ -57,17 +57,17 @@ L5:
     .end code
 .end method
 
-.method public static final if : ()Z
+.method public static final method1162 : ()Z
     .code stack 1 locals 0
-L0:     getstatic Field jouvieje/bass/BassInit else Z
+L0:     getstatic Field jouvieje/bass/BassInit field2315 Z
 L3:     ireturn
 L4:     
     .end code
 .end method
 
-.method public static final char : ()Z
+.method public static final method1163 : ()Z
     .code stack 4 locals 0
-L0:     getstatic Field jouvieje/bass/BassInit "enum" [Z
+L0:     getstatic Field jouvieje/bass/BassInit field2316 [Z
 L3:     iconst_2
 L4:     iconst_1
 L5:     dup
@@ -83,7 +83,7 @@ L9:
 
 .method public static final new : ()Z
     .code stack 4 locals 0
-L0:     getstatic Field jouvieje/bass/BassInit "enum" [Z
+L0:     getstatic Field jouvieje/bass/BassInit field2316 [Z
 L3:     bipush 7
 L5:     iconst_1
 L6:     dup
@@ -99,7 +99,7 @@ L10:
 
 .method public static final try : ()Z
     .code stack 4 locals 0
-L0:     getstatic Field jouvieje/bass/BassInit "enum" [Z
+L0:     getstatic Field jouvieje/bass/BassInit field2316 [Z
 L3:     iconst_1
 L4:     dup
 L5:     dup
@@ -112,7 +112,7 @@ L9:
 
 .method public static final this : ()Z
     .code stack 4 locals 0
-L0:     getstatic Field jouvieje/bass/BassInit "enum" [Z
+L0:     getstatic Field jouvieje/bass/BassInit field2316 [Z
 L3:     bipush 6
 L5:     iconst_1
 L6:     dup
@@ -123,18 +123,18 @@ L10:
     .end code
 .end method
 
-.method public static final goto : ()I
+.method public static final method1164 : ()I
     .code stack 1 locals 0
-L0:     invokestatic Method jouvieje/bass/BassInit break ()V
+L0:     invokestatic Method jouvieje/bass/BassInit method1172 ()V
 L3:     invokestatic Method jouvieje/bass/BassInit get_BASSVERSION ()I
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method public static final do : ()Z
+.method public static final method1165 : ()Z
     .code stack 4 locals 0
-L0:     getstatic Field jouvieje/bass/BassInit "enum" [Z
+L0:     getstatic Field jouvieje/bass/BassInit field2316 [Z
 L3:     iconst_3
 L4:     iconst_1
 L5:     dup
@@ -145,18 +145,18 @@ L9:
     .end code
 .end method
 
-.method public static final for : ()I
+.method public static final method1166 : ()I
     .code stack 1 locals 0
-L0:     invokestatic Method jouvieje/bass/BassInit break ()V
+L0:     invokestatic Method jouvieje/bass/BassInit method1172 ()V
 L3:     invokestatic Method jouvieje/bass/BassInit get_NATIVEBASS_VERSION ()I
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method public static final catch : ()Z
+.method public static final method1167 : ()Z
     .code stack 4 locals 0
-L0:     getstatic Field jouvieje/bass/BassInit "enum" [Z
+L0:     getstatic Field jouvieje/bass/BassInit field2316 [Z
 L3:     bipush 8
 L5:     iconst_1
 L6:     dup
@@ -167,9 +167,9 @@ L10:
     .end code
 .end method
 
-.method public static final float : ()Z
+.method public static final method1168 : ()Z
     .code stack 4 locals 0
-L0:     getstatic Field jouvieje/bass/BassInit "enum" [Z
+L0:     getstatic Field jouvieje/bass/BassInit field2316 [Z
 L3:     bipush 9
 L5:     iconst_1
 L6:     dup
@@ -180,9 +180,9 @@ L10:
     .end code
 .end method
 
-.method public static final short : ()Z
+.method public static final method1169 : ()Z
     .code stack 4 locals 0
-L0:     getstatic Field jouvieje/bass/BassInit "enum" [Z
+L0:     getstatic Field jouvieje/bass/BassInit field2316 [Z
 L3:     iconst_5
 L4:     iconst_1
 L5:     dup
@@ -193,7 +193,7 @@ L9:
     .end code
 .end method
 
-.method public static const : ()V
+.method public static method1170 : ()V
     .code stack 12 locals 8
 L0:     iconst_2
 L1:     iconst_1
@@ -237,8 +237,8 @@ L43:    dup
 L44:    pop2
 L45:    bastore
 L46:    astore_1
-L47:    getstatic Field jouvieje/bass/BassInit do Z
-L50:    putstatic Field org/jouvieje/libloader/G "enum" Z
+L47:    getstatic Field jouvieje/bass/BassInit field2317 Z
+L50:    putstatic Field org/jouvieje/libloader/G field2453 Z
 L53:    iconst_0
 L54:    iconst_1
 L55:    dup
@@ -300,7 +300,7 @@ L143:   ldc ".dll"
 L145:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L148:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
 L151:   invokespecial Method org/jouvieje/libloader/m <init> (Ljava/lang/String;Ljava/lang/String;)V
-L154:   putfield Field org/jouvieje/libloader/M else Lorg/jouvieje/libloader/m;
+L154:   putfield Field org/jouvieje/libloader/M field2457 Lorg/jouvieje/libloader/m;
 L157:   new org/jouvieje/libloader/m
 L160:   aload 7
 L162:   dup_x2
@@ -346,7 +346,7 @@ L240:   ldc ".so"
 L242:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L245:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
 L248:   invokespecial Method org/jouvieje/libloader/m <init> (Ljava/lang/String;Ljava/lang/String;)V
-L251:   putfield Field org/jouvieje/libloader/M char Lorg/jouvieje/libloader/m;
+L251:   putfield Field org/jouvieje/libloader/M field2456 Lorg/jouvieje/libloader/m;
 L254:   new org/jouvieje/libloader/m
 L257:   aload 7
 L259:   dup
@@ -372,7 +372,7 @@ L299:   ldc ".so"
 L301:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L304:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
 L307:   invokespecial Method org/jouvieje/libloader/m <init> (Ljava/lang/String;Ljava/lang/String;)V
-L310:   putfield Field org/jouvieje/libloader/M null Lorg/jouvieje/libloader/m;
+L310:   putfield Field org/jouvieje/libloader/M field2455 Lorg/jouvieje/libloader/m;
 L313:   new org/jouvieje/libloader/m
 L316:   aload 7
 L318:   dup
@@ -392,8 +392,8 @@ L338:   aload 6
 L340:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L343:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
 L346:   invokespecial Method org/jouvieje/libloader/m <init> (Ljava/lang/String;Ljava/lang/String;)V
-L349:   putfield Field org/jouvieje/libloader/M "enum" Lorg/jouvieje/libloader/m;
-L352:   invokestatic Method org/jouvieje/libloader/G break (Lorg/jouvieje/libloader/M;Z)Z
+L349:   putfield Field org/jouvieje/libloader/M field2458 Lorg/jouvieje/libloader/m;
+L352:   invokestatic Method org/jouvieje/libloader/G method1742 (Lorg/jouvieje/libloader/M;Z)Z
 L355:   ifne L387
 L358:   new Uj
 L361:   dup
@@ -417,7 +417,7 @@ L398:   ldc " successfully loaded"
 L400:   iinc 2 1
 L403:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L406:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L409:   invokestatic Method jouvieje/bass/BassInit break (Ljava/lang/String;)V
+L409:   invokestatic Method jouvieje/bass/BassInit method1173 (Ljava/lang/String;)V
 L412:   iload_2
 L413:   aload_0
 L414:   arraylength
@@ -554,7 +554,7 @@ L594:   ldc ".dll"
 L596:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L599:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
 L602:   invokespecial Method org/jouvieje/libloader/m <init> (Ljava/lang/String;Ljava/lang/String;)V
-L605:   putfield Field org/jouvieje/libloader/M else Lorg/jouvieje/libloader/m;
+L605:   putfield Field org/jouvieje/libloader/M field2457 Lorg/jouvieje/libloader/m;
 L608:   new org/jouvieje/libloader/m
 L611:   aload 5
 L613:   dup_x2
@@ -594,7 +594,7 @@ L675:   ldc ".so"
 L677:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L680:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
 L683:   invokespecial Method org/jouvieje/libloader/m <init> (Ljava/lang/String;Ljava/lang/String;)V
-L686:   putfield Field org/jouvieje/libloader/M char Lorg/jouvieje/libloader/m;
+L686:   putfield Field org/jouvieje/libloader/M field2456 Lorg/jouvieje/libloader/m;
 L689:   new org/jouvieje/libloader/m
 L692:   aload 5
 L694:   dup
@@ -614,7 +614,7 @@ L716:   ldc ".so"
 L718:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L721:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
 L724:   invokespecial Method org/jouvieje/libloader/m <init> (Ljava/lang/String;Ljava/lang/String;)V
-L727:   putfield Field org/jouvieje/libloader/M null Lorg/jouvieje/libloader/m;
+L727:   putfield Field org/jouvieje/libloader/M field2455 Lorg/jouvieje/libloader/m;
 L730:   new org/jouvieje/libloader/m
 L733:   aload 5
 L735:   dup
@@ -634,13 +634,13 @@ L757:   ldc ".dylib"
 L759:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L762:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
 L765:   invokespecial Method org/jouvieje/libloader/m <init> (Ljava/lang/String;Ljava/lang/String;)V
-L768:   putfield Field org/jouvieje/libloader/M "enum" Lorg/jouvieje/libloader/m;
+L768:   putfield Field org/jouvieje/libloader/M field2458 Lorg/jouvieje/libloader/m;
 L771:   iconst_1
 L772:   dup
 L773:   pop2
-L774:   invokestatic Method org/jouvieje/libloader/G break (Lorg/jouvieje/libloader/M;Z)Z
+L774:   invokestatic Method org/jouvieje/libloader/G method1742 (Lorg/jouvieje/libloader/M;Z)Z
 L777:   istore 6
-L779:   getstatic Field jouvieje/bass/BassInit "enum" [Z
+L779:   getstatic Field jouvieje/bass/BassInit field2316 [Z
 L782:   iload_3
 L783:   iload 6
 L785:   bastore
@@ -655,7 +655,7 @@ L801:   invokespecial Method java/lang/StringBuffer <init> (Ljava/lang/String;)V
 L804:   ldc " not loaded"
 L806:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L809:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L812:   invokestatic Method jouvieje/bass/BassInit break (Ljava/lang/String;)V
+L812:   invokestatic Method jouvieje/bass/BassInit method1173 (Ljava/lang/String;)V
 L815:   goto L838
 L818:   dup
 L819:   aload 4
@@ -664,7 +664,7 @@ L824:   invokespecial Method java/lang/StringBuffer <init> (Ljava/lang/String;)V
 L827:   ldc " successfully loaded"
 L829:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L832:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L835:   invokestatic Method jouvieje/bass/BassInit break (Ljava/lang/String;)V
+L835:   invokestatic Method jouvieje/bass/BassInit method1173 (Ljava/lang/String;)V
 L838:   iinc 3 1
 L841:   iload_3
 L842:   aload_2
@@ -674,10 +674,10 @@ L847:   iconst_1
 L848:   dup
 L849:   dup
 L850:   pop2
-L851:   putstatic Field jouvieje/bass/BassInit else Z
+L851:   putstatic Field jouvieje/bass/BassInit field2315 Z
 L854:   return
 L855:   
-        .attribute StackMap b'\x00\x0E\x00\x3E\x00\x00\x00\x01\x07\x00\x3E\x00\x3F\x00\x03\x07\x00\x40\x07\x00\x41\x01\x00\x00\x00\x55\x00\x00\x00\x01\x07\x00\x3E\x00\x56\x00\x05\x07\x00\x40\x07\x00\x41\x01\x07\x00\x32\x01\x00\x00\x00\x58\x00\x05\x07\x00\x40\x07\x00\x41\x01\x07\x00\x32\x01\x00\x01\x07\x00\x32\x00\x63\x00\x06\x07\x00\x40\x07\x00\x41\x01\x07\x00\x32\x01\x07\x00\x32\x00\x00\x00\x65\x00\x06\x07\x00\x40\x07\x00\x41\x01\x07\x00\x32\x01\x07\x00\x32\x00\x01\x07\x00\x32\x01\x83\x00\x08\x07\x00\x40\x07\x00\x41\x01\x07\x00\x32\x01\x07\x00\x32\x07\x00\x32\x07\x00\x4B\x00\x00\x01\x9D\x00\x03\x07\x00\x40\x07\x00\x41\x01\x00\x01\x01\x01\xB2\x00\x03\x07\x00\x40\x07\x00\x41\x01\x00\x00\x02\x24\x00\x04\x07\x00\x40\x07\x00\x41\x07\x00\x40\x01\x00\x00\x03\x32\x00\x07\x07\x00\x40\x07\x00\x41\x07\x00\x40\x01\x07\x00\x32\x07\x00\x4B\x01\x00\x01\x08\x03\x14\x03\x46\x00\x07\x07\x00\x40\x07\x00\x41\x07\x00\x40\x01\x07\x00\x32\x07\x00\x4B\x01\x00\x00\x03\x4A\x00\x04\x07\x00\x40\x07\x00\x41\x07\x00\x40\x01\x00\x01\x01'
+        .attribute StackMap b'\x00\x0E\x00\x3E\x00\x00\x00\x01\x07\x00\x41\x00\x3F\x00\x03\x07\x00\x43\x07\x00\x44\x01\x00\x00\x00\x55\x00\x00\x00\x01\x07\x00\x41\x00\x56\x00\x05\x07\x00\x43\x07\x00\x44\x01\x07\x00\x34\x01\x00\x00\x00\x58\x00\x05\x07\x00\x43\x07\x00\x44\x01\x07\x00\x34\x01\x00\x01\x07\x00\x34\x00\x63\x00\x06\x07\x00\x43\x07\x00\x44\x01\x07\x00\x34\x01\x07\x00\x34\x00\x00\x00\x65\x00\x06\x07\x00\x43\x07\x00\x44\x01\x07\x00\x34\x01\x07\x00\x34\x00\x01\x07\x00\x34\x01\x83\x00\x08\x07\x00\x43\x07\x00\x44\x01\x07\x00\x34\x01\x07\x00\x34\x07\x00\x34\x07\x00\x4E\x00\x00\x01\x9D\x00\x03\x07\x00\x43\x07\x00\x44\x01\x00\x01\x01\x01\xB2\x00\x03\x07\x00\x43\x07\x00\x44\x01\x00\x00\x02\x24\x00\x04\x07\x00\x43\x07\x00\x44\x07\x00\x43\x01\x00\x00\x03\x32\x00\x07\x07\x00\x43\x07\x00\x44\x07\x00\x43\x01\x07\x00\x34\x07\x00\x4E\x01\x00\x01\x08\x03\x14\x03\x46\x00\x07\x07\x00\x43\x07\x00\x44\x07\x00\x43\x01\x07\x00\x34\x07\x00\x4E\x01\x00\x00\x03\x4A\x00\x04\x07\x00\x43\x07\x00\x44\x07\x00\x43\x01\x00\x01\x01'
     .end code
     .exceptions Uj
 .end method
@@ -685,9 +685,9 @@ L855:
 .method protected static final native get_NATIVEBASS_VERSION : ()I
 .end method
 
-.method public static final else : ()Z
+.method public static final method1171 : ()Z
     .code stack 4 locals 0
-L0:     getstatic Field jouvieje/bass/BassInit "enum" [Z
+L0:     getstatic Field jouvieje/bass/BassInit field2316 [Z
 L3:     iconst_4
 L4:     iconst_1
 L5:     dup
@@ -698,9 +698,9 @@ L9:
     .end code
 .end method
 
-.method private static final break : ()V
+.method private static final method1172 : ()V
     .code stack 3 locals 0
-L0:     invokestatic Method jouvieje/bass/BassInit if ()Z
+L0:     invokestatic Method jouvieje/bass/BassInit method1162 ()Z
 L3:     ifne L16
 L6:     new java/lang/RuntimeException
 L9:     dup
@@ -713,16 +713,16 @@ L17:
     .end code
 .end method
 
-.method private static break : (Ljava/lang/String;)V
+.method private static method1173 : (Ljava/lang/String;)V
     .code stack 2 locals 1
-L0:     getstatic Field jouvieje/bass/BassInit do Z
+L0:     getstatic Field jouvieje/bass/BassInit field2317 Z
 L3:     ifeq L13
 L6:     getstatic Field java/lang/System out Ljava/io/PrintStream;
 L9:     aload_0
 L10:    invokevirtual Method java/io/PrintStream println (Ljava/lang/String;)V
 L13:    return
 L14:    
-        .attribute StackMap b'\x00\x01\x00\x0D\x00\x01\x07\x00\x32\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x0D\x00\x01\x07\x00\x34\x00\x00'
     .end code
 .end method
 
@@ -732,12 +732,12 @@ L0:     iconst_0
 L1:     iconst_1
 L2:     dup
 L3:     pop2
-L4:     putstatic Field jouvieje/bass/BassInit do Z
+L4:     putstatic Field jouvieje/bass/BassInit field2317 Z
 L7:     iconst_0
 L8:     iconst_1
 L9:     dup
 L10:    pop2
-L11:    putstatic Field jouvieje/bass/BassInit else Z
+L11:    putstatic Field jouvieje/bass/BassInit field2315 Z
 L14:    bipush 12
 L16:    iconst_1
 L17:    dup
@@ -746,7 +746,7 @@ L19:    newarray boolean
 L21:    iconst_1
 L22:    dup
 L23:    pop2
-L24:    putstatic Field jouvieje/bass/BassInit "enum" [Z
+L24:    putstatic Field jouvieje/bass/BassInit field2316 [Z
 L27:    return
 L28:    
     .end code

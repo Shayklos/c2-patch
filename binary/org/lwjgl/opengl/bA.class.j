@@ -3,14 +3,14 @@
 .super java/awt/Frame
 .implements java/awt/event/WindowListener
 .implements java/awt/event/ComponentListener
-.field private const Z
+.field private field533 Z
 .field private new Z
-.field private null Z
+.field private field534 Z
 .field private this Z
-.field private char Z
-.field private else Ljava/awt/Rectangle;
-.field private final "enum" Lorg/lwjgl/opengl/DA;
-.field private static final do J = -5823294716668988777L
+.field private field535 Z
+.field private field536 Ljava/awt/Rectangle;
+.field private final field537 Lorg/lwjgl/opengl/DA;
+.field private static final field538 J = -5823294716668988777L
 
 .method public componentHidden : (Ljava/awt/event/ComponentEvent;)V
     .code stack 0 locals 2
@@ -39,11 +39,11 @@ L13:    putfield Field org/lwjgl/opengl/bA this Z
 L16:    iconst_1
 L17:    dup
 L18:    pop2
-L19:    putfield Field org/lwjgl/opengl/bA null Z
+L19:    putfield Field org/lwjgl/opengl/bA field534 Z
 L22:    iconst_1
 L23:    dup
 L24:    pop2
-L25:    putfield Field org/lwjgl/opengl/bA char Z
+L25:    putfield Field org/lwjgl/opengl/bA field535 Z
 L28:    aload_1
 L29:    monitorexit
 L30:    return
@@ -60,10 +60,10 @@ L38:
     .end code
 .end method
 
-.method public goto : ()Lorg/lwjgl/opengl/DA;
+.method public method324 : ()Lorg/lwjgl/opengl/DA;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/bA "enum" Lorg/lwjgl/opengl/DA;
+L1:     getfield Field org/lwjgl/opengl/bA field537 Lorg/lwjgl/opengl/DA;
 L4:     areturn
 L5:     
     .end code
@@ -83,7 +83,7 @@ L1:
     .end code
 .end method
 
-.method public do : ()Z
+.method public method325 : ()Z
     .code stack 4 locals 4
 L0:     aload_0
 L1:     dup
@@ -92,13 +92,13 @@ L3:     monitorenter
         .catch [0] from L4 to L19 using L22
 L4:     aload_0
 L5:     dup
-L6:     getfield Field org/lwjgl/opengl/bA null Z
+L6:     getfield Field org/lwjgl/opengl/bA field534 Z
 L9:     istore_1
 L10:    iconst_0
 L11:    iconst_1
 L12:    dup
 L13:    pop2
-L14:    putfield Field org/lwjgl/opengl/bA null Z
+L14:    putfield Field org/lwjgl/opengl/bA field534 Z
 L17:    aload_2
 L18:    monitorexit
 L19:    iload_1
@@ -117,7 +117,7 @@ L29:
     .end code
 .end method
 
-.method public static for : ()Ljava/awt/GraphicsDevice;
+.method public static method326 : ()Ljava/awt/GraphicsDevice;
     .code stack 1 locals 0
 L0:     invokestatic Method java/awt/GraphicsEnvironment getLocalGraphicsEnvironment ()Ljava/awt/GraphicsEnvironment;
 L3:     invokevirtual Method java/awt/GraphicsEnvironment getDefaultScreenDevice ()Ljava/awt/GraphicsDevice;
@@ -126,7 +126,7 @@ L7:
     .end code
 .end method
 
-.method public catch : ()Z
+.method public method327 : ()Z
     .code stack 2 locals 3
 L0:     aload_0
 L1:     dup
@@ -150,7 +150,7 @@ L17:
     .end code
 .end method
 
-.method public break : (IIII)V
+.method public method328 : (IIII)V
     .code stack 6 locals 6
 L0:     aload_0
 L1:     dup
@@ -178,7 +178,7 @@ L40:
     .end code
 .end method
 
-.method public float : ()Ljava/awt/Rectangle;
+.method public method329 : ()Ljava/awt/Rectangle;
     .code stack 2 locals 3
 L0:     aload_0
 L1:     dup
@@ -186,7 +186,7 @@ L2:     astore_1
 L3:     monitorenter
         .catch [0] from L4 to L10 using L12
 L4:     aload_0
-L5:     getfield Field org/lwjgl/opengl/bA else Ljava/awt/Rectangle;
+L5:     getfield Field org/lwjgl/opengl/bA field536 Ljava/awt/Rectangle;
 L8:     aload_1
 L9:     monitorexit
 L10:    areturn
@@ -240,11 +240,11 @@ L13:    putfield Field org/lwjgl/opengl/bA this Z
 L16:    iconst_1
 L17:    dup
 L18:    pop2
-L19:    putfield Field org/lwjgl/opengl/bA char Z
+L19:    putfield Field org/lwjgl/opengl/bA field535 Z
 L22:    iconst_1
 L23:    dup
 L24:    pop2
-L25:    putfield Field org/lwjgl/opengl/bA null Z
+L25:    putfield Field org/lwjgl/opengl/bA field534 Z
 L28:    aload_1
 L29:    monitorexit
 L30:    return
@@ -261,7 +261,7 @@ L38:
     .end code
 .end method
 
-.method public short : ()Z
+.method public method92 : ()Z
     .code stack 4 locals 4
 L0:     aload_0
 L1:     dup
@@ -270,13 +270,13 @@ L3:     monitorenter
         .catch [0] from L4 to L19 using L22
 L4:     aload_0
 L5:     dup
-L6:     getfield Field org/lwjgl/opengl/bA char Z
+L6:     getfield Field org/lwjgl/opengl/bA field535 Z
 L9:     istore_1
 L10:    iconst_0
 L11:    iconst_1
 L12:    dup
 L13:    pop2
-L14:    putfield Field org/lwjgl/opengl/bA char Z
+L14:    putfield Field org/lwjgl/opengl/bA field535 Z
 L17:    aload_2
 L18:    monitorexit
 L19:    iload_1
@@ -307,7 +307,7 @@ L7:     dup2
 L8:     dup2
 L9:     dup2
 L10:    invokespecial Method java/awt/Frame <init> ()V
-L13:    invokestatic Method org/lwjgl/opengl/Display boolean ()Z
+L13:    invokestatic Method org/lwjgl/opengl/Display method2994 ()Z
 L16:    invokevirtual Method org/lwjgl/opengl/bA setResizable (Z)V
 L19:    invokevirtual Method org/lwjgl/opengl/bA addWindowListener (Ljava/awt/event/WindowListener;)V
 L22:    invokevirtual Method org/lwjgl/opengl/bA addComponentListener (Ljava/awt/event/ComponentListener;)V
@@ -317,17 +317,17 @@ L29:    dup
 L30:    pop2
 L31:    dup
 L32:    invokespecial Method org/lwjgl/opengl/DA <init> ()V
-L35:    putfield Field org/lwjgl/opengl/bA "enum" Lorg/lwjgl/opengl/DA;
-L38:    getfield Field org/lwjgl/opengl/bA "enum" Lorg/lwjgl/opengl/DA;
+L35:    putfield Field org/lwjgl/opengl/bA field537 Lorg/lwjgl/opengl/DA;
+L38:    getfield Field org/lwjgl/opengl/bA field537 Lorg/lwjgl/opengl/DA;
 L41:    iconst_0
 L42:    iconst_1
 L43:    dup
 L44:    pop2
 L45:    invokevirtual Method org/lwjgl/opengl/DA setFocusTraversalKeysEnabled (Z)V
-L48:    getfield Field org/lwjgl/opengl/bA "enum" Lorg/lwjgl/opengl/DA;
+L48:    getfield Field org/lwjgl/opengl/bA field537 Lorg/lwjgl/opengl/DA;
 L51:    ldc "Center"
 L53:    invokevirtual Method org/lwjgl/opengl/bA add (Ljava/awt/Component;Ljava/lang/Object;)V
-L56:    invokestatic Method org/lwjgl/opengl/Display break (Ljava/lang/String;)Z
+L56:    invokestatic Method org/lwjgl/opengl/Display method3044 (Ljava/lang/String;)Z
 L59:    istore 6
 L61:    iload_3
 L62:    ifne L70
@@ -374,21 +374,21 @@ L126:   dup_x2
 L127:   iload 4
 L129:   iload 5
 L131:   aload_1
-L132:   invokevirtual Method org/lwjgl/opengl/DisplayMode const ()I
+L132:   invokevirtual Method org/lwjgl/opengl/DisplayMode method3047 ()I
 L135:   aload_1
-L136:   invokevirtual Method org/lwjgl/opengl/DisplayMode break ()I
-L139:   invokevirtual Method org/lwjgl/opengl/bA break (IIII)V
+L136:   invokevirtual Method org/lwjgl/opengl/DisplayMode method3049 ()I
+L139:   invokevirtual Method org/lwjgl/opengl/bA method328 (IIII)V
 L142:   iconst_1
 L143:   dup
 L144:   pop2
 L145:   invokevirtual Method org/lwjgl/opengl/bA setVisible (Z)V
 L148:   invokevirtual Method org/lwjgl/opengl/bA requestFocus ()V
-L151:   getfield Field org/lwjgl/opengl/bA "enum" Lorg/lwjgl/opengl/DA;
+L151:   getfield Field org/lwjgl/opengl/bA field537 Lorg/lwjgl/opengl/DA;
 L154:   invokevirtual Method org/lwjgl/opengl/DA requestFocus ()V
-L157:   invokespecial Method org/lwjgl/opengl/bA break ()V
+L157:   invokespecial Method org/lwjgl/opengl/bA method74 ()V
 L160:   return
 L161:   
-        .attribute StackMap b'\x00\x08\x00\x46\x00\x07\x07\x00\x02\x07\x00\x86\x07\x00\x88\x01\x01\x01\x01\x00\x01\x07\x00\x02\x00\x4D\x00\x00\x00\x01\x07\x00\x24\x00\x4E\x00\x07\x07\x00\x02\x07\x00\x86\x07\x00\x88\x01\x01\x01\x01\x00\x01\x07\x00\x02\x00\x52\x00\x07\x07\x00\x02\x07\x00\x86\x07\x00\x88\x01\x01\x01\x01\x00\x02\x07\x00\x02\x01\x00\x6A\x00\x00\x00\x01\x07\x00\x24\x00\x6B\x00\x07\x07\x00\x02\x07\x00\x86\x07\x00\x88\x01\x01\x01\x01\x00\x01\x07\x00\x5F\x00\x75\x00\x07\x07\x00\x02\x07\x00\x86\x07\x00\x88\x01\x01\x01\x01\x00\x00\x00\x76\x00\x07\x07\x00\x02\x07\x00\x86\x07\x00\x88\x01\x01\x01\x01\x00\x01\x07\x00\x02'
+        .attribute StackMap b'\x00\x08\x00\x46\x00\x07\x07\x00\x02\x07\x00\x88\x07\x00\x8A\x01\x01\x01\x01\x00\x01\x07\x00\x02\x00\x4D\x00\x00\x00\x01\x07\x00\x24\x00\x4E\x00\x07\x07\x00\x02\x07\x00\x88\x07\x00\x8A\x01\x01\x01\x01\x00\x01\x07\x00\x02\x00\x52\x00\x07\x07\x00\x02\x07\x00\x88\x07\x00\x8A\x01\x01\x01\x01\x00\x02\x07\x00\x02\x01\x00\x6A\x00\x00\x00\x01\x07\x00\x24\x00\x6B\x00\x07\x07\x00\x02\x07\x00\x88\x07\x00\x8A\x01\x01\x01\x01\x00\x01\x07\x00\x60\x00\x75\x00\x07\x07\x00\x02\x07\x00\x88\x07\x00\x8A\x01\x01\x01\x01\x00\x00\x00\x76\x00\x07\x07\x00\x02\x07\x00\x88\x07\x00\x8A\x01\x01\x01\x01\x00\x01\x07\x00\x02'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
@@ -396,13 +396,13 @@ L161:
 .method public componentResized : (Ljava/awt/event/ComponentEvent;)V
     .code stack 1 locals 2
 L0:     aload_0
-L1:     invokespecial Method org/lwjgl/opengl/bA break ()V
+L1:     invokespecial Method org/lwjgl/opengl/bA method74 ()V
 L4:     return
 L5:     
     .end code
 .end method
 
-.method public const : ()Z
+.method public method263 : ()Z
     .code stack 3 locals 3
 L0:     aload_0
 L1:     dup
@@ -410,7 +410,7 @@ L2:     astore_1
 L3:     monitorenter
         .catch [0] from L4 to L19 using L28
 L4:     aload_0
-L5:     getfield Field org/lwjgl/opengl/bA const Z
+L5:     getfield Field org/lwjgl/opengl/bA field533 Z
 L8:     ifne L20
 L11:    iconst_1
 L12:    dup
@@ -442,7 +442,7 @@ L33:
 .method public componentMoved : (Ljava/awt/event/ComponentEvent;)V
     .code stack 1 locals 2
 L0:     aload_0
-L1:     invokespecial Method org/lwjgl/opengl/bA break ()V
+L1:     invokespecial Method org/lwjgl/opengl/bA method74 ()V
 L4:     return
 L5:     
     .end code
@@ -460,7 +460,7 @@ L5:     iconst_1
 L6:     dup
 L7:     dup
 L8:     pop2
-L9:     putfield Field org/lwjgl/opengl/bA const Z
+L9:     putfield Field org/lwjgl/opengl/bA field533 Z
 L12:    aload_1
 L13:    monitorexit
 L14:    return
@@ -477,7 +477,7 @@ L22:
     .end code
 .end method
 
-.method public else : ()Z
+.method public method94 : ()Z
     .code stack 4 locals 4
 L0:     aload_0
 L1:     dup
@@ -518,7 +518,7 @@ L1:
     .end code
 .end method
 
-.method private break : ()V
+.method private method74 : ()V
     .code stack 2 locals 3
 L0:     aload_0
 L1:     dup
@@ -528,7 +528,7 @@ L3:     monitorenter
 L4:     aload_0
 L5:     dup
 L6:     invokevirtual Method org/lwjgl/opengl/bA getBounds ()Ljava/awt/Rectangle;
-L9:     putfield Field org/lwjgl/opengl/bA else Ljava/awt/Rectangle;
+L9:     putfield Field org/lwjgl/opengl/bA field536 Ljava/awt/Rectangle;
 L12:    aload_1
 L13:    monitorexit
 L14:    return
@@ -586,7 +586,7 @@ L5:     iconst_0
 L6:     iconst_1
 L7:     dup
 L8:     pop2
-L9:     putfield Field org/lwjgl/opengl/bA const Z
+L9:     putfield Field org/lwjgl/opengl/bA field533 Z
 L12:    aload_1
 L13:    monitorexit
 L14:    return

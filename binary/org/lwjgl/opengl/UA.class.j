@@ -2,7 +2,7 @@
 .class final super org/lwjgl/opengl/UA
 .super java/lang/Object
 .implements java/security/PrivilegedExceptionAction
-.field final synthetic do Lorg/lwjgl/opengl/MacOSXDisplay;
+.field final synthetic field2482 Lorg/lwjgl/opengl/MacOSXDisplay;
 
 .method public run : ()Ljava/lang/Object;
     .code stack 4 locals 1
@@ -24,7 +24,7 @@ L16:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field org/lwjgl/opengl/UA do Lorg/lwjgl/opengl/MacOSXDisplay;
+L3:     putfield Field org/lwjgl/opengl/UA field2482 Lorg/lwjgl/opengl/MacOSXDisplay;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    

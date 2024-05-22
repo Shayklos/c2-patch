@@ -1,9 +1,9 @@
 .version 49 0
 .class public final super bb
 .super gB
-.field private else D
-.field private "enum" Ljava/util/ArrayList;
-.field private do Ljava/util/ArrayList;
+.field private field1139 D
+.field private field1140 Ljava/util/ArrayList;
+.field private field1141 Ljava/util/ArrayList;
 
 .method public false : ()Z
     .code stack 3 locals 1
@@ -16,7 +16,7 @@ L5:
     .end code
 .end method
 
-.method public else : (F)V
+.method public method104 : (F)V
     .code stack 5 locals 5
 L0:     iconst_0
 L1:     iconst_1
@@ -25,24 +25,24 @@ L3:     pop2
 L4:     dup
 L5:     istore_2
 L6:     aload_0
-L7:     getfield Field bb "enum" Ljava/util/ArrayList;
+L7:     getfield Field bb field1140 Ljava/util/ArrayList;
 L10:    invokevirtual Method java/util/ArrayList size ()I
 L13:    if_icmpge L107
 L16:    aload_0
-L17:    getfield Field bb "enum" Ljava/util/ArrayList;
+L17:    getfield Field bb field1140 Ljava/util/ArrayList;
 L20:    iload_2
 L21:    invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L24:    checkcast hc
 L27:    dup
 L28:    astore_3
 L29:    fload_1
-L30:    invokevirtual Method hc break (F)Z
+L30:    invokevirtual Method hc method1046 (F)Z
 L33:    ifne L99
 L36:    aload_0
 L37:    dup
-L38:    getfield Field bb "enum" Ljava/util/ArrayList;
+L38:    getfield Field bb field1140 Ljava/util/ArrayList;
 L41:    swap
-L42:    getfield Field bb "enum" Ljava/util/ArrayList;
+L42:    getfield Field bb field1140 Ljava/util/ArrayList;
 L45:    invokevirtual Method java/util/ArrayList size ()I
 L48:    iconst_1
 L49:    dup
@@ -56,19 +56,19 @@ L61:    aload_3
 L62:    aload 4
 L64:    if_acmpeq L81
 L67:    aload_0
-L68:    getfield Field bb "enum" Ljava/util/ArrayList;
+L68:    getfield Field bb field1140 Ljava/util/ArrayList;
 L71:    iload_2
 L72:    aload 4
 L74:    invokevirtual Method java/util/ArrayList set (ILjava/lang/Object;)Ljava/lang/Object;
 L77:    pop
 L78:    iinc 2 -1
 L81:    aload_3
-L82:    invokevirtual Method hc break ()Ljava/util/List;
+L82:    invokevirtual Method hc method1048 ()Ljava/util/List;
 L85:    dup
 L86:    astore_3
 L87:    ifnull L99
 L90:    aload_0
-L91:    getfield Field bb do Ljava/util/ArrayList;
+L91:    getfield Field bb field1141 Ljava/util/ArrayList;
 L94:    aload_3
 L95:    invokevirtual Method java/util/ArrayList addAll (Ljava/util/Collection;)Z
 L98:    pop
@@ -77,29 +77,29 @@ L102:   iload_2
 L103:   goto L6
 L106:   athrow
 L107:   aload_0
-L108:   getfield Field bb do Ljava/util/ArrayList;
+L108:   getfield Field bb field1141 Ljava/util/ArrayList;
 L111:   invokevirtual Method java/util/ArrayList isEmpty ()Z
 L114:   ifne L137
 L117:   aload_0
 L118:   dup
-L119:   getfield Field bb "enum" Ljava/util/ArrayList;
+L119:   getfield Field bb field1140 Ljava/util/ArrayList;
 L122:   swap
-L123:   getfield Field bb do Ljava/util/ArrayList;
+L123:   getfield Field bb field1141 Ljava/util/ArrayList;
 L126:   invokevirtual Method java/util/ArrayList addAll (Ljava/util/Collection;)Z
 L129:   aload_0
-L130:   getfield Field bb do Ljava/util/ArrayList;
+L130:   getfield Field bb field1141 Ljava/util/ArrayList;
 L133:   invokevirtual Method java/util/ArrayList clear ()V
 L136:   pop
 L137:   return
 L138:   
-        .attribute StackMap b'\x00\x06\x00\x06\x00\x03\x07\x00\x02\x02\x01\x00\x01\x01\x00\x51\x00\x05\x07\x00\x02\x02\x01\x07\x00\x1A\x07\x00\x1A\x00\x00\x00\x63\x00\x04\x07\x00\x02\x02\x01\x07\x00\x30\x00\x00\x00\x6A\x00\x00\x00\x01\x07\x00\x32\x00\x6B\x00\x03\x07\x00\x02\x02\x01\x00\x00\x00\x89\x00\x03\x07\x00\x02\x02\x01\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x06\x00\x03\x07\x00\x02\x02\x01\x00\x01\x01\x00\x51\x00\x05\x07\x00\x02\x02\x01\x07\x00\x1B\x07\x00\x1B\x00\x00\x00\x63\x00\x04\x07\x00\x02\x02\x01\x07\x00\x32\x00\x00\x00\x6A\x00\x00\x00\x01\x07\x00\x34\x00\x6B\x00\x03\x07\x00\x02\x02\x01\x00\x00\x00\x89\x00\x03\x07\x00\x02\x02\x01\x00\x00'
     .end code
 .end method
 
 .method public background : (ZF)V
     .code stack 5 locals 5
 L0:     aload_0
-L1:     invokevirtual Method bb "enum" ()F
+L1:     invokevirtual Method bb method618 ()F
 L4:     fload_2
 L5:     fmul
 L6:     dup
@@ -113,28 +113,28 @@ L17:    athrow
 L18:    invokestatic Method FE new ()D
 L21:    dstore_3
 L22:    aload_0
-L23:    getfield Field bb else D
+L23:    getfield Field bb field1139 D
 L26:    dconst_0
 L27:    dcmpl
 L28:    ifeq L42
 L31:    dload_3
 L32:    aload_0
 L33:    dup_x2
-L34:    getfield Field bb else D
+L34:    getfield Field bb field1139 D
 L37:    dsub
 L38:    d2f
-L39:    invokevirtual Method bb else (F)V
+L39:    invokevirtual Method bb method104 (F)V
 L42:    aload_0
 L43:    iconst_1
 L44:    aload_0
 L45:    dload_3
-L46:    putfield Field bb else D
-L49:    invokestatic Method FE goto ()V
+L46:    putfield Field bb field1139 D
+L49:    invokestatic Method FE method65 ()V
 L52:    iconst_1
 L53:    dup
 L54:    pop2
-L55:    invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
-L58:    getfield Field bb "enum" Ljava/util/ArrayList;
+L55:    invokestatic Method org/lwjgl/opengl/GL11 method3664 (I)V
+L58:    getfield Field bb field1140 Ljava/util/ArrayList;
 L61:    invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
 L64:    dup
 L65:    astore_3
@@ -145,14 +145,14 @@ L75:    invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Obj
 L80:    checkcast hc
 L83:    iload_1
 L84:    fload_2
-L85:    invokevirtual Method hc break (ZF)V
+L85:    invokevirtual Method hc method1047 (ZF)V
 L88:    aload_3
 L89:    goto L66
 L92:    athrow
-L93:    invokestatic Method org/lwjgl/opengl/GL11 float ()V
+L93:    invokestatic Method org/lwjgl/opengl/GL11 method3788 ()V
 L96:    return
 L97:    
-        .attribute StackMap b'\x00\x06\x00\x11\x00\x00\x00\x01\x07\x00\x32\x00\x12\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x2A\x00\x04\x07\x00\x02\x01\x02\x03\x00\x00\x00\x42\x00\x04\x07\x00\x02\x01\x02\x07\x00\x59\x00\x01\x07\x00\x59\x00\x5C\x00\x00\x00\x01\x07\x00\x32\x00\x5D\x00\x04\x07\x00\x02\x01\x02\x07\x00\x59\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x11\x00\x00\x00\x01\x07\x00\x34\x00\x12\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x2A\x00\x04\x07\x00\x02\x01\x02\x03\x00\x00\x00\x42\x00\x04\x07\x00\x02\x01\x02\x07\x00\x5C\x00\x01\x07\x00\x5C\x00\x5C\x00\x00\x00\x01\x07\x00\x34\x00\x5D\x00\x04\x07\x00\x02\x01\x02\x07\x00\x5C\x00\x00'
     .end code
 .end method
 
@@ -168,20 +168,20 @@ L10:    dup
 L11:    pop2
 L12:    dup
 L13:    invokespecial Method java/util/ArrayList <init> ()V
-L16:    putfield Field bb "enum" Ljava/util/ArrayList;
+L16:    putfield Field bb field1140 Ljava/util/ArrayList;
 L19:    new java/util/ArrayList
 L22:    aload_0
 L23:    dup
 L24:    pop2
 L25:    dup
 L26:    invokespecial Method java/util/ArrayList <init> ()V
-L29:    putfield Field bb do Ljava/util/ArrayList;
+L29:    putfield Field bb field1141 Ljava/util/ArrayList;
 L32:    return
 L33:    
     .end code
 .end method
 
-.method public break : (FFFFLsE;)V
+.method public method600 : (FFFFLsE;)V
     .code stack 14 locals 17
 L0:     fload_1
 L1:     fload_3
@@ -318,7 +318,7 @@ L194:   fmul
 L195:   fadd
 L196:   fstore 12
 L198:   aload_0
-L199:   getfield Field bb "enum" Ljava/util/ArrayList;
+L199:   getfield Field bb field1140 Ljava/util/ArrayList;
 L202:   new wc
 L205:   dup
 L206:   aload 5
@@ -348,7 +348,7 @@ L248:   iload 15
 L250:   goto L104
 L253:   athrow
 L254:   aload_0
-L255:   getfield Field bb "enum" Ljava/util/ArrayList;
+L255:   getfield Field bb field1140 Ljava/util/ArrayList;
 L258:   invokevirtual Method java/util/ArrayList size ()I
 L261:   sipush 2000
 L264:   iconst_1
@@ -357,7 +357,7 @@ L266:   pop2
 L267:   if_icmple L286
 L270:   aload_0
 L271:   dup
-L272:   getfield Field bb "enum" Ljava/util/ArrayList;
+L272:   getfield Field bb field1140 Ljava/util/ArrayList;
 L275:   iconst_0
 L276:   iconst_1
 L277:   dup
@@ -367,7 +367,7 @@ L282:   pop
 L283:   goto L255
 L286:   return
 L287:   
-        .attribute StackMap b'\x00\x07\x00\x22\x00\x00\x00\x01\x07\x00\x32\x00\x23\x00\x07\x07\x00\x02\x02\x02\x02\x02\x07\x00\x74\x02\x00\x00\x00\x68\x00\x10\x07\x00\x02\x02\x02\x02\x02\x07\x00\x74\x02\x02\x02\x01\x00\x02\x02\x02\x02\x01\x00\x01\x01\x00\xFD\x00\x00\x00\x01\x07\x00\x32\x00\xFE\x00\x10\x07\x00\x02\x02\x02\x02\x02\x07\x00\x74\x02\x02\x02\x01\x00\x02\x02\x02\x02\x01\x00\x00\x00\xFF\x00\x10\x07\x00\x02\x02\x02\x02\x02\x07\x00\x74\x02\x02\x02\x01\x00\x02\x02\x02\x02\x01\x00\x01\x07\x00\x02\x01\x1E\x00\x10\x07\x00\x02\x02\x02\x02\x02\x07\x00\x74\x02\x02\x02\x01\x00\x02\x02\x02\x02\x01\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x22\x00\x00\x00\x01\x07\x00\x34\x00\x23\x00\x07\x07\x00\x02\x02\x02\x02\x02\x07\x00\x79\x02\x00\x00\x00\x68\x00\x10\x07\x00\x02\x02\x02\x02\x02\x07\x00\x79\x02\x02\x02\x01\x00\x02\x02\x02\x02\x01\x00\x01\x01\x00\xFD\x00\x00\x00\x01\x07\x00\x34\x00\xFE\x00\x10\x07\x00\x02\x02\x02\x02\x02\x07\x00\x79\x02\x02\x02\x01\x00\x02\x02\x02\x02\x01\x00\x00\x00\xFF\x00\x10\x07\x00\x02\x02\x02\x02\x02\x07\x00\x79\x02\x02\x02\x01\x00\x02\x02\x02\x02\x01\x00\x01\x07\x00\x02\x01\x1E\x00\x10\x07\x00\x02\x02\x02\x02\x02\x07\x00\x79\x02\x02\x02\x01\x00\x02\x02\x02\x02\x01\x00\x00'
     .end code
 .end method
 .end class

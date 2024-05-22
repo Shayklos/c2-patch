@@ -2,16 +2,16 @@
 .class public final super UB
 .super java/lang/Object
 .implements h
-.field public final synthetic do LCC;
+.field public final synthetic field1538 LCC;
 
-.method public break : (LgB;)V
+.method public method728 : (LgB;)V
     .code stack 2 locals 2
 L0:     aload_0
-L1:     getfield Field UB do LCC;
+L1:     getfield Field UB field1538 LCC;
 L4:     aload_1
 L5:     checkcast uF
-L8:     invokevirtual Method uF else ()Lqd;
-L11:    invokevirtual Method CC else (Lqd;)V
+L8:     invokevirtual Method uF method581 ()Lqd;
+L11:    invokevirtual Method CC method159 (Lqd;)V
 L14:    return
 L15:    
     .end code
@@ -22,7 +22,7 @@ L15:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field UB do LCC;
+L3:     putfield Field UB field1538 LCC;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    
@@ -31,5 +31,5 @@ L10:
 .innerclasses
     UB [0] [0]
 .end innerclasses
-.enclosing method CC goto ()Lqc;
+.enclosing method CC method154 ()Lqc;
 .end class

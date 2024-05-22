@@ -53,7 +53,7 @@
 .field public static final G I = 33418
 .field public static final B I = 33459
 .field public static final c I = 33476
-.field public static final "synchronized" I = 33443
+.field public static final field3184 I = 33443
 .field public static final i I = 33468
 .field public static final m I = 33464
 .field public static final h I = 37760
@@ -64,58 +64,58 @@
 .field public static final j I = 35882
 .field public static final I I = 36161
 .field public static final b I = 33423
-.field public static final implements I = 33490
+.field public static final field3185 I = 33490
 .field public static final return I = 33445
-.field public static final default I = 32937
+.field public static final field3186 I = 32937
 .field public static final switch I = 33486
-.field public static final "interface" I = 33453
-.field public static final "private" I = 34465
-.field public static final assert I = 3552
-.field public static final boolean I = 34037
-.field public static final "strictfp" I = 37122
-.field public static final "abstract" I = 33400
-.field public static final "public" I = 33458
-.field public static final "volatile" I = 33393
-.field public static final double I = 34067
+.field public static final field3187 I = 33453
+.field public static final field3188 I = 34465
+.field public static final field3189 I = 3552
+.field public static final field3190 I = 34037
+.field public static final field3191 I = 37122
+.field public static final field3192 I = 33400
+.field public static final field3193 I = 33458
+.field public static final field3194 I = 33393
+.field public static final field3195 I = 34067
 .field public static final throw I = 33431
 .field public static final package I = 33439
-.field public static final finally I = 33449
-.field public static final "transient" I = 33462
+.field public static final field3196 I = 33449
+.field public static final field3197 I = 33462
 .field public static final while I = 33446
-.field public static final instanceof I = 33487
-.field public static final "protected" I = 33489
-.field public static final import I = 33442
-.field public static final "native" I = 33417
-.field public static final throws I = 33460
-.field public static final "static" I = 33465
-.field public static final continue I = 33448
-.field public static final extends I = 33401
-.field public static final float I = 33411
-.field public static final "final" I = 33447
-.field public static final catch I = 33429
+.field public static final field3198 I = 33487
+.field public static final field3199 I = 33489
+.field public static final field3200 I = 33442
+.field public static final field3201 I = 33417
+.field public static final field3202 I = 33460
+.field public static final field3203 I = 33465
+.field public static final field3204 I = 33448
+.field public static final field3205 I = 33401
+.field public static final field3206 I = 33411
+.field public static final field3207 I = 33447
+.field public static final field3208 I = 33429
 .field public static final false I = 33488
-.field public static final class I = 33416
-.field public static final if I = 3553
+.field public static final field3209 I = 33416
+.field public static final field3210 I = 3553
 .field public static final true I = 33474
-.field public static final for I = 33491
-.field public static final case I = 33428
-.field public static final byte I = 33444
-.field public static final "super" I = 33414
-.field public static final int I = 33483
-.field public static final short I = 33398
-.field public static final goto I = 33426
-.field public static final break I = 33406
-.field public static final long I = 33409
-.field public static final void I = 33436
+.field public static final field3211 I = 33491
+.field public static final field3212 I = 33428
+.field public static final field3213 I = 33444
+.field public static final field3214 I = 33414
+.field public static final field3215 I = 33483
+.field public static final field3216 I = 33398
+.field public static final field3217 I = 33426
+.field public static final field3218 I = 33406
+.field public static final field3219 I = 33409
+.field public static final field3220 I = 33436
 .field public static final try I = 32879
-.field public static final const I = 33484
+.field public static final field3221 I = 33484
 .field public static final new I = 33424
-.field public static final null I = 33419
+.field public static final field3222 I = 33419
 .field public static final this I = 33482
-.field public static final char I = 33397
-.field public static final else I = 37063
-.field public static final "enum" I = 33413
-.field public static final do I = 33430
+.field public static final field3223 I = 33397
+.field public static final field3224 I = 37063
+.field public static final field3225 I = 33413
+.field public static final field3226 I = 33430
 
 .method private <init> : ()V
     .code stack 1 locals 1
@@ -126,24 +126,24 @@ L5:
     .end code
 .end method
 
-.method public static break : (IIILjava/nio/LongBuffer;)V
+.method public static method2952 : (IIILjava/nio/LongBuffer;)V
     .code stack 4 locals 4
 L0:     iload_0
 L1:     iload_1
 L2:     iload_2
 L3:     aload_3
-L4:     invokestatic Method org/lwjgl/opengl/GL43 break (IIILjava/nio/LongBuffer;)V
+L4:     invokestatic Method org/lwjgl/opengl/GL43 method4569 (IIILjava/nio/LongBuffer;)V
 L7:     return
 L8:     
     .end code
 .end method
 
-.method public static break : (III)J
+.method public static method2953 : (III)J
     .code stack 3 locals 3
 L0:     iload_0
 L1:     iload_1
 L2:     iload_2
-L3:     invokestatic Method org/lwjgl/opengl/GL43 float (III)J
+L3:     invokestatic Method org/lwjgl/opengl/GL43 method4575 (III)J
 L6:     lreturn
 L7:     
     .end code

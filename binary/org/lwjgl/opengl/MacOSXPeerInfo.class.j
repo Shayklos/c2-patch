@@ -35,14 +35,14 @@ L49:    dup
 L50:    pop2
 L51:    if_icmpne L80
 L54:    aload_2
-L55:    invokevirtual Method org/lwjgl/opengl/CB const ()I
+L55:    invokevirtual Method org/lwjgl/opengl/CB method2964 ()I
 L58:    iconst_2
 L59:    iconst_1
 L60:    dup
 L61:    pop2
 L62:    if_icmpne L80
 L65:    aload_2
-L66:    invokevirtual Method org/lwjgl/opengl/CB catch ()Z
+L66:    invokevirtual Method org/lwjgl/opengl/CB method2960 ()Z
 L69:    ifeq L80
 L72:    iconst_1
 L73:    dup
@@ -79,7 +79,7 @@ L121:   iload_3
 L122:   iload 4
 L124:   iload 5
 L126:   iload 6
-L128:   invokespecial Method org/lwjgl/opengl/MacOSXPeerInfo break (Lorg/lwjgl/opengl/PixelFormat;ZZZZZ)V
+L128:   invokespecial Method org/lwjgl/opengl/MacOSXPeerInfo method4686 (Lorg/lwjgl/opengl/PixelFormat;ZZZZZ)V
 L131:   return
 L132:   
         .attribute StackMap b'\x00\x05\x00\x27\x00\x07\x07\x00\x02\x07\x00\x11\x07\x00\x22\x01\x01\x01\x01\x00\x00\x00\x4F\x00\x00\x00\x01\x07\x00\x2D\x00\x50\x00\x07\x07\x00\x02\x07\x00\x11\x07\x00\x22\x01\x01\x01\x01\x00\x00\x00\x54\x00\x07\x07\x00\x02\x07\x00\x11\x07\x00\x22\x01\x01\x01\x01\x00\x01\x01\x00\x75\x00\x08\x07\x00\x02\x07\x00\x11\x07\x00\x22\x01\x01\x01\x01\x01\x00\x00'
@@ -90,10 +90,10 @@ L132:
 .method private static native createHandle : ()Ljava/nio/ByteBuffer;
 .end method
 
-.method private break : (Lorg/lwjgl/opengl/PixelFormat;ZZZZZ)V
+.method private method4686 : (Lorg/lwjgl/opengl/PixelFormat;ZZZZZ)V
     .code stack 7 locals 7
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/opengl/MacOSXPeerInfo float ()Ljava/nio/ByteBuffer;
+L1:     invokevirtual Method org/lwjgl/opengl/MacOSXPeerInfo method4677 ()Ljava/nio/ByteBuffer;
 L4:     aload_1
 L5:     iload_2
 L6:     iload_3
@@ -114,10 +114,10 @@ L17:
 .method private static native nDestroy : (Ljava/nio/ByteBuffer;)V
 .end method
 
-.method public short : ()V
+.method public method4675 : ()V
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/opengl/MacOSXPeerInfo float ()Ljava/nio/ByteBuffer;
+L1:     invokevirtual Method org/lwjgl/opengl/MacOSXPeerInfo method4677 ()Ljava/nio/ByteBuffer;
 L4:     invokestatic Method org/lwjgl/opengl/MacOSXPeerInfo nDestroy (Ljava/nio/ByteBuffer;)V
 L7:     return
 L8:     

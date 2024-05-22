@@ -2,15 +2,15 @@
 .class public final super tc
 .super java/lang/Object
 .implements D
-.field public do LRC;
+.field public field938 LRC;
 
-.method public break : (LAC;)V
+.method public method384 : (LAC;)V
     .code stack 2 locals 2
 L0:     aload_1
 L1:     aload_0
-L2:     getfield Field tc do LRC;
-L5:     getfield Field RC "enum" I
-L8:     invokevirtual Method AC break (I)V
+L2:     getfield Field tc field938 LRC;
+L5:     getfield Field RC field735 I
+L8:     invokevirtual Method AC method691 (I)V
 L11:    return
 L12:    
     .end code
@@ -22,14 +22,14 @@ L12:
 L0:     aload_0
 L1:     dup
 L2:     invokespecial Method java/lang/Object <init> ()V
-L5:     getstatic Field Kc else LKc;
-L8:     invokevirtual Method Kc const ()Ljava/util/LinkedHashMap;
+L5:     getstatic Field Kc field1931 LKc;
+L8:     invokevirtual Method Kc method850 ()Ljava/util/LinkedHashMap;
 L11:    aload_1
-L12:    invokevirtual Method Md long ()I
+L12:    invokevirtual Method Md method886 ()I
 L15:    invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L18:    invokevirtual Method java/util/LinkedHashMap get (Ljava/lang/Object;)Ljava/lang/Object;
 L21:    checkcast RC
-L24:    putfield Field tc do LRC;
+L24:    putfield Field tc field938 LRC;
 L27:    return
 L28:    
     .end code
@@ -42,7 +42,7 @@ L0:     aload_1
 L1:     aload_0
 L2:     dup_x1
 L3:     invokespecial Method java/lang/Object <init> ()V
-L6:     putfield Field tc do LRC;
+L6:     putfield Field tc field938 LRC;
 L9:     return
 L10:    
     .end code

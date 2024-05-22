@@ -2,7 +2,7 @@
 .class public final super PD
 .super java/lang/Object
 .implements D
-.field public do J
+.field public field946 J
 
 .method public <init> : (LMd;)V
     .code stack 3 locals 2
@@ -10,8 +10,8 @@ L0:     aload_1
 L1:     aload_0
 L2:     dup_x1
 L3:     invokespecial Method java/lang/Object <init> ()V
-L6:     invokevirtual Method Md const ()J
-L9:     putfield Field PD do J
+L6:     invokevirtual Method Md method897 ()J
+L9:     putfield Field PD field946 J
 L12:    return
 L13:    
     .end code
@@ -24,18 +24,18 @@ L0:     lload_1
 L1:     aload_0
 L2:     dup_x2
 L3:     invokespecial Method java/lang/Object <init> ()V
-L6:     putfield Field PD do J
+L6:     putfield Field PD field946 J
 L9:     return
 L10:    
     .end code
 .end method
 
-.method public break : (LAC;)V
+.method public method384 : (LAC;)V
     .code stack 3 locals 2
 L0:     aload_1
 L1:     aload_0
-L2:     getfield Field PD do J
-L5:     invokevirtual Method AC break (J)V
+L2:     getfield Field PD field946 J
+L5:     invokevirtual Method AC method690 (J)V
 L8:     return
 L9:     
     .end code

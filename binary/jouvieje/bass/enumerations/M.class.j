@@ -4,14 +4,14 @@
 .implements jouvieje/bass/enumerations/i
 .implements java/lang/Comparable
 .field public static final this Ljouvieje/bass/enumerations/M;
-.field private final char Ljava/lang/String;
-.field public static final else Ljouvieje/bass/enumerations/M;
-.field private static final "enum" Ljava/util/HashMap;
-.field private final do I
+.field private final field283 Ljava/lang/String;
+.field public static final field284 Ljouvieje/bass/enumerations/M;
+.field private static final field285 Ljava/util/HashMap;
+.field private final field286 I
 
-.method static const : ()Ljava/util/HashMap;
+.method static method245 : ()Ljava/util/HashMap;
     .code stack 1 locals 0
-L0:     getstatic Field jouvieje/bass/enumerations/M "enum" Ljava/util/HashMap;
+L0:     getstatic Field jouvieje/bass/enumerations/M field285 Ljava/util/HashMap;
 L3:     areturn
 L4:     
     .end code
@@ -25,7 +25,7 @@ L3:     dup
 L4:     ldc "STREAMPROC_DUMMY"
 L6:     invokestatic Method jouvieje/bass/enumerations/EnumerationJNI get_STREAMPROC_DUMMY ()I
 L9:     invokespecial Method jouvieje/bass/enumerations/M <init> (Ljava/lang/String;I)V
-L12:    putstatic Field jouvieje/bass/enumerations/M else Ljouvieje/bass/enumerations/M;
+L12:    putstatic Field jouvieje/bass/enumerations/M field284 Ljouvieje/bass/enumerations/M;
 L15:    new jouvieje/bass/enumerations/M
 L18:    dup
 L19:    ldc "STREAMPROC_PUSH"
@@ -39,20 +39,20 @@ L35:    iconst_1
 L36:    dup
 L37:    pop2
 L38:    invokespecial Method java/util/HashMap <init> (I)V
-L41:    putstatic Field jouvieje/bass/enumerations/M "enum" Ljava/util/HashMap;
-L44:    getstatic Field jouvieje/bass/enumerations/M "enum" Ljava/util/HashMap;
+L41:    putstatic Field jouvieje/bass/enumerations/M field285 Ljava/util/HashMap;
+L44:    getstatic Field jouvieje/bass/enumerations/M field285 Ljava/util/HashMap;
 L47:    new java/lang/Integer
 L50:    dup
-L51:    getstatic Field jouvieje/bass/enumerations/M else Ljouvieje/bass/enumerations/M;
-L54:    invokevirtual Method jouvieje/bass/enumerations/M break ()I
+L51:    getstatic Field jouvieje/bass/enumerations/M field284 Ljouvieje/bass/enumerations/M;
+L54:    invokevirtual Method jouvieje/bass/enumerations/M method247 ()I
 L57:    invokespecial Method java/lang/Integer <init> (I)V
-L60:    getstatic Field jouvieje/bass/enumerations/M else Ljouvieje/bass/enumerations/M;
+L60:    getstatic Field jouvieje/bass/enumerations/M field284 Ljouvieje/bass/enumerations/M;
 L63:    invokevirtual Method java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-L66:    getstatic Field jouvieje/bass/enumerations/M "enum" Ljava/util/HashMap;
+L66:    getstatic Field jouvieje/bass/enumerations/M field285 Ljava/util/HashMap;
 L69:    new java/lang/Integer
 L72:    dup
 L73:    getstatic Field jouvieje/bass/enumerations/M this Ljouvieje/bass/enumerations/M;
-L76:    invokevirtual Method jouvieje/bass/enumerations/M break ()I
+L76:    invokevirtual Method jouvieje/bass/enumerations/M method247 ()I
 L79:    invokespecial Method java/lang/Integer <init> (I)V
 L82:    getstatic Field jouvieje/bass/enumerations/M this Ljouvieje/bass/enumerations/M;
 L85:    invokevirtual Method java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
@@ -62,9 +62,9 @@ L90:
     .end code
 .end method
 
-.method public static break : (I)Ljouvieje/bass/enumerations/M;
+.method public static method258 : (I)Ljouvieje/bass/enumerations/M;
     .code stack 4 locals 1
-L0:     getstatic Field jouvieje/bass/enumerations/M "enum" Ljava/util/HashMap;
+L0:     getstatic Field jouvieje/bass/enumerations/M field285 Ljava/util/HashMap;
 L3:     new java/lang/Integer
 L6:     dup
 L7:     iload_0
@@ -76,10 +76,10 @@ L18:
     .end code
 .end method
 
-.method public break : ()I
+.method public method247 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/enumerations/M do I
+L1:     getfield Field jouvieje/bass/enumerations/M field286 I
 L4:     ireturn
 L5:     
     .end code
@@ -88,7 +88,7 @@ L5:
 .method public toString : ()Ljava/lang/String;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/enumerations/M char Ljava/lang/String;
+L1:     getfield Field jouvieje/bass/enumerations/M field283 Ljava/lang/String;
 L4:     areturn
 L5:     
     .end code
@@ -102,18 +102,18 @@ L2:     dup_x1
 L3:     aload_1
 L4:     aload_0
 L5:     invokespecial Method java/lang/Object <init> ()V
-L8:     putfield Field jouvieje/bass/enumerations/M char Ljava/lang/String;
-L11:    putfield Field jouvieje/bass/enumerations/M do I
+L8:     putfield Field jouvieje/bass/enumerations/M field283 Ljava/lang/String;
+L11:    putfield Field jouvieje/bass/enumerations/M field286 I
 L14:    return
 L15:    
     .end code
 .end method
 
-.method public static break : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/enumerations/M;
+.method public static method259 : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/enumerations/M;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     invokevirtual Method jouvieje/bass/utils/m asInt ()I
-L4:     invokestatic Method jouvieje/bass/enumerations/M break (I)Ljouvieje/bass/enumerations/M;
+L4:     invokestatic Method jouvieje/bass/enumerations/M method258 (I)Ljouvieje/bass/enumerations/M;
 L7:     areturn
 L8:     
     .end code
@@ -122,10 +122,10 @@ L8:
 .method public compareTo : (Ljava/lang/Object;)I
     .code stack 2 locals 2
 L0:     aload_0
-L1:     invokevirtual Method jouvieje/bass/enumerations/M break ()I
+L1:     invokevirtual Method jouvieje/bass/enumerations/M method247 ()I
 L4:     aload_1
 L5:     checkcast jouvieje/bass/enumerations/M
-L8:     invokevirtual Method jouvieje/bass/enumerations/M break ()I
+L8:     invokevirtual Method jouvieje/bass/enumerations/M method247 ()I
 L11:    isub
 L12:    ireturn
 L13:    
@@ -138,10 +138,10 @@ L0:     aload_1
 L1:     instanceof jouvieje/bass/enumerations/M
 L4:     ifeq L33
 L7:     aload_0
-L8:     invokevirtual Method jouvieje/bass/enumerations/M break ()I
+L8:     invokevirtual Method jouvieje/bass/enumerations/M method247 ()I
 L11:    aload_1
 L12:    checkcast jouvieje/bass/enumerations/M
-L15:    invokevirtual Method jouvieje/bass/enumerations/M break ()I
+L15:    invokevirtual Method jouvieje/bass/enumerations/M method247 ()I
 L18:    if_icmpne L27
 L21:    iconst_1
 L22:    dup
@@ -161,11 +161,11 @@ L35:    dup
 L36:    pop2
 L37:    ireturn
 L38:    
-        .attribute StackMap b'\x00\x04\x00\x1A\x00\x00\x00\x01\x07\x00\x58\x00\x1B\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00\x00\x20\x00\x00\x00\x01\x07\x00\x58\x00\x21\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x1A\x00\x00\x00\x01\x07\x00\x5A\x00\x1B\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00\x00\x20\x00\x00\x00\x01\x07\x00\x5A\x00\x21\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00'
     .end code
 .end method
 
-.method public static else : ()Ljava/util/Iterator;
+.method public static method246 : ()Ljava/util/Iterator;
     .code stack 2 locals 0
 L0:     new jouvieje/bass/enumerations/m
 L3:     dup

@@ -1,30 +1,30 @@
 .version 46 0
 .class public final super org/jouvieje/libloader/G
 .super java/lang/Object
-.field static "super" Ljava/lang/Class; .fieldattributes
+.field static field2442 Ljava/lang/Class; .fieldattributes
     .synthetic
 .end fieldattributes
-.field private static final int Ljava/lang/String;
-.field static short Ljava/lang/Class; .fieldattributes
+.field private static final field2443 Ljava/lang/String;
+.field static field2444 Ljava/lang/Class; .fieldattributes
     .synthetic
 .end fieldattributes
-.field private static goto Z
-.field private static final break Ljava/lang/String;
-.field private static final long Ljava/lang/String;
-.field private static final void Ljava/lang/String;
+.field private static field2445 Z
+.field private static final field2446 Ljava/lang/String;
+.field private static final field2447 Ljava/lang/String;
+.field private static final field2448 Ljava/lang/String;
 .field public static final try I = 1
-.field public static final const I = 4
+.field public static final field2449 I = 4
 .field public static final new I = 3
-.field private static final null Ljava/lang/String;
+.field private static final field2450 Ljava/lang/String;
 .field public static final this I = 2
-.field private static final char Ljava/lang/String;
-.field private static else I
-.field public static "enum" Z
-.field private static do Z
+.field private static final field2451 Ljava/lang/String;
+.field private static field2452 I
+.field public static field2453 Z
+.field private static field2454 Z
 
-.method private static do : (Ljava/lang/String;)J
+.method private static method1730 : (Ljava/lang/String;)J
     .code stack 4 locals 3
-L0:     invokestatic Method org/jouvieje/libloader/G short ()Z
+L0:     invokestatic Method org/jouvieje/libloader/G method1736 ()Z
 L3:     ifne L9
 L6:     lconst_0
 L7:     lreturn
@@ -48,7 +48,7 @@ L35:    invokespecial Method java/lang/StringBuffer <init> (Ljava/lang/String;)V
 L38:    invokestatic Method org/jouvieje/libloader/LibLoaderJNI dlerror ()Ljava/lang/String;
 L41:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L44:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L47:    invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L47:    invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L50:    goto L90
 L53:    athrow
 L54:    new java/lang/StringBuffer
@@ -65,17 +65,17 @@ L76:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)L
 L79:    ldc "]"
 L81:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L84:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L87:    invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L87:    invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L90:    invokestatic Method org/jouvieje/libloader/LibLoaderJNI dlerror ()Ljava/lang/String;
 L93:    pop
 L94:    lload_1
 L95:    lreturn
 L96:    
-        .attribute StackMap b'\x00\x05\x00\x08\x00\x00\x00\x01\x07\x00\x30\x00\x09\x00\x01\x07\x00\x32\x00\x00\x00\x35\x00\x00\x00\x01\x07\x00\x30\x00\x36\x00\x02\x07\x00\x32\x04\x00\x00\x00\x5A\x00\x02\x07\x00\x32\x04\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x08\x00\x00\x00\x01\x07\x00\x32\x00\x09\x00\x01\x07\x00\x34\x00\x00\x00\x35\x00\x00\x00\x01\x07\x00\x32\x00\x36\x00\x02\x07\x00\x34\x04\x00\x00\x00\x5A\x00\x02\x07\x00\x34\x04\x00\x00'
     .end code
 .end method
 
-.method private static for : (Ljava/lang/String;)Lorg/jouvieje/libloader/M;
+.method private static method1731 : (Ljava/lang/String;)Lorg/jouvieje/libloader/M;
     .code stack 11 locals 3
 L0:     aload_0
 L1:     ldc "lib"
@@ -118,7 +118,7 @@ L65:    ldc ".dll"
 L67:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L70:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
 L73:    invokespecial Method org/jouvieje/libloader/m <init> (Ljava/lang/String;Ljava/lang/String;)V
-L76:    putfield Field org/jouvieje/libloader/M else Lorg/jouvieje/libloader/m;
+L76:    putfield Field org/jouvieje/libloader/M field2457 Lorg/jouvieje/libloader/m;
 L79:    new org/jouvieje/libloader/m
 L82:    aload_2
 L83:    dup_x2
@@ -163,7 +163,7 @@ L158:   ldc ".so"
 L160:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L163:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
 L166:   invokespecial Method org/jouvieje/libloader/m <init> (Ljava/lang/String;Ljava/lang/String;)V
-L169:   putfield Field org/jouvieje/libloader/M char Lorg/jouvieje/libloader/m;
+L169:   putfield Field org/jouvieje/libloader/M field2456 Lorg/jouvieje/libloader/m;
 L172:   new org/jouvieje/libloader/m
 L175:   aload_2
 L176:   dup
@@ -188,7 +188,7 @@ L214:   ldc ".so"
 L216:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L219:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
 L222:   invokespecial Method org/jouvieje/libloader/m <init> (Ljava/lang/String;Ljava/lang/String;)V
-L225:   putfield Field org/jouvieje/libloader/M null Lorg/jouvieje/libloader/m;
+L225:   putfield Field org/jouvieje/libloader/M field2455 Lorg/jouvieje/libloader/m;
 L228:   new org/jouvieje/libloader/m
 L231:   aload_2
 L232:   dup
@@ -207,45 +207,45 @@ L250:   ldc ".jnilib"
 L252:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L255:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
 L258:   invokespecial Method org/jouvieje/libloader/m <init> (Ljava/lang/String;Ljava/lang/String;)V
-L261:   putfield Field org/jouvieje/libloader/M "enum" Lorg/jouvieje/libloader/m;
+L261:   putfield Field org/jouvieje/libloader/M field2458 Lorg/jouvieje/libloader/m;
 L264:   areturn
 L265:   
-        .attribute StackMap b'\x00\x03\x00\x0D\x00\x00\x00\x01\x07\x00\x30\x00\x0E\x00\x01\x07\x00\x32\x00\x00\x00\x1E\x00\x01\x07\x00\x32\x00\x01\x07\x00\x32'
+        .attribute StackMap b'\x00\x03\x00\x0D\x00\x00\x00\x01\x07\x00\x32\x00\x0E\x00\x01\x07\x00\x34\x00\x00\x00\x1E\x00\x01\x07\x00\x34\x00\x01\x07\x00\x34'
     .end code
 .end method
 
-.method public static float : ()Z
+.method public static method1732 : ()Z
     .code stack 1 locals 0
-L0:     invokestatic Method org/jouvieje/libloader/G const ()I
+L0:     invokestatic Method org/jouvieje/libloader/G method1751 ()I
 L3:     pop
-L4:     getstatic Field org/jouvieje/libloader/G do Z
+L4:     getstatic Field org/jouvieje/libloader/G field2454 Z
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method static catch : (Ljava/lang/String;)V
+.method static method1733 : (Ljava/lang/String;)V
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L1:     invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L4:     return
 L5:     
     .end code
     .synthetic
 .end method
 
-.method public static break : (Ljava/lang/String;Z)Z
+.method public static method1734 : (Ljava/lang/String;Z)Z
     .code stack 2 locals 2
 L0:     aload_0
-L1:     invokestatic Method org/jouvieje/libloader/G for (Ljava/lang/String;)Lorg/jouvieje/libloader/M;
+L1:     invokestatic Method org/jouvieje/libloader/G method1731 (Ljava/lang/String;)Lorg/jouvieje/libloader/M;
 L4:     iload_1
-L5:     invokestatic Method org/jouvieje/libloader/G break (Lorg/jouvieje/libloader/M;Z)Z
+L5:     invokestatic Method org/jouvieje/libloader/G method1742 (Lorg/jouvieje/libloader/M;Z)Z
 L8:     ireturn
 L9:     
     .end code
 .end method
 
-.method private static else : (Ljava/io/File;)Z
+.method private static method1735 : (Ljava/io/File;)Z
     .code stack 3 locals 1
 L0:     new org/jouvieje/libloader/F
 L3:     dup
@@ -259,17 +259,17 @@ L18:
     .end code
 .end method
 
-.method protected static short : ()Z
+.method protected static method1736 : ()Z
     .code stack 5 locals 1
-L0:     getstatic Field org/jouvieje/libloader/G goto Z
+L0:     getstatic Field org/jouvieje/libloader/G field2445 Z
 L3:     ifne L106
-L6:     invokestatic Method org/jouvieje/libloader/G const ()I
+L6:     invokestatic Method org/jouvieje/libloader/G method1751 ()I
 L9:     iconst_2
 L10:    iconst_1
 L11:    dup
 L12:    pop2
 L13:    if_icmpne L106
-L16:    invokestatic Method org/jouvieje/libloader/G float ()Z
+L16:    invokestatic Method org/jouvieje/libloader/G method1732 ()Z
 L19:    ifeq L54
 L22:    iconst_2
 L23:    iconst_1
@@ -332,41 +332,41 @@ L89:    dup
 L90:    dup
 L91:    pop2
 L92:    aaload
-L93:    invokestatic Method org/jouvieje/libloader/G else (Ljava/lang/String;Ljava/lang/String;)Z
+L93:    invokestatic Method org/jouvieje/libloader/G method1743 (Ljava/lang/String;Ljava/lang/String;)Z
 L96:    ifeq L106
 L99:    iconst_1
 L100:   dup
 L101:   dup
 L102:   pop2
-L103:   putstatic Field org/jouvieje/libloader/G goto Z
-L106:   getstatic Field org/jouvieje/libloader/G goto Z
+L103:   putstatic Field org/jouvieje/libloader/G field2445 Z
+L106:   getstatic Field org/jouvieje/libloader/G field2445 Z
 L109:   ireturn
 L110:   
-        .attribute StackMap b'\x00\x04\x00\x35\x00\x00\x00\x01\x07\x00\x30\x00\x36\x00\x00\x00\x00\x00\x52\x00\x01\x07\x00\xB0\x00\x01\x07\x00\xB0\x00\x6A\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x35\x00\x00\x00\x01\x07\x00\x32\x00\x36\x00\x00\x00\x00\x00\x52\x00\x01\x07\x00\xBB\x00\x01\x07\x00\xBB\x00\x6A\x00\x00\x00\x00'
     .end code
 .end method
 
-.method static float : (Ljava/lang/String;)Ljava/lang/String;
+.method static method1737 : (Ljava/lang/String;)Ljava/lang/String;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokestatic Method org/jouvieje/libloader/G const (Ljava/lang/String;)Ljava/lang/String;
+L1:     invokestatic Method org/jouvieje/libloader/G method1747 (Ljava/lang/String;)Ljava/lang/String;
 L4:     areturn
 L5:     
     .end code
     .synthetic
 .end method
 
-.method private static break : (Lorg/jouvieje/libloader/m;Z)Z
+.method private static method1738 : (Lorg/jouvieje/libloader/m;Z)Z
     .code stack 3 locals 2
 L0:     aload_0
 L1:     ifnull L26
 L4:     aload_0
 L5:     dup
-L6:     getfield Field org/jouvieje/libloader/m do Ljava/lang/String;
+L6:     getfield Field org/jouvieje/libloader/m field2466 Ljava/lang/String;
 L9:     swap
-L10:    getfield Field org/jouvieje/libloader/m "enum" Ljava/lang/String;
+L10:    getfield Field org/jouvieje/libloader/m field2465 Ljava/lang/String;
 L13:    iload_1
-L14:    invokestatic Method org/jouvieje/libloader/G break (Ljava/lang/String;Ljava/lang/String;Z)Z
+L14:    invokestatic Method org/jouvieje/libloader/G method1753 (Ljava/lang/String;Ljava/lang/String;Z)Z
 L17:    ifeq L26
 L20:    iconst_1
 L21:    dup
@@ -380,11 +380,11 @@ L28:    dup
 L29:    pop2
 L30:    ireturn
 L31:    
-        .attribute StackMap b'\x00\x02\x00\x19\x00\x00\x00\x01\x07\x00\x30\x00\x1A\x00\x02\x07\x00\x6C\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x19\x00\x00\x00\x01\x07\x00\x32\x00\x1A\x00\x02\x07\x00\x6F\x01\x00\x00'
     .end code
 .end method
 
-.method private static const : (Ljava/util/Vector;Ljava/lang/String;)V
+.method private static method1739 : (Ljava/util/Vector;Ljava/lang/String;)V
     .code stack 3 locals 3
 L0:     new java/io/File
 L3:     dup
@@ -412,24 +412,24 @@ L40:    invokevirtual Method java/util/Vector add (Ljava/lang/Object;)Z
 L43:    pop
 L44:    return
 L45:    
-        .attribute StackMap b'\x00\x04\x00\x20\x00\x00\x00\x01\x07\x00\x30\x00\x21\x00\x02\x07\x00\xCE\x07\x00\xC1\x00\x00\x00\x24\x00\x03\x07\x00\xCE\x07\x00\xC1\x07\x00\xC1\x00\x01\x07\x00\xCE\x00\x2C\x00\x02\x07\x00\xCE\x07\x00\xC1\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x20\x00\x00\x00\x01\x07\x00\x32\x00\x21\x00\x02\x07\x00\xE1\x07\x00\xD4\x00\x00\x00\x24\x00\x03\x07\x00\xE1\x07\x00\xD4\x07\x00\xD4\x00\x01\x07\x00\xE1\x00\x2C\x00\x02\x07\x00\xE1\x07\x00\xD4\x00\x00'
     .end code
 .end method
 
-.method private static short : (Ljava/lang/String;)V
+.method private static method1740 : (Ljava/lang/String;)V
     .code stack 2 locals 1
-L0:     getstatic Field org/jouvieje/libloader/G "enum" Z
+L0:     getstatic Field org/jouvieje/libloader/G field2453 Z
 L3:     ifeq L13
 L6:     getstatic Field java/lang/System out Ljava/io/PrintStream;
 L9:     aload_0
 L10:    invokevirtual Method java/io/PrintStream println (Ljava/lang/String;)V
 L13:    return
 L14:    
-        .attribute StackMap b'\x00\x01\x00\x0D\x00\x01\x07\x00\x32\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x0D\x00\x01\x07\x00\x34\x00\x00'
     .end code
 .end method
 
-.method private static else : (Ljava/util/Vector;Ljava/lang/String;)V
+.method private static method1741 : (Ljava/util/Vector;Ljava/lang/String;)V
     .code stack 4 locals 2
 L0:     aload_1
 L1:     ifnull L37
@@ -452,26 +452,26 @@ L31:    invokevirtual Method java/util/StringTokenizer hasMoreTokens ()Z
 L34:    ifne L21
 L37:    return
 L38:    
-        .attribute StackMap b'\x00\x04\x00\x14\x00\x00\x00\x01\x07\x00\x30\x00\x15\x00\x02\x07\x00\xCE\x07\x00\xE4\x00\x00\x00\x1F\x00\x02\x07\x00\xCE\x07\x00\xE4\x00\x01\x07\x00\xE4\x00\x25\x00\x02\x07\x00\xCE\x07\x00\x04\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x14\x00\x00\x00\x01\x07\x00\x32\x00\x15\x00\x02\x07\x00\xE1\x07\x00\xF8\x00\x00\x00\x1F\x00\x02\x07\x00\xE1\x07\x00\xF8\x00\x01\x07\x00\xF8\x00\x25\x00\x02\x07\x00\xE1\x07\x00\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : (Lorg/jouvieje/libloader/M;Z)Z
+.method public static method1742 : (Lorg/jouvieje/libloader/M;Z)Z
     .code stack 3 locals 2
-L0:     invokestatic Method org/jouvieje/libloader/G const ()I
+L0:     invokestatic Method org/jouvieje/libloader/G method1751 ()I
 L3:     tableswitch 1
             L28
             L88
             L129
             default : L145
-L28:    invokestatic Method org/jouvieje/libloader/G float ()Z
+L28:    invokestatic Method org/jouvieje/libloader/G method1732 ()Z
 L31:    iconst_0
 L32:    ifne L126
 L35:    ifeq L55
 L38:    aload_0
 L39:    getfield Field org/jouvieje/libloader/M this Lorg/jouvieje/libloader/m;
 L42:    iload_1
-L43:    invokestatic Method org/jouvieje/libloader/G break (Lorg/jouvieje/libloader/m;Z)Z
+L43:    invokestatic Method org/jouvieje/libloader/G method1738 (Lorg/jouvieje/libloader/m;Z)Z
 L46:    ifeq L72
 L49:    iconst_1
 L50:    dup
@@ -480,9 +480,9 @@ L52:    pop2
 L53:    ireturn
 L54:    athrow
 L55:    aload_0
-L56:    getfield Field org/jouvieje/libloader/M else Lorg/jouvieje/libloader/m;
+L56:    getfield Field org/jouvieje/libloader/M field2457 Lorg/jouvieje/libloader/m;
 L59:    iload_1
-L60:    invokestatic Method org/jouvieje/libloader/G break (Lorg/jouvieje/libloader/m;Z)Z
+L60:    invokestatic Method org/jouvieje/libloader/G method1738 (Lorg/jouvieje/libloader/m;Z)Z
 L63:    ifeq L72
 L66:    iconst_1
 L67:    dup
@@ -491,21 +491,21 @@ L69:    pop2
 L70:    ireturn
 L71:    athrow
 L72:    aload_0
-L73:    getfield Field org/jouvieje/libloader/M do Lorg/jouvieje/libloader/m;
+L73:    getfield Field org/jouvieje/libloader/M field2459 Lorg/jouvieje/libloader/m;
 L76:    iload_1
-L77:    invokestatic Method org/jouvieje/libloader/G break (Lorg/jouvieje/libloader/m;Z)Z
+L77:    invokestatic Method org/jouvieje/libloader/G method1738 (Lorg/jouvieje/libloader/m;Z)Z
 L80:    ifeq L145
 L83:    iconst_1
 L84:    dup
 L85:    dup
 L86:    pop2
 L87:    ireturn
-L88:    invokestatic Method org/jouvieje/libloader/G float ()Z
+L88:    invokestatic Method org/jouvieje/libloader/G method1732 ()Z
 L91:    ifeq L110
 L94:    aload_0
-L95:    getfield Field org/jouvieje/libloader/M null Lorg/jouvieje/libloader/m;
+L95:    getfield Field org/jouvieje/libloader/M field2455 Lorg/jouvieje/libloader/m;
 L98:    iload_1
-L99:    invokestatic Method org/jouvieje/libloader/G break (Lorg/jouvieje/libloader/m;Z)Z
+L99:    invokestatic Method org/jouvieje/libloader/G method1738 (Lorg/jouvieje/libloader/m;Z)Z
 L102:   ifeq L145
 L105:   iconst_1
 L106:   dup
@@ -513,9 +513,9 @@ L107:   dup
 L108:   pop2
 L109:   ireturn
 L110:   aload_0
-L111:   getfield Field org/jouvieje/libloader/M char Lorg/jouvieje/libloader/m;
+L111:   getfield Field org/jouvieje/libloader/M field2456 Lorg/jouvieje/libloader/m;
 L114:   iload_1
-L115:   invokestatic Method org/jouvieje/libloader/G break (Lorg/jouvieje/libloader/m;Z)Z
+L115:   invokestatic Method org/jouvieje/libloader/G method1738 (Lorg/jouvieje/libloader/m;Z)Z
 L118:   ifeq L145
 L121:   iconst_1
 L122:   dup
@@ -524,9 +524,9 @@ L124:   pop2
 L125:   ireturn
 L126:   goto L31
 L129:   aload_0
-L130:   getfield Field org/jouvieje/libloader/M "enum" Lorg/jouvieje/libloader/m;
+L130:   getfield Field org/jouvieje/libloader/M field2458 Lorg/jouvieje/libloader/m;
 L133:   iload_1
-L134:   invokestatic Method org/jouvieje/libloader/G break (Lorg/jouvieje/libloader/m;Z)Z
+L134:   invokestatic Method org/jouvieje/libloader/G method1738 (Lorg/jouvieje/libloader/m;Z)Z
 L137:   ifeq L145
 L140:   iconst_1
 L141:   dup
@@ -539,11 +539,11 @@ L147:   dup
 L148:   pop2
 L149:   ireturn
 L150:   
-        .attribute StackMap b'\x00\x0B\x00\x1C\x00\x02\x07\x00\x67\x01\x00\x00\x00\x1F\x00\x02\x07\x00\x67\x01\x00\x01\x01\x00\x36\x00\x00\x00\x01\x07\x00\x30\x00\x37\x00\x02\x07\x00\x67\x01\x00\x00\x00\x47\x00\x00\x00\x01\x07\x00\x30\x00\x48\x00\x02\x07\x00\x67\x01\x00\x00\x00\x58\x00\x02\x07\x00\x67\x01\x00\x00\x00\x6E\x00\x02\x07\x00\x67\x01\x00\x00\x00\x7E\x00\x02\x07\x00\x67\x01\x00\x01\x01\x00\x81\x00\x02\x07\x00\x67\x01\x00\x00\x00\x91\x00\x02\x07\x00\x67\x01\x00\x00'
+        .attribute StackMap b'\x00\x0B\x00\x1C\x00\x02\x07\x00\x6A\x01\x00\x00\x00\x1F\x00\x02\x07\x00\x6A\x01\x00\x01\x01\x00\x36\x00\x00\x00\x01\x07\x00\x32\x00\x37\x00\x02\x07\x00\x6A\x01\x00\x00\x00\x47\x00\x00\x00\x01\x07\x00\x32\x00\x48\x00\x02\x07\x00\x6A\x01\x00\x00\x00\x58\x00\x02\x07\x00\x6A\x01\x00\x00\x00\x6E\x00\x02\x07\x00\x6A\x01\x00\x00\x00\x7E\x00\x02\x07\x00\x6A\x01\x00\x01\x01\x00\x81\x00\x02\x07\x00\x6A\x01\x00\x00\x00\x91\x00\x02\x07\x00\x6A\x01\x00\x00'
     .end code
 .end method
 
-.method private static else : (Ljava/lang/String;Ljava/lang/String;)Z
+.method private static method1743 : (Ljava/lang/String;Ljava/lang/String;)Z
     .code stack 6 locals 5
 L0:     new java/util/Vector
 L3:     dup
@@ -555,9 +555,9 @@ L10:    aload_1
 L11:    aload_2
 L12:    dup_x2
 L13:    aload_1
-L14:    invokestatic Method org/jouvieje/libloader/G const (Ljava/util/Vector;Ljava/lang/String;)V
-L17:    invokestatic Method org/jouvieje/libloader/G break (Ljava/util/Vector;Ljava/lang/String;)V
-L20:    invokestatic Method org/jouvieje/libloader/G break (Ljava/util/Vector;)V
+L14:    invokestatic Method org/jouvieje/libloader/G method1739 (Ljava/util/Vector;Ljava/lang/String;)V
+L17:    invokestatic Method org/jouvieje/libloader/G method1744 (Ljava/util/Vector;Ljava/lang/String;)V
+L20:    invokestatic Method org/jouvieje/libloader/G method1745 (Ljava/util/Vector;)V
 L23:    invokevirtual Method java/util/Vector iterator ()Ljava/util/Iterator;
 L26:    dup
 L27:    astore_2
@@ -574,7 +574,7 @@ L47:    aload_1
 L48:    invokespecial Method java/io/File <init> (Ljava/lang/String;Ljava/lang/String;)V
 L51:    dup
 L52:    astore 4
-L54:    invokestatic Method org/jouvieje/libloader/G else (Ljava/io/File;)Z
+L54:    invokestatic Method org/jouvieje/libloader/G method1735 (Ljava/io/File;)Z
 L57:    ifne L95
 L60:    new java/lang/StringBuffer
 L63:    dup
@@ -587,7 +587,7 @@ L77:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)L
 L80:    aload_1
 L81:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L84:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L87:    invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L87:    invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L90:    aload_2
 L91:    goto L148
 L94:    athrow
@@ -599,7 +599,7 @@ L105:   aload 4
 L107:   invokevirtual Method java/io/File getAbsolutePath ()Ljava/lang/String;
 L110:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L113:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L116:   invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L116:   invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L119:   new org/jouvieje/libloader/d
 L122:   dup
 L123:   aload 4
@@ -634,7 +634,7 @@ L180:   dup
 L181:   pop2
 L182:   ireturn
 L183:   ldc_w "sun.jnlp.applet.launcher"
-L186:   invokestatic Method org/jouvieje/libloader/G const (Ljava/lang/String;)Ljava/lang/String;
+L186:   invokestatic Method org/jouvieje/libloader/G method1747 (Ljava/lang/String;)Ljava/lang/String;
 L189:   invokestatic Method java/lang/Boolean valueOf (Ljava/lang/String;)Ljava/lang/Boolean;
 L192:   invokevirtual Method java/lang/Boolean booleanValue ()Z
 L195:   dup
@@ -661,14 +661,14 @@ L229:   dup
 L230:   pop2
 L231:   ireturn
 L232:   
-        .attribute StackMap b'\x00\x08\x00\x1F\x00\x00\x00\x01\x07\x00\x30\x00\x20\x00\x03\x07\x00\x32\x07\x00\x32\x07\x01\x00\x00\x00\x00\x5E\x00\x00\x00\x01\x07\x00\x30\x00\x5F\x00\x05\x07\x00\x32\x07\x00\x32\x07\x01\x00\x07\x00\x32\x07\x00\xC1\x00\x00\x00\x93\x00\x05\x07\x00\x32\x07\x00\x32\x07\x01\x00\x07\x00\x32\x07\x00\xC1\x00\x00\x00\x94\x00\x03\x07\x00\x32\x07\x00\x32\x07\x01\x00\x00\x01\x07\x01\x00\x00\xB7\x00\x03\x07\x00\x32\x07\x00\x32\x07\x00\x9F\x00\x00\x00\xE3\x00\x04\x07\x00\x32\x07\x00\x32\x07\x00\x9F\x01\x00\x00'
+        .attribute StackMap b'\x00\x08\x00\x1F\x00\x00\x00\x01\x07\x00\x32\x00\x20\x00\x03\x07\x00\x34\x07\x00\x34\x07\x01\x17\x00\x00\x00\x5E\x00\x00\x00\x01\x07\x00\x32\x00\x5F\x00\x05\x07\x00\x34\x07\x00\x34\x07\x01\x17\x07\x00\x34\x07\x00\xD4\x00\x00\x00\x93\x00\x05\x07\x00\x34\x07\x00\x34\x07\x01\x17\x07\x00\x34\x07\x00\xD4\x00\x00\x00\x94\x00\x03\x07\x00\x34\x07\x00\x34\x07\x01\x17\x00\x01\x07\x01\x17\x00\xB7\x00\x03\x07\x00\x34\x07\x00\x34\x07\x00\xAA\x00\x00\x00\xE3\x00\x04\x07\x00\x34\x07\x00\x34\x07\x00\xAA\x01\x00\x00'
     .end code
 .end method
 
-.method private static break : (Ljava/util/Vector;Ljava/lang/String;)V
+.method private static method1744 : (Ljava/util/Vector;Ljava/lang/String;)V
     .code stack 2 locals 2
 L0:     aload_1
-L1:     invokestatic Method org/jouvieje/libloader/G else (Ljava/lang/String;)Ljava/lang/String;
+L1:     invokestatic Method org/jouvieje/libloader/G method1748 (Ljava/lang/String;)Ljava/lang/String;
 L4:     dup
 L5:     astore_1
 L6:     ifnull L15
@@ -678,28 +678,28 @@ L11:    invokevirtual Method java/util/Vector add (Ljava/lang/Object;)Z
 L14:    pop
 L15:    return
 L16:    
-        .attribute StackMap b'\x00\x01\x00\x0F\x00\x02\x07\x00\xCE\x07\x00\x32\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x0F\x00\x02\x07\x00\xE1\x07\x00\x34\x00\x00'
     .end code
 .end method
 
-.method private static break : (Ljava/util/Vector;)V
+.method private static method1745 : (Ljava/util/Vector;)V
     .code stack 4 locals 1
 L0:     ldc_w "org.lwjgl.librarypath"
 L3:     aload_0
 L4:     dup_x1
 L5:     ldc_w "java.library.path"
-L8:     invokestatic Method org/jouvieje/libloader/G const (Ljava/lang/String;)Ljava/lang/String;
-L11:    invokestatic Method org/jouvieje/libloader/G else (Ljava/util/Vector;Ljava/lang/String;)V
-L14:    invokestatic Method org/jouvieje/libloader/G const (Ljava/lang/String;)Ljava/lang/String;
-L17:    invokestatic Method org/jouvieje/libloader/G else (Ljava/util/Vector;Ljava/lang/String;)V
+L8:     invokestatic Method org/jouvieje/libloader/G method1747 (Ljava/lang/String;)Ljava/lang/String;
+L11:    invokestatic Method org/jouvieje/libloader/G method1741 (Ljava/util/Vector;Ljava/lang/String;)V
+L14:    invokestatic Method org/jouvieje/libloader/G method1747 (Ljava/lang/String;)Ljava/lang/String;
+L17:    invokestatic Method org/jouvieje/libloader/G method1741 (Ljava/util/Vector;Ljava/lang/String;)V
 L20:    return
 L21:    
     .end code
 .end method
 
-.method private static break : (Ljava/lang/String;Ljava/lang/String;)Z
+.method private static method1746 : (Ljava/lang/String;Ljava/lang/String;)Z
     .code stack 6 locals 7
-L0:     invokestatic Method org/jouvieje/libloader/G short ()Z
+L0:     invokestatic Method org/jouvieje/libloader/G method1736 ()Z
 L3:     ifne L12
 L6:     iconst_0
 L7:     iconst_1
@@ -717,9 +717,9 @@ L22:    aload_1
 L23:    aload_2
 L24:    dup_x2
 L25:    aload_1
-L26:    invokestatic Method org/jouvieje/libloader/G const (Ljava/util/Vector;Ljava/lang/String;)V
-L29:    invokestatic Method org/jouvieje/libloader/G break (Ljava/util/Vector;Ljava/lang/String;)V
-L32:    invokestatic Method org/jouvieje/libloader/G break (Ljava/util/Vector;)V
+L26:    invokestatic Method org/jouvieje/libloader/G method1739 (Ljava/util/Vector;Ljava/lang/String;)V
+L29:    invokestatic Method org/jouvieje/libloader/G method1744 (Ljava/util/Vector;Ljava/lang/String;)V
+L32:    invokestatic Method org/jouvieje/libloader/G method1745 (Ljava/util/Vector;)V
 L35:    invokevirtual Method java/util/Vector iterator ()Ljava/util/Iterator;
 L38:    dup
 L39:    astore_2
@@ -736,7 +736,7 @@ L59:    aload_1
 L60:    invokespecial Method java/io/File <init> (Ljava/lang/String;Ljava/lang/String;)V
 L63:    dup
 L64:    astore 4
-L66:    invokestatic Method org/jouvieje/libloader/G else (Ljava/io/File;)Z
+L66:    invokestatic Method org/jouvieje/libloader/G method1735 (Ljava/io/File;)Z
 L69:    new java/lang/StringBuffer
 L72:    swap
 L73:    ifne L107
@@ -750,7 +750,7 @@ L90:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)L
 L93:    aload_1
 L94:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L97:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L100:   invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L100:   invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L103:   aload_2
 L104:   goto L231
 L107:   dup
@@ -760,7 +760,7 @@ L114:   aload 4
 L116:   invokevirtual Method java/io/File getAbsolutePath ()Ljava/lang/String;
 L119:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L122:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L125:   invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L125:   invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L128:   aload 4
 L130:   invokevirtual Method java/io/File getAbsolutePath ()Ljava/lang/String;
 L133:   invokevirtual Method java/lang/String getBytes ()[B
@@ -782,7 +782,7 @@ L160:   invokespecial Method java/lang/StringBuffer <init> (Ljava/lang/String;)V
 L163:   invokestatic Method org/jouvieje/libloader/LibLoaderJNI dlerror ()Ljava/lang/String;
 L166:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L169:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L172:   invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L172:   invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L175:   aload_2
 L176:   goto L231
 L179:   dup
@@ -801,7 +801,7 @@ L207:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)L
 L210:   ldc "]"
 L212:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L215:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L218:   invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L218:   invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L221:   invokestatic Method org/jouvieje/libloader/LibLoaderJNI dlerror ()Ljava/lang/String;
 L224:   pop
 L225:   iconst_1
@@ -813,16 +813,16 @@ L230:   athrow
 L231:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
 L236:   ifne L44
 L239:   ldc_w "sun.jnlp.applet.launcher"
-L242:   invokestatic Method org/jouvieje/libloader/G const (Ljava/lang/String;)Ljava/lang/String;
+L242:   invokestatic Method org/jouvieje/libloader/G method1747 (Ljava/lang/String;)Ljava/lang/String;
 L245:   invokestatic Method java/lang/Boolean valueOf (Ljava/lang/String;)Ljava/lang/Boolean;
 L248:   invokevirtual Method java/lang/Boolean booleanValue ()Z
 L251:   dup
 L252:   istore_2
 L253:   ifeq L288
-L256:   getstatic Field org/jouvieje/libloader/G "enum" Z
-L259:   putstatic Field QA "enum" Z
-L262:   getstatic Field org/jouvieje/libloader/G "enum" Z
-L265:   putstatic Field QA short Z
+L256:   getstatic Field org/jouvieje/libloader/G field2453 Z
+L259:   putstatic Field QA field567 Z
+L262:   getstatic Field org/jouvieje/libloader/G field2453 Z
+L265:   putstatic Field QA field558 Z
 L268:   new org/jouvieje/libloader/k
 L271:   dup
 L272:   aload_0
@@ -839,12 +839,12 @@ L290:   dup
 L291:   pop2
 L292:   ireturn
 L293:   
-        .attribute StackMap b'\x00\x09\x00\x0B\x00\x00\x00\x01\x07\x00\x30\x00\x0C\x00\x02\x07\x00\x32\x07\x00\x32\x00\x00\x00\x2B\x00\x00\x00\x01\x07\x00\x30\x00\x2C\x00\x03\x07\x00\x32\x07\x00\x32\x07\x01\x00\x00\x00\x00\x6B\x00\x05\x07\x00\x32\x07\x00\x32\x07\x01\x00\x07\x00\x32\x07\x00\xC1\x00\x01\x08\x00\x45\x00\xB3\x00\x06\x07\x00\x32\x07\x00\x32\x07\x01\x00\x07\x00\x32\x07\x00\xC1\x04\x00\x01\x08\x00\x96\x00\xE6\x00\x00\x00\x01\x07\x00\x30\x00\xE7\x00\x03\x07\x00\x32\x07\x00\x32\x07\x01\x00\x00\x01\x07\x01\x00\x01\x20\x00\x03\x07\x00\x32\x07\x00\x32\x01\x00\x00'
+        .attribute StackMap b'\x00\x09\x00\x0B\x00\x00\x00\x01\x07\x00\x32\x00\x0C\x00\x02\x07\x00\x34\x07\x00\x34\x00\x00\x00\x2B\x00\x00\x00\x01\x07\x00\x32\x00\x2C\x00\x03\x07\x00\x34\x07\x00\x34\x07\x01\x17\x00\x00\x00\x6B\x00\x05\x07\x00\x34\x07\x00\x34\x07\x01\x17\x07\x00\x34\x07\x00\xD4\x00\x01\x08\x00\x45\x00\xB3\x00\x06\x07\x00\x34\x07\x00\x34\x07\x01\x17\x07\x00\x34\x07\x00\xD4\x04\x00\x01\x08\x00\x96\x00\xE6\x00\x00\x00\x01\x07\x00\x32\x00\xE7\x00\x03\x07\x00\x34\x07\x00\x34\x07\x01\x17\x00\x01\x07\x01\x17\x01\x20\x00\x03\x07\x00\x34\x07\x00\x34\x01\x00\x00'
     .end code
     .exceptions java/lang/UnsatisfiedLinkError
 .end method
 
-.method private static const : (Ljava/lang/String;)Ljava/lang/String;
+.method private static method1747 : (Ljava/lang/String;)Ljava/lang/String;
     .code stack 3 locals 1
 L0:     new org/jouvieje/libloader/K
 L3:     dup
@@ -866,7 +866,7 @@ L5:
     .end code
 .end method
 
-.method private static else : (Ljava/lang/String;)Ljava/lang/String;
+.method private static method1748 : (Ljava/lang/String;)Ljava/lang/String;
     .code stack 3 locals 1
 L0:     new org/jouvieje/libloader/D
 L3:     dup
@@ -882,55 +882,55 @@ L15:
 .method static <clinit> : ()V
     .code stack 3 locals 0
 L0:     ldc_w "Unrecognized platform"
-L3:     putstatic Field org/jouvieje/libloader/G break Ljava/lang/String;
+L3:     putstatic Field org/jouvieje/libloader/G field2446 Ljava/lang/String;
 L6:     ldc "64"
-L8:     putstatic Field org/jouvieje/libloader/G null Ljava/lang/String;
+L8:     putstatic Field org/jouvieje/libloader/G field2450 Ljava/lang/String;
 L11:    ldc "lib"
-L13:    putstatic Field org/jouvieje/libloader/G void Ljava/lang/String;
+L13:    putstatic Field org/jouvieje/libloader/G field2448 Ljava/lang/String;
 L16:    ldc ".dll"
-L18:    putstatic Field org/jouvieje/libloader/G char Ljava/lang/String;
+L18:    putstatic Field org/jouvieje/libloader/G field2451 Ljava/lang/String;
 L21:    ldc ".so"
-L23:    putstatic Field org/jouvieje/libloader/G int Ljava/lang/String;
+L23:    putstatic Field org/jouvieje/libloader/G field2443 Ljava/lang/String;
 L26:    ldc ".jnilib"
-L28:    putstatic Field org/jouvieje/libloader/G long Ljava/lang/String;
+L28:    putstatic Field org/jouvieje/libloader/G field2447 Ljava/lang/String;
 L31:    iconst_0
 L32:    iconst_1
 L33:    dup
 L34:    pop2
-L35:    putstatic Field org/jouvieje/libloader/G "enum" Z
+L35:    putstatic Field org/jouvieje/libloader/G field2453 Z
 L38:    iconst_0
 L39:    iconst_1
 L40:    dup
 L41:    pop2
-L42:    putstatic Field org/jouvieje/libloader/G goto Z
+L42:    putstatic Field org/jouvieje/libloader/G field2445 Z
 L45:    iconst_m1
 L46:    iconst_1
 L47:    dup
 L48:    pop2
-L49:    putstatic Field org/jouvieje/libloader/G else I
+L49:    putstatic Field org/jouvieje/libloader/G field2452 I
 L52:    iconst_0
 L53:    iconst_1
 L54:    dup
 L55:    pop2
-L56:    putstatic Field org/jouvieje/libloader/G do Z
+L56:    putstatic Field org/jouvieje/libloader/G field2454 Z
 L59:    return
 L60:    
     .end code
 .end method
 
-.method static break : (Ljava/io/File;)Z
+.method static method1749 : (Ljava/io/File;)Z
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokestatic Method org/jouvieje/libloader/G else (Ljava/io/File;)Z
+L1:     invokestatic Method org/jouvieje/libloader/G method1735 (Ljava/io/File;)Z
 L4:     ireturn
 L5:     
     .end code
     .synthetic
 .end method
 
-.method private static break : (J)V
+.method private static method1750 : (J)V
     .code stack 4 locals 3
-L0:     invokestatic Method org/jouvieje/libloader/G short ()Z
+L0:     invokestatic Method org/jouvieje/libloader/G method1736 ()Z
 L3:     ifeq L12
 L6:     lload_0
 L7:     lconst_0
@@ -942,7 +942,7 @@ L14:    lload_0
 L15:    invokestatic Method org/jouvieje/libloader/LibLoaderJNI dlclose (J)I
 L18:    ifeq L59
 L21:    ldc_w "Fail to close library."
-L24:    invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L24:    invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L27:    invokestatic Method org/jouvieje/libloader/LibLoaderJNI dlerror ()Ljava/lang/String;
 L30:    astore_2
 L31:    new java/lang/StringBuffer
@@ -952,34 +952,34 @@ L37:    invokespecial Method java/lang/StringBuffer <init> (Ljava/lang/String;)V
 L40:    aload_2
 L41:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L44:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L47:    invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L47:    invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L50:    new java/lang/UnsatisfiedLinkError
 L53:    dup
 L54:    aload_2
 L55:    invokespecial Method java/lang/UnsatisfiedLinkError <init> (Ljava/lang/String;)V
 L58:    athrow
 L59:    ldc_w "Library sucessfully closed."
-L62:    invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L62:    invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L65:    return
 L66:    
-        .attribute StackMap b'\x00\x04\x00\x0C\x00\x01\x04\x00\x00\x00\x0D\x00\x00\x00\x01\x07\x00\x30\x00\x0E\x00\x01\x04\x00\x00\x00\x3B\x00\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x0C\x00\x01\x04\x00\x00\x00\x0D\x00\x00\x00\x01\x07\x00\x32\x00\x0E\x00\x01\x04\x00\x00\x00\x3B\x00\x01\x04\x00\x00'
     .end code
 .end method
 
-.method public static const : ()I
+.method public static method1751 : ()I
     .code stack 4 locals 3
-L0:     getstatic Field org/jouvieje/libloader/G else I
+L0:     getstatic Field org/jouvieje/libloader/G field2452 I
 L3:     iconst_m1
 L4:     iconst_1
 L5:     dup
 L6:     pop2
 L7:     if_icmpne L242
 L10:    ldc_w "os.name"
-L13:    invokestatic Method org/jouvieje/libloader/G const (Ljava/lang/String;)Ljava/lang/String;
+L13:    invokestatic Method org/jouvieje/libloader/G method1747 (Ljava/lang/String;)Ljava/lang/String;
 L16:    invokevirtual Method java/lang/String toLowerCase ()Ljava/lang/String;
 L19:    astore_0
 L20:    ldc_w "os.arch"
-L23:    invokestatic Method org/jouvieje/libloader/G const (Ljava/lang/String;)Ljava/lang/String;
+L23:    invokestatic Method org/jouvieje/libloader/G method1747 (Ljava/lang/String;)Ljava/lang/String;
 L26:    astore_1
 L27:    new java/lang/StringBuffer
 L30:    dup
@@ -988,7 +988,7 @@ L34:    invokespecial Method java/lang/StringBuffer <init> (Ljava/lang/String;)V
 L37:    aload_0
 L38:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L41:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L44:    invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L44:    invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L47:    new java/lang/StringBuffer
 L50:    dup
 L51:    ldc_w "os.arch: "
@@ -996,7 +996,7 @@ L54:    invokespecial Method java/lang/StringBuffer <init> (Ljava/lang/String;)V
 L57:    aload_1
 L58:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L61:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L64:    invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L64:    invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L67:    aload_1
 L68:    ldc "64"
 L70:    invokevirtual Method java/lang/String indexOf (Ljava/lang/String;)I
@@ -1024,7 +1024,7 @@ L103:   iconst_1
 L104:   dup
 L105:   dup
 L106:   pop2
-L107:   putstatic Field org/jouvieje/libloader/G else I
+L107:   putstatic Field org/jouvieje/libloader/G field2452 I
 L110:   iload_2
 L111:   goto L239
 L114:   athrow
@@ -1044,7 +1044,7 @@ L145:   iconst_2
 L146:   iconst_1
 L147:   dup
 L148:   pop2
-L149:   putstatic Field org/jouvieje/libloader/G else I
+L149:   putstatic Field org/jouvieje/libloader/G field2452 I
 L152:   iload_2
 L153:   goto L239
 L156:   aload_0
@@ -1055,7 +1055,7 @@ L166:   iconst_3
 L167:   iconst_1
 L168:   dup
 L169:   pop2
-L170:   putstatic Field org/jouvieje/libloader/G else I
+L170:   putstatic Field org/jouvieje/libloader/G field2452 I
 L173:   iload_2
 L174:   goto L239
 L177:   aload_0
@@ -1070,7 +1070,7 @@ L197:   iconst_4
 L198:   iconst_1
 L199:   dup
 L200:   pop2
-L201:   putstatic Field org/jouvieje/libloader/G else I
+L201:   putstatic Field org/jouvieje/libloader/G field2452 I
 L204:   aload_1
 L205:   ldc_w "sparcv9"
 L208:   invokevirtual Method java/lang/String indexOf (Ljava/lang/String;)I
@@ -1092,18 +1092,18 @@ L231:   ldc_w "Unrecognized platform"
 L234:   invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/String;)V
 L237:   athrow
 L238:   iload_2
-L239:   putstatic Field org/jouvieje/libloader/G do Z
-L242:   getstatic Field org/jouvieje/libloader/G else I
+L239:   putstatic Field org/jouvieje/libloader/G field2454 Z
+L242:   getstatic Field org/jouvieje/libloader/G field2452 I
 L245:   ireturn
 L246:   
-        .attribute StackMap b'\x00\x0D\x00\x57\x00\x00\x00\x01\x07\x00\x30\x00\x58\x00\x02\x07\x00\x32\x07\x00\x32\x00\x00\x00\x5C\x00\x02\x07\x00\x32\x07\x00\x32\x00\x01\x01\x00\x72\x00\x00\x00\x01\x07\x00\x30\x00\x73\x00\x03\x07\x00\x32\x07\x00\x32\x01\x00\x00\x00\x91\x00\x03\x07\x00\x32\x07\x00\x32\x01\x00\x00\x00\x9C\x00\x03\x07\x00\x32\x07\x00\x32\x01\x00\x00\x00\xB1\x00\x03\x07\x00\x32\x07\x00\x32\x01\x00\x00\x00\xC5\x00\x03\x07\x00\x32\x07\x00\x32\x01\x00\x00\x00\xE3\x00\x03\x07\x00\x32\x07\x00\x32\x01\x00\x00\x00\xEE\x00\x03\x07\x00\x32\x07\x00\x32\x01\x00\x00\x00\xEF\x00\x03\x07\x00\x32\x07\x00\x32\x01\x00\x01\x01\x00\xF2\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x0D\x00\x57\x00\x00\x00\x01\x07\x00\x32\x00\x58\x00\x02\x07\x00\x34\x07\x00\x34\x00\x00\x00\x5C\x00\x02\x07\x00\x34\x07\x00\x34\x00\x01\x01\x00\x72\x00\x00\x00\x01\x07\x00\x32\x00\x73\x00\x03\x07\x00\x34\x07\x00\x34\x01\x00\x00\x00\x91\x00\x03\x07\x00\x34\x07\x00\x34\x01\x00\x00\x00\x9C\x00\x03\x07\x00\x34\x07\x00\x34\x01\x00\x00\x00\xB1\x00\x03\x07\x00\x34\x07\x00\x34\x01\x00\x00\x00\xC5\x00\x03\x07\x00\x34\x07\x00\x34\x01\x00\x00\x00\xE3\x00\x03\x07\x00\x34\x07\x00\x34\x01\x00\x00\x00\xEE\x00\x03\x07\x00\x34\x07\x00\x34\x01\x00\x00\x00\xEF\x00\x03\x07\x00\x34\x07\x00\x34\x01\x00\x01\x01\x00\xF2\x00\x00\x00\x00'
     .end code
 .end method
 
-.method public static else : ()Z
+.method public static method1752 : ()Z
     .code stack 4 locals 0
 L0:     ldc_w "os.name"
-L3:     invokestatic Method org/jouvieje/libloader/G const (Ljava/lang/String;)Ljava/lang/String;
+L3:     invokestatic Method org/jouvieje/libloader/G method1747 (Ljava/lang/String;)Ljava/lang/String;
 L6:     invokevirtual Method java/lang/String toLowerCase ()Ljava/lang/String;
 L9:     ldc_w "ce"
 L12:    invokevirtual Method java/lang/String indexOf (Ljava/lang/String;)I
@@ -1124,20 +1124,20 @@ L30:    dup
 L31:    pop2
 L32:    ireturn
 L33:    
-        .attribute StackMap b'\x00\x02\x00\x1B\x00\x00\x00\x01\x07\x00\x30\x00\x1C\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x1B\x00\x00\x00\x01\x07\x00\x32\x00\x1C\x00\x00\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/lang/String;Ljava/lang/String;Z)Z
+.method public static method1753 : (Ljava/lang/String;Ljava/lang/String;Z)Z
     .code stack 3 locals 3
-L0:     invokestatic Method org/jouvieje/libloader/G break ()V
+L0:     invokestatic Method org/jouvieje/libloader/G method1757 ()V
 L3:     iload_2
 L4:     ifeq L47
 L7:     ldc_w "loadWithLibLoader"
-L10:    invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L10:    invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L13:    aload_0
 L14:    aload_1
-L15:    invokestatic Method org/jouvieje/libloader/G break (Ljava/lang/String;Ljava/lang/String;)Z
+L15:    invokestatic Method org/jouvieje/libloader/G method1746 (Ljava/lang/String;Ljava/lang/String;)Z
 L18:    ifeq L27
 L21:    iconst_1
 L22:    dup
@@ -1146,10 +1146,10 @@ L24:    pop2
 L25:    ireturn
 L26:    athrow
 L27:    ldc_w "loadWithSystem"
-L30:    invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L30:    invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L33:    aload_0
 L34:    aload_1
-L35:    invokestatic Method org/jouvieje/libloader/G else (Ljava/lang/String;Ljava/lang/String;)Z
+L35:    invokestatic Method org/jouvieje/libloader/G method1743 (Ljava/lang/String;Ljava/lang/String;)Z
 L38:    ifeq L85
 L41:    iconst_1
 L42:    dup
@@ -1158,10 +1158,10 @@ L44:    pop2
 L45:    ireturn
 L46:    athrow
 L47:    ldc_w "loadWithSystem"
-L50:    invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L50:    invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L53:    aload_0
 L54:    aload_1
-L55:    invokestatic Method org/jouvieje/libloader/G else (Ljava/lang/String;Ljava/lang/String;)Z
+L55:    invokestatic Method org/jouvieje/libloader/G method1743 (Ljava/lang/String;Ljava/lang/String;)Z
 L58:    ifeq L66
 L61:    iconst_1
 L62:    dup
@@ -1169,10 +1169,10 @@ L63:    dup
 L64:    pop2
 L65:    ireturn
 L66:    ldc_w "loadWithLibLoader"
-L69:    invokestatic Method org/jouvieje/libloader/G short (Ljava/lang/String;)V
+L69:    invokestatic Method org/jouvieje/libloader/G method1740 (Ljava/lang/String;)V
 L72:    aload_0
 L73:    aload_1
-L74:    invokestatic Method org/jouvieje/libloader/G break (Ljava/lang/String;Ljava/lang/String;)Z
+L74:    invokestatic Method org/jouvieje/libloader/G method1746 (Ljava/lang/String;Ljava/lang/String;)Z
 L77:    ifeq L85
 L80:    iconst_1
 L81:    dup
@@ -1185,48 +1185,48 @@ L87:    dup
 L88:    pop2
 L89:    ireturn
 L90:    
-        .attribute StackMap b'\x00\x06\x00\x1A\x00\x00\x00\x01\x07\x00\x30\x00\x1B\x00\x03\x07\x00\x32\x07\x00\x32\x01\x00\x00\x00\x2E\x00\x00\x00\x01\x07\x00\x30\x00\x2F\x00\x03\x07\x00\x32\x07\x00\x32\x01\x00\x00\x00\x42\x00\x03\x07\x00\x32\x07\x00\x32\x01\x00\x00\x00\x55\x00\x03\x07\x00\x32\x07\x00\x32\x01\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x1A\x00\x00\x00\x01\x07\x00\x32\x00\x1B\x00\x03\x07\x00\x34\x07\x00\x34\x01\x00\x00\x00\x2E\x00\x00\x00\x01\x07\x00\x32\x00\x2F\x00\x03\x07\x00\x34\x07\x00\x34\x01\x00\x00\x00\x42\x00\x03\x07\x00\x34\x07\x00\x34\x01\x00\x00\x00\x55\x00\x03\x07\x00\x34\x07\x00\x34\x01\x00\x00'
     .end code
 .end method
 
-.method static break : (Ljava/lang/String;)J
+.method static method1754 : (Ljava/lang/String;)J
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokestatic Method org/jouvieje/libloader/G do (Ljava/lang/String;)J
+L1:     invokestatic Method org/jouvieje/libloader/G method1730 (Ljava/lang/String;)J
 L4:     lreturn
 L5:     
     .end code
     .synthetic
 .end method
 
-.method private static else : (Ljava/lang/Throwable;)V
+.method private static method1755 : (Ljava/lang/Throwable;)V
     .code stack 1 locals 1
-L0:     getstatic Field org/jouvieje/libloader/G "enum" Z
+L0:     getstatic Field org/jouvieje/libloader/G field2453 Z
 L3:     ifeq L10
 L6:     aload_0
 L7:     invokevirtual Method java/lang/Throwable printStackTrace ()V
 L10:    return
 L11:    
-        .attribute StackMap b'\x00\x01\x00\x0A\x00\x01\x07\x00\x30\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x0A\x00\x01\x07\x00\x32\x00\x00'
     .end code
 .end method
 
-.method static break : (Ljava/lang/Throwable;)V
+.method static method1756 : (Ljava/lang/Throwable;)V
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokestatic Method org/jouvieje/libloader/G else (Ljava/lang/Throwable;)V
+L1:     invokestatic Method org/jouvieje/libloader/G method1755 (Ljava/lang/Throwable;)V
 L4:     return
 L5:     
     .end code
     .synthetic
 .end method
 
-.method private static break : ()V
+.method private static method1757 : ()V
     .code stack 3 locals 1
-L0:     getstatic Field org/jouvieje/libloader/G "enum" Z
+L0:     getstatic Field org/jouvieje/libloader/G field2453 Z
 L3:     ifne L34
 L6:     ldc_w "org.jouvieje.libloader.debug"
-L9:     invokestatic Method org/jouvieje/libloader/G const (Ljava/lang/String;)Ljava/lang/String;
+L9:     invokestatic Method org/jouvieje/libloader/G method1747 (Ljava/lang/String;)Ljava/lang/String;
 L12:    dup
 L13:    astore_0
 L14:    ifnull L34
@@ -1238,7 +1238,7 @@ L27:    iconst_1
 L28:    dup
 L29:    dup
 L30:    pop2
-L31:    putstatic Field org/jouvieje/libloader/G "enum" Z
+L31:    putstatic Field org/jouvieje/libloader/G field2453 Z
 L34:    return
 L35:    
         .attribute StackMap b'\x00\x01\x00\x22\x00\x00\x00\x00'

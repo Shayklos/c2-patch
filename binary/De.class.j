@@ -2,10 +2,10 @@
 .class public final super enum De
 .super fE
 
-.method public break : (LRg;F)Z
+.method public method303 : (LRg;F)Z
     .code stack 3 locals 3
 L0:     aload_1
-L1:     getfield Field Rg do F
+L1:     getfield Field Rg field241 F
 L4:     fload_2
 L5:     fcmpl
 L6:     ifle L15
@@ -25,18 +25,18 @@ L20:
     .end code
 .end method
 
-.method public break : (LRg;)Ljava/lang/String;
+.method public method305 : (LRg;)Ljava/lang/String;
     .code stack 2 locals 2
 L0:     aload_0
 L1:     aload_1
-L2:     getfield Field Rg do F
-L5:     invokevirtual Method De break (F)Ljava/lang/String;
+L2:     getfield Field Rg field241 F
+L5:     invokevirtual Method De method304 (F)Ljava/lang/String;
 L8:     areturn
 L9:     
     .end code
 .end method
 
-.method public else : (F)Ljava/lang/String;
+.method public method302 : (F)Ljava/lang/String;
     .code stack 8 locals 2
 L0:     ldc "%d:%05.2f"
 L2:     iconst_2
@@ -90,11 +90,11 @@ L9:
     .end code
 .end method
 
-.method public break : (F)Ljava/lang/String;
+.method public method304 : (F)Ljava/lang/String;
     .code stack 2 locals 2
 L0:     aload_0
 L1:     fload_1
-L2:     invokevirtual Method De else (F)Ljava/lang/String;
+L2:     invokevirtual Method De method302 (F)Ljava/lang/String;
 L5:     areturn
 L6:     
     .end code

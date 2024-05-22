@@ -15,7 +15,7 @@ L9:
     .end code
 .end method
 
-.method public else : (F)Ljava/lang/String;
+.method public method302 : (F)Ljava/lang/String;
     .code stack 1 locals 2
 L0:     fload_1
 L1:     invokestatic Method java/lang/Math round (F)I
@@ -25,7 +25,7 @@ L8:
     .end code
 .end method
 
-.method public break : (F)Ljava/lang/String;
+.method public method304 : (F)Ljava/lang/String;
     .code stack 4 locals 3
 L0:     new java/lang/StringBuilder
 L3:     dup
@@ -33,7 +33,7 @@ L4:     invokespecial Method java/lang/StringBuilder <init> ()V
 L7:     iconst_0
 L8:     aload_0
 L9:     fload_1
-L10:    invokevirtual Method ie else (F)Ljava/lang/String;
+L10:    invokevirtual Method ie method302 (F)Ljava/lang/String;
 L13:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
 L16:    ldc " line"
 L18:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -63,22 +63,22 @@ L59:
     .end code
 .end method
 
-.method public break : (LRg;)Ljava/lang/String;
+.method public method305 : (LRg;)Ljava/lang/String;
     .code stack 2 locals 2
 L0:     aload_0
 L1:     aload_1
-L2:     getfield Field Rg goto I
+L2:     getfield Field Rg field232 I
 L5:     i2f
-L6:     invokevirtual Method ie break (F)Ljava/lang/String;
+L6:     invokevirtual Method ie method304 (F)Ljava/lang/String;
 L9:     areturn
 L10:    
     .end code
 .end method
 
-.method public break : (LRg;F)Z
+.method public method303 : (LRg;F)Z
     .code stack 3 locals 3
 L0:     aload_1
-L1:     getfield Field Rg goto I
+L1:     getfield Field Rg field232 I
 L4:     fload_2
 L5:     invokestatic Method java/lang/Math round (F)I
 L8:     if_icmple L17
@@ -94,7 +94,7 @@ L19:    dup
 L20:    pop2
 L21:    ireturn
 L22:    
-        .attribute StackMap b'\x00\x02\x00\x10\x00\x00\x00\x01\x07\x00\x3E\x00\x11\x00\x03\x07\x00\x02\x07\x00\x35\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x10\x00\x00\x00\x01\x07\x00\x40\x00\x11\x00\x03\x07\x00\x02\x07\x00\x36\x02\x00\x00'
     .end code
 .end method
 .innerclasses

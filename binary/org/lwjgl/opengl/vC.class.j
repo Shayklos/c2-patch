@@ -2,23 +2,23 @@
 .class super abstract org/lwjgl/opengl/vC
 .super java/lang/Object
 .implements org/lwjgl/opengl/C
-.field protected null Lorg/lwjgl/opengles/EGLDisplay;
+.field protected field527 Lorg/lwjgl/opengles/EGLDisplay;
 .field protected this Lorg/lwjgl/opengl/bd;
-.field protected char Lorg/lwjgl/opengles/EGLConfig;
-.field protected else Lorg/lwjgl/opengl/k;
-.field protected "enum" Lorg/lwjgl/opengles/EGLSurface;
-.field protected do Lorg/lwjgl/opengles/PixelFormat;
+.field protected field528 Lorg/lwjgl/opengles/EGLConfig;
+.field protected field529 Lorg/lwjgl/opengl/k;
+.field protected field530 Lorg/lwjgl/opengles/EGLSurface;
+.field protected field531 Lorg/lwjgl/opengles/PixelFormat;
 
-.method public float : ()V
+.method public method69 : ()V
     .code stack 0 locals 1
-L0:     invokestatic Method org/lwjgl/opengl/bd goto ()V
+L0:     invokestatic Method org/lwjgl/opengl/bd method3621 ()V
 L3:     return
 L4:     
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public break : (Lorg/lwjgl/h;)V
+.method public method311 : (Lorg/lwjgl/h;)V
     .code stack 2 locals 2
 L0:     new java/lang/UnsupportedOperationException
 L3:     dup
@@ -29,7 +29,7 @@ L8:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public goto : ()Lorg/lwjgl/opengl/h;
+.method public method310 : ()Lorg/lwjgl/opengl/h;
     .code stack 2 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -37,7 +37,7 @@ L4:     astore_1
 L5:     monitorenter
         .catch [0] from L6 to L12 using L14
 L6:     aload_0
-L7:     getfield Field org/lwjgl/opengl/vC do Lorg/lwjgl/opengles/PixelFormat;
+L7:     getfield Field org/lwjgl/opengl/vC field531 Lorg/lwjgl/opengles/PixelFormat;
 L10:    aload_1
 L11:    monitorexit
 L12:    areturn
@@ -52,7 +52,7 @@ L19:
     .end code
 .end method
 
-.method public break : ()V
+.method public method74 : ()V
     .code stack 2 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -61,9 +61,9 @@ L5:     monitorenter
         .catch [0] from L6 to L19 using L21
 L6:     aload_0
 L7:     dup
-L8:     invokevirtual Method org/lwjgl/opengl/vC class ()V
+L8:     invokevirtual Method org/lwjgl/opengl/vC method68 ()V
 L11:    getfield Field org/lwjgl/opengl/vC this Lorg/lwjgl/opengl/bd;
-L14:    invokevirtual Method org/lwjgl/opengl/bd const ()V
+L14:    invokevirtual Method org/lwjgl/opengl/bd method3617 ()V
 L17:    aload_1
 L18:    monitorexit
 L19:    return
@@ -80,7 +80,7 @@ L27:
     .exceptions org/lwjgl/LWJGLException org/lwjgl/opengles/PowerManagementEventException
 .end method
 
-.method public short : ()V
+.method public method71 : ()V
     .code stack 4 locals 4
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -93,7 +93,7 @@ L10:    ifnull L35
         .catch org/lwjgl/LWJGLException from L6 to L83 using L88
         .catch [0] from L6 to L114 using L115
 L13:    aload_0
-L14:    invokevirtual Method org/lwjgl/opengl/vC else ()V
+L14:    invokevirtual Method org/lwjgl/opengl/vC method56 ()V
 L17:    aload_0
 L18:    goto L24
 L21:    pop
@@ -105,29 +105,29 @@ L30:    aload_0
 L31:    aconst_null
 L32:    putfield Field org/lwjgl/opengl/vC this Lorg/lwjgl/opengl/bd;
 L35:    aload_0
-L36:    getfield Field org/lwjgl/opengl/vC "enum" Lorg/lwjgl/opengles/EGLSurface;
+L36:    getfield Field org/lwjgl/opengl/vC field530 Lorg/lwjgl/opengles/EGLSurface;
 L39:    ifnull L54
 L42:    aconst_null
 L43:    aload_0
 L44:    dup_x1
-L45:    getfield Field org/lwjgl/opengl/vC "enum" Lorg/lwjgl/opengles/EGLSurface;
+L45:    getfield Field org/lwjgl/opengl/vC field530 Lorg/lwjgl/opengles/EGLSurface;
 L48:    invokevirtual Method org/lwjgl/opengles/EGLSurface destroy ()V
-L51:    putfield Field org/lwjgl/opengl/vC "enum" Lorg/lwjgl/opengles/EGLSurface;
+L51:    putfield Field org/lwjgl/opengl/vC field530 Lorg/lwjgl/opengles/EGLSurface;
 L54:    aload_0
-L55:    getfield Field org/lwjgl/opengl/vC null Lorg/lwjgl/opengles/EGLDisplay;
+L55:    getfield Field org/lwjgl/opengl/vC field527 Lorg/lwjgl/opengles/EGLDisplay;
 L58:    ifnull L73
 L61:    aconst_null
 L62:    aload_0
 L63:    dup_x1
-L64:    getfield Field org/lwjgl/opengl/vC null Lorg/lwjgl/opengles/EGLDisplay;
+L64:    getfield Field org/lwjgl/opengl/vC field527 Lorg/lwjgl/opengles/EGLDisplay;
 L67:    invokevirtual Method org/lwjgl/opengles/EGLDisplay terminate ()V
-L70:    putfield Field org/lwjgl/opengl/vC null Lorg/lwjgl/opengles/EGLDisplay;
+L70:    putfield Field org/lwjgl/opengl/vC field527 Lorg/lwjgl/opengles/EGLDisplay;
 L73:    aload_0
 L74:    aload_0
 L75:    aconst_null
 L76:    dup_x1
-L77:    putfield Field org/lwjgl/opengl/vC do Lorg/lwjgl/opengles/PixelFormat;
-L80:    putfield Field org/lwjgl/opengl/vC else Lorg/lwjgl/opengl/k;
+L77:    putfield Field org/lwjgl/opengl/vC field531 Lorg/lwjgl/opengles/PixelFormat;
+L80:    putfield Field org/lwjgl/opengl/vC field529 Lorg/lwjgl/opengl/k;
 L83:    aload_1
 L84:    goto L113
 L87:    iconst_0
@@ -156,7 +156,7 @@ L121:
     .end code
 .end method
 
-.method protected class : ()V
+.method protected method68 : ()V
     .code stack 3 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/vC this Lorg/lwjgl/opengl/bd;
@@ -171,7 +171,7 @@ L18:
     .end code
 .end method
 
-.method public for : ()Lorg/lwjgl/opengl/G;
+.method public method309 : ()Lorg/lwjgl/opengl/G;
     .code stack 5 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -179,12 +179,12 @@ L4:     astore_1
 L5:     monitorenter
         .catch [0] from L6 to L31 using L33
 L6:     aload_0
-L7:     invokevirtual Method org/lwjgl/opengl/vC class ()V
+L7:     invokevirtual Method org/lwjgl/opengl/vC method68 ()V
 L10:    new org/lwjgl/opengl/bd
 L13:    dup
 L14:    aload_0
 L15:    getfield Field org/lwjgl/opengl/vC this Lorg/lwjgl/opengl/bd;
-L18:    invokevirtual Method org/lwjgl/opengl/bd catch ()LaA;
+L18:    invokevirtual Method org/lwjgl/opengl/bd method3625 ()LaA;
 L21:    aload_0
 L22:    dup_x1
 L23:    getfield Field org/lwjgl/opengl/vC this Lorg/lwjgl/opengl/bd;
@@ -204,7 +204,7 @@ L38:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public else : ()V
+.method public method56 : ()V
     .code stack 2 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -213,13 +213,13 @@ L5:     monitorenter
         .catch [0] from L6 to L29 using L31
 L6:     aload_0
 L7:     dup
-L8:     invokevirtual Method org/lwjgl/opengl/vC class ()V
+L8:     invokevirtual Method org/lwjgl/opengl/vC method68 ()V
 L11:    getfield Field org/lwjgl/opengl/vC this Lorg/lwjgl/opengl/bd;
-L14:    invokevirtual Method org/lwjgl/opengl/bd else ()Z
+L14:    invokevirtual Method org/lwjgl/opengl/bd method3618 ()Z
 L17:    ifeq L27
 L20:    aload_0
 L21:    getfield Field org/lwjgl/opengl/vC this Lorg/lwjgl/opengl/bd;
-L24:    invokevirtual Method org/lwjgl/opengl/bd short ()V
+L24:    invokevirtual Method org/lwjgl/opengl/bd method3616 ()V
 L27:    aload_1
 L28:    monitorexit
 L29:    return
@@ -236,7 +236,7 @@ L37:
     .exceptions org/lwjgl/LWJGLException org/lwjgl/opengles/PowerManagementEventException
 .end method
 
-.method public break : (FFF)V
+.method public method312 : (FFF)V
     .code stack 4 locals 4
 L0:     fload_1
 L1:     fload_2
@@ -253,7 +253,7 @@ L17:
     .end code
 .end method
 
-.method public catch : ()V
+.method public method76 : ()V
     .code stack 0 locals 1
 L0:     invokestatic Method org/lwjgl/opengles/Util checkGLError ()V
 L3:     return
@@ -261,7 +261,7 @@ L4:
     .end code
 .end method
 
-.method public if : ()Lorg/lwjgl/opengles/EGLConfig;
+.method public method320 : ()Lorg/lwjgl/opengles/EGLConfig;
     .code stack 2 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -269,7 +269,7 @@ L4:     astore_1
 L5:     monitorenter
         .catch [0] from L6 to L12 using L14
 L6:     aload_0
-L7:     getfield Field org/lwjgl/opengl/vC char Lorg/lwjgl/opengles/EGLConfig;
+L7:     getfield Field org/lwjgl/opengl/vC field528 Lorg/lwjgl/opengles/EGLConfig;
 L10:    aload_1
 L11:    monitorexit
 L12:    areturn
@@ -293,7 +293,7 @@ L5:
     .end code
 .end method
 
-.method char : ()Lorg/lwjgl/opengl/k;
+.method method321 : ()Lorg/lwjgl/opengl/k;
     .code stack 2 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -301,7 +301,7 @@ L4:     astore_1
 L5:     monitorenter
         .catch [0] from L6 to L12 using L14
 L6:     aload_0
-L7:     getfield Field org/lwjgl/opengl/vC else Lorg/lwjgl/opengl/k;
+L7:     getfield Field org/lwjgl/opengl/vC field529 Lorg/lwjgl/opengl/k;
 L10:    aload_1
 L11:    monitorexit
 L12:    areturn
@@ -316,7 +316,7 @@ L19:
     .end code
 .end method
 
-.method public break : (LaA;Lorg/lwjgl/opengl/k;)V
+.method public method322 : (LaA;Lorg/lwjgl/opengl/k;)V
     .code stack 6 locals 5
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -341,7 +341,7 @@ L32:    putfield Field org/lwjgl/opengl/vC this Lorg/lwjgl/opengl/bd;
 L35:    aload_3
 L36:    aload_0
 L37:    aload_2
-L38:    putfield Field org/lwjgl/opengl/vC else Lorg/lwjgl/opengl/k;
+L38:    putfield Field org/lwjgl/opengl/vC field529 Lorg/lwjgl/opengl/k;
 L41:    monitorexit
 L42:    return
 L43:    iconst_0
@@ -357,7 +357,7 @@ L52:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public break : (Lorg/lwjgl/opengl/h;)V
+.method public method308 : (Lorg/lwjgl/opengl/h;)V
     .code stack 2 locals 4
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -367,7 +367,7 @@ L5:     monitorenter
 L6:     aload_0
 L7:     aload_1
 L8:     checkcast org/lwjgl/opengles/PixelFormat
-L11:    putfield Field org/lwjgl/opengl/vC do Lorg/lwjgl/opengles/PixelFormat;
+L11:    putfield Field org/lwjgl/opengl/vC field531 Lorg/lwjgl/opengles/PixelFormat;
 L14:    aload_2
 L15:    monitorexit
 L16:    return
@@ -384,7 +384,7 @@ L24:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public bridge synthetic do : ()Lorg/lwjgl/opengl/G;
+.method public bridge synthetic method307 : ()Lorg/lwjgl/opengl/G;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     invokevirtual Method org/lwjgl/opengl/vC try ()Lorg/lwjgl/opengl/bd;
@@ -401,7 +401,7 @@ L4:     astore_1
 L5:     monitorenter
         .catch [0] from L6 to L12 using L14
 L6:     aload_0
-L7:     getfield Field org/lwjgl/opengl/vC "enum" Lorg/lwjgl/opengles/EGLSurface;
+L7:     getfield Field org/lwjgl/opengl/vC field530 Lorg/lwjgl/opengles/EGLSurface;
 L10:    aload_1
 L11:    monitorexit
 L12:    areturn
@@ -439,16 +439,16 @@ L19:
     .end code
 .end method
 
-.method public break : (I)V
+.method public method14 : (I)V
     .code stack 1 locals 2
 L0:     iload_1
-L1:     invokestatic Method org/lwjgl/opengl/bd break (I)V
+L1:     invokestatic Method org/lwjgl/opengl/bd method3623 (I)V
 L4:     return
 L5:     
     .end code
 .end method
 
-.method public const : ()Z
+.method public method263 : ()Z
     .code stack 2 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -457,9 +457,9 @@ L5:     monitorenter
         .catch [0] from L6 to L19 using L21
 L6:     aload_0
 L7:     dup
-L8:     invokevirtual Method org/lwjgl/opengl/vC class ()V
+L8:     invokevirtual Method org/lwjgl/opengl/vC method68 ()V
 L11:    getfield Field org/lwjgl/opengl/vC this Lorg/lwjgl/opengl/bd;
-L14:    invokevirtual Method org/lwjgl/opengl/bd else ()Z
+L14:    invokevirtual Method org/lwjgl/opengl/bd method3618 ()Z
 L17:    aload_1
 L18:    monitorexit
 L19:    ireturn
@@ -483,7 +483,7 @@ L4:     astore_1
 L5:     monitorenter
         .catch [0] from L6 to L12 using L14
 L6:     aload_0
-L7:     getfield Field org/lwjgl/opengl/vC null Lorg/lwjgl/opengles/EGLDisplay;
+L7:     getfield Field org/lwjgl/opengl/vC field527 Lorg/lwjgl/opengles/EGLDisplay;
 L10:    aload_1
 L11:    monitorexit
 L12:    areturn
@@ -498,7 +498,7 @@ L19:
     .end code
 .end method
 
-.method public break : (JJILorg/lwjgl/opengles/PixelFormat;)V
+.method public method323 : (JJILorg/lwjgl/opengles/PixelFormat;)V
     .code stack 7 locals 9
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -506,23 +506,23 @@ L4:     astore 7
 L6:     monitorenter
         .catch [0] from L7 to L231 using L233
 L7:     aload_0
-L8:     getfield Field org/lwjgl/opengl/vC "enum" Lorg/lwjgl/opengles/EGLSurface;
+L8:     getfield Field org/lwjgl/opengl/vC field530 Lorg/lwjgl/opengles/EGLSurface;
 L11:    ifnull L26
 L14:    aconst_null
 L15:    aload_0
 L16:    dup_x1
-L17:    getfield Field org/lwjgl/opengl/vC "enum" Lorg/lwjgl/opengles/EGLSurface;
+L17:    getfield Field org/lwjgl/opengl/vC field530 Lorg/lwjgl/opengles/EGLSurface;
 L20:    invokevirtual Method org/lwjgl/opengles/EGLSurface destroy ()V
-L23:    putfield Field org/lwjgl/opengl/vC "enum" Lorg/lwjgl/opengles/EGLSurface;
+L23:    putfield Field org/lwjgl/opengl/vC field530 Lorg/lwjgl/opengles/EGLSurface;
 L26:    aload_0
-L27:    getfield Field org/lwjgl/opengl/vC null Lorg/lwjgl/opengles/EGLDisplay;
+L27:    getfield Field org/lwjgl/opengl/vC field527 Lorg/lwjgl/opengles/EGLDisplay;
 L30:    ifnull L45
 L33:    aconst_null
 L34:    aload_0
 L35:    dup_x1
-L36:    getfield Field org/lwjgl/opengl/vC null Lorg/lwjgl/opengles/EGLDisplay;
+L36:    getfield Field org/lwjgl/opengl/vC field527 Lorg/lwjgl/opengles/EGLDisplay;
 L39:    invokevirtual Method org/lwjgl/opengles/EGLDisplay terminate ()V
-L42:    putfield Field org/lwjgl/opengl/vC null Lorg/lwjgl/opengles/EGLDisplay;
+L42:    putfield Field org/lwjgl/opengl/vC field527 Lorg/lwjgl/opengles/EGLDisplay;
 L45:    lload_3
 L46:    l2i
 L47:    i2l
@@ -639,9 +639,9 @@ L197:   dup_x2
 L198:   aload 5
 L200:   aload_0
 L201:   aload_3
-L202:   putfield Field org/lwjgl/opengl/vC null Lorg/lwjgl/opengles/EGLDisplay;
-L205:   putfield Field org/lwjgl/opengl/vC char Lorg/lwjgl/opengles/EGLConfig;
-L208:   putfield Field org/lwjgl/opengl/vC "enum" Lorg/lwjgl/opengles/EGLSurface;
+L202:   putfield Field org/lwjgl/opengl/vC field527 Lorg/lwjgl/opengles/EGLDisplay;
+L205:   putfield Field org/lwjgl/opengl/vC field528 Lorg/lwjgl/opengles/EGLConfig;
+L208:   putfield Field org/lwjgl/opengl/vC field530 Lorg/lwjgl/opengles/EGLSurface;
 L211:   getfield Field org/lwjgl/opengl/vC this Lorg/lwjgl/opengl/bd;
 L214:   ifnull L228
 L217:   aload_0

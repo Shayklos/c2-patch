@@ -2,10 +2,10 @@
 .class public final super sA
 .super java/lang/Object
 .field public this I
-.field public char I
-.field public else I
-.field public "enum" I
-.field public do I
+.field public field5799 I
+.field public field5800 I
+.field public field5801 I
+.field public field5802 I
 
 .method public <init> : (I)V
     .code stack 11 locals 2
@@ -25,19 +25,19 @@ L14:    putfield Field sA this I
 L17:    iconst_1
 L18:    dup
 L19:    pop2
-L20:    putfield Field sA "enum" I
+L20:    putfield Field sA field5801 I
 L23:    iconst_1
 L24:    dup
 L25:    pop2
-L26:    putfield Field sA else I
+L26:    putfield Field sA field5800 I
 L29:    iconst_1
 L30:    dup
 L31:    pop2
-L32:    putfield Field sA do I
+L32:    putfield Field sA field5802 I
 L35:    iconst_1
 L36:    dup
 L37:    pop2
-L38:    putfield Field sA char I
+L38:    putfield Field sA field5799 I
 L41:    return
 L42:    
     .end code

@@ -1,9 +1,9 @@
 .version 49 0
 .class public final super enum TB
 .super java/lang/Enum
-.field private static final synthetic else [LTB;
-.field public static final enum "enum" LTB;
-.field public static final enum do LTB;
+.field private static final synthetic field497 [LTB;
+.field public static final enum field498 LTB;
+.field public static final enum field499 LTB;
 
 .method public static <clinit> : ()V
     .code stack 6 locals 0
@@ -15,7 +15,7 @@ L7:     iconst_1
 L8:     dup
 L9:     pop2
 L10:    invokespecial Method TB <init> (Ljava/lang/String;I)V
-L13:    putstatic Field TB do LTB;
+L13:    putstatic Field TB field499 LTB;
 L16:    new TB
 L19:    dup
 L20:    ldc "PLAY"
@@ -24,7 +24,7 @@ L23:    dup
 L24:    dup
 L25:    pop2
 L26:    invokespecial Method TB <init> (Ljava/lang/String;I)V
-L29:    putstatic Field TB "enum" LTB;
+L29:    putstatic Field TB field498 LTB;
 L32:    iconst_2
 L33:    iconst_1
 L34:    dup
@@ -38,16 +38,16 @@ L43:    iconst_0
 L44:    iconst_1
 L45:    dup
 L46:    pop2
-L47:    getstatic Field TB do LTB;
+L47:    getstatic Field TB field499 LTB;
 L50:    aastore
 L51:    dup
 L52:    iconst_1
 L53:    dup
 L54:    dup
 L55:    pop2
-L56:    getstatic Field TB "enum" LTB;
+L56:    getstatic Field TB field498 LTB;
 L59:    aastore
-L60:    putstatic Field TB else [LTB;
+L60:    putstatic Field TB field497 [LTB;
 L63:    return
 L64:    
     .end code
@@ -55,7 +55,7 @@ L64:
 
 .method public static values : ()[LTB;
     .code stack 1 locals 0
-L0:     getstatic Field TB else [LTB;
+L0:     getstatic Field TB field497 [LTB;
 L3:     invokevirtual Method [LTB; clone ()Ljava/lang/Object;
 L6:     checkcast [LTB;
 L9:     areturn

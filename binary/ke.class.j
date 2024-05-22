@@ -2,7 +2,7 @@
 .class public final super enum ke
 .super fE
 
-.method public break : (LRg;F)Z
+.method public method303 : (LRg;F)Z
     .code stack 3 locals 3
 L0:     iconst_0
 L1:     iconst_1
@@ -13,7 +13,7 @@ L5:
     .end code
 .end method
 
-.method public break : (LRg;)Ljava/lang/String;
+.method public method305 : (LRg;)Ljava/lang/String;
     .code stack 1 locals 2
 L0:     aconst_null
 L1:     areturn
@@ -34,7 +34,7 @@ L9:
     .end code
 .end method
 
-.method public break : (F)Ljava/lang/String;
+.method public method304 : (F)Ljava/lang/String;
     .code stack 1 locals 2
 L0:     aconst_null
 L1:     areturn
@@ -42,7 +42,7 @@ L2:
     .end code
 .end method
 
-.method public else : (F)Ljava/lang/String;
+.method public method302 : (F)Ljava/lang/String;
     .code stack 1 locals 2
 L0:     aconst_null
 L1:     areturn

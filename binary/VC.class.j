@@ -1,8 +1,8 @@
 .version 49 0
 .class public final super synthetic VC
 .super java/lang/Object
-.field public static final synthetic "enum" [I
-.field public static final synthetic do [I
+.field public static final synthetic field2145 [I
+.field public static final synthetic field2146 [I
 
 .method public static <clinit> : ()V
     .code stack 5 locals 1
@@ -12,9 +12,9 @@ L4:     newarray int
 L6:     iconst_1
 L7:     dup
 L8:     pop2
-L9:     putstatic Field VC "enum" [I
+L9:     putstatic Field VC field2145 [I
         .catch java/lang/NoSuchFieldError from L12 to L26 using L30
-L12:    getstatic Field VC "enum" [I
+L12:    getstatic Field VC field2145 [I
 L15:    getstatic Field Hc this LHc;
 L18:    invokevirtual Method Hc ordinal ()I
 L21:    iconst_1
@@ -26,8 +26,8 @@ L26:    goto L31
 L29:    athrow
 L30:    astore_0
         .catch java/lang/NoSuchFieldError from L31 to L45 using L49
-L31:    getstatic Field VC "enum" [I
-L34:    getstatic Field Hc "enum" LHc;
+L31:    getstatic Field VC field2145 [I
+L34:    getstatic Field Hc field413 LHc;
 L37:    invokevirtual Method Hc ordinal ()I
 L40:    iconst_2
 L41:    iconst_1
@@ -38,8 +38,8 @@ L45:    goto L50
 L48:    athrow
 L49:    astore_0
         .catch java/lang/NoSuchFieldError from L50 to L64 using L67
-L50:    getstatic Field VC "enum" [I
-L53:    getstatic Field Hc null LHc;
+L50:    getstatic Field VC field2145 [I
+L53:    getstatic Field Hc field410 LHc;
 L56:    invokevirtual Method Hc ordinal ()I
 L59:    iconst_3
 L60:    iconst_1
@@ -49,8 +49,8 @@ L63:    iastore
 L64:    goto L68
 L67:    astore_0
         .catch java/lang/NoSuchFieldError from L68 to L82 using L85
-L68:    getstatic Field VC "enum" [I
-L71:    getstatic Field Hc void LHc;
+L68:    getstatic Field VC field2145 [I
+L71:    getstatic Field Hc field408 LHc;
 L74:    invokevirtual Method Hc ordinal ()I
 L77:    iconst_4
 L78:    iconst_1
@@ -60,8 +60,8 @@ L81:    iastore
 L82:    goto L86
 L85:    astore_0
         .catch java/lang/NoSuchFieldError from L86 to L100 using L103
-L86:    getstatic Field VC "enum" [I
-L89:    getstatic Field Hc break LHc;
+L86:    getstatic Field VC field2145 [I
+L89:    getstatic Field Hc field406 LHc;
 L92:    invokevirtual Method Hc ordinal ()I
 L95:    iconst_5
 L96:    iconst_1
@@ -71,8 +71,8 @@ L99:    iastore
 L100:   goto L104
 L103:   astore_0
         .catch java/lang/NoSuchFieldError from L104 to L119 using L122
-L104:   getstatic Field VC "enum" [I
-L107:   getstatic Field Hc const LHc;
+L104:   getstatic Field VC field2145 [I
+L107:   getstatic Field Hc field409 LHc;
 L110:   invokevirtual Method Hc ordinal ()I
 L113:   bipush 6
 L115:   iconst_1
@@ -82,7 +82,7 @@ L118:   iastore
 L119:   goto L123
 L122:   astore_0
         .catch java/lang/NoSuchFieldError from L123 to L138 using L141
-L123:   getstatic Field VC "enum" [I
+L123:   getstatic Field VC field2145 [I
 L126:   getstatic Field Hc try LHc;
 L129:   invokevirtual Method Hc ordinal ()I
 L132:   bipush 7
@@ -93,8 +93,8 @@ L137:   iastore
 L138:   goto L142
 L141:   astore_0
         .catch java/lang/NoSuchFieldError from L142 to L157 using L160
-L142:   getstatic Field VC "enum" [I
-L145:   getstatic Field Hc char LHc;
+L142:   getstatic Field VC field2145 [I
+L145:   getstatic Field Hc field411 LHc;
 L148:   invokevirtual Method Hc ordinal ()I
 L151:   bipush 8
 L153:   iconst_1
@@ -104,8 +104,8 @@ L156:   iastore
 L157:   goto L161
 L160:   astore_0
         .catch java/lang/NoSuchFieldError from L161 to L176 using L179
-L161:   getstatic Field VC "enum" [I
-L164:   getstatic Field Hc else LHc;
+L161:   getstatic Field VC field2145 [I
+L164:   getstatic Field Hc field412 LHc;
 L167:   invokevirtual Method Hc ordinal ()I
 L170:   bipush 9
 L172:   iconst_1
@@ -115,8 +115,8 @@ L175:   iastore
 L176:   goto L180
 L179:   astore_0
         .catch java/lang/NoSuchFieldError from L180 to L195 using L198
-L180:   getstatic Field VC "enum" [I
-L183:   getstatic Field Hc long LHc;
+L180:   getstatic Field VC field2145 [I
+L183:   getstatic Field Hc field407 LHc;
 L186:   invokevirtual Method Hc ordinal ()I
 L189:   bipush 10
 L191:   iconst_1
@@ -126,8 +126,8 @@ L194:   iastore
 L195:   goto L199
 L198:   astore_0
         .catch java/lang/NoSuchFieldError from L199 to L214 using L217
-L199:   getstatic Field VC "enum" [I
-L202:   getstatic Field Hc do LHc;
+L199:   getstatic Field VC field2145 [I
+L202:   getstatic Field Hc field414 LHc;
 L205:   invokevirtual Method Hc ordinal ()I
 L208:   bipush 11
 L210:   iconst_1
@@ -137,7 +137,7 @@ L213:   iastore
 L214:   goto L218
 L217:   astore_0
         .catch java/lang/NoSuchFieldError from L218 to L233 using L236
-L218:   getstatic Field VC "enum" [I
+L218:   getstatic Field VC field2145 [I
 L221:   getstatic Field Hc new LHc;
 L224:   invokevirtual Method Hc ordinal ()I
 L227:   bipush 12
@@ -153,10 +153,10 @@ L241:   newarray int
 L243:   iconst_1
 L244:   dup
 L245:   pop2
-L246:   putstatic Field VC do [I
+L246:   putstatic Field VC field2146 [I
         .catch java/lang/NoSuchFieldError from L249 to L263 using L266
-L249:   getstatic Field VC do [I
-L252:   getstatic Field QB else LQB;
+L249:   getstatic Field VC field2146 [I
+L252:   getstatic Field QB field367 LQB;
 L255:   invokevirtual Method QB ordinal ()I
 L258:   iconst_1
 L259:   dup
@@ -166,8 +166,8 @@ L262:   iastore
 L263:   goto L267
 L266:   astore_0
         .catch java/lang/NoSuchFieldError from L267 to L281 using L282
-L267:   getstatic Field VC do [I
-L270:   getstatic Field QB "enum" LQB;
+L267:   getstatic Field VC field2146 [I
+L270:   getstatic Field QB field368 LQB;
 L273:   invokevirtual Method QB ordinal ()I
 L276:   iconst_2
 L277:   iconst_1

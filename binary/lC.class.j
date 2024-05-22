@@ -1,17 +1,17 @@
 .version 49 0
 .class public final super lC
 .super qc
-.field public final synthetic do LCC;
+.field public final synthetic field1115 LCC;
 
-.method public "final" : ()V
+.method public method10 : ()V
     .code stack 3 locals 1
 L0:     aload_0
 L1:     dup
-L2:     getfield Field lC do LCC;
+L2:     getfield Field lC field1115 LCC;
 L5:     swap
-L6:     getfield Field lC do LCC;
-L9:     invokestatic Method CC int (LCC;)Lqc;
-L12:    getfield Field qc do Ljava/util/ArrayList;
+L6:     getfield Field lC field1115 LCC;
+L9:     invokestatic Method CC method158 (LCC;)Lqc;
+L12:    getfield Field qc field65 Ljava/util/ArrayList;
 L15:    invokestatic Method CC this ()I
 L18:    invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L21:    checkcast gB
@@ -27,7 +27,7 @@ L0:     aload_2
 L1:     aload_0
 L2:     dup_x1
 L3:     aload_1
-L4:     putfield Field lC do LCC;
+L4:     putfield Field lC field1115 LCC;
 L7:     invokespecial Method qc <init> (Ld;)V
 L10:    return
 L11:    
@@ -36,5 +36,5 @@ L11:
 .innerclasses
     lC [0] [0]
 .end innerclasses
-.enclosing method CC do ()Lqc;
+.enclosing method CC method169 ()Lqc;
 .end class

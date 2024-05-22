@@ -2,7 +2,7 @@
 .class public final super jouvieje/bass/structures/gA
 .super jouvieje/bass/utils/m
 
-.method public static float : ()Ljouvieje/bass/structures/gA;
+.method public static method1254 : ()Ljouvieje/bass/structures/gA;
     .code stack 4 locals 2
 L0:     invokestatic Method jouvieje/bass/structures/StructureJNI BASS_3DVECTOR_new ()J
 L3:     dup2
@@ -24,10 +24,10 @@ L27:
     .end code
 .end method
 
-.method public short : ()F
+.method public method1255 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/gA do J
+L1:     getfield Field jouvieje/bass/structures/gA field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -36,7 +36,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/gA do J
+L18:    getfield Field jouvieje/bass/structures/gA field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_3DVECTOR_get_y (J)F
 L24:    freturn
 L25:    
@@ -44,10 +44,10 @@ L25:
     .end code
 .end method
 
-.method public else : (FFF)V
+.method public method1256 : (FFF)V
     .code stack 5 locals 4
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/gA do J
+L1:     getfield Field jouvieje/bass/structures/gA field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -56,7 +56,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/gA do J
+L18:    getfield Field jouvieje/bass/structures/gA field2319 J
 L21:    fload_1
 L22:    fload_2
 L23:    fload_3
@@ -67,10 +67,10 @@ L28:
     .end code
 .end method
 
-.method public const : (F)V
+.method public method1213 : (F)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/gA do J
+L1:     getfield Field jouvieje/bass/structures/gA field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -79,7 +79,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/gA do J
+L18:    getfield Field jouvieje/bass/structures/gA field2319 J
 L21:    fload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_3DVECTOR_set_y (JF)V
 L25:    return
@@ -88,10 +88,10 @@ L26:
     .end code
 .end method
 
-.method public const : ()F
+.method public method1179 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/gA do J
+L1:     getfield Field jouvieje/bass/structures/gA field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -100,7 +100,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/gA do J
+L18:    getfield Field jouvieje/bass/structures/gA field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_3DVECTOR_get_x (J)F
 L24:    freturn
 L25:    
@@ -108,7 +108,7 @@ L25:
     .end code
 .end method
 
-.method public static break : (FFF)Ljouvieje/bass/structures/gA;
+.method public static method1257 : (FFF)Ljouvieje/bass/structures/gA;
     .code stack 5 locals 3
 L0:     new jouvieje/bass/structures/gA
 L3:     dup
@@ -122,10 +122,10 @@ L14:
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/gA;
+.method public static method1258 : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/gA;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     dup2
 L5:     lstore_1
 L6:     lconst_0
@@ -140,7 +140,7 @@ L18:    lload_1
 L19:    invokespecial Method jouvieje/bass/structures/gA <init> (J)V
 L22:    areturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x3D\x00\x0E\x00\x02\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x40\x00\x0E\x00\x02\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
@@ -154,10 +154,10 @@ L6:
     .end code
 .end method
 
-.method public else : ()F
+.method public method1205 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/gA do J
+L1:     getfield Field jouvieje/bass/structures/gA field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -166,7 +166,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/gA do J
+L18:    getfield Field jouvieje/bass/structures/gA field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_3DVECTOR_get_z (J)F
 L24:    freturn
 L25:    
@@ -174,10 +174,10 @@ L25:
     .end code
 .end method
 
-.method public else : (F)V
+.method public method1202 : (F)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/gA do J
+L1:     getfield Field jouvieje/bass/structures/gA field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -186,7 +186,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/gA do J
+L18:    getfield Field jouvieje/bass/structures/gA field2319 J
 L21:    fload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_3DVECTOR_set_x (JF)V
 L25:    return
@@ -195,10 +195,10 @@ L26:
     .end code
 .end method
 
-.method public break : (Ljouvieje/bass/structures/gA;)V
+.method public method1259 : (Ljouvieje/bass/structures/gA;)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/gA do J
+L1:     getfield Field jouvieje/bass/structures/gA field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -207,9 +207,9 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/gA do J
+L18:    getfield Field jouvieje/bass/structures/gA field2319 J
 L21:    aload_1
-L22:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L22:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L25:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_3DVECTOR_set_xyz (JJ)V
 L28:    return
 L29:    
@@ -217,29 +217,29 @@ L29:
     .end code
 .end method
 
-.method public break : ()V
+.method public method1218 : ()V
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/gA do J
+L1:     getfield Field jouvieje/bass/structures/gA field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifeq L16
 L9:     aload_0
-L10:    getfield Field jouvieje/bass/structures/gA do J
+L10:    getfield Field jouvieje/bass/structures/gA field2319 J
 L13:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_3DVECTOR_delete (J)V
 L16:    aload_0
 L17:    lconst_0
-L18:    putfield Field jouvieje/bass/structures/gA do J
+L18:    putfield Field jouvieje/bass/structures/gA field2319 J
 L21:    return
 L22:    
         .attribute StackMap b'\x00\x01\x00\x10\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public break : (F)V
+.method public method1181 : (F)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/gA do J
+L1:     getfield Field jouvieje/bass/structures/gA field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -248,7 +248,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/gA do J
+L18:    getfield Field jouvieje/bass/structures/gA field2319 J
 L21:    fload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_3DVECTOR_set_z (JF)V
 L25:    return

@@ -1,8 +1,8 @@
 .version 49 0
 .class final super org/lwjgl/opengl/sA
 .super java/lang/Object
-.field private static "enum" Lorg/lwjgl/opengl/d;
-.field private static do Z
+.field private static field5596 Lorg/lwjgl/opengl/d;
+.field private static field5597 Z
 
 .method private <init> : ()V
     .code stack 1 locals 1
@@ -13,27 +13,27 @@ L5:
     .end code
 .end method
 
-.method static synthetic else : (Z)Z
+.method static synthetic method5728 : (Z)Z
     .code stack 2 locals 1
 L0:     iload_0
 L1:     dup
-L2:     putstatic Field org/lwjgl/opengl/sA do Z
+L2:     putstatic Field org/lwjgl/opengl/sA field5597 Z
 L5:     ireturn
 L6:     
     .end code
 .end method
 
-.method static synthetic break : (Lorg/lwjgl/opengl/d;)Lorg/lwjgl/opengl/d;
+.method static synthetic method5729 : (Lorg/lwjgl/opengl/d;)Lorg/lwjgl/opengl/d;
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     putstatic Field org/lwjgl/opengl/sA "enum" Lorg/lwjgl/opengl/d;
+L2:     putstatic Field org/lwjgl/opengl/sA field5596 Lorg/lwjgl/opengl/d;
 L5:     areturn
 L6:     
     .end code
 .end method
 
-.method private static varargs else : ([Ljava/lang/String;)Ljava/util/List;
+.method private static varargs method5730 : ([Ljava/lang/String;)Ljava/util/List;
     .code stack 5 locals 5
 L0:     new java/util/ArrayList
 L3:     dup
@@ -99,25 +99,25 @@ L103:   athrow
 L104:   nop
 L105:   athrow
 L106:   
-        .attribute StackMap b'\x00\x09\x00\x1B\x00\x00\x00\x01\x07\x00\x38\x00\x1C\x00\x00\x00\x01\x07\x00\x38\x00\x1F\x00\x00\x00\x01\x07\x00\x38\x00\x20\x00\x03\x07\x00\x3A\x07\x00\x25\x07\x00\x32\x00\x01\x07\x00\x21\x00\x2C\x00\x04\x07\x00\x3A\x07\x00\x25\x07\x00\x32\x01\x00\x00\x00\x40\x00\x04\x07\x00\x3A\x07\x00\x25\x07\x00\x32\x07\x00\x41\x00\x01\x07\x00\x41\x00\x56\x00\x05\x07\x00\x3A\x07\x00\x25\x07\x00\x32\x07\x00\x41\x07\x00\x59\x00\x00\x00\x5C\x00\x02\x07\x00\x3A\x07\x00\x25\x00\x01\x07\x00\x23\x00\x68\x00\x00\x00\x01\x07\x00\x38'
+        .attribute StackMap b'\x00\x09\x00\x1B\x00\x00\x00\x01\x07\x00\x39\x00\x1C\x00\x00\x00\x01\x07\x00\x39\x00\x1F\x00\x00\x00\x01\x07\x00\x39\x00\x20\x00\x03\x07\x00\x3B\x07\x00\x26\x07\x00\x33\x00\x01\x07\x00\x22\x00\x2C\x00\x04\x07\x00\x3B\x07\x00\x26\x07\x00\x33\x01\x00\x00\x00\x40\x00\x04\x07\x00\x3B\x07\x00\x26\x07\x00\x33\x07\x00\x42\x00\x01\x07\x00\x42\x00\x56\x00\x05\x07\x00\x3B\x07\x00\x26\x07\x00\x33\x07\x00\x42\x07\x00\x5A\x00\x00\x00\x5C\x00\x02\x07\x00\x3B\x07\x00\x26\x00\x01\x07\x00\x24\x00\x68\x00\x00\x00\x01\x07\x00\x39'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method static synthetic break : ([Ljava/lang/String;)Ljava/util/List;
+.method static synthetic method5731 : ([Ljava/lang/String;)Ljava/util/List;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokestatic Method org/lwjgl/opengl/sA else ([Ljava/lang/String;)Ljava/util/List;
+L1:     invokestatic Method org/lwjgl/opengl/sA method5730 ([Ljava/lang/String;)Ljava/util/List;
 L4:     areturn
 L5:     
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method static else : ()V
+.method static method5732 : ()V
     .code stack 2 locals 0
 L0:     ldc "org.lwjgl.opengl.Window.nocompiz_lfs"
-L2:     invokestatic Method org/lwjgl/opengl/Display break (Ljava/lang/String;)Z
+L2:     invokestatic Method org/lwjgl/opengl/Display method3044 (Ljava/lang/String;)Z
 L5:     ifeq L10
 L8:     return
 L9:     athrow
@@ -128,11 +128,11 @@ L17:    invokestatic Method java/security/AccessController doPrivileged (Ljava/s
 L20:    pop
 L21:    return
 L22:    
-        .attribute StackMap b'\x00\x02\x00\x09\x00\x00\x00\x01\x07\x00\x38\x00\x0A\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x09\x00\x00\x00\x01\x07\x00\x39\x00\x0A\x00\x00\x00\x00'
     .end code
 .end method
 
-.method private static else : (Ljava/lang/String;)Z
+.method private static method5733 : (Ljava/lang/String;)Z
     .code stack 5 locals 3
 L0:     iconst_3
 L1:     iconst_1
@@ -163,7 +163,7 @@ L29:    dup
 L30:    pop2
 L31:    aload_0
 L32:    aastore
-L33:    invokestatic Method org/lwjgl/opengl/sA else ([Ljava/lang/String;)Ljava/util/List;
+L33:    invokestatic Method org/lwjgl/opengl/sA method5730 ([Ljava/lang/String;)Ljava/util/List;
 L36:    dup
 L37:    astore_1
 L38:    ifnonnull L47
@@ -200,14 +200,14 @@ L90:    dup
 L91:    pop2
 L92:    ireturn
 L93:    
-        .attribute StackMap b'\x00\x05\x00\x2E\x00\x00\x00\x01\x07\x00\x38\x00\x2F\x00\x02\x07\x00\x59\x07\x00\x53\x00\x00\x00\x36\x00\x03\x07\x00\x59\x07\x00\x53\x07\x00\x78\x00\x00\x00\x54\x00\x00\x00\x01\x07\x00\x38\x00\x58\x00\x03\x07\x00\x59\x07\x00\x53\x07\x00\x78\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x2E\x00\x00\x00\x01\x07\x00\x39\x00\x2F\x00\x02\x07\x00\x5A\x07\x00\x54\x00\x00\x00\x36\x00\x03\x07\x00\x5A\x07\x00\x54\x07\x00\x7D\x00\x00\x00\x54\x00\x00\x00\x01\x07\x00\x39\x00\x58\x00\x03\x07\x00\x5A\x07\x00\x54\x07\x00\x7D\x00\x00'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method static break : (Z)V
+.method static method5734 : (Z)V
     .code stack 3 locals 1
-L0:     getstatic Field org/lwjgl/opengl/sA do Z
+L0:     getstatic Field org/lwjgl/opengl/sA field5597 Z
 L3:     ifne L8
 L6:     return
 L7:     athrow
@@ -219,22 +219,22 @@ L16:    invokestatic Method java/security/AccessController doPrivileged (Ljava/s
 L19:    pop
 L20:    return
 L21:    
-        .attribute StackMap b'\x00\x02\x00\x07\x00\x00\x00\x01\x07\x00\x38\x00\x08\x00\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x07\x00\x00\x00\x01\x07\x00\x39\x00\x08\x00\x01\x01\x00\x00'
     .end code
 .end method
 
-.method static synthetic break : ()Lorg/lwjgl/opengl/d;
+.method static synthetic method5735 : ()Lorg/lwjgl/opengl/d;
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/opengl/sA "enum" Lorg/lwjgl/opengl/d;
+L0:     getstatic Field org/lwjgl/opengl/sA field5596 Lorg/lwjgl/opengl/d;
 L3:     areturn
 L4:     
     .end code
 .end method
 
-.method static synthetic break : (Ljava/lang/String;)Z
+.method static synthetic method5736 : (Ljava/lang/String;)Z
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokestatic Method org/lwjgl/opengl/sA else (Ljava/lang/String;)Z
+L1:     invokestatic Method org/lwjgl/opengl/sA method5733 (Ljava/lang/String;)Z
 L4:     ireturn
 L5:     
     .end code

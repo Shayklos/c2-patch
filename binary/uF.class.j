@@ -2,22 +2,22 @@
 .class public final super uF
 .super qc
 .field private static final new [F
-.field private static final null I = 33
+.field private static final field1103 I = 33
 .field public this LDF;
-.field public char LKe;
-.field private static final else [F
-.field public "enum" Lqc;
-.field public do Ljava/util/List;
+.field public field1104 LKe;
+.field private static final field1105 [F
+.field public field1106 Lqc;
+.field public field1107 Ljava/util/List;
 
-.method public static synthetic short : ()[F
+.method public static synthetic method580 : ()[F
     .code stack 1 locals 0
-L0:     getstatic Field uF else [F
+L0:     getstatic Field uF field1105 [F
 L3:     areturn
 L4:     
     .end code
 .end method
 
-.method public "final" : ()V
+.method public method10 : ()V
     .code stack 1 locals 1
 L0:     aload_0
 L1:     invokevirtual Method uF true ()V
@@ -47,8 +47,8 @@ L23:    dup
 L24:    pop2
 L25:    dup
 L26:    invokespecial Method java/util/LinkedList <init> ()V
-L29:    putfield Field uF do Ljava/util/List;
-L32:    putfield Field uF char LKe;
+L29:    putfield Field uF field1107 Ljava/util/List;
+L32:    putfield Field uF field1104 LKe;
 L35:    new qc
 L38:    aload_0
 L39:    dup_x2
@@ -57,11 +57,11 @@ L41:    pop2
 L42:    dup
 L43:    new fG
 L46:    dup
-L47:    getstatic Field LE do LLE;
+L47:    getstatic Field LE field634 LLE;
 L50:    ldc 1e-1f
 L52:    invokespecial Method fG <init> (LLE;F)V
 L55:    invokespecial Method qc <init> (Ld;)V
-L58:    putfield Field uF "enum" Lqc;
+L58:    putfield Field uF field1106 Lqc;
 L61:    new Vg
 L64:    aload_0
 L65:    dup
@@ -70,17 +70,17 @@ L67:    dup
 L68:    ldc 4.5e0f
 L70:    fconst_0
 L71:    invokespecial Method Vg <init> (FF)V
-L74:    getstatic Field VD do Ljava/lang/Object;
-L77:    invokevirtual Method uF break (LgB;Ljava/lang/Object;)V
+L74:    getstatic Field VD field150 Ljava/lang/Object;
+L77:    invokevirtual Method uF method31 (LgB;Ljava/lang/Object;)V
 L80:    new Cd
 L83:    aload_0
 L84:    dup
 L85:    pop2
 L86:    dup
 L87:    aload_0
-L88:    getfield Field uF "enum" Lqc;
+L88:    getfield Field uF field1106 Lqc;
 L91:    invokespecial Method Cd <init> (LgB;)V
-L94:    invokevirtual Method uF float (LgB;)LgB;
+L94:    invokevirtual Method uF method36 (LgB;)LgB;
 L97:    aload_0
 L98:    dup
 L99:    new DF
@@ -94,31 +94,31 @@ L109:   invokespecial Method DF <init> (Ljava/lang/String;)V
 L112:   putfield Field uF this LDF;
 L115:   getfield Field uF this LDF;
 L118:   ldc 2.4e-1f
-L120:   invokevirtual Method DF else (F)V
+L120:   invokevirtual Method DF method104 (F)V
 L123:   getfield Field uF this LDF;
-L126:   getstatic Field vD null LvD;
-L129:   invokevirtual Method DF break (LvD;)V
+L126:   getstatic Field vD field358 LvD;
+L129:   invokevirtual Method DF method610 (LvD;)V
 L132:   pop
 L133:   return
 L134:   
     .end code
 .end method
 
-.method public const : ()V
+.method public method52 : ()V
     .code stack 6 locals 4
 L0:     aconst_null
 L1:     aload_0
 L2:     dup_x1
-L3:     getfield Field uF "enum" Lqc;
-L6:     getfield Field qc do Ljava/util/ArrayList;
+L3:     getfield Field uF field1106 Lqc;
+L6:     getfield Field qc field65 Ljava/util/ArrayList;
 L9:     new kF
 L12:    dup
 L13:    aload_0
 L14:    invokespecial Method kF <init> (LuF;)V
 L17:    invokestatic Method java/util/Collections sort (Ljava/util/List;Ljava/util/Comparator;)V
 L20:    astore_1
-L21:    getfield Field uF "enum" Lqc;
-L24:    getfield Field qc do Ljava/util/ArrayList;
+L21:    getfield Field uF field1106 Lqc;
+L24:    getfield Field qc field65 Ljava/util/ArrayList;
 L27:    invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
 L30:    dup
 L31:    astore_2
@@ -131,7 +131,7 @@ L49:    dup
 L50:    astore_3
 L51:    aload_1
 L52:    dup_x1
-L53:    putfield Field gB do LgB;
+L53:    putfield Field gB field1138 LgB;
 L56:    ifnull L64
 L59:    aload_1
 L60:    aload_3
@@ -142,57 +142,57 @@ L66:    aload_2
 L67:    goto L32
 L70:    athrow
 L71:    aload_0
-L72:    getfield Field uF "enum" Lqc;
-L75:    invokevirtual Method qc extends ()V
+L72:    getfield Field uF field1106 Lqc;
+L75:    invokevirtual Method qc method21 ()V
 L78:    return
 L79:    
-        .attribute StackMap b'\x00\x04\x00\x20\x00\x03\x07\x00\x02\x07\x00\x7F\x07\x00\x81\x00\x01\x07\x00\x81\x00\x40\x00\x04\x07\x00\x02\x07\x00\x7F\x07\x00\x81\x07\x00\x7F\x00\x00\x00\x46\x00\x00\x00\x01\x07\x00\x90\x00\x47\x00\x03\x07\x00\x02\x07\x00\x7F\x07\x00\x81\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x20\x00\x03\x07\x00\x02\x07\x00\x85\x07\x00\x87\x00\x01\x07\x00\x87\x00\x40\x00\x04\x07\x00\x02\x07\x00\x85\x07\x00\x87\x07\x00\x85\x00\x00\x00\x46\x00\x00\x00\x01\x07\x00\x97\x00\x47\x00\x03\x07\x00\x02\x07\x00\x85\x07\x00\x87\x00\x00'
     .end code
 .end method
 
 .method public false : ()Z
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field uF long Z
+L1:     getfield Field uF field1133 Z
 L4:     ireturn
 L5:     
     .end code
 .end method
 
-.method public else : ()Lqd;
+.method public method581 : ()Lqd;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field uF char LKe;
+L1:     getfield Field uF field1104 LKe;
 L4:     ifnonnull L10
 L7:     aconst_null
 L8:     areturn
 L9:     athrow
 L10:    aload_0
-L11:    getfield Field uF char LKe;
-L14:    invokevirtual Method Ke break ()Lqd;
+L11:    getfield Field uF field1104 LKe;
+L14:    invokevirtual Method Ke method1 ()Lqd;
 L17:    areturn
 L18:    
-        .attribute StackMap b'\x00\x02\x00\x09\x00\x00\x00\x01\x07\x00\x90\x00\x0A\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x09\x00\x00\x00\x01\x07\x00\x97\x00\x0A\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public const : (FF)V
+.method public method32 : (FF)V
     .code stack 4 locals 3
 L0:     aload_0
 L1:     dup
 L2:     fload_1
 L3:     fload_2
-L4:     invokespecial Method qc const (FF)V
+L4:     invokespecial Method qc method32 (FF)V
 L7:     getfield Field uF this LDF;
 L10:    fload_1
 L11:    fload_2
-L12:    invokevirtual Method DF const (FF)V
+L12:    invokevirtual Method DF method32 (FF)V
 L15:    return
 L16:    
     .end code
 .end method
 
-.method public static synthetic break : ()[F
+.method public static synthetic method582 : ()[F
     .code stack 1 locals 0
 L0:     getstatic Field uF new [F
 L3:     areturn
@@ -200,11 +200,11 @@ L4:
     .end code
 .end method
 
-.method public else : (Lqd;)V
+.method public method159 : (Lqd;)V
     .code stack 6 locals 4
 L0:     aload_0
-L1:     getfield Field uF "enum" Lqc;
-L4:     getfield Field qc do Ljava/util/ArrayList;
+L1:     getfield Field uF field1106 Lqc;
+L4:     getfield Field qc field65 Ljava/util/ArrayList;
 L7:     invokevirtual Method java/util/ArrayList clone ()Ljava/lang/Object;
 L10:    checkcast java/util/ArrayList
 L13:    invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
@@ -217,7 +217,7 @@ L27:    invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Obj
 L32:    checkcast Ke
 L35:    dup
 L36:    astore_3
-L37:    invokevirtual Method Ke break ()Lqd;
+L37:    invokevirtual Method Ke method1 ()Lqd;
 L40:    aload_1
 L41:    if_acmpne L17
 L44:    aload_0
@@ -225,17 +225,17 @@ L45:    dup
 L46:    aload_3
 L47:    dup_x2
 L48:    aload_0
-L49:    getfield Field uF "enum" Lqc;
+L49:    getfield Field uF field1106 Lqc;
 L52:    aload_3
-L53:    invokevirtual Method qc goto (LgB;)V
-L56:    invokevirtual Method uF goto (LgB;)V
-L59:    getfield Field uF char LKe;
+L53:    invokevirtual Method qc method23 (LgB;)V
+L56:    invokevirtual Method uF method23 (LgB;)V
+L59:    getfield Field uF field1104 LKe;
 L62:    if_acmpne L17
 L65:    aload_0
 L66:    dup
 L67:    aconst_null
-L68:    putfield Field uF char LKe;
-L71:    getfield Field uF do Ljava/util/List;
+L68:    putfield Field uF field1104 LKe;
+L71:    getfield Field uF field1107 Ljava/util/List;
 L74:    invokeinterface InterfaceMethod java/util/List iterator ()Ljava/util/Iterator; 1
 L79:    dup
 L80:    astore_3
@@ -245,7 +245,7 @@ L89:    aload_3
 L90:    invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
 L95:    checkcast h
 L98:    aload_0
-L99:    invokeinterface InterfaceMethod h break (LgB;)V 2
+L99:    invokeinterface InterfaceMethod h method728 (LgB;)V 2
 L104:   aload_3
 L105:   goto L81
 L108:   nop
@@ -255,29 +255,29 @@ L111:   nop
 L112:   athrow
 L113:   return
 L114:   
-        .attribute StackMap b'\x00\x04\x00\x11\x00\x03\x07\x00\x02\x07\x00\xA6\x07\x00\x81\x00\x00\x00\x51\x00\x04\x07\x00\x02\x07\x00\xA6\x07\x00\x81\x07\x00\x81\x00\x01\x07\x00\x81\x00\x6C\x00\x00\x00\x01\x07\x00\x90\x00\x71\x00\x03\x07\x00\x02\x07\x00\xA6\x07\x00\x81\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x11\x00\x03\x07\x00\x02\x07\x00\xB2\x07\x00\x87\x00\x00\x00\x51\x00\x04\x07\x00\x02\x07\x00\xB2\x07\x00\x87\x07\x00\x87\x00\x01\x07\x00\x87\x00\x6C\x00\x00\x00\x01\x07\x00\x97\x00\x71\x00\x03\x07\x00\x02\x07\x00\xB2\x07\x00\x87\x00\x00'
     .end code
 .end method
 
-.method public break : (LFE;)V
+.method public method22 : (LFE;)V
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     invokespecial Method qc break (LFE;)V
+L3:     invokespecial Method qc method22 (LFE;)V
 L6:     getfield Field uF this LDF;
 L9:     aload_1
-L10:    invokevirtual Method DF break (LFE;)V
+L10:    invokevirtual Method DF method22 (LFE;)V
 L13:    return
 L14:    
     .end code
 .end method
 
-.method public break : (Lqd;)V
+.method public method142 : (Lqd;)V
     .code stack 5 locals 5
 L0:     aload_0
-L1:     getfield Field uF "enum" Lqc;
-L4:     getfield Field qc do Ljava/util/ArrayList;
+L1:     getfield Field uF field1106 Lqc;
+L4:     getfield Field qc field65 Ljava/util/ArrayList;
 L7:     invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
 L10:    astore_2
 L11:    aload_2
@@ -291,14 +291,14 @@ L30:    astore_3
 L31:    checkcast Ke
 L34:    dup
 L35:    astore 4
-L37:    invokevirtual Method Ke break ()Lqd;
+L37:    invokevirtual Method Ke method1 ()Lqd;
 L40:    aload_1
 L41:    if_acmpne L11
 L44:    aload_0
 L45:    aload 4
 L47:    aload_1
-L48:    invokevirtual Method Ke break (Lqd;)V
-L51:    invokevirtual Method uF const ()V
+L48:    invokevirtual Method Ke method142 (Lqd;)V
+L51:    invokevirtual Method uF method52 ()V
 L54:    return
 L55:    nop
 L56:    nop
@@ -315,11 +315,11 @@ L70:    astore_2
 L71:    aload_0
 L72:    dup
 L73:    dup_x1
-L74:    getfield Field uF "enum" Lqc;
+L74:    getfield Field uF field1106 Lqc;
 L77:    aload_2
-L78:    getstatic Field dg "enum" Ldg;
-L81:    invokevirtual Method qc break (LgB;Ljava/lang/Object;)V
-L84:    invokevirtual Method uF const ()V
+L78:    getstatic Field dg field337 Ldg;
+L81:    invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
+L84:    invokevirtual Method uF method52 ()V
 L87:    astore_3
 L88:    new DE
 L91:    aload_2
@@ -330,10 +330,10 @@ L95:    dup
 L96:    aload_0
 L97:    aload_3
 L98:    invokespecial Method DE <init> (LuF;LgB;)V
-L101:   invokevirtual Method Ke for (Lh;)V
+L101:   invokevirtual Method Ke method130 (Lh;)V
 L104:   return
 L105:   
-        .attribute StackMap b'\x00\x03\x00\x0B\x00\x03\x07\x00\x02\x07\x00\xA6\x07\x00\x81\x00\x00\x00\x37\x00\x00\x00\x01\x07\x00\x90\x00\x3C\x00\x03\x07\x00\x02\x07\x00\xA6\x07\x00\x81\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x0B\x00\x03\x07\x00\x02\x07\x00\xB2\x07\x00\x87\x00\x00\x00\x37\x00\x00\x00\x01\x07\x00\x97\x00\x3C\x00\x03\x07\x00\x02\x07\x00\xB2\x07\x00\x87\x00\x00'
     .end code
 .end method
 
@@ -342,25 +342,25 @@ L105:
 L0:     aload_0
 L1:     dup
 L2:     invokespecial Method qc true ()V
-L5:     getfield Field uF "enum" Lqc;
-L8:     getfield Field qc do Ljava/util/ArrayList;
+L5:     getfield Field uF field1106 Lqc;
+L8:     getfield Field qc field65 Ljava/util/ArrayList;
 L11:    invokevirtual Method java/util/ArrayList size ()I
 L14:    ifle L61
 L17:    aload_0
-L18:    getfield Field uF char LKe;
+L18:    getfield Field uF field1104 LKe;
 L21:    ifnull L37
 L24:    aload_0
-L25:    invokevirtual Method uF void ()LbC;
+L25:    invokevirtual Method uF method51 ()LbC;
 L28:    aload_0
-L29:    getfield Field uF char LKe;
+L29:    getfield Field uF field1104 LKe;
 L32:    invokevirtual Method bC try (LgB;)V
 L35:    return
 L36:    athrow
 L37:    aload_0
-L38:    invokevirtual Method uF void ()LbC;
+L38:    invokevirtual Method uF method51 ()LbC;
 L41:    aload_0
-L42:    getfield Field uF "enum" Lqc;
-L45:    getfield Field qc do Ljava/util/ArrayList;
+L42:    getfield Field uF field1106 Lqc;
+L45:    getfield Field qc field65 Ljava/util/ArrayList;
 L48:    iconst_0
 L49:    iconst_1
 L50:    dup
@@ -370,14 +370,14 @@ L55:    checkcast gB
 L58:    invokevirtual Method bC try (LgB;)V
 L61:    return
 L62:    
-        .attribute StackMap b'\x00\x03\x00\x24\x00\x00\x00\x01\x07\x00\x90\x00\x25\x00\x01\x07\x00\x02\x00\x00\x00\x3D\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x24\x00\x00\x00\x01\x07\x00\x97\x00\x25\x00\x01\x07\x00\x02\x00\x00\x00\x3D\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public do : (Lh;)V
+.method public method128 : (Lh;)V
     .code stack 2 locals 2
 L0:     aload_0
-L1:     getfield Field uF do Ljava/util/List;
+L1:     getfield Field uF field1107 Ljava/util/List;
 L4:     aload_1
 L5:     invokeinterface InterfaceMethod java/util/List remove (Ljava/lang/Object;)Z 2
 L10:    pop
@@ -386,26 +386,26 @@ L12:
     .end code
 .end method
 
-.method public catch : (FF)V
+.method public method37 : (FF)V
     .code stack 4 locals 3
 L0:     aload_0
 L1:     dup
 L2:     fload_1
 L3:     fload_2
-L4:     invokespecial Method qc catch (FF)V
+L4:     invokespecial Method qc method37 (FF)V
 L7:     getfield Field uF this LDF;
 L10:    fload_1
 L11:    fload_2
-L12:    invokevirtual Method DF catch (FF)V
+L12:    invokevirtual Method DF method37 (FF)V
 L15:    return
 L16:    
     .end code
 .end method
 
-.method public for : (Lh;)V
+.method public method130 : (Lh;)V
     .code stack 2 locals 2
 L0:     aload_0
-L1:     getfield Field uF do Ljava/util/List;
+L1:     getfield Field uF field1107 Ljava/util/List;
 L4:     aload_1
 L5:     invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
 L10:    pop
@@ -421,8 +421,8 @@ L1:     dup
 L2:     iload_1
 L3:     fload_2
 L4:     invokespecial Method qc background (ZF)V
-L7:     getfield Field uF "enum" Lqc;
-L10:    getfield Field qc do Ljava/util/ArrayList;
+L7:     getfield Field uF field1106 Lqc;
+L10:    getfield Field qc field65 Ljava/util/ArrayList;
 L13:    invokevirtual Method java/util/ArrayList size ()I
 L16:    ifne L28
 L19:    aload_0
@@ -455,7 +455,7 @@ L18:    newarray float
 L20:    iconst_1
 L21:    dup
 L22:    pop2
-L23:    putstatic Field uF else [F
+L23:    putstatic Field uF field1105 [F
 L26:    iconst_0
 L27:    iconst_1
 L28:    dup
@@ -478,7 +478,7 @@ L53:    ddiv
 L54:    invokestatic Method java/lang/Math sin (D)D
 L57:    d2f
 L58:    fastore
-L59:    getstatic Field uF else [F
+L59:    getstatic Field uF field1105 [F
 L62:    ldc2_w 6.283185307179586e0
 L65:    iload_0
 L66:    dup_x2
@@ -496,7 +496,7 @@ L83:    goto L32
 L86:    athrow
 L87:    return
 L88:    
-        .attribute StackMap b'\x00\x03\x00\x20\x00\x01\x01\x00\x01\x01\x00\x56\x00\x00\x00\x01\x07\x00\x90\x00\x57\x00\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x20\x00\x01\x01\x00\x01\x01\x00\x56\x00\x00\x00\x01\x07\x00\x97\x00\x57\x00\x01\x01\x00\x00'
     .end code
 .end method
 .innerclasses

@@ -1,7 +1,7 @@
 .version 49 0
 .class final super org/lwjgl/input/D
 .super java/lang/Object
-.field static final do Ljava/lang/Object;
+.field static final field2554 Ljava/lang/Object;
 
 .method <init> : ()V
     .code stack 1 locals 1
@@ -12,7 +12,7 @@ L5:
     .end code
 .end method
 
-.method static break : ()Lorg/lwjgl/opengl/i;
+.method static method1911 : ()Lorg/lwjgl/opengl/i;
     .code stack 3 locals 1
         .catch java/security/PrivilegedActionException from L0 to L13 using L15
 L0:     new org/lwjgl/input/m
@@ -40,7 +40,7 @@ L0:     new org/lwjgl/input/M
 L3:     dup
 L4:     invokespecial Method org/lwjgl/input/M <init> ()V
 L7:     invokestatic Method java/security/AccessController doPrivileged (Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;
-L10:    putstatic Field org/lwjgl/input/D do Ljava/lang/Object;
+L10:    putstatic Field org/lwjgl/input/D field2554 Ljava/lang/Object;
 L13:    return
 L14:    athrow
 L15:    astore_0

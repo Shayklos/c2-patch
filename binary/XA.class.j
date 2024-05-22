@@ -1,8 +1,8 @@
 .version 49 0
 .class public final super XA
 .super java/lang/Object
-.field public "enum" I
-.field public do I
+.field public field2161 I
+.field public field2162 I
 
 .method public <init> : (II)V
     .code stack 5 locals 3
@@ -12,8 +12,8 @@ L2:     dup_x1
 L3:     iload_1
 L4:     aload_0
 L5:     invokespecial Method java/lang/Object <init> ()V
-L8:     putfield Field XA "enum" I
-L11:    putfield Field XA do I
+L8:     putfield Field XA field2161 I
+L11:    putfield Field XA field2162 I
 L14:    return
 L15:    
     .end code

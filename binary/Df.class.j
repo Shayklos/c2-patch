@@ -3,7 +3,7 @@
 .super ff
 .field public static final this I = 3
 
-.method public for : ()I
+.method public method287 : ()I
     .code stack 3 locals 1
 L0:     iconst_1
 L1:     dup
@@ -40,7 +40,7 @@ L27:    iconst_4
 L28:    iconst_1
 L29:    dup
 L30:    pop2
-L31:    putfield Field Df else I
+L31:    putfield Field Df field879 I
 L34:    iconst_1
 L35:    dup
 L36:    pop2
@@ -49,7 +49,7 @@ L39:    iconst_1
 L40:    dup
 L41:    pop2
 L42:    invokestatic Method java/lang/Math max (II)I
-L45:    putfield Field Df do I
+L45:    putfield Field Df field881 I
 L48:    getfield Field Df this [[I
 L51:    iconst_0
 L52:    iconst_1
@@ -111,13 +111,13 @@ L117:   dup
 L118:   pop2
 L119:   iastore
 L120:   getfield Field Df this [[I
-L123:   invokestatic Method hE else ([[I)V
+L123:   invokestatic Method hE method1143 ([[I)V
 L126:   return
 L127:   
     .end code
 .end method
 
-.method public else : ()I
+.method public method183 : ()I
     .code stack 3 locals 1
 L0:     iconst_3
 L1:     iconst_1
@@ -128,14 +128,14 @@ L5:
     .end code
 .end method
 
-.method public const : ()V
+.method public method52 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public break : ()V
+.method public method74 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     

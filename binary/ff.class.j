@@ -2,14 +2,14 @@
 .class public super abstract ff
 .super java/lang/Object
 .implements D
-.field public null I
+.field public field877 I
 .field public this [[I
-.field public static final char I = 4
-.field public else I
-.field public "enum" I
-.field public do I
+.field public static final field878 I = 4
+.field public field879 I
+.field public field880 I
+.field public field881 I
 
-.method public for : ()I
+.method public method287 : ()I
     .code stack 3 locals 1
 L0:     iconst_4
 L1:     iconst_1
@@ -20,10 +20,10 @@ L5:
     .end code
 .end method
 
-.method public catch : ()Lff;
+.method public method466 : ()Lff;
     .code stack 9 locals 4
 L0:     aload_0
-L1:     invokevirtual Method ff short ()Lff;
+L1:     invokevirtual Method ff method469 ()Lff;
 L4:     dup
 L5:     astore_1
 L6:     aload_0
@@ -34,14 +34,14 @@ L10:    dup_x1
 L11:    aload_1
 L12:    aload_0
 L13:    dup_x1
-L14:    getfield Field ff else I
-L17:    putfield Field ff else I
-L20:    getfield Field ff do I
-L23:    putfield Field ff do I
-L26:    getfield Field ff "enum" I
-L29:    putfield Field ff "enum" I
-L32:    getfield Field ff null I
-L35:    putfield Field ff null I
+L14:    getfield Field ff field879 I
+L17:    putfield Field ff field879 I
+L20:    getfield Field ff field881 I
+L23:    putfield Field ff field881 I
+L26:    getfield Field ff field880 I
+L29:    putfield Field ff field880 I
+L32:    getfield Field ff field877 I
+L35:    putfield Field ff field877 I
 L38:    getfield Field ff this [[I
 L41:    arraylength
 L42:    istore_2
@@ -85,7 +85,7 @@ L87:
 .method public abstract toString : ()Ljava/lang/String;
 .end method
 
-.method public static else : (I)Lff;
+.method public static method467 : (I)Lff;
     .code stack 2 locals 1
 L0:     iload_0
 L1:     tableswitch 0
@@ -139,17 +139,17 @@ L117:
     .end code
 .end method
 
-.method public static break : (LMd;)Lff;
+.method public static method468 : (LMd;)Lff;
     .code stack 3 locals 4
 L0:     aload_0
 L1:     invokevirtual Method Md this ()B
-L4:     invokestatic Method ff else (I)Lff;
+L4:     invokestatic Method ff method467 (I)Lff;
 L7:     dup
 L8:     astore_1
 L9:     aload_0
 L10:    dup_x1
-L11:    invokevirtual Method Md long ()I
-L14:    invokevirtual Method ff break (I)V
+L11:    invokevirtual Method Md method886 ()I
+L14:    invokevirtual Method ff method14 (I)V
 L17:    invokevirtual Method Md this ()B
 L20:    istore_2
 L21:    iconst_0
@@ -162,14 +162,14 @@ L27:    iload_2
 L28:    if_icmpge L43
 L31:    iinc 3 1
 L34:    aload_1
-L35:    invokevirtual Method ff break ()V
+L35:    invokevirtual Method ff method74 ()V
 L38:    iload_3
 L39:    goto L27
 L42:    athrow
 L43:    aload_1
 L44:    areturn
 L45:    
-        .attribute StackMap b'\x00\x03\x00\x1B\x00\x04\x07\x00\x4C\x07\x00\x02\x01\x01\x00\x01\x01\x00\x2A\x00\x00\x00\x01\x07\x00\x28\x00\x2B\x00\x04\x07\x00\x4C\x07\x00\x02\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x1B\x00\x04\x07\x00\x4D\x07\x00\x02\x01\x01\x00\x01\x01\x00\x2A\x00\x00\x00\x01\x07\x00\x28\x00\x2B\x00\x04\x07\x00\x4D\x07\x00\x02\x01\x01\x00\x00'
     .end code
     .exceptions java/io/IOException
 .end method
@@ -177,25 +177,25 @@ L45:
 .method public bridge synthetic clone : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method ff catch ()Lff;
+L1:     invokevirtual Method ff method466 ()Lff;
 L4:     areturn
 L5:     
     .end code
     .exceptions java/lang/CloneNotSupportedException
 .end method
 
-.method public float : ()V
+.method public method69 : ()V
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     invokevirtual Method ff break ()V
-L5:     invokevirtual Method ff break ()V
+L2:     invokevirtual Method ff method74 ()V
+L5:     invokevirtual Method ff method74 ()V
 L8:     return
 L9:     
     .end code
 .end method
 
-.method public short : ()Lff;
+.method public method469 : ()Lff;
     .code stack 2 locals 2
 L0:     aconst_null
 L1:     astore_1
@@ -251,11 +251,11 @@ L106:   astore_1
 L107:   aload_1
 L108:   areturn
 L109:   
-        .attribute StackMap b'\x00\x07\x00\x11\x00\x02\x07\x00\x02\x07\x00\x2D\x00\x00\x00\x20\x00\x02\x07\x00\x02\x07\x00\x02\x00\x00\x00\x2F\x00\x02\x07\x00\x02\x07\x00\x02\x00\x00\x00\x3E\x00\x02\x07\x00\x02\x07\x00\x02\x00\x00\x00\x4D\x00\x02\x07\x00\x02\x07\x00\x02\x00\x00\x00\x5C\x00\x02\x07\x00\x02\x07\x00\x02\x00\x00\x00\x6B\x00\x02\x07\x00\x02\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x11\x00\x02\x07\x00\x02\x07\x00\x2E\x00\x00\x00\x20\x00\x02\x07\x00\x02\x07\x00\x02\x00\x00\x00\x2F\x00\x02\x07\x00\x02\x07\x00\x02\x00\x00\x00\x3E\x00\x02\x07\x00\x02\x07\x00\x02\x00\x00\x00\x4D\x00\x02\x07\x00\x02\x07\x00\x02\x00\x00\x00\x5C\x00\x02\x07\x00\x02\x07\x00\x02\x00\x00\x00\x6B\x00\x02\x07\x00\x02\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public break : (LAC;)V
+.method public method384 : (LAC;)V
     .code stack 6 locals 2
 L0:     aload_0
 L1:     aload_1
@@ -263,19 +263,19 @@ L2:     dup_x1
 L3:     aload_1
 L4:     aload_0
 L5:     dup_x1
-L6:     invokevirtual Method ff else ()I
-L9:     invokevirtual Method AC const (I)V
-L12:    getfield Field ff "enum" I
-L15:    invokevirtual Method AC break (I)V
-L18:    getfield Field ff null I
-L21:    invokevirtual Method AC const (I)V
+L6:     invokevirtual Method ff method183 ()I
+L9:     invokevirtual Method AC method675 (I)V
+L12:    getfield Field ff field880 I
+L15:    invokevirtual Method AC method691 (I)V
+L18:    getfield Field ff field877 I
+L21:    invokevirtual Method AC method675 (I)V
 L24:    return
 L25:    
     .end code
     .exceptions java/io/IOException
 .end method
 
-.method public const : ([[I)Z
+.method public method470 : ([[I)Z
     .code stack 5 locals 2
 L0:     aload_0
 L1:     iconst_0
@@ -287,7 +287,7 @@ L6:     dup
 L7:     dup
 L8:     pop2
 L9:     aload_1
-L10:    invokevirtual Method ff break (II[[I)Z
+L10:    invokevirtual Method ff method474 (II[[I)Z
 L13:    ifne L22
 L16:    iconst_0
 L17:    iconst_1
@@ -305,7 +305,7 @@ L28:    dup
 L29:    dup
 L30:    pop2
 L31:    aload_1
-L32:    invokevirtual Method ff break (II[[I)Z
+L32:    invokevirtual Method ff method474 (II[[I)Z
 L35:    ifeq L43
 L38:    aload_0
 L39:    goto L23
@@ -316,24 +316,24 @@ L45:    dup
 L46:    pop2
 L47:    ireturn
 L48:    
-        .attribute StackMap b'\x00\x05\x00\x15\x00\x00\x00\x01\x07\x00\x28\x00\x16\x00\x02\x07\x00\x02\x07\x00\x6E\x00\x00\x00\x17\x00\x02\x07\x00\x02\x07\x00\x6E\x00\x01\x07\x00\x02\x00\x2A\x00\x00\x00\x01\x07\x00\x28\x00\x2B\x00\x02\x07\x00\x02\x07\x00\x6E\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x15\x00\x00\x00\x01\x07\x00\x28\x00\x16\x00\x02\x07\x00\x02\x07\x00\x77\x00\x00\x00\x17\x00\x02\x07\x00\x02\x07\x00\x77\x00\x01\x07\x00\x02\x00\x2A\x00\x00\x00\x01\x07\x00\x28\x00\x2B\x00\x02\x07\x00\x02\x07\x00\x77\x00\x00'
     .end code
 .end method
 
-.method public const : ()V
+.method public method52 : ()V
     .code stack 3 locals 1
 L0:     aload_0
 L1:     dup
 L2:     dup_x1
-L3:     invokevirtual Method ff break ()V
-L6:     invokevirtual Method ff break ()V
-L9:     invokevirtual Method ff break ()V
+L3:     invokevirtual Method ff method74 ()V
+L6:     invokevirtual Method ff method74 ()V
+L9:     invokevirtual Method ff method74 ()V
 L12:    return
 L13:    
     .end code
 .end method
 
-.method public else : ([[I)V
+.method public method471 : ([[I)V
     .code stack 7 locals 4
 L0:     iconst_0
 L1:     iconst_1
@@ -364,12 +364,12 @@ L35:    iaload
 L36:    ifeq L315
 L39:    iload_3
 L40:    aload_0
-L41:    getfield Field ff else I
+L41:    getfield Field ff field879 I
 L44:    iadd
 L45:    iflt L59
 L48:    iload_3
 L49:    aload_0
-L50:    getfield Field ff else I
+L50:    getfield Field ff field879 I
 L53:    iadd
 L54:    aload_1
 L55:    arraylength
@@ -391,12 +391,12 @@ L86:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/String
 L89:    ldc " "
 L91:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L94:    aload_0
-L95:    getfield Field ff else I
+L95:    getfield Field ff field879 I
 L98:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L101:   ldc " "
 L103:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L106:   aload_0
-L107:   getfield Field ff do I
+L107:   getfield Field ff field881 I
 L110:   invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L113:   ldc " "
 L115:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -418,19 +418,19 @@ L141:   invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/String
 L144:   ldc " "
 L146:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L149:   aload_0
-L150:   invokevirtual Method ff else ()I
+L150:   invokevirtual Method ff method183 ()I
 L153:   invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L156:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L159:   invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/String;)V
 L162:   athrow
 L163:   iload_2
 L164:   aload_0
-L165:   getfield Field ff do I
+L165:   getfield Field ff field881 I
 L168:   iadd
 L169:   iflt L188
 L172:   iload_2
 L173:   aload_0
-L174:   getfield Field ff do I
+L174:   getfield Field ff field881 I
 L177:   iadd
 L178:   aload_1
 L179:   iconst_0
@@ -457,12 +457,12 @@ L215:   invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/String
 L218:   ldc " "
 L220:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L223:   aload_0
-L224:   getfield Field ff else I
+L224:   getfield Field ff field879 I
 L227:   invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L230:   ldc " "
 L232:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L235:   aload_0
-L236:   getfield Field ff do I
+L236:   getfield Field ff field881 I
 L239:   invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L242:   ldc " "
 L244:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -484,7 +484,7 @@ L270:   invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/String
 L273:   ldc " "
 L275:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L278:   aload_0
-L279:   invokevirtual Method ff else ()I
+L279:   invokevirtual Method ff method183 ()I
 L282:   invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L285:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L288:   invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/String;)V
@@ -492,12 +492,12 @@ L291:   athrow
 L292:   aload_1
 L293:   iload_3
 L294:   aload_0
-L295:   getfield Field ff else I
+L295:   getfield Field ff field879 I
 L298:   iadd
 L299:   aaload
 L300:   iload_2
 L301:   aload_0
-L302:   getfield Field ff do I
+L302:   getfield Field ff field881 I
 L305:   iadd
 L306:   aload_0
 L307:   getfield Field ff this [[I
@@ -516,19 +516,19 @@ L327:   goto L6
 L330:   athrow
 L331:   return
 L332:   
-        .attribute StackMap b'\x00\x0B\x00\x06\x00\x03\x07\x00\x02\x07\x00\x6E\x01\x00\x01\x01\x00\x14\x00\x04\x07\x00\x02\x07\x00\x6E\x01\x01\x00\x01\x01\x00\x3B\x00\x04\x07\x00\x02\x07\x00\x6E\x01\x01\x00\x00\x00\xA3\x00\x04\x07\x00\x02\x07\x00\x6E\x01\x01\x00\x00\x00\xBC\x00\x04\x07\x00\x02\x07\x00\x6E\x01\x01\x00\x00\x01\x24\x00\x04\x07\x00\x02\x07\x00\x6E\x01\x01\x00\x00\x01\x3B\x00\x04\x07\x00\x02\x07\x00\x6E\x01\x01\x00\x00\x01\x42\x00\x00\x00\x01\x07\x00\x28\x01\x43\x00\x04\x07\x00\x02\x07\x00\x6E\x01\x01\x00\x00\x01\x4A\x00\x00\x00\x01\x07\x00\x28\x01\x4B\x00\x03\x07\x00\x02\x07\x00\x6E\x01\x00\x00'
+        .attribute StackMap b'\x00\x0B\x00\x06\x00\x03\x07\x00\x02\x07\x00\x77\x01\x00\x01\x01\x00\x14\x00\x04\x07\x00\x02\x07\x00\x77\x01\x01\x00\x01\x01\x00\x3B\x00\x04\x07\x00\x02\x07\x00\x77\x01\x01\x00\x00\x00\xA3\x00\x04\x07\x00\x02\x07\x00\x77\x01\x01\x00\x00\x00\xBC\x00\x04\x07\x00\x02\x07\x00\x77\x01\x01\x00\x00\x01\x24\x00\x04\x07\x00\x02\x07\x00\x77\x01\x01\x00\x00\x01\x3B\x00\x04\x07\x00\x02\x07\x00\x77\x01\x01\x00\x00\x01\x42\x00\x00\x00\x01\x07\x00\x28\x01\x43\x00\x04\x07\x00\x02\x07\x00\x77\x01\x01\x00\x00\x01\x4A\x00\x00\x00\x01\x07\x00\x28\x01\x4B\x00\x03\x07\x00\x02\x07\x00\x77\x01\x00\x00'
     .end code
 .end method
 
-.method public abstract else : ()I
+.method public abstract method183 : ()I
 .end method
 
-.method public break : (I)V
+.method public method14 : (I)V
     .code stack 3 locals 4
 L0:     iconst_0
 L1:     aload_0
 L2:     iload_1
-L3:     putfield Field ff "enum" I
+L3:     putfield Field ff field880 I
 L6:     iconst_1
 L7:     dup
 L8:     pop2
@@ -572,14 +572,14 @@ L65:    goto L11
 L68:    athrow
 L69:    aload_0
 L70:    getfield Field ff this [[I
-L73:    invokestatic Method hE else ([[I)V
+L73:    invokestatic Method hE method1143 ([[I)V
 L76:    return
 L77:    
         .attribute StackMap b'\x00\x07\x00\x0B\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x00\x19\x00\x04\x07\x00\x02\x01\x01\x01\x00\x01\x01\x00\x35\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00\x00\x3C\x00\x00\x00\x01\x07\x00\x28\x00\x3D\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00\x00\x44\x00\x00\x00\x01\x07\x00\x28\x00\x45\x00\x03\x07\x00\x02\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public break : ([[I)Z
+.method public method472 : ([[I)Z
     .code stack 5 locals 5
 L0:     aload_0
 L1:     getfield Field ff this [[I
@@ -610,14 +610,14 @@ L35:    iaload
 L36:    ifeq L102
 L39:    iload 4
 L41:    aload_0
-L42:    getfield Field ff else I
+L42:    getfield Field ff field879 I
 L45:    iadd
 L46:    aload_1
 L47:    arraylength
 L48:    if_icmpge L96
 L51:    iload_3
 L52:    aload_0
-L53:    getfield Field ff do I
+L53:    getfield Field ff field881 I
 L56:    iadd
 L57:    aload_1
 L58:    iconst_0
@@ -629,18 +629,18 @@ L63:    arraylength
 L64:    if_icmpge L96
 L67:    iload 4
 L69:    aload_0
-L70:    getfield Field ff else I
+L70:    getfield Field ff field879 I
 L73:    iadd
 L74:    iflt L96
 L77:    aload_1
 L78:    iload 4
 L80:    aload_0
-L81:    getfield Field ff else I
+L81:    getfield Field ff field879 I
 L84:    iadd
 L85:    aaload
 L86:    iload_3
 L87:    aload_0
-L88:    getfield Field ff do I
+L88:    getfield Field ff field881 I
 L91:    iadd
 L92:    iaload
 L93:    ifeq L102
@@ -663,11 +663,11 @@ L120:   dup
 L121:   pop2
 L122:   ireturn
 L123:   
-        .attribute StackMap b'\x00\x08\x00\x0C\x00\x04\x07\x00\x02\x07\x00\x6E\x01\x01\x00\x01\x01\x00\x17\x00\x05\x07\x00\x02\x07\x00\x6E\x01\x01\x01\x00\x01\x01\x00\x60\x00\x05\x07\x00\x02\x07\x00\x6E\x01\x01\x01\x00\x00\x00\x65\x00\x00\x00\x01\x07\x00\x28\x00\x66\x00\x05\x07\x00\x02\x07\x00\x6E\x01\x01\x01\x00\x00\x00\x6E\x00\x00\x00\x01\x07\x00\x28\x00\x6F\x00\x05\x07\x00\x02\x07\x00\x6E\x01\x01\x01\x00\x00\x00\x76\x00\x04\x07\x00\x02\x07\x00\x6E\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x08\x00\x0C\x00\x04\x07\x00\x02\x07\x00\x77\x01\x01\x00\x01\x01\x00\x17\x00\x05\x07\x00\x02\x07\x00\x77\x01\x01\x01\x00\x01\x01\x00\x60\x00\x05\x07\x00\x02\x07\x00\x77\x01\x01\x01\x00\x00\x00\x65\x00\x00\x00\x01\x07\x00\x28\x00\x66\x00\x05\x07\x00\x02\x07\x00\x77\x01\x01\x01\x00\x00\x00\x6E\x00\x00\x00\x01\x07\x00\x28\x00\x6F\x00\x05\x07\x00\x02\x07\x00\x77\x01\x01\x01\x00\x00\x00\x76\x00\x04\x07\x00\x02\x07\x00\x77\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public break : ()V
+.method public method74 : ()V
     .code stack 7 locals 5
 L0:     aload_0
 L1:     getfield Field ff this [[I
@@ -680,7 +680,7 @@ L12:    astore_2
 L13:    iconst_0
 L14:    aload_0
 L15:    dup
-L16:    getfield Field ff null I
+L16:    getfield Field ff field877 I
 L19:    iconst_1
 L20:    dup
 L21:    dup
@@ -691,7 +691,7 @@ L25:    iconst_1
 L26:    dup
 L27:    pop2
 L28:    iand
-L29:    putfield Field ff null I
+L29:    putfield Field ff field877 I
 L32:    iconst_1
 L33:    dup
 L34:    pop2
@@ -724,7 +724,7 @@ L68:    isub
 L69:    iload 4
 L71:    isub
 L72:    iaload
-L73:    invokestatic Method hE break (I)I
+L73:    invokestatic Method hE method1145 (I)I
 L76:    iinc 4 1
 L79:    iastore
 L80:    iload 4
@@ -739,10 +739,10 @@ L95:    dup
 L96:    aload_2
 L97:    putfield Field ff this [[I
 L100:   getfield Field ff this [[I
-L103:   invokestatic Method hE else ([[I)V
+L103:   invokestatic Method hE method1143 ([[I)V
 L106:   return
 L107:   
-        .attribute StackMap b'\x00\x06\x00\x25\x00\x04\x07\x00\x02\x01\x07\x00\x6E\x01\x00\x01\x01\x00\x30\x00\x05\x07\x00\x02\x01\x07\x00\x6E\x01\x01\x00\x01\x01\x00\x55\x00\x00\x00\x01\x07\x00\x28\x00\x56\x00\x05\x07\x00\x02\x01\x07\x00\x6E\x01\x01\x00\x00\x00\x5D\x00\x00\x00\x01\x07\x00\x28\x00\x5E\x00\x04\x07\x00\x02\x01\x07\x00\x6E\x01\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x25\x00\x04\x07\x00\x02\x01\x07\x00\x77\x01\x00\x01\x01\x00\x30\x00\x05\x07\x00\x02\x01\x07\x00\x77\x01\x01\x00\x01\x01\x00\x55\x00\x00\x00\x01\x07\x00\x28\x00\x56\x00\x05\x07\x00\x02\x01\x07\x00\x77\x01\x01\x00\x00\x00\x5D\x00\x00\x00\x01\x07\x00\x28\x00\x5E\x00\x04\x07\x00\x02\x01\x07\x00\x77\x01\x00\x00'
     .end code
 .end method
 
@@ -755,12 +755,12 @@ L5:
     .end code
 .end method
 
-.method public break : (Lff;)Z
+.method public method473 : (Lff;)Z
     .code stack 3 locals 2
 L0:     aload_1
-L1:     getfield Field ff else I
+L1:     getfield Field ff field879 I
 L4:     aload_0
-L5:     getfield Field ff else I
+L5:     getfield Field ff field879 I
 L8:     if_icmpeq L17
 L11:    iconst_0
 L12:    iconst_1
@@ -769,9 +769,9 @@ L14:    pop2
 L15:    ireturn
 L16:    athrow
 L17:    aload_1
-L18:    getfield Field ff do I
+L18:    getfield Field ff field881 I
 L21:    aload_0
-L22:    getfield Field ff do I
+L22:    getfield Field ff field881 I
 L25:    if_icmpeq L34
 L28:    iconst_0
 L29:    iconst_1
@@ -780,9 +780,9 @@ L31:    pop2
 L32:    ireturn
 L33:    athrow
 L34:    aload_1
-L35:    getfield Field ff null I
+L35:    getfield Field ff field877 I
 L38:    aload_0
-L39:    getfield Field ff null I
+L39:    getfield Field ff field877 I
 L42:    if_icmpeq L50
 L45:    iconst_0
 L46:    iconst_1
@@ -790,9 +790,9 @@ L47:    dup
 L48:    pop2
 L49:    ireturn
 L50:    aload_1
-L51:    getfield Field ff "enum" I
+L51:    getfield Field ff field880 I
 L54:    aload_0
-L55:    getfield Field ff "enum" I
+L55:    getfield Field ff field880 I
 L58:    if_icmpeq L66
 L61:    iconst_0
 L62:    iconst_1
@@ -819,37 +819,37 @@ L87:
     .end code
 .end method
 
-.method public break : (II[[I)Z
+.method public method474 : (II[[I)Z
     .code stack 6 locals 4
 L0:     aload_3
 L1:     aload_0
 L2:     dup
 L3:     dup_x2
 L4:     dup
-L5:     getfield Field ff else I
+L5:     getfield Field ff field879 I
 L8:     iload_1
 L9:     iadd
-L10:    putfield Field ff else I
+L10:    putfield Field ff field879 I
 L13:    dup
-L14:    getfield Field ff do I
+L14:    getfield Field ff field881 I
 L17:    iload_2
 L18:    iadd
-L19:    putfield Field ff do I
-L22:    invokevirtual Method ff break ([[I)Z
+L19:    putfield Field ff field881 I
+L22:    invokevirtual Method ff method472 ([[I)Z
 L25:    ifeq L54
 L28:    iconst_0
 L29:    aload_0
 L30:    dup
 L31:    dup
-L32:    getfield Field ff else I
+L32:    getfield Field ff field879 I
 L35:    iload_1
 L36:    isub
-L37:    putfield Field ff else I
+L37:    putfield Field ff field879 I
 L40:    dup
-L41:    getfield Field ff do I
+L41:    getfield Field ff field881 I
 L44:    iload_2
 L45:    isub
-L46:    putfield Field ff do I
+L46:    putfield Field ff field881 I
 L49:    iconst_1
 L50:    dup
 L51:    pop2
@@ -861,7 +861,7 @@ L56:    dup
 L57:    pop2
 L58:    ireturn
 L59:    
-        .attribute StackMap b'\x00\x02\x00\x35\x00\x00\x00\x01\x07\x00\x28\x00\x36\x00\x04\x07\x00\x02\x01\x01\x07\x00\x6E\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x35\x00\x00\x00\x01\x07\x00\x28\x00\x36\x00\x04\x07\x00\x02\x01\x01\x07\x00\x77\x00\x00'
     .end code
 .end method
 .end class

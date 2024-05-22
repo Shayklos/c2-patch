@@ -1,20 +1,20 @@
 .version 49 0
 .class public final super enum EF
 .super java/lang/Enum
-.field private static final synthetic void [LEF;
+.field private static final synthetic field428 [LEF;
 .field public static final enum try LEF;
-.field public static final enum const LEF;
+.field public static final enum field429 LEF;
 .field public static final enum new LEF;
-.field public static final enum null LEF;
+.field public static final enum field430 LEF;
 .field public static final enum this LEF;
-.field public static final enum char LEF;
-.field public static final enum else LEF;
-.field public static final enum "enum" LEF;
-.field public static final enum do LEF;
+.field public static final enum field431 LEF;
+.field public static final enum field432 LEF;
+.field public static final enum field433 LEF;
+.field public static final enum field434 LEF;
 
 .method public static values : ()[LEF;
     .code stack 1 locals 0
-L0:     getstatic Field EF void [LEF;
+L0:     getstatic Field EF field428 [LEF;
 L3:     invokevirtual Method [LEF; clone ()Ljava/lang/Object;
 L6:     checkcast [LEF;
 L9:     areturn
@@ -72,7 +72,7 @@ L39:    iconst_1
 L40:    dup
 L41:    pop2
 L42:    invokespecial Method EF <init> (Ljava/lang/String;I)V
-L45:    putstatic Field EF else LEF;
+L45:    putstatic Field EF field432 LEF;
 L48:    new EF
 L51:    dup
 L52:    ldc "PENDING_LINES"
@@ -81,7 +81,7 @@ L55:    iconst_1
 L56:    dup
 L57:    pop2
 L58:    invokespecial Method EF <init> (Ljava/lang/String;I)V
-L61:    putstatic Field EF null LEF;
+L61:    putstatic Field EF field430 LEF;
 L64:    new EF
 L67:    dup
 L68:    ldc "SPEED_O_METER"
@@ -90,7 +90,7 @@ L71:    iconst_1
 L72:    dup
 L73:    pop2
 L74:    invokespecial Method EF <init> (Ljava/lang/String;I)V
-L77:    putstatic Field EF char LEF;
+L77:    putstatic Field EF field431 LEF;
 L80:    new EF
 L83:    dup
 L84:    ldc "PLAY_DURATION"
@@ -108,7 +108,7 @@ L104:   iconst_1
 L105:   dup
 L106:   pop2
 L107:   invokespecial Method EF <init> (Ljava/lang/String;I)V
-L110:   putstatic Field EF const LEF;
+L110:   putstatic Field EF field429 LEF;
 L113:   new EF
 L116:   dup
 L117:   ldc "CLEARED_TETRII"
@@ -117,7 +117,7 @@ L121:   iconst_1
 L122:   dup
 L123:   pop2
 L124:   invokespecial Method EF <init> (Ljava/lang/String;I)V
-L127:   putstatic Field EF "enum" LEF;
+L127:   putstatic Field EF field433 LEF;
 L130:   new EF
 L133:   dup
 L134:   ldc "SENT_LINES"
@@ -126,7 +126,7 @@ L138:   iconst_1
 L139:   dup
 L140:   pop2
 L141:   invokespecial Method EF <init> (Ljava/lang/String;I)V
-L144:   putstatic Field EF do LEF;
+L144:   putstatic Field EF field434 LEF;
 L147:   bipush 9
 L149:   iconst_1
 L150:   dup
@@ -154,21 +154,21 @@ L177:   iconst_2
 L178:   iconst_1
 L179:   dup
 L180:   pop2
-L181:   getstatic Field EF else LEF;
+L181:   getstatic Field EF field432 LEF;
 L184:   aastore
 L185:   dup
 L186:   iconst_3
 L187:   iconst_1
 L188:   dup
 L189:   pop2
-L190:   getstatic Field EF null LEF;
+L190:   getstatic Field EF field430 LEF;
 L193:   aastore
 L194:   dup
 L195:   iconst_4
 L196:   iconst_1
 L197:   dup
 L198:   pop2
-L199:   getstatic Field EF char LEF;
+L199:   getstatic Field EF field431 LEF;
 L202:   aastore
 L203:   dup
 L204:   iconst_5
@@ -182,23 +182,23 @@ L213:   bipush 6
 L215:   iconst_1
 L216:   dup
 L217:   pop2
-L218:   getstatic Field EF const LEF;
+L218:   getstatic Field EF field429 LEF;
 L221:   aastore
 L222:   dup
 L223:   bipush 7
 L225:   iconst_1
 L226:   dup
 L227:   pop2
-L228:   getstatic Field EF "enum" LEF;
+L228:   getstatic Field EF field433 LEF;
 L231:   aastore
 L232:   dup
 L233:   bipush 8
 L235:   iconst_1
 L236:   dup
 L237:   pop2
-L238:   getstatic Field EF do LEF;
+L238:   getstatic Field EF field434 LEF;
 L241:   aastore
-L242:   putstatic Field EF void [LEF;
+L242:   putstatic Field EF field428 [LEF;
 L245:   return
 L246:   
     .end code

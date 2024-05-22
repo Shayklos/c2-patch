@@ -1,7 +1,7 @@
 .version 49 0
 .class public final super synthetic Db
 .super java/lang/Object
-.field public static final synthetic do [I
+.field public static final synthetic field1792 [I
 
 .method public static <clinit> : ()V
     .code stack 5 locals 1
@@ -11,10 +11,10 @@ L4:     newarray int
 L6:     iconst_1
 L7:     dup
 L8:     pop2
-L9:     putstatic Field Db do [I
+L9:     putstatic Field Db field1792 [I
         .catch java/lang/NoSuchFieldError from L12 to L26 using L30
-L12:    getstatic Field Db do [I
-L15:    getstatic Field fE char LfE;
+L12:    getstatic Field Db field1792 [I
+L15:    getstatic Field fE field418 LfE;
 L18:    invokevirtual Method fE ordinal ()I
 L21:    iconst_1
 L22:    dup
@@ -25,7 +25,7 @@ L26:    goto L31
 L29:    athrow
 L30:    astore_0
         .catch java/lang/NoSuchFieldError from L31 to L45 using L49
-L31:    getstatic Field Db do [I
+L31:    getstatic Field Db field1792 [I
 L34:    getstatic Field fE new LfE;
 L37:    invokevirtual Method fE ordinal ()I
 L40:    iconst_2
@@ -37,8 +37,8 @@ L45:    goto L50
 L48:    athrow
 L49:    astore_0
         .catch java/lang/NoSuchFieldError from L50 to L64 using L67
-L50:    getstatic Field Db do [I
-L53:    getstatic Field fE "enum" LfE;
+L50:    getstatic Field Db field1792 [I
+L53:    getstatic Field fE field420 LfE;
 L56:    invokevirtual Method fE ordinal ()I
 L59:    iconst_3
 L60:    iconst_1
@@ -48,7 +48,7 @@ L63:    iastore
 L64:    goto L68
 L67:    astore_0
         .catch java/lang/NoSuchFieldError from L68 to L82 using L85
-L68:    getstatic Field Db do [I
+L68:    getstatic Field Db field1792 [I
 L71:    getstatic Field fE try LfE;
 L74:    invokevirtual Method fE ordinal ()I
 L77:    iconst_4
@@ -59,8 +59,8 @@ L81:    iastore
 L82:    goto L86
 L85:    astore_0
         .catch java/lang/NoSuchFieldError from L86 to L100 using L103
-L86:    getstatic Field Db do [I
-L89:    getstatic Field fE else LfE;
+L86:    getstatic Field Db field1792 [I
+L89:    getstatic Field fE field419 LfE;
 L92:    invokevirtual Method fE ordinal ()I
 L95:    iconst_5
 L96:    iconst_1
@@ -70,8 +70,8 @@ L99:    iastore
 L100:   goto L104
 L103:   astore_0
         .catch java/lang/NoSuchFieldError from L104 to L119 using L122
-L104:   getstatic Field Db do [I
-L107:   getstatic Field fE do LfE;
+L104:   getstatic Field Db field1792 [I
+L107:   getstatic Field fE field421 LfE;
 L110:   invokevirtual Method fE ordinal ()I
 L113:   bipush 6
 L115:   iconst_1
@@ -81,7 +81,7 @@ L118:   iastore
 L119:   goto L123
 L122:   astore_0
         .catch java/lang/NoSuchFieldError from L123 to L138 using L139
-L123:   getstatic Field Db do [I
+L123:   getstatic Field Db field1792 [I
 L126:   getstatic Field fE this LfE;
 L129:   invokevirtual Method fE ordinal ()I
 L132:   bipush 7

@@ -1,8 +1,8 @@
 .version 49 0
 .class public final super Ee
 .super Uf
-.field public "enum" I
-.field public do LDF;
+.field public field1353 I
+.field public field1354 LDF;
 
 .method public <init> : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ)V
     .code stack 9 locals 7
@@ -16,13 +16,13 @@ L7:     aconst_null
 L8:     iload 5
 L10:    iload 6
 L12:    invokespecial Method Uf <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-L15:    putfield Field Ee "enum" I
+L15:    putfield Field Ee field1353 I
 L18:    return
 L19:    
     .end code
 .end method
 
-.method private const : (LRg;)I
+.method private method705 : (LRg;)I
     .code stack 3 locals 5
 L0:     iconst_m1
 L1:     iconst_1
@@ -30,7 +30,7 @@ L2:     dup
 L3:     pop2
 L4:     istore_2
 L5:     aload_1
-L6:     getfield Field Rg else Lqd;
+L6:     getfield Field Rg field239 Lqd;
 L9:     getfield Field qd new Ljava/util/LinkedHashMap;
 L12:    invokevirtual Method java/util/LinkedHashMap values ()Ljava/util/Collection;
 L15:    invokeinterface InterfaceMethod java/util/Collection iterator ()Ljava/util/Iterator; 1
@@ -46,12 +46,12 @@ L40:    astore 4
 L42:    aload_1
 L43:    if_acmpeq L21
 L46:    aload 4
-L48:    getfield Field Rg case LqE;
+L48:    getfield Field Rg field227 LqE;
 L51:    getstatic Field qE this LqE;
 L54:    if_acmpne L21
 L57:    iload_2
 L58:    aload 4
-L60:    getfield Field Rg byte I
+L60:    getfield Field Rg field228 I
 L63:    invokestatic Method java/lang/Math max (II)I
 L66:    istore_2
 L67:    goto L21
@@ -63,11 +63,11 @@ L73:
     .end code
 .end method
 
-.method public break : (LRg;)Z
+.method public method704 : (LRg;)Z
     .code stack 5 locals 4
 L0:     aload_0
 L1:     aload_1
-L2:     invokespecial Method Ee const (LRg;)I
+L2:     invokespecial Method Ee method705 (LRg;)I
 L5:     dup
 L6:     istore_1
 L7:     ifge L16
@@ -78,7 +78,7 @@ L13:    pop2
 L14:    ireturn
 L15:    athrow
 L16:    aload_0
-L17:    getfield Field Ee "enum" I
+L17:    getfield Field Ee field1353 I
 L20:    iload_1
 L21:    isub
 L22:    dup
@@ -90,10 +90,10 @@ L29:    dup
 L30:    pop2
 L31:    istore_1
 L32:    aload_0
-L33:    getfield Field Ee do LDF;
+L33:    getfield Field Ee field1354 LDF;
 L36:    ifnull L124
 L39:    aload_0
-L40:    getfield Field Ee do LDF;
+L40:    getfield Field Ee field1354 LDF;
 L43:    new java/lang/StringBuilder
 L46:    dup
 L47:    invokespecial Method java/lang/StringBuilder <init> ()V
@@ -102,7 +102,7 @@ L51:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/String
 L54:    ldc ""
 L56:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L59:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
-L62:    invokevirtual Method DF break (Ljava/lang/String;)V
+L62:    invokevirtual Method DF method12 (Ljava/lang/String;)V
 L65:    iload_1
 L66:    iconst_5
 L67:    iconst_1
@@ -115,11 +115,11 @@ L74:    fdiv
 L75:    fconst_0
 L76:    fconst_1
 L77:    dup_x2
-L78:    invokestatic Method OC else (FFF)F
+L78:    invokestatic Method OC method1001 (FFF)F
 L81:    fsub
 L82:    dup
 L83:    fstore_2
-L84:    invokestatic Method OC else ()D
+L84:    invokestatic Method OC method1015 ()D
 L87:    ldc2_w 8e0
 L90:    dmul
 L91:    invokestatic Method java/lang/Math cos (D)D
@@ -135,7 +135,7 @@ L103:   ifne L108
 L106:   fconst_0
 L107:   fstore_3
 L108:   aload_0
-L109:   getfield Field Ee do LDF;
+L109:   getfield Field Ee field1354 LDF;
 L112:   fconst_1
 L113:   fload_2
 L114:   fsub
@@ -145,7 +145,7 @@ L117:   fconst_1
 L118:   dup_x1
 L119:   fload_2
 L120:   fsub
-L121:   invokevirtual Method DF else (FFF)V
+L121:   invokevirtual Method DF method606 (FFF)V
 L124:   iload_1
 L125:   ifgt L134
 L128:   iconst_1
@@ -164,7 +164,7 @@ L139:
     .end code
 .end method
 
-.method public break : ()LgB;
+.method public method700 : ()LgB;
     .code stack 7 locals 2
 L0:     new qc
 L3:     dup
@@ -184,19 +184,19 @@ L24:    dup
 L25:    ldc "Remaining pieces to place"
 L27:    getstatic Field We try LWe;
 L30:    invokespecial Method DF <init> (Ljava/lang/String;LWe;)V
-L33:    getstatic Field VD do Ljava/lang/Object;
-L36:    invokevirtual Method qc break (LgB;Ljava/lang/Object;)V
+L33:    getstatic Field VD field150 Ljava/lang/Object;
+L36:    invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
 L39:    new DF
 L42:    aload_0
 L43:    dup
 L44:    pop2
 L45:    dup
 L46:    ldc " "
-L48:    getstatic Field We extends LWe;
+L48:    getstatic Field We field475 LWe;
 L51:    invokespecial Method DF <init> (Ljava/lang/String;LWe;)V
 L54:    dup_x1
-L55:    putfield Field Ee do LDF;
-L58:    invokevirtual Method qc float (LgB;)LgB;
+L55:    putfield Field Ee field1354 LDF;
+L58:    invokevirtual Method qc method36 (LgB;)LgB;
 L61:    pop
 L62:    aload_1
 L63:    areturn
@@ -204,27 +204,27 @@ L64:
     .end code
 .end method
 
-.method public else : (LRg;)V
+.method public method703 : (LRg;)V
     .code stack 6 locals 3
 L0:     aload_0
-L1:     getfield Field Ee do LDF;
+L1:     getfield Field Ee field1354 LDF;
 L4:     ifnull L92
 L7:     fconst_1
 L8:     aload_0
-L9:     getfield Field Ee do LDF;
+L9:     getfield Field Ee field1354 LDF;
 L12:    new java/lang/StringBuilder
 L15:    dup
 L16:    invokespecial Method java/lang/StringBuilder <init> ()V
 L19:    aload_0
-L20:    getfield Field Ee "enum" I
+L20:    getfield Field Ee field1353 I
 L23:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L26:    ldc ""
 L28:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L31:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
-L34:    invokevirtual Method DF break (Ljava/lang/String;)V
+L34:    invokevirtual Method DF method12 (Ljava/lang/String;)V
 L37:    aload_0
 L38:    dup_x1
-L39:    getfield Field Ee "enum" I
+L39:    getfield Field Ee field1353 I
 L42:    iconst_5
 L43:    iconst_1
 L44:    dup
@@ -235,11 +235,11 @@ L48:    ldc 1.5e1f
 L50:    fdiv
 L51:    fconst_0
 L52:    fconst_1
-L53:    invokestatic Method OC else (FFF)F
+L53:    invokestatic Method OC method1001 (FFF)F
 L56:    fsub
 L57:    dup
 L58:    fstore_1
-L59:    invokestatic Method OC else ()D
+L59:    invokestatic Method OC method1015 ()D
 L62:    ldc2_w 8e0
 L65:    dmul
 L66:    invokestatic Method java/lang/Math cos (D)D
@@ -250,7 +250,7 @@ L73:    fmul
 L74:    fsub
 L75:    fmul
 L76:    fstore_2
-L77:    getfield Field Ee do LDF;
+L77:    getfield Field Ee field1354 LDF;
 L80:    fconst_1
 L81:    fload_1
 L82:    fsub
@@ -260,7 +260,7 @@ L85:    fconst_1
 L86:    dup_x1
 L87:    fload_1
 L88:    fsub
-L89:    invokevirtual Method DF else (FFF)V
+L89:    invokevirtual Method DF method606 (FFF)V
 L92:    return
 L93:    
         .attribute StackMap b'\x00\x01\x00\x5C\x00\x01\x07\x00\x02\x00\x00'

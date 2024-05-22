@@ -2,37 +2,37 @@
 .class public final super org/lwjgl/l
 .super java/lang/Object
 
-.method public static break : (Ljava/nio/ShortBuffer;I)V
+.method public static method2031 : (Ljava/nio/ShortBuffer;I)V
     .code stack 3 locals 2
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L15
 L6:     aload_0
 L7:     dup
 L8:     iload_1
-L9:     invokestatic Method org/lwjgl/l break (Ljava/nio/Buffer;I)V
-L12:    invokestatic Method org/lwjgl/l break (Ljava/nio/ShortBuffer;)V
+L9:     invokestatic Method org/lwjgl/l method2047 (Ljava/nio/Buffer;I)V
+L12:    invokestatic Method org/lwjgl/l method2057 (Ljava/nio/ShortBuffer;)V
 L15:    return
 L16:    
-        .attribute StackMap b'\x00\x01\x00\x0F\x00\x02\x07\x00\x14\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x0F\x00\x02\x07\x00\x16\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/LongBuffer;I)V
+.method public static method2032 : (Ljava/nio/LongBuffer;I)V
     .code stack 3 locals 2
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L15
 L6:     aload_0
 L7:     dup
 L8:     iload_1
-L9:     invokestatic Method org/lwjgl/l break (Ljava/nio/Buffer;I)V
-L12:    invokestatic Method org/lwjgl/l break (Ljava/nio/LongBuffer;)V
+L9:     invokestatic Method org/lwjgl/l method2047 (Ljava/nio/Buffer;I)V
+L12:    invokestatic Method org/lwjgl/l method2058 (Ljava/nio/LongBuffer;)V
 L15:    return
 L16:    
-        .attribute StackMap b'\x00\x01\x00\x0F\x00\x02\x07\x00\x1A\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x0F\x00\x02\x07\x00\x1E\x01\x00\x00'
     .end code
 .end method
 
-.method public static else : (Ljava/nio/ByteBuffer;)V
+.method public static method2033 : (Ljava/nio/ByteBuffer;)V
     .code stack 5 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L32
@@ -53,11 +53,11 @@ L28:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L31:    athrow
 L32:    return
 L33:    
-        .attribute StackMap b'\x00\x01\x00\x20\x00\x01\x07\x00\x1E\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x20\x00\x01\x07\x00\x22\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/ByteBuffer;)V
+.method public static method2034 : (Ljava/nio/ByteBuffer;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L23
@@ -71,7 +71,7 @@ L19:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L22:    athrow
 L23:    return
 L24:    
-        .attribute StackMap b'\x00\x01\x00\x17\x00\x01\x07\x00\x1E\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x17\x00\x01\x07\x00\x22\x00\x00'
     .end code
 .end method
 
@@ -84,19 +84,19 @@ L5:
     .end code
 .end method
 
-.method public static else : (Lorg/lwjgl/h;)V
+.method public static method2035 : (Lorg/lwjgl/h;)V
     .code stack 5 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L34
 L6:     aload_0
 L7:     dup
-L8:     invokevirtual Method org/lwjgl/h byte ()I
+L8:     invokevirtual Method org/lwjgl/h method269 ()I
 L11:    iconst_1
 L12:    dup
 L13:    dup
 L14:    pop2
 L15:    isub
-L16:    invokevirtual Method org/lwjgl/h break (I)J
+L16:    invokevirtual Method org/lwjgl/h method294 (I)J
 L19:    lconst_0
 L20:    lcmp
 L21:    ifeq L34
@@ -107,11 +107,11 @@ L30:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L33:    athrow
 L34:    return
 L35:    
-        .attribute StackMap b'\x00\x01\x00\x22\x00\x01\x07\x00\x3A\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x22\x00\x01\x07\x00\x40\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/DoubleBuffer;)V
+.method public static method2036 : (Ljava/nio/DoubleBuffer;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L23
@@ -125,11 +125,11 @@ L19:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L22:    athrow
 L23:    return
 L24:    
-        .attribute StackMap b'\x00\x01\x00\x17\x00\x01\x07\x00\x43\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x17\x00\x01\x07\x00\x4B\x00\x00'
     .end code
 .end method
 
-.method private static const : (Ljava/nio/Buffer;I)V
+.method private static method2037 : (Ljava/nio/Buffer;I)V
     .code stack 5 locals 2
 L0:     new java/lang/IllegalArgumentException
 L3:     dup
@@ -163,7 +163,7 @@ L63:
     .end code
 .end method
 
-.method public static else : (Ljava/nio/ByteBuffer;I)V
+.method public static method2038 : (Ljava/nio/ByteBuffer;I)V
     .code stack 3 locals 4
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L58
@@ -198,18 +198,18 @@ L54:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L57:    athrow
 L58:    return
 L59:    
-        .attribute StackMap b'\x00\x05\x00\x11\x00\x04\x07\x00\x1E\x01\x01\x01\x00\x01\x01\x00\x23\x00\x04\x07\x00\x1E\x01\x01\x01\x00\x00\x00\x2A\x00\x00\x00\x01\x07\x00\x6E\x00\x2B\x00\x04\x07\x00\x1E\x01\x01\x01\x00\x00\x00\x3A\x00\x02\x07\x00\x1E\x01\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x11\x00\x04\x07\x00\x22\x01\x01\x01\x00\x01\x01\x00\x23\x00\x04\x07\x00\x22\x01\x01\x01\x00\x00\x00\x2A\x00\x00\x00\x01\x07\x00\x77\x00\x2B\x00\x04\x07\x00\x22\x01\x01\x01\x00\x00\x00\x3A\x00\x02\x07\x00\x22\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (Lorg/lwjgl/h;)V
+.method public static method2039 : (Lorg/lwjgl/h;)V
     .code stack 0 locals 1
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public static else : (Ljava/nio/Buffer;I)I
+.method public static method2040 : (Ljava/nio/Buffer;I)I
     .code stack 5 locals 3
 L0:     aload_0
 L1:     instanceof java/nio/ByteBuffer
@@ -217,7 +217,7 @@ L4:     ifeq L25
 L7:     aload_0
 L8:     checkcast java/nio/ByteBuffer
 L11:    iload_1
-L12:    invokestatic Method org/lwjgl/l break (Ljava/nio/ByteBuffer;I)V
+L12:    invokestatic Method org/lwjgl/l method2054 (Ljava/nio/ByteBuffer;I)V
 L15:    iconst_0
 L16:    iconst_1
 L17:    dup
@@ -232,7 +232,7 @@ L29:    ifeq L50
 L32:    aload_0
 L33:    checkcast java/nio/ShortBuffer
 L36:    iload_1
-L37:    invokestatic Method org/lwjgl/l break (Ljava/nio/ShortBuffer;I)V
+L37:    invokestatic Method org/lwjgl/l method2031 (Ljava/nio/ShortBuffer;I)V
 L40:    iconst_1
 L41:    dup
 L42:    dup
@@ -248,7 +248,7 @@ L55:    swap
 L56:    ifeq L75
 L59:    checkcast java/nio/IntBuffer
 L62:    iload_1
-L63:    invokestatic Method org/lwjgl/l break (Ljava/nio/IntBuffer;I)V
+L63:    invokestatic Method org/lwjgl/l method2041 (Ljava/nio/IntBuffer;I)V
 L66:    iconst_2
 L67:    iconst_1
 L68:    dup
@@ -262,7 +262,7 @@ L79:    swap
 L80:    ifeq L99
 L83:    checkcast java/nio/LongBuffer
 L86:    iload_1
-L87:    invokestatic Method org/lwjgl/l break (Ljava/nio/LongBuffer;I)V
+L87:    invokestatic Method org/lwjgl/l method2032 (Ljava/nio/LongBuffer;I)V
 L90:    iconst_4
 L91:    iconst_1
 L92:    dup
@@ -276,7 +276,7 @@ L103:   swap
 L104:   ifeq L123
 L107:   checkcast java/nio/FloatBuffer
 L110:   iload_1
-L111:   invokestatic Method org/lwjgl/l break (Ljava/nio/FloatBuffer;I)V
+L111:   invokestatic Method org/lwjgl/l method2044 (Ljava/nio/FloatBuffer;I)V
 L114:   iconst_2
 L115:   iconst_1
 L116:   dup
@@ -289,7 +289,7 @@ L126:   ifeq L146
 L129:   aload_0
 L130:   checkcast java/nio/DoubleBuffer
 L133:   iload_1
-L134:   invokestatic Method org/lwjgl/l break (Ljava/nio/DoubleBuffer;I)V
+L134:   invokestatic Method org/lwjgl/l method2056 (Ljava/nio/DoubleBuffer;I)V
 L137:   iconst_4
 L138:   iconst_1
 L139:   dup
@@ -317,26 +317,26 @@ L181:   iload_2
 L182:   ishl
 L183:   ireturn
 L184:   
-        .attribute StackMap b'\x00\x0A\x00\x18\x00\x00\x00\x01\x07\x00\x6E\x00\x19\x00\x02\x07\x00\x52\x01\x00\x00\x00\x31\x00\x00\x00\x01\x07\x00\x6E\x00\x32\x00\x02\x07\x00\x52\x01\x00\x00\x00\x4B\x00\x02\x07\x00\x52\x01\x00\x01\x07\x00\x52\x00\x63\x00\x02\x07\x00\x52\x01\x00\x01\x07\x00\x52\x00\x7B\x00\x02\x07\x00\x52\x01\x00\x01\x07\x00\x52\x00\x92\x00\x02\x07\x00\x52\x01\x00\x00\x00\xB1\x00\x00\x00\x01\x07\x00\x6E\x00\xB2\x00\x03\x07\x00\x52\x01\x01\x00\x01\x07\x00\x52'
+        .attribute StackMap b'\x00\x0A\x00\x18\x00\x00\x00\x01\x07\x00\x77\x00\x19\x00\x02\x07\x00\x5A\x01\x00\x00\x00\x31\x00\x00\x00\x01\x07\x00\x77\x00\x32\x00\x02\x07\x00\x5A\x01\x00\x00\x00\x4B\x00\x02\x07\x00\x5A\x01\x00\x01\x07\x00\x5A\x00\x63\x00\x02\x07\x00\x5A\x01\x00\x01\x07\x00\x5A\x00\x7B\x00\x02\x07\x00\x5A\x01\x00\x01\x07\x00\x5A\x00\x92\x00\x02\x07\x00\x5A\x01\x00\x00\x00\xB1\x00\x00\x00\x01\x07\x00\x77\x00\xB2\x00\x03\x07\x00\x5A\x01\x01\x00\x01\x07\x00\x5A'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/IntBuffer;I)V
+.method public static method2041 : (Ljava/nio/IntBuffer;I)V
     .code stack 3 locals 2
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L15
 L6:     aload_0
 L7:     dup
 L8:     iload_1
-L9:     invokestatic Method org/lwjgl/l break (Ljava/nio/Buffer;I)V
-L12:    invokestatic Method org/lwjgl/l else (Ljava/nio/IntBuffer;)V
+L9:     invokestatic Method org/lwjgl/l method2047 (Ljava/nio/Buffer;I)V
+L12:    invokestatic Method org/lwjgl/l method2043 (Ljava/nio/IntBuffer;)V
 L15:    return
 L16:    
-        .attribute StackMap b'\x00\x01\x00\x0F\x00\x02\x07\x00\x75\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x0F\x00\x02\x07\x00\x81\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : ([Ljava/lang/Object;)V
+.method public static method2042 : ([Ljava/lang/Object;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L25
@@ -352,11 +352,11 @@ L21:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L24:    athrow
 L25:    return
 L26:    
-        .attribute StackMap b'\x00\x02\x00\x0F\x00\x01\x07\x00\x92\x00\x00\x00\x19\x00\x01\x07\x00\x92\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0F\x00\x01\x07\x00\xA3\x00\x00\x00\x19\x00\x01\x07\x00\xA3\x00\x00'
     .end code
 .end method
 
-.method public static else : (Ljava/nio/IntBuffer;)V
+.method public static method2043 : (Ljava/nio/IntBuffer;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L23
@@ -370,26 +370,26 @@ L19:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L22:    athrow
 L23:    return
 L24:    
-        .attribute StackMap b'\x00\x01\x00\x17\x00\x01\x07\x00\x75\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x17\x00\x01\x07\x00\x81\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/FloatBuffer;I)V
+.method public static method2044 : (Ljava/nio/FloatBuffer;I)V
     .code stack 3 locals 2
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L15
 L6:     aload_0
 L7:     dup
 L8:     iload_1
-L9:     invokestatic Method org/lwjgl/l break (Ljava/nio/Buffer;I)V
-L12:    invokestatic Method org/lwjgl/l break (Ljava/nio/FloatBuffer;)V
+L9:     invokestatic Method org/lwjgl/l method2047 (Ljava/nio/Buffer;I)V
+L12:    invokestatic Method org/lwjgl/l method2048 (Ljava/nio/FloatBuffer;)V
 L15:    return
 L16:    
-        .attribute StackMap b'\x00\x01\x00\x0F\x00\x02\x07\x00\x7C\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x0F\x00\x02\x07\x00\x89\x01\x00\x00'
     .end code
 .end method
 
-.method private static else : ([Ljava/lang/Object;I)V
+.method private static method2045 : ([Ljava/lang/Object;I)V
     .code stack 5 locals 2
 L0:     new java/lang/IllegalArgumentException
 L3:     dup
@@ -413,24 +413,24 @@ L38:
     .end code
 .end method
 
-.method public static else : (Lorg/lwjgl/h;I)V
+.method public static method2046 : (Lorg/lwjgl/h;I)V
     .code stack 2 locals 2
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L19
 L6:     aload_0
-L7:     invokevirtual Method org/lwjgl/h else ()I
+L7:     invokevirtual Method org/lwjgl/h method183 ()I
 L10:    iload_1
 L11:    if_icmpge L19
 L14:    aload_0
 L15:    iload_1
-L16:    invokestatic Method org/lwjgl/l break (Lorg/lwjgl/h;I)V
+L16:    invokestatic Method org/lwjgl/l method2059 (Lorg/lwjgl/h;I)V
 L19:    return
 L20:    
-        .attribute StackMap b'\x00\x01\x00\x13\x00\x02\x07\x00\x3A\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x13\x00\x02\x07\x00\x40\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/Buffer;I)V
+.method public static method2047 : (Ljava/nio/Buffer;I)V
     .code stack 2 locals 2
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L19
@@ -440,14 +440,14 @@ L10:    iload_1
 L11:    if_icmpge L19
 L14:    aload_0
 L15:    iload_1
-L16:    invokestatic Method org/lwjgl/l const (Ljava/nio/Buffer;I)V
+L16:    invokestatic Method org/lwjgl/l method2037 (Ljava/nio/Buffer;I)V
 L19:    return
 L20:    
-        .attribute StackMap b'\x00\x01\x00\x13\x00\x02\x07\x00\x52\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x13\x00\x02\x07\x00\x5A\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/FloatBuffer;)V
+.method public static method2048 : (Ljava/nio/FloatBuffer;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L23
@@ -461,11 +461,11 @@ L19:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L22:    athrow
 L23:    return
 L24:    
-        .attribute StackMap b'\x00\x01\x00\x17\x00\x01\x07\x00\x7C\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x17\x00\x01\x07\x00\x89\x00\x00'
     .end code
 .end method
 
-.method public static else : (Ljava/nio/LongBuffer;)V
+.method public static method2049 : (Ljava/nio/LongBuffer;)V
     .code stack 5 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L34
@@ -488,11 +488,11 @@ L30:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L33:    athrow
 L34:    return
 L35:    
-        .attribute StackMap b'\x00\x01\x00\x22\x00\x01\x07\x00\x1A\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x22\x00\x01\x07\x00\x1E\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/IntBuffer;)V
+.method public static method2050 : (Ljava/nio/IntBuffer;)V
     .code stack 5 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L32
@@ -513,11 +513,11 @@ L28:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L31:    athrow
 L32:    return
 L33:    
-        .attribute StackMap b'\x00\x01\x00\x20\x00\x01\x07\x00\x75\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x20\x00\x01\x07\x00\x81\x00\x00'
     .end code
 .end method
 
-.method public static break : ([Ljava/lang/Object;I)V
+.method public static method2051 : ([Ljava/lang/Object;I)V
     .code stack 2 locals 2
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L17
@@ -527,14 +527,14 @@ L8:     iload_1
 L9:     if_icmpge L17
 L12:    aload_0
 L13:    iload_1
-L14:    invokestatic Method org/lwjgl/l else ([Ljava/lang/Object;I)V
+L14:    invokestatic Method org/lwjgl/l method2045 ([Ljava/lang/Object;I)V
 L17:    return
 L18:    
-        .attribute StackMap b'\x00\x01\x00\x11\x00\x02\x07\x00\x92\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x11\x00\x02\x07\x00\xA3\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (J)V
+.method public static method2052 : (J)V
     .code stack 4 locals 2
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L22
@@ -553,7 +553,7 @@ L23:
     .end code
 .end method
 
-.method public static break : (Ljava/lang/Object;)V
+.method public static method2053 : (Ljava/lang/Object;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L20
@@ -570,22 +570,22 @@ L21:
     .end code
 .end method
 
-.method public static break : (Ljava/nio/ByteBuffer;I)V
+.method public static method2054 : (Ljava/nio/ByteBuffer;I)V
     .code stack 3 locals 2
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L15
 L6:     aload_0
 L7:     dup
 L8:     iload_1
-L9:     invokestatic Method org/lwjgl/l break (Ljava/nio/Buffer;I)V
-L12:    invokestatic Method org/lwjgl/l break (Ljava/nio/ByteBuffer;)V
+L9:     invokestatic Method org/lwjgl/l method2047 (Ljava/nio/Buffer;I)V
+L12:    invokestatic Method org/lwjgl/l method2034 (Ljava/nio/ByteBuffer;)V
 L15:    return
 L16:    
-        .attribute StackMap b'\x00\x01\x00\x0F\x00\x02\x07\x00\x1E\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x0F\x00\x02\x07\x00\x22\x01\x00\x00'
     .end code
 .end method
 
-.method private static else : ([JI)V
+.method private static method2055 : ([JI)V
     .code stack 5 locals 2
 L0:     new java/lang/IllegalArgumentException
 L3:     dup
@@ -609,22 +609,22 @@ L38:
     .end code
 .end method
 
-.method public static break : (Ljava/nio/DoubleBuffer;I)V
+.method public static method2056 : (Ljava/nio/DoubleBuffer;I)V
     .code stack 3 locals 2
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L15
 L6:     aload_0
 L7:     dup
 L8:     iload_1
-L9:     invokestatic Method org/lwjgl/l break (Ljava/nio/Buffer;I)V
-L12:    invokestatic Method org/lwjgl/l break (Ljava/nio/DoubleBuffer;)V
+L9:     invokestatic Method org/lwjgl/l method2047 (Ljava/nio/Buffer;I)V
+L12:    invokestatic Method org/lwjgl/l method2036 (Ljava/nio/DoubleBuffer;)V
 L15:    return
 L16:    
-        .attribute StackMap b'\x00\x01\x00\x0F\x00\x02\x07\x00\x43\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x0F\x00\x02\x07\x00\x4B\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/ShortBuffer;)V
+.method public static method2057 : (Ljava/nio/ShortBuffer;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L23
@@ -638,11 +638,11 @@ L19:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L22:    athrow
 L23:    return
 L24:    
-        .attribute StackMap b'\x00\x01\x00\x17\x00\x01\x07\x00\x14\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x17\x00\x01\x07\x00\x16\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/LongBuffer;)V
+.method public static method2058 : (Ljava/nio/LongBuffer;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L23
@@ -656,11 +656,11 @@ L19:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L22:    athrow
 L23:    return
 L24:    
-        .attribute StackMap b'\x00\x01\x00\x17\x00\x01\x07\x00\x1A\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x17\x00\x01\x07\x00\x1E\x00\x00'
     .end code
 .end method
 
-.method private static break : (Lorg/lwjgl/h;I)V
+.method private static method2059 : (Lorg/lwjgl/h;I)V
     .code stack 5 locals 2
 L0:     new java/lang/IllegalArgumentException
 L3:     dup
@@ -671,7 +671,7 @@ L11:    iconst_0
 L12:    ldc "Number of remaining pointer buffer elements is "
 L14:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
 L17:    aload_0
-L18:    invokevirtual Method org/lwjgl/h else ()I
+L18:    invokevirtual Method org/lwjgl/h method183 ()I
 L21:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L24:    ldc ", must be at least "
 L26:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -684,7 +684,7 @@ L40:
     .end code
 .end method
 
-.method public static break : ([JI)V
+.method public static method2060 : ([JI)V
     .code stack 2 locals 2
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L17
@@ -694,10 +694,10 @@ L8:     iload_1
 L9:     if_icmpge L17
 L12:    aload_0
 L13:    iload_1
-L14:    invokestatic Method org/lwjgl/l else ([JI)V
+L14:    invokestatic Method org/lwjgl/l method2055 ([JI)V
 L17:    return
 L18:    
-        .attribute StackMap b'\x00\x01\x00\x11\x00\x02\x07\x00\xCA\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x11\x00\x02\x07\x00\xE7\x01\x00\x00'
     .end code
 .end method
 .end class

@@ -1,24 +1,24 @@
 .version 49 0
 .class public final super fe
 .super gg
-.field private if [[F
+.field private field1191 [[F
 .field private true [I
-.field private static for [F
-.field private static final case I = 1000
-.field private byte F
-.field private static "super" [[F
-.field private int Ljava/nio/FloatBuffer;
-.field public short F
-.field private static final goto I = 75
-.field public break I
-.field private static final long F = 2e-1f
-.field private static final void I = 71
+.field private static field1192 [F
+.field private static final field1193 I = 1000
+.field private field1194 F
+.field private static field1195 [[F
+.field private field1196 Ljava/nio/FloatBuffer;
+.field public field1197 F
+.field private static final field1198 I = 75
+.field public field1199 I
+.field private static final field1200 F = 2e-1f
+.field private static final field1201 I = 71
 .field private try Ljava/util/ArrayList;
-.field private const [Ljava/nio/ShortBuffer;
+.field private field1202 [Ljava/nio/ShortBuffer;
 .field public new F
-.field private static final null F = 1.2e-1f
+.field private static final field1203 F = 1.2e-1f
 .field public this I
-.field private char F
+.field private field1204 F
 
 .method public background : (ZF)V
     .code stack 6 locals 4
@@ -30,55 +30,55 @@ L8:     bipush 7
 L10:    iconst_1
 L11:    dup
 L12:    pop2
-L13:    invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
+L13:    invokestatic Method org/lwjgl/opengl/GL11 method3664 (I)V
 L16:    getstatic Field net/gewaltig/cultris/Cultris backgroundcolorRed F
 L19:    getstatic Field net/gewaltig/cultris/Cultris backgroundcolorGreen F
 L22:    getstatic Field net/gewaltig/cultris/Cultris backgroundcolorBlue F
 L25:    fconst_1
-L26:    invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L26:    invokestatic Method org/lwjgl/opengl/GL11 method3888 (FFFF)V
 L29:    ldc -3.2e1f
 L31:    ldc 2.4e1f
 L33:    ldc 7.9e1f
-L35:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L35:    invokestatic Method org/lwjgl/opengl/GL11 method3740 (FFF)V
 L38:    ldc 3.2e1f
 L40:    ldc 2.4e1f
 L42:    ldc 7.9e1f
-L44:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L44:    invokestatic Method org/lwjgl/opengl/GL11 method3740 (FFF)V
 L47:    fconst_0
 L48:    dup
 L49:    dup_x1
 L50:    fconst_1
-L51:    invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L51:    invokestatic Method org/lwjgl/opengl/GL11 method3888 (FFFF)V
 L54:    ldc 3.2e1f
 L56:    ldc -2.4e1f
 L58:    ldc 7.9e1f
-L60:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
+L60:    invokestatic Method org/lwjgl/opengl/GL11 method3740 (FFF)V
 L63:    ldc -3.2e1f
 L65:    ldc -2.4e1f
 L67:    ldc 7.9e1f
-L69:    invokestatic Method org/lwjgl/opengl/GL11 catch (FFF)V
-L72:    invokestatic Method org/lwjgl/opengl/GL11 float ()V
-L75:    invokestatic Method FE goto ()V
-L78:    invokestatic Method org/lwjgl/opengl/GL11 char ()V
+L69:    invokestatic Method org/lwjgl/opengl/GL11 method3740 (FFF)V
+L72:    invokestatic Method org/lwjgl/opengl/GL11 method3788 ()V
+L75:    invokestatic Method FE method65 ()V
+L78:    invokestatic Method org/lwjgl/opengl/GL11 method3672 ()V
 L81:    ldc 1.2e1f
 L83:    fconst_1
 L84:    fconst_0
 L85:    dup
-L86:    invokestatic Method org/lwjgl/opengl/GL11 for (FFFF)V
+L86:    invokestatic Method org/lwjgl/opengl/GL11 method3746 (FFFF)V
 L89:    ldc -3.55e1f
 L91:    aload_0
-L92:    getfield Field fe byte F
+L92:    getfield Field fe field1194 F
 L95:    fsub
 L96:    ldc 5e0f
 L98:    ldc 8e0f
 L100:   aload_0
-L101:   getfield Field fe char F
+L101:   getfield Field fe field1204 F
 L104:   fsub
-L105:   invokestatic Method org/lwjgl/opengl/GL11 const (FFF)V
+L105:   invokestatic Method org/lwjgl/opengl/GL11 method3807 (FFF)V
 L108:   iload_1
 L109:   ifeq L116
 L112:   aload_0
-L113:   invokespecial Method fe else ()V
+L113:   invokespecial Method fe method56 ()V
 L116:   iconst_3
 L117:   iconst_1
 L118:   dup
@@ -88,8 +88,8 @@ L121:   iconst_1
 L122:   dup
 L123:   pop2
 L124:   aload_0
-L125:   getfield Field fe int Ljava/nio/FloatBuffer;
-L128:   invokestatic Method org/lwjgl/opengl/GL11 break (IILjava/nio/FloatBuffer;)V
+L125:   getfield Field fe field1196 Ljava/nio/FloatBuffer;
+L128:   invokestatic Method org/lwjgl/opengl/GL11 method3912 (IILjava/nio/FloatBuffer;)V
 L131:   iconst_0
 L132:   iconst_1
 L133:   dup
@@ -108,20 +108,20 @@ L147:   dup_x2
 L148:   iload_1
 L149:   i2f
 L150:   aload_0
-L151:   getfield Field fe char F
+L151:   getfield Field fe field1204 F
 L154:   fsub
 L155:   ldc 7.5e1f
 L157:   fdiv
 L158:   fsub
 L159:   ldc 1e-1f
 L161:   fmul
-L162:   invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L162:   invokestatic Method org/lwjgl/opengl/GL11 method3888 (FFFF)V
 L165:   iconst_3
 L166:   iconst_1
 L167:   dup
 L168:   pop2
 L169:   aload_0
-L170:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L170:   getfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L173:   iload_1
 L174:   iconst_2
 L175:   iconst_1
@@ -129,13 +129,13 @@ L176:   dup
 L177:   pop2
 L178:   imul
 L179:   aaload
-L180:   invokestatic Method org/lwjgl/opengl/GL11 break (ILjava/nio/ShortBuffer;)V
+L180:   invokestatic Method org/lwjgl/opengl/GL11 method3880 (ILjava/nio/ShortBuffer;)V
 L183:   iconst_3
 L184:   iconst_1
 L185:   dup
 L186:   pop2
 L187:   aload_0
-L188:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L188:   getfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L191:   iload_1
 L192:   iconst_2
 L193:   iconst_1
@@ -149,34 +149,34 @@ L200:   pop2
 L201:   iadd
 L202:   iinc 1 1
 L205:   aaload
-L206:   invokestatic Method org/lwjgl/opengl/GL11 break (ILjava/nio/ShortBuffer;)V
+L206:   invokestatic Method org/lwjgl/opengl/GL11 method3880 (ILjava/nio/ShortBuffer;)V
 L209:   iload_1
 L210:   goto L137
 L213:   athrow
-L214:   invokestatic Method org/lwjgl/opengl/GL11 do ()V
+L214:   invokestatic Method org/lwjgl/opengl/GL11 method3730 ()V
 L217:   return
 L218:   
-        .attribute StackMap b'\x00\x05\x00\x4B\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00\x00\x74\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00\x00\x89\x00\x04\x07\x00\x02\x01\x02\x01\x00\x01\x01\x00\xD5\x00\x00\x00\x01\x07\x00\x71\x00\xD6\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x4B\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00\x00\x74\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00\x00\x89\x00\x04\x07\x00\x02\x01\x02\x01\x00\x01\x01\x00\xD5\x00\x00\x00\x01\x07\x00\x74\x00\xD6\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00'
         .localvariabletable
             3 is animtoggle I from L0 to L214
         .end localvariabletable
     .end code
 .end method
 
-.method public break : ()V
+.method public method74 : ()V
     .code stack 3 locals 1
 L0:     aload_0
 L1:     dup
-L2:     getfield Field fe short F
+L2:     getfield Field fe field1197 F
 L5:     ldc 6e0f
 L7:     fsub
-L8:     putfield Field fe short F
+L8:     putfield Field fe field1197 F
 L11:    return
 L12:    
     .end code
 .end method
 
-.method private else : ()V
+.method private method56 : ()V
     .code stack 6 locals 9
 L0:     iconst_0
 L1:     aload_0
@@ -235,7 +235,7 @@ L65:    isub
 L66:    imul
 L67:    if_icmpge L87
 L70:    aload_0
-L71:    getfield Field fe if [[F
+L71:    getfield Field fe field1191 [[F
 L74:    iload_1
 L75:    aaload
 L76:    iload_2
@@ -261,7 +261,7 @@ L113:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Obj
 L118:   checkcast Dc
 L121:   dup
 L122:   astore_2
-L123:   getfield Field Dc do Ljava/lang/Object;
+L123:   getfield Field Dc field1794 Ljava/lang/Object;
 L126:   checkcast [F
 L129:   iconst_1
 L130:   dup
@@ -270,7 +270,7 @@ L132:   pop2
 L133:   faload
 L134:   fconst_1
 L135:   aload_2
-L136:   getfield Field Dc do Ljava/lang/Object;
+L136:   getfield Field Dc field1794 Ljava/lang/Object;
 L139:   checkcast [F
 L142:   iconst_1
 L143:   dup
@@ -295,7 +295,7 @@ L164:   pop2
 L165:   if_icmpge L103
 L168:   iload 4
 L170:   aload_2
-L171:   getfield Field Dc "enum" Ljava/lang/Object;
+L171:   getfield Field Dc field1793 Ljava/lang/Object;
 L174:   checkcast [I
 L177:   iconst_1
 L178:   dup
@@ -306,7 +306,7 @@ L182:   isub
 L183:   invokestatic Method java/lang/Math abs (I)I
 L186:   istore 5
 L188:   aload_2
-L189:   getfield Field Dc do Ljava/lang/Object;
+L189:   getfield Field Dc field1794 Ljava/lang/Object;
 L192:   checkcast [F
 L195:   iconst_0
 L196:   iconst_1
@@ -332,10 +332,10 @@ L224:   iload 4
 L226:   iaload
 L227:   isub
 L228:   if_icmpge L318
-L231:   getstatic Field fe "super" [[F
+L231:   getstatic Field fe field1195 [[F
 L234:   iload 7
 L236:   aload_2
-L237:   getfield Field Dc "enum" Ljava/lang/Object;
+L237:   getfield Field Dc field1793 Ljava/lang/Object;
 L240:   checkcast [I
 L243:   iconst_0
 L244:   iconst_1
@@ -359,7 +359,7 @@ L269:   ldc 5e0f
 L271:   fcmpg
 L272:   ifge L310
 L275:   aload_0
-L276:   getfield Field fe if [[F
+L276:   getfield Field fe field1191 [[F
 L279:   iload 4
 L281:   aaload
 L282:   iload 7
@@ -375,7 +375,7 @@ L292:   pop2
 L293:   iadd
 L294:   dup2
 L295:   faload
-L296:   getstatic Field fe for [F
+L296:   getstatic Field fe field1192 [F
 L299:   fload 8
 L301:   ldc 1e3f
 L303:   fmul
@@ -395,7 +395,7 @@ L326:   nop
 L327:   nop
 L328:   athrow
 L329:   aload_0
-L330:   getfield Field fe int Ljava/nio/FloatBuffer;
+L330:   getfield Field fe field1196 Ljava/nio/FloatBuffer;
 L333:   invokevirtual Method java/nio/FloatBuffer clear ()Ljava/nio/Buffer;
 L336:   iconst_0
 L337:   iconst_1
@@ -411,9 +411,9 @@ L347:   pop2
 L348:   if_icmpge L373
 L351:   aload_0
 L352:   dup
-L353:   getfield Field fe int Ljava/nio/FloatBuffer;
+L353:   getfield Field fe field1196 Ljava/nio/FloatBuffer;
 L356:   swap
-L357:   getfield Field fe if [[F
+L357:   getfield Field fe field1191 [[F
 L360:   iload_1
 L361:   iinc 1 1
 L364:   aaload
@@ -422,12 +422,12 @@ L368:   pop
 L369:   iload_1
 L370:   goto L343
 L373:   aload_0
-L374:   getfield Field fe int Ljava/nio/FloatBuffer;
+L374:   getfield Field fe field1196 Ljava/nio/FloatBuffer;
 L377:   invokevirtual Method java/nio/FloatBuffer flip ()Ljava/nio/Buffer;
 L380:   pop
 L381:   return
 L382:   
-        .attribute StackMap b'\x00\x0F\x00\x18\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\x32\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x00\x56\x00\x00\x00\x01\x07\x00\x71\x00\x57\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x5E\x00\x00\x00\x01\x07\x00\x71\x00\x5F\x00\x02\x07\x00\x02\x01\x00\x00\x00\x67\x00\x02\x07\x00\x02\x07\x00\x84\x00\x00\x00\xA0\x00\x05\x07\x00\x02\x07\x00\x84\x07\x00\x8E\x02\x01\x00\x01\x01\x00\xD7\x00\x08\x07\x00\x02\x07\x00\x84\x07\x00\x8E\x02\x01\x01\x02\x01\x00\x01\x01\x01\x36\x00\x09\x07\x00\x02\x07\x00\x84\x07\x00\x8E\x02\x01\x01\x02\x01\x02\x00\x00\x01\x3E\x00\x08\x07\x00\x02\x07\x00\x84\x07\x00\x8E\x02\x01\x01\x02\x01\x00\x00\x01\x46\x00\x00\x00\x01\x07\x00\x71\x01\x49\x00\x02\x07\x00\x02\x07\x00\x84\x00\x00\x01\x57\x00\x02\x07\x00\x02\x01\x00\x01\x01\x01\x75\x00\x02\x07\x00\x02\x01\x00\x00'
+        .attribute StackMap b'\x00\x0F\x00\x18\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\x32\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x00\x56\x00\x00\x00\x01\x07\x00\x74\x00\x57\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x5E\x00\x00\x00\x01\x07\x00\x74\x00\x5F\x00\x02\x07\x00\x02\x01\x00\x00\x00\x67\x00\x02\x07\x00\x02\x07\x00\x8C\x00\x00\x00\xA0\x00\x05\x07\x00\x02\x07\x00\x8C\x07\x00\x96\x02\x01\x00\x01\x01\x00\xD7\x00\x08\x07\x00\x02\x07\x00\x8C\x07\x00\x96\x02\x01\x01\x02\x01\x00\x01\x01\x01\x36\x00\x09\x07\x00\x02\x07\x00\x8C\x07\x00\x96\x02\x01\x01\x02\x01\x02\x00\x00\x01\x3E\x00\x08\x07\x00\x02\x07\x00\x8C\x07\x00\x96\x02\x01\x01\x02\x01\x00\x00\x01\x46\x00\x00\x00\x01\x07\x00\x74\x01\x49\x00\x02\x07\x00\x02\x07\x00\x8C\x00\x00\x01\x57\x00\x02\x07\x00\x02\x01\x00\x01\x01\x01\x75\x00\x02\x07\x00\x02\x01\x00\x00'
     .end code
 .end method
 
@@ -453,7 +453,7 @@ L27:    iconst_1
 L28:    dup
 L29:    pop2
 L30:    multianewarray [[F 2
-L34:    putfield Field fe if [[F
+L34:    putfield Field fe field1191 [[F
 L37:    iconst_0
 L38:    dup
 L39:    aload_0
@@ -472,7 +472,7 @@ L53:    putfield Field fe true [I
 L56:    iconst_1
 L57:    dup
 L58:    pop2
-L59:    putfield Field fe break I
+L59:    putfield Field fe field1199 I
 L62:    iconst_1
 L63:    dup
 L64:    pop2
@@ -482,7 +482,7 @@ L69:    dup
 L70:    pop2
 L71:    dup
 L72:    istore_1
-L73:    getstatic Field fe "super" [[F
+L73:    getstatic Field fe field1195 [[F
 L76:    iconst_0
 L77:    iconst_1
 L78:    dup
@@ -496,10 +496,10 @@ L87:    dup
 L88:    pop2
 L89:    dup
 L90:    istore_2
-L91:    getstatic Field fe "super" [[F
+L91:    getstatic Field fe field1195 [[F
 L94:    arraylength
 L95:    if_icmpge L128
-L98:    getstatic Field fe "super" [[F
+L98:    getstatic Field fe field1195 [[F
 L101:   iload_2
 L102:   aaload
 L103:   iload_2
@@ -541,7 +541,7 @@ L153:   ldc 1e3f
 L155:   fdiv
 L156:   f2d
 L157:   dstore_2
-L158:   getstatic Field fe for [F
+L158:   getstatic Field fe field1192 [F
 L161:   iload_1
 L162:   dload_2
 L163:   ldc2_w 2e0
@@ -629,12 +629,12 @@ L272:   sipush 15975
 L275:   aload_0
 L276:   dup_x1
 L277:   ldc -2e1f
-L279:   putfield Field fe short F
+L279:   putfield Field fe field1197 F
 L282:   iconst_1
 L283:   dup
 L284:   pop2
 L285:   invokestatic Method org/lwjgl/BufferUtils createFloatBuffer (I)Ljava/nio/FloatBuffer;
-L288:   putfield Field fe int Ljava/nio/FloatBuffer;
+L288:   putfield Field fe field1196 Ljava/nio/FloatBuffer;
 L291:   pop
 L292:   iconst_1
 L293:   dup
@@ -643,7 +643,7 @@ L295:   anewarray java/nio/ShortBuffer
 L298:   iconst_1
 L299:   dup
 L300:   pop2
-L301:   putfield Field fe const [Ljava/nio/ShortBuffer;
+L301:   putfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L304:   ldc 32884
 L306:   invokestatic Method org/lwjgl/opengl/GL11 try (I)V
 L309:   iconst_0
@@ -687,7 +687,7 @@ L356:   bipush 34
 L358:   iconst_1
 L359:   dup
 L360:   pop2
-L361:   invokestatic Method OC break (III)I
+L361:   invokestatic Method OC method993 (III)I
 L364:   iastore
 L365:   iconst_1
 L366:   dup
@@ -708,7 +708,7 @@ L384:   dup
 L385:   pop2
 L386:   idiv
 L387:   istore_2
-L388:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L388:   getfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L391:   iload_1
 L392:   iconst_2
 L393:   iconst_1
@@ -723,7 +723,7 @@ L401:   pop2
 L402:   imul
 L403:   invokestatic Method org/lwjgl/BufferUtils createShortBuffer (I)Ljava/nio/ShortBuffer;
 L406:   aastore
-L407:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L407:   getfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L410:   iload_1
 L411:   iconst_2
 L412:   iconst_1
@@ -750,7 +750,7 @@ L439:   iaload
 L440:   isub
 L441:   if_icmpge L541
 L444:   aload_0
-L445:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L445:   getfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L448:   iload_1
 L449:   iconst_2
 L450:   iconst_1
@@ -769,7 +769,7 @@ L463:   iadd
 L464:   i2s
 L465:   invokevirtual Method java/nio/ShortBuffer put (S)Ljava/nio/ShortBuffer;
 L468:   aload_0
-L469:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L469:   getfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L472:   iload_1
 L473:   iconst_2
 L474:   iconst_1
@@ -798,7 +798,7 @@ L498:   iadd
 L499:   i2s
 L500:   invokevirtual Method java/nio/ShortBuffer put (S)Ljava/nio/ShortBuffer;
 L503:   aload_0
-L504:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L504:   getfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L507:   iload_1
 L508:   iconst_2
 L509:   iconst_1
@@ -827,7 +827,7 @@ L536:   pop2
 L537:   iload_3
 L538:   goto L429
 L541:   aload_0
-L542:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L542:   getfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L545:   iload_1
 L546:   iconst_2
 L547:   iconst_1
@@ -838,7 +838,7 @@ L551:   aaload
 L552:   invokevirtual Method java/nio/ShortBuffer flip ()Ljava/nio/Buffer;
 L555:   aload_0
 L556:   dup
-L557:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L557:   getfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L560:   iload_1
 L561:   iconst_2
 L562:   iconst_1
@@ -858,7 +858,7 @@ L575:   pop2
 L576:   imul
 L577:   invokestatic Method org/lwjgl/BufferUtils createShortBuffer (I)Ljava/nio/ShortBuffer;
 L580:   aastore
-L581:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L581:   getfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L584:   iload_1
 L585:   iconst_2
 L586:   iconst_1
@@ -890,7 +890,7 @@ L618:   iaload
 L619:   isub
 L620:   if_icmpge L741
 L623:   aload_0
-L624:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L624:   getfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L627:   iload_1
 L628:   iconst_2
 L629:   iconst_1
@@ -919,7 +919,7 @@ L653:   iadd
 L654:   i2s
 L655:   invokevirtual Method java/nio/ShortBuffer put (S)Ljava/nio/ShortBuffer;
 L658:   aload_0
-L659:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L659:   getfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L662:   iload_1
 L663:   iconst_2
 L664:   iconst_1
@@ -948,7 +948,7 @@ L687:   iadd
 L688:   i2s
 L689:   invokevirtual Method java/nio/ShortBuffer put (S)Ljava/nio/ShortBuffer;
 L692:   aload_0
-L693:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L693:   getfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L696:   iload_1
 L697:   iconst_2
 L698:   iconst_1
@@ -987,7 +987,7 @@ L736:   pop2
 L737:   iload_3
 L738:   goto L608
 L741:   aload_0
-L742:   getfield Field fe const [Ljava/nio/ShortBuffer;
+L742:   getfield Field fe field1202 [Ljava/nio/ShortBuffer;
 L745:   iload_1
 L746:   iconst_2
 L747:   iconst_1
@@ -1029,7 +1029,7 @@ L792:   pop2
 L793:   if_icmpge L843
 L796:   aload_0
 L797:   dup
-L798:   getfield Field fe if [[F
+L798:   getfield Field fe field1191 [[F
 L801:   iload_1
 L802:   aaload
 L803:   iload_2
@@ -1046,7 +1046,7 @@ L813:   iadd
 L814:   iload_2
 L815:   i2f
 L816:   fastore
-L817:   getfield Field fe if [[F
+L817:   getfield Field fe field1191 [[F
 L820:   iload_1
 L821:   aaload
 L822:   iload_2
@@ -1071,11 +1071,11 @@ L846:   iload_1
 L847:   goto L774
 L850:   return
 L851:   
-        .attribute StackMap b'\x00\x12\x00\x49\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\x5B\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x00\x7F\x00\x00\x00\x01\x07\x00\x71\x00\x80\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x87\x00\x00\x00\x01\x07\x00\x71\x00\x88\x00\x02\x07\x00\x02\x01\x00\x00\x00\x8E\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\xC6\x00\x02\x07\x00\x02\x01\x00\x00\x01\x3B\x00\x02\x07\x00\x02\x01\x00\x01\x01\x01\xAD\x00\x04\x07\x00\x02\x01\x01\x01\x00\x01\x01\x02\x1D\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00\x02\x60\x00\x04\x07\x00\x02\x01\x01\x01\x00\x01\x01\x02\xE5\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00\x03\x00\x00\x02\x07\x00\x02\x01\x00\x00\x03\x06\x00\x02\x07\x00\x02\x01\x00\x01\x01\x03\x14\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x03\x4B\x00\x03\x07\x00\x02\x01\x01\x00\x00\x03\x52\x00\x02\x07\x00\x02\x01\x00\x00'
+        .attribute StackMap b'\x00\x12\x00\x49\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\x5B\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x00\x7F\x00\x00\x00\x01\x07\x00\x74\x00\x80\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x87\x00\x00\x00\x01\x07\x00\x74\x00\x88\x00\x02\x07\x00\x02\x01\x00\x00\x00\x8E\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\xC6\x00\x02\x07\x00\x02\x01\x00\x00\x01\x3B\x00\x02\x07\x00\x02\x01\x00\x01\x01\x01\xAD\x00\x04\x07\x00\x02\x01\x01\x01\x00\x01\x01\x02\x1D\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00\x02\x60\x00\x04\x07\x00\x02\x01\x01\x01\x00\x01\x01\x02\xE5\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00\x03\x00\x00\x02\x07\x00\x02\x01\x00\x00\x03\x06\x00\x02\x07\x00\x02\x01\x00\x01\x01\x03\x14\x00\x03\x07\x00\x02\x01\x01\x00\x01\x01\x03\x4B\x00\x03\x07\x00\x02\x01\x01\x00\x00\x03\x52\x00\x02\x07\x00\x02\x01\x00\x00'
     .end code
 .end method
 
-.method public break : (I)V
+.method public method14 : (I)V
     .code stack 6 locals 2
 L0:     aload_0
 L1:     dup
@@ -1094,10 +1094,10 @@ L17:
     .end code
 .end method
 
-.method public int : ()V
+.method public method26 : ()V
     .code stack 10 locals 3
 L0:     fconst_1
-L1:     getstatic Field ib do F
+L1:     getstatic Field ib field2312 F
 L4:     fconst_2
 L5:     fmul
 L6:     fsub
@@ -1106,7 +1106,7 @@ L8:     dup_x1
 L9:     dup_x1
 L10:    getfield Field fe new F
 L13:    fmul
-L14:    getstatic Field ib do F
+L14:    getstatic Field ib field2312 F
 L17:    fconst_2
 L18:    fmul
 L19:    fconst_0
@@ -1114,25 +1114,25 @@ L20:    fmul
 L21:    fadd
 L22:    putfield Field fe new F
 L25:    dup
-L26:    getfield Field fe byte F
+L26:    getfield Field fe field1194 F
 L29:    aload_0
 L30:    dup_x2
 L31:    getfield Field fe new F
-L34:    getstatic Field ib do F
+L34:    getstatic Field ib field2312 F
 L37:    fmul
 L38:    fadd
-L39:    putfield Field fe byte F
-L42:    getfield Field fe byte F
+L39:    putfield Field fe field1194 F
+L42:    getfield Field fe field1194 F
 L45:    fconst_1
 L46:    fcmpl
 L47:    ifle L111
 L50:    aload_0
 L51:    dup
 L52:    dup
-L53:    getfield Field fe byte F
+L53:    getfield Field fe field1194 F
 L56:    fconst_1
 L57:    fsub
-L58:    putfield Field fe byte F
+L58:    putfield Field fe field1194 F
 L61:    getfield Field fe try Ljava/util/ArrayList;
 L64:    invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
 L67:    dup
@@ -1144,7 +1144,7 @@ L78:    invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Obj
 L83:    checkcast Dc
 L86:    dup
 L87:    astore_2
-L88:    getfield Field Dc "enum" Ljava/lang/Object;
+L88:    getfield Field Dc field1793 Ljava/lang/Object;
 L91:    checkcast [I
 L94:    iconst_0
 L95:    iconst_1
@@ -1162,17 +1162,17 @@ L106:   aload_1
 L107:   goto L69
 L110:   athrow
 L111:   aload_0
-L112:   getfield Field fe byte F
+L112:   getfield Field fe field1194 F
 L115:   fconst_0
 L116:   fcmpg
 L117:   ifge L181
 L120:   aload_0
 L121:   dup
 L122:   dup
-L123:   getfield Field fe byte F
+L123:   getfield Field fe field1194 F
 L126:   fconst_1
 L127:   fadd
-L128:   putfield Field fe byte F
+L128:   putfield Field fe field1194 F
 L131:   getfield Field fe try Ljava/util/ArrayList;
 L134:   invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
 L137:   dup
@@ -1184,7 +1184,7 @@ L148:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Obj
 L153:   checkcast Dc
 L156:   dup
 L157:   astore_2
-L158:   getfield Field Dc "enum" Ljava/lang/Object;
+L158:   getfield Field Dc field1793 Ljava/lang/Object;
 L161:   checkcast [I
 L164:   iconst_0
 L165:   iconst_1
@@ -1204,40 +1204,40 @@ L180:   athrow
 L181:   aload_0
 L182:   dup
 L183:   fconst_1
-L184:   getstatic Field ib do F
+L184:   getstatic Field ib field2312 F
 L187:   ldc 4e0f
 L189:   fmul
 L190:   fsub
 L191:   aload_0
 L192:   dup_x2
-L193:   getfield Field fe short F
+L193:   getfield Field fe field1197 F
 L196:   fmul
-L197:   getstatic Field ib do F
+L197:   getstatic Field ib field2312 F
 L200:   ldc 4e0f
 L202:   fmul
 L203:   ldc 8e-1f
 L205:   fmul
 L206:   fadd
-L207:   putfield Field fe short F
+L207:   putfield Field fe field1197 F
 L210:   dup
-L211:   getfield Field fe char F
+L211:   getfield Field fe field1204 F
 L214:   aload_0
-L215:   getfield Field fe short F
-L218:   getstatic Field ib do F
+L215:   getfield Field fe field1197 F
+L218:   getstatic Field ib field2312 F
 L221:   fmul
 L222:   fadd
-L223:   putfield Field fe char F
-L226:   getfield Field fe char F
+L223:   putfield Field fe field1204 F
+L226:   getfield Field fe field1204 F
 L229:   fconst_1
 L230:   fcmpl
 L231:   ifle L294
 L234:   aload_0
 L235:   dup
 L236:   dup
-L237:   getfield Field fe char F
+L237:   getfield Field fe field1204 F
 L240:   fconst_1
 L241:   fsub
-L242:   putfield Field fe char F
+L242:   putfield Field fe field1204 F
 L245:   getfield Field fe try Ljava/util/ArrayList;
 L248:   invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
 L251:   dup
@@ -1249,7 +1249,7 @@ L262:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Obj
 L267:   checkcast Dc
 L270:   dup
 L271:   astore_2
-L272:   getfield Field Dc "enum" Ljava/lang/Object;
+L272:   getfield Field Dc field1793 Ljava/lang/Object;
 L275:   checkcast [I
 L278:   iconst_1
 L279:   dup
@@ -1266,17 +1266,17 @@ L289:   iastore
 L290:   aload_1
 L291:   goto L253
 L294:   aload_0
-L295:   getfield Field fe char F
+L295:   getfield Field fe field1204 F
 L298:   fconst_0
 L299:   fcmpg
 L300:   ifge L363
 L303:   aload_0
 L304:   dup
 L305:   dup
-L306:   getfield Field fe char F
+L306:   getfield Field fe field1204 F
 L309:   fconst_1
 L310:   fadd
-L311:   putfield Field fe char F
+L311:   putfield Field fe field1204 F
 L314:   getfield Field fe try Ljava/util/ArrayList;
 L317:   invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
 L320:   dup
@@ -1288,7 +1288,7 @@ L331:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Obj
 L336:   checkcast Dc
 L339:   dup
 L340:   astore_2
-L341:   getfield Field Dc "enum" Ljava/lang/Object;
+L341:   getfield Field Dc field1793 Ljava/lang/Object;
 L344:   checkcast [I
 L347:   iconst_1
 L348:   dup
@@ -1316,7 +1316,7 @@ L381:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Obj
 L386:   checkcast Dc
 L389:   dup
 L390:   astore_2
-L391:   getfield Field Dc do Ljava/lang/Object;
+L391:   getfield Field Dc field1794 Ljava/lang/Object;
 L394:   checkcast [F
 L397:   iconst_0
 L398:   iconst_1
@@ -1324,13 +1324,13 @@ L399:   dup
 L400:   pop2
 L401:   dup2
 L402:   faload
-L403:   getstatic Field ib do F
+L403:   getstatic Field ib field2312 F
 L406:   fconst_2
 L407:   fmul
 L408:   fadd
 L409:   fastore
 L410:   aload_2
-L411:   getfield Field Dc do Ljava/lang/Object;
+L411:   getfield Field Dc field1794 Ljava/lang/Object;
 L414:   checkcast [F
 L417:   iconst_0
 L418:   iconst_1
@@ -1346,12 +1346,12 @@ L431:   aload_1
 L432:   invokeinterface InterfaceMethod java/util/Iterator remove ()V 1
 L437:   goto L371
 L440:   aload_0
-L441:   getfield Field fe break I
+L441:   getfield Field fe field1199 I
 L444:   sipush 512
 L447:   iconst_1
 L448:   dup
 L449:   pop2
-L450:   if_icmpne L538
+L450:   if_icmpne L540
 L453:   aload_0
 L454:   getfield Field fe try Ljava/util/ArrayList;
 L457:   new Dc
@@ -1397,36 +1397,36 @@ L508:   iconst_0
 L509:   iconst_1
 L510:   dup
 L511:   pop2
-L512:   ldc -2.5e1f
-L514:   fastore
-L515:   dup
-L516:   iconst_1
-L517:   dup
+L512:   ldc_w -2.5e1f
+L515:   fastore
+L516:   dup
+L517:   iconst_1
 L518:   dup
-L519:   pop2
-L520:   ldc 2.5e-1f
-L522:   fastore
-L523:   invokespecial Method Dc <init> (Ljava/lang/Object;Ljava/lang/Object;)V
-L526:   invokevirtual Method java/util/ArrayList add (Ljava/lang/Object;)Z
-L529:   aload_0
-L530:   iconst_0
-L531:   iconst_1
-L532:   dup
-L533:   pop2
-L534:   putfield Field fe break I
-L537:   pop
-L538:   aload_0
-L539:   dup
-L540:   getfield Field fe break I
-L543:   iconst_1
-L544:   dup
-L545:   dup
-L546:   pop2
-L547:   iadd
-L548:   putfield Field fe break I
-L551:   return
-L552:   
-        .attribute StackMap b'\x00\x0D\x00\x45\x00\x02\x07\x00\x02\x07\x00\x84\x00\x01\x07\x00\x84\x00\x6E\x00\x00\x00\x01\x07\x00\x71\x00\x6F\x00\x01\x07\x00\x02\x00\x00\x00\x8B\x00\x02\x07\x00\x02\x07\x00\x84\x00\x01\x07\x00\x84\x00\xB4\x00\x00\x00\x01\x07\x00\x71\x00\xB5\x00\x01\x07\x00\x02\x00\x00\x00\xFD\x00\x02\x07\x00\x02\x07\x00\x84\x00\x01\x07\x00\x84\x01\x26\x00\x01\x07\x00\x02\x00\x00\x01\x42\x00\x02\x07\x00\x02\x07\x00\x84\x00\x01\x07\x00\x84\x01\x6B\x00\x01\x07\x00\x02\x00\x00\x01\x73\x00\x02\x07\x00\x02\x07\x00\x84\x00\x00\x01\xB8\x00\x02\x07\x00\x02\x07\x00\x84\x00\x00\x02\x1A\x00\x02\x07\x00\x02\x07\x00\x84\x00\x00'
+L519:   dup
+L520:   pop2
+L521:   ldc_w 2.5e-1f
+L524:   fastore
+L525:   invokespecial Method Dc <init> (Ljava/lang/Object;Ljava/lang/Object;)V
+L528:   invokevirtual Method java/util/ArrayList add (Ljava/lang/Object;)Z
+L531:   aload_0
+L532:   iconst_0
+L533:   iconst_1
+L534:   dup
+L535:   pop2
+L536:   putfield Field fe field1199 I
+L539:   pop
+L540:   aload_0
+L541:   dup
+L542:   getfield Field fe field1199 I
+L545:   iconst_1
+L546:   dup
+L547:   dup
+L548:   pop2
+L549:   iadd
+L550:   putfield Field fe field1199 I
+L553:   return
+L554:   
+        .attribute StackMap b'\x00\x0D\x00\x45\x00\x02\x07\x00\x02\x07\x00\x8C\x00\x01\x07\x00\x8C\x00\x6E\x00\x00\x00\x01\x07\x00\x74\x00\x6F\x00\x01\x07\x00\x02\x00\x00\x00\x8B\x00\x02\x07\x00\x02\x07\x00\x8C\x00\x01\x07\x00\x8C\x00\xB4\x00\x00\x00\x01\x07\x00\x74\x00\xB5\x00\x01\x07\x00\x02\x00\x00\x00\xFD\x00\x02\x07\x00\x02\x07\x00\x8C\x00\x01\x07\x00\x8C\x01\x26\x00\x01\x07\x00\x02\x00\x00\x01\x42\x00\x02\x07\x00\x02\x07\x00\x8C\x00\x01\x07\x00\x8C\x01\x6B\x00\x01\x07\x00\x02\x00\x00\x01\x73\x00\x02\x07\x00\x02\x07\x00\x8C\x00\x00\x01\xB8\x00\x02\x07\x00\x02\x07\x00\x8C\x00\x00\x02\x1C\x00\x02\x07\x00\x02\x07\x00\x8C\x00\x00'
     .end code
 .end method
 
@@ -1441,7 +1441,7 @@ L9:     iconst_1
 L10:    dup
 L11:    pop2
 L12:    multianewarray [[F 2
-L16:    putstatic Field fe "super" [[F
+L16:    putstatic Field fe field1195 [[F
 L19:    sipush 5000
 L22:    iconst_1
 L23:    dup
@@ -1450,7 +1450,7 @@ L25:    newarray float
 L27:    iconst_1
 L28:    dup
 L29:    pop2
-L30:    putstatic Field fe for [F
+L30:    putstatic Field fe field1192 [F
 L33:    return
 L34:    
     .end code
@@ -1491,7 +1491,7 @@ L51:    ireturn
 L52:    iload_0
 L53:    ireturn
 L54:    
-        .attribute StackMap b'\x00\x04\x00\x21\x00\x01\x01\x00\x01\x07\x01\x01\x00\x26\x00\x02\x01\x07\x01\x1C\x00\x00\x00\x2C\x00\x02\x01\x07\x01\x1C\x00\x00\x00\x34\x00\x02\x01\x07\x01\x1C\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x21\x00\x01\x01\x00\x01\x07\x01\x0E\x00\x26\x00\x02\x01\x07\x01\x29\x00\x00\x00\x2C\x00\x02\x01\x07\x01\x29\x00\x00\x00\x34\x00\x02\x01\x07\x01\x29\x00\x00'
         .linenumbertable
             L0 13
             L2 15

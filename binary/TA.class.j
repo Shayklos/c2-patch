@@ -13,7 +13,7 @@ L5:
 
 .method public run : ()V
     .code stack 0 locals 1
-L0:     invokestatic Method QA break ()V
+L0:     invokestatic Method QA method74 ()V
 L3:     return
 L4:     
     .end code

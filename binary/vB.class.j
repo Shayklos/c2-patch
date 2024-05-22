@@ -13,13 +13,13 @@ L9:     dup
 L10:    pop2
 L11:    dup
 L12:    invokespecial Method If <init> ()V
-L15:    invokevirtual Method vB break (Ld;)V
+L15:    invokevirtual Method vB method34 (Ld;)V
 L18:    return
 L19:    
     .end code
 .end method
 
-.method public throws : ()F
+.method public method42 : ()F
     .code stack 1 locals 1
 L0:     fconst_1
 L1:     freturn
@@ -27,7 +27,7 @@ L2:
     .end code
 .end method
 
-.method public implements : ()Z
+.method public method41 : ()Z
     .code stack 3 locals 1
 L0:     iconst_1
 L1:     dup
@@ -46,11 +46,11 @@ L3:
     .end code
 .end method
 
-.method public assert : ()V
+.method public method46 : ()V
     .code stack 2 locals 1
-L0:     getstatic Field zg do Lzg;
+L0:     getstatic Field zg field466 Lzg;
 L3:     fconst_1
-L4:     invokestatic Method UE break (Lzg;F)V
+L4:     invokestatic Method UE method422 (Lzg;F)V
 L7:     return
 L8:     
     .end code

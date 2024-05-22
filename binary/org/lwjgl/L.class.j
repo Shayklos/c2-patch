@@ -2,9 +2,9 @@
 .class final super org/lwjgl/L
 .super java/lang/Object
 .implements java/security/PrivilegedExceptionAction
-.field final synthetic else Ljava/lang/Class;
-.field final synthetic "enum" Ljava/lang/String;
-.field final synthetic do Ljava/lang/ClassLoader;
+.field final synthetic field2470 Ljava/lang/Class;
+.field final synthetic field2471 Ljava/lang/String;
+.field final synthetic field2472 Ljava/lang/ClassLoader;
 
 .method <init> : (Ljava/lang/Class;Ljava/lang/ClassLoader;Ljava/lang/String;)V
     .code stack 7 locals 4
@@ -15,19 +15,19 @@ L3:     dup_x2
 L4:     aload_2
 L5:     aload_0
 L6:     aload_1
-L7:     putfield Field org/lwjgl/L else Ljava/lang/Class;
-L10:    putfield Field org/lwjgl/L do Ljava/lang/ClassLoader;
-L13:    putfield Field org/lwjgl/L "enum" Ljava/lang/String;
+L7:     putfield Field org/lwjgl/L field2470 Ljava/lang/Class;
+L10:    putfield Field org/lwjgl/L field2472 Ljava/lang/ClassLoader;
+L13:    putfield Field org/lwjgl/L field2471 Ljava/lang/String;
 L16:    invokespecial Method java/lang/Object <init> ()V
 L19:    return
 L20:    
     .end code
 .end method
 
-.method public break : ()Ljava/lang/String;
+.method public method1760 : ()Ljava/lang/String;
     .code stack 7 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/L else Ljava/lang/Class;
+L1:     getfield Field org/lwjgl/L field2470 Ljava/lang/Class;
 L4:     ldc "findLibrary"
 L6:     iconst_1
 L7:     dup
@@ -54,7 +54,7 @@ L32:    dup
 L33:    dup
 L34:    pop2
 L35:    invokevirtual Method java/lang/reflect/Method setAccessible (Z)V
-L38:    getfield Field org/lwjgl/L do Ljava/lang/ClassLoader;
+L38:    getfield Field org/lwjgl/L field2472 Ljava/lang/ClassLoader;
 L41:    iconst_1
 L42:    dup
 L43:    dup
@@ -69,7 +69,7 @@ L53:    iconst_1
 L54:    dup
 L55:    pop2
 L56:    aload_0
-L57:    getfield Field org/lwjgl/L "enum" Ljava/lang/String;
+L57:    getfield Field org/lwjgl/L field2471 Ljava/lang/String;
 L60:    aastore
 L61:    invokevirtual Method java/lang/reflect/Method invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 L64:    checkcast java/lang/String
@@ -82,7 +82,7 @@ L68:
 .method public bridge synthetic run : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/L break ()Ljava/lang/String;
+L1:     invokevirtual Method org/lwjgl/L method1760 ()Ljava/lang/String;
 L4:     areturn
 L5:     
     .end code

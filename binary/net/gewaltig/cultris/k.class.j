@@ -1,16 +1,16 @@
 .version 49 0
 .class final super net/gewaltig/cultris/k
 .super java/awt/event/MouseAdapter
-.field final synthetic "enum" Ljava/net/URL;
-.field final synthetic do Lnet/gewaltig/cultris/Applet;
+.field final synthetic field601 Ljava/net/URL;
+.field final synthetic field602 Lnet/gewaltig/cultris/Applet;
 
 .method public mouseClicked : (Ljava/awt/event/MouseEvent;)V
     .code stack 3 locals 2
 L0:     aload_0
-L1:     getfield Field net/gewaltig/cultris/k do Lnet/gewaltig/cultris/Applet;
+L1:     getfield Field net/gewaltig/cultris/k field602 Lnet/gewaltig/cultris/Applet;
 L4:     invokevirtual Method net/gewaltig/cultris/Applet getAppletContext ()Ljava/applet/AppletContext;
 L7:     aload_0
-L8:     getfield Field net/gewaltig/cultris/k "enum" Ljava/net/URL;
+L8:     getfield Field net/gewaltig/cultris/k field601 Ljava/net/URL;
 L11:    ldc "_top"
 L13:    invokeinterface InterfaceMethod java/applet/AppletContext showDocument (Ljava/net/URL;Ljava/lang/String;)V 3
 L18:    return
@@ -25,8 +25,8 @@ L1:     aload_0
 L2:     dup_x1
 L3:     dup_x2
 L4:     aload_1
-L5:     putfield Field net/gewaltig/cultris/k do Lnet/gewaltig/cultris/Applet;
-L8:     putfield Field net/gewaltig/cultris/k "enum" Ljava/net/URL;
+L5:     putfield Field net/gewaltig/cultris/k field602 Lnet/gewaltig/cultris/Applet;
+L8:     putfield Field net/gewaltig/cultris/k field601 Ljava/net/URL;
 L11:    invokespecial Method java/awt/event/MouseAdapter <init> ()V
 L14:    return
 L15:    

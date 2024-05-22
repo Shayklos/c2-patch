@@ -1,10 +1,10 @@
 .version 49 0
 .class public final super enum xc
 .super java/lang/Enum
-.field public static final enum char Lxc;
-.field public static final enum else Lxc;
-.field private static final synthetic "enum" [Lxc;
-.field public static final enum do Lxc;
+.field public static final enum field435 Lxc;
+.field public static final enum field436 Lxc;
+.field private static final synthetic field437 [Lxc;
+.field public static final enum field438 Lxc;
 
 .method private <init> : (Ljava/lang/String;I)V
     .code stack 3 locals 3
@@ -38,7 +38,7 @@ L7:     iconst_1
 L8:     dup
 L9:     pop2
 L10:    invokespecial Method xc <init> (Ljava/lang/String;I)V
-L13:    putstatic Field xc char Lxc;
+L13:    putstatic Field xc field435 Lxc;
 L16:    new xc
 L19:    dup
 L20:    ldc "ONLY_POSITION_SIZE"
@@ -47,7 +47,7 @@ L23:    dup
 L24:    dup
 L25:    pop2
 L26:    invokespecial Method xc <init> (Ljava/lang/String;I)V
-L29:    putstatic Field xc do Lxc;
+L29:    putstatic Field xc field438 Lxc;
 L32:    new xc
 L35:    dup
 L36:    ldc "EVERYTHING"
@@ -56,7 +56,7 @@ L39:    iconst_1
 L40:    dup
 L41:    pop2
 L42:    invokespecial Method xc <init> (Ljava/lang/String;I)V
-L45:    putstatic Field xc else Lxc;
+L45:    putstatic Field xc field436 Lxc;
 L48:    iconst_3
 L49:    iconst_1
 L50:    dup
@@ -70,23 +70,23 @@ L59:    iconst_0
 L60:    iconst_1
 L61:    dup
 L62:    pop2
-L63:    getstatic Field xc char Lxc;
+L63:    getstatic Field xc field435 Lxc;
 L66:    aastore
 L67:    dup
 L68:    iconst_1
 L69:    dup
 L70:    dup
 L71:    pop2
-L72:    getstatic Field xc do Lxc;
+L72:    getstatic Field xc field438 Lxc;
 L75:    aastore
 L76:    dup
 L77:    iconst_2
 L78:    iconst_1
 L79:    dup
 L80:    pop2
-L81:    getstatic Field xc else Lxc;
+L81:    getstatic Field xc field436 Lxc;
 L84:    aastore
-L85:    putstatic Field xc "enum" [Lxc;
+L85:    putstatic Field xc field437 [Lxc;
 L88:    return
 L89:    
     .end code
@@ -94,7 +94,7 @@ L89:
 
 .method public static values : ()[Lxc;
     .code stack 1 locals 0
-L0:     getstatic Field xc "enum" [Lxc;
+L0:     getstatic Field xc field437 [Lxc;
 L3:     invokevirtual Method [Lxc; clone ()Ljava/lang/Object;
 L6:     checkcast [Lxc;
 L9:     areturn

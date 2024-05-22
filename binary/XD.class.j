@@ -2,14 +2,14 @@
 .class public final super XD
 .super java/lang/Object
 .implements h
-.field public final synthetic do LwE;
+.field public final synthetic field1610 LwE;
 
-.method public break : (LgB;)V
+.method public method728 : (LgB;)V
     .code stack 2 locals 2
 L0:     aload_0
-L1:     getfield Field XD do LwE;
+L1:     getfield Field XD field1610 LwE;
 L4:     ldc -1e0f
-L6:     invokevirtual Method wE else (F)V
+L6:     invokevirtual Method wE method104 (F)V
 L9:     return
 L10:    
     .end code
@@ -20,7 +20,7 @@ L10:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field XD do LwE;
+L3:     putfield Field XD field1610 LwE;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    

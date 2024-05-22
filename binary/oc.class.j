@@ -1,17 +1,17 @@
 .version 49 0
 .class public final super enum oc
 .super java/lang/Enum
-.field private static final synthetic long [Loc;
-.field public static final enum void Loc;
+.field private static final synthetic field374 [Loc;
+.field public static final enum field375 Loc;
 .field public static final enum try Loc;
-.field public static final enum const Loc;
+.field public static final enum field376 Loc;
 .field public static final enum new Loc;
-.field public static final enum null Loc;
+.field public static final enum field377 Loc;
 .field public static final enum this Loc;
-.field public static final enum char Loc;
-.field public static final enum else Loc;
-.field public static final enum "enum" Loc;
-.field public static final enum do Loc;
+.field public static final enum field378 Loc;
+.field public static final enum field379 Loc;
+.field public static final enum field380 Loc;
+.field public static final enum field381 Loc;
 
 .method public static valueOf : (Ljava/lang/String;)Loc;
     .code stack 2 locals 1
@@ -52,7 +52,7 @@ L39:    iconst_1
 L40:    dup
 L41:    pop2
 L42:    invokespecial Method oc <init> (Ljava/lang/String;I)V
-L45:    putstatic Field oc else Loc;
+L45:    putstatic Field oc field379 Loc;
 L48:    new oc
 L51:    dup
 L52:    ldc "START_SINGLE_ROUND"
@@ -61,7 +61,7 @@ L55:    iconst_1
 L56:    dup
 L57:    pop2
 L58:    invokespecial Method oc <init> (Ljava/lang/String;I)V
-L61:    putstatic Field oc const Loc;
+L61:    putstatic Field oc field376 Loc;
 L64:    new oc
 L67:    dup
 L68:    ldc "ENABLE_AUTO_SLOT_ASSIGNMENT"
@@ -70,7 +70,7 @@ L71:    iconst_1
 L72:    dup
 L73:    pop2
 L74:    invokespecial Method oc <init> (Ljava/lang/String;I)V
-L77:    putstatic Field oc char Loc;
+L77:    putstatic Field oc field378 Loc;
 L80:    new oc
 L83:    dup
 L84:    ldc "DISABLE_AUTO_SLOT_ASSIGNMENT"
@@ -79,7 +79,7 @@ L87:    iconst_1
 L88:    dup
 L89:    pop2
 L90:    invokespecial Method oc <init> (Ljava/lang/String;I)V
-L93:    putstatic Field oc null Loc;
+L93:    putstatic Field oc field377 Loc;
 L96:    new oc
 L99:    dup
 L100:   ldc "ASSIGN_SLOT"
@@ -88,7 +88,7 @@ L104:   iconst_1
 L105:   dup
 L106:   pop2
 L107:   invokespecial Method oc <init> (Ljava/lang/String;I)V
-L110:   putstatic Field oc void Loc;
+L110:   putstatic Field oc field375 Loc;
 L113:   new oc
 L116:   dup
 L117:   ldc "UNASSIGN_SLOT"
@@ -97,7 +97,7 @@ L121:   iconst_1
 L122:   dup
 L123:   pop2
 L124:   invokespecial Method oc <init> (Ljava/lang/String;I)V
-L127:   putstatic Field oc "enum" Loc;
+L127:   putstatic Field oc field380 Loc;
 L130:   new oc
 L133:   dup
 L134:   ldc "ASSIGN_TEAM"
@@ -115,7 +115,7 @@ L155:   iconst_1
 L156:   dup
 L157:   pop2
 L158:   invokespecial Method oc <init> (Ljava/lang/String;I)V
-L161:   putstatic Field oc do Loc;
+L161:   putstatic Field oc field381 Loc;
 L164:   bipush 10
 L166:   iconst_1
 L167:   dup
@@ -143,42 +143,42 @@ L194:   iconst_2
 L195:   iconst_1
 L196:   dup
 L197:   pop2
-L198:   getstatic Field oc else Loc;
+L198:   getstatic Field oc field379 Loc;
 L201:   aastore
 L202:   dup
 L203:   iconst_3
 L204:   iconst_1
 L205:   dup
 L206:   pop2
-L207:   getstatic Field oc const Loc;
+L207:   getstatic Field oc field376 Loc;
 L210:   aastore
 L211:   dup
 L212:   iconst_4
 L213:   iconst_1
 L214:   dup
 L215:   pop2
-L216:   getstatic Field oc char Loc;
+L216:   getstatic Field oc field378 Loc;
 L219:   aastore
 L220:   dup
 L221:   iconst_5
 L222:   iconst_1
 L223:   dup
 L224:   pop2
-L225:   getstatic Field oc null Loc;
+L225:   getstatic Field oc field377 Loc;
 L228:   aastore
 L229:   dup
 L230:   bipush 6
 L232:   iconst_1
 L233:   dup
 L234:   pop2
-L235:   getstatic Field oc void Loc;
+L235:   getstatic Field oc field375 Loc;
 L238:   aastore
 L239:   dup
 L240:   bipush 7
 L242:   iconst_1
 L243:   dup
 L244:   pop2
-L245:   getstatic Field oc "enum" Loc;
+L245:   getstatic Field oc field380 Loc;
 L248:   aastore
 L249:   dup
 L250:   bipush 8
@@ -192,9 +192,9 @@ L260:   bipush 9
 L262:   iconst_1
 L263:   dup
 L264:   pop2
-L265:   getstatic Field oc do Loc;
+L265:   getstatic Field oc field381 Loc;
 L268:   aastore
-L269:   putstatic Field oc long [Loc;
+L269:   putstatic Field oc field374 [Loc;
 L272:   return
 L273:   
     .end code
@@ -202,7 +202,7 @@ L273:
 
 .method public static values : ()[Loc;
     .code stack 1 locals 0
-L0:     getstatic Field oc long [Loc;
+L0:     getstatic Field oc field374 [Loc;
 L3:     invokevirtual Method [Loc; clone ()Ljava/lang/Object;
 L6:     checkcast [Loc;
 L9:     areturn

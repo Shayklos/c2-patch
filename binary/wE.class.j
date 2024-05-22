@@ -2,22 +2,22 @@
 .class public final super wE
 .super qc
 .implements d
-.field private static final goto F = 1.5e-1f
-.field private break LyB;
-.field private static final long F = 4e-1f
+.field private static final field151 F = 1.5e-1f
+.field private field152 LyB;
+.field private static final field153 F = 4e-1f
 .field private try LPf;
-.field private const LyB;
+.field private field154 LyB;
 .field private new Z
-.field private null I
+.field private field155 I
 .field private static final this F = 4e-1f
-.field private else Ljava/util/List;
-.field private "enum" LYg;
-.field private do LYg;
+.field private field156 Ljava/util/List;
+.field private field157 LYg;
+.field private field158 LYg;
 
-.method public do : (Lh;)V
+.method public method128 : (Lh;)V
     .code stack 2 locals 2
 L0:     aload_0
-L1:     getfield Field wE else Ljava/util/List;
+L1:     getfield Field wE field156 Ljava/util/List;
 L4:     aload_1
 L5:     invokeinterface InterfaceMethod java/util/List remove (Ljava/lang/Object;)Z 2
 L10:    pop
@@ -26,7 +26,7 @@ L12:
     .end code
 .end method
 
-.method public break : (I)V
+.method public method14 : (I)V
     .code stack 8 locals 2
 L0:     iload_1
 L1:     iconst_1
@@ -42,11 +42,11 @@ L12:    istore_1
 L13:    aload_0
 L14:    dup
 L15:    iload_1
-L16:    putfield Field wE null I
-L19:    getfield Field wE break LyB;
-L22:    invokevirtual Method yB break ()F
+L16:    putfield Field wE field155 I
+L19:    getfield Field wE field152 LyB;
+L22:    invokevirtual Method yB method5830 ()F
 L25:    aload_0
-L26:    getfield Field wE null I
+L26:    getfield Field wE field155 I
 L29:    i2f
 L30:    fcmpl
 L31:    iflt L98
@@ -54,21 +54,21 @@ L34:    iconst_1
 L35:    aload_0
 L36:    dup_x1
 L37:    dup_x2
-L38:    getfield Field wE break LyB;
+L38:    getfield Field wE field152 LyB;
 L41:    aload_0
-L42:    getfield Field wE null I
+L42:    getfield Field wE field155 I
 L45:    iconst_1
 L46:    dup
 L47:    dup
 L48:    pop2
 L49:    isub
 L50:    i2f
-L51:    invokevirtual Method yB break (F)V
+L51:    invokevirtual Method yB method5825 (F)V
 L54:    iconst_1
 L55:    dup
 L56:    pop2
 L57:    putfield Field wE new Z
-L60:    getfield Field wE else Ljava/util/List;
+L60:    getfield Field wE field156 Ljava/util/List;
 L63:    invokeinterface InterfaceMethod java/util/List iterator ()Ljava/util/Iterator; 1
 L68:    dup
 L69:    astore_1
@@ -78,29 +78,29 @@ L78:    aload_1
 L79:    invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
 L84:    checkcast h
 L87:    aload_0
-L88:    invokeinterface InterfaceMethod h break (LgB;)V 2
+L88:    invokeinterface InterfaceMethod h method728 (LgB;)V 2
 L93:    aload_1
 L94:    goto L70
 L97:    athrow
 L98:    return
 L99:    
-        .attribute StackMap b'\x00\x04\x00\x0D\x00\x02\x07\x00\x02\x01\x00\x00\x00\x46\x00\x02\x07\x00\x02\x07\x00\x42\x00\x01\x07\x00\x42\x00\x61\x00\x00\x00\x01\x07\x00\x51\x00\x62\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x0D\x00\x02\x07\x00\x02\x01\x00\x00\x00\x46\x00\x02\x07\x00\x02\x07\x00\x46\x00\x01\x07\x00\x46\x00\x61\x00\x00\x00\x01\x07\x00\x56\x00\x62\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public static synthetic const : (LwE;)LYg;
+.method public static synthetic method129 : (LwE;)LYg;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field wE "enum" LYg;
+L1:     getfield Field wE field157 LYg;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method public for : (Lh;)V
+.method public method130 : (Lh;)V
     .code stack 2 locals 2
 L0:     aload_0
-L1:     getfield Field wE else Ljava/util/List;
+L1:     getfield Field wE field156 Ljava/util/List;
 L4:     aload_1
 L5:     invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
 L10:    pop
@@ -111,22 +111,22 @@ L12:
 
 .method public background : (ZF)V
     .code stack 5 locals 4
-L0:     invokestatic Method FE "final" ()V
+L0:     invokestatic Method FE method10 ()V
 L3:     aload_0
-L4:     getfield Field wE break LyB;
-L7:     invokevirtual Method yB short ()Z
+L4:     getfield Field wE field152 LyB;
+L7:     invokevirtual Method yB method5826 ()Z
 L10:    ifne L30
 L13:    aload_0
-L14:    getfield Field wE const LyB;
-L17:    invokevirtual Method yB short ()Z
+L14:    getfield Field wE field154 LyB;
+L17:    invokevirtual Method yB method5826 ()Z
 L20:    ifne L30
 L23:    aload_0
 L24:    getfield Field wE new Z
 L27:    ifeq L101
 L30:    aload_0
 L31:    dup
-L32:    invokevirtual Method wE extends ()V
-L35:    getfield Field wE else Ljava/util/List;
+L32:    invokevirtual Method wE method21 ()V
+L35:    getfield Field wE field156 Ljava/util/List;
 L38:    invokeinterface InterfaceMethod java/util/List iterator ()Ljava/util/Iterator; 1
 L43:    dup
 L44:    astore_3
@@ -136,17 +136,17 @@ L53:    aload_3
 L54:    invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
 L59:    checkcast h
 L62:    aload_0
-L63:    invokeinterface InterfaceMethod h break (LgB;)V 2
+L63:    invokeinterface InterfaceMethod h method728 (LgB;)V 2
 L68:    aload_3
 L69:    goto L45
 L72:    athrow
 L73:    aload_0
-L74:    getfield Field wE break LyB;
-L77:    invokevirtual Method yB short ()Z
+L74:    getfield Field wE field152 LyB;
+L77:    invokevirtual Method yB method5826 ()Z
 L80:    ifne L93
 L83:    aload_0
-L84:    getfield Field wE const LyB;
-L87:    invokevirtual Method yB short ()Z
+L84:    getfield Field wE field154 LyB;
+L87:    invokevirtual Method yB method5826 ()Z
 L90:    ifeq L101
 L93:    aload_0
 L94:    iconst_1
@@ -158,44 +158,44 @@ L101:   ldc 4e-1f
 L103:   dup
 L104:   dup
 L105:   fload_2
-L106:   invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L106:   invokestatic Method org/lwjgl/opengl/GL11 method3888 (FFFF)V
 L109:   iconst_1
 L110:   dup
 L111:   dup
 L112:   pop2
-L113:   invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
+L113:   invokestatic Method org/lwjgl/opengl/GL11 method3664 (I)V
 L116:   iload_1
 L117:   aload_0
 L118:   dup
 L119:   dup_x2
-L120:   getfield Field wE catch F
+L120:   getfield Field wE field1124 F
 L123:   fconst_2
 L124:   fdiv
 L125:   aload_0
-L126:   getfield Field wE "enum" LYg;
-L129:   getfield Field Yg break F
-L132:   invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
-L135:   getfield Field wE catch F
+L126:   getfield Field wE field157 LYg;
+L129:   getfield Field Yg field1132 F
+L132:   invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
+L135:   getfield Field wE field1124 F
 L138:   fconst_2
 L139:   fdiv
 L140:   aload_0
 L141:   dup
-L142:   getfield Field wE break F
+L142:   getfield Field wE field1132 F
 L145:   swap
-L146:   getfield Field wE do LYg;
-L149:   getfield Field Yg break F
+L146:   getfield Field wE field158 LYg;
+L149:   getfield Field Yg field1132 F
 L152:   fsub
-L153:   invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
-L156:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
+L153:   invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
+L156:   invokestatic Method org/lwjgl/opengl/GL11 method3788 ()V
 L159:   fload_2
 L160:   invokespecial Method qc background (ZF)V
 L163:   return
 L164:   
-        .attribute StackMap b'\x00\x06\x00\x1E\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x2D\x00\x04\x07\x00\x02\x01\x02\x07\x00\x42\x00\x01\x07\x00\x42\x00\x48\x00\x00\x00\x01\x07\x00\x51\x00\x49\x00\x04\x07\x00\x02\x01\x02\x07\x00\x42\x00\x00\x00\x5D\x00\x04\x07\x00\x02\x01\x02\x07\x00\x42\x00\x00\x00\x65\x00\x03\x07\x00\x02\x01\x02\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x1E\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x2D\x00\x04\x07\x00\x02\x01\x02\x07\x00\x46\x00\x01\x07\x00\x46\x00\x48\x00\x00\x00\x01\x07\x00\x56\x00\x49\x00\x04\x07\x00\x02\x01\x02\x07\x00\x46\x00\x00\x00\x5D\x00\x04\x07\x00\x02\x01\x02\x07\x00\x46\x00\x00\x00\x65\x00\x03\x07\x00\x02\x01\x02\x00\x00'
     .end code
 .end method
 
-.method public short : (F)V
+.method public method131 : (F)V
     .code stack 7 locals 2
 L0:     fload_1
 L1:     fconst_0
@@ -205,12 +205,12 @@ L6:     fconst_0
 L7:     fstore_1
 L8:     fload_1
 L9:     aload_0
-L10:    getfield Field wE null I
+L10:    getfield Field wE field155 I
 L13:    i2f
 L14:    fcmpl
 L15:    iflt L29
 L18:    aload_0
-L19:    getfield Field wE null I
+L19:    getfield Field wE field155 I
 L22:    iconst_1
 L23:    dup
 L24:    dup
@@ -222,15 +222,15 @@ L29:    aload_0
 L30:    iconst_1
 L31:    aload_0
 L32:    dup_x1
-L33:    getfield Field wE break LyB;
+L33:    getfield Field wE field152 LyB;
 L36:    fload_1
 L37:    ldc2_w 1.5000000596046448e-1
-L40:    invokevirtual Method yB break (FD)V
+L40:    invokevirtual Method yB method5827 (FD)V
 L43:    iconst_1
 L44:    dup
 L45:    pop2
 L46:    putfield Field wE new Z
-L49:    getfield Field wE else Ljava/util/List;
+L49:    getfield Field wE field156 Ljava/util/List;
 L52:    invokeinterface InterfaceMethod java/util/List iterator ()Ljava/util/Iterator; 1
 L57:    dup
 L58:    astore_1
@@ -240,17 +240,17 @@ L67:    aload_1
 L68:    invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
 L73:    checkcast h
 L76:    aload_0
-L77:    invokeinterface InterfaceMethod h break (LgB;)V 2
+L77:    invokeinterface InterfaceMethod h method728 (LgB;)V 2
 L82:    aload_1
 L83:    goto L59
 L86:    athrow
 L87:    return
 L88:    
-        .attribute StackMap b'\x00\x05\x00\x08\x00\x02\x07\x00\x02\x02\x00\x00\x00\x1D\x00\x02\x07\x00\x02\x02\x00\x00\x00\x3B\x00\x02\x07\x00\x02\x07\x00\x42\x00\x01\x07\x00\x42\x00\x56\x00\x00\x00\x01\x07\x00\x51\x00\x57\x00\x02\x07\x00\x02\x07\x00\x42\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x08\x00\x02\x07\x00\x02\x02\x00\x00\x00\x1D\x00\x02\x07\x00\x02\x02\x00\x00\x00\x3B\x00\x02\x07\x00\x02\x07\x00\x46\x00\x01\x07\x00\x46\x00\x56\x00\x00\x00\x01\x07\x00\x56\x00\x57\x00\x02\x07\x00\x02\x07\x00\x46\x00\x00'
     .end code
 .end method
 
-.method public short : (I)V
+.method public method93 : (I)V
     .code stack 5 locals 2
 L0:     aload_0
 L1:     iload_1
@@ -261,42 +261,42 @@ L5:     dup
 L6:     pop2
 L7:     idiv
 L8:     i2f
-L9:     invokevirtual Method wE else (F)V
+L9:     invokevirtual Method wE method104 (F)V
 L12:    return
 L13:    
     .end code
 .end method
 
-.method public short : ()I
+.method public method132 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field wE break LyB;
-L4:     invokevirtual Method yB break ()F
+L1:     getfield Field wE field152 LyB;
+L4:     invokevirtual Method yB method5830 ()F
 L7:     invokestatic Method java/lang/Math round (F)I
 L10:    ireturn
 L11:    
     .end code
 .end method
 
-.method public static synthetic else : (LwE;)I
+.method public static synthetic method133 : (LwE;)I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field wE null I
+L1:     getfield Field wE field155 I
 L4:     ireturn
 L5:     
     .end code
 .end method
 
-.method public const : ()I
+.method public method134 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field wE null I
+L1:     getfield Field wE field155 I
 L4:     ireturn
 L5:     
     .end code
 .end method
 
-.method public const : (F)V
+.method public method135 : (F)V
     .code stack 5 locals 2
 L0:     fload_1
 L1:     fconst_0
@@ -306,7 +306,7 @@ L6:     fconst_0
 L7:     fstore_1
 L8:     fload_1
 L9:     aload_0
-L10:    getfield Field wE null I
+L10:    getfield Field wE field155 I
 L13:    iconst_1
 L14:    dup
 L15:    dup
@@ -316,7 +316,7 @@ L18:    i2f
 L19:    fcmpl
 L20:    ifle L34
 L23:    aload_0
-L24:    getfield Field wE null I
+L24:    getfield Field wE field155 I
 L27:    iconst_1
 L28:    dup
 L29:    dup
@@ -325,27 +325,27 @@ L31:    isub
 L32:    i2f
 L33:    fstore_1
 L34:    aload_0
-L35:    getfield Field wE break LyB;
-L38:    invokevirtual Method yB break ()F
+L35:    getfield Field wE field152 LyB;
+L38:    invokevirtual Method yB method5830 ()F
 L41:    fload_1
 L42:    fcmpl
 L43:    ifne L56
 L46:    aload_0
-L47:    getfield Field wE break LyB;
-L50:    invokevirtual Method yB short ()Z
+L47:    getfield Field wE field152 LyB;
+L50:    invokevirtual Method yB method5826 ()Z
 L53:    ifeq L111
 L56:    aload_0
 L57:    iconst_1
 L58:    aload_0
 L59:    dup_x1
-L60:    getfield Field wE break LyB;
+L60:    getfield Field wE field152 LyB;
 L63:    fload_1
-L64:    invokevirtual Method yB break (F)V
+L64:    invokevirtual Method yB method5825 (F)V
 L67:    iconst_1
 L68:    dup
 L69:    pop2
 L70:    putfield Field wE new Z
-L73:    getfield Field wE else Ljava/util/List;
+L73:    getfield Field wE field156 Ljava/util/List;
 L76:    invokeinterface InterfaceMethod java/util/List iterator ()Ljava/util/Iterator; 1
 L81:    dup
 L82:    astore_1
@@ -355,13 +355,13 @@ L91:    aload_1
 L92:    invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
 L97:    checkcast h
 L100:   aload_0
-L101:   invokeinterface InterfaceMethod h break (LgB;)V 2
+L101:   invokeinterface InterfaceMethod h method728 (LgB;)V 2
 L106:   aload_1
 L107:   goto L83
 L110:   athrow
 L111:   return
 L112:   
-        .attribute StackMap b'\x00\x06\x00\x08\x00\x02\x07\x00\x02\x02\x00\x00\x00\x22\x00\x02\x07\x00\x02\x02\x00\x00\x00\x38\x00\x02\x07\x00\x02\x02\x00\x00\x00\x53\x00\x02\x07\x00\x02\x07\x00\x42\x00\x01\x07\x00\x42\x00\x6E\x00\x00\x00\x01\x07\x00\x51\x00\x6F\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x08\x00\x02\x07\x00\x02\x02\x00\x00\x00\x22\x00\x02\x07\x00\x02\x02\x00\x00\x00\x38\x00\x02\x07\x00\x02\x02\x00\x00\x00\x53\x00\x02\x07\x00\x02\x07\x00\x46\x00\x01\x07\x00\x46\x00\x6E\x00\x00\x00\x01\x07\x00\x56\x00\x6F\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
@@ -393,7 +393,7 @@ L30:    pop2
 L31:    dup
 L32:    fconst_0
 L33:    invokespecial Method yB <init> (F)V
-L36:    putfield Field wE const LyB;
+L36:    putfield Field wE field154 LyB;
 L39:    new yB
 L42:    aload_0
 L43:    dup
@@ -402,13 +402,13 @@ L45:    dup
 L46:    iload_1
 L47:    i2f
 L48:    invokespecial Method yB <init> (F)V
-L51:    putfield Field wE break LyB;
+L51:    putfield Field wE field152 LyB;
 L54:    iconst_1
 L55:    dup
 L56:    pop2
 L57:    iload_2
 L58:    invokestatic Method java/lang/Math max (II)I
-L61:    putfield Field wE null I
+L61:    putfield Field wE field155 I
 L64:    new me
 L67:    aload_0
 L68:    dup_x2
@@ -431,7 +431,7 @@ L92:    dup
 L93:    aload_0
 L94:    invokespecial Method XD <init> (LwE;)V
 L97:    invokespecial Method me <init> (LuB;FFZLh;)V
-L100:   putfield Field wE "enum" LYg;
+L100:   putfield Field wE field157 LYg;
 L103:   new me
 L106:   aload_0
 L107:   dup
@@ -453,7 +453,7 @@ L130:   dup
 L131:   aload_0
 L132:   invokespecial Method ye <init> (LwE;)V
 L135:   invokespecial Method me <init> (LuB;FFZLh;)V
-L138:   putfield Field wE do LYg;
+L138:   putfield Field wE field158 LYg;
 L141:   new Pf
 L144:   aload_0
 L145:   dup
@@ -464,23 +464,23 @@ L149:   dup
 L150:   aconst_null
 L151:   invokespecial Method Pf <init> (LwE;LwE;LXD;)V
 L154:   putfield Field wE try LPf;
-L157:   getfield Field wE "enum" LYg;
-L160:   getstatic Field dg "enum" Ldg;
-L163:   invokevirtual Method wE break (LgB;Ljava/lang/Object;)V
+L157:   getfield Field wE field157 LYg;
+L160:   getstatic Field dg field337 Ldg;
+L163:   invokevirtual Method wE method31 (LgB;Ljava/lang/Object;)V
 L166:   getfield Field wE try LPf;
-L169:   getstatic Field dg "enum" Ldg;
-L172:   invokevirtual Method wE break (LgB;Ljava/lang/Object;)V
-L175:   getfield Field wE do LYg;
-L178:   getstatic Field dg "enum" Ldg;
-L181:   invokevirtual Method wE break (LgB;Ljava/lang/Object;)V
+L169:   getstatic Field dg field337 Ldg;
+L172:   invokevirtual Method wE method31 (LgB;Ljava/lang/Object;)V
+L175:   getfield Field wE field158 LYg;
+L178:   getstatic Field dg field337 Ldg;
+L181:   invokevirtual Method wE method31 (LgB;Ljava/lang/Object;)V
 L184:   new java/util/LinkedList
 L187:   aload_0
 L188:   dup
 L189:   pop2
 L190:   dup
 L191:   invokespecial Method java/util/LinkedList <init> ()V
-L194:   putfield Field wE else Ljava/util/List;
-L197:   invokevirtual Method wE break (Ld;)V
+L194:   putfield Field wE field156 Ljava/util/List;
+L197:   invokevirtual Method wE method34 (Ld;)V
 L200:   return
 L201:   
     .end code
@@ -511,7 +511,7 @@ L10:
     .end code
 .end method
 
-.method public else : (F)V
+.method public method104 : (F)V
     .code stack 3 locals 2
 L0:     fload_1
 L1:     fconst_0
@@ -521,61 +521,61 @@ L6:     return
 L7:     athrow
 L8:     aload_0
 L9:     dup
-L10:    getfield Field wE break LyB;
-L13:    invokevirtual Method yB break ()F
+L10:    getfield Field wE field152 LyB;
+L13:    invokevirtual Method yB method5830 ()F
 L16:    fload_1
 L17:    fadd
-L18:    invokevirtual Method wE short (F)V
+L18:    invokevirtual Method wE method131 (F)V
 L21:    return
 L22:    
-        .attribute StackMap b'\x00\x02\x00\x07\x00\x00\x00\x01\x07\x00\x51\x00\x08\x00\x02\x07\x00\x02\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x07\x00\x00\x00\x01\x07\x00\x56\x00\x08\x00\x02\x07\x00\x02\x02\x00\x00'
     .end code
 .end method
 
-.method public break : (Lqc;)V
+.method public method75 : (Lqc;)V
     .code stack 5 locals 2
 L0:     aload_0
 L1:     aload_1
 L2:     dup_x1
 L3:     aload_0
-L4:     getfield Field wE "enum" LYg;
-L7:     getfield Field Yg case F
+L4:     getfield Field wE field157 LYg;
+L7:     getfield Field Yg field1128 F
 L10:    ldc 6e-1f
 L12:    fmul
-L13:    putfield Field qc case F
-L16:    getfield Field wE "enum" LYg;
-L19:    getfield Field Yg char F
+L13:    putfield Field qc field1128 F
+L16:    getfield Field wE field157 LYg;
+L19:    getfield Field Yg field1137 F
 L22:    ldc 4e0f
 L24:    fmul
-L25:    putfield Field qc char F
+L25:    putfield Field qc field1137 F
 L28:    return
 L29:    
     .end code
 .end method
 
-.method public else : ()F
+.method public method136 : ()F
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field wE break LyB;
-L4:     invokevirtual Method yB const ()F
+L1:     getfield Field wE field152 LyB;
+L4:     invokevirtual Method yB method5828 ()F
 L7:     freturn
 L8:     
     .end code
 .end method
 
-.method public else : (Lqc;)V
+.method public method62 : (Lqc;)V
     .code stack 11 locals 3
 L0:     aload_0
 L1:     dup
 L2:     dup2
 L3:     dup2
-L4:     getfield Field wE break LyB;
-L7:     invokevirtual Method yB const ()F
+L4:     getfield Field wE field152 LyB;
+L7:     invokevirtual Method yB method5828 ()F
 L10:    iconst_1
 L11:    dup
 L12:    pop2
 L13:    aload_0
-L14:    getfield Field wE null I
+L14:    getfield Field wE field155 I
 L17:    iconst_1
 L18:    dup
 L19:    dup_x2
@@ -587,122 +587,122 @@ L26:    i2f
 L27:    fdiv
 L28:    aload_0
 L29:    dup_x2
-L30:    getfield Field wE const LyB;
-L33:    invokevirtual Method yB const ()F
+L30:    getfield Field wE field154 LyB;
+L33:    invokevirtual Method yB method5828 ()F
 L36:    fadd
 L37:    fstore_2
-L38:    getfield Field wE "enum" LYg;
+L38:    getfield Field wE field157 LYg;
 L41:    aload_1
 L42:    dup
-L43:    getfield Field qc catch F
+L43:    getfield Field qc field1124 F
 L46:    swap
-L47:    getfield Field qc catch F
+L47:    getfield Field qc field1124 F
 L50:    ldc 6e-1f
 L52:    fdiv
-L53:    invokevirtual Method Yg const (FF)V
-L56:    getfield Field wE do LYg;
+L53:    invokevirtual Method Yg method32 (FF)V
+L56:    getfield Field wE field158 LYg;
 L59:    aload_1
 L60:    dup
-L61:    getfield Field qc catch F
+L61:    getfield Field qc field1124 F
 L64:    swap
-L65:    getfield Field qc catch F
+L65:    getfield Field qc field1124 F
 L68:    ldc 6e-1f
 L70:    fdiv
-L71:    invokevirtual Method Yg const (FF)V
+L71:    invokevirtual Method Yg method32 (FF)V
 L74:    getfield Field wE try LPf;
 L77:    aload_1
-L78:    getfield Field qc catch F
+L78:    getfield Field qc field1124 F
 L81:    ldc 6e-1f
 L83:    fmul
 L84:    aload_1
-L85:    getfield Field qc catch F
-L88:    invokevirtual Method Pf const (FF)V
-L91:    getfield Field wE "enum" LYg;
+L85:    getfield Field qc field1124 F
+L88:    invokevirtual Method Pf method32 (FF)V
+L91:    getfield Field wE field157 LYg;
 L94:    aload_1
 L95:    dup
-L96:    getfield Field qc void F
+L96:    getfield Field qc field1134 F
 L99:    swap
-L100:   getfield Field qc if F
-L103:   invokevirtual Method Yg catch (FF)V
+L100:   getfield Field qc field1126 F
+L103:   invokevirtual Method Yg method37 (FF)V
 L106:   getfield Field wE try LPf;
 L109:   aload_1
 L110:   dup
-L111:   getfield Field qc void F
+L111:   getfield Field qc field1134 F
 L114:   swap
-L115:   getfield Field qc catch F
+L115:   getfield Field qc field1124 F
 L118:   aload_0
 L119:   getfield Field wE try LPf;
-L122:   getfield Field Pf catch F
+L122:   getfield Field Pf field1124 F
 L125:   fsub
 L126:   ldc 5e-1f
 L128:   fmul
 L129:   fadd
 L130:   aload_1
-L131:   getfield Field qc if F
+L131:   getfield Field qc field1126 F
 L134:   aload_0
-L135:   getfield Field wE "enum" LYg;
-L138:   getfield Field Yg break F
+L135:   getfield Field wE field157 LYg;
+L138:   getfield Field Yg field1132 F
 L141:   fadd
 L142:   aload_1
-L143:   getfield Field qc break F
+L143:   getfield Field qc field1132 F
 L146:   aload_0
 L147:   getfield Field wE try LPf;
-L150:   getfield Field Pf break F
+L150:   getfield Field Pf field1132 F
 L153:   fsub
 L154:   aload_0
-L155:   getfield Field wE do LYg;
-L158:   getfield Field Yg break F
+L155:   getfield Field wE field158 LYg;
+L158:   getfield Field Yg field1132 F
 L161:   fsub
 L162:   aload_0
-L163:   getfield Field wE "enum" LYg;
-L166:   getfield Field Yg break F
+L163:   getfield Field wE field157 LYg;
+L166:   getfield Field Yg field1132 F
 L169:   fsub
 L170:   fload_2
 L171:   fconst_0
 L172:   fconst_1
-L173:   invokestatic Method OC else (FFF)F
+L173:   invokestatic Method OC method1001 (FFF)F
 L176:   fmul
 L177:   fadd
-L178:   invokevirtual Method Pf catch (FF)V
-L181:   getfield Field wE do LYg;
+L178:   invokevirtual Method Pf method37 (FF)V
+L181:   getfield Field wE field158 LYg;
 L184:   aload_1
 L185:   dup
-L186:   getfield Field qc void F
+L186:   getfield Field qc field1134 F
 L189:   swap
-L190:   getfield Field qc if F
+L190:   getfield Field qc field1126 F
 L193:   aload_1
-L194:   getfield Field qc break F
+L194:   getfield Field qc field1132 F
 L197:   fadd
 L198:   aload_0
-L199:   getfield Field wE do LYg;
-L202:   getfield Field Yg break F
+L199:   getfield Field wE field158 LYg;
+L202:   getfield Field Yg field1132 F
 L205:   fsub
-L206:   invokevirtual Method Yg catch (FF)V
+L206:   invokevirtual Method Yg method37 (FF)V
 L209:   return
 L210:   
     .end code
 .end method
 
-.method public break : ()V
+.method public method74 : ()V
     .code stack 4 locals 1
 L0:     aload_0
 L1:     dup
-L2:     getfield Field wE const LyB;
+L2:     getfield Field wE field154 LyB;
 L5:     fconst_1
-L6:     invokevirtual Method yB break (F)V
-L9:     getfield Field wE const LyB;
+L6:     invokevirtual Method yB method5825 (F)V
+L9:     getfield Field wE field154 LyB;
 L12:    fconst_0
 L13:    ldc2_w 1.5000000596046448e-1
-L16:    invokevirtual Method yB break (FD)V
+L16:    invokevirtual Method yB method5827 (FD)V
 L19:    return
 L20:    
     .end code
 .end method
 
-.method public static synthetic break : (LwE;)LYg;
+.method public static synthetic method137 : (LwE;)LYg;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field wE do LYg;
+L1:     getfield Field wE field158 LYg;
 L4:     areturn
 L5:     
     .end code

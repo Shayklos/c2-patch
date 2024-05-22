@@ -3,10 +3,10 @@
 .super java/lang/Object
 .implements f
 
-.method public break : (LRg;)Ljava/lang/Object;
+.method public method712 : (LRg;)Ljava/lang/Object;
     .code stack 1 locals 2
 L0:     aload_1
-L1:     invokevirtual Method Rg short ()I
+L1:     invokevirtual Method Rg method132 ()I
 L4:     invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L7:     areturn
 L8:     

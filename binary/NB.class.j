@@ -1,13 +1,13 @@
 .version 49 0
 .class public final super enum NB
 .super java/lang/Enum
-.field public static final enum else LNB;
-.field public static final enum "enum" LNB;
-.field private static final synthetic do [LNB;
+.field public static final enum field623 LNB;
+.field public static final enum field624 LNB;
+.field private static final synthetic field625 [LNB;
 
 .method public static values : ()[LNB;
     .code stack 1 locals 0
-L0:     getstatic Field NB do [LNB;
+L0:     getstatic Field NB field625 [LNB;
 L3:     invokevirtual Method [LNB; clone ()Ljava/lang/Object;
 L6:     checkcast [LNB;
 L9:     areturn
@@ -25,7 +25,7 @@ L7:     iconst_1
 L8:     dup
 L9:     pop2
 L10:    invokespecial Method NB <init> (Ljava/lang/String;I)V
-L13:    putstatic Field NB else LNB;
+L13:    putstatic Field NB field623 LNB;
 L16:    new NB
 L19:    dup
 L20:    ldc "LOGGED_OUT"
@@ -34,7 +34,7 @@ L23:    dup
 L24:    dup
 L25:    pop2
 L26:    invokespecial Method NB <init> (Ljava/lang/String;I)V
-L29:    putstatic Field NB "enum" LNB;
+L29:    putstatic Field NB field624 LNB;
 L32:    iconst_2
 L33:    iconst_1
 L34:    dup
@@ -48,16 +48,16 @@ L43:    iconst_0
 L44:    iconst_1
 L45:    dup
 L46:    pop2
-L47:    getstatic Field NB else LNB;
+L47:    getstatic Field NB field623 LNB;
 L50:    aastore
 L51:    dup
 L52:    iconst_1
 L53:    dup
 L54:    dup
 L55:    pop2
-L56:    getstatic Field NB "enum" LNB;
+L56:    getstatic Field NB field624 LNB;
 L59:    aastore
-L60:    putstatic Field NB do [LNB;
+L60:    putstatic Field NB field625 [LNB;
 L63:    return
 L64:    
     .end code

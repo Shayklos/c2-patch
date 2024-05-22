@@ -2,7 +2,7 @@
 .class final super org/lwjgl/opengl/SC
 .super java/lang/Object
 
-.method private static break : (Ljava/awt/Component;I)I
+.method private static method5352 : (Ljava/awt/Component;I)I
     .code stack 4 locals 2
 L0:     aload_0
 L1:     invokevirtual Method java/awt/Component getHeight ()I
@@ -18,12 +18,12 @@ L12:
     .end code
 .end method
 
-.method public static const : (Ljava/awt/Component;)Ljava/awt/Point;
+.method public static method5353 : (Ljava/awt/Component;)Ljava/awt/Point;
     .code stack 4 locals 3
         .catch java/awt/IllegalComponentStateException from L0 to L45 using L51
         .catch java/lang/NoClassDefFoundError from L0 to L45 using L78
 L0:     aload_0
-L1:     invokestatic Method org/lwjgl/opengl/SC else (Ljava/awt/Component;)Ljava/awt/Point;
+L1:     invokestatic Method org/lwjgl/opengl/SC method5357 (Ljava/awt/Component;)Ljava/awt/Point;
 L4:     dup
 L5:     astore_1
 L6:     ifnull L102
@@ -44,7 +44,7 @@ L32:    aload_0
 L33:    aload_1
 L34:    dup_x2
 L35:    getfield Field java/awt/Point y I
-L38:    invokestatic Method org/lwjgl/opengl/SC break (Ljava/awt/Component;I)I
+L38:    invokestatic Method org/lwjgl/opengl/SC method5352 (Ljava/awt/Component;I)I
 L41:    invokevirtual Method java/awt/Point move (II)V
 L44:    aload_1
 L45:    areturn
@@ -83,7 +83,7 @@ L104:
     .end code
 .end method
 
-.method public static float : ()I
+.method public static method5354 : ()I
     .code stack 5 locals 0
 L0:     invokestatic Method java/awt/Toolkit getDefaultToolkit ()Ljava/awt/Toolkit;
 L3:     sipush 10000
@@ -105,7 +105,7 @@ L30:
     .end code
 .end method
 
-.method public static short : ()I
+.method public static method5355 : ()I
     .code stack 3 locals 0
 L0:     iconst_3
 L1:     iconst_1
@@ -116,7 +116,7 @@ L5:
     .end code
 .end method
 
-.method public static break : (IIIIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/awt/Cursor;
+.method public static method5356 : (IIIIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/awt/Cursor;
     .code stack 11 locals 8
 L0:     new java/awt/image/BufferedImage
 L3:     dup
@@ -181,7 +181,7 @@ L92:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method private static else : (Ljava/awt/Component;)Ljava/awt/Point;
+.method private static method5357 : (Ljava/awt/Component;)Ljava/awt/Point;
     .code stack 3 locals 3
         .catch java/lang/Exception from L0 to L38 using L46
 L0:     aload_0
@@ -226,11 +226,11 @@ L70:    invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
 L73:    aconst_null
 L74:    areturn
 L75:    
-        .attribute StackMap b'\x00\x05\x00\x27\x00\x00\x00\x01\x07\x00\x31\x00\x28\x00\x03\x07\x00\x0C\x07\x00\x9F\x07\x00\x99\x00\x00\x00\x2A\x00\x00\x00\x01\x07\x00\x31\x00\x2E\x00\x01\x07\x00\x0C\x00\x01\x07\x00\x8C\x00\x49\x00\x02\x07\x00\x0C\x07\x00\x04\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x27\x00\x00\x00\x01\x07\x00\x31\x00\x28\x00\x03\x07\x00\x0C\x07\x00\xA0\x07\x00\x9A\x00\x00\x00\x2A\x00\x00\x00\x01\x07\x00\x31\x00\x2E\x00\x01\x07\x00\x0C\x00\x01\x07\x00\x8D\x00\x49\x00\x02\x07\x00\x0C\x07\x00\x04\x00\x00'
     .end code
 .end method
 
-.method public static const : ()Z
+.method public static method5358 : ()Z
     .code stack 3 locals 0
 L0:     iconst_1
 L1:     dup
@@ -241,7 +241,7 @@ L5:
     .end code
 .end method
 
-.method public static else : ()I
+.method public static method5359 : ()I
     .code stack 5 locals 0
 L0:     invokestatic Method java/awt/Toolkit getDefaultToolkit ()Ljava/awt/Toolkit;
 L3:     iconst_0
@@ -263,7 +263,7 @@ L26:
     .end code
 .end method
 
-.method public static break : (Ljava/awt/Component;Ljava/awt/Robot;II)V
+.method public static method5360 : (Ljava/awt/Component;Ljava/awt/Robot;II)V
     .code stack 4 locals 5
 L0:     aload_1
 L1:     ifnull L63
@@ -281,7 +281,7 @@ L19:    istore_1
 L20:    getfield Field java/awt/Point y I
 L23:    aload_0
 L24:    iload_3
-L25:    invokestatic Method org/lwjgl/opengl/SC break (Ljava/awt/Component;I)I
+L25:    invokestatic Method org/lwjgl/opengl/SC method5352 (Ljava/awt/Component;I)I
 L28:    iadd
 L29:    istore_2
 L30:    iload_1
@@ -306,7 +306,7 @@ L64:
     .end code
 .end method
 
-.method public static break : (Ljava/awt/Component;)Ljava/awt/Robot;
+.method public static method5361 : (Ljava/awt/Component;)Ljava/awt/Robot;
     .code stack 3 locals 2
         .catch java/security/PrivilegedActionException from L0 to L14 using L16
 L0:     new org/lwjgl/opengl/Ib
@@ -332,7 +332,7 @@ L40:    invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
 L43:    aconst_null
 L44:    areturn
 L45:    
-        .attribute StackMap b'\x00\x02\x00\x0F\x00\x00\x00\x01\x07\x00\x31\x00\x10\x00\x01\x07\x00\x0C\x00\x01\x07\x00\xB6'
+        .attribute StackMap b'\x00\x02\x00\x0F\x00\x00\x00\x01\x07\x00\x31\x00\x10\x00\x01\x07\x00\x0C\x00\x01\x07\x00\xBB'
     .end code
 .end method
 
@@ -345,7 +345,7 @@ L5:
     .end code
 .end method
 
-.method public static break : ()I
+.method public static method5362 : ()I
     .code stack 4 locals 1
 L0:     invokestatic Method org/lwjgl/LWJGLUtil getPlatform ()I
 L3:     iconst_2
@@ -370,7 +370,7 @@ L34:    iconst_1
 L35:    dup
 L36:    pop2
 L37:    if_icmplt L54
-L40:    invokestatic Method org/lwjgl/opengl/SC float ()I
+L40:    invokestatic Method org/lwjgl/opengl/SC method5354 ()I
 L43:    ifle L54
 L46:    iconst_1
 L47:    dup

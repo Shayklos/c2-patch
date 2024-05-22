@@ -3,7 +3,7 @@
 .super java/lang/Object
 .implements e
 
-.method public else : ([B)V
+.method public method710 : ([B)V
     .code stack 9 locals 5
 L0:     aload_1
 L1:     arraylength
@@ -115,7 +115,7 @@ L5:
     .end code
 .end method
 
-.method public break : ([B)V
+.method public method711 : ([B)V
     .code stack 9 locals 5
 L0:     aload_1
 L1:     arraylength

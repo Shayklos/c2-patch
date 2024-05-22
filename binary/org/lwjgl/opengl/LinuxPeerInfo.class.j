@@ -2,10 +2,10 @@
 .class super abstract org/lwjgl/opengl/LinuxPeerInfo
 .super org/lwjgl/opengl/a
 
-.method public final do : ()J
+.method public final method4673 : ()J
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/opengl/LinuxPeerInfo float ()Ljava/nio/ByteBuffer;
+L1:     invokevirtual Method org/lwjgl/opengl/LinuxPeerInfo method4677 ()Ljava/nio/ByteBuffer;
 L4:     invokestatic Method org/lwjgl/opengl/LinuxPeerInfo nGetDisplay (Ljava/nio/ByteBuffer;)J
 L7:     lreturn
 L8:     
@@ -31,10 +31,10 @@ L8:
 .method private static native nGetDrawable : (Ljava/nio/ByteBuffer;)J
 .end method
 
-.method public final else : ()J
+.method public final method4674 : ()J
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/opengl/LinuxPeerInfo float ()Ljava/nio/ByteBuffer;
+L1:     invokevirtual Method org/lwjgl/opengl/LinuxPeerInfo method4677 ()Ljava/nio/ByteBuffer;
 L4:     invokestatic Method org/lwjgl/opengl/LinuxPeerInfo nGetDrawable (Ljava/nio/ByteBuffer;)J
 L7:     lreturn
 L8:     

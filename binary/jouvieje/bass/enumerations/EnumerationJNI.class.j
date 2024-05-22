@@ -13,7 +13,7 @@
 
 .method static <clinit> : ()V
     .code stack 3 locals 0
-L0:     invokestatic Method jouvieje/bass/BassInit if ()Z
+L0:     invokestatic Method jouvieje/bass/BassInit method1162 ()Z
 L3:     ifne L16
 L6:     new java/lang/RuntimeException
 L9:     dup

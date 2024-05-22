@@ -2,10 +2,10 @@
 .class public interface abstract org/lwjgl/opengl/i
 .super java/lang/Object
 
-.method public abstract const : (Ljava/nio/ByteBuffer;)V
+.method public abstract method4777 : (Ljava/nio/ByteBuffer;)V
 .end method
 
-.method public abstract break : (II)V
+.method public abstract method4778 : (II)V
 .end method
 
 .method public abstract new : ()I
@@ -18,54 +18,54 @@
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract break : (IIIIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/lang/Object;
+.method public abstract method4713 : (IIIIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/lang/Object;
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract else : (Ljava/lang/Object;)V
+.method public abstract method4709 : (Ljava/lang/Object;)V
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract break : (Ljava/nio/IntBuffer;Ljava/nio/ByteBuffer;)V
+.method public abstract method4767 : (Ljava/nio/IntBuffer;Ljava/nio/ByteBuffer;)V
 .end method
 
-.method public abstract goto : ()Z
+.method public abstract method4748 : ()Z
 .end method
 
-.method public abstract do : ()Z
+.method public abstract method4762 : ()Z
 .end method
 
-.method public abstract else : (Ljava/nio/ByteBuffer;)V
+.method public abstract method4703 : (Ljava/nio/ByteBuffer;)V
 .end method
 
-.method public abstract for : ()V
+.method public abstract method4707 : ()V
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract break : (Z)V
+.method public abstract method4758 : (Z)V
 .end method
 
-.method public abstract break : (Ljava/lang/Object;)V
+.method public abstract method4772 : (Ljava/lang/Object;)V
 .end method
 
-.method public abstract break : (Ljava/nio/ByteBuffer;)V
+.method public abstract method4710 : (Ljava/nio/ByteBuffer;)V
 .end method
 
-.method public abstract catch : ()V
+.method public abstract method4724 : ()V
 .end method
 
-.method public abstract float : ()I
+.method public abstract method4747 : ()I
 .end method
 
-.method public abstract short : ()V
+.method public abstract method4769 : ()V
 .end method
 
-.method public abstract const : ()I
+.method public abstract method4763 : ()I
 .end method
 
-.method public abstract else : ()I
+.method public abstract method4744 : ()I
 .end method
 
-.method public abstract break : ()I
+.method public abstract method4780 : ()I
 .end method
 .end class

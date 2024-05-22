@@ -2,54 +2,54 @@
 .class public final super ae
 .super Rg
 .field public try D
-.field public const D
+.field public field246 D
 .field public new D
-.field public null D
+.field public field247 D
 .field public this Ljava/util/concurrent/Future;
-.field public char LFe;
-.field public else LNF;
-.field public "enum" F
-.field public static do Ljava/util/concurrent/ThreadPoolExecutor;
+.field public field248 LFe;
+.field public field249 LNF;
+.field public field250 F
+.field public static field251 Ljava/util/concurrent/ThreadPoolExecutor;
 
-.method private char : ()LFe;
+.method private method243 : ()LFe;
     .code stack 4 locals 1
 L0:     aload_0
 L1:     getfield Field ae this Ljava/util/concurrent/Future;
 L4:     invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L9:     checkcast ff
-L12:    getfield Field ff null I
+L12:    getfield Field ff field877 I
 L15:    iconst_3
 L16:    iconst_1
 L17:    dup
 L18:    pop2
 L19:    if_icmpne L37
 L22:    aload_0
-L23:    getfield Field ae float Lff;
-L26:    getfield Field ff null I
+L23:    getfield Field ae field221 Lff;
+L26:    getfield Field ff field877 I
 L29:    ifne L37
-L32:    getstatic Field Fe do LFe;
+L32:    getstatic Field Fe field427 LFe;
 L35:    areturn
 L36:    athrow
 L37:    aload_0
 L38:    getfield Field ae this Ljava/util/concurrent/Future;
 L41:    invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L46:    checkcast ff
-L49:    getfield Field ff null I
+L49:    getfield Field ff field877 I
 L52:    aload_0
-L53:    getfield Field ae float Lff;
-L56:    getfield Field ff null I
+L53:    getfield Field ae field221 Lff;
+L56:    getfield Field ff field877 I
 L59:    if_icmpeq L67
-L62:    getstatic Field Fe null LFe;
+L62:    getstatic Field Fe field423 LFe;
 L65:    areturn
 L66:    athrow
 L67:    aload_0
 L68:    getfield Field ae this Ljava/util/concurrent/Future;
 L71:    invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L76:    checkcast ff
-L79:    getfield Field ff else I
+L79:    getfield Field ff field879 I
 L82:    aload_0
-L83:    getfield Field ae float Lff;
-L86:    getfield Field ff else I
+L83:    getfield Field ae field221 Lff;
+L86:    getfield Field ff field879 I
 L89:    if_icmple L96
 L92:    getstatic Field Fe new LFe;
 L95:    areturn
@@ -57,22 +57,22 @@ L96:    aload_0
 L97:    getfield Field ae this Ljava/util/concurrent/Future;
 L100:   invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L105:   checkcast ff
-L108:   getfield Field ff else I
+L108:   getfield Field ff field879 I
 L111:   aload_0
-L112:   getfield Field ae float Lff;
-L115:   getfield Field ff else I
+L112:   getfield Field ae field221 Lff;
+L115:   getfield Field ff field879 I
 L118:   if_icmpge L125
 L121:   getstatic Field Fe this LFe;
 L124:   areturn
-L125:   getstatic Field Fe "enum" LFe;
+L125:   getstatic Field Fe field426 LFe;
 L128:   areturn
 L129:   
-        .attribute StackMap b'\x00\x06\x00\x24\x00\x00\x00\x01\x07\x00\x33\x00\x25\x00\x01\x07\x00\x02\x00\x00\x00\x42\x00\x00\x00\x01\x07\x00\x33\x00\x43\x00\x01\x07\x00\x02\x00\x00\x00\x60\x00\x01\x07\x00\x02\x00\x00\x00\x7D\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x24\x00\x00\x00\x01\x07\x00\x36\x00\x25\x00\x01\x07\x00\x02\x00\x00\x00\x42\x00\x00\x00\x01\x07\x00\x36\x00\x43\x00\x01\x07\x00\x02\x00\x00\x00\x60\x00\x01\x07\x00\x02\x00\x00\x00\x7D\x00\x01\x07\x00\x02\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method
 
-.method public const : (F)V
+.method public method135 : (F)V
     .code stack 13 locals 3
 L0:     aload_0
 L1:     dup
@@ -82,16 +82,16 @@ L5:     dup_x2
 L6:     ldc2_w 1.2e0
 L9:     aload_0
 L10:    fload_1
-L11:    putfield Field ae "enum" F
+L11:    putfield Field ae field250 F
 L14:    ldc2_w 1.18e0
 L17:    fconst_1
 L18:    aload_0
-L19:    getfield Field ae "enum" F
+L19:    getfield Field ae field250 F
 L22:    fsub
 L23:    fconst_1
 L24:    dup_x1
 L25:    aload_0
-L26:    getfield Field ae "enum" F
+L26:    getfield Field ae field250 F
 L29:    fsub
 L30:    fmul
 L31:    fsub
@@ -129,7 +129,7 @@ L74:    f2d
 L75:    ldc2_w 6e-2
 L78:    dmul
 L79:    dadd
-L80:    putfield Field ae null D
+L80:    putfield Field ae field247 D
 L83:    ldc2_w 5e-2
 L86:    fconst_1
 L87:    fload_1
@@ -144,15 +144,15 @@ L99:
     .end code
 .end method
 
-.method private for : ()V
+.method private method61 : ()V
     .code stack 10 locals 6
 L0:     aload_0
-L1:     getfield Field ae case LqE;
+L1:     getfield Field ae field227 LqE;
 L4:     getstatic Field qE this LqE;
 L7:     if_acmpeq L12
 L10:    return
 L11:    athrow
-L12:    getstatic Field ae do Ljava/util/concurrent/ThreadPoolExecutor;
+L12:    getstatic Field ae field251 Ljava/util/concurrent/ThreadPoolExecutor;
 L15:    invokevirtual Method java/util/concurrent/ThreadPoolExecutor isShutdown ()Z
 L18:    ifeq L29
 L21:    new java/lang/RuntimeException
@@ -161,15 +161,15 @@ L25:    invokespecial Method java/lang/RuntimeException <init> ()V
 L28:    athrow
 L29:    aload_0
 L30:    dup
-L31:    invokespecial Method ae catch ()V
-L34:    getfield Field ae float Lff;
+L31:    invokespecial Method ae method76 ()V
+L34:    getfield Field ae field221 Lff;
 L37:    ifnonnull L48
 L40:    new java/lang/RuntimeException
 L43:    dup
 L44:    invokespecial Method java/lang/RuntimeException <init> ()V
 L47:    athrow
 L48:    aload_0
-L49:    getfield Field ae char Lff;
+L49:    getfield Field ae field238 Lff;
 L52:    ifnonnull L63
 L55:    new java/lang/RuntimeException
 L58:    dup
@@ -186,29 +186,29 @@ L78:    aload_0
 L79:    dup
 L80:    dup_x1
 L81:    dup2
-L82:    getfield Field ae float Lff;
-L85:    invokevirtual Method ff catch ()Lff;
+L82:    getfield Field ae field221 Lff;
+L85:    invokevirtual Method ff method466 ()Lff;
 L88:    astore_1
-L89:    getfield Field ae char Lff;
-L92:    invokevirtual Method ff catch ()Lff;
+L89:    getfield Field ae field238 Lff;
+L92:    invokevirtual Method ff method466 ()Lff;
 L95:    astore_2
 L96:    getfield Field ae this [[I
-L99:    invokestatic Method OC break ([[I)[[I
+L99:    invokestatic Method OC method1012 ([[I)[[I
 L102:   astore_3
 L103:   aload_0
-L104:   getfield Field ae "enum" F
+L104:   getfield Field ae field250 F
 L107:   ldc 2.5e0f
 L109:   fmul
 L110:   fconst_0
 L111:   fconst_1
 L112:   dup_x2
-L113:   invokestatic Method OC else (FFF)F
+L113:   invokestatic Method OC method1001 (FFF)F
 L116:   fsub
 L117:   fconst_1
 L118:   fadd
 L119:   fconst_1
 L120:   aload_0
-L121:   getfield Field ae byte I
+L121:   getfield Field ae field228 I
 L124:   i2f
 L125:   ldc 6e0f
 L127:   fdiv
@@ -216,12 +216,12 @@ L128:   invokestatic Method java/lang/Math min (FF)F
 L131:   fsub
 L132:   fconst_0
 L133:   fconst_1
-L134:   invokestatic Method OC else (FFF)F
+L134:   invokestatic Method OC method1001 (FFF)F
 L137:   fstore 4
-L139:   getfield Field ae else LNF;
-L142:   invokevirtual Method NF break ()LNF;
+L139:   getfield Field ae field249 LNF;
+L142:   invokevirtual Method NF method803 ()LNF;
 L145:   astore 5
-L147:   getstatic Field ae do Ljava/util/concurrent/ThreadPoolExecutor;
+L147:   getstatic Field ae field251 Ljava/util/concurrent/ThreadPoolExecutor;
 L150:   new hF
 L153:   dup
 L154:   aload_0
@@ -235,7 +235,7 @@ L165:   invokevirtual Method java/util/concurrent/ThreadPoolExecutor submit (Lja
 L168:   putfield Field ae this Ljava/util/concurrent/Future;
 L171:   return
 L172:   
-        .attribute StackMap b'\x00\x06\x00\x0B\x00\x00\x00\x01\x07\x00\x33\x00\x0C\x00\x01\x07\x00\x02\x00\x00\x00\x1D\x00\x01\x07\x00\x02\x00\x00\x00\x30\x00\x01\x07\x00\x02\x00\x00\x00\x3F\x00\x01\x07\x00\x02\x00\x00\x00\x4E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x0B\x00\x00\x00\x01\x07\x00\x36\x00\x0C\x00\x01\x07\x00\x02\x00\x00\x00\x1D\x00\x01\x07\x00\x02\x00\x00\x00\x30\x00\x01\x07\x00\x02\x00\x00\x00\x3F\x00\x01\x07\x00\x02\x00\x00\x00\x4E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
@@ -257,40 +257,40 @@ L24:    new gG
 L27:    dup
 L28:    invokespecial Method gG <init> ()V
 L31:    invokespecial Method java/util/concurrent/ThreadPoolExecutor <init> (IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
-L34:    putstatic Field ae do Ljava/util/concurrent/ThreadPoolExecutor;
+L34:    putstatic Field ae field251 Ljava/util/concurrent/ThreadPoolExecutor;
 L37:    return
 L38:    
     .end code
 .end method
 
-.method public break : (LqE;)V
+.method public method226 : (LqE;)V
     .code stack 6 locals 2
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     invokespecial Method Rg break (LqE;)V
-L6:     getfield Field ae case LqE;
+L3:     invokespecial Method Rg method226 (LqE;)V
+L6:     getfield Field ae field227 LqE;
 L9:     getstatic Field qE this LqE;
 L12:    if_acmpne L32
 L15:    aload_0
 L16:    dup
 L17:    dup
-L18:    getfield Field ae const D
+L18:    getfield Field ae field246 D
 L21:    aload_0
 L22:    getfield Field ae try D
 L25:    dsub
-L26:    putfield Field ae const D
-L29:    invokespecial Method ae for ()V
+L26:    putfield Field ae field246 D
+L29:    invokespecial Method ae method61 ()V
 L32:    return
 L33:    
-        .attribute StackMap b'\x00\x01\x00\x20\x00\x02\x07\x00\x02\x07\x00\x63\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x20\x00\x02\x07\x00\x02\x07\x00\x6A\x00\x00'
     .end code
 .end method
 
-.method public static synthetic break : (Lae;)V
+.method public static synthetic method244 : (Lae;)V
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokespecial Method ae for ()V
+L1:     invokespecial Method ae method61 ()V
 L4:     return
 L5:     
     .end code
@@ -321,16 +321,16 @@ L21:    dup
 L22:    invokespecial Method java/util/LinkedList <init> ()V
 L25:    invokespecial Method Rg <init> (Led;Lqd;Ljava/util/List;)V
 L28:    invokevirtual Method ae this ()V
-L31:    invokevirtual Method ae const (F)V
-L34:    getstatic Field qE char LqE;
-L37:    invokevirtual Method ae break (LqE;)V
+L31:    invokevirtual Method ae method135 (F)V
+L34:    getstatic Field qE field628 LqE;
+L37:    invokevirtual Method ae method226 (LqE;)V
 L40:    new Zf
 L43:    aload_0
 L44:    dup
 L45:    pop2
 L46:    dup
 L47:    invokespecial Method Zf <init> ()V
-L50:    putfield Field ae else LNF;
+L50:    putfield Field ae field249 LNF;
 L53:    new Bf
 L56:    aload_0
 L57:    dup
@@ -338,31 +338,31 @@ L58:    pop2
 L59:    dup
 L60:    aload_0
 L61:    invokespecial Method Bf <init> (Lae;)V
-L64:    invokevirtual Method ae break (LF;)V
+L64:    invokevirtual Method ae method235 (LF;)V
 L67:    iconst_1
 L68:    dup
 L69:    pop2
-L70:    invokevirtual Method ae const (Z)Lff;
-L73:    putfield Field ae float Lff;
+L70:    invokevirtual Method ae method228 (Z)Lff;
+L73:    putfield Field ae field221 Lff;
 L76:    iconst_1
 L77:    dup
 L78:    pop2
-L79:    invokevirtual Method ae const (Z)Lff;
-L82:    putfield Field ae char Lff;
+L79:    invokevirtual Method ae method228 (Z)Lff;
+L82:    putfield Field ae field238 Lff;
 L85:    return
 L86:    
     .end code
 .end method
 
-.method public break : ()Z
+.method public method227 : ()Z
     .code stack 7 locals 4
 L0:     aload_0
-L1:     invokespecial Method Rg break ()Z
+L1:     invokespecial Method Rg method227 ()Z
 L4:     aload_0
 L5:     dup_x1
-L6:     invokespecial Method Rg do ()V
+L6:     invokespecial Method Rg method89 ()V
 L9:     pop
-L10:    getfield Field ae case LqE;
+L10:    getfield Field ae field227 LqE;
 L13:    getstatic Field qE this LqE;
 L16:    if_acmpeq L25
 L19:    iconst_0
@@ -375,14 +375,14 @@ L25:    aload_0
 L26:    dup
 L27:    dup_x1
 L28:    dup
-L29:    getfield Field ae const D
-L32:    getstatic Field ib do F
+L29:    getfield Field ae field246 D
+L32:    getstatic Field ib field2312 F
 L35:    f2d
 L36:    dadd
-L37:    putfield Field ae const D
+L37:    putfield Field ae field246 D
 L40:    getfield Field ae new D
 L43:    dstore_1
-L44:    getfield Field ae const D
+L44:    getfield Field ae field246 D
 L47:    dload_1
 L48:    dcmpl
 L49:    ifle L118
@@ -391,11 +391,11 @@ L53:    getfield Field ae this Ljava/util/concurrent/Future;
 L56:    ifnull L104
         .catch java/lang/Exception from L59 to L79 using L99
 L59:    aload_0
-L60:    invokespecial Method ae char ()LFe;
+L60:    invokespecial Method ae method243 ()LFe;
 L63:    dup
 L64:    astore_3
 L65:    aload_0
-L66:    getfield Field ae char LFe;
+L66:    getfield Field ae field248 LFe;
 L69:    if_acmpne L80
 L72:    aload_0
 L73:    getfield Field ae new D
@@ -403,14 +403,14 @@ L76:    goto L84
 L79:    athrow
         .catch java/lang/Exception from L80 to L95 using L99
 L80:    aload_0
-L81:    getfield Field ae null D
+L81:    getfield Field ae field247 D
 L84:    dstore_1
 L85:    aload_3
 L86:    aload_0
 L87:    dup_x1
 L88:    aload_3
-L89:    putfield Field ae char LFe;
-L92:    invokevirtual Method ae break (LFe;)V
+L89:    putfield Field ae field248 LFe;
+L92:    invokevirtual Method ae method239 (LFe;)V
 L95:    aload_0
 L96:    goto L105
 L99:    astore_3
@@ -418,29 +418,29 @@ L100:   aload_3
 L101:   invokevirtual Method java/lang/Exception printStackTrace ()V
 L104:   aload_0
 L105:   dup
-L106:   getfield Field ae const D
+L106:   getfield Field ae field246 D
 L109:   dload_1
 L110:   dsub
-L111:   putfield Field ae const D
+L111:   putfield Field ae field246 D
 L114:   aload_0
 L115:   goto L44
 L118:   aload_0
 L119:   dup
 L120:   invokevirtual Method ae try ()V
-L123:   getstatic Field ib do F
-L126:   invokevirtual Method ae else (F)V
+L123:   getstatic Field ib field2312 F
+L126:   invokevirtual Method ae method104 (F)V
 L129:   iconst_0
 L130:   iconst_1
 L131:   dup
 L132:   pop2
 L133:   ireturn
 L134:   
-        .attribute StackMap b'\x00\x0A\x00\x18\x00\x00\x00\x01\x07\x00\x33\x00\x19\x00\x01\x07\x00\x02\x00\x00\x00\x2C\x00\x02\x07\x00\x02\x03\x00\x01\x07\x00\x02\x00\x4F\x00\x00\x00\x01\x07\x00\x33\x00\x50\x00\x03\x07\x00\x02\x03\x07\x00\x08\x00\x00\x00\x54\x00\x03\x07\x00\x02\x03\x07\x00\x08\x00\x01\x03\x00\x63\x00\x02\x07\x00\x02\x03\x00\x01\x07\x00\x1E\x00\x68\x00\x02\x07\x00\x02\x03\x00\x00\x00\x69\x00\x02\x07\x00\x02\x03\x00\x01\x07\x00\x02\x00\x76\x00\x02\x07\x00\x02\x03\x00\x00'
+        .attribute StackMap b'\x00\x0A\x00\x18\x00\x00\x00\x01\x07\x00\x36\x00\x19\x00\x01\x07\x00\x02\x00\x00\x00\x2C\x00\x02\x07\x00\x02\x03\x00\x01\x07\x00\x02\x00\x4F\x00\x00\x00\x01\x07\x00\x36\x00\x50\x00\x03\x07\x00\x02\x03\x07\x00\x08\x00\x00\x00\x54\x00\x03\x07\x00\x02\x03\x07\x00\x08\x00\x01\x03\x00\x63\x00\x02\x07\x00\x02\x03\x00\x01\x07\x00\x1F\x00\x68\x00\x02\x07\x00\x02\x03\x00\x00\x00\x69\x00\x02\x07\x00\x02\x03\x00\x01\x07\x00\x02\x00\x76\x00\x02\x07\x00\x02\x03\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method
 
-.method private catch : ()V
+.method private method76 : ()V
     .code stack 4 locals 1
 L0:     aload_0
 L1:     getfield Field ae this Ljava/util/concurrent/Future;
@@ -460,7 +460,7 @@ L24:    putfield Field ae this Ljava/util/concurrent/Future;
 L27:    pop
 L28:    return
 L29:    
-        .attribute StackMap b'\x00\x02\x00\x08\x00\x00\x00\x01\x07\x00\x33\x00\x09\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x08\x00\x00\x00\x01\x07\x00\x36\x00\x09\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 .innerclasses

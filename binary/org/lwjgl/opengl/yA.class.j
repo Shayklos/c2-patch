@@ -2,14 +2,14 @@
 .class final super org/lwjgl/opengl/yA
 .super java/lang/Object
 .implements java/security/PrivilegedExceptionAction
-.field final synthetic do Ljava/awt/GraphicsDevice;
+.field final synthetic field2481 Ljava/awt/GraphicsDevice;
 
 .method <init> : (Ljava/awt/GraphicsDevice;)V
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field org/lwjgl/opengl/yA do Ljava/awt/GraphicsDevice;
+L3:     putfield Field org/lwjgl/opengl/yA field2481 Ljava/awt/GraphicsDevice;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    
@@ -19,17 +19,17 @@ L10:
 .method public bridge synthetic run : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/opengl/yA break ()Ljava/lang/reflect/Method;
+L1:     invokevirtual Method org/lwjgl/opengl/yA method1759 ()Ljava/lang/reflect/Method;
 L4:     areturn
 L5:     
     .end code
     .exceptions java/lang/Exception
 .end method
 
-.method public break : ()Ljava/lang/reflect/Method;
+.method public method1759 : ()Ljava/lang/reflect/Method;
     .code stack 5 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/yA do Ljava/awt/GraphicsDevice;
+L1:     getfield Field org/lwjgl/opengl/yA field2481 Ljava/awt/GraphicsDevice;
 L4:     invokevirtual Method java/lang/Object getClass ()Ljava/lang/Class;
 L7:     ldc "getScreen"
 L9:     iconst_0
@@ -49,5 +49,5 @@ L23:
 .innerclasses
     org/lwjgl/opengl/yA [0] [0] static
 .end innerclasses
-.enclosing method org/lwjgl/opengl/LinuxCanvasImplementation break (Ljava/awt/GraphicsDevice;)I
+.enclosing method org/lwjgl/opengl/LinuxCanvasImplementation method4621 (Ljava/awt/GraphicsDevice;)I
 .end class

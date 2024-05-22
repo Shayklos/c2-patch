@@ -2,16 +2,16 @@
 .class public final super gb
 .super java/lang/Object
 .implements h
-.field public final synthetic do LkB;
+.field public final synthetic field1600 LkB;
 
-.method public break : (LgB;)V
+.method public method728 : (LgB;)V
     .code stack 2 locals 2
-L0:     invokestatic Method dc else ()Ljava/lang/String;
-L3:     invokestatic Method org/lwjgl/Sys const (Ljava/lang/String;)Z
+L0:     invokestatic Method dc method1125 ()Ljava/lang/String;
+L3:     invokestatic Method org/lwjgl/Sys method1892 (Ljava/lang/String;)Z
 L6:     aload_0
-L7:     getfield Field gb do LkB;
-L10:    invokestatic Method kB else (LkB;)LFE;
-L13:    invokevirtual Method FE else ()V
+L7:     getfield Field gb field1600 LkB;
+L10:    invokestatic Method kB method511 (LkB;)LFE;
+L13:    invokevirtual Method FE method56 ()V
 L16:    pop
 L17:    return
 L18:    
@@ -23,7 +23,7 @@ L18:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field gb do LkB;
+L3:     putfield Field gb field1600 LkB;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    
@@ -32,5 +32,5 @@ L10:
 .innerclasses
     gb [0] [0]
 .end innerclasses
-.enclosing method kB int ()V
+.enclosing method kB method26 ()V
 .end class

@@ -1,9 +1,9 @@
 .version 49 0
 .class final super org/lwjgl/opengl/DA
 .super java/awt/Canvas
-.field private else Z
-.field private static final "enum" J = 6916664741667434870L
-.field private do Z
+.field private field610 Z
+.field private static final field611 J = 6916664741667434870L
+.field private field612 Z
 
 .method public paint : (Ljava/awt/Graphics;)V
     .code stack 6 locals 3
@@ -19,11 +19,11 @@ L7:     dup
 L8:     dup_x2
 L9:     dup
 L10:    pop2
-L11:    putfield Field org/lwjgl/opengl/DA else Z
+L11:    putfield Field org/lwjgl/opengl/DA field610 Z
 L14:    iconst_1
 L15:    dup
 L16:    pop2
-L17:    putfield Field org/lwjgl/opengl/DA do Z
+L17:    putfield Field org/lwjgl/opengl/DA field612 Z
 L20:    aload_1
 L21:    monitorexit
 L22:    return
@@ -40,7 +40,7 @@ L30:
     .end code
 .end method
 
-.method public else : ()Z
+.method public method94 : ()Z
     .code stack 4 locals 4
 L0:     aload_0
 L1:     dup
@@ -49,13 +49,13 @@ L3:     monitorenter
         .catch [0] from L4 to L19 using L22
 L4:     aload_0
 L5:     dup
-L6:     getfield Field org/lwjgl/opengl/DA else Z
+L6:     getfield Field org/lwjgl/opengl/DA field610 Z
 L9:     istore_1
 L10:    iconst_0
 L11:    iconst_1
 L12:    dup
 L13:    pop2
-L14:    putfield Field org/lwjgl/opengl/DA else Z
+L14:    putfield Field org/lwjgl/opengl/DA field610 Z
 L17:    aload_2
 L18:    monitorexit
 L19:    iload_1
@@ -93,7 +93,7 @@ L5:
     .end code
 .end method
 
-.method public break : ()Z
+.method public method227 : ()Z
     .code stack 4 locals 4
 L0:     aload_0
 L1:     dup
@@ -102,13 +102,13 @@ L3:     monitorenter
         .catch [0] from L4 to L19 using L22
 L4:     aload_0
 L5:     dup
-L6:     getfield Field org/lwjgl/opengl/DA do Z
+L6:     getfield Field org/lwjgl/opengl/DA field612 Z
 L9:     istore_1
 L10:    iconst_0
 L11:    iconst_1
 L12:    dup
 L13:    pop2
-L14:    putfield Field org/lwjgl/opengl/DA do Z
+L14:    putfield Field org/lwjgl/opengl/DA field612 Z
 L17:    aload_2
 L18:    monitorexit
 L19:    iload_1

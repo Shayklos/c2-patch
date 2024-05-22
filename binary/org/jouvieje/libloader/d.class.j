@@ -2,13 +2,13 @@
 .class final super org/jouvieje/libloader/d
 .super java/lang/Object
 .implements java/security/PrivilegedAction
-.field private final else Ljava/io/File; .fieldattributes
+.field private final field2422 Ljava/io/File; .fieldattributes
     .synthetic
 .end fieldattributes
-.field private final "enum" Ljava/lang/String; .fieldattributes
+.field private final field2423 Ljava/lang/String; .fieldattributes
     .synthetic
 .end fieldattributes
-.field private final do Ljava/lang/String; .fieldattributes
+.field private final field2424 Ljava/lang/String; .fieldattributes
     .synthetic
 .end fieldattributes
 
@@ -16,7 +16,7 @@
     .code stack 3 locals 2
         .catch java/lang/Throwable from L0 to L47 using L49
 L0:     aload_0
-L1:     getfield Field org/jouvieje/libloader/d else Ljava/io/File;
+L1:     getfield Field org/jouvieje/libloader/d field2422 Ljava/io/File;
 L4:     invokevirtual Method java/io/File getAbsolutePath ()Ljava/lang/String;
 L7:     invokestatic Method java/lang/System load (Ljava/lang/String;)V
 L10:    new java/lang/StringBuffer
@@ -24,15 +24,15 @@ L13:    dup
 L14:    ldc "LOADED="
 L16:    invokespecial Method java/lang/StringBuffer <init> (Ljava/lang/String;)V
 L19:    aload_0
-L20:    getfield Field org/jouvieje/libloader/d do Ljava/lang/String;
+L20:    getfield Field org/jouvieje/libloader/d field2424 Ljava/lang/String;
 L23:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L26:    ldc " | FROM="
 L28:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L31:    aload_0
-L32:    getfield Field org/jouvieje/libloader/d "enum" Ljava/lang/String;
+L32:    getfield Field org/jouvieje/libloader/d field2423 Ljava/lang/String;
 L35:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L38:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L41:    invokestatic Method org/jouvieje/libloader/G catch (Ljava/lang/String;)V
+L41:    invokestatic Method org/jouvieje/libloader/G method1733 (Ljava/lang/String;)V
 L44:    getstatic Field java/lang/Boolean TRUE Ljava/lang/Boolean;
 L47:    areturn
 L48:    athrow
@@ -45,7 +45,7 @@ L59:    aload_1
 L60:    invokevirtual Method java/lang/Throwable getMessage ()Ljava/lang/String;
 L63:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L66:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L69:    invokestatic Method org/jouvieje/libloader/G catch (Ljava/lang/String;)V
+L69:    invokestatic Method org/jouvieje/libloader/G method1733 (Ljava/lang/String;)V
 L72:    getstatic Field java/lang/Boolean FALSE Ljava/lang/Boolean;
 L75:    areturn
 L76:    
@@ -63,9 +63,9 @@ L4:     aload_1
 L5:     aload_0
 L6:     dup_x1
 L7:     invokespecial Method java/lang/Object <init> ()V
-L10:    putfield Field org/jouvieje/libloader/d else Ljava/io/File;
-L13:    putfield Field org/jouvieje/libloader/d do Ljava/lang/String;
-L16:    putfield Field org/jouvieje/libloader/d "enum" Ljava/lang/String;
+L10:    putfield Field org/jouvieje/libloader/d field2422 Ljava/io/File;
+L13:    putfield Field org/jouvieje/libloader/d field2424 Ljava/lang/String;
+L16:    putfield Field org/jouvieje/libloader/d field2423 Ljava/lang/String;
 L19:    return
 L20:    
     .end code

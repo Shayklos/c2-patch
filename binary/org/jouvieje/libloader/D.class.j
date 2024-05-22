@@ -2,7 +2,7 @@
 .class final super org/jouvieje/libloader/D
 .super java/lang/Object
 .implements java/security/PrivilegedAction
-.field private final do Ljava/lang/String; .fieldattributes
+.field private final field2430 Ljava/lang/String; .fieldattributes
     .synthetic
 .end fieldattributes
 
@@ -13,7 +13,7 @@ L3:     dup
 L4:     ldc "/"
 L6:     invokespecial Method java/lang/StringBuffer <init> (Ljava/lang/String;)V
 L9:     aload_0
-L10:    getfield Field org/jouvieje/libloader/D do Ljava/lang/String;
+L10:    getfield Field org/jouvieje/libloader/D field2430 Ljava/lang/String;
 L13:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L16:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
 L19:    astore_1
@@ -24,7 +24,7 @@ L26:    invokespecial Method java/lang/StringBuffer <init> (Ljava/lang/String;)V
 L29:    aload_1
 L30:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L33:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L36:    invokestatic Method org/jouvieje/libloader/G catch (Ljava/lang/String;)V
+L36:    invokestatic Method org/jouvieje/libloader/G method1733 (Ljava/lang/String;)V
 L39:    new org/jouvieje/libloader/G
 L42:    dup
 L43:    invokespecial Method org/jouvieje/libloader/G <init> ()V
@@ -41,8 +41,8 @@ L64:    invokespecial Method java/lang/StringBuffer <init> (Ljava/lang/String;)V
 L67:    aload_1
 L68:    invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L71:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L74:    invokestatic Method org/jouvieje/libloader/G catch (Ljava/lang/String;)V
-L77:    getstatic Field org/jouvieje/libloader/G "super" Ljava/lang/Class;
+L74:    invokestatic Method org/jouvieje/libloader/G method1733 (Ljava/lang/String;)V
+L77:    getstatic Field org/jouvieje/libloader/G field2442 Ljava/lang/Class;
 L80:    dup
 L81:    ifnonnull L111
 L84:    pop
@@ -50,7 +50,7 @@ L84:    pop
 L85:    ldc "org.jouvieje.libloader.G"
 L87:    invokestatic Method java/lang/Class forName (Ljava/lang/String;)Ljava/lang/Class;
 L90:    dup
-L91:    putstatic Field org/jouvieje/libloader/G "super" Ljava/lang/Class;
+L91:    putstatic Field org/jouvieje/libloader/G field2442 Ljava/lang/Class;
 L94:    aload_1
 L95:    goto L112
 L98:    athrow
@@ -72,8 +72,8 @@ L126:   invokespecial Method java/lang/StringBuffer <init> (Ljava/lang/String;)V
 L129:   aload_1
 L130:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L133:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L136:   invokestatic Method org/jouvieje/libloader/G catch (Ljava/lang/String;)V
-L139:   getstatic Field org/jouvieje/libloader/G short Ljava/lang/Class;
+L136:   invokestatic Method org/jouvieje/libloader/G method1733 (Ljava/lang/String;)V
+L139:   getstatic Field org/jouvieje/libloader/G field2444 Ljava/lang/Class;
 L142:   dup
 L143:   ifnonnull L173
 L146:   pop
@@ -81,7 +81,7 @@ L146:   pop
 L147:   ldc "java.lang.Class"
 L149:   invokestatic Method java/lang/Class forName (Ljava/lang/String;)Ljava/lang/Class;
 L152:   dup
-L153:   putstatic Field org/jouvieje/libloader/G short Ljava/lang/Class;
+L153:   putstatic Field org/jouvieje/libloader/G field2444 Ljava/lang/Class;
 L156:   aload_1
 L157:   goto L174
 L160:   athrow
@@ -97,11 +97,11 @@ L177:   astore_2
 L178:   aload_2
 L179:   ifnull L403
 L182:   ldc "Open succeed."
-L184:   invokestatic Method org/jouvieje/libloader/G catch (Ljava/lang/String;)V
+L184:   invokestatic Method org/jouvieje/libloader/G method1733 (Ljava/lang/String;)V
 L187:   new java/lang/StringBuffer
 L190:   dup
 L191:   ldc "java.io.tmpdir"
-L193:   invokestatic Method org/jouvieje/libloader/G float (Ljava/lang/String;)Ljava/lang/String;
+L193:   invokestatic Method org/jouvieje/libloader/G method1737 (Ljava/lang/String;)Ljava/lang/String;
 L196:   invokestatic Method java/lang/String valueOf (Ljava/lang/Object;)Ljava/lang/String;
 L199:   invokespecial Method java/lang/StringBuffer <init> (Ljava/lang/String;)V
 L202:   getstatic Field java/io/File separator Ljava/lang/String;
@@ -124,14 +124,14 @@ L239:   invokespecial Method java/lang/StringBuffer <init> (Ljava/lang/String;)V
 L242:   aload_3
 L243:   invokevirtual Method java/lang/StringBuffer append (Ljava/lang/String;)Ljava/lang/StringBuffer;
 L246:   invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String;
-L249:   invokestatic Method org/jouvieje/libloader/G catch (Ljava/lang/String;)V
+L249:   invokestatic Method org/jouvieje/libloader/G method1733 (Ljava/lang/String;)V
 L252:   aload 4
 L254:   invokevirtual Method java/io/File mkdirs ()Z
 L257:   new java/io/File
 L260:   dup
 L261:   aload 4
 L263:   aload_0
-L264:   getfield Field org/jouvieje/libloader/D do Ljava/lang/String;
+L264:   getfield Field org/jouvieje/libloader/D field2430 Ljava/lang/String;
 L267:   invokespecial Method java/io/File <init> (Ljava/io/File;Ljava/lang/String;)V
 L270:   astore 4
 L272:   pop
@@ -145,7 +145,7 @@ L277:   aload_2
 L278:   invokespecial Method java/io/BufferedInputStream <init> (Ljava/io/InputStream;)V
 L281:   astore 5
 L283:   ldc "Opening output"
-L285:   invokestatic Method org/jouvieje/libloader/G catch (Ljava/lang/String;)V
+L285:   invokestatic Method org/jouvieje/libloader/G method1733 (Ljava/lang/String;)V
 L288:   new java/io/BufferedOutputStream
 L291:   dup
 L292:   new java/io/FileOutputStream
@@ -155,7 +155,7 @@ L298:   invokespecial Method java/io/FileOutputStream <init> (Ljava/io/File;)V
 L301:   invokespecial Method java/io/BufferedOutputStream <init> (Ljava/io/OutputStream;)V
 L304:   astore 6
 L306:   ldc "Writting to output"
-L308:   invokestatic Method org/jouvieje/libloader/G catch (Ljava/lang/String;)V
+L308:   invokestatic Method org/jouvieje/libloader/G method1733 (Ljava/lang/String;)V
 L311:   sipush 8192
 L314:   iconst_1
 L315:   dup
@@ -187,27 +187,27 @@ L353:   dup
 L354:   istore 8
 L356:   ifgt L334
 L359:   ldc "Closing files"
-L361:   invokestatic Method org/jouvieje/libloader/G catch (Ljava/lang/String;)V
+L361:   invokestatic Method org/jouvieje/libloader/G method1733 (Ljava/lang/String;)V
 L364:   ldc "Extraction succeed"
 L366:   aload 6
 L368:   aload 5
 L370:   invokevirtual Method java/io/BufferedInputStream close ()V
 L373:   invokevirtual Method java/io/BufferedOutputStream close ()V
-L376:   invokestatic Method org/jouvieje/libloader/G catch (Ljava/lang/String;)V
+L376:   invokestatic Method org/jouvieje/libloader/G method1733 (Ljava/lang/String;)V
 L379:   aload_3
 L380:   areturn
         .catch java/lang/Throwable from L381 to L397 using L398
 L381:   astore 5
 L383:   aload 4
 L385:   aload 5
-L387:   invokestatic Method org/jouvieje/libloader/G break (Ljava/lang/Throwable;)V
-L390:   invokestatic Method org/jouvieje/libloader/G break (Ljava/io/File;)Z
+L387:   invokestatic Method org/jouvieje/libloader/G method1756 (Ljava/lang/Throwable;)V
+L390:   invokestatic Method org/jouvieje/libloader/G method1749 (Ljava/io/File;)Z
 L393:   ifeq L403
 L396:   aload_3
 L397:   areturn
 L398:   astore_1
 L399:   aload_1
-L400:   invokestatic Method org/jouvieje/libloader/G break (Ljava/lang/Throwable;)V
+L400:   invokestatic Method org/jouvieje/libloader/G method1756 (Ljava/lang/Throwable;)V
 L403:   aconst_null
 L404:   areturn
 L405:   
@@ -221,7 +221,7 @@ L0:     aload_1
 L1:     aload_0
 L2:     dup_x1
 L3:     invokespecial Method java/lang/Object <init> ()V
-L6:     putfield Field org/jouvieje/libloader/D do Ljava/lang/String;
+L6:     putfield Field org/jouvieje/libloader/D field2430 Ljava/lang/String;
 L9:     return
 L10:    
     .end code

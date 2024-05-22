@@ -1,7 +1,7 @@
 .version 49 0
 .class public super SB
 .super qc
-.field public "enum" LgB;
+.field public field1095 LgB;
 
 .method public <init> : (LgB;FFFF)V
     .code stack 5 locals 6
@@ -26,8 +26,8 @@ L27:    dup
 L28:    fload_2
 L29:    fconst_0
 L30:    invokespecial Method Vg <init> (FF)V
-L33:    getstatic Field VD "enum" Ljava/lang/Object;
-L36:    invokevirtual Method SB break (LgB;Ljava/lang/Object;)V
+L33:    getstatic Field VD field149 Ljava/lang/Object;
+L36:    invokevirtual Method SB method31 (LgB;Ljava/lang/Object;)V
 L39:    fload_3
 L40:    fconst_0
 L41:    fcmpl
@@ -41,8 +41,8 @@ L52:    dup
 L53:    fconst_0
 L54:    fload_3
 L55:    invokespecial Method Vg <init> (FF)V
-L58:    getstatic Field VD do Ljava/lang/Object;
-L61:    invokevirtual Method SB break (LgB;Ljava/lang/Object;)V
+L58:    getstatic Field VD field150 Ljava/lang/Object;
+L61:    invokevirtual Method SB method31 (LgB;Ljava/lang/Object;)V
 L64:    fload 4
 L66:    fconst_0
 L67:    fcmpl
@@ -57,7 +57,7 @@ L79:    fload 4
 L81:    fconst_0
 L82:    invokespecial Method Vg <init> (FF)V
 L85:    getstatic Field VD this Ljava/lang/Object;
-L88:    invokevirtual Method SB break (LgB;Ljava/lang/Object;)V
+L88:    invokevirtual Method SB method31 (LgB;Ljava/lang/Object;)V
 L91:    fload 5
 L93:    fconst_0
 L94:    fcmpl
@@ -71,18 +71,18 @@ L105:   dup
 L106:   fconst_0
 L107:   fload 5
 L109:   invokespecial Method Vg <init> (FF)V
-L112:   getstatic Field VD else Ljava/lang/Object;
-L115:   invokevirtual Method SB break (LgB;Ljava/lang/Object;)V
+L112:   getstatic Field VD field148 Ljava/lang/Object;
+L115:   invokevirtual Method SB method31 (LgB;Ljava/lang/Object;)V
 L118:   aload_0
 L119:   dup
 L120:   aload_1
 L121:   dup_x1
-L122:   putfield Field SB "enum" LgB;
-L125:   getstatic Field VD char Ljava/lang/Object;
-L128:   invokevirtual Method SB break (LgB;Ljava/lang/Object;)V
+L122:   putfield Field SB field1095 LgB;
+L125:   getstatic Field VD field147 Ljava/lang/Object;
+L128:   invokevirtual Method SB method31 (LgB;Ljava/lang/Object;)V
 L131:   return
 L132:   
-        .attribute StackMap b'\x00\x04\x00\x27\x00\x06\x07\x00\x02\x07\x00\x1E\x02\x02\x02\x02\x00\x00\x00\x40\x00\x06\x07\x00\x02\x07\x00\x1E\x02\x02\x02\x02\x00\x00\x00\x5B\x00\x06\x07\x00\x02\x07\x00\x1E\x02\x02\x02\x02\x00\x00\x00\x76\x00\x06\x07\x00\x02\x07\x00\x1E\x02\x02\x02\x02\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x27\x00\x06\x07\x00\x02\x07\x00\x1F\x02\x02\x02\x02\x00\x00\x00\x40\x00\x06\x07\x00\x02\x07\x00\x1F\x02\x02\x02\x02\x00\x00\x00\x5B\x00\x06\x07\x00\x02\x07\x00\x1F\x02\x02\x02\x02\x00\x00\x00\x76\x00\x06\x07\x00\x02\x07\x00\x1F\x02\x02\x02\x02\x00\x00'
     .end code
 .end method
 
@@ -99,16 +99,16 @@ L9:
     .end code
 .end method
 
-.method public "final" : ()V
+.method public method10 : ()V
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field SB "enum" LgB;
+L1:     getfield Field SB field1095 LgB;
 L4:     instanceof qc
 L7:     ifeq L20
 L10:    aload_0
-L11:    getfield Field SB "enum" LgB;
+L11:    getfield Field SB field1095 LgB;
 L14:    checkcast qc
-L17:    invokevirtual Method qc "final" ()V
+L17:    invokevirtual Method qc method10 ()V
 L20:    return
 L21:    
         .attribute StackMap b'\x00\x01\x00\x14\x00\x01\x07\x00\x02\x00\x00'

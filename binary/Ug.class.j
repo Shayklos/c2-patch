@@ -2,9 +2,9 @@
 .class public final super Ug
 .super java/lang/Object
 .implements java/util/concurrent/Callable
-.field public final synthetic do Ljava/lang/String;
+.field public final synthetic field1724 Ljava/lang/String;
 
-.method public break : ()LDc;
+.method public method730 : ()LDc;
     .code stack 9 locals 4
 L0:     aconst_null
 L1:     astore_1
@@ -20,15 +20,15 @@ L10:    dup
 L11:    pop2
 L12:    if_icmpge L122
 L15:    aload_0
-L16:    getfield Field Ug do Ljava/lang/String;
-L19:    invokestatic Method OC catch (Ljava/lang/String;)Ljava/nio/ByteBuffer;
+L16:    getfield Field Ug field1724 Ljava/lang/String;
+L19:    invokestatic Method OC method990 (Ljava/lang/String;)Ljava/nio/ByteBuffer;
 L22:    astore_3
 L23:    iconst_1
 L24:    dup
 L25:    dup
 L26:    pop2
 L27:    aload_3
-L28:    invokestatic Method jouvieje/bass/utils/e break (Ljava/nio/Buffer;)Ljouvieje/bass/utils/m;
+L28:    invokestatic Method jouvieje/bass/utils/e method1696 (Ljava/nio/Buffer;)Ljouvieje/bass/utils/m;
 L31:    lconst_0
 L32:    aload_3
 L33:    invokevirtual Method java/nio/ByteBuffer limit ()I
@@ -37,7 +37,7 @@ L38:    iconst_0
 L39:    iconst_1
 L40:    dup
 L41:    pop2
-L42:    invokestatic Method jouvieje/bass/i break (ZLjouvieje/bass/utils/m;JIII)Ljouvieje/bass/structures/b;
+L42:    invokestatic Method jouvieje/bass/i method1580 (ZLjouvieje/bass/utils/m;JIII)Ljouvieje/bass/structures/b;
 L45:    dup
 L46:    astore_1
 L47:    ifnull L62
@@ -61,14 +61,14 @@ L78:    invokespecial Method java/lang/StringBuilder <init> ()V
 L81:    iconst_0
 L82:    ldc "EPIC BASS FAIL! (c"
 L84:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
-L87:    invokestatic Method jouvieje/bass/i catch ()I
+L87:    invokestatic Method jouvieje/bass/i method1192 ()I
 L90:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L93:    ldc ")"
 L95:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L98:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L101:   invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/String;)V
 L104:   athrow
-L105:   invokestatic Method org/lwjgl/opengl/Display implements ()V
+L105:   invokestatic Method org/lwjgl/opengl/Display method2989 ()V
 L108:   iinc 2 1
 L111:   ldc2_w 25L
 L114:   invokestatic Method java/lang/Thread sleep (J)V
@@ -83,8 +83,8 @@ L130:   iconst_0
 L131:   iconst_1
 L132:   dup
 L133:   pop2
-L134:   invokestatic Method jouvieje/bass/i do (II)J
-L137:   invokestatic Method jouvieje/bass/i break (IJ)D
+L134:   invokestatic Method jouvieje/bass/i method1462 (II)J
+L137:   invokestatic Method jouvieje/bass/i method1433 (IJ)D
 L140:   dstore_2
 L141:   new Dc
 L144:   dup
@@ -94,7 +94,7 @@ L147:   invokestatic Method java/lang/Double valueOf (D)Ljava/lang/Double;
 L150:   invokespecial Method Dc <init> (Ljava/lang/Object;Ljava/lang/Object;)V
 L153:   areturn
 L154:   
-        .attribute StackMap b'\x00\x07\x00\x08\x00\x03\x07\x00\x02\x07\x00\x12\x01\x00\x01\x01\x00\x3D\x00\x00\x00\x01\x07\x00\x30\x00\x3E\x00\x04\x07\x00\x02\x07\x00\x12\x01\x07\x00\x21\x00\x00\x00\x69\x00\x04\x07\x00\x02\x07\x00\x12\x01\x07\x00\x21\x00\x00\x00\x79\x00\x00\x00\x01\x07\x00\x30\x00\x7A\x00\x03\x07\x00\x02\x07\x00\x12\x01\x00\x00\x00\x7B\x00\x03\x07\x00\x02\x07\x00\x12\x01\x00\x01\x07\x00\x12'
+        .attribute StackMap b'\x00\x07\x00\x08\x00\x03\x07\x00\x02\x07\x00\x13\x01\x00\x01\x01\x00\x3D\x00\x00\x00\x01\x07\x00\x33\x00\x3E\x00\x04\x07\x00\x02\x07\x00\x13\x01\x07\x00\x23\x00\x00\x00\x69\x00\x04\x07\x00\x02\x07\x00\x13\x01\x07\x00\x23\x00\x00\x00\x79\x00\x00\x00\x01\x07\x00\x33\x00\x7A\x00\x03\x07\x00\x02\x07\x00\x13\x01\x00\x00\x00\x7B\x00\x03\x07\x00\x02\x07\x00\x13\x01\x00\x01\x07\x00\x13'
     .end code
     .exceptions java/lang/Exception
 .end method
@@ -102,7 +102,7 @@ L154:
 .method public bridge synthetic call : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method Ug break ()LDc;
+L1:     invokevirtual Method Ug method730 ()LDc;
 L4:     areturn
 L5:     
     .end code
@@ -114,7 +114,7 @@ L5:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field Ug do Ljava/lang/String;
+L3:     putfield Field Ug field1724 Ljava/lang/String;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    
@@ -123,5 +123,5 @@ L10:
 .innerclasses
     Ug [0] [0] static
 .end innerclasses
-.enclosing method UE break (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.enclosing method UE method423 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 .end class

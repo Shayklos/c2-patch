@@ -1,7 +1,7 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/x
 .super java/lang/RuntimeException
-.field private static final do J = 1L
+.field private static final field614 J = 1L
 
 .method public <init> : ()V
     .code stack 1 locals 1
@@ -16,7 +16,7 @@ L5:
     .code stack 2 locals 2
 L0:     aload_0
 L1:     iload_1
-L2:     invokestatic Method org/lwjgl/opengl/x break (I)Ljava/lang/String;
+L2:     invokestatic Method org/lwjgl/opengl/x method379 (I)Ljava/lang/String;
 L5:     invokespecial Method org/lwjgl/opengl/x <init> (Ljava/lang/String;)V
 L8:     return
 L9:     
@@ -34,10 +34,10 @@ L7:
     .end code
 .end method
 
-.method private static break : (I)Ljava/lang/String;
+.method private static method379 : (I)Ljava/lang/String;
     .code stack 3 locals 2
 L0:     iload_0
-L1:     invokestatic Method org/lwjgl/opengl/n break (I)Ljava/lang/String;
+L1:     invokestatic Method org/lwjgl/opengl/n method5629 (I)Ljava/lang/String;
 L4:     astore_1
 L5:     new java/lang/StringBuilder
 L8:     dup

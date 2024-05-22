@@ -2,52 +2,52 @@
 .class public interface abstract org/lwjgl/input/i
 .super java/lang/Object
 
-.method public abstract void : ()F
+.method public abstract method1974 : ()F
 .end method
 
-.method public abstract catch : (F)V
+.method public abstract method1997 : (F)V
 .end method
 
-.method public abstract catch : (I)Ljava/lang/String;
+.method public abstract method1977 : (I)Ljava/lang/String;
 .end method
 
-.method public abstract float : (F)V
+.method public abstract method1979 : (F)V
 .end method
 
-.method public abstract short : (F)V
+.method public abstract method1996 : (F)V
 .end method
 
-.method public abstract const : (F)V
+.method public abstract method1990 : (F)V
 .end method
 
-.method public abstract float : (I)F
+.method public abstract method1986 : (I)F
 .end method
 
-.method public abstract "final" : ()F
+.method public abstract method1973 : ()F
 .end method
 
-.method public abstract int : ()F
+.method public abstract method1968 : ()F
 .end method
 
-.method public abstract short : (I)Z
+.method public abstract method1989 : (I)Z
 .end method
 
-.method public abstract else : (F)V
+.method public abstract method1981 : (F)V
 .end method
 
-.method public abstract "enum" : ()F
+.method public abstract method1971 : ()F
 .end method
 
-.method public abstract long : ()F
+.method public abstract method1985 : ()F
 .end method
 
-.method public abstract class : ()I
+.method public abstract method1984 : ()I
 .end method
 
-.method public abstract if : ()F
+.method public abstract method1991 : ()F
 .end method
 
-.method public abstract char : ()F
+.method public abstract method1980 : ()F
 .end method
 
 .method public abstract new : ()I
@@ -59,48 +59,48 @@
 .method public abstract this : ()I
 .end method
 
-.method public abstract goto : ()V
+.method public abstract method1988 : ()V
 .end method
 
-.method public abstract do : ()F
+.method public abstract method1982 : ()F
 .end method
 
-.method public abstract for : ()F
+.method public abstract method1995 : ()F
 .end method
 
-.method public abstract const : (I)Ljava/lang/String;
+.method public abstract method1994 : (I)Ljava/lang/String;
 .end method
 
-.method public abstract break : (F)V
+.method public abstract method1969 : (F)V
 .end method
 
-.method public abstract catch : ()F
+.method public abstract method1978 : ()F
 .end method
 
-.method public abstract else : (IF)V
+.method public abstract method1987 : (IF)V
 .end method
 
-.method public abstract else : (I)Ljava/lang/String;
+.method public abstract method1992 : (I)Ljava/lang/String;
 .end method
 
-.method public abstract float : ()F
+.method public abstract method1970 : ()F
 .end method
 
-.method public abstract break : (I)F
+.method public abstract method1993 : (I)F
 .end method
 
-.method public abstract short : ()F
+.method public abstract method1976 : ()F
 .end method
 
-.method public abstract const : ()I
+.method public abstract method1983 : ()I
 .end method
 
-.method public abstract else : ()F
+.method public abstract method1975 : ()F
 .end method
 
-.method public abstract break : ()Ljava/lang/String;
+.method public abstract method1998 : ()Ljava/lang/String;
 .end method
 
-.method public abstract break : (IF)V
+.method public abstract method1972 : (IF)V
 .end method
 .end class

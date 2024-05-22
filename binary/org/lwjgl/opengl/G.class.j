@@ -2,19 +2,19 @@
 .class interface abstract org/lwjgl/opengl/G
 .super java/lang/Object
 
-.method public abstract short : ()V
+.method public abstract method3616 : ()V
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract const : ()V
+.method public abstract method3617 : ()V
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract else : ()Z
+.method public abstract method3618 : ()Z
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract break : ()V
+.method public abstract method3619 : ()V
     .exceptions org/lwjgl/LWJGLException
 .end method
 .end class

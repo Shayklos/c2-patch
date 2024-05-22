@@ -1,22 +1,22 @@
 .version 49 0
 .class final super org/lwjgl/F
 .super java/lang/Object
-.field private final long Ljava/nio/LongBuffer;
-.field private final void Ljava/nio/FloatBuffer;
+.field private final field2486 Ljava/nio/LongBuffer;
+.field private final field2487 Ljava/nio/FloatBuffer;
 .field private final try Ljava/nio/IntBuffer;
-.field private final const Ljava/nio/LongBuffer;
+.field private final field2488 Ljava/nio/LongBuffer;
 .field private final new Ljava/nio/ShortBuffer;
-.field private final null Ljava/nio/IntBuffer;
+.field private final field2489 Ljava/nio/IntBuffer;
 .field private final this Ljava/nio/ByteBuffer;
-.field private final char Ljava/nio/FloatBuffer;
-.field private final else Ljava/nio/ShortBuffer;
-.field private final "enum" Ljava/nio/DoubleBuffer;
-.field private final do Ljava/nio/DoubleBuffer;
+.field private final field2490 Ljava/nio/FloatBuffer;
+.field private final field2491 Ljava/nio/ShortBuffer;
+.field private final field2492 Ljava/nio/DoubleBuffer;
+.field private final field2493 Ljava/nio/DoubleBuffer;
 
 .method static synthetic try : (Lorg/lwjgl/F;)Ljava/nio/FloatBuffer;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/F void Ljava/nio/FloatBuffer;
+L1:     getfield Field org/lwjgl/F field2487 Ljava/nio/FloatBuffer;
 L4:     areturn
 L5:     
     .end code
@@ -41,7 +41,7 @@ L6:
     .end code
 .end method
 
-.method static synthetic goto : (Lorg/lwjgl/F;)Ljava/nio/IntBuffer;
+.method static synthetic method1774 : (Lorg/lwjgl/F;)Ljava/nio/IntBuffer;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/F try Ljava/nio/IntBuffer;
@@ -50,19 +50,19 @@ L5:
     .end code
 .end method
 
-.method static synthetic do : (Lorg/lwjgl/F;)Ljava/nio/ShortBuffer;
+.method static synthetic method1775 : (Lorg/lwjgl/F;)Ljava/nio/ShortBuffer;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/F else Ljava/nio/ShortBuffer;
+L1:     getfield Field org/lwjgl/F field2491 Ljava/nio/ShortBuffer;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method static synthetic for : (Lorg/lwjgl/F;)Ljava/nio/IntBuffer;
+.method static synthetic method1776 : (Lorg/lwjgl/F;)Ljava/nio/IntBuffer;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/F null Ljava/nio/IntBuffer;
+L1:     getfield Field org/lwjgl/F field2489 Ljava/nio/IntBuffer;
 L4:     areturn
 L5:     
     .end code
@@ -85,19 +85,19 @@ L13:    invokestatic Method java/nio/ByteBuffer allocateDirect (I)Ljava/nio/Byte
 L16:    putfield Field org/lwjgl/F this Ljava/nio/ByteBuffer;
 L19:    getfield Field org/lwjgl/F this Ljava/nio/ByteBuffer;
 L22:    invokevirtual Method java/nio/ByteBuffer asShortBuffer ()Ljava/nio/ShortBuffer;
-L25:    putfield Field org/lwjgl/F else Ljava/nio/ShortBuffer;
+L25:    putfield Field org/lwjgl/F field2491 Ljava/nio/ShortBuffer;
 L28:    getfield Field org/lwjgl/F this Ljava/nio/ByteBuffer;
 L31:    invokevirtual Method java/nio/ByteBuffer asIntBuffer ()Ljava/nio/IntBuffer;
-L34:    putfield Field org/lwjgl/F null Ljava/nio/IntBuffer;
+L34:    putfield Field org/lwjgl/F field2489 Ljava/nio/IntBuffer;
 L37:    getfield Field org/lwjgl/F this Ljava/nio/ByteBuffer;
 L40:    invokevirtual Method java/nio/ByteBuffer asFloatBuffer ()Ljava/nio/FloatBuffer;
-L43:    putfield Field org/lwjgl/F char Ljava/nio/FloatBuffer;
+L43:    putfield Field org/lwjgl/F field2490 Ljava/nio/FloatBuffer;
 L46:    getfield Field org/lwjgl/F this Ljava/nio/ByteBuffer;
 L49:    invokevirtual Method java/nio/ByteBuffer asLongBuffer ()Ljava/nio/LongBuffer;
-L52:    putfield Field org/lwjgl/F const Ljava/nio/LongBuffer;
+L52:    putfield Field org/lwjgl/F field2488 Ljava/nio/LongBuffer;
 L55:    getfield Field org/lwjgl/F this Ljava/nio/ByteBuffer;
 L58:    invokevirtual Method java/nio/ByteBuffer asDoubleBuffer ()Ljava/nio/DoubleBuffer;
-L61:    putfield Field org/lwjgl/F "enum" Ljava/nio/DoubleBuffer;
+L61:    putfield Field org/lwjgl/F field2492 Ljava/nio/DoubleBuffer;
 L64:    getfield Field org/lwjgl/F this Ljava/nio/ByteBuffer;
 L67:    getstatic Field java/nio/ByteOrder LITTLE_ENDIAN Ljava/nio/ByteOrder;
 L70:    invokevirtual Method java/nio/ByteBuffer order (Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
@@ -115,20 +115,20 @@ L91:    invokevirtual Method java/nio/ByteBuffer asIntBuffer ()Ljava/nio/IntBuff
 L94:    putfield Field org/lwjgl/F try Ljava/nio/IntBuffer;
 L97:    getfield Field org/lwjgl/F this Ljava/nio/ByteBuffer;
 L100:   invokevirtual Method java/nio/ByteBuffer asFloatBuffer ()Ljava/nio/FloatBuffer;
-L103:   putfield Field org/lwjgl/F void Ljava/nio/FloatBuffer;
+L103:   putfield Field org/lwjgl/F field2487 Ljava/nio/FloatBuffer;
 L106:   getfield Field org/lwjgl/F this Ljava/nio/ByteBuffer;
 L109:   invokevirtual Method java/nio/ByteBuffer asLongBuffer ()Ljava/nio/LongBuffer;
-L112:   putfield Field org/lwjgl/F long Ljava/nio/LongBuffer;
+L112:   putfield Field org/lwjgl/F field2486 Ljava/nio/LongBuffer;
 L115:   getfield Field org/lwjgl/F this Ljava/nio/ByteBuffer;
 L118:   invokevirtual Method java/nio/ByteBuffer asDoubleBuffer ()Ljava/nio/DoubleBuffer;
-L121:   putfield Field org/lwjgl/F do Ljava/nio/DoubleBuffer;
+L121:   putfield Field org/lwjgl/F field2493 Ljava/nio/DoubleBuffer;
 L124:   pop
 L125:   return
 L126:   
     .end code
 .end method
 
-.method static synthetic catch : (Lorg/lwjgl/F;)Ljava/nio/ByteBuffer;
+.method static synthetic method1777 : (Lorg/lwjgl/F;)Ljava/nio/ByteBuffer;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/F this Ljava/nio/ByteBuffer;
@@ -137,46 +137,46 @@ L5:
     .end code
 .end method
 
-.method static synthetic float : (Lorg/lwjgl/F;)Ljava/nio/LongBuffer;
+.method static synthetic method1778 : (Lorg/lwjgl/F;)Ljava/nio/LongBuffer;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/F const Ljava/nio/LongBuffer;
+L1:     getfield Field org/lwjgl/F field2488 Ljava/nio/LongBuffer;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method static synthetic short : (Lorg/lwjgl/F;)Ljava/nio/DoubleBuffer;
+.method static synthetic method1779 : (Lorg/lwjgl/F;)Ljava/nio/DoubleBuffer;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/F do Ljava/nio/DoubleBuffer;
+L1:     getfield Field org/lwjgl/F field2493 Ljava/nio/DoubleBuffer;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method static synthetic const : (Lorg/lwjgl/F;)Ljava/nio/LongBuffer;
+.method static synthetic method1780 : (Lorg/lwjgl/F;)Ljava/nio/LongBuffer;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/F long Ljava/nio/LongBuffer;
+L1:     getfield Field org/lwjgl/F field2486 Ljava/nio/LongBuffer;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method static synthetic else : (Lorg/lwjgl/F;)Ljava/nio/FloatBuffer;
+.method static synthetic method1781 : (Lorg/lwjgl/F;)Ljava/nio/FloatBuffer;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/F char Ljava/nio/FloatBuffer;
+L1:     getfield Field org/lwjgl/F field2490 Ljava/nio/FloatBuffer;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method static synthetic break : (Lorg/lwjgl/F;)Ljava/nio/DoubleBuffer;
+.method static synthetic method1782 : (Lorg/lwjgl/F;)Ljava/nio/DoubleBuffer;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/F "enum" Ljava/nio/DoubleBuffer;
+L1:     getfield Field org/lwjgl/F field2492 Ljava/nio/DoubleBuffer;
 L4:     areturn
 L5:     
     .end code

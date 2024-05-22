@@ -2,7 +2,7 @@
 .class public final super enum Gg
 .super fE
 
-.method public break : (F)Ljava/lang/String;
+.method public method304 : (F)Ljava/lang/String;
     .code stack 4 locals 2
 L0:     new java/lang/StringBuilder
 L3:     dup
@@ -10,7 +10,7 @@ L4:     invokespecial Method java/lang/StringBuilder <init> ()V
 L7:     iconst_0
 L8:     aload_0
 L9:     fload_1
-L10:    invokevirtual Method Gg else (F)Ljava/lang/String;
+L10:    invokevirtual Method Gg method302 (F)Ljava/lang/String;
 L13:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
 L16:    ldc " BPM"
 L18:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -33,7 +33,7 @@ L9:
     .end code
 .end method
 
-.method public else : (F)Ljava/lang/String;
+.method public method302 : (F)Ljava/lang/String;
     .code stack 1 locals 2
 L0:     fload_1
 L1:     invokestatic Method java/lang/Math round (F)I
@@ -43,22 +43,22 @@ L8:
     .end code
 .end method
 
-.method public break : (LRg;F)Z
+.method public method303 : (LRg;F)Z
     .code stack 3 locals 4
 L0:     fconst_0
 L1:     fstore_3
 L2:     aload_1
-L3:     getfield Field Rg do F
+L3:     getfield Field Rg field241 F
 L6:     ldc 3.5e0f
 L8:     fcmpl
 L9:     ifle L26
 L12:    ldc 6e1f
 L14:    aload_1
-L15:    getfield Field Rg byte I
+L15:    getfield Field Rg field228 I
 L18:    i2f
 L19:    fmul
 L20:    aload_1
-L21:    getfield Field Rg do F
+L21:    getfield Field Rg field241 F
 L24:    fdiv
 L25:    fstore_3
 L26:    fload_3
@@ -77,34 +77,34 @@ L40:    dup
 L41:    pop2
 L42:    ireturn
 L43:    
-        .attribute StackMap b'\x00\x03\x00\x1A\x00\x04\x07\x00\x02\x07\x00\x31\x02\x02\x00\x00\x00\x25\x00\x00\x00\x01\x07\x00\x3D\x00\x26\x00\x04\x07\x00\x02\x07\x00\x31\x02\x02\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x1A\x00\x04\x07\x00\x02\x07\x00\x32\x02\x02\x00\x00\x00\x25\x00\x00\x00\x01\x07\x00\x3E\x00\x26\x00\x04\x07\x00\x02\x07\x00\x32\x02\x02\x00\x00'
     .end code
 .end method
 
-.method public break : (LRg;)Ljava/lang/String;
+.method public method305 : (LRg;)Ljava/lang/String;
     .code stack 2 locals 3
 L0:     fconst_0
 L1:     fstore_2
 L2:     aload_1
-L3:     getfield Field Rg do F
+L3:     getfield Field Rg field241 F
 L6:     ldc 3.5e0f
 L8:     fcmpl
 L9:     ifle L26
 L12:    ldc 6e1f
 L14:    aload_1
-L15:    getfield Field Rg byte I
+L15:    getfield Field Rg field228 I
 L18:    i2f
 L19:    fmul
 L20:    aload_1
-L21:    getfield Field Rg do F
+L21:    getfield Field Rg field241 F
 L24:    fdiv
 L25:    fstore_2
 L26:    aload_0
 L27:    fload_2
-L28:    invokevirtual Method Gg break (F)Ljava/lang/String;
+L28:    invokevirtual Method Gg method304 (F)Ljava/lang/String;
 L31:    areturn
 L32:    
-        .attribute StackMap b'\x00\x01\x00\x1A\x00\x03\x07\x00\x02\x07\x00\x31\x02\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x1A\x00\x03\x07\x00\x02\x07\x00\x32\x02\x00\x00'
     .end code
 .end method
 .innerclasses

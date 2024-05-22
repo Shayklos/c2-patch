@@ -2,16 +2,16 @@
 .class final super org/lwjgl/MemoryUtilSun$AccessorUnsafe
 .super java/lang/Object
 .implements org/lwjgl/MemoryUtil$Accessor
-.field private final "enum" J
-.field private final do Lsun/misc/Unsafe;
+.field private final field2543 J
+.field private final field2544 Lsun/misc/Unsafe;
 
-.method public break : (Ljava/nio/Buffer;)J
+.method public method1887 : (Ljava/nio/Buffer;)J
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/MemoryUtilSun$AccessorUnsafe do Lsun/misc/Unsafe;
+L1:     getfield Field org/lwjgl/MemoryUtilSun$AccessorUnsafe field2544 Lsun/misc/Unsafe;
 L4:     aload_1
 L5:     aload_0
-L6:     getfield Field org/lwjgl/MemoryUtilSun$AccessorUnsafe "enum" J
+L6:     getfield Field org/lwjgl/MemoryUtilSun$AccessorUnsafe field2543 J
 L9:     invokevirtual Method sun/misc/Unsafe getLong (Ljava/lang/Object;J)J
 L12:    lreturn
 L13:    
@@ -26,12 +26,12 @@ L1:     invokespecial Method java/lang/Object <init> ()V
 L4:     aload_0
 L5:     dup
 L6:     dup_x1
-L7:     invokestatic Method org/lwjgl/MemoryUtilSun$AccessorUnsafe break ()Lsun/misc/Unsafe;
-L10:    putfield Field org/lwjgl/MemoryUtilSun$AccessorUnsafe do Lsun/misc/Unsafe;
-L13:    getfield Field org/lwjgl/MemoryUtilSun$AccessorUnsafe do Lsun/misc/Unsafe;
-L16:    invokestatic Method org/lwjgl/MemoryUtil break ()Ljava/lang/reflect/Field;
+L7:     invokestatic Method org/lwjgl/MemoryUtilSun$AccessorUnsafe method1888 ()Lsun/misc/Unsafe;
+L10:    putfield Field org/lwjgl/MemoryUtilSun$AccessorUnsafe field2544 Lsun/misc/Unsafe;
+L13:    getfield Field org/lwjgl/MemoryUtilSun$AccessorUnsafe field2544 Lsun/misc/Unsafe;
+L16:    invokestatic Method org/lwjgl/MemoryUtil method1845 ()Ljava/lang/reflect/Field;
 L19:    invokevirtual Method sun/misc/Unsafe objectFieldOffset (Ljava/lang/reflect/Field;)J
-L22:    putfield Field org/lwjgl/MemoryUtilSun$AccessorUnsafe "enum" J
+L22:    putfield Field org/lwjgl/MemoryUtilSun$AccessorUnsafe field2543 J
 L25:    return
 L26:    athrow
 L27:    astore_1
@@ -42,11 +42,11 @@ L33:    invokespecial Method java/lang/UnsupportedOperationException <init> (Lja
 L36:    athrow
 L37:    athrow
 L38:    
-        .attribute StackMap b'\x00\x03\x00\x1A\x00\x00\x00\x01\x07\x00\x2E\x00\x1B\x00\x01\x07\x00\x02\x00\x01\x07\x00\x20\x00\x25\x00\x00\x00\x01\x07\x00\x2E'
+        .attribute StackMap b'\x00\x03\x00\x1A\x00\x00\x00\x01\x07\x00\x30\x00\x1B\x00\x01\x07\x00\x02\x00\x01\x07\x00\x20\x00\x25\x00\x00\x00\x01\x07\x00\x30'
     .end code
 .end method
 
-.method private static break : ()Lsun/misc/Unsafe;
+.method private static method1888 : ()Lsun/misc/Unsafe;
     .code stack 4 locals 5
 L0:     ldc Class sun/misc/Unsafe
 L2:     invokevirtual Method java/lang/Class getDeclaredFields ()[Ljava/lang/reflect/Field;
@@ -106,7 +106,7 @@ L95:    dup
 L96:    invokespecial Method java/lang/UnsupportedOperationException <init> ()V
 L99:    athrow
 L100:   
-        .attribute StackMap b'\x00\x08\x00\x0F\x00\x03\x07\x00\x3D\x01\x01\x00\x01\x01\x00\x26\x00\x00\x00\x01\x07\x00\x2E\x00\x27\x00\x04\x07\x00\x3D\x01\x01\x07\x00\x3F\x00\x00\x00\x3F\x00\x00\x00\x01\x07\x00\x2E\x00\x40\x00\x05\x07\x00\x3D\x01\x01\x07\x00\x3F\x01\x00\x00\x00\x51\x00\x05\x07\x00\x3D\x01\x01\x07\x00\x3F\x01\x00\x01\x07\x00\x35\x00\x55\x00\x04\x07\x00\x3D\x01\x01\x07\x00\x3F\x00\x00\x00\x5C\x00\x03\x07\x00\x3D\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x08\x00\x0F\x00\x03\x07\x00\x3F\x01\x01\x00\x01\x01\x00\x26\x00\x00\x00\x01\x07\x00\x30\x00\x27\x00\x04\x07\x00\x3F\x01\x01\x07\x00\x41\x00\x00\x00\x3F\x00\x00\x00\x01\x07\x00\x30\x00\x40\x00\x05\x07\x00\x3F\x01\x01\x07\x00\x41\x01\x00\x00\x00\x51\x00\x05\x07\x00\x3F\x01\x01\x07\x00\x41\x01\x00\x01\x07\x00\x37\x00\x55\x00\x04\x07\x00\x3F\x01\x01\x07\x00\x41\x00\x00\x00\x5C\x00\x03\x07\x00\x3F\x01\x01\x00\x00'
     .end code
 .end method
 .innerclasses

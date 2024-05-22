@@ -3,7 +3,7 @@
 .super java/lang/Object
 .implements org/lwjgl/opengl/e
 
-.method static break : (Ljava/awt/GraphicsDevice;)I
+.method static method4621 : (Ljava/awt/GraphicsDevice;)I
     .code stack 5 locals 2
         .catch java/lang/Exception from L0 to L36 using L38
 L0:     new org/lwjgl/opengl/yA
@@ -40,19 +40,19 @@ L48:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method private static break : (ILorg/lwjgl/opengl/PixelFormat;)I
+.method private static method4622 : (ILorg/lwjgl/opengl/PixelFormat;)I
     .code stack 4 locals 5
-L0:     invokestatic Method org/lwjgl/opengl/LinuxDisplay "interface" ()V
-L3:     invokestatic Method org/lwjgl/opengl/GLContext short ()V
+L0:     invokestatic Method org/lwjgl/opengl/LinuxDisplay method4723 ()V
+L3:     invokestatic Method org/lwjgl/opengl/GLContext method4600 ()V
         .catch [0] from L6 to L18 using L30
-L6:     invokestatic Method org/lwjgl/opengl/LinuxDisplay "private" ()V
-L9:     invokestatic Method org/lwjgl/opengl/LinuxDisplay "strictfp" ()J
+L6:     invokestatic Method org/lwjgl/opengl/LinuxDisplay method4712 ()V
+L9:     invokestatic Method org/lwjgl/opengl/LinuxDisplay method4757 ()J
 L12:    iload_0
 L13:    aload_1
 L14:    invokestatic Method org/lwjgl/opengl/LinuxCanvasImplementation nFindVisualIDFromFormat (JILorg/lwjgl/opengl/PixelFormat;)I
 L17:    istore_1
 L18:    invokestatic Method org/lwjgl/opengl/LinuxDisplay F ()V
-L21:    invokestatic Method org/lwjgl/opengl/GLContext else ()V
+L21:    invokestatic Method org/lwjgl/opengl/GLContext method4602 ()V
 L24:    invokestatic Method org/lwjgl/opengl/LinuxDisplay while ()V
 L27:    iload_1
 L28:    ireturn
@@ -67,7 +67,7 @@ L31:    invokestatic Method org/lwjgl/opengl/LinuxDisplay F ()V
 L34:    aload_2
 L35:    athrow
 L36:    astore_3
-L37:    invokestatic Method org/lwjgl/opengl/GLContext else ()V
+L37:    invokestatic Method org/lwjgl/opengl/GLContext method4602 ()V
 L40:    aload_3
 L41:    athrow
 L42:    astore 4
@@ -80,7 +80,7 @@ L50:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method private static break : (Ljava/awt/GraphicsConfiguration;)I
+.method private static method4623 : (Ljava/awt/GraphicsConfiguration;)I
     .code stack 5 locals 2
         .catch java/lang/Exception from L0 to L36 using L38
 L0:     new org/lwjgl/opengl/rA
@@ -112,7 +112,7 @@ L43:    aload_1
 L44:    invokespecial Method org/lwjgl/LWJGLException <init> (Ljava/lang/Throwable;)V
 L47:    athrow
 L48:    
-        .attribute StackMap b'\x00\x02\x00\x25\x00\x00\x00\x01\x07\x00\x28\x00\x26\x00\x01\x07\x00\x53\x00\x01\x07\x00\x10'
+        .attribute StackMap b'\x00\x02\x00\x25\x00\x00\x00\x01\x07\x00\x28\x00\x26\x00\x01\x07\x00\x55\x00\x01\x07\x00\x10'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
@@ -126,7 +126,7 @@ L5:
     .end code
 .end method
 
-.method public break : (Ljava/awt/Canvas;Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/CB;)Lorg/lwjgl/opengl/a;
+.method public method4620 : (Ljava/awt/Canvas;Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/CB;)Lorg/lwjgl/opengl/a;
     .code stack 3 locals 4
 L0:     new org/lwjgl/opengl/LinuxAWTGLCanvasPeerInfo
 L3:     dup
@@ -142,16 +142,16 @@ L9:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public break : (Ljava/awt/GraphicsDevice;Lorg/lwjgl/opengl/PixelFormat;)Ljava/awt/GraphicsConfiguration;
+.method public method4619 : (Ljava/awt/GraphicsDevice;Lorg/lwjgl/opengl/PixelFormat;)Ljava/awt/GraphicsConfiguration;
     .code stack 3 locals 7
         .catch org/lwjgl/LWJGLException from L0 to L49 using L61
 L0:     aload_1
 L1:     dup
-L2:     invokestatic Method org/lwjgl/opengl/LinuxCanvasImplementation break (Ljava/awt/GraphicsDevice;)I
+L2:     invokestatic Method org/lwjgl/opengl/LinuxCanvasImplementation method4621 (Ljava/awt/GraphicsDevice;)I
 L5:     dup
 L6:     istore_1
 L7:     aload_2
-L8:     invokestatic Method org/lwjgl/opengl/LinuxCanvasImplementation break (ILorg/lwjgl/opengl/PixelFormat;)I
+L8:     invokestatic Method org/lwjgl/opengl/LinuxCanvasImplementation method4622 (ILorg/lwjgl/opengl/PixelFormat;)I
 L11:    istore_2
 L12:    invokevirtual Method java/awt/GraphicsDevice getConfigurations ()[Ljava/awt/GraphicsConfiguration;
 L15:    dup
@@ -171,7 +171,7 @@ L34:    iload 5
 L36:    aaload
 L37:    dup
 L38:    astore 6
-L40:    invokestatic Method org/lwjgl/opengl/LinuxCanvasImplementation break (Ljava/awt/GraphicsConfiguration;)I
+L40:    invokestatic Method org/lwjgl/opengl/LinuxCanvasImplementation method4623 (Ljava/awt/GraphicsConfiguration;)I
 L43:    iload_2
 L44:    if_icmpne L51
 L47:    aload 6
@@ -198,7 +198,7 @@ L82:    invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
 L85:    aconst_null
 L86:    areturn
 L87:    
-        .attribute StackMap b'\x00\x06\x00\x1A\x00\x06\x07\x00\x02\x01\x01\x07\x00\x66\x01\x01\x00\x00\x00\x32\x00\x00\x00\x01\x07\x00\x28\x00\x33\x00\x07\x07\x00\x02\x01\x01\x07\x00\x66\x01\x01\x07\x00\x53\x00\x00\x00\x39\x00\x00\x00\x01\x07\x00\x28\x00\x3D\x00\x01\x07\x00\x02\x00\x01\x07\x00\x0E\x00\x55\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x1A\x00\x06\x07\x00\x02\x01\x01\x07\x00\x6A\x01\x01\x00\x00\x00\x32\x00\x00\x00\x01\x07\x00\x28\x00\x33\x00\x07\x07\x00\x02\x01\x01\x07\x00\x6A\x01\x01\x07\x00\x55\x00\x00\x00\x39\x00\x00\x00\x01\x07\x00\x28\x00\x3D\x00\x01\x07\x00\x02\x00\x01\x07\x00\x0E\x00\x55\x00\x01\x07\x00\x02\x00\x00'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method

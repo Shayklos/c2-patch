@@ -1,9 +1,9 @@
 .version 49 0
 .class final super org/lwjgl/f
 .super org/lwjgl/c
-.field private static final do I = 19
+.field private static final field2484 I = 19
 
-.method public float : ()I
+.method public method1772 : ()I
     .code stack 3 locals 1
 L0:     bipush 19
 L2:     iconst_1
@@ -23,7 +23,7 @@ L5:
     .end code
 .end method
 
-.method public const : ()Z
+.method public method1770 : ()Z
     .code stack 3 locals 1
 L0:     iconst_1
 L1:     dup
@@ -47,7 +47,7 @@ L15:
     .end code
 .end method
 
-.method public break : (Ljava/lang/String;)Z
+.method public method1773 : (Ljava/lang/String;)Z
     .code stack 5 locals 6
 L0:     bipush 8
 L2:     iconst_1

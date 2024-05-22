@@ -1,7 +1,7 @@
 .version 49 0
 .class public final super WE
 .super Qb
-.field public do LNF;
+.field public field1762 LNF;
 
 .method public <init> : ()V
     .code stack 4 locals 1
@@ -14,13 +14,13 @@ L9:     dup
 L10:    pop2
 L11:    dup
 L12:    invokespecial Method Zf <init> ()V
-L15:    putfield Field WE do LNF;
+L15:    putfield Field WE field1762 LNF;
 L18:    return
 L19:    
     .end code
 .end method
 
-.method public break : (LRg;)F
+.method public method750 : (LRg;)F
     .code stack 1 locals 2
 L0:     ldc 1.5e0f
 L2:     freturn
@@ -28,25 +28,25 @@ L3:
     .end code
 .end method
 
-.method public break : (ZLRg;)Lff;
+.method public method753 : (ZLRg;)Lff;
     .code stack 8 locals 10
 L0:     aload_2
-L1:     getfield Field Rg float Lff;
+L1:     getfield Field Rg field221 Lff;
 L4:     ifnonnull L24
 L7:     aload_2
-L8:     getfield Field Rg "native" Ljava/util/Random;
+L8:     getfield Field Rg field216 Ljava/util/Random;
 L11:    bipush 7
 L13:    iconst_1
 L14:    dup
 L15:    pop2
 L16:    invokevirtual Method java/util/Random nextInt (I)I
-L19:    invokestatic Method ff else (I)Lff;
+L19:    invokestatic Method ff method467 (I)Lff;
 L22:    areturn
 L23:    athrow
 L24:    ldc2_w +Infinity
 L27:    dstore_3
 L28:    aload_2
-L29:    getfield Field Rg "native" Ljava/util/Random;
+L29:    getfield Field Rg field216 Ljava/util/Random;
 L32:    bipush 7
 L34:    iconst_1
 L35:    dup
@@ -83,7 +83,7 @@ L80:    iload 8
 L82:    istore 9
 L84:    aload 6
 L86:    iload 8
-L88:    new if
+L88:    new mapped/Class1
 L91:    aload 7
 L93:    dup_x1
 L94:    dup
@@ -92,7 +92,7 @@ L96:    dup
 L97:    aload_0
 L98:    aload_2
 L99:    iload 9
-L101:   invokespecial Method if <init> (LWE;LRg;I)V
+L101:   invokespecial Method mapped/Class1 <init> (LWE;LRg;I)V
 L104:   invokeinterface InterfaceMethod java/util/concurrent/ExecutorService submit (Ljava/util/concurrent/Callable;)Ljava/util/concurrent/Future; 2
 L109:   iinc 8 1
 L112:   aastore
@@ -138,15 +138,15 @@ L186:   astore 8
 L188:   aload 7
 L190:   invokeinterface InterfaceMethod java/util/concurrent/ExecutorService shutdown ()V 1
 L195:   iload 5
-L197:   invokestatic Method ff else (I)Lff;
+L197:   invokestatic Method ff method467 (I)Lff;
 L200:   areturn
 L201:   
-        .attribute StackMap b'\x00\x0A\x00\x17\x00\x00\x00\x01\x07\x00\x54\x00\x18\x00\x03\x07\x00\x02\x01\x07\x00\x1E\x00\x00\x00\x48\x00\x08\x07\x00\x02\x01\x07\x00\x1E\x03\x01\x07\x00\x56\x07\x00\x41\x01\x00\x01\x01\x00\x76\x00\x00\x00\x01\x07\x00\x54\x00\x77\x00\x08\x07\x00\x02\x01\x07\x00\x1E\x03\x01\x07\x00\x56\x07\x00\x41\x01\x00\x00\x00\x7D\x00\x08\x07\x00\x02\x01\x07\x00\x1E\x03\x01\x07\x00\x56\x07\x00\x41\x01\x00\x00\x00\xB1\x00\x08\x07\x00\x02\x01\x07\x00\x1E\x03\x01\x07\x00\x56\x07\x00\x41\x01\x00\x00\x00\xB7\x00\x00\x00\x01\x07\x00\x54\x00\xBA\x00\x08\x07\x00\x02\x01\x07\x00\x1E\x03\x01\x07\x00\x56\x07\x00\x41\x01\x00\x01\x07\x00\x1C\x00\xBC\x00\x07\x07\x00\x02\x01\x07\x00\x1E\x03\x01\x07\x00\x56\x07\x00\x41\x00\x00'
+        .attribute StackMap b'\x00\x0A\x00\x17\x00\x00\x00\x01\x07\x00\x35\x00\x18\x00\x03\x07\x00\x02\x01\x07\x00\x1F\x00\x00\x00\x48\x00\x08\x07\x00\x02\x01\x07\x00\x1F\x03\x01\x07\x00\x41\x07\x00\x43\x01\x00\x01\x01\x00\x76\x00\x00\x00\x01\x07\x00\x35\x00\x77\x00\x08\x07\x00\x02\x01\x07\x00\x1F\x03\x01\x07\x00\x41\x07\x00\x43\x01\x00\x00\x00\x7D\x00\x08\x07\x00\x02\x01\x07\x00\x1F\x03\x01\x07\x00\x41\x07\x00\x43\x01\x00\x00\x00\xB1\x00\x08\x07\x00\x02\x01\x07\x00\x1F\x03\x01\x07\x00\x41\x07\x00\x43\x01\x00\x00\x00\xB7\x00\x00\x00\x01\x07\x00\x35\x00\xBA\x00\x08\x07\x00\x02\x01\x07\x00\x1F\x03\x01\x07\x00\x41\x07\x00\x43\x01\x00\x01\x07\x00\x1D\x00\xBC\x00\x07\x07\x00\x02\x01\x07\x00\x1F\x03\x01\x07\x00\x41\x07\x00\x43\x00\x00'
     .end code
 .end method
 .innerclasses
     WE [0] [0] static
-    if [0] [0]
+    mapped/Class1 [0] [0]
 .end innerclasses
 .enclosing method SE wtf ([LTe;)LTe;
 .end class

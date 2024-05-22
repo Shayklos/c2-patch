@@ -2,12 +2,12 @@
 .class final super org/lwjgl/k
 .super java/lang/Object
 .implements java/security/PrivilegedExceptionAction
-.field final synthetic do Ljava/lang/Class;
+.field final synthetic field2467 Ljava/lang/Class;
 
 .method public bridge synthetic run : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/k break ()Ljava/lang/reflect/Method;
+L1:     invokevirtual Method org/lwjgl/k method1759 ()Ljava/lang/reflect/Method;
 L4:     areturn
 L5:     
     .end code
@@ -19,17 +19,17 @@ L5:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field org/lwjgl/k do Ljava/lang/Class;
+L3:     putfield Field org/lwjgl/k field2467 Ljava/lang/Class;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    
     .end code
 .end method
 
-.method public break : ()Ljava/lang/reflect/Method;
+.method public method1759 : ()Ljava/lang/reflect/Method;
     .code stack 7 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/k do Ljava/lang/Class;
+L1:     getfield Field org/lwjgl/k field2467 Ljava/lang/Class;
 L4:     ldc "lookup"
 L6:     iconst_1
 L7:     dup
@@ -55,5 +55,5 @@ L28:
 .innerclasses
     org/lwjgl/k [0] [0] static
 .end innerclasses
-.enclosing method org/lwjgl/Sys const (Ljava/lang/String;)Z
+.enclosing method org/lwjgl/Sys method1892 (Ljava/lang/String;)Z
 .end class

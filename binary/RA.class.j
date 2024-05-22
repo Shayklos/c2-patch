@@ -10,17 +10,17 @@ L1:     aload_1
 L2:     checkcast pA
 L5:     aload_2
 L6:     checkcast pA
-L9:     invokevirtual Method RA break (LpA;LpA;)I
+L9:     invokevirtual Method RA method697 (LpA;LpA;)I
 L12:    ireturn
 L13:    
     .end code
 .end method
 
-.method public break : (LpA;LpA;)I
+.method public method697 : (LpA;LpA;)I
     .code stack 2 locals 3
 L0:     aload_1
 L1:     aload_2
-L2:     invokestatic Method NA break (LpA;LpA;)I
+L2:     invokestatic Method NA method982 (LpA;LpA;)I
 L5:     ireturn
 L6:     
     .end code
@@ -38,5 +38,5 @@ L5:
     RA [0] [0] static
     pA NA [0] private static
 .end innerclasses
-.enclosing method NA break (LNA;IIIIIII[I[I)Z
+.enclosing method NA method927 (LNA;IIIIIII[I[I)Z
 .end class

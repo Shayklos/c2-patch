@@ -2,7 +2,7 @@
 .class final super org/lwjgl/K
 .super java/lang/ThreadLocal
 
-.method protected break : ()Lorg/lwjgl/F;
+.method protected method1832 : ()Lorg/lwjgl/F;
     .code stack 5 locals 1
 L0:     new org/lwjgl/F
 L3:     dup
@@ -20,7 +20,7 @@ L13:
 .method protected bridge synthetic initialValue : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/K break ()Lorg/lwjgl/F;
+L1:     invokevirtual Method org/lwjgl/K method1832 ()Lorg/lwjgl/F;
 L4:     areturn
 L5:     
     .end code

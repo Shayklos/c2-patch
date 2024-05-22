@@ -17,12 +17,12 @@ L17:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)
 L20:    ldc ".png"
 L22:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L25:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
-L28:    invokestatic Method OC for (Ljava/lang/String;)[B
+L28:    invokestatic Method OC method989 (Ljava/lang/String;)[B
 L31:    iconst_1
 L32:    dup
 L33:    dup
 L34:    pop2
-L35:    invokestatic Method xD break ([BZ)Ljava/nio/ByteBuffer;
+L35:    invokestatic Method xD method603 ([BZ)Ljava/nio/ByteBuffer;
 L38:    areturn
 L39:    athrow
 L40:    astore_1

@@ -2,17 +2,17 @@
 .class final super org/lwjgl/input/C
 .super java/lang/Object
 .field private this I
-.field private char Z
-.field private else Z
-.field private "enum" J
-.field private do I
+.field private field2550 Z
+.field private field2551 Z
+.field private field2552 J
+.field private field2553 I
 
-.method static synthetic break : (Lorg/lwjgl/input/C;J)J
+.method static synthetic method1899 : (Lorg/lwjgl/input/C;J)J
     .code stack 5 locals 3
 L0:     aload_0
 L1:     lload_1
 L2:     dup2_x1
-L3:     putfield Field org/lwjgl/input/C "enum" J
+L3:     putfield Field org/lwjgl/input/C field2552 J
 L6:     lreturn
 L7:     
     .end code
@@ -27,7 +27,7 @@ L5:
     .end code
 .end method
 
-.method private break : ()V
+.method private method1900 : ()V
     .code stack 10 locals 1
 L0:     iconst_0
 L1:     aload_0
@@ -44,46 +44,46 @@ L11:    putfield Field org/lwjgl/input/C this I
 L14:    iconst_1
 L15:    dup
 L16:    pop2
-L17:    putfield Field org/lwjgl/input/C do I
+L17:    putfield Field org/lwjgl/input/C field2553 I
 L20:    iconst_1
 L21:    dup
 L22:    pop2
-L23:    putfield Field org/lwjgl/input/C else Z
+L23:    putfield Field org/lwjgl/input/C field2551 Z
 L26:    iconst_1
 L27:    dup
 L28:    pop2
-L29:    putfield Field org/lwjgl/input/C char Z
+L29:    putfield Field org/lwjgl/input/C field2550 Z
 L32:    return
 L33:    
     .end code
 .end method
 
-.method static synthetic else : (Lorg/lwjgl/input/C;Z)Z
+.method static synthetic method1901 : (Lorg/lwjgl/input/C;Z)Z
     .code stack 3 locals 2
 L0:     aload_0
 L1:     iload_1
 L2:     dup_x1
-L3:     putfield Field org/lwjgl/input/C else Z
+L3:     putfield Field org/lwjgl/input/C field2551 Z
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method static synthetic else : (Lorg/lwjgl/input/C;I)I
+.method static synthetic method1902 : (Lorg/lwjgl/input/C;I)I
     .code stack 3 locals 2
 L0:     aload_0
 L1:     iload_1
 L2:     dup_x1
-L3:     putfield Field org/lwjgl/input/C do I
+L3:     putfield Field org/lwjgl/input/C field2553 I
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method static synthetic catch : (Lorg/lwjgl/input/C;)Z
+.method static synthetic method1903 : (Lorg/lwjgl/input/C;)Z
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/C char Z
+L1:     getfield Field org/lwjgl/input/C field2550 Z
 L4:     ireturn
 L5:     
     .end code
@@ -98,25 +98,25 @@ L5:
     .end code
 .end method
 
-.method static synthetic float : (Lorg/lwjgl/input/C;)V
+.method static synthetic method1904 : (Lorg/lwjgl/input/C;)V
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokespecial Method org/lwjgl/input/C break ()V
+L1:     invokespecial Method org/lwjgl/input/C method1900 ()V
 L4:     return
 L5:     
     .end code
 .end method
 
-.method static synthetic short : (Lorg/lwjgl/input/C;)J
+.method static synthetic method1905 : (Lorg/lwjgl/input/C;)J
     .code stack 2 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/C "enum" J
+L1:     getfield Field org/lwjgl/input/C field2552 J
 L4:     lreturn
 L5:     
     .end code
 .end method
 
-.method static synthetic break : (Lorg/lwjgl/input/C;I)I
+.method static synthetic method1906 : (Lorg/lwjgl/input/C;I)I
     .code stack 3 locals 2
 L0:     aload_0
 L1:     iload_1
@@ -127,7 +127,7 @@ L7:
     .end code
 .end method
 
-.method static synthetic const : (Lorg/lwjgl/input/C;)I
+.method static synthetic method1907 : (Lorg/lwjgl/input/C;)I
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/input/C this I
@@ -136,30 +136,30 @@ L5:
     .end code
 .end method
 
-.method static synthetic break : (Lorg/lwjgl/input/C;Z)Z
+.method static synthetic method1908 : (Lorg/lwjgl/input/C;Z)Z
     .code stack 3 locals 2
 L0:     aload_0
 L1:     iload_1
 L2:     dup_x1
-L3:     putfield Field org/lwjgl/input/C char Z
+L3:     putfield Field org/lwjgl/input/C field2550 Z
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method static synthetic else : (Lorg/lwjgl/input/C;)I
+.method static synthetic method1909 : (Lorg/lwjgl/input/C;)I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/C do I
+L1:     getfield Field org/lwjgl/input/C field2553 I
 L4:     ireturn
 L5:     
     .end code
 .end method
 
-.method static synthetic break : (Lorg/lwjgl/input/C;)Z
+.method static synthetic method1910 : (Lorg/lwjgl/input/C;)Z
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/C else Z
+L1:     getfield Field org/lwjgl/input/C field2551 Z
 L4:     ireturn
 L5:     
     .end code

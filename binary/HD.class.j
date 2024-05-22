@@ -1,65 +1,65 @@
 .version 49 0
 .class public final super HD
 .super vB
-.field private else Led;
-.field private "enum" Lnf;
-.field private do Led;
+.field private field1060 Led;
+.field private field1061 Lnf;
+.field private field1062 Led;
 
-.method public continue : ()V
+.method public method29 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public static synthetic catch : (LHD;)LFE;
+.method public static synthetic method534 : (LHD;)LFE;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field HD null LFE;
+L1:     getfield Field HD field1136 LFE;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method public static synthetic float : (LHD;)LFE;
+.method public static synthetic method535 : (LHD;)LFE;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field HD null LFE;
+L1:     getfield Field HD field1136 LFE;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method public "final" : ()V
+.method public method10 : ()V
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     getfield Field HD "enum" Lnf;
+L2:     getfield Field HD field1061 Lnf;
 L5:     invokevirtual Method HD try (LgB;)V
 L8:     return
 L9:     
     .end code
 .end method
 
-.method public static synthetic short : (LHD;)LFE;
+.method public static synthetic method536 : (LHD;)LFE;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field HD null LFE;
+L1:     getfield Field HD field1136 LFE;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method public static synthetic const : (LHD;)Led;
+.method public static synthetic method537 : (LHD;)Led;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field HD do Led;
+L1:     getfield Field HD field1062 Led;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method public "strictfp" : ()V
+.method public method49 : ()V
     .code stack 8 locals 4
 L0:     new Yg
 L3:     dup
@@ -75,7 +75,7 @@ L19:    iconst_0
 L20:    iconst_1
 L21:    dup
 L22:    pop2
-L23:    invokevirtual Method Yg break (Z)V
+L23:    invokevirtual Method Yg method238 (Z)V
 L26:    new Yg
 L29:    dup
 L30:    ldc "Cancel"
@@ -94,21 +94,21 @@ L51:    dup
 L52:    pop2
 L53:    dup
 L54:    invokespecial Method nf <init> ()V
-L57:    putfield Field HD "enum" Lnf;
-L60:    getfield Field HD "enum" Lnf;
+L57:    putfield Field HD field1061 Lnf;
+L60:    getfield Field HD field1061 Lnf;
 L63:    new gc
 L66:    dup
 L67:    aload_0
 L68:    aload_1
 L69:    invokespecial Method gc <init> (LHD;LYg;)V
-L72:    invokevirtual Method nf for (Lh;)V
-L75:    getfield Field HD "enum" Lnf;
+L72:    invokevirtual Method nf method130 (Lh;)V
+L75:    getfield Field HD field1061 Lnf;
 L78:    new sC
 L81:    dup
 L82:    aload_0
 L83:    aload_1
 L84:    invokespecial Method sC <init> (LHD;LYg;)V
-L87:    invokevirtual Method nf do (Lh;)V
+L87:    invokevirtual Method nf method128 (Lh;)V
 L90:    new qc
 L93:    dup
 L94:    new og
@@ -125,10 +125,10 @@ L111:   astore_3
 L112:   iconst_2
 L113:   aload_3
 L114:   aload_1
-L115:   invokevirtual Method qc float (LgB;)LgB;
+L115:   invokevirtual Method qc method36 (LgB;)LgB;
 L118:   aload_3
 L119:   aload_2
-L120:   invokevirtual Method qc float (LgB;)LgB;
+L120:   invokevirtual Method qc method36 (LgB;)LgB;
 L123:   pop2
 L124:   iconst_1
 L125:   dup
@@ -156,7 +156,7 @@ L150:   iconst_1
 L151:   dup
 L152:   pop2
 L153:   aload_0
-L154:   getfield Field HD "enum" Lnf;
+L154:   getfield Field HD field1061 Lnf;
 L157:   aastore
 L158:   dup
 L159:   iconst_1
@@ -164,7 +164,7 @@ L160:   dup
 L161:   dup
 L162:   pop2
 L163:   aload_0
-L164:   getfield Field HD "enum" Lnf;
+L164:   getfield Field HD field1061 Lnf;
 L167:   aastore
 L168:   aastore
 L169:   dup
@@ -195,12 +195,12 @@ L195:   pop2
 L196:   aload_2
 L197:   aastore
 L198:   aastore
-L199:   invokestatic Method mC break ([[LgB;)V
+L199:   invokestatic Method mC method1702 ([[LgB;)V
 L202:   new qc
 L205:   dup
 L206:   new fG
 L209:   dup
-L210:   getstatic Field LE do LLE;
+L210:   getstatic Field LE field634 LLE;
 L213:   ldc 1.5e-1f
 L215:   invokespecial Method fG <init> (LLE;F)V
 L218:   invokespecial Method qc <init> (Ld;)V
@@ -212,12 +212,12 @@ L227:   dup
 L228:   pop2
 L229:   dup
 L230:   ldc "Send a warning message to "
-L232:   getstatic Field We continue LWe;
+L232:   getstatic Field We field474 LWe;
 L235:   invokespecial Method DF <init> (Ljava/lang/String;LWe;)V
 L238:   new EG
 L241:   dup
 L242:   aload_0
-L243:   getfield Field HD else Led;
+L243:   getfield Field HD field1060 Led;
 L246:   getfield Field ed new Ljava/lang/String;
 L249:   ldc 2.5e-1f
 L251:   dup
@@ -225,19 +225,19 @@ L252:   invokespecial Method EG <init> (Ljava/lang/String;FF)V
 L255:   new DF
 L258:   dup
 L259:   aload_0
-L260:   getfield Field HD else Led;
-L263:   getfield Field ed "super" Ljava/lang/String;
-L266:   getstatic Field We continue LWe;
+L260:   getfield Field HD field1060 Led;
+L263:   getfield Field ed field701 Ljava/lang/String;
+L266:   getstatic Field We field474 LWe;
 L269:   invokespecial Method DF <init> (Ljava/lang/String;LWe;)V
-L272:   invokestatic Method Wd break (LgB;LgB;LgB;)Lqc;
-L275:   invokevirtual Method qc float (LgB;)LgB;
+L272:   invokestatic Method Wd method1087 (LgB;LgB;LgB;)Lqc;
+L275:   invokevirtual Method qc method36 (LgB;)LgB;
 L278:   aload_1
 L279:   aload_0
-L280:   getfield Field HD "enum" Lnf;
+L280:   getfield Field HD field1061 Lnf;
 L283:   ldc 8e0f
-L285:   invokestatic Method Wd const (LgB;F)Lqc;
-L288:   getstatic Field dg "enum" Ldg;
-L291:   invokevirtual Method qc break (LgB;Ljava/lang/Object;)V
+L285:   invokestatic Method Wd method1086 (LgB;F)Lqc;
+L288:   getstatic Field dg field337 Ldg;
+L291:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
 L294:   new DF
 L297:   aload_1
 L298:   dup_x1
@@ -248,8 +248,8 @@ L302:   ldc "The player will have to look at this message for ten seconds before
 L304:   getstatic Field We true LWe;
 L307:   invokespecial Method DF <init> (Ljava/lang/String;LWe;)V
 L310:   ldc 8e0f
-L312:   invokestatic Method Wd const (LgB;F)Lqc;
-L315:   invokevirtual Method qc float (LgB;)LgB;
+L312:   invokestatic Method Wd method1086 (LgB;F)Lqc;
+L315:   invokevirtual Method qc method36 (LgB;)LgB;
 L318:   new Vg
 L321:   aload_1
 L322:   dup_x1
@@ -259,15 +259,15 @@ L325:   dup
 L326:   fconst_0
 L327:   ldc 1e-1f
 L329:   invokespecial Method Vg <init> (FF)V
-L332:   invokevirtual Method qc float (LgB;)LgB;
+L332:   invokevirtual Method qc method36 (LgB;)LgB;
 L335:   aload_0
 L336:   aload_1
 L337:   dup
 L338:   aload_3
-L339:   getstatic Field dg char Ldg;
-L342:   invokevirtual Method qc break (LgB;Ljava/lang/Object;)V
-L345:   invokestatic Method Wd break (LgB;)Lqc;
-L348:   invokevirtual Method HD float (LgB;)LgB;
+L339:   getstatic Field dg field335 Ldg;
+L342:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
+L345:   invokestatic Method Wd method1093 (LgB;)Lqc;
+L348:   invokevirtual Method HD method36 (LgB;)LgB;
 L351:   pop2
 L352:   pop2
 L353:   return
@@ -283,23 +283,23 @@ L2:     dup_x1
 L3:     aload_1
 L4:     aload_0
 L5:     invokespecial Method vB <init> ()V
-L8:     putfield Field HD do Led;
-L11:    putfield Field HD else Led;
+L8:     putfield Field HD field1062 Led;
+L11:    putfield Field HD field1060 Led;
 L14:    return
 L15:    
     .end code
 .end method
 
-.method public static synthetic else : (LHD;)Led;
+.method public static synthetic method538 : (LHD;)Led;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field HD else Led;
+L1:     getfield Field HD field1060 Led;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method public break : (LgB;IC)Z
+.method public method57 : (LgB;IC)Z
     .code stack 4 locals 4
 L0:     iload_2
 L1:     iconst_1
@@ -308,23 +308,23 @@ L3:     dup
 L4:     pop2
 L5:     if_icmpne L16
 L8:     aload_0
-L9:     getfield Field HD null LFE;
+L9:     getfield Field HD field1136 LFE;
 L12:    aload_0
-L13:    invokevirtual Method FE break (LbC;)V
+L13:    invokevirtual Method FE method203 (LbC;)V
 L16:    iconst_1
 L17:    dup
 L18:    dup
 L19:    pop2
 L20:    ireturn
 L21:    
-        .attribute StackMap b'\x00\x01\x00\x10\x00\x04\x07\x00\x02\x07\x00\x5F\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x10\x00\x04\x07\x00\x02\x07\x00\x61\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public static synthetic break : (LHD;)Lnf;
+.method public static synthetic method539 : (LHD;)Lnf;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field HD "enum" Lnf;
+L1:     getfield Field HD field1061 Lnf;
 L4:     areturn
 L5:     
     .end code

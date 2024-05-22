@@ -6,7 +6,7 @@
 .method public run : ()Ljava/lang/Object;
     .code stack 3 locals 4
 L0:     ldc "compiz"
-L2:     invokestatic Method org/lwjgl/opengl/sA break (Ljava/lang/String;)Z
+L2:     invokestatic Method org/lwjgl/opengl/sA method5736 (Ljava/lang/String;)Z
 L5:     ifne L13
 L8:     aconst_null
 L9:     astore_1
@@ -14,12 +14,12 @@ L10:    aconst_null
 L11:    areturn
 L12:    athrow
 L13:    aconst_null
-L14:    invokestatic Method org/lwjgl/opengl/sA break (Lorg/lwjgl/opengl/d;)Lorg/lwjgl/opengl/d;
+L14:    invokestatic Method org/lwjgl/opengl/sA method5729 (Lorg/lwjgl/opengl/d;)Lorg/lwjgl/opengl/d;
 L17:    aconst_null
 L18:    astore_1
 L19:    pop
 L20:    ldc "dbus-daemon"
-L22:    invokestatic Method org/lwjgl/opengl/sA break (Ljava/lang/String;)Z
+L22:    invokestatic Method org/lwjgl/opengl/sA method5736 (Ljava/lang/String;)Z
 L25:    ifeq L47
 L28:    ldc "Dbus"
 L30:    astore_1
@@ -27,7 +27,7 @@ L31:    new org/lwjgl/opengl/wA
 L34:    dup
 L35:    aload_0
 L36:    invokespecial Method org/lwjgl/opengl/wA <init> (Lorg/lwjgl/opengl/XA;)V
-L39:    invokestatic Method org/lwjgl/opengl/sA break (Lorg/lwjgl/opengl/d;)Lorg/lwjgl/opengl/d;
+L39:    invokestatic Method org/lwjgl/opengl/sA method5729 (Lorg/lwjgl/opengl/d;)Lorg/lwjgl/opengl/d;
 L42:    pop
 L43:    goto L75
 L46:    athrow
@@ -48,20 +48,20 @@ L59:    new org/lwjgl/opengl/OA
 L62:    dup
 L63:    aload_0
 L64:    invokespecial Method org/lwjgl/opengl/OA <init> (Lorg/lwjgl/opengl/XA;)V
-L67:    invokestatic Method org/lwjgl/opengl/sA break (Lorg/lwjgl/opengl/d;)Lorg/lwjgl/opengl/d;
+L67:    invokestatic Method org/lwjgl/opengl/sA method5729 (Lorg/lwjgl/opengl/d;)Lorg/lwjgl/opengl/d;
 L70:    pop
 L71:    goto L75
 L74:    astore_2
-L75:    invokestatic Method org/lwjgl/opengl/sA break ()Lorg/lwjgl/opengl/d;
+L75:    invokestatic Method org/lwjgl/opengl/sA method5735 ()Lorg/lwjgl/opengl/d;
 L78:    ifnull L128
-L81:    invokestatic Method org/lwjgl/opengl/sA break ()Lorg/lwjgl/opengl/d;
-L84:    invokeinterface InterfaceMethod org/lwjgl/opengl/d break ()Z 1
+L81:    invokestatic Method org/lwjgl/opengl/sA method5735 ()Lorg/lwjgl/opengl/d;
+L84:    invokeinterface InterfaceMethod org/lwjgl/opengl/d method5287 ()Z 1
 L89:    ifne L128
 L92:    iconst_1
 L93:    dup
 L94:    dup
 L95:    pop2
-L96:    invokestatic Method org/lwjgl/opengl/sA else (Z)Z
+L96:    invokestatic Method org/lwjgl/opengl/sA method5728 (Z)Z
 L99:    pop
 L100:   new java/lang/StringBuilder
 L103:   dup
@@ -86,7 +86,7 @@ L133:   astore_3
 L134:   aconst_null
 L135:   areturn
 L136:   
-        .attribute StackMap b'\x00\x09\x00\x0C\x00\x00\x00\x01\x07\x00\x21\x00\x0D\x00\x01\x07\x00\x02\x00\x00\x00\x2E\x00\x00\x00\x01\x07\x00\x21\x00\x2F\x00\x02\x07\x00\x02\x05\x00\x00\x00\x4A\x00\x02\x07\x00\x02\x07\x00\x3B\x00\x01\x07\x00\x17\x00\x4B\x00\x02\x07\x00\x02\x07\x00\x3B\x00\x00\x00\x80\x00\x02\x07\x00\x02\x07\x00\x3B\x00\x00\x00\x82\x00\x01\x07\x00\x02\x00\x01\x07\x00\x19\x00\x85\x00\x01\x07\x00\x02\x00\x01\x07\x00\x21'
+        .attribute StackMap b'\x00\x09\x00\x0C\x00\x00\x00\x01\x07\x00\x21\x00\x0D\x00\x01\x07\x00\x02\x00\x00\x00\x2E\x00\x00\x00\x01\x07\x00\x21\x00\x2F\x00\x02\x07\x00\x02\x05\x00\x00\x00\x4A\x00\x02\x07\x00\x02\x07\x00\x3C\x00\x01\x07\x00\x17\x00\x4B\x00\x02\x07\x00\x02\x07\x00\x3C\x00\x00\x00\x80\x00\x02\x07\x00\x02\x07\x00\x3C\x00\x00\x00\x82\x00\x01\x07\x00\x02\x00\x01\x07\x00\x19\x00\x85\x00\x01\x07\x00\x02\x00\x01\x07\x00\x21'
     .end code
 .end method
 
@@ -105,5 +105,5 @@ L5:
     org/lwjgl/opengl/sA org/lwjgl/opengl/LinuxDisplay [0] private static final
     org/lwjgl/opengl/wA [0] [0]
 .end innerclasses
-.enclosing method org/lwjgl/opengl/sA else ()V
+.enclosing method org/lwjgl/opengl/sA method5732 ()V
 .end class

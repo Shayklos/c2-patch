@@ -1,24 +1,24 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/ATIVertexStreams
 .super java/lang/Object
-.field public static final void I = 34671
+.field public static final field3157 I = 34671
 .field public static final try I = 34669
-.field public static final const I = 34672
+.field public static final field3158 I = 34672
 .field public static final new I = 34673
-.field public static final null I = 34668
+.field public static final field3159 I = 34668
 .field public static final this I = 34674
-.field public static final char I = 34676
-.field public static final else I = 34670
-.field public static final "enum" I = 34675
-.field public static final do I = 34667
+.field public static final field3160 I = 34676
+.field public static final field3161 I = 34670
+.field public static final field3162 I = 34675
+.field public static final field3163 I = 34667
 
-.method public static else : (ISSS)V
+.method public static method2917 : (ISSS)V
     .code stack 6 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb AO J
 L6:     dup2
 L7:     lstore 4
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -30,13 +30,13 @@ L22:
     .end code
 .end method
 
-.method public static break : (IDDDD)V
+.method public static method2918 : (IDDDD)V
     .code stack 11 locals 11
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb SA J
 L6:     dup2
 L7:     lstore 9
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    dload_1
 L14:    dload_3
@@ -49,13 +49,13 @@ L25:
     .end code
 .end method
 
-.method public static break : (ISSSS)V
+.method public static method2919 : (ISSSS)V
     .code stack 7 locals 7
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb zP J
 L6:     dup2
 L7:     lstore 5
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -71,13 +71,13 @@ L24:
 .method static native nglVertexStream2sATI : (ISSJ)V
 .end method
 
-.method public static else : (IDDD)V
+.method public static method2920 : (IDDD)V
     .code stack 9 locals 9
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb MH J
 L6:     dup2
 L7:     lstore 7
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    dload_1
 L14:    dload_3
@@ -89,13 +89,13 @@ L23:
     .end code
 .end method
 
-.method public static else : (IFFF)V
+.method public static method2921 : (IFFF)V
     .code stack 6 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb aP J
 L6:     dup2
 L7:     lstore 4
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    fload_1
 L14:    fload_2
@@ -125,13 +125,13 @@ L22:
 .method static native nglNormalStream3fATI : (IFFFJ)V
 .end method
 
-.method public static break : (IF)V
+.method public static method2922 : (IF)V
     .code stack 4 locals 4
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb NQ J
 L6:     dup2
 L7:     lstore_2
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    fload_1
 L13:    lload_2
@@ -144,13 +144,13 @@ L18:
 .method static native nglVertexStream3fATI : (IFFFJ)V
 .end method
 
-.method public static break : (ISS)V
+.method public static method2923 : (ISS)V
     .code stack 5 locals 5
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb GA J
 L6:     dup2
 L7:     lstore_3
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    iload_1
 L13:    iload_2
@@ -164,13 +164,13 @@ L19:
 .method static native nglVertexStream3iATI : (IIIIJ)V
 .end method
 
-.method public static else : (IIII)V
+.method public static method2924 : (IIII)V
     .code stack 6 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb po J
 L6:     dup2
 L7:     lstore 4
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -182,13 +182,13 @@ L22:
     .end code
 .end method
 
-.method public static break : (IIII)V
+.method public static method2925 : (IIII)V
     .code stack 6 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb qI J
 L6:     dup2
 L7:     lstore 4
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -200,13 +200,13 @@ L22:
     .end code
 .end method
 
-.method public static break : (IBBB)V
+.method public static method2926 : (IBBB)V
     .code stack 6 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb vD J
 L6:     dup2
 L7:     lstore 4
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -233,13 +233,13 @@ L5:
 .method static native nglVertexBlendEnviATI : (IIJ)V
 .end method
 
-.method public static break : (I)V
+.method public static method2927 : (I)V
     .code stack 4 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb uS J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    lload_1
 L13:    invokestatic Method org/lwjgl/opengl/ATIVertexStreams nglClientActiveVertexStreamATI (IJ)V
@@ -251,13 +251,13 @@ L17:
 .method static native nglVertexStream3dATI : (IDDDJ)V
 .end method
 
-.method public static break : (III)V
+.method public static method2928 : (III)V
     .code stack 5 locals 5
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb CO J
 L6:     dup2
 L7:     lstore_3
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    iload_1
 L13:    iload_2
@@ -268,13 +268,13 @@ L19:
     .end code
 .end method
 
-.method public static break : (IIIII)V
+.method public static method2929 : (IIIII)V
     .code stack 7 locals 7
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb TQ J
 L6:     dup2
 L7:     lstore 5
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -290,13 +290,13 @@ L24:
 .method static native nglVertexStream2dATI : (IDDJ)V
 .end method
 
-.method public static break : (IDDD)V
+.method public static method2930 : (IDDD)V
     .code stack 9 locals 9
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb Di J
 L6:     dup2
 L7:     lstore 7
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    dload_1
 L14:    dload_3
@@ -308,13 +308,13 @@ L23:
     .end code
 .end method
 
-.method public static break : (IFFFF)V
+.method public static method2931 : (IFFFF)V
     .code stack 7 locals 7
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb TT J
 L6:     dup2
 L7:     lstore 5
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    fload_1
 L14:    fload_2
@@ -327,13 +327,13 @@ L24:
     .end code
 .end method
 
-.method public static break : (IFF)V
+.method public static method2932 : (IFF)V
     .code stack 5 locals 5
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb vb J
 L6:     dup2
 L7:     lstore_3
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    fload_1
 L13:    fload_2
@@ -347,13 +347,13 @@ L19:
 .method static native nglVertexStream4iATI : (IIIIIJ)V
 .end method
 
-.method public static break : (IDD)V
+.method public static method2933 : (IDD)V
     .code stack 7 locals 7
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb rB J
 L6:     dup2
 L7:     lstore 5
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    dload_1
 L14:    dload_3
@@ -364,13 +364,13 @@ L21:
     .end code
 .end method
 
-.method public static break : (II)V
+.method public static method2934 : (II)V
     .code stack 4 locals 4
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb JN J
 L6:     dup2
 L7:     lstore_2
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    iload_1
 L13:    lload_2
@@ -380,13 +380,13 @@ L18:
     .end code
 .end method
 
-.method public static break : (IFFF)V
+.method public static method2935 : (IFFF)V
     .code stack 6 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb Pj J
 L6:     dup2
 L7:     lstore 4
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    fload_1
 L14:    fload_2
@@ -407,13 +407,13 @@ L22:
 .method static native nglNormalStream3dATI : (IDDDJ)V
 .end method
 
-.method public static break : (ISSS)V
+.method public static method2936 : (ISSS)V
     .code stack 6 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb yd J
 L6:     dup2
 L7:     lstore 4
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2

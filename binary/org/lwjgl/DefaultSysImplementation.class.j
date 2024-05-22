@@ -12,13 +12,13 @@ L5:
     .end code
 .end method
 
-.method public abstract break : ()Ljava/lang/String;
+.method public abstract method1766 : ()Ljava/lang/String;
 .end method
 
-.method public abstract break : (Ljava/lang/String;Ljava/lang/String;)V
+.method public abstract method1767 : (Ljava/lang/String;Ljava/lang/String;)V
 .end method
 
-.method public else : ()J
+.method public method1768 : ()J
     .code stack 2 locals 1
 L0:     ldc2_w 1000L
 L3:     lreturn
@@ -26,13 +26,13 @@ L4:
     .end code
 .end method
 
-.method public abstract short : ()J
+.method public abstract method1769 : ()J
 .end method
 
 .method public native getJNIVersion : ()I
 .end method
 
-.method public const : ()Z
+.method public method1770 : ()Z
     .code stack 3 locals 1
 L0:     iconst_0
 L1:     iconst_1

@@ -11,7 +11,7 @@ L5:
     .end code
 .end method
 
-.method public else : ()[LEF;
+.method public method751 : ()[LEF;
     .code stack 5 locals 1
 L0:     iconst_3
 L1:     iconst_1
@@ -33,21 +33,21 @@ L20:    iconst_1
 L21:    dup
 L22:    dup
 L23:    pop2
-L24:    getstatic Field EF "enum" LEF;
+L24:    getstatic Field EF field433 LEF;
 L27:    aastore
 L28:    dup
 L29:    iconst_2
 L30:    iconst_1
 L31:    dup
 L32:    pop2
-L33:    getstatic Field EF char LEF;
+L33:    getstatic Field EF field431 LEF;
 L36:    aastore
 L37:    areturn
 L38:    
     .end code
 .end method
 
-.method public break : (LRg;)F
+.method public method750 : (LRg;)F
     .code stack 1 locals 2
 L0:     ldc 3.6e-1f
 L2:     freturn

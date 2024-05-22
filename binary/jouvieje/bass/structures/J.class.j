@@ -2,10 +2,10 @@
 .class public final super jouvieje/bass/structures/J
 .super jouvieje/bass/utils/m
 
-.method public static else : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/J;
+.method public static method1600 : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/J;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     dup2
 L5:     lstore_1
 L6:     lconst_0
@@ -24,11 +24,11 @@ L23:
     .end code
 .end method
 
-.method public break : ()V
+.method public method1218 : ()V
     .code stack 3 locals 1
 L0:     aload_0
 L1:     lconst_0
-L2:     putfield Field jouvieje/bass/structures/J do J
+L2:     putfield Field jouvieje/bass/structures/J field2319 J
 L5:     return
 L6:     
     .end code
@@ -44,7 +44,7 @@ L6:
     .end code
 .end method
 
-.method public static break : (I)[Ljouvieje/bass/structures/J;
+.method public static method1601 : (I)[Ljouvieje/bass/structures/J;
     .code stack 10 locals 7
 L0:     iload_0
 L1:     ifgt L7
@@ -101,7 +101,7 @@ L79:    if_icmplt L51
 L82:    aload 5
 L84:    areturn
 L85:    
-        .attribute StackMap b'\x00\x06\x00\x06\x00\x00\x00\x01\x07\x00\x0C\x00\x07\x00\x01\x01\x00\x00\x00\x1A\x00\x02\x01\x04\x00\x00\x00\x32\x00\x00\x00\x01\x07\x00\x0C\x00\x33\x00\x05\x01\x04\x04\x07\x00\x27\x01\x00\x00\x00\x4E\x00\x05\x01\x04\x04\x07\x00\x27\x01\x00\x01\x01'
+        .attribute StackMap b'\x00\x06\x00\x06\x00\x00\x00\x01\x07\x00\x0C\x00\x07\x00\x01\x01\x00\x00\x00\x1A\x00\x02\x01\x04\x00\x00\x00\x32\x00\x00\x00\x01\x07\x00\x0C\x00\x33\x00\x05\x01\x04\x04\x07\x00\x29\x01\x00\x00\x00\x4E\x00\x05\x01\x04\x04\x07\x00\x29\x01\x00\x01\x01'
     .end code
 .end method
 

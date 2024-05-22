@@ -1,9 +1,9 @@
 .version 49 0
 .class public final super Jf
 .super java/lang/Object
-.field public else Z
-.field public "enum" I
-.field public do C
+.field public field1923 Z
+.field public field1924 I
+.field public field1925 C
 
 .method public <init> : (IC)V
     .code stack 8 locals 3
@@ -18,9 +18,9 @@ L7:     invokespecial Method java/lang/Object <init> ()V
 L10:    iconst_1
 L11:    dup
 L12:    pop2
-L13:    putfield Field Jf else Z
-L16:    putfield Field Jf "enum" I
-L19:    putfield Field Jf do C
+L13:    putfield Field Jf field1923 Z
+L16:    putfield Field Jf field1924 I
+L19:    putfield Field Jf field1925 C
 L22:    return
 L23:    
     .end code

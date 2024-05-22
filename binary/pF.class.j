@@ -2,10 +2,10 @@
 .class public final super enum pF
 .super java/lang/Enum
 .field private static final synthetic this [LpF;
-.field public static final enum char LpF;
-.field public static final enum else LpF;
-.field public static final enum "enum" LpF;
-.field public static final enum do LpF;
+.field public static final enum field388 LpF;
+.field public static final enum field389 LpF;
+.field public static final enum field390 LpF;
+.field public static final enum field391 LpF;
 
 .method private <init> : (Ljava/lang/String;I)V
     .code stack 3 locals 3
@@ -28,7 +28,7 @@ L7:     iconst_1
 L8:     dup
 L9:     pop2
 L10:    invokespecial Method pF <init> (Ljava/lang/String;I)V
-L13:    putstatic Field pF "enum" LpF;
+L13:    putstatic Field pF field390 LpF;
 L16:    new pF
 L19:    dup
 L20:    ldc "CENTER"
@@ -37,7 +37,7 @@ L23:    dup
 L24:    dup
 L25:    pop2
 L26:    invokespecial Method pF <init> (Ljava/lang/String;I)V
-L29:    putstatic Field pF else LpF;
+L29:    putstatic Field pF field389 LpF;
 L32:    new pF
 L35:    dup
 L36:    ldc "RIGHT"
@@ -46,7 +46,7 @@ L39:    iconst_1
 L40:    dup
 L41:    pop2
 L42:    invokespecial Method pF <init> (Ljava/lang/String;I)V
-L45:    putstatic Field pF do LpF;
+L45:    putstatic Field pF field391 LpF;
 L48:    new pF
 L51:    dup
 L52:    ldc "MIN"
@@ -55,7 +55,7 @@ L55:    iconst_1
 L56:    dup
 L57:    pop2
 L58:    invokespecial Method pF <init> (Ljava/lang/String;I)V
-L61:    putstatic Field pF char LpF;
+L61:    putstatic Field pF field388 LpF;
 L64:    iconst_4
 L65:    iconst_1
 L66:    dup
@@ -69,28 +69,28 @@ L75:    iconst_0
 L76:    iconst_1
 L77:    dup
 L78:    pop2
-L79:    getstatic Field pF "enum" LpF;
+L79:    getstatic Field pF field390 LpF;
 L82:    aastore
 L83:    dup
 L84:    iconst_1
 L85:    dup
 L86:    dup
 L87:    pop2
-L88:    getstatic Field pF else LpF;
+L88:    getstatic Field pF field389 LpF;
 L91:    aastore
 L92:    dup
 L93:    iconst_2
 L94:    iconst_1
 L95:    dup
 L96:    pop2
-L97:    getstatic Field pF do LpF;
+L97:    getstatic Field pF field391 LpF;
 L100:   aastore
 L101:   dup
 L102:   iconst_3
 L103:   iconst_1
 L104:   dup
 L105:   pop2
-L106:   getstatic Field pF char LpF;
+L106:   getstatic Field pF field388 LpF;
 L109:   aastore
 L110:   putstatic Field pF this [LpF;
 L113:   return

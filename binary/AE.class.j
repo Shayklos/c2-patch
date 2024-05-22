@@ -14,14 +14,14 @@ L8:
     .end code
 .end method
 
-.method public else : ()Ljava/lang/String;
+.method public method13 : ()Ljava/lang/String;
     .code stack 3 locals 2
 L0:     ldc ""
 L2:     dup
 L3:     astore_1
 L4:     invokevirtual Method java/lang/String length ()I
 L7:     aload_0
-L8:     getfield Field AE null Ljava/lang/String;
+L8:     getfield Field AE field1281 Ljava/lang/String;
 L11:    invokevirtual Method java/lang/String length ()I
 L14:    if_icmpge L43
 L17:    new java/lang/StringBuilder

@@ -3,35 +3,35 @@
 .super java/lang/Object
 .implements F
 
-.method public const : ()V
+.method public method52 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public do : ()V
+.method public method89 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public float : ()V
+.method public method69 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public break : (LUf;)V
+.method public method60 : (LUf;)V
     .code stack 0 locals 2
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public break : (Led;I[I)V
+.method public method87 : (Led;I[I)V
     .code stack 0 locals 4
 L0:     return
 L1:     
@@ -45,7 +45,7 @@ L1:
     .end code
 .end method
 
-.method public break : (Lff;)V
+.method public method91 : (Lff;)V
     .code stack 0 locals 2
 L0:     return
 L1:     
@@ -61,21 +61,21 @@ L5:
     .end code
 .end method
 
-.method public short : ()V
+.method public method71 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public break : ()V
+.method public method74 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public else : ()V
+.method public method56 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
@@ -89,21 +89,21 @@ L1:
     .end code
 .end method
 
-.method public break : ([I)V
+.method public method82 : ([I)V
     .code stack 0 locals 2
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public class : ()V
+.method public method68 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public for : ()V
+.method public method61 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
@@ -117,49 +117,49 @@ L1:
     .end code
 .end method
 
-.method public goto : ()V
+.method public method65 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public break : (I)V
+.method public method14 : (I)V
     .code stack 0 locals 2
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public break : (IIF)V
+.method public method73 : (IIF)V
     .code stack 0 locals 4
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public catch : ()V
+.method public method76 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public char : ()V
+.method public method84 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public else : (I)V
+.method public method64 : (I)V
     .code stack 0 locals 2
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public if : ()V
+.method public method67 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     

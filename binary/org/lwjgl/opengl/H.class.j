@@ -25,7 +25,7 @@ L5:
     .end code
 .end method
 
-.method public break : (Ljava/awt/GraphicsDevice;Lorg/lwjgl/opengl/PixelFormat;)Ljava/awt/GraphicsConfiguration;
+.method public method4619 : (Ljava/awt/GraphicsDevice;Lorg/lwjgl/opengl/PixelFormat;)Ljava/awt/GraphicsConfiguration;
     .code stack 1 locals 3
 L0:     aconst_null
 L1:     areturn
@@ -34,7 +34,7 @@ L2:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public break : (Ljava/awt/Canvas;Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/CB;)Lorg/lwjgl/opengl/a;
+.method public method4620 : (Ljava/awt/Canvas;Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/CB;)Lorg/lwjgl/opengl/a;
     .code stack 4 locals 4
 L0:     new org/lwjgl/opengl/WindowsAWTGLCanvasPeerInfo
 L3:     dup

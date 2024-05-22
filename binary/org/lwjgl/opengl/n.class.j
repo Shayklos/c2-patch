@@ -2,7 +2,7 @@
 .class public final super org/lwjgl/opengl/n
 .super java/lang/Object
 
-.method public static break : (I)Ljava/lang/String;
+.method public static method5629 : (I)Ljava/lang/String;
     .code stack 2 locals 1
 L0:     iload_0
 L1:     lookupswitch
@@ -46,7 +46,7 @@ L122:
     .end code
 .end method
 
-.method public static break : ()V
+.method public static method5630 : ()V
     .code stack 3 locals 1
 L0:     invokestatic Method org/lwjgl/opengl/GL11 new ()I
 L3:     dup

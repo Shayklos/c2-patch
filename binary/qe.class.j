@@ -12,10 +12,10 @@ L5:
     .end code
 .end method
 
-.method public break : (LRg;)Ljava/lang/Object;
+.method public method712 : (LRg;)Ljava/lang/Object;
     .code stack 1 locals 2
 L0:     aload_1
-L1:     getfield Field Rg goto I
+L1:     getfield Field Rg field232 I
 L4:     invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L7:     areturn
 L8:     

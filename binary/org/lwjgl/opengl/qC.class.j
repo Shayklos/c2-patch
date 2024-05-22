@@ -13,7 +13,7 @@ L6:     iconst_1
 L7:     dup
 L8:     dup
 L9:     pop2
-L10:    invokestatic Method org/lwjgl/opengl/Display const (Z)Z
+L10:    invokestatic Method org/lwjgl/opengl/Display method3017 (Z)Z
 L13:    pop
 L14:    aload_2
 L15:    monitorexit

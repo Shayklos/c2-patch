@@ -1,22 +1,22 @@
 .version 49 0
 .class public final super enum KD
 .super java/lang/Enum
-.field public static final enum "super" LKD;
-.field public static final enum int LKD;
-.field public static final enum short LKD;
-.field private static final synthetic goto [LKD;
-.field public static final enum break LKD;
-.field public static final enum long LKD;
-.field public static final enum void LKD;
+.field public static final enum field392 LKD;
+.field public static final enum field393 LKD;
+.field public static final enum field394 LKD;
+.field private static final synthetic field395 [LKD;
+.field public static final enum field396 LKD;
+.field public static final enum field397 LKD;
+.field public static final enum field398 LKD;
 .field public static final enum try LKD;
-.field public static final enum const LKD;
+.field public static final enum field399 LKD;
 .field public static final enum new LKD;
-.field public static final enum null LKD;
+.field public static final enum field400 LKD;
 .field public static final enum this LKD;
-.field public static final enum char LKD;
-.field public static final enum else LKD;
-.field public static final enum "enum" LKD;
-.field public static final enum do LKD;
+.field public static final enum field401 LKD;
+.field public static final enum field402 LKD;
+.field public static final enum field403 LKD;
+.field public static final enum field404 LKD;
 
 .method public static <clinit> : ()V
     .code stack 6 locals 0
@@ -37,7 +37,7 @@ L23:    dup
 L24:    dup
 L25:    pop2
 L26:    invokespecial Method KD <init> (Ljava/lang/String;I)V
-L29:    putstatic Field KD do LKD;
+L29:    putstatic Field KD field404 LKD;
 L32:    new KD
 L35:    dup
 L36:    ldc "PASSWORD_OR_USER_WRONG"
@@ -46,7 +46,7 @@ L39:    iconst_1
 L40:    dup
 L41:    pop2
 L42:    invokespecial Method KD <init> (Ljava/lang/String;I)V
-L45:    putstatic Field KD short LKD;
+L45:    putstatic Field KD field394 LKD;
 L48:    new KD
 L51:    dup
 L52:    ldc "ALREADY_LOGGED_IN"
@@ -55,7 +55,7 @@ L55:    iconst_1
 L56:    dup
 L57:    pop2
 L58:    invokespecial Method KD <init> (Ljava/lang/String;I)V
-L61:    putstatic Field KD "enum" LKD;
+L61:    putstatic Field KD field403 LKD;
 L64:    new KD
 L67:    dup
 L68:    ldc "NO_MORE_PLAYERS_ALLOWED"
@@ -64,7 +64,7 @@ L71:    iconst_1
 L72:    dup
 L73:    pop2
 L74:    invokespecial Method KD <init> (Ljava/lang/String;I)V
-L77:    putstatic Field KD break LKD;
+L77:    putstatic Field KD field396 LKD;
 L80:    new KD
 L83:    dup
 L84:    ldc "CONNECTION_LOST"
@@ -73,7 +73,7 @@ L87:    iconst_1
 L88:    dup
 L89:    pop2
 L90:    invokespecial Method KD <init> (Ljava/lang/String;I)V
-L93:    putstatic Field KD void LKD;
+L93:    putstatic Field KD field398 LKD;
 L96:    new KD
 L99:    dup
 L100:   ldc "ONLY_REGISTERED_ALLOWED"
@@ -82,7 +82,7 @@ L104:   iconst_1
 L105:   dup
 L106:   pop2
 L107:   invokespecial Method KD <init> (Ljava/lang/String;I)V
-L110:   putstatic Field KD else LKD;
+L110:   putstatic Field KD field402 LKD;
 L113:   new KD
 L116:   dup
 L117:   ldc "PLAYER_WAS_KICKED"
@@ -91,7 +91,7 @@ L121:   iconst_1
 L122:   dup
 L123:   pop2
 L124:   invokespecial Method KD <init> (Ljava/lang/String;I)V
-L127:   putstatic Field KD "super" LKD;
+L127:   putstatic Field KD field392 LKD;
 L130:   new KD
 L133:   dup
 L134:   ldc "PLAYER_IS_BANNED_HOUR_REMAINING"
@@ -100,7 +100,7 @@ L138:   iconst_1
 L139:   dup
 L140:   pop2
 L141:   invokespecial Method KD <init> (Ljava/lang/String;I)V
-L144:   putstatic Field KD null LKD;
+L144:   putstatic Field KD field400 LKD;
 L147:   new KD
 L150:   dup
 L151:   ldc "PLAYER_IS_BANNED_DAY_REMAINING"
@@ -127,7 +127,7 @@ L189:   iconst_1
 L190:   dup
 L191:   pop2
 L192:   invokespecial Method KD <init> (Ljava/lang/String;I)V
-L195:   putstatic Field KD long LKD;
+L195:   putstatic Field KD field397 LKD;
 L198:   new KD
 L201:   dup
 L202:   ldc "PLAYER_IS_BANNED_FOREVER_REMAINING"
@@ -136,7 +136,7 @@ L206:   iconst_1
 L207:   dup
 L208:   pop2
 L209:   invokespecial Method KD <init> (Ljava/lang/String;I)V
-L212:   putstatic Field KD const LKD;
+L212:   putstatic Field KD field399 LKD;
 L215:   new KD
 L218:   dup
 L219:   ldc "TIMEOUT"
@@ -145,7 +145,7 @@ L223:   iconst_1
 L224:   dup
 L225:   pop2
 L226:   invokespecial Method KD <init> (Ljava/lang/String;I)V
-L229:   putstatic Field KD int LKD;
+L229:   putstatic Field KD field393 LKD;
 L232:   new KD
 L235:   dup
 L236:   ldc "ROOM_DELETED"
@@ -154,7 +154,7 @@ L240:   iconst_1
 L241:   dup
 L242:   pop2
 L243:   invokespecial Method KD <init> (Ljava/lang/String;I)V
-L246:   putstatic Field KD char LKD;
+L246:   putstatic Field KD field401 LKD;
 L249:   bipush 15
 L251:   iconst_1
 L252:   dup
@@ -175,56 +175,56 @@ L270:   iconst_1
 L271:   dup
 L272:   dup
 L273:   pop2
-L274:   getstatic Field KD do LKD;
+L274:   getstatic Field KD field404 LKD;
 L277:   aastore
 L278:   dup
 L279:   iconst_2
 L280:   iconst_1
 L281:   dup
 L282:   pop2
-L283:   getstatic Field KD short LKD;
+L283:   getstatic Field KD field394 LKD;
 L286:   aastore
 L287:   dup
 L288:   iconst_3
 L289:   iconst_1
 L290:   dup
 L291:   pop2
-L292:   getstatic Field KD "enum" LKD;
+L292:   getstatic Field KD field403 LKD;
 L295:   aastore
 L296:   dup
 L297:   iconst_4
 L298:   iconst_1
 L299:   dup
 L300:   pop2
-L301:   getstatic Field KD break LKD;
+L301:   getstatic Field KD field396 LKD;
 L304:   aastore
 L305:   dup
 L306:   iconst_5
 L307:   iconst_1
 L308:   dup
 L309:   pop2
-L310:   getstatic Field KD void LKD;
+L310:   getstatic Field KD field398 LKD;
 L313:   aastore
 L314:   dup
 L315:   bipush 6
 L317:   iconst_1
 L318:   dup
 L319:   pop2
-L320:   getstatic Field KD else LKD;
+L320:   getstatic Field KD field402 LKD;
 L323:   aastore
 L324:   dup
 L325:   bipush 7
 L327:   iconst_1
 L328:   dup
 L329:   pop2
-L330:   getstatic Field KD "super" LKD;
+L330:   getstatic Field KD field392 LKD;
 L333:   aastore
 L334:   dup
 L335:   bipush 8
 L337:   iconst_1
 L338:   dup
 L339:   pop2
-L340:   getstatic Field KD null LKD;
+L340:   getstatic Field KD field400 LKD;
 L343:   aastore
 L344:   dup
 L345:   bipush 9
@@ -245,30 +245,30 @@ L365:   bipush 11
 L367:   iconst_1
 L368:   dup
 L369:   pop2
-L370:   getstatic Field KD long LKD;
+L370:   getstatic Field KD field397 LKD;
 L373:   aastore
 L374:   dup
 L375:   bipush 12
 L377:   iconst_1
 L378:   dup
 L379:   pop2
-L380:   getstatic Field KD const LKD;
+L380:   getstatic Field KD field399 LKD;
 L383:   aastore
 L384:   dup
 L385:   bipush 13
 L387:   iconst_1
 L388:   dup
 L389:   pop2
-L390:   getstatic Field KD int LKD;
+L390:   getstatic Field KD field393 LKD;
 L393:   aastore
 L394:   dup
 L395:   bipush 14
 L397:   iconst_1
 L398:   dup
 L399:   pop2
-L400:   getstatic Field KD char LKD;
+L400:   getstatic Field KD field401 LKD;
 L403:   aastore
-L404:   putstatic Field KD goto [LKD;
+L404:   putstatic Field KD field395 [LKD;
 L407:   return
 L408:   
     .end code
@@ -298,7 +298,7 @@ L10:
 
 .method public static values : ()[LKD;
     .code stack 1 locals 0
-L0:     getstatic Field KD goto [LKD;
+L0:     getstatic Field KD field395 [LKD;
 L3:     invokevirtual Method [LKD; clone ()Ljava/lang/Object;
 L6:     checkcast [LKD;
 L9:     areturn

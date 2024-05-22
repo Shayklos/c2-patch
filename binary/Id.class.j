@@ -1,16 +1,16 @@
 .version 49 0
 .class public final super enum Id
 .super java/lang/Enum
-.field public static final enum void LId;
+.field public static final enum field635 LId;
 .field public static final enum try LId;
-.field public static final enum const LId;
+.field public static final enum field636 LId;
 .field public static final enum new LId;
-.field public static final enum null LId;
+.field public static final enum field637 LId;
 .field private static final synthetic this [LId;
-.field public static final enum char LId;
-.field public static final enum else LId;
-.field public static final enum "enum" LId;
-.field public static final enum do LId;
+.field public static final enum field638 LId;
+.field public static final enum field639 LId;
+.field public static final enum field640 LId;
+.field public static final enum field641 LId;
 
 .method private <init> : (Ljava/lang/String;I)V
     .code stack 3 locals 3
@@ -33,7 +33,7 @@ L7:     iconst_1
 L8:     dup
 L9:     pop2
 L10:    invokespecial Method Id <init> (Ljava/lang/String;I)V
-L13:    putstatic Field Id "enum" LId;
+L13:    putstatic Field Id field640 LId;
 L16:    new Id
 L19:    dup
 L20:    ldc "PREVIEW"
@@ -42,7 +42,7 @@ L23:    dup
 L24:    dup
 L25:    pop2
 L26:    invokespecial Method Id <init> (Ljava/lang/String;I)V
-L29:    putstatic Field Id char LId;
+L29:    putstatic Field Id field638 LId;
 L32:    new Id
 L35:    dup
 L36:    ldc "ONLINE_CHALLENGE_ALONE"
@@ -51,7 +51,7 @@ L39:    iconst_1
 L40:    dup
 L41:    pop2
 L42:    invokespecial Method Id <init> (Ljava/lang/String;I)V
-L45:    putstatic Field Id do LId;
+L45:    putstatic Field Id field641 LId;
 L48:    new Id
 L51:    dup
 L52:    ldc "ONLINE_CHALLENGE_OPPONENTS"
@@ -60,7 +60,7 @@ L55:    iconst_1
 L56:    dup
 L57:    pop2
 L58:    invokespecial Method Id <init> (Ljava/lang/String;I)V
-L61:    putstatic Field Id const LId;
+L61:    putstatic Field Id field636 LId;
 L64:    new Id
 L67:    dup
 L68:    ldc "OFFLINE_CHALLENGE_ALONE"
@@ -69,7 +69,7 @@ L71:    iconst_1
 L72:    dup
 L73:    pop2
 L74:    invokespecial Method Id <init> (Ljava/lang/String;I)V
-L77:    putstatic Field Id null LId;
+L77:    putstatic Field Id field637 LId;
 L80:    new Id
 L83:    dup
 L84:    ldc "OFFLINE_CHALLENGE_OPPONENTS"
@@ -78,7 +78,7 @@ L87:    iconst_1
 L88:    dup
 L89:    pop2
 L90:    invokespecial Method Id <init> (Ljava/lang/String;I)V
-L93:    putstatic Field Id else LId;
+L93:    putstatic Field Id field639 LId;
 L96:    new Id
 L99:    dup
 L100:   ldc "OFFLINE_SPLIT_SCREEN"
@@ -87,7 +87,7 @@ L104:   iconst_1
 L105:   dup
 L106:   pop2
 L107:   invokespecial Method Id <init> (Ljava/lang/String;I)V
-L110:   putstatic Field Id void LId;
+L110:   putstatic Field Id field635 LId;
 L113:   new Id
 L116:   dup
 L117:   ldc "OFFLINE_VS_ALONE"
@@ -119,49 +119,49 @@ L159:   iconst_0
 L160:   iconst_1
 L161:   dup
 L162:   pop2
-L163:   getstatic Field Id "enum" LId;
+L163:   getstatic Field Id field640 LId;
 L166:   aastore
 L167:   dup
 L168:   iconst_1
 L169:   dup
 L170:   dup
 L171:   pop2
-L172:   getstatic Field Id char LId;
+L172:   getstatic Field Id field638 LId;
 L175:   aastore
 L176:   dup
 L177:   iconst_2
 L178:   iconst_1
 L179:   dup
 L180:   pop2
-L181:   getstatic Field Id do LId;
+L181:   getstatic Field Id field641 LId;
 L184:   aastore
 L185:   dup
 L186:   iconst_3
 L187:   iconst_1
 L188:   dup
 L189:   pop2
-L190:   getstatic Field Id const LId;
+L190:   getstatic Field Id field636 LId;
 L193:   aastore
 L194:   dup
 L195:   iconst_4
 L196:   iconst_1
 L197:   dup
 L198:   pop2
-L199:   getstatic Field Id null LId;
+L199:   getstatic Field Id field637 LId;
 L202:   aastore
 L203:   dup
 L204:   iconst_5
 L205:   iconst_1
 L206:   dup
 L207:   pop2
-L208:   getstatic Field Id else LId;
+L208:   getstatic Field Id field639 LId;
 L211:   aastore
 L212:   dup
 L213:   bipush 6
 L215:   iconst_1
 L216:   dup
 L217:   pop2
-L218:   getstatic Field Id void LId;
+L218:   getstatic Field Id field635 LId;
 L221:   aastore
 L222:   dup
 L223:   bipush 7

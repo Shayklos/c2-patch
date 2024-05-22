@@ -1,7 +1,7 @@
 .version 49 0
 .class public final super aA
 .super java/lang/Object
-.field private do I
+.field private field2183 I
 
 .method public <init> : (I)V
     .code stack 5 locals 2
@@ -28,7 +28,7 @@ L36:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L39:    athrow
 L40:    aload_0
 L41:    iload_1
-L42:    putfield Field aA do I
+L42:    putfield Field aA field2183 I
 L45:    return
 L46:    
         .attribute StackMap b'\x00\x01\x00\x28\x00\x02\x07\x00\x02\x01\x00\x00'
@@ -54,23 +54,23 @@ L0:     aload_1
 L1:     aload_0
 L2:     dup_x1
 L3:     invokespecial Method java/lang/Object <init> ()V
-L6:     getfield Field aA do I
-L9:     putfield Field aA do I
+L6:     getfield Field aA field2183 I
+L9:     putfield Field aA field2183 I
 L12:    return
 L13:    
     .end code
 .end method
 
-.method public else : ()I
+.method public method1112 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field aA do I
+L1:     getfield Field aA field2183 I
 L4:     ireturn
 L5:     
     .end code
 .end method
 
-.method public break : ()Ljava/nio/IntBuffer;
+.method public method1113 : ()Ljava/nio/IntBuffer;
     .code stack 5 locals 2
 L0:     iconst_1
 L1:     dup
@@ -95,7 +95,7 @@ L23:    dup
 L24:    pop2
 L25:    invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L28:    aload_0
-L29:    getfield Field aA do I
+L29:    getfield Field aA field2183 I
 L32:    invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L35:    aload_1
 L36:    sipush 12344
@@ -131,7 +131,7 @@ L20:    dup_x1
 L21:    ldc " Version="
 L23:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L26:    aload_0
-L27:    getfield Field aA do I
+L27:    getfield Field aA field2183 I
 L30:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L33:    pop2
 L34:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;

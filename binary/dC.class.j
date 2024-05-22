@@ -1,30 +1,30 @@
 .version 49 0
 .class public final super dC
 .super qB
-.field public "enum" LDF;
+.field public field1447 LDF;
 
-.method public for : ()V
+.method public method714 : ()V
     .code stack 2 locals 1
 L0:     aload_0
-L1:     getfield Field dC "enum" LDF;
+L1:     getfield Field dC field1447 LDF;
 L4:     aload_0
-L5:     invokespecial Method dC goto ()Ljava/lang/String;
-L8:     invokevirtual Method DF break (Ljava/lang/String;)V
+L5:     invokespecial Method dC method727 ()Ljava/lang/String;
+L8:     invokevirtual Method DF method12 (Ljava/lang/String;)V
 L11:    return
 L12:    
     .end code
 .end method
 
-.method public break : (FF)V
+.method public method715 : (FF)V
     .code stack 4 locals 3
 L0:     aload_0
 L1:     dup
 L2:     fload_1
 L3:     fload_2
-L4:     invokespecial Method qB break (FF)V
-L7:     getfield Field dC "enum" LDF;
+L4:     invokespecial Method qB method715 (FF)V
+L7:     getfield Field dC field1447 LDF;
 L10:    fload_2
-L11:    invokevirtual Method DF break (F)V
+L11:    invokevirtual Method DF method102 (F)V
 L14:    return
 L15:    
     .end code
@@ -45,24 +45,24 @@ L14:    dup
 L15:    pop2
 L16:    dup
 L17:    aload_0
-L18:    invokespecial Method dC goto ()Ljava/lang/String;
-L21:    getstatic Field We "protected" LWe;
+L18:    invokespecial Method dC method727 ()Ljava/lang/String;
+L21:    getstatic Field We field469 LWe;
 L24:    invokespecial Method DF <init> (Ljava/lang/String;LWe;)V
-L27:    putfield Field dC "enum" LDF;
-L30:    getfield Field dC "enum" LDF;
-L33:    getstatic Field vD null LvD;
-L36:    invokevirtual Method DF break (LvD;)V
-L39:    getfield Field dC else LLD;
+L27:    putfield Field dC field1447 LDF;
+L30:    getfield Field dC field1447 LDF;
+L33:    getstatic Field vD field358 LvD;
+L36:    invokevirtual Method DF method610 (LvD;)V
+L39:    getfield Field dC field1430 LLD;
 L42:    aload_0
-L43:    getfield Field dC "enum" LDF;
-L46:    invokevirtual Method LD float (LgB;)LgB;
+L43:    getfield Field dC field1447 LDF;
+L46:    invokevirtual Method LD method36 (LgB;)LgB;
 L49:    pop
 L50:    return
 L51:    
     .end code
 .end method
 
-.method public break : ()D
+.method public method726 : ()D
     .code stack 2 locals 1
 L0:     ldc2_w 2.200000047683716e0
 L3:     dreturn
@@ -70,19 +70,19 @@ L4:
     .end code
 .end method
 
-.method private goto : ()Ljava/lang/String;
+.method private method727 : ()Ljava/lang/String;
     .code stack 8 locals 3
 L0:     aload_0
 L1:     dup
-L2:     getfield Field dC else LLD;
-L5:     getfield Field LD break LRg;
-L8:     getfield Field Rg do F
+L2:     getfield Field dC field1430 LLD;
+L5:     getfield Field LD field137 LRg;
+L8:     getfield Field Rg field241 F
 L11:    fstore_1
-L12:    getfield Field dC else LLD;
-L15:    getfield Field LD break LRg;
-L18:    getfield Field Rg else Lqd;
-L21:    getfield Field qd void Leb;
-L24:    invokevirtual Method eb const ()F
+L12:    getfield Field dC field1430 LLD;
+L15:    getfield Field LD field137 LRg;
+L18:    getfield Field Rg field239 Lqd;
+L21:    getfield Field qd field761 Leb;
+L24:    invokevirtual Method eb method761 ()F
 L27:    dup
 L28:    fstore_2
 L29:    fconst_0
@@ -138,7 +138,7 @@ L92:
     .end code
 .end method
 
-.method public break : (FFFLsE;)V
+.method public method718 : (FFFLsE;)V
     .code stack 6 locals 5
 L0:     aload_0
 L1:     dup
@@ -146,18 +146,18 @@ L2:     fload_1
 L3:     fload_2
 L4:     fload_3
 L5:     aload 4
-L7:     invokespecial Method qB break (FFFLsE;)V
-L10:    getfield Field dC "enum" LDF;
+L7:     invokespecial Method qB method718 (FFFLsE;)V
+L10:    getfield Field dC field1447 LDF;
 L13:    fload_1
 L14:    fload_2
 L15:    fload_3
-L16:    invokevirtual Method DF else (FFF)V
+L16:    invokevirtual Method DF method606 (FFF)V
 L19:    return
 L20:    
     .end code
 .end method
 
-.method public break : (FFF)V
+.method public method717 : (FFF)V
     .code stack 7 locals 4
 L0:     aload_0
 L1:     dup
@@ -165,26 +165,26 @@ L2:     dup2
 L3:     fload_1
 L4:     fload_2
 L5:     fload_3
-L6:     invokespecial Method qB break (FFF)V
-L9:     getfield Field dC "enum" LDF;
+L6:     invokespecial Method qB method717 (FFF)V
+L9:     getfield Field dC field1447 LDF;
 L12:    fload_1
 L13:    fload_2
 L14:    fload_3
 L15:    fadd
-L16:    invokevirtual Method DF catch (FF)V
-L19:    getfield Field dC "enum" LDF;
+L16:    invokevirtual Method DF method37 (FF)V
+L19:    getfield Field dC field1447 LDF;
 L22:    fload_3
 L23:    ldc 4e0f
 L25:    fmul
 L26:    fload_3
 L27:    fconst_1
 L28:    fmul
-L29:    invokevirtual Method DF const (FF)V
-L32:    getfield Field dC "enum" LDF;
+L29:    invokevirtual Method DF method32 (FF)V
+L32:    getfield Field dC field1447 LDF;
 L35:    fload_3
 L36:    ldc 9e-1f
 L38:    fmul
-L39:    invokevirtual Method DF else (F)V
+L39:    invokevirtual Method DF method104 (F)V
 L42:    return
 L43:    
     .end code

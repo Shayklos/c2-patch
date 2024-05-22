@@ -2,14 +2,14 @@
 .class final super org/lwjgl/opengl/RA
 .super java/lang/Object
 .implements java/awt/event/FocusListener
-.field final synthetic do Lorg/lwjgl/opengl/LinuxDisplay;
+.field final synthetic field583 Lorg/lwjgl/opengl/LinuxDisplay;
 
 .method <init> : (Lorg/lwjgl/opengl/LinuxDisplay;)V
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field org/lwjgl/opengl/RA do Lorg/lwjgl/opengl/LinuxDisplay;
+L3:     putfield Field org/lwjgl/opengl/RA field583 Lorg/lwjgl/opengl/LinuxDisplay;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    
@@ -24,19 +24,19 @@ L4:     astore_2
 L5:     monitorenter
         .catch [0] from L6 to L31 using L33
 L6:     aload_0
-L7:     getfield Field org/lwjgl/opengl/RA do Lorg/lwjgl/opengl/LinuxDisplay;
+L7:     getfield Field org/lwjgl/opengl/RA field583 Lorg/lwjgl/opengl/LinuxDisplay;
 L10:    iconst_0
 L11:    iconst_1
 L12:    dup
 L13:    pop2
-L14:    invokestatic Method org/lwjgl/opengl/LinuxDisplay else (Lorg/lwjgl/opengl/LinuxDisplay;Z)Z
+L14:    invokestatic Method org/lwjgl/opengl/LinuxDisplay method4745 (Lorg/lwjgl/opengl/LinuxDisplay;Z)Z
 L17:    aload_0
-L18:    getfield Field org/lwjgl/opengl/RA do Lorg/lwjgl/opengl/LinuxDisplay;
+L18:    getfield Field org/lwjgl/opengl/RA field583 Lorg/lwjgl/opengl/LinuxDisplay;
 L21:    iconst_1
 L22:    dup
 L23:    dup
 L24:    pop2
-L25:    invokestatic Method org/lwjgl/opengl/LinuxDisplay break (Lorg/lwjgl/opengl/LinuxDisplay;Z)Z
+L25:    invokestatic Method org/lwjgl/opengl/LinuxDisplay method4754 (Lorg/lwjgl/opengl/LinuxDisplay;Z)Z
 L28:    pop2
 L29:    aload_2
 L30:    monitorexit
@@ -62,19 +62,19 @@ L4:     astore_2
 L5:     monitorenter
         .catch [0] from L6 to L31 using L33
 L6:     aload_0
-L7:     getfield Field org/lwjgl/opengl/RA do Lorg/lwjgl/opengl/LinuxDisplay;
+L7:     getfield Field org/lwjgl/opengl/RA field583 Lorg/lwjgl/opengl/LinuxDisplay;
 L10:    iconst_1
 L11:    dup
 L12:    dup
 L13:    pop2
-L14:    invokestatic Method org/lwjgl/opengl/LinuxDisplay else (Lorg/lwjgl/opengl/LinuxDisplay;Z)Z
+L14:    invokestatic Method org/lwjgl/opengl/LinuxDisplay method4745 (Lorg/lwjgl/opengl/LinuxDisplay;Z)Z
 L17:    aload_0
-L18:    getfield Field org/lwjgl/opengl/RA do Lorg/lwjgl/opengl/LinuxDisplay;
+L18:    getfield Field org/lwjgl/opengl/RA field583 Lorg/lwjgl/opengl/LinuxDisplay;
 L21:    iconst_1
 L22:    dup
 L23:    dup
 L24:    pop2
-L25:    invokestatic Method org/lwjgl/opengl/LinuxDisplay break (Lorg/lwjgl/opengl/LinuxDisplay;Z)Z
+L25:    invokestatic Method org/lwjgl/opengl/LinuxDisplay method4754 (Lorg/lwjgl/opengl/LinuxDisplay;Z)Z
 L28:    pop2
 L29:    aload_2
 L30:    monitorexit

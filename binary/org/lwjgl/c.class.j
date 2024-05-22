@@ -2,7 +2,7 @@
 .class super abstract org/lwjgl/c
 .super org/lwjgl/DefaultSysImplementation
 
-.method public break : (Ljava/lang/String;Ljava/lang/String;)V
+.method public method1767 : (Ljava/lang/String;Ljava/lang/String;)V
     .code stack 6 locals 4
         .catch java/lang/Exception from L0 to L6 using L10
 L0:     invokestatic Method javax/swing/UIManager getSystemLookAndFeelClassName ()Ljava/lang/String;
@@ -34,7 +34,7 @@ L45:
     .end code
 .end method
 
-.method public break : ()Ljava/lang/String;
+.method public method1766 : ()Ljava/lang/String;
     .code stack 3 locals 3
         .catch java/lang/Exception from L0 to L37 using L43
 L0:     invokestatic Method java/awt/Toolkit getDefaultToolkit ()Ljava/awt/Toolkit;
@@ -72,11 +72,11 @@ L64:    invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
 L67:    aconst_null
 L68:    areturn
 L69:    
-        .attribute StackMap b'\x00\x03\x00\x26\x00\x00\x00\x01\x07\x00\x14\x00\x2B\x00\x01\x07\x00\x02\x00\x01\x07\x00\x08\x00\x43\x00\x02\x07\x00\x02\x07\x00\x59\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x26\x00\x00\x00\x01\x07\x00\x14\x00\x2B\x00\x01\x07\x00\x02\x00\x01\x07\x00\x08\x00\x43\x00\x02\x07\x00\x02\x07\x00\x5A\x00\x00'
     .end code
 .end method
 
-.method public short : ()J
+.method public method1769 : ()J
     .code stack 2 locals 1
 L0:     invokestatic Method java/lang/System currentTimeMillis ()J
 L3:     lreturn

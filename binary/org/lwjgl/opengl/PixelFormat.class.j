@@ -34,7 +34,7 @@ L5:
     .end code
 .end method
 
-.method public goto : ()I
+.method public method5309 : ()I
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/PixelFormat depth I
@@ -43,7 +43,7 @@ L5:
     .end code
 .end method
 
-.method public goto : (I)Lorg/lwjgl/opengl/PixelFormat;
+.method public method5310 : (I)Lorg/lwjgl/opengl/PixelFormat;
     .code stack 5 locals 2
 L0:     iload_1
 L1:     ifge L32
@@ -73,7 +73,7 @@ L46:
     .end code
 .end method
 
-.method public do : (I)Lorg/lwjgl/opengl/PixelFormat;
+.method public method5311 : (I)Lorg/lwjgl/opengl/PixelFormat;
     .code stack 5 locals 2
 L0:     iload_1
 L1:     ifge L32
@@ -103,7 +103,7 @@ L46:
     .end code
 .end method
 
-.method public do : ()I
+.method public method5312 : ()I
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/PixelFormat alpha I
@@ -185,7 +185,7 @@ L24:
     .end code
 .end method
 
-.method public for : ()I
+.method public method5313 : ()I
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/PixelFormat bpp I
@@ -211,7 +211,7 @@ L14:
     .end code
 .end method
 
-.method public for : (I)Lorg/lwjgl/opengl/PixelFormat;
+.method public method5314 : (I)Lorg/lwjgl/opengl/PixelFormat;
     .code stack 5 locals 2
 L0:     iload_1
 L1:     ifge L32
@@ -241,19 +241,19 @@ L46:
     .end code
 .end method
 
-.method public catch : (I)Lorg/lwjgl/opengl/PixelFormat;
+.method public method5315 : (I)Lorg/lwjgl/opengl/PixelFormat;
     .code stack 3 locals 2
 L0:     iload_1
 L1:     aload_0
 L2:     dup_x1
 L3:     getfield Field org/lwjgl/opengl/PixelFormat samples I
-L6:     invokevirtual Method org/lwjgl/opengl/PixelFormat break (II)Lorg/lwjgl/opengl/PixelFormat;
+L6:     invokevirtual Method org/lwjgl/opengl/PixelFormat method5330 (II)Lorg/lwjgl/opengl/PixelFormat;
 L9:     areturn
 L10:    
     .end code
 .end method
 
-.method public float : (I)Lorg/lwjgl/opengl/PixelFormat;
+.method public method5316 : (I)Lorg/lwjgl/opengl/PixelFormat;
     .code stack 5 locals 2
 L0:     iload_1
 L1:     ifge L32
@@ -360,7 +360,7 @@ L12:
     .end code
 .end method
 
-.method public short : (Z)Lorg/lwjgl/opengl/PixelFormat;
+.method public method5317 : (Z)Lorg/lwjgl/opengl/PixelFormat;
     .code stack 4 locals 3
 L0:     new org/lwjgl/opengl/PixelFormat
 L3:     dup
@@ -385,7 +385,7 @@ L28:
     .end code
 .end method
 
-.method public const : (Z)Lorg/lwjgl/opengl/PixelFormat;
+.method public method5318 : (Z)Lorg/lwjgl/opengl/PixelFormat;
     .code stack 3 locals 2
 L0:     new org/lwjgl/opengl/PixelFormat
 L3:     dup
@@ -399,7 +399,7 @@ L14:
     .end code
 .end method
 
-.method public short : (I)Lorg/lwjgl/opengl/PixelFormat;
+.method public method5319 : (I)Lorg/lwjgl/opengl/PixelFormat;
     .code stack 5 locals 2
 L0:     iload_1
 L1:     ifge L32
@@ -450,7 +450,7 @@ L18:
     .end code
 .end method
 
-.method public catch : ()I
+.method public method5320 : ()I
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/PixelFormat accum_alpha I
@@ -459,7 +459,7 @@ L5:
     .end code
 .end method
 
-.method public const : (I)Lorg/lwjgl/opengl/PixelFormat;
+.method public method5321 : (I)Lorg/lwjgl/opengl/PixelFormat;
     .code stack 5 locals 2
 L0:     iload_1
 L1:     ifge L32
@@ -489,7 +489,7 @@ L46:
     .end code
 .end method
 
-.method public float : ()I
+.method public method5322 : ()I
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/PixelFormat samples I
@@ -498,7 +498,7 @@ L5:
     .end code
 .end method
 
-.method public short : ()I
+.method public method5323 : ()I
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/PixelFormat num_aux_buffers I
@@ -507,7 +507,7 @@ L5:
     .end code
 .end method
 
-.method public const : ()Z
+.method public method5324 : ()Z
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/PixelFormat sRGB Z
@@ -516,7 +516,7 @@ L5:
     .end code
 .end method
 
-.method public else : (I)Lorg/lwjgl/opengl/PixelFormat;
+.method public method5325 : (I)Lorg/lwjgl/opengl/PixelFormat;
     .code stack 5 locals 2
 L0:     iload_1
 L1:     ifge L32
@@ -546,7 +546,7 @@ L46:
     .end code
 .end method
 
-.method public else : ()I
+.method public method5326 : ()I
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/PixelFormat accum_bpp I
@@ -555,7 +555,7 @@ L5:
     .end code
 .end method
 
-.method public break : ()I
+.method public method5327 : ()I
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/PixelFormat stencil I
@@ -594,7 +594,7 @@ L28:
     .end code
 .end method
 
-.method public else : (Z)Lorg/lwjgl/opengl/PixelFormat;
+.method public method5328 : (Z)Lorg/lwjgl/opengl/PixelFormat;
     .code stack 3 locals 2
 L0:     new org/lwjgl/opengl/PixelFormat
 L3:     dup
@@ -608,7 +608,7 @@ L14:
     .end code
 .end method
 
-.method public break : (I)Lorg/lwjgl/opengl/PixelFormat;
+.method public method5329 : (I)Lorg/lwjgl/opengl/PixelFormat;
     .code stack 5 locals 2
 L0:     iload_1
 L1:     ifge L32
@@ -638,7 +638,7 @@ L46:
     .end code
 .end method
 
-.method public break : (II)Lorg/lwjgl/opengl/PixelFormat;
+.method public method5330 : (II)Lorg/lwjgl/opengl/PixelFormat;
     .code stack 5 locals 4
 L0:     iload_2
 L1:     iflt L25
@@ -690,7 +690,7 @@ L83:
     .end code
 .end method
 
-.method public break : (Z)Lorg/lwjgl/opengl/PixelFormat;
+.method public method5331 : (Z)Lorg/lwjgl/opengl/PixelFormat;
     .code stack 4 locals 3
 L0:     new org/lwjgl/opengl/PixelFormat
 L3:     dup

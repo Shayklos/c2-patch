@@ -1,8 +1,8 @@
 .version 49 0
 .class public final super pA
 .super java/lang/Object
-.field public "enum" I
-.field public do D
+.field public field5770 I
+.field public field5771 D
 
 .method public synthetic <init> : (LyA;)V
     .code stack 1 locals 2

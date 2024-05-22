@@ -2,9 +2,9 @@
 .class public final super tg
 .super gB
 .field private this F
-.field private else F
-.field private "enum" F
-.field private do F
+.field private field92 F
+.field private field977 F
+.field private field70 F
 
 .method public <init> : (FFFF)V
     .code stack 9 locals 5
@@ -18,10 +18,10 @@ L7:     dup_x1
 L8:     fload_1
 L9:     aload_0
 L10:    invokespecial Method gB <init> ()V
-L13:    putfield Field tg do F
+L13:    putfield Field tg field70 F
 L16:    putfield Field tg this F
-L19:    putfield Field tg "enum" F
-L22:    putfield Field tg else F
+L19:    putfield Field tg field977 F
+L22:    putfield Field tg field92 F
 L25:    return
 L26:    
     .end code
@@ -37,36 +37,36 @@ L6:     bipush 7
 L8:     iconst_1
 L9:     dup
 L10:    pop2
-L11:    invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
+L11:    invokestatic Method org/lwjgl/opengl/GL11 method3664 (I)V
 L14:    fconst_0
 L15:    aload_0
 L16:    dup
-L17:    getfield Field tg do F
+L17:    getfield Field tg field70 F
 L20:    aload_0
 L21:    dup_x2
 L22:    getfield Field tg this F
 L25:    aload_0
 L26:    dup
-L27:    getfield Field tg "enum" F
+L27:    getfield Field tg field977 F
 L30:    swap
-L31:    getfield Field tg else F
+L31:    getfield Field tg field92 F
 L34:    fload_2
 L35:    fmul
-L36:    invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L39:    getfield Field tg catch F
+L36:    invokestatic Method org/lwjgl/opengl/GL11 method3888 (FFFF)V
+L39:    getfield Field tg field1124 F
 L42:    fconst_0
-L43:    invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
-L46:    getfield Field tg catch F
+L43:    invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
+L46:    getfield Field tg field1124 F
 L49:    aload_0
-L50:    getfield Field tg break F
-L53:    invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
+L50:    getfield Field tg field1132 F
+L53:    invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
 L56:    aload_0
-L57:    getfield Field tg break F
-L60:    invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
+L57:    getfield Field tg field1132 F
+L60:    invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
 L63:    fconst_0
 L64:    dup
-L65:    invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
-L68:    invokestatic Method org/lwjgl/opengl/GL11 float ()V
+L65:    invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
+L68:    invokestatic Method org/lwjgl/opengl/GL11 method3788 ()V
 L71:    return
 L72:    
         .attribute StackMap b'\x00\x02\x00\x05\x00\x00\x00\x01\x07\x00\x1A\x00\x06\x00\x03\x07\x00\x02\x01\x02\x00\x00'

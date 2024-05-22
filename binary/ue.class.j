@@ -2,12 +2,12 @@
 .class public final super ue
 .super java/lang/Object
 .implements D
-.field public char I
-.field public else I
-.field public "enum" F
-.field public do I
+.field public field684 I
+.field public field685 I
+.field public field686 F
+.field public field687 I
 
-.method public break : (LAC;)V
+.method public method384 : (LAC;)V
     .code stack 8 locals 2
 L0:     aload_0
 L1:     aload_1
@@ -17,14 +17,14 @@ L4:     aload_0
 L5:     dup_x1
 L6:     aload_1
 L7:     aload_0
-L8:     getfield Field ue else I
-L11:    invokevirtual Method AC break (I)V
-L14:    getfield Field ue char I
-L17:    invokevirtual Method AC short (I)V
-L20:    getfield Field ue do I
-L23:    invokevirtual Method AC short (I)V
-L26:    getfield Field ue "enum" F
-L29:    invokevirtual Method AC break (F)V
+L8:     getfield Field ue field685 I
+L11:    invokevirtual Method AC method691 (I)V
+L14:    getfield Field ue field684 I
+L17:    invokevirtual Method AC method674 (I)V
+L20:    getfield Field ue field687 I
+L23:    invokevirtual Method AC method674 (I)V
+L26:    getfield Field ue field686 F
+L29:    invokevirtual Method AC method685 (F)V
 L32:    return
 L33:    
     .end code
@@ -43,10 +43,10 @@ L7:     dup_x1
 L8:     iload_1
 L9:     aload_0
 L10:    invokespecial Method java/lang/Object <init> ()V
-L13:    putfield Field ue else I
-L16:    putfield Field ue char I
-L19:    putfield Field ue do I
-L22:    putfield Field ue "enum" F
+L13:    putfield Field ue field685 I
+L16:    putfield Field ue field684 I
+L19:    putfield Field ue field687 I
+L22:    putfield Field ue field686 F
 L25:    return
 L26:    
     .end code
@@ -64,14 +64,14 @@ L6:     aload_1
 L7:     aload_0
 L8:     dup_x1
 L9:     invokespecial Method java/lang/Object <init> ()V
-L12:    invokevirtual Method Md long ()I
-L15:    putfield Field ue else I
-L18:    invokevirtual Method Md char ()I
-L21:    putfield Field ue char I
-L24:    invokevirtual Method Md char ()I
-L27:    putfield Field ue do I
-L30:    invokevirtual Method Md "enum" ()F
-L33:    putfield Field ue "enum" F
+L12:    invokevirtual Method Md method886 ()I
+L15:    putfield Field ue field685 I
+L18:    invokevirtual Method Md method889 ()I
+L21:    putfield Field ue field684 I
+L24:    invokevirtual Method Md method889 ()I
+L27:    putfield Field ue field687 I
+L30:    invokevirtual Method Md method885 ()F
+L33:    putfield Field ue field686 F
 L36:    return
 L37:    
     .end code

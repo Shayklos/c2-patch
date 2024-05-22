@@ -7,8 +7,8 @@
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L26
 L6:     aload_0
-L7:     invokestatic Method org/lwjgl/opengl/w const (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
-L10:    getfield Field org/lwjgl/opengl/P else I
+L7:     invokestatic Method org/lwjgl/opengl/w method5768 (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
+L10:    getfield Field org/lwjgl/opengl/P field4954 I
 L13:    ifne L26
 L16:    new org/lwjgl/opengl/x
 L19:    dup
@@ -21,12 +21,12 @@ L27:
     .end code
 .end method
 
-.method static goto : (Lorg/lwjgl/opengl/kb;)V
+.method static method5428 : (Lorg/lwjgl/opengl/kb;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L26
 L6:     aload_0
-L7:     invokestatic Method org/lwjgl/opengl/w const (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
+L7:     invokestatic Method org/lwjgl/opengl/w method5768 (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
 L10:    getfield Field org/lwjgl/opengl/P try I
 L13:    ifne L26
 L16:    new org/lwjgl/opengl/x
@@ -40,7 +40,7 @@ L27:
     .end code
 .end method
 
-.method static else : (Ljava/nio/Buffer;IIIII)I
+.method static method5429 : (Ljava/nio/Buffer;IIIII)I
     .code stack 5 locals 6
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L23
@@ -49,7 +49,7 @@ L7:     iload_2
 L8:     iload_3
 L9:     iload 4
 L11:    iload 5
-L13:    invokestatic Method org/lwjgl/opengl/Zd else (IIIII)I
+L13:    invokestatic Method org/lwjgl/opengl/Zd method5430 (IIIII)I
 L16:    aload_0
 L17:    invokestatic Method org/lwjgl/BufferUtils getElementSizeExponent (Ljava/nio/Buffer;)I
 L20:    ishr
@@ -61,15 +61,15 @@ L25:    dup
 L26:    pop2
 L27:    ireturn
 L28:    
-        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x34\x00\x17\x00\x06\x07\x00\x36\x01\x01\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x36\x00\x17\x00\x06\x07\x00\x38\x01\x01\x01\x01\x01\x00\x00'
     .end code
 .end method
 
-.method private static else : (IIIII)I
+.method private static method5430 : (IIIII)I
     .code stack 2 locals 5
 L0:     iload_0
 L1:     iload_1
-L2:     invokestatic Method org/lwjgl/opengl/Zd else (II)I
+L2:     invokestatic Method org/lwjgl/opengl/Zd method5439 (II)I
 L5:     iload_2
 L6:     imul
 L7:     iload_3
@@ -81,7 +81,7 @@ L13:
     .end code
 .end method
 
-.method static short : (I)I
+.method static method5431 : (I)I
     .code stack 5 locals 1
 L0:     iload_0
 L1:     lookupswitch
@@ -132,11 +132,11 @@ L118:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/Strin
 L121:   invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/lang/String;)V
 L124:   athrow
 L125:   
-        .attribute StackMap b'\x00\x09\x00\x44\x00\x01\x01\x00\x00\x00\x45\x00\x01\x01\x00\x01\x01\x00\x4D\x00\x00\x00\x01\x07\x00\x34\x00\x4E\x00\x01\x01\x00\x00\x00\x53\x00\x00\x00\x01\x07\x00\x34\x00\x54\x00\x01\x01\x00\x00\x00\x59\x00\x01\x01\x00\x01\x01\x00\x5C\x00\x01\x01\x00\x00\x00\x61\x00\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x09\x00\x44\x00\x01\x01\x00\x00\x00\x45\x00\x01\x01\x00\x01\x01\x00\x4D\x00\x00\x00\x01\x07\x00\x36\x00\x4E\x00\x01\x01\x00\x00\x00\x53\x00\x00\x00\x01\x07\x00\x36\x00\x54\x00\x01\x01\x00\x00\x00\x59\x00\x01\x01\x00\x01\x01\x00\x5C\x00\x01\x01\x00\x00\x00\x61\x00\x01\x01\x00\x00'
     .end code
 .end method
 
-.method static const : (II)I
+.method static method5432 : (II)I
     .code stack 5 locals 3
 L0:     getstatic Field org/lwjgl/LWJGLUtil DEBUG Z
 L3:     ifeq L47
@@ -201,11 +201,11 @@ L107:   pop2
 L108:   ishr
 L109:   ireturn
 L110:   
-        .attribute StackMap b'\x00\x05\x00\x13\x00\x02\x01\x01\x00\x00\x00\x2F\x00\x02\x01\x01\x00\x00\x00\x60\x00\x03\x01\x01\x01\x00\x00\x00\x66\x00\x00\x00\x01\x07\x00\x34\x00\x67\x00\x03\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x13\x00\x02\x01\x01\x00\x00\x00\x2F\x00\x02\x01\x01\x00\x00\x00\x60\x00\x03\x01\x01\x01\x00\x00\x00\x66\x00\x00\x00\x01\x07\x00\x36\x00\x67\x00\x03\x01\x01\x01\x00\x00'
     .end code
 .end method
 
-.method static break : (Ljava/nio/Buffer;IIIII)I
+.method static method5433 : (Ljava/nio/Buffer;IIIII)I
     .code stack 5 locals 6
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L23
@@ -214,7 +214,7 @@ L7:     iload_2
 L8:     iload_3
 L9:     iload 4
 L11:    iload 5
-L13:    invokestatic Method org/lwjgl/opengl/Zd break (IIIII)I
+L13:    invokestatic Method org/lwjgl/opengl/Zd method5443 (IIIII)I
 L16:    aload_0
 L17:    invokestatic Method org/lwjgl/BufferUtils getElementSizeExponent (Ljava/nio/Buffer;)I
 L20:    ishr
@@ -226,7 +226,7 @@ L25:    dup
 L26:    pop2
 L27:    ireturn
 L28:    
-        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x34\x00\x17\x00\x06\x07\x00\x36\x01\x01\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x16\x00\x00\x00\x01\x07\x00\x36\x00\x17\x00\x06\x07\x00\x38\x01\x01\x01\x01\x01\x00\x00'
     .end code
 .end method
 
@@ -239,7 +239,7 @@ L5:
     .end code
 .end method
 
-.method static const : (I)I
+.method static method5434 : (I)I
     .code stack 5 locals 1
 L0:     iload_0
 L1:     lookupswitch
@@ -295,16 +295,16 @@ L158:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/Strin
 L161:   invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/lang/String;)V
 L164:   athrow
 L165:   
-        .attribute StackMap b'\x00\x09\x00\x6C\x00\x01\x01\x00\x00\x00\x6D\x00\x01\x01\x00\x01\x01\x00\x75\x00\x00\x00\x01\x07\x00\x34\x00\x76\x00\x01\x01\x00\x00\x00\x7B\x00\x00\x00\x01\x07\x00\x34\x00\x7C\x00\x01\x01\x00\x00\x00\x81\x00\x01\x01\x00\x01\x01\x00\x84\x00\x01\x01\x00\x00\x00\x89\x00\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x09\x00\x6C\x00\x01\x01\x00\x00\x00\x6D\x00\x01\x01\x00\x01\x01\x00\x75\x00\x00\x00\x01\x07\x00\x36\x00\x76\x00\x01\x01\x00\x00\x00\x7B\x00\x00\x00\x01\x07\x00\x36\x00\x7C\x00\x01\x01\x00\x00\x00\x81\x00\x01\x01\x00\x01\x01\x00\x84\x00\x01\x01\x00\x00\x00\x89\x00\x01\x01\x00\x00'
     .end code
 .end method
 
-.method static do : (Lorg/lwjgl/opengl/kb;)V
+.method static method5435 : (Lorg/lwjgl/opengl/kb;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L23
 L6:     aload_0
-L7:     invokestatic Method org/lwjgl/opengl/w else (Lorg/lwjgl/opengl/kb;)I
+L7:     invokestatic Method org/lwjgl/opengl/w method5769 (Lorg/lwjgl/opengl/kb;)I
 L10:    ifeq L23
 L13:    new org/lwjgl/opengl/x
 L16:    dup
@@ -317,12 +317,12 @@ L24:
     .end code
 .end method
 
-.method static for : (Lorg/lwjgl/opengl/kb;)V
+.method static method5436 : (Lorg/lwjgl/opengl/kb;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L26
 L6:     aload_0
-L7:     invokestatic Method org/lwjgl/opengl/w const (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
+L7:     invokestatic Method org/lwjgl/opengl/w method5768 (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
 L10:    getfield Field org/lwjgl/opengl/P new I
 L13:    ifne L26
 L16:    new org/lwjgl/opengl/x
@@ -336,12 +336,12 @@ L27:
     .end code
 .end method
 
-.method static catch : (Lorg/lwjgl/opengl/kb;)V
+.method static method5437 : (Lorg/lwjgl/opengl/kb;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L23
 L6:     aload_0
-L7:     invokestatic Method org/lwjgl/opengl/w else (Lorg/lwjgl/opengl/kb;)I
+L7:     invokestatic Method org/lwjgl/opengl/w method5769 (Lorg/lwjgl/opengl/kb;)I
 L10:    ifne L23
 L13:    new org/lwjgl/opengl/x
 L16:    dup
@@ -354,17 +354,17 @@ L24:
     .end code
 .end method
 
-.method static short : (Lorg/lwjgl/opengl/kb;I)I
+.method static method5438 : (Lorg/lwjgl/opengl/kb;I)I
     .code stack 2 locals 2
 L0:     iload_1
 L1:     ldc 34660
-L3:     invokestatic Method org/lwjgl/opengl/GL15 for (II)I
+L3:     invokestatic Method org/lwjgl/opengl/GL15 method4011 (II)I
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method private static else : (II)I
+.method private static method5439 : (II)I
     .code stack 3 locals 3
 L0:     iload_1
 L1:     tableswitch 5120
@@ -458,11 +458,11 @@ L205:   iload_2
 L206:   imul
 L207:   ireturn
 L208:   
-        .attribute StackMap b'\x00\x12\x00\x2C\x00\x02\x01\x01\x00\x00\x00\x2D\x00\x02\x01\x01\x00\x01\x01\x00\x39\x00\x00\x00\x01\x07\x00\x34\x00\x3A\x00\x02\x01\x01\x00\x00\x00\x43\x00\x00\x00\x01\x07\x00\x34\x00\x44\x00\x02\x01\x01\x00\x00\x00\x4D\x00\x02\x01\x01\x00\x00\x00\x52\x00\x00\x00\x01\x07\x00\x34\x00\x53\x00\x02\x01\x01\x00\x01\x01\x00\x9C\x00\x02\x01\x01\x00\x00\x00\x9D\x00\x02\x01\x01\x00\x01\x01\x00\xA9\x00\x02\x01\x01\x00\x00\x00\xB2\x00\x02\x01\x01\x00\x00\x00\xBB\x00\x02\x01\x01\x00\x01\x01\x00\xBE\x00\x02\x01\x01\x00\x00\x00\xC7\x00\x02\x01\x01\x00\x00\x00\xCC\x00\x00\x00\x01\x07\x00\x34\x00\xCD\x00\x03\x01\x01\x01\x00\x01\x01'
+        .attribute StackMap b'\x00\x12\x00\x2C\x00\x02\x01\x01\x00\x00\x00\x2D\x00\x02\x01\x01\x00\x01\x01\x00\x39\x00\x00\x00\x01\x07\x00\x36\x00\x3A\x00\x02\x01\x01\x00\x00\x00\x43\x00\x00\x00\x01\x07\x00\x36\x00\x44\x00\x02\x01\x01\x00\x00\x00\x4D\x00\x02\x01\x01\x00\x00\x00\x52\x00\x00\x00\x01\x07\x00\x36\x00\x53\x00\x02\x01\x01\x00\x01\x01\x00\x9C\x00\x02\x01\x01\x00\x00\x00\x9D\x00\x02\x01\x01\x00\x01\x01\x00\xA9\x00\x02\x01\x01\x00\x00\x00\xB2\x00\x02\x01\x01\x00\x00\x00\xBB\x00\x02\x01\x01\x00\x01\x01\x00\xBE\x00\x02\x01\x01\x00\x00\x00\xC7\x00\x02\x01\x01\x00\x00\x00\xCC\x00\x00\x00\x01\x07\x00\x36\x00\xCD\x00\x03\x01\x01\x01\x00\x01\x01'
     .end code
 .end method
 
-.method static break : (Ljava/nio/FloatBuffer;I)I
+.method static method5440 : (Ljava/nio/FloatBuffer;I)I
     .code stack 3 locals 2
 L0:     iload_1
 L1:     ifne L10
@@ -475,21 +475,21 @@ L9:     athrow
 L10:    aload_0
 L11:    invokevirtual Method java/nio/FloatBuffer remaining ()I
 L14:    iload_1
-L15:    invokestatic Method org/lwjgl/opengl/Zd else (I)I
+L15:    invokestatic Method org/lwjgl/opengl/Zd method5444 (I)I
 L18:    idiv
 L19:    ireturn
 L20:    
-        .attribute StackMap b'\x00\x02\x00\x09\x00\x00\x00\x01\x07\x00\x34\x00\x0A\x00\x02\x07\x00\x7B\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x09\x00\x00\x00\x01\x07\x00\x36\x00\x0A\x00\x02\x07\x00\x85\x01\x00\x00'
     .end code
 .end method
 
-.method static float : (Lorg/lwjgl/opengl/kb;)V
+.method static method5441 : (Lorg/lwjgl/opengl/kb;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L26
 L6:     aload_0
-L7:     invokestatic Method org/lwjgl/opengl/w const (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
-L10:    getfield Field org/lwjgl/opengl/P const I
+L7:     invokestatic Method org/lwjgl/opengl/w method5768 (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
+L10:    getfield Field org/lwjgl/opengl/P field4951 I
 L13:    ifne L26
 L16:    new org/lwjgl/opengl/x
 L19:    dup
@@ -502,23 +502,23 @@ L27:
     .end code
 .end method
 
-.method static const : (Lorg/lwjgl/opengl/kb;I)I
+.method static method5442 : (Lorg/lwjgl/opengl/kb;I)I
     .code stack 2 locals 2
 L0:     iload_1
 L1:     ldc 34660
-L3:     invokestatic Method org/lwjgl/opengl/EXTDirectStateAccess char (II)I
+L3:     invokestatic Method org/lwjgl/opengl/EXTDirectStateAccess method3264 (II)I
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method private static break : (IIIII)I
+.method private static method5443 : (IIIII)I
     .code stack 4 locals 5
 L0:     iload_0
 L1:     iload_1
 L2:     iload_2
 L3:     iload_3
-L4:     invokestatic Method org/lwjgl/opengl/Zd break (IIII)I
+L4:     invokestatic Method org/lwjgl/opengl/Zd method5451 (IIII)I
 L7:     iload 4
 L9:     imul
 L10:    ireturn
@@ -526,7 +526,7 @@ L11:
     .end code
 .end method
 
-.method private static else : (I)I
+.method private static method5444 : (I)I
     .code stack 5 locals 1
 L0:     iload_0
 L1:     lookupswitch
@@ -568,26 +568,26 @@ L86:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/Strin
 L89:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/lang/String;)V
 L92:    athrow
 L93:    
-        .attribute StackMap b'\x00\x07\x00\x2C\x00\x01\x01\x00\x00\x00\x2D\x00\x01\x01\x00\x01\x01\x00\x35\x00\x00\x00\x01\x07\x00\x34\x00\x36\x00\x01\x01\x00\x00\x00\x3B\x00\x00\x00\x01\x07\x00\x34\x00\x3C\x00\x01\x01\x00\x00\x00\x41\x00\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x2C\x00\x01\x01\x00\x00\x00\x2D\x00\x01\x01\x00\x01\x01\x00\x35\x00\x00\x00\x01\x07\x00\x36\x00\x36\x00\x01\x01\x00\x00\x00\x3B\x00\x00\x00\x01\x07\x00\x36\x00\x3C\x00\x01\x01\x00\x00\x00\x41\x00\x01\x01\x00\x00'
     .end code
 .end method
 
-.method static else : (Lorg/lwjgl/opengl/kb;I)I
+.method static method5445 : (Lorg/lwjgl/opengl/kb;I)I
     .code stack 2 locals 2
 L0:     iload_1
 L1:     ldc 34660
-L3:     invokestatic Method org/lwjgl/opengl/ARBBufferObject break (II)I
+L3:     invokestatic Method org/lwjgl/opengl/ARBBufferObject method2104 (II)I
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method static short : (Lorg/lwjgl/opengl/kb;)V
+.method static method5446 : (Lorg/lwjgl/opengl/kb;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L26
 L6:     aload_0
-L7:     invokestatic Method org/lwjgl/opengl/w const (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
+L7:     invokestatic Method org/lwjgl/opengl/w method5768 (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
 L10:    getfield Field org/lwjgl/opengl/P try I
 L13:    ifeq L26
 L16:    new org/lwjgl/opengl/x
@@ -601,13 +601,13 @@ L27:
     .end code
 .end method
 
-.method static const : (Lorg/lwjgl/opengl/kb;)V
+.method static method5447 : (Lorg/lwjgl/opengl/kb;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L26
 L6:     aload_0
-L7:     invokestatic Method org/lwjgl/opengl/w const (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
-L10:    getfield Field org/lwjgl/opengl/P else I
+L7:     invokestatic Method org/lwjgl/opengl/w method5768 (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
+L10:    getfield Field org/lwjgl/opengl/P field4954 I
 L13:    ifeq L26
 L16:    new org/lwjgl/opengl/x
 L19:    dup
@@ -620,11 +620,11 @@ L27:
     .end code
 .end method
 
-.method private static break : (III)I
+.method private static method5448 : (III)I
     .code stack 2 locals 3
 L0:     iload_0
 L1:     iload_1
-L2:     invokestatic Method org/lwjgl/opengl/Zd else (II)I
+L2:     invokestatic Method org/lwjgl/opengl/Zd method5439 (II)I
 L5:     iload_2
 L6:     imul
 L7:     ireturn
@@ -632,12 +632,12 @@ L8:
     .end code
 .end method
 
-.method static else : (Lorg/lwjgl/opengl/kb;)V
+.method static method5449 : (Lorg/lwjgl/opengl/kb;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L26
 L6:     aload_0
-L7:     invokestatic Method org/lwjgl/opengl/w const (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
+L7:     invokestatic Method org/lwjgl/opengl/w method5768 (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
 L10:    getfield Field org/lwjgl/opengl/P new I
 L13:    ifeq L26
 L16:    new org/lwjgl/opengl/x
@@ -651,22 +651,22 @@ L27:
     .end code
 .end method
 
-.method static break : (Lorg/lwjgl/opengl/kb;I)I
+.method static method5450 : (Lorg/lwjgl/opengl/kb;I)I
     .code stack 2 locals 2
 L0:     iload_1
 L1:     ldc 34660
-L3:     invokestatic Method org/lwjgl/opengl/ATIVertexArrayObject break (II)I
+L3:     invokestatic Method org/lwjgl/opengl/ATIVertexArrayObject method2895 (II)I
 L6:     ireturn
 L7:     
     .end code
 .end method
 
-.method private static break : (IIII)I
+.method private static method5451 : (IIII)I
     .code stack 3 locals 4
 L0:     iload_0
 L1:     iload_1
 L2:     iload_2
-L3:     invokestatic Method org/lwjgl/opengl/Zd break (III)I
+L3:     invokestatic Method org/lwjgl/opengl/Zd method5448 (III)I
 L6:     iload_3
 L7:     imul
 L8:     ireturn
@@ -674,7 +674,7 @@ L9:
     .end code
 .end method
 
-.method static break : (I)I
+.method static method5452 : (I)I
     .code stack 5 locals 1
 L0:     iload_0
 L1:     lookupswitch
@@ -737,11 +737,11 @@ L146:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/Strin
 L149:   invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/lang/String;)V
 L152:   athrow
 L153:   
-        .attribute StackMap b'\x00\x0B\x00\x54\x00\x01\x01\x00\x00\x00\x55\x00\x01\x01\x00\x01\x01\x00\x5D\x00\x00\x00\x01\x07\x00\x34\x00\x5E\x00\x01\x01\x00\x00\x00\x63\x00\x00\x00\x01\x07\x00\x34\x00\x64\x00\x01\x01\x00\x00\x00\x69\x00\x01\x01\x00\x00\x00\x6E\x00\x01\x01\x00\x00\x00\x74\x00\x01\x01\x00\x01\x01\x00\x77\x00\x01\x01\x00\x00\x00\x7D\x00\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x0B\x00\x54\x00\x01\x01\x00\x00\x00\x55\x00\x01\x01\x00\x01\x01\x00\x5D\x00\x00\x00\x01\x07\x00\x36\x00\x5E\x00\x01\x01\x00\x00\x00\x63\x00\x00\x00\x01\x07\x00\x36\x00\x64\x00\x01\x01\x00\x00\x00\x69\x00\x01\x01\x00\x00\x00\x6E\x00\x01\x01\x00\x00\x00\x74\x00\x01\x01\x00\x01\x01\x00\x77\x00\x01\x01\x00\x00\x00\x7D\x00\x01\x01\x00\x00'
     .end code
 .end method
 
-.method static break : (Ljava/nio/Buffer;IIII)I
+.method static method5453 : (Ljava/nio/Buffer;IIII)I
     .code stack 4 locals 5
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L21
@@ -749,7 +749,7 @@ L6:     iload_1
 L7:     iload_2
 L8:     iload_3
 L9:     iload 4
-L11:    invokestatic Method org/lwjgl/opengl/Zd break (IIII)I
+L11:    invokestatic Method org/lwjgl/opengl/Zd method5451 (IIII)I
 L14:    aload_0
 L15:    invokestatic Method org/lwjgl/BufferUtils getElementSizeExponent (Ljava/nio/Buffer;)I
 L18:    ishr
@@ -761,17 +761,17 @@ L23:    dup
 L24:    pop2
 L25:    ireturn
 L26:    
-        .attribute StackMap b'\x00\x02\x00\x14\x00\x00\x00\x01\x07\x00\x34\x00\x15\x00\x05\x07\x00\x36\x01\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x14\x00\x00\x00\x01\x07\x00\x36\x00\x15\x00\x05\x07\x00\x38\x01\x01\x01\x01\x00\x00'
     .end code
 .end method
 
-.method static break : (Lorg/lwjgl/opengl/kb;)V
+.method static method5454 : (Lorg/lwjgl/opengl/kb;)V
     .code stack 3 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L26
 L6:     aload_0
-L7:     invokestatic Method org/lwjgl/opengl/w const (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
-L10:    getfield Field org/lwjgl/opengl/P const I
+L7:     invokestatic Method org/lwjgl/opengl/w method5768 (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
+L10:    getfield Field org/lwjgl/opengl/P field4951 I
 L13:    ifeq L26
 L16:    new org/lwjgl/opengl/x
 L19:    dup
@@ -784,10 +784,10 @@ L27:
     .end code
 .end method
 
-.method static break : (II)I
+.method static method5455 : (II)I
     .code stack 3 locals 3
 L0:     iload_0
-L1:     invokestatic Method org/lwjgl/opengl/Zd else (I)I
+L1:     invokestatic Method org/lwjgl/opengl/Zd method5444 (I)I
 L4:     istore_2
 L5:     iload_1
 L6:     lookupswitch
@@ -815,18 +815,18 @@ L51:    athrow
 L52:    iload_2
 L53:    ireturn
 L54:    
-        .attribute StackMap b'\x00\x06\x00\x20\x00\x03\x01\x01\x01\x00\x00\x00\x21\x00\x03\x01\x01\x01\x00\x01\x01\x00\x2B\x00\x00\x00\x01\x07\x00\x34\x00\x2C\x00\x03\x01\x01\x01\x00\x00\x00\x33\x00\x00\x00\x01\x07\x00\x34\x00\x34\x00\x03\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x20\x00\x03\x01\x01\x01\x00\x00\x00\x21\x00\x03\x01\x01\x01\x00\x01\x01\x00\x2B\x00\x00\x00\x01\x07\x00\x36\x00\x2C\x00\x03\x01\x01\x01\x00\x00\x00\x33\x00\x00\x00\x01\x07\x00\x36\x00\x34\x00\x03\x01\x01\x01\x00\x00'
     .end code
 .end method
 
-.method static break : (Ljava/nio/Buffer;III)I
+.method static method5456 : (Ljava/nio/Buffer;III)I
     .code stack 3 locals 4
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L19
 L6:     iload_1
 L7:     iload_2
 L8:     iload_3
-L9:     invokestatic Method org/lwjgl/opengl/Zd break (III)I
+L9:     invokestatic Method org/lwjgl/opengl/Zd method5448 (III)I
 L12:    aload_0
 L13:    invokestatic Method org/lwjgl/BufferUtils getElementSizeExponent (Ljava/nio/Buffer;)I
 L16:    ishr
@@ -838,7 +838,7 @@ L21:    dup
 L22:    pop2
 L23:    ireturn
 L24:    
-        .attribute StackMap b'\x00\x02\x00\x12\x00\x00\x00\x01\x07\x00\x34\x00\x13\x00\x04\x07\x00\x36\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x12\x00\x00\x00\x01\x07\x00\x36\x00\x13\x00\x04\x07\x00\x38\x01\x01\x01\x00\x00'
     .end code
 .end method
 .end class

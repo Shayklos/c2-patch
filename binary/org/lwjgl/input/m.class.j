@@ -6,14 +6,14 @@
 .method public bridge synthetic run : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/input/m break ()Lorg/lwjgl/opengl/i;
+L1:     invokevirtual Method org/lwjgl/input/m method1765 ()Lorg/lwjgl/opengl/i;
 L4:     areturn
 L5:     
     .end code
     .exceptions java/lang/Exception
 .end method
 
-.method public break : ()Lorg/lwjgl/opengl/i;
+.method public method1765 : ()Lorg/lwjgl/opengl/i;
     .code stack 6 locals 2
 L0:     ldc Class org/lwjgl/opengl/Display
 L2:     ldc "getImplementation"
@@ -62,5 +62,5 @@ L5:
 .innerclasses
     org/lwjgl/input/m [0] [0] static
 .end innerclasses
-.enclosing method org/lwjgl/input/D break ()Lorg/lwjgl/opengl/i;
+.enclosing method org/lwjgl/input/D method1911 ()Lorg/lwjgl/opengl/i;
 .end class

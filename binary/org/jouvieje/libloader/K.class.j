@@ -2,7 +2,7 @@
 .class final super org/jouvieje/libloader/K
 .super java/lang/Object
 .implements java/security/PrivilegedAction
-.field private final do Ljava/lang/String; .fieldattributes
+.field private final field2433 Ljava/lang/String; .fieldattributes
     .synthetic
 .end fieldattributes
 
@@ -12,7 +12,7 @@ L0:     aload_1
 L1:     aload_0
 L2:     dup_x1
 L3:     invokespecial Method java/lang/Object <init> ()V
-L6:     putfield Field org/jouvieje/libloader/K do Ljava/lang/String;
+L6:     putfield Field org/jouvieje/libloader/K field2433 Ljava/lang/String;
 L9:     return
 L10:    
     .end code
@@ -21,7 +21,7 @@ L10:
 .method public run : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/jouvieje/libloader/K do Ljava/lang/String;
+L1:     getfield Field org/jouvieje/libloader/K field2433 Ljava/lang/String;
 L4:     invokestatic Method java/lang/System getProperty (Ljava/lang/String;)Ljava/lang/String;
 L7:     areturn
 L8:     

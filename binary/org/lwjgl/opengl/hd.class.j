@@ -1,15 +1,15 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/hd
 .super java/lang/Object
-.field public static final "enum" I = 36392
-.field public static final do I = 35007
+.field public static final field5380 I = 36392
+.field public static final field5381 I = 35007
 
-.method public static else : (IILjava/nio/LongBuffer;)V
+.method public static method5522 : (IILjava/nio/LongBuffer;)V
     .code stack 3 locals 3
 L0:     iload_0
 L1:     iload_1
 L2:     aload_2
-L3:     invokestatic Method org/lwjgl/opengl/GL33 else (IILjava/nio/LongBuffer;)V
+L3:     invokestatic Method org/lwjgl/opengl/GL33 method4316 (IILjava/nio/LongBuffer;)V
 L6:     return
 L7:     
     .end code
@@ -24,7 +24,7 @@ L5:
     .end code
 .end method
 
-.method public static const : (II)J
+.method public static method5523 : (II)J
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
@@ -34,32 +34,32 @@ L6:
     .end code
 .end method
 
-.method public static else : (II)V
+.method public static method5524 : (II)V
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
-L2:     invokestatic Method org/lwjgl/opengl/GL33 do (II)V
+L2:     invokestatic Method org/lwjgl/opengl/GL33 method4338 (II)V
 L5:     return
 L6:     
     .end code
 .end method
 
-.method public static break : (IILjava/nio/LongBuffer;)V
+.method public static method5525 : (IILjava/nio/LongBuffer;)V
     .code stack 3 locals 3
 L0:     iload_0
 L1:     iload_1
 L2:     aload_2
-L3:     invokestatic Method org/lwjgl/opengl/GL33 break (IILjava/nio/LongBuffer;)V
+L3:     invokestatic Method org/lwjgl/opengl/GL33 method4355 (IILjava/nio/LongBuffer;)V
 L6:     return
 L7:     
     .end code
 .end method
 
-.method public static break : (II)J
+.method public static method5526 : (II)J
     .code stack 2 locals 2
 L0:     iload_0
 L1:     iload_1
-L2:     invokestatic Method org/lwjgl/opengl/GL33 "enum" (II)J
+L2:     invokestatic Method org/lwjgl/opengl/GL33 method4311 (II)J
 L5:     lreturn
 L6:     
     .end code

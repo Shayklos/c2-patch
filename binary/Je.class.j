@@ -1,18 +1,18 @@
 .version 49 0
 .class public final super Je
 .super Uf
-.field private do I
+.field private field1392 I
 
-.method public break : (LRg;)Z
+.method public method704 : (LRg;)Z
     .code stack 3 locals 2
 L0:     aload_1
-L1:     getfield Field Rg case LqE;
-L4:     getstatic Field qE do LqE;
+L1:     getfield Field Rg field227 LqE;
+L4:     getstatic Field qE field631 LqE;
 L7:     if_acmpne L27
 L10:    aload_1
-L11:    invokevirtual Method Rg short ()I
+L11:    invokevirtual Method Rg method132 ()I
 L14:    aload_0
-L15:    getfield Field Je do I
+L15:    getfield Field Je field1392 I
 L18:    if_icmplt L27
 L21:    iconst_1
 L22:    dup
@@ -26,7 +26,7 @@ L29:    dup
 L30:    pop2
 L31:    ireturn
 L32:    
-        .attribute StackMap b'\x00\x02\x00\x1A\x00\x00\x00\x01\x07\x00\x1A\x00\x1B\x00\x02\x07\x00\x02\x07\x00\x0A\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x1A\x00\x00\x00\x01\x07\x00\x1B\x00\x1B\x00\x02\x07\x00\x02\x07\x00\x0A\x00\x00'
     .end code
 .end method
 
@@ -42,7 +42,7 @@ L7:     aconst_null
 L8:     iload 5
 L10:    iload 6
 L12:    invokespecial Method Uf <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-L15:    putfield Field Je do I
+L15:    putfield Field Je field1392 I
 L18:    return
 L19:    
     .end code

@@ -1,25 +1,25 @@
 .version 49 0
 .class public final super XF
 .super eb
-.field private do F
+.field private field1767 F
 
-.method public break : (Lqd;)F
+.method public method764 : (Lqd;)F
     .code stack 5 locals 2
 L0:     aload_1
 L1:     aload_0
 L2:     dup_x1
 L3:     aload_1
 L4:     fconst_0
-L5:     invokespecial Method XF else (Lqd;F)F
-L8:     invokespecial Method XF else (Lqd;F)F
+L5:     invokespecial Method XF method770 (Lqd;F)F
+L8:     invokespecial Method XF method770 (Lqd;F)F
 L11:    freturn
 L12:    
     .end code
 .end method
 
-.method private else : (Lqd;F)F
+.method private method770 : (Lqd;F)F
     .code stack 4 locals 3
-L0:     invokestatic Method OC else ()D
+L0:     invokestatic Method OC method1015 ()D
 L3:     aload_1
 L4:     getfield Field qd while D
 L7:     dsub
@@ -39,7 +39,7 @@ L25:
     .end code
 .end method
 
-.method public break : ()Z
+.method public method768 : ()Z
     .code stack 3 locals 1
 L0:     iconst_0
 L1:     iconst_1
@@ -59,7 +59,7 @@ L5:
     .end code
 .end method
 
-.method public const : (LRg;[I)I
+.method public method759 : (LRg;[I)I
     .code stack 3 locals 3
 L0:     iconst_0
 L1:     iconst_1
@@ -70,7 +70,7 @@ L5:
     .end code
 .end method
 
-.method public break : (Lqd;F)V
+.method public method763 : (Lqd;F)V
     .code stack 12 locals 7
 L0:     aload_1
 L1:     fconst_0
@@ -78,13 +78,13 @@ L2:     aload_0
 L3:     dup_x2
 L4:     dup_x2
 L5:     dup
-L6:     getfield Field XF do F
+L6:     getfield Field XF field1767 F
 L9:     fload_2
 L10:    fadd
-L11:    putfield Field XF do F
-L14:    invokespecial Method XF else (Lqd;F)F
+L11:    putfield Field XF field1767 F
+L14:    invokespecial Method XF method770 (Lqd;F)F
 L17:    fstore_2
-L18:    getfield Field XF do F
+L18:    getfield Field XF field1767 F
 L21:    fload_2
 L22:    fcmpl
 L23:    ifle L267
@@ -105,15 +105,15 @@ L57:    invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Obj
 L62:    checkcast Rg
 L65:    dup
 L66:    astore 6
-L68:    getfield Field Rg case LqE;
+L68:    getfield Field Rg field227 LqE;
 L71:    getstatic Field qE this LqE;
 L74:    if_acmpne L45
 L77:    aload_3
 L78:    ifnull L94
 L81:    aload 6
-L83:    getfield Field Rg "transient" F
+L83:    getfield Field Rg field212 F
 L86:    aload_3
-L87:    getfield Field Rg "transient" F
+L87:    getfield Field Rg field212 F
 L90:    fcmpl
 L91:    ifle L45
 L94:    aload 6
@@ -135,23 +135,23 @@ L131:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Obj
 L136:   checkcast Rg
 L139:   dup
 L140:   astore 6
-L142:   getfield Field Rg case LqE;
+L142:   getfield Field Rg field227 LqE;
 L145:   getstatic Field qE this LqE;
 L148:   if_acmpne L119
 L151:   aload_1
-L152:   getfield Field qd "native" Z
+L152:   getfield Field qd field742 Z
 L155:   ifeq L170
 L158:   aload 6
-L160:   getfield Field Rg short LsE;
+L160:   getfield Field Rg field231 LsE;
 L163:   aload_3
-L164:   getfield Field Rg short LsE;
+L164:   getfield Field Rg field231 LsE;
 L167:   if_acmpeq L119
 L170:   aload 4
 L172:   ifnull L189
 L175:   aload 6
-L177:   getfield Field Rg "transient" F
+L177:   getfield Field Rg field212 F
 L180:   aload 4
-L182:   getfield Field Rg "transient" F
+L182:   getfield Field Rg field212 F
 L185:   fcmpg
 L186:   ifge L119
 L189:   aload 6
@@ -195,18 +195,18 @@ L244:   dup
 L245:   pop2
 L246:   iastore
 L247:   invokespecial Method uE <init> (Led;Led;I[I)V
-L250:   invokevirtual Method qd else (LD;)V
+L250:   invokevirtual Method qd method394 (LD;)V
 L253:   aload_0
 L254:   dup
 L255:   dup
-L256:   getfield Field XF do F
+L256:   getfield Field XF field1767 F
 L259:   fload_2
 L260:   fsub
-L261:   putfield Field XF do F
+L261:   putfield Field XF field1767 F
 L264:   goto L18
 L267:   return
 L268:   
-        .attribute StackMap b'\x00\x0C\x00\x12\x00\x03\x07\x00\x02\x07\x00\x13\x02\x00\x01\x07\x00\x02\x00\x2D\x00\x06\x07\x00\x02\x07\x00\x13\x02\x07\x00\x3C\x05\x07\x00\x3E\x00\x00\x00\x5E\x00\x07\x07\x00\x02\x07\x00\x13\x02\x07\x00\x3C\x05\x07\x00\x3E\x07\x00\x3C\x00\x00\x00\x64\x00\x00\x00\x01\x07\x00\x53\x00\x65\x00\x06\x07\x00\x02\x07\x00\x13\x02\x07\x00\x3C\x05\x07\x00\x3E\x00\x00\x00\x77\x00\x06\x07\x00\x02\x07\x00\x13\x02\x07\x00\x3C\x07\x00\x3C\x07\x00\x3E\x00\x00\x00\xAA\x00\x07\x07\x00\x02\x07\x00\x13\x02\x07\x00\x3C\x07\x00\x3C\x07\x00\x3E\x07\x00\x3C\x00\x00\x00\xBD\x00\x07\x07\x00\x02\x07\x00\x13\x02\x07\x00\x3C\x07\x00\x3C\x07\x00\x3E\x07\x00\x3C\x00\x00\x00\xC4\x00\x00\x00\x01\x07\x00\x53\x00\xC5\x00\x06\x07\x00\x02\x07\x00\x13\x02\x07\x00\x3C\x07\x00\x3C\x07\x00\x3E\x00\x00\x00\xFD\x00\x06\x07\x00\x02\x07\x00\x13\x02\x07\x00\x3C\x07\x00\x3C\x07\x00\x3E\x00\x00\x01\x0B\x00\x03\x07\x00\x02\x07\x00\x13\x02\x00\x00'
+        .attribute StackMap b'\x00\x0C\x00\x12\x00\x03\x07\x00\x02\x07\x00\x14\x02\x00\x01\x07\x00\x02\x00\x2D\x00\x06\x07\x00\x02\x07\x00\x14\x02\x07\x00\x3F\x05\x07\x00\x41\x00\x00\x00\x5E\x00\x07\x07\x00\x02\x07\x00\x14\x02\x07\x00\x3F\x05\x07\x00\x41\x07\x00\x3F\x00\x00\x00\x64\x00\x00\x00\x01\x07\x00\x56\x00\x65\x00\x06\x07\x00\x02\x07\x00\x14\x02\x07\x00\x3F\x05\x07\x00\x41\x00\x00\x00\x77\x00\x06\x07\x00\x02\x07\x00\x14\x02\x07\x00\x3F\x07\x00\x3F\x07\x00\x41\x00\x00\x00\xAA\x00\x07\x07\x00\x02\x07\x00\x14\x02\x07\x00\x3F\x07\x00\x3F\x07\x00\x41\x07\x00\x3F\x00\x00\x00\xBD\x00\x07\x07\x00\x02\x07\x00\x14\x02\x07\x00\x3F\x07\x00\x3F\x07\x00\x41\x07\x00\x3F\x00\x00\x00\xC4\x00\x00\x00\x01\x07\x00\x56\x00\xC5\x00\x06\x07\x00\x02\x07\x00\x14\x02\x07\x00\x3F\x07\x00\x3F\x07\x00\x41\x00\x00\x00\xFD\x00\x06\x07\x00\x02\x07\x00\x14\x02\x07\x00\x3F\x07\x00\x3F\x07\x00\x41\x00\x00\x01\x0B\x00\x03\x07\x00\x02\x07\x00\x14\x02\x00\x00'
     .end code
 .end method
 .end class

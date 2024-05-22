@@ -1,9 +1,9 @@
 .version 49 0
 .class public final super net/gewaltig/cultris/Applet
 .super java/applet/Applet
-.field else Ljava/awt/Canvas;
-.field private static final "enum" J = 1L
-.field do Ljava/lang/Thread;
+.field field569 Ljava/awt/Canvas;
+.field private static final field570 J = 1L
+.field field571 Ljava/lang/Thread;
 
 .method public getAppletInfo : ()Ljava/lang/String;
     .code stack 1 locals 1
@@ -68,11 +68,11 @@ L1:
 .method public destroy : ()V
     .code stack 2 locals 1
 L0:     aload_0
-L1:     getfield Field net/gewaltig/cultris/Applet else Ljava/awt/Canvas;
+L1:     getfield Field net/gewaltig/cultris/Applet field569 Ljava/awt/Canvas;
 L4:     ifnull L15
 L7:     aload_0
 L8:     dup
-L9:     getfield Field net/gewaltig/cultris/Applet else Ljava/awt/Canvas;
+L9:     getfield Field net/gewaltig/cultris/Applet field569 Ljava/awt/Canvas;
 L12:    invokevirtual Method net/gewaltig/cultris/Applet remove (Ljava/awt/Component;)V
 L15:    aload_0
 L16:    invokespecial Method java/applet/Applet destroy ()V
@@ -199,7 +199,7 @@ L196:   astore_1
         .catch java/net/MalformedURLException from L197 to L208 using L212
 L197:   new java/net/URL
 L200:   dup
-L201:   invokestatic Method dc else ()Ljava/lang/String;
+L201:   invokestatic Method dc method1125 ()Ljava/lang/String;
 L204:   invokespecial Method java/net/URL <init> (Ljava/lang/String;)V
 L207:   astore_3
 L208:   aload_1
@@ -442,15 +442,15 @@ L577:   dup
 L578:   aload_0
 L579:   dup_x2
 L580:   invokespecial Method net/gewaltig/cultris/M <init> (Lnet/gewaltig/cultris/Applet;)V
-L583:   putfield Field net/gewaltig/cultris/Applet else Ljava/awt/Canvas;
-L586:   getfield Field net/gewaltig/cultris/Applet else Ljava/awt/Canvas;
+L583:   putfield Field net/gewaltig/cultris/Applet field569 Ljava/awt/Canvas;
+L586:   getfield Field net/gewaltig/cultris/Applet field569 Ljava/awt/Canvas;
 L589:   aload_0
 L590:   invokevirtual Method net/gewaltig/cultris/Applet getWidth ()I
 L593:   aload_0
 L594:   dup_x2
 L595:   invokevirtual Method net/gewaltig/cultris/Applet getHeight ()I
 L598:   invokevirtual Method java/awt/Canvas setSize (II)V
-L601:   getfield Field net/gewaltig/cultris/Applet else Ljava/awt/Canvas;
+L601:   getfield Field net/gewaltig/cultris/Applet field569 Ljava/awt/Canvas;
 L604:   invokevirtual Method net/gewaltig/cultris/Applet add (Ljava/awt/Component;)Ljava/awt/Component;
 L607:   iconst_1
 L608:   aload_0
@@ -458,15 +458,15 @@ L609:   dup
 L610:   dup_x2
 L611:   aload_0
 L612:   dup
-L613:   getfield Field net/gewaltig/cultris/Applet else Ljava/awt/Canvas;
+L613:   getfield Field net/gewaltig/cultris/Applet field569 Ljava/awt/Canvas;
 L616:   iconst_1
 L617:   dup
 L618:   dup
 L619:   pop2
 L620:   invokevirtual Method java/awt/Canvas setFocusable (Z)V
-L623:   getfield Field net/gewaltig/cultris/Applet else Ljava/awt/Canvas;
+L623:   getfield Field net/gewaltig/cultris/Applet field569 Ljava/awt/Canvas;
 L626:   invokevirtual Method java/awt/Canvas requestFocus ()V
-L629:   getfield Field net/gewaltig/cultris/Applet else Ljava/awt/Canvas;
+L629:   getfield Field net/gewaltig/cultris/Applet field569 Ljava/awt/Canvas;
 L632:   iconst_1
 L633:   dup
 L634:   dup

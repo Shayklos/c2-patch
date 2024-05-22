@@ -12,10 +12,10 @@ L6:
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/Q;
+.method public static method1367 : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/Q;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     dup2
 L5:     lstore_1
 L6:     lconst_0
@@ -34,10 +34,10 @@ L23:
     .end code
 .end method
 
-.method public else : (I)V
+.method public method1197 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/Q do J
+L1:     getfield Field jouvieje/bass/structures/Q field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -46,7 +46,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/Q do J
+L18:    getfield Field jouvieje/bass/structures/Q field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_MIDI_FONT_set_bank (JI)V
 L25:    return
@@ -55,10 +55,10 @@ L26:
     .end code
 .end method
 
-.method public break : (I)V
+.method public method1180 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/Q do J
+L1:     getfield Field jouvieje/bass/structures/Q field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -67,7 +67,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/Q do J
+L18:    getfield Field jouvieje/bass/structures/Q field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_MIDI_FONT_set_preset (JI)V
 L25:    return
@@ -85,29 +85,29 @@ L5:
     .end code
 .end method
 
-.method public float : ()V
+.method public method1203 : ()V
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/Q do J
+L1:     getfield Field jouvieje/bass/structures/Q field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifeq L16
 L9:     aload_0
-L10:    getfield Field jouvieje/bass/structures/Q do J
+L10:    getfield Field jouvieje/bass/structures/Q field2319 J
 L13:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_MIDI_FONT_delete (J)V
 L16:    aload_0
 L17:    lconst_0
-L18:    putfield Field jouvieje/bass/structures/Q do J
+L18:    putfield Field jouvieje/bass/structures/Q field2319 J
 L21:    return
 L22:    
         .attribute StackMap b'\x00\x01\x00\x10\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public short : ()Ljouvieje/bass/structures/c;
+.method public method1368 : ()Ljouvieje/bass/structures/c;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/Q do J
+L1:     getfield Field jouvieje/bass/structures/Q field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -116,7 +116,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/Q do J
+L18:    getfield Field jouvieje/bass/structures/Q field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_MIDI_FONT_get_font (J)J
 L24:    dup2
 L25:    lstore_1
@@ -127,18 +127,18 @@ L31:    aconst_null
 L32:    areturn
 L33:    athrow
 L34:    lload_1
-L35:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L38:    invokestatic Method jouvieje/bass/structures/c else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/c;
+L35:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L38:    invokestatic Method jouvieje/bass/structures/c method1284 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/c;
 L41:    areturn
 L42:    
         .attribute StackMap b'\x00\x03\x00\x11\x00\x01\x07\x00\x02\x00\x00\x00\x21\x00\x00\x00\x01\x07\x00\x10\x00\x22\x00\x02\x07\x00\x02\x04\x00\x00'
     .end code
 .end method
 
-.method public break : (Ljouvieje/bass/structures/c;)V
+.method public method1369 : (Ljouvieje/bass/structures/c;)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/Q do J
+L1:     getfield Field jouvieje/bass/structures/Q field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -147,20 +147,20 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/Q do J
+L18:    getfield Field jouvieje/bass/structures/Q field2319 J
 L21:    aload_1
-L22:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L22:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L25:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_MIDI_FONT_set_font (JJ)V
 L28:    return
 L29:    
-        .attribute StackMap b'\x00\x01\x00\x11\x00\x02\x07\x00\x02\x07\x00\x34\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x11\x00\x02\x07\x00\x02\x07\x00\x37\x00\x00'
     .end code
 .end method
 
-.method public const : ()I
+.method public method1199 : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/Q do J
+L1:     getfield Field jouvieje/bass/structures/Q field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -169,7 +169,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/Q do J
+L18:    getfield Field jouvieje/bass/structures/Q field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_MIDI_FONT_get_preset (J)I
 L24:    ireturn
 L25:    
@@ -177,10 +177,10 @@ L25:
     .end code
 .end method
 
-.method public else : ()I
+.method public method1233 : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/Q do J
+L1:     getfield Field jouvieje/bass/structures/Q field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -189,7 +189,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/Q do J
+L18:    getfield Field jouvieje/bass/structures/Q field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_MIDI_FONT_get_bank (J)I
 L24:    ireturn
 L25:    
@@ -197,7 +197,7 @@ L25:
     .end code
 .end method
 
-.method public static break : ()Ljouvieje/bass/structures/Q;
+.method public static method1370 : ()Ljouvieje/bass/structures/Q;
     .code stack 4 locals 2
 L0:     invokestatic Method jouvieje/bass/structures/StructureJNI BASS_MIDI_FONT_new ()J
 L3:     dup2

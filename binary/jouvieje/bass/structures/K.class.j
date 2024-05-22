@@ -2,10 +2,10 @@
 .class public final super jouvieje/bass/structures/K
 .super jouvieje/bass/utils/m
 
-.method public static else : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/K;
+.method public static method1606 : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/K;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     dup2
 L5:     lstore_1
 L6:     lconst_0
@@ -34,11 +34,11 @@ L6:
     .end code
 .end method
 
-.method public break : ()V
+.method public method1218 : ()V
     .code stack 3 locals 1
 L0:     aload_0
 L1:     lconst_0
-L2:     putfield Field jouvieje/bass/structures/K do J
+L2:     putfield Field jouvieje/bass/structures/K field2319 J
 L5:     return
 L6:     
     .end code

@@ -1,19 +1,19 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/uB
 .super java/lang/Object
-.field public static final goto I = 37489
-.field public static final break I = 36203
-.field public static final long I = 37497
-.field public static final void I = 37493
+.field public static final field5620 I = 37489
+.field public static final field5621 I = 36203
+.field public static final field5622 I = 37497
+.field public static final field5623 I = 37493
 .field public static final try I = 37491
-.field public static final const I = 37496
+.field public static final field5624 I = 37496
 .field public static final new I = 37495
-.field public static final null I = 36201
+.field public static final field5625 I = 36201
 .field public static final this I = 37494
-.field public static final char I = 37492
-.field public static final else I = 37488
-.field public static final "enum" I = 36202
-.field public static final do I = 37490
+.field public static final field5626 I = 37492
+.field public static final field5627 I = 37488
+.field public static final field5628 I = 36202
+.field public static final field5629 I = 37490
 
 .method private <init> : ()V
     .code stack 1 locals 1

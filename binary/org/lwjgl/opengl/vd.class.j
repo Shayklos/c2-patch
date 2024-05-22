@@ -1,10 +1,10 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/vd
 .super org/lwjgl/opengl/ARBBufferObject
-.field public static final if I = 35052
+.field public static final field2658 I = 35052
 .field public static final true I = 35051
-.field public static final for I = 35053
-.field public static final case I = 35055
+.field public static final field2659 I = 35053
+.field public static final field2660 I = 35055
 
 .method private <init> : ()V
     .code stack 1 locals 1

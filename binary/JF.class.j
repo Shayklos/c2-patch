@@ -2,17 +2,17 @@
 .class public final super JF
 .super java/lang/Object
 .implements h
-.field public final synthetic "enum" LYd;
-.field public final synthetic do I
+.field public final synthetic field1492 LYd;
+.field public final synthetic field1493 I
 
-.method public break : (LgB;)V
+.method public method728 : (LgB;)V
     .code stack 2 locals 2
 L0:     aload_0
 L1:     dup
-L2:     getfield Field JF "enum" LYd;
+L2:     getfield Field JF field1492 LYd;
 L5:     swap
-L6:     getfield Field JF do I
-L9:     invokevirtual Method Yd break (I)V
+L6:     getfield Field JF field1493 I
+L9:     invokevirtual Method Yd method14 (I)V
 L12:    return
 L13:    
     .end code
@@ -25,8 +25,8 @@ L1:     aload_0
 L2:     dup_x1
 L3:     dup_x2
 L4:     aload_1
-L5:     putfield Field JF "enum" LYd;
-L8:     putfield Field JF do I
+L5:     putfield Field JF field1492 LYd;
+L8:     putfield Field JF field1493 I
 L11:    invokespecial Method java/lang/Object <init> ()V
 L14:    return
 L15:    
@@ -35,5 +35,5 @@ L15:
 .innerclasses
     JF [0] [0]
 .end innerclasses
-.enclosing method Yd break (Ljava/lang/String;LgB;)V
+.enclosing method Yd method182 (Ljava/lang/String;LgB;)V
 .end class

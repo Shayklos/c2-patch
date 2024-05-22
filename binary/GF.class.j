@@ -1,16 +1,16 @@
 .version 49 0
 .class public final super GF
 .super java/lang/Object
-.field public static final null Ljava/util/HashMap;
+.field public static final field1802 Ljava/util/HashMap;
 .field private static this I
-.field private static final char Ljava/util/HashMap;
-.field public static final else Ljava/util/HashMap;
-.field public static final "enum" Ljava/util/HashMap;
-.field private static final do Ljava/util/HashMap;
+.field private static final field1803 Ljava/util/HashMap;
+.field public static final field1804 Ljava/util/HashMap;
+.field public static final field1805 Ljava/util/HashMap;
+.field private static final field1806 Ljava/util/HashMap;
 
-.method public static else : (Leb;)I
+.method public static method790 : (Leb;)I
     .code stack 2 locals 1
-L0:     getstatic Field GF do Ljava/util/HashMap;
+L0:     getstatic Field GF field1806 Ljava/util/HashMap;
 L3:     aload_0
 L4:     invokevirtual Method java/lang/Object getClass ()Ljava/lang/Class;
 L7:     invokevirtual Method java/util/HashMap get (Ljava/lang/Object;)Ljava/lang/Object;
@@ -35,23 +35,23 @@ L5:
 L0:     new java/util/HashMap
 L3:     dup
 L4:     invokespecial Method java/util/HashMap <init> ()V
-L7:     putstatic Field GF "enum" Ljava/util/HashMap;
+L7:     putstatic Field GF field1805 Ljava/util/HashMap;
 L10:    new java/util/HashMap
 L13:    dup
 L14:    invokespecial Method java/util/HashMap <init> ()V
-L17:    putstatic Field GF else Ljava/util/HashMap;
+L17:    putstatic Field GF field1804 Ljava/util/HashMap;
 L20:    new java/util/HashMap
 L23:    dup
 L24:    invokespecial Method java/util/HashMap <init> ()V
-L27:    putstatic Field GF null Ljava/util/HashMap;
+L27:    putstatic Field GF field1802 Ljava/util/HashMap;
 L30:    new java/util/HashMap
 L33:    dup
 L34:    invokespecial Method java/util/HashMap <init> ()V
-L37:    putstatic Field GF char Ljava/util/HashMap;
+L37:    putstatic Field GF field1803 Ljava/util/HashMap;
 L40:    new java/util/HashMap
 L43:    dup
 L44:    invokespecial Method java/util/HashMap <init> ()V
-L47:    putstatic Field GF do Ljava/util/HashMap;
+L47:    putstatic Field GF field1806 Ljava/util/HashMap;
 L50:    ldc Class Qb
 L52:    ldc "Standard"
 L54:    iconst_1
@@ -62,7 +62,7 @@ L58:    dup
 L59:    dup_x1
 L60:    dup
 L61:    pop2
-L62:    invokestatic Method GF break (Ljava/lang/Class;Ljava/lang/String;ZZ)V
+L62:    invokestatic Method GF method792 (Ljava/lang/Class;Ljava/lang/String;ZZ)V
 L65:    ldc Class sg
 L67:    ldc "Swiss cheese"
 L69:    iconst_1
@@ -73,7 +73,7 @@ L73:    dup
 L74:    dup_x1
 L75:    dup
 L76:    pop2
-L77:    invokestatic Method GF break (Ljava/lang/Class;Ljava/lang/String;ZZ)V
+L77:    invokestatic Method GF method792 (Ljava/lang/Class;Ljava/lang/String;ZZ)V
 L80:    ldc Class cF
 L82:    ldc "Survivor"
 L84:    iconst_1
@@ -84,7 +84,7 @@ L88:    iconst_1
 L89:    dup_x1
 L90:    dup
 L91:    pop2
-L92:    invokestatic Method GF break (Ljava/lang/Class;Ljava/lang/String;ZZ)V
+L92:    invokestatic Method GF method792 (Ljava/lang/Class;Ljava/lang/String;ZZ)V
 L95:    ldc Class XF
 L97:    ldc "Slowest link"
 L99:    iconst_0
@@ -95,7 +95,7 @@ L103:   iconst_0
 L104:   iconst_1
 L105:   dup
 L106:   pop2
-L107:   invokestatic Method GF break (Ljava/lang/Class;Ljava/lang/String;ZZ)V
+L107:   invokestatic Method GF method792 (Ljava/lang/Class;Ljava/lang/String;ZZ)V
 L110:   ldc Class xE
 L112:   ldc "40 lines"
 L114:   iconst_0
@@ -106,7 +106,7 @@ L118:   iconst_0
 L119:   iconst_1
 L120:   dup
 L121:   pop2
-L122:   invokestatic Method GF break (Ljava/lang/Class;Ljava/lang/String;ZZ)V
+L122:   invokestatic Method GF method792 (Ljava/lang/Class;Ljava/lang/String;ZZ)V
 L125:   iconst_0
 L126:   iconst_1
 L127:   dup
@@ -117,9 +117,9 @@ L133:
     .end code
 .end method
 
-.method public static else : (I)Z
+.method public static method791 : (I)Z
     .code stack 2 locals 1
-L0:     getstatic Field GF char Ljava/util/HashMap;
+L0:     getstatic Field GF field1803 Ljava/util/HashMap;
 L3:     iload_0
 L4:     invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L7:     invokevirtual Method java/util/HashMap containsKey (Ljava/lang/Object;)Z
@@ -128,19 +128,19 @@ L11:
     .end code
 .end method
 
-.method private static break : (Ljava/lang/Class;Ljava/lang/String;ZZ)V
+.method private static method792 : (Ljava/lang/Class;Ljava/lang/String;ZZ)V
     .code stack 5 locals 4
-L0:     getstatic Field GF "enum" Ljava/util/HashMap;
+L0:     getstatic Field GF field1805 Ljava/util/HashMap;
 L3:     getstatic Field GF this I
 L6:     invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L9:     aload_1
 L10:    invokevirtual Method java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-L13:    getstatic Field GF char Ljava/util/HashMap;
+L13:    getstatic Field GF field1803 Ljava/util/HashMap;
 L16:    getstatic Field GF this I
 L19:    invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L22:    aload_0
 L23:    invokevirtual Method java/util/HashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-L26:    getstatic Field GF do Ljava/util/HashMap;
+L26:    getstatic Field GF field1806 Ljava/util/HashMap;
 L29:    aload_0
 L30:    getstatic Field GF this I
 L33:    invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
@@ -149,7 +149,7 @@ L39:    pop
 L40:    pop2
 L41:    iload_2
 L42:    ifeq L59
-L45:    getstatic Field GF else Ljava/util/HashMap;
+L45:    getstatic Field GF field1804 Ljava/util/HashMap;
 L48:    getstatic Field GF this I
 L51:    invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L54:    aload_1
@@ -157,7 +157,7 @@ L55:    invokevirtual Method java/util/HashMap put (Ljava/lang/Object;Ljava/lang
 L58:    pop
 L59:    iload_3
 L60:    ifeq L77
-L63:    getstatic Field GF null Ljava/util/HashMap;
+L63:    getstatic Field GF field1802 Ljava/util/HashMap;
 L66:    getstatic Field GF this I
 L69:    invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L72:    aload_1
@@ -172,14 +172,14 @@ L84:    iadd
 L85:    putstatic Field GF this I
 L88:    return
 L89:    
-        .attribute StackMap b'\x00\x02\x00\x3B\x00\x04\x07\x00\x56\x07\x00\x58\x01\x01\x00\x00\x00\x4D\x00\x04\x07\x00\x56\x07\x00\x58\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x3B\x00\x04\x07\x00\x58\x07\x00\x5A\x01\x01\x00\x00\x00\x4D\x00\x04\x07\x00\x58\x07\x00\x5A\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (I)Leb;
+.method public static method793 : (I)Leb;
     .code stack 3 locals 2
         .catch java/lang/Exception from L0 to L19 using L21
-L0:     getstatic Field GF char Ljava/util/HashMap;
+L0:     getstatic Field GF field1803 Ljava/util/HashMap;
 L3:     iload_0
 L4:     invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L7:     invokevirtual Method java/util/HashMap get (Ljava/lang/Object;)Ljava/lang/Object;
@@ -195,15 +195,15 @@ L26:    aload_1
 L27:    invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/Throwable;)V
 L30:    athrow
 L31:    
-        .attribute StackMap b'\x00\x02\x00\x14\x00\x00\x00\x01\x07\x00\x68\x00\x15\x00\x01\x01\x00\x01\x07\x00\x5B'
+        .attribute StackMap b'\x00\x02\x00\x14\x00\x00\x00\x01\x07\x00\x66\x00\x15\x00\x01\x01\x00\x01\x07\x00\x5E'
     .end code
 .end method
 
-.method public static break : (Leb;)Ljava/lang/String;
+.method public static method794 : (Leb;)Ljava/lang/String;
     .code stack 2 locals 1
-L0:     getstatic Field GF "enum" Ljava/util/HashMap;
+L0:     getstatic Field GF field1805 Ljava/util/HashMap;
 L3:     aload_0
-L4:     invokestatic Method GF else (Leb;)I
+L4:     invokestatic Method GF method790 (Leb;)I
 L7:     invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L10:    invokevirtual Method java/util/HashMap get (Ljava/lang/Object;)Ljava/lang/Object;
 L13:    checkcast java/lang/String

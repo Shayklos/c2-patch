@@ -14,13 +14,13 @@ L5:
 .method static native nglTextureStorage3DMultisampleEXT : (IIIIIIIZJ)V
 .end method
 
-.method public static else : (IIIIIIZ)V
+.method public static method2785 : (IIIIIIZ)V
     .code stack 9 locals 9
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb PO J
 L6:     dup2
 L7:     lstore 7
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -35,7 +35,7 @@ L28:
     .end code
 .end method
 
-.method public static break : (IIIIIZ)V
+.method public static method2786 : (IIIIIZ)V
     .code stack 6 locals 6
 L0:     iload_0
 L1:     iload_1
@@ -43,13 +43,13 @@ L2:     iload_2
 L3:     iload_3
 L4:     iload 4
 L6:     iload 5
-L8:     invokestatic Method org/lwjgl/opengl/GL43 break (IIIIIZ)V
+L8:     invokestatic Method org/lwjgl/opengl/GL43 method4552 (IIIIIZ)V
 L11:    return
 L12:    
     .end code
 .end method
 
-.method public static break : (IIIIIIZ)V
+.method public static method2787 : (IIIIIIZ)V
     .code stack 7 locals 7
 L0:     iload_0
 L1:     iload_1
@@ -58,7 +58,7 @@ L3:     iload_3
 L4:     iload 4
 L6:     iload 5
 L8:     iload 6
-L10:    invokestatic Method org/lwjgl/opengl/GL43 break (IIIIIIZ)V
+L10:    invokestatic Method org/lwjgl/opengl/GL43 method4542 (IIIIIIZ)V
 L13:    return
 L14:    
     .end code
@@ -67,13 +67,13 @@ L14:
 .method static native nglTextureStorage2DMultisampleEXT : (IIIIIIZJ)V
 .end method
 
-.method public static break : (IIIIIIIZ)V
+.method public static method2788 : (IIIIIIIZ)V
     .code stack 10 locals 10
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb sL J
 L6:     dup2
 L7:     lstore 8
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2

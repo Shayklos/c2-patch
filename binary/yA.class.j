@@ -3,11 +3,11 @@
 .super java/lang/Object
 .implements java/util/Comparator
 
-.method public break : (LvA;LvA;)I
+.method public method695 : (LvA;LvA;)I
     .code stack 2 locals 3
 L0:     aload_1
 L1:     aload_2
-L2:     invokestatic Method NA else (LvA;LvA;)I
+L2:     invokestatic Method NA method905 (LvA;LvA;)I
 L5:     ireturn
 L6:     
     .end code
@@ -29,7 +29,7 @@ L1:     aload_1
 L2:     checkcast vA
 L5:     aload_2
 L6:     checkcast vA
-L9:     invokevirtual Method yA break (LvA;LvA;)I
+L9:     invokevirtual Method yA method695 (LvA;LvA;)I
 L12:    ireturn
 L13:    
     .end code
@@ -38,5 +38,5 @@ L13:
     vA NA [0] private static
     yA [0] [0] static
 .end innerclasses
-.enclosing method NA else (LNA;II)V
+.enclosing method NA method975 (LNA;II)V
 .end class

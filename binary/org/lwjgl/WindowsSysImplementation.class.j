@@ -1,7 +1,7 @@
 .version 49 0
 .class final super org/lwjgl/WindowsSysImplementation
 .super org/lwjgl/DefaultSysImplementation
-.field private static final do I = 24
+.field private static final field2483 I = 24
 
 .method <init> : ()V
     .code stack 1 locals 1
@@ -12,9 +12,9 @@ L5:
     .end code
 .end method
 
-.method private static catch : ()J
+.method private static method1771 : ()J
     .code stack 3 locals 1
-L0:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L0:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L3:     ifne L9
 L6:     lconst_0
 L7:     lreturn
@@ -39,7 +39,7 @@ L37:
     .end code
 .end method
 
-.method public break : ()Ljava/lang/String;
+.method public method1766 : ()Ljava/lang/String;
     .code stack 1 locals 1
 L0:     invokestatic Method org/lwjgl/WindowsSysImplementation nGetClipboard ()Ljava/lang/String;
 L3:     areturn
@@ -47,7 +47,7 @@ L4:
     .end code
 .end method
 
-.method public short : ()J
+.method public method1769 : ()J
     .code stack 2 locals 1
 L0:     invokestatic Method org/lwjgl/WindowsSysImplementation nGetTime ()J
 L3:     lreturn
@@ -55,7 +55,7 @@ L4:
     .end code
 .end method
 
-.method public else : ()J
+.method public method1768 : ()J
     .code stack 2 locals 1
 L0:     ldc2_w 1000L
 L3:     lreturn
@@ -63,7 +63,7 @@ L4:
     .end code
 .end method
 
-.method public const : ()Z
+.method public method1770 : ()Z
     .code stack 3 locals 1
 L0:     iconst_1
 L1:     dup
@@ -76,15 +76,15 @@ L5:
 
 .method static <clinit> : ()V
     .code stack 0 locals 0
-L0:     invokestatic Method org/lwjgl/Sys short ()V
+L0:     invokestatic Method org/lwjgl/Sys method1895 ()V
 L3:     return
 L4:     
     .end code
 .end method
 
-.method public break : (Ljava/lang/String;Ljava/lang/String;)V
+.method public method1767 : (Ljava/lang/String;Ljava/lang/String;)V
     .code stack 6 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L0:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L3:     ifne L9
 L6:     invokestatic Method org/lwjgl/WindowsSysImplementation initCommonControls ()V
 L9:     ldc "*** Alert *** %s\u000A%s\u000A"
@@ -113,27 +113,27 @@ L34:    aastore
 L35:    invokestatic Method java/lang/String format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
 L38:    invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
 L41:    aload_1
-L42:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
+L42:    invokestatic Method org/lwjgl/MemoryUtil method1854 (Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
 L45:    astore_1
 L46:    aload_2
-L47:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
+L47:    invokestatic Method org/lwjgl/MemoryUtil method1854 (Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
 L50:    astore_2
-L51:    invokestatic Method org/lwjgl/WindowsSysImplementation catch ()J
+L51:    invokestatic Method org/lwjgl/WindowsSysImplementation method1771 ()J
 L54:    aload_1
-L55:    invokestatic Method org/lwjgl/MemoryUtil const (Ljava/nio/ByteBuffer;)J
+L55:    invokestatic Method org/lwjgl/MemoryUtil method1873 (Ljava/nio/ByteBuffer;)J
 L58:    aload_2
-L59:    invokestatic Method org/lwjgl/MemoryUtil const (Ljava/nio/ByteBuffer;)J
+L59:    invokestatic Method org/lwjgl/MemoryUtil method1873 (Ljava/nio/ByteBuffer;)J
 L62:    invokestatic Method org/lwjgl/WindowsSysImplementation nAlert (JJJ)V
 L65:    return
 L66:    
-        .attribute StackMap b'\x00\x01\x00\x09\x00\x03\x07\x00\x02\x07\x00\x42\x07\x00\x42\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x09\x00\x03\x07\x00\x02\x07\x00\x44\x07\x00\x44\x00\x00'
     .end code
 .end method
 
 .method private static native nAlert : (JJJ)V
 .end method
 
-.method public float : ()I
+.method public method1772 : ()I
     .code stack 3 locals 1
 L0:     bipush 24
 L2:     iconst_1
@@ -153,7 +153,7 @@ L6:
 .method private static native initCommonControls : ()V
 .end method
 
-.method public break : (Ljava/lang/String;)Z
+.method public method1773 : (Ljava/lang/String;)Z
     .code stack 5 locals 3
         .catch java/lang/Exception from L0 to L37 using L42
 L0:     iconst_3
@@ -214,7 +214,7 @@ L80:    dup
 L81:    pop2
 L82:    ireturn
 L83:    
-        .attribute StackMap b'\x00\x02\x00\x29\x00\x00\x00\x01\x07\x00\x19\x00\x2A\x00\x02\x07\x00\x02\x07\x00\x42\x00\x01\x07\x00\x63'
+        .attribute StackMap b'\x00\x02\x00\x29\x00\x00\x00\x01\x07\x00\x19\x00\x2A\x00\x02\x07\x00\x02\x07\x00\x44\x00\x01\x07\x00\x68'
     .end code
 .end method
 .innerclasses

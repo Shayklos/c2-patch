@@ -26,5 +26,5 @@ L12:
 .innerclasses
     org/lwjgl/opengl/bc [0] [0] static
 .end innerclasses
-.enclosing method org/lwjgl/opengl/Display break ()V
+.enclosing method org/lwjgl/opengl/Display method3042 ()V
 .end class

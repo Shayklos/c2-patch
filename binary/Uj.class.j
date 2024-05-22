@@ -1,7 +1,7 @@
 .version 46 0
 .class public final super Uj
 .super java/lang/RuntimeException
-.field private static final do J = 1L
+.field private static final field615 J = 1L
 
 .method public <init> : (Ljava/lang/Throwable;)V
     .code stack 2 locals 2

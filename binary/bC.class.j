@@ -2,11 +2,11 @@
 .class public super abstract bC
 .super qc
 .field public this F
-.field public else LgB;
-.field public "enum" Z
-.field public do F
+.field public field68 LgB;
+.field public field69 Z
+.field public field70 F
 
-.method public "native" : ()Z
+.method public method39 : ()Z
     .code stack 3 locals 1
 L0:     iconst_1
 L1:     dup
@@ -17,14 +17,14 @@ L5:
     .end code
 .end method
 
-.method public const : (LgB;I)V
+.method public method40 : (LgB;I)V
     .code stack 0 locals 3
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public implements : ()Z
+.method public method41 : ()Z
     .code stack 3 locals 1
 L0:     iconst_0
 L1:     iconst_1
@@ -35,7 +35,7 @@ L5:
     .end code
 .end method
 
-.method public throws : ()F
+.method public method42 : ()F
     .code stack 1 locals 1
 L0:     fconst_0
 L1:     freturn
@@ -43,10 +43,10 @@ L2:
     .end code
 .end method
 
-.method public instanceof : ()V
+.method public method43 : ()V
     .code stack 6 locals 1
 L0:     aload_0
-L1:     getfield Field bC do F
+L1:     getfield Field bC field70 F
 L4:     fconst_0
 L5:     fcmpg
 L6:     ifge L31
@@ -62,7 +62,7 @@ L22:    fmul
 L23:    fconst_2
 L24:    fmul
 L25:    fsub
-L26:    invokestatic Method org/lwjgl/opengl/GL11 const (FFF)V
+L26:    invokestatic Method org/lwjgl/opengl/GL11 method3807 (FFF)V
 L29:    return
 L30:    athrow
 L31:    fconst_0
@@ -80,17 +80,17 @@ L47:    fmul
 L48:    fconst_2
 L49:    fmul
 L50:    fsub
-L51:    invokestatic Method org/lwjgl/opengl/GL11 const (FFF)V
+L51:    invokestatic Method org/lwjgl/opengl/GL11 method3807 (FFF)V
 L54:    return
 L55:    
-        .attribute StackMap b'\x00\x02\x00\x1E\x00\x00\x00\x01\x07\x00\x24\x00\x1F\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x1E\x00\x00\x00\x01\x07\x00\x25\x00\x1F\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public boolean : ()Z
+.method public method44 : ()Z
     .code stack 3 locals 1
 L0:     aload_0
-L1:     getfield Field bC do F
+L1:     getfield Field bC field70 F
 L4:     fconst_0
 L5:     fcmpg
 L6:     iflt L18
@@ -111,11 +111,11 @@ L26:    dup
 L27:    pop2
 L28:    ireturn
 L29:    
-        .attribute StackMap b'\x00\x03\x00\x12\x00\x01\x07\x00\x02\x00\x00\x00\x17\x00\x00\x00\x01\x07\x00\x24\x00\x18\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x12\x00\x01\x07\x00\x02\x00\x00\x00\x17\x00\x00\x00\x01\x07\x00\x25\x00\x18\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public final "transient" : ()V
+.method public final method45 : ()V
     .code stack 6 locals 1
 L0:     aload_0
 L1:     dup
@@ -123,14 +123,14 @@ L2:     iconst_1
 L3:     aload_0
 L4:     dup_x2
 L5:     aload_0
-L6:     invokevirtual Method bC "strictfp" ()V
+L6:     invokevirtual Method bC method49 ()V
 L9:     invokevirtual Method bC return ()V
 L12:    iconst_1
 L13:    dup
 L14:    pop2
-L15:    putfield Field bC "enum" Z
-L18:    invokevirtual Method bC "volatile" ()V
-L21:    invokevirtual Method bC "public" ()V
+L15:    putfield Field bC field69 Z
+L18:    invokevirtual Method bC method20 ()V
+L21:    invokevirtual Method bC method33 ()V
 L24:    return
 L25:    
     .end code
@@ -144,17 +144,17 @@ L2:
     .end code
 .end method
 
-.method public assert : ()V
+.method public method46 : ()V
     .code stack 2 locals 1
-L0:     getstatic Field zg void Lzg;
+L0:     getstatic Field zg field460 Lzg;
 L3:     fconst_1
-L4:     invokestatic Method UE break (Lzg;F)V
+L4:     invokestatic Method UE method422 (Lzg;F)V
 L7:     return
 L8:     
     .end code
 .end method
 
-.method public else : (LgB;I)Z
+.method public method47 : (LgB;I)Z
     .code stack 3 locals 3
 L0:     iconst_0
 L1:     iconst_1
@@ -168,62 +168,62 @@ L5:
 .method public try : (LgB;)V
     .code stack 7 locals 2
 L0:     aload_0
-L1:     getfield Field bC else LgB;
+L1:     getfield Field bC field68 LgB;
 L4:     aload_1
 L5:     if_acmpne L10
 L8:     return
 L9:     athrow
 L10:    aload_0
-L11:    getfield Field bC else LgB;
+L11:    getfield Field bC field68 LgB;
 L14:    ifnull L40
 L17:    aconst_null
 L18:    aload_0
 L19:    dup
 L20:    dup_x2
-L21:    getfield Field bC else LgB;
+L21:    getfield Field bC field68 LgB;
 L24:    iconst_0
 L25:    iconst_1
 L26:    dup
 L27:    pop2
-L28:    putfield Field gB short Z
-L31:    getfield Field bC else LgB;
-L34:    invokevirtual Method gB null ()V
-L37:    putfield Field bC else LgB;
+L28:    putfield Field gB field1131 Z
+L31:    getfield Field bC field68 LgB;
+L34:    invokevirtual Method gB method478 ()V
+L37:    putfield Field bC field68 LgB;
 L40:    aload_1
 L41:    ifnull L53
 L44:    aload_1
-L45:    invokevirtual Method gB default ()Z
+L45:    invokevirtual Method gB method584 ()Z
 L48:    ifne L53
 L51:    return
 L52:    athrow
 L53:    aload_0
 L54:    dup
 L55:    aload_1
-L56:    putfield Field bC else LgB;
-L59:    getfield Field bC else LgB;
+L56:    putfield Field bC field68 LgB;
+L59:    getfield Field bC field68 LgB;
 L62:    ifnull L83
 L65:    aload_0
 L66:    dup
-L67:    getfield Field bC else LgB;
+L67:    getfield Field bC field68 LgB;
 L70:    iconst_1
 L71:    dup
 L72:    dup
 L73:    pop2
-L74:    putfield Field gB short Z
-L77:    getfield Field bC else LgB;
+L74:    putfield Field gB field1131 Z
+L77:    getfield Field bC field68 LgB;
 L80:    invokevirtual Method gB true ()V
 L83:    return
 L84:    
-        .attribute StackMap b'\x00\x06\x00\x09\x00\x00\x00\x01\x07\x00\x24\x00\x0A\x00\x02\x07\x00\x02\x07\x00\x46\x00\x00\x00\x28\x00\x02\x07\x00\x02\x07\x00\x46\x00\x00\x00\x34\x00\x00\x00\x01\x07\x00\x24\x00\x35\x00\x02\x07\x00\x02\x07\x00\x46\x00\x00\x00\x53\x00\x02\x07\x00\x02\x07\x00\x46\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x09\x00\x00\x00\x01\x07\x00\x25\x00\x0A\x00\x02\x07\x00\x02\x07\x00\x48\x00\x00\x00\x28\x00\x02\x07\x00\x02\x07\x00\x48\x00\x00\x00\x34\x00\x00\x00\x01\x07\x00\x25\x00\x35\x00\x02\x07\x00\x02\x07\x00\x48\x00\x00\x00\x53\x00\x02\x07\x00\x02\x07\x00\x48\x00\x00'
     .end code
 .end method
 
-.method public int : ()V
+.method public method26 : ()V
     .code stack 5 locals 1
 L0:     aload_0
 L1:     dup
-L2:     invokespecial Method qc int ()V
-L5:     getfield Field bC do F
+L2:     invokespecial Method qc method26 ()V
+L5:     getfield Field bC field70 F
 L8:     fconst_0
 L9:     fcmpl
 L10:    ifne L15
@@ -234,8 +234,8 @@ L16:    dup
 L17:    dup
 L18:    getfield Field bC this F
 L21:    aload_0
-L22:    getfield Field bC do F
-L25:    getstatic Field ib do F
+L22:    getfield Field bC field70 F
+L25:    getstatic Field ib field2312 F
 L28:    fmul
 L29:    fadd
 L30:    putfield Field bC this F
@@ -248,7 +248,7 @@ L42:    aload_0
 L43:    dup_x1
 L44:    fconst_1
 L45:    putfield Field bC this F
-L48:    putfield Field bC do F
+L48:    putfield Field bC field70 F
 L51:    aload_0
 L52:    getfield Field bC this F
 L55:    fconst_0
@@ -259,14 +259,14 @@ L61:    aload_0
 L62:    dup_x1
 L63:    fconst_0
 L64:    putfield Field bC this F
-L67:    putfield Field bC do F
+L67:    putfield Field bC field70 F
 L70:    return
 L71:    
-        .attribute StackMap b'\x00\x04\x00\x0E\x00\x00\x00\x01\x07\x00\x24\x00\x0F\x00\x01\x07\x00\x02\x00\x00\x00\x33\x00\x01\x07\x00\x02\x00\x00\x00\x46\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x0E\x00\x00\x00\x01\x07\x00\x25\x00\x0F\x00\x01\x07\x00\x02\x00\x00\x00\x33\x00\x01\x07\x00\x02\x00\x00\x00\x46\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public else : (LgB;IC)Z
+.method public method48 : (LgB;IC)Z
     .code stack 3 locals 4
 L0:     iconst_0
 L1:     iconst_1
@@ -277,19 +277,19 @@ L5:
     .end code
 .end method
 
-.method public abstract "strictfp" : ()V
+.method public abstract method49 : ()V
 .end method
 
-.method public import : ()LgB;
+.method public method50 : ()LgB;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field bC else LgB;
+L1:     getfield Field bC field68 LgB;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method public void : ()LbC;
+.method public method51 : ()LbC;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     areturn
@@ -315,14 +315,14 @@ L16:    pop2
 L17:    dup
 L18:    invokespecial Method VD <init> ()V
 L21:    invokespecial Method qc <init> (Ld;)V
-L24:    getstatic Field FE "volatile" F
-L27:    invokevirtual Method bC const (FF)V
+L24:    getstatic Field FE field822 F
+L27:    invokevirtual Method bC method32 (FF)V
 L30:    ldc -5e-1f
-L32:    getstatic Field FE "volatile" F
+L32:    getstatic Field FE field822 F
 L35:    fmul
-L36:    invokevirtual Method bC catch (FF)V
+L36:    invokevirtual Method bC method37 (FF)V
 L39:    putfield Field bC this F
-L42:    putfield Field bC do F
+L42:    putfield Field bC field70 F
 L45:    return
 L46:    
     .end code

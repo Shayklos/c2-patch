@@ -1,8 +1,8 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/EXTStencilTwoSide
 .super java/lang/Object
-.field public static final "enum" I = 35088
-.field public static final do I = 35089
+.field public static final field3490 I = 35088
+.field public static final field3491 I = 35089
 
 .method static native nglActiveStencilFaceEXT : (IJ)V
 .end method
@@ -16,13 +16,13 @@ L5:
     .end code
 .end method
 
-.method public static break : (I)V
+.method public static method3520 : (I)V
     .code stack 4 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb ID J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    lload_1
 L13:    invokestatic Method org/lwjgl/opengl/EXTStencilTwoSide nglActiveStencilFaceEXT (IJ)V

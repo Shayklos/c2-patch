@@ -1,80 +1,80 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/Display
 .super java/lang/Object
-.field private static final class Ljava/awt/event/ComponentListener;
-.field private static if Z
+.field private static final field3276 Ljava/awt/event/ComponentListener;
+.field private static field3277 Z
 .field private static true Z
-.field private static for Z
-.field private static case F
-.field private static final byte Ljava/lang/Thread;
-.field private static "super" Z
-.field private static int F
-.field private static short I
-.field private static goto Lorg/lwjgl/opengl/DisplayMode;
-.field private static break I
-.field private static long [Ljava/nio/ByteBuffer;
-.field private static final void Lorg/lwjgl/opengl/DisplayMode;
+.field private static field3278 Z
+.field private static field3279 F
+.field private static final field3280 Ljava/lang/Thread;
+.field private static field3281 Z
+.field private static field3282 F
+.field private static field3283 I
+.field private static field3284 Lorg/lwjgl/opengl/DisplayMode;
+.field private static field3285 I
+.field private static field3286 [Ljava/nio/ByteBuffer;
+.field private static final field3287 Lorg/lwjgl/opengl/DisplayMode;
 .field private static try Lorg/lwjgl/opengl/C;
-.field private static const Ljava/awt/Canvas;
+.field private static field3288 Ljava/awt/Canvas;
 .field private static new I
-.field private static null I
+.field private static field3289 I
 .field private static this Z
-.field private static final char Lorg/lwjgl/opengl/m;
-.field private static else I
-.field private static "enum" Ljava/lang/String;
-.field private static do F
+.field private static final field3290 Lorg/lwjgl/opengl/m;
+.field private static field3291 I
+.field private static field3292 Ljava/lang/String;
+.field private static field3293 F
 
-.method public static "interface" : ()I
+.method public static method2977 : ()I
     .code stack 1 locals 0
 L0:     invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L3:     ifeq L14
 L6:     invokestatic Method org/lwjgl/opengl/Display return ()Lorg/lwjgl/opengl/DisplayMode;
-L9:     invokevirtual Method org/lwjgl/opengl/DisplayMode break ()I
+L9:     invokevirtual Method org/lwjgl/opengl/DisplayMode method3049 ()I
 L12:    ireturn
 L13:    athrow
-L14:    getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L14:    getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L17:    ifnull L28
-L20:    getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L20:    getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L23:    invokevirtual Method java/awt/Canvas getHeight ()I
 L26:    ireturn
 L27:    athrow
-L28:    getstatic Field org/lwjgl/opengl/Display break I
+L28:    getstatic Field org/lwjgl/opengl/Display field3285 I
 L31:    ireturn
 L32:    
-        .attribute StackMap b'\x00\x04\x00\x0D\x00\x00\x00\x01\x07\x00\x43\x00\x0E\x00\x00\x00\x00\x00\x1B\x00\x00\x00\x01\x07\x00\x43\x00\x1C\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x0D\x00\x00\x00\x01\x07\x00\x44\x00\x0E\x00\x00\x00\x00\x00\x1B\x00\x00\x00\x01\x07\x00\x44\x00\x1C\x00\x00\x00\x00'
     .end code
 .end method
 
-.method private static "static" : ()Lorg/lwjgl/opengl/DisplayMode;
+.method private static method2978 : ()Lorg/lwjgl/opengl/DisplayMode;
     .code stack 4 locals 0
 L0:     invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L3:     ifne L33
-L6:     getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L6:     getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L9:     ifnull L33
 L12:    new org/lwjgl/opengl/DisplayMode
 L15:    dup
-L16:    getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L16:    getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L19:    invokevirtual Method java/awt/Canvas getWidth ()I
-L22:    getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L22:    getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L25:    invokevirtual Method java/awt/Canvas getHeight ()I
 L28:    invokespecial Method org/lwjgl/opengl/DisplayMode <init> (II)V
 L31:    areturn
 L32:    athrow
-L33:    getstatic Field org/lwjgl/opengl/Display goto Lorg/lwjgl/opengl/DisplayMode;
+L33:    getstatic Field org/lwjgl/opengl/Display field3284 Lorg/lwjgl/opengl/DisplayMode;
 L36:    areturn
 L37:    
-        .attribute StackMap b'\x00\x02\x00\x20\x00\x00\x00\x01\x07\x00\x43\x00\x21\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x20\x00\x00\x00\x01\x07\x00\x44\x00\x21\x00\x00\x00\x00'
     .end code
 .end method
 
-.method public static "protected" : ()[Lorg/lwjgl/opengl/DisplayMode;
+.method public static method2979 : ()[Lorg/lwjgl/opengl/DisplayMode;
     .code stack 3 locals 5
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L31 using L106
-L6:     getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
+L6:     getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
 L9:     invokeinterface InterfaceMethod org/lwjgl/opengl/m getAvailableDisplayModes ()[Lorg/lwjgl/opengl/DisplayMode; 1
 L14:    dup
 L15:    astore_1
@@ -142,7 +142,7 @@ L109:   monitorexit
 L110:   aload 4
 L112:   athrow
 L113:   
-        .attribute StackMap b'\x00\x04\x00\x20\x00\x00\x00\x01\x07\x00\x43\x00\x21\x00\x02\x07\x00\x04\x07\x00\x69\x00\x00\x00\x69\x00\x00\x00\x01\x07\x00\x43\x00\x6A\x00\x01\x07\x00\x04\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x04\x00\x20\x00\x00\x00\x01\x07\x00\x44\x00\x21\x00\x02\x07\x00\x04\x07\x00\x6A\x00\x00\x00\x69\x00\x00\x00\x01\x07\x00\x44\x00\x6A\x00\x01\x07\x00\x04\x00\x01\x07\x00\x44'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
@@ -156,8 +156,8 @@ L5:     monitorenter
         .catch [0] from L6 to L29 using L38
 L6:     getstatic Field org/lwjgl/opengl/Display true Z
 L9:     ifeq L30
-L12:    getstatic Field org/lwjgl/opengl/Display goto Lorg/lwjgl/opengl/DisplayMode;
-L15:    invokevirtual Method org/lwjgl/opengl/DisplayMode else ()Z
+L12:    getstatic Field org/lwjgl/opengl/Display field3284 Lorg/lwjgl/opengl/DisplayMode;
+L15:    invokevirtual Method org/lwjgl/opengl/DisplayMode method3048 ()Z
 L18:    ifeq L30
 L21:    iconst_1
 L22:    dup
@@ -182,28 +182,28 @@ L40:    monitorexit
 L41:    aload_1
 L42:    athrow
 L43:    
-        .attribute StackMap b'\x00\x05\x00\x1D\x00\x00\x00\x01\x07\x00\x43\x00\x1E\x00\x01\x07\x00\x04\x00\x00\x00\x23\x00\x01\x07\x00\x04\x00\x02\x01\x07\x00\x04\x00\x25\x00\x00\x00\x01\x07\x00\x43\x00\x26\x00\x01\x07\x00\x04\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x05\x00\x1D\x00\x00\x00\x01\x07\x00\x44\x00\x1E\x00\x01\x07\x00\x04\x00\x00\x00\x23\x00\x01\x07\x00\x04\x00\x02\x01\x07\x00\x04\x00\x25\x00\x00\x00\x01\x07\x00\x44\x00\x26\x00\x01\x07\x00\x04\x00\x01\x07\x00\x44'
     .end code
 .end method
 
-.method private static double : ()V
+.method private static method2980 : ()V
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L3:     invokeinterface InterfaceMethod org/lwjgl/opengl/m int ()V 1
-L8:     getstatic Field org/lwjgl/opengl/Display void Lorg/lwjgl/opengl/DisplayMode;
-L11:    putstatic Field org/lwjgl/opengl/Display goto Lorg/lwjgl/opengl/DisplayMode;
+L0:     getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L3:     invokeinterface InterfaceMethod org/lwjgl/opengl/m method4733 ()V 1
+L8:     getstatic Field org/lwjgl/opengl/Display field3287 Lorg/lwjgl/opengl/DisplayMode;
+L11:    putstatic Field org/lwjgl/opengl/Display field3284 Lorg/lwjgl/opengl/DisplayMode;
 L14:    return
 L15:    
     .end code
 .end method
 
-.method public static break : (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/k;Lorg/lwjgl/opengl/CB;)V
+.method public static method2981 : (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/k;Lorg/lwjgl/opengl/CB;)V
     .code stack 6 locals 7
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_3
 L5:     monitorenter
-L6:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L6:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L9:     ifeq L22
 L12:    new java/lang/IllegalStateException
 L15:    dup
@@ -217,11 +217,11 @@ L29:    dup
 L30:    ldc "pixel_format cannot be null"
 L32:    invokespecial Method java/lang/NullPointerException <init> (Ljava/lang/String;)V
 L35:    athrow
-L36:    invokestatic Method org/lwjgl/opengl/Display break ()V
+L36:    invokestatic Method org/lwjgl/opengl/Display method3042 ()V
 L39:    invokestatic Method org/lwjgl/opengl/Display switch ()V
 L42:    invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L45:    ifeq L51
-L48:    invokestatic Method org/lwjgl/opengl/Display "final" ()V
+L48:    invokestatic Method org/lwjgl/opengl/Display method3020 ()V
 L51:    new org/lwjgl/opengl/tC
 L54:    dup
 L55:    invokespecial Method org/lwjgl/opengl/tC <init> ()V
@@ -231,13 +231,13 @@ L61:    putstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
 L64:    aload 4
 L66:    aload_0
 L67:    aload_2
-L68:    invokevirtual Method org/lwjgl/opengl/q break (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/CB;)V
-L71:    invokestatic Method org/lwjgl/opengl/Display long ()V
+L68:    invokevirtual Method org/lwjgl/opengl/q method313 (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/CB;)V
+L71:    invokestatic Method org/lwjgl/opengl/Display method3023 ()V
 L74:    aload 4
 L76:    new org/lwjgl/opengl/Jb
 L79:    dup
 L80:    aload 4
-L82:    getfield Field org/lwjgl/opengl/q do Lorg/lwjgl/opengl/a;
+L82:    getfield Field org/lwjgl/opengl/q field510 Lorg/lwjgl/opengl/a;
 L85:    aload_2
 L86:    aload_1
 L87:    ifnull L101
@@ -248,11 +248,11 @@ L97:    goto L102
 L100:   athrow
 L101:   aconst_null
 L102:   invokespecial Method org/lwjgl/opengl/Jb <init> (Lorg/lwjgl/opengl/a;Lorg/lwjgl/opengl/CB;Lorg/lwjgl/opengl/Jb;)V
-L105:   putfield Field org/lwjgl/opengl/q "enum" Lorg/lwjgl/opengl/Jb;
+L105:   putfield Field org/lwjgl/opengl/q field509 Lorg/lwjgl/opengl/Jb;
         .catch org/lwjgl/LWJGLException from L108 to L114 using L118
         .catch org/lwjgl/LWJGLException from L74 to L100 using L131
         .catch org/lwjgl/LWJGLException from L101 to L117 using L131
-L108:   invokestatic Method org/lwjgl/opengl/Display else ()V
+L108:   invokestatic Method org/lwjgl/opengl/Display method3041 ()V
 L111:   invokestatic Method org/lwjgl/opengl/Display this ()V
 L114:   goto L168
 L117:   athrow
@@ -263,7 +263,7 @@ L117:   athrow
 L118:   astore 5
 L120:   aload 5
 L122:   aload 4
-L124:   invokevirtual Method org/lwjgl/opengl/q short ()V
+L124:   invokevirtual Method org/lwjgl/opengl/q method71 ()V
 L127:   athrow
 L128:   nop
 L129:   nop
@@ -289,15 +289,15 @@ L141:   athrow
 L142:   astore 5
 L144:   aload 5
 L146:   aload 4
-L148:   invokevirtual Method org/lwjgl/opengl/q short ()V
+L148:   invokevirtual Method org/lwjgl/opengl/q method71 ()V
 L151:   athrow
 L152:   nop
 L153:   nop
 L154:   athrow
         .catch [0] from L155 to L170 using L171
 L155:   astore 5
-L157:   getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L160:   invokeinterface InterfaceMethod org/lwjgl/opengl/m int ()V 1
+L157:   getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L160:   invokeinterface InterfaceMethod org/lwjgl/opengl/m method4733 ()V 1
 L165:   aload 5
 L167:   athrow
 L168:   aload_3
@@ -311,19 +311,19 @@ L175:   aload 6
 L177:   athrow
 L178:   athrow
 L179:   
-        .attribute StackMap b'\x00\x11\x00\x16\x00\x04\x07\x00\xB2\x07\x00\xB4\x07\x00\xB6\x07\x00\x04\x00\x00\x00\x24\x00\x04\x07\x00\xB2\x07\x00\xB4\x07\x00\xB6\x07\x00\x04\x00\x00\x00\x33\x00\x04\x07\x00\xB2\x07\x00\xB4\x07\x00\xB6\x07\x00\x04\x00\x00\x00\x64\x00\x00\x00\x01\x07\x00\x43\x00\x65\x00\x05\x07\x00\xB2\x07\x00\xB4\x07\x00\xB6\x07\x00\x04\x07\x00\x10\x00\x05\x07\x00\x10\x08\x00\x4C\x08\x00\x4C\x07\x00\xD7\x07\x00\xB6\x00\x66\x00\x05\x07\x00\xB2\x07\x00\xB4\x07\x00\xB6\x07\x00\x04\x07\x00\x10\x00\x06\x07\x00\x10\x08\x00\x4C\x08\x00\x4C\x07\x00\xD7\x07\x00\xB6\x07\x00\xCF\x00\x75\x00\x00\x00\x01\x07\x00\x43\x00\x76\x00\x05\x07\x00\xB2\x07\x00\xB4\x07\x00\xB6\x07\x00\x04\x07\x00\x10\x00\x01\x07\x00\x5A\x00\x80\x00\x00\x00\x01\x07\x00\x43\x00\x83\x00\x05\x07\x00\xB2\x07\x00\xB4\x07\x00\xB6\x07\x00\x04\x07\x00\x10\x00\x01\x07\x00\x5A\x00\x8B\x00\x00\x00\x01\x07\x00\x43\x00\x8E\x00\x05\x07\x00\xB2\x07\x00\xB4\x07\x00\xB6\x07\x00\x04\x07\x00\x10\x00\x01\x07\x00\x5A\x00\x98\x00\x00\x00\x01\x07\x00\x43\x00\x9B\x00\x05\x07\x00\xB2\x07\x00\xB4\x07\x00\xB6\x07\x00\x04\x07\x00\x10\x00\x01\x07\x00\x5A\x00\xA8\x00\x05\x07\x00\xB2\x07\x00\xB4\x07\x00\xB6\x07\x00\x04\x07\x00\x10\x00\x00\x00\xAB\x00\x04\x07\x00\xB2\x07\x00\xB4\x07\x00\xB6\x07\x00\x04\x00\x01\x07\x00\x43\x00\xB2\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x11\x00\x16\x00\x04\x07\x00\xB7\x07\x00\xB9\x07\x00\xBB\x07\x00\x04\x00\x00\x00\x24\x00\x04\x07\x00\xB7\x07\x00\xB9\x07\x00\xBB\x07\x00\x04\x00\x00\x00\x33\x00\x04\x07\x00\xB7\x07\x00\xB9\x07\x00\xBB\x07\x00\x04\x00\x00\x00\x64\x00\x00\x00\x01\x07\x00\x44\x00\x65\x00\x05\x07\x00\xB7\x07\x00\xB9\x07\x00\xBB\x07\x00\x04\x07\x00\x10\x00\x05\x07\x00\x10\x08\x00\x4C\x08\x00\x4C\x07\x00\xE0\x07\x00\xBB\x00\x66\x00\x05\x07\x00\xB7\x07\x00\xB9\x07\x00\xBB\x07\x00\x04\x07\x00\x10\x00\x06\x07\x00\x10\x08\x00\x4C\x08\x00\x4C\x07\x00\xE0\x07\x00\xBB\x07\x00\xD7\x00\x75\x00\x00\x00\x01\x07\x00\x44\x00\x76\x00\x05\x07\x00\xB7\x07\x00\xB9\x07\x00\xBB\x07\x00\x04\x07\x00\x10\x00\x01\x07\x00\x5B\x00\x80\x00\x00\x00\x01\x07\x00\x44\x00\x83\x00\x05\x07\x00\xB7\x07\x00\xB9\x07\x00\xBB\x07\x00\x04\x07\x00\x10\x00\x01\x07\x00\x5B\x00\x8B\x00\x00\x00\x01\x07\x00\x44\x00\x8E\x00\x05\x07\x00\xB7\x07\x00\xB9\x07\x00\xBB\x07\x00\x04\x07\x00\x10\x00\x01\x07\x00\x5B\x00\x98\x00\x00\x00\x01\x07\x00\x44\x00\x9B\x00\x05\x07\x00\xB7\x07\x00\xB9\x07\x00\xBB\x07\x00\x04\x07\x00\x10\x00\x01\x07\x00\x5B\x00\xA8\x00\x05\x07\x00\xB7\x07\x00\xB9\x07\x00\xBB\x07\x00\x04\x07\x00\x10\x00\x00\x00\xAB\x00\x04\x07\x00\xB7\x07\x00\xB9\x07\x00\xBB\x07\x00\x04\x00\x01\x07\x00\x44\x00\xB2\x00\x00\x00\x01\x07\x00\x44'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static else : ([Ljava/nio/ByteBuffer;)I
+.method public static method2982 : ([Ljava/nio/ByteBuffer;)I
     .code stack 4 locals 5
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_1
 L5:     monitorenter
         .catch [0] from L6 to L91 using L126
-L6:     getstatic Field org/lwjgl/opengl/Display long [Ljava/nio/ByteBuffer;
+L6:     getstatic Field org/lwjgl/opengl/Display field3286 [Ljava/nio/ByteBuffer;
 L9:     aload_0
 L10:    if_acmpeq L92
 L13:    aload_0
@@ -332,7 +332,7 @@ L15:    anewarray java/nio/ByteBuffer
 L18:    iconst_1
 L19:    dup
 L20:    pop2
-L21:    putstatic Field org/lwjgl/opengl/Display long [Ljava/nio/ByteBuffer;
+L21:    putstatic Field org/lwjgl/opengl/Display field3286 [Ljava/nio/ByteBuffer;
 L24:    iconst_0
 L25:    iconst_1
 L26:    dup
@@ -342,7 +342,7 @@ L29:    istore_2
 L30:    aload_0
 L31:    arraylength
 L32:    if_icmpge L92
-L35:    getstatic Field org/lwjgl/opengl/Display long [Ljava/nio/ByteBuffer;
+L35:    getstatic Field org/lwjgl/opengl/Display field3286 [Ljava/nio/ByteBuffer;
 L38:    aload_0
 L39:    iload_2
 L40:    dup_x1
@@ -355,7 +355,7 @@ L50:    iload_2
 L51:    aaload
 L52:    invokevirtual Method java/nio/ByteBuffer position ()I
 L55:    istore_3
-L56:    getstatic Field org/lwjgl/opengl/Display long [Ljava/nio/ByteBuffer;
+L56:    getstatic Field org/lwjgl/opengl/Display field3286 [Ljava/nio/ByteBuffer;
 L59:    iload_2
 L60:    aaload
 L61:    aload_0
@@ -367,7 +367,7 @@ L68:    iload_2
 L69:    aaload
 L70:    iload_3
 L71:    invokevirtual Method java/nio/ByteBuffer position (I)Ljava/nio/Buffer;
-L74:    getstatic Field org/lwjgl/opengl/Display long [Ljava/nio/ByteBuffer;
+L74:    getstatic Field org/lwjgl/opengl/Display field3286 [Ljava/nio/ByteBuffer;
 L77:    iload_2
 L78:    iinc 2 1
 L81:    aaload
@@ -378,13 +378,13 @@ L87:    iload_2
 L88:    goto L30
 L91:    athrow
         .catch [0] from L92 to L117 using L126
-L92:    invokestatic Method org/lwjgl/opengl/Display void ()Z
+L92:    invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L95:    ifeq L119
-L98:    getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L98:    getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L101:   ifnonnull L119
-L104:   getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L107:   getstatic Field org/lwjgl/opengl/Display long [Ljava/nio/ByteBuffer;
-L110:   invokeinterface InterfaceMethod org/lwjgl/opengl/m break ([Ljava/nio/ByteBuffer;)I 2
+L104:   getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L107:   getstatic Field org/lwjgl/opengl/Display field3286 [Ljava/nio/ByteBuffer;
+L110:   invokeinterface InterfaceMethod org/lwjgl/opengl/m method4752 ([Ljava/nio/ByteBuffer;)I 2
 L115:   aload_1
 L116:   monitorexit
 L117:   ireturn
@@ -404,18 +404,18 @@ L129:   monitorexit
 L130:   aload 4
 L132:   athrow
 L133:   
-        .attribute StackMap b'\x00\x06\x00\x1E\x00\x03\x07\x00\xEB\x07\x00\x04\x01\x00\x01\x01\x00\x5B\x00\x00\x00\x01\x07\x00\x43\x00\x5C\x00\x02\x07\x00\xEB\x07\x00\x04\x00\x00\x00\x76\x00\x00\x00\x01\x07\x00\x43\x00\x77\x00\x02\x07\x00\xEB\x07\x00\x04\x00\x00\x00\x7E\x00\x02\x07\x00\xEB\x07\x00\x04\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x06\x00\x1E\x00\x03\x07\x00\xF8\x07\x00\x04\x01\x00\x01\x01\x00\x5B\x00\x00\x00\x01\x07\x00\x44\x00\x5C\x00\x02\x07\x00\xF8\x07\x00\x04\x00\x00\x00\x76\x00\x00\x00\x01\x07\x00\x44\x00\x77\x00\x02\x07\x00\xF8\x07\x00\x04\x00\x00\x00\x7E\x00\x02\x07\x00\xF8\x07\x00\x04\x00\x01\x07\x00\x44'
     .end code
 .end method
 
-.method public static else : (FFF)V
+.method public static method2983 : (FFF)V
     .code stack 5 locals 9
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_3
 L5:     monitorenter
         .catch [0] from L6 to L162 using L249
-L6:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L6:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L9:     ifne L23
 L12:    new org/lwjgl/LWJGLException
 L15:    dup
@@ -444,8 +444,8 @@ L57:    dup
 L58:    ldc_w "Invalid contrast value"
 L61:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/lang/String;)V
 L64:    athrow
-L65:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L68:    invokeinterface InterfaceMethod org/lwjgl/opengl/m char ()I 1
+L65:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L68:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4750 ()I 1
 L73:    dup
 L74:    istore 4
 L76:    ifne L90
@@ -519,7 +519,7 @@ L186:   iload 6
 L188:   goto L104
 L191:   athrow
         .catch [0] from L192 to L248 using L249
-L192:   getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
+L192:   getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
 L195:   aload 5
 L197:   invokeinterface InterfaceMethod org/lwjgl/opengl/m setGammaRamp (Ljava/nio/FloatBuffer;)V 2
 L202:   new java/lang/StringBuilder
@@ -551,23 +551,23 @@ L253:   aload 8
 L255:   athrow
 L256:   athrow
 L257:   
-        .attribute StackMap b'\x00\x0E\x00\x17\x00\x04\x02\x02\x02\x07\x00\x04\x00\x00\x00\x25\x00\x04\x02\x02\x02\x07\x00\x04\x00\x00\x00\x30\x00\x04\x02\x02\x02\x07\x00\x04\x00\x00\x00\x41\x00\x04\x02\x02\x02\x07\x00\x04\x00\x00\x00\x5A\x00\x05\x02\x02\x02\x07\x00\x04\x01\x00\x00\x00\x68\x00\x07\x02\x02\x02\x07\x00\x04\x01\x07\x01\x1A\x01\x00\x01\x01\x00\xA2\x00\x00\x00\x01\x07\x00\x43\x00\xA3\x00\x08\x02\x02\x02\x07\x00\x04\x01\x07\x01\x1A\x01\x02\x00\x00\x00\xAD\x00\x08\x02\x02\x02\x07\x00\x04\x01\x07\x01\x1A\x01\x02\x00\x00\x00\xAF\x00\x08\x02\x02\x02\x07\x00\x04\x01\x07\x01\x1A\x01\x02\x00\x01\x07\x01\x1A\x00\xBF\x00\x00\x00\x01\x07\x00\x43\x00\xC0\x00\x07\x02\x02\x02\x07\x00\x04\x01\x07\x01\x1A\x01\x00\x00\x00\xF9\x00\x04\x02\x02\x02\x07\x00\x04\x00\x01\x07\x00\x43\x01\x00\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x0E\x00\x17\x00\x04\x02\x02\x02\x07\x00\x04\x00\x00\x00\x25\x00\x04\x02\x02\x02\x07\x00\x04\x00\x00\x00\x30\x00\x04\x02\x02\x02\x07\x00\x04\x00\x00\x00\x41\x00\x04\x02\x02\x02\x07\x00\x04\x00\x00\x00\x5A\x00\x05\x02\x02\x02\x07\x00\x04\x01\x00\x00\x00\x68\x00\x07\x02\x02\x02\x07\x00\x04\x01\x07\x01\x2A\x01\x00\x01\x01\x00\xA2\x00\x00\x00\x01\x07\x00\x44\x00\xA3\x00\x08\x02\x02\x02\x07\x00\x04\x01\x07\x01\x2A\x01\x02\x00\x00\x00\xAD\x00\x08\x02\x02\x02\x07\x00\x04\x01\x07\x01\x2A\x01\x02\x00\x00\x00\xAF\x00\x08\x02\x02\x02\x07\x00\x04\x01\x07\x01\x2A\x01\x02\x00\x01\x07\x01\x2A\x00\xBF\x00\x00\x00\x01\x07\x00\x44\x00\xC0\x00\x07\x02\x02\x02\x07\x00\x04\x01\x07\x01\x2A\x01\x00\x00\x00\xF9\x00\x04\x02\x02\x02\x07\x00\x04\x00\x01\x07\x00\x44\x01\x00\x00\x00\x00\x01\x07\x00\x44'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static float : (Z)V
+.method public static method2984 : (Z)V
     .code stack 2 locals 1
 L0:     iload_0
-L1:     getstatic Field org/lwjgl/opengl/Display goto Lorg/lwjgl/opengl/DisplayMode;
-L4:     invokestatic Method org/lwjgl/opengl/Display break (ZLorg/lwjgl/opengl/DisplayMode;)V
+L1:     getstatic Field org/lwjgl/opengl/Display field3284 Lorg/lwjgl/opengl/DisplayMode;
+L4:     invokestatic Method org/lwjgl/opengl/Display method2997 (ZLorg/lwjgl/opengl/DisplayMode;)V
 L7:     return
 L8:     
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method static synthetic finally : ()V
+.method static synthetic method2985 : ()V
     .code stack 0 locals 0
 L0:     invokestatic Method org/lwjgl/opengl/Display new ()V
 L3:     return
@@ -582,7 +582,7 @@ L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L11 using L13
-L6:     getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L6:     getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L9:     aload_0
 L10:    monitorexit
 L11:    areturn
@@ -594,56 +594,56 @@ L15:    monitorexit
 L16:    aload_1
 L17:    athrow
 L18:    
-        .attribute StackMap b'\x00\x02\x00\x0C\x00\x00\x00\x01\x07\x00\x43\x00\x0D\x00\x01\x07\x00\x04\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x02\x00\x0C\x00\x00\x00\x01\x07\x00\x44\x00\x0D\x00\x01\x07\x00\x04\x00\x01\x07\x00\x44'
     .end code
 .end method
 
-.method static synthetic break : ([Ljava/nio/ByteBuffer;)[Ljava/nio/ByteBuffer;
+.method static synthetic method2986 : ([Ljava/nio/ByteBuffer;)[Ljava/nio/ByteBuffer;
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     putstatic Field org/lwjgl/opengl/Display long [Ljava/nio/ByteBuffer;
+L2:     putstatic Field org/lwjgl/opengl/Display field3286 [Ljava/nio/ByteBuffer;
 L5:     areturn
 L6:     
     .end code
 .end method
 
-.method public static "native" : ()V
+.method public static method2987 : ()V
     .code stack 1 locals 0
 L0:     getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
-L3:     invokeinterface InterfaceMethod org/lwjgl/opengl/C break ()V 1
+L3:     invokeinterface InterfaceMethod org/lwjgl/opengl/C method74 ()V 1
 L8:     return
 L9:     
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method static synthetic short : (I)I
+.method static synthetic method2988 : (I)I
     .code stack 2 locals 1
 L0:     iload_0
 L1:     dup
-L2:     putstatic Field org/lwjgl/opengl/Display short I
+L2:     putstatic Field org/lwjgl/opengl/Display field3283 I
 L5:     ireturn
 L6:     
     .end code
 .end method
 
-.method public static implements : ()V
+.method public static method2989 : ()V
     .code stack 3 locals 2
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L33 using L37
-L6:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L6:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L9:     ifne L23
 L12:    new java/lang/IllegalStateException
 L15:    dup
 L16:    ldc_w "Display not created"
 L19:    invokespecial Method java/lang/IllegalStateException <init> (Ljava/lang/String;)V
 L22:    athrow
-L23:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L26:    invokeinterface InterfaceMethod org/lwjgl/opengl/m class ()V 1
+L23:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L26:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4702 ()V 1
 L31:    aload_0
 L32:    monitorexit
 L33:    goto L42
@@ -654,14 +654,14 @@ L38:    aload_0
 L39:    monitorexit
 L40:    aload_1
 L41:    athrow
-L42:    invokestatic Method org/lwjgl/opengl/Display "enum" ()V
+L42:    invokestatic Method org/lwjgl/opengl/Display method3022 ()V
 L45:    return
 L46:    
-        .attribute StackMap b'\x00\x04\x00\x17\x00\x01\x07\x00\x04\x00\x00\x00\x24\x00\x00\x00\x01\x07\x00\x43\x00\x25\x00\x01\x07\x00\x04\x00\x01\x07\x00\x43\x00\x2A\x00\x01\x07\x00\x04\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x17\x00\x01\x07\x00\x04\x00\x00\x00\x24\x00\x00\x00\x01\x07\x00\x44\x00\x25\x00\x01\x07\x00\x04\x00\x01\x07\x00\x44\x00\x2A\x00\x01\x07\x00\x04\x00\x00'
     .end code
 .end method
 
-.method private static throws : ()Lorg/lwjgl/opengl/m;
+.method private static method2990 : ()Lorg/lwjgl/opengl/m;
     .code stack 3 locals 0
 L0:     invokestatic Method org/lwjgl/LWJGLUtil getPlatform ()I
 L3:     tableswitch 1
@@ -691,11 +691,11 @@ L62:    ldc_w "Unsupported platform"
 L65:    invokespecial Method java/lang/IllegalStateException <init> (Ljava/lang/String;)V
 L68:    athrow
 L69:    
-        .attribute StackMap b'\x00\x07\x00\x1C\x00\x00\x00\x00\x00\x1F\x00\x00\x00\x01\x08\x00\x1C\x00\x28\x00\x00\x00\x01\x07\x00\x43\x00\x29\x00\x00\x00\x00\x00\x31\x00\x00\x00\x01\x07\x00\x43\x00\x32\x00\x00\x00\x00\x00\x3A\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x1C\x00\x00\x00\x00\x00\x1F\x00\x00\x00\x01\x08\x00\x1C\x00\x28\x00\x00\x00\x01\x07\x00\x44\x00\x29\x00\x00\x00\x00\x00\x31\x00\x00\x00\x01\x07\x00\x44\x00\x32\x00\x00\x00\x00\x00\x3A\x00\x00\x00\x00'
     .end code
 .end method
 
-.method public static break : (Lorg/lwjgl/opengl/h;)V
+.method public static method2991 : (Lorg/lwjgl/opengl/h;)V
     .code stack 3 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -705,7 +705,7 @@ L5:     monitorenter
 L6:     aload_0
 L7:     aconst_null
 L8:     dup
-L9:     invokestatic Method org/lwjgl/opengl/Display break (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/k;LaA;)V
+L9:     invokestatic Method org/lwjgl/opengl/Display method3005 (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/k;LaA;)V
 L12:    aload_1
 L13:    monitorexit
 L14:    return
@@ -718,12 +718,12 @@ L19:    aload_2
 L20:    athrow
 L21:    athrow
 L22:    
-        .attribute StackMap b'\x00\x03\x00\x0F\x00\x00\x00\x01\x07\x00\x43\x00\x10\x00\x02\x07\x01\x5E\x07\x00\x04\x00\x01\x07\x00\x43\x00\x15\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x03\x00\x0F\x00\x00\x00\x01\x07\x00\x44\x00\x10\x00\x02\x07\x01\x77\x07\x00\x04\x00\x01\x07\x00\x44\x00\x15\x00\x00\x00\x01\x07\x00\x44'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static break : (Lorg/lwjgl/opengl/h;LaA;)V
+.method public static method2992 : (Lorg/lwjgl/opengl/h;LaA;)V
     .code stack 3 locals 4
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -733,7 +733,7 @@ L5:     monitorenter
 L6:     aload_0
 L7:     aconst_null
 L8:     aload_1
-L9:     invokestatic Method org/lwjgl/opengl/Display break (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/k;LaA;)V
+L9:     invokestatic Method org/lwjgl/opengl/Display method3005 (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/k;LaA;)V
 L12:    aload_2
 L13:    monitorexit
 L14:    return
@@ -746,30 +746,30 @@ L19:    aload_3
 L20:    athrow
 L21:    athrow
 L22:    
-        .attribute StackMap b'\x00\x03\x00\x0F\x00\x00\x00\x01\x07\x00\x43\x00\x10\x00\x03\x07\x01\x5E\x07\x01\x61\x07\x00\x04\x00\x01\x07\x00\x43\x00\x15\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x03\x00\x0F\x00\x00\x00\x01\x07\x00\x44\x00\x10\x00\x03\x07\x01\x77\x07\x01\x7B\x07\x00\x04\x00\x01\x07\x00\x44\x00\x15\x00\x00\x00\x01\x07\x00\x44'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method static synthetic instanceof : ()V
+.method static synthetic method2993 : ()V
     .code stack 0 locals 0
-L0:     invokestatic Method org/lwjgl/opengl/Display double ()V
+L0:     invokestatic Method org/lwjgl/opengl/Display method2980 ()V
 L3:     return
 L4:     
     .end code
 .end method
 
-.method public static boolean : ()Z
+.method public static method2994 : ()Z
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/opengl/Display if Z
+L0:     getstatic Field org/lwjgl/opengl/Display field3277 Z
 L3:     ireturn
 L4:     
     .end code
 .end method
 
-.method static synthetic "transient" : ()V
+.method static synthetic method2995 : ()V
     .code stack 0 locals 0
-L0:     invokestatic Method org/lwjgl/opengl/Display null ()V
+L0:     invokestatic Method org/lwjgl/opengl/Display method3015 ()V
 L3:     return
 L4:     
     .end code
@@ -787,15 +787,15 @@ L12:
     .end code
 .end method
 
-.method static synthetic assert : ()V
+.method static synthetic method2996 : ()V
     .code stack 0 locals 0
-L0:     invokestatic Method org/lwjgl/opengl/Display break ()V
+L0:     invokestatic Method org/lwjgl/opengl/Display method3042 ()V
 L3:     return
 L4:     
     .end code
 .end method
 
-.method private static break : (ZLorg/lwjgl/opengl/DisplayMode;)V
+.method private static method2997 : (ZLorg/lwjgl/opengl/DisplayMode;)V
     .code stack 3 locals 7
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -808,10 +808,10 @@ L13:    dup
 L14:    ldc_w "mode must be non-null"
 L17:    invokespecial Method java/lang/NullPointerException <init> (Ljava/lang/String;)V
 L20:    athrow
-L21:    getstatic Field org/lwjgl/opengl/Display goto Lorg/lwjgl/opengl/DisplayMode;
+L21:    getstatic Field org/lwjgl/opengl/Display field3284 Lorg/lwjgl/opengl/DisplayMode;
 L24:    astore_3
 L25:    aload_1
-L26:    putstatic Field org/lwjgl/opengl/Display goto Lorg/lwjgl/opengl/DisplayMode;
+L26:    putstatic Field org/lwjgl/opengl/Display field3284 Lorg/lwjgl/opengl/DisplayMode;
 L29:    invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L32:    istore 4
 L34:    iload_0
@@ -823,7 +823,7 @@ L46:    aload_1
 L47:    aload_3
 L48:    invokevirtual Method org/lwjgl/opengl/DisplayMode equals (Ljava/lang/Object;)Z
 L51:    ifne L119
-L54:    invokestatic Method org/lwjgl/opengl/Display void ()Z
+L54:    invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L57:    ifne L64
 L60:    aload_2
 L61:    monitorexit
@@ -833,24 +833,24 @@ L64:    invokestatic Method org/lwjgl/opengl/Display new ()V
         .catch org/lwjgl/LWJGLException from L67 to L79 using L98
 L67:    invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L70:    ifeq L80
-L73:    invokestatic Method org/lwjgl/opengl/Display "final" ()V
+L73:    invokestatic Method org/lwjgl/opengl/Display method3020 ()V
 L76:    goto L88
 L79:    athrow
         .catch org/lwjgl/LWJGLException from L80 to L94 using L98
         .catch [0] from L6 to L62 using L122
         .catch [0] from L64 to L79 using L122
         .catch [0] from L80 to L121 using L122
-L80:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L83:    invokeinterface InterfaceMethod org/lwjgl/opengl/m int ()V 1
-L88:    invokestatic Method org/lwjgl/opengl/Display long ()V
-L91:    invokestatic Method org/lwjgl/opengl/Display else ()V
+L80:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L83:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4733 ()V 1
+L88:    invokestatic Method org/lwjgl/opengl/Display method3023 ()V
+L91:    invokestatic Method org/lwjgl/opengl/Display method3041 ()V
 L94:    aload_2
 L95:    goto L120
 L98:    astore 5
 L100:   getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
-L103:   invokeinterface InterfaceMethod org/lwjgl/opengl/C short ()V 1
-L108:   getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L111:   invokeinterface InterfaceMethod org/lwjgl/opengl/m int ()V 1
+L103:   invokeinterface InterfaceMethod org/lwjgl/opengl/C method71 ()V 1
+L108:   getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L111:   invokeinterface InterfaceMethod org/lwjgl/opengl/m method4733 ()V 1
 L116:   aload 5
 L118:   athrow
 L119:   aload_2
@@ -864,23 +864,23 @@ L126:   aload 6
 L128:   athrow
 L129:   athrow
 L130:   
-        .attribute StackMap b'\x00\x0C\x00\x15\x00\x03\x01\x07\x00\x3F\x07\x00\x04\x00\x00\x00\x36\x00\x05\x01\x07\x00\x3F\x07\x00\x04\x07\x00\x3F\x01\x00\x00\x00\x3F\x00\x00\x00\x01\x07\x00\x43\x00\x40\x00\x05\x01\x07\x00\x3F\x07\x00\x04\x07\x00\x3F\x01\x00\x00\x00\x4F\x00\x00\x00\x01\x07\x00\x43\x00\x50\x00\x05\x01\x07\x00\x3F\x07\x00\x04\x07\x00\x3F\x01\x00\x00\x00\x58\x00\x05\x01\x07\x00\x3F\x07\x00\x04\x07\x00\x3F\x01\x00\x00\x00\x62\x00\x05\x01\x07\x00\x3F\x07\x00\x04\x07\x00\x3F\x01\x00\x01\x07\x00\x5A\x00\x77\x00\x05\x01\x07\x00\x3F\x07\x00\x04\x07\x00\x3F\x01\x00\x00\x00\x78\x00\x05\x01\x07\x00\x3F\x07\x00\x04\x07\x00\x3F\x01\x00\x01\x07\x00\x04\x00\x7A\x00\x03\x01\x07\x00\x3F\x07\x00\x04\x00\x01\x07\x00\x43\x00\x81\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x0C\x00\x15\x00\x03\x01\x07\x00\x3F\x07\x00\x04\x00\x00\x00\x36\x00\x05\x01\x07\x00\x3F\x07\x00\x04\x07\x00\x3F\x01\x00\x00\x00\x3F\x00\x00\x00\x01\x07\x00\x44\x00\x40\x00\x05\x01\x07\x00\x3F\x07\x00\x04\x07\x00\x3F\x01\x00\x00\x00\x4F\x00\x00\x00\x01\x07\x00\x44\x00\x50\x00\x05\x01\x07\x00\x3F\x07\x00\x04\x07\x00\x3F\x01\x00\x00\x00\x58\x00\x05\x01\x07\x00\x3F\x07\x00\x04\x07\x00\x3F\x01\x00\x00\x00\x62\x00\x05\x01\x07\x00\x3F\x07\x00\x04\x07\x00\x3F\x01\x00\x01\x07\x00\x5B\x00\x77\x00\x05\x01\x07\x00\x3F\x07\x00\x04\x07\x00\x3F\x01\x00\x00\x00\x78\x00\x05\x01\x07\x00\x3F\x07\x00\x04\x07\x00\x3F\x01\x00\x01\x07\x00\x04\x00\x7A\x00\x03\x01\x07\x00\x3F\x07\x00\x04\x00\x01\x07\x00\x44\x00\x81\x00\x00\x00\x01\x07\x00\x44'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static break : (Ljava/awt/Canvas;)V
+.method public static method2998 : (Ljava/awt/Canvas;)V
     .code stack 2 locals 4
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_1
 L5:     monitorenter
-L6:     getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L6:     getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L9:     aload_0
 L10:    if_acmpeq L80
 L13:    aload_0
-L14:    putstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
-L17:    invokestatic Method org/lwjgl/opengl/Display void ()Z
+L14:    putstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
+L17:    invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L20:    ifne L27
 L23:    aload_1
 L24:    monitorexit
@@ -890,24 +890,24 @@ L27:    invokestatic Method org/lwjgl/opengl/Display new ()V
         .catch org/lwjgl/LWJGLException from L30 to L42 using L61
 L30:    invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L33:    ifeq L43
-L36:    invokestatic Method org/lwjgl/opengl/Display "final" ()V
+L36:    invokestatic Method org/lwjgl/opengl/Display method3020 ()V
 L39:    goto L51
 L42:    athrow
         .catch org/lwjgl/LWJGLException from L43 to L57 using L61
         .catch [0] from L6 to L25 using L83
         .catch [0] from L27 to L42 using L83
         .catch [0] from L43 to L82 using L83
-L43:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L46:    invokeinterface InterfaceMethod org/lwjgl/opengl/m int ()V 1
-L51:    invokestatic Method org/lwjgl/opengl/Display long ()V
-L54:    invokestatic Method org/lwjgl/opengl/Display else ()V
+L43:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L46:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4733 ()V 1
+L51:    invokestatic Method org/lwjgl/opengl/Display method3023 ()V
+L54:    invokestatic Method org/lwjgl/opengl/Display method3041 ()V
 L57:    aload_1
 L58:    goto L81
 L61:    astore_2
 L62:    getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
-L65:    invokeinterface InterfaceMethod org/lwjgl/opengl/C short ()V 1
-L70:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L73:    invokeinterface InterfaceMethod org/lwjgl/opengl/m int ()V 1
+L65:    invokeinterface InterfaceMethod org/lwjgl/opengl/C method71 ()V 1
+L70:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L73:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4733 ()V 1
 L78:    aload_2
 L79:    athrow
 L80:    aload_1
@@ -921,12 +921,12 @@ L86:    aload_3
 L87:    athrow
 L88:    athrow
 L89:    
-        .attribute StackMap b'\x00\x0A\x00\x1A\x00\x00\x00\x01\x07\x00\x43\x00\x1B\x00\x02\x07\x00\x47\x07\x00\x04\x00\x00\x00\x2A\x00\x00\x00\x01\x07\x00\x43\x00\x2B\x00\x02\x07\x00\x47\x07\x00\x04\x00\x00\x00\x33\x00\x02\x07\x00\x47\x07\x00\x04\x00\x00\x00\x3D\x00\x02\x07\x00\x47\x07\x00\x04\x00\x01\x07\x00\x5A\x00\x50\x00\x02\x07\x00\x47\x07\x00\x04\x00\x00\x00\x51\x00\x02\x07\x00\x47\x07\x00\x04\x00\x01\x07\x00\x04\x00\x53\x00\x02\x07\x00\x47\x07\x00\x04\x00\x01\x07\x00\x43\x00\x58\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x0A\x00\x1A\x00\x00\x00\x01\x07\x00\x44\x00\x1B\x00\x02\x07\x00\x48\x07\x00\x04\x00\x00\x00\x2A\x00\x00\x00\x01\x07\x00\x44\x00\x2B\x00\x02\x07\x00\x48\x07\x00\x04\x00\x00\x00\x33\x00\x02\x07\x00\x48\x07\x00\x04\x00\x00\x00\x3D\x00\x02\x07\x00\x48\x07\x00\x04\x00\x01\x07\x00\x5B\x00\x50\x00\x02\x07\x00\x48\x07\x00\x04\x00\x00\x00\x51\x00\x02\x07\x00\x48\x07\x00\x04\x00\x01\x07\x00\x04\x00\x53\x00\x02\x07\x00\x48\x07\x00\x04\x00\x01\x07\x00\x44\x00\x58\x00\x00\x00\x01\x07\x00\x44'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static "strictfp" : ()Lorg/lwjgl/opengl/k;
+.method public static method2999 : ()Lorg/lwjgl/opengl/k;
     .code stack 1 locals 0
 L0:     getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
 L3:     areturn
@@ -934,7 +934,7 @@ L4:
     .end code
 .end method
 
-.method public static break : (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/CB;)V
+.method public static method3000 : (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/CB;)V
     .code stack 3 locals 4
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -944,7 +944,7 @@ L5:     monitorenter
 L6:     aload_0
 L7:     aconst_null
 L8:     aload_1
-L9:     invokestatic Method org/lwjgl/opengl/Display break (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/k;Lorg/lwjgl/opengl/CB;)V
+L9:     invokestatic Method org/lwjgl/opengl/Display method2981 (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/k;Lorg/lwjgl/opengl/CB;)V
 L12:    aload_2
 L13:    monitorexit
 L14:    return
@@ -957,66 +957,66 @@ L19:    aload_3
 L20:    athrow
 L21:    athrow
 L22:    
-        .attribute StackMap b'\x00\x03\x00\x0F\x00\x00\x00\x01\x07\x00\x43\x00\x10\x00\x03\x07\x00\xB2\x07\x00\xB6\x07\x00\x04\x00\x01\x07\x00\x43\x00\x15\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x03\x00\x0F\x00\x00\x00\x01\x07\x00\x44\x00\x10\x00\x03\x07\x00\xB7\x07\x00\xBB\x07\x00\x04\x00\x01\x07\x00\x44\x00\x15\x00\x00\x00\x01\x07\x00\x44'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static import : ()I
+.method public static method3001 : ()I
     .code stack 1 locals 0
 L0:     invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L3:     ifeq L14
 L6:     invokestatic Method org/lwjgl/opengl/Display return ()Lorg/lwjgl/opengl/DisplayMode;
-L9:     invokevirtual Method org/lwjgl/opengl/DisplayMode const ()I
+L9:     invokevirtual Method org/lwjgl/opengl/DisplayMode method3047 ()I
 L12:    ireturn
 L13:    athrow
-L14:    getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L14:    getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L17:    ifnull L28
-L20:    getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L20:    getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L23:    invokevirtual Method java/awt/Canvas getWidth ()I
 L26:    ireturn
 L27:    athrow
-L28:    getstatic Field org/lwjgl/opengl/Display else I
+L28:    getstatic Field org/lwjgl/opengl/Display field3291 I
 L31:    ireturn
 L32:    
-        .attribute StackMap b'\x00\x04\x00\x0D\x00\x00\x00\x01\x07\x00\x43\x00\x0E\x00\x00\x00\x00\x00\x1B\x00\x00\x00\x01\x07\x00\x43\x00\x1C\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x0D\x00\x00\x00\x01\x07\x00\x44\x00\x0E\x00\x00\x00\x00\x00\x1B\x00\x00\x00\x01\x07\x00\x44\x00\x1C\x00\x00\x00\x00'
     .end code
 .end method
 
-.method static synthetic const : (I)I
+.method static synthetic method3002 : (I)I
     .code stack 2 locals 1
 L0:     iload_0
 L1:     dup
-L2:     putstatic Field org/lwjgl/opengl/Display null I
+L2:     putstatic Field org/lwjgl/opengl/Display field3289 I
 L5:     ireturn
 L6:     
     .end code
 .end method
 
-.method private static "volatile" : ()V
+.method private static method3003 : ()V
     .code stack 5 locals 1
-L0:     invokestatic Method org/lwjgl/opengl/Display "static" ()Lorg/lwjgl/opengl/DisplayMode;
+L0:     invokestatic Method org/lwjgl/opengl/Display method2978 ()Lorg/lwjgl/opengl/DisplayMode;
 L3:     astore_0
-L4:     getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L7:     invokestatic Method org/lwjgl/opengl/Display catch ()I
-L10:    invokestatic Method org/lwjgl/opengl/Display extends ()I
+L4:     getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L7:     invokestatic Method org/lwjgl/opengl/Display method3033 ()I
+L10:    invokestatic Method org/lwjgl/opengl/Display method3004 ()I
 L13:    aload_0
-L14:    invokevirtual Method org/lwjgl/opengl/DisplayMode const ()I
+L14:    invokevirtual Method org/lwjgl/opengl/DisplayMode method3047 ()I
 L17:    aload_0
-L18:    invokevirtual Method org/lwjgl/opengl/DisplayMode break ()I
-L21:    invokeinterface InterfaceMethod org/lwjgl/opengl/m break (IIII)V 5
+L18:    invokevirtual Method org/lwjgl/opengl/DisplayMode method3049 ()I
+L21:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4734 (IIII)V 5
 L26:    return
 L27:    
     .end code
 .end method
 
-.method private static extends : ()I
+.method private static method3004 : ()I
     .code stack 5 locals 0
 L0:     invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L3:     ifne L54
-L6:     getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L6:     getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L9:     ifnonnull L54
-L12:    getstatic Field org/lwjgl/opengl/Display short I
+L12:    getstatic Field org/lwjgl/opengl/Display field3283 I
 L15:    iconst_m1
 L16:    iconst_1
 L17:    dup
@@ -1026,10 +1026,10 @@ L22:    iconst_0
 L23:    iconst_1
 L24:    dup
 L25:    pop2
-L26:    getstatic Field org/lwjgl/opengl/Display void Lorg/lwjgl/opengl/DisplayMode;
-L29:    invokevirtual Method org/lwjgl/opengl/DisplayMode break ()I
-L32:    getstatic Field org/lwjgl/opengl/Display goto Lorg/lwjgl/opengl/DisplayMode;
-L35:    invokevirtual Method org/lwjgl/opengl/DisplayMode break ()I
+L26:    getstatic Field org/lwjgl/opengl/Display field3287 Lorg/lwjgl/opengl/DisplayMode;
+L29:    invokevirtual Method org/lwjgl/opengl/DisplayMode method3049 ()I
+L32:    getstatic Field org/lwjgl/opengl/Display field3284 Lorg/lwjgl/opengl/DisplayMode;
+L35:    invokevirtual Method org/lwjgl/opengl/DisplayMode method3049 ()I
 L38:    isub
 L39:    iconst_2
 L40:    iconst_1
@@ -1039,7 +1039,7 @@ L43:    idiv
 L44:    invokestatic Method java/lang/Math max (II)I
 L47:    ireturn
 L48:    athrow
-L49:    getstatic Field org/lwjgl/opengl/Display short I
+L49:    getstatic Field org/lwjgl/opengl/Display field3283 I
 L52:    ireturn
 L53:    athrow
 L54:    iconst_0
@@ -1048,17 +1048,17 @@ L56:    dup
 L57:    pop2
 L58:    ireturn
 L59:    
-        .attribute StackMap b'\x00\x04\x00\x30\x00\x00\x00\x01\x07\x00\x43\x00\x31\x00\x00\x00\x00\x00\x35\x00\x00\x00\x01\x07\x00\x43\x00\x36\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x30\x00\x00\x00\x01\x07\x00\x44\x00\x31\x00\x00\x00\x00\x00\x35\x00\x00\x00\x01\x07\x00\x44\x00\x36\x00\x00\x00\x00'
     .end code
 .end method
 
-.method public static break : (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/k;LaA;)V
+.method public static method3005 : (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/k;LaA;)V
     .code stack 3 locals 7
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_3
 L5:     monitorenter
-L6:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L6:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L9:     ifeq L22
 L12:    new java/lang/IllegalStateException
 L15:    dup
@@ -1072,11 +1072,11 @@ L29:    dup
 L30:    ldc "pixel_format cannot be null"
 L32:    invokespecial Method java/lang/NullPointerException <init> (Ljava/lang/String;)V
 L35:    athrow
-L36:    invokestatic Method org/lwjgl/opengl/Display break ()V
+L36:    invokestatic Method org/lwjgl/opengl/Display method3042 ()V
 L39:    invokestatic Method org/lwjgl/opengl/Display switch ()V
 L42:    invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L45:    ifeq L51
-L48:    invokestatic Method org/lwjgl/opengl/Display "final" ()V
+L48:    invokestatic Method org/lwjgl/opengl/Display method3020 ()V
 L51:    new org/lwjgl/opengl/fD
 L54:    dup
 L55:    invokespecial Method org/lwjgl/opengl/fD <init> ()V
@@ -1085,15 +1085,15 @@ L59:    astore 4
 L61:    putstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
 L64:    aload 4
 L66:    aload_0
-L67:    invokevirtual Method org/lwjgl/opengl/vC break (Lorg/lwjgl/opengl/h;)V
-L70:    invokestatic Method org/lwjgl/opengl/Display long ()V
+L67:    invokevirtual Method org/lwjgl/opengl/vC method308 (Lorg/lwjgl/opengl/h;)V
+L70:    invokestatic Method org/lwjgl/opengl/Display method3023 ()V
 L73:    aload 4
 L75:    aload_2
 L76:    aload_1
-L77:    invokevirtual Method org/lwjgl/opengl/vC break (LaA;Lorg/lwjgl/opengl/k;)V
+L77:    invokevirtual Method org/lwjgl/opengl/vC method322 (LaA;Lorg/lwjgl/opengl/k;)V
         .catch org/lwjgl/LWJGLException from L80 to L86 using L90
         .catch org/lwjgl/LWJGLException from L73 to L89 using L104
-L80:    invokestatic Method org/lwjgl/opengl/Display else ()V
+L80:    invokestatic Method org/lwjgl/opengl/Display method3041 ()V
 L83:    invokestatic Method org/lwjgl/opengl/Display this ()V
 L86:    goto L141
 L89:    athrow
@@ -1103,7 +1103,7 @@ L89:    athrow
 L90:    astore 5
 L92:    aload 5
 L94:    aload 4
-L96:    invokevirtual Method org/lwjgl/opengl/vC short ()V
+L96:    invokevirtual Method org/lwjgl/opengl/vC method71 ()V
 L99:    athrow
 L100:   nop
 L101:   nop
@@ -1128,15 +1128,15 @@ L114:   athrow
 L115:   astore 5
 L117:   aload 5
 L119:   aload 4
-L121:   invokevirtual Method org/lwjgl/opengl/vC short ()V
+L121:   invokevirtual Method org/lwjgl/opengl/vC method71 ()V
 L124:   athrow
 L125:   nop
 L126:   nop
 L127:   athrow
         .catch [0] from L128 to L143 using L144
 L128:   astore 5
-L130:   getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L133:   invokeinterface InterfaceMethod org/lwjgl/opengl/m int ()V 1
+L130:   getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L133:   invokeinterface InterfaceMethod org/lwjgl/opengl/m method4733 ()V 1
 L138:   aload 5
 L140:   athrow
 L141:   aload_3
@@ -1150,26 +1150,26 @@ L148:   aload 6
 L150:   athrow
 L151:   athrow
 L152:   
-        .attribute StackMap b'\x00\x0F\x00\x16\x00\x04\x07\x01\x5E\x07\x00\xB4\x07\x01\x61\x07\x00\x04\x00\x00\x00\x24\x00\x04\x07\x01\x5E\x07\x00\xB4\x07\x01\x61\x07\x00\x04\x00\x00\x00\x33\x00\x04\x07\x01\x5E\x07\x00\xB4\x07\x01\x61\x07\x00\x04\x00\x00\x00\x59\x00\x00\x00\x01\x07\x00\x43\x00\x5A\x00\x05\x07\x01\x5E\x07\x00\xB4\x07\x01\x61\x07\x00\x04\x07\x00\x0A\x00\x01\x07\x00\x5A\x00\x64\x00\x00\x00\x01\x07\x00\x43\x00\x67\x00\x00\x00\x01\x07\x00\x43\x00\x68\x00\x05\x07\x01\x5E\x07\x00\xB4\x07\x01\x61\x07\x00\x04\x07\x00\x0A\x00\x01\x07\x00\x5A\x00\x70\x00\x00\x00\x01\x07\x00\x43\x00\x73\x00\x05\x07\x01\x5E\x07\x00\xB4\x07\x01\x61\x07\x00\x04\x07\x00\x0A\x00\x01\x07\x00\x5A\x00\x7D\x00\x00\x00\x01\x07\x00\x43\x00\x80\x00\x05\x07\x01\x5E\x07\x00\xB4\x07\x01\x61\x07\x00\x04\x07\x00\x0A\x00\x01\x07\x00\x5A\x00\x8D\x00\x05\x07\x01\x5E\x07\x00\xB4\x07\x01\x61\x07\x00\x04\x07\x00\x0A\x00\x00\x00\x90\x00\x04\x07\x01\x5E\x07\x00\xB4\x07\x01\x61\x07\x00\x04\x00\x01\x07\x00\x43\x00\x97\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x0F\x00\x16\x00\x04\x07\x01\x77\x07\x00\xB9\x07\x01\x7B\x07\x00\x04\x00\x00\x00\x24\x00\x04\x07\x01\x77\x07\x00\xB9\x07\x01\x7B\x07\x00\x04\x00\x00\x00\x33\x00\x04\x07\x01\x77\x07\x00\xB9\x07\x01\x7B\x07\x00\x04\x00\x00\x00\x59\x00\x00\x00\x01\x07\x00\x44\x00\x5A\x00\x05\x07\x01\x77\x07\x00\xB9\x07\x01\x7B\x07\x00\x04\x07\x00\x0A\x00\x01\x07\x00\x5B\x00\x64\x00\x00\x00\x01\x07\x00\x44\x00\x67\x00\x00\x00\x01\x07\x00\x44\x00\x68\x00\x05\x07\x01\x77\x07\x00\xB9\x07\x01\x7B\x07\x00\x04\x07\x00\x0A\x00\x01\x07\x00\x5B\x00\x70\x00\x00\x00\x01\x07\x00\x44\x00\x73\x00\x05\x07\x01\x77\x07\x00\xB9\x07\x01\x7B\x07\x00\x04\x07\x00\x0A\x00\x01\x07\x00\x5B\x00\x7D\x00\x00\x00\x01\x07\x00\x44\x00\x80\x00\x05\x07\x01\x77\x07\x00\xB9\x07\x01\x7B\x07\x00\x04\x07\x00\x0A\x00\x01\x07\x00\x5B\x00\x8D\x00\x05\x07\x01\x77\x07\x00\xB9\x07\x01\x7B\x07\x00\x04\x07\x00\x0A\x00\x00\x00\x90\x00\x04\x07\x01\x77\x07\x00\xB9\x07\x01\x7B\x07\x00\x04\x00\x01\x07\x00\x44\x00\x97\x00\x00\x00\x01\x07\x00\x44'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static continue : ()Z
+.method public static method3006 : ()Z
     .code stack 3 locals 2
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L33 using L35
-L6:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L6:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L9:     ifne L23
 L12:    new java/lang/IllegalStateException
 L15:    dup
 L16:    ldc_w "Cannot determine close requested state of uncreated window"
 L19:    invokespecial Method java/lang/IllegalStateException <init> (Ljava/lang/String;)V
 L22:    athrow
-L23:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
+L23:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
 L26:    invokeinterface InterfaceMethod org/lwjgl/opengl/m false ()Z 1
 L31:    aload_0
 L32:    monitorexit
@@ -1182,11 +1182,11 @@ L37:    monitorexit
 L38:    aload_1
 L39:    athrow
 L40:    
-        .attribute StackMap b'\x00\x03\x00\x17\x00\x01\x07\x00\x04\x00\x00\x00\x22\x00\x00\x00\x01\x07\x00\x43\x00\x23\x00\x01\x07\x00\x04\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x03\x00\x17\x00\x01\x07\x00\x04\x00\x00\x00\x22\x00\x00\x00\x01\x07\x00\x44\x00\x23\x00\x01\x07\x00\x04\x00\x01\x07\x00\x44'
     .end code
 .end method
 
-.method public static short : (Z)V
+.method public static method3007 : (Z)V
     .code stack 3 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -1206,7 +1206,7 @@ L18:    iconst_0
 L19:    iconst_1
 L20:    dup
 L21:    pop2
-L22:    invokestatic Method org/lwjgl/opengl/Display else (I)V
+L22:    invokestatic Method org/lwjgl/opengl/Display method3013 (I)V
 L25:    aload_1
 L26:    monitorexit
 L27:    return
@@ -1219,19 +1219,19 @@ L32:    aload_2
 L33:    athrow
 L34:    athrow
 L35:    
-        .attribute StackMap b'\x00\x06\x00\x11\x00\x00\x00\x01\x07\x00\x43\x00\x12\x00\x02\x01\x07\x00\x04\x00\x00\x00\x16\x00\x02\x01\x07\x00\x04\x00\x01\x01\x00\x1C\x00\x00\x00\x01\x07\x00\x43\x00\x1D\x00\x02\x01\x07\x00\x04\x00\x01\x07\x00\x43\x00\x22\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x06\x00\x11\x00\x00\x00\x01\x07\x00\x44\x00\x12\x00\x02\x01\x07\x00\x04\x00\x00\x00\x16\x00\x02\x01\x07\x00\x04\x00\x01\x01\x00\x1C\x00\x00\x00\x01\x07\x00\x44\x00\x1D\x00\x02\x01\x07\x00\x04\x00\x01\x07\x00\x44\x00\x22\x00\x00\x00\x01\x07\x00\x44'
     .end code
 .end method
 
 .method public static return : ()Lorg/lwjgl/opengl/DisplayMode;
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/opengl/Display goto Lorg/lwjgl/opengl/DisplayMode;
+L0:     getstatic Field org/lwjgl/opengl/Display field3284 Lorg/lwjgl/opengl/DisplayMode;
 L3:     areturn
 L4:     
     .end code
 .end method
 
-.method public static else : (Lorg/lwjgl/opengl/DisplayMode;)V
+.method public static method3008 : (Lorg/lwjgl/opengl/DisplayMode;)V
     .code stack 3 locals 5
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -1247,8 +1247,8 @@ L20:    athrow
 L21:    invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L24:    istore_2
 L25:    aload_0
-L26:    putstatic Field org/lwjgl/opengl/Display goto Lorg/lwjgl/opengl/DisplayMode;
-L29:    invokestatic Method org/lwjgl/opengl/Display void ()Z
+L26:    putstatic Field org/lwjgl/opengl/Display field3284 Lorg/lwjgl/opengl/DisplayMode;
+L29:    invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L32:    ifeq L99
 L35:    invokestatic Method org/lwjgl/opengl/Display new ()V
         .catch org/lwjgl/LWJGLException from L38 to L59 using L80
@@ -1256,8 +1256,8 @@ L38:    iload_2
 L39:    ifeq L60
 L42:    invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L45:    ifne L60
-L48:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L51:    invokeinterface InterfaceMethod org/lwjgl/opengl/m int ()V 1
+L48:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L51:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4733 ()V 1
 L56:    goto L69
 L59:    athrow
         .catch org/lwjgl/LWJGLException from L60 to L75 using L80
@@ -1265,18 +1265,18 @@ L59:    athrow
         .catch [0] from L60 to L79 using L102
 L60:    invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L63:    ifeq L69
-L66:    invokestatic Method org/lwjgl/opengl/Display "final" ()V
-L69:    invokestatic Method org/lwjgl/opengl/Display long ()V
-L72:    invokestatic Method org/lwjgl/opengl/Display else ()V
+L66:    invokestatic Method org/lwjgl/opengl/Display method3020 ()V
+L69:    invokestatic Method org/lwjgl/opengl/Display method3023 ()V
+L72:    invokestatic Method org/lwjgl/opengl/Display method3041 ()V
 L75:    aload_1
 L76:    goto L100
 L79:    athrow
         .catch [0] from L80 to L101 using L102
 L80:    astore_3
 L81:    getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
-L84:    invokeinterface InterfaceMethod org/lwjgl/opengl/C short ()V 1
-L89:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L92:    invokeinterface InterfaceMethod org/lwjgl/opengl/m int ()V 1
+L84:    invokeinterface InterfaceMethod org/lwjgl/opengl/C method71 ()V 1
+L89:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L92:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4733 ()V 1
 L97:    aload_3
 L98:    athrow
 L99:    aload_1
@@ -1290,32 +1290,32 @@ L106:   aload 4
 L108:   athrow
 L109:   athrow
 L110:   
-        .attribute StackMap b'\x00\x0A\x00\x15\x00\x02\x07\x00\x3F\x07\x00\x04\x00\x00\x00\x3B\x00\x00\x00\x01\x07\x00\x43\x00\x3C\x00\x03\x07\x00\x3F\x07\x00\x04\x01\x00\x00\x00\x45\x00\x03\x07\x00\x3F\x07\x00\x04\x01\x00\x00\x00\x4F\x00\x00\x00\x01\x07\x00\x43\x00\x50\x00\x03\x07\x00\x3F\x07\x00\x04\x01\x00\x01\x07\x00\x5A\x00\x63\x00\x03\x07\x00\x3F\x07\x00\x04\x01\x00\x00\x00\x64\x00\x03\x07\x00\x3F\x07\x00\x04\x01\x00\x01\x07\x00\x04\x00\x66\x00\x02\x07\x00\x3F\x07\x00\x04\x00\x01\x07\x00\x43\x00\x6D\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x0A\x00\x15\x00\x02\x07\x00\x3F\x07\x00\x04\x00\x00\x00\x3B\x00\x00\x00\x01\x07\x00\x44\x00\x3C\x00\x03\x07\x00\x3F\x07\x00\x04\x01\x00\x00\x00\x45\x00\x03\x07\x00\x3F\x07\x00\x04\x01\x00\x00\x00\x4F\x00\x00\x00\x01\x07\x00\x44\x00\x50\x00\x03\x07\x00\x3F\x07\x00\x04\x01\x00\x01\x07\x00\x5B\x00\x63\x00\x03\x07\x00\x3F\x07\x00\x04\x01\x00\x00\x00\x64\x00\x03\x07\x00\x3F\x07\x00\x04\x01\x00\x01\x07\x00\x04\x00\x66\x00\x02\x07\x00\x3F\x07\x00\x04\x00\x01\x07\x00\x44\x00\x6D\x00\x00\x00\x01\x07\x00\x44'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static "public" : ()V
+.method public static method3009 : ()V
     .code stack 1 locals 0
-L0:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L0:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L3:     ifeq L14
 L6:     getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
-L9:     invokeinterface InterfaceMethod org/lwjgl/opengl/C short ()V 1
+L9:     invokeinterface InterfaceMethod org/lwjgl/opengl/C method71 ()V 1
 L14:    return
 L15:    
         .attribute StackMap b'\x00\x01\x00\x0E\x00\x00\x00\x00'
     .end code
 .end method
 
-.method public static default : ()Ljava/lang/String;
+.method public static method3010 : ()Ljava/lang/String;
     .code stack 2 locals 2
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L16 using L18
-L6:     getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L9:     invokeinterface InterfaceMethod org/lwjgl/opengl/m if ()Ljava/lang/String; 1
+L6:     getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L9:     invokeinterface InterfaceMethod org/lwjgl/opengl/m method4716 ()Ljava/lang/String; 1
 L14:    aload_0
 L15:    monitorexit
 L16:    areturn
@@ -1327,24 +1327,24 @@ L20:    monitorexit
 L21:    aload_1
 L22:    athrow
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x11\x00\x00\x00\x01\x07\x00\x43\x00\x12\x00\x01\x07\x00\x04\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x02\x00\x11\x00\x00\x00\x01\x07\x00\x44\x00\x12\x00\x01\x07\x00\x04\x00\x01\x07\x00\x44'
     .end code
 .end method
 
-.method public static "super" : ()Lorg/lwjgl/opengl/DisplayMode;
+.method public static method3011 : ()Lorg/lwjgl/opengl/DisplayMode;
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/opengl/Display void Lorg/lwjgl/opengl/DisplayMode;
+L0:     getstatic Field org/lwjgl/opengl/Display field3287 Lorg/lwjgl/opengl/DisplayMode;
 L3:     areturn
 L4:     
     .end code
 .end method
 
-.method public static break : (Lorg/lwjgl/opengl/DisplayMode;)V
+.method public static method3012 : (Lorg/lwjgl/opengl/DisplayMode;)V
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/opengl/DisplayMode else ()Z
+L1:     invokevirtual Method org/lwjgl/opengl/DisplayMode method3048 ()Z
 L4:     aload_0
-L5:     invokestatic Method org/lwjgl/opengl/Display break (ZLorg/lwjgl/opengl/DisplayMode;)V
+L5:     invokestatic Method org/lwjgl/opengl/Display method2997 (ZLorg/lwjgl/opengl/DisplayMode;)V
 L8:     return
 L9:     
     .end code
@@ -1356,49 +1356,49 @@ L9:
 L0:     new org/lwjgl/opengl/cC
 L3:     dup
 L4:     invokespecial Method org/lwjgl/opengl/cC <init> ()V
-L7:     putstatic Field org/lwjgl/opengl/Display byte Ljava/lang/Thread;
+L7:     putstatic Field org/lwjgl/opengl/Display field3280 Ljava/lang/Thread;
 L10:    iconst_m1
 L11:    iconst_1
 L12:    dup
 L13:    pop2
-L14:    putstatic Field org/lwjgl/opengl/Display null I
+L14:    putstatic Field org/lwjgl/opengl/Display field3289 I
 L17:    iconst_m1
 L18:    iconst_1
 L19:    dup
 L20:    pop2
-L21:    putstatic Field org/lwjgl/opengl/Display short I
+L21:    putstatic Field org/lwjgl/opengl/Display field3283 I
 L24:    iconst_0
 L25:    iconst_1
 L26:    dup
 L27:    pop2
-L28:    putstatic Field org/lwjgl/opengl/Display else I
+L28:    putstatic Field org/lwjgl/opengl/Display field3291 I
 L31:    iconst_0
 L32:    iconst_1
 L33:    dup
 L34:    pop2
-L35:    putstatic Field org/lwjgl/opengl/Display break I
+L35:    putstatic Field org/lwjgl/opengl/Display field3285 I
 L38:    ldc_w "Game"
-L41:    putstatic Field org/lwjgl/opengl/Display "enum" Ljava/lang/String;
+L41:    putstatic Field org/lwjgl/opengl/Display field3292 Ljava/lang/String;
 L44:    new org/lwjgl/opengl/qC
 L47:    dup
 L48:    invokespecial Method org/lwjgl/opengl/qC <init> ()V
-L51:    putstatic Field org/lwjgl/opengl/Display class Ljava/awt/event/ComponentListener;
-L54:    invokestatic Method org/lwjgl/Sys short ()V
-L57:    invokestatic Method org/lwjgl/opengl/Display throws ()Lorg/lwjgl/opengl/m;
-L60:    putstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
+L51:    putstatic Field org/lwjgl/opengl/Display field3276 Ljava/awt/event/ComponentListener;
+L54:    invokestatic Method org/lwjgl/Sys method1895 ()V
+L57:    invokestatic Method org/lwjgl/opengl/Display method2990 ()Lorg/lwjgl/opengl/m;
+L60:    putstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
         .catch org/lwjgl/LWJGLException from L63 to L104 using L106
-L63:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L66:    invokeinterface InterfaceMethod org/lwjgl/opengl/m case ()Lorg/lwjgl/opengl/DisplayMode; 1
+L63:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L66:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4698 ()Lorg/lwjgl/opengl/DisplayMode; 1
 L71:    dup
-L72:    putstatic Field org/lwjgl/opengl/Display void Lorg/lwjgl/opengl/DisplayMode;
-L75:    putstatic Field org/lwjgl/opengl/Display goto Lorg/lwjgl/opengl/DisplayMode;
+L72:    putstatic Field org/lwjgl/opengl/Display field3287 Lorg/lwjgl/opengl/DisplayMode;
+L75:    putstatic Field org/lwjgl/opengl/Display field3284 Lorg/lwjgl/opengl/DisplayMode;
 L78:    new java/lang/StringBuilder
 L81:    dup
 L82:    invokespecial Method java/lang/StringBuilder <init> ()V
 L85:    iconst_0
 L86:    ldc_w "Initial mode: "
 L89:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
-L92:    getstatic Field org/lwjgl/opengl/Display void Lorg/lwjgl/opengl/DisplayMode;
+L92:    getstatic Field org/lwjgl/opengl/Display field3287 Lorg/lwjgl/opengl/DisplayMode;
 L95:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
 L98:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L101:   invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
@@ -1412,11 +1412,11 @@ L112:   invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/Throw
 L115:   athrow
 L116:   athrow
 L117:   
-        .attribute StackMap b'\x00\x03\x00\x69\x00\x00\x00\x01\x07\x00\x43\x00\x6A\x00\x00\x00\x01\x07\x00\x5A\x00\x74\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x03\x00\x69\x00\x00\x00\x01\x07\x00\x44\x00\x6A\x00\x00\x00\x01\x07\x00\x5B\x00\x74\x00\x00\x00\x01\x07\x00\x44'
     .end code
 .end method
 
-.method public static else : (I)V
+.method public static method3013 : (I)V
     .code stack 2 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -1425,11 +1425,11 @@ L5:     monitorenter
         .catch [0] from L6 to L29 using L31
 L6:     iload_0
 L7:     putstatic Field org/lwjgl/opengl/Display new I
-L10:    invokestatic Method org/lwjgl/opengl/Display void ()Z
+L10:    invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L13:    ifeq L27
 L16:    getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
 L19:    getstatic Field org/lwjgl/opengl/Display new I
-L22:    invokeinterface InterfaceMethod org/lwjgl/opengl/C break (I)V 2
+L22:    invokeinterface InterfaceMethod org/lwjgl/opengl/C method14 (I)V 2
 L27:    aload_1
 L28:    monitorexit
 L29:    return
@@ -1442,18 +1442,18 @@ L34:    aload_2
 L35:    athrow
 L36:    athrow
 L37:    
-        .attribute StackMap b'\x00\x04\x00\x1B\x00\x02\x01\x07\x00\x04\x00\x00\x00\x1E\x00\x00\x00\x01\x07\x00\x43\x00\x1F\x00\x02\x01\x07\x00\x04\x00\x01\x07\x00\x43\x00\x24\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x04\x00\x1B\x00\x02\x01\x07\x00\x04\x00\x00\x00\x1E\x00\x00\x00\x01\x07\x00\x44\x00\x1F\x00\x02\x01\x07\x00\x04\x00\x01\x07\x00\x44\x00\x24\x00\x00\x00\x01\x07\x00\x44'
     .end code
 .end method
 
-.method public static case : ()Ljava/lang/String;
+.method public static method3014 : ()Ljava/lang/String;
     .code stack 2 locals 2
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L11 using L13
-L6:     getstatic Field org/lwjgl/opengl/Display "enum" Ljava/lang/String;
+L6:     getstatic Field org/lwjgl/opengl/Display field3292 Ljava/lang/String;
 L9:     aload_0
 L10:    monitorexit
 L11:    areturn
@@ -1465,25 +1465,25 @@ L15:    monitorexit
 L16:    aload_1
 L17:    athrow
 L18:    
-        .attribute StackMap b'\x00\x02\x00\x0C\x00\x00\x00\x01\x07\x00\x43\x00\x0D\x00\x01\x07\x00\x04\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x02\x00\x0C\x00\x00\x00\x01\x07\x00\x44\x00\x0D\x00\x01\x07\x00\x04\x00\x01\x07\x00\x44'
     .end code
 .end method
 
-.method private static null : ()V
+.method private static method3015 : ()V
     .code stack 3 locals 1
         .catch org/lwjgl/LWJGLException from L0 to L34 using L36
 L0:     getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
-L3:     invokeinterface InterfaceMethod org/lwjgl/opengl/C do ()Lorg/lwjgl/opengl/G; 1
+L3:     invokeinterface InterfaceMethod org/lwjgl/opengl/C method307 ()Lorg/lwjgl/opengl/G; 1
 L8:     dup
 L9:     astore_0
 L10:    ifnull L61
 L13:    aload_0
-L14:    invokeinterface InterfaceMethod org/lwjgl/opengl/G else ()Z 1
+L14:    invokeinterface InterfaceMethod org/lwjgl/opengl/G method3618 ()Z 1
 L19:    ifeq L61
 L22:    aload_0
 L23:    dup
-L24:    invokeinterface InterfaceMethod org/lwjgl/opengl/G short ()V 1
-L29:    invokeinterface InterfaceMethod org/lwjgl/opengl/G break ()V 1
+L24:    invokeinterface InterfaceMethod org/lwjgl/opengl/G method3616 ()V 1
+L29:    invokeinterface InterfaceMethod org/lwjgl/opengl/G method3619 ()V 1
 L34:    return
 L35:    athrow
 L36:    astore_0
@@ -1499,19 +1499,19 @@ L55:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/Strin
 L58:    invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
 L61:    return
 L62:    
-        .attribute StackMap b'\x00\x03\x00\x23\x00\x00\x00\x01\x07\x00\x43\x00\x24\x00\x00\x00\x01\x07\x00\x5A\x00\x3D\x00\x01\x07\x00\x04\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x23\x00\x00\x00\x01\x07\x00\x44\x00\x24\x00\x00\x00\x01\x07\x00\x5B\x00\x3D\x00\x01\x07\x00\x04\x00\x00'
     .end code
 .end method
 
 .method static getImplementation : ()Lorg/lwjgl/opengl/m;
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
+L0:     getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
 L3:     areturn
 L4:     
     .end code
 .end method
 
-.method public static break : (II)V
+.method public static method3016 : (II)V
     .code stack 2 locals 4
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -1519,14 +1519,14 @@ L4:     astore_2
 L5:     monitorenter
         .catch [0] from L6 to L31 using L33
 L6:     iload_0
-L7:     putstatic Field org/lwjgl/opengl/Display null I
+L7:     putstatic Field org/lwjgl/opengl/Display field3289 I
 L10:    iload_1
-L11:    putstatic Field org/lwjgl/opengl/Display short I
-L14:    invokestatic Method org/lwjgl/opengl/Display void ()Z
+L11:    putstatic Field org/lwjgl/opengl/Display field3283 I
+L14:    invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L17:    ifeq L29
 L20:    invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L23:    ifne L29
-L26:    invokestatic Method org/lwjgl/opengl/Display "volatile" ()V
+L26:    invokestatic Method org/lwjgl/opengl/Display method3003 ()V
 L29:    aload_2
 L30:    monitorexit
 L31:    return
@@ -1539,7 +1539,7 @@ L36:    aload_3
 L37:    athrow
 L38:    athrow
 L39:    
-        .attribute StackMap b'\x00\x04\x00\x1D\x00\x03\x01\x01\x07\x00\x04\x00\x00\x00\x20\x00\x00\x00\x01\x07\x00\x43\x00\x21\x00\x03\x01\x01\x07\x00\x04\x00\x01\x07\x00\x43\x00\x26\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x04\x00\x1D\x00\x03\x01\x01\x07\x00\x04\x00\x00\x00\x20\x00\x00\x00\x01\x07\x00\x44\x00\x21\x00\x03\x01\x01\x07\x00\x04\x00\x01\x07\x00\x44\x00\x26\x00\x00\x00\x01\x07\x00\x44'
     .end code
 .end method
 
@@ -1550,15 +1550,15 @@ L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L33 using L35
-L6:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L6:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L9:     ifne L23
 L12:    new java/lang/IllegalStateException
 L15:    dup
 L16:    ldc_w "Cannot determine dirty state of uncreated window"
 L19:    invokespecial Method java/lang/IllegalStateException <init> (Ljava/lang/String;)V
 L22:    athrow
-L23:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L26:    invokeinterface InterfaceMethod org/lwjgl/opengl/m "final" ()Z 1
+L23:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L26:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4714 ()Z 1
 L31:    aload_0
 L32:    monitorexit
 L33:    ireturn
@@ -1570,46 +1570,46 @@ L37:    monitorexit
 L38:    aload_1
 L39:    athrow
 L40:    
-        .attribute StackMap b'\x00\x03\x00\x17\x00\x01\x07\x00\x04\x00\x00\x00\x22\x00\x00\x00\x01\x07\x00\x43\x00\x23\x00\x01\x07\x00\x04\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x03\x00\x17\x00\x01\x07\x00\x04\x00\x00\x00\x22\x00\x00\x00\x01\x07\x00\x44\x00\x23\x00\x01\x07\x00\x04\x00\x01\x07\x00\x44'
     .end code
 .end method
 
 .method static synthetic true : ()Ljava/lang/Thread;
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/opengl/Display byte Ljava/lang/Thread;
+L0:     getstatic Field org/lwjgl/opengl/Display field3280 Ljava/lang/Thread;
 L3:     areturn
 L4:     
     .end code
 .end method
 
-.method static synthetic const : (Z)Z
+.method static synthetic method3017 : (Z)Z
     .code stack 2 locals 1
 L0:     iload_0
 L1:     dup
-L2:     putstatic Field org/lwjgl/opengl/Display for Z
+L2:     putstatic Field org/lwjgl/opengl/Display field3278 Z
 L5:     ireturn
 L6:     
     .end code
 .end method
 
-.method public static byte : ()V
+.method public static method3018 : ()V
     .code stack 1 locals 0
 L0:     getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
-L3:     invokeinterface InterfaceMethod org/lwjgl/opengl/C else ()V 1
+L3:     invokeinterface InterfaceMethod org/lwjgl/opengl/C method56 ()V 1
 L8:     return
 L9:     
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static void : ()Z
+.method public static method3019 : ()Z
     .code stack 2 locals 2
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L11 using L13
-L6:     getstatic Field org/lwjgl/opengl/Display "super" Z
+L6:     getstatic Field org/lwjgl/opengl/Display field3281 Z
 L9:     aload_0
 L10:    monitorexit
 L11:    ireturn
@@ -1621,23 +1621,23 @@ L15:    monitorexit
 L16:    aload_1
 L17:    athrow
 L18:    
-        .attribute StackMap b'\x00\x02\x00\x0C\x00\x00\x00\x01\x07\x00\x43\x00\x0D\x00\x01\x07\x00\x04\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x02\x00\x0C\x00\x00\x00\x01\x07\x00\x44\x00\x0D\x00\x01\x07\x00\x04\x00\x01\x07\x00\x44'
     .end code
 .end method
 
-.method private static "final" : ()V
+.method private static method3020 : ()V
     .code stack 3 locals 0
-L0:     getstatic Field org/lwjgl/opengl/Display goto Lorg/lwjgl/opengl/DisplayMode;
-L3:     invokevirtual Method org/lwjgl/opengl/DisplayMode else ()Z
+L0:     getstatic Field org/lwjgl/opengl/Display field3284 Lorg/lwjgl/opengl/DisplayMode;
+L3:     invokevirtual Method org/lwjgl/opengl/DisplayMode method3048 ()Z
 L6:     ifne L20
 L9:     new java/lang/IllegalStateException
 L12:    dup
 L13:    ldc_w "Only modes acquired from getAvailableDisplayModes() can be used for fullscreen display"
 L16:    invokespecial Method java/lang/IllegalStateException <init> (Ljava/lang/String;)V
 L19:    athrow
-L20:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L23:    getstatic Field org/lwjgl/opengl/Display goto Lorg/lwjgl/opengl/DisplayMode;
-L26:    invokeinterface InterfaceMethod org/lwjgl/opengl/m break (Lorg/lwjgl/opengl/DisplayMode;)V 2
+L20:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L23:    getstatic Field org/lwjgl/opengl/Display field3284 Lorg/lwjgl/opengl/DisplayMode;
+L26:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4730 (Lorg/lwjgl/opengl/DisplayMode;)V 2
 L31:    return
 L32:    
         .attribute StackMap b'\x00\x01\x00\x14\x00\x00\x00\x00'
@@ -1645,7 +1645,7 @@ L32:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static int : ()Z
+.method public static method3021 : ()Z
     .code stack 1 locals 0
 L0:     getstatic Field org/lwjgl/opengl/Display this Z
 L3:     ireturn
@@ -1653,27 +1653,27 @@ L4:
     .end code
 .end method
 
-.method static "enum" : ()V
+.method static method3022 : ()V
     .code stack 1 locals 0
-L0:     invokestatic Method org/lwjgl/input/k const ()Z
+L0:     invokestatic Method org/lwjgl/input/k method2028 ()Z
 L3:     ifeq L12
-L6:     invokestatic Method org/lwjgl/input/k if ()V
-L9:     invokestatic Method org/lwjgl/input/k class ()V
+L6:     invokestatic Method org/lwjgl/input/k method2019 ()V
+L9:     invokestatic Method org/lwjgl/input/k method2018 ()V
 L12:    invokestatic Method org/lwjgl/input/Keyboard try ()Z
 L15:    ifeq L21
-L18:    invokestatic Method org/lwjgl/input/Keyboard else ()V
-L21:    invokestatic Method org/lwjgl/input/G else ()Z
+L18:    invokestatic Method org/lwjgl/input/Keyboard method1955 ()V
+L21:    invokestatic Method org/lwjgl/input/G method1925 ()Z
 L24:    ifeq L30
-L27:    invokestatic Method org/lwjgl/input/G if ()V
+L27:    invokestatic Method org/lwjgl/input/G method1915 ()V
 L30:    return
 L31:    
         .attribute StackMap b'\x00\x03\x00\x0C\x00\x00\x00\x00\x00\x15\x00\x00\x00\x00\x00\x1E\x00\x00\x00\x00'
     .end code
 .end method
 
-.method private static long : ()V
+.method private static method3023 : ()V
     .code stack 6 locals 2
-L0:     getstatic Field org/lwjgl/opengl/Display "super" Z
+L0:     getstatic Field org/lwjgl/opengl/Display field3281 Z
 L3:     ifeq L8
 L6:     return
 L7:     athrow
@@ -1682,7 +1682,7 @@ L11:    ifeq L19
 L14:    aconst_null
 L15:    goto L22
 L18:    athrow
-L19:    getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L19:    getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L22:    astore_0
 L23:    aload_0
 L24:    ifnull L45
@@ -1697,35 +1697,35 @@ L44:    athrow
 L45:    aload_0
 L46:    ifnull L56
 L49:    aload_0
-L50:    getstatic Field org/lwjgl/opengl/Display class Ljava/awt/event/ComponentListener;
+L50:    getstatic Field org/lwjgl/opengl/Display field3276 Ljava/awt/event/ComponentListener;
 L53:    invokevirtual Method java/awt/Canvas addComponentListener (Ljava/awt/event/ComponentListener;)V
-L56:    invokestatic Method org/lwjgl/opengl/Display "static" ()Lorg/lwjgl/opengl/DisplayMode;
+L56:    invokestatic Method org/lwjgl/opengl/Display method2978 ()Lorg/lwjgl/opengl/DisplayMode;
 L59:    astore_1
-L60:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
+L60:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
 L63:    getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
 L66:    aload_1
 L67:    aload_0
-L68:    invokestatic Method org/lwjgl/opengl/Display catch ()I
-L71:    invokestatic Method org/lwjgl/opengl/Display extends ()I
-L74:    invokeinterface InterfaceMethod org/lwjgl/opengl/m break (Lorg/lwjgl/opengl/C;Lorg/lwjgl/opengl/DisplayMode;Ljava/awt/Canvas;II)V 6
+L68:    invokestatic Method org/lwjgl/opengl/Display method3033 ()I
+L71:    invokestatic Method org/lwjgl/opengl/Display method3004 ()I
+L74:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4708 (Lorg/lwjgl/opengl/C;Lorg/lwjgl/opengl/DisplayMode;Ljava/awt/Canvas;II)V 6
 L79:    iconst_1
 L80:    dup
 L81:    dup
 L82:    pop2
-L83:    putstatic Field org/lwjgl/opengl/Display "super" Z
+L83:    putstatic Field org/lwjgl/opengl/Display field3281 Z
 L86:    invokestatic Method org/lwjgl/opengl/Display return ()Lorg/lwjgl/opengl/DisplayMode;
-L89:    invokevirtual Method org/lwjgl/opengl/DisplayMode const ()I
-L92:    putstatic Field org/lwjgl/opengl/Display else I
+L89:    invokevirtual Method org/lwjgl/opengl/DisplayMode method3047 ()I
+L92:    putstatic Field org/lwjgl/opengl/Display field3291 I
 L95:    invokestatic Method org/lwjgl/opengl/Display return ()Lorg/lwjgl/opengl/DisplayMode;
-L98:    invokevirtual Method org/lwjgl/opengl/DisplayMode break ()I
-L101:   putstatic Field org/lwjgl/opengl/Display break I
-L104:   getstatic Field org/lwjgl/opengl/Display "enum" Ljava/lang/String;
-L107:   invokestatic Method org/lwjgl/opengl/Display else (Ljava/lang/String;)V
-L110:   invokestatic Method org/lwjgl/opengl/Display char ()V
-L113:   getstatic Field org/lwjgl/opengl/Display long [Ljava/nio/ByteBuffer;
+L98:    invokevirtual Method org/lwjgl/opengl/DisplayMode method3049 ()I
+L101:   putstatic Field org/lwjgl/opengl/Display field3285 I
+L104:   getstatic Field org/lwjgl/opengl/Display field3292 Ljava/lang/String;
+L107:   invokestatic Method org/lwjgl/opengl/Display method3027 (Ljava/lang/String;)V
+L110:   invokestatic Method org/lwjgl/opengl/Display method3026 ()V
+L113:   getstatic Field org/lwjgl/opengl/Display field3286 [Ljava/nio/ByteBuffer;
 L116:   ifnull L127
-L119:   getstatic Field org/lwjgl/opengl/Display long [Ljava/nio/ByteBuffer;
-L122:   invokestatic Method org/lwjgl/opengl/Display else ([Ljava/nio/ByteBuffer;)I
+L119:   getstatic Field org/lwjgl/opengl/Display field3286 [Ljava/nio/ByteBuffer;
+L122:   invokestatic Method org/lwjgl/opengl/Display method2982 ([Ljava/nio/ByteBuffer;)I
 L125:   pop
 L126:   return
 L127:   iconst_2
@@ -1750,36 +1750,36 @@ L149:   dup
 L150:   pop2
 L151:   getstatic Field org/lwjgl/LWJGLUtil LWJGLIcon16x16 Ljava/nio/ByteBuffer;
 L154:   aastore
-L155:   invokestatic Method org/lwjgl/opengl/Display else ([Ljava/nio/ByteBuffer;)I
+L155:   invokestatic Method org/lwjgl/opengl/Display method2982 ([Ljava/nio/ByteBuffer;)I
 L158:   pop
 L159:   return
 L160:   
-        .attribute StackMap b'\x00\x08\x00\x07\x00\x00\x00\x01\x07\x00\x43\x00\x08\x00\x00\x00\x00\x00\x12\x00\x00\x00\x01\x07\x00\x43\x00\x13\x00\x00\x00\x00\x00\x16\x00\x00\x00\x01\x07\x00\x47\x00\x2D\x00\x01\x07\x00\x47\x00\x00\x00\x38\x00\x01\x07\x00\x47\x00\x00\x00\x7F\x00\x02\x07\x00\x47\x07\x00\x3F\x00\x00'
+        .attribute StackMap b'\x00\x08\x00\x07\x00\x00\x00\x01\x07\x00\x44\x00\x08\x00\x00\x00\x00\x00\x12\x00\x00\x00\x01\x07\x00\x44\x00\x13\x00\x00\x00\x00\x00\x16\x00\x00\x00\x01\x07\x00\x48\x00\x2D\x00\x01\x07\x00\x48\x00\x00\x00\x38\x00\x01\x07\x00\x48\x00\x00\x00\x7F\x00\x02\x07\x00\x48\x07\x00\x3F\x00\x00'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static class : ()V
+.method public static method3024 : ()V
     .code stack 3 locals 0
 L0:     iconst_1
 L1:     dup
 L2:     dup
 L3:     pop2
-L4:     invokestatic Method org/lwjgl/opengl/Display else (Z)V
+L4:     invokestatic Method org/lwjgl/opengl/Display method3029 (Z)V
 L7:     return
 L8:     
     .end code
 .end method
 
-.method public static if : ()Ljava/lang/String;
+.method public static method3025 : ()Ljava/lang/String;
     .code stack 2 locals 2
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L16 using L18
-L6:     getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L9:     invokeinterface InterfaceMethod org/lwjgl/opengl/m null ()Ljava/lang/String; 1
+L6:     getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L9:     invokeinterface InterfaceMethod org/lwjgl/opengl/m method4728 ()Ljava/lang/String; 1
 L14:    aload_0
 L15:    monitorexit
 L16:    areturn
@@ -1791,22 +1791,22 @@ L20:    monitorexit
 L21:    aload_1
 L22:    athrow
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x11\x00\x00\x00\x01\x07\x00\x43\x00\x12\x00\x01\x07\x00\x04\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x02\x00\x11\x00\x00\x00\x01\x07\x00\x44\x00\x12\x00\x01\x07\x00\x04\x00\x01\x07\x00\x44'
     .end code
 .end method
 
-.method private static char : ()V
+.method private static method3026 : ()V
     .code stack 3 locals 1
 L0:     ldc_w "org.lwjgl.opengl.Display.noinput"
-L3:     invokestatic Method org/lwjgl/opengl/Display break (Ljava/lang/String;)Z
+L3:     invokestatic Method org/lwjgl/opengl/Display method3044 (Ljava/lang/String;)Z
 L6:     ifne L131
-L9:     invokestatic Method org/lwjgl/input/k const ()Z
+L9:     invokestatic Method org/lwjgl/input/k method2028 ()Z
 L12:    ifne L73
 L15:    ldc_w "org.lwjgl.opengl.Display.nomouse"
-L18:    invokestatic Method org/lwjgl/opengl/Display break (Ljava/lang/String;)Z
+L18:    invokestatic Method org/lwjgl/opengl/Display method3044 (Ljava/lang/String;)Z
 L21:    ifne L73
         .catch org/lwjgl/LWJGLException from L24 to L27 using L31
-L24:    invokestatic Method org/lwjgl/input/k goto ()V
+L24:    invokestatic Method org/lwjgl/input/k method2022 ()V
 L27:    goto L73
 L30:    athrow
 L31:    astore_0
@@ -1830,10 +1830,10 @@ L70:    invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
 L73:    invokestatic Method org/lwjgl/input/Keyboard try ()Z
 L76:    ifne L131
 L79:    ldc_w "org.lwjgl.opengl.Display.nokeyboard"
-L82:    invokestatic Method org/lwjgl/opengl/Display break (Ljava/lang/String;)Z
+L82:    invokestatic Method org/lwjgl/opengl/Display method3044 (Ljava/lang/String;)Z
 L85:    ifne L131
         .catch org/lwjgl/LWJGLException from L88 to L91 using L92
-L88:    invokestatic Method org/lwjgl/input/Keyboard break ()V
+L88:    invokestatic Method org/lwjgl/input/Keyboard method1958 ()V
 L91:    return
 L92:    astore_0
 L93:    getstatic Field org/lwjgl/LWJGLUtil DEBUG Z
@@ -1854,42 +1854,42 @@ L125:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/Strin
 L128:   invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
 L131:   return
 L132:   
-        .attribute StackMap b'\x00\x08\x00\x1E\x00\x00\x00\x01\x07\x00\x43\x00\x1F\x00\x00\x00\x01\x07\x00\x5A\x00\x30\x00\x00\x00\x01\x07\x00\x43\x00\x31\x00\x01\x07\x00\x5A\x00\x00\x00\x49\x00\x00\x00\x00\x00\x5C\x00\x00\x00\x01\x07\x00\x5A\x00\x6B\x00\x01\x07\x00\x5A\x00\x00\x00\x83\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x08\x00\x1E\x00\x00\x00\x01\x07\x00\x44\x00\x1F\x00\x00\x00\x01\x07\x00\x5B\x00\x30\x00\x00\x00\x01\x07\x00\x44\x00\x31\x00\x01\x07\x00\x5B\x00\x00\x00\x49\x00\x00\x00\x00\x00\x5C\x00\x00\x00\x01\x07\x00\x5B\x00\x6B\x00\x01\x07\x00\x5B\x00\x00\x00\x83\x00\x00\x00\x00'
     .end code
 .end method
 
 .method private static new : ()V
     .code stack 3 locals 0
-L0:     getstatic Field org/lwjgl/opengl/Display "super" Z
+L0:     getstatic Field org/lwjgl/opengl/Display field3281 Z
 L3:     ifne L8
 L6:     return
 L7:     athrow
-L8:     getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L8:     getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L11:    ifnull L23
-L14:    getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
-L17:    getstatic Field org/lwjgl/opengl/Display class Ljava/awt/event/ComponentListener;
+L14:    getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
+L17:    getstatic Field org/lwjgl/opengl/Display field3276 Ljava/awt/event/ComponentListener;
 L20:    invokevirtual Method java/awt/Canvas removeComponentListener (Ljava/awt/event/ComponentListener;)V
-L23:    invokestatic Method org/lwjgl/opengl/Display null ()V
-L26:    invokestatic Method org/lwjgl/input/k const ()Z
+L23:    invokestatic Method org/lwjgl/opengl/Display method3015 ()V
+L26:    invokestatic Method org/lwjgl/input/k method2028 ()Z
 L29:    ifeq L35
-L32:    invokestatic Method org/lwjgl/input/k case ()V
+L32:    invokestatic Method org/lwjgl/input/k method2005 ()V
 L35:    invokestatic Method org/lwjgl/input/Keyboard try ()Z
 L38:    ifeq L44
-L41:    invokestatic Method org/lwjgl/input/Keyboard short ()V
-L44:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L47:    invokeinterface InterfaceMethod org/lwjgl/opengl/m "super" ()V 1
+L41:    invokestatic Method org/lwjgl/input/Keyboard method1953 ()V
+L44:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L47:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4718 ()V 1
 L52:    iconst_0
 L53:    iconst_1
 L54:    dup
 L55:    pop2
-L56:    putstatic Field org/lwjgl/opengl/Display "super" Z
+L56:    putstatic Field org/lwjgl/opengl/Display field3281 Z
 L59:    return
 L60:    
-        .attribute StackMap b'\x00\x05\x00\x07\x00\x00\x00\x01\x07\x00\x43\x00\x08\x00\x00\x00\x00\x00\x17\x00\x00\x00\x00\x00\x23\x00\x00\x00\x00\x00\x2C\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x07\x00\x00\x00\x01\x07\x00\x44\x00\x08\x00\x00\x00\x00\x00\x17\x00\x00\x00\x00\x00\x23\x00\x00\x00\x00\x00\x2C\x00\x00\x00\x00'
     .end code
 .end method
 
-.method public static else : (Ljava/lang/String;)V
+.method public static method3027 : (Ljava/lang/String;)V
     .code stack 2 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -1901,12 +1901,12 @@ L7:     ifnonnull L14
 L10:    ldc_w ""
 L13:    astore_0
 L14:    aload_0
-L15:    putstatic Field org/lwjgl/opengl/Display "enum" Ljava/lang/String;
-L18:    invokestatic Method org/lwjgl/opengl/Display void ()Z
+L15:    putstatic Field org/lwjgl/opengl/Display field3292 Ljava/lang/String;
+L18:    invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L21:    ifeq L35
-L24:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L27:    getstatic Field org/lwjgl/opengl/Display "enum" Ljava/lang/String;
-L30:    invokeinterface InterfaceMethod org/lwjgl/opengl/m break (Ljava/lang/String;)V 2
+L24:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L27:    getstatic Field org/lwjgl/opengl/Display field3292 Ljava/lang/String;
+L30:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4736 (Ljava/lang/String;)V 2
 L35:    aload_1
 L36:    monitorexit
 L37:    return
@@ -1919,7 +1919,7 @@ L42:    aload_2
 L43:    athrow
 L44:    athrow
 L45:    
-        .attribute StackMap b'\x00\x05\x00\x0E\x00\x02\x07\x02\x40\x07\x00\x04\x00\x00\x00\x23\x00\x02\x07\x02\x40\x07\x00\x04\x00\x00\x00\x26\x00\x00\x00\x01\x07\x00\x43\x00\x27\x00\x02\x07\x02\x40\x07\x00\x04\x00\x01\x07\x00\x43\x00\x2C\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x05\x00\x0E\x00\x02\x07\x02\x95\x07\x00\x04\x00\x00\x00\x23\x00\x02\x07\x02\x95\x07\x00\x04\x00\x00\x00\x26\x00\x00\x00\x01\x07\x00\x44\x00\x27\x00\x02\x07\x02\x95\x07\x00\x04\x00\x01\x07\x00\x44\x00\x2C\x00\x00\x00\x01\x07\x00\x44'
     .end code
 .end method
 
@@ -1930,7 +1930,7 @@ L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L47 using L49
-L6:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L6:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L9:     ifne L23
 L12:    new java/lang/IllegalStateException
 L15:    dup
@@ -1940,9 +1940,9 @@ L22:    athrow
 L23:    getstatic Field org/lwjgl/LWJGLUtil DEBUG Z
 L26:    ifeq L37
 L29:    getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
-L32:    invokeinterface InterfaceMethod org/lwjgl/opengl/C catch ()V 1
+L32:    invokeinterface InterfaceMethod org/lwjgl/opengl/C method76 ()V 1
 L37:    getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
-L40:    invokeinterface InterfaceMethod org/lwjgl/opengl/C float ()V 1
+L40:    invokeinterface InterfaceMethod org/lwjgl/opengl/C method69 ()V 1
 L45:    aload_0
 L46:    monitorexit
 L47:    return
@@ -1955,7 +1955,7 @@ L52:    aload_1
 L53:    athrow
 L54:    athrow
 L55:    
-        .attribute StackMap b'\x00\x05\x00\x17\x00\x01\x07\x00\x04\x00\x00\x00\x25\x00\x01\x07\x00\x04\x00\x00\x00\x30\x00\x00\x00\x01\x07\x00\x43\x00\x31\x00\x01\x07\x00\x04\x00\x01\x07\x00\x43\x00\x36\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x05\x00\x17\x00\x01\x07\x00\x04\x00\x00\x00\x25\x00\x01\x07\x00\x04\x00\x00\x00\x30\x00\x00\x00\x01\x07\x00\x44\x00\x31\x00\x01\x07\x00\x04\x00\x01\x07\x00\x44\x00\x36\x00\x00\x00\x01\x07\x00\x44'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
@@ -1963,17 +1963,17 @@ L55:
 .method private static this : ()V
     .code stack 4 locals 0
 L0:     getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
-L3:     getstatic Field org/lwjgl/opengl/Display case F
-L6:     getstatic Field org/lwjgl/opengl/Display int F
-L9:     getstatic Field org/lwjgl/opengl/Display do F
-L12:    invokeinterface InterfaceMethod org/lwjgl/opengl/C break (FFF)V 4
-L17:    invokestatic Method org/lwjgl/opengl/Display class ()V
+L3:     getstatic Field org/lwjgl/opengl/Display field3279 F
+L6:     getstatic Field org/lwjgl/opengl/Display field3282 F
+L9:     getstatic Field org/lwjgl/opengl/Display field3293 F
+L12:    invokeinterface InterfaceMethod org/lwjgl/opengl/C method312 (FFF)V 4
+L17:    invokestatic Method org/lwjgl/opengl/Display method3024 ()V
 L20:    return
 L21:    
     .end code
 .end method
 
-.method public static goto : ()I
+.method public static method3028 : ()I
     .code stack 3 locals 0
 L0:     invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L3:     ifeq L12
@@ -1983,38 +1983,38 @@ L8:     dup
 L9:     pop2
 L10:    ireturn
 L11:    athrow
-L12:    getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L12:    getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L15:    ifnull L26
-L18:    getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L18:    getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L21:    invokevirtual Method java/awt/Canvas getX ()I
 L24:    ireturn
 L25:    athrow
-L26:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L29:    invokeinterface InterfaceMethod org/lwjgl/opengl/m void ()I 1
+L26:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L29:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4704 ()I 1
 L34:    ireturn
 L35:    
-        .attribute StackMap b'\x00\x04\x00\x0B\x00\x00\x00\x01\x07\x00\x43\x00\x0C\x00\x00\x00\x00\x00\x19\x00\x00\x00\x01\x07\x00\x43\x00\x1A\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x0B\x00\x00\x00\x01\x07\x00\x44\x00\x0C\x00\x00\x00\x00\x00\x19\x00\x00\x00\x01\x07\x00\x44\x00\x1A\x00\x00\x00\x00'
     .end code
 .end method
 
-.method public static else : (Z)V
+.method public static method3029 : (Z)V
     .code stack 3 locals 4
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_1
 L5:     monitorenter
-L6:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L6:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L9:     ifne L23
 L12:    new java/lang/IllegalStateException
 L15:    dup
 L16:    ldc_w "Display not created"
 L19:    invokespecial Method java/lang/IllegalStateException <init> (Ljava/lang/String;)V
 L22:    athrow
-L23:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L26:    invokeinterface InterfaceMethod org/lwjgl/opengl/m "enum" ()Z 1
+L23:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L26:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4775 ()Z 1
 L31:    ifne L45
-L34:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L37:    invokeinterface InterfaceMethod org/lwjgl/opengl/m "final" ()Z 1
+L34:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L37:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4714 ()Z 1
 L42:    ifeq L62
         .catch org/lwjgl/LWJGLException from L45 to L48 using L52
         .catch [0] from L6 to L51 using L161
@@ -2030,10 +2030,10 @@ L58:    invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/Throw
 L61:    athrow
 L62:    invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L65:    ifne L93
-L68:    getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L68:    getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L71:    ifnonnull L93
-L74:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L77:    invokeinterface InterfaceMethod org/lwjgl/opengl/m default ()Z 1
+L74:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L77:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4751 ()Z 1
 L82:    ifeq L93
 L85:    iconst_1
 L86:    dup
@@ -2049,20 +2049,20 @@ L96:    pop2
 L97:    putstatic Field org/lwjgl/opengl/Display this Z
 L100:   getstatic Field org/lwjgl/opengl/Display this Z
 L103:   ifeq L128
-L106:   getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L109:   invokeinterface InterfaceMethod org/lwjgl/opengl/m float ()I 1
-L114:   putstatic Field org/lwjgl/opengl/Display else I
-L117:   getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L120:   invokeinterface InterfaceMethod org/lwjgl/opengl/m break ()I 1
-L125:   putstatic Field org/lwjgl/opengl/Display break I
-L128:   getstatic Field org/lwjgl/opengl/Display for Z
+L106:   getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L109:   invokeinterface InterfaceMethod org/lwjgl/opengl/m method4747 ()I 1
+L114:   putstatic Field org/lwjgl/opengl/Display field3291 I
+L117:   getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L120:   invokeinterface InterfaceMethod org/lwjgl/opengl/m method4780 ()I 1
+L125:   putstatic Field org/lwjgl/opengl/Display field3285 I
+L128:   getstatic Field org/lwjgl/opengl/Display field3278 Z
 L131:   ifeq L151
-L134:   invokestatic Method org/lwjgl/opengl/Display "volatile" ()V
+L134:   invokestatic Method org/lwjgl/opengl/Display method3003 ()V
 L137:   iconst_0
 L138:   iconst_1
 L139:   dup
 L140:   pop2
-L141:   putstatic Field org/lwjgl/opengl/Display for Z
+L141:   putstatic Field org/lwjgl/opengl/Display field3278 Z
 L144:   iconst_1
 L145:   dup
 L146:   dup
@@ -2070,7 +2070,7 @@ L147:   pop2
 L148:   putstatic Field org/lwjgl/opengl/Display this Z
 L151:   iload_0
 L152:   ifeq L158
-L155:   invokestatic Method org/lwjgl/opengl/Display implements ()V
+L155:   invokestatic Method org/lwjgl/opengl/Display method2989 ()V
 L158:   aload_1
 L159:   monitorexit
 L160:   return
@@ -2082,30 +2082,30 @@ L164:   aload_3
 L165:   athrow
 L166:   athrow
 L167:   
-        .attribute StackMap b'\x00\x0D\x00\x17\x00\x02\x01\x07\x00\x04\x00\x00\x00\x2D\x00\x02\x01\x07\x00\x04\x00\x00\x00\x33\x00\x00\x00\x01\x07\x00\x43\x00\x34\x00\x02\x01\x07\x00\x04\x00\x01\x07\x00\x5A\x00\x3E\x00\x02\x01\x07\x00\x04\x00\x00\x00\x5C\x00\x00\x00\x01\x07\x00\x43\x00\x5D\x00\x02\x01\x07\x00\x04\x00\x00\x00\x61\x00\x02\x01\x07\x00\x04\x00\x01\x01\x00\x80\x00\x02\x01\x07\x00\x04\x00\x00\x00\x97\x00\x02\x01\x07\x00\x04\x00\x00\x00\x9E\x00\x02\x01\x07\x00\x04\x00\x00\x00\xA1\x00\x02\x01\x07\x00\x04\x00\x01\x07\x00\x43\x00\xA6\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x0D\x00\x17\x00\x02\x01\x07\x00\x04\x00\x00\x00\x2D\x00\x02\x01\x07\x00\x04\x00\x00\x00\x33\x00\x00\x00\x01\x07\x00\x44\x00\x34\x00\x02\x01\x07\x00\x04\x00\x01\x07\x00\x5B\x00\x3E\x00\x02\x01\x07\x00\x04\x00\x00\x00\x5C\x00\x00\x00\x01\x07\x00\x44\x00\x5D\x00\x02\x01\x07\x00\x04\x00\x00\x00\x61\x00\x02\x01\x07\x00\x04\x00\x01\x01\x00\x80\x00\x02\x01\x07\x00\x04\x00\x00\x00\x97\x00\x02\x01\x07\x00\x04\x00\x00\x00\x9E\x00\x02\x01\x07\x00\x04\x00\x00\x00\xA1\x00\x02\x01\x07\x00\x04\x00\x01\x07\x00\x44\x00\xA6\x00\x00\x00\x01\x07\x00\x44'
     .end code
 .end method
 
-.method public static do : ()V
+.method public static method3030 : ()V
     .code stack 2 locals 0
 L0:     new org/lwjgl/opengl/PixelFormat
 L3:     dup
 L4:     invokespecial Method org/lwjgl/opengl/PixelFormat <init> ()V
-L7:     invokestatic Method org/lwjgl/opengl/Display break (Lorg/lwjgl/opengl/PixelFormat;)V
+L7:     invokestatic Method org/lwjgl/opengl/Display method3043 (Lorg/lwjgl/opengl/PixelFormat;)V
 L10:    return
 L11:    
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static break : (FFF)V
+.method public static method3031 : (FFF)V
     .code stack 1 locals 3
 L0:     fload_0
-L1:     putstatic Field org/lwjgl/opengl/Display case F
+L1:     putstatic Field org/lwjgl/opengl/Display field3279 F
 L4:     fload_1
-L5:     putstatic Field org/lwjgl/opengl/Display int F
+L5:     putstatic Field org/lwjgl/opengl/Display field3282 F
 L8:     fload_2
-L9:     putstatic Field org/lwjgl/opengl/Display do F
+L9:     putstatic Field org/lwjgl/opengl/Display field3293 F
 L12:    return
 L13:    
     .end code
@@ -2120,7 +2120,7 @@ L5:
     .end code
 .end method
 
-.method public static for : ()I
+.method public static method3032 : ()I
     .code stack 3 locals 0
 L0:     invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L3:     ifeq L12
@@ -2130,27 +2130,27 @@ L8:     dup
 L9:     pop2
 L10:    ireturn
 L11:    athrow
-L12:    getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L12:    getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L15:    ifnull L26
-L18:    getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L18:    getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L21:    invokevirtual Method java/awt/Canvas getY ()I
 L24:    ireturn
 L25:    athrow
-L26:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
+L26:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
 L29:    invokeinterface InterfaceMethod org/lwjgl/opengl/m true ()I 1
 L34:    ireturn
 L35:    
-        .attribute StackMap b'\x00\x04\x00\x0B\x00\x00\x00\x01\x07\x00\x43\x00\x0C\x00\x00\x00\x00\x00\x19\x00\x00\x00\x01\x07\x00\x43\x00\x1A\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x0B\x00\x00\x00\x01\x07\x00\x44\x00\x0C\x00\x00\x00\x00\x00\x19\x00\x00\x00\x01\x07\x00\x44\x00\x1A\x00\x00\x00\x00'
     .end code
 .end method
 
-.method private static catch : ()I
+.method private static method3033 : ()I
     .code stack 5 locals 0
 L0:     invokestatic Method org/lwjgl/opengl/Display throw ()Z
 L3:     ifne L54
-L6:     getstatic Field org/lwjgl/opengl/Display const Ljava/awt/Canvas;
+L6:     getstatic Field org/lwjgl/opengl/Display field3288 Ljava/awt/Canvas;
 L9:     ifnonnull L54
-L12:    getstatic Field org/lwjgl/opengl/Display null I
+L12:    getstatic Field org/lwjgl/opengl/Display field3289 I
 L15:    iconst_m1
 L16:    iconst_1
 L17:    dup
@@ -2160,10 +2160,10 @@ L22:    iconst_0
 L23:    iconst_1
 L24:    dup
 L25:    pop2
-L26:    getstatic Field org/lwjgl/opengl/Display void Lorg/lwjgl/opengl/DisplayMode;
-L29:    invokevirtual Method org/lwjgl/opengl/DisplayMode const ()I
-L32:    getstatic Field org/lwjgl/opengl/Display goto Lorg/lwjgl/opengl/DisplayMode;
-L35:    invokevirtual Method org/lwjgl/opengl/DisplayMode const ()I
+L26:    getstatic Field org/lwjgl/opengl/Display field3287 Lorg/lwjgl/opengl/DisplayMode;
+L29:    invokevirtual Method org/lwjgl/opengl/DisplayMode method3047 ()I
+L32:    getstatic Field org/lwjgl/opengl/Display field3284 Lorg/lwjgl/opengl/DisplayMode;
+L35:    invokevirtual Method org/lwjgl/opengl/DisplayMode method3047 ()I
 L38:    isub
 L39:    iconst_2
 L40:    iconst_1
@@ -2173,7 +2173,7 @@ L43:    idiv
 L44:    invokestatic Method java/lang/Math max (II)I
 L47:    ireturn
 L48:    athrow
-L49:    getstatic Field org/lwjgl/opengl/Display null I
+L49:    getstatic Field org/lwjgl/opengl/Display field3289 I
 L52:    ireturn
 L53:    athrow
 L54:    iconst_0
@@ -2182,11 +2182,11 @@ L56:    dup
 L57:    pop2
 L58:    ireturn
 L59:    
-        .attribute StackMap b'\x00\x04\x00\x30\x00\x00\x00\x01\x07\x00\x43\x00\x31\x00\x00\x00\x00\x00\x35\x00\x00\x00\x01\x07\x00\x43\x00\x36\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x30\x00\x00\x00\x01\x07\x00\x44\x00\x31\x00\x00\x00\x00\x00\x35\x00\x00\x00\x01\x07\x00\x44\x00\x36\x00\x00\x00\x00'
     .end code
 .end method
 
-.method public static break : (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/k;)V
+.method public static method3034 : (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/k;)V
     .code stack 3 locals 4
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -2197,7 +2197,7 @@ L6:     aload_0
 L7:     aload_1
 L8:     aconst_null
 L9:     checkcast org/lwjgl/opengl/CB
-L12:    invokestatic Method org/lwjgl/opengl/Display break (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/k;Lorg/lwjgl/opengl/CB;)V
+L12:    invokestatic Method org/lwjgl/opengl/Display method2981 (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/k;Lorg/lwjgl/opengl/CB;)V
 L15:    aload_2
 L16:    monitorexit
 L17:    return
@@ -2210,27 +2210,27 @@ L22:    aload_3
 L23:    athrow
 L24:    athrow
 L25:    
-        .attribute StackMap b'\x00\x03\x00\x12\x00\x00\x00\x01\x07\x00\x43\x00\x13\x00\x03\x07\x00\xB2\x07\x00\xB4\x07\x00\x04\x00\x01\x07\x00\x43\x00\x18\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x03\x00\x12\x00\x00\x00\x01\x07\x00\x44\x00\x13\x00\x03\x07\x00\xB7\x07\x00\xB9\x07\x00\x04\x00\x01\x07\x00\x44\x00\x18\x00\x00\x00\x01\x07\x00\x44'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static float : ()Z
+.method public static method3035 : ()Z
     .code stack 3 locals 2
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L33 using L35
-L6:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L6:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L9:     ifne L23
 L12:    new java/lang/IllegalStateException
 L15:    dup
 L16:    ldc_w "Cannot determine focused state of uncreated window"
 L19:    invokespecial Method java/lang/IllegalStateException <init> (Ljava/lang/String;)V
 L22:    athrow
-L23:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L26:    invokeinterface InterfaceMethod org/lwjgl/opengl/m byte ()Z 1
+L23:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L26:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4743 ()Z 1
 L31:    aload_0
 L32:    monitorexit
 L33:    ireturn
@@ -2242,11 +2242,11 @@ L37:    monitorexit
 L38:    aload_1
 L39:    athrow
 L40:    
-        .attribute StackMap b'\x00\x03\x00\x17\x00\x01\x07\x00\x04\x00\x00\x00\x22\x00\x00\x00\x01\x07\x00\x43\x00\x23\x00\x01\x07\x00\x04\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x03\x00\x17\x00\x01\x07\x00\x04\x00\x00\x00\x22\x00\x00\x00\x01\x07\x00\x44\x00\x23\x00\x01\x07\x00\x04\x00\x01\x07\x00\x44'
     .end code
 .end method
 
-.method public static break : (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/k;)V
+.method public static method3036 : (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/k;)V
     .code stack 3 locals 4
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -2256,7 +2256,7 @@ L5:     monitorenter
 L6:     aload_0
 L7:     aload_1
 L8:     aconst_null
-L9:     invokestatic Method org/lwjgl/opengl/Display break (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/k;LaA;)V
+L9:     invokestatic Method org/lwjgl/opengl/Display method3005 (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/k;LaA;)V
 L12:    aload_2
 L13:    monitorexit
 L14:    return
@@ -2269,27 +2269,27 @@ L19:    aload_3
 L20:    athrow
 L21:    athrow
 L22:    
-        .attribute StackMap b'\x00\x03\x00\x0F\x00\x00\x00\x01\x07\x00\x43\x00\x10\x00\x03\x07\x01\x5E\x07\x00\xB4\x07\x00\x04\x00\x01\x07\x00\x43\x00\x15\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x03\x00\x0F\x00\x00\x00\x01\x07\x00\x44\x00\x10\x00\x03\x07\x01\x77\x07\x00\xB9\x07\x00\x04\x00\x01\x07\x00\x44\x00\x15\x00\x00\x00\x01\x07\x00\x44'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static short : ()Z
+.method public static method3037 : ()Z
     .code stack 3 locals 2
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L33 using L35
-L6:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L6:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L9:     ifne L23
 L12:    new java/lang/IllegalStateException
 L15:    dup
 L16:    ldc_w "Cannot determine minimized state of uncreated window"
 L19:    invokespecial Method java/lang/IllegalStateException <init> (Ljava/lang/String;)V
 L22:    athrow
-L23:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
-L26:    invokeinterface InterfaceMethod org/lwjgl/opengl/m "enum" ()Z 1
+L23:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
+L26:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4775 ()Z 1
 L31:    aload_0
 L32:    monitorexit
 L33:    ireturn
@@ -2301,50 +2301,50 @@ L37:    monitorexit
 L38:    aload_1
 L39:    athrow
 L40:    
-        .attribute StackMap b'\x00\x03\x00\x17\x00\x01\x07\x00\x04\x00\x00\x00\x22\x00\x00\x00\x01\x07\x00\x43\x00\x23\x00\x01\x07\x00\x04\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x03\x00\x17\x00\x01\x07\x00\x04\x00\x00\x00\x22\x00\x00\x00\x01\x07\x00\x44\x00\x23\x00\x01\x07\x00\x04\x00\x01\x07\x00\x44'
     .end code
 .end method
 
-.method public static break : (I)V
+.method public static method3038 : (I)V
     .code stack 1 locals 1
 L0:     iload_0
-L1:     invokestatic Method org/lwjgl/opengl/o break (I)V
+L1:     invokestatic Method org/lwjgl/opengl/o method5633 (I)V
 L4:     return
 L5:     
     .end code
 .end method
 
-.method public static const : ()Z
+.method public static method3039 : ()Z
     .code stack 1 locals 0
 L0:     getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
-L3:     invokeinterface InterfaceMethod org/lwjgl/opengl/C const ()Z 1
+L3:     invokeinterface InterfaceMethod org/lwjgl/opengl/C method263 ()Z 1
 L8:     ireturn
 L9:     
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public static break : (Z)V
+.method public static method3040 : (Z)V
     .code stack 2 locals 1
 L0:     iload_0
-L1:     putstatic Field org/lwjgl/opengl/Display if Z
-L4:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L1:     putstatic Field org/lwjgl/opengl/Display field3277 Z
+L4:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L7:     ifeq L19
-L10:    getstatic Field org/lwjgl/opengl/Display char Lorg/lwjgl/opengl/m;
+L10:    getstatic Field org/lwjgl/opengl/Display field3290 Lorg/lwjgl/opengl/m;
 L13:    iload_0
-L14:    invokeinterface InterfaceMethod org/lwjgl/opengl/m else (Z)V 2
+L14:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4721 (Z)V 2
 L19:    return
 L20:    
         .attribute StackMap b'\x00\x01\x00\x13\x00\x01\x01\x00\x00'
     .end code
 .end method
 
-.method private static else : ()V
+.method private static method3041 : ()V
     .code stack 3 locals 1
-L0:     invokestatic Method org/lwjgl/opengl/Display "native" ()V
+L0:     invokestatic Method org/lwjgl/opengl/Display method2987 ()V
         .catch org/lwjgl/opengl/x from L3 to L11 using L15
 L3:     getstatic Field org/lwjgl/opengl/Display try Lorg/lwjgl/opengl/C;
-L6:     invokeinterface InterfaceMethod org/lwjgl/opengl/C catch ()V 1
+L6:     invokeinterface InterfaceMethod org/lwjgl/opengl/C method76 ()V 1
 L11:    goto L43
 L14:    athrow
 L15:    astore_0
@@ -2360,15 +2360,15 @@ L34:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)
 L37:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L40:    invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
 L43:    getstatic Field org/lwjgl/opengl/Display new I
-L46:    invokestatic Method org/lwjgl/opengl/Display else (I)V
+L46:    invokestatic Method org/lwjgl/opengl/Display method3013 (I)V
 L49:    return
 L50:    
-        .attribute StackMap b'\x00\x03\x00\x0E\x00\x00\x00\x01\x07\x00\x43\x00\x0F\x00\x00\x00\x01\x07\x02\x78\x00\x2B\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x0E\x00\x00\x00\x01\x07\x00\x44\x00\x0F\x00\x00\x00\x01\x07\x02\xEB\x00\x2B\x00\x00\x00\x00'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method private static break : ()V
+.method private static method3042 : ()V
     .code stack 2 locals 0
 L0:     new org/lwjgl/opengl/bc
 L3:     dup
@@ -2380,7 +2380,7 @@ L12:
     .end code
 .end method
 
-.method public static break : (Lorg/lwjgl/opengl/PixelFormat;)V
+.method public static method3043 : (Lorg/lwjgl/opengl/PixelFormat;)V
     .code stack 3 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -2391,7 +2391,7 @@ L6:     aload_0
 L7:     aconst_null
 L8:     dup
 L9:     checkcast org/lwjgl/opengl/CB
-L12:    invokestatic Method org/lwjgl/opengl/Display break (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/k;Lorg/lwjgl/opengl/CB;)V
+L12:    invokestatic Method org/lwjgl/opengl/Display method2981 (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/k;Lorg/lwjgl/opengl/CB;)V
 L15:    aload_1
 L16:    monitorexit
 L17:    return
@@ -2404,12 +2404,12 @@ L22:    aload_2
 L23:    athrow
 L24:    athrow
 L25:    
-        .attribute StackMap b'\x00\x03\x00\x12\x00\x00\x00\x01\x07\x00\x43\x00\x13\x00\x02\x07\x00\xB2\x07\x00\x04\x00\x01\x07\x00\x43\x00\x18\x00\x00\x00\x01\x07\x00\x43'
+        .attribute StackMap b'\x00\x03\x00\x12\x00\x00\x00\x01\x07\x00\x44\x00\x13\x00\x02\x07\x00\xB7\x07\x00\x04\x00\x01\x07\x00\x44\x00\x18\x00\x00\x00\x01\x07\x00\x44'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method static break : (Ljava/lang/String;)Z
+.method static method3044 : (Ljava/lang/String;)Z
     .code stack 3 locals 1
 L0:     new org/lwjgl/opengl/wb
 L3:     dup

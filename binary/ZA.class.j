@@ -1,16 +1,16 @@
 .version 46 0
 .class public final super ZA
 .super java/lang/Thread
-.field private final char Ljava/io/FileOutputStream; .fieldattributes
+.field private final field1674 Ljava/io/FileOutputStream; .fieldattributes
     .synthetic
 .end fieldattributes
-.field private final else Ljava/nio/channels/FileLock; .fieldattributes
+.field private final field1675 Ljava/nio/channels/FileLock; .fieldattributes
     .synthetic
 .end fieldattributes
-.field private final "enum" Ljava/io/FileOutputStream; .fieldattributes
+.field private final field1676 Ljava/io/FileOutputStream; .fieldattributes
     .synthetic
 .end fieldattributes
-.field private final do Ljava/nio/channels/FileLock; .fieldattributes
+.field private final field1677 Ljava/nio/channels/FileLock; .fieldattributes
     .synthetic
 .end fieldattributes
 
@@ -20,13 +20,13 @@
 L0:     aload_0
 L1:     dup
 L2:     dup2
-L3:     getfield Field ZA "enum" Ljava/io/FileOutputStream;
+L3:     getfield Field ZA field1676 Ljava/io/FileOutputStream;
 L6:     invokevirtual Method java/io/FileOutputStream close ()V
-L9:     getfield Field ZA do Ljava/nio/channels/FileLock;
+L9:     getfield Field ZA field1677 Ljava/nio/channels/FileLock;
 L12:    invokevirtual Method java/nio/channels/FileLock release ()V
-L15:    getfield Field ZA char Ljava/io/FileOutputStream;
+L15:    getfield Field ZA field1674 Ljava/io/FileOutputStream;
 L18:    invokevirtual Method java/io/FileOutputStream close ()V
-L21:    getfield Field ZA else Ljava/nio/channels/FileLock;
+L21:    getfield Field ZA field1675 Ljava/nio/channels/FileLock;
 L24:    invokevirtual Method java/nio/channels/FileLock release ()V
 L27:    return
 L28:    athrow
@@ -49,10 +49,10 @@ L7:     dup_x1
 L8:     aload_1
 L9:     aload_0
 L10:    invokespecial Method java/lang/Thread <init> ()V
-L13:    putfield Field ZA "enum" Ljava/io/FileOutputStream;
-L16:    putfield Field ZA do Ljava/nio/channels/FileLock;
-L19:    putfield Field ZA char Ljava/io/FileOutputStream;
-L22:    putfield Field ZA else Ljava/nio/channels/FileLock;
+L13:    putfield Field ZA field1676 Ljava/io/FileOutputStream;
+L16:    putfield Field ZA field1677 Ljava/nio/channels/FileLock;
+L19:    putfield Field ZA field1674 Ljava/io/FileOutputStream;
+L22:    putfield Field ZA field1675 Ljava/nio/channels/FileLock;
 L25:    return
 L26:    
     .end code

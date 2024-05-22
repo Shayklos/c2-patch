@@ -1,23 +1,23 @@
 .version 49 0
 .class public final super Xg
 .super Qb
-.field public final synthetic "enum" [LEF;
-.field public final synthetic do LgE;
+.field public final synthetic field1763 [LEF;
+.field public final synthetic field1764 LgE;
 
-.method public else : ()[LEF;
+.method public method751 : ()[LEF;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field Xg "enum" [LEF;
+L1:     getfield Field Xg field1763 [LEF;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method public short : (LRg;)I
+.method public method752 : (LRg;)I
     .code stack 1 locals 2
 L0:     aload_1
 L1:     checkcast vf
-L4:     getfield Field vf char I
+L4:     getfield Field vf field242 I
 L7:     ireturn
 L8:     
     .end code
@@ -30,8 +30,8 @@ L1:     aload_0
 L2:     dup_x1
 L3:     dup_x2
 L4:     aload_1
-L5:     putfield Field Xg do LgE;
-L8:     putfield Field Xg "enum" [LEF;
+L5:     putfield Field Xg field1764 LgE;
+L8:     putfield Field Xg field1763 [LEF;
 L11:    invokespecial Method Qb <init> ()V
 L14:    return
 L15:    

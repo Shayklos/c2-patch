@@ -2,7 +2,7 @@
 .class final super org/lwjgl/d
 .super org/lwjgl/h
 
-.method protected else : (Ljava/nio/ByteBuffer;)Lorg/lwjgl/h;
+.method protected method274 : (Ljava/nio/ByteBuffer;)Lorg/lwjgl/h;
     .code stack 3 locals 2
 L0:     new org/lwjgl/d
 L3:     dup
@@ -13,7 +13,7 @@ L9:
     .end code
 .end method
 
-.method public break : (Lorg/lwjgl/h;)Lorg/lwjgl/h;
+.method public method297 : (Lorg/lwjgl/h;)Lorg/lwjgl/h;
     .code stack 2 locals 2
 L0:     new java/nio/ReadOnlyBufferException
 L3:     dup
@@ -23,7 +23,7 @@ L8:
     .end code
 .end method
 
-.method public "final" : ()Lorg/lwjgl/h;
+.method public method271 : ()Lorg/lwjgl/h;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     invokevirtual Method org/lwjgl/d new ()Lorg/lwjgl/h;
@@ -32,7 +32,7 @@ L5:
     .end code
 .end method
 
-.method public if : ()Z
+.method public method278 : ()Z
     .code stack 3 locals 1
 L0:     iconst_1
 L1:     dup
@@ -53,7 +53,7 @@ L6:
     .end code
 .end method
 
-.method public break : (J)Lorg/lwjgl/h;
+.method public method280 : (J)Lorg/lwjgl/h;
     .code stack 2 locals 3
 L0:     new java/nio/ReadOnlyBufferException
 L3:     dup
@@ -63,7 +63,7 @@ L8:
     .end code
 .end method
 
-.method public break : (IJ)Lorg/lwjgl/h;
+.method public method298 : (IJ)Lorg/lwjgl/h;
     .code stack 2 locals 4
 L0:     new java/nio/ReadOnlyBufferException
 L3:     dup
@@ -83,7 +83,7 @@ L8:
     .end code
 .end method
 
-.method public break : ([JII)Lorg/lwjgl/h;
+.method public method282 : ([JII)Lorg/lwjgl/h;
     .code stack 2 locals 4
 L0:     new java/nio/ReadOnlyBufferException
 L3:     dup

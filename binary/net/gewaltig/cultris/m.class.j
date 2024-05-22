@@ -1,14 +1,14 @@
 .version 49 0
 .class final super net/gewaltig/cultris/m
 .super java/lang/Thread
-.field final synthetic do Lnet/gewaltig/cultris/M;
+.field final synthetic field1680 Lnet/gewaltig/cultris/M;
 
 .method <init> : (Lnet/gewaltig/cultris/M;)V
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field net/gewaltig/cultris/m do Lnet/gewaltig/cultris/M;
+L3:     putfield Field net/gewaltig/cultris/m field1680 Lnet/gewaltig/cultris/M;
 L6:     invokespecial Method java/lang/Thread <init> ()V
 L9:     return
 L10:    
@@ -19,23 +19,23 @@ L10:
     .code stack 4 locals 4
         .catch java/lang/Throwable from L0 to L26 using L31
 L0:     aload_0
-L1:     getfield Field net/gewaltig/cultris/m do Lnet/gewaltig/cultris/M;
-L4:     getfield Field net/gewaltig/cultris/M "enum" Lnet/gewaltig/cultris/Applet;
-L7:     getfield Field net/gewaltig/cultris/Applet else Ljava/awt/Canvas;
-L10:    invokestatic Method org/lwjgl/opengl/Display break (Ljava/awt/Canvas;)V
+L1:     getfield Field net/gewaltig/cultris/m field1680 Lnet/gewaltig/cultris/M;
+L4:     getfield Field net/gewaltig/cultris/M field608 Lnet/gewaltig/cultris/Applet;
+L7:     getfield Field net/gewaltig/cultris/Applet field569 Ljava/awt/Canvas;
+L10:    invokestatic Method org/lwjgl/opengl/Display method2998 (Ljava/awt/Canvas;)V
 L13:    iconst_1
 L14:    dup
 L15:    dup
 L16:    pop2
-L17:    putstatic Field net/gewaltig/cultris/Cultris char Z
-L20:    invokestatic Method net/gewaltig/cultris/Cultris break ()V
-L23:    invokestatic Method net/gewaltig/cultris/Cultris short ()V
-L26:    invokestatic Method net/gewaltig/cultris/Cultris else ()V
+L17:    putstatic Field net/gewaltig/cultris/Cultris field2393 Z
+L20:    invokestatic Method net/gewaltig/cultris/Cultris method1725 ()V
+L23:    invokestatic Method net/gewaltig/cultris/Cultris method1722 ()V
+L26:    invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
 L29:    return
 L30:    athrow
 L31:    astore_1
         .catch java/lang/Throwable from L32 to L35 using L40
-L32:    invokestatic Method org/lwjgl/opengl/Display "public" ()V
+L32:    invokestatic Method org/lwjgl/opengl/Display method3009 ()V
 L35:    aload_1
 L36:    goto L42
 L39:    athrow
@@ -48,7 +48,7 @@ L42:    invokevirtual Method java/lang/Throwable printStackTrace ()V
         .catch [0] from L40 to L65 using L69
 L45:    new sD
 L48:    dup
-L49:    getstatic Field net/gewaltig/cultris/Cultris else LFE;
+L49:    getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
 L52:    aload_1
 L53:    invokespecial Method sD <init> (LFE;Ljava/lang/Throwable;)V
 L56:    pop
@@ -56,11 +56,11 @@ L57:    goto L65
 L60:    astore_2
 L61:    aload_2
 L62:    invokevirtual Method java/lang/Throwable printStackTrace ()V
-L65:    invokestatic Method net/gewaltig/cultris/Cultris else ()V
+L65:    invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
 L68:    return
         .catch [0] from L69 to L70 using L69
 L69:    astore_3
-L70:    invokestatic Method net/gewaltig/cultris/Cultris else ()V
+L70:    invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
 L73:    aload_3
 L74:    athrow
 L75:    athrow

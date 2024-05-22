@@ -1,42 +1,42 @@
 .version 49 0
 .class final super org/lwjgl/opengl/LinuxMouse
 .super java/lang/Object
-.field private static final continue I = 6
-.field private extends I
-.field private static final float I = 9
-.field private static final "final" I = 1
-.field private catch I
+.field private static final field4554 I = 6
+.field private field4555 I
+.field private static final field4556 I = 9
+.field private static final field4557 I = 1
+.field private field4558 I
 .field private final false Ljava/nio/ByteBuffer;
-.field private static final class I = 3
-.field private if I
+.field private static final field4559 I = 3
+.field private field4560 I
 .field private true I
-.field private for [B
-.field private final case Ljava/nio/IntBuffer;
-.field private byte J
-.field private static final "super" I = 2
-.field private static final int I = 8
-.field private static final short I = 5
-.field private static final goto I = 4
-.field private static final break I = 10
-.field private static final long I = 7
-.field private static final void I = 5
+.field private field4561 [B
+.field private final field4562 Ljava/nio/IntBuffer;
+.field private field4563 J
+.field private static final field4564 I = 2
+.field private static final field4565 I = 8
+.field private static final field4566 I = 5
+.field private static final field4567 I = 4
+.field private static final field4568 I = 10
+.field private static final field4569 I = 7
+.field private static final field4570 I = 5
 .field private final try J
-.field private const Lorg/lwjgl/opengl/aA;
+.field private field4571 Lorg/lwjgl/opengl/aA;
 .field private static final new I = 120
-.field private null I
+.field private field4572 I
 .field private final this J
-.field private char I
-.field private static final else I = 4
-.field private final "enum" J
-.field private final do J
+.field private field4573 I
+.field private static final field4574 I = 4
+.field private final field4575 J
+.field private final field4576 J
 
 .method private static native nWarpCursor : (JJII)V
 .end method
 
-.method private short : (II)V
+.method private method4851 : (II)V
     .code stack 9 locals 3
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/LinuxMouse do J
+L1:     getfield Field org/lwjgl/opengl/LinuxMouse field4576 J
 L4:     aload_0
 L5:     dup_x2
 L6:     getfield Field org/lwjgl/opengl/LinuxMouse this J
@@ -45,9 +45,9 @@ L10:    getfield Field org/lwjgl/opengl/LinuxMouse try J
 L13:    iload_1
 L14:    iload_2
 L15:    invokestatic Method org/lwjgl/opengl/LinuxMouse nSendWarpEvent (JJJII)V
-L18:    getfield Field org/lwjgl/opengl/LinuxMouse do J
+L18:    getfield Field org/lwjgl/opengl/LinuxMouse field4576 J
 L21:    aload_0
-L22:    getfield Field org/lwjgl/opengl/LinuxMouse "enum" J
+L22:    getfield Field org/lwjgl/opengl/LinuxMouse field4575 J
 L25:    iload_1
 L26:    iload_2
 L27:    invokestatic Method org/lwjgl/opengl/LinuxMouse nWarpCursor (JJII)V
@@ -56,7 +56,7 @@ L31:
     .end code
 .end method
 
-.method private break : (ZJIB)V
+.method private method4852 : (ZJIB)V
     .code stack 6 locals 6
 L0:     lload_2
 L1:     ldc2_w 1000000L
@@ -75,7 +75,7 @@ L41:    iconst_1
 L42:    dup
 L43:    pop2
 L44:    lload_2
-L45:    invokespecial Method org/lwjgl/opengl/LinuxMouse break (ZIBJ)V
+L45:    invokespecial Method org/lwjgl/opengl/LinuxMouse method4865 (ZIBJ)V
 L48:    return
 L49:    athrow
 L50:    aload_0
@@ -84,19 +84,19 @@ L52:    ifne L51
 L55:    iload_1
 L56:    iload 5
 L58:    lload_2
-L59:    invokespecial Method org/lwjgl/opengl/LinuxMouse break (ZBJ)V
+L59:    invokespecial Method org/lwjgl/opengl/LinuxMouse method4863 (ZBJ)V
 L62:    return
 L63:    athrow
 L64:    return
 L65:    
-        .attribute StackMap b'\x00\x06\x00\x24\x00\x05\x07\x00\x02\x01\x04\x01\x01\x00\x00\x00\x31\x00\x00\x00\x01\x07\x00\x4A\x00\x32\x00\x05\x07\x00\x02\x01\x04\x01\x01\x00\x00\x00\x33\x00\x05\x07\x00\x02\x01\x04\x01\x01\x00\x01\x07\x00\x02\x00\x3F\x00\x00\x00\x01\x07\x00\x4A\x00\x40\x00\x05\x07\x00\x02\x01\x04\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x24\x00\x05\x07\x00\x02\x01\x04\x01\x01\x00\x00\x00\x31\x00\x00\x00\x01\x07\x00\x4D\x00\x32\x00\x05\x07\x00\x02\x01\x04\x01\x01\x00\x00\x00\x33\x00\x05\x07\x00\x02\x01\x04\x01\x01\x00\x01\x07\x00\x02\x00\x3F\x00\x00\x00\x01\x07\x00\x4D\x00\x40\x00\x05\x07\x00\x02\x01\x04\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public break : (ZZLorg/lwjgl/opengl/LinuxEvent;)Z
+.method public method4853 : (ZZLorg/lwjgl/opengl/LinuxEvent;)Z
     .code stack 11 locals 4
 L0:     aload_3
-L1:     invokevirtual Method org/lwjgl/opengl/LinuxEvent char ()I
+L1:     invokevirtual Method org/lwjgl/opengl/LinuxEvent method4820 ()I
 L4:     lookupswitch
             4 : L86
             5 : L86
@@ -104,7 +104,7 @@ L4:     lookupswitch
             33 : L48
             default : L149
 L48:    aload_3
-L49:    invokevirtual Method org/lwjgl/opengl/LinuxEvent catch ()J
+L49:    invokevirtual Method org/lwjgl/opengl/LinuxEvent method4824 ()J
 L52:    aload_0
 L53:    getfield Field org/lwjgl/opengl/LinuxMouse try J
 L56:    lcmp
@@ -116,14 +116,14 @@ L63:    iconst_0
 L64:    iconst_1
 L65:    dup
 L66:    pop2
-L67:    invokevirtual Method org/lwjgl/opengl/LinuxEvent break (I)I
+L67:    invokevirtual Method org/lwjgl/opengl/LinuxEvent method4827 (I)I
 L70:    aload_3
 L71:    iconst_1
 L72:    dup
 L73:    dup
 L74:    pop2
-L75:    invokevirtual Method org/lwjgl/opengl/LinuxEvent break (I)I
-L78:    invokespecial Method org/lwjgl/opengl/LinuxMouse const (II)V
+L75:    invokevirtual Method org/lwjgl/opengl/LinuxEvent method4827 (I)I
+L78:    invokespecial Method org/lwjgl/opengl/LinuxMouse method4860 (II)V
 L81:    iconst_1
 L82:    dup
 L83:    pop2
@@ -134,13 +134,13 @@ L87:    iconst_0
 L88:    ifne L87
 L91:    iload_1
 L92:    aload_3
-L93:    invokevirtual Method org/lwjgl/opengl/LinuxEvent "enum" ()J
+L93:    invokevirtual Method org/lwjgl/opengl/LinuxEvent method4814 ()J
 L96:    aload_3
-L97:    invokevirtual Method org/lwjgl/opengl/LinuxEvent const ()I
+L97:    invokevirtual Method org/lwjgl/opengl/LinuxEvent method4830 ()I
 L100:   aload_3
-L101:   invokevirtual Method org/lwjgl/opengl/LinuxEvent "final" ()I
+L101:   invokevirtual Method org/lwjgl/opengl/LinuxEvent method4812 ()I
 L104:   i2b
-L105:   invokespecial Method org/lwjgl/opengl/LinuxMouse break (ZJIB)V
+L105:   invokespecial Method org/lwjgl/opengl/LinuxMouse method4852 (ZJIB)V
 L108:   iconst_1
 L109:   dup
 L110:   dup
@@ -151,18 +151,18 @@ L114:   aload_0
 L115:   iload_1
 L116:   iload_2
 L117:   aload_3
-L118:   invokevirtual Method org/lwjgl/opengl/LinuxEvent "enum" ()J
+L118:   invokevirtual Method org/lwjgl/opengl/LinuxEvent method4814 ()J
 L121:   aload_3
-L122:   invokevirtual Method org/lwjgl/opengl/LinuxEvent goto ()J
+L122:   invokevirtual Method org/lwjgl/opengl/LinuxEvent method4821 ()J
 L125:   aload_3
 L126:   invokevirtual Method org/lwjgl/opengl/LinuxEvent this ()I
 L129:   aload_3
-L130:   invokevirtual Method org/lwjgl/opengl/LinuxEvent short ()I
+L130:   invokevirtual Method org/lwjgl/opengl/LinuxEvent method4829 ()I
 L133:   aload_3
-L134:   invokevirtual Method org/lwjgl/opengl/LinuxEvent long ()I
+L134:   invokevirtual Method org/lwjgl/opengl/LinuxEvent method4817 ()I
 L137:   aload_3
-L138:   invokevirtual Method org/lwjgl/opengl/LinuxEvent class ()I
-L141:   invokespecial Method org/lwjgl/opengl/LinuxMouse break (ZZJJIIII)V
+L138:   invokevirtual Method org/lwjgl/opengl/LinuxEvent method4818 ()I
+L141:   invokespecial Method org/lwjgl/opengl/LinuxMouse method4859 (ZZJJIIII)V
 L144:   iconst_1
 L145:   dup
 L146:   dup
@@ -174,30 +174,30 @@ L151:   dup
 L152:   pop2
 L153:   ireturn
 L154:   
-        .attribute StackMap b'\x00\x07\x00\x30\x00\x04\x07\x00\x02\x01\x01\x07\x00\x50\x00\x00\x00\x55\x00\x00\x00\x01\x07\x00\x4A\x00\x56\x00\x04\x07\x00\x02\x01\x01\x07\x00\x50\x00\x00\x00\x57\x00\x04\x07\x00\x02\x01\x01\x07\x00\x50\x00\x01\x07\x00\x02\x00\x71\x00\x00\x00\x01\x07\x00\x4A\x00\x72\x00\x04\x07\x00\x02\x01\x01\x07\x00\x50\x00\x00\x00\x95\x00\x04\x07\x00\x02\x01\x01\x07\x00\x50\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x30\x00\x04\x07\x00\x02\x01\x01\x07\x00\x55\x00\x00\x00\x55\x00\x00\x00\x01\x07\x00\x4D\x00\x56\x00\x04\x07\x00\x02\x01\x01\x07\x00\x55\x00\x00\x00\x57\x00\x04\x07\x00\x02\x01\x01\x07\x00\x55\x00\x01\x07\x00\x02\x00\x71\x00\x00\x00\x01\x07\x00\x4D\x00\x72\x00\x04\x07\x00\x02\x01\x01\x07\x00\x55\x00\x00\x00\x95\x00\x04\x07\x00\x02\x01\x01\x07\x00\x55\x00\x00'
     .end code
 .end method
 
 .method private static native nGetWindowHeight : (JJ)I
 .end method
 
-.method public else : (ZZ)V
+.method public method4854 : (ZZ)V
     .code stack 3 locals 3
 L0:     aload_0
 L1:     iload_1
 L2:     iload_2
-L3:     invokespecial Method org/lwjgl/opengl/LinuxMouse break (ZZ)V
+L3:     invokespecial Method org/lwjgl/opengl/LinuxMouse method4869 (ZZ)V
 L6:     return
 L7:     
     .end code
 .end method
 
-.method private break : (I)I
+.method private method4855 : (I)I
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/LinuxMouse do J
+L1:     getfield Field org/lwjgl/opengl/LinuxMouse field4576 J
 L4:     aload_0
-L5:     getfield Field org/lwjgl/opengl/LinuxMouse "enum" J
+L5:     getfield Field org/lwjgl/opengl/LinuxMouse field4575 J
 L8:     invokestatic Method org/lwjgl/opengl/LinuxMouse nGetWindowHeight (JJ)I
 L11:    iconst_1
 L12:    dup
@@ -211,7 +211,7 @@ L19:
     .end code
 .end method
 
-.method private break : (BBIIIJ)V
+.method private method4856 : (BBIIIJ)V
     .code stack 7 locals 8
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/LinuxMouse false Ljava/nio/ByteBuffer;
@@ -235,13 +235,13 @@ L39:    getfield Field org/lwjgl/opengl/LinuxMouse false Ljava/nio/ByteBuffer;
 L42:    invokevirtual Method java/nio/ByteBuffer flip ()Ljava/nio/Buffer;
 L45:    aload_0
 L46:    dup
-L47:    getfield Field org/lwjgl/opengl/LinuxMouse const Lorg/lwjgl/opengl/aA;
+L47:    getfield Field org/lwjgl/opengl/LinuxMouse field4571 Lorg/lwjgl/opengl/aA;
 L50:    swap
 L51:    getfield Field org/lwjgl/opengl/LinuxMouse false Ljava/nio/ByteBuffer;
-L54:    invokevirtual Method org/lwjgl/opengl/aA else (Ljava/nio/ByteBuffer;)Z
+L54:    invokevirtual Method org/lwjgl/opengl/aA method368 (Ljava/nio/ByteBuffer;)Z
 L57:    aload_0
 L58:    lload 6
-L60:    putfield Field org/lwjgl/opengl/LinuxMouse byte J
+L60:    putfield Field org/lwjgl/opengl/LinuxMouse field4563 J
 L63:    pop2
 L64:    pop2
 L65:    return
@@ -249,21 +249,21 @@ L66:
     .end code
 .end method
 
-.method public break : (Ljava/nio/ByteBuffer;)V
+.method public method4857 : (Ljava/nio/ByteBuffer;)V
     .code stack 2 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/LinuxMouse const Lorg/lwjgl/opengl/aA;
+L1:     getfield Field org/lwjgl/opengl/LinuxMouse field4571 Lorg/lwjgl/opengl/aA;
 L4:     aload_1
-L5:     invokevirtual Method org/lwjgl/opengl/aA break (Ljava/nio/ByteBuffer;)V
+L5:     invokevirtual Method org/lwjgl/opengl/aA method285 (Ljava/nio/ByteBuffer;)V
 L8:     return
 L9:     
     .end code
 .end method
 
-.method public break : ()I
+.method public method4858 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/LinuxMouse for [B
+L1:     getfield Field org/lwjgl/opengl/LinuxMouse field4561 [B
 L4:     arraylength
 L5:     ireturn
 L6:     
@@ -273,7 +273,7 @@ L6:
 .method private static native nQueryPointer : (JJLjava/nio/IntBuffer;)J
 .end method
 
-.method private break : (ZZJJIIII)V
+.method private method4859 : (ZZJJIIII)V
     .code stack 13 locals 11
 L0:     aload_0
 L1:     iload_1
@@ -286,24 +286,24 @@ L11:    iload 10
 L13:    lload_3
 L14:    ldc2_w 1000000L
 L17:    lmul
-L18:    invokespecial Method org/lwjgl/opengl/LinuxMouse break (ZZJIIIIJ)V
+L18:    invokespecial Method org/lwjgl/opengl/LinuxMouse method4867 (ZZJIIIIJ)V
 L21:    return
 L22:    
     .end code
 .end method
 
-.method private const : (II)V
+.method private method4860 : (II)V
     .code stack 3 locals 3
 L0:     aload_0
 L1:     iload_1
 L2:     iload_2
-L3:     invokespecial Method org/lwjgl/opengl/LinuxMouse else (II)V
+L3:     invokespecial Method org/lwjgl/opengl/LinuxMouse method4862 (II)V
 L6:     return
 L7:     
     .end code
 .end method
 
-.method public break : (ZLjava/nio/IntBuffer;Ljava/nio/ByteBuffer;)V
+.method public method4861 : (ZLjava/nio/IntBuffer;Ljava/nio/ByteBuffer;)V
     .code stack 6 locals 4
 L0:     iload_1
 L1:     ifeq L34
@@ -313,7 +313,7 @@ L6:     iconst_1
 L7:     dup
 L8:     pop2
 L9:     aload_0
-L10:    getfield Field org/lwjgl/opengl/LinuxMouse null I
+L10:    getfield Field org/lwjgl/opengl/LinuxMouse field4572 I
 L13:    invokevirtual Method java/nio/IntBuffer put (II)Ljava/nio/IntBuffer;
 L16:    aload_2
 L17:    dup_x1
@@ -322,7 +322,7 @@ L19:    dup
 L20:    dup
 L21:    pop2
 L22:    aload_0
-L23:    getfield Field org/lwjgl/opengl/LinuxMouse extends I
+L23:    getfield Field org/lwjgl/opengl/LinuxMouse field4555 I
 L26:    invokevirtual Method java/nio/IntBuffer put (II)Ljava/nio/IntBuffer;
 L29:    pop2
 L30:    goto L60
@@ -334,7 +334,7 @@ L37:    iconst_1
 L38:    dup
 L39:    pop2
 L40:    aload_0
-L41:    getfield Field org/lwjgl/opengl/LinuxMouse char I
+L41:    getfield Field org/lwjgl/opengl/LinuxMouse field4573 I
 L44:    invokevirtual Method java/nio/IntBuffer put (II)Ljava/nio/IntBuffer;
 L47:    aload_2
 L48:    iconst_1
@@ -342,7 +342,7 @@ L49:    dup
 L50:    dup
 L51:    pop2
 L52:    aload_0
-L53:    getfield Field org/lwjgl/opengl/LinuxMouse catch I
+L53:    getfield Field org/lwjgl/opengl/LinuxMouse field4558 I
 L56:    invokevirtual Method java/nio/IntBuffer put (II)Ljava/nio/IntBuffer;
 L59:    pop2
 L60:    iconst_2
@@ -350,7 +350,7 @@ L61:    iconst_1
 L62:    dup
 L63:    pop2
 L64:    aload_0
-L65:    getfield Field org/lwjgl/opengl/LinuxMouse if I
+L65:    getfield Field org/lwjgl/opengl/LinuxMouse field4560 I
 L68:    invokevirtual Method java/nio/IntBuffer put (II)Ljava/nio/IntBuffer;
 L71:    pop
 L72:    aload_0
@@ -361,10 +361,10 @@ L76:    iconst_1
 L77:    dup
 L78:    pop2
 L79:    dup_x1
-L80:    putfield Field org/lwjgl/opengl/LinuxMouse if I
+L80:    putfield Field org/lwjgl/opengl/LinuxMouse field4560 I
 L83:    dup_x1
-L84:    putfield Field org/lwjgl/opengl/LinuxMouse extends I
-L87:    putfield Field org/lwjgl/opengl/LinuxMouse null I
+L84:    putfield Field org/lwjgl/opengl/LinuxMouse field4555 I
+L87:    putfield Field org/lwjgl/opengl/LinuxMouse field4572 I
 L90:    iconst_0
 L91:    iconst_1
 L92:    dup
@@ -372,12 +372,12 @@ L93:    pop2
 L94:    dup
 L95:    istore_1
 L96:    aload_0
-L97:    getfield Field org/lwjgl/opengl/LinuxMouse for [B
+L97:    getfield Field org/lwjgl/opengl/LinuxMouse field4561 [B
 L100:   arraylength
 L101:   if_icmpge L124
 L104:   aload_3
 L105:   aload_0
-L106:   getfield Field org/lwjgl/opengl/LinuxMouse for [B
+L106:   getfield Field org/lwjgl/opengl/LinuxMouse field4561 [B
 L109:   iload_1
 L110:   dup_x1
 L111:   iinc 1 1
@@ -389,26 +389,26 @@ L120:   goto L96
 L123:   athrow
 L124:   return
 L125:   
-        .attribute StackMap b'\x00\x06\x00\x21\x00\x00\x00\x01\x07\x00\x4A\x00\x22\x00\x04\x07\x00\x02\x01\x07\x00\xA9\x07\x00\x7C\x00\x00\x00\x3C\x00\x04\x07\x00\x02\x01\x07\x00\xA9\x07\x00\x7C\x00\x01\x07\x00\xA9\x00\x60\x00\x04\x07\x00\x02\x01\x07\x00\xA9\x07\x00\x7C\x00\x01\x01\x00\x7B\x00\x00\x00\x01\x07\x00\x4A\x00\x7C\x00\x04\x07\x00\x02\x01\x07\x00\xA9\x07\x00\x7C\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x21\x00\x00\x00\x01\x07\x00\x4D\x00\x22\x00\x04\x07\x00\x02\x01\x07\x00\xC5\x07\x00\x91\x00\x00\x00\x3C\x00\x04\x07\x00\x02\x01\x07\x00\xC5\x07\x00\x91\x00\x01\x07\x00\xC5\x00\x60\x00\x04\x07\x00\x02\x01\x07\x00\xC5\x07\x00\x91\x00\x01\x01\x00\x7B\x00\x00\x00\x01\x07\x00\x4D\x00\x7C\x00\x04\x07\x00\x02\x01\x07\x00\xC5\x07\x00\x91\x00\x00'
     .end code
 .end method
 
-.method private else : (II)V
+.method private method4862 : (II)V
     .code stack 5 locals 3
 L0:     iload_2
 L1:     aload_0
 L2:     dup_x1
 L3:     dup_x2
 L4:     iload_1
-L5:     putfield Field org/lwjgl/opengl/LinuxMouse char I
-L8:     invokespecial Method org/lwjgl/opengl/LinuxMouse break (I)I
-L11:    putfield Field org/lwjgl/opengl/LinuxMouse catch I
+L5:     putfield Field org/lwjgl/opengl/LinuxMouse field4573 I
+L8:     invokespecial Method org/lwjgl/opengl/LinuxMouse method4855 (I)I
+L11:    putfield Field org/lwjgl/opengl/LinuxMouse field4558 I
 L14:    return
 L15:    
     .end code
 .end method
 
-.method private break : (ZBJ)V
+.method private method4863 : (ZBJ)V
     .code stack 8 locals 6
 L0:     iconst_0
 L1:     iconst_1
@@ -440,12 +440,12 @@ L52:    dup
 L53:    pop2
 L54:    iload 5
 L56:    lload_3
-L57:    invokespecial Method org/lwjgl/opengl/LinuxMouse break (ZBBIJ)V
+L57:    invokespecial Method org/lwjgl/opengl/LinuxMouse method4868 (ZBBIJ)V
 L60:    dup
-L61:    getfield Field org/lwjgl/opengl/LinuxMouse if I
+L61:    getfield Field org/lwjgl/opengl/LinuxMouse field4560 I
 L64:    iload 5
 L66:    iadd
-L67:    putfield Field org/lwjgl/opengl/LinuxMouse if I
+L67:    putfield Field org/lwjgl/opengl/LinuxMouse field4560 I
 L70:    return
 L71:    athrow
 L72:    bipush -120
@@ -466,12 +466,12 @@ L88:    dup
 L89:    pop2
 L90:    iload 5
 L92:    lload_3
-L93:    invokespecial Method org/lwjgl/opengl/LinuxMouse break (ZBBIJ)V
+L93:    invokespecial Method org/lwjgl/opengl/LinuxMouse method4868 (ZBBIJ)V
 L96:    dup
-L97:    getfield Field org/lwjgl/opengl/LinuxMouse if I
+L97:    getfield Field org/lwjgl/opengl/LinuxMouse field4560 I
 L100:   iload 5
 L102:   iadd
-L103:   putfield Field org/lwjgl/opengl/LinuxMouse if I
+L103:   putfield Field org/lwjgl/opengl/LinuxMouse field4560 I
 L106:   return
 L107:   athrow
 L108:   aload_0
@@ -482,30 +482,30 @@ L112:   dup
 L113:   dup
 L114:   pop2
 L115:   lload_3
-L116:   invokespecial Method org/lwjgl/opengl/LinuxMouse break (ZIBJ)V
+L116:   invokespecial Method org/lwjgl/opengl/LinuxMouse method4865 (ZIBJ)V
 L119:   return
 L120:   
-        .attribute StackMap b'\x00\x06\x00\x20\x00\x05\x07\x00\x02\x01\x01\x04\x01\x00\x00\x00\x22\x00\x05\x07\x00\x02\x01\x01\x04\x01\x00\x01\x01\x00\x47\x00\x00\x00\x01\x07\x00\x4A\x00\x48\x00\x05\x07\x00\x02\x01\x01\x04\x01\x00\x00\x00\x6B\x00\x00\x00\x01\x07\x00\x4A\x00\x6C\x00\x05\x07\x00\x02\x01\x01\x04\x01\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x20\x00\x05\x07\x00\x02\x01\x01\x04\x01\x00\x00\x00\x22\x00\x05\x07\x00\x02\x01\x01\x04\x01\x00\x01\x01\x00\x47\x00\x00\x00\x01\x07\x00\x4D\x00\x48\x00\x05\x07\x00\x02\x01\x01\x04\x01\x00\x00\x00\x6B\x00\x00\x00\x01\x07\x00\x4D\x00\x6C\x00\x05\x07\x00\x02\x01\x01\x04\x01\x00\x00'
     .end code
 .end method
 
 .method private static native nGetWindowWidth : (JJ)I
 .end method
 
-.method private break : (ZIIJ)V
+.method private method4864 : (ZIIJ)V
     .code stack 8 locals 8
 L0:     aload_0
 L1:     iload_3
-L2:     invokespecial Method org/lwjgl/opengl/LinuxMouse break (I)I
+L2:     invokespecial Method org/lwjgl/opengl/LinuxMouse method4855 (I)I
 L5:     istore_3
 L6:     iload_2
 L7:     aload_0
-L8:     getfield Field org/lwjgl/opengl/LinuxMouse char I
+L8:     getfield Field org/lwjgl/opengl/LinuxMouse field4573 I
 L11:    isub
 L12:    istore 6
 L14:    iload_3
 L15:    aload_0
-L16:    getfield Field org/lwjgl/opengl/LinuxMouse catch I
+L16:    getfield Field org/lwjgl/opengl/LinuxMouse field4558 I
 L19:    isub
 L20:    istore 7
 L22:    iload 6
@@ -519,17 +519,17 @@ L35:    aload_0
 L36:    dup
 L37:    dup_x2
 L38:    dup
-L39:    getfield Field org/lwjgl/opengl/LinuxMouse null I
+L39:    getfield Field org/lwjgl/opengl/LinuxMouse field4572 I
 L42:    iload 6
 L44:    iadd
-L45:    putfield Field org/lwjgl/opengl/LinuxMouse null I
+L45:    putfield Field org/lwjgl/opengl/LinuxMouse field4572 I
 L48:    dup
-L49:    getfield Field org/lwjgl/opengl/LinuxMouse extends I
+L49:    getfield Field org/lwjgl/opengl/LinuxMouse field4555 I
 L52:    iload 7
 L54:    iadd
-L55:    putfield Field org/lwjgl/opengl/LinuxMouse extends I
-L58:    putfield Field org/lwjgl/opengl/LinuxMouse char I
-L61:    putfield Field org/lwjgl/opengl/LinuxMouse catch I
+L55:    putfield Field org/lwjgl/opengl/LinuxMouse field4555 I
+L58:    putfield Field org/lwjgl/opengl/LinuxMouse field4573 I
+L61:    putfield Field org/lwjgl/opengl/LinuxMouse field4558 I
 L64:    iload_1
 L65:    ifeq L92
 L68:    aload_0
@@ -548,7 +548,7 @@ L82:    iconst_1
 L83:    dup
 L84:    pop2
 L85:    lload 4
-L87:    invokespecial Method org/lwjgl/opengl/LinuxMouse break (BBIIIJ)V
+L87:    invokespecial Method org/lwjgl/opengl/LinuxMouse method4856 (BBIIIJ)V
 L90:    return
 L91:    athrow
 L92:    aload_0
@@ -567,14 +567,14 @@ L104:   iconst_1
 L105:   dup
 L106:   pop2
 L107:   lload 4
-L109:   invokespecial Method org/lwjgl/opengl/LinuxMouse break (BBIIIJ)V
+L109:   invokespecial Method org/lwjgl/opengl/LinuxMouse method4856 (BBIIIJ)V
 L112:   return
 L113:   
-        .attribute StackMap b'\x00\x04\x00\x20\x00\x07\x07\x00\x02\x01\x01\x01\x04\x01\x01\x00\x00\x00\x5B\x00\x00\x00\x01\x07\x00\x4A\x00\x5C\x00\x07\x07\x00\x02\x01\x01\x01\x04\x01\x01\x00\x00\x00\x70\x00\x07\x07\x00\x02\x01\x01\x01\x04\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x20\x00\x07\x07\x00\x02\x01\x01\x01\x04\x01\x01\x00\x00\x00\x5B\x00\x00\x00\x01\x07\x00\x4D\x00\x5C\x00\x07\x07\x00\x02\x01\x01\x01\x04\x01\x01\x00\x00\x00\x70\x00\x07\x07\x00\x02\x01\x01\x01\x04\x01\x01\x00\x00'
     .end code
 .end method
 
-.method private break : (ZIBJ)V
+.method private method4865 : (ZIBJ)V
     .code stack 7 locals 7
 L0:     iload_2
 L1:     tableswitch 1
@@ -664,7 +664,7 @@ L158:   aload_0
 L159:   goto L164
 L162:   return
 L163:   athrow
-L164:   getfield Field org/lwjgl/opengl/LinuxMouse for [B
+L164:   getfield Field org/lwjgl/opengl/LinuxMouse field4561 [B
 L167:   iload 6
 L169:   iload_3
 L170:   bastore
@@ -677,10 +677,10 @@ L177:   iconst_1
 L178:   dup
 L179:   pop2
 L180:   lload 4
-L182:   invokespecial Method org/lwjgl/opengl/LinuxMouse break (ZBBIJ)V
+L182:   invokespecial Method org/lwjgl/opengl/LinuxMouse method4868 (ZBBIJ)V
 L185:   return
 L186:   
-        .attribute StackMap b'\x00\x0F\x00\x34\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\x35\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x01\x01\x00\x42\x00\x00\x00\x01\x07\x00\x4A\x00\x43\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\x4D\x00\x00\x00\x01\x07\x00\x4A\x00\x4E\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\x58\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\x62\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\x6D\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\x77\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x01\x01\x00\x7A\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\x84\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\xA2\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\xA3\x00\x00\x00\x01\x07\x00\x4A\x00\xA4\x00\x06\x07\x00\x02\x01\x01\x01\x04\x01\x00\x01\x07\x00\x02'
+        .attribute StackMap b'\x00\x0F\x00\x34\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\x35\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x01\x01\x00\x42\x00\x00\x00\x01\x07\x00\x4D\x00\x43\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\x4D\x00\x00\x00\x01\x07\x00\x4D\x00\x4E\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\x58\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\x62\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\x6D\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\x77\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x01\x01\x00\x7A\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\x84\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\xA2\x00\x05\x07\x00\x02\x01\x01\x01\x04\x00\x00\x00\xA3\x00\x00\x00\x01\x07\x00\x4D\x00\xA4\x00\x06\x07\x00\x02\x01\x01\x01\x04\x01\x00\x01\x07\x00\x02'
     .end code
 .end method
 
@@ -710,14 +710,14 @@ L24:    iconst_1
 L25:    dup
 L26:    pop2
 L27:    invokestatic Method org/lwjgl/BufferUtils createIntBuffer (I)Ljava/nio/IntBuffer;
-L30:    putfield Field org/lwjgl/opengl/LinuxMouse case Ljava/nio/IntBuffer;
+L30:    putfield Field org/lwjgl/opengl/LinuxMouse field4562 Ljava/nio/IntBuffer;
 L33:    iconst_1
 L34:    dup
 L35:    pop2
 L36:    invokestatic Method java/nio/ByteBuffer allocate (I)Ljava/nio/ByteBuffer;
 L39:    putfield Field org/lwjgl/opengl/LinuxMouse false Ljava/nio/ByteBuffer;
-L42:    putfield Field org/lwjgl/opengl/LinuxMouse do J
-L45:    putfield Field org/lwjgl/opengl/LinuxMouse "enum" J
+L42:    putfield Field org/lwjgl/opengl/LinuxMouse field4576 J
+L45:    putfield Field org/lwjgl/opengl/LinuxMouse field4575 J
 L48:    putfield Field org/lwjgl/opengl/LinuxMouse this J
 L51:    ldc "_LWJGL"
 L53:    iconst_0
@@ -733,7 +733,7 @@ L72:    newarray byte
 L74:    iconst_1
 L75:    dup
 L76:    pop2
-L77:    putfield Field org/lwjgl/opengl/LinuxMouse for [B
+L77:    putfield Field org/lwjgl/opengl/LinuxMouse field4561 [B
 L80:    iconst_1
 L81:    dup
 L82:    pop2
@@ -741,7 +741,7 @@ L83:    iconst_0
 L84:    iconst_1
 L85:    dup
 L86:    pop2
-L87:    invokespecial Method org/lwjgl/opengl/LinuxMouse break (ZZ)V
+L87:    invokespecial Method org/lwjgl/opengl/LinuxMouse method4869 (ZZ)V
 L90:    return
 L91:    
     .end code
@@ -751,16 +751,16 @@ L91:
 .method private static native nSendWarpEvent : (JJJII)V
 .end method
 
-.method public break : (II)V
+.method public method4866 : (II)V
     .code stack 7 locals 3
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/LinuxMouse do J
+L1:     getfield Field org/lwjgl/opengl/LinuxMouse field4576 J
 L4:     aload_0
-L5:     getfield Field org/lwjgl/opengl/LinuxMouse "enum" J
+L5:     getfield Field org/lwjgl/opengl/LinuxMouse field4575 J
 L8:     iload_1
 L9:     aload_0
 L10:    iload_2
-L11:    invokespecial Method org/lwjgl/opengl/LinuxMouse break (I)I
+L11:    invokespecial Method org/lwjgl/opengl/LinuxMouse method4855 (I)I
 L14:    invokestatic Method org/lwjgl/opengl/LinuxMouse nWarpCursor (JJII)V
 L17:    return
 L18:    
@@ -770,7 +770,7 @@ L18:
 .method private static native nGetButtonCount : (J)I
 .end method
 
-.method private break : (ZZJIIIIJ)V
+.method private method4867 : (ZZJIIIIJ)V
     .code stack 7 locals 13
 L0:     iload_2
 L1:     aload_0
@@ -778,29 +778,29 @@ L2:     iload_1
 L3:     iload 7
 L5:     iload 8
 L7:     lload 9
-L9:     invokespecial Method org/lwjgl/opengl/LinuxMouse break (ZIIJ)V
+L9:     invokespecial Method org/lwjgl/opengl/LinuxMouse method4864 (ZIIJ)V
 L12:    ifne L17
 L15:    return
 L16:    athrow
 L17:    aload_0
 L18:    dup
 L19:    dup2
-L20:    getfield Field org/lwjgl/opengl/LinuxMouse do J
+L20:    getfield Field org/lwjgl/opengl/LinuxMouse field4576 J
 L23:    lload_3
 L24:    invokestatic Method org/lwjgl/opengl/LinuxMouse nGetWindowHeight (JJ)I
 L27:    istore_1
-L28:    getfield Field org/lwjgl/opengl/LinuxMouse do J
+L28:    getfield Field org/lwjgl/opengl/LinuxMouse field4576 J
 L31:    lload_3
 L32:    invokestatic Method org/lwjgl/opengl/LinuxMouse nGetWindowWidth (JJ)I
 L35:    istore_2
-L36:    getfield Field org/lwjgl/opengl/LinuxMouse do J
+L36:    getfield Field org/lwjgl/opengl/LinuxMouse field4576 J
 L39:    aload_0
-L40:    getfield Field org/lwjgl/opengl/LinuxMouse "enum" J
+L40:    getfield Field org/lwjgl/opengl/LinuxMouse field4575 J
 L43:    invokestatic Method org/lwjgl/opengl/LinuxMouse nGetWindowHeight (JJ)I
 L46:    istore_3
-L47:    getfield Field org/lwjgl/opengl/LinuxMouse do J
+L47:    getfield Field org/lwjgl/opengl/LinuxMouse field4576 J
 L50:    aload_0
-L51:    getfield Field org/lwjgl/opengl/LinuxMouse "enum" J
+L51:    getfield Field org/lwjgl/opengl/LinuxMouse field4575 J
 L54:    invokestatic Method org/lwjgl/opengl/LinuxMouse nGetWindowWidth (JJ)I
 L57:    istore 4
 L59:    iload 5
@@ -907,14 +907,14 @@ L210:   istore_1
 L211:   aload_0
 L212:   iload_2
 L213:   iload_1
-L214:   invokespecial Method org/lwjgl/opengl/LinuxMouse short (II)V
+L214:   invokespecial Method org/lwjgl/opengl/LinuxMouse method4851 (II)V
 L217:   return
 L218:   
-        .attribute StackMap b'\x00\x07\x00\x10\x00\x00\x00\x01\x07\x00\x4A\x00\x11\x00\x09\x07\x00\x02\x01\x01\x04\x01\x01\x01\x01\x04\x00\x00\x00\xAC\x00\x0C\x07\x00\x02\x01\x01\x01\x01\x01\x01\x01\x01\x04\x01\x01\x00\x00\x00\xB3\x00\x00\x00\x01\x07\x00\x4A\x00\xB4\x00\x0C\x07\x00\x02\x01\x01\x01\x01\x01\x01\x01\x01\x04\x01\x01\x00\x00\x00\xB8\x00\x0C\x07\x00\x02\x01\x01\x01\x01\x01\x01\x01\x01\x04\x01\x01\x00\x01\x01\x00\xD9\x00\x0C\x07\x00\x02\x01\x01\x01\x01\x01\x01\x01\x01\x04\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x10\x00\x00\x00\x01\x07\x00\x4D\x00\x11\x00\x09\x07\x00\x02\x01\x01\x04\x01\x01\x01\x01\x04\x00\x00\x00\xAC\x00\x0C\x07\x00\x02\x01\x01\x01\x01\x01\x01\x01\x01\x04\x01\x01\x00\x00\x00\xB3\x00\x00\x00\x01\x07\x00\x4D\x00\xB4\x00\x0C\x07\x00\x02\x01\x01\x01\x01\x01\x01\x01\x01\x04\x01\x01\x00\x00\x00\xB8\x00\x0C\x07\x00\x02\x01\x01\x01\x01\x01\x01\x01\x01\x04\x01\x01\x00\x01\x01\x00\xD9\x00\x0C\x07\x00\x02\x01\x01\x01\x01\x01\x01\x01\x01\x04\x01\x01\x00\x00'
     .end code
 .end method
 
-.method private break : (ZBBIJ)V
+.method private method4868 : (ZBBIJ)V
     .code stack 8 locals 7
 L0:     iload_1
 L1:     ifeq L24
@@ -931,7 +931,7 @@ L13:    dup
 L14:    pop2
 L15:    iload 4
 L17:    lload 5
-L19:    invokespecial Method org/lwjgl/opengl/LinuxMouse break (BBIIIJ)V
+L19:    invokespecial Method org/lwjgl/opengl/LinuxMouse method4856 (BBIIIJ)V
 L22:    return
 L23:    athrow
 L24:    aload_0
@@ -939,19 +939,19 @@ L25:    iload_2
 L26:    iload_3
 L27:    aload_0
 L28:    dup
-L29:    getfield Field org/lwjgl/opengl/LinuxMouse char I
+L29:    getfield Field org/lwjgl/opengl/LinuxMouse field4573 I
 L32:    swap
-L33:    getfield Field org/lwjgl/opengl/LinuxMouse catch I
+L33:    getfield Field org/lwjgl/opengl/LinuxMouse field4558 I
 L36:    iload 4
 L38:    lload 5
-L40:    invokespecial Method org/lwjgl/opengl/LinuxMouse break (BBIIIJ)V
+L40:    invokespecial Method org/lwjgl/opengl/LinuxMouse method4856 (BBIIIJ)V
 L43:    return
 L44:    
-        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x4A\x00\x18\x00\x06\x07\x00\x02\x01\x01\x01\x01\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x4D\x00\x18\x00\x06\x07\x00\x02\x01\x01\x01\x01\x04\x00\x00'
     .end code
 .end method
 
-.method private break : (ZZ)V
+.method private method4869 : (ZZ)V
     .code stack 13 locals 9
 L0:     iconst_0
 L1:     aload_0
@@ -966,48 +966,48 @@ L11:    aload_0
 L12:    getfield Field org/lwjgl/opengl/LinuxMouse false Ljava/nio/ByteBuffer;
 L15:    invokevirtual Method java/nio/ByteBuffer capacity ()I
 L18:    invokespecial Method org/lwjgl/opengl/aA <init> (I)V
-L21:    putfield Field org/lwjgl/opengl/LinuxMouse const Lorg/lwjgl/opengl/aA;
+L21:    putfield Field org/lwjgl/opengl/LinuxMouse field4571 Lorg/lwjgl/opengl/aA;
 L24:    iconst_1
 L25:    dup
 L26:    pop2
 L27:    dup_x1
-L28:    putfield Field org/lwjgl/opengl/LinuxMouse extends I
-L31:    putfield Field org/lwjgl/opengl/LinuxMouse null I
+L28:    putfield Field org/lwjgl/opengl/LinuxMouse field4555 I
+L31:    putfield Field org/lwjgl/opengl/LinuxMouse field4572 I
 L34:    aload_0
 L35:    dup
 L36:    dup2
 L37:    dup2
 L38:    dup2
-L39:    getfield Field org/lwjgl/opengl/LinuxMouse do J
+L39:    getfield Field org/lwjgl/opengl/LinuxMouse field4576 J
 L42:    aload_0
 L43:    dup_x2
-L44:    getfield Field org/lwjgl/opengl/LinuxMouse "enum" J
+L44:    getfield Field org/lwjgl/opengl/LinuxMouse field4575 J
 L47:    aload_0
-L48:    getfield Field org/lwjgl/opengl/LinuxMouse case Ljava/nio/IntBuffer;
+L48:    getfield Field org/lwjgl/opengl/LinuxMouse field4562 Ljava/nio/IntBuffer;
 L51:    invokestatic Method org/lwjgl/opengl/LinuxMouse nQueryPointer (JJLjava/nio/IntBuffer;)J
 L54:    lstore_3
-L55:    getfield Field org/lwjgl/opengl/LinuxMouse case Ljava/nio/IntBuffer;
+L55:    getfield Field org/lwjgl/opengl/LinuxMouse field4562 Ljava/nio/IntBuffer;
 L58:    iconst_0
 L59:    iconst_1
 L60:    dup
 L61:    pop2
 L62:    invokevirtual Method java/nio/IntBuffer get (I)I
 L65:    istore 5
-L67:    getfield Field org/lwjgl/opengl/LinuxMouse case Ljava/nio/IntBuffer;
+L67:    getfield Field org/lwjgl/opengl/LinuxMouse field4562 Ljava/nio/IntBuffer;
 L70:    iconst_1
 L71:    dup
 L72:    dup
 L73:    pop2
 L74:    invokevirtual Method java/nio/IntBuffer get (I)I
 L77:    istore 6
-L79:    getfield Field org/lwjgl/opengl/LinuxMouse case Ljava/nio/IntBuffer;
+L79:    getfield Field org/lwjgl/opengl/LinuxMouse field4562 Ljava/nio/IntBuffer;
 L82:    iconst_2
 L83:    iconst_1
 L84:    dup
 L85:    pop2
 L86:    invokevirtual Method java/nio/IntBuffer get (I)I
 L89:    istore 7
-L91:    getfield Field org/lwjgl/opengl/LinuxMouse case Ljava/nio/IntBuffer;
+L91:    getfield Field org/lwjgl/opengl/LinuxMouse field4562 Ljava/nio/IntBuffer;
 L94:    iconst_3
 L95:    iconst_1
 L96:    dup
@@ -1015,10 +1015,10 @@ L97:    pop2
 L98:    invokevirtual Method java/nio/IntBuffer get (I)I
 L101:   istore 8
 L103:   iload 7
-L105:   putfield Field org/lwjgl/opengl/LinuxMouse char I
+L105:   putfield Field org/lwjgl/opengl/LinuxMouse field4573 I
 L108:   iload 8
-L110:   invokespecial Method org/lwjgl/opengl/LinuxMouse break (I)I
-L113:   putfield Field org/lwjgl/opengl/LinuxMouse catch I
+L110:   invokespecial Method org/lwjgl/opengl/LinuxMouse method4855 (I)I
+L113:   putfield Field org/lwjgl/opengl/LinuxMouse field4558 I
 L116:   iload_1
 L117:   iload_2
 L118:   lload_3
@@ -1027,8 +1027,8 @@ L121:   iload 6
 L123:   iload 7
 L125:   iload 8
 L127:   aload_0
-L128:   getfield Field org/lwjgl/opengl/LinuxMouse byte J
-L131:   invokespecial Method org/lwjgl/opengl/LinuxMouse break (ZZJIIIIJ)V
+L128:   getfield Field org/lwjgl/opengl/LinuxMouse field4563 J
+L131:   invokespecial Method org/lwjgl/opengl/LinuxMouse method4867 (ZZJIIIIJ)V
 L134:   return
 L135:   
     .end code

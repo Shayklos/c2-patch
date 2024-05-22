@@ -2,33 +2,33 @@
 .class public final super org/lwjgl/opengl/EXTGeometryShader4
 .super java/lang/Object
 .field public static final true I = 35881
-.field public static final for I = 11
-.field public static final case I = 36318
-.field public static final byte I = 36317
-.field public static final "super" I = 36052
-.field public static final int I = 36315
-.field public static final short I = 13
-.field public static final goto I = 12
-.field public static final break I = 36320
-.field public static final long I = 36321
-.field public static final void I = 36265
+.field public static final field3381 I = 11
+.field public static final field3382 I = 36318
+.field public static final field3383 I = 36317
+.field public static final field3384 I = 36052
+.field public static final field3385 I = 36315
+.field public static final field3386 I = 13
+.field public static final field3387 I = 12
+.field public static final field3388 I = 36320
+.field public static final field3389 I = 36321
+.field public static final field3390 I = 36265
 .field public static final try I = 10
-.field public static final const I = 34370
+.field public static final field3391 I = 34370
 .field public static final new I = 36319
-.field public static final null I = 36263
+.field public static final field3392 I = 36263
 .field public static final this I = 35659
-.field public static final char I = 36313
-.field public static final else I = 36314
-.field public static final "enum" I = 36316
-.field public static final do I = 36264
+.field public static final field3393 I = 36313
+.field public static final field3394 I = 36314
+.field public static final field3395 I = 36316
+.field public static final field3396 I = 36264
 
-.method public static else : (IIIII)V
+.method public static method3442 : (IIIII)V
     .code stack 7 locals 7
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb mf J
 L6:     dup2
 L7:     lstore 5
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -41,13 +41,13 @@ L24:
     .end code
 .end method
 
-.method public static break : (IIII)V
+.method public static method3443 : (IIII)V
     .code stack 6 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb Lb J
 L6:     dup2
 L7:     lstore 4
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2
@@ -62,13 +62,13 @@ L22:
 .method static native nglFramebufferTextureLayerEXT : (IIIIIJ)V
 .end method
 
-.method public static break : (III)V
+.method public static method3444 : (III)V
     .code stack 5 locals 5
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb KB J
 L6:     dup2
 L7:     lstore_3
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    iload_1
 L13:    iload_2
@@ -94,13 +94,13 @@ L5:
 .method static native nglProgramParameteriEXT : (IIIJ)V
 .end method
 
-.method public static break : (IIIII)V
+.method public static method3445 : (IIIII)V
     .code stack 7 locals 7
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb VS J
 L6:     dup2
 L7:     lstore 5
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2

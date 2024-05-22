@@ -1,9 +1,9 @@
 .version 49 0
 .class final super net/gewaltig/cultris/e
 .super java/awt/Label
-.field final synthetic else Lnet/gewaltig/cultris/Applet;
-.field final synthetic "enum" I
-.field private static final do J = 1L
+.field final synthetic field572 Lnet/gewaltig/cultris/Applet;
+.field final synthetic field573 I
+.field private static final field574 J = 1L
 
 .method <init> : (Lnet/gewaltig/cultris/Applet;Ljava/lang/String;II)V
     .code stack 7 locals 5
@@ -14,8 +14,8 @@ L3:     dup_x2
 L4:     iload 4
 L6:     aload_0
 L7:     aload_1
-L8:     putfield Field net/gewaltig/cultris/e else Lnet/gewaltig/cultris/Applet;
-L11:    putfield Field net/gewaltig/cultris/e "enum" I
+L8:     putfield Field net/gewaltig/cultris/e field572 Lnet/gewaltig/cultris/Applet;
+L11:    putfield Field net/gewaltig/cultris/e field573 I
 L14:    invokespecial Method java/awt/Label <init> (Ljava/lang/String;I)V
 L17:    return
 L18:    
@@ -42,7 +42,7 @@ L22:    invokevirtual Method net/gewaltig/cultris/e getText ()Ljava/lang/String;
 L25:    invokevirtual Method java/awt/FontMetrics stringWidth (Ljava/lang/String;)I
 L28:    istore 4
 L30:    aload_0
-L31:    getfield Field net/gewaltig/cultris/e "enum" I
+L31:    getfield Field net/gewaltig/cultris/e field573 I
 L34:    iload 4
 L36:    isub
 L37:    iconst_2
@@ -61,7 +61,7 @@ L53:    dup
 L54:    pop2
 L55:    isub
 L56:    aload_0
-L57:    getfield Field net/gewaltig/cultris/e "enum" I
+L57:    getfield Field net/gewaltig/cultris/e field573 I
 L60:    iload 4
 L62:    iadd
 L63:    iconst_2

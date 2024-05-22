@@ -2,11 +2,11 @@
 .class interface abstract org/lwjgl/opengl/d
 .super java/lang/Object
 
-.method public abstract break : (Z)V
+.method public abstract method5286 : (Z)V
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract break : ()Z
+.method public abstract method5287 : ()Z
     .exceptions org/lwjgl/LWJGLException
 .end method
 .innerclasses

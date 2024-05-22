@@ -1,7 +1,7 @@
 .version 49 0
 .class public final super synthetic xd
 .super java/lang/Object
-.field public static final synthetic do [I
+.field public static final synthetic field5851 [I
 
 .method public static <clinit> : ()V
     .code stack 5 locals 1
@@ -11,10 +11,10 @@ L4:     newarray int
 L6:     iconst_1
 L7:     dup
 L8:     pop2
-L9:     putstatic Field xd do [I
+L9:     putstatic Field xd field5851 [I
         .catch java/lang/NoSuchFieldError from L12 to L26 using L30
-L12:    getstatic Field xd do [I
-L15:    getstatic Field QB "enum" LQB;
+L12:    getstatic Field xd field5851 [I
+L15:    getstatic Field QB field368 LQB;
 L18:    invokevirtual Method QB ordinal ()I
 L21:    iconst_1
 L22:    dup
@@ -25,8 +25,8 @@ L26:    goto L31
 L29:    athrow
 L30:    astore_0
         .catch java/lang/NoSuchFieldError from L31 to L45 using L49
-L31:    getstatic Field xd do [I
-L34:    getstatic Field QB else LQB;
+L31:    getstatic Field xd field5851 [I
+L34:    getstatic Field QB field367 LQB;
 L37:    invokevirtual Method QB ordinal ()I
 L40:    iconst_2
 L41:    iconst_1
@@ -37,8 +37,8 @@ L45:    goto L50
 L48:    athrow
 L49:    astore_0
         .catch java/lang/NoSuchFieldError from L50 to L64 using L67
-L50:    getstatic Field xd do [I
-L53:    getstatic Field QB char LQB;
+L50:    getstatic Field xd field5851 [I
+L53:    getstatic Field QB field366 LQB;
 L56:    invokevirtual Method QB ordinal ()I
 L59:    iconst_3
 L60:    iconst_1
@@ -48,8 +48,8 @@ L63:    iastore
 L64:    goto L68
 L67:    astore_0
         .catch java/lang/NoSuchFieldError from L68 to L82 using L83
-L68:    getstatic Field xd do [I
-L71:    getstatic Field QB do LQB;
+L68:    getstatic Field xd field5851 [I
+L71:    getstatic Field QB field369 LQB;
 L74:    invokevirtual Method QB ordinal ()I
 L77:    iconst_4
 L78:    iconst_1

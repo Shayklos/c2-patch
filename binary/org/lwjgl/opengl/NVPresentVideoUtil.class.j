@@ -2,22 +2,22 @@
 .class public final super org/lwjgl/opengl/NVPresentVideoUtil
 .super java/lang/Object
 
-.method public static break : (ILjava/nio/IntBuffer;)Z
+.method public static method5144 : (ILjava/nio/IntBuffer;)Z
     .code stack 5 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/NVPresentVideoUtil else ()V
+L0:     invokestatic Method org/lwjgl/opengl/NVPresentVideoUtil method5145 ()V
 L3:     aload_1
 L4:     iconst_1
 L5:     dup
 L6:     dup
 L7:     pop2
-L8:     invokestatic Method org/lwjgl/l break (Ljava/nio/IntBuffer;I)V
-L11:    invokestatic Method org/lwjgl/opengl/Jb do ()Lorg/lwjgl/opengl/Jb;
+L8:     invokestatic Method org/lwjgl/l method2041 (Ljava/nio/IntBuffer;I)V
+L11:    invokestatic Method org/lwjgl/opengl/Jb method3632 ()Lorg/lwjgl/opengl/Jb;
 L14:    dup
 L15:    astore_2
-L16:    invokevirtual Method org/lwjgl/opengl/Jb float ()Lorg/lwjgl/opengl/a;
-L19:    invokevirtual Method org/lwjgl/opengl/a float ()Ljava/nio/ByteBuffer;
+L16:    invokevirtual Method org/lwjgl/opengl/Jb method3635 ()Lorg/lwjgl/opengl/a;
+L19:    invokevirtual Method org/lwjgl/opengl/a method4677 ()Ljava/nio/ByteBuffer;
 L22:    aload_2
-L23:    invokevirtual Method org/lwjgl/opengl/Jb if ()Ljava/nio/ByteBuffer;
+L23:    invokevirtual Method org/lwjgl/opengl/Jb method3629 ()Ljava/nio/ByteBuffer;
 L26:    iload_0
 L27:    aload_1
 L28:    dup
@@ -31,11 +31,11 @@ L36:
 .method private static native nglEnumerateVideoDevicesNV : (Ljava/nio/ByteBuffer;Ljava/nio/LongBuffer;I)I
 .end method
 
-.method private static else : ()V
+.method private static method5145 : ()V
     .code stack 3 locals 0
 L0:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L3:     ifeq L25
-L6:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L6:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L9:     getfield Field org/lwjgl/opengl/kb Df Z
 L12:    ifne L25
 L15:    new java/lang/IllegalStateException
@@ -49,14 +49,14 @@ L26:
     .end code
 .end method
 
-.method public static break : (IJLjava/nio/IntBuffer;)Z
+.method public static method5146 : (IJLjava/nio/IntBuffer;)Z
     .code stack 8 locals 4
-L0:     invokestatic Method org/lwjgl/opengl/NVPresentVideoUtil else ()V
+L0:     invokestatic Method org/lwjgl/opengl/NVPresentVideoUtil method5145 ()V
 L3:     aload_3
 L4:     ifnull L11
 L7:     aload_3
-L8:     invokestatic Method org/lwjgl/l break (Ljava/nio/IntBuffer;)V
-L11:    invokestatic Method org/lwjgl/opengl/NVPresentVideoUtil break ()Ljava/nio/ByteBuffer;
+L8:     invokestatic Method org/lwjgl/l method2050 (Ljava/nio/IntBuffer;)V
+L11:    invokestatic Method org/lwjgl/opengl/NVPresentVideoUtil method5148 ()Ljava/nio/ByteBuffer;
 L14:    iload_0
 L15:    lload_1
 L16:    aload_3
@@ -73,7 +73,7 @@ L30:    invokevirtual Method java/nio/IntBuffer position ()I
 L33:    invokestatic Method org/lwjgl/opengl/NVPresentVideoUtil nglBindVideoDeviceNV (Ljava/nio/ByteBuffer;IJLjava/nio/IntBuffer;I)Z
 L36:    ireturn
 L37:    
-        .attribute StackMap b'\x00\x04\x00\x0B\x00\x03\x01\x04\x07\x00\x23\x00\x00\x00\x1C\x00\x00\x00\x01\x07\x00\x4D\x00\x1D\x00\x03\x01\x04\x07\x00\x23\x00\x04\x07\x00\x4F\x01\x04\x07\x00\x23\x00\x21\x00\x03\x01\x04\x07\x00\x23\x00\x05\x07\x00\x4F\x01\x04\x07\x00\x23\x01'
+        .attribute StackMap b'\x00\x04\x00\x0B\x00\x03\x01\x04\x07\x00\x25\x00\x00\x00\x1C\x00\x00\x00\x01\x07\x00\x53\x00\x1D\x00\x03\x01\x04\x07\x00\x25\x00\x04\x07\x00\x55\x01\x04\x07\x00\x25\x00\x21\x00\x03\x01\x04\x07\x00\x25\x00\x05\x07\x00\x55\x01\x04\x07\x00\x25\x01'
     .end code
 .end method
 
@@ -83,9 +83,9 @@ L37:
 .method private static native nglBindVideoDeviceNV : (Ljava/nio/ByteBuffer;IJLjava/nio/IntBuffer;I)Z
 .end method
 
-.method public static break : (Ljava/nio/LongBuffer;)I
+.method public static method5147 : (Ljava/nio/LongBuffer;)I
     .code stack 5 locals 1
-L0:     invokestatic Method org/lwjgl/opengl/NVPresentVideoUtil else ()V
+L0:     invokestatic Method org/lwjgl/opengl/NVPresentVideoUtil method5145 ()V
 L3:     aload_0
 L4:     ifnull L15
 L7:     aload_0
@@ -93,8 +93,8 @@ L8:     iconst_1
 L9:     dup
 L10:    dup
 L11:    pop2
-L12:    invokestatic Method org/lwjgl/l break (Ljava/nio/LongBuffer;I)V
-L15:    invokestatic Method org/lwjgl/opengl/NVPresentVideoUtil break ()Ljava/nio/ByteBuffer;
+L12:    invokestatic Method org/lwjgl/l method2032 (Ljava/nio/LongBuffer;I)V
+L15:    invokestatic Method org/lwjgl/opengl/NVPresentVideoUtil method5148 ()Ljava/nio/ByteBuffer;
 L18:    aload_0
 L19:    dup
 L20:    ifnonnull L31
@@ -109,7 +109,7 @@ L32:    invokevirtual Method java/nio/LongBuffer position ()I
 L35:    invokestatic Method org/lwjgl/opengl/NVPresentVideoUtil nglEnumerateVideoDevicesNV (Ljava/nio/ByteBuffer;Ljava/nio/LongBuffer;I)I
 L38:    ireturn
 L39:    
-        .attribute StackMap b'\x00\x04\x00\x0F\x00\x01\x07\x00\x59\x00\x00\x00\x1E\x00\x00\x00\x01\x07\x00\x4D\x00\x1F\x00\x01\x07\x00\x59\x00\x02\x07\x00\x4F\x07\x00\x59\x00\x23\x00\x01\x07\x00\x59\x00\x03\x07\x00\x4F\x07\x00\x59\x01'
+        .attribute StackMap b'\x00\x04\x00\x0F\x00\x01\x07\x00\x61\x00\x00\x00\x1E\x00\x00\x00\x01\x07\x00\x53\x00\x1F\x00\x01\x07\x00\x61\x00\x02\x07\x00\x55\x07\x00\x61\x00\x23\x00\x01\x07\x00\x61\x00\x03\x07\x00\x55\x07\x00\x61\x01'
     .end code
 .end method
 
@@ -122,11 +122,11 @@ L5:
     .end code
 .end method
 
-.method private static break : ()Ljava/nio/ByteBuffer;
+.method private static method5148 : ()Ljava/nio/ByteBuffer;
     .code stack 1 locals 0
-L0:     invokestatic Method org/lwjgl/opengl/Jb do ()Lorg/lwjgl/opengl/Jb;
-L3:     invokevirtual Method org/lwjgl/opengl/Jb float ()Lorg/lwjgl/opengl/a;
-L6:     invokevirtual Method org/lwjgl/opengl/a float ()Ljava/nio/ByteBuffer;
+L0:     invokestatic Method org/lwjgl/opengl/Jb method3632 ()Lorg/lwjgl/opengl/Jb;
+L3:     invokevirtual Method org/lwjgl/opengl/Jb method3635 ()Lorg/lwjgl/opengl/a;
+L6:     invokevirtual Method org/lwjgl/opengl/a method4677 ()Ljava/nio/ByteBuffer;
 L9:     areturn
 L10:    
     .end code

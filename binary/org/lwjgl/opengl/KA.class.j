@@ -1,9 +1,9 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/KA
 .super java/lang/Object
-.field public static final else I = 34139
-.field public static final "enum" I = 34140
-.field public static final do I = 34138
+.field public static final field4289 I = 34139
+.field public static final field4290 I = 34140
+.field public static final field4291 I = 34138
 
 .method private <init> : ()V
     .code stack 1 locals 1

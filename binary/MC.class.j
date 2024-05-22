@@ -1,9 +1,9 @@
 .version 49 0
 .class public final super MC
 .super qB
-.field public do LlG;
+.field public field1434 LlG;
 
-.method public break : ()D
+.method public method726 : ()D
     .code stack 2 locals 1
 L0:     ldc2_w 4e0
 L3:     dreturn
@@ -11,13 +11,13 @@ L4:
     .end code
 .end method
 
-.method public break : ([[I)V
+.method public method725 : ([[I)V
     .code stack 6 locals 8
 L0:     iconst_0
 L1:     aload_0
 L2:     aload_1
 L3:     dup_x2
-L4:     invokespecial Method qB break ([[I)V
+L4:     invokespecial Method qB method725 ([[I)V
 L7:     iconst_1
 L8:     dup
 L9:     pop2
@@ -93,7 +93,7 @@ L119:   goto L35
 L122:   athrow
 L123:   aload_0
 L124:   dup
-L125:   getfield Field MC do LlG;
+L125:   getfield Field MC field1434 LlG;
 L128:   iconst_3
 L129:   iconst_1
 L130:   dup
@@ -117,16 +117,16 @@ L149:   i2f
 L150:   fconst_2
 L151:   fdiv
 L152:   invokevirtual Method lG this (FF)V
-L155:   getfield Field MC do LlG;
+L155:   getfield Field MC field1434 LlG;
 L158:   aload_1
-L159:   invokevirtual Method lG break ([[I)V
+L159:   invokevirtual Method lG method118 ([[I)V
 L162:   return
 L163:   
-        .attribute StackMap b'\x00\x0A\x00\x23\x00\x07\x07\x00\x02\x07\x00\x0F\x01\x01\x01\x01\x01\x00\x01\x01\x00\x2F\x00\x08\x07\x00\x02\x07\x00\x0F\x01\x01\x01\x01\x01\x01\x00\x01\x01\x00\x4C\x00\x08\x07\x00\x02\x07\x00\x0F\x01\x01\x01\x01\x01\x01\x00\x00\x00\x57\x00\x08\x07\x00\x02\x07\x00\x0F\x01\x01\x01\x01\x01\x01\x00\x00\x00\x60\x00\x08\x07\x00\x02\x07\x00\x0F\x01\x01\x01\x01\x01\x01\x00\x00\x00\x69\x00\x08\x07\x00\x02\x07\x00\x0F\x01\x01\x01\x01\x01\x01\x00\x00\x00\x71\x00\x00\x00\x01\x07\x00\x11\x00\x72\x00\x08\x07\x00\x02\x07\x00\x0F\x01\x01\x01\x01\x01\x01\x00\x00\x00\x7A\x00\x00\x00\x01\x07\x00\x11\x00\x7B\x00\x07\x07\x00\x02\x07\x00\x0F\x01\x01\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x0A\x00\x23\x00\x07\x07\x00\x02\x07\x00\x10\x01\x01\x01\x01\x01\x00\x01\x01\x00\x2F\x00\x08\x07\x00\x02\x07\x00\x10\x01\x01\x01\x01\x01\x01\x00\x01\x01\x00\x4C\x00\x08\x07\x00\x02\x07\x00\x10\x01\x01\x01\x01\x01\x01\x00\x00\x00\x57\x00\x08\x07\x00\x02\x07\x00\x10\x01\x01\x01\x01\x01\x01\x00\x00\x00\x60\x00\x08\x07\x00\x02\x07\x00\x10\x01\x01\x01\x01\x01\x01\x00\x00\x00\x69\x00\x08\x07\x00\x02\x07\x00\x10\x01\x01\x01\x01\x01\x01\x00\x00\x00\x71\x00\x00\x00\x01\x07\x00\x12\x00\x72\x00\x08\x07\x00\x02\x07\x00\x10\x01\x01\x01\x01\x01\x01\x00\x00\x00\x7A\x00\x00\x00\x01\x07\x00\x12\x00\x7B\x00\x07\x07\x00\x02\x07\x00\x10\x01\x01\x01\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public break : (FFF)V
+.method public method717 : (FFF)V
     .code stack 6 locals 4
 L0:     aload_0
 L1:     dup
@@ -134,21 +134,21 @@ L2:     dup_x1
 L3:     fload_1
 L4:     fload_2
 L5:     fload_3
-L6:     invokespecial Method qB break (FFF)V
-L9:     getfield Field MC do LlG;
+L6:     invokespecial Method qB method717 (FFF)V
+L9:     getfield Field MC field1434 LlG;
 L12:    fload_1
 L13:    fload_2
 L14:    fload_3
 L15:    fadd
-L16:    invokevirtual Method lG catch (FF)V
-L19:    getfield Field MC do LlG;
+L16:    invokevirtual Method lG method37 (FF)V
+L19:    getfield Field MC field1434 LlG;
 L22:    fload_3
 L23:    ldc 4e0f
 L25:    fmul
 L26:    fload_3
 L27:    ldc 4e0f
 L29:    fmul
-L30:    invokevirtual Method lG const (FF)V
+L30:    invokevirtual Method lG method32 (FF)V
 L33:    return
 L34:    
     .end code
@@ -184,11 +184,11 @@ L29:    iconst_1
 L30:    dup
 L31:    pop2
 L32:    invokespecial Method lG <init> (IIIZ)V
-L35:    putfield Field MC do LlG;
-L38:    getfield Field MC else LLD;
+L35:    putfield Field MC field1434 LlG;
+L38:    getfield Field MC field1430 LLD;
 L41:    aload_0
-L42:    getfield Field MC do LlG;
-L45:    invokevirtual Method LD float (LgB;)LgB;
+L42:    getfield Field MC field1434 LlG;
+L45:    invokevirtual Method LD method36 (LgB;)LgB;
 L48:    pop
 L49:    return
 L50:    

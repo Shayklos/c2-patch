@@ -3,30 +3,30 @@
 .super java/lang/Object
 .implements h
 .field public final synthetic this Lqd;
-.field public final synthetic char LFE;
-.field public final synthetic else LsE;
-.field public final synthetic "enum" Led;
-.field public final synthetic do Led;
+.field public final synthetic field1478 LFE;
+.field public final synthetic field1479 LsE;
+.field public final synthetic field1480 Led;
+.field public final synthetic field1481 Led;
 
-.method public break : (LgB;)V
+.method public method728 : (LgB;)V
     .code stack 7 locals 2
 L0:     aload_0
 L1:     dup
-L2:     getfield Field sB char LFE;
+L2:     getfield Field sB field1478 LFE;
 L5:     invokevirtual Method FE this ()V
 L8:     getfield Field sB this Lqd;
 L11:    new fc
 L14:    dup
 L15:    aload_0
-L16:    getfield Field sB "enum" Led;
+L16:    getfield Field sB field1480 Led;
 L19:    getstatic Field oc new Loc;
 L22:    aload_0
 L23:    dup
-L24:    getfield Field sB do Led;
+L24:    getfield Field sB field1481 Led;
 L27:    swap
-L28:    getfield Field sB else LsE;
+L28:    getfield Field sB field1479 LsE;
 L31:    invokespecial Method fc <init> (Led;Loc;Led;LsE;)V
-L34:    invokevirtual Method qd else (LD;)V
+L34:    invokevirtual Method qd method394 (LD;)V
 L37:    return
 L38:    
     .end code
@@ -45,11 +45,11 @@ L9:     dup_x1
 L10:    aload_2
 L11:    aload_0
 L12:    aload_1
-L13:    putfield Field sB char LFE;
+L13:    putfield Field sB field1478 LFE;
 L16:    putfield Field sB this Lqd;
-L19:    putfield Field sB "enum" Led;
-L22:    putfield Field sB do Led;
-L25:    putfield Field sB else LsE;
+L19:    putfield Field sB field1480 Led;
+L22:    putfield Field sB field1481 Led;
+L25:    putfield Field sB field1479 LsE;
 L28:    invokespecial Method java/lang/Object <init> ()V
 L31:    return
 L32:    
@@ -59,5 +59,5 @@ L32:
     oc fc [0] public static final enum
     sB [0] [0] static
 .end innerclasses
-.enclosing method eD break (LFE;Led;Lqd;)Ljava/util/List;
+.enclosing method eD method1130 (LFE;Led;Lqd;)Ljava/util/List;
 .end class

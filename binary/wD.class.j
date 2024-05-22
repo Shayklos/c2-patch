@@ -1,23 +1,23 @@
 .version 49 0
 .class public final super enum wD
 .super java/lang/Enum
-.field public static final enum byte LwD;
-.field public static final enum "super" LwD;
-.field public static final enum int LwD;
-.field public short Ljava/lang/String;
-.field public static final enum goto LwD;
-.field public break LpF;
-.field private static final synthetic long [LwD;
-.field public static final enum void LwD;
+.field public static final enum field439 LwD;
+.field public static final enum field440 LwD;
+.field public static final enum field441 LwD;
+.field public field442 Ljava/lang/String;
+.field public static final enum field443 LwD;
+.field public field444 LpF;
+.field private static final synthetic field445 [LwD;
+.field public static final enum field446 LwD;
 .field public static final enum try LwD;
-.field public const Z
+.field public field447 Z
 .field private new Lf;
-.field public static final enum null LwD;
+.field public static final enum field448 LwD;
 .field public static final enum this LwD;
-.field public static final enum char LwD;
-.field public static final enum else LwD;
-.field public static final enum "enum" LwD;
-.field public static final enum do LwD;
+.field public static final enum field449 LwD;
+.field public static final enum field450 LwD;
+.field public static final enum field451 LwD;
+.field public static final enum field452 LwD;
 
 .method public static <clinit> : ()V
     .code stack 9 locals 0
@@ -29,7 +29,7 @@ L7:     iconst_1
 L8:     dup
 L9:     pop2
 L10:    ldc "Score"
-L12:    getstatic Field pF do LpF;
+L12:    getstatic Field pF field391 LpF;
 L15:    iconst_1
 L16:    dup
 L17:    dup
@@ -47,7 +47,7 @@ L39:    dup
 L40:    dup
 L41:    pop2
 L42:    ldc "BPM"
-L44:    getstatic Field pF do LpF;
+L44:    getstatic Field pF field391 LpF;
 L47:    iconst_0
 L48:    iconst_1
 L49:    dup
@@ -56,7 +56,7 @@ L51:    new Og
 L54:    dup
 L55:    invokespecial Method Og <init> ()V
 L58:    invokespecial Method wD <init> (Ljava/lang/String;ILjava/lang/String;LpF;ZLf;)V
-L61:    putstatic Field wD int LwD;
+L61:    putstatic Field wD field441 LwD;
 L64:    new wD
 L67:    dup
 L68:    ldc "DURATION"
@@ -65,7 +65,7 @@ L71:    iconst_1
 L72:    dup
 L73:    pop2
 L74:    ldc "Time"
-L76:    getstatic Field pF do LpF;
+L76:    getstatic Field pF field391 LpF;
 L79:    iconst_0
 L80:    iconst_1
 L81:    dup
@@ -74,7 +74,7 @@ L83:    new Se
 L86:    dup
 L87:    invokespecial Method Se <init> ()V
 L90:    invokespecial Method wD <init> (Ljava/lang/String;ILjava/lang/String;LpF;ZLf;)V
-L93:    putstatic Field wD byte LwD;
+L93:    putstatic Field wD field439 LwD;
 L96:    new wD
 L99:    dup
 L100:   ldc "WINNER_PLAY_DURATION"
@@ -83,7 +83,7 @@ L103:   iconst_1
 L104:   dup
 L105:   pop2
 L106:   ldc "Time"
-L108:   getstatic Field pF do LpF;
+L108:   getstatic Field pF field391 LpF;
 L111:   iconst_0
 L112:   iconst_1
 L113:   dup
@@ -92,7 +92,7 @@ L115:   new Ag
 L118:   dup
 L119:   invokespecial Method Ag <init> ()V
 L122:   invokespecial Method wD <init> (Ljava/lang/String;ILjava/lang/String;LpF;ZLf;)V
-L125:   putstatic Field wD char LwD;
+L125:   putstatic Field wD field449 LwD;
 L128:   new wD
 L131:   dup
 L132:   ldc "MAX_COMBO"
@@ -101,7 +101,7 @@ L135:   iconst_1
 L136:   dup
 L137:   pop2
 L138:   ldc "Cmb"
-L140:   getstatic Field pF do LpF;
+L140:   getstatic Field pF field391 LpF;
 L143:   iconst_0
 L144:   iconst_1
 L145:   dup
@@ -110,7 +110,7 @@ L147:   new Mf
 L150:   dup
 L151:   invokespecial Method Mf <init> ()V
 L154:   invokespecial Method wD <init> (Ljava/lang/String;ILjava/lang/String;LpF;ZLf;)V
-L157:   putstatic Field wD "super" LwD;
+L157:   putstatic Field wD field440 LwD;
 L160:   new wD
 L163:   dup
 L164:   ldc "LINES_SENT"
@@ -119,7 +119,7 @@ L167:   iconst_1
 L168:   dup
 L169:   pop2
 L170:   ldc "Sent"
-L172:   getstatic Field pF do LpF;
+L172:   getstatic Field pF field391 LpF;
 L175:   iconst_0
 L176:   iconst_1
 L177:   dup
@@ -128,7 +128,7 @@ L179:   new qe
 L182:   dup
 L183:   invokespecial Method qe <init> ()V
 L186:   invokespecial Method wD <init> (Ljava/lang/String;ILjava/lang/String;LpF;ZLf;)V
-L189:   putstatic Field wD else LwD;
+L189:   putstatic Field wD field450 LwD;
 L192:   new wD
 L195:   dup
 L196:   ldc "LINES_SENT_PER_MINUTE"
@@ -137,7 +137,7 @@ L200:   iconst_1
 L201:   dup
 L202:   pop2
 L203:   ldc "SPM"
-L205:   getstatic Field pF do LpF;
+L205:   getstatic Field pF field391 LpF;
 L208:   iconst_0
 L209:   iconst_1
 L210:   dup
@@ -146,7 +146,7 @@ L212:   new CE
 L215:   dup
 L216:   invokespecial Method CE <init> ()V
 L219:   invokespecial Method wD <init> (Ljava/lang/String;ILjava/lang/String;LpF;ZLf;)V
-L222:   putstatic Field wD null LwD;
+L222:   putstatic Field wD field448 LwD;
 L225:   new wD
 L228:   dup
 L229:   ldc "PERC_BLOCKED"
@@ -155,7 +155,7 @@ L233:   iconst_1
 L234:   dup
 L235:   pop2
 L236:   ldc "Blocked"
-L238:   getstatic Field pF do LpF;
+L238:   getstatic Field pF field391 LpF;
 L241:   iconst_0
 L242:   iconst_1
 L243:   dup
@@ -164,7 +164,7 @@ L245:   new kG
 L248:   dup
 L249:   invokespecial Method kG <init> ()V
 L252:   invokespecial Method wD <init> (Ljava/lang/String;ILjava/lang/String;LpF;ZLf;)V
-L255:   putstatic Field wD void LwD;
+L255:   putstatic Field wD field446 LwD;
 L258:   new wD
 L261:   dup
 L262:   ldc "EATEN_CHEESE"
@@ -173,7 +173,7 @@ L266:   iconst_1
 L267:   dup
 L268:   pop2
 L269:   ldc "Eaten"
-L271:   getstatic Field pF do LpF;
+L271:   getstatic Field pF field391 LpF;
 L274:   iconst_0
 L275:   iconst_1
 L276:   dup
@@ -182,7 +182,7 @@ L278:   new HF
 L281:   dup
 L282:   invokespecial Method HF <init> ()V
 L285:   invokespecial Method wD <init> (Ljava/lang/String;ILjava/lang/String;LpF;ZLf;)V
-L288:   putstatic Field wD "enum" LwD;
+L288:   putstatic Field wD field451 LwD;
 L291:   new wD
 L294:   dup
 L295:   ldc "CLEARED_LINES"
@@ -191,7 +191,7 @@ L299:   iconst_1
 L300:   dup
 L301:   pop2
 L302:   ldc "Lines"
-L304:   getstatic Field pF do LpF;
+L304:   getstatic Field pF field391 LpF;
 L307:   iconst_0
 L308:   iconst_1
 L309:   dup
@@ -209,7 +209,7 @@ L332:   iconst_1
 L333:   dup
 L334:   pop2
 L335:   ldc "Tetrises"
-L337:   getstatic Field pF do LpF;
+L337:   getstatic Field pF field391 LpF;
 L340:   iconst_0
 L341:   iconst_1
 L342:   dup
@@ -218,7 +218,7 @@ L344:   new nF
 L347:   dup
 L348:   invokespecial Method nF <init> ()V
 L351:   invokespecial Method wD <init> (Ljava/lang/String;ILjava/lang/String;LpF;ZLf;)V
-L354:   putstatic Field wD goto LwD;
+L354:   putstatic Field wD field443 LwD;
 L357:   new wD
 L360:   dup
 L361:   ldc "BLOCKS"
@@ -227,7 +227,7 @@ L365:   iconst_1
 L366:   dup
 L367:   pop2
 L368:   ldc "Blocks"
-L370:   getstatic Field pF do LpF;
+L370:   getstatic Field pF field391 LpF;
 L373:   iconst_0
 L374:   iconst_1
 L375:   dup
@@ -236,7 +236,7 @@ L377:   new cG
 L380:   dup
 L381:   invokespecial Method cG <init> ()V
 L384:   invokespecial Method wD <init> (Ljava/lang/String;ILjava/lang/String;LpF;ZLf;)V
-L387:   putstatic Field wD do LwD;
+L387:   putstatic Field wD field452 LwD;
 L390:   bipush 12
 L392:   iconst_1
 L393:   dup
@@ -257,56 +257,56 @@ L411:   iconst_1
 L412:   dup
 L413:   dup
 L414:   pop2
-L415:   getstatic Field wD int LwD;
+L415:   getstatic Field wD field441 LwD;
 L418:   aastore
 L419:   dup
 L420:   iconst_2
 L421:   iconst_1
 L422:   dup
 L423:   pop2
-L424:   getstatic Field wD byte LwD;
+L424:   getstatic Field wD field439 LwD;
 L427:   aastore
 L428:   dup
 L429:   iconst_3
 L430:   iconst_1
 L431:   dup
 L432:   pop2
-L433:   getstatic Field wD char LwD;
+L433:   getstatic Field wD field449 LwD;
 L436:   aastore
 L437:   dup
 L438:   iconst_4
 L439:   iconst_1
 L440:   dup
 L441:   pop2
-L442:   getstatic Field wD "super" LwD;
+L442:   getstatic Field wD field440 LwD;
 L445:   aastore
 L446:   dup
 L447:   iconst_5
 L448:   iconst_1
 L449:   dup
 L450:   pop2
-L451:   getstatic Field wD else LwD;
+L451:   getstatic Field wD field450 LwD;
 L454:   aastore
 L455:   dup
 L456:   bipush 6
 L458:   iconst_1
 L459:   dup
 L460:   pop2
-L461:   getstatic Field wD null LwD;
+L461:   getstatic Field wD field448 LwD;
 L464:   aastore
 L465:   dup
 L466:   bipush 7
 L468:   iconst_1
 L469:   dup
 L470:   pop2
-L471:   getstatic Field wD void LwD;
+L471:   getstatic Field wD field446 LwD;
 L474:   aastore
 L475:   dup
 L476:   bipush 8
 L478:   iconst_1
 L479:   dup
 L480:   pop2
-L481:   getstatic Field wD "enum" LwD;
+L481:   getstatic Field wD field451 LwD;
 L484:   aastore
 L485:   dup
 L486:   bipush 9
@@ -320,16 +320,16 @@ L496:   bipush 10
 L498:   iconst_1
 L499:   dup
 L500:   pop2
-L501:   getstatic Field wD goto LwD;
+L501:   getstatic Field wD field443 LwD;
 L504:   aastore
 L505:   dup
 L506:   bipush 11
 L508:   iconst_1
 L509:   dup
 L510:   pop2
-L511:   getstatic Field wD do LwD;
+L511:   getstatic Field wD field452 LwD;
 L514:   aastore
-L515:   putstatic Field wD long [LwD;
+L515:   putstatic Field wD field445 [LwD;
 L518:   return
 L519:   
     .end code
@@ -349,9 +349,9 @@ L11:    aload_0
 L12:    aload_1
 L13:    iload_2
 L14:    invokespecial Method java/lang/Enum <init> (Ljava/lang/String;I)V
-L17:    putfield Field wD short Ljava/lang/String;
-L20:    putfield Field wD break LpF;
-L23:    putfield Field wD const Z
+L17:    putfield Field wD field442 Ljava/lang/String;
+L20:    putfield Field wD field444 LpF;
+L23:    putfield Field wD field447 Z
 L26:    putfield Field wD new Lf;
 L29:    return
 L30:    
@@ -371,7 +371,7 @@ L10:
 
 .method public static values : ()[LwD;
     .code stack 1 locals 0
-L0:     getstatic Field wD long [LwD;
+L0:     getstatic Field wD field445 [LwD;
 L3:     invokevirtual Method [LwD; clone ()Ljava/lang/Object;
 L6:     checkcast [LwD;
 L9:     areturn
@@ -379,12 +379,12 @@ L10:
     .end code
 .end method
 
-.method public break : (LRg;)Ljava/lang/Object;
+.method public method306 : (LRg;)Ljava/lang/Object;
     .code stack 2 locals 2
 L0:     aload_0
 L1:     getfield Field wD new Lf;
 L4:     aload_1
-L5:     invokeinterface InterfaceMethod f break (LRg;)Ljava/lang/Object; 2
+L5:     invokeinterface InterfaceMethod f method712 (LRg;)Ljava/lang/Object; 2
 L10:    areturn
 L11:    
     .end code

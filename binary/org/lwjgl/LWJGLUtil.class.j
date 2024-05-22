@@ -502,7 +502,7 @@ L107:   ifnull L127
 L110:   aload_0
 L111:   aload 6
 L113:   iload 7
-L115:   invokeinterface InterfaceMethod org/lwjgl/m break (Ljava/lang/reflect/Field;I)Z 3
+L115:   invokeinterface InterfaceMethod org/lwjgl/m method2061 (Ljava/lang/reflect/Field;I)Z 3
 L120:   ifne L127
 L123:   goto L184
 L126:   athrow

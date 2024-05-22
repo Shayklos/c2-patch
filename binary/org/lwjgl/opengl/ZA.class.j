@@ -12,7 +12,7 @@ L5:
     .end code
 .end method
 
-.method public break : (Ljava/awt/GraphicsDevice;Lorg/lwjgl/opengl/PixelFormat;)Ljava/awt/GraphicsConfiguration;
+.method public method4619 : (Ljava/awt/GraphicsDevice;Lorg/lwjgl/opengl/PixelFormat;)Ljava/awt/GraphicsConfiguration;
     .code stack 1 locals 3
 L0:     aconst_null
 L1:     areturn
@@ -21,7 +21,7 @@ L2:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public break : (Ljava/awt/Canvas;Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/CB;)Lorg/lwjgl/opengl/a;
+.method public method4620 : (Ljava/awt/Canvas;Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/CB;)Lorg/lwjgl/opengl/a;
     .code stack 8 locals 5
         .catch org/lwjgl/LWJGLException from L0 to L14 using L16
 L0:     new org/lwjgl/opengl/SA
@@ -49,7 +49,7 @@ L28:    pop2
 L29:    invokespecial Method org/lwjgl/opengl/SA <init> (Ljava/awt/Canvas;Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/CB;Z)V
 L32:    areturn
 L33:    
-        .attribute StackMap b'\x00\x02\x00\x0F\x00\x00\x00\x01\x07\x00\x16\x00\x10\x00\x04\x07\x00\x02\x07\x00\x18\x07\x00\x1A\x07\x00\x1C\x00\x01\x07\x00\x0E'
+        .attribute StackMap b'\x00\x02\x00\x0F\x00\x00\x00\x01\x07\x00\x17\x00\x10\x00\x04\x07\x00\x02\x07\x00\x19\x07\x00\x1B\x07\x00\x1D\x00\x01\x07\x00\x0E'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method

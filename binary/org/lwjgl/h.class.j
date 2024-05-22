@@ -3,37 +3,37 @@
 .super java/lang/Object
 .implements java/lang/Comparable
 .field protected final this Ljava/nio/IntBuffer;
-.field private static final char Z
-.field protected final else Ljava/nio/Buffer;
-.field protected final "enum" Ljava/nio/LongBuffer;
-.field protected final do Ljava/nio/ByteBuffer;
+.field private static final field326 Z
+.field protected final field327 Ljava/nio/Buffer;
+.field protected final field328 Ljava/nio/LongBuffer;
+.field protected final field329 Ljava/nio/ByteBuffer;
 
 .method public final true : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L1:     getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L4:     invokevirtual Method java/nio/Buffer position ()I
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public final byte : ()I
+.method public final method269 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L1:     getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L4:     invokevirtual Method java/nio/Buffer limit ()I
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public void : ()J
+.method public method270 : ()J
     .code stack 4 locals 1
-L0:     getstatic Field org/lwjgl/h char Z
+L0:     getstatic Field org/lwjgl/h field326 Z
 L3:     ifeq L15
 L6:     aload_0
-L7:     getfield Field org/lwjgl/h "enum" Ljava/nio/LongBuffer;
+L7:     getfield Field org/lwjgl/h field328 Ljava/nio/LongBuffer;
 L10:    invokevirtual Method java/nio/LongBuffer get ()J
 L13:    lreturn
 L14:    athrow
@@ -77,14 +77,14 @@ L40:    ldc " lim="
 L42:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L45:    aload_1
 L46:    aload_0
-L47:    invokevirtual Method org/lwjgl/h byte ()I
+L47:    invokevirtual Method org/lwjgl/h method269 ()I
 L50:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L53:    aload_1
 L54:    ldc " cap="
 L56:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L59:    aload_1
 L60:    aload_0
-L61:    invokevirtual Method org/lwjgl/h class ()I
+L61:    invokevirtual Method org/lwjgl/h method277 ()I
 L64:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L67:    aload_1
 L68:    ldc "]"
@@ -106,71 +106,71 @@ L1:     invokespecial Method java/lang/Object <init> ()V
 L4:     getstatic Field org/lwjgl/LWJGLUtil CHECKS Z
 L7:     ifeq L14
 L10:    aload_1
-L11:    invokestatic Method org/lwjgl/h break (Ljava/nio/ByteBuffer;)V
+L11:    invokestatic Method org/lwjgl/h method285 (Ljava/nio/ByteBuffer;)V
 L14:    aload_0
 L15:    aload_1
 L16:    invokevirtual Method java/nio/ByteBuffer slice ()Ljava/nio/ByteBuffer;
 L19:    aload_1
 L20:    invokevirtual Method java/nio/ByteBuffer order ()Ljava/nio/ByteOrder;
 L23:    invokevirtual Method java/nio/ByteBuffer order (Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;
-L26:    putfield Field org/lwjgl/h do Ljava/nio/ByteBuffer;
-L29:    getstatic Field org/lwjgl/h char Z
+L26:    putfield Field org/lwjgl/h field329 Ljava/nio/ByteBuffer;
+L29:    getstatic Field org/lwjgl/h field326 Z
 L32:    ifeq L57
 L35:    aload_0
 L36:    dup
 L37:    dup2
 L38:    aconst_null
 L39:    putfield Field org/lwjgl/h this Ljava/nio/IntBuffer;
-L42:    getfield Field org/lwjgl/h do Ljava/nio/ByteBuffer;
+L42:    getfield Field org/lwjgl/h field329 Ljava/nio/ByteBuffer;
 L45:    invokevirtual Method java/nio/ByteBuffer asLongBuffer ()Ljava/nio/LongBuffer;
 L48:    dup_x1
-L49:    putfield Field org/lwjgl/h "enum" Ljava/nio/LongBuffer;
-L52:    putfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L49:    putfield Field org/lwjgl/h field328 Ljava/nio/LongBuffer;
+L52:    putfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L55:    return
 L56:    athrow
 L57:    aload_0
 L58:    dup
 L59:    dup_x1
-L60:    getfield Field org/lwjgl/h do Ljava/nio/ByteBuffer;
+L60:    getfield Field org/lwjgl/h field329 Ljava/nio/ByteBuffer;
 L63:    invokevirtual Method java/nio/ByteBuffer asIntBuffer ()Ljava/nio/IntBuffer;
 L66:    dup_x1
 L67:    putfield Field org/lwjgl/h this Ljava/nio/IntBuffer;
-L70:    putfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L70:    putfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L73:    aload_0
 L74:    aconst_null
-L75:    putfield Field org/lwjgl/h "enum" Ljava/nio/LongBuffer;
+L75:    putfield Field org/lwjgl/h field328 Ljava/nio/LongBuffer;
 L78:    return
 L79:    
         .attribute StackMap b'\x00\x03\x00\x0E\x00\x02\x07\x00\x02\x07\x00\x6B\x00\x00\x00\x38\x00\x00\x00\x01\x07\x00\x2C\x00\x39\x00\x02\x07\x00\x02\x07\x00\x6B\x00\x00'
     .end code
 .end method
 
-.method public "final" : ()Lorg/lwjgl/h;
+.method public method271 : ()Lorg/lwjgl/h;
     .code stack 4 locals 2
 L0:     new org/lwjgl/d
 L3:     dup
 L4:     aload_0
-L5:     getfield Field org/lwjgl/h do Ljava/nio/ByteBuffer;
+L5:     getfield Field org/lwjgl/h field329 Ljava/nio/ByteBuffer;
 L8:     invokespecial Method org/lwjgl/d <init> (Ljava/nio/ByteBuffer;)V
 L11:    dup
 L12:    astore_1
 L13:    aload_0
-L14:    getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L14:    getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L17:    invokevirtual Method java/nio/Buffer position ()I
-L20:    invokevirtual Method org/lwjgl/h else (I)Lorg/lwjgl/h;
+L20:    invokevirtual Method org/lwjgl/h method293 (I)Lorg/lwjgl/h;
 L23:    aload_1
 L24:    dup_x1
 L25:    aload_0
-L26:    getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L26:    getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L29:    invokevirtual Method java/nio/Buffer limit ()I
-L32:    invokevirtual Method org/lwjgl/h const (I)Lorg/lwjgl/h;
+L32:    invokevirtual Method org/lwjgl/h method291 (I)Lorg/lwjgl/h;
 L35:    pop2
 L36:    areturn
 L37:    
     .end code
 .end method
 
-.method public static short : (I)Lorg/lwjgl/h;
+.method public static method272 : (I)Lorg/lwjgl/h;
     .code stack 3 locals 1
 L0:     new org/lwjgl/h
 L3:     dup
@@ -181,24 +181,24 @@ L9:
     .end code
 .end method
 
-.method public int : ()Lorg/lwjgl/h;
+.method public method273 : ()Lorg/lwjgl/h;
     .code stack 4 locals 2
-L0:     invokestatic Method org/lwjgl/h "enum" ()I
+L0:     invokestatic Method org/lwjgl/h method275 ()I
 L3:     istore_1
 L4:     aload_0
 L5:     dup
-L6:     getfield Field org/lwjgl/h do Ljava/nio/ByteBuffer;
+L6:     getfield Field org/lwjgl/h field329 Ljava/nio/ByteBuffer;
 L9:     swap
-L10:    getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L10:    getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L13:    invokevirtual Method java/nio/Buffer position ()I
 L16:    iload_1
 L17:    imul
 L18:    invokevirtual Method java/nio/ByteBuffer position (I)Ljava/nio/Buffer;
 L21:    aload_0
 L22:    dup
-L23:    getfield Field org/lwjgl/h do Ljava/nio/ByteBuffer;
+L23:    getfield Field org/lwjgl/h field329 Ljava/nio/ByteBuffer;
 L26:    swap
-L27:    getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L27:    getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L30:    invokevirtual Method java/nio/Buffer limit ()I
 L33:    iload_1
 L34:    imul
@@ -207,12 +207,12 @@ L38:    pop2
         .catch [0] from L39 to L48 using L59
 L39:    aload_0
 L40:    dup
-L41:    getfield Field org/lwjgl/h do Ljava/nio/ByteBuffer;
-L44:    invokevirtual Method org/lwjgl/h else (Ljava/nio/ByteBuffer;)Lorg/lwjgl/h;
+L41:    getfield Field org/lwjgl/h field329 Ljava/nio/ByteBuffer;
+L44:    invokevirtual Method org/lwjgl/h method274 (Ljava/nio/ByteBuffer;)Lorg/lwjgl/h;
 L47:    astore_1
 L48:    aload_1
 L49:    aload_0
-L50:    getfield Field org/lwjgl/h do Ljava/nio/ByteBuffer;
+L50:    getfield Field org/lwjgl/h field329 Ljava/nio/ByteBuffer;
 L53:    invokevirtual Method java/nio/ByteBuffer clear ()Ljava/nio/Buffer;
 L56:    pop
 L57:    areturn
@@ -221,7 +221,7 @@ L58:    athrow
 L59:    astore_1
 L60:    aload_1
 L61:    aload_0
-L62:    getfield Field org/lwjgl/h do Ljava/nio/ByteBuffer;
+L62:    getfield Field org/lwjgl/h field329 Ljava/nio/ByteBuffer;
 L65:    invokevirtual Method java/nio/ByteBuffer clear ()Ljava/nio/Buffer;
 L68:    pop
 L69:    athrow
@@ -230,7 +230,7 @@ L70:
     .end code
 .end method
 
-.method protected else : (Ljava/nio/ByteBuffer;)Lorg/lwjgl/h;
+.method protected method274 : (Ljava/nio/ByteBuffer;)Lorg/lwjgl/h;
     .code stack 3 locals 2
 L0:     new org/lwjgl/h
 L3:     dup
@@ -241,9 +241,9 @@ L9:
     .end code
 .end method
 
-.method public static "enum" : ()I
+.method public static method275 : ()I
     .code stack 3 locals 0
-L0:     getstatic Field org/lwjgl/h char Z
+L0:     getstatic Field org/lwjgl/h field326 Z
 L3:     ifeq L13
 L6:     bipush 8
 L8:     iconst_1
@@ -261,11 +261,11 @@ L18:
     .end code
 .end method
 
-.method public final long : ()Lorg/lwjgl/h;
+.method public final method276 : ()Lorg/lwjgl/h;
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L2:     getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L5:     invokevirtual Method java/nio/Buffer reset ()Ljava/nio/Buffer;
 L8:     pop
 L9:     areturn
@@ -298,19 +298,19 @@ L29:    checkcast java/lang/Boolean
 L32:    invokevirtual Method java/lang/Boolean booleanValue ()Z
 L35:    istore_0
 L36:    iload_0
-L37:    putstatic Field org/lwjgl/h char Z
+L37:    putstatic Field org/lwjgl/h field326 Z
 L40:    return
 L41:    athrow
         .catch [0] from L42 to L43 using L49
 L42:    astore_1
 L43:    iload_0
-L44:    putstatic Field org/lwjgl/h char Z
+L44:    putstatic Field org/lwjgl/h field326 Z
 L47:    return
 L48:    athrow
         .catch [0] from L49 to L50 using L49
 L49:    astore_2
 L50:    iload_0
-L51:    putstatic Field org/lwjgl/h char Z
+L51:    putstatic Field org/lwjgl/h field326 Z
 L54:    aload_2
 L55:    athrow
 L56:    athrow
@@ -319,17 +319,17 @@ L57:
     .end code
 .end method
 
-.method public final class : ()I
+.method public final method277 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L1:     getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L4:     invokevirtual Method java/nio/Buffer capacity ()I
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public if : ()Z
+.method public method278 : ()Z
     .code stack 3 locals 1
 L0:     iconst_0
 L1:     iconst_1
@@ -340,13 +340,13 @@ L5:
     .end code
 .end method
 
-.method public else : ([JII)Lorg/lwjgl/h;
+.method public method279 : ([JII)Lorg/lwjgl/h;
     .code stack 6 locals 4
-L0:     getstatic Field org/lwjgl/h char Z
+L0:     getstatic Field org/lwjgl/h field326 Z
 L3:     ifeq L20
 L6:     aload_0
 L7:     dup
-L8:     getfield Field org/lwjgl/h "enum" Ljava/nio/LongBuffer;
+L8:     getfield Field org/lwjgl/h field328 Ljava/nio/LongBuffer;
 L11:    aload_1
 L12:    iload_2
 L13:    iload_3
@@ -358,7 +358,7 @@ L20:    iload_2
 L21:    iload_3
 L22:    aload_1
 L23:    arraylength
-L24:    invokestatic Method org/lwjgl/h break (III)V
+L24:    invokestatic Method org/lwjgl/h method292 (III)V
 L27:    iload_3
 L28:    aload_0
 L29:    getfield Field org/lwjgl/h this Ljava/nio/IntBuffer;
@@ -393,17 +393,17 @@ L79:    athrow
 L80:    aload_0
 L81:    areturn
 L82:    
-        .attribute StackMap b'\x00\x06\x00\x13\x00\x00\x00\x01\x07\x00\x2C\x00\x14\x00\x04\x07\x00\x02\x07\x00\xC7\x01\x01\x00\x00\x00\x2E\x00\x04\x07\x00\x02\x07\x00\xC7\x01\x01\x00\x00\x00\x35\x00\x04\x07\x00\x02\x07\x00\xC7\x01\x01\x00\x01\x01\x00\x4F\x00\x00\x00\x01\x07\x00\x2C\x00\x50\x00\x04\x07\x00\x02\x07\x00\xC7\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x13\x00\x00\x00\x01\x07\x00\x2C\x00\x14\x00\x04\x07\x00\x02\x07\x00\xCB\x01\x01\x00\x00\x00\x2E\x00\x04\x07\x00\x02\x07\x00\xCB\x01\x01\x00\x00\x00\x35\x00\x04\x07\x00\x02\x07\x00\xCB\x01\x01\x00\x01\x01\x00\x4F\x00\x00\x00\x01\x07\x00\x2C\x00\x50\x00\x04\x07\x00\x02\x07\x00\xCB\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public break : (J)Lorg/lwjgl/h;
+.method public method280 : (J)Lorg/lwjgl/h;
     .code stack 4 locals 3
-L0:     getstatic Field org/lwjgl/h char Z
+L0:     getstatic Field org/lwjgl/h field326 Z
 L3:     ifeq L18
 L6:     aload_0
 L7:     dup
-L8:     getfield Field org/lwjgl/h "enum" Ljava/nio/LongBuffer;
+L8:     getfield Field org/lwjgl/h field328 Ljava/nio/LongBuffer;
 L11:    lload_1
 L12:    invokevirtual Method java/nio/LongBuffer put (J)Ljava/nio/LongBuffer;
 L15:    pop
@@ -422,10 +422,10 @@ L30:
     .end code
 .end method
 
-.method public char : ()Ljava/nio/ByteBuffer;
+.method public method281 : ()Ljava/nio/ByteBuffer;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/h do Ljava/nio/ByteBuffer;
+L1:     getfield Field org/lwjgl/h field329 Ljava/nio/ByteBuffer;
 L4:     areturn
 L5:     
     .end code
@@ -446,9 +446,9 @@ L13:    aload_1
 L14:    checkcast org/lwjgl/h
 L17:    astore_1
 L18:    aload_0
-L19:    invokevirtual Method org/lwjgl/h else ()I
+L19:    invokevirtual Method org/lwjgl/h method183 ()I
 L22:    aload_1
-L23:    invokevirtual Method org/lwjgl/h else ()I
+L23:    invokevirtual Method org/lwjgl/h method183 ()I
 L26:    if_icmpeq L35
 L29:    iconst_0
 L30:    iconst_1
@@ -460,7 +460,7 @@ L35:    aload_0
 L36:    dup
 L37:    invokevirtual Method org/lwjgl/h true ()I
 L40:    istore_2
-L41:    invokevirtual Method org/lwjgl/h byte ()I
+L41:    invokevirtual Method org/lwjgl/h method269 ()I
 L44:    iconst_1
 L45:    dup
 L46:    dup
@@ -468,7 +468,7 @@ L47:    pop2
 L48:    isub
 L49:    istore_3
 L50:    aload_1
-L51:    invokevirtual Method org/lwjgl/h byte ()I
+L51:    invokevirtual Method org/lwjgl/h method269 ()I
 L54:    iconst_1
 L55:    dup
 L56:    dup
@@ -481,10 +481,10 @@ L63:    if_icmplt L104
 L66:    aload_1
 L67:    aload_0
 L68:    iload_3
-L69:    invokevirtual Method org/lwjgl/h break (I)J
+L69:    invokevirtual Method org/lwjgl/h method294 (I)J
 L72:    lstore 5
 L74:    iload 4
-L76:    invokevirtual Method org/lwjgl/h break (I)J
+L76:    invokevirtual Method org/lwjgl/h method294 (I)J
 L79:    lstore 7
 L81:    lload 5
 L83:    lload 7
@@ -509,13 +509,13 @@ L109:
     .end code
 .end method
 
-.method public break : ([JII)Lorg/lwjgl/h;
+.method public method282 : ([JII)Lorg/lwjgl/h;
     .code stack 5 locals 4
-L0:     getstatic Field org/lwjgl/h char Z
+L0:     getstatic Field org/lwjgl/h field326 Z
 L3:     ifeq L20
 L6:     aload_0
 L7:     dup
-L8:     getfield Field org/lwjgl/h "enum" Ljava/nio/LongBuffer;
+L8:     getfield Field org/lwjgl/h field328 Ljava/nio/LongBuffer;
 L11:    aload_1
 L12:    iload_2
 L13:    iload_3
@@ -527,7 +527,7 @@ L20:    iload_2
 L21:    iload_3
 L22:    aload_1
 L23:    arraylength
-L24:    invokestatic Method org/lwjgl/h break (III)V
+L24:    invokestatic Method org/lwjgl/h method292 (III)V
 L27:    iload_3
 L28:    aload_0
 L29:    getfield Field org/lwjgl/h this Ljava/nio/IntBuffer;
@@ -561,11 +561,11 @@ L76:    athrow
 L77:    aload_0
 L78:    areturn
 L79:    
-        .attribute StackMap b'\x00\x06\x00\x13\x00\x00\x00\x01\x07\x00\x2C\x00\x14\x00\x04\x07\x00\x02\x07\x00\xC7\x01\x01\x00\x00\x00\x2E\x00\x04\x07\x00\x02\x07\x00\xC7\x01\x01\x00\x00\x00\x35\x00\x04\x07\x00\x02\x07\x00\xC7\x01\x01\x00\x01\x01\x00\x4C\x00\x00\x00\x01\x07\x00\x2C\x00\x4D\x00\x04\x07\x00\x02\x07\x00\xC7\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x13\x00\x00\x00\x01\x07\x00\x2C\x00\x14\x00\x04\x07\x00\x02\x07\x00\xCB\x01\x01\x00\x00\x00\x2E\x00\x04\x07\x00\x02\x07\x00\xCB\x01\x01\x00\x00\x00\x35\x00\x04\x07\x00\x02\x07\x00\xCB\x01\x01\x00\x01\x01\x00\x4C\x00\x00\x00\x01\x07\x00\x2C\x00\x4D\x00\x04\x07\x00\x02\x07\x00\xCB\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public final else : ([J)Lorg/lwjgl/h;
+.method public final method283 : ([J)Lorg/lwjgl/h;
     .code stack 4 locals 2
 L0:     aload_0
 L1:     iconst_0
@@ -575,7 +575,7 @@ L4:     pop2
 L5:     aload_1
 L6:     dup_x1
 L7:     arraylength
-L8:     invokevirtual Method org/lwjgl/h break ([JII)Lorg/lwjgl/h;
+L8:     invokevirtual Method org/lwjgl/h method282 ([JII)Lorg/lwjgl/h;
 L11:    areturn
 L12:    
     .end code
@@ -585,20 +585,20 @@ L12:
     .code stack 4 locals 2
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/h do Ljava/nio/ByteBuffer;
-L5:     invokevirtual Method org/lwjgl/h else (Ljava/nio/ByteBuffer;)Lorg/lwjgl/h;
+L2:     getfield Field org/lwjgl/h field329 Ljava/nio/ByteBuffer;
+L5:     invokevirtual Method org/lwjgl/h method274 (Ljava/nio/ByteBuffer;)Lorg/lwjgl/h;
 L8:     dup
 L9:     astore_1
 L10:    aload_0
-L11:    getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L11:    getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L14:    invokevirtual Method java/nio/Buffer position ()I
-L17:    invokevirtual Method org/lwjgl/h else (I)Lorg/lwjgl/h;
+L17:    invokevirtual Method org/lwjgl/h method293 (I)Lorg/lwjgl/h;
 L20:    aload_1
 L21:    dup_x1
 L22:    aload_0
-L23:    getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L23:    getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L26:    invokevirtual Method java/nio/Buffer limit ()I
-L29:    invokevirtual Method org/lwjgl/h const (I)Lorg/lwjgl/h;
+L29:    invokevirtual Method org/lwjgl/h method291 (I)Lorg/lwjgl/h;
 L32:    pop2
 L33:    areturn
 L34:    
@@ -607,11 +607,11 @@ L34:
 
 .method public try : ()Lorg/lwjgl/h;
     .code stack 2 locals 1
-L0:     getstatic Field org/lwjgl/h char Z
+L0:     getstatic Field org/lwjgl/h field326 Z
 L3:     ifeq L17
 L6:     aload_0
 L7:     dup
-L8:     getfield Field org/lwjgl/h "enum" Ljava/nio/LongBuffer;
+L8:     getfield Field org/lwjgl/h field328 Ljava/nio/LongBuffer;
 L11:    invokevirtual Method java/nio/LongBuffer compact ()Ljava/nio/LongBuffer;
 L14:    pop
 L15:    areturn
@@ -631,7 +631,7 @@ L27:
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L2:     getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L5:     invokevirtual Method java/nio/Buffer rewind ()Ljava/nio/Buffer;
 L8:     pop
 L9:     areturn
@@ -639,82 +639,82 @@ L10:
     .end code
 .end method
 
-.method public final goto : ()Z
+.method public final method284 : ()Z
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L1:     getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L4:     invokevirtual Method java/nio/Buffer hasRemaining ()Z
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method private static break : (Ljava/nio/ByteBuffer;)V
+.method private static method285 : (Ljava/nio/ByteBuffer;)V
     .code stack 5 locals 2
 L0:     aload_0
 L1:     invokevirtual Method java/nio/ByteBuffer isDirect ()Z
-L4:     ifne L17
+L4:     ifne L18
 L7:     new java/lang/IllegalArgumentException
 L10:    dup
-L11:    ldc "The source buffer is not direct."
-L13:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/lang/String;)V
-L16:    athrow
-L17:    getstatic Field org/lwjgl/h char Z
-L20:    ifeq L32
-L23:    bipush 8
-L25:    iconst_1
-L26:    dup
-L27:    pop2
-L28:    goto L36
-L31:    athrow
-L32:    iconst_4
-L33:    iconst_1
-L34:    dup
-L35:    pop2
-L36:    istore_1
-L37:    aload_0
-L38:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
-L41:    aload_0
-L42:    invokevirtual Method java/nio/ByteBuffer position ()I
-L45:    i2l
-L46:    ladd
-L47:    iload_1
-L48:    i2l
-L49:    lrem
-L50:    lconst_0
-L51:    lcmp
-L52:    ifne L64
-L55:    aload_0
-L56:    invokevirtual Method java/nio/ByteBuffer remaining ()I
-L59:    iload_1
-L60:    irem
-L61:    ifeq L99
-L64:    new java/lang/IllegalArgumentException
-L67:    dup
-L68:    new java/lang/StringBuilder
-L71:    dup
-L72:    invokespecial Method java/lang/StringBuilder <init> ()V
-L75:    iconst_0
-L76:    ldc_w "The source buffer is not aligned to "
-L79:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
-L82:    iload_1
-L83:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
-L86:    ldc_w " bytes."
-L89:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-L92:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
-L95:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/lang/String;)V
-L98:    athrow
-L99:    return
-L100:   
-        .attribute StackMap b'\x00\x06\x00\x11\x00\x01\x07\x00\x6B\x00\x00\x00\x1F\x00\x00\x00\x01\x07\x00\x2C\x00\x20\x00\x01\x07\x00\x6B\x00\x00\x00\x24\x00\x01\x07\x00\x6B\x00\x01\x01\x00\x40\x00\x02\x07\x00\x6B\x01\x00\x00\x00\x63\x00\x02\x07\x00\x6B\x01\x00\x00'
+L11:    ldc_w "The source buffer is not direct."
+L14:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/lang/String;)V
+L17:    athrow
+L18:    getstatic Field org/lwjgl/h field326 Z
+L21:    ifeq L33
+L24:    bipush 8
+L26:    iconst_1
+L27:    dup
+L28:    pop2
+L29:    goto L37
+L32:    athrow
+L33:    iconst_4
+L34:    iconst_1
+L35:    dup
+L36:    pop2
+L37:    istore_1
+L38:    aload_0
+L39:    invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
+L42:    aload_0
+L43:    invokevirtual Method java/nio/ByteBuffer position ()I
+L46:    i2l
+L47:    ladd
+L48:    iload_1
+L49:    i2l
+L50:    lrem
+L51:    lconst_0
+L52:    lcmp
+L53:    ifne L65
+L56:    aload_0
+L57:    invokevirtual Method java/nio/ByteBuffer remaining ()I
+L60:    iload_1
+L61:    irem
+L62:    ifeq L100
+L65:    new java/lang/IllegalArgumentException
+L68:    dup
+L69:    new java/lang/StringBuilder
+L72:    dup
+L73:    invokespecial Method java/lang/StringBuilder <init> ()V
+L76:    iconst_0
+L77:    ldc_w "The source buffer is not aligned to "
+L80:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
+L83:    iload_1
+L84:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
+L87:    ldc_w " bytes."
+L90:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+L93:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
+L96:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/lang/String;)V
+L99:    athrow
+L100:   return
+L101:   
+        .attribute StackMap b'\x00\x06\x00\x12\x00\x01\x07\x00\x6B\x00\x00\x00\x20\x00\x00\x00\x01\x07\x00\x2C\x00\x21\x00\x01\x07\x00\x6B\x00\x00\x00\x25\x00\x01\x07\x00\x6B\x00\x01\x01\x00\x41\x00\x02\x07\x00\x6B\x01\x00\x00\x00\x64\x00\x02\x07\x00\x6B\x01\x00\x00'
     .end code
 .end method
 
-.method public final do : ()Lorg/lwjgl/h;
+.method public final method286 : ()Lorg/lwjgl/h;
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L2:     getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L5:     invokevirtual Method java/nio/Buffer flip ()Ljava/nio/Buffer;
 L8:     pop
 L9:     areturn
@@ -722,34 +722,34 @@ L10:
     .end code
 .end method
 
-.method public final for : ()I
+.method public final method287 : ()I
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/h else ()I
-L4:     invokestatic Method org/lwjgl/h "enum" ()I
+L1:     invokevirtual Method org/lwjgl/h method183 ()I
+L4:     invokestatic Method org/lwjgl/h method275 ()I
 L7:     imul
 L8:     ireturn
 L9:     
     .end code
 .end method
 
-.method public break : (Lorg/lwjgl/PointerWrapper;)Lorg/lwjgl/h;
+.method public method288 : (Lorg/lwjgl/PointerWrapper;)Lorg/lwjgl/h;
     .code stack 3 locals 2
 L0:     aload_0
 L1:     aload_1
 L2:     invokeinterface InterfaceMethod org/lwjgl/PointerWrapper getPointer ()J 1
-L7:     invokevirtual Method org/lwjgl/h break (J)Lorg/lwjgl/h;
+L7:     invokevirtual Method org/lwjgl/h method280 (J)Lorg/lwjgl/h;
 L10:    areturn
 L11:    
     .end code
 .end method
 
-.method public catch : ()Ljava/nio/ByteOrder;
+.method public method289 : ()Ljava/nio/ByteOrder;
     .code stack 1 locals 1
-L0:     getstatic Field org/lwjgl/h char Z
+L0:     getstatic Field org/lwjgl/h field326 Z
 L3:     ifeq L15
 L6:     aload_0
-L7:     getfield Field org/lwjgl/h "enum" Ljava/nio/LongBuffer;
+L7:     getfield Field org/lwjgl/h field328 Ljava/nio/LongBuffer;
 L10:    invokevirtual Method java/nio/LongBuffer order ()Ljava/nio/ByteOrder;
 L13:    areturn
 L14:    athrow
@@ -762,11 +762,11 @@ L23:
     .end code
 .end method
 
-.method public final float : ()Lorg/lwjgl/h;
+.method public final method290 : ()Lorg/lwjgl/h;
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L2:     getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L5:     invokevirtual Method java/nio/Buffer clear ()Ljava/nio/Buffer;
 L8:     pop
 L9:     areturn
@@ -778,7 +778,7 @@ L10:
     .code stack 3 locals 2
 L0:     aload_0
 L1:     iload_1
-L2:     invokestatic Method org/lwjgl/h "enum" ()I
+L2:     invokestatic Method org/lwjgl/h method275 ()I
 L5:     imul
 L6:     invokestatic Method org/lwjgl/BufferUtils createByteBuffer (I)Ljava/nio/ByteBuffer;
 L9:     invokespecial Method org/lwjgl/h <init> (Ljava/nio/ByteBuffer;)V
@@ -787,11 +787,11 @@ L13:
     .end code
 .end method
 
-.method public final const : (I)Lorg/lwjgl/h;
+.method public final method291 : (I)Lorg/lwjgl/h;
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L2:     getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L5:     iload_1
 L6:     invokevirtual Method java/nio/Buffer limit (I)Ljava/nio/Buffer;
 L9:     pop
@@ -810,9 +810,9 @@ L6:     aload_0
 L7:     invokevirtual Method org/lwjgl/h true ()I
 L10:    aload_0
 L11:    dup_x1
-L12:    invokevirtual Method org/lwjgl/h else ()I
+L12:    invokevirtual Method org/lwjgl/h method183 ()I
 L15:    aload_1
-L16:    invokevirtual Method org/lwjgl/h else ()I
+L16:    invokevirtual Method org/lwjgl/h method183 ()I
 L19:    invokestatic Method java/lang/Math min (II)I
 L22:    iadd
 L23:    istore_2
@@ -826,10 +826,10 @@ L35:    if_icmpge L94
 L38:    aload_1
 L39:    aload_0
 L40:    iload_3
-L41:    invokevirtual Method org/lwjgl/h break (I)J
+L41:    invokevirtual Method org/lwjgl/h method294 (I)J
 L44:    lstore 5
 L46:    iload 4
-L48:    invokevirtual Method org/lwjgl/h break (I)J
+L48:    invokevirtual Method org/lwjgl/h method294 (I)J
 L51:    lstore 7
 L53:    lload 5
 L55:    lload 7
@@ -857,9 +857,9 @@ L87:    iload_3
 L88:    iinc 4 1
 L91:    goto L34
 L94:    aload_0
-L95:    invokevirtual Method org/lwjgl/h else ()I
+L95:    invokevirtual Method org/lwjgl/h method183 ()I
 L98:    aload_1
-L99:    invokevirtual Method org/lwjgl/h else ()I
+L99:    invokevirtual Method org/lwjgl/h method183 ()I
 L102:   isub
 L103:   ireturn
 L104:   
@@ -867,7 +867,7 @@ L104:
     .end code
 .end method
 
-.method private static break : (III)V
+.method private static method292 : (III)V
     .code stack 4 locals 3
 L0:     iload_0
 L1:     iload_1
@@ -893,11 +893,11 @@ L25:
     .end code
 .end method
 
-.method public final else : (I)Lorg/lwjgl/h;
+.method public final method293 : (I)Lorg/lwjgl/h;
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L2:     getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L5:     iload_1
 L6:     invokevirtual Method java/nio/Buffer position (I)Ljava/nio/Buffer;
 L9:     pop
@@ -906,12 +906,12 @@ L11:
     .end code
 .end method
 
-.method public break : (I)J
+.method public method294 : (I)J
     .code stack 4 locals 2
-L0:     getstatic Field org/lwjgl/h char Z
+L0:     getstatic Field org/lwjgl/h field326 Z
 L3:     ifeq L16
 L6:     aload_0
-L7:     getfield Field org/lwjgl/h "enum" Ljava/nio/LongBuffer;
+L7:     getfield Field org/lwjgl/h field328 Ljava/nio/LongBuffer;
 L10:    iload_1
 L11:    invokevirtual Method java/nio/LongBuffer get (I)J
 L14:    lreturn
@@ -929,9 +929,9 @@ L30:
     .end code
 .end method
 
-.method public static short : ()Z
+.method public static method92 : ()Z
     .code stack 1 locals 0
-L0:     getstatic Field org/lwjgl/h char Z
+L0:     getstatic Field org/lwjgl/h field326 Z
 L3:     ireturn
 L4:     
     .end code
@@ -948,7 +948,7 @@ L5:     aload_0
 L6:     dup
 L7:     invokevirtual Method org/lwjgl/h true ()I
 L10:    istore_2
-L11:    invokevirtual Method org/lwjgl/h byte ()I
+L11:    invokevirtual Method org/lwjgl/h method269 ()I
 L14:    iconst_1
 L15:    dup
 L16:    dup
@@ -966,7 +966,7 @@ L30:    iload_1
 L31:    imul
 L32:    aload_0
 L33:    iload_3
-L34:    invokevirtual Method org/lwjgl/h break (I)J
+L34:    invokevirtual Method org/lwjgl/h method294 (I)J
 L37:    iinc 3 -1
 L40:    l2i
 L41:    iadd
@@ -981,11 +981,11 @@ L50:
     .end code
 .end method
 
-.method public final const : ()Lorg/lwjgl/h;
+.method public final method295 : ()Lorg/lwjgl/h;
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L2:     getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L5:     invokevirtual Method java/nio/Buffer mark ()Ljava/nio/Buffer;
 L8:     pop
 L9:     areturn
@@ -993,7 +993,7 @@ L10:
     .end code
 .end method
 
-.method public break : ([J)Lorg/lwjgl/h;
+.method public method296 : ([J)Lorg/lwjgl/h;
     .code stack 4 locals 2
 L0:     aload_0
 L1:     iconst_0
@@ -1003,21 +1003,21 @@ L4:     pop2
 L5:     aload_1
 L6:     dup_x1
 L7:     arraylength
-L8:     invokevirtual Method org/lwjgl/h else ([JII)Lorg/lwjgl/h;
+L8:     invokevirtual Method org/lwjgl/h method279 ([JII)Lorg/lwjgl/h;
 L11:    areturn
 L12:    
     .end code
 .end method
 
-.method public break : (Lorg/lwjgl/h;)Lorg/lwjgl/h;
+.method public method297 : (Lorg/lwjgl/h;)Lorg/lwjgl/h;
     .code stack 3 locals 2
-L0:     getstatic Field org/lwjgl/h char Z
+L0:     getstatic Field org/lwjgl/h field326 Z
 L3:     ifeq L21
 L6:     aload_0
 L7:     dup
-L8:     getfield Field org/lwjgl/h "enum" Ljava/nio/LongBuffer;
+L8:     getfield Field org/lwjgl/h field328 Ljava/nio/LongBuffer;
 L11:    aload_1
-L12:    getfield Field org/lwjgl/h "enum" Ljava/nio/LongBuffer;
+L12:    getfield Field org/lwjgl/h field328 Ljava/nio/LongBuffer;
 L15:    invokevirtual Method java/nio/LongBuffer put (Ljava/nio/LongBuffer;)Ljava/nio/LongBuffer;
 L18:    pop
 L19:    areturn
@@ -1035,13 +1035,13 @@ L35:
     .end code
 .end method
 
-.method public break : (IJ)Lorg/lwjgl/h;
+.method public method298 : (IJ)Lorg/lwjgl/h;
     .code stack 5 locals 4
-L0:     getstatic Field org/lwjgl/h char Z
+L0:     getstatic Field org/lwjgl/h field326 Z
 L3:     ifeq L19
 L6:     aload_0
 L7:     dup
-L8:     getfield Field org/lwjgl/h "enum" Ljava/nio/LongBuffer;
+L8:     getfield Field org/lwjgl/h field328 Ljava/nio/LongBuffer;
 L11:    iload_1
 L12:    lload_2
 L13:    invokevirtual Method java/nio/LongBuffer put (IJ)Ljava/nio/LongBuffer;
@@ -1062,19 +1062,19 @@ L32:
     .end code
 .end method
 
-.method public final else : ()I
+.method public final method183 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/h else Ljava/nio/Buffer;
+L1:     getfield Field org/lwjgl/h field327 Ljava/nio/Buffer;
 L4:     invokevirtual Method java/nio/Buffer remaining ()I
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public static break : (Ljava/nio/ByteBuffer;J)V
+.method public static method299 : (Ljava/nio/ByteBuffer;J)V
     .code stack 3 locals 3
-L0:     getstatic Field org/lwjgl/h char Z
+L0:     getstatic Field org/lwjgl/h field326 Z
 L3:     ifeq L14
 L6:     aload_0
 L7:     lload_1
@@ -1093,20 +1093,20 @@ L22:
     .end code
 .end method
 
-.method public final break : ()I
+.method public final method247 : ()I
     .code stack 2 locals 1
 L0:     aload_0
 L1:     invokevirtual Method org/lwjgl/h true ()I
-L4:     invokestatic Method org/lwjgl/h "enum" ()I
+L4:     invokestatic Method org/lwjgl/h method275 ()I
 L7:     imul
 L8:     ireturn
 L9:     
     .end code
 .end method
 
-.method public static break : (Ljava/nio/ByteBuffer;IJ)V
+.method public static method300 : (Ljava/nio/ByteBuffer;IJ)V
     .code stack 5 locals 4
-L0:     getstatic Field org/lwjgl/h char Z
+L0:     getstatic Field org/lwjgl/h field326 Z
 L3:     ifeq L21
 L6:     aload_0
 L7:     iload_1
@@ -1137,13 +1137,13 @@ L35:
     .end code
 .end method
 
-.method public break : (ILorg/lwjgl/PointerWrapper;)Lorg/lwjgl/h;
+.method public method301 : (ILorg/lwjgl/PointerWrapper;)Lorg/lwjgl/h;
     .code stack 4 locals 3
 L0:     aload_0
 L1:     iload_1
 L2:     aload_2
 L3:     invokeinterface InterfaceMethod org/lwjgl/PointerWrapper getPointer ()J 1
-L8:     invokevirtual Method org/lwjgl/h break (IJ)Lorg/lwjgl/h;
+L8:     invokevirtual Method org/lwjgl/h method298 (IJ)Lorg/lwjgl/h;
 L11:    areturn
 L12:    
     .end code

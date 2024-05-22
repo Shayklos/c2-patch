@@ -1,9 +1,9 @@
 .version 49 0
 .class super abstract org/lwjgl/opengl/MacOSXCanvasPeerInfo
 .super org/lwjgl/opengl/MacOSXPeerInfo
-.field private final do Lorg/lwjgl/opengl/AWTSurfaceLock;
+.field private final field4424 Lorg/lwjgl/opengl/AWTSurfaceLock;
 
-.method protected break : (Ljava/awt/Canvas;)V
+.method protected method4687 : (Ljava/awt/Canvas;)V
     .code stack 4 locals 3
 L0:     invokestatic Method org/lwjgl/opengl/Display while ()Ljava/awt/Canvas;
 L3:     ifnull L12
@@ -13,9 +13,9 @@ L12:    aload_1
 L13:    instanceof org/lwjgl/opengl/aB
 L16:    ifeq L54
 L19:    aload_0
-L20:    getfield Field org/lwjgl/opengl/MacOSXCanvasPeerInfo do Lorg/lwjgl/opengl/AWTSurfaceLock;
+L20:    getfield Field org/lwjgl/opengl/MacOSXCanvasPeerInfo field4424 Lorg/lwjgl/opengl/AWTSurfaceLock;
 L23:    aload_1
-L24:    invokevirtual Method org/lwjgl/opengl/AWTSurfaceLock const (Ljava/awt/Canvas;)Z
+L24:    invokevirtual Method org/lwjgl/opengl/AWTSurfaceLock method2937 (Ljava/awt/Canvas;)Z
 L27:    ifeq L54
 L30:    bipush 10
 L32:    iconst_1
@@ -39,11 +39,11 @@ L56:    dup
 L57:    pop2
 L58:    istore_2
 L59:    aload_0
-L60:    getfield Field org/lwjgl/opengl/MacOSXCanvasPeerInfo do Lorg/lwjgl/opengl/AWTSurfaceLock;
+L60:    getfield Field org/lwjgl/opengl/MacOSXCanvasPeerInfo field4424 Lorg/lwjgl/opengl/AWTSurfaceLock;
 L63:    aload_1
-L64:    invokevirtual Method org/lwjgl/opengl/AWTSurfaceLock else (Ljava/awt/Canvas;)Ljava/nio/ByteBuffer;
+L64:    invokevirtual Method org/lwjgl/opengl/AWTSurfaceLock method2941 (Ljava/awt/Canvas;)Ljava/nio/ByteBuffer;
 L67:    aload_0
-L68:    invokevirtual Method org/lwjgl/opengl/MacOSXCanvasPeerInfo float ()Ljava/nio/ByteBuffer;
+L68:    invokevirtual Method org/lwjgl/opengl/MacOSXCanvasPeerInfo method4677 ()Ljava/nio/ByteBuffer;
 L71:    iload_2
 L72:    invokestatic Method org/lwjgl/opengl/MacOSXCanvasPeerInfo nInitHandle (Ljava/nio/ByteBuffer;Ljava/nio/ByteBuffer;Z)V
 L75:    return
@@ -57,11 +57,11 @@ L76:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method protected const : ()V
+.method protected method4671 : ()V
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/MacOSXCanvasPeerInfo do Lorg/lwjgl/opengl/AWTSurfaceLock;
-L4:     invokevirtual Method org/lwjgl/opengl/AWTSurfaceLock break ()V
+L1:     getfield Field org/lwjgl/opengl/MacOSXCanvasPeerInfo field4424 Lorg/lwjgl/opengl/AWTSurfaceLock;
+L4:     invokevirtual Method org/lwjgl/opengl/AWTSurfaceLock method2938 ()V
 L7:     return
 L8:     
     .end code
@@ -94,7 +94,7 @@ L24:    dup
 L25:    pop2
 L26:    dup
 L27:    invokespecial Method org/lwjgl/opengl/AWTSurfaceLock <init> ()V
-L30:    putfield Field org/lwjgl/opengl/MacOSXCanvasPeerInfo do Lorg/lwjgl/opengl/AWTSurfaceLock;
+L30:    putfield Field org/lwjgl/opengl/MacOSXCanvasPeerInfo field4424 Lorg/lwjgl/opengl/AWTSurfaceLock;
 L33:    return
 L34:    
     .end code

@@ -2,22 +2,22 @@
 .class public final super WB
 .super java/lang/Object
 .implements h
-.field public final synthetic "enum" LGd;
-.field public final synthetic do LTe;
+.field public final synthetic field1585 LGd;
+.field public final synthetic field1586 LTe;
 
-.method public break : (LgB;)V
+.method public method728 : (LgB;)V
     .code stack 5 locals 2
 L0:     aload_0
-L1:     getfield Field WB "enum" LGd;
-L4:     invokestatic Method Gd const (LGd;)LFE;
+L1:     getfield Field WB field1585 LGd;
+L4:     invokestatic Method Gd method213 (LGd;)LFE;
 L7:     aload_0
-L8:     getfield Field WB "enum" LGd;
+L8:     getfield Field WB field1585 LGd;
 L11:    new ZF
 L14:    dup
 L15:    aload_0
-L16:    getfield Field WB do LTe;
+L16:    getfield Field WB field1586 LTe;
 L19:    invokespecial Method ZF <init> (LTe;)V
-L22:    invokevirtual Method FE break (LbC;LbC;)V
+L22:    invokevirtual Method FE method455 (LbC;LbC;)V
 L25:    return
 L26:    
     .end code
@@ -30,8 +30,8 @@ L1:     aload_0
 L2:     dup_x1
 L3:     dup_x2
 L4:     aload_1
-L5:     putfield Field WB "enum" LGd;
-L8:     putfield Field WB do LTe;
+L5:     putfield Field WB field1585 LGd;
+L8:     putfield Field WB field1586 LTe;
 L11:    invokespecial Method java/lang/Object <init> ()V
 L14:    return
 L15:    
@@ -42,5 +42,5 @@ L15:
     Pc JB [0] public static final enum
     mG PF [0] public
 .end innerclasses
-.enclosing method Gd break (LPc;LmG;LTe;)V
+.enclosing method Gd method210 (LPc;LmG;LTe;)V
 .end class

@@ -1,8 +1,8 @@
 .version 49 0
 .class public final super ze
 .super Uf
-.field public "enum" F
-.field public do LDF;
+.field public field1407 F
+.field public field1408 LDF;
 
 .method public <init> : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FIZ)V
     .code stack 12 locals 7
@@ -53,18 +53,18 @@ L57:    iload 6
 L59:    invokespecial Method Uf <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
 L62:    aload_0
 L63:    fload 4
-L65:    putfield Field ze "enum" F
+L65:    putfield Field ze field1407 F
 L68:    return
 L69:    
     .end code
 .end method
 
-.method public break : (LRg;)Z
+.method public method704 : (LRg;)Z
     .code stack 9 locals 3
 L0:     aload_0
-L1:     getfield Field ze "enum" F
+L1:     getfield Field ze field1407 F
 L4:     aload_1
-L5:     getfield Field Rg do F
+L5:     getfield Field Rg field241 F
 L8:     fsub
 L9:     dup
 L10:    fstore_2
@@ -74,10 +74,10 @@ L13:    ifge L18
 L16:    fconst_0
 L17:    fstore_2
 L18:    aload_0
-L19:    getfield Field ze do LDF;
+L19:    getfield Field ze field1408 LDF;
 L22:    ifnull L77
 L25:    aload_0
-L26:    getfield Field ze do LDF;
+L26:    getfield Field ze field1408 LDF;
 L29:    ldc "%d:%05.2f"
 L31:    iconst_2
 L32:    iconst_1
@@ -112,11 +112,11 @@ L66:    frem
 L67:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
 L70:    aastore
 L71:    invokestatic Method java/lang/String format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-L74:    invokevirtual Method DF break (Ljava/lang/String;)V
+L74:    invokevirtual Method DF method12 (Ljava/lang/String;)V
 L77:    aload_1
-L78:    getfield Field Rg else Lqd;
-L81:    getfield Field qd null LQB;
-L84:    getstatic Field QB else LQB;
+L78:    getfield Field Rg field239 Lqd;
+L81:    getfield Field qd field763 LQB;
+L84:    getstatic Field QB field367 LQB;
 L87:    if_acmpne L119
 L90:    aload_1
 L91:    invokevirtual Method Rg new ()I
@@ -126,9 +126,9 @@ L96:    dup
 L97:    pop2
 L98:    if_icmple L119
 L101:   aload_1
-L102:   getfield Field Rg do F
+L102:   getfield Field Rg field241 F
 L105:   aload_0
-L106:   getfield Field ze "enum" F
+L106:   getfield Field ze field1407 F
 L109:   fcmpl
 L110:   ifle L119
 L113:   iconst_1
@@ -143,11 +143,11 @@ L121:   dup
 L122:   pop2
 L123:   ireturn
 L124:   
-        .attribute StackMap b'\x00\x04\x00\x12\x00\x03\x07\x00\x02\x07\x00\x27\x02\x00\x00\x00\x4D\x00\x03\x07\x00\x02\x07\x00\x27\x02\x00\x00\x00\x76\x00\x00\x00\x01\x07\x00\x48\x00\x77\x00\x03\x07\x00\x02\x07\x00\x27\x02\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x12\x00\x03\x07\x00\x02\x07\x00\x27\x02\x00\x00\x00\x4D\x00\x03\x07\x00\x02\x07\x00\x27\x02\x00\x00\x00\x76\x00\x00\x00\x01\x07\x00\x4B\x00\x77\x00\x03\x07\x00\x02\x07\x00\x27\x02\x00\x00'
     .end code
 .end method
 
-.method public break : ()LgB;
+.method public method700 : ()LgB;
     .code stack 7 locals 2
 L0:     new qc
 L3:     dup
@@ -167,19 +167,19 @@ L24:    dup
 L25:    ldc "Remaining time"
 L27:    getstatic Field We try LWe;
 L30:    invokespecial Method DF <init> (Ljava/lang/String;LWe;)V
-L33:    getstatic Field VD do Ljava/lang/Object;
-L36:    invokevirtual Method qc break (LgB;Ljava/lang/Object;)V
+L33:    getstatic Field VD field150 Ljava/lang/Object;
+L36:    invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
 L39:    new DF
 L42:    aload_0
 L43:    dup
 L44:    pop2
 L45:    dup
 L46:    ldc " "
-L48:    getstatic Field We extends LWe;
+L48:    getstatic Field We field475 LWe;
 L51:    invokespecial Method DF <init> (Ljava/lang/String;LWe;)V
 L54:    dup_x1
-L55:    putfield Field ze do LDF;
-L58:    invokevirtual Method qc float (LgB;)LgB;
+L55:    putfield Field ze field1408 LDF;
+L58:    invokevirtual Method qc method36 (LgB;)LgB;
 L61:    pop
 L62:    aload_1
 L63:    areturn

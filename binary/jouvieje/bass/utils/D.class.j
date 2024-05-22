@@ -2,17 +2,17 @@
 .class public final super jouvieje/bass/utils/D
 .super java/lang/Object
 .implements jouvieje/bass/utils/i
-.field private null Ljava/nio/ByteBuffer;
+.field private field2334 Ljava/nio/ByteBuffer;
 .field private this Ljava/nio/ByteBuffer;
-.field private char Ljava/nio/ByteBuffer;
-.field private else Ljava/nio/ByteBuffer;
-.field private "enum" Ljava/nio/ByteBuffer;
-.field private do Ljava/nio/ByteBuffer;
+.field private field2335 Ljava/nio/ByteBuffer;
+.field private field2336 Ljava/nio/ByteBuffer;
+.field private field2337 Ljava/nio/ByteBuffer;
+.field private field2338 Ljava/nio/ByteBuffer;
 
-.method public for : (Ljava/io/RandomAccessFile;)F
+.method public method1645 : (Ljava/io/RandomAccessFile;)F
     .code stack 4 locals 4
 L0:     aload_0
-L1:     invokespecial Method jouvieje/bass/utils/D float ()Ljava/nio/ByteBuffer;
+L1:     invokespecial Method jouvieje/bass/utils/D method1654 ()Ljava/nio/ByteBuffer;
 L4:     dup
 L5:     astore_2
 L6:     dup
@@ -46,27 +46,27 @@ L37:
     .exceptions java/io/IOException
 .end method
 
-.method private for : ()Ljava/nio/ByteBuffer;
+.method private method1646 : ()Ljava/nio/ByteBuffer;
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/D do Ljava/nio/ByteBuffer;
+L1:     getfield Field jouvieje/bass/utils/D field2338 Ljava/nio/ByteBuffer;
 L4:     ifnonnull L18
 L7:     aload_0
 L8:     iconst_4
 L9:     iconst_1
 L10:    dup
 L11:    pop2
-L12:    invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
-L15:    putfield Field jouvieje/bass/utils/D do Ljava/nio/ByteBuffer;
+L12:    invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
+L15:    putfield Field jouvieje/bass/utils/D field2338 Ljava/nio/ByteBuffer;
 L18:    aload_0
-L19:    getfield Field jouvieje/bass/utils/D do Ljava/nio/ByteBuffer;
+L19:    getfield Field jouvieje/bass/utils/D field2338 Ljava/nio/ByteBuffer;
 L22:    areturn
 L23:    
         .attribute StackMap b'\x00\x01\x00\x12\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public const : (Ljava/io/RandomAccessFile;I)[B
+.method public method1647 : (Ljava/io/RandomAccessFile;I)[B
     .code stack 4 locals 3
 L0:     iload_2
 L1:     newarray byte
@@ -107,21 +107,21 @@ L10:    dup_x1
 L11:    aconst_null
 L12:    aload_0
 L13:    invokespecial Method java/lang/Object <init> ()V
-L16:    putfield Field jouvieje/bass/utils/D "enum" Ljava/nio/ByteBuffer;
-L19:    putfield Field jouvieje/bass/utils/D null Ljava/nio/ByteBuffer;
-L22:    putfield Field jouvieje/bass/utils/D do Ljava/nio/ByteBuffer;
+L16:    putfield Field jouvieje/bass/utils/D field2337 Ljava/nio/ByteBuffer;
+L19:    putfield Field jouvieje/bass/utils/D field2334 Ljava/nio/ByteBuffer;
+L22:    putfield Field jouvieje/bass/utils/D field2338 Ljava/nio/ByteBuffer;
 L25:    putfield Field jouvieje/bass/utils/D this Ljava/nio/ByteBuffer;
-L28:    putfield Field jouvieje/bass/utils/D char Ljava/nio/ByteBuffer;
-L31:    putfield Field jouvieje/bass/utils/D else Ljava/nio/ByteBuffer;
+L28:    putfield Field jouvieje/bass/utils/D field2335 Ljava/nio/ByteBuffer;
+L31:    putfield Field jouvieje/bass/utils/D field2336 Ljava/nio/ByteBuffer;
 L34:    return
 L35:    
     .end code
 .end method
 
-.method public else : (Ljava/io/RandomAccessFile;I)Ljava/nio/ByteBuffer;
+.method public method1648 : (Ljava/io/RandomAccessFile;I)Ljava/nio/ByteBuffer;
     .code stack 3 locals 3
 L0:     iload_2
-L1:     invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
+L1:     invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
 L4:     astore_2
 L5:     aload_1
 L6:     invokevirtual Method java/io/RandomAccessFile getChannel ()Ljava/nio/channels/FileChannel;
@@ -135,30 +135,30 @@ L16:
     .exceptions java/io/IOException
 .end method
 
-.method private catch : ()Ljava/nio/ByteBuffer;
+.method private method1649 : ()Ljava/nio/ByteBuffer;
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/D null Ljava/nio/ByteBuffer;
+L1:     getfield Field jouvieje/bass/utils/D field2334 Ljava/nio/ByteBuffer;
 L4:     ifnonnull L18
 L7:     aload_0
 L8:     iconst_2
 L9:     iconst_1
 L10:    dup
 L11:    pop2
-L12:    invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
-L15:    putfield Field jouvieje/bass/utils/D null Ljava/nio/ByteBuffer;
+L12:    invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
+L15:    putfield Field jouvieje/bass/utils/D field2334 Ljava/nio/ByteBuffer;
 L18:    aload_0
-L19:    getfield Field jouvieje/bass/utils/D null Ljava/nio/ByteBuffer;
+L19:    getfield Field jouvieje/bass/utils/D field2334 Ljava/nio/ByteBuffer;
 L22:    areturn
 L23:    
         .attribute StackMap b'\x00\x01\x00\x12\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public break : (Ljava/io/RandomAccessFile;F)V
+.method public method1650 : (Ljava/io/RandomAccessFile;F)V
     .code stack 4 locals 5
 L0:     aload_0
-L1:     invokespecial Method jouvieje/bass/utils/D float ()Ljava/nio/ByteBuffer;
+L1:     invokespecial Method jouvieje/bass/utils/D method1654 ()Ljava/nio/ByteBuffer;
 L4:     dup
 L5:     astore_3
 L6:     dup
@@ -195,7 +195,7 @@ L43:
     .exceptions java/io/IOException
 .end method
 
-.method public else : (Ljava/io/RandomAccessFile;[BII)V
+.method public method1651 : (Ljava/io/RandomAccessFile;[BII)V
     .code stack 4 locals 5
 L0:     aload_1
 L1:     aload_2
@@ -208,10 +208,10 @@ L9:
     .exceptions java/io/IOException
 .end method
 
-.method public catch : (Ljava/io/RandomAccessFile;)C
+.method public method1652 : (Ljava/io/RandomAccessFile;)C
     .code stack 4 locals 4
 L0:     aload_0
-L1:     invokespecial Method jouvieje/bass/utils/D catch ()Ljava/nio/ByteBuffer;
+L1:     invokespecial Method jouvieje/bass/utils/D method1649 ()Ljava/nio/ByteBuffer;
 L4:     dup
 L5:     astore_2
 L6:     dup
@@ -245,7 +245,7 @@ L37:
     .exceptions java/io/IOException
 .end method
 
-.method public break : (Ljava/io/RandomAccessFile;B)V
+.method public method1653 : (Ljava/io/RandomAccessFile;B)V
     .code stack 2 locals 3
 L0:     aload_1
 L1:     iload_2
@@ -256,30 +256,30 @@ L6:
     .exceptions java/io/IOException
 .end method
 
-.method private float : ()Ljava/nio/ByteBuffer;
+.method private method1654 : ()Ljava/nio/ByteBuffer;
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/D char Ljava/nio/ByteBuffer;
+L1:     getfield Field jouvieje/bass/utils/D field2335 Ljava/nio/ByteBuffer;
 L4:     ifnonnull L18
 L7:     aload_0
 L8:     iconst_4
 L9:     iconst_1
 L10:    dup
 L11:    pop2
-L12:    invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
-L15:    putfield Field jouvieje/bass/utils/D char Ljava/nio/ByteBuffer;
+L12:    invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
+L15:    putfield Field jouvieje/bass/utils/D field2335 Ljava/nio/ByteBuffer;
 L18:    aload_0
-L19:    getfield Field jouvieje/bass/utils/D char Ljava/nio/ByteBuffer;
+L19:    getfield Field jouvieje/bass/utils/D field2335 Ljava/nio/ByteBuffer;
 L22:    areturn
 L23:    
         .attribute StackMap b'\x00\x01\x00\x12\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public break : (Ljava/io/RandomAccessFile;C)V
+.method public method1655 : (Ljava/io/RandomAccessFile;C)V
     .code stack 4 locals 5
 L0:     aload_0
-L1:     invokespecial Method jouvieje/bass/utils/D catch ()Ljava/nio/ByteBuffer;
+L1:     invokespecial Method jouvieje/bass/utils/D method1649 ()Ljava/nio/ByteBuffer;
 L4:     dup
 L5:     astore_3
 L6:     dup
@@ -316,7 +316,7 @@ L43:
     .exceptions java/io/IOException
 .end method
 
-.method public break : (Ljava/io/RandomAccessFile;[B)V
+.method public method1656 : (Ljava/io/RandomAccessFile;[B)V
     .code stack 5 locals 3
 L0:     aload_0
 L1:     aload_1
@@ -327,14 +327,14 @@ L5:     pop2
 L6:     aload_2
 L7:     dup_x1
 L8:     arraylength
-L9:     invokevirtual Method jouvieje/bass/utils/D else (Ljava/io/RandomAccessFile;[BII)V
+L9:     invokevirtual Method jouvieje/bass/utils/D method1651 (Ljava/io/RandomAccessFile;[BII)V
 L12:    return
 L13:    
     .end code
     .exceptions java/io/IOException
 .end method
 
-.method public short : ()V
+.method public method1657 : ()V
     .code stack 12 locals 1
 L0:     aconst_null
 L1:     aload_0
@@ -348,18 +348,18 @@ L8:     dup
 L9:     aload_0
 L10:    dup_x1
 L11:    aconst_null
-L12:    putfield Field jouvieje/bass/utils/D "enum" Ljava/nio/ByteBuffer;
-L15:    putfield Field jouvieje/bass/utils/D null Ljava/nio/ByteBuffer;
-L18:    putfield Field jouvieje/bass/utils/D do Ljava/nio/ByteBuffer;
+L12:    putfield Field jouvieje/bass/utils/D field2337 Ljava/nio/ByteBuffer;
+L15:    putfield Field jouvieje/bass/utils/D field2334 Ljava/nio/ByteBuffer;
+L18:    putfield Field jouvieje/bass/utils/D field2338 Ljava/nio/ByteBuffer;
 L21:    putfield Field jouvieje/bass/utils/D this Ljava/nio/ByteBuffer;
-L24:    putfield Field jouvieje/bass/utils/D char Ljava/nio/ByteBuffer;
-L27:    putfield Field jouvieje/bass/utils/D else Ljava/nio/ByteBuffer;
+L24:    putfield Field jouvieje/bass/utils/D field2335 Ljava/nio/ByteBuffer;
+L27:    putfield Field jouvieje/bass/utils/D field2336 Ljava/nio/ByteBuffer;
 L30:    return
 L31:    
     .end code
 .end method
 
-.method public break : (Ljava/io/RandomAccessFile;[BII)V
+.method public method1658 : (Ljava/io/RandomAccessFile;[BII)V
     .code stack 4 locals 5
 L0:     aload_1
 L1:     aload_2
@@ -373,30 +373,30 @@ L10:
     .exceptions java/io/IOException
 .end method
 
-.method private const : ()Ljava/nio/ByteBuffer;
+.method private method1659 : ()Ljava/nio/ByteBuffer;
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/D "enum" Ljava/nio/ByteBuffer;
+L1:     getfield Field jouvieje/bass/utils/D field2337 Ljava/nio/ByteBuffer;
 L4:     ifnonnull L18
 L7:     aload_0
 L8:     iconst_2
 L9:     iconst_1
 L10:    dup
 L11:    pop2
-L12:    invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
-L15:    putfield Field jouvieje/bass/utils/D "enum" Ljava/nio/ByteBuffer;
+L12:    invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
+L15:    putfield Field jouvieje/bass/utils/D field2337 Ljava/nio/ByteBuffer;
 L18:    aload_0
-L19:    getfield Field jouvieje/bass/utils/D "enum" Ljava/nio/ByteBuffer;
+L19:    getfield Field jouvieje/bass/utils/D field2337 Ljava/nio/ByteBuffer;
 L22:    areturn
 L23:    
         .attribute StackMap b'\x00\x01\x00\x12\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public float : (Ljava/io/RandomAccessFile;)I
+.method public method1660 : (Ljava/io/RandomAccessFile;)I
     .code stack 4 locals 4
 L0:     aload_0
-L1:     invokespecial Method jouvieje/bass/utils/D for ()Ljava/nio/ByteBuffer;
+L1:     invokespecial Method jouvieje/bass/utils/D method1646 ()Ljava/nio/ByteBuffer;
 L4:     dup
 L5:     astore_2
 L6:     dup
@@ -430,7 +430,7 @@ L37:
     .exceptions java/io/IOException
 .end method
 
-.method private else : ()Ljava/nio/ByteBuffer;
+.method private method1661 : ()Ljava/nio/ByteBuffer;
     .code stack 4 locals 1
 L0:     aload_0
 L1:     getfield Field jouvieje/bass/utils/D this Ljava/nio/ByteBuffer;
@@ -440,7 +440,7 @@ L8:     bipush 8
 L10:    iconst_1
 L11:    dup
 L12:    pop2
-L13:    invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
+L13:    invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
 L16:    putfield Field jouvieje/bass/utils/D this Ljava/nio/ByteBuffer;
 L19:    aload_0
 L20:    getfield Field jouvieje/bass/utils/D this Ljava/nio/ByteBuffer;
@@ -450,10 +450,10 @@ L24:
     .end code
 .end method
 
-.method public break : (Ljava/io/RandomAccessFile;S)V
+.method public method1662 : (Ljava/io/RandomAccessFile;S)V
     .code stack 4 locals 5
 L0:     aload_0
-L1:     invokespecial Method jouvieje/bass/utils/D const ()Ljava/nio/ByteBuffer;
+L1:     invokespecial Method jouvieje/bass/utils/D method1659 ()Ljava/nio/ByteBuffer;
 L4:     dup
 L5:     astore_3
 L6:     dup
@@ -490,10 +490,10 @@ L43:
     .exceptions java/io/IOException
 .end method
 
-.method public break : (Ljava/io/RandomAccessFile;D)V
+.method public method1663 : (Ljava/io/RandomAccessFile;D)V
     .code stack 4 locals 6
 L0:     aload_0
-L1:     invokespecial Method jouvieje/bass/utils/D break ()Ljava/nio/ByteBuffer;
+L1:     invokespecial Method jouvieje/bass/utils/D method1667 ()Ljava/nio/ByteBuffer;
 L4:     dup
 L5:     astore 4
 L7:     dup
@@ -530,7 +530,7 @@ L47:
     .exceptions java/io/IOException
 .end method
 
-.method public else : (Ljava/io/RandomAccessFile;Ljava/nio/ByteBuffer;I)I
+.method public method1664 : (Ljava/io/RandomAccessFile;Ljava/nio/ByteBuffer;I)I
     .code stack 4 locals 5
 L0:     aload_2
 L1:     invokevirtual Method java/nio/ByteBuffer duplicate ()Ljava/nio/ByteBuffer;
@@ -558,10 +558,10 @@ L38:
     .exceptions java/io/IOException
 .end method
 
-.method public break : (Ljava/io/RandomAccessFile;I)V
+.method public method1665 : (Ljava/io/RandomAccessFile;I)V
     .code stack 4 locals 5
 L0:     aload_0
-L1:     invokespecial Method jouvieje/bass/utils/D for ()Ljava/nio/ByteBuffer;
+L1:     invokespecial Method jouvieje/bass/utils/D method1646 ()Ljava/nio/ByteBuffer;
 L4:     dup
 L5:     astore_3
 L6:     dup
@@ -598,7 +598,7 @@ L43:
     .exceptions java/io/IOException
 .end method
 
-.method public break : (Ljava/io/RandomAccessFile;Ljava/nio/ByteBuffer;)I
+.method public method1666 : (Ljava/io/RandomAccessFile;Ljava/nio/ByteBuffer;)I
     .code stack 2 locals 3
 L0:     aload_1
 L1:     invokevirtual Method java/io/RandomAccessFile getChannel ()Ljava/nio/channels/FileChannel;
@@ -610,30 +610,30 @@ L9:
     .exceptions java/io/IOException
 .end method
 
-.method private break : ()Ljava/nio/ByteBuffer;
+.method private method1667 : ()Ljava/nio/ByteBuffer;
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/D else Ljava/nio/ByteBuffer;
+L1:     getfield Field jouvieje/bass/utils/D field2336 Ljava/nio/ByteBuffer;
 L4:     ifnonnull L19
 L7:     aload_0
 L8:     bipush 8
 L10:    iconst_1
 L11:    dup
 L12:    pop2
-L13:    invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
-L16:    putfield Field jouvieje/bass/utils/D else Ljava/nio/ByteBuffer;
+L13:    invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
+L16:    putfield Field jouvieje/bass/utils/D field2336 Ljava/nio/ByteBuffer;
 L19:    aload_0
-L20:    getfield Field jouvieje/bass/utils/D else Ljava/nio/ByteBuffer;
+L20:    getfield Field jouvieje/bass/utils/D field2336 Ljava/nio/ByteBuffer;
 L23:    areturn
 L24:    
         .attribute StackMap b'\x00\x01\x00\x13\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public short : (Ljava/io/RandomAccessFile;)J
+.method public method1668 : (Ljava/io/RandomAccessFile;)J
     .code stack 4 locals 4
 L0:     aload_0
-L1:     invokespecial Method jouvieje/bass/utils/D else ()Ljava/nio/ByteBuffer;
+L1:     invokespecial Method jouvieje/bass/utils/D method1661 ()Ljava/nio/ByteBuffer;
 L4:     dup
 L5:     astore_2
 L6:     dup
@@ -667,7 +667,7 @@ L37:
     .exceptions java/io/IOException
 .end method
 
-.method public break : (Ljava/io/RandomAccessFile;Ljava/nio/ByteBuffer;I)V
+.method public method1669 : (Ljava/io/RandomAccessFile;Ljava/nio/ByteBuffer;I)V
     .code stack 4 locals 5
 L0:     aload_2
 L1:     invokevirtual Method java/nio/ByteBuffer duplicate ()Ljava/nio/ByteBuffer;
@@ -694,7 +694,7 @@ L37:
     .exceptions java/io/IOException
 .end method
 
-.method public const : (Ljava/io/RandomAccessFile;)B
+.method public method1670 : (Ljava/io/RandomAccessFile;)B
     .code stack 1 locals 2
 L0:     aload_1
 L1:     invokevirtual Method java/io/RandomAccessFile readByte ()B
@@ -704,10 +704,10 @@ L5:
     .exceptions java/io/IOException
 .end method
 
-.method public else : (Ljava/io/RandomAccessFile;)D
+.method public method1671 : (Ljava/io/RandomAccessFile;)D
     .code stack 4 locals 4
 L0:     aload_0
-L1:     invokespecial Method jouvieje/bass/utils/D break ()Ljava/nio/ByteBuffer;
+L1:     invokespecial Method jouvieje/bass/utils/D method1667 ()Ljava/nio/ByteBuffer;
 L4:     dup
 L5:     astore_2
 L6:     dup
@@ -741,10 +741,10 @@ L37:
     .exceptions java/io/IOException
 .end method
 
-.method public break : (Ljava/io/RandomAccessFile;J)V
+.method public method1672 : (Ljava/io/RandomAccessFile;J)V
     .code stack 4 locals 6
 L0:     aload_0
-L1:     invokespecial Method jouvieje/bass/utils/D else ()Ljava/nio/ByteBuffer;
+L1:     invokespecial Method jouvieje/bass/utils/D method1661 ()Ljava/nio/ByteBuffer;
 L4:     dup
 L5:     astore 4
 L7:     dup
@@ -781,10 +781,10 @@ L47:
     .exceptions java/io/IOException
 .end method
 
-.method public break : (Ljava/io/RandomAccessFile;)S
+.method public method1673 : (Ljava/io/RandomAccessFile;)S
     .code stack 4 locals 4
 L0:     aload_0
-L1:     invokespecial Method jouvieje/bass/utils/D const ()Ljava/nio/ByteBuffer;
+L1:     invokespecial Method jouvieje/bass/utils/D method1659 ()Ljava/nio/ByteBuffer;
 L4:     dup
 L5:     astore_2
 L6:     dup

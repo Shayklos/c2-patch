@@ -2,10 +2,10 @@
 .class public final super jouvieje/bass/structures/l
 .super jouvieje/bass/utils/m
 
-.method public for : ()I
+.method public method1191 : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/l do J
+L1:     getfield Field jouvieje/bass/structures/l field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -14,7 +14,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/l do J
+L18:    getfield Field jouvieje/bass/structures/l field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_RECORDINFO_get_freq (J)I
 L24:    ireturn
 L25:    
@@ -32,10 +32,10 @@ L6:
     .end code
 .end method
 
-.method public short : (I)V
+.method public method1194 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/l do J
+L1:     getfield Field jouvieje/bass/structures/l field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -44,7 +44,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/l do J
+L18:    getfield Field jouvieje/bass/structures/l field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_RECORDINFO_set_freq (JI)V
 L25:    return
@@ -53,10 +53,10 @@ L26:
     .end code
 .end method
 
-.method public catch : ()I
+.method public method1192 : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/l do J
+L1:     getfield Field jouvieje/bass/structures/l field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -65,7 +65,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/l do J
+L18:    getfield Field jouvieje/bass/structures/l field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_RECORDINFO_get_inputs (J)I
 L24:    ireturn
 L25:    
@@ -73,10 +73,10 @@ L25:
     .end code
 .end method
 
-.method public break : (Z)V
+.method public method1230 : (Z)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/l do J
+L1:     getfield Field jouvieje/bass/structures/l field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -85,7 +85,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/l do J
+L18:    getfield Field jouvieje/bass/structures/l field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_RECORDINFO_set_singlein (JZ)V
 L25:    return
@@ -103,10 +103,10 @@ L5:
     .end code
 .end method
 
-.method public const : (I)V
+.method public method1196 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/l do J
+L1:     getfield Field jouvieje/bass/structures/l field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -115,7 +115,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/l do J
+L18:    getfield Field jouvieje/bass/structures/l field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_RECORDINFO_set_formats (JI)V
 L25:    return
@@ -124,10 +124,10 @@ L26:
     .end code
 .end method
 
-.method public float : ()I
+.method public method1195 : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/l do J
+L1:     getfield Field jouvieje/bass/structures/l field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -136,7 +136,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/l do J
+L18:    getfield Field jouvieje/bass/structures/l field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_RECORDINFO_get_flags (J)I
 L24:    ireturn
 L25:    
@@ -144,10 +144,10 @@ L25:
     .end code
 .end method
 
-.method public short : ()Z
+.method public method1231 : ()Z
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/l do J
+L1:     getfield Field jouvieje/bass/structures/l field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -156,7 +156,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/l do J
+L18:    getfield Field jouvieje/bass/structures/l field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_RECORDINFO_get_singlein (J)Z
 L24:    ireturn
 L25:    
@@ -164,10 +164,10 @@ L25:
     .end code
 .end method
 
-.method public else : (I)V
+.method public method1197 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/l do J
+L1:     getfield Field jouvieje/bass/structures/l field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -176,7 +176,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/l do J
+L18:    getfield Field jouvieje/bass/structures/l field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_RECORDINFO_set_flags (JI)V
 L25:    return
@@ -185,10 +185,10 @@ L26:
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/l;
+.method public static method1344 : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/l;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     dup2
 L5:     lstore_1
 L6:     lconst_0
@@ -203,11 +203,11 @@ L18:    lload_1
 L19:    invokespecial Method jouvieje/bass/structures/l <init> (J)V
 L22:    areturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x41\x00\x0E\x00\x02\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x44\x00\x0E\x00\x02\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static const : ()Ljouvieje/bass/structures/l;
+.method public static method1345 : ()Ljouvieje/bass/structures/l;
     .code stack 4 locals 2
 L0:     invokestatic Method jouvieje/bass/structures/StructureJNI BASS_RECORDINFO_new ()J
 L3:     dup2
@@ -229,10 +229,10 @@ L27:
     .end code
 .end method
 
-.method public break : (I)V
+.method public method1180 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/l do J
+L1:     getfield Field jouvieje/bass/structures/l field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -241,7 +241,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/l do J
+L18:    getfield Field jouvieje/bass/structures/l field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_RECORDINFO_set_inputs (JI)V
 L25:    return
@@ -250,29 +250,29 @@ L26:
     .end code
 .end method
 
-.method public else : ()V
+.method public method1183 : ()V
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/l do J
+L1:     getfield Field jouvieje/bass/structures/l field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifeq L16
 L9:     aload_0
-L10:    getfield Field jouvieje/bass/structures/l do J
+L10:    getfield Field jouvieje/bass/structures/l field2319 J
 L13:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_RECORDINFO_delete (J)V
 L16:    aload_0
 L17:    lconst_0
-L18:    putfield Field jouvieje/bass/structures/l do J
+L18:    putfield Field jouvieje/bass/structures/l field2319 J
 L21:    return
 L22:    
         .attribute StackMap b'\x00\x01\x00\x10\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public break : ()I
+.method public method1184 : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/l do J
+L1:     getfield Field jouvieje/bass/structures/l field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -281,7 +281,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/l do J
+L18:    getfield Field jouvieje/bass/structures/l field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_RECORDINFO_get_formats (J)I
 L24:    ireturn
 L25:    

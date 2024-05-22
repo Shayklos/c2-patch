@@ -1,11 +1,11 @@
 .version 49 0
 .class final super org/lwjgl/opengl/AWTSurfaceLock
 .super java/lang/Object
-.field private final else Ljava/nio/ByteBuffer;
-.field private static final "enum" I = 100
-.field private do Z
+.field private final field3164 Ljava/nio/ByteBuffer;
+.field private static final field3165 I = 100
+.field private field3166 Z
 
-.method public const : (Ljava/awt/Canvas;)Z
+.method public method2937 : (Ljava/awt/Canvas;)Z
     .code stack 3 locals 2
 L0:     aload_1
 L1:     invokevirtual Method java/awt/Canvas getParent ()Ljava/awt/Container;
@@ -37,10 +37,10 @@ L37:
     .end code
 .end method
 
-.method break : ()V
+.method method2938 : ()V
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/AWTSurfaceLock else Ljava/nio/ByteBuffer;
+L1:     getfield Field org/lwjgl/opengl/AWTSurfaceLock field3164 Ljava/nio/ByteBuffer;
 L4:     invokestatic Method org/lwjgl/opengl/AWTSurfaceLock nUnlock (Ljava/nio/ByteBuffer;)V
 L7:     return
 L8:     
@@ -48,7 +48,7 @@ L8:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method static synthetic break : (Ljava/nio/ByteBuffer;Ljava/awt/Canvas;Z)Z
+.method static synthetic method2939 : (Ljava/nio/ByteBuffer;Ljava/awt/Canvas;Z)Z
     .code stack 3 locals 3
 L0:     aload_0
 L1:     aload_1
@@ -64,10 +64,10 @@ L7:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method static synthetic break : (Lorg/lwjgl/opengl/AWTSurfaceLock;)Ljava/nio/ByteBuffer;
+.method static synthetic method2940 : (Lorg/lwjgl/opengl/AWTSurfaceLock;)Ljava/nio/ByteBuffer;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/AWTSurfaceLock else Ljava/nio/ByteBuffer;
+L1:     getfield Field org/lwjgl/opengl/AWTSurfaceLock field3164 Ljava/nio/ByteBuffer;
 L4:     areturn
 L5:     
     .end code
@@ -76,11 +76,11 @@ L5:
 .method private static native createHandle : ()Ljava/nio/ByteBuffer;
 .end method
 
-.method public else : (Ljava/awt/Canvas;)Ljava/nio/ByteBuffer;
+.method public method2941 : (Ljava/awt/Canvas;)Ljava/nio/ByteBuffer;
     .code stack 3 locals 3
 L0:     aload_0
 L1:     aload_1
-L2:     invokespecial Method org/lwjgl/opengl/AWTSurfaceLock break (Ljava/awt/Canvas;)Z
+L2:     invokespecial Method org/lwjgl/opengl/AWTSurfaceLock method2942 (Ljava/awt/Canvas;)Z
 L5:     ifne L53
 L8:     ldc "Could not get drawing surface info, retrying..."
 L10:    invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
@@ -105,15 +105,15 @@ L48:    aload_0
 L49:    goto L1
 L52:    athrow
 L53:    aload_0
-L54:    getfield Field org/lwjgl/opengl/AWTSurfaceLock else Ljava/nio/ByteBuffer;
+L54:    getfield Field org/lwjgl/opengl/AWTSurfaceLock field3164 Ljava/nio/ByteBuffer;
 L57:    areturn
 L58:    
-        .attribute StackMap b'\x00\x05\x00\x01\x00\x02\x07\x00\x02\x07\x00\x11\x00\x01\x07\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x1B\x00\x18\x00\x02\x07\x00\x02\x07\x00\x11\x00\x01\x07\x00\x32\x00\x34\x00\x00\x00\x01\x07\x00\x1B\x00\x35\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x01\x00\x02\x07\x00\x02\x07\x00\x11\x00\x01\x07\x00\x02\x00\x17\x00\x00\x00\x01\x07\x00\x1B\x00\x18\x00\x02\x07\x00\x02\x07\x00\x11\x00\x01\x07\x00\x35\x00\x34\x00\x00\x00\x01\x07\x00\x1B\x00\x35\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method private break : (Ljava/awt/Canvas;)Z
+.method private method2942 : (Ljava/awt/Canvas;)Z
     .code stack 6 locals 3
 L0:     invokestatic Method org/lwjgl/opengl/Display while ()Ljava/awt/Canvas;
 L3:     ifnull L12
@@ -124,7 +124,7 @@ L13:    instanceof org/lwjgl/opengl/aB
 L16:    ifeq L51
 L19:    aload_0
 L20:    aload_1
-L21:    invokevirtual Method org/lwjgl/opengl/AWTSurfaceLock const (Ljava/awt/Canvas;)Z
+L21:    invokevirtual Method org/lwjgl/opengl/AWTSurfaceLock method2937 (Ljava/awt/Canvas;)Z
 L24:    ifeq L51
 L27:    bipush 10
 L29:    iconst_1
@@ -148,10 +148,10 @@ L53:    dup
 L54:    pop2
 L55:    istore_2
 L56:    aload_0
-L57:    getfield Field org/lwjgl/opengl/AWTSurfaceLock do Z
+L57:    getfield Field org/lwjgl/opengl/AWTSurfaceLock field3166 Z
 L60:    ifeq L74
 L63:    aload_0
-L64:    getfield Field org/lwjgl/opengl/AWTSurfaceLock else Ljava/nio/ByteBuffer;
+L64:    getfield Field org/lwjgl/opengl/AWTSurfaceLock field3164 Ljava/nio/ByteBuffer;
 L67:    aload_1
 L68:    iload_2
 L69:    invokestatic Method org/lwjgl/opengl/AWTSurfaceLock lockAndInitHandle (Ljava/nio/ByteBuffer;Ljava/awt/Canvas;Z)Z
@@ -168,9 +168,9 @@ L82:    invokespecial Method org/lwjgl/opengl/zb <init> (Lorg/lwjgl/opengl/AWTSu
 L85:    invokestatic Method java/security/AccessController doPrivileged (Ljava/security/PrivilegedExceptionAction;)Ljava/lang/Object;
 L88:    checkcast java/lang/Boolean
 L91:    invokevirtual Method java/lang/Boolean booleanValue ()Z
-L94:    putfield Field org/lwjgl/opengl/AWTSurfaceLock do Z
+L94:    putfield Field org/lwjgl/opengl/AWTSurfaceLock field3166 Z
 L97:    aload_0
-L98:    getfield Field org/lwjgl/opengl/AWTSurfaceLock do Z
+L98:    getfield Field org/lwjgl/opengl/AWTSurfaceLock field3166 Z
 L101:   ireturn
 L102:   astore_1
 L103:   aload_1
@@ -178,7 +178,7 @@ L104:   invokevirtual Method java/security/PrivilegedActionException getExceptio
 L107:   checkcast org/lwjgl/LWJGLException
 L110:   athrow
 L111:   
-        .attribute StackMap b'\x00\x08\x00\x0C\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00\x00\x13\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00\x00\x32\x00\x00\x00\x01\x07\x00\x1B\x00\x33\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00\x00\x37\x00\x02\x07\x00\x02\x07\x00\x11\x00\x01\x01\x00\x49\x00\x00\x00\x01\x07\x00\x1B\x00\x4A\x00\x03\x07\x00\x02\x07\x00\x11\x01\x00\x00\x00\x66\x00\x03\x07\x00\x02\x07\x00\x11\x01\x00\x01\x07\x00\x59'
+        .attribute StackMap b'\x00\x08\x00\x0C\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00\x00\x13\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00\x00\x32\x00\x00\x00\x01\x07\x00\x1B\x00\x33\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00\x00\x37\x00\x02\x07\x00\x02\x07\x00\x11\x00\x01\x01\x00\x49\x00\x00\x00\x01\x07\x00\x1B\x00\x4A\x00\x03\x07\x00\x02\x07\x00\x11\x01\x00\x00\x00\x66\x00\x03\x07\x00\x02\x07\x00\x11\x01\x00\x01\x07\x00\x5D'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
@@ -193,7 +193,7 @@ L0:     aload_0
 L1:     dup
 L2:     invokespecial Method java/lang/Object <init> ()V
 L5:     invokestatic Method org/lwjgl/opengl/AWTSurfaceLock createHandle ()Ljava/nio/ByteBuffer;
-L8:     putfield Field org/lwjgl/opengl/AWTSurfaceLock else Ljava/nio/ByteBuffer;
+L8:     putfield Field org/lwjgl/opengl/AWTSurfaceLock field3164 Ljava/nio/ByteBuffer;
 L11:    return
 L12:    
     .end code

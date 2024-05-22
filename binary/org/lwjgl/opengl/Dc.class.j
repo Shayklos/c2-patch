@@ -3,7 +3,7 @@
 .super java/lang/Object
 .implements java/security/PrivilegedAction
 
-.method public break : ()Ljava/lang/String;
+.method public method1726 : ()Ljava/lang/String;
     .code stack 1 locals 1
 L0:     ldc "os.name"
 L2:     invokestatic Method java/lang/System getProperty (Ljava/lang/String;)Ljava/lang/String;
@@ -24,7 +24,7 @@ L5:
 .method public bridge synthetic run : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/opengl/Dc break ()Ljava/lang/String;
+L1:     invokevirtual Method org/lwjgl/opengl/Dc method1726 ()Ljava/lang/String;
 L4:     areturn
 L5:     
     .end code
@@ -32,5 +32,5 @@ L5:
 .innerclasses
     org/lwjgl/opengl/Dc [0] [0] static
 .end innerclasses
-.enclosing method org/lwjgl/opengl/GLContext break (Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)J
+.enclosing method org/lwjgl/opengl/GLContext method4609 (Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;Ljava/lang/String;)J
 .end class

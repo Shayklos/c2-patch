@@ -1,14 +1,14 @@
 .version 49 0
 .class final super org/lwjgl/opengl/SA
 .super org/lwjgl/opengl/MacOSXCanvasPeerInfo
-.field private final do Ljava/awt/Canvas;
+.field private final field4425 Ljava/awt/Canvas;
 
-.method protected catch : ()V
+.method protected method4672 : ()V
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/opengl/SA do Ljava/awt/Canvas;
-L5:     invokevirtual Method org/lwjgl/opengl/SA break (Ljava/awt/Canvas;)V
+L2:     getfield Field org/lwjgl/opengl/SA field4425 Ljava/awt/Canvas;
+L5:     invokevirtual Method org/lwjgl/opengl/SA method4687 (Ljava/awt/Canvas;)V
 L8:     return
 L9:     
     .end code
@@ -24,7 +24,7 @@ L3:     aload_2
 L4:     aload_3
 L5:     iload 4
 L7:     invokespecial Method org/lwjgl/opengl/MacOSXCanvasPeerInfo <init> (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/CB;Z)V
-L10:    putfield Field org/lwjgl/opengl/SA do Ljava/awt/Canvas;
+L10:    putfield Field org/lwjgl/opengl/SA field4425 Ljava/awt/Canvas;
 L13:    return
 L14:    
     .end code

@@ -1,50 +1,50 @@
 .version 49 0
 .class final super org/lwjgl/opengl/bB
 .super java/lang/Object
-.field private final void Ljava/nio/LongBuffer;
+.field private final field5254 Ljava/nio/LongBuffer;
 .field private final try Ljava/nio/DoubleBuffer;
-.field private const [C
+.field private field5255 [C
 .field private static final new I = 4
-.field private final null Ljava/nio/FloatBuffer;
+.field private final field5256 Ljava/nio/FloatBuffer;
 .field private final this Ljava/nio/IntBuffer;
-.field private char Ljava/nio/ByteBuffer;
-.field private else Ljava/nio/IntBuffer;
-.field private static final "enum" I = 256
-.field private static final do I = 32
+.field private field5257 Ljava/nio/ByteBuffer;
+.field private field5258 Ljava/nio/IntBuffer;
+.field private static final field5259 I = 256
+.field private static final field5260 I = 32
 
-.method static catch : (Lorg/lwjgl/opengl/kb;)J
+.method static method5464 : (Lorg/lwjgl/opengl/kb;)J
     .code stack 4 locals 1
 L0:     aload_0
 L1:     iconst_0
 L2:     iconst_1
 L3:     dup
 L4:     pop2
-L5:     invokestatic Method org/lwjgl/opengl/bB float (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
-L8:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
+L5:     invokestatic Method org/lwjgl/opengl/bB method5470 (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
+L8:     invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
 L11:    lreturn
 L12:    
     .end code
 .end method
 
-.method static float : (Lorg/lwjgl/opengl/kb;)Ljava/nio/FloatBuffer;
+.method static method5465 : (Lorg/lwjgl/opengl/kb;)Ljava/nio/FloatBuffer;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/kb Ng Lorg/lwjgl/opengl/bB;
-L4:     getfield Field org/lwjgl/opengl/bB null Ljava/nio/FloatBuffer;
+L4:     getfield Field org/lwjgl/opengl/bB field5256 Ljava/nio/FloatBuffer;
 L7:     areturn
 L8:     
     .end code
 .end method
 
-.method static const : (Lorg/lwjgl/opengl/kb;[Ljava/lang/CharSequence;)J
+.method static method5466 : (Lorg/lwjgl/opengl/kb;[Ljava/lang/CharSequence;)J
     .code stack 5 locals 6
 L0:     aload_0
 L1:     aload_1
-L2:     invokestatic Method org/lwjgl/opengl/bB break ([Ljava/lang/CharSequence;)I
+L2:     invokestatic Method org/lwjgl/opengl/bB method5472 ([Ljava/lang/CharSequence;)I
 L5:     aload_1
 L6:     arraylength
 L7:     iadd
-L8:     invokestatic Method org/lwjgl/opengl/bB float (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
+L8:     invokestatic Method org/lwjgl/opengl/bB method5470 (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
 L11:    astore_2
 L12:    aload_1
 L13:    dup
@@ -66,7 +66,7 @@ L34:    aaload
 L35:    astore 5
 L37:    aload_2
 L38:    aload 5
-L40:    invokestatic Method org/lwjgl/opengl/bB break (Ljava/nio/ByteBuffer;Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
+L40:    invokestatic Method org/lwjgl/opengl/bB method5476 (Ljava/nio/ByteBuffer;Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
 L43:    aload_2
 L44:    iconst_0
 L45:    iconst_1
@@ -81,14 +81,14 @@ L58:    aload_2
 L59:    dup
 L60:    invokevirtual Method java/nio/ByteBuffer flip ()Ljava/nio/Buffer;
 L63:    pop
-L64:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
+L64:    invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
 L67:    lreturn
 L68:    
-        .attribute StackMap b'\x00\x03\x00\x18\x00\x05\x07\x00\x27\x07\x00\x33\x07\x00\x35\x01\x01\x00\x01\x01\x00\x39\x00\x00\x00\x01\x07\x00\x3E\x00\x3A\x00\x05\x07\x00\x27\x07\x00\x33\x07\x00\x35\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x18\x00\x05\x07\x00\x28\x07\x00\x36\x07\x00\x38\x01\x01\x00\x01\x01\x00\x39\x00\x00\x00\x01\x07\x00\x42\x00\x3A\x00\x05\x07\x00\x28\x07\x00\x36\x07\x00\x38\x01\x01\x00\x00'
     .end code
 .end method
 
-.method static short : (Lorg/lwjgl/opengl/kb;)Ljava/nio/IntBuffer;
+.method static method5467 : (Lorg/lwjgl/opengl/kb;)Ljava/nio/IntBuffer;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/kb Ng Lorg/lwjgl/opengl/bB;
@@ -98,24 +98,24 @@ L8:
     .end code
 .end method
 
-.method static else : (Lorg/lwjgl/opengl/kb;Ljava/lang/CharSequence;)J
+.method static method5468 : (Lorg/lwjgl/opengl/kb;Ljava/lang/CharSequence;)J
     .code stack 2 locals 2
 L0:     aload_0
 L1:     aload_1
 L2:     invokeinterface InterfaceMethod java/lang/CharSequence length ()I 1
-L7:     invokestatic Method org/lwjgl/opengl/bB float (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
+L7:     invokestatic Method org/lwjgl/opengl/bB method5470 (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
 L10:    aload_1
-L11:    invokestatic Method org/lwjgl/opengl/bB break (Ljava/nio/ByteBuffer;Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
+L11:    invokestatic Method org/lwjgl/opengl/bB method5476 (Ljava/nio/ByteBuffer;Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
 L14:    dup
 L15:    invokevirtual Method java/nio/ByteBuffer flip ()Ljava/nio/Buffer;
 L18:    pop
-L19:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
+L19:    invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
 L22:    lreturn
 L23:    
     .end code
 .end method
 
-.method static break : (Lorg/lwjgl/opengl/kb;Ljava/nio/ByteBuffer;)Ljava/lang/String;
+.method static method5469 : (Lorg/lwjgl/opengl/kb;Ljava/nio/ByteBuffer;)Ljava/lang/String;
     .code stack 6 locals 5
 L0:     aload_0
 L1:     aload_1
@@ -123,7 +123,7 @@ L2:     dup_x1
 L3:     invokevirtual Method java/nio/ByteBuffer remaining ()I
 L6:     dup
 L7:     istore_2
-L8:     invokestatic Method org/lwjgl/opengl/bB break (Lorg/lwjgl/opengl/kb;I)[C
+L8:     invokestatic Method org/lwjgl/opengl/bB method5481 (Lorg/lwjgl/opengl/kb;I)[C
 L11:    astore_3
 L12:    invokevirtual Method java/nio/ByteBuffer position ()I
 L15:    dup
@@ -156,15 +156,15 @@ L59:    iload_2
 L60:    invokespecial Method java/lang/String <init> ([CII)V
 L63:    areturn
 L64:    
-        .attribute StackMap b'\x00\x03\x00\x12\x00\x05\x07\x00\x27\x07\x00\x35\x01\x07\x00\x58\x01\x00\x01\x01\x00\x31\x00\x00\x00\x01\x07\x00\x3E\x00\x32\x00\x05\x07\x00\x27\x07\x00\x35\x01\x07\x00\x58\x01\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x12\x00\x05\x07\x00\x28\x07\x00\x38\x01\x07\x00\x5F\x01\x00\x01\x01\x00\x31\x00\x00\x00\x01\x07\x00\x42\x00\x32\x00\x05\x07\x00\x28\x07\x00\x38\x01\x07\x00\x5F\x01\x00\x00'
     .end code
 .end method
 
-.method static float : (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
+.method static method5470 : (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
     .code stack 4 locals 4
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/kb Ng Lorg/lwjgl/opengl/bB;
-L4:     getfield Field org/lwjgl/opengl/bB char Ljava/nio/ByteBuffer;
+L4:     getfield Field org/lwjgl/opengl/bB field5257 Ljava/nio/ByteBuffer;
 L7:     dup
 L8:     astore_2
 L9:     invokevirtual Method java/nio/ByteBuffer capacity ()I
@@ -198,7 +198,7 @@ L48:    aload_0
 L49:    getfield Field org/lwjgl/opengl/kb Ng Lorg/lwjgl/opengl/bB;
 L52:    aload_2
 L53:    dup_x1
-L54:    putfield Field org/lwjgl/opengl/bB char Ljava/nio/ByteBuffer;
+L54:    putfield Field org/lwjgl/opengl/bB field5257 Ljava/nio/ByteBuffer;
 L57:    areturn
 L58:    athrow
 L59:    aload_2
@@ -207,21 +207,21 @@ L61:    invokevirtual Method java/nio/ByteBuffer clear ()Ljava/nio/Buffer;
 L64:    pop
 L65:    areturn
 L66:    
-        .attribute StackMap b'\x00\x05\x00\x1B\x00\x04\x07\x00\x27\x01\x07\x00\x35\x01\x00\x01\x01\x00\x2A\x00\x00\x00\x01\x07\x00\x3E\x00\x2B\x00\x04\x07\x00\x27\x01\x07\x00\x35\x01\x00\x00\x00\x3A\x00\x00\x00\x01\x07\x00\x3E\x00\x3B\x00\x03\x07\x00\x27\x01\x07\x00\x35\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x1B\x00\x04\x07\x00\x28\x01\x07\x00\x38\x01\x00\x01\x01\x00\x2A\x00\x00\x00\x01\x07\x00\x42\x00\x2B\x00\x04\x07\x00\x28\x01\x07\x00\x38\x01\x00\x00\x00\x3A\x00\x00\x00\x01\x07\x00\x42\x00\x3B\x00\x03\x07\x00\x28\x01\x07\x00\x38\x00\x00'
     .end code
 .end method
 
-.method static const : (Lorg/lwjgl/opengl/kb;)Ljava/nio/LongBuffer;
+.method static method5471 : (Lorg/lwjgl/opengl/kb;)Ljava/nio/LongBuffer;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/kb Ng Lorg/lwjgl/opengl/bB;
-L4:     getfield Field org/lwjgl/opengl/bB void Ljava/nio/LongBuffer;
+L4:     getfield Field org/lwjgl/opengl/bB field5254 Ljava/nio/LongBuffer;
 L7:     areturn
 L8:     
     .end code
 .end method
 
-.method static break : ([Ljava/lang/CharSequence;)I
+.method static method5472 : ([Ljava/lang/CharSequence;)I
     .code stack 3 locals 6
 L0:     iconst_0
 L1:     iconst_1
@@ -257,16 +257,16 @@ L45:    athrow
 L46:    iload_1
 L47:    ireturn
 L48:    
-        .attribute StackMap b'\x00\x03\x00\x11\x00\x05\x07\x00\x33\x01\x07\x00\x33\x01\x01\x00\x01\x01\x00\x2D\x00\x00\x00\x01\x07\x00\x3E\x00\x2E\x00\x05\x07\x00\x33\x01\x07\x00\x33\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x11\x00\x05\x07\x00\x36\x01\x07\x00\x36\x01\x01\x00\x01\x01\x00\x2D\x00\x00\x00\x01\x07\x00\x42\x00\x2E\x00\x05\x07\x00\x36\x01\x07\x00\x36\x01\x01\x00\x00'
     .end code
 .end method
 
-.method static else : (Lorg/lwjgl/opengl/kb;[Ljava/lang/CharSequence;)J
+.method static method5473 : (Lorg/lwjgl/opengl/kb;[Ljava/lang/CharSequence;)J
     .code stack 3 locals 6
 L0:     aload_0
 L1:     aload_1
-L2:     invokestatic Method org/lwjgl/opengl/bB break ([Ljava/lang/CharSequence;)I
-L5:     invokestatic Method org/lwjgl/opengl/bB float (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
+L2:     invokestatic Method org/lwjgl/opengl/bB method5472 ([Ljava/lang/CharSequence;)I
+L5:     invokestatic Method org/lwjgl/opengl/bB method5470 (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
 L8:     astore_2
 L9:     aload_1
 L10:    dup
@@ -288,7 +288,7 @@ L31:    aaload
 L32:    astore 5
 L34:    aload_2
 L35:    aload 5
-L37:    invokestatic Method org/lwjgl/opengl/bB break (Ljava/nio/ByteBuffer;Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
+L37:    invokestatic Method org/lwjgl/opengl/bB method5476 (Ljava/nio/ByteBuffer;Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
 L40:    pop
 L41:    iload 4
 L43:    goto L21
@@ -297,14 +297,14 @@ L47:    aload_2
 L48:    dup
 L49:    invokevirtual Method java/nio/ByteBuffer flip ()Ljava/nio/Buffer;
 L52:    pop
-L53:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
+L53:    invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
 L56:    lreturn
 L57:    
-        .attribute StackMap b'\x00\x03\x00\x15\x00\x05\x07\x00\x27\x07\x00\x33\x07\x00\x35\x01\x01\x00\x01\x01\x00\x2E\x00\x00\x00\x01\x07\x00\x3E\x00\x2F\x00\x05\x07\x00\x27\x07\x00\x33\x07\x00\x35\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x15\x00\x05\x07\x00\x28\x07\x00\x36\x07\x00\x38\x01\x01\x00\x01\x01\x00\x2E\x00\x00\x00\x01\x07\x00\x42\x00\x2F\x00\x05\x07\x00\x28\x07\x00\x36\x07\x00\x38\x01\x01\x00\x00'
     .end code
 .end method
 
-.method static else : (Lorg/lwjgl/opengl/kb;)Ljava/nio/DoubleBuffer;
+.method static method5474 : (Lorg/lwjgl/opengl/kb;)Ljava/nio/DoubleBuffer;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/kb Ng Lorg/lwjgl/opengl/bB;
@@ -314,26 +314,26 @@ L8:
     .end code
 .end method
 
-.method static break : (Lorg/lwjgl/opengl/kb;Ljava/lang/CharSequence;I)J
+.method static method5475 : (Lorg/lwjgl/opengl/kb;Ljava/lang/CharSequence;I)J
     .code stack 3 locals 3
 L0:     aload_0
 L1:     iload_2
 L2:     aload_1
 L3:     invokeinterface InterfaceMethod java/lang/CharSequence length ()I 1
 L8:     iadd
-L9:     invokestatic Method org/lwjgl/opengl/bB short (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
+L9:     invokestatic Method org/lwjgl/opengl/bB method5477 (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
 L12:    aload_1
-L13:    invokestatic Method org/lwjgl/opengl/bB break (Ljava/nio/ByteBuffer;Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
+L13:    invokestatic Method org/lwjgl/opengl/bB method5476 (Ljava/nio/ByteBuffer;Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
 L16:    dup
 L17:    invokevirtual Method java/nio/ByteBuffer flip ()Ljava/nio/Buffer;
 L20:    pop
-L21:    invokestatic Method org/lwjgl/MemoryUtil const (Ljava/nio/ByteBuffer;)J
+L21:    invokestatic Method org/lwjgl/MemoryUtil method1873 (Ljava/nio/ByteBuffer;)J
 L24:    lreturn
 L25:    
     .end code
 .end method
 
-.method private static break : (Ljava/nio/ByteBuffer;Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
+.method private static method5476 : (Ljava/nio/ByteBuffer;Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
     .code stack 4 locals 4
 L0:     iconst_0
 L1:     iconst_1
@@ -377,15 +377,15 @@ L67:    athrow
 L68:    aload_0
 L69:    areturn
 L70:    
-        .attribute StackMap b'\x00\x06\x00\x06\x00\x03\x07\x00\x35\x07\x00\x49\x01\x00\x01\x01\x00\x34\x00\x00\x00\x01\x07\x00\x3E\x00\x35\x00\x04\x07\x00\x35\x07\x00\x49\x01\x01\x00\x00\x00\x3C\x00\x04\x07\x00\x35\x07\x00\x49\x01\x01\x00\x00\x00\x43\x00\x00\x00\x01\x07\x00\x3E\x00\x44\x00\x03\x07\x00\x35\x07\x00\x49\x01\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x06\x00\x03\x07\x00\x38\x07\x00\x4E\x01\x00\x01\x01\x00\x34\x00\x00\x00\x01\x07\x00\x42\x00\x35\x00\x04\x07\x00\x38\x07\x00\x4E\x01\x01\x00\x00\x00\x3C\x00\x04\x07\x00\x38\x07\x00\x4E\x01\x01\x00\x00\x00\x43\x00\x00\x00\x01\x07\x00\x42\x00\x44\x00\x03\x07\x00\x38\x07\x00\x4E\x01\x00\x00'
     .end code
 .end method
 
-.method private static short : (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
+.method private static method5477 : (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
     .code stack 4 locals 4
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/kb Ng Lorg/lwjgl/opengl/bB;
-L4:     getfield Field org/lwjgl/opengl/bB char Ljava/nio/ByteBuffer;
+L4:     getfield Field org/lwjgl/opengl/bB field5257 Ljava/nio/ByteBuffer;
 L7:     dup
 L8:     astore_2
 L9:     invokevirtual Method java/nio/ByteBuffer capacity ()I
@@ -423,7 +423,7 @@ L54:    getfield Field org/lwjgl/opengl/kb Ng Lorg/lwjgl/opengl/bB;
 L57:    aload_1
 L58:    dup
 L59:    astore_2
-L60:    putfield Field org/lwjgl/opengl/bB char Ljava/nio/ByteBuffer;
+L60:    putfield Field org/lwjgl/opengl/bB field5257 Ljava/nio/ByteBuffer;
 L63:    pop
 L64:    aload_2
 L65:    areturn
@@ -440,11 +440,11 @@ L81:    invokevirtual Method java/nio/ByteBuffer limit (I)Ljava/nio/Buffer;
 L84:    pop2
 L85:    areturn
 L86:    
-        .attribute StackMap b'\x00\x05\x00\x1B\x00\x04\x07\x00\x27\x01\x07\x00\x35\x01\x00\x01\x01\x00\x2A\x00\x00\x00\x01\x07\x00\x3E\x00\x2B\x00\x04\x07\x00\x27\x01\x07\x00\x35\x01\x00\x00\x00\x42\x00\x00\x00\x01\x07\x00\x3E\x00\x43\x00\x03\x07\x00\x27\x01\x07\x00\x35\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x1B\x00\x04\x07\x00\x28\x01\x07\x00\x38\x01\x00\x01\x01\x00\x2A\x00\x00\x00\x01\x07\x00\x42\x00\x2B\x00\x04\x07\x00\x28\x01\x07\x00\x38\x01\x00\x00\x00\x42\x00\x00\x00\x01\x07\x00\x42\x00\x43\x00\x03\x07\x00\x28\x01\x07\x00\x38\x00\x00'
     .end code
 .end method
 
-.method static break : (Lorg/lwjgl/opengl/kb;Ljava/lang/CharSequence;)J
+.method static method5478 : (Lorg/lwjgl/opengl/kb;Ljava/lang/CharSequence;)J
     .code stack 5 locals 2
 L0:     aload_0
 L1:     aload_1
@@ -454,9 +454,9 @@ L8:     dup
 L9:     dup
 L10:    pop2
 L11:    iadd
-L12:    invokestatic Method org/lwjgl/opengl/bB float (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
+L12:    invokestatic Method org/lwjgl/opengl/bB method5470 (Lorg/lwjgl/opengl/kb;I)Ljava/nio/ByteBuffer;
 L15:    aload_1
-L16:    invokestatic Method org/lwjgl/opengl/bB break (Ljava/nio/ByteBuffer;Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
+L16:    invokestatic Method org/lwjgl/opengl/bB method5476 (Ljava/nio/ByteBuffer;Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
 L19:    dup
 L20:    astore_1
 L21:    iconst_0
@@ -468,33 +468,33 @@ L28:    aload_1
 L29:    dup_x1
 L30:    invokevirtual Method java/nio/ByteBuffer flip ()Ljava/nio/Buffer;
 L33:    pop2
-L34:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
+L34:    invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
 L37:    lreturn
 L38:    
     .end code
 .end method
 
-.method static const : (Lorg/lwjgl/opengl/kb;I)J
+.method static method5479 : (Lorg/lwjgl/opengl/kb;I)J
     .code stack 4 locals 2
 L0:     aload_0
-L1:     invokestatic Method org/lwjgl/opengl/bB short (Lorg/lwjgl/opengl/kb;)Ljava/nio/IntBuffer;
+L1:     invokestatic Method org/lwjgl/opengl/bB method5467 (Lorg/lwjgl/opengl/kb;)Ljava/nio/IntBuffer;
 L4:     iconst_0
 L5:     iconst_1
 L6:     dup
 L7:     pop2
 L8:     iload_1
 L9:     invokevirtual Method java/nio/IntBuffer put (II)Ljava/nio/IntBuffer;
-L12:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
+L12:    invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
 L15:    lreturn
 L16:    
     .end code
 .end method
 
-.method static else : (Lorg/lwjgl/opengl/kb;I)Ljava/nio/IntBuffer;
+.method static method5480 : (Lorg/lwjgl/opengl/kb;I)Ljava/nio/IntBuffer;
     .code stack 4 locals 4
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/kb Ng Lorg/lwjgl/opengl/bB;
-L4:     getfield Field org/lwjgl/opengl/bB else Ljava/nio/IntBuffer;
+L4:     getfield Field org/lwjgl/opengl/bB field5258 Ljava/nio/IntBuffer;
 L7:     dup
 L8:     astore_2
 L9:     invokevirtual Method java/nio/IntBuffer capacity ()I
@@ -523,7 +523,7 @@ L43:    aload_0
 L44:    getfield Field org/lwjgl/opengl/kb Ng Lorg/lwjgl/opengl/bB;
 L47:    aload_2
 L48:    dup_x1
-L49:    putfield Field org/lwjgl/opengl/bB else Ljava/nio/IntBuffer;
+L49:    putfield Field org/lwjgl/opengl/bB field5258 Ljava/nio/IntBuffer;
 L52:    areturn
 L53:    athrow
 L54:    aload_2
@@ -532,7 +532,7 @@ L56:    invokevirtual Method java/nio/IntBuffer clear ()Ljava/nio/Buffer;
 L59:    pop
 L60:    areturn
 L61:    
-        .attribute StackMap b'\x00\x05\x00\x16\x00\x04\x07\x00\x27\x01\x07\x00\x96\x01\x00\x01\x01\x00\x25\x00\x00\x00\x01\x07\x00\x3E\x00\x26\x00\x04\x07\x00\x27\x01\x07\x00\x96\x01\x00\x00\x00\x35\x00\x00\x00\x01\x07\x00\x3E\x00\x36\x00\x03\x07\x00\x27\x01\x07\x00\x96\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x16\x00\x04\x07\x00\x28\x01\x07\x00\xA5\x01\x00\x01\x01\x00\x25\x00\x00\x00\x01\x07\x00\x42\x00\x26\x00\x04\x07\x00\x28\x01\x07\x00\xA5\x01\x00\x00\x00\x35\x00\x00\x00\x01\x07\x00\x42\x00\x36\x00\x03\x07\x00\x28\x01\x07\x00\xA5\x00\x00'
     .end code
 .end method
 
@@ -561,17 +561,17 @@ L26:    newarray char
 L28:    iconst_1
 L29:    dup
 L30:    pop2
-L31:    putfield Field org/lwjgl/opengl/bB const [C
+L31:    putfield Field org/lwjgl/opengl/bB field5255 [C
 L34:    iconst_1
 L35:    dup
 L36:    pop2
 L37:    invokestatic Method org/lwjgl/BufferUtils createByteBuffer (I)Ljava/nio/ByteBuffer;
-L40:    putfield Field org/lwjgl/opengl/bB char Ljava/nio/ByteBuffer;
+L40:    putfield Field org/lwjgl/opengl/bB field5257 Ljava/nio/ByteBuffer;
 L43:    iconst_1
 L44:    dup
 L45:    pop2
 L46:    invokestatic Method org/lwjgl/BufferUtils createIntBuffer (I)Ljava/nio/IntBuffer;
-L49:    putfield Field org/lwjgl/opengl/bB else Ljava/nio/IntBuffer;
+L49:    putfield Field org/lwjgl/opengl/bB field5258 Ljava/nio/IntBuffer;
 L52:    iconst_1
 L53:    dup
 L54:    pop2
@@ -581,12 +581,12 @@ L61:    iconst_1
 L62:    dup
 L63:    pop2
 L64:    invokestatic Method org/lwjgl/BufferUtils createLongBuffer (I)Ljava/nio/LongBuffer;
-L67:    putfield Field org/lwjgl/opengl/bB void Ljava/nio/LongBuffer;
+L67:    putfield Field org/lwjgl/opengl/bB field5254 Ljava/nio/LongBuffer;
 L70:    iconst_1
 L71:    dup
 L72:    pop2
 L73:    invokestatic Method org/lwjgl/BufferUtils createFloatBuffer (I)Ljava/nio/FloatBuffer;
-L76:    putfield Field org/lwjgl/opengl/bB null Ljava/nio/FloatBuffer;
+L76:    putfield Field org/lwjgl/opengl/bB field5256 Ljava/nio/FloatBuffer;
 L79:    iconst_1
 L80:    dup
 L81:    pop2
@@ -597,11 +597,11 @@ L89:
     .end code
 .end method
 
-.method private static break : (Lorg/lwjgl/opengl/kb;I)[C
+.method private static method5481 : (Lorg/lwjgl/opengl/kb;I)[C
     .code stack 4 locals 4
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/kb Ng Lorg/lwjgl/opengl/bB;
-L4:     getfield Field org/lwjgl/opengl/bB const [C
+L4:     getfield Field org/lwjgl/opengl/bB field5255 [C
 L7:     dup
 L8:     astore_2
 L9:     arraylength
@@ -637,20 +637,20 @@ L45:    astore_2
 L46:    aload_0
 L47:    getfield Field org/lwjgl/opengl/kb Ng Lorg/lwjgl/opengl/bB;
 L50:    aload_2
-L51:    putfield Field org/lwjgl/opengl/bB const [C
+L51:    putfield Field org/lwjgl/opengl/bB field5255 [C
 L54:    aload_2
 L55:    areturn
 L56:    
-        .attribute StackMap b'\x00\x04\x00\x17\x00\x04\x07\x00\x27\x01\x07\x00\x58\x01\x00\x01\x01\x00\x26\x00\x00\x00\x01\x07\x00\x3E\x00\x27\x00\x04\x07\x00\x27\x01\x07\x00\x58\x01\x00\x00\x00\x36\x00\x03\x07\x00\x27\x01\x07\x00\x58\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x17\x00\x04\x07\x00\x28\x01\x07\x00\x5F\x01\x00\x01\x01\x00\x26\x00\x00\x00\x01\x07\x00\x42\x00\x27\x00\x04\x07\x00\x28\x01\x07\x00\x5F\x01\x00\x00\x00\x36\x00\x03\x07\x00\x28\x01\x07\x00\x5F\x00\x00'
     .end code
 .end method
 
-.method static break : (Lorg/lwjgl/opengl/kb;[Ljava/lang/CharSequence;)J
+.method static method5482 : (Lorg/lwjgl/opengl/kb;[Ljava/lang/CharSequence;)J
     .code stack 3 locals 6
 L0:     aload_0
 L1:     aload_1
 L2:     arraylength
-L3:     invokestatic Method org/lwjgl/opengl/bB else (Lorg/lwjgl/opengl/kb;I)Ljava/nio/IntBuffer;
+L3:     invokestatic Method org/lwjgl/opengl/bB method5480 (Lorg/lwjgl/opengl/kb;I)Ljava/nio/IntBuffer;
 L6:     astore_2
 L7:     aload_1
 L8:     dup
@@ -682,21 +682,21 @@ L50:    aload_2
 L51:    dup
 L52:    invokevirtual Method java/nio/IntBuffer flip ()Ljava/nio/Buffer;
 L55:    pop
-L56:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
+L56:    invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
 L59:    lreturn
 L60:    
-        .attribute StackMap b'\x00\x03\x00\x13\x00\x05\x07\x00\x27\x07\x00\x33\x07\x00\x96\x01\x01\x00\x01\x01\x00\x31\x00\x00\x00\x01\x07\x00\x3E\x00\x32\x00\x05\x07\x00\x27\x07\x00\x33\x07\x00\x96\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x13\x00\x05\x07\x00\x28\x07\x00\x36\x07\x00\xA5\x01\x01\x00\x01\x01\x00\x31\x00\x00\x00\x01\x07\x00\x42\x00\x32\x00\x05\x07\x00\x28\x07\x00\x36\x07\x00\xA5\x01\x01\x00\x00'
     .end code
 .end method
 
-.method static break : (Lorg/lwjgl/opengl/kb;)Ljava/nio/IntBuffer;
+.method static method5483 : (Lorg/lwjgl/opengl/kb;)Ljava/nio/IntBuffer;
     .code stack 4 locals 1
 L0:     aload_0
 L1:     iconst_1
 L2:     dup
 L3:     dup
 L4:     pop2
-L5:     invokestatic Method org/lwjgl/opengl/bB else (Lorg/lwjgl/opengl/kb;I)Ljava/nio/IntBuffer;
+L5:     invokestatic Method org/lwjgl/opengl/bB method5480 (Lorg/lwjgl/opengl/kb;I)Ljava/nio/IntBuffer;
 L8:     areturn
 L9:     
     .end code

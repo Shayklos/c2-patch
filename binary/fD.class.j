@@ -1,24 +1,24 @@
 .version 49 0
 .class public final super fD
 .super java/lang/Object
-.field public static final char I = 2
-.field private else LD;
-.field private "enum" I
-.field private do [B
+.field public static final field2259 I = 2
+.field private field2260 LD;
+.field private field2261 I
+.field private field2262 [B
 
-.method public short : ()LD;
+.method public method1135 : ()LD;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field fD else LD;
+L1:     getfield Field fD field2260 LD;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method public const : ()I
+.method public method1136 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field fD "enum" I
+L1:     getfield Field fD field2261 I
 L4:     ireturn
 L5:     
     .end code
@@ -52,11 +52,11 @@ L26:    iconst_1
 L27:    dup
 L28:    pop2
 L29:    baload
-L30:    invokestatic Method Wb break (I)Le;
+L30:    invokestatic Method Wb method1082 (I)Le;
 L33:    aload_2
-L34:    invokeinterface InterfaceMethod e else ([B)V 2
-L39:    putfield Field fD "enum" I
-L42:    putfield Field fD do [B
+L34:    invokeinterface InterfaceMethod e method710 ([B)V 2
+L39:    putfield Field fD field2261 I
+L42:    putfield Field fD field2262 [B
 L45:    return
 L46:    
     .end code
@@ -70,8 +70,8 @@ L2:     dup_x1
 L3:     iload_1
 L4:     aload_0
 L5:     invokespecial Method java/lang/Object <init> ()V
-L8:     putfield Field fD "enum" I
-L11:    putfield Field fD else LD;
+L8:     putfield Field fD field2261 I
+L11:    putfield Field fD field2260 LD;
 L14:    new java/io/ByteArrayOutputStream
 L17:    dup
 L18:    invokespecial Method java/io/ByteArrayOutputStream <init> ()V
@@ -83,12 +83,12 @@ L27:    invokespecial Method AC <init> (Ljava/io/OutputStream;)V
 L30:    astore_3
 L31:    aload_2
 L32:    dup
-L33:    invokestatic Method Wb break (LD;)[B
+L33:    invokestatic Method Wb method1080 (LD;)[B
 L36:    astore_2
 L37:    invokevirtual Method java/lang/Object getClass ()Ljava/lang/Class;
-L40:    invokestatic Method Wb break (Ljava/lang/Class;)Le;
+L40:    invokestatic Method Wb method1081 (Ljava/lang/Class;)Le;
 L43:    aload_2
-L44:    invokeinterface InterfaceMethod e break ([B)V 2
+L44:    invokeinterface InterfaceMethod e method711 ([B)V 2
 L49:    aload_3
 L50:    aload_2
 L51:    dup
@@ -111,37 +111,37 @@ L70:    iconst_1
 L71:    dup
 L72:    pop2
 L73:    isub
-L74:    invokevirtual Method AC break (I)V
+L74:    invokevirtual Method AC method691 (I)V
 L77:    aload_0
 L78:    aload_1
 L79:    aload_3
 L80:    dup
 L81:    aload_2
-L82:    invokevirtual Method AC else ([B)V
-L85:    invokevirtual Method AC else ()V
+L82:    invokevirtual Method AC method677 ([B)V
+L85:    invokevirtual Method AC method681 ()V
 L88:    invokevirtual Method java/io/ByteArrayOutputStream toByteArray ()[B
-L91:    putfield Field fD do [B
+L91:    putfield Field fD field2262 [B
 L94:    return
 L95:    
     .end code
     .exceptions java/io/IOException
 .end method
 
-.method public else : ()LD;
+.method public method1137 : ()LD;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field fD do [B
-L4:     invokestatic Method Wb break ([B)LD;
+L1:     getfield Field fD field2262 [B
+L4:     invokestatic Method Wb method1078 ([B)LD;
 L7:     areturn
 L8:     
     .end code
     .exceptions java/io/IOException
 .end method
 
-.method public break : ()[B
+.method public method1138 : ()[B
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field fD do [B
+L1:     getfield Field fD field2262 [B
 L4:     areturn
 L5:     
     .end code

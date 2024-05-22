@@ -2,13 +2,13 @@
 .class public final super zF
 .super java/lang/Object
 .implements h
-.field public final synthetic do LYd;
+.field public final synthetic field1456 LYd;
 
-.method public break : (LgB;)V
+.method public method728 : (LgB;)V
     .code stack 1 locals 2
 L0:     aload_0
-L1:     getfield Field zF do LYd;
-L4:     invokevirtual Method Yd break ()V
+L1:     getfield Field zF field1456 LYd;
+L4:     invokevirtual Method Yd method74 ()V
 L7:     return
 L8:     
     .end code
@@ -19,7 +19,7 @@ L8:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field zF do LYd;
+L3:     putfield Field zF field1456 LYd;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    
@@ -28,5 +28,5 @@ L10:
 .innerclasses
     zF [0] [0]
 .end innerclasses
-.enclosing method Yd break (Ljava/lang/String;)V
+.enclosing method Yd method12 (Ljava/lang/String;)V
 .end class

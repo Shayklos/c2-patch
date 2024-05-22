@@ -1,14 +1,14 @@
 .version 49 0
 .class public final super wc
 .super hc
-.field public const F
+.field public field2099 F
 .field public new F
-.field public null F
+.field public field2100 F
 .field public this F
-.field public char F
-.field public else F
-.field public "enum" F
-.field public do LsE;
+.field public field2101 F
+.field public field2102 F
+.field public field2103 F
+.field public field2104 LsE;
 
 .method public <init> : (LsE;FFFFFFFF)V
     .code stack 18 locals 10
@@ -31,27 +31,27 @@ L20:    aload_1
 L21:    aload_0
 L22:    fload 9
 L24:    invokespecial Method hc <init> (F)V
-L27:    putfield Field wc do LsE;
-L30:    putfield Field wc "enum" F
+L27:    putfield Field wc field2104 LsE;
+L30:    putfield Field wc field2103 F
 L33:    putfield Field wc this F
-L36:    putfield Field wc const F
-L39:    putfield Field wc char F
+L36:    putfield Field wc field2099 F
+L39:    putfield Field wc field2101 F
 L42:    putfield Field wc new F
-L45:    putfield Field wc null F
-L48:    putfield Field wc else F
+L45:    putfield Field wc field2100 F
+L48:    putfield Field wc field2102 F
 L51:    return
 L52:    
     .end code
 .end method
 
-.method public break : ()Ljava/util/List;
+.method public method1048 : ()Ljava/util/List;
     .code stack 15 locals 8
 L0:     ldc 5e-1f
 L2:     aload_0
 L3:     dup
-L4:     getfield Field wc "enum" F
+L4:     getfield Field wc field2103 F
 L7:     swap
-L8:     getfield Field wc const F
+L8:     getfield Field wc field2099 F
 L11:    fadd
 L12:    fmul
 L13:    fstore_1
@@ -60,20 +60,20 @@ L16:    aload_0
 L17:    dup
 L18:    getfield Field wc this F
 L21:    swap
-L22:    getfield Field wc char F
+L22:    getfield Field wc field2101 F
 L25:    fadd
 L26:    fmul
 L27:    fstore_2
 L28:    aload_0
-L29:    getfield Field wc const F
+L29:    getfield Field wc field2099 F
 L32:    aload_0
 L33:    dup_x1
-L34:    getfield Field wc "enum" F
+L34:    getfield Field wc field2103 F
 L37:    fsub
 L38:    fconst_2
 L39:    fmul
 L40:    fstore_3
-L41:    getfield Field wc char F
+L41:    getfield Field wc field2101 F
 L44:    aload_0
 L45:    getfield Field wc this F
 L48:    fsub
@@ -103,9 +103,9 @@ L86:    pop2
 L87:    dup
 L88:    aload_0
 L89:    dup
-L90:    getfield Field wc do LsE;
+L90:    getfield Field wc field2104 LsE;
 L93:    swap
-L94:    getfield Field wc "enum" F
+L94:    getfield Field wc field2103 F
 L97:    aload_0
 L98:    getfield Field wc this F
 L101:   fload_1
@@ -131,7 +131,7 @@ L130:   fneg
 L131:   fload 5
 L133:   fmul
 L134:   aload_0
-L135:   getfield Field wc null F
+L135:   getfield Field wc field2100 F
 L138:   ldc 1.2e0f
 L140:   fmul
 L141:   fload 5
@@ -146,14 +146,14 @@ L157:   dup
 L158:   pop2
 L159:   dup
 L160:   aload_0
-L161:   getfield Field wc do LsE;
+L161:   getfield Field wc field2104 LsE;
 L164:   fload_1
 L165:   fload_2
 L166:   aload_0
 L167:   dup
-L168:   getfield Field wc const F
+L168:   getfield Field wc field2099 F
 L171:   swap
-L172:   getfield Field wc char F
+L172:   getfield Field wc field2101 F
 L175:   invokestatic Method java/lang/Math random ()D
 L178:   d2f
 L179:   ldc 1e1f
@@ -175,7 +175,7 @@ L202:   fload_3
 L203:   fload 6
 L205:   fmul
 L206:   aload_0
-L207:   getfield Field wc null F
+L207:   getfield Field wc field2100 F
 L210:   ldc 1.2e0f
 L212:   fmul
 L213:   fload 6
@@ -189,26 +189,26 @@ L225:
     .end code
 .end method
 
-.method public break : (F)Z
+.method public method1046 : (F)Z
     .code stack 5 locals 2
 L0:     fload_1
 L1:     aload_0
 L2:     dup_x1
 L3:     dup
-L4:     getfield Field wc else F
+L4:     getfield Field wc field2102 F
 L7:     fload_1
 L8:     fsub
-L9:     putfield Field wc else F
-L12:    invokespecial Method hc break (F)Z
+L9:     putfield Field wc field2102 F
+L12:    invokespecial Method hc method1046 (F)Z
 L15:    ireturn
 L16:    
     .end code
 .end method
 
-.method public break : (ZF)V
+.method public method1047 : (ZF)V
     .code stack 5 locals 3
 L0:     aload_0
-L1:     getfield Field wc else F
+L1:     getfield Field wc field2102 F
 L4:     fconst_0
 L5:     fcmpl
 L6:     ifle L11
@@ -217,54 +217,54 @@ L10:    athrow
 L11:    fload_2
 L12:    fstore_1
 L13:    aload_0
-L14:    getfield Field wc else F
+L14:    getfield Field wc field2102 F
 L17:    ldc -1e-1f
 L19:    fcmpl
 L20:    iflt L34
 L23:    fload_1
 L24:    ldc 1e1f
 L26:    aload_0
-L27:    getfield Field wc do F
+L27:    getfield Field wc field2098 F
 L30:    fneg
 L31:    fmul
 L32:    fmul
 L33:    fstore_1
 L34:    aload_0
-L35:    getfield Field wc do LsE;
+L35:    getfield Field wc field2104 LsE;
 L38:    ifnonnull L53
 L41:    fconst_1
 L42:    dup
 L43:    dup_x1
 L44:    fload_1
-L45:    invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L45:    invokestatic Method org/lwjgl/opengl/GL11 method3888 (FFFF)V
 L48:    aload_0
 L49:    goto L79
 L52:    athrow
 L53:    aload_0
 L54:    dup
-L55:    getfield Field wc do LsE;
+L55:    getfield Field wc field2104 LsE;
 L58:    getfield Field sE try F
 L61:    aload_0
-L62:    getfield Field wc do LsE;
-L65:    getfield Field sE else F
+L62:    getfield Field wc field2104 LsE;
+L65:    getfield Field sE field620 F
 L68:    aload_0
-L69:    getfield Field wc do LsE;
+L69:    getfield Field wc field2104 LsE;
 L72:    getfield Field sE new F
 L75:    fload_1
-L76:    invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L79:    getfield Field wc "enum" F
+L76:    invokestatic Method org/lwjgl/opengl/GL11 method3888 (FFFF)V
+L79:    getfield Field wc field2103 F
 L82:    aload_0
 L83:    getfield Field wc this F
-L86:    invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
+L86:    invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
 L89:    aload_0
 L90:    dup
-L91:    getfield Field wc const F
+L91:    getfield Field wc field2099 F
 L94:    swap
-L95:    getfield Field wc char F
-L98:    invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
+L95:    getfield Field wc field2101 F
+L98:    invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
 L101:   return
 L102:   
-        .attribute StackMap b'\x00\x06\x00\x0A\x00\x00\x00\x01\x07\x00\x43\x00\x0B\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x22\x00\x03\x07\x00\x02\x02\x02\x00\x00\x00\x34\x00\x00\x00\x01\x07\x00\x43\x00\x35\x00\x03\x07\x00\x02\x02\x02\x00\x00\x00\x4F\x00\x03\x07\x00\x02\x02\x02\x00\x01\x07\x00\x02'
+        .attribute StackMap b'\x00\x06\x00\x0A\x00\x00\x00\x01\x07\x00\x45\x00\x0B\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x22\x00\x03\x07\x00\x02\x02\x02\x00\x00\x00\x34\x00\x00\x00\x01\x07\x00\x45\x00\x35\x00\x03\x07\x00\x02\x02\x02\x00\x00\x00\x4F\x00\x03\x07\x00\x02\x02\x02\x00\x01\x07\x00\x02'
     .end code
 .end method
 .end class

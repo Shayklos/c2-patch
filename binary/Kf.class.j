@@ -2,14 +2,14 @@
 .class public final super Kf
 .super java/lang/Object
 .field public new F
-.field public null F
+.field public field1944 F
 .field public this F
-.field public char F
-.field public else F
-.field public "enum" F
-.field public do F
+.field public field1945 F
+.field public field1946 F
+.field public field1947 F
+.field public field1948 F
 
-.method public break : ()V
+.method public method880 : ()V
     .code stack 10 locals 1
 L0:     aload_0
 L1:     dup
@@ -30,10 +30,10 @@ L22:    getfield Field Kf this F
 L25:    ldc 8e0f
 L27:    fadd
 L28:    fmul
-L29:    putfield Field Kf do F
-L32:    getfield Field Kf do F
+L29:    putfield Field Kf field1948 F
+L32:    getfield Field Kf field1948 F
 L35:    fneg
-L36:    putfield Field Kf null F
+L36:    putfield Field Kf field1944 F
 L39:    invokestatic Method java/lang/Math random ()D
 L42:    ldc2_w 5e-1
 L45:    dsub
@@ -46,7 +46,7 @@ L56:    fadd
 L57:    f2d
 L58:    dmul
 L59:    d2f
-L60:    putfield Field Kf char F
+L60:    putfield Field Kf field1945 F
 L63:    invokestatic Method java/lang/Math random ()D
 L66:    d2f
 L67:    ldc 2.5e-2f
@@ -55,22 +55,22 @@ L70:    ldc 1e-1f
 L72:    fadd
 L73:    putfield Field Kf new F
 L76:    invokestatic Method java/lang/Math random ()D
-L79:    invokestatic Method SF else ()[F
+L79:    invokestatic Method SF method620 ()[F
 L82:    arraylength
 L83:    i2d
 L84:    dmul
 L85:    d2f
-L86:    putfield Field Kf "enum" F
+L86:    putfield Field Kf field1947 F
 L89:    aload_0
 L90:    invokestatic Method java/lang/Math random ()D
 L93:    ldc2_w 5e-1
 L96:    dsub
 L97:    d2f
-L98:    invokestatic Method SF else ()[F
+L98:    invokestatic Method SF method620 ()[F
 L101:   arraylength
 L102:   i2f
 L103:   fmul
-L104:   putfield Field Kf else F
+L104:   putfield Field Kf field1946 F
 L107:   return
 L108:   
     .end code
@@ -90,11 +90,11 @@ L10:    fload_1
 L11:    aload_0
 L12:    dup_x1
 L13:    invokespecial Method java/lang/Object <init> ()V
-L16:    putfield Field Kf char F
-L19:    putfield Field Kf null F
+L16:    putfield Field Kf field1945 F
+L19:    putfield Field Kf field1944 F
 L22:    putfield Field Kf this F
 L25:    putfield Field Kf new F
-L28:    putfield Field Kf "enum" F
+L28:    putfield Field Kf field1947 F
 L31:    return
 L32:    
     .end code
@@ -105,7 +105,7 @@ L32:
 L0:     aload_0
 L1:     dup
 L2:     invokespecial Method java/lang/Object <init> ()V
-L5:     invokevirtual Method Kf break ()V
+L5:     invokevirtual Method Kf method880 ()V
 L8:     return
 L9:     
     .end code

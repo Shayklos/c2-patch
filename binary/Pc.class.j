@@ -1,10 +1,10 @@
 .version 49 0
 .class public final super enum Pc
 .super java/lang/Enum
-.field public char Ljava/lang/String;
-.field public static final enum else LPc;
-.field private static final synthetic "enum" [LPc;
-.field public static final enum do LPc;
+.field public field370 Ljava/lang/String;
+.field public static final enum field371 LPc;
+.field private static final synthetic field372 [LPc;
+.field public static final enum field373 LPc;
 
 .method private <init> : (Ljava/lang/String;ILjava/lang/String;)V
     .code stack 5 locals 4
@@ -14,7 +14,7 @@ L2:     dup_x1
 L3:     aload_1
 L4:     iload_2
 L5:     invokespecial Method java/lang/Enum <init> (Ljava/lang/String;I)V
-L8:     putfield Field Pc char Ljava/lang/String;
+L8:     putfield Field Pc field370 Ljava/lang/String;
 L11:    return
 L12:    
     .end code
@@ -31,7 +31,7 @@ L8:     dup
 L9:     pop2
 L10:    ldc "p1"
 L12:    invokespecial Method Pc <init> (Ljava/lang/String;ILjava/lang/String;)V
-L15:    putstatic Field Pc do LPc;
+L15:    putstatic Field Pc field373 LPc;
 L18:    new Pc
 L21:    dup
 L22:    ldc "PLAYER_2"
@@ -41,7 +41,7 @@ L26:    dup
 L27:    pop2
 L28:    ldc "p2"
 L30:    invokespecial Method Pc <init> (Ljava/lang/String;ILjava/lang/String;)V
-L33:    putstatic Field Pc else LPc;
+L33:    putstatic Field Pc field371 LPc;
 L36:    iconst_2
 L37:    iconst_1
 L38:    dup
@@ -55,16 +55,16 @@ L47:    iconst_0
 L48:    iconst_1
 L49:    dup
 L50:    pop2
-L51:    getstatic Field Pc do LPc;
+L51:    getstatic Field Pc field373 LPc;
 L54:    aastore
 L55:    dup
 L56:    iconst_1
 L57:    dup
 L58:    dup
 L59:    pop2
-L60:    getstatic Field Pc else LPc;
+L60:    getstatic Field Pc field371 LPc;
 L63:    aastore
-L64:    putstatic Field Pc "enum" [LPc;
+L64:    putstatic Field Pc field372 [LPc;
 L67:    return
 L68:    
     .end code
@@ -72,7 +72,7 @@ L68:
 
 .method public static values : ()[LPc;
     .code stack 1 locals 0
-L0:     getstatic Field Pc "enum" [LPc;
+L0:     getstatic Field Pc field372 [LPc;
 L3:     invokevirtual Method [LPc; clone ()Ljava/lang/Object;
 L6:     checkcast [LPc;
 L9:     areturn

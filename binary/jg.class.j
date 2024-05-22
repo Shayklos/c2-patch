@@ -2,7 +2,7 @@
 .class public final super jg
 .super eb
 
-.method public else : (Lqd;)F
+.method public method758 : (Lqd;)F
     .code stack 1 locals 2
 L0:     ldc 5e-1f
 L2:     freturn
@@ -19,7 +19,7 @@ L5:
     .end code
 .end method
 
-.method public break : (Lqd;)F
+.method public method764 : (Lqd;)F
     .code stack 1 locals 2
 L0:     ldc 1.5e0f
 L2:     freturn
@@ -27,7 +27,7 @@ L3:
     .end code
 .end method
 
-.method public else : (LRg;[I)V
+.method public method765 : (LRg;[I)V
     .code stack 3 locals 3
 L0:     aload_1
 L1:     instanceof oF
@@ -35,10 +35,10 @@ L4:     ifeq L13
 L7:     aload_0
 L8:     aload_1
 L9:     aload_2
-L10:    invokespecial Method eb else (LRg;[I)V
+L10:    invokespecial Method eb method765 (LRg;[I)V
 L13:    return
 L14:    
-        .attribute StackMap b'\x00\x01\x00\x0D\x00\x03\x07\x00\x02\x07\x00\x16\x07\x00\x18\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x0D\x00\x03\x07\x00\x02\x07\x00\x17\x07\x00\x19\x00\x00'
     .end code
 .end method
 .innerclasses

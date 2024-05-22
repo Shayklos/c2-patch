@@ -1,15 +1,15 @@
 .version 49 0
 .class public final super xF
 .super java/lang/Object
-.field public static final do Ljava/util/List;
+.field public static final field5850 Ljava/util/List;
 
 .method public static <clinit> : ()V
     .code stack 41 locals 3
 L0:     new java/util/ArrayList
 L3:     dup
 L4:     invokespecial Method java/util/ArrayList <init> ()V
-L7:     putstatic Field xF do Ljava/util/List;
-L10:    getstatic Field xF do Ljava/util/List;
+L7:     putstatic Field xF field5850 Ljava/util/List;
+L10:    getstatic Field xF field5850 Ljava/util/List;
 L13:    new wg
 L16:    dup
 L17:    ldc "sa1"
@@ -29,7 +29,7 @@ L35:    dup
 L36:    pop2
 L37:    invokespecial Method wg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ)V
 L40:    invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L45:    getstatic Field xF do Ljava/util/List;
+L45:    getstatic Field xF field5850 Ljava/util/List;
 L48:    new sf
 L51:    dup
 L52:    ldc "sp6"
@@ -50,7 +50,7 @@ L71:    dup
 L72:    pop2
 L73:    invokespecial Method sf <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IFIZ)V
 L76:    invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L81:    getstatic Field xF do Ljava/util/List;
+L81:    getstatic Field xF field5850 Ljava/util/List;
 L84:    new sf
 L87:    dup
 L88:    ldc "sp12"
@@ -71,7 +71,7 @@ L108:   dup
 L109:   pop2
 L110:   invokespecial Method sf <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IFIZ)V
 L113:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L118:   getstatic Field xF do Ljava/util/List;
+L118:   getstatic Field xF field5850 Ljava/util/List;
 L121:   new sf
 L124:   dup
 L125:   ldc "jta20"
@@ -92,7 +92,7 @@ L146:   dup
 L147:   pop2
 L148:   invokespecial Method sf <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IFIZ)V
 L151:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L156:   getstatic Field xF do Ljava/util/List;
+L156:   getstatic Field xF field5850 Ljava/util/List;
 L159:   new jF
 L162:   dup
 L163:   ldc "tri"
@@ -116,7 +116,7 @@ L185:   dup
 L186:   pop2
 L187:   invokespecial Method jF <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIZ)V
 L190:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L195:   getstatic Field xF do Ljava/util/List;
+L195:   getstatic Field xF field5850 Ljava/util/List;
 L198:   new jF
 L201:   dup
 L202:   ldc "guki"
@@ -140,7 +140,7 @@ L224:   dup
 L225:   pop2
 L226:   invokespecial Method jF <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIZ)V
 L229:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L234:   getstatic Field xF do Ljava/util/List;
+L234:   getstatic Field xF field5850 Ljava/util/List;
 L237:   new jF
 L240:   dup
 L241:   ldc "chuck"
@@ -164,7 +164,7 @@ L263:   dup
 L264:   pop2
 L265:   invokespecial Method jF <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIZ)V
 L268:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L273:   getstatic Field xF do Ljava/util/List;
+L273:   getstatic Field xF field5850 Ljava/util/List;
 L276:   new qf
 L279:   dup
 L280:   ldc "bff"
@@ -188,7 +188,7 @@ L302:   dup
 L303:   pop2
 L304:   invokespecial Method qf <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIZ)V
 L307:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L312:   getstatic Field xF do Ljava/util/List;
+L312:   getstatic Field xF field5850 Ljava/util/List;
 L315:   new Lg
 L318:   dup
 L319:   ldc "tw9yc"
@@ -306,7 +306,7 @@ L443:   pop2
 L444:   iastore
 L445:   invokespecial Method Lg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ[I)V
 L448:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L453:   getstatic Field xF do Ljava/util/List;
+L453:   getstatic Field xF field5850 Ljava/util/List;
 L456:   new YF
 L459:   dup
 L460:   ldc "tetris1"
@@ -334,7 +334,7 @@ L484:   dup
 L485:   pop2
 L486:   invokespecial Method YF <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIZZ)V
 L489:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L494:   getstatic Field xF do Ljava/util/List;
+L494:   getstatic Field xF field5850 Ljava/util/List;
 L497:   new YF
 L500:   dup
 L501:   ldc "tetris4"
@@ -362,7 +362,7 @@ L526:   dup
 L527:   pop2
 L528:   invokespecial Method YF <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIZZ)V
 L531:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L536:   getstatic Field xF do Ljava/util/List;
+L536:   getstatic Field xF field5850 Ljava/util/List;
 L539:   new jF
 L542:   dup
 L543:   ldc "cm"
@@ -386,7 +386,7 @@ L565:   dup
 L566:   pop2
 L567:   invokespecial Method jF <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIIZ)V
 L570:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L575:   getstatic Field xF do Ljava/util/List;
+L575:   getstatic Field xF field5850 Ljava/util/List;
 L578:   new uD
 L581:   dup
 L582:   ldc "fw"
@@ -406,7 +406,7 @@ L598:   dup
 L599:   pop2
 L600:   invokespecial Method uD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ)V
 L603:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L608:   getstatic Field xF do Ljava/util/List;
+L608:   getstatic Field xF field5850 Ljava/util/List;
 L611:   new nE
 L614:   dup
 L615:   ldc "wA"
@@ -426,7 +426,7 @@ L633:   dup
 L634:   pop2
 L635:   invokespecial Method nE <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ)V
 L638:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L643:   getstatic Field xF do Ljava/util/List;
+L643:   getstatic Field xF field5850 Ljava/util/List;
 L646:   new nE
 L649:   dup
 L650:   ldc "wB"
@@ -446,7 +446,7 @@ L669:   dup
 L670:   pop2
 L671:   invokespecial Method nE <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ)V
 L674:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L679:   getstatic Field xF do Ljava/util/List;
+L679:   getstatic Field xF field5850 Ljava/util/List;
 L682:   new nE
 L685:   dup
 L686:   ldc "wC"
@@ -466,7 +466,7 @@ L705:   dup
 L706:   pop2
 L707:   invokespecial Method nE <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ)V
 L710:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L715:   getstatic Field xF do Ljava/util/List;
+L715:   getstatic Field xF field5850 Ljava/util/List;
 L718:   new nE
 L721:   dup
 L722:   ldc "wD"
@@ -483,7 +483,7 @@ L737:   dup
 L738:   pop2
 L739:   invokespecial Method nE <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ)V
 L742:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L747:   getstatic Field xF do Ljava/util/List;
+L747:   getstatic Field xF field5850 Ljava/util/List;
 L750:   new VE
 L753:   dup
 L754:   ldc "rA"
@@ -503,7 +503,7 @@ L772:   dup
 L773:   pop2
 L774:   invokespecial Method VE <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ)V
 L777:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L782:   getstatic Field xF do Ljava/util/List;
+L782:   getstatic Field xF field5850 Ljava/util/List;
 L785:   new VE
 L788:   dup
 L789:   ldc "rB"
@@ -523,7 +523,7 @@ L808:   dup
 L809:   pop2
 L810:   invokespecial Method VE <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ)V
 L813:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L818:   getstatic Field xF do Ljava/util/List;
+L818:   getstatic Field xF field5850 Ljava/util/List;
 L821:   new VE
 L824:   dup
 L825:   ldc "rC"
@@ -543,7 +543,7 @@ L844:   dup
 L845:   pop2
 L846:   invokespecial Method VE <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ)V
 L849:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L854:   getstatic Field xF do Ljava/util/List;
+L854:   getstatic Field xF field5850 Ljava/util/List;
 L857:   new VE
 L860:   dup
 L861:   ldc "rD"
@@ -560,7 +560,7 @@ L876:   dup
 L877:   pop2
 L878:   invokespecial Method VE <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ)V
 L881:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L886:   getstatic Field xF do Ljava/util/List;
+L886:   getstatic Field xF field5850 Ljava/util/List;
 L889:   new mg
 L892:   dup
 L893:   ldc "spencer"
@@ -585,7 +585,7 @@ L916:   dup
 L917:   pop2
 L918:   invokespecial Method mg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FZZIZ)V
 L921:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L926:   getstatic Field xF do Ljava/util/List;
+L926:   getstatic Field xF field5850 Ljava/util/List;
 L929:   new mg
 L932:   dup
 L933:   ldc "da"
@@ -610,7 +610,7 @@ L956:   dup
 L957:   pop2
 L958:   invokespecial Method mg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FZZIZ)V
 L961:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L966:   getstatic Field xF do Ljava/util/List;
+L966:   getstatic Field xF field5850 Ljava/util/List;
 L969:   new mg
 L972:   dup
 L973:   ldc "dass"
@@ -635,7 +635,7 @@ L996:   dup
 L997:   pop2
 L998:   invokespecial Method mg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FZZIZ)V
 L1001:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1006:  getstatic Field xF do Ljava/util/List;
+L1006:  getstatic Field xF field5850 Ljava/util/List;
 L1009:  new mg
 L1012:  dup
 L1013:  ldc "freddie"
@@ -660,7 +660,7 @@ L1036:  dup
 L1037:  pop2
 L1038:  invokespecial Method mg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FZZIZ)V
 L1041:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1046:  getstatic Field xF do Ljava/util/List;
+L1046:  getstatic Field xF field5850 Ljava/util/List;
 L1049:  new yD
 L1052:  dup
 L1053:  ldc "fb"
@@ -684,7 +684,7 @@ L1073:  dup
 L1074:  pop2
 L1075:  invokespecial Method yD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZIZ)V
 L1078:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1083:  getstatic Field xF do Ljava/util/List;
+L1083:  getstatic Field xF field5850 Ljava/util/List;
 L1086:  new yD
 L1089:  dup
 L1090:  ldc "sdw"
@@ -721,7 +721,7 @@ L1131:  pop2
 L1132:  pop2
 L1133:  pop2
 L1134:  pop2
-L1135:  getstatic Field xF do Ljava/util/List;
+L1135:  getstatic Field xF field5850 Ljava/util/List;
 L1138:  new yD
 L1141:  dup
 L1142:  ldc "lazer"
@@ -745,7 +745,7 @@ L1165:  dup
 L1166:  pop2
 L1167:  invokespecial Method yD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZIZ)V
 L1170:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1175:  getstatic Field xF do Ljava/util/List;
+L1175:  getstatic Field xF field5850 Ljava/util/List;
 L1178:  new yD
 L1181:  dup
 L1182:  ldc "300"
@@ -769,7 +769,7 @@ L1205:  dup
 L1206:  pop2
 L1207:  invokespecial Method yD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZIZ)V
 L1210:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1215:  getstatic Field xF do Ljava/util/List;
+L1215:  getstatic Field xF field5850 Ljava/util/List;
 L1218:  new ze
 L1221:  dup
 L1222:  ldc "eff"
@@ -786,7 +786,7 @@ L1239:  dup
 L1240:  pop2
 L1241:  invokespecial Method ze <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FIZ)V
 L1244:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1249:  getstatic Field xF do Ljava/util/List;
+L1249:  getstatic Field xF field5850 Ljava/util/List;
 L1252:  new ZD
 L1255:  dup
 L1256:  ldc_w "derp"
@@ -803,7 +803,7 @@ L1274:  dup
 L1275:  pop2
 L1276:  invokespecial Method ZD <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FIZ)V
 L1279:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1284:  getstatic Field xF do Ljava/util/List;
+L1284:  getstatic Field xF field5850 Ljava/util/List;
 L1287:  new aE
 L1290:  dup
 L1291:  ldc_w "9000"
@@ -823,7 +823,7 @@ L1313:  dup
 L1314:  pop2
 L1315:  invokespecial Method aE <init> [_24]
 L1318:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1323:  getstatic Field xF do Ljava/util/List;
+L1323:  getstatic Field xF field5850 Ljava/util/List;
 L1326:  new aE
 L1329:  dup
 L1330:  ldc_w "lifetime"
@@ -840,7 +840,7 @@ L1349:  dup
 L1350:  pop2
 L1351:  invokespecial Method aE <init> [_24]
 L1354:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1359:  getstatic Field xF do Ljava/util/List;
+L1359:  getstatic Field xF field5850 Ljava/util/List;
 L1362:  new aE
 L1365:  dup
 L1366:  ldc_w "lifetimes"
@@ -857,7 +857,7 @@ L1385:  dup
 L1386:  pop2
 L1387:  invokespecial Method aE <init> [_24]
 L1390:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1395:  getstatic Field xF do Ljava/util/List;
+L1395:  getstatic Field xF field5850 Ljava/util/List;
 L1398:  new BG
 L1401:  dup
 L1402:  ldc_w "doctor"
@@ -877,7 +877,7 @@ L1424:  dup
 L1425:  pop2
 L1426:  invokespecial Method BG <init> [_24]
 L1429:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1434:  getstatic Field xF do Ljava/util/List;
+L1434:  getstatic Field xF field5850 Ljava/util/List;
 L1437:  new BG
 L1440:  dup
 L1441:  ldc_w "amber_lamps"
@@ -894,7 +894,7 @@ L1460:  dup
 L1461:  pop2
 L1462:  invokespecial Method BG <init> [_24]
 L1465:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1470:  getstatic Field xF do Ljava/util/List;
+L1470:  getstatic Field xF field5850 Ljava/util/List;
 L1473:  new BG
 L1476:  dup
 L1477:  ldc_w "chuck_testa"
@@ -911,7 +911,7 @@ L1496:  dup
 L1497:  pop2
 L1498:  invokespecial Method BG <init> [_24]
 L1501:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1506:  getstatic Field xF do Ljava/util/List;
+L1506:  getstatic Field xF field5850 Ljava/util/List;
 L1509:  new BG
 L1512:  dup
 L1513:  ldc_w "epic_beard"
@@ -928,7 +928,7 @@ L1532:  dup
 L1533:  pop2
 L1534:  invokespecial Method BG <init> [_24]
 L1537:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1542:  getstatic Field xF do Ljava/util/List;
+L1542:  getstatic Field xF field5850 Ljava/util/List;
 L1545:  new WF
 L1548:  dup
 L1549:  ldc_w "omnom0"
@@ -949,7 +949,7 @@ L1571:  dup
 L1572:  pop2
 L1573:  invokespecial Method WF <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FZIZ)V
 L1576:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1581:  getstatic Field xF do Ljava/util/List;
+L1581:  getstatic Field xF field5850 Ljava/util/List;
 L1584:  new WF
 L1587:  dup
 L1588:  ldc_w "omnom"
@@ -970,7 +970,7 @@ L1611:  dup
 L1612:  pop2
 L1613:  invokespecial Method WF <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FZIZ)V
 L1616:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1621:  getstatic Field xF do Ljava/util/List;
+L1621:  getstatic Field xF field5850 Ljava/util/List;
 L1624:  new WF
 L1627:  dup
 L1628:  ldc_w "omnom2"
@@ -991,7 +991,7 @@ L1651:  dup
 L1652:  pop2
 L1653:  invokespecial Method WF <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;FZIZ)V
 L1656:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1661:  getstatic Field xF do Ljava/util/List;
+L1661:  getstatic Field xF field5850 Ljava/util/List;
 L1664:  new Wg
 L1667:  dup
 L1668:  ldc_w "jean-luc"
@@ -1007,7 +1007,7 @@ L1683:  dup
 L1684:  pop2
 L1685:  invokespecial Method Wg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
 L1688:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1693:  getstatic Field xF do Ljava/util/List;
+L1693:  getstatic Field xF field5850 Ljava/util/List;
 L1696:  new cf
 L1699:  dup
 L1700:  ldc_w "konami"
@@ -1023,7 +1023,7 @@ L1716:  dup
 L1717:  pop2
 L1718:  invokespecial Method cf <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
 L1721:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1726:  getstatic Field xF do Ljava/util/List;
+L1726:  getstatic Field xF field5850 Ljava/util/List;
 L1729:  new bE
 L1732:  dup
 L1733:  ldc_w "ef2"
@@ -1043,7 +1043,7 @@ L1753:  dup
 L1754:  pop2
 L1755:  invokespecial Method bE <init> [_24]
 L1758:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1763:  getstatic Field xF do Ljava/util/List;
+L1763:  getstatic Field xF field5850 Ljava/util/List;
 L1766:  new bE
 L1769:  dup
 L1770:  ldc_w "ef3"
@@ -1063,7 +1063,7 @@ L1790:  dup
 L1791:  pop2
 L1792:  invokespecial Method bE <init> [_24]
 L1795:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1800:  getstatic Field xF do Ljava/util/List;
+L1800:  getstatic Field xF field5850 Ljava/util/List;
 L1803:  new Zg
 L1806:  dup
 L1807:  ldc_w "dw"
@@ -1079,7 +1079,7 @@ L1824:  dup
 L1825:  pop2
 L1826:  invokespecial Method Zg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
 L1829:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1834:  getstatic Field xF do Ljava/util/List;
+L1834:  getstatic Field xF field5850 Ljava/util/List;
 L1837:  new Zg
 L1840:  dup
 L1841:  ldc_w "dw2"
@@ -1095,7 +1095,7 @@ L1857:  dup
 L1858:  pop2
 L1859:  invokespecial Method Zg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
 L1862:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1867:  getstatic Field xF do Ljava/util/List;
+L1867:  getstatic Field xF field5850 Ljava/util/List;
 L1870:  new Zg
 L1873:  dup
 L1874:  ldc_w "comm"
@@ -1111,7 +1111,7 @@ L1890:  dup
 L1891:  pop2
 L1892:  invokespecial Method Zg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
 L1895:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1900:  getstatic Field xF do Ljava/util/List;
+L1900:  getstatic Field xF field5850 Ljava/util/List;
 L1903:  new Zg
 L1906:  dup
 L1907:  ldc_w "gw"
@@ -1127,7 +1127,7 @@ L1923:  dup
 L1924:  pop2
 L1925:  invokespecial Method Zg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
 L1928:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1933:  getstatic Field xF do Ljava/util/List;
+L1933:  getstatic Field xF field5850 Ljava/util/List;
 L1936:  new Zg
 L1939:  dup
 L1940:  ldc_w "data"
@@ -1143,7 +1143,7 @@ L1956:  dup
 L1957:  pop2
 L1958:  invokespecial Method Zg <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
 L1961:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L1966:  getstatic Field xF do Ljava/util/List;
+L1966:  getstatic Field xF field5850 Ljava/util/List;
 L1969:  new of
 L1972:  dup
 L1973:  ldc_w "swm1"
@@ -1163,7 +1163,7 @@ L1994:  dup
 L1995:  pop2
 L1996:  invokespecial Method of <init> [_24]
 L1999:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L2004:  getstatic Field xF do Ljava/util/List;
+L2004:  getstatic Field xF field5850 Ljava/util/List;
 L2007:  new of
 L2010:  dup
 L2011:  ldc_w "swm2"
@@ -1183,7 +1183,7 @@ L2032:  dup
 L2033:  pop2
 L2034:  invokespecial Method of <init> [_24]
 L2037:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L2042:  getstatic Field xF do Ljava/util/List;
+L2042:  getstatic Field xF field5850 Ljava/util/List;
 L2045:  new Je
 L2048:  dup
 L2049:  ldc_w "rs1"
@@ -1203,7 +1203,7 @@ L2070:  dup
 L2071:  pop2
 L2072:  invokespecial Method Je <init> [_24]
 L2075:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L2080:  getstatic Field xF do Ljava/util/List;
+L2080:  getstatic Field xF field5850 Ljava/util/List;
 L2083:  new Je
 L2086:  dup
 L2087:  ldc_w "rs2"
@@ -1223,7 +1223,7 @@ L2108:  dup
 L2109:  pop2
 L2110:  invokespecial Method Je <init> [_24]
 L2113:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L2118:  getstatic Field xF do Ljava/util/List;
+L2118:  getstatic Field xF field5850 Ljava/util/List;
 L2121:  new Je
 L2124:  dup
 L2125:  ldc_w "rs3"
@@ -1243,7 +1243,7 @@ L2147:  dup
 L2148:  pop2
 L2149:  invokespecial Method Je <init> [_24]
 L2152:  invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L2157:  getstatic Field xF do Ljava/util/List;
+L2157:  getstatic Field xF field5850 Ljava/util/List;
 L2160:  new uD
 L2163:  dup
 L2164:  ldc_w "cdp"
@@ -1267,7 +1267,7 @@ L2194:  new java/util/HashSet
 L2197:  dup
 L2198:  invokespecial Method java/util/HashSet <init> ()V
 L2201:  astore_0
-L2202:  getstatic Field xF do Ljava/util/List;
+L2202:  getstatic Field xF field5850 Ljava/util/List;
 L2205:  invokeinterface InterfaceMethod java/util/List iterator ()Ljava/util/Iterator; 1
 L2210:  astore_1
 L2211:  pop
@@ -1295,7 +1295,7 @@ L2242:  checkcast Uf
 L2245:  astore_2
 L2246:  aload_0
 L2247:  aload_2
-L2248:  getfield Field Uf null Ljava/lang/String;
+L2248:  getfield Field Uf field1348 Ljava/lang/String;
 L2251:  invokevirtual Method java/util/HashSet add (Ljava/lang/Object;)Z
 L2254:  ifne L2227
 L2257:  new java/lang/RuntimeException
@@ -1313,9 +1313,9 @@ L2273:
     .end code
 .end method
 
-.method public static break : (Ljava/lang/String;)LUf;
+.method public static method5824 : (Ljava/lang/String;)LUf;
     .code stack 2 locals 3
-L0:     getstatic Field xF do Ljava/util/List;
+L0:     getstatic Field xF field5850 Ljava/util/List;
 L3:     invokeinterface InterfaceMethod java/util/List iterator ()Ljava/util/Iterator; 1
 L8:     astore_1
 L9:     aload_1
@@ -1326,7 +1326,7 @@ L19:    invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Obj
 L24:    checkcast Uf
 L27:    dup
 L28:    astore_2
-L29:    getfield Field Uf null Ljava/lang/String;
+L29:    getfield Field Uf field1348 Ljava/lang/String;
 L32:    aload_0
 L33:    invokevirtual Method java/lang/String equals (Ljava/lang/Object;)Z
 L36:    ifeq L9

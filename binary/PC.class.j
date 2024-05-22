@@ -1,17 +1,17 @@
 .version 49 0
 .class public final super PC
 .super java/lang/Object
-.field private static "enum" Ljava/util/HashMap;
-.field private static do Ljava/util/HashMap;
+.field private static field2048 Ljava/util/HashMap;
+.field private static field2049 Ljava/util/HashMap;
 
-.method public static else : (I)[F
+.method public static method1029 : (I)[F
     .code stack 8 locals 3
-L0:     getstatic Field PC do Ljava/util/HashMap;
+L0:     getstatic Field PC field2049 Ljava/util/HashMap;
 L3:     iload_0
 L4:     invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L7:     invokevirtual Method java/util/HashMap containsKey (Ljava/lang/Object;)Z
 L10:    ifeq L28
-L13:    getstatic Field PC do Ljava/util/HashMap;
+L13:    getstatic Field PC field2049 Ljava/util/HashMap;
 L16:    iload_0
 L17:    invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L20:    invokevirtual Method java/util/HashMap get (Ljava/lang/Object;)Ljava/lang/Object;
@@ -57,7 +57,7 @@ L73:    fastore
 L74:    iload_2
 L75:    goto L46
 L78:    athrow
-L79:    getstatic Field PC do Ljava/util/HashMap;
+L79:    getstatic Field PC field2049 Ljava/util/HashMap;
 L82:    iload_0
 L83:    invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L86:    aload_1
@@ -75,11 +75,11 @@ L93:
 L0:     new java/util/HashMap
 L3:     dup
 L4:     invokespecial Method java/util/HashMap <init> ()V
-L7:     putstatic Field PC do Ljava/util/HashMap;
+L7:     putstatic Field PC field2049 Ljava/util/HashMap;
 L10:    new java/util/HashMap
 L13:    dup
 L14:    invokespecial Method java/util/HashMap <init> ()V
-L17:    putstatic Field PC "enum" Ljava/util/HashMap;
+L17:    putstatic Field PC field2048 Ljava/util/HashMap;
 L20:    return
 L21:    
     .end code
@@ -94,14 +94,14 @@ L5:
     .end code
 .end method
 
-.method public static break : (I)[F
+.method public static method1030 : (I)[F
     .code stack 8 locals 3
-L0:     getstatic Field PC "enum" Ljava/util/HashMap;
+L0:     getstatic Field PC field2048 Ljava/util/HashMap;
 L3:     iload_0
 L4:     invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L7:     invokevirtual Method java/util/HashMap containsKey (Ljava/lang/Object;)Z
 L10:    ifeq L28
-L13:    getstatic Field PC "enum" Ljava/util/HashMap;
+L13:    getstatic Field PC field2048 Ljava/util/HashMap;
 L16:    iload_0
 L17:    invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L20:    invokevirtual Method java/util/HashMap get (Ljava/lang/Object;)Ljava/lang/Object;
@@ -147,7 +147,7 @@ L73:    fastore
 L74:    iload_2
 L75:    goto L46
 L78:    athrow
-L79:    getstatic Field PC "enum" Ljava/util/HashMap;
+L79:    getstatic Field PC field2048 Ljava/util/HashMap;
 L82:    iload_0
 L83:    invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L86:    aload_1

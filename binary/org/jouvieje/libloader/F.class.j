@@ -2,7 +2,7 @@
 .class final super org/jouvieje/libloader/F
 .super java/lang/Object
 .implements java/security/PrivilegedAction
-.field private final do Ljava/io/File; .fieldattributes
+.field private final field2432 Ljava/io/File; .fieldattributes
     .synthetic
 .end fieldattributes
 
@@ -12,7 +12,7 @@ L0:     aload_1
 L1:     aload_0
 L2:     dup_x1
 L3:     invokespecial Method java/lang/Object <init> ()V
-L6:     putfield Field org/jouvieje/libloader/F do Ljava/io/File;
+L6:     putfield Field org/jouvieje/libloader/F field2432 Ljava/io/File;
 L9:     return
 L10:    
     .end code
@@ -23,7 +23,7 @@ L10:
 L0:     new java/lang/Boolean
 L3:     dup
 L4:     aload_0
-L5:     getfield Field org/jouvieje/libloader/F do Ljava/io/File;
+L5:     getfield Field org/jouvieje/libloader/F field2432 Ljava/io/File;
 L8:     invokevirtual Method java/io/File exists ()Z
 L11:    invokespecial Method java/lang/Boolean <init> (Z)V
 L14:    areturn

@@ -1,53 +1,53 @@
 .version 49 0
 .class public final super org/lwjgl/input/K
 .super java/lang/Object
-.field private null Z
+.field private field2562 Z
 .field public static final this I = 2
-.field public static final char I = 1
-.field public static final else I = 4
-.field private "enum" I
-.field private final do [Lorg/lwjgl/input/F;
+.field public static final field2563 I = 1
+.field public static final field2564 I = 4
+.field private field2565 I
+.field private final field2566 [Lorg/lwjgl/input/F;
 
-.method protected goto : ()V
+.method protected method1928 : ()V
     .code stack 6 locals 1
 L0:     aload_0
 L1:     dup
 L2:     dup_x1
-L3:     invokespecial Method org/lwjgl/input/K break ()V
+L3:     invokespecial Method org/lwjgl/input/K method1938 ()V
 L6:     dup
-L7:     getfield Field org/lwjgl/input/K "enum" I
+L7:     getfield Field org/lwjgl/input/K field2565 I
 L10:    iconst_1
 L11:    dup
 L12:    dup
 L13:    pop2
 L14:    iadd
 L15:    dup_x1
-L16:    putfield Field org/lwjgl/input/K "enum" I
+L16:    putfield Field org/lwjgl/input/K field2565 I
 L19:    aload_0
-L20:    getfield Field org/lwjgl/input/K do [Lorg/lwjgl/input/F;
+L20:    getfield Field org/lwjgl/input/K field2566 [Lorg/lwjgl/input/F;
 L23:    arraylength
 L24:    irem
-L25:    putfield Field org/lwjgl/input/K "enum" I
+L25:    putfield Field org/lwjgl/input/K field2565 I
 L28:    return
 L29:    
     .end code
 .end method
 
-.method public static do : ()I
+.method public static method1929 : ()I
     .code stack 3 locals 2
-L0:     getstatic Field org/lwjgl/input/D do Ljava/lang/Object;
+L0:     getstatic Field org/lwjgl/input/D field2554 Ljava/lang/Object;
 L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L32 using L34
-L6:     invokestatic Method org/lwjgl/input/k const ()Z
+L6:     invokestatic Method org/lwjgl/input/k method2028 ()Z
 L9:     ifne L22
 L12:    new java/lang/IllegalStateException
 L15:    dup
 L16:    ldc "Mouse must be created."
 L18:    invokespecial Method java/lang/IllegalStateException <init> (Ljava/lang/String;)V
 L21:    athrow
-L22:    invokestatic Method org/lwjgl/input/k else ()Lorg/lwjgl/opengl/i;
+L22:    invokestatic Method org/lwjgl/input/k method2029 ()Lorg/lwjgl/opengl/i;
 L25:    invokeinterface InterfaceMethod org/lwjgl/opengl/i try ()I 1
 L30:    aload_0
 L31:    monitorexit
@@ -60,57 +60,57 @@ L36:    monitorexit
 L37:    aload_1
 L38:    athrow
 L39:    
-        .attribute StackMap b'\x00\x03\x00\x16\x00\x01\x07\x00\x04\x00\x00\x00\x21\x00\x00\x00\x01\x07\x00\x39\x00\x22\x00\x01\x07\x00\x04\x00\x01\x07\x00\x39'
+        .attribute StackMap b'\x00\x03\x00\x16\x00\x01\x07\x00\x04\x00\x00\x00\x21\x00\x00\x00\x01\x07\x00\x3C\x00\x22\x00\x01\x07\x00\x04\x00\x01\x07\x00\x3C'
     .end code
 .end method
 
-.method for : ()Ljava/lang/Object;
+.method method1930 : ()Ljava/lang/Object;
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     invokespecial Method org/lwjgl/input/K break ()V
-L5:     getfield Field org/lwjgl/input/K do [Lorg/lwjgl/input/F;
+L2:     invokespecial Method org/lwjgl/input/K method1938 ()V
+L5:     getfield Field org/lwjgl/input/K field2566 [Lorg/lwjgl/input/F;
 L8:     aload_0
-L9:     getfield Field org/lwjgl/input/K "enum" I
+L9:     getfield Field org/lwjgl/input/K field2565 I
 L12:    aaload
-L13:    getfield Field org/lwjgl/input/F else Ljava/lang/Object;
+L13:    getfield Field org/lwjgl/input/F field2555 Ljava/lang/Object;
 L16:    areturn
 L17:    
     .end code
 .end method
 
-.method protected catch : ()V
+.method protected method1931 : ()V
     .code stack 5 locals 1
 L0:     aload_0
 L1:     dup
-L2:     invokespecial Method org/lwjgl/input/K break ()V
-L5:     getfield Field org/lwjgl/input/K do [Lorg/lwjgl/input/F;
+L2:     invokespecial Method org/lwjgl/input/K method1938 ()V
+L5:     getfield Field org/lwjgl/input/K field2566 [Lorg/lwjgl/input/F;
 L8:     aload_0
-L9:     getfield Field org/lwjgl/input/K "enum" I
+L9:     getfield Field org/lwjgl/input/K field2565 I
 L12:    aaload
 L13:    invokestatic Method java/lang/System currentTimeMillis ()J
 L16:    aload_0
 L17:    dup
-L18:    getfield Field org/lwjgl/input/K do [Lorg/lwjgl/input/F;
+L18:    getfield Field org/lwjgl/input/K field2566 [Lorg/lwjgl/input/F;
 L21:    swap
-L22:    getfield Field org/lwjgl/input/K "enum" I
+L22:    getfield Field org/lwjgl/input/K field2565 I
 L25:    aaload
-L26:    getfield Field org/lwjgl/input/F do J
+L26:    getfield Field org/lwjgl/input/F field2557 J
 L29:    ladd
-L30:    putfield Field org/lwjgl/input/F "enum" J
+L30:    putfield Field org/lwjgl/input/F field2556 J
 L33:    return
 L34:    
     .end code
 .end method
 
-.method public float : ()V
+.method public method1932 : ()V
     .code stack 4 locals 7
-L0:     getstatic Field org/lwjgl/input/D do Ljava/lang/Object;
+L0:     getstatic Field org/lwjgl/input/D field2554 Ljava/lang/Object;
 L3:     dup
 L4:     astore_1
 L5:     monitorenter
 L6:     aload_0
-L7:     getfield Field org/lwjgl/input/K null Z
+L7:     getfield Field org/lwjgl/input/K field2562 Z
 L10:    ifeq L17
 L13:    aload_1
 L14:    monitorexit
@@ -123,7 +123,7 @@ L21:    if_acmpne L35
         .catch [0] from L6 to L15 using L92
         .catch [0] from L17 to L33 using L92
 L24:    aconst_null
-L25:    invokestatic Method org/lwjgl/input/k break (Lorg/lwjgl/input/K;)Lorg/lwjgl/input/K;
+L25:    invokestatic Method org/lwjgl/input/k method2017 (Lorg/lwjgl/input/K;)Lorg/lwjgl/input/K;
 L28:    pop
 L29:    aload_0
 L30:    goto L36
@@ -131,7 +131,7 @@ L33:    athrow
         .catch [0] from L34 to L91 using L92
 L34:    astore_2
 L35:    aload_0
-L36:    getfield Field org/lwjgl/input/K do [Lorg/lwjgl/input/F;
+L36:    getfield Field org/lwjgl/input/K field2566 [Lorg/lwjgl/input/F;
 L39:    dup
 L40:    astore_2
 L41:    arraylength
@@ -149,10 +149,10 @@ L55:    iload 4
 L57:    iinc 4 1
 L60:    aaload
 L61:    astore 5
-L63:    invokestatic Method org/lwjgl/input/k else ()Lorg/lwjgl/opengl/i;
+L63:    invokestatic Method org/lwjgl/input/k method2029 ()Lorg/lwjgl/opengl/i;
 L66:    aload 5
-L68:    getfield Field org/lwjgl/input/F else Ljava/lang/Object;
-L71:    invokeinterface InterfaceMethod org/lwjgl/opengl/i break (Ljava/lang/Object;)V 2
+L68:    getfield Field org/lwjgl/input/F field2555 Ljava/lang/Object;
+L71:    invokeinterface InterfaceMethod org/lwjgl/opengl/i method4772 (Ljava/lang/Object;)V 2
 L76:    iload 4
 L78:    goto L50
 L81:    aload_0
@@ -160,7 +160,7 @@ L82:    iconst_1
 L83:    dup
 L84:    dup
 L85:    pop2
-L86:    putfield Field org/lwjgl/input/K null Z
+L86:    putfield Field org/lwjgl/input/K field2562 Z
 L89:    aload_1
 L90:    monitorexit
 L91:    return
@@ -172,11 +172,11 @@ L96:    aload 6
 L98:    athrow
 L99:    athrow
 L100:   
-        .attribute StackMap b'\x00\x0A\x00\x10\x00\x00\x00\x01\x07\x00\x39\x00\x11\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00\x00\x21\x00\x00\x00\x01\x07\x00\x39\x00\x22\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x4C\x00\x23\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00\x00\x24\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x02\x00\x32\x00\x05\x07\x00\x02\x07\x00\x04\x07\x00\x56\x01\x01\x00\x01\x01\x00\x51\x00\x05\x07\x00\x02\x07\x00\x04\x07\x00\x56\x01\x01\x00\x00\x00\x5C\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x39\x00\x63\x00\x00\x00\x01\x07\x00\x39'
+        .attribute StackMap b'\x00\x0A\x00\x10\x00\x00\x00\x01\x07\x00\x3C\x00\x11\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00\x00\x21\x00\x00\x00\x01\x07\x00\x3C\x00\x22\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x52\x00\x23\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00\x00\x24\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x02\x00\x32\x00\x05\x07\x00\x02\x07\x00\x04\x07\x00\x5D\x01\x01\x00\x01\x01\x00\x51\x00\x05\x07\x00\x02\x07\x00\x04\x07\x00\x5D\x01\x01\x00\x00\x00\x5C\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x3C\x00\x63\x00\x00\x00\x01\x07\x00\x3C'
     .end code
 .end method
 
-.method private static break : (IIIIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)[Lorg/lwjgl/input/F;
+.method private static method1933 : (IIIIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)[Lorg/lwjgl/input/F;
     .code stack 11 locals 15
 L0:     aload 5
 L2:     invokevirtual Method java/nio/IntBuffer remaining ()I
@@ -187,7 +187,7 @@ L11:    iload_1
 L12:    iload 4
 L14:    aload 5
 L16:    aload 7
-L18:    invokestatic Method org/lwjgl/input/K else (IIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V
+L18:    invokestatic Method org/lwjgl/input/K method1934 (IIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V
 L21:    invokestatic Method org/lwjgl/LWJGLUtil getPlatform ()I
 L24:    tableswitch 1
             L249
@@ -256,7 +256,7 @@ L142:   iinc 10 1
 L145:   iload 10
 L147:   goto L86
 L150:   athrow
-L151:   invokestatic Method org/lwjgl/input/k else ()Lorg/lwjgl/opengl/i;
+L151:   invokestatic Method org/lwjgl/input/k method2029 ()Lorg/lwjgl/opengl/i;
 L154:   iload_0
 L155:   iload_1
 L156:   iload_2
@@ -267,7 +267,7 @@ L160:   dup
 L161:   pop2
 L162:   aload 7
 L164:   aconst_null
-L165:   invokeinterface InterfaceMethod org/lwjgl/opengl/i break (IIIIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/lang/Object; 8
+L165:   invokeinterface InterfaceMethod org/lwjgl/opengl/i method4713 (IIIIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/lang/Object; 8
 L170:   astore 10
 L172:   aload 6
 L174:   ifnull L189
@@ -313,7 +313,7 @@ L243:   nop
 L244:   nop
 L245:   athrow
 L246:   goto L252
-L249:   invokestatic Method org/lwjgl/input/k else ()Lorg/lwjgl/opengl/i;
+L249:   invokestatic Method org/lwjgl/input/k method2029 ()Lorg/lwjgl/opengl/i;
 L252:   iconst_0
 L253:   ifne L246
 L256:   iload_0
@@ -323,7 +323,7 @@ L259:   iload_3
 L260:   iload 4
 L262:   aload 7
 L264:   aload 6
-L266:   invokeinterface InterfaceMethod org/lwjgl/opengl/i break (IIIIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/lang/Object; 8
+L266:   invokeinterface InterfaceMethod org/lwjgl/opengl/i method4713 (IIIIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)Ljava/lang/Object; 8
 L271:   astore 8
 L273:   new org/lwjgl/input/F
 L276:   dup
@@ -358,12 +358,12 @@ L319:   athrow
 L320:   aload 5
 L322:   areturn
 L323:   
-        .attribute StackMap b'\x00\x0F\x00\x34\x00\x08\x01\x01\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x07\x00\x5C\x00\x00\x00\x45\x00\x09\x01\x01\x01\x01\x01\x07\x00\x56\x07\x00\x5C\x07\x00\x5C\x01\x00\x01\x01\x00\x56\x00\x0B\x01\x01\x01\x01\x01\x07\x00\x56\x07\x00\x5C\x07\x00\x5C\x01\x01\x01\x00\x01\x01\x00\x8E\x00\x0C\x01\x01\x01\x01\x01\x07\x00\x56\x07\x00\x5C\x07\x00\x5C\x01\x01\x01\x01\x00\x00\x00\x96\x00\x00\x00\x01\x07\x00\x39\x00\x97\x00\x0B\x01\x01\x01\x01\x01\x07\x00\x56\x07\x00\x5C\x07\x00\x5C\x01\x01\x01\x00\x00\x00\xBC\x00\x00\x00\x01\x07\x00\x39\x00\xBD\x00\x0B\x01\x01\x01\x01\x01\x07\x00\x56\x07\x00\x5C\x07\x00\x5C\x01\x01\x07\x00\x04\x00\x00\x00\xBE\x00\x0B\x01\x01\x01\x01\x01\x07\x00\x56\x07\x00\x5C\x07\x00\x5C\x01\x01\x07\x00\x04\x00\x01\x04\x00\xF3\x00\x00\x00\x01\x07\x00\x39\x00\xF6\x00\x08\x01\x01\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x07\x00\x5C\x00\x01\x07\x00\x34\x00\xF9\x00\x08\x01\x01\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x07\x00\x5C\x00\x00\x00\xFC\x00\x08\x01\x01\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x07\x00\x5C\x00\x01\x07\x00\x34\x01\x36\x00\x08\x01\x01\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x07\x00\x5C\x00\x00\x01\x40\x00\x09\x01\x01\x01\x01\x01\x07\x00\x56\x07\x00\x5C\x07\x00\x5C\x01\x00\x00'
+        .attribute StackMap b'\x00\x0F\x00\x34\x00\x08\x01\x01\x01\x01\x01\x07\x00\x65\x07\x00\x65\x07\x00\x65\x00\x00\x00\x45\x00\x09\x01\x01\x01\x01\x01\x07\x00\x5D\x07\x00\x65\x07\x00\x65\x01\x00\x01\x01\x00\x56\x00\x0B\x01\x01\x01\x01\x01\x07\x00\x5D\x07\x00\x65\x07\x00\x65\x01\x01\x01\x00\x01\x01\x00\x8E\x00\x0C\x01\x01\x01\x01\x01\x07\x00\x5D\x07\x00\x65\x07\x00\x65\x01\x01\x01\x01\x00\x00\x00\x96\x00\x00\x00\x01\x07\x00\x3C\x00\x97\x00\x0B\x01\x01\x01\x01\x01\x07\x00\x5D\x07\x00\x65\x07\x00\x65\x01\x01\x01\x00\x00\x00\xBC\x00\x00\x00\x01\x07\x00\x3C\x00\xBD\x00\x0B\x01\x01\x01\x01\x01\x07\x00\x5D\x07\x00\x65\x07\x00\x65\x01\x01\x07\x00\x04\x00\x00\x00\xBE\x00\x0B\x01\x01\x01\x01\x01\x07\x00\x5D\x07\x00\x65\x07\x00\x65\x01\x01\x07\x00\x04\x00\x01\x04\x00\xF3\x00\x00\x00\x01\x07\x00\x3C\x00\xF6\x00\x08\x01\x01\x01\x01\x01\x07\x00\x65\x07\x00\x65\x07\x00\x65\x00\x01\x07\x00\x37\x00\xF9\x00\x08\x01\x01\x01\x01\x01\x07\x00\x65\x07\x00\x65\x07\x00\x65\x00\x00\x00\xFC\x00\x08\x01\x01\x01\x01\x01\x07\x00\x65\x07\x00\x65\x07\x00\x65\x00\x01\x07\x00\x37\x01\x36\x00\x08\x01\x01\x01\x01\x01\x07\x00\x65\x07\x00\x65\x07\x00\x65\x00\x00\x01\x40\x00\x09\x01\x01\x01\x01\x01\x07\x00\x5D\x07\x00\x65\x07\x00\x65\x01\x00\x00'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method private static else : (IIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V
+.method private static method1934 : (IIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V
     .code stack 5 locals 7
 L0:     iconst_0
 L1:     iconst_1
@@ -385,32 +385,32 @@ L21:    iload 6
 L23:    iinc 5 1
 L26:    aload_3
 L27:    aload 4
-L29:    invokestatic Method org/lwjgl/input/K break (IIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V
+L29:    invokestatic Method org/lwjgl/input/K method1939 (IIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V
 L32:    iload 5
 L34:    goto L7
 L37:    athrow
 L38:    return
 L39:    
-        .attribute StackMap b'\x00\x03\x00\x07\x00\x06\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x01\x00\x01\x01\x00\x25\x00\x00\x00\x01\x07\x00\x39\x00\x26\x00\x06\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x01\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x07\x00\x06\x01\x01\x01\x07\x00\x65\x07\x00\x65\x01\x00\x01\x01\x00\x25\x00\x00\x00\x01\x07\x00\x3C\x00\x26\x00\x06\x01\x01\x01\x07\x00\x65\x07\x00\x65\x01\x00\x00'
     .end code
 .end method
 
-.method public static short : ()I
+.method public static method1935 : ()I
     .code stack 3 locals 2
-L0:     getstatic Field org/lwjgl/input/D do Ljava/lang/Object;
+L0:     getstatic Field org/lwjgl/input/D field2554 Ljava/lang/Object;
 L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L32 using L34
-L6:     invokestatic Method org/lwjgl/input/k const ()Z
+L6:     invokestatic Method org/lwjgl/input/k method2028 ()Z
 L9:     ifne L22
 L12:    new java/lang/IllegalStateException
 L15:    dup
 L16:    ldc "Mouse must be created."
 L18:    invokespecial Method java/lang/IllegalStateException <init> (Ljava/lang/String;)V
 L21:    athrow
-L22:    invokestatic Method org/lwjgl/input/k else ()Lorg/lwjgl/opengl/i;
-L25:    invokeinterface InterfaceMethod org/lwjgl/opengl/i const ()I 1
+L22:    invokestatic Method org/lwjgl/input/k method2029 ()Lorg/lwjgl/opengl/i;
+L25:    invokeinterface InterfaceMethod org/lwjgl/opengl/i method4763 ()I 1
 L30:    aload_0
 L31:    monitorexit
 L32:    ireturn
@@ -422,27 +422,27 @@ L36:    monitorexit
 L37:    aload_1
 L38:    athrow
 L39:    
-        .attribute StackMap b'\x00\x03\x00\x16\x00\x01\x07\x00\x04\x00\x00\x00\x21\x00\x00\x00\x01\x07\x00\x39\x00\x22\x00\x01\x07\x00\x04\x00\x01\x07\x00\x39'
+        .attribute StackMap b'\x00\x03\x00\x16\x00\x01\x07\x00\x04\x00\x00\x00\x21\x00\x00\x00\x01\x07\x00\x3C\x00\x22\x00\x01\x07\x00\x04\x00\x01\x07\x00\x3C'
     .end code
 .end method
 
-.method public static const : ()I
+.method public static method1936 : ()I
     .code stack 2 locals 2
-L0:     getstatic Field org/lwjgl/input/D do Ljava/lang/Object;
+L0:     getstatic Field org/lwjgl/input/D field2554 Ljava/lang/Object;
 L3:     dup
 L4:     astore_0
 L5:     monitorenter
         .catch [0] from L6 to L22 using L36
-L6:     invokestatic Method org/lwjgl/input/k else ()Lorg/lwjgl/opengl/i;
+L6:     invokestatic Method org/lwjgl/input/k method2029 ()Lorg/lwjgl/opengl/i;
 L9:     ifnull L24
-L12:    invokestatic Method org/lwjgl/input/k else ()Lorg/lwjgl/opengl/i;
+L12:    invokestatic Method org/lwjgl/input/k method2029 ()Lorg/lwjgl/opengl/i;
 L15:    invokeinterface InterfaceMethod org/lwjgl/opengl/i new ()I 1
 L20:    aload_0
 L21:    monitorexit
 L22:    ireturn
 L23:    athrow
         .catch [0] from L24 to L34 using L36
-L24:    invokestatic Method org/lwjgl/input/D break ()Lorg/lwjgl/opengl/i;
+L24:    invokestatic Method org/lwjgl/input/D method1911 ()Lorg/lwjgl/opengl/i;
 L27:    invokeinterface InterfaceMethod org/lwjgl/opengl/i new ()I 1
 L32:    aload_0
 L33:    monitorexit
@@ -455,16 +455,16 @@ L38:    monitorexit
 L39:    aload_1
 L40:    athrow
 L41:    
-        .attribute StackMap b'\x00\x04\x00\x17\x00\x00\x00\x01\x07\x00\x39\x00\x18\x00\x01\x07\x00\x04\x00\x00\x00\x23\x00\x00\x00\x01\x07\x00\x39\x00\x24\x00\x01\x07\x00\x04\x00\x01\x07\x00\x39'
+        .attribute StackMap b'\x00\x04\x00\x17\x00\x00\x00\x01\x07\x00\x3C\x00\x18\x00\x01\x07\x00\x04\x00\x00\x00\x23\x00\x00\x00\x01\x07\x00\x3C\x00\x24\x00\x01\x07\x00\x04\x00\x01\x07\x00\x3C'
     .end code
 .end method
 
-.method protected else : ()Z
+.method protected method1937 : ()Z
     .code stack 4 locals 1
 L0:     aload_0
 L1:     dup
-L2:     invokespecial Method org/lwjgl/input/K break ()V
-L5:     getfield Field org/lwjgl/input/K do [Lorg/lwjgl/input/F;
+L2:     invokespecial Method org/lwjgl/input/K method1938 ()V
+L5:     getfield Field org/lwjgl/input/K field2566 [Lorg/lwjgl/input/F;
 L8:     arraylength
 L9:     iconst_1
 L10:    dup
@@ -473,11 +473,11 @@ L12:    pop2
 L13:    if_icmple L42
 L16:    aload_0
 L17:    dup
-L18:    getfield Field org/lwjgl/input/K do [Lorg/lwjgl/input/F;
+L18:    getfield Field org/lwjgl/input/K field2566 [Lorg/lwjgl/input/F;
 L21:    swap
-L22:    getfield Field org/lwjgl/input/K "enum" I
+L22:    getfield Field org/lwjgl/input/K field2565 I
 L25:    aaload
-L26:    getfield Field org/lwjgl/input/F "enum" J
+L26:    getfield Field org/lwjgl/input/F field2556 J
 L29:    invokestatic Method java/lang/System currentTimeMillis ()J
 L32:    lcmp
 L33:    ifge L42
@@ -493,14 +493,14 @@ L44:    dup
 L45:    pop2
 L46:    ireturn
 L47:    
-        .attribute StackMap b'\x00\x02\x00\x29\x00\x00\x00\x01\x07\x00\x39\x00\x2A\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x29\x00\x00\x00\x01\x07\x00\x3C\x00\x2A\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method private break : ()V
+.method private method1938 : ()V
     .code stack 3 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/K null Z
+L1:     getfield Field org/lwjgl/input/K field2562 Z
 L4:     ifeq L17
 L7:     new java/lang/IllegalStateException
 L10:    dup
@@ -513,7 +513,7 @@ L18:
     .end code
 .end method
 
-.method private static break : (IIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V
+.method private static method1939 : (IIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)V
     .code stack 5 locals 12
 L0:     iconst_0
 L1:     iconst_1
@@ -594,7 +594,7 @@ L119:   goto L7
 L122:   athrow
 L123:   return
 L124:   
-        .attribute StackMap b'\x00\x06\x00\x07\x00\x06\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x01\x00\x01\x01\x00\x2E\x00\x09\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x01\x01\x01\x01\x00\x01\x01\x00\x71\x00\x00\x00\x01\x07\x00\x39\x00\x72\x00\x09\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x01\x01\x01\x01\x00\x00\x00\x7A\x00\x00\x00\x01\x07\x00\x39\x00\x7B\x00\x06\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x01\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x07\x00\x06\x01\x01\x01\x07\x00\x65\x07\x00\x65\x01\x00\x01\x01\x00\x2E\x00\x09\x01\x01\x01\x07\x00\x65\x07\x00\x65\x01\x01\x01\x01\x00\x01\x01\x00\x71\x00\x00\x00\x01\x07\x00\x3C\x00\x72\x00\x09\x01\x01\x01\x07\x00\x65\x07\x00\x65\x01\x01\x01\x01\x00\x00\x00\x7A\x00\x00\x00\x01\x07\x00\x3C\x00\x7B\x00\x06\x01\x01\x01\x07\x00\x65\x07\x00\x65\x01\x00\x00'
     .end code
 .end method
 
@@ -602,12 +602,12 @@ L124:
     .code stack 9 locals 10
 L0:     aload_0
 L1:     invokespecial Method java/lang/Object <init> ()V
-L4:     getstatic Field org/lwjgl/input/D do Ljava/lang/Object;
+L4:     getstatic Field org/lwjgl/input/D field2554 Ljava/lang/Object;
 L7:     dup
 L8:     astore 8
 L10:    monitorenter
         .catch [0] from L11 to L174 using L176
-L11:    invokestatic Method org/lwjgl/input/K const ()I
+L11:    invokestatic Method org/lwjgl/input/K method1936 ()I
 L14:    iconst_1
 L15:    dup
 L16:    dup
@@ -625,15 +625,15 @@ L35:    iload_2
 L36:    imul
 L37:    iload 5
 L39:    imul
-L40:    invokestatic Method org/lwjgl/G break (Ljava/nio/IntBuffer;I)Ljava/nio/IntBuffer;
+L40:    invokestatic Method org/lwjgl/G method1831 (Ljava/nio/IntBuffer;I)Ljava/nio/IntBuffer;
 L43:    astore 6
 L45:    aload 7
 L47:    ifnull L59
 L50:    aload 7
 L52:    iload 5
-L54:    invokestatic Method org/lwjgl/G break (Ljava/nio/IntBuffer;I)Ljava/nio/IntBuffer;
+L54:    invokestatic Method org/lwjgl/G method1831 (Ljava/nio/IntBuffer;I)Ljava/nio/IntBuffer;
 L57:    astore 7
-L59:    invokestatic Method org/lwjgl/input/k const ()Z
+L59:    invokestatic Method org/lwjgl/input/k method2028 ()Z
 L62:    ifne L75
 L65:    new java/lang/IllegalStateException
 L68:    dup
@@ -673,7 +673,7 @@ L132:   dup
 L133:   ldc "yHotspot > height || yHotspot < 0"
 L135:   invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/lang/String;)V
 L138:   athrow
-L139:   invokestatic Method org/lwjgl/Sys short ()V
+L139:   invokestatic Method org/lwjgl/Sys method1895 ()V
 L142:   iload_2
 L143:   iconst_1
 L144:   dup
@@ -692,8 +692,8 @@ L159:   iload 4
 L161:   iload 5
 L163:   aload 6
 L165:   aload 7
-L167:   invokestatic Method org/lwjgl/input/K break (IIIIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)[Lorg/lwjgl/input/F;
-L170:   putfield Field org/lwjgl/input/K do [Lorg/lwjgl/input/F;
+L167:   invokestatic Method org/lwjgl/input/K method1933 (IIIIILjava/nio/IntBuffer;Ljava/nio/IntBuffer;)[Lorg/lwjgl/input/F;
+L170:   putfield Field org/lwjgl/input/K field2566 [Lorg/lwjgl/input/F;
 L173:   monitorexit
 L174:   return
 L175:   athrow
@@ -705,7 +705,7 @@ L181:   aload 9
 L183:   athrow
 L184:   athrow
 L185:   
-        .attribute StackMap b'\x00\x0B\x00\x20\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x07\x00\x04\x00\x00\x00\x3B\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x07\x00\x04\x00\x00\x00\x4B\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x07\x00\x04\x00\x00\x00\x63\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x07\x00\x04\x00\x00\x00\x6C\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x07\x00\x04\x00\x00\x00\x76\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x07\x00\x04\x00\x00\x00\x81\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x07\x00\x04\x00\x00\x00\x8B\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x07\x00\x04\x00\x00\x00\xAF\x00\x00\x00\x01\x07\x00\x39\x00\xB0\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x5C\x07\x00\x5C\x07\x00\x04\x00\x01\x07\x00\x39\x00\xB8\x00\x00\x00\x01\x07\x00\x39'
+        .attribute StackMap b'\x00\x0B\x00\x20\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x65\x07\x00\x65\x07\x00\x04\x00\x00\x00\x3B\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x65\x07\x00\x65\x07\x00\x04\x00\x00\x00\x4B\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x65\x07\x00\x65\x07\x00\x04\x00\x00\x00\x63\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x65\x07\x00\x65\x07\x00\x04\x00\x00\x00\x6C\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x65\x07\x00\x65\x07\x00\x04\x00\x00\x00\x76\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x65\x07\x00\x65\x07\x00\x04\x00\x00\x00\x81\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x65\x07\x00\x65\x07\x00\x04\x00\x00\x00\x8B\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x65\x07\x00\x65\x07\x00\x04\x00\x00\x00\xAF\x00\x00\x00\x01\x07\x00\x3C\x00\xB0\x00\x09\x07\x00\x02\x01\x01\x01\x01\x01\x07\x00\x65\x07\x00\x65\x07\x00\x04\x00\x01\x07\x00\x3C\x00\xB8\x00\x00\x00\x01\x07\x00\x3C'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method

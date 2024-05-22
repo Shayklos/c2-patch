@@ -2,7 +2,7 @@
 .class public final super Ce
 .super eb
 
-.method public const : (LRg;)V
+.method public method762 : (LRg;)V
     .code stack 5 locals 2
 L0:     aload_1
 L1:     iconst_m1
@@ -13,13 +13,13 @@ L5:     bipush 43
 L7:     iconst_1
 L8:     dup
 L9:     pop2
-L10:    invokevirtual Method Rg break (II)V
+L10:    invokevirtual Method Rg method236 (II)V
 L13:    return
 L14:    
     .end code
 .end method
 
-.method public break : (Lqd;)F
+.method public method764 : (Lqd;)F
     .code stack 1 locals 2
 L0:     ldc 3e0f
 L2:     freturn

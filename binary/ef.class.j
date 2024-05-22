@@ -2,11 +2,11 @@
 .class public final super ef
 .super Te
 
-.method public else : (LRg;)V
+.method public method1060 : (LRg;)V
     .code stack 2 locals 2
 L0:     aload_0
 L1:     aload_1
-L2:     invokespecial Method Te else (LRg;)V
+L2:     invokespecial Method Te method1060 (LRg;)V
 L5:     return
 L6:     
     .end code

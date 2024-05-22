@@ -1,24 +1,24 @@
 .version 49 0
 .class public super abstract enum fE
 .super java/lang/Enum
-.field public static final enum void LfE;
+.field public static final enum field415 LfE;
 .field public static final enum try LfE;
-.field private static final synthetic const [LfE;
+.field private static final synthetic field416 [LfE;
 .field public static final enum new LfE;
-.field public null Z
+.field public field417 Z
 .field public static final enum this LfE;
-.field public static final enum char LfE;
-.field public static final enum else LfE;
-.field public static final enum "enum" LfE;
-.field public static final enum do LfE;
+.field public static final enum field418 LfE;
+.field public static final enum field419 LfE;
+.field public static final enum field420 LfE;
+.field public static final enum field421 LfE;
 
-.method public abstract else : (F)Ljava/lang/String;
+.method public abstract method302 : (F)Ljava/lang/String;
 .end method
 
-.method public abstract break : (LRg;F)Z
+.method public abstract method303 : (LRg;F)Z
 .end method
 
-.method public abstract break : (F)Ljava/lang/String;
+.method public abstract method304 : (F)Ljava/lang/String;
 .end method
 
 .method public static <clinit> : ()V
@@ -35,7 +35,7 @@ L11:    iconst_1
 L12:    dup
 L13:    pop2
 L14:    invokespecial Method Xe <init> (Ljava/lang/String;IZ)V
-L17:    putstatic Field fE char LfE;
+L17:    putstatic Field fE field418 LfE;
 L20:    new fg
 L23:    dup
 L24:    ldc "SHORTEST_TIME"
@@ -74,7 +74,7 @@ L71:    dup
 L72:    dup
 L73:    pop2
 L74:    invokespecial Method De <init> (Ljava/lang/String;IZ)V
-L77:    putstatic Field fE "enum" LfE;
+L77:    putstatic Field fE field420 LfE;
 L80:    new FF
 L83:    dup
 L84:    ldc "MOST_LINES_CLEARED"
@@ -87,7 +87,7 @@ L91:    dup
 L92:    dup
 L93:    pop2
 L94:    invokespecial Method FF <init> (Ljava/lang/String;IZ)V
-L97:    putstatic Field fE else LfE;
+L97:    putstatic Field fE field419 LfE;
 L100:   new ke
 L103:   dup
 L104:   ldc "NONE"
@@ -100,7 +100,7 @@ L111:   iconst_1
 L112:   dup
 L113:   pop2
 L114:   invokespecial Method ke <init> (Ljava/lang/String;IZ)V
-L117:   putstatic Field fE void LfE;
+L117:   putstatic Field fE field415 LfE;
 L120:   new ie
 L123:   dup
 L124:   ldc "MOST_LINES_SENT"
@@ -113,7 +113,7 @@ L132:   dup
 L133:   dup
 L134:   pop2
 L135:   invokespecial Method ie <init> (Ljava/lang/String;IZ)V
-L138:   putstatic Field fE do LfE;
+L138:   putstatic Field fE field421 LfE;
 L141:   new Gg
 L144:   dup
 L145:   ldc "HIGHEST_BPM"
@@ -140,7 +140,7 @@ L174:   iconst_0
 L175:   iconst_1
 L176:   dup
 L177:   pop2
-L178:   getstatic Field fE char LfE;
+L178:   getstatic Field fE field418 LfE;
 L181:   aastore
 L182:   dup
 L183:   iconst_1
@@ -161,28 +161,28 @@ L201:   iconst_3
 L202:   iconst_1
 L203:   dup
 L204:   pop2
-L205:   getstatic Field fE "enum" LfE;
+L205:   getstatic Field fE field420 LfE;
 L208:   aastore
 L209:   dup
 L210:   iconst_4
 L211:   iconst_1
 L212:   dup
 L213:   pop2
-L214:   getstatic Field fE else LfE;
+L214:   getstatic Field fE field419 LfE;
 L217:   aastore
 L218:   dup
 L219:   iconst_5
 L220:   iconst_1
 L221:   dup
 L222:   pop2
-L223:   getstatic Field fE void LfE;
+L223:   getstatic Field fE field415 LfE;
 L226:   aastore
 L227:   dup
 L228:   bipush 6
 L230:   iconst_1
 L231:   dup
 L232:   pop2
-L233:   getstatic Field fE do LfE;
+L233:   getstatic Field fE field421 LfE;
 L236:   aastore
 L237:   dup
 L238:   bipush 7
@@ -191,7 +191,7 @@ L241:   dup
 L242:   pop2
 L243:   getstatic Field fE this LfE;
 L246:   aastore
-L247:   putstatic Field fE const [LfE;
+L247:   putstatic Field fE field416 [LfE;
 L250:   return
 L251:   
     .end code
@@ -199,7 +199,7 @@ L251:
 
 .method public static values : ()[LfE;
     .code stack 1 locals 0
-L0:     getstatic Field fE const [LfE;
+L0:     getstatic Field fE field416 [LfE;
 L3:     invokevirtual Method [LfE; clone ()Ljava/lang/Object;
 L6:     checkcast [LfE;
 L9:     areturn
@@ -215,7 +215,7 @@ L2:     dup_x1
 L3:     aload_1
 L4:     iload_2
 L5:     invokespecial Method java/lang/Enum <init> (Ljava/lang/String;I)V
-L8:     putfield Field fE null Z
+L8:     putfield Field fE field417 Z
 L11:    return
 L12:    
     .end code
@@ -244,7 +244,7 @@ L10:
     .end code
 .end method
 
-.method public abstract break : (LRg;)Ljava/lang/String;
+.method public abstract method305 : (LRg;)Ljava/lang/String;
 .end method
 .innerclasses
     De [0] [0] static enum

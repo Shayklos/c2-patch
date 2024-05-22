@@ -1,8 +1,8 @@
 .version 49 0
 .class public final super OA
 .super java/lang/Object
-.field public "enum" F
-.field public do F
+.field public field2024 F
+.field public field2025 F
 
 .method public <init> : ()V
     .code stack 5 locals 1
@@ -12,14 +12,14 @@ L2:     dup_x1
 L3:     fconst_0
 L4:     aload_0
 L5:     invokespecial Method java/lang/Object <init> ()V
-L8:     putfield Field OA do F
-L11:    putfield Field OA "enum" F
+L8:     putfield Field OA field2025 F
+L11:    putfield Field OA field2024 F
 L14:    return
 L15:    
     .end code
 .end method
 
-.method public else : (LOA;)Z
+.method public method986 : (LOA;)Z
     .code stack 3 locals 2
 L0:     aload_1
 L1:     ifnonnull L10
@@ -30,15 +30,15 @@ L7:     pop2
 L8:     ireturn
 L9:     athrow
 L10:    aload_0
-L11:    getfield Field OA do F
+L11:    getfield Field OA field2025 F
 L14:    aload_1
-L15:    getfield Field OA do F
+L15:    getfield Field OA field2025 F
 L18:    fcmpl
 L19:    ifne L40
 L22:    aload_0
-L23:    getfield Field OA "enum" F
+L23:    getfield Field OA field2024 F
 L26:    aload_1
-L27:    getfield Field OA "enum" F
+L27:    getfield Field OA field2024 F
 L30:    fcmpl
 L31:    ifne L40
 L34:    iconst_1
@@ -63,7 +63,7 @@ L45:
 L0:     aload_0
 L1:     aload_1
 L2:     checkcast OA
-L5:     invokevirtual Method OA else (LOA;)Z
+L5:     invokevirtual Method OA method986 (LOA;)Z
 L8:     ireturn
 L9:     athrow
 L10:    astore_1
@@ -85,23 +85,23 @@ L2:     dup_x1
 L3:     fload_1
 L4:     aload_0
 L5:     invokespecial Method java/lang/Object <init> ()V
-L8:     putfield Field OA do F
-L11:    putfield Field OA "enum" F
+L8:     putfield Field OA field2025 F
+L11:    putfield Field OA field2024 F
 L14:    return
 L15:    
     .end code
 .end method
 
-.method public final break : (LOA;)V
+.method public final method987 : (LOA;)V
     .code stack 4 locals 2
 L0:     aload_1
 L1:     aload_0
 L2:     dup_x1
 L3:     aload_1
-L4:     getfield Field OA do F
-L7:     putfield Field OA do F
-L10:    getfield Field OA "enum" F
-L13:    putfield Field OA "enum" F
+L4:     getfield Field OA field2025 F
+L7:     putfield Field OA field2025 F
+L10:    getfield Field OA field2024 F
+L13:    putfield Field OA field2024 F
 L16:    return
 L17:    
     .end code

@@ -1,8 +1,8 @@
 .version 49 0
 .class public final super me
 .super Yg
-.field private "enum" D
-.field private do D
+.field private field1256 D
+.field private field1257 D
 
 .method public <init> : (Ljava/lang/String;FLh;)V
     .code stack 4 locals 4
@@ -16,17 +16,17 @@ L8:
     .end code
 .end method
 
-.method public for : (FF)V
+.method public method588 : (FF)V
     .code stack 3 locals 3
 L0:     aload_0
 L1:     dconst_0
-L2:     putfield Field me do D
+L2:     putfield Field me field1257 D
 L5:     return
 L6:     
     .end code
 .end method
 
-.method public break : (LgB;IC)Z
+.method public method57 : (LgB;IC)Z
     .code stack 3 locals 4
 L0:     iconst_0
 L1:     iconst_1
@@ -37,14 +37,14 @@ L5:
     .end code
 .end method
 
-.method public break : (FF)V
+.method public method599 : (FF)V
     .code stack 6 locals 3
 L0:     dconst_0
 L1:     aload_0
 L2:     dup_x2
 L3:     ldc2_w 5e-2
-L6:     putfield Field me do D
-L9:     putfield Field me "enum" D
+L6:     putfield Field me field1257 D
+L9:     putfield Field me field1256 D
 L12:    return
 L13:    
     .end code
@@ -66,26 +66,26 @@ L12:
     .end code
 .end method
 
-.method public int : ()V
+.method public method26 : ()V
     .code stack 9 locals 1
 L0:     aload_0
 L1:     dup
-L2:     invokespecial Method Yg int ()V
-L5:     getfield Field me do D
+L2:     invokespecial Method Yg method26 ()V
+L5:     getfield Field me field1257 D
 L8:     dconst_0
 L9:     dcmpl
 L10:    ifeq L98
 L13:    aload_0
 L14:    dup
-L15:    getfield Field me "enum" D
-L18:    getstatic Field ib do F
+L15:    getfield Field me field1256 D
+L18:    getstatic Field ib field2312 F
 L21:    f2d
 L22:    dadd
-L23:    putfield Field me "enum" D
+L23:    putfield Field me field1256 D
 L26:    aload_0
-L27:    getfield Field me "enum" D
+L27:    getfield Field me field1256 D
 L30:    aload_0
-L31:    getfield Field me do D
+L31:    getfield Field me field1257 D
 L34:    dcmpl
 L35:    ifle L98
 L38:    aload_0
@@ -94,35 +94,35 @@ L40:    fconst_0
 L41:    aload_0
 L42:    dup_x2
 L43:    dup
-L44:    getfield Field me "enum" D
+L44:    getfield Field me field1256 D
 L47:    aload_0
-L48:    getfield Field me do D
+L48:    getfield Field me field1257 D
 L51:    dsub
-L52:    putfield Field me "enum" D
+L52:    putfield Field me field1256 D
 L55:    fconst_0
-L56:    invokevirtual Method me do (FF)V
+L56:    invokevirtual Method me method577 (FF)V
 L59:    dup
-L60:    getfield Field me do D
+L60:    getfield Field me field1257 D
 L63:    aload_0
-L64:    getfield Field me do D
+L64:    getfield Field me field1257 D
 L67:    aload_0
-L68:    getfield Field me do D
+L68:    getfield Field me field1257 D
 L71:    dmul
 L72:    dsub
-L73:    putfield Field me do D
-L76:    getfield Field me do D
+L73:    putfield Field me field1257 D
+L76:    getfield Field me field1257 D
 L79:    ldc2_w 5e-3
 L82:    dcmpg
 L83:    ifge L26
 L86:    aload_0
 L87:    dup
 L88:    ldc2_w 5e-3
-L91:    putfield Field me do D
+L91:    putfield Field me field1257 D
 L94:    goto L27
 L97:    athrow
 L98:    return
 L99:    
-        .attribute StackMap b'\x00\x04\x00\x1A\x00\x01\x07\x00\x02\x00\x00\x00\x1B\x00\x01\x07\x00\x02\x00\x01\x07\x00\x02\x00\x61\x00\x00\x00\x01\x07\x00\x28\x00\x62\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x1A\x00\x01\x07\x00\x02\x00\x00\x00\x1B\x00\x01\x07\x00\x02\x00\x01\x07\x00\x02\x00\x61\x00\x00\x00\x01\x07\x00\x2B\x00\x62\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 

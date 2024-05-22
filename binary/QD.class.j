@@ -1,32 +1,32 @@
 .version 49 0
 .class public super QD
 .super uB
-.field private float F
-.field private static final "final" Ljava/util/Map;
-.field public catch F
+.field private field1205 F
+.field private static final field1206 Ljava/util/Map;
+.field public field1207 F
 .field private false Ljava/lang/String;
-.field private class F
-.field private static final if Ljava/util/Map;
+.field private field1208 F
+.field private static final field1209 Ljava/util/Map;
 .field private static final true Ljava/awt/font/FontRenderContext;
-.field private static for Lzc;
-.field private static case Ljava/awt/Font;
-.field public byte F
-.field private "super" Ljava/nio/IntBuffer;
-.field private static final int Ljava/util/Map;
-.field private static short Ljava/awt/Font;
-.field private static final goto Ljava/util/Map;
-.field public break F
-.field private long F
-.field private static final void F = 2e0f
+.field private static field1210 Lzc;
+.field private static field1211 Ljava/awt/Font;
+.field public field1212 F
+.field private field1213 Ljava/nio/IntBuffer;
+.field private static final field1214 Ljava/util/Map;
+.field private static field1215 Ljava/awt/Font;
+.field private static final field1216 Ljava/util/Map;
+.field public field1217 F
+.field private field1218 F
+.field private static final field1219 F = 2e0f
 .field private try Z
-.field private static final const D = 2e-2
+.field private static final field1220 D = 2e-2
 .field public static new F
-.field private null Ljava/nio/IntBuffer;
+.field private field1221 Ljava/nio/IntBuffer;
 .field private this Z
-.field private static final char I = 65536
-.field private static final else Ljava/util/Map;
-.field public static "enum" F
-.field private static do Lzc;
+.field private static final field1222 I = 65536
+.field private static final field1223 Ljava/util/Map;
+.field public static field977 F
+.field private static field1224 Lzc;
 
 .method public <init> : (Ljava/lang/String;FFFFF)V
     .code stack 11 locals 7
@@ -51,7 +51,7 @@ L22:
     .end code
 .end method
 
-.method public else : (Z)V
+.method public method95 : (Z)V
     .code stack 2 locals 2
 L0:     aload_0
 L1:     iload_1
@@ -61,20 +61,20 @@ L6:
     .end code
 .end method
 
-.method public catch : ()F
+.method public method623 : ()F
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     getfield Field QD long F
+L2:     getfield Field QD field1218 F
 L5:     swap
-L6:     getfield Field QD float F
+L6:     getfield Field QD field1205 F
 L9:     fmul
 L10:    freturn
 L11:    
     .end code
 .end method
 
-.method public float : ()Ljava/lang/String;
+.method public method356 : ()Ljava/lang/String;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field QD false Ljava/lang/String;
@@ -110,11 +110,11 @@ L37:    fload_3
 L38:    aload_0
 L39:    dup_x1
 L40:    fload_2
-L41:    putfield Field QD break F
-L44:    putfield Field QD catch F
-L47:    putfield Field QD byte F
-L50:    invokevirtual Method QD break (F)V
-L53:    putfield Field QD float F
+L41:    putfield Field QD field1217 F
+L44:    putfield Field QD field1207 F
+L47:    putfield Field QD field1212 F
+L50:    invokevirtual Method QD method102 (F)V
+L53:    putfield Field QD field1205 F
 L56:    putfield Field QD this Z
 L59:    putfield Field QD try Z
 L62:    aload_1
@@ -127,11 +127,11 @@ L75:    aload_0
 L76:    aload_0
 L77:    fconst_0
 L78:    dup_x1
-L79:    putfield Field QD class F
-L82:    putfield Field QD long F
+L79:    putfield Field QD field1208 F
+L82:    putfield Field QD field1218 F
 L85:    return
 L86:    athrow
-L87:    getstatic Field QD case Ljava/awt/Font;
+L87:    getstatic Field QD field1211 Ljava/awt/Font;
 L90:    aload_1
 L91:    getstatic Field QD true Ljava/awt/font/FontRenderContext;
 L94:    invokevirtual Method java/awt/Font getStringBounds (Ljava/lang/String;Ljava/awt/font/FontRenderContext;)Ljava/awt/geom/Rectangle2D;
@@ -143,23 +143,23 @@ L101:   invokevirtual Method java/awt/geom/Rectangle2D getMinX ()D
 L104:   d2f
 L105:   fconst_2
 L106:   fdiv
-L107:   putfield Field QD class F
+L107:   putfield Field QD field1208 F
 L110:   invokevirtual Method java/awt/geom/Rectangle2D getMaxX ()D
 L113:   d2f
 L114:   fconst_2
 L115:   fdiv
 L116:   aload_0
 L117:   dup_x1
-L118:   getfield Field QD class F
+L118:   getfield Field QD field1208 F
 L121:   fsub
-L122:   putfield Field QD long F
+L122:   putfield Field QD field1218 F
 L125:   return
 L126:   
-        .attribute StackMap b'\x00\x04\x00\x16\x00\x09\x07\x00\x02\x07\x00\x48\x02\x02\x02\x02\x02\x01\x01\x00\x00\x00\x4B\x00\x09\x07\x00\x02\x07\x00\x48\x02\x02\x02\x02\x02\x01\x01\x00\x00\x00\x56\x00\x00\x00\x01\x07\x00\x5B\x00\x57\x00\x09\x07\x00\x02\x07\x00\x48\x02\x02\x02\x02\x02\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x16\x00\x09\x07\x00\x02\x07\x00\x4B\x02\x02\x02\x02\x02\x01\x01\x00\x00\x00\x4B\x00\x09\x07\x00\x02\x07\x00\x4B\x02\x02\x02\x02\x02\x01\x01\x00\x00\x00\x56\x00\x00\x00\x01\x07\x00\x5F\x00\x57\x00\x09\x07\x00\x02\x07\x00\x4B\x02\x02\x02\x02\x02\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public break : (FFFF)V
+.method public method464 : (FFFF)V
     .code stack 8 locals 5
 L0:     fload 4
 L2:     aload_0
@@ -169,16 +169,16 @@ L5:     fload_2
 L6:     aload_0
 L7:     dup_x1
 L8:     fload_1
-L9:     putfield Field QD break F
-L12:    putfield Field QD catch F
-L15:    putfield Field QD byte F
-L18:    invokevirtual Method QD break (F)V
+L9:     putfield Field QD field1217 F
+L12:    putfield Field QD field1207 F
+L15:    putfield Field QD field1212 F
+L18:    invokevirtual Method QD method102 (F)V
 L21:    return
 L22:    
     .end code
 .end method
 
-.method public short : ()Z
+.method public method92 : ()Z
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field QD try Z
@@ -187,17 +187,17 @@ L5:
     .end code
 .end method
 
-.method public else : (F)V
+.method public method104 : (F)V
     .code stack 2 locals 2
 L0:     aload_0
 L1:     fload_1
-L2:     putfield Field QD float F
+L2:     putfield Field QD field1205 F
 L5:     return
 L6:     
     .end code
 .end method
 
-.method public static const : ()V
+.method public static method52 : ()V
     .code stack 7 locals 5
 L0:     ldc ""
 L2:     astore_0
@@ -236,11 +236,11 @@ L54:    dup_x1
 L55:    dup_x2
 L56:    invokespecial Method QD <init> (Ljava/lang/String;FFFF)V
 L59:    fconst_0
-L60:    putstatic Field QD "enum" F
+L60:    putstatic Field QD field977 F
 L63:    fconst_0
-L64:    putstatic Field QD "enum" F
+L64:    putstatic Field QD field977 F
 L67:    aload_0
-L68:    invokestatic Method QD break (Ljava/lang/String;)[[F
+L68:    invokestatic Method QD method627 (Ljava/lang/String;)[[F
 L71:    astore_1
 L72:    pop
 L73:    aload_1
@@ -280,7 +280,7 @@ L117:   dup
 L118:   dup
 L119:   pop2
 L120:   faload
-L121:   getstatic Field QD "enum" F
+L121:   getstatic Field QD field977 F
 L124:   fneg
 L125:   fcmpg
 L126:   ifge L140
@@ -291,7 +291,7 @@ L133:   dup
 L134:   pop2
 L135:   faload
 L136:   fneg
-L137:   putstatic Field QD "enum" F
+L137:   putstatic Field QD field977 F
 L140:   aload 4
 L142:   iconst_3
 L143:   iconst_1
@@ -314,7 +314,7 @@ L167:   iconst_1
 L168:   dup
 L169:   pop2
 L170:   faload
-L171:   getstatic Field QD "enum" F
+L171:   getstatic Field QD field977 F
 L174:   fneg
 L175:   fcmpg
 L176:   ifge L190
@@ -325,26 +325,26 @@ L183:   dup
 L184:   pop2
 L185:   faload
 L186:   fneg
-L187:   putstatic Field QD "enum" F
+L187:   putstatic Field QD field977 F
 L190:   iinc 3 1
 L193:   iload_3
 L194:   goto L82
 L197:   athrow
 L198:   return
 L199:   
-        .attribute StackMap b'\x00\x0A\x00\x09\x00\x02\x07\x00\x48\x01\x00\x01\x01\x00\x2E\x00\x00\x00\x01\x07\x00\x5B\x00\x2F\x00\x02\x07\x00\x48\x01\x00\x00\x00\x52\x00\x04\x07\x00\x48\x07\x00\x88\x01\x01\x00\x01\x01\x00\x72\x00\x05\x07\x00\x48\x07\x00\x88\x01\x01\x07\x00\x8C\x00\x00\x00\x8C\x00\x05\x07\x00\x48\x07\x00\x88\x01\x01\x07\x00\x8C\x00\x00\x00\xA4\x00\x05\x07\x00\x48\x07\x00\x88\x01\x01\x07\x00\x8C\x00\x00\x00\xBE\x00\x05\x07\x00\x48\x07\x00\x88\x01\x01\x07\x00\x8C\x00\x00\x00\xC5\x00\x00\x00\x01\x07\x00\x5B\x00\xC6\x00\x04\x07\x00\x48\x07\x00\x88\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x0A\x00\x09\x00\x02\x07\x00\x4B\x01\x00\x01\x01\x00\x2E\x00\x00\x00\x01\x07\x00\x5F\x00\x2F\x00\x02\x07\x00\x4B\x01\x00\x00\x00\x52\x00\x04\x07\x00\x4B\x07\x00\x91\x01\x01\x00\x01\x01\x00\x72\x00\x05\x07\x00\x4B\x07\x00\x91\x01\x01\x07\x00\x95\x00\x00\x00\x8C\x00\x05\x07\x00\x4B\x07\x00\x91\x01\x01\x07\x00\x95\x00\x00\x00\xA4\x00\x05\x07\x00\x4B\x07\x00\x91\x01\x01\x07\x00\x95\x00\x00\x00\xBE\x00\x05\x07\x00\x4B\x07\x00\x91\x01\x01\x07\x00\x95\x00\x00\x00\xC5\x00\x00\x00\x01\x07\x00\x5F\x00\xC6\x00\x04\x07\x00\x4B\x07\x00\x91\x01\x01\x00\x00'
     .end code
 .end method
 
-.method private else : (CFZ)I
+.method private method624 : (CFZ)I
     .code stack 6 locals 18
 L0:     iload_3
 L1:     ifeq L12
-L4:     getstatic Field QD "final" Ljava/util/Map;
+L4:     getstatic Field QD field1206 Ljava/util/Map;
 L7:     iload_1
 L8:     goto L16
 L11:    athrow
-L12:    getstatic Field QD goto Ljava/util/Map;
+L12:    getstatic Field QD field1216 Ljava/util/Map;
 L15:    iload_1
 L16:    invokestatic Method java/lang/Character valueOf (C)Ljava/lang/Character;
 L19:    invokeinterface InterfaceMethod java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object; 2
@@ -360,14 +360,14 @@ L40:    iconst_1
 L41:    dup
 L42:    dup
 L43:    pop2
-L44:    invokestatic Method org/lwjgl/opengl/GL11 "super" (I)I
+L44:    invokestatic Method org/lwjgl/opengl/GL11 method3706 (I)I
 L47:    invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L50:    astore 4
 L52:    iload_3
 L53:    ifeq L62
-L56:    getstatic Field QD short Ljava/awt/Font;
+L56:    getstatic Field QD field1215 Ljava/awt/Font;
 L59:    goto L65
-L62:    getstatic Field QD case Ljava/awt/Font;
+L62:    getstatic Field QD field1211 Ljava/awt/Font;
 L65:    getstatic Field QD true Ljava/awt/font/FontRenderContext;
 L68:    new java/lang/StringBuilder
 L71:    dup
@@ -560,7 +560,7 @@ L498:   sipush 4864
 L501:   iconst_1
 L502:   dup
 L503:   pop2
-L504:   invokestatic Method org/lwjgl/opengl/GL11 short (II)V
+L504:   invokestatic Method org/lwjgl/opengl/GL11 method3891 (II)V
 L507:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
 L512:   ifeq L592
 L515:   aload 13
@@ -575,7 +575,7 @@ L539:   iconst_3
 L540:   iconst_1
 L541:   dup
 L542:   pop2
-L543:   invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
+L543:   invokestatic Method org/lwjgl/opengl/GL11 method3664 (I)V
 L546:   iconst_0
 L547:   iconst_1
 L548:   dup
@@ -596,23 +596,23 @@ L570:   iinc 17 1
 L573:   faload
 L574:   fconst_2
 L575:   fdiv
-L576:   invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
+L576:   invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
 L579:   iload 17
 L581:   goto L553
-L584:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
+L584:   invokestatic Method org/lwjgl/opengl/GL11 method3788 ()V
 L587:   aload 13
 L589:   goto L507
 L592:   fload_2
 L593:   fconst_0
 L594:   dup
-L595:   invokestatic Method org/lwjgl/opengl/GL11 const (FFF)V
+L595:   invokestatic Method org/lwjgl/opengl/GL11 method3807 (FFF)V
 L598:   invokestatic Method org/lwjgl/opengl/GL11 try ()V
 L601:   iload_3
 L602:   ifeq L612
-L605:   getstatic Field QD "final" Ljava/util/Map;
+L605:   getstatic Field QD field1206 Ljava/util/Map;
 L608:   iload_1
 L609:   goto L616
-L612:   getstatic Field QD goto Ljava/util/Map;
+L612:   getstatic Field QD field1216 Ljava/util/Map;
 L615:   iload_1
 L616:   invokestatic Method java/lang/Character valueOf (C)Ljava/lang/Character;
 L619:   aload 4
@@ -622,7 +622,7 @@ L627:   aload 4
 L629:   invokevirtual Method java/lang/Integer intValue ()I
 L632:   ireturn
 L633:   
-        .attribute StackMap b'\x00\x18\x00\x0B\x00\x00\x00\x01\x07\x00\x5B\x00\x0C\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00\x00\x10\x00\x04\x07\x00\x02\x01\x02\x01\x00\x02\x07\x00\x08\x01\x00\x27\x00\x00\x00\x01\x07\x00\x5B\x00\x28\x00\x05\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x00\x00\x3E\x00\x05\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x00\x00\x41\x00\x05\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x01\x07\x00\x61\x00\xAA\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xC7\x00\x01\x07\x00\xC7\x00\xDC\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xC7\x00\x00\x00\xDE\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xC7\x00\x01\x02\x00\xF9\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xC7\x00\x00\x01\x21\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xC7\x00\x01\x02\x01\x24\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xC7\x00\x00\x01\x82\x00\x12\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x01\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xC7\x07\x00\x8C\x07\x00\x8C\x07\x00\xE5\x07\x00\xE5\x00\x01\x01\x01\xB4\x00\x12\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x01\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xC7\x07\x00\x8C\x07\x00\x8C\x07\x00\xE5\x07\x00\xE5\x00\x00\x01\xD1\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xC7\x00\x00\x01\xD3\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xC7\x00\x01\x07\x00\xC7\x01\xDD\x00\x0D\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x00\x00\x01\xFB\x00\x0F\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xE5\x07\x00\xE5\x00\x01\x07\x00\xE5\x02\x29\x00\x12\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xE5\x07\x00\xE5\x07\x00\x8C\x07\x00\x8C\x01\x00\x01\x01\x02\x48\x00\x12\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xE5\x07\x00\xE5\x07\x00\x8C\x07\x00\x8C\x01\x00\x00\x02\x50\x00\x0F\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xE5\x07\x00\xE5\x00\x00\x02\x64\x00\x0F\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xE5\x07\x00\xE5\x00\x00\x02\x68\x00\x0F\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x07\x00\xBA\x07\x00\xBA\x07\x00\xBD\x07\x00\xBD\x02\x02\x07\x00\x8C\x07\x00\xE5\x07\x00\xE5\x00\x02\x07\x00\x08\x01'
+        .attribute StackMap b'\x00\x18\x00\x0B\x00\x00\x00\x01\x07\x00\x5F\x00\x0C\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00\x00\x10\x00\x04\x07\x00\x02\x01\x02\x01\x00\x02\x07\x00\x08\x01\x00\x27\x00\x00\x00\x01\x07\x00\x5F\x00\x28\x00\x05\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x00\x00\x3E\x00\x05\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x00\x00\x41\x00\x05\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x01\x07\x00\x65\x00\xAA\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xD2\x00\x01\x07\x00\xD2\x00\xDC\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xD2\x00\x00\x00\xDE\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xD2\x00\x01\x02\x00\xF9\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xD2\x00\x00\x01\x21\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xD2\x00\x01\x02\x01\x24\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xD2\x00\x00\x01\x82\x00\x12\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x01\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xD2\x07\x00\x95\x07\x00\x95\x07\x00\xF0\x07\x00\xF0\x00\x01\x01\x01\xB4\x00\x12\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x01\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xD2\x07\x00\x95\x07\x00\x95\x07\x00\xF0\x07\x00\xF0\x00\x00\x01\xD1\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xD2\x00\x00\x01\xD3\x00\x0E\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xD2\x00\x01\x07\x00\xD2\x01\xDD\x00\x0D\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x00\x00\x01\xFB\x00\x0F\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xF0\x07\x00\xF0\x00\x01\x07\x00\xF0\x02\x29\x00\x12\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xF0\x07\x00\xF0\x07\x00\x95\x07\x00\x95\x01\x00\x01\x01\x02\x48\x00\x12\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xF0\x07\x00\xF0\x07\x00\x95\x07\x00\x95\x01\x00\x00\x02\x50\x00\x0F\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xF0\x07\x00\xF0\x00\x00\x02\x64\x00\x0F\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xF0\x07\x00\xF0\x00\x00\x02\x68\x00\x0F\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x07\x00\xC5\x07\x00\xC5\x07\x00\xC8\x07\x00\xC8\x02\x02\x07\x00\x95\x07\x00\xF0\x07\x00\xF0\x00\x02\x07\x00\x08\x01'
     .end code
 .end method
 
@@ -632,7 +632,7 @@ L0:     new java/util/LinkedHashMap
 L3:     dup
 L4:     ldc 65536
 L6:     invokespecial Method java/util/LinkedHashMap <init> (I)V
-L9:     putstatic Field QD int Ljava/util/Map;
+L9:     putstatic Field QD field1214 Ljava/util/Map;
 L12:    new java/util/HashMap
 L15:    dup
 L16:    sipush 512
@@ -640,7 +640,7 @@ L19:    iconst_1
 L20:    dup
 L21:    pop2
 L22:    invokespecial Method java/util/HashMap <init> (I)V
-L25:    putstatic Field QD if Ljava/util/Map;
+L25:    putstatic Field QD field1209 Ljava/util/Map;
 L28:    new java/util/HashMap
 L31:    dup
 L32:    sipush 512
@@ -648,7 +648,7 @@ L35:    iconst_1
 L36:    dup
 L37:    pop2
 L38:    invokespecial Method java/util/HashMap <init> (I)V
-L41:    putstatic Field QD goto Ljava/util/Map;
+L41:    putstatic Field QD field1216 Ljava/util/Map;
 L44:    new java/util/HashMap
 L47:    dup
 L48:    sipush 512
@@ -656,7 +656,7 @@ L51:    iconst_1
 L52:    dup
 L53:    pop2
 L54:    invokespecial Method java/util/HashMap <init> (I)V
-L57:    putstatic Field QD else Ljava/util/Map;
+L57:    putstatic Field QD field1223 Ljava/util/Map;
 L60:    new java/util/HashMap
 L63:    dup
 L64:    sipush 512
@@ -664,7 +664,7 @@ L67:    iconst_1
 L68:    dup
 L69:    pop2
 L70:    invokespecial Method java/util/HashMap <init> (I)V
-L73:    putstatic Field QD "final" Ljava/util/Map;
+L73:    putstatic Field QD field1206 Ljava/util/Map;
 L76:    new java/awt/font/FontRenderContext
 L79:    dup
 L80:    aconst_null
@@ -708,7 +708,7 @@ L130:   invokespecial Method java/io/BufferedInputStream <init> (Ljava/io/InputS
 L133:   invokestatic Method java/awt/Font createFont (ILjava/io/InputStream;)Ljava/awt/Font;
 L136:   fconst_2
 L137:   invokevirtual Method java/awt/Font deriveFont (F)Ljava/awt/Font;
-L140:   putstatic Field QD case Ljava/awt/Font;
+L140:   putstatic Field QD field1211 Ljava/awt/Font;
 L143:   goto L225
 L146:   athrow
         .catch java/lang/Exception from L147 to L232 using L279
@@ -743,7 +743,7 @@ L208:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)
 L211:   ldc_w "\" exists and is writable."
 L214:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L217:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
-L220:   invokestatic Method org/lwjgl/Sys break (Ljava/lang/String;Ljava/lang/String;)V
+L220:   invokestatic Method org/lwjgl/Sys method1890 (Ljava/lang/String;Ljava/lang/String;)V
 L223:   aload_1
 L224:   athrow
 L225:   iinc 0 1
@@ -751,25 +751,25 @@ L228:   iload_0
 L229:   goto L101
 L232:   athrow
         .catch java/lang/Exception from L233 to L278 using L279
-L233:   getstatic Field QD case Ljava/awt/Font;
+L233:   getstatic Field QD field1211 Ljava/awt/Font;
 L236:   iconst_2
 L237:   iconst_1
 L238:   dup
 L239:   pop2
 L240:   invokevirtual Method java/awt/Font deriveFont (I)Ljava/awt/Font;
-L243:   putstatic Field QD short Ljava/awt/Font;
+L243:   putstatic Field QD field1215 Ljava/awt/Font;
 L246:   new zc
 L249:   dup
-L250:   getstatic Field QD case Ljava/awt/Font;
+L250:   getstatic Field QD field1211 Ljava/awt/Font;
 L253:   ldc2_w 2e-2
 L256:   invokespecial Method zc <init> (Ljava/awt/Font;D)V
-L259:   putstatic Field QD do Lzc;
+L259:   putstatic Field QD field1224 Lzc;
 L262:   new zc
 L265:   dup
-L266:   getstatic Field QD short Ljava/awt/Font;
+L266:   getstatic Field QD field1215 Ljava/awt/Font;
 L269:   ldc2_w 2e-2
 L272:   invokespecial Method zc <init> (Ljava/awt/Font;D)V
-L275:   putstatic Field QD for Lzc;
+L275:   putstatic Field QD field1210 Lzc;
 L278:   return
 L279:   astore_0
 L280:   aload_0
@@ -781,7 +781,7 @@ L289:   invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/Throw
 L292:   athrow
 L293:   athrow
 L294:   
-        .attribute StackMap b'\x00\x08\x00\x65\x00\x01\x01\x00\x01\x01\x00\x92\x00\x00\x00\x01\x07\x00\x5B\x00\x93\x00\x01\x01\x00\x01\x07\x01\x0E\x00\xE1\x00\x01\x01\x00\x00\x00\xE8\x00\x00\x00\x01\x07\x00\x5B\x00\xE9\x00\x01\x01\x00\x00\x01\x17\x00\x00\x00\x01\x07\x01\x10\x01\x25\x00\x00\x00\x01\x07\x00\x5B'
+        .attribute StackMap b'\x00\x08\x00\x65\x00\x01\x01\x00\x01\x01\x00\x92\x00\x00\x00\x01\x07\x00\x5F\x00\x93\x00\x01\x01\x00\x01\x07\x01\x1D\x00\xE1\x00\x01\x01\x00\x00\x00\xE8\x00\x00\x00\x01\x07\x00\x5F\x00\xE9\x00\x01\x01\x00\x00\x01\x17\x00\x00\x00\x01\x07\x01\x1F\x01\x25\x00\x00\x00\x01\x07\x00\x5F'
     .end code
 .end method
 
@@ -800,24 +800,24 @@ L11:
     .end code
 .end method
 
-.method public else : ()F
+.method public method136 : ()F
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field QD float F
+L1:     getfield Field QD field1205 F
 L4:     freturn
 L5:     
     .end code
 .end method
 
-.method private break : (CFZ)I
+.method private method625 : (CFZ)I
     .code stack 6 locals 7
 L0:     iload_3
 L1:     ifeq L12
-L4:     getstatic Field QD else Ljava/util/Map;
+L4:     getstatic Field QD field1223 Ljava/util/Map;
 L7:     iload_1
 L8:     goto L16
 L11:    athrow
-L12:    getstatic Field QD if Ljava/util/Map;
+L12:    getstatic Field QD field1209 Ljava/util/Map;
 L15:    iload_1
 L16:    invokestatic Method java/lang/Character valueOf (C)Ljava/lang/Character;
 L19:    invokeinterface InterfaceMethod java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object; 2
@@ -833,17 +833,17 @@ L40:    iconst_1
 L41:    dup
 L42:    dup
 L43:    pop2
-L44:    invokestatic Method org/lwjgl/opengl/GL11 "super" (I)I
+L44:    invokestatic Method org/lwjgl/opengl/GL11 method3706 (I)I
 L47:    invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
 L50:    astore 4
 L52:    iload_3
 L53:    ifeq L63
-L56:    getstatic Field QD for Lzc;
+L56:    getstatic Field QD field1210 Lzc;
 L59:    iload_1
 L60:    goto L67
-L63:    getstatic Field QD do Lzc;
+L63:    getstatic Field QD field1224 Lzc;
 L66:    iload_1
-L67:    invokevirtual Method zc break (C)[F
+L67:    invokevirtual Method zc method5840 (C)[F
 L70:    astore 5
 L72:    iconst_4
 L73:    aload 4
@@ -852,11 +852,11 @@ L78:    sipush 4864
 L81:    iconst_1
 L82:    dup
 L83:    pop2
-L84:    invokestatic Method org/lwjgl/opengl/GL11 short (II)V
+L84:    invokestatic Method org/lwjgl/opengl/GL11 method3891 (II)V
 L87:    iconst_1
 L88:    dup
 L89:    pop2
-L90:    invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
+L90:    invokestatic Method org/lwjgl/opengl/GL11 method3664 (I)V
 L93:    iconst_0
 L94:    iconst_1
 L95:    dup
@@ -882,21 +882,21 @@ L122:   iinc 6 2
 L125:   faload
 L126:   fconst_2
 L127:   fdiv
-L128:   invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
+L128:   invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
 L131:   iload 6
 L133:   goto L100
-L136:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
+L136:   invokestatic Method org/lwjgl/opengl/GL11 method3788 ()V
 L139:   fload_2
 L140:   fconst_0
 L141:   dup
-L142:   invokestatic Method org/lwjgl/opengl/GL11 const (FFF)V
+L142:   invokestatic Method org/lwjgl/opengl/GL11 method3807 (FFF)V
 L145:   invokestatic Method org/lwjgl/opengl/GL11 try ()V
 L148:   iload_3
 L149:   ifeq L159
-L152:   getstatic Field QD else Ljava/util/Map;
+L152:   getstatic Field QD field1223 Ljava/util/Map;
 L155:   iload_1
 L156:   goto L163
-L159:   getstatic Field QD if Ljava/util/Map;
+L159:   getstatic Field QD field1209 Ljava/util/Map;
 L162:   iload_1
 L163:   invokestatic Method java/lang/Character valueOf (C)Ljava/lang/Character;
 L166:   aload 4
@@ -906,25 +906,25 @@ L174:   aload 4
 L176:   invokevirtual Method java/lang/Integer intValue ()I
 L179:   ireturn
 L180:   
-        .attribute StackMap b'\x00\x0B\x00\x0B\x00\x00\x00\x01\x07\x00\x5B\x00\x0C\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00\x00\x10\x00\x04\x07\x00\x02\x01\x02\x01\x00\x02\x07\x00\x08\x01\x00\x27\x00\x00\x00\x01\x07\x00\x5B\x00\x28\x00\x05\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x00\x00\x3F\x00\x05\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x00\x00\x43\x00\x05\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x00\x02\x07\x01\x5F\x01\x00\x64\x00\x07\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x07\x00\x8C\x01\x00\x01\x01\x00\x88\x00\x07\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x07\x00\x8C\x01\x00\x00\x00\x9F\x00\x07\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x07\x00\x8C\x01\x00\x00\x00\xA3\x00\x07\x07\x00\x02\x01\x02\x01\x07\x00\x9D\x07\x00\x8C\x01\x00\x02\x07\x00\x08\x01'
+        .attribute StackMap b'\x00\x0B\x00\x0B\x00\x00\x00\x01\x07\x00\x5F\x00\x0C\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00\x00\x10\x00\x04\x07\x00\x02\x01\x02\x01\x00\x02\x07\x00\x08\x01\x00\x27\x00\x00\x00\x01\x07\x00\x5F\x00\x28\x00\x05\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x00\x00\x3F\x00\x05\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x00\x00\x43\x00\x05\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x00\x02\x07\x01\x6F\x01\x00\x64\x00\x07\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x07\x00\x95\x01\x00\x01\x01\x00\x88\x00\x07\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x07\x00\x95\x01\x00\x00\x00\x9F\x00\x07\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x07\x00\x95\x01\x00\x00\x00\xA3\x00\x07\x07\x00\x02\x01\x02\x01\x07\x00\xA7\x07\x00\x95\x01\x00\x02\x07\x00\x08\x01'
     .end code
 .end method
 
-.method public static else : (Ljava/lang/String;)F
+.method public static method626 : (Ljava/lang/String;)F
     .code stack 4 locals 4
 L0:     aload_0
 L1:     ifnonnull L7
 L4:     fconst_0
 L5:     freturn
 L6:     athrow
-L7:     getstatic Field QD int Ljava/util/Map;
+L7:     getstatic Field QD field1214 Ljava/util/Map;
 L10:    aload_0
 L11:    invokeinterface InterfaceMethod java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object; 2
 L16:    checkcast java/lang/Float
 L19:    dup
 L20:    astore_1
 L21:    ifnonnull L117
-L24:    getstatic Field QD case Ljava/awt/Font;
+L24:    getstatic Field QD field1211 Ljava/awt/Font;
 L27:    aload_0
 L28:    getstatic Field QD true Ljava/awt/font/FontRenderContext;
 L31:    invokevirtual Method java/awt/Font getStringBounds (Ljava/lang/String;Ljava/awt/font/FontRenderContext;)Ljava/awt/geom/Rectangle2D;
@@ -934,16 +934,16 @@ L38:    fconst_2
 L39:    fdiv
 L40:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
 L43:    astore_1
-L44:    getstatic Field QD int Ljava/util/Map;
+L44:    getstatic Field QD field1214 Ljava/util/Map;
 L47:    aload_0
 L48:    aload_1
 L49:    invokeinterface InterfaceMethod java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
 L54:    pop
-L55:    getstatic Field QD int Ljava/util/Map;
+L55:    getstatic Field QD field1214 Ljava/util/Map;
 L58:    invokeinterface InterfaceMethod java/util/Map size ()I 1
 L63:    ldc 65536
 L65:    if_icmple L117
-L68:    getstatic Field QD int Ljava/util/Map;
+L68:    getstatic Field QD field1214 Ljava/util/Map;
 L71:    invokeinterface InterfaceMethod java/util/Map entrySet ()Ljava/util/Set; 1
 L76:    invokeinterface InterfaceMethod java/util/Set iterator ()Ljava/util/Iterator; 1
 L81:    astore_2
@@ -971,11 +971,11 @@ L117:   aload_1
 L118:   invokevirtual Method java/lang/Float floatValue ()F
 L121:   freturn
 L122:   
-        .attribute StackMap b'\x00\x05\x00\x06\x00\x00\x00\x01\x07\x00\x5B\x00\x07\x00\x01\x07\x00\x48\x00\x00\x00\x58\x00\x04\x07\x00\x48\x07\x00\xD0\x07\x00\xE5\x01\x00\x01\x01\x00\x74\x00\x00\x00\x01\x07\x00\x5B\x00\x75\x00\x02\x07\x00\x48\x07\x00\xD0\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x06\x00\x00\x00\x01\x07\x00\x5F\x00\x07\x00\x01\x07\x00\x4B\x00\x00\x00\x58\x00\x04\x07\x00\x4B\x07\x00\xDB\x07\x00\xF0\x01\x00\x01\x01\x00\x74\x00\x00\x00\x01\x07\x00\x5F\x00\x75\x00\x02\x07\x00\x4B\x07\x00\xDB\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/lang/String;)[[F
+.method public static method627 : (Ljava/lang/String;)[[F
     .code stack 9 locals 10
 L0:     new java/util/LinkedList
 L3:     dup
@@ -1002,7 +1002,7 @@ L38:    iconst_1
 L39:    dup
 L40:    pop2
 L41:    astore 7
-L43:    getstatic Field QD case Ljava/awt/Font;
+L43:    getstatic Field QD field1211 Ljava/awt/Font;
 L46:    getstatic Field QD true Ljava/awt/font/FontRenderContext;
 L49:    aload_0
 L50:    invokevirtual Method java/awt/Font createGlyphVector (Ljava/awt/font/FontRenderContext;Ljava/lang/String;)Ljava/awt/font/GlyphVector;
@@ -1219,14 +1219,14 @@ L438:   goto L338
 L441:   aload 9
 L443:   areturn
 L444:   
-        .attribute StackMap b'\x00\x0E\x00\x50\x00\x0A\x07\x00\x48\x07\x00\xBD\x07\x00\xBD\x02\x02\x02\x02\x07\x00\x8C\x02\x07\x00\xC7\x00\x01\x07\x00\xC7\x00\x84\x00\x0A\x07\x00\x48\x07\x00\xBD\x07\x00\xBD\x02\x02\x02\x02\x07\x00\x8C\x02\x07\x00\xC7\x00\x00\x00\x86\x00\x0A\x07\x00\x48\x07\x00\xBD\x07\x00\xBD\x02\x02\x02\x02\x07\x00\x8C\x02\x07\x00\xC7\x00\x01\x02\x00\xC5\x00\x00\x00\x01\x07\x00\x5B\x00\xC6\x00\x0A\x07\x00\x48\x07\x00\xBD\x07\x00\xBD\x02\x02\x02\x02\x07\x00\x8C\x02\x07\x00\xC7\x00\x00\x00\xD7\x00\x0A\x07\x00\x48\x07\x00\xBD\x07\x00\xBD\x02\x02\x02\x02\x07\x00\x8C\x02\x07\x00\xC7\x00\x01\x07\x00\x8C\x00\xEC\x00\x00\x00\x01\x07\x00\x5B\x00\xED\x00\x0A\x07\x00\x48\x07\x00\xBD\x07\x00\xBD\x02\x02\x02\x02\x07\x00\x8C\x02\x07\x00\xC7\x00\x00\x01\x21\x00\x0A\x07\x00\x48\x07\x00\xBD\x07\x00\xBD\x02\x02\x02\x02\x07\x00\x8C\x02\x07\x00\xC7\x00\x00\x01\x2D\x00\x0A\x07\x00\x48\x07\x00\xBD\x07\x00\xBD\x02\x02\x02\x02\x07\x00\x8C\x02\x07\x00\xC7\x00\x00\x01\x2F\x00\x0A\x07\x00\x48\x07\x00\xBD\x07\x00\xBD\x02\x02\x02\x02\x07\x00\x8C\x02\x07\x00\xC7\x00\x01\x07\x00\xC7\x01\x39\x00\x0A\x07\x00\x48\x07\x00\xBD\x07\x00\xBD\x02\x02\x02\x02\x07\x00\x8C\x02\x07\x00\xC7\x00\x00\x01\x52\x00\x0A\x07\x00\x48\x07\x00\xBD\x07\x00\xBD\x01\x02\x02\x02\x07\x00\x8C\x02\x07\x00\x88\x00\x01\x07\x00\xBD\x01\xB9\x00\x0A\x07\x00\x48\x07\x00\xBD\x07\x00\xBD\x01\x02\x02\x02\x07\x00\x8C\x02\x07\x00\x88\x00\x00'
+        .attribute StackMap b'\x00\x0E\x00\x50\x00\x0A\x07\x00\x4B\x07\x00\xC8\x07\x00\xC8\x02\x02\x02\x02\x07\x00\x95\x02\x07\x00\xD2\x00\x01\x07\x00\xD2\x00\x84\x00\x0A\x07\x00\x4B\x07\x00\xC8\x07\x00\xC8\x02\x02\x02\x02\x07\x00\x95\x02\x07\x00\xD2\x00\x00\x00\x86\x00\x0A\x07\x00\x4B\x07\x00\xC8\x07\x00\xC8\x02\x02\x02\x02\x07\x00\x95\x02\x07\x00\xD2\x00\x01\x02\x00\xC5\x00\x00\x00\x01\x07\x00\x5F\x00\xC6\x00\x0A\x07\x00\x4B\x07\x00\xC8\x07\x00\xC8\x02\x02\x02\x02\x07\x00\x95\x02\x07\x00\xD2\x00\x00\x00\xD7\x00\x0A\x07\x00\x4B\x07\x00\xC8\x07\x00\xC8\x02\x02\x02\x02\x07\x00\x95\x02\x07\x00\xD2\x00\x01\x07\x00\x95\x00\xEC\x00\x00\x00\x01\x07\x00\x5F\x00\xED\x00\x0A\x07\x00\x4B\x07\x00\xC8\x07\x00\xC8\x02\x02\x02\x02\x07\x00\x95\x02\x07\x00\xD2\x00\x00\x01\x21\x00\x0A\x07\x00\x4B\x07\x00\xC8\x07\x00\xC8\x02\x02\x02\x02\x07\x00\x95\x02\x07\x00\xD2\x00\x00\x01\x2D\x00\x0A\x07\x00\x4B\x07\x00\xC8\x07\x00\xC8\x02\x02\x02\x02\x07\x00\x95\x02\x07\x00\xD2\x00\x00\x01\x2F\x00\x0A\x07\x00\x4B\x07\x00\xC8\x07\x00\xC8\x02\x02\x02\x02\x07\x00\x95\x02\x07\x00\xD2\x00\x01\x07\x00\xD2\x01\x39\x00\x0A\x07\x00\x4B\x07\x00\xC8\x07\x00\xC8\x02\x02\x02\x02\x07\x00\x95\x02\x07\x00\xD2\x00\x00\x01\x52\x00\x0A\x07\x00\x4B\x07\x00\xC8\x07\x00\xC8\x01\x02\x02\x02\x07\x00\x95\x02\x07\x00\x91\x00\x01\x07\x00\xC8\x01\xB9\x00\x0A\x07\x00\x4B\x07\x00\xC8\x07\x00\xC8\x01\x02\x02\x02\x07\x00\x95\x02\x07\x00\x91\x00\x00'
     .end code
 .end method
 
-.method public break : (Z)V
+.method public method238 : (Z)V
     .code stack 7 locals 5
 L0:     aload_0
-L1:     getfield Field QD "super" Ljava/nio/IntBuffer;
+L1:     getfield Field QD field1213 Ljava/nio/IntBuffer;
 L4:     ifnull L9
 L7:     return
 L8:     athrow
@@ -1237,11 +1237,11 @@ L12:    dup2
 L13:    getfield Field QD false Ljava/lang/String;
 L16:    invokevirtual Method java/lang/String length ()I
 L19:    invokestatic Method org/lwjgl/BufferUtils createIntBuffer (I)Ljava/nio/IntBuffer;
-L22:    putfield Field QD "super" Ljava/nio/IntBuffer;
+L22:    putfield Field QD field1213 Ljava/nio/IntBuffer;
 L25:    getfield Field QD false Ljava/lang/String;
 L28:    invokevirtual Method java/lang/String length ()I
 L31:    invokestatic Method org/lwjgl/BufferUtils createIntBuffer (I)Ljava/nio/IntBuffer;
-L34:    putfield Field QD null Ljava/nio/IntBuffer;
+L34:    putfield Field QD field1221 Ljava/nio/IntBuffer;
 L37:    getfield Field QD false Ljava/lang/String;
 L40:    iconst_0
 L41:    iconst_1
@@ -1252,7 +1252,7 @@ L45:    iconst_1
 L46:    dup
 L47:    pop2
 L48:    invokevirtual Method java/lang/String substring (II)Ljava/lang/String;
-L51:    invokestatic Method QD else (Ljava/lang/String;)F
+L51:    invokestatic Method QD method626 (Ljava/lang/String;)F
 L54:    fstore_2
 L55:    iconst_0
 L56:    iconst_1
@@ -1280,9 +1280,9 @@ L86:    dup
 L87:    pop2
 L88:    iadd
 L89:    invokevirtual Method java/lang/String substring (II)Ljava/lang/String;
-L92:    invokestatic Method QD else (Ljava/lang/String;)F
+L92:    invokestatic Method QD method626 (Ljava/lang/String;)F
 L95:    fstore_2
-L96:    getfield Field QD "super" Ljava/nio/IntBuffer;
+L96:    getfield Field QD field1213 Ljava/nio/IntBuffer;
 L99:    aload_0
 L100:   dup
 L101:   getfield Field QD false Ljava/lang/String;
@@ -1292,10 +1292,10 @@ L108:   fload_2
 L109:   fload 4
 L111:   fsub
 L112:   iload_1
-L113:   invokespecial Method QD break (CFZ)I
+L113:   invokespecial Method QD method625 (CFZ)I
 L116:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L119:   aload_0
-L120:   getfield Field QD null Ljava/nio/IntBuffer;
+L120:   getfield Field QD field1221 Ljava/nio/IntBuffer;
 L123:   aload_0
 L124:   dup
 L125:   getfield Field QD false Ljava/lang/String;
@@ -1306,22 +1306,22 @@ L133:   fload 4
 L135:   fsub
 L136:   iinc 3 1
 L139:   iload_1
-L140:   invokespecial Method QD else (CFZ)I
+L140:   invokespecial Method QD method624 (CFZ)I
 L143:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L146:   pop2
 L147:   iload_3
 L148:   goto L61
 L151:   athrow
 L152:   aload_0
-L153:   getfield Field QD "super" Ljava/nio/IntBuffer;
+L153:   getfield Field QD field1213 Ljava/nio/IntBuffer;
 L156:   invokevirtual Method java/nio/IntBuffer flip ()Ljava/nio/Buffer;
 L159:   aload_0
-L160:   getfield Field QD null Ljava/nio/IntBuffer;
+L160:   getfield Field QD field1221 Ljava/nio/IntBuffer;
 L163:   invokevirtual Method java/nio/IntBuffer flip ()Ljava/nio/Buffer;
 L166:   pop2
 L167:   return
 L168:   
-        .attribute StackMap b'\x00\x05\x00\x08\x00\x00\x00\x01\x07\x00\x5B\x00\x09\x00\x02\x07\x00\x02\x01\x00\x00\x00\x3D\x00\x04\x07\x00\x02\x01\x02\x01\x00\x01\x01\x00\x97\x00\x00\x00\x01\x07\x00\x5B\x00\x98\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x08\x00\x00\x00\x01\x07\x00\x5F\x00\x09\x00\x02\x07\x00\x02\x01\x00\x00\x00\x3D\x00\x04\x07\x00\x02\x01\x02\x01\x00\x01\x01\x00\x97\x00\x00\x00\x01\x07\x00\x5F\x00\x98\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00'
     .end code
 .end method
 
@@ -1329,7 +1329,7 @@ L168:
     .code stack 9 locals 3
 L0:     fload_2
 L1:     aload_0
-L2:     invokevirtual Method QD "enum" ()F
+L2:     invokevirtual Method QD method618 ()F
 L5:     fmul
 L6:     f2d
 L7:     ldc2_w 1e-5
@@ -1346,108 +1346,108 @@ L27:    athrow
 L28:    aload_0
 L29:    dup
 L30:    getfield Field QD this Z
-L33:    invokevirtual Method QD break (Z)V
-L36:    invokestatic Method FE goto ()V
+L33:    invokevirtual Method QD method238 (Z)V
+L36:    invokestatic Method FE method65 ()V
 L39:    iload_1
 L40:    ifeq L54
 L43:    aload_0
-L44:    getfield Field QD float F
+L44:    getfield Field QD field1205 F
 L47:    ldc_w 5e-1f
 L50:    fcmpl
 L51:    ifle L111
-L54:    invokestatic Method org/lwjgl/opengl/GL11 char ()V
+L54:    invokestatic Method org/lwjgl/opengl/GL11 method3672 ()V
 L57:    aload_0
 L58:    dup
 L59:    dup_x1
-L60:    getfield Field QD float F
+L60:    getfield Field QD field1205 F
 L63:    aload_0
 L64:    dup_x2
-L65:    getfield Field QD float F
+L65:    getfield Field QD field1205 F
 L68:    fconst_1
-L69:    invokestatic Method org/lwjgl/opengl/GL11 short (FFF)V
-L72:    getfield Field QD class F
+L69:    invokestatic Method org/lwjgl/opengl/GL11 method3787 (FFF)V
+L72:    getfield Field QD field1208 F
 L75:    fneg
 L76:    fconst_0
 L77:    dup
-L78:    invokestatic Method org/lwjgl/opengl/GL11 const (FFF)V
-L81:    getfield Field QD break F
+L78:    invokestatic Method org/lwjgl/opengl/GL11 method3807 (FFF)V
+L81:    getfield Field QD field1217 F
 L84:    aload_0
 L85:    dup
-L86:    getfield Field QD catch F
+L86:    getfield Field QD field1207 F
 L89:    swap
-L90:    getfield Field QD byte F
+L90:    getfield Field QD field1212 F
 L93:    fload_2
 L94:    aload_0
-L95:    invokevirtual Method QD "enum" ()F
+L95:    invokevirtual Method QD method618 ()F
 L98:    fmul
-L99:    invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L102:   getfield Field QD "super" Ljava/nio/IntBuffer;
-L105:   invokestatic Method org/lwjgl/opengl/GL11 const (Ljava/nio/IntBuffer;)V
-L108:   invokestatic Method org/lwjgl/opengl/GL11 do ()V
+L99:    invokestatic Method org/lwjgl/opengl/GL11 method3888 (FFFF)V
+L102:   getfield Field QD field1213 Ljava/nio/IntBuffer;
+L105:   invokestatic Method org/lwjgl/opengl/GL11 method3668 (Ljava/nio/IntBuffer;)V
+L108:   invokestatic Method org/lwjgl/opengl/GL11 method3730 ()V
 L111:   aload_0
 L112:   getfield Field QD try Z
 L115:   ifeq L189
 L118:   iconst_1
 L119:   aload_0
-L120:   getfield Field QD break F
+L120:   getfield Field QD field1217 F
 L123:   aload_0
 L124:   dup_x2
-L125:   getfield Field QD catch F
+L125:   getfield Field QD field1207 F
 L128:   aload_0
-L129:   getfield Field QD byte F
+L129:   getfield Field QD field1212 F
 L132:   fload_2
 L133:   aload_0
-L134:   invokevirtual Method QD "enum" ()F
+L134:   invokevirtual Method QD method618 ()F
 L137:   fmul
-L138:   invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L138:   invokestatic Method org/lwjgl/opengl/GL11 method3888 (FFFF)V
 L141:   iconst_1
 L142:   dup
 L143:   pop2
-L144:   invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
+L144:   invokestatic Method org/lwjgl/opengl/GL11 method3664 (I)V
 L147:   fconst_0
 L148:   getstatic Field QD new F
 L151:   aload_0
-L152:   getfield Field QD float F
+L152:   getfield Field QD field1205 F
 L155:   fmul
 L156:   ldc_w 5e-1f
 L159:   fmul
-L160:   invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
-L163:   getfield Field QD long F
+L160:   invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
+L163:   getfield Field QD field1218 F
 L166:   aload_0
-L167:   getfield Field QD float F
+L167:   getfield Field QD field1205 F
 L170:   fmul
 L171:   getstatic Field QD new F
 L174:   aload_0
-L175:   getfield Field QD float F
+L175:   getfield Field QD field1205 F
 L178:   fmul
 L179:   ldc_w 5e-1f
 L182:   fmul
-L183:   invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
-L186:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
-L189:   invokestatic Method org/lwjgl/opengl/GL11 char ()V
+L183:   invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
+L186:   invokestatic Method org/lwjgl/opengl/GL11 method3788 ()V
+L189:   invokestatic Method org/lwjgl/opengl/GL11 method3672 ()V
 L192:   aload_0
 L193:   dup
 L194:   dup_x1
-L195:   getfield Field QD float F
+L195:   getfield Field QD field1205 F
 L198:   aload_0
 L199:   dup_x2
-L200:   getfield Field QD float F
+L200:   getfield Field QD field1205 F
 L203:   fconst_1
-L204:   invokestatic Method org/lwjgl/opengl/GL11 short (FFF)V
-L207:   getfield Field QD class F
+L204:   invokestatic Method org/lwjgl/opengl/GL11 method3787 (FFF)V
+L207:   getfield Field QD field1208 F
 L210:   fneg
 L211:   fconst_0
 L212:   dup
-L213:   invokestatic Method org/lwjgl/opengl/GL11 const (FFF)V
-L216:   getfield Field QD break F
+L213:   invokestatic Method org/lwjgl/opengl/GL11 method3807 (FFF)V
+L216:   getfield Field QD field1217 F
 L219:   aload_0
 L220:   dup
-L221:   getfield Field QD catch F
+L221:   getfield Field QD field1207 F
 L224:   swap
-L225:   getfield Field QD byte F
+L225:   getfield Field QD field1212 F
 L228:   ldc_w 6e-1f
 L231:   aload_0
-L232:   invokevirtual Method QD "enum" ()F
+L232:   invokevirtual Method QD method618 ()F
 L235:   fload_2
 L236:   fmul
 L237:   f2d
@@ -1455,13 +1455,13 @@ L238:   ldc2_w 1.5e0
 L241:   invokestatic Method java/lang/Math pow (DD)D
 L244:   d2f
 L245:   fmul
-L246:   invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
-L249:   getfield Field QD null Ljava/nio/IntBuffer;
-L252:   invokestatic Method org/lwjgl/opengl/GL11 const (Ljava/nio/IntBuffer;)V
-L255:   invokestatic Method org/lwjgl/opengl/GL11 do ()V
+L246:   invokestatic Method org/lwjgl/opengl/GL11 method3888 (FFFF)V
+L249:   getfield Field QD field1221 Ljava/nio/IntBuffer;
+L252:   invokestatic Method org/lwjgl/opengl/GL11 method3668 (Ljava/nio/IntBuffer;)V
+L255:   invokestatic Method org/lwjgl/opengl/GL11 method3730 ()V
 L258:   return
 L259:   
-        .attribute StackMap b'\x00\x07\x00\x0F\x00\x00\x00\x01\x07\x00\x5B\x00\x10\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x1B\x00\x00\x00\x01\x07\x00\x5B\x00\x1C\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x36\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x6F\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\xBD\x00\x03\x07\x00\x02\x01\x02\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x0F\x00\x00\x00\x01\x07\x00\x5F\x00\x10\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x1B\x00\x00\x00\x01\x07\x00\x5F\x00\x1C\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x36\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\x6F\x00\x03\x07\x00\x02\x01\x02\x00\x00\x00\xBD\x00\x03\x07\x00\x02\x01\x02\x00\x00'
     .end code
 .end method
 
@@ -1491,9 +1491,9 @@ L7:
     .end code
 .end method
 
-.method public static break : ()F
+.method public static method385 : ()F
     .code stack 2 locals 0
-L0:     getstatic Field QD "enum" F
+L0:     getstatic Field QD field977 F
 L3:     getstatic Field QD new F
 L6:     fadd
 L7:     freturn

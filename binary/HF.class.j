@@ -3,7 +3,7 @@
 .super java/lang/Object
 .implements f
 
-.method public break : (LRg;)Ljava/lang/Object;
+.method public method712 : (LRg;)Ljava/lang/Object;
     .code stack 3 locals 3
 L0:     bipush 9
 L2:     iconst_1
@@ -15,7 +15,7 @@ L9:     dup
 L10:    invokespecial Method java/lang/StringBuilder <init> ()V
 L13:    iload_2
 L14:    aload_1
-L15:    invokevirtual Method Rg goto ()I
+L15:    invokevirtual Method Rg method237 ()I
 L18:    isub
 L19:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L22:    ldc "/"

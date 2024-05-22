@@ -1,18 +1,18 @@
 .version 49 0
 .class final super org/lwjgl/input/c
 .super java/lang/Object
-.field public static final void I = 2
+.field public static final field2577 I = 2
 .field private try I
-.field public static final const I = 3
+.field public static final field2578 I = 3
 .field private new Z
-.field private null Z
+.field private field2579 Z
 .field public static final this I = 4
-.field private char Lorg/lwjgl/input/i;
-.field private else J
-.field private "enum" I
-.field public static final do I = 1
+.field private field2580 Lorg/lwjgl/input/i;
+.field private field2581 J
+.field private field2582 I
+.field public static final field2583 I = 1
 
-.method public goto : ()Z
+.method public method1959 : ()Z
     .code stack 4 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/input/c try I
@@ -37,7 +37,7 @@ L22:
     .end code
 .end method
 
-.method public do : ()Z
+.method public method1960 : ()Z
     .code stack 4 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/input/c try I
@@ -62,10 +62,10 @@ L22:
     .end code
 .end method
 
-.method public for : ()I
+.method public method1961 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/c "enum" I
+L1:     getfield Field org/lwjgl/input/c field2582 I
 L4:     ireturn
 L5:     
     .end code
@@ -80,7 +80,7 @@ L7:     iconst_0
 L8:     ldc "["
 L10:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
 L13:    aload_0
-L14:    getfield Field org/lwjgl/input/c char Lorg/lwjgl/input/i;
+L14:    getfield Field org/lwjgl/input/c field2580 Lorg/lwjgl/input/i;
 L17:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/Object;)Ljava/lang/StringBuilder;
 L20:    ldc " type="
 L22:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -95,7 +95,7 @@ L41:    invokevirtual Method java/lang/StringBuilder append (Z)Ljava/lang/String
 L44:    ldc " yaxis="
 L46:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L49:    aload_0
-L50:    getfield Field org/lwjgl/input/c null Z
+L50:    getfield Field org/lwjgl/input/c field2579 Z
 L53:    invokevirtual Method java/lang/StringBuilder append (Z)Ljava/lang/StringBuilder;
 L56:    ldc "]"
 L58:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -105,7 +105,7 @@ L65:
     .end code
 .end method
 
-.method public catch : ()Z
+.method public method1962 : ()Z
     .code stack 4 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/input/c try I
@@ -130,16 +130,16 @@ L22:
     .end code
 .end method
 
-.method public float : ()Z
+.method public method1963 : ()Z
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/c null Z
+L1:     getfield Field org/lwjgl/input/c field2579 Z
 L4:     ireturn
 L5:     
     .end code
 .end method
 
-.method public short : ()Z
+.method public method1964 : ()Z
     .code stack 4 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/input/c try I
@@ -164,16 +164,16 @@ L22:
     .end code
 .end method
 
-.method public const : ()Lorg/lwjgl/input/i;
+.method public method1965 : ()Lorg/lwjgl/input/i;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/c char Lorg/lwjgl/input/i;
+L1:     getfield Field org/lwjgl/input/c field2580 Lorg/lwjgl/input/i;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method public else : ()Z
+.method public method1966 : ()Z
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/input/c new Z
@@ -182,10 +182,10 @@ L5:
     .end code
 .end method
 
-.method public break : ()J
+.method public method1967 : ()J
     .code stack 2 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/c else J
+L1:     getfield Field org/lwjgl/input/c field2581 J
 L4:     lreturn
 L5:     
     .end code
@@ -207,12 +207,12 @@ L14:    dup_x2
 L15:    aload_1
 L16:    aload_0
 L17:    invokespecial Method java/lang/Object <init> ()V
-L20:    putfield Field org/lwjgl/input/c char Lorg/lwjgl/input/i;
-L23:    putfield Field org/lwjgl/input/c else J
+L20:    putfield Field org/lwjgl/input/c field2580 Lorg/lwjgl/input/i;
+L23:    putfield Field org/lwjgl/input/c field2581 J
 L26:    putfield Field org/lwjgl/input/c try I
-L29:    putfield Field org/lwjgl/input/c "enum" I
+L29:    putfield Field org/lwjgl/input/c field2582 I
 L32:    putfield Field org/lwjgl/input/c new Z
-L35:    putfield Field org/lwjgl/input/c null Z
+L35:    putfield Field org/lwjgl/input/c field2579 Z
 L38:    return
 L39:    
     .end code

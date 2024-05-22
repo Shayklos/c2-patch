@@ -3,7 +3,7 @@
 .super java/lang/Object
 .implements jouvieje/bass/utils/i
 
-.method public static break : (Ljava/nio/CharBuffer;)Ljava/lang/String;
+.method public static method1674 : (Ljava/nio/CharBuffer;)Ljava/lang/String;
     .code stack 6 locals 3
 L0:     aload_0
 L1:     dup
@@ -49,7 +49,7 @@ L60:
     .end code
 .end method
 
-.method public static for : (I)Ljava/nio/LongBuffer;
+.method public static method1675 : (I)Ljava/nio/LongBuffer;
     .code stack 4 locals 1
 L0:     iload_0
 L1:     bipush 8
@@ -57,14 +57,14 @@ L3:     iconst_1
 L4:     dup
 L5:     pop2
 L6:     imul
-L7:     invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
+L7:     invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
 L10:    invokevirtual Method java/nio/ByteBuffer asLongBuffer ()Ljava/nio/LongBuffer;
 L13:    areturn
 L14:    
     .end code
 .end method
 
-.method public static const : (Ljava/nio/Buffer;)I
+.method public static method1676 : (Ljava/nio/Buffer;)I
     .code stack 4 locals 1
 L0:     aload_0
 L1:     instanceof java/nio/ByteBuffer
@@ -150,7 +150,7 @@ L123:
     .end code
 .end method
 
-.method public static catch : (I)Ljava/nio/CharBuffer;
+.method public static method1677 : (I)Ljava/nio/CharBuffer;
     .code stack 4 locals 1
 L0:     iload_0
 L1:     iconst_2
@@ -158,19 +158,19 @@ L2:     iconst_1
 L3:     dup
 L4:     pop2
 L5:     imul
-L6:     invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
+L6:     invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
 L9:     invokevirtual Method java/nio/ByteBuffer asCharBuffer ()Ljava/nio/CharBuffer;
 L12:    areturn
 L13:    
     .end code
 .end method
 
-.method public static break : (Ljava/nio/DoubleBuffer;)Ljava/nio/DoubleBuffer;
+.method public static method1678 : (Ljava/nio/DoubleBuffer;)Ljava/nio/DoubleBuffer;
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
 L2:     invokevirtual Method java/nio/DoubleBuffer capacity ()I
-L5:     invokestatic Method jouvieje/bass/utils/e else (I)Ljava/nio/DoubleBuffer;
+L5:     invokestatic Method jouvieje/bass/utils/e method1695 (I)Ljava/nio/DoubleBuffer;
 L8:     astore_1
 L9:     invokevirtual Method java/nio/DoubleBuffer rewind ()Ljava/nio/Buffer;
 L12:    aload_1
@@ -183,7 +183,7 @@ L20:
     .end code
 .end method
 
-.method public static float : (I)Ljava/nio/ByteBuffer;
+.method public static method1679 : (I)Ljava/nio/ByteBuffer;
     .code stack 3 locals 1
 L0:     iload_0
 L1:     invokestatic Method java/nio/ByteBuffer allocateDirect (I)Ljava/nio/ByteBuffer;
@@ -205,12 +205,12 @@ L5:
     .end code
 .end method
 
-.method public static break : (Ljava/nio/ShortBuffer;)Ljava/nio/ShortBuffer;
+.method public static method1680 : (Ljava/nio/ShortBuffer;)Ljava/nio/ShortBuffer;
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
 L2:     invokevirtual Method java/nio/ShortBuffer capacity ()I
-L5:     invokestatic Method jouvieje/bass/utils/e const (I)Ljava/nio/ShortBuffer;
+L5:     invokestatic Method jouvieje/bass/utils/e method1689 (I)Ljava/nio/ShortBuffer;
 L8:     astore_1
 L9:     invokevirtual Method java/nio/ShortBuffer rewind ()Ljava/nio/Buffer;
 L12:    aload_1
@@ -223,12 +223,12 @@ L20:
     .end code
 .end method
 
-.method public static const : (Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
+.method public static method1681 : (Ljava/nio/ByteBuffer;)Ljava/nio/ByteBuffer;
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
 L2:     invokevirtual Method java/nio/ByteBuffer capacity ()I
-L5:     invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
+L5:     invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
 L8:     astore_1
 L9:     invokevirtual Method java/nio/ByteBuffer rewind ()Ljava/nio/Buffer;
 L12:    aload_1
@@ -241,7 +241,7 @@ L20:
     .end code
 .end method
 
-.method public static else : (Ljava/nio/Buffer;)I
+.method public static method1682 : (Ljava/nio/Buffer;)I
     .code stack 4 locals 1
 L0:     aload_0
 L1:     ifnull L122
@@ -329,7 +329,7 @@ L127:
     .end code
 .end method
 
-.method public static short : (I)Ljava/nio/IntBuffer;
+.method public static method1683 : (I)Ljava/nio/IntBuffer;
     .code stack 4 locals 1
 L0:     iload_0
 L1:     iconst_4
@@ -337,19 +337,19 @@ L2:     iconst_1
 L3:     dup
 L4:     pop2
 L5:     imul
-L6:     invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
+L6:     invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
 L9:     invokevirtual Method java/nio/ByteBuffer asIntBuffer ()Ljava/nio/IntBuffer;
 L12:    areturn
 L13:    
     .end code
 .end method
 
-.method public static break : (Ljava/nio/FloatBuffer;)Ljava/nio/FloatBuffer;
+.method public static method1684 : (Ljava/nio/FloatBuffer;)Ljava/nio/FloatBuffer;
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
 L2:     invokevirtual Method java/nio/FloatBuffer capacity ()I
-L5:     invokestatic Method jouvieje/bass/utils/e break (I)Ljava/nio/FloatBuffer;
+L5:     invokestatic Method jouvieje/bass/utils/e method1698 (I)Ljava/nio/FloatBuffer;
 L8:     astore_1
 L9:     invokevirtual Method java/nio/FloatBuffer rewind ()Ljava/nio/Buffer;
 L12:    aload_1
@@ -362,7 +362,7 @@ L20:
     .end code
 .end method
 
-.method public static break : (Ljava/nio/ByteBuffer;Ljava/lang/String;Ljava/lang/String;)V
+.method public static method1685 : (Ljava/nio/ByteBuffer;Ljava/lang/String;Ljava/lang/String;)V
     .code stack 3 locals 3
         .catch java/io/UnsupportedEncodingException from L0 to L10 using L12
 L0:     aload_0
@@ -381,16 +381,16 @@ L18:    invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/Throw
 L21:    athrow
 L22:    athrow
 L23:    
-        .attribute StackMap b'\x00\x03\x00\x0B\x00\x00\x00\x01\x07\x00\x18\x00\x0C\x00\x03\x07\x00\x28\x07\x00\x1C\x07\x00\x1C\x00\x01\x07\x00\x7C\x00\x16\x00\x00\x00\x01\x07\x00\x18'
+        .attribute StackMap b'\x00\x03\x00\x0B\x00\x00\x00\x01\x07\x00\x18\x00\x0C\x00\x03\x07\x00\x28\x07\x00\x1C\x07\x00\x1C\x00\x01\x07\x00\x84\x00\x16\x00\x00\x00\x01\x07\x00\x18'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/LongBuffer;)Ljava/nio/LongBuffer;
+.method public static method1686 : (Ljava/nio/LongBuffer;)Ljava/nio/LongBuffer;
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
 L2:     invokevirtual Method java/nio/LongBuffer capacity ()I
-L5:     invokestatic Method jouvieje/bass/utils/e for (I)Ljava/nio/LongBuffer;
+L5:     invokestatic Method jouvieje/bass/utils/e method1675 (I)Ljava/nio/LongBuffer;
 L8:     astore_1
 L9:     invokevirtual Method java/nio/LongBuffer rewind ()Ljava/nio/Buffer;
 L12:    aload_1
@@ -403,7 +403,7 @@ L20:
     .end code
 .end method
 
-.method public static else : (Ljava/lang/String;)Ljava/nio/ByteBuffer;
+.method public static method1687 : (Ljava/lang/String;)Ljava/nio/ByteBuffer;
     .code stack 4 locals 1
 L0:     aload_0
 L1:     invokevirtual Method java/lang/String getBytes ()[B
@@ -411,18 +411,18 @@ L4:     iconst_1
 L5:     dup
 L6:     dup
 L7:     pop2
-L8:     invokestatic Method jouvieje/bass/utils/e break ([BI)Ljava/nio/ByteBuffer;
+L8:     invokestatic Method jouvieje/bass/utils/e method1693 ([BI)Ljava/nio/ByteBuffer;
 L11:    areturn
 L12:    
     .end code
 .end method
 
-.method public static break : (Ljava/nio/IntBuffer;)Ljava/nio/IntBuffer;
+.method public static method1688 : (Ljava/nio/IntBuffer;)Ljava/nio/IntBuffer;
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
 L2:     invokevirtual Method java/nio/IntBuffer capacity ()I
-L5:     invokestatic Method jouvieje/bass/utils/e short (I)Ljava/nio/IntBuffer;
+L5:     invokestatic Method jouvieje/bass/utils/e method1683 (I)Ljava/nio/IntBuffer;
 L8:     astore_1
 L9:     invokevirtual Method java/nio/IntBuffer rewind ()Ljava/nio/Buffer;
 L12:    aload_1
@@ -435,7 +435,7 @@ L20:
     .end code
 .end method
 
-.method public static const : (I)Ljava/nio/ShortBuffer;
+.method public static method1689 : (I)Ljava/nio/ShortBuffer;
     .code stack 4 locals 1
 L0:     iload_0
 L1:     iconst_2
@@ -443,14 +443,14 @@ L2:     iconst_1
 L3:     dup
 L4:     pop2
 L5:     imul
-L6:     invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
+L6:     invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
 L9:     invokevirtual Method java/nio/ByteBuffer asShortBuffer ()Ljava/nio/ShortBuffer;
 L12:    areturn
 L13:    
     .end code
 .end method
 
-.method public static else : (Ljava/nio/ByteBuffer;)V
+.method public static method1690 : (Ljava/nio/ByteBuffer;)V
     .code stack 4 locals 1
 L0:     aload_0
 L1:     iconst_0
@@ -464,7 +464,7 @@ L10:
     .end code
 .end method
 
-.method public static break : (Ljava/nio/ByteBuffer;II)Ljava/lang/String;
+.method public static method1691 : (Ljava/nio/ByteBuffer;II)Ljava/lang/String;
     .code stack 6 locals 5
 L0:     iload_2
 L1:     newarray byte
@@ -504,7 +504,7 @@ L51:
     .end code
 .end method
 
-.method public static break : (Ljava/nio/ByteBuffer;Ljava/lang/String;)V
+.method public static method1692 : (Ljava/nio/ByteBuffer;Ljava/lang/String;)V
     .code stack 2 locals 2
 L0:     aload_0
 L1:     aload_1
@@ -516,13 +516,13 @@ L10:
     .end code
 .end method
 
-.method private static break : ([BI)Ljava/nio/ByteBuffer;
+.method private static method1693 : ([BI)Ljava/nio/ByteBuffer;
     .code stack 4 locals 4
 L0:     aload_0
 L1:     arraylength
 L2:     iload_1
 L3:     iadd
-L4:     invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
+L4:     invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
 L7:     dup
 L8:     astore_2
 L9:     aload_0
@@ -538,7 +538,7 @@ L20:    goto L32
 L23:    athrow
 L24:    aload_2
 L25:    iinc 3 1
-L28:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/ByteBuffer;)V
+L28:    invokestatic Method jouvieje/bass/utils/e method1690 (Ljava/nio/ByteBuffer;)V
 L31:    iload_3
 L32:    iload_1
 L33:    if_icmplt L24
@@ -548,11 +548,11 @@ L38:    invokevirtual Method java/nio/ByteBuffer rewind ()Ljava/nio/Buffer;
 L41:    pop
 L42:    areturn
 L43:    
-        .attribute StackMap b'\x00\x03\x00\x17\x00\x00\x00\x01\x07\x00\x18\x00\x18\x00\x04\x07\x00\xB3\x01\x07\x00\x28\x01\x00\x00\x00\x20\x00\x04\x07\x00\xB3\x01\x07\x00\x28\x01\x00\x01\x01'
+        .attribute StackMap b'\x00\x03\x00\x17\x00\x00\x00\x01\x07\x00\x18\x00\x18\x00\x04\x07\x00\xC2\x01\x07\x00\x28\x01\x00\x00\x00\x20\x00\x04\x07\x00\xC2\x01\x07\x00\x28\x01\x00\x01\x01'
     .end code
 .end method
 
-.method public static break : (Ljava/lang/String;)Ljava/nio/ByteBuffer;
+.method public static method1694 : (Ljava/lang/String;)Ljava/nio/ByteBuffer;
     .code stack 4 locals 3
 L0:     aconst_null
 L1:     astore_1
@@ -575,14 +575,14 @@ L25:    iconst_2
 L26:    iconst_1
 L27:    dup
 L28:    pop2
-L29:    invokestatic Method jouvieje/bass/utils/e break ([BI)Ljava/nio/ByteBuffer;
+L29:    invokestatic Method jouvieje/bass/utils/e method1693 ([BI)Ljava/nio/ByteBuffer;
 L32:    areturn
 L33:    
-        .attribute StackMap b'\x00\x04\x00\x0D\x00\x00\x00\x01\x07\x00\x18\x00\x0E\x00\x02\x07\x00\x1C\x07\x00\xB3\x00\x01\x07\x00\x7C\x00\x18\x00\x00\x00\x01\x07\x00\x18\x00\x19\x00\x02\x07\x00\x1C\x07\x00\xB3\x00\x01\x07\x00\xB3'
+        .attribute StackMap b'\x00\x04\x00\x0D\x00\x00\x00\x01\x07\x00\x18\x00\x0E\x00\x02\x07\x00\x1C\x07\x00\xC2\x00\x01\x07\x00\x84\x00\x18\x00\x00\x00\x01\x07\x00\x18\x00\x19\x00\x02\x07\x00\x1C\x07\x00\xC2\x00\x01\x07\x00\xC2'
     .end code
 .end method
 
-.method public static else : (I)Ljava/nio/DoubleBuffer;
+.method public static method1695 : (I)Ljava/nio/DoubleBuffer;
     .code stack 4 locals 1
 L0:     iload_0
 L1:     bipush 8
@@ -590,18 +590,18 @@ L3:     iconst_1
 L4:     dup
 L5:     pop2
 L6:     imul
-L7:     invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
+L7:     invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
 L10:    invokevirtual Method java/nio/ByteBuffer asDoubleBuffer ()Ljava/nio/DoubleBuffer;
 L13:    areturn
 L14:    
     .end code
 .end method
 
-.method public static break : (Ljava/nio/Buffer;)Ljouvieje/bass/utils/m;
+.method public static method1696 : (Ljava/nio/Buffer;)Ljouvieje/bass/utils/m;
     .code stack 4 locals 3
 L0:     aload_0
 L1:     dup
-L2:     invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L2:     invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L5:     invokestatic Method jouvieje/bass/utils/MiscJNI getBufferAddress (Ljava/nio/Buffer;I)J
 L8:     dup2
 L9:     lstore_1
@@ -621,11 +621,11 @@ L27:
     .end code
 .end method
 
-.method public static break : (Ljava/nio/ByteBuffer;)Ljava/lang/String;
+.method public static method1697 : (Ljava/nio/ByteBuffer;)Ljava/lang/String;
     .code stack 4 locals 3
 L0:     aload_0
 L1:     dup
-L2:     invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L2:     invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L5:     invokestatic Method jouvieje/bass/utils/MiscJNI getBufferAddress (Ljava/nio/Buffer;I)J
 L8:     dup2
 L9:     lstore_1
@@ -643,7 +643,7 @@ L23:
     .end code
 .end method
 
-.method public static break : (I)Ljava/nio/FloatBuffer;
+.method public static method1698 : (I)Ljava/nio/FloatBuffer;
     .code stack 4 locals 1
 L0:     iload_0
 L1:     iconst_4
@@ -651,7 +651,7 @@ L2:     iconst_1
 L3:     dup
 L4:     pop2
 L5:     imul
-L6:     invokestatic Method jouvieje/bass/utils/e float (I)Ljava/nio/ByteBuffer;
+L6:     invokestatic Method jouvieje/bass/utils/e method1679 (I)Ljava/nio/ByteBuffer;
 L9:     invokevirtual Method java/nio/ByteBuffer asFloatBuffer ()Ljava/nio/FloatBuffer;
 L12:    areturn
 L13:    

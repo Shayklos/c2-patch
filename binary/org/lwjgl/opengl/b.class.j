@@ -1,15 +1,15 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/b
 .super java/lang/Object
-.field private static char Ljava/util/Map;
-.field private static final else Ljava/util/regex/Pattern;
-.field private static "enum" [Lorg/lwjgl/opengl/j;
-.field private static final do Ljava/util/regex/Pattern;
+.field private static field5250 Ljava/util/Map;
+.field private static final field5251 Ljava/util/regex/Pattern;
+.field private static field5252 [Lorg/lwjgl/opengl/j;
+.field private static final field5253 Ljava/util/regex/Pattern;
 
-.method public static break : (Ljava/lang/String;)[Lorg/lwjgl/opengl/j;
+.method public static method5458 : (Ljava/lang/String;)[Lorg/lwjgl/opengl/j;
     .code stack 2 locals 1
-L0:     invokestatic Method org/lwjgl/opengl/b const ()V
-L3:     getstatic Field org/lwjgl/opengl/b char Ljava/util/Map;
+L0:     invokestatic Method org/lwjgl/opengl/b method5459 ()V
+L3:     getstatic Field org/lwjgl/opengl/b field5250 Ljava/util/Map;
 L6:     aload_0
 L7:     invokeinterface InterfaceMethod java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object; 2
 L12:    checkcast [Lorg/lwjgl/opengl/j;
@@ -20,14 +20,14 @@ L22:
     .end code
 .end method
 
-.method private static const : ()V
+.method private static method5459 : ()V
     .code stack 6 locals 6
-L0:     getstatic Field org/lwjgl/opengl/b char Ljava/util/Map;
+L0:     getstatic Field org/lwjgl/opengl/b field5250 Ljava/util/Map;
 L3:     ifnonnull L322
 L6:     new java/util/HashMap
 L9:     dup
 L10:    invokespecial Method java/util/HashMap <init> ()V
-L13:    putstatic Field org/lwjgl/opengl/b char Ljava/util/Map;
+L13:    putstatic Field org/lwjgl/opengl/b field5250 Ljava/util/Map;
         .catch java/lang/Throwable from L16 to L189 using L274
 L16:    invokestatic Method java/lang/Runtime getRuntime ()Ljava/lang/Runtime;
 L19:    iconst_2
@@ -96,7 +96,7 @@ L122:   invokevirtual Method java/lang/String equals (Ljava/lang/Object;)Z
 L125:   ifeq L190
 L128:   aload_3
 L129:   ifnull L166
-L132:   getstatic Field org/lwjgl/opengl/b char Ljava/util/Map;
+L132:   getstatic Field org/lwjgl/opengl/b field5250 Ljava/util/Map;
 L135:   aload_3
 L136:   aload_2
 L137:   dup
@@ -125,7 +125,7 @@ L179:   iconst_1
 L180:   dup
 L181:   pop2
 L182:   aaload
-L183:   invokestatic Method org/lwjgl/opengl/b break (Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
+L183:   invokestatic Method org/lwjgl/opengl/b method5461 (Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
 L186:   goto L87
 L189:   athrow
         .catch java/lang/Throwable from L190 to L220 using L274
@@ -146,11 +146,11 @@ L210:   iconst_1
 L211:   dup
 L212:   pop2
 L213:   aaload
-L214:   invokestatic Method org/lwjgl/opengl/b break (Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
+L214:   invokestatic Method org/lwjgl/opengl/b method5461 (Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
 L217:   goto L87
 L220:   athrow
         .catch java/lang/Throwable from L221 to L273 using L274
-L221:   getstatic Field org/lwjgl/opengl/b char Ljava/util/Map;
+L221:   getstatic Field org/lwjgl/opengl/b field5250 Ljava/util/Map;
 L224:   aload_3
 L225:   aload_2
 L226:   dup
@@ -171,7 +171,7 @@ L260:   dup
 L261:   pop2
 L262:   invokeinterface InterfaceMethod java/util/List toArray ([Ljava/lang/Object;)[Ljava/lang/Object; 2
 L267:   checkcast [Lorg/lwjgl/opengl/j;
-L270:   putstatic Field org/lwjgl/opengl/b "enum" [Lorg/lwjgl/opengl/j;
+L270:   putstatic Field org/lwjgl/opengl/b field5252 [Lorg/lwjgl/opengl/j;
 L273:   return
 L274:   astore_0
 L275:   new java/lang/StringBuilder
@@ -185,7 +185,7 @@ L289:   invokevirtual Method java/lang/Throwable getMessage ()Ljava/lang/String;
 L292:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L295:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L298:   invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
-L301:   getstatic Field org/lwjgl/opengl/b char Ljava/util/Map;
+L301:   getstatic Field org/lwjgl/opengl/b field5250 Ljava/util/Map;
 L304:   invokeinterface InterfaceMethod java/util/Map clear ()V 1
 L309:   iconst_0
 L310:   iconst_1
@@ -195,17 +195,17 @@ L313:   anewarray org/lwjgl/opengl/j
 L316:   iconst_1
 L317:   dup
 L318:   pop2
-L319:   putstatic Field org/lwjgl/opengl/b "enum" [Lorg/lwjgl/opengl/j;
+L319:   putstatic Field org/lwjgl/opengl/b field5252 [Lorg/lwjgl/opengl/j;
 L322:   return
 L323:   
         .attribute StackMap b'\x00\x08\x00\x57\x00\x05\x07\x00\x42\x07\x00\x3B\x07\x00\x3B\x07\x00\x31\x07\x00\x3E\x00\x00\x00\xA6\x00\x06\x07\x00\x42\x07\x00\x3B\x07\x00\x3B\x07\x00\x31\x07\x00\x3E\x07\x00\x72\x00\x00\x00\xBD\x00\x00\x00\x01\x07\x00\x24\x00\xBE\x00\x06\x07\x00\x42\x07\x00\x3B\x07\x00\x3B\x07\x00\x31\x07\x00\x3E\x07\x00\x72\x00\x00\x00\xDC\x00\x00\x00\x01\x07\x00\x24\x00\xDD\x00\x06\x07\x00\x42\x07\x00\x3B\x07\x00\x3B\x07\x00\x31\x07\x00\x3E\x07\x00\x31\x00\x00\x01\x12\x00\x00\x00\x01\x07\x00\x24\x01\x42\x00\x00\x00\x00'
     .end code
 .end method
 
-.method public static else : ()[Lorg/lwjgl/opengl/j;
+.method public static method5460 : ()[Lorg/lwjgl/opengl/j;
     .code stack 1 locals 0
-L0:     invokestatic Method org/lwjgl/opengl/b const ()V
-L3:     getstatic Field org/lwjgl/opengl/b "enum" [Lorg/lwjgl/opengl/j;
+L0:     invokestatic Method org/lwjgl/opengl/b method5459 ()V
+L3:     getstatic Field org/lwjgl/opengl/b field5252 [Lorg/lwjgl/opengl/j;
 L6:     invokevirtual Method [Lorg/lwjgl/opengl/j; clone ()Ljava/lang/Object;
 L9:     checkcast [Lorg/lwjgl/opengl/j;
 L12:    areturn
@@ -226,25 +226,25 @@ L5:
     .code stack 1 locals 0
 L0:     ldc "^(\\d+)x(\\d+)\\+(\\d+)\\+(\\d+)$"
 L2:     invokestatic Method java/util/regex/Pattern compile (Ljava/lang/String;)Ljava/util/regex/Pattern;
-L5:     putstatic Field org/lwjgl/opengl/b else Ljava/util/regex/Pattern;
+L5:     putstatic Field org/lwjgl/opengl/b field5251 Ljava/util/regex/Pattern;
 L8:     ldc "^(\\d+)x(\\d+)$"
 L10:    invokestatic Method java/util/regex/Pattern compile (Ljava/lang/String;)Ljava/util/regex/Pattern;
-L13:    putstatic Field org/lwjgl/opengl/b do Ljava/util/regex/Pattern;
+L13:    putstatic Field org/lwjgl/opengl/b field5253 Ljava/util/regex/Pattern;
 L16:    return
 L17:    
     .end code
 .end method
 
-.method private static break : (Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
+.method private static method5461 : (Ljava/util/List;Ljava/lang/String;Ljava/lang/String;)V
     .code stack 9 locals 7
-L0:     getstatic Field org/lwjgl/opengl/b else Ljava/util/regex/Pattern;
+L0:     getstatic Field org/lwjgl/opengl/b field5251 Ljava/util/regex/Pattern;
 L3:     aload_2
 L4:     invokevirtual Method java/util/regex/Pattern matcher (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 L7:     dup
 L8:     astore_3
 L9:     invokevirtual Method java/util/regex/Matcher matches ()Z
 L12:    ifne L55
-L15:    getstatic Field org/lwjgl/opengl/b do Ljava/util/regex/Pattern;
+L15:    getstatic Field org/lwjgl/opengl/b field5253 Ljava/util/regex/Pattern;
 L18:    aload_2
 L19:    invokevirtual Method java/util/regex/Pattern matcher (Ljava/lang/CharSequence;)Ljava/util/regex/Matcher;
 L22:    dup
@@ -329,11 +329,11 @@ L151:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z
 L156:   pop
 L157:   return
 L158:   
-        .attribute StackMap b'\x00\x05\x00\x36\x00\x00\x00\x01\x07\x00\x24\x00\x37\x00\x04\x07\x00\x61\x07\x00\x31\x07\x00\x31\x07\x00\xAE\x00\x00\x00\x79\x00\x00\x00\x01\x07\x00\x24\x00\x7A\x00\x05\x07\x00\x61\x07\x00\x31\x01\x07\x00\xAE\x01\x00\x00\x00\x87\x00\x07\x07\x00\x61\x07\x00\x31\x01\x07\x00\xAE\x01\x01\x01\x00\x01\x07\x00\x61'
+        .attribute StackMap b'\x00\x05\x00\x36\x00\x00\x00\x01\x07\x00\x24\x00\x37\x00\x04\x07\x00\x61\x07\x00\x31\x07\x00\x31\x07\x00\xB0\x00\x00\x00\x79\x00\x00\x00\x01\x07\x00\x24\x00\x7A\x00\x05\x07\x00\x61\x07\x00\x31\x01\x07\x00\xB0\x01\x00\x00\x00\x87\x00\x07\x07\x00\x61\x07\x00\x31\x01\x07\x00\xB0\x01\x01\x01\x00\x01\x07\x00\x61'
     .end code
 .end method
 
-.method public static varargs break : ([Lorg/lwjgl/opengl/j;)V
+.method public static varargs method5462 : ([Lorg/lwjgl/opengl/j;)V
     .code stack 5 locals 10
 L0:     aload_0
 L1:     arraylength
@@ -350,7 +350,7 @@ L22:    dup
 L23:    astore_1
 L24:    ldc "xrandr"
 L26:    invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L31:    getstatic Field org/lwjgl/opengl/b "enum" [Lorg/lwjgl/opengl/j;
+L31:    getstatic Field org/lwjgl/opengl/b field5252 [Lorg/lwjgl/opengl/j;
 L34:    astore_2
 L35:    pop
 L36:    aload_2
@@ -443,7 +443,7 @@ L184:   aaload
 L185:   dup
 L186:   astore 5
 L188:   aload_1
-L189:   invokestatic Method org/lwjgl/opengl/j break (Lorg/lwjgl/opengl/j;Ljava/util/List;)V
+L189:   invokestatic Method org/lwjgl/opengl/j method5527 (Lorg/lwjgl/opengl/j;Ljava/util/List;)V
 L192:   iload 4
 L194:   goto L174
         .catch java/io/IOException from L197 to L286 using L287
@@ -486,7 +486,7 @@ L275:   invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
 L278:   aload_3
 L279:   goto L245
 L282:   aload_0
-L283:   putstatic Field org/lwjgl/opengl/b "enum" [Lorg/lwjgl/opengl/j;
+L283:   putstatic Field org/lwjgl/opengl/b field5252 [Lorg/lwjgl/opengl/j;
 L286:   return
 L287:   astore_2
 L288:   new java/lang/StringBuilder
@@ -502,16 +502,16 @@ L308:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/Strin
 L311:   invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
 L314:   return
 L315:   
-        .attribute StackMap b'\x00\x0F\x00\x0F\x00\x01\x07\x00\x1E\x00\x00\x00\x2E\x00\x05\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x00\x01\x01\x00\x4C\x00\x0A\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x07\x00\x08\x01\x07\x00\x1E\x01\x01\x00\x01\x01\x00\x6E\x00\x00\x00\x01\x07\x00\x24\x00\x6F\x00\x0A\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x07\x00\x08\x01\x07\x00\x1E\x01\x01\x00\x00\x00\x77\x00\x00\x00\x01\x07\x00\x24\x00\x78\x00\x0A\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x07\x00\x08\x01\x07\x00\x1E\x01\x01\x00\x00\x00\x7A\x00\x0A\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x07\x00\x08\x01\x07\x00\x1E\x01\x01\x00\x01\x01\x00\x9A\x00\x0A\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x07\x00\x08\x01\x07\x00\x1E\x01\x01\x00\x00\x00\xA2\x00\x05\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x00\x00\x00\xAE\x00\x05\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x00\x01\x01\x00\xC5\x00\x05\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x00\x00\x00\xF5\x00\x04\x07\x00\x1E\x07\x00\x3B\x07\x00\x42\x07\x00\x3E\x00\x01\x07\x00\x3E\x01\x1A\x00\x05\x07\x00\x1E\x07\x00\x3B\x07\x00\x42\x07\x00\x3E\x07\x00\x31\x00\x00\x01\x1F\x00\x03\x07\x00\x1E\x07\x00\x3B\x07\x00\x04\x00\x01\x07\x00\xC9'
+        .attribute StackMap b'\x00\x0F\x00\x0F\x00\x01\x07\x00\x1E\x00\x00\x00\x2E\x00\x05\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x00\x01\x01\x00\x4C\x00\x0A\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x07\x00\x08\x01\x07\x00\x1E\x01\x01\x00\x01\x01\x00\x6E\x00\x00\x00\x01\x07\x00\x24\x00\x6F\x00\x0A\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x07\x00\x08\x01\x07\x00\x1E\x01\x01\x00\x00\x00\x77\x00\x00\x00\x01\x07\x00\x24\x00\x78\x00\x0A\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x07\x00\x08\x01\x07\x00\x1E\x01\x01\x00\x00\x00\x7A\x00\x0A\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x07\x00\x08\x01\x07\x00\x1E\x01\x01\x00\x01\x01\x00\x9A\x00\x0A\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x07\x00\x08\x01\x07\x00\x1E\x01\x01\x00\x00\x00\xA2\x00\x05\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x00\x00\x00\xAE\x00\x05\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x00\x01\x01\x00\xC5\x00\x05\x07\x00\x1E\x07\x00\x3B\x07\x00\x1E\x01\x01\x00\x00\x00\xF5\x00\x04\x07\x00\x1E\x07\x00\x3B\x07\x00\x42\x07\x00\x3E\x00\x01\x07\x00\x3E\x01\x1A\x00\x05\x07\x00\x1E\x07\x00\x3B\x07\x00\x42\x07\x00\x3E\x07\x00\x31\x00\x00\x01\x1F\x00\x03\x07\x00\x1E\x07\x00\x3B\x07\x00\x04\x00\x01\x07\x00\xCC'
     .end code
 .end method
 
-.method public static break : ()[Ljava/lang/String;
+.method public static method5463 : ()[Ljava/lang/String;
     .code stack 4 locals 0
-L0:     invokestatic Method org/lwjgl/opengl/b const ()V
-L3:     getstatic Field org/lwjgl/opengl/b char Ljava/util/Map;
+L0:     invokestatic Method org/lwjgl/opengl/b method5459 ()V
+L3:     getstatic Field org/lwjgl/opengl/b field5250 Ljava/util/Map;
 L6:     invokeinterface InterfaceMethod java/util/Map keySet ()Ljava/util/Set; 1
-L11:    getstatic Field org/lwjgl/opengl/b char Ljava/util/Map;
+L11:    getstatic Field org/lwjgl/opengl/b field5250 Ljava/util/Map;
 L14:    invokeinterface InterfaceMethod java/util/Map size ()I 1
 L19:    anewarray java/lang/String
 L22:    iconst_1

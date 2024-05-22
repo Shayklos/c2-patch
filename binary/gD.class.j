@@ -1,7 +1,7 @@
 .version 49 0
 .class public final super gD
 .super java/lang/Object
-.field public do Ljava/lang/Object;
+.field public field2273 Ljava/lang/Object;
 
 .method public <init> : (Ljava/lang/Object;)V
     .code stack 3 locals 2
@@ -9,7 +9,7 @@ L0:     aload_1
 L1:     aload_0
 L2:     dup_x1
 L3:     invokespecial Method java/lang/Object <init> ()V
-L6:     putfield Field gD do Ljava/lang/Object;
+L6:     putfield Field gD field2273 Ljava/lang/Object;
 L9:     return
 L10:    
     .end code

@@ -12,7 +12,7 @@ L5:
     .end code
 .end method
 
-.method public break : ([B)V
+.method public method711 : ([B)V
     .code stack 9 locals 4
 L0:     aload_1
 L1:     arraylength
@@ -109,7 +109,7 @@ L101:
     .end code
 .end method
 
-.method public else : ([B)V
+.method public method710 : ([B)V
     .code stack 9 locals 4
 L0:     aload_1
 L1:     arraylength

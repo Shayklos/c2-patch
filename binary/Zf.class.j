@@ -2,7 +2,7 @@
 .class public final super Zf
 .super NF
 
-.method private for : ([[I)D
+.method private method798 : ([[I)D
     .code stack 6 locals 5
 L0:     aload_1
 L1:     iconst_0
@@ -71,7 +71,7 @@ L82:
     .end code
 .end method
 
-.method public break : ([[I[[I[D[D)D
+.method public method796 : ([[I[[I[D[D)D
     .code stack 10 locals 19
 L0:     aload_2
 L1:     aload 4
@@ -88,7 +88,7 @@ L13:    dup
 L14:    pop2
 L15:    daload
 L16:    dstore 7
-L18:    invokestatic Method Zf break ([[I)I
+L18:    invokestatic Method Zf method811 ([[I)I
 L21:    i2d
 L22:    dstore 9
 L24:    dload 7
@@ -107,15 +107,15 @@ L41:    aload_2
 L42:    aload_0
 L43:    dup_x1
 L44:    aload_2
-L45:    invokespecial Method Zf const ([[I)D
+L45:    invokespecial Method Zf method813 ([[I)D
 L48:    dstore 9
-L50:    invokespecial Method Zf short ([[I)D
+L50:    invokespecial Method Zf method801 ([[I)D
 L53:    dstore 11
-L55:    invokespecial Method Zf for ([[I)D
+L55:    invokespecial Method Zf method798 ([[I)D
 L58:    dstore 13
-L60:    invokespecial Method Zf catch ([[I)D
+L60:    invokespecial Method Zf method812 ([[I)D
 L63:    dstore 15
-L65:    invokevirtual Method Zf float ([[I)I
+L65:    invokevirtual Method Zf method800 ([[I)I
 L68:    i2d
 L69:    ldc2_w 9e-1
 L72:    dmul
@@ -183,7 +183,7 @@ L160:
     .end code
 .end method
 
-.method private catch : ([[I)D
+.method private method812 : ([[I)D
     .code stack 6 locals 9
 L0:     dconst_0
 L1:     dstore_2
@@ -305,10 +305,10 @@ L172:
     .end code
 .end method
 
-.method public break : ([[I[D)[D
+.method public method805 : ([[I[D)[D
     .code stack 5 locals 3
 L0:     aload_1
-L1:     invokestatic Method Zf break ([[I)I
+L1:     invokestatic Method Zf method811 ([[I)I
 L4:     istore_2
 L5:     iconst_2
 L6:     iconst_1
@@ -333,7 +333,7 @@ L25:    dup
 L26:    pop2
 L27:    aload_0
 L28:    aload_1
-L29:    invokevirtual Method Zf float ([[I)I
+L29:    invokevirtual Method Zf method800 ([[I)I
 L32:    i2d
 L33:    dastore
 L34:    areturn
@@ -341,7 +341,7 @@ L35:
     .end code
 .end method
 
-.method public float : ([[I)I
+.method public method800 : ([[I)I
     .code stack 4 locals 2
 L0:     aload_1
 L1:     iconst_0
@@ -401,7 +401,7 @@ L63:
     .end code
 .end method
 
-.method public break : ()LNF;
+.method public method803 : ()LNF;
     .code stack 2 locals 1
 L0:     new Zf
 L3:     dup
@@ -411,7 +411,7 @@ L8:
     .end code
 .end method
 
-.method private short : ([[I)D
+.method private method801 : ([[I)D
     .code stack 5 locals 6
 L0:     iconst_0
 L1:     iconst_1
@@ -500,7 +500,7 @@ L115:
     .end code
 .end method
 
-.method private const : ([[I)D
+.method private method813 : ([[I)D
     .code stack 8 locals 7
 L0:     dconst_0
 L1:     dstore_2
@@ -623,7 +623,7 @@ L5:
     .end code
 .end method
 
-.method public else : ([[I)[D
+.method public method809 : ([[I)[D
     .code stack 5 locals 2
 L0:     iconst_1
 L1:     dup
@@ -640,7 +640,7 @@ L12:    dup
 L13:    pop2
 L14:    aload_0
 L15:    aload_1
-L16:    invokespecial Method Zf for ([[I)D
+L16:    invokespecial Method Zf method798 ([[I)D
 L19:    dastore
 L20:    areturn
 L21:    

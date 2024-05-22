@@ -2,7 +2,7 @@
 .class public interface abstract i
 .super java/lang/Object
 
-.method public abstract break : (Ljava/lang/String;)V
+.method public abstract method1147 : (Ljava/lang/String;)V
     .exceptions java/lang/UnsatisfiedLinkError
 .end method
 .innerclasses

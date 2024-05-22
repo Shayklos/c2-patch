@@ -1,14 +1,14 @@
 .version 49 0
 .class public final super enum Fe
 .super java/lang/Enum
-.field public static final enum const LFe;
+.field public static final enum field422 LFe;
 .field public static final enum new LFe;
-.field public static final enum null LFe;
+.field public static final enum field423 LFe;
 .field public static final enum this LFe;
-.field public static final enum char LFe;
-.field private static final synthetic else [LFe;
-.field public static final enum "enum" LFe;
-.field public static final enum do LFe;
+.field public static final enum field424 LFe;
+.field private static final synthetic field425 [LFe;
+.field public static final enum field426 LFe;
+.field public static final enum field427 LFe;
 
 .method public static <clinit> : ()V
     .code stack 6 locals 0
@@ -38,7 +38,7 @@ L39:    iconst_1
 L40:    dup
 L41:    pop2
 L42:    invokespecial Method Fe <init> (Ljava/lang/String;I)V
-L45:    putstatic Field Fe char LFe;
+L45:    putstatic Field Fe field424 LFe;
 L48:    new Fe
 L51:    dup
 L52:    ldc "ROT_CW"
@@ -47,7 +47,7 @@ L55:    iconst_1
 L56:    dup
 L57:    pop2
 L58:    invokespecial Method Fe <init> (Ljava/lang/String;I)V
-L61:    putstatic Field Fe null LFe;
+L61:    putstatic Field Fe field423 LFe;
 L64:    new Fe
 L67:    dup
 L68:    ldc "ROT_CCW"
@@ -56,7 +56,7 @@ L71:    iconst_1
 L72:    dup
 L73:    pop2
 L74:    invokespecial Method Fe <init> (Ljava/lang/String;I)V
-L77:    putstatic Field Fe do LFe;
+L77:    putstatic Field Fe field427 LFe;
 L80:    new Fe
 L83:    dup
 L84:    ldc "ROT_180"
@@ -65,7 +65,7 @@ L87:    iconst_1
 L88:    dup
 L89:    pop2
 L90:    invokespecial Method Fe <init> (Ljava/lang/String;I)V
-L93:    putstatic Field Fe const LFe;
+L93:    putstatic Field Fe field422 LFe;
 L96:    new Fe
 L99:    dup
 L100:   ldc "DROP"
@@ -74,7 +74,7 @@ L104:   iconst_1
 L105:   dup
 L106:   pop2
 L107:   invokespecial Method Fe <init> (Ljava/lang/String;I)V
-L110:   putstatic Field Fe "enum" LFe;
+L110:   putstatic Field Fe field426 LFe;
 L113:   bipush 7
 L115:   iconst_1
 L116:   dup
@@ -102,37 +102,37 @@ L143:   iconst_2
 L144:   iconst_1
 L145:   dup
 L146:   pop2
-L147:   getstatic Field Fe char LFe;
+L147:   getstatic Field Fe field424 LFe;
 L150:   aastore
 L151:   dup
 L152:   iconst_3
 L153:   iconst_1
 L154:   dup
 L155:   pop2
-L156:   getstatic Field Fe null LFe;
+L156:   getstatic Field Fe field423 LFe;
 L159:   aastore
 L160:   dup
 L161:   iconst_4
 L162:   iconst_1
 L163:   dup
 L164:   pop2
-L165:   getstatic Field Fe do LFe;
+L165:   getstatic Field Fe field427 LFe;
 L168:   aastore
 L169:   dup
 L170:   iconst_5
 L171:   iconst_1
 L172:   dup
 L173:   pop2
-L174:   getstatic Field Fe const LFe;
+L174:   getstatic Field Fe field422 LFe;
 L177:   aastore
 L178:   dup
 L179:   bipush 6
 L181:   iconst_1
 L182:   dup
 L183:   pop2
-L184:   getstatic Field Fe "enum" LFe;
+L184:   getstatic Field Fe field426 LFe;
 L187:   aastore
-L188:   putstatic Field Fe else [LFe;
+L188:   putstatic Field Fe field425 [LFe;
 L191:   return
 L192:   
     .end code
@@ -162,7 +162,7 @@ L10:
 
 .method public static values : ()[LFe;
     .code stack 1 locals 0
-L0:     getstatic Field Fe else [LFe;
+L0:     getstatic Field Fe field425 [LFe;
 L3:     invokevirtual Method [LFe; clone ()Ljava/lang/Object;
 L6:     checkcast [LFe;
 L9:     areturn

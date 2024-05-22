@@ -1,8 +1,8 @@
 .version 49 0
 .class final super org/lwjgl/opengl/J
 .super java/lang/Object
-.field private final "enum" I
-.field private final do I
+.field private final field4259 I
+.field private final field4260 I
 
 .method <init> : (II)V
     .code stack 5 locals 3
@@ -12,8 +12,8 @@ L2:     dup_x1
 L3:     iload_1
 L4:     aload_0
 L5:     invokespecial Method java/lang/Object <init> ()V
-L8:     putfield Field org/lwjgl/opengl/J do I
-L11:    putfield Field org/lwjgl/opengl/J "enum" I
+L8:     putfield Field org/lwjgl/opengl/J field4260 I
+L11:    putfield Field org/lwjgl/opengl/J field4259 I
 L14:    return
 L15:    
     .end code
@@ -24,7 +24,7 @@ L15:
 L0:     aload_0
 L1:     dup
 L2:     dup2
-L3:     getfield Field org/lwjgl/opengl/J do I
+L3:     getfield Field org/lwjgl/opengl/J field4260 I
 L6:     bipush 16
 L8:     iconst_1
 L9:     dup
@@ -33,11 +33,11 @@ L11:    ishr
 L12:    ldc 65535
 L14:    iand
 L15:    istore_1
-L16:    getfield Field org/lwjgl/opengl/J do I
+L16:    getfield Field org/lwjgl/opengl/J field4260 I
 L19:    ldc 65535
 L21:    iand
 L22:    istore_2
-L23:    getfield Field org/lwjgl/opengl/J "enum" I
+L23:    getfield Field org/lwjgl/opengl/J field4259 I
 L26:    bipush 16
 L28:    iconst_1
 L29:    dup
@@ -46,7 +46,7 @@ L31:    ishr
 L32:    ldc 65535
 L34:    iand
 L35:    istore_3
-L36:    getfield Field org/lwjgl/opengl/J "enum" I
+L36:    getfield Field org/lwjgl/opengl/J field4259 I
 L39:    ldc 65535
 L41:    iand
 L42:    istore 4

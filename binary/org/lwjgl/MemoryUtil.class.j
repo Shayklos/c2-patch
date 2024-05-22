@@ -1,15 +1,15 @@
 .version 49 0
 .class public final super org/lwjgl/MemoryUtil
 .super java/lang/Object
-.field private static final char Lorg/lwjgl/MemoryUtil$Accessor;
-.field private static final else Ljava/nio/charset/Charset;
-.field private static final "enum" Ljava/nio/charset/Charset;
-.field private static final do Ljava/nio/charset/Charset;
+.field private static final field2537 Lorg/lwjgl/MemoryUtil$Accessor;
+.field private static final field2538 Ljava/nio/charset/Charset;
+.field private static final field2539 Ljava/nio/charset/Charset;
+.field private static final field2540 Ljava/nio/charset/Charset;
 
-.method public static else : (Ljava/nio/DoubleBuffer;I)J
+.method public static method1838 : (Ljava/nio/DoubleBuffer;I)J
     .code stack 6 locals 2
 L0:     aload_0
-L1:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
+L1:     invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
 L4:     iload_1
 L5:     iconst_3
 L6:     iconst_1
@@ -23,7 +23,7 @@ L13:
     .end code
 .end method
 
-.method public static else : (Ljava/nio/CharBuffer;I)J
+.method public static method1839 : (Ljava/nio/CharBuffer;I)J
     .code stack 2 locals 2
 L0:     aload_0
 L1:     ifnonnull L7
@@ -32,28 +32,28 @@ L5:     lreturn
 L6:     athrow
 L7:     aload_0
 L8:     iload_1
-L9:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/CharBuffer;I)J
+L9:     invokestatic Method org/lwjgl/MemoryUtil method1841 (Ljava/nio/CharBuffer;I)J
 L12:    lreturn
 L13:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x02\x07\x00\x22\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x02\x07\x00\x24\x01\x00\x00'
     .end code
 .end method
 
-.method public static else : (Ljava/nio/DoubleBuffer;)J
+.method public static method1840 : (Ljava/nio/DoubleBuffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
 L2:     invokevirtual Method java/nio/DoubleBuffer position ()I
-L5:     invokestatic Method org/lwjgl/MemoryUtil else (Ljava/nio/DoubleBuffer;I)J
+L5:     invokestatic Method org/lwjgl/MemoryUtil method1838 (Ljava/nio/DoubleBuffer;I)J
 L8:     lreturn
 L9:     
     .end code
 .end method
 
-.method public static break : (Ljava/nio/CharBuffer;I)J
+.method public static method1841 : (Ljava/nio/CharBuffer;I)J
     .code stack 6 locals 2
 L0:     aload_0
-L1:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
+L1:     invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
 L4:     iload_1
 L5:     iconst_1
 L6:     dup
@@ -67,7 +67,7 @@ L13:
     .end code
 .end method
 
-.method public static else : (Ljava/nio/ByteBuffer;I)J
+.method public static method1842 : (Ljava/nio/ByteBuffer;I)J
     .code stack 2 locals 2
 L0:     aload_0
 L1:     ifnonnull L7
@@ -76,14 +76,14 @@ L5:     lreturn
 L6:     athrow
 L7:     aload_0
 L8:     iload_1
-L9:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/ByteBuffer;I)J
+L9:     invokestatic Method org/lwjgl/MemoryUtil method1882 (Ljava/nio/ByteBuffer;I)J
 L12:    lreturn
 L13:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x02\x07\x00\x30\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x02\x07\x00\x35\x01\x00\x00'
     .end code
 .end method
 
-.method private static else : (Ljava/nio/ByteBuffer;Ljava/nio/charset/Charset;)Ljava/lang/String;
+.method private static method1843 : (Ljava/nio/ByteBuffer;Ljava/nio/charset/Charset;)Ljava/lang/String;
     .code stack 6 locals 6
 L0:     aload_1
 L1:     invokevirtual Method java/nio/charset/Charset newDecoder ()Ljava/nio/charset/CharsetDecoder;
@@ -185,11 +185,11 @@ L167:   aload_3
 L168:   invokevirtual Method java/nio/CharBuffer toString ()Ljava/lang/String;
 L171:   areturn
 L172:   
-        .attribute StackMap b'\x00\x0D\x00\x24\x00\x00\x00\x01\x07\x00\x20\x00\x25\x00\x04\x07\x00\x30\x07\x00\x40\x01\x07\x00\x22\x00\x00\x00\x2A\x00\x04\x07\x00\x30\x07\x00\x40\x01\x07\x00\x22\x00\x00\x00\x2B\x00\x04\x07\x00\x30\x07\x00\x40\x01\x07\x00\x22\x00\x01\x07\x00\x30\x00\x3E\x00\x00\x00\x01\x07\x00\x20\x00\x3F\x00\x04\x07\x00\x30\x07\x00\x40\x01\x07\x00\x22\x00\x00\x00\x42\x00\x04\x07\x00\x30\x07\x00\x40\x01\x07\x00\x22\x00\x01\x07\x00\x59\x00\x53\x00\x05\x07\x00\x30\x07\x00\x40\x01\x07\x00\x22\x07\x00\x59\x00\x00\x00\x5F\x00\x05\x07\x00\x30\x07\x00\x40\x01\x07\x00\x22\x07\x00\x59\x00\x00\x00\x8B\x00\x05\x07\x00\x30\x07\x00\x40\x01\x07\x00\x22\x07\x00\x59\x00\x00\x00\x93\x00\x05\x07\x00\x30\x07\x00\x40\x01\x07\x00\x22\x07\x00\x59\x00\x01\x07\x00\x35\x00\x9F\x00\x00\x00\x01\x07\x00\x20\x00\xA3\x00\x05\x07\x00\x30\x07\x00\x40\x01\x07\x00\x22\x07\x00\x59\x00\x01\x07\x00\x22'
+        .attribute StackMap b'\x00\x0D\x00\x24\x00\x00\x00\x01\x07\x00\x22\x00\x25\x00\x04\x07\x00\x35\x07\x00\x47\x01\x07\x00\x24\x00\x00\x00\x2A\x00\x04\x07\x00\x35\x07\x00\x47\x01\x07\x00\x24\x00\x00\x00\x2B\x00\x04\x07\x00\x35\x07\x00\x47\x01\x07\x00\x24\x00\x01\x07\x00\x35\x00\x3E\x00\x00\x00\x01\x07\x00\x22\x00\x3F\x00\x04\x07\x00\x35\x07\x00\x47\x01\x07\x00\x24\x00\x00\x00\x42\x00\x04\x07\x00\x35\x07\x00\x47\x01\x07\x00\x24\x00\x01\x07\x00\x60\x00\x53\x00\x05\x07\x00\x35\x07\x00\x47\x01\x07\x00\x24\x07\x00\x60\x00\x00\x00\x5F\x00\x05\x07\x00\x35\x07\x00\x47\x01\x07\x00\x24\x07\x00\x60\x00\x00\x00\x8B\x00\x05\x07\x00\x35\x07\x00\x47\x01\x07\x00\x24\x07\x00\x60\x00\x00\x00\x93\x00\x05\x07\x00\x35\x07\x00\x47\x01\x07\x00\x24\x07\x00\x60\x00\x01\x07\x00\x3C\x00\x9F\x00\x00\x00\x01\x07\x00\x22\x00\xA3\x00\x05\x07\x00\x35\x07\x00\x47\x01\x07\x00\x24\x07\x00\x60\x00\x01\x07\x00\x24'
     .end code
 .end method
 
-.method public static else : (Ljava/nio/FloatBuffer;I)J
+.method public static method1844 : (Ljava/nio/FloatBuffer;I)J
     .code stack 2 locals 2
 L0:     aload_0
 L1:     ifnonnull L7
@@ -198,45 +198,45 @@ L5:     lreturn
 L6:     athrow
 L7:     aload_0
 L8:     iload_1
-L9:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/FloatBuffer;I)J
+L9:     invokestatic Method org/lwjgl/MemoryUtil method1849 (Ljava/nio/FloatBuffer;I)J
 L12:    lreturn
 L13:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x02\x07\x00\x80\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x02\x07\x00\x88\x01\x00\x00'
     .end code
 .end method
 
-.method static break : ()Ljava/lang/reflect/Field;
+.method static method1845 : ()Ljava/lang/reflect/Field;
     .code stack 2 locals 0
 L0:     ldc Class java/nio/ByteBuffer
 L2:     ldc "address"
-L4:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+L4:     invokestatic Method org/lwjgl/MemoryUtil method1869 (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
 L7:     areturn
 L8:     
     .end code
     .exceptions java/lang/NoSuchFieldException
 .end method
 
-.method public static const : (Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
+.method public static method1846 : (Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
     .code stack 2 locals 1
 L0:     aload_0
-L1:     getstatic Field org/lwjgl/MemoryUtil else Ljava/nio/charset/Charset;
-L4:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Ljava/nio/ByteBuffer;
+L1:     getstatic Field org/lwjgl/MemoryUtil field2538 Ljava/nio/charset/Charset;
+L4:     invokestatic Method org/lwjgl/MemoryUtil method1871 (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Ljava/nio/ByteBuffer;
 L7:     areturn
 L8:     
     .end code
 .end method
 
-.method public static else : (Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
+.method public static method1847 : (Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
     .code stack 2 locals 1
 L0:     aload_0
-L1:     getstatic Field org/lwjgl/MemoryUtil "enum" Ljava/nio/charset/Charset;
-L4:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Ljava/nio/ByteBuffer;
+L1:     getstatic Field org/lwjgl/MemoryUtil field2539 Ljava/nio/charset/Charset;
+L4:     invokestatic Method org/lwjgl/MemoryUtil method1871 (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Ljava/nio/ByteBuffer;
 L7:     areturn
 L8:     
     .end code
 .end method
 
-.method private static break : (Ljava/nio/ByteBuffer;Ljava/nio/charset/Charset;)Ljava/lang/String;
+.method private static method1848 : (Ljava/nio/ByteBuffer;Ljava/nio/charset/Charset;)Ljava/lang/String;
     .code stack 2 locals 2
 L0:     aload_0
 L1:     ifnonnull L7
@@ -245,17 +245,17 @@ L5:     areturn
 L6:     athrow
 L7:     aload_0
 L8:     aload_1
-L9:     invokestatic Method org/lwjgl/MemoryUtil else (Ljava/nio/ByteBuffer;Ljava/nio/charset/Charset;)Ljava/lang/String;
+L9:     invokestatic Method org/lwjgl/MemoryUtil method1843 (Ljava/nio/ByteBuffer;Ljava/nio/charset/Charset;)Ljava/lang/String;
 L12:    areturn
 L13:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x02\x07\x00\x30\x07\x00\x37\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x02\x07\x00\x35\x07\x00\x3E\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/FloatBuffer;I)J
+.method public static method1849 : (Ljava/nio/FloatBuffer;I)J
     .code stack 6 locals 2
 L0:     aload_0
-L1:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
+L1:     invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
 L4:     iload_1
 L5:     iconst_2
 L6:     iconst_1
@@ -269,18 +269,18 @@ L13:
     .end code
 .end method
 
-.method public static else : (Ljava/nio/CharBuffer;)J
+.method public static method1850 : (Ljava/nio/CharBuffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
 L2:     invokevirtual Method java/nio/CharBuffer position ()I
-L5:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/CharBuffer;I)J
+L5:     invokestatic Method org/lwjgl/MemoryUtil method1841 (Ljava/nio/CharBuffer;I)J
 L8:     lreturn
 L9:     
     .end code
 .end method
 
-.method private static break : (Ljava/nio/CharBuffer;Ljava/nio/charset/Charset;)Ljava/nio/ByteBuffer;
+.method private static method1851 : (Ljava/nio/CharBuffer;Ljava/nio/charset/Charset;)Ljava/nio/ByteBuffer;
     .code stack 6 locals 6
 L0:     aload_1
 L1:     invokevirtual Method java/nio/charset/Charset newEncoder ()Ljava/nio/charset/CharsetEncoder;
@@ -381,11 +381,11 @@ L165:   pop
 L166:   aload_3
 L167:   areturn
 L168:   
-        .attribute StackMap b'\x00\x0D\x00\x23\x00\x00\x00\x01\x07\x00\x20\x00\x24\x00\x04\x07\x00\x22\x07\x00\x9F\x01\x07\x00\x30\x00\x00\x00\x29\x00\x04\x07\x00\x22\x07\x00\x9F\x01\x07\x00\x30\x00\x00\x00\x2A\x00\x04\x07\x00\x22\x07\x00\x9F\x01\x07\x00\x30\x00\x01\x07\x00\x22\x00\x3D\x00\x00\x00\x01\x07\x00\x20\x00\x3E\x00\x04\x07\x00\x22\x07\x00\x9F\x01\x07\x00\x30\x00\x00\x00\x41\x00\x04\x07\x00\x22\x07\x00\x9F\x01\x07\x00\x30\x00\x01\x07\x00\x59\x00\x52\x00\x05\x07\x00\x22\x07\x00\x9F\x01\x07\x00\x30\x07\x00\x59\x00\x00\x00\x5E\x00\x05\x07\x00\x22\x07\x00\x9F\x01\x07\x00\x30\x07\x00\x59\x00\x00\x00\x8A\x00\x05\x07\x00\x22\x07\x00\x9F\x01\x07\x00\x30\x07\x00\x59\x00\x00\x00\x92\x00\x05\x07\x00\x22\x07\x00\x9F\x01\x07\x00\x30\x07\x00\x59\x00\x01\x07\x00\x35\x00\x9E\x00\x00\x00\x01\x07\x00\x20\x00\xA2\x00\x05\x07\x00\x22\x07\x00\x9F\x01\x07\x00\x30\x07\x00\x59\x00\x01\x07\x00\x30'
+        .attribute StackMap b'\x00\x0D\x00\x23\x00\x00\x00\x01\x07\x00\x22\x00\x24\x00\x04\x07\x00\x24\x07\x00\xAF\x01\x07\x00\x35\x00\x00\x00\x29\x00\x04\x07\x00\x24\x07\x00\xAF\x01\x07\x00\x35\x00\x00\x00\x2A\x00\x04\x07\x00\x24\x07\x00\xAF\x01\x07\x00\x35\x00\x01\x07\x00\x24\x00\x3D\x00\x00\x00\x01\x07\x00\x22\x00\x3E\x00\x04\x07\x00\x24\x07\x00\xAF\x01\x07\x00\x35\x00\x00\x00\x41\x00\x04\x07\x00\x24\x07\x00\xAF\x01\x07\x00\x35\x00\x01\x07\x00\x60\x00\x52\x00\x05\x07\x00\x24\x07\x00\xAF\x01\x07\x00\x35\x07\x00\x60\x00\x00\x00\x5E\x00\x05\x07\x00\x24\x07\x00\xAF\x01\x07\x00\x35\x07\x00\x60\x00\x00\x00\x8A\x00\x05\x07\x00\x24\x07\x00\xAF\x01\x07\x00\x35\x07\x00\x60\x00\x00\x00\x92\x00\x05\x07\x00\x24\x07\x00\xAF\x01\x07\x00\x35\x07\x00\x60\x00\x01\x07\x00\x3C\x00\x9E\x00\x00\x00\x01\x07\x00\x22\x00\xA2\x00\x05\x07\x00\x24\x07\x00\xAF\x01\x07\x00\x35\x07\x00\x60\x00\x01\x07\x00\x35'
     .end code
 .end method
 
-.method public static else : (Ljava/nio/FloatBuffer;)J
+.method public static method1852 : (Ljava/nio/FloatBuffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     ifnonnull L7
@@ -393,59 +393,59 @@ L4:     lconst_0
 L5:     lreturn
 L6:     athrow
 L7:     aload_0
-L8:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/FloatBuffer;)J
+L8:     invokestatic Method org/lwjgl/MemoryUtil method1878 (Ljava/nio/FloatBuffer;)J
 L11:    lreturn
 L12:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x01\x07\x00\x80\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x01\x07\x00\x88\x00\x00'
     .end code
 .end method
 
-.method public static else : (Ljava/nio/ShortBuffer;)J
+.method public static method1853 : (Ljava/nio/ShortBuffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
 L2:     invokevirtual Method java/nio/ShortBuffer position ()I
-L5:     invokestatic Method org/lwjgl/MemoryUtil else (Ljava/nio/ShortBuffer;I)J
+L5:     invokestatic Method org/lwjgl/MemoryUtil method1863 (Ljava/nio/ShortBuffer;I)J
 L8:     lreturn
 L9:     
     .end code
 .end method
 
-.method public static break : (Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
+.method public static method1854 : (Ljava/lang/CharSequence;)Ljava/nio/ByteBuffer;
     .code stack 2 locals 1
 L0:     aload_0
-L1:     getstatic Field org/lwjgl/MemoryUtil do Ljava/nio/charset/Charset;
-L4:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Ljava/nio/ByteBuffer;
+L1:     getstatic Field org/lwjgl/MemoryUtil field2540 Ljava/nio/charset/Charset;
+L4:     invokestatic Method org/lwjgl/MemoryUtil method1871 (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Ljava/nio/ByteBuffer;
 L7:     areturn
 L8:     
     .end code
 .end method
 
-.method public static float : (Ljava/nio/ByteBuffer;)Ljava/lang/String;
+.method public static method1855 : (Ljava/nio/ByteBuffer;)Ljava/lang/String;
     .code stack 2 locals 1
 L0:     aload_0
-L1:     getstatic Field org/lwjgl/MemoryUtil else Ljava/nio/charset/Charset;
-L4:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/ByteBuffer;Ljava/nio/charset/Charset;)Ljava/lang/String;
+L1:     getstatic Field org/lwjgl/MemoryUtil field2538 Ljava/nio/charset/Charset;
+L4:     invokestatic Method org/lwjgl/MemoryUtil method1848 (Ljava/nio/ByteBuffer;Ljava/nio/charset/Charset;)Ljava/lang/String;
 L7:     areturn
 L8:     
     .end code
 .end method
 
-.method public static short : (Lorg/lwjgl/h;)J
+.method public static method1856 : (Lorg/lwjgl/h;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
 L2:     invokevirtual Method org/lwjgl/h true ()I
-L5:     invokestatic Method org/lwjgl/MemoryUtil break (Lorg/lwjgl/h;I)J
+L5:     invokestatic Method org/lwjgl/MemoryUtil method1879 (Lorg/lwjgl/h;I)J
 L8:     lreturn
 L9:     
     .end code
 .end method
 
-.method public static else : (Ljava/nio/LongBuffer;I)J
+.method public static method1857 : (Ljava/nio/LongBuffer;I)J
     .code stack 6 locals 2
 L0:     aload_0
-L1:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
+L1:     invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
 L4:     iload_1
 L5:     iconst_3
 L6:     iconst_1
@@ -459,7 +459,7 @@ L13:
     .end code
 .end method
 
-.method public static else : (Lorg/lwjgl/h;I)J
+.method public static method1858 : (Lorg/lwjgl/h;I)J
     .code stack 2 locals 2
 L0:     aload_0
 L1:     ifnonnull L7
@@ -468,41 +468,41 @@ L5:     lreturn
 L6:     athrow
 L7:     aload_0
 L8:     iload_1
-L9:     invokestatic Method org/lwjgl/MemoryUtil break (Lorg/lwjgl/h;I)J
+L9:     invokestatic Method org/lwjgl/MemoryUtil method1879 (Lorg/lwjgl/h;I)J
 L12:    lreturn
 L13:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x02\x07\x00\xC8\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x02\x07\x00\xDD\x01\x00\x00'
     .end code
 .end method
 
-.method public static else : (Ljava/nio/Buffer;)J
+.method public static method1859 : (Ljava/nio/Buffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     ifnonnull L7
 L4:     lconst_0
 L5:     lreturn
 L6:     athrow
-L7:     getstatic Field org/lwjgl/MemoryUtil char Lorg/lwjgl/MemoryUtil$Accessor;
+L7:     getstatic Field org/lwjgl/MemoryUtil field2537 Lorg/lwjgl/MemoryUtil$Accessor;
 L10:    aload_0
-L11:    invokeinterface InterfaceMethod org/lwjgl/MemoryUtil$Accessor break (Ljava/nio/Buffer;)J 2
+L11:    invokeinterface InterfaceMethod org/lwjgl/MemoryUtil$Accessor method1887 (Ljava/nio/Buffer;)J 2
 L16:    lreturn
 L17:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x01\x07\x00\xD1\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x01\x07\x00\xEA\x00\x00'
     .end code
 .end method
 
-.method public static else : (Ljava/nio/LongBuffer;)J
+.method public static method1860 : (Ljava/nio/LongBuffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
 L2:     invokevirtual Method java/nio/LongBuffer position ()I
-L5:     invokestatic Method org/lwjgl/MemoryUtil else (Ljava/nio/LongBuffer;I)J
+L5:     invokestatic Method org/lwjgl/MemoryUtil method1857 (Ljava/nio/LongBuffer;I)J
 L8:     lreturn
 L9:     
     .end code
 .end method
 
-.method public static break : (Ljava/nio/DoubleBuffer;)J
+.method public static method1861 : (Ljava/nio/DoubleBuffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     ifnonnull L7
@@ -510,14 +510,14 @@ L4:     lconst_0
 L5:     lreturn
 L6:     athrow
 L7:     aload_0
-L8:     invokestatic Method org/lwjgl/MemoryUtil else (Ljava/nio/DoubleBuffer;)J
+L8:     invokestatic Method org/lwjgl/MemoryUtil method1840 (Ljava/nio/DoubleBuffer;)J
 L11:    lreturn
 L12:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x01\x07\x00\x27\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x01\x07\x00\x2B\x00\x00'
     .end code
 .end method
 
-.method private static break : (Ljava/lang/String;)Lorg/lwjgl/MemoryUtil$Accessor;
+.method private static method1862 : (Ljava/lang/String;)Lorg/lwjgl/MemoryUtil$Accessor;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     invokestatic Method java/lang/Class forName (Ljava/lang/String;)Ljava/lang/Class;
@@ -529,10 +529,10 @@ L11:
     .exceptions java/lang/Exception
 .end method
 
-.method public static else : (Ljava/nio/ShortBuffer;I)J
+.method public static method1863 : (Ljava/nio/ShortBuffer;I)J
     .code stack 6 locals 2
 L0:     aload_0
-L1:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
+L1:     invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
 L4:     iload_1
 L5:     iconst_1
 L6:     dup
@@ -546,17 +546,17 @@ L13:
     .end code
 .end method
 
-.method public static short : (Ljava/nio/ByteBuffer;)Ljava/lang/String;
+.method public static method1864 : (Ljava/nio/ByteBuffer;)Ljava/lang/String;
     .code stack 2 locals 1
 L0:     aload_0
-L1:     getstatic Field org/lwjgl/MemoryUtil do Ljava/nio/charset/Charset;
-L4:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/ByteBuffer;Ljava/nio/charset/Charset;)Ljava/lang/String;
+L1:     getstatic Field org/lwjgl/MemoryUtil field2540 Ljava/nio/charset/Charset;
+L4:     invokestatic Method org/lwjgl/MemoryUtil method1848 (Ljava/nio/ByteBuffer;Ljava/nio/charset/Charset;)Ljava/lang/String;
 L7:     areturn
 L8:     
     .end code
 .end method
 
-.method public static else : (Ljava/nio/IntBuffer;)J
+.method public static method1865 : (Ljava/nio/IntBuffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     ifnonnull L7
@@ -564,14 +564,14 @@ L4:     lconst_0
 L5:     lreturn
 L6:     athrow
 L7:     aload_0
-L8:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/IntBuffer;)J
+L8:     invokestatic Method org/lwjgl/MemoryUtil method1884 (Ljava/nio/IntBuffer;)J
 L11:    lreturn
 L12:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x01\x07\x00\xEC\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x01\x07\x01\x0C\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/LongBuffer;I)J
+.method public static method1866 : (Ljava/nio/LongBuffer;I)J
     .code stack 2 locals 2
 L0:     aload_0
 L1:     ifnonnull L7
@@ -580,24 +580,24 @@ L5:     lreturn
 L6:     athrow
 L7:     aload_0
 L8:     iload_1
-L9:     invokestatic Method org/lwjgl/MemoryUtil else (Ljava/nio/LongBuffer;I)J
+L9:     invokestatic Method org/lwjgl/MemoryUtil method1857 (Ljava/nio/LongBuffer;I)J
 L12:    lreturn
 L13:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x02\x07\x00\xD7\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x02\x07\x00\xF3\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/Buffer;)J
+.method public static method1867 : (Ljava/nio/Buffer;)J
     .code stack 2 locals 1
-L0:     getstatic Field org/lwjgl/MemoryUtil char Lorg/lwjgl/MemoryUtil$Accessor;
+L0:     getstatic Field org/lwjgl/MemoryUtil field2537 Lorg/lwjgl/MemoryUtil$Accessor;
 L3:     aload_0
-L4:     invokeinterface InterfaceMethod org/lwjgl/MemoryUtil$Accessor break (Ljava/nio/Buffer;)J 2
+L4:     invokeinterface InterfaceMethod org/lwjgl/MemoryUtil$Accessor method1887 (Ljava/nio/Buffer;)J 2
 L9:     lreturn
 L10:    
     .end code
 .end method
 
-.method public static else : (Ljava/nio/IntBuffer;I)J
+.method public static method1868 : (Ljava/nio/IntBuffer;I)J
     .code stack 2 locals 2
 L0:     aload_0
 L1:     ifnonnull L7
@@ -606,14 +606,14 @@ L5:     lreturn
 L6:     athrow
 L7:     aload_0
 L8:     iload_1
-L9:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/IntBuffer;I)J
+L9:     invokestatic Method org/lwjgl/MemoryUtil method1876 (Ljava/nio/IntBuffer;I)J
 L12:    lreturn
 L13:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x02\x07\x00\xEC\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x02\x07\x01\x0C\x01\x00\x00'
     .end code
 .end method
 
-.method private static break : (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
+.method private static method1869 : (Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/reflect/Field;
     .code stack 5 locals 4
 L0:     aload_0
 L1:     astore_2
@@ -648,7 +648,7 @@ L54:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/Strin
 L57:    invokespecial Method java/lang/NoSuchFieldException <init> (Ljava/lang/String;)V
 L60:    athrow
 L61:    
-        .attribute StackMap b'\x00\x03\x00\x02\x00\x03\x07\x00\xE1\x07\x00\xF3\x07\x00\xE1\x00\x00\x00\x08\x00\x00\x00\x01\x07\x00\x20\x00\x09\x00\x03\x07\x00\xE1\x07\x00\xF3\x07\x00\xE1\x00\x01\x07\x00\x85'
+        .attribute StackMap b'\x00\x03\x00\x02\x00\x03\x07\x00\xFF\x07\x01\x17\x07\x00\xFF\x00\x00\x00\x08\x00\x00\x00\x01\x07\x00\x22\x00\x09\x00\x03\x07\x00\xFF\x07\x01\x17\x07\x00\xFF\x00\x01\x07\x00\x8F'
     .end code
     .exceptions java/lang/NoSuchFieldException
 .end method
@@ -662,7 +662,7 @@ L5:
     .end code
 .end method
 
-.method public static break : (Ljava/nio/CharBuffer;)J
+.method public static method1870 : (Ljava/nio/CharBuffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     ifnonnull L7
@@ -670,14 +670,14 @@ L4:     lconst_0
 L5:     lreturn
 L6:     athrow
 L7:     aload_0
-L8:     invokestatic Method org/lwjgl/MemoryUtil else (Ljava/nio/CharBuffer;)J
+L8:     invokestatic Method org/lwjgl/MemoryUtil method1850 (Ljava/nio/CharBuffer;)J
 L11:    lreturn
 L12:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x01\x07\x00\x22\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x01\x07\x00\x24\x00\x00'
     .end code
 .end method
 
-.method private static break : (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Ljava/nio/ByteBuffer;
+.method private static method1871 : (Ljava/lang/CharSequence;Ljava/nio/charset/Charset;)Ljava/nio/ByteBuffer;
     .code stack 3 locals 2
 L0:     aload_0
 L1:     ifnonnull L7
@@ -690,42 +690,42 @@ L11:    aload_0
 L12:    invokespecial Method org/lwjgl/MemoryUtil$CharSequenceNT <init> (Ljava/lang/CharSequence;)V
 L15:    invokestatic Method java/nio/CharBuffer wrap (Ljava/lang/CharSequence;)Ljava/nio/CharBuffer;
 L18:    aload_1
-L19:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/CharBuffer;Ljava/nio/charset/Charset;)Ljava/nio/ByteBuffer;
+L19:    invokestatic Method org/lwjgl/MemoryUtil method1851 (Ljava/nio/CharBuffer;Ljava/nio/charset/Charset;)Ljava/nio/ByteBuffer;
 L22:    areturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x02\x07\x01\x17\x07\x00\x37\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x02\x07\x01\x3C\x07\x00\x3E\x00\x00'
     .end code
 .end method
 
-.method public static const : (Lorg/lwjgl/h;)J
+.method public static method1872 : (Lorg/lwjgl/h;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     ifnonnull L7
 L4:     lconst_0
 L5:     lreturn
 L6:     athrow
-L7:     getstatic Field org/lwjgl/MemoryUtil char Lorg/lwjgl/MemoryUtil$Accessor;
+L7:     getstatic Field org/lwjgl/MemoryUtil field2537 Lorg/lwjgl/MemoryUtil$Accessor;
 L10:    aload_0
-L11:    invokevirtual Method org/lwjgl/h char ()Ljava/nio/ByteBuffer;
-L14:    invokeinterface InterfaceMethod org/lwjgl/MemoryUtil$Accessor break (Ljava/nio/Buffer;)J 2
+L11:    invokevirtual Method org/lwjgl/h method281 ()Ljava/nio/ByteBuffer;
+L14:    invokeinterface InterfaceMethod org/lwjgl/MemoryUtil$Accessor method1887 (Ljava/nio/Buffer;)J 2
 L19:    lreturn
 L20:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x01\x07\x00\xC8\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x01\x07\x00\xDD\x00\x00'
     .end code
 .end method
 
-.method public static const : (Ljava/nio/ByteBuffer;)J
+.method public static method1873 : (Ljava/nio/ByteBuffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
 L2:     invokevirtual Method java/nio/ByteBuffer position ()I
-L5:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/ByteBuffer;I)J
+L5:     invokestatic Method org/lwjgl/MemoryUtil method1882 (Ljava/nio/ByteBuffer;I)J
 L8:     lreturn
 L9:     
     .end code
 .end method
 
-.method public static break : (Ljava/nio/DoubleBuffer;I)J
+.method public static method1874 : (Ljava/nio/DoubleBuffer;I)J
     .code stack 2 locals 2
 L0:     aload_0
 L1:     ifnonnull L7
@@ -734,14 +734,14 @@ L5:     lreturn
 L6:     athrow
 L7:     aload_0
 L8:     iload_1
-L9:     invokestatic Method org/lwjgl/MemoryUtil else (Ljava/nio/DoubleBuffer;I)J
+L9:     invokestatic Method org/lwjgl/MemoryUtil method1838 (Ljava/nio/DoubleBuffer;I)J
 L12:    lreturn
 L13:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x02\x07\x00\x27\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x02\x07\x00\x2B\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/ShortBuffer;)J
+.method public static method1875 : (Ljava/nio/ShortBuffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     ifnonnull L7
@@ -749,17 +749,17 @@ L4:     lconst_0
 L5:     lreturn
 L6:     athrow
 L7:     aload_0
-L8:     invokestatic Method org/lwjgl/MemoryUtil else (Ljava/nio/ShortBuffer;)J
+L8:     invokestatic Method org/lwjgl/MemoryUtil method1853 (Ljava/nio/ShortBuffer;)J
 L11:    lreturn
 L12:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x01\x07\x00\xBA\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x01\x07\x00\xCD\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/IntBuffer;I)J
+.method public static method1876 : (Ljava/nio/IntBuffer;I)J
     .code stack 6 locals 2
 L0:     aload_0
-L1:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
+L1:     invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
 L4:     iload_1
 L5:     iconst_2
 L6:     iconst_1
@@ -773,34 +773,34 @@ L13:
     .end code
 .end method
 
-.method public static else : (Lorg/lwjgl/h;)J
+.method public static method1877 : (Lorg/lwjgl/h;)J
     .code stack 2 locals 1
-L0:     getstatic Field org/lwjgl/MemoryUtil char Lorg/lwjgl/MemoryUtil$Accessor;
+L0:     getstatic Field org/lwjgl/MemoryUtil field2537 Lorg/lwjgl/MemoryUtil$Accessor;
 L3:     aload_0
-L4:     invokevirtual Method org/lwjgl/h char ()Ljava/nio/ByteBuffer;
-L7:     invokeinterface InterfaceMethod org/lwjgl/MemoryUtil$Accessor break (Ljava/nio/Buffer;)J 2
+L4:     invokevirtual Method org/lwjgl/h method281 ()Ljava/nio/ByteBuffer;
+L7:     invokeinterface InterfaceMethod org/lwjgl/MemoryUtil$Accessor method1887 (Ljava/nio/Buffer;)J 2
 L12:    lreturn
 L13:    
     .end code
 .end method
 
-.method public static break : (Ljava/nio/FloatBuffer;)J
+.method public static method1878 : (Ljava/nio/FloatBuffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
 L2:     invokevirtual Method java/nio/FloatBuffer position ()I
-L5:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/FloatBuffer;I)J
+L5:     invokestatic Method org/lwjgl/MemoryUtil method1849 (Ljava/nio/FloatBuffer;I)J
 L8:     lreturn
 L9:     
     .end code
 .end method
 
-.method public static break : (Lorg/lwjgl/h;I)J
+.method public static method1879 : (Lorg/lwjgl/h;I)J
     .code stack 4 locals 2
 L0:     aload_0
-L1:     invokestatic Method org/lwjgl/MemoryUtil else (Lorg/lwjgl/h;)J
+L1:     invokestatic Method org/lwjgl/MemoryUtil method1877 (Lorg/lwjgl/h;)J
 L4:     iload_1
-L5:     invokestatic Method org/lwjgl/h "enum" ()I
+L5:     invokestatic Method org/lwjgl/h method275 ()I
 L8:     imul
 L9:     i2l
 L10:    ladd
@@ -809,17 +809,17 @@ L12:
     .end code
 .end method
 
-.method public static else : (Ljava/nio/ByteBuffer;)Ljava/lang/String;
+.method public static method1880 : (Ljava/nio/ByteBuffer;)Ljava/lang/String;
     .code stack 2 locals 1
 L0:     aload_0
-L1:     getstatic Field org/lwjgl/MemoryUtil "enum" Ljava/nio/charset/Charset;
-L4:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/ByteBuffer;Ljava/nio/charset/Charset;)Ljava/lang/String;
+L1:     getstatic Field org/lwjgl/MemoryUtil field2539 Ljava/nio/charset/Charset;
+L4:     invokestatic Method org/lwjgl/MemoryUtil method1848 (Ljava/nio/ByteBuffer;Ljava/nio/charset/Charset;)Ljava/lang/String;
 L7:     areturn
 L8:     
     .end code
 .end method
 
-.method public static break : (Ljava/nio/LongBuffer;)J
+.method public static method1881 : (Ljava/nio/LongBuffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     ifnonnull L7
@@ -827,17 +827,17 @@ L4:     lconst_0
 L5:     lreturn
 L6:     athrow
 L7:     aload_0
-L8:     invokestatic Method org/lwjgl/MemoryUtil else (Ljava/nio/LongBuffer;)J
+L8:     invokestatic Method org/lwjgl/MemoryUtil method1860 (Ljava/nio/LongBuffer;)J
 L11:    lreturn
 L12:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x01\x07\x00\xD7\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x01\x07\x00\xF3\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/ByteBuffer;I)J
+.method public static method1882 : (Ljava/nio/ByteBuffer;I)J
     .code stack 4 locals 2
 L0:     aload_0
-L1:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/Buffer;)J
+L1:     invokestatic Method org/lwjgl/MemoryUtil method1867 (Ljava/nio/Buffer;)J
 L4:     iload_1
 L5:     i2l
 L6:     ladd
@@ -846,7 +846,7 @@ L8:
     .end code
 .end method
 
-.method public static break : (Ljava/nio/ByteBuffer;)J
+.method public static method1883 : (Ljava/nio/ByteBuffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     ifnonnull L7
@@ -854,19 +854,19 @@ L4:     lconst_0
 L5:     lreturn
 L6:     athrow
 L7:     aload_0
-L8:     invokestatic Method org/lwjgl/MemoryUtil const (Ljava/nio/ByteBuffer;)J
+L8:     invokestatic Method org/lwjgl/MemoryUtil method1873 (Ljava/nio/ByteBuffer;)J
 L11:    lreturn
 L12:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x01\x07\x00\x30\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x01\x07\x00\x35\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/IntBuffer;)J
+.method public static method1884 : (Ljava/nio/IntBuffer;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
 L2:     invokevirtual Method java/nio/IntBuffer position ()I
-L5:     invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/IntBuffer;I)J
+L5:     invokestatic Method org/lwjgl/MemoryUtil method1876 (Ljava/nio/IntBuffer;I)J
 L8:     lreturn
 L9:     
     .end code
@@ -876,23 +876,23 @@ L9:
     .code stack 3 locals 2
 L0:     ldc_w "ISO-8859-1"
 L3:     invokestatic Method java/nio/charset/Charset forName (Ljava/lang/String;)Ljava/nio/charset/Charset;
-L6:     putstatic Field org/lwjgl/MemoryUtil else Ljava/nio/charset/Charset;
+L6:     putstatic Field org/lwjgl/MemoryUtil field2538 Ljava/nio/charset/Charset;
 L9:     ldc_w "UTF-8"
 L12:    invokestatic Method java/nio/charset/Charset forName (Ljava/lang/String;)Ljava/nio/charset/Charset;
-L15:    putstatic Field org/lwjgl/MemoryUtil "enum" Ljava/nio/charset/Charset;
+L15:    putstatic Field org/lwjgl/MemoryUtil field2539 Ljava/nio/charset/Charset;
 L18:    ldc_w "UTF-16LE"
 L21:    invokestatic Method java/nio/charset/Charset forName (Ljava/lang/String;)Ljava/nio/charset/Charset;
-L24:    putstatic Field org/lwjgl/MemoryUtil do Ljava/nio/charset/Charset;
+L24:    putstatic Field org/lwjgl/MemoryUtil field2540 Ljava/nio/charset/Charset;
         .catch java/lang/Exception from L27 to L34 using L38
 L27:    ldc_w "org.lwjgl.MemoryUtilSun$AccessorUnsafe"
-L30:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/lang/String;)Lorg/lwjgl/MemoryUtil$Accessor;
+L30:    invokestatic Method org/lwjgl/MemoryUtil method1862 (Ljava/lang/String;)Lorg/lwjgl/MemoryUtil$Accessor;
 L33:    astore_0
 L34:    goto L78
 L37:    athrow
 L38:    astore_1
         .catch java/lang/Exception from L39 to L46 using L50
 L39:    ldc_w "org.lwjgl.MemoryUtilSun$AccessorReflectFast"
-L42:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/lang/String;)Lorg/lwjgl/MemoryUtil$Accessor;
+L42:    invokestatic Method org/lwjgl/MemoryUtil method1862 (Ljava/lang/String;)Lorg/lwjgl/MemoryUtil$Accessor;
 L45:    astore_0
 L46:    goto L78
 L49:    athrow
@@ -924,14 +924,14 @@ L99:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)
 L102:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L105:   invokestatic Method org/lwjgl/LWJGLUtil log (Ljava/lang/CharSequence;)V
 L108:   aload_0
-L109:   putstatic Field org/lwjgl/MemoryUtil char Lorg/lwjgl/MemoryUtil$Accessor;
+L109:   putstatic Field org/lwjgl/MemoryUtil field2537 Lorg/lwjgl/MemoryUtil$Accessor;
 L112:   return
 L113:   
-        .attribute StackMap b'\x00\x06\x00\x25\x00\x00\x00\x01\x07\x00\x20\x00\x26\x00\x00\x00\x01\x07\x00\xDF\x00\x31\x00\x00\x00\x01\x07\x00\x20\x00\x32\x00\x02\x00\x07\x00\xDF\x00\x01\x07\x00\xDF\x00\x3E\x00\x02\x00\x07\x00\xDF\x00\x01\x07\x00\xDF\x00\x4E\x00\x01\x07\x00\x08\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x25\x00\x00\x00\x01\x07\x00\x22\x00\x26\x00\x00\x00\x01\x07\x00\xFD\x00\x31\x00\x00\x00\x01\x07\x00\x22\x00\x32\x00\x02\x00\x07\x00\xFD\x00\x01\x07\x00\xFD\x00\x3E\x00\x02\x00\x07\x00\xFD\x00\x01\x07\x00\xFD\x00\x4E\x00\x01\x07\x00\x08\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/nio/ShortBuffer;I)J
+.method public static method1885 : (Ljava/nio/ShortBuffer;I)J
     .code stack 2 locals 2
 L0:     aload_0
 L1:     ifnonnull L7
@@ -940,14 +940,14 @@ L5:     lreturn
 L6:     athrow
 L7:     aload_0
 L8:     iload_1
-L9:     invokestatic Method org/lwjgl/MemoryUtil else (Ljava/nio/ShortBuffer;I)J
+L9:     invokestatic Method org/lwjgl/MemoryUtil method1863 (Ljava/nio/ShortBuffer;I)J
 L12:    lreturn
 L13:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x02\x07\x00\xBA\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x02\x07\x00\xCD\x01\x00\x00'
     .end code
 .end method
 
-.method public static break : (Lorg/lwjgl/h;)J
+.method public static method1886 : (Lorg/lwjgl/h;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     ifnonnull L7
@@ -955,10 +955,10 @@ L4:     lconst_0
 L5:     lreturn
 L6:     athrow
 L7:     aload_0
-L8:     invokestatic Method org/lwjgl/MemoryUtil short (Lorg/lwjgl/h;)J
+L8:     invokestatic Method org/lwjgl/MemoryUtil method1856 (Lorg/lwjgl/h;)J
 L11:    lreturn
 L12:    
-        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x20\x00\x07\x00\x01\x07\x00\xC8\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x06\x00\x00\x00\x01\x07\x00\x22\x00\x07\x00\x01\x07\x00\xDD\x00\x00'
     .end code
 .end method
 .innerclasses

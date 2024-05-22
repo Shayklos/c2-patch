@@ -2,35 +2,35 @@
 .class final super org/lwjgl/opengl/fD
 .super org/lwjgl/opengl/vC
 
-.method public short : ()V
+.method public method71 : ()V
     .code stack 4 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_1
 L5:     monitorenter
         .catch [0] from L6 to L14 using L51
-L6:     invokestatic Method org/lwjgl/opengl/Display void ()Z
+L6:     invokestatic Method org/lwjgl/opengl/Display method3019 ()Z
 L9:     ifne L16
 L12:    aload_1
 L13:    monitorexit
 L14:    return
 L15:    athrow
         .catch [0] from L16 to L49 using L51
-L16:    invokestatic Method org/lwjgl/opengl/Display "transient" ()V
+L16:    invokestatic Method org/lwjgl/opengl/Display method2995 ()V
 L19:    aload_1
 L20:    iconst_m1
 L21:    aload_0
-L22:    invokespecial Method org/lwjgl/opengl/vC short ()V
-L25:    invokestatic Method org/lwjgl/opengl/Display finally ()V
+L22:    invokespecial Method org/lwjgl/opengl/vC method71 ()V
+L25:    invokestatic Method org/lwjgl/opengl/Display method2985 ()V
 L28:    iconst_1
 L29:    dup
 L30:    pop2
-L31:    invokestatic Method org/lwjgl/opengl/Display short (I)I
-L34:    invokestatic Method org/lwjgl/opengl/Display const (I)I
+L31:    invokestatic Method org/lwjgl/opengl/Display method2988 (I)I
+L34:    invokestatic Method org/lwjgl/opengl/Display method3002 (I)I
 L37:    aconst_null
-L38:    invokestatic Method org/lwjgl/opengl/Display break ([Ljava/nio/ByteBuffer;)[Ljava/nio/ByteBuffer;
-L41:    invokestatic Method org/lwjgl/opengl/Display instanceof ()V
-L44:    invokestatic Method org/lwjgl/opengl/Display assert ()V
+L38:    invokestatic Method org/lwjgl/opengl/Display method2986 ([Ljava/nio/ByteBuffer;)[Ljava/nio/ByteBuffer;
+L41:    invokestatic Method org/lwjgl/opengl/Display method2993 ()V
+L44:    invokestatic Method org/lwjgl/opengl/Display method2996 ()V
 L47:    pop2
 L48:    monitorexit
 L49:    return
@@ -47,7 +47,7 @@ L57:
     .end code
 .end method
 
-.method public break : (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/CB;)V
+.method public method313 : (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/CB;)V
     .code stack 2 locals 3
 L0:     new java/lang/UnsupportedOperationException
 L3:     dup
@@ -69,5 +69,5 @@ L5:
 .innerclasses
     org/lwjgl/opengl/fD [0] [0] static
 .end innerclasses
-.enclosing method org/lwjgl/opengl/Display break (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/k;LaA;)V
+.enclosing method org/lwjgl/opengl/Display method3005 (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/k;LaA;)V
 .end class

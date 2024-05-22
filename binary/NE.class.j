@@ -3,14 +3,14 @@
 .super java/lang/Object
 .implements M
 .field public new LAC;
-.field public null [LwF;
+.field public field809 [LwF;
 .field public this Ljava/io/ByteArrayOutputStream;
-.field public char I
-.field public else Lqd;
-.field public "enum" Z
-.field public do [B
+.field public field810 I
+.field public field811 Lqd;
+.field public field812 Z
+.field public field813 [B
 
-.method public break : (Led;)I
+.method public method440 : (Led;)I
     .code stack 3 locals 3
 L0:     iconst_0
 L1:     iconst_1
@@ -19,11 +19,11 @@ L3:     pop2
 L4:     dup
 L5:     istore_2
 L6:     aload_0
-L7:     getfield Field NE null [LwF;
+L7:     getfield Field NE field809 [LwF;
 L10:    arraylength
 L11:    if_icmpge L41
 L14:    aload_0
-L15:    getfield Field NE null [LwF;
+L15:    getfield Field NE field809 [LwF;
 L18:    iload_2
 L19:    aaload
 L20:    getfield Field wF new LRg;
@@ -54,10 +54,10 @@ L1:     aload_0
 L2:     dup_x1
 L3:     dup_x2
 L4:     invokespecial Method java/lang/Object <init> ()V
-L7:     putfield Field NE else Lqd;
-L10:    getfield Field NE else Lqd;
-L13:    getfield Field qd null LQB;
-L16:    getstatic Field QB do LQB;
+L7:     putfield Field NE field811 Lqd;
+L10:    getfield Field NE field811 Lqd;
+L13:    getfield Field qd field763 LQB;
+L16:    getstatic Field QB field369 LQB;
 L19:    if_acmpeq L30
 L22:    new java/lang/RuntimeException
 L25:    dup
@@ -83,17 +83,17 @@ L55:    invokespecial Method AC <init> (Ljava/io/OutputStream;)V
 L58:    putfield Field NE new LAC;
 L61:    getfield Field NE new LAC;
 L64:    aload_0
-L65:    getfield Field NE else Lqd;
-L68:    getfield Field qd "native" Z
-L71:    invokevirtual Method AC break (Z)V
-L74:    getfield Field NE else Lqd;
-L77:    getfield Field qd void Leb;
-L80:    invokevirtual Method eb else ()[LEF;
+L65:    getfield Field NE field811 Lqd;
+L68:    getfield Field qd field742 Z
+L71:    invokevirtual Method AC method684 (Z)V
+L74:    getfield Field NE field811 Lqd;
+L77:    getfield Field qd field761 Leb;
+L80:    invokevirtual Method eb method751 ()[LEF;
 L83:    astore_1
 L84:    getfield Field NE new LAC;
 L87:    aload_1
 L88:    arraylength
-L89:    invokevirtual Method AC break (I)V
+L89:    invokevirtual Method AC method691 (I)V
 L92:    iconst_0
 L93:    iconst_1
 L94:    dup
@@ -110,36 +110,36 @@ L108:   iload_2
 L109:   iinc 2 1
 L112:   aaload
 L113:   invokevirtual Method EF ordinal ()I
-L116:   invokevirtual Method AC break (I)V
+L116:   invokevirtual Method AC method691 (I)V
 L119:   iload_2
 L120:   goto L98
 L123:   athrow
         .catch java/io/IOException from L124 to L275 using L279
 L124:   aload_0
 L125:   dup
-L126:   getfield Field NE else Lqd;
-L129:   getfield Field qd "enum" Ljava/util/Map;
+L126:   getfield Field NE field811 Lqd;
+L129:   getfield Field qd field766 Ljava/util/Map;
 L132:   invokeinterface InterfaceMethod java/util/Map size ()I 1
 L137:   anewarray wF
 L140:   iconst_1
 L141:   dup
 L142:   pop2
-L143:   putfield Field NE null [LwF;
+L143:   putfield Field NE field809 [LwF;
 L146:   aload_0
 L147:   dup
 L148:   getfield Field NE new LAC;
 L151:   swap
-L152:   getfield Field NE null [LwF;
+L152:   getfield Field NE field809 [LwF;
 L155:   arraylength
-L156:   invokevirtual Method AC break (I)V
+L156:   invokevirtual Method AC method691 (I)V
 L159:   iconst_0
 L160:   iconst_1
 L161:   dup
 L162:   pop2
 L163:   istore_2
 L164:   aload_0
-L165:   getfield Field NE else Lqd;
-L168:   getfield Field qd "enum" Ljava/util/Map;
+L165:   getfield Field NE field811 Lqd;
+L168:   getfield Field qd field766 Ljava/util/Map;
 L171:   invokeinterface InterfaceMethod java/util/Map keySet ()Ljava/util/Set; 1
 L176:   invokeinterface InterfaceMethod java/util/Set iterator ()Ljava/util/Iterator; 1
 L181:   astore_3
@@ -156,19 +156,19 @@ L204:   dup2
 L205:   getfield Field NE new LAC;
 L208:   aload 4
 L210:   getfield Field Rg false Led;
-L213:   getfield Field ed "super" Ljava/lang/String;
-L216:   invokevirtual Method AC break (Ljava/lang/String;)V
+L213:   getfield Field ed field701 Ljava/lang/String;
+L216:   invokevirtual Method AC method683 (Ljava/lang/String;)V
 L219:   getfield Field NE new LAC;
 L222:   aload 4
 L224:   getfield Field Rg false Led;
-L227:   getfield Field ed "enum" I
-L230:   invokevirtual Method AC short (I)V
+L227:   getfield Field ed field712 I
+L230:   invokevirtual Method AC method674 (I)V
 L233:   getfield Field NE new LAC;
 L236:   aload 4
 L238:   getfield Field Rg false Led;
 L241:   getfield Field ed new Ljava/lang/String;
-L244:   invokevirtual Method AC break (Ljava/lang/String;)V
-L247:   getfield Field NE null [LwF;
+L244:   invokevirtual Method AC method683 (Ljava/lang/String;)V
+L247:   getfield Field NE field809 [LwF;
 L250:   new wF
 L253:   iload_2
 L254:   dup_x1
@@ -194,10 +194,10 @@ L284:   aload_1
 L285:   invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/Throwable;)V
 L288:   athrow
 L289:   aload_0
-L290:   invokestatic Method ib break (LM;)V
+L290:   invokestatic Method ib method1156 (LM;)V
 L293:   return
 L294:   
-        .attribute StackMap b'\x00\x08\x00\x1E\x00\x02\x07\x00\x02\x07\x00\x0E\x00\x00\x00\x62\x00\x03\x07\x00\x02\x07\x00\x5E\x01\x00\x01\x01\x00\x7B\x00\x00\x00\x01\x07\x00\x2F\x00\x7C\x00\x03\x07\x00\x02\x07\x00\x5E\x01\x00\x00\x00\xB6\x00\x04\x07\x00\x02\x07\x00\x5E\x01\x07\x00\x76\x00\x00\x01\x13\x00\x00\x00\x01\x07\x00\x2F\x01\x17\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x33\x01\x21\x00\x04\x07\x00\x02\x07\x00\x5E\x01\x07\x00\x76\x00\x00'
+        .attribute StackMap b'\x00\x08\x00\x1E\x00\x02\x07\x00\x02\x07\x00\x0E\x00\x00\x00\x62\x00\x03\x07\x00\x02\x07\x00\x63\x01\x00\x01\x01\x00\x7B\x00\x00\x00\x01\x07\x00\x2F\x00\x7C\x00\x03\x07\x00\x02\x07\x00\x63\x01\x00\x00\x00\xB6\x00\x04\x07\x00\x02\x07\x00\x63\x01\x07\x00\x7C\x00\x00\x01\x13\x00\x00\x00\x01\x07\x00\x2F\x01\x17\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x33\x01\x21\x00\x04\x07\x00\x02\x07\x00\x63\x01\x07\x00\x7C\x00\x00'
     .end code
     .exceptions java/io/IOException
 .end method
@@ -214,10 +214,10 @@ L5:
     .exceptions java/lang/Exception
 .end method
 
-.method public break : ()Z
+.method public method227 : ()Z
     .code stack 14 locals 4
 L0:     aload_0
-L1:     getfield Field NE "enum" Z
+L1:     getfield Field NE field812 Z
 L4:     ifeq L13
 L7:     iconst_0
 L8:     iconst_1
@@ -226,7 +226,7 @@ L10:    pop2
 L11:    ireturn
 L12:    athrow
 L13:    aload_0
-L14:    getfield Field NE null [LwF;
+L14:    getfield Field NE field809 [LwF;
 L17:    dup
 L18:    astore_1
 L19:    arraylength
@@ -243,29 +243,29 @@ L31:    aload_1
 L32:    iload_3
 L33:    iinc 3 1
 L36:    aaload
-L37:    invokevirtual Method wF long ()V
+L37:    invokevirtual Method wF method113 ()V
 L40:    iload_3
 L41:    goto L27
 L44:    athrow
 L45:    aload_0
 L46:    dup
 L47:    dup
-L48:    getfield Field NE char I
+L48:    getfield Field NE field810 I
 L51:    iconst_1
 L52:    dup
 L53:    dup
 L54:    pop2
 L55:    iadd
-L56:    putfield Field NE char I
-L59:    getfield Field NE else Lqd;
-L62:    getfield Field qd null LQB;
-L65:    getstatic Field QB do LQB;
+L56:    putfield Field NE field810 I
+L59:    getfield Field NE field811 Lqd;
+L62:    getfield Field qd field763 LQB;
+L65:    getstatic Field QB field369 LQB;
 L68:    if_acmpeq L226
 L71:    aload_0
 L72:    dup
 L73:    dup2
 L74:    getfield Field NE new LAC;
-L77:    invokevirtual Method AC break ()V
+L77:    invokevirtual Method AC method689 ()V
 L80:    new java/io/ByteArrayOutputStream
 L83:    dup
 L84:    invokespecial Method java/io/ByteArrayOutputStream <init> ()V
@@ -303,15 +303,15 @@ L130:   iconst_1
 L131:   dup
 L132:   dup
 L133:   pop2
-L134:   invokevirtual Method AC break (I)V
-L137:   getstatic Field ib do F
-L140:   invokevirtual Method AC break (F)V
-L143:   getfield Field NE char I
-L146:   invokevirtual Method AC short (I)V
+L134:   invokevirtual Method AC method691 (I)V
+L137:   getstatic Field ib field2312 F
+L140:   invokevirtual Method AC method685 (F)V
+L143:   getfield Field NE field810 I
+L146:   invokevirtual Method AC method674 (I)V
 L149:   getfield Field NE this Ljava/io/ByteArrayOutputStream;
 L152:   invokevirtual Method java/io/ByteArrayOutputStream toByteArray ()[B
-L155:   invokevirtual Method AC else ([B)V
-L158:   invokevirtual Method AC break ()V
+L155:   invokevirtual Method AC method677 ([B)V
+L158:   invokevirtual Method AC method689 ()V
 L161:   getstatic Field java/lang/System out Ljava/io/PrintStream;
 L164:   new java/lang/StringBuilder
 L167:   dup
@@ -331,13 +331,13 @@ L196:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)
 L199:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L202:   invokevirtual Method java/io/PrintStream println (Ljava/lang/String;)V
 L205:   invokevirtual Method java/io/ByteArrayOutputStream toByteArray ()[B
-L208:   putfield Field NE do [B
+L208:   putfield Field NE field813 [B
 L211:   iconst_1
 L212:   dup
 L213:   dup
 L214:   pop2
-L215:   putfield Field NE "enum" Z
-L218:   invokestatic Method ib else (LM;)V
+L215:   putfield Field NE field812 Z
+L218:   invokestatic Method ib method1153 (LM;)V
 L221:   iconst_0
 L222:   iconst_1
 L223:   dup
@@ -349,22 +349,22 @@ L228:   dup
 L229:   pop2
 L230:   ireturn
 L231:   
-        .attribute StackMap b'\x00\x06\x00\x0C\x00\x00\x00\x01\x07\x00\x2F\x00\x0D\x00\x01\x07\x00\x02\x00\x00\x00\x1B\x00\x04\x07\x00\x02\x07\x00\x9E\x01\x01\x00\x01\x01\x00\x2C\x00\x00\x00\x01\x07\x00\x2F\x00\x2D\x00\x04\x07\x00\x02\x07\x00\x9E\x01\x01\x00\x00\x00\xE2\x00\x04\x07\x00\x02\x07\x00\x9E\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x0C\x00\x00\x00\x01\x07\x00\x2F\x00\x0D\x00\x01\x07\x00\x02\x00\x00\x00\x1B\x00\x04\x07\x00\x02\x07\x00\xA8\x01\x01\x00\x01\x01\x00\x2C\x00\x00\x00\x01\x07\x00\x2F\x00\x2D\x00\x04\x07\x00\x02\x07\x00\xA8\x01\x01\x00\x00\x00\xE2\x00\x04\x07\x00\x02\x07\x00\xA8\x01\x01\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method
 
-.method public else : ()[B
+.method public method441 : ()[B
     .code stack 2 locals 1
 L0:     aload_0
-L1:     getfield Field NE "enum" Z
+L1:     getfield Field NE field812 Z
 L4:     ifne L15
 L7:     new java/lang/RuntimeException
 L10:    dup
 L11:    invokespecial Method java/lang/RuntimeException <init> ()V
 L14:    athrow
 L15:    aload_0
-L16:    getfield Field NE do [B
+L16:    getfield Field NE field813 [B
 L19:    areturn
 L20:    
         .attribute StackMap b'\x00\x01\x00\x0F\x00\x01\x07\x00\x02\x00\x00'

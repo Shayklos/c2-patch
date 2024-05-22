@@ -2,28 +2,28 @@
 .class public interface abstract F
 .super java/lang/Object
 
-.method public abstract class : ()V
+.method public abstract method68 : ()V
 .end method
 
-.method public abstract break : (LUf;)V
+.method public abstract method60 : (LUf;)V
 .end method
 
-.method public abstract break : ([I)V
+.method public abstract method82 : ([I)V
 .end method
 
-.method public abstract if : ()V
+.method public abstract method67 : ()V
 .end method
 
-.method public abstract char : ()V
+.method public abstract method84 : ()V
 .end method
 
 .method public abstract new : ()V
 .end method
 
-.method public abstract else : (I)V
+.method public abstract method64 : (I)V
 .end method
 
-.method public abstract break : (I)V
+.method public abstract method14 : (I)V
 .end method
 
 .method public abstract try : ()V
@@ -32,39 +32,39 @@
 .method public abstract this : ()V
 .end method
 
-.method public abstract break : (Led;I[I)V
+.method public abstract method87 : (Led;I[I)V
 .end method
 
-.method public abstract break : (IIF)V
+.method public abstract method73 : (IIF)V
 .end method
 
-.method public abstract goto : ()V
+.method public abstract method65 : ()V
 .end method
 
-.method public abstract do : ()V
+.method public abstract method89 : ()V
 .end method
 
-.method public abstract for : ()V
+.method public abstract method61 : ()V
 .end method
 
-.method public abstract catch : ()V
+.method public abstract method76 : ()V
 .end method
 
-.method public abstract float : ()V
+.method public abstract method69 : ()V
 .end method
 
-.method public abstract short : ()V
+.method public abstract method71 : ()V
 .end method
 
-.method public abstract const : ()V
+.method public abstract method52 : ()V
 .end method
 
-.method public abstract break : (Lff;)V
+.method public abstract method91 : (Lff;)V
 .end method
 
-.method public abstract else : ()V
+.method public abstract method56 : ()V
 .end method
 
-.method public abstract break : ()V
+.method public abstract method74 : ()V
 .end method
 .end class

@@ -2,21 +2,21 @@
 .class public final super jouvieje/bass/utils/M
 .super jouvieje/bass/utils/m
 
-.method public const : ()Ljava/lang/Object;
+.method public method1360 : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method jouvieje/bass/utils/M else ()Ljava/lang/Object;
+L1:     invokevirtual Method jouvieje/bass/utils/M method1362 ()Ljava/lang/Object;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/utils/M;
+.method public static method1361 : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/utils/M;
     .code stack 4 locals 1
 L0:     new jouvieje/bass/utils/M
 L3:     dup
 L4:     aload_0
-L5:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L5:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L8:     invokespecial Method jouvieje/bass/utils/M <init> (J)V
 L11:    areturn
 L12:    
@@ -42,17 +42,17 @@ L5:
     .end code
 .end method
 
-.method public else : ()Ljava/lang/Object;
+.method public method1362 : ()Ljava/lang/Object;
     .code stack 2 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/M do J
+L1:     getfield Field jouvieje/bass/utils/M field2319 J
 L4:     invokestatic Method jouvieje/bass/utils/MiscJNI get_ObjectPointer (J)Ljava/lang/Object;
 L7:     areturn
 L8:     
     .end code
 .end method
 
-.method public static else : (Ljava/lang/Object;)Ljouvieje/bass/utils/M;
+.method public static method1363 : (Ljava/lang/Object;)Ljouvieje/bass/utils/M;
     .code stack 4 locals 1
 L0:     new jouvieje/bass/utils/M
 L3:     dup
@@ -64,29 +64,29 @@ L12:
     .end code
 .end method
 
-.method public break : ()V
+.method public method1218 : ()V
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/M do J
+L1:     getfield Field jouvieje/bass/utils/M field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifeq L16
 L9:     aload_0
-L10:    getfield Field jouvieje/bass/utils/M do J
+L10:    getfield Field jouvieje/bass/utils/M field2319 J
 L13:    invokestatic Method jouvieje/bass/utils/MiscJNI delete_ObjectPointer (J)V
 L16:    aload_0
 L17:    lconst_0
-L18:    putfield Field jouvieje/bass/utils/M do J
+L18:    putfield Field jouvieje/bass/utils/M field2319 J
 L21:    return
 L22:    
         .attribute StackMap b'\x00\x01\x00\x10\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public break : (Ljava/lang/Object;)V
+.method public method1364 : (Ljava/lang/Object;)V
     .code stack 3 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/M do J
+L1:     getfield Field jouvieje/bass/utils/M field2319 J
 L4:     aload_1
 L5:     invokestatic Method jouvieje/bass/utils/MiscJNI set_ObjectPointer (JLjava/lang/Object;)V
 L8:     return

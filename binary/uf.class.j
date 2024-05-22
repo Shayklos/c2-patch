@@ -2,17 +2,17 @@
 .class public final super uf
 .super java/lang/Object
 .field public this LpF;
-.field public final synthetic char LpE;
-.field public else F
-.field public "enum" LQD;
-.field public do F
+.field public final synthetic field5808 LpE;
+.field public field5809 F
+.field public field5810 LQD;
+.field public field5811 F
 
 .method private <init> : (LpE;)V
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field uf char LpE;
+L3:     putfield Field uf field5808 LpE;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    

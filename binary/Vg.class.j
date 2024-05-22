@@ -33,13 +33,13 @@ L1:     aload_0
 L2:     dup_x1
 L3:     dup_x2
 L4:     fload_1
-L5:     putfield Field Vg case F
-L8:     putfield Field Vg char F
-L11:    getfield Field Vg for Lqc;
+L5:     putfield Field Vg field1128 F
+L8:     putfield Field Vg field1137 F
+L11:    getfield Field Vg field1127 Lqc;
 L14:    ifnull L24
 L17:    aload_0
-L18:    getfield Field Vg for Lqc;
-L21:    invokevirtual Method qc extends ()V
+L18:    getfield Field Vg field1127 Lqc;
+L21:    invokevirtual Method qc method21 ()V
 L24:    return
 L25:    
         .attribute StackMap b'\x00\x01\x00\x18\x00\x03\x07\x00\x02\x02\x02\x00\x00'

@@ -2,7 +2,7 @@
 .class final super org/lwjgl/opengl/LinuxPbufferPeerInfo
 .super org/lwjgl/opengl/LinuxPeerInfo
 
-.method protected catch : ()V
+.method protected method4672 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
@@ -14,14 +14,14 @@ L1:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public short : ()V
+.method public method4675 : ()V
     .code stack 1 locals 1
-L0:     invokestatic Method org/lwjgl/opengl/LinuxDisplay "interface" ()V
+L0:     invokestatic Method org/lwjgl/opengl/LinuxDisplay method4723 ()V
 L3:     aload_0
-L4:     invokevirtual Method org/lwjgl/opengl/LinuxPbufferPeerInfo float ()Ljava/nio/ByteBuffer;
+L4:     invokevirtual Method org/lwjgl/opengl/LinuxPbufferPeerInfo method4677 ()Ljava/nio/ByteBuffer;
 L7:     invokestatic Method org/lwjgl/opengl/LinuxPbufferPeerInfo nDestroy (Ljava/nio/ByteBuffer;)V
 L10:    invokestatic Method org/lwjgl/opengl/LinuxDisplay F ()V
-L13:    invokestatic Method org/lwjgl/opengl/GLContext else ()V
+L13:    invokestatic Method org/lwjgl/opengl/GLContext method4602 ()V
 L16:    invokestatic Method org/lwjgl/opengl/LinuxDisplay while ()V
 L19:    return
 L20:    
@@ -35,15 +35,15 @@ L20:
     .code stack 7 locals 6
 L0:     aload_0
 L1:     invokespecial Method org/lwjgl/opengl/LinuxPeerInfo <init> ()V
-L4:     invokestatic Method org/lwjgl/opengl/LinuxDisplay "interface" ()V
-L7:     invokestatic Method org/lwjgl/opengl/GLContext short ()V
-L10:    invokestatic Method org/lwjgl/opengl/LinuxDisplay "private" ()V
+L4:     invokestatic Method org/lwjgl/opengl/LinuxDisplay method4723 ()V
+L7:     invokestatic Method org/lwjgl/opengl/GLContext method4600 ()V
+L10:    invokestatic Method org/lwjgl/opengl/LinuxDisplay method4712 ()V
         .catch org/lwjgl/LWJGLException from L13 to L29 using L33
         .catch org/lwjgl/LWJGLException from L10 to L32 using L45
-L13:    invokestatic Method org/lwjgl/opengl/LinuxDisplay "strictfp" ()J
-L16:    invokestatic Method org/lwjgl/opengl/LinuxDisplay assert ()I
+L13:    invokestatic Method org/lwjgl/opengl/LinuxDisplay method4757 ()J
+L16:    invokestatic Method org/lwjgl/opengl/LinuxDisplay method4756 ()I
 L19:    aload_0
-L20:    invokevirtual Method org/lwjgl/opengl/LinuxPbufferPeerInfo float ()Ljava/nio/ByteBuffer;
+L20:    invokevirtual Method org/lwjgl/opengl/LinuxPbufferPeerInfo method4677 ()Ljava/nio/ByteBuffer;
 L23:    iload_1
 L24:    iload_2
 L25:    aload_3
@@ -63,7 +63,7 @@ L43:    athrow
 L44:    athrow
         .catch [0] from L45 to L53 using L57
 L45:    astore 4
-L47:    invokestatic Method org/lwjgl/opengl/GLContext else ()V
+L47:    invokestatic Method org/lwjgl/opengl/GLContext method4602 ()V
 L50:    aload 4
 L52:    athrow
 L53:    invokestatic Method org/lwjgl/opengl/LinuxDisplay while ()V
@@ -75,12 +75,12 @@ L62:    aload 5
 L64:    athrow
 L65:    athrow
 L66:    
-        .attribute StackMap b'\x00\x08\x00\x20\x00\x00\x00\x01\x07\x00\x38\x00\x21\x00\x04\x07\x00\x02\x01\x01\x07\x00\x3A\x00\x01\x07\x00\x08\x00\x29\x00\x00\x00\x01\x07\x00\x38\x00\x2C\x00\x00\x00\x01\x07\x00\x38\x00\x2D\x00\x04\x07\x00\x02\x01\x01\x07\x00\x3A\x00\x01\x07\x00\x08\x00\x35\x00\x04\x07\x00\x02\x01\x01\x07\x00\x3A\x00\x00\x00\x39\x00\x04\x07\x00\x02\x01\x01\x07\x00\x3A\x00\x01\x07\x00\x38\x00\x41\x00\x00\x00\x01\x07\x00\x38'
+        .attribute StackMap b'\x00\x08\x00\x20\x00\x00\x00\x01\x07\x00\x39\x00\x21\x00\x04\x07\x00\x02\x01\x01\x07\x00\x3B\x00\x01\x07\x00\x08\x00\x29\x00\x00\x00\x01\x07\x00\x39\x00\x2C\x00\x00\x00\x01\x07\x00\x39\x00\x2D\x00\x04\x07\x00\x02\x01\x01\x07\x00\x3B\x00\x01\x07\x00\x08\x00\x35\x00\x04\x07\x00\x02\x01\x01\x07\x00\x3B\x00\x00\x00\x39\x00\x04\x07\x00\x02\x01\x01\x07\x00\x3B\x00\x01\x07\x00\x39\x00\x41\x00\x00\x00\x01\x07\x00\x39'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method protected const : ()V
+.method protected method4671 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     

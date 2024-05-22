@@ -1,9 +1,9 @@
 .version 49 0
 .class public final super enum QF
 .super java/lang/Enum
-.field private static final synthetic else [LQF;
-.field public static final enum "enum" LQF;
-.field public static final enum do LQF;
+.field private static final synthetic field382 [LQF;
+.field public static final enum field383 LQF;
+.field public static final enum field384 LQF;
 
 .method public static valueOf : (Ljava/lang/String;)LQF;
     .code stack 2 locals 1
@@ -29,7 +29,7 @@ L7:
 
 .method public static values : ()[LQF;
     .code stack 1 locals 0
-L0:     getstatic Field QF else [LQF;
+L0:     getstatic Field QF field382 [LQF;
 L3:     invokevirtual Method [LQF; clone ()Ljava/lang/Object;
 L6:     checkcast [LQF;
 L9:     areturn
@@ -47,7 +47,7 @@ L7:     iconst_1
 L8:     dup
 L9:     pop2
 L10:    invokespecial Method QF <init> (Ljava/lang/String;I)V
-L13:    putstatic Field QF do LQF;
+L13:    putstatic Field QF field384 LQF;
 L16:    new QF
 L19:    dup
 L20:    ldc "RIGHT_TOP"
@@ -56,7 +56,7 @@ L23:    dup
 L24:    dup
 L25:    pop2
 L26:    invokespecial Method QF <init> (Ljava/lang/String;I)V
-L29:    putstatic Field QF "enum" LQF;
+L29:    putstatic Field QF field383 LQF;
 L32:    iconst_2
 L33:    iconst_1
 L34:    dup
@@ -70,16 +70,16 @@ L43:    iconst_0
 L44:    iconst_1
 L45:    dup
 L46:    pop2
-L47:    getstatic Field QF do LQF;
+L47:    getstatic Field QF field384 LQF;
 L50:    aastore
 L51:    dup
 L52:    iconst_1
 L53:    dup
 L54:    dup
 L55:    pop2
-L56:    getstatic Field QF "enum" LQF;
+L56:    getstatic Field QF field383 LQF;
 L59:    aastore
-L60:    putstatic Field QF else [LQF;
+L60:    putstatic Field QF field382 [LQF;
 L63:    return
 L64:    
     .end code

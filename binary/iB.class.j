@@ -1,17 +1,17 @@
 .version 49 0
 .class public final super iB
 .super java/lang/Object
-.field public char D
-.field public else D
-.field public "enum" I
-.field public do I
+.field public field2303 D
+.field public field2304 D
+.field public field2305 I
+.field public field2306 I
 
-.method public break : (LiB;)Z
+.method public method1148 : (LiB;)Z
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field iB "enum" I
+L1:     getfield Field iB field2305 I
 L4:     aload_1
-L5:     getfield Field iB do I
+L5:     getfield Field iB field2306 I
 L8:     if_icmpge L17
 L11:    iconst_0
 L12:    iconst_1
@@ -20,9 +20,9 @@ L14:    pop2
 L15:    ireturn
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field iB do I
+L18:    getfield Field iB field2306 I
 L21:    aload_1
-L22:    getfield Field iB "enum" I
+L22:    getfield Field iB field2305 I
 L25:    if_icmple L34
 L28:    iconst_0
 L29:    iconst_1
@@ -31,9 +31,9 @@ L31:    pop2
 L32:    ireturn
 L33:    athrow
 L34:    aload_0
-L35:    getfield Field iB else D
+L35:    getfield Field iB field2304 D
 L38:    aload_1
-L39:    getfield Field iB char D
+L39:    getfield Field iB field2303 D
 L42:    dcmpg
 L43:    ifge L51
 L46:    iconst_0
@@ -42,9 +42,9 @@ L48:    dup
 L49:    pop2
 L50:    ireturn
 L51:    aload_0
-L52:    getfield Field iB char D
+L52:    getfield Field iB field2303 D
 L55:    aload_1
-L56:    getfield Field iB else D
+L56:    getfield Field iB field2304 D
 L59:    dcmpl
 L60:    ifle L68
 L63:    iconst_0
@@ -74,49 +74,49 @@ L6:     aload_0
 L7:     invokespecial Method java/lang/Object <init> ()V
 L10:    iload_3
 L11:    invokestatic Method java/lang/Math min (II)I
-L14:    putfield Field iB do I
+L14:    putfield Field iB field2306 I
 L17:    iload_3
 L18:    invokestatic Method java/lang/Math max (II)I
-L21:    putfield Field iB "enum" I
-L24:    getfield Field NA long [LOA;
+L21:    putfield Field iB field2305 I
+L24:    getfield Field NA field2015 [LOA;
 L27:    aload_0
-L28:    getfield Field iB do I
+L28:    getfield Field iB field2306 I
 L31:    aaload
-L32:    getfield Field OA "enum" F
+L32:    getfield Field OA field2024 F
 L35:    aload_1
-L36:    getfield Field NA long [LOA;
+L36:    getfield Field NA field2015 [LOA;
 L39:    aload_0
 L40:    dup_x2
-L41:    getfield Field iB "enum" I
+L41:    getfield Field iB field2305 I
 L44:    aaload
-L45:    getfield Field OA "enum" F
+L45:    getfield Field OA field2024 F
 L48:    invokestatic Method java/lang/Math min (FF)F
 L51:    f2d
-L52:    putfield Field iB char D
-L55:    getfield Field NA long [LOA;
+L52:    putfield Field iB field2303 D
+L55:    getfield Field NA field2015 [LOA;
 L58:    aload_0
-L59:    getfield Field iB do I
+L59:    getfield Field iB field2306 I
 L62:    aaload
-L63:    getfield Field OA "enum" F
+L63:    getfield Field OA field2024 F
 L66:    aload_1
-L67:    getfield Field NA long [LOA;
+L67:    getfield Field NA field2015 [LOA;
 L70:    aload_0
 L71:    dup_x2
-L72:    getfield Field iB "enum" I
+L72:    getfield Field iB field2305 I
 L75:    aaload
-L76:    getfield Field OA "enum" F
+L76:    getfield Field OA field2024 F
 L79:    invokestatic Method java/lang/Math max (FF)F
 L82:    f2d
-L83:    putfield Field iB else D
+L83:    putfield Field iB field2304 D
 L86:    return
 L87:    
     .end code
 .end method
 
-.method public break : (LNA;I)Z
+.method public method1149 : (LNA;I)Z
     .code stack 4 locals 3
 L0:     aload_0
-L1:     getfield Field iB "enum" I
+L1:     getfield Field iB field2305 I
 L4:     iload_2
 L5:     if_icmpge L14
 L8:     iconst_0
@@ -126,7 +126,7 @@ L11:    pop2
 L12:    ireturn
 L13:    athrow
 L14:    aload_0
-L15:    getfield Field iB do I
+L15:    getfield Field iB field2306 I
 L18:    iload_2
 L19:    if_icmple L28
 L22:    iconst_0
@@ -136,12 +136,12 @@ L25:    pop2
 L26:    ireturn
 L27:    athrow
 L28:    aload_0
-L29:    getfield Field iB else D
+L29:    getfield Field iB field2304 D
 L32:    aload_1
-L33:    getfield Field NA long [LOA;
+L33:    getfield Field NA field2015 [LOA;
 L36:    iload_2
 L37:    aaload
-L38:    getfield Field OA "enum" F
+L38:    getfield Field OA field2024 F
 L41:    f2d
 L42:    dcmpg
 L43:    ifge L51
@@ -151,12 +151,12 @@ L48:    dup
 L49:    pop2
 L50:    ireturn
 L51:    aload_0
-L52:    getfield Field iB char D
+L52:    getfield Field iB field2303 D
 L55:    aload_1
-L56:    getfield Field NA long [LOA;
+L56:    getfield Field NA field2015 [LOA;
 L59:    iload_2
 L60:    aaload
-L61:    getfield Field OA "enum" F
+L61:    getfield Field OA field2024 F
 L64:    f2d
 L65:    dcmpl
 L66:    ifle L74

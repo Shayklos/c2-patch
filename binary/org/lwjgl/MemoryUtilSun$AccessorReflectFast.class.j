@@ -2,12 +2,12 @@
 .class final super org/lwjgl/MemoryUtilSun$AccessorReflectFast
 .super java/lang/Object
 .implements org/lwjgl/MemoryUtil$Accessor
-.field private final do Lsun/reflect/FieldAccessor;
+.field private final field2542 Lsun/reflect/FieldAccessor;
 
-.method public break : (Ljava/nio/Buffer;)J
+.method public method1887 : (Ljava/nio/Buffer;)J
     .code stack 2 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/MemoryUtilSun$AccessorReflectFast do Lsun/reflect/FieldAccessor;
+L1:     getfield Field org/lwjgl/MemoryUtilSun$AccessorReflectFast field2542 Lsun/reflect/FieldAccessor;
 L4:     aload_1
 L5:     invokeinterface InterfaceMethod sun/reflect/FieldAccessor getLong (Ljava/lang/Object;)J 2
 L10:    lreturn
@@ -20,7 +20,7 @@ L11:
 L0:     aload_0
 L1:     invokespecial Method java/lang/Object <init> ()V
         .catch java/lang/NoSuchFieldException from L4 to L8 using L13
-L4:     invokestatic Method org/lwjgl/MemoryUtil break ()Ljava/lang/reflect/Field;
+L4:     invokestatic Method org/lwjgl/MemoryUtil method1845 ()Ljava/lang/reflect/Field;
 L7:     astore_1
 L8:     aload_1
 L9:     goto L24
@@ -87,7 +87,7 @@ L88:    invokestatic Method java/lang/Boolean valueOf (Z)Ljava/lang/Boolean;
 L91:    aastore
 L92:    invokevirtual Method java/lang/reflect/Method invoke (Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
 L95:    checkcast sun/reflect/FieldAccessor
-L98:    putfield Field org/lwjgl/MemoryUtilSun$AccessorReflectFast do Lsun/reflect/FieldAccessor;
+L98:    putfield Field org/lwjgl/MemoryUtilSun$AccessorReflectFast field2542 Lsun/reflect/FieldAccessor;
 L101:   return
 L102:   athrow
 L103:   astore_2
@@ -98,7 +98,7 @@ L109:   invokespecial Method java/lang/UnsupportedOperationException <init> (Lja
 L112:   athrow
 L113:   athrow
 L114:   
-        .attribute StackMap b'\x00\x07\x00\x0C\x00\x00\x00\x01\x07\x00\x25\x00\x0D\x00\x01\x07\x00\x02\x00\x01\x07\x00\x1C\x00\x17\x00\x00\x00\x01\x07\x00\x25\x00\x18\x00\x02\x07\x00\x02\x07\x00\x2C\x00\x01\x07\x00\x2C\x00\x66\x00\x00\x00\x01\x07\x00\x25\x00\x67\x00\x02\x07\x00\x02\x07\x00\x2C\x00\x01\x07\x00\x1E\x00\x71\x00\x00\x00\x01\x07\x00\x25'
+        .attribute StackMap b'\x00\x07\x00\x0C\x00\x00\x00\x01\x07\x00\x26\x00\x0D\x00\x01\x07\x00\x02\x00\x01\x07\x00\x1C\x00\x17\x00\x00\x00\x01\x07\x00\x26\x00\x18\x00\x02\x07\x00\x02\x07\x00\x2D\x00\x01\x07\x00\x2D\x00\x66\x00\x00\x00\x01\x07\x00\x26\x00\x67\x00\x02\x07\x00\x02\x07\x00\x2D\x00\x01\x07\x00\x1E\x00\x71\x00\x00\x00\x01\x07\x00\x26'
     .end code
 .end method
 .innerclasses

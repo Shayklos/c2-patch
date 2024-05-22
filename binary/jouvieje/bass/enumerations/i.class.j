@@ -2,6 +2,6 @@
 .class interface abstract jouvieje/bass/enumerations/i
 .super java/lang/Object
 
-.method public abstract break : ()I
+.method public abstract method247 : ()I
 .end method
 .end class

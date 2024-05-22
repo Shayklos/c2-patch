@@ -1,9 +1,9 @@
 .version 49 0
 .class final super org/lwjgl/opengl/LinuxDisplayPeerInfo
 .super org/lwjgl/opengl/LinuxPeerInfo
-.field final do Z
+.field final field4415 Z
 
-.method protected const : ()V
+.method protected method4671 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
@@ -20,16 +20,16 @@ L3:     invokespecial Method org/lwjgl/opengl/LinuxPeerInfo <init> ()V
 L6:     iconst_1
 L7:     dup
 L8:     pop2
-L9:     putfield Field org/lwjgl/opengl/LinuxDisplayPeerInfo do Z
-L12:    invokestatic Method org/lwjgl/opengl/LinuxDisplay "interface" ()V
-L15:    invokestatic Method org/lwjgl/opengl/GLContext short ()V
-L18:    invokestatic Method org/lwjgl/opengl/LinuxDisplay "private" ()V
+L9:     putfield Field org/lwjgl/opengl/LinuxDisplayPeerInfo field4415 Z
+L12:    invokestatic Method org/lwjgl/opengl/LinuxDisplay method4723 ()V
+L15:    invokestatic Method org/lwjgl/opengl/GLContext method4600 ()V
+L18:    invokestatic Method org/lwjgl/opengl/LinuxDisplay method4712 ()V
         .catch org/lwjgl/LWJGLException from L21 to L35 using L39
         .catch org/lwjgl/LWJGLException from L18 to L38 using L49
-L21:    invokestatic Method org/lwjgl/opengl/LinuxDisplay "strictfp" ()J
-L24:    invokestatic Method org/lwjgl/opengl/LinuxDisplay assert ()I
+L21:    invokestatic Method org/lwjgl/opengl/LinuxDisplay method4757 ()J
+L24:    invokestatic Method org/lwjgl/opengl/LinuxDisplay method4756 ()I
 L27:    aload_0
-L28:    invokevirtual Method org/lwjgl/opengl/LinuxDisplayPeerInfo float ()Ljava/nio/ByteBuffer;
+L28:    invokevirtual Method org/lwjgl/opengl/LinuxDisplayPeerInfo method4677 ()Ljava/nio/ByteBuffer;
 L31:    aload_1
 L32:    invokestatic Method org/lwjgl/opengl/LinuxDisplayPeerInfo initDefaultPeerInfo (JILjava/nio/ByteBuffer;Lorg/lwjgl/opengl/PixelFormat;)V
 L35:    goto L55
@@ -47,7 +47,7 @@ L47:    athrow
 L48:    athrow
         .catch [0] from L49 to L55 using L59
 L49:    astore_2
-L50:    invokestatic Method org/lwjgl/opengl/GLContext else ()V
+L50:    invokestatic Method org/lwjgl/opengl/GLContext method4602 ()V
 L53:    aload_2
 L54:    athrow
 L55:    invokestatic Method org/lwjgl/opengl/LinuxDisplay while ()V
@@ -64,13 +64,13 @@ L66:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method protected catch : ()V
+.method protected method4672 : ()V
     .code stack 3 locals 2
-L0:     invokestatic Method org/lwjgl/opengl/LinuxDisplay "interface" ()V
+L0:     invokestatic Method org/lwjgl/opengl/LinuxDisplay method4723 ()V
         .catch [0] from L3 to L13 using L18
-L3:     invokestatic Method org/lwjgl/opengl/LinuxDisplay implements ()J
+L3:     invokestatic Method org/lwjgl/opengl/LinuxDisplay method4740 ()J
 L6:     aload_0
-L7:     invokevirtual Method org/lwjgl/opengl/LinuxDisplayPeerInfo float ()Ljava/nio/ByteBuffer;
+L7:     invokevirtual Method org/lwjgl/opengl/LinuxDisplayPeerInfo method4677 ()Ljava/nio/ByteBuffer;
 L10:    invokestatic Method org/lwjgl/opengl/LinuxDisplayPeerInfo initDrawable (JLjava/nio/ByteBuffer;)V
 L13:    invokestatic Method org/lwjgl/opengl/LinuxDisplay while ()V
 L16:    return
@@ -99,7 +99,7 @@ L3:     invokespecial Method org/lwjgl/opengl/LinuxPeerInfo <init> ()V
 L6:     iconst_1
 L7:     dup
 L8:     pop2
-L9:     putfield Field org/lwjgl/opengl/LinuxDisplayPeerInfo do Z
+L9:     putfield Field org/lwjgl/opengl/LinuxDisplayPeerInfo field4415 Z
 L12:    invokestatic Method org/lwjgl/opengles/GLContext loadOpenGLLibrary ()V
 L15:    return
 L16:    
@@ -111,19 +111,19 @@ L16:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public short : ()V
+.method public method4675 : ()V
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     invokespecial Method org/lwjgl/opengl/LinuxPeerInfo short ()V
-L5:     getfield Field org/lwjgl/opengl/LinuxDisplayPeerInfo do Z
+L2:     invokespecial Method org/lwjgl/opengl/LinuxPeerInfo method4675 ()V
+L5:     getfield Field org/lwjgl/opengl/LinuxDisplayPeerInfo field4415 Z
 L8:     ifeq L16
 L11:    invokestatic Method org/lwjgl/opengles/GLContext unloadOpenGLLibrary ()V
 L14:    return
 L15:    athrow
-L16:    invokestatic Method org/lwjgl/opengl/LinuxDisplay "interface" ()V
+L16:    invokestatic Method org/lwjgl/opengl/LinuxDisplay method4723 ()V
 L19:    invokestatic Method org/lwjgl/opengl/LinuxDisplay F ()V
-L22:    invokestatic Method org/lwjgl/opengl/GLContext else ()V
+L22:    invokestatic Method org/lwjgl/opengl/GLContext method4602 ()V
 L25:    invokestatic Method org/lwjgl/opengl/LinuxDisplay while ()V
 L28:    return
 L29:    

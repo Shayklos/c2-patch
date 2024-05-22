@@ -3,7 +3,7 @@
 .super java/lang/Object
 .implements org/lwjgl/opengl/c
 
-.method public break : (IIIILjava/lang/String;)V
+.method public method3051 : (IIIILjava/lang/String;)V
     .code stack 4 locals 6
 L0:     getstatic Field java/lang/System err Ljava/io/PrintStream;
 L3:     ldc "[LWJGL] ARB_debug_output message"

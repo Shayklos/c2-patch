@@ -1,8 +1,8 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/ARBSampleShading
 .super java/lang/Object
-.field public static final "enum" I = 35894
-.field public static final do I = 35895
+.field public static final field2958 I = 35894
+.field public static final field2959 I = 35895
 
 .method private <init> : ()V
     .code stack 1 locals 1
@@ -16,13 +16,13 @@ L5:
 .method static native nglMinSampleShadingARB : (FJ)V
 .end method
 
-.method public static break : (F)V
+.method public static method2697 : (F)V
     .code stack 4 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb TB J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    fload_0
 L12:    lload_1
 L13:    invokestatic Method org/lwjgl/opengl/ARBSampleShading nglMinSampleShadingARB (FJ)V

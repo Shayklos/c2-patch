@@ -1,14 +1,14 @@
 .version 49 0
 .class final super org/lwjgl/opengl/WindowsRegistry
 .super java/lang/Object
-.field static final char I = 2
-.field static final else I = 1
-.field static final "enum" I = 3
-.field static final do I = 4
+.field static final field5149 I = 2
+.field static final field5150 I = 1
+.field static final field5151 I = 3
+.field static final field5152 I = 4
 
 .method static <clinit> : ()V
     .code stack 0 locals 0
-L0:     invokestatic Method org/lwjgl/Sys short ()V
+L0:     invokestatic Method org/lwjgl/Sys method1895 ()V
 L3:     return
 L4:     
     .end code
@@ -23,7 +23,7 @@ L5:
     .end code
 .end method
 
-.method static break : (ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method static method5410 : (ILjava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .code stack 5 locals 3
 L0:     iload_0
 L1:     tableswitch 1

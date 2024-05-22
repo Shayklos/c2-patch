@@ -2,7 +2,7 @@
 .class public final super ad
 .super java/lang/Object
 .implements java/lang/Runnable
-.field public final synthetic do Lwb;
+.field public final synthetic field1683 Lwb;
 
 .method public run : ()V
     .code stack 5 locals 5
@@ -14,7 +14,7 @@ L5:     dup
 L6:     new java/io/BufferedInputStream
 L9:     dup
 L10:    aload_0
-L11:    getfield Field ad do Lwb;
+L11:    getfield Field ad field1683 Lwb;
 L14:    getfield Field wb new Ljava/net/Socket;
 L17:    invokevirtual Method java/net/Socket getInputStream ()Ljava/io/InputStream;
 L20:    invokespecial Method java/io/BufferedInputStream <init> (Ljava/io/InputStream;)V
@@ -85,14 +85,14 @@ L115:   goto L96
 L118:   athrow
         .catch java/io/IOException from L119 to L151 using L154
 L119:   aload_0
-L120:   getfield Field ad do Lwb;
-L123:   getfield Field wb break Lbc;
-L126:   getfield Field bc "enum" Ljava/util/concurrent/LinkedBlockingQueue;
+L120:   getfield Field ad field1683 Lwb;
+L123:   getfield Field wb field5831 Lbc;
+L126:   getfield Field bc field798 Ljava/util/concurrent/LinkedBlockingQueue;
 L129:   new fD
 L132:   dup
 L133:   aload_0
-L134:   getfield Field ad do Lwb;
-L137:   getfield Field wb long I
+L134:   getfield Field ad field1683 Lwb;
+L137:   getfield Field wb field5832 I
 L140:   aload_3
 L141:   invokespecial Method fD <init> (I[B)V
 L144:   invokevirtual Method java/util/concurrent/LinkedBlockingQueue add (Ljava/lang/Object;)Z
@@ -113,8 +113,8 @@ L167:   astore_2
 L168:   aload_2
 L169:   invokevirtual Method java/io/IOException printStackTrace ()V
 L172:   aload_0
-L173:   getfield Field ad do Lwb;
-L176:   invokevirtual Method wb break ()V
+L173:   getfield Field ad field1683 Lwb;
+L176:   invokevirtual Method wb method5822 ()V
 L179:   return
 L180:   
         .attribute StackMap b'\x00\x0D\x00\x21\x00\x03\x07\x00\x02\x07\x00\x10\x01\x00\x00\x00\x42\x00\x04\x07\x00\x02\x07\x00\x10\x01\x01\x00\x00\x00\x4C\x00\x00\x00\x01\x07\x00\x31\x00\x4D\x00\x04\x07\x00\x02\x07\x00\x10\x01\x01\x00\x00\x00\x60\x00\x05\x07\x00\x02\x07\x00\x10\x01\x07\x00\x37\x01\x00\x01\x01\x00\x76\x00\x00\x00\x01\x07\x00\x31\x00\x77\x00\x05\x07\x00\x02\x07\x00\x10\x01\x07\x00\x37\x01\x00\x00\x00\x97\x00\x00\x00\x01\x07\x00\x31\x00\x9A\x00\x02\x07\x00\x02\x07\x00\x10\x00\x01\x07\x00\x0E\x00\x9B\x00\x02\x07\x00\x02\x07\x00\x10\x00\x00\x00\xA7\x00\x02\x07\x00\x02\x07\x00\x10\x00\x01\x07\x00\x0E\x00\xAC\x00\x02\x07\x00\x02\x07\x00\x10\x00\x00\x00\xAD\x00\x02\x07\x00\x02\x07\x00\x10\x00\x01\x07\x00\x02'
@@ -126,7 +126,7 @@ L180:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field ad do Lwb;
+L3:     putfield Field ad field1683 Lwb;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    

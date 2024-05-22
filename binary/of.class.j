@@ -1,13 +1,13 @@
 .version 49 0
 .class public final super of
 .super Uf
-.field public do I
+.field public field1383 I
 
-.method public break : (LRg;)Z
+.method public method704 : (LRg;)Z
     .code stack 4 locals 2
 L0:     aload_1
-L1:     getfield Field Rg case LqE;
-L4:     getstatic Field qE do LqE;
+L1:     getfield Field Rg field227 LqE;
+L4:     getstatic Field qE field631 LqE;
 L7:     if_acmpeq L16
 L10:    iconst_0
 L11:    iconst_1
@@ -16,8 +16,8 @@ L13:    pop2
 L14:    ireturn
 L15:    athrow
 L16:    aload_1
-L17:    getfield Field Rg else Lqd;
-L20:    getfield Field qd void Leb;
+L17:    getfield Field Rg field239 Lqd;
+L20:    getfield Field qd field761 Leb;
 L23:    instanceof sg
 L26:    ifne L35
 L29:    iconst_0
@@ -27,9 +27,9 @@ L32:    pop2
 L33:    ireturn
 L34:    athrow
 L35:    aload_1
-L36:    getfield Field Rg byte I
+L36:    getfield Field Rg field228 I
 L39:    aload_0
-L40:    getfield Field of do I
+L40:    getfield Field of field1383 I
 L43:    if_icmple L51
 L46:    iconst_0
 L47:    iconst_1
@@ -49,7 +49,7 @@ L64:    dup
 L65:    pop2
 L66:    ireturn
 L67:    aload_1
-L68:    invokevirtual Method Rg goto ()I
+L68:    invokevirtual Method Rg method237 ()I
 L71:    ifle L79
 L74:    iconst_0
 L75:    iconst_1
@@ -62,7 +62,7 @@ L81:    dup
 L82:    pop2
 L83:    ireturn
 L84:    
-        .attribute StackMap b'\x00\x07\x00\x0F\x00\x00\x00\x01\x07\x00\x14\x00\x10\x00\x02\x07\x00\x02\x07\x00\x0A\x00\x00\x00\x22\x00\x00\x00\x01\x07\x00\x14\x00\x23\x00\x02\x07\x00\x02\x07\x00\x0A\x00\x00\x00\x33\x00\x02\x07\x00\x02\x07\x00\x0A\x00\x00\x00\x43\x00\x02\x07\x00\x02\x07\x00\x0A\x00\x00\x00\x4F\x00\x02\x07\x00\x02\x07\x00\x0A\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x0F\x00\x00\x00\x01\x07\x00\x15\x00\x10\x00\x02\x07\x00\x02\x07\x00\x0A\x00\x00\x00\x22\x00\x00\x00\x01\x07\x00\x15\x00\x23\x00\x02\x07\x00\x02\x07\x00\x0A\x00\x00\x00\x33\x00\x02\x07\x00\x02\x07\x00\x0A\x00\x00\x00\x43\x00\x02\x07\x00\x02\x07\x00\x0A\x00\x00\x00\x4F\x00\x02\x07\x00\x02\x07\x00\x0A\x00\x00'
     .end code
 .end method
 
@@ -78,7 +78,7 @@ L7:     aconst_null
 L8:     iload 5
 L10:    iload 6
 L12:    invokespecial Method Uf <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-L15:    putfield Field of do I
+L15:    putfield Field of field1383 I
 L18:    return
 L19:    
     .end code

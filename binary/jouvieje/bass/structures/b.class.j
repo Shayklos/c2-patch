@@ -12,20 +12,20 @@ L6:
     .end code
 .end method
 
-.method public break : ()V
+.method public method1218 : ()V
     .code stack 3 locals 1
 L0:     aload_0
 L1:     lconst_0
-L2:     putfield Field jouvieje/bass/structures/b do J
+L2:     putfield Field jouvieje/bass/structures/b field2319 J
 L5:     return
 L6:     
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/b;
+.method public static method1260 : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/b;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     dup2
 L5:     lstore_1
 L6:     lconst_0
@@ -40,7 +40,7 @@ L18:    lload_1
 L19:    invokespecial Method jouvieje/bass/structures/b <init> (J)V
 L22:    areturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x15\x00\x0E\x00\x02\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x16\x00\x0E\x00\x02\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 

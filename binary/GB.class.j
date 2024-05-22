@@ -1,7 +1,7 @@
 .version 49 0
 .class public final super GB
 .super java/lang/RuntimeException
-.field private static final do J = 1L
+.field private static final field616 J = 1L
 
 .method public <init> : ()V
     .code stack 2 locals 1

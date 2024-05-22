@@ -2,11 +2,11 @@
 .class super abstract org/lwjgl/opengl/q
 .super java/lang/Object
 .implements org/lwjgl/opengl/C
-.field protected else Lorg/lwjgl/opengl/PixelFormat;
-.field protected "enum" Lorg/lwjgl/opengl/Jb;
-.field protected do Lorg/lwjgl/opengl/a;
+.field protected field508 Lorg/lwjgl/opengl/PixelFormat;
+.field protected field509 Lorg/lwjgl/opengl/Jb;
+.field protected field510 Lorg/lwjgl/opengl/a;
 
-.method public const : ()Z
+.method public method263 : ()Z
     .code stack 2 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -16,8 +16,8 @@ L5:     monitorenter
 L6:     aload_0
 L7:     dup
 L8:     invokevirtual Method org/lwjgl/opengl/q this ()V
-L11:    getfield Field org/lwjgl/opengl/q "enum" Lorg/lwjgl/opengl/Jb;
-L14:    invokevirtual Method org/lwjgl/opengl/Jb else ()Z
+L11:    getfield Field org/lwjgl/opengl/q field509 Lorg/lwjgl/opengl/Jb;
+L14:    invokevirtual Method org/lwjgl/opengl/Jb method3618 ()Z
 L17:    aload_1
 L18:    monitorexit
 L19:    ireturn
@@ -29,36 +29,36 @@ L23:    monitorexit
 L24:    aload_2
 L25:    athrow
 L26:    
-        .attribute StackMap b'\x00\x02\x00\x14\x00\x00\x00\x01\x07\x00\x22\x00\x15\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x22'
+        .attribute StackMap b'\x00\x02\x00\x14\x00\x00\x00\x01\x07\x00\x23\x00\x15\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x23'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public goto : ()Lorg/lwjgl/opengl/h;
+.method public method310 : ()Lorg/lwjgl/opengl/h;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/q else Lorg/lwjgl/opengl/PixelFormat;
+L1:     getfield Field org/lwjgl/opengl/q field508 Lorg/lwjgl/opengl/PixelFormat;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method public catch : ()V
+.method public method76 : ()V
     .code stack 0 locals 1
-L0:     invokestatic Method org/lwjgl/opengl/n break ()V
+L0:     invokestatic Method org/lwjgl/opengl/n method5630 ()V
 L3:     return
 L4:     
     .end code
 .end method
 
-.method public short : ()V
+.method public method71 : ()V
     .code stack 5 locals 4
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
 L4:     astore_1
 L5:     monitorenter
 L6:     aload_0
-L7:     getfield Field org/lwjgl/opengl/q "enum" Lorg/lwjgl/opengl/Jb;
+L7:     getfield Field org/lwjgl/opengl/q field509 Lorg/lwjgl/opengl/Jb;
 L10:    ifnonnull L17
 L13:    aload_1
 L14:    monitorexit
@@ -72,18 +72,18 @@ L18:    aconst_null
 L19:    aload_0
 L20:    dup
 L21:    dup_x2
-L22:    invokevirtual Method org/lwjgl/opengl/q else ()V
-L25:    getfield Field org/lwjgl/opengl/q "enum" Lorg/lwjgl/opengl/Jb;
-L28:    invokevirtual Method org/lwjgl/opengl/Jb goto ()V
-L31:    putfield Field org/lwjgl/opengl/q "enum" Lorg/lwjgl/opengl/Jb;
-L34:    getfield Field org/lwjgl/opengl/q do Lorg/lwjgl/opengl/a;
+L22:    invokevirtual Method org/lwjgl/opengl/q method56 ()V
+L25:    getfield Field org/lwjgl/opengl/q field509 Lorg/lwjgl/opengl/Jb;
+L28:    invokevirtual Method org/lwjgl/opengl/Jb method3621 ()V
+L31:    putfield Field org/lwjgl/opengl/q field509 Lorg/lwjgl/opengl/Jb;
+L34:    getfield Field org/lwjgl/opengl/q field510 Lorg/lwjgl/opengl/a;
 L37:    ifnull L80
 L40:    aconst_null
 L41:    aload_0
 L42:    dup_x1
-L43:    getfield Field org/lwjgl/opengl/q do Lorg/lwjgl/opengl/a;
-L46:    invokevirtual Method org/lwjgl/opengl/a short ()V
-L49:    putfield Field org/lwjgl/opengl/q do Lorg/lwjgl/opengl/a;
+L43:    getfield Field org/lwjgl/opengl/q field510 Lorg/lwjgl/opengl/a;
+L46:    invokevirtual Method org/lwjgl/opengl/a method4675 ()V
+L49:    putfield Field org/lwjgl/opengl/q field510 Lorg/lwjgl/opengl/a;
 L52:    goto L80
 L55:    athrow
         .catch [0] from L56 to L82 using L83
@@ -109,7 +109,7 @@ L86:    aload_3
 L87:    athrow
 L88:    athrow
 L89:    
-        .attribute StackMap b'\x00\x07\x00\x10\x00\x00\x00\x01\x07\x00\x22\x00\x11\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00\x00\x37\x00\x00\x00\x01\x07\x00\x22\x00\x38\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x10\x00\x50\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00\x00\x53\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x22\x00\x58\x00\x00\x00\x01\x07\x00\x22'
+        .attribute StackMap b'\x00\x07\x00\x10\x00\x00\x00\x01\x07\x00\x23\x00\x11\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00\x00\x37\x00\x00\x00\x01\x07\x00\x23\x00\x38\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x10\x00\x50\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00\x00\x53\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x23\x00\x58\x00\x00\x00\x01\x07\x00\x23'
     .end code
 .end method
 
@@ -126,12 +126,12 @@ L10:    new org/lwjgl/opengl/Jb
 L13:    dup
 L14:    aload_0
 L15:    dup
-L16:    getfield Field org/lwjgl/opengl/q do Lorg/lwjgl/opengl/a;
+L16:    getfield Field org/lwjgl/opengl/q field510 Lorg/lwjgl/opengl/a;
 L19:    swap
-L20:    getfield Field org/lwjgl/opengl/q "enum" Lorg/lwjgl/opengl/Jb;
+L20:    getfield Field org/lwjgl/opengl/q field509 Lorg/lwjgl/opengl/Jb;
 L23:    invokevirtual Method org/lwjgl/opengl/Jb this ()Lorg/lwjgl/opengl/CB;
 L26:    aload_0
-L27:    getfield Field org/lwjgl/opengl/q "enum" Lorg/lwjgl/opengl/Jb;
+L27:    getfield Field org/lwjgl/opengl/q field509 Lorg/lwjgl/opengl/Jb;
 L30:    invokespecial Method org/lwjgl/opengl/Jb <init> (Lorg/lwjgl/opengl/a;Lorg/lwjgl/opengl/CB;Lorg/lwjgl/opengl/Jb;)V
 L33:    aload_1
 L34:    monitorexit
@@ -144,12 +144,12 @@ L39:    monitorexit
 L40:    aload_2
 L41:    athrow
 L42:    
-        .attribute StackMap b'\x00\x02\x00\x24\x00\x00\x00\x01\x07\x00\x22\x00\x25\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x22'
+        .attribute StackMap b'\x00\x02\x00\x24\x00\x00\x00\x01\x07\x00\x23\x00\x25\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x23'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public break : ()V
+.method public method74 : ()V
     .code stack 2 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -159,8 +159,8 @@ L5:     monitorenter
 L6:     aload_0
 L7:     dup
 L8:     invokevirtual Method org/lwjgl/opengl/q this ()V
-L11:    getfield Field org/lwjgl/opengl/q "enum" Lorg/lwjgl/opengl/Jb;
-L14:    invokevirtual Method org/lwjgl/opengl/Jb const ()V
+L11:    getfield Field org/lwjgl/opengl/q field509 Lorg/lwjgl/opengl/Jb;
+L14:    invokevirtual Method org/lwjgl/opengl/Jb method3617 ()V
 L17:    aload_1
 L18:    monitorexit
 L19:    return
@@ -173,7 +173,7 @@ L24:    aload_2
 L25:    athrow
 L26:    athrow
 L27:    
-        .attribute StackMap b'\x00\x03\x00\x14\x00\x00\x00\x01\x07\x00\x22\x00\x15\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x22\x00\x1A\x00\x00\x00\x01\x07\x00\x22'
+        .attribute StackMap b'\x00\x03\x00\x14\x00\x00\x00\x01\x07\x00\x23\x00\x15\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x23\x00\x1A\x00\x00\x00\x01\x07\x00\x23'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
@@ -186,7 +186,7 @@ L4:     astore_1
 L5:     monitorenter
         .catch [0] from L6 to L12 using L14
 L6:     aload_0
-L7:     getfield Field org/lwjgl/opengl/q "enum" Lorg/lwjgl/opengl/Jb;
+L7:     getfield Field org/lwjgl/opengl/q field509 Lorg/lwjgl/opengl/Jb;
 L10:    aload_1
 L11:    monitorexit
 L12:    areturn
@@ -198,11 +198,11 @@ L16:    monitorexit
 L17:    aload_2
 L18:    athrow
 L19:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x22\x00\x0E\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x22'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x23\x00\x0E\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x23'
     .end code
 .end method
 
-.method public bridge synthetic do : ()Lorg/lwjgl/opengl/G;
+.method public bridge synthetic method307 : ()Lorg/lwjgl/opengl/G;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     invokevirtual Method org/lwjgl/opengl/q try ()Lorg/lwjgl/opengl/Jb;
@@ -211,10 +211,10 @@ L5:
     .end code
 .end method
 
-.method public break : (I)V
+.method public method14 : (I)V
     .code stack 1 locals 2
 L0:     iload_1
-L1:     invokestatic Method org/lwjgl/opengl/Jb break (I)V
+L1:     invokestatic Method org/lwjgl/opengl/Jb method3623 (I)V
 L4:     return
 L5:     
     .end code
@@ -229,16 +229,16 @@ L5:
     .end code
 .end method
 
-.method public float : ()V
+.method public method69 : ()V
     .code stack 0 locals 1
-L0:     invokestatic Method org/lwjgl/opengl/Jb char ()V
+L0:     invokestatic Method org/lwjgl/opengl/Jb method3630 ()V
 L3:     return
 L4:     
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public break : (Lorg/lwjgl/opengl/h;)V
+.method public method308 : (Lorg/lwjgl/opengl/h;)V
     .code stack 2 locals 2
 L0:     new java/lang/UnsupportedOperationException
 L3:     dup
@@ -249,7 +249,7 @@ L8:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public else : ()V
+.method public method56 : ()V
     .code stack 2 locals 3
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -259,12 +259,12 @@ L5:     monitorenter
 L6:     aload_0
 L7:     dup
 L8:     invokevirtual Method org/lwjgl/opengl/q this ()V
-L11:    getfield Field org/lwjgl/opengl/q "enum" Lorg/lwjgl/opengl/Jb;
-L14:    invokevirtual Method org/lwjgl/opengl/Jb else ()Z
+L11:    getfield Field org/lwjgl/opengl/q field509 Lorg/lwjgl/opengl/Jb;
+L14:    invokevirtual Method org/lwjgl/opengl/Jb method3618 ()Z
 L17:    ifeq L27
 L20:    aload_0
-L21:    getfield Field org/lwjgl/opengl/q "enum" Lorg/lwjgl/opengl/Jb;
-L24:    invokevirtual Method org/lwjgl/opengl/Jb short ()V
+L21:    getfield Field org/lwjgl/opengl/q field509 Lorg/lwjgl/opengl/Jb;
+L24:    invokevirtual Method org/lwjgl/opengl/Jb method3616 ()V
 L27:    aload_1
 L28:    monitorexit
 L29:    return
@@ -277,7 +277,7 @@ L34:    aload_2
 L35:    athrow
 L36:    athrow
 L37:    
-        .attribute StackMap b'\x00\x04\x00\x1B\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00\x00\x1E\x00\x00\x00\x01\x07\x00\x22\x00\x1F\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x22\x00\x24\x00\x00\x00\x01\x07\x00\x22'
+        .attribute StackMap b'\x00\x04\x00\x1B\x00\x02\x07\x00\x02\x07\x00\x04\x00\x00\x00\x1E\x00\x00\x00\x01\x07\x00\x23\x00\x1F\x00\x02\x07\x00\x02\x07\x00\x04\x00\x01\x07\x00\x23\x00\x24\x00\x00\x00\x01\x07\x00\x23'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
@@ -285,7 +285,7 @@ L37:
 .method protected final this : ()V
     .code stack 3 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/q "enum" Lorg/lwjgl/opengl/Jb;
+L1:     getfield Field org/lwjgl/opengl/q field509 Lorg/lwjgl/opengl/Jb;
 L4:     ifnonnull L17
 L7:     new java/lang/IllegalStateException
 L10:    dup
@@ -298,7 +298,7 @@ L18:
     .end code
 .end method
 
-.method public bridge synthetic for : ()Lorg/lwjgl/opengl/G;
+.method public bridge synthetic method309 : ()Lorg/lwjgl/opengl/G;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     invokevirtual Method org/lwjgl/opengl/q new ()Lorg/lwjgl/opengl/Jb;
@@ -308,26 +308,26 @@ L5:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public break : (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/CB;)V
+.method public method313 : (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/CB;)V
     .code stack 4 locals 3
 L0:     aload_0
 L1:     aload_1
 L2:     checkcast org/lwjgl/opengl/PixelFormat
-L5:     putfield Field org/lwjgl/opengl/q else Lorg/lwjgl/opengl/PixelFormat;
+L5:     putfield Field org/lwjgl/opengl/q field508 Lorg/lwjgl/opengl/PixelFormat;
 L8:     invokestatic Method org/lwjgl/opengl/Display getImplementation ()Lorg/lwjgl/opengl/m;
 L11:    aload_0
 L12:    dup_x1
-L13:    getfield Field org/lwjgl/opengl/q else Lorg/lwjgl/opengl/PixelFormat;
+L13:    getfield Field org/lwjgl/opengl/q field508 Lorg/lwjgl/opengl/PixelFormat;
 L16:    aload_2
-L17:    invokeinterface InterfaceMethod org/lwjgl/opengl/m break (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/CB;)Lorg/lwjgl/opengl/a; 3
-L22:    putfield Field org/lwjgl/opengl/q do Lorg/lwjgl/opengl/a;
+L17:    invokeinterface InterfaceMethod org/lwjgl/opengl/m method4717 (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/CB;)Lorg/lwjgl/opengl/a; 3
+L22:    putfield Field org/lwjgl/opengl/q field510 Lorg/lwjgl/opengl/a;
 L25:    return
 L26:    
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public break : (Lorg/lwjgl/h;)V
+.method public method311 : (Lorg/lwjgl/h;)V
     .code stack 2 locals 4
 L0:     getstatic Field org/lwjgl/opengl/GlobalLock lock Ljava/lang/Object;
 L3:     dup
@@ -337,9 +337,9 @@ L5:     monitorenter
 L6:     aload_0
 L7:     dup
 L8:     invokevirtual Method org/lwjgl/opengl/q this ()V
-L11:    getfield Field org/lwjgl/opengl/q "enum" Lorg/lwjgl/opengl/Jb;
+L11:    getfield Field org/lwjgl/opengl/q field509 Lorg/lwjgl/opengl/Jb;
 L14:    aload_1
-L15:    invokevirtual Method org/lwjgl/opengl/Jb break (Lorg/lwjgl/h;)V
+L15:    invokevirtual Method org/lwjgl/opengl/Jb method3631 (Lorg/lwjgl/h;)V
 L18:    aload_2
 L19:    monitorexit
 L20:    return
@@ -352,18 +352,18 @@ L25:    aload_3
 L26:    athrow
 L27:    athrow
 L28:    
-        .attribute StackMap b'\x00\x03\x00\x15\x00\x00\x00\x01\x07\x00\x22\x00\x16\x00\x03\x07\x00\x02\x07\x00\x88\x07\x00\x04\x00\x01\x07\x00\x22\x00\x1B\x00\x00\x00\x01\x07\x00\x22'
+        .attribute StackMap b'\x00\x03\x00\x15\x00\x00\x00\x01\x07\x00\x23\x00\x16\x00\x03\x07\x00\x02\x07\x00\x98\x07\x00\x04\x00\x01\x07\x00\x23\x00\x1B\x00\x00\x00\x01\x07\x00\x23'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public break : (FFF)V
+.method public method312 : (FFF)V
     .code stack 4 locals 4
 L0:     fload_1
 L1:     fload_2
 L2:     fload_3
 L3:     fconst_0
-L4:     invokestatic Method org/lwjgl/opengl/GL11 break (FFFF)V
+L4:     invokestatic Method org/lwjgl/opengl/GL11 method3917 (FFFF)V
 L7:     sipush 16384
 L10:    iconst_1
 L11:    dup

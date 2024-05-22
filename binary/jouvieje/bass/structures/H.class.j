@@ -2,10 +2,10 @@
 .class public final super jouvieje/bass/structures/H
 .super jouvieje/bass/utils/m
 
-.method public short : ()J
+.method public method1596 : ()J
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/H do J
+L1:     getfield Field jouvieje/bass/structures/H field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -14,7 +14,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/H do J
+L18:    getfield Field jouvieje/bass/structures/H field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_MIXER_NODE_get_pos (J)J
 L24:    lreturn
 L25:    
@@ -32,10 +32,10 @@ L6:
     .end code
 .end method
 
-.method public break : (F)V
+.method public method1181 : (F)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/H do J
+L1:     getfield Field jouvieje/bass/structures/H field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -44,7 +44,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/H do J
+L18:    getfield Field jouvieje/bass/structures/H field2319 J
 L21:    fload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_MIXER_NODE_set_value (JF)V
 L25:    return
@@ -53,10 +53,10 @@ L26:
     .end code
 .end method
 
-.method public else : (J)V
+.method public method1272 : (J)V
     .code stack 4 locals 3
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/H do J
+L1:     getfield Field jouvieje/bass/structures/H field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -65,7 +65,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/H do J
+L18:    getfield Field jouvieje/bass/structures/H field2319 J
 L21:    lload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_MIXER_NODE_set_pos (JJ)V
 L25:    return
@@ -74,10 +74,10 @@ L26:
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/H;
+.method public static method1597 : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/H;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     dup2
 L5:     lstore_1
 L6:     lconst_0
@@ -92,7 +92,7 @@ L18:    lload_1
 L19:    invokespecial Method jouvieje/bass/structures/H <init> (J)V
 L22:    areturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2A\x00\x0E\x00\x02\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2C\x00\x0E\x00\x02\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
@@ -105,7 +105,7 @@ L5:
     .end code
 .end method
 
-.method public static const : ()Ljouvieje/bass/structures/H;
+.method public static method1598 : ()Ljouvieje/bass/structures/H;
     .code stack 4 locals 2
 L0:     invokestatic Method jouvieje/bass/structures/StructureJNI BASS_MIXER_NODE_new ()J
 L3:     dup2
@@ -127,29 +127,29 @@ L27:
     .end code
 .end method
 
-.method public else : ()V
+.method public method1183 : ()V
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/H do J
+L1:     getfield Field jouvieje/bass/structures/H field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifeq L16
 L9:     aload_0
-L10:    getfield Field jouvieje/bass/structures/H do J
+L10:    getfield Field jouvieje/bass/structures/H field2319 J
 L13:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_MIXER_NODE_delete (J)V
 L16:    aload_0
 L17:    lconst_0
-L18:    putfield Field jouvieje/bass/structures/H do J
+L18:    putfield Field jouvieje/bass/structures/H field2319 J
 L21:    return
 L22:    
         .attribute StackMap b'\x00\x01\x00\x10\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public break : ()F
+.method public method1237 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/H do J
+L1:     getfield Field jouvieje/bass/structures/H field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -158,7 +158,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/H do J
+L18:    getfield Field jouvieje/bass/structures/H field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_MIXER_NODE_get_value (J)F
 L24:    freturn
 L25:    

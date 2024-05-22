@@ -1,13 +1,13 @@
 .version 49 0
 .class public final super wg
 .super Uf
-.field private do I
+.field private field1373 I
 
-.method public break : (LRg;)Z
+.method public method704 : (LRg;)Z
     .code stack 4 locals 2
 L0:     aload_1
-L1:     getfield Field Rg case LqE;
-L4:     getstatic Field qE do LqE;
+L1:     getfield Field Rg field227 LqE;
+L4:     getstatic Field qE field631 LqE;
 L7:     if_acmpne L81
 L10:    aload_1
 L11:    invokevirtual Method Rg new ()I
@@ -17,8 +17,8 @@ L16:    dup
 L17:    pop2
 L18:    if_icmpne L81
 L21:    aload_1
-L22:    getfield Field Rg else Lqd;
-L25:    getfield Field qd "enum" Ljava/util/Map;
+L22:    getfield Field Rg field239 Lqd;
+L25:    getfield Field qd field766 Ljava/util/Map;
 L28:    invokeinterface InterfaceMethod java/util/Map size ()I 1
 L33:    iconst_1
 L34:    dup
@@ -26,19 +26,19 @@ L35:    dup
 L36:    pop2
 L37:    if_icmple L81
 L40:    aload_1
-L41:    getfield Field Rg continue F
+L41:    getfield Field Rg field219 F
 L44:    aload_0
-L45:    getfield Field wg do I
+L45:    getfield Field wg field1373 I
 L48:    i2f
 L49:    fcmpg
 L50:    ifge L81
 L53:    aload_1
-L54:    getfield Field Rg do F
+L54:    getfield Field Rg field241 F
 L57:    ldc 1e1f
 L59:    fcmpl
 L60:    ifle L81
 L63:    aload_1
-L64:    getfield Field Rg byte I
+L64:    getfield Field Rg field228 I
 L67:    bipush 10
 L69:    iconst_1
 L70:    dup
@@ -56,7 +56,7 @@ L83:    dup
 L84:    pop2
 L85:    ireturn
 L86:    
-        .attribute StackMap b'\x00\x02\x00\x50\x00\x00\x00\x01\x07\x00\x33\x00\x51\x00\x02\x07\x00\x02\x07\x00\x0A\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x50\x00\x00\x00\x01\x07\x00\x35\x00\x51\x00\x02\x07\x00\x02\x07\x00\x0A\x00\x00'
     .end code
 .end method
 
@@ -84,7 +84,7 @@ L32:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/Strin
 L35:    iload 5
 L37:    iload 6
 L39:    invokespecial Method Uf <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-L42:    putfield Field wg do I
+L42:    putfield Field wg field1373 I
 L45:    return
 L46:    
     .end code

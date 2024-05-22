@@ -3,10 +3,10 @@
 .super java/lang/Object
 .implements java/lang/Cloneable
 .field public final this Ljava/lang/String;
-.field public char I
-.field public final else I
-.field public final "enum" I
-.field public do I
+.field public field5394 I
+.field public final field5395 I
+.field public final field5396 I
+.field public field5397 I
 
 .method private <init> : (Ljava/lang/String;IIII)V
     .code stack 11 locals 6
@@ -23,20 +23,20 @@ L11:    aload_0
 L12:    dup_x1
 L13:    invokespecial Method java/lang/Object <init> ()V
 L16:    putfield Field org/lwjgl/opengl/j this Ljava/lang/String;
-L19:    putfield Field org/lwjgl/opengl/j else I
-L22:    putfield Field org/lwjgl/opengl/j "enum" I
-L25:    putfield Field org/lwjgl/opengl/j char I
-L28:    putfield Field org/lwjgl/opengl/j do I
+L19:    putfield Field org/lwjgl/opengl/j field5395 I
+L22:    putfield Field org/lwjgl/opengl/j field5396 I
+L25:    putfield Field org/lwjgl/opengl/j field5394 I
+L28:    putfield Field org/lwjgl/opengl/j field5397 I
 L31:    return
 L32:    
     .end code
 .end method
 
-.method static synthetic break : (Lorg/lwjgl/opengl/j;Ljava/util/List;)V
+.method static synthetic method5527 : (Lorg/lwjgl/opengl/j;Ljava/util/List;)V
     .code stack 2 locals 2
 L0:     aload_0
 L1:     aload_1
-L2:     invokespecial Method org/lwjgl/opengl/j break (Ljava/util/List;)V
+L2:     invokespecial Method org/lwjgl/opengl/j method5528 (Ljava/util/List;)V
 L5:     return
 L6:     
     .end code
@@ -54,22 +54,22 @@ L12:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;
 L15:    ldc " "
 L17:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L20:    aload_0
-L21:    getfield Field org/lwjgl/opengl/j else I
+L21:    getfield Field org/lwjgl/opengl/j field5395 I
 L24:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L27:    ldc "x"
 L29:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L32:    aload_0
-L33:    getfield Field org/lwjgl/opengl/j "enum" I
+L33:    getfield Field org/lwjgl/opengl/j field5396 I
 L36:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L39:    ldc " @ "
 L41:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L44:    aload_0
-L45:    getfield Field org/lwjgl/opengl/j char I
+L45:    getfield Field org/lwjgl/opengl/j field5394 I
 L48:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L51:    ldc "x"
 L53:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L56:    aload_0
-L57:    getfield Field org/lwjgl/opengl/j do I
+L57:    getfield Field org/lwjgl/opengl/j field5397 I
 L60:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L63:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L66:    areturn
@@ -77,7 +77,7 @@ L67:
     .end code
 .end method
 
-.method private break : (Ljava/util/List;)V
+.method private method5528 : (Ljava/util/List;)V
     .code stack 9 locals 2
 L0:     aload_1
 L1:     ldc "--output"
@@ -97,12 +97,12 @@ L32:    pop2
 L33:    dup
 L34:    invokespecial Method java/lang/StringBuilder <init> ()V
 L37:    aload_0
-L38:    getfield Field org/lwjgl/opengl/j else I
+L38:    getfield Field org/lwjgl/opengl/j field5395 I
 L41:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L44:    ldc "x"
 L46:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L49:    aload_0
-L50:    getfield Field org/lwjgl/opengl/j "enum" I
+L50:    getfield Field org/lwjgl/opengl/j field5396 I
 L53:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L56:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L59:    invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
@@ -117,12 +117,12 @@ L78:    pop2
 L79:    dup
 L80:    invokespecial Method java/lang/StringBuilder <init> ()V
 L83:    aload_0
-L84:    getfield Field org/lwjgl/opengl/j char I
+L84:    getfield Field org/lwjgl/opengl/j field5394 I
 L87:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L90:    ldc "x"
 L92:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L95:    aload_0
-L96:    getfield Field org/lwjgl/opengl/j do I
+L96:    getfield Field org/lwjgl/opengl/j field5397 I
 L99:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L102:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L105:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2

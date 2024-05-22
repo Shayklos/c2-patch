@@ -2,12 +2,12 @@
 .class final super org/lwjgl/J
 .super java/lang/Object
 .implements java/security/PrivilegedAction
-.field final synthetic do Ljava/lang/String;
+.field final synthetic field2421 Ljava/lang/String;
 
-.method public break : ()Ljava/lang/String;
+.method public method1726 : ()Ljava/lang/String;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/J do Ljava/lang/String;
+L1:     getfield Field org/lwjgl/J field2421 Ljava/lang/String;
 L4:     invokestatic Method java/lang/System getProperty (Ljava/lang/String;)Ljava/lang/String;
 L7:     areturn
 L8:     
@@ -17,7 +17,7 @@ L8:
 .method public bridge synthetic run : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/J break ()Ljava/lang/String;
+L1:     invokevirtual Method org/lwjgl/J method1726 ()Ljava/lang/String;
 L4:     areturn
 L5:     
     .end code
@@ -28,7 +28,7 @@ L5:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field org/lwjgl/J do Ljava/lang/String;
+L3:     putfield Field org/lwjgl/J field2421 Ljava/lang/String;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    

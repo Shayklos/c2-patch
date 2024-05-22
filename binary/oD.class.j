@@ -2,8 +2,8 @@
 .class public final super oD
 .super java/lang/Object
 .implements java/lang/Runnable
-.field public final synthetic "enum" Ljava/io/File;
-.field public final synthetic do Ljd;
+.field public final synthetic field1709 Ljava/io/File;
+.field public final synthetic field1710 Ljd;
 
 .method public run : ()V
     .code stack 6 locals 2
@@ -38,7 +38,7 @@ L35:    iconst_1
 L36:    dup
 L37:    pop2
 L38:    aload_0
-L39:    getfield Field oD "enum" Ljava/io/File;
+L39:    getfield Field oD field1709 Ljava/io/File;
 L42:    invokevirtual Method java/io/File getAbsolutePath ()Ljava/lang/String;
 L45:    aastore
 L46:    dup
@@ -81,8 +81,8 @@ L93:    return
 L94:    athrow
 L95:    astore_1
 L96:    aload_0
-L97:    getfield Field oD do Ljd;
-L100:   getfield Field jd do LkB;
+L97:    getfield Field oD field1710 Ljd;
+L100:   getfield Field jd field1678 LkB;
 L103:   iconst_1
 L104:   dup
 L105:   dup
@@ -101,8 +101,8 @@ L1:     aload_0
 L2:     dup_x1
 L3:     dup_x2
 L4:     aload_1
-L5:     putfield Field oD do Ljd;
-L8:     putfield Field oD "enum" Ljava/io/File;
+L5:     putfield Field oD field1710 Ljd;
+L8:     putfield Field oD field1709 Ljava/io/File;
 L11:    invokespecial Method java/lang/Object <init> ()V
 L14:    return
 L15:    

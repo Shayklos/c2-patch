@@ -2,12 +2,12 @@
 .class final super org/lwjgl/opengl/ib
 .super java/lang/Object
 .implements java/security/PrivilegedExceptionAction
-.field final synthetic do Ljava/lang/Class;
+.field final synthetic field2474 Ljava/lang/Class;
 
 .method public run : ()Ljava/lang/Object;
     .code stack 5 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/ib do Ljava/lang/Class;
+L1:     getfield Field org/lwjgl/opengl/ib field2474 Ljava/lang/Class;
 L4:     ldc "initNativeStubs"
 L6:     iconst_0
 L7:     iconst_1
@@ -41,7 +41,7 @@ L36:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field org/lwjgl/opengl/ib do Ljava/lang/Class;
+L3:     putfield Field org/lwjgl/opengl/ib field2474 Ljava/lang/Class;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    
@@ -50,5 +50,5 @@ L10:
 .innerclasses
     org/lwjgl/opengl/ib [0] [0] static
 .end innerclasses
-.enclosing method org/lwjgl/opengl/GLContext break (Ljava/lang/Class;Ljava/util/Set;Ljava/lang/String;)V
+.enclosing method org/lwjgl/opengl/GLContext method4608 (Ljava/lang/Class;Ljava/util/Set;Ljava/lang/String;)V
 .end class

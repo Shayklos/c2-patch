@@ -3,34 +3,34 @@
 .super java/lang/Object
 .implements org/lwjgl/opengl/k
 
-.method public abstract goto : ()Lorg/lwjgl/opengl/h;
+.method public abstract method310 : ()Lorg/lwjgl/opengl/h;
 .end method
 
-.method public abstract do : ()Lorg/lwjgl/opengl/G;
+.method public abstract method307 : ()Lorg/lwjgl/opengl/G;
 .end method
 
-.method public abstract for : ()Lorg/lwjgl/opengl/G;
+.method public abstract method309 : ()Lorg/lwjgl/opengl/G;
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract catch : ()V
+.method public abstract method76 : ()V
 .end method
 
-.method public abstract break : (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/CB;)V
+.method public abstract method313 : (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/CB;)V
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract break : (Lorg/lwjgl/opengl/h;)V
+.method public abstract method308 : (Lorg/lwjgl/opengl/h;)V
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public abstract break : (FFF)V
+.method public abstract method312 : (FFF)V
 .end method
 
-.method public abstract break : (I)V
+.method public abstract method14 : (I)V
 .end method
 
-.method public abstract float : ()V
+.method public abstract method69 : ()V
     .exceptions org/lwjgl/LWJGLException
 .end method
 .end class

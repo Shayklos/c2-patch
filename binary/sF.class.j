@@ -12,14 +12,14 @@ L5:
     .end code
 .end method
 
-.method public break : (Lqc;)V
+.method public method75 : (Lqc;)V
     .code stack 0 locals 2
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public else : (Lqc;)V
+.method public method62 : (Lqc;)V
     .code stack 0 locals 2
 L0:     return
 L1:     

@@ -1,31 +1,31 @@
 .version 49 0
 .class final super org/lwjgl/opengl/T
 .super java/lang/Object
-.field private "enum" [I
-.field private do I
+.field private field5075 [I
+.field private field5076 I
 
-.method public break : (I)V
+.method public method5372 : (I)V
     .code stack 5 locals 3
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/opengl/T do I
+L2:     getfield Field org/lwjgl/opengl/T field5076 I
 L5:     iconst_1
 L6:     dup
 L7:     dup
 L8:     pop2
 L9:     iadd
 L10:    dup_x1
-L11:    putfield Field org/lwjgl/opengl/T do I
+L11:    putfield Field org/lwjgl/opengl/T field5076 I
 L14:    dup
 L15:    istore_2
 L16:    aload_0
-L17:    getfield Field org/lwjgl/opengl/T "enum" [I
+L17:    getfield Field org/lwjgl/opengl/T field5075 [I
 L20:    arraylength
 L21:    if_icmpne L28
 L24:    aload_0
-L25:    invokevirtual Method org/lwjgl/opengl/T else ()V
+L25:    invokevirtual Method org/lwjgl/opengl/T method5374 ()V
 L28:    aload_0
-L29:    getfield Field org/lwjgl/opengl/T "enum" [I
+L29:    getfield Field org/lwjgl/opengl/T field5075 [I
 L32:    iload_2
 L33:    iload_1
 L34:    iastore
@@ -51,14 +51,14 @@ L12:    newarray int
 L14:    iconst_1
 L15:    dup
 L16:    pop2
-L17:    putfield Field org/lwjgl/opengl/T "enum" [I
+L17:    putfield Field org/lwjgl/opengl/T field5075 [I
 L20:    iconst_1
 L21:    dup
 L22:    pop2
-L23:    putfield Field org/lwjgl/opengl/T do I
-L26:    getfield Field org/lwjgl/opengl/T "enum" [I
+L23:    putfield Field org/lwjgl/opengl/T field5076 I
+L26:    getfield Field org/lwjgl/opengl/T field5075 [I
 L29:    aload_0
-L30:    getfield Field org/lwjgl/opengl/T do I
+L30:    getfield Field org/lwjgl/opengl/T field5076 I
 L33:    iload_1
 L34:    iastore
 L35:    return
@@ -66,30 +66,30 @@ L36:
     .end code
 .end method
 
-.method public const : ()I
+.method public method5373 : ()I
     .code stack 7 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/T "enum" [I
+L1:     getfield Field org/lwjgl/opengl/T field5075 [I
 L4:     aload_0
 L5:     dup
-L6:     getfield Field org/lwjgl/opengl/T do I
+L6:     getfield Field org/lwjgl/opengl/T field5076 I
 L9:     dup_x1
 L10:    iconst_1
 L11:    dup
 L12:    dup
 L13:    pop2
 L14:    isub
-L15:    putfield Field org/lwjgl/opengl/T do I
+L15:    putfield Field org/lwjgl/opengl/T field5076 I
 L18:    iaload
 L19:    ireturn
 L20:    
     .end code
 .end method
 
-.method public else : ()V
+.method public method5374 : ()V
     .code stack 6 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/T "enum" [I
+L1:     getfield Field org/lwjgl/opengl/T field5075 [I
 L4:     arraylength
 L5:     iconst_1
 L6:     dup
@@ -102,7 +102,7 @@ L13:    dup
 L14:    pop2
 L15:    astore_1
 L16:    aload_0
-L17:    getfield Field org/lwjgl/opengl/T "enum" [I
+L17:    getfield Field org/lwjgl/opengl/T field5075 [I
 L20:    iconst_1
 L21:    dup
 L22:    pop2
@@ -113,24 +113,24 @@ L26:    iconst_1
 L27:    dup
 L28:    pop2
 L29:    aload_0
-L30:    getfield Field org/lwjgl/opengl/T "enum" [I
+L30:    getfield Field org/lwjgl/opengl/T field5075 [I
 L33:    arraylength
 L34:    invokestatic Method java/lang/System arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V
 L37:    aload_0
 L38:    aload_1
-L39:    putfield Field org/lwjgl/opengl/T "enum" [I
+L39:    putfield Field org/lwjgl/opengl/T field5075 [I
 L42:    return
 L43:    
     .end code
 .end method
 
-.method public break : ()I
+.method public method5375 : ()I
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/opengl/T "enum" [I
+L2:     getfield Field org/lwjgl/opengl/T field5075 [I
 L5:     swap
-L6:     getfield Field org/lwjgl/opengl/T do I
+L6:     getfield Field org/lwjgl/opengl/T field5076 I
 L9:     iaload
 L10:    ireturn
 L11:    

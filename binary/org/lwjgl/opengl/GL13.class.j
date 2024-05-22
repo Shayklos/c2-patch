@@ -34,7 +34,7 @@
 .field public static final G I = 34066
 .field public static final B I = 33984
 .field public static final c I = 34026
-.field public static final "synchronized" I = 34004
+.field public static final field3708 I = 34004
 .field public static final i I = 34165
 .field public static final m I = 32925
 .field public static final h I = 34019
@@ -45,58 +45,58 @@
 .field public static final j I = 34005
 .field public static final I I = 34163
 .field public static final b I = 33992
-.field public static final implements I = 34177
+.field public static final field3709 I = 34177
 .field public static final return I = 34167
-.field public static final default I = 34031
+.field public static final field3710 I = 34031
 .field public static final switch I = 34018
-.field public static final "interface" I = 34017
-.field public static final "private" I = 34074
-.field public static final assert I = 34011
-.field public static final boolean I = 34186
-.field public static final "strictfp" I = 32926
-.field public static final "abstract" I = 34014
-.field public static final "public" I = 32939
-.field public static final "volatile" I = 34161
-.field public static final double I = 34176
+.field public static final field3711 I = 34017
+.field public static final field3712 I = 34074
+.field public static final field3713 I = 34011
+.field public static final field3714 I = 34186
+.field public static final field3715 I = 32926
+.field public static final field3716 I = 34014
+.field public static final field3717 I = 32939
+.field public static final field3718 I = 34161
+.field public static final field3719 I = 34176
 .field public static final throw I = 33990
 .field public static final package I = 34166
-.field public static final finally I = 34168
-.field public static final "transient" I = 33991
+.field public static final field3720 I = 34168
+.field public static final field3721 I = 33991
 .field public static final while I = 34200
-.field public static final instanceof I = 34201
-.field public static final "protected" I = 32936
-.field public static final import I = 34070
-.field public static final "native" I = 34162
-.field public static final throws I = 34073
-.field public static final "static" I = 33999
-.field public static final continue I = 34068
-.field public static final extends I = 34192
-.field public static final float I = 34002
-.field public static final "final" I = 34023
-.field public static final catch I = 33995
+.field public static final field3722 I = 34201
+.field public static final field3723 I = 32936
+.field public static final field3724 I = 34070
+.field public static final field3725 I = 34162
+.field public static final field3726 I = 34073
+.field public static final field3727 I = 33999
+.field public static final field3728 I = 34068
+.field public static final field3729 I = 34192
+.field public static final field3730 I = 34002
+.field public static final field3731 I = 34023
+.field public static final field3732 I = 33995
 .field public static final false I = 34016
-.field public static final class I = 32927
-.field public static final if I = 34009
+.field public static final field3733 I = 32927
+.field public static final field3734 I = 34009
 .field public static final true I = 34076
-.field public static final for I = 34467
-.field public static final case I = 536870912
-.field public static final byte I = 34069
-.field public static final "super" I = 34178
-.field public static final int I = 34025
-.field public static final short I = 33069
-.field public static final goto I = 34067
-.field public static final break I = 34007
-.field public static final long I = 34013
-.field public static final void I = 34465
+.field public static final field3735 I = 34467
+.field public static final field3736 I = 536870912
+.field public static final field3737 I = 34069
+.field public static final field3738 I = 34178
+.field public static final field3739 I = 34025
+.field public static final field3740 I = 33069
+.field public static final field3741 I = 34067
+.field public static final field3742 I = 34007
+.field public static final field3743 I = 34013
+.field public static final field3744 I = 34465
 .field public static final try I = 34015
-.field public static final const I = 34466
+.field public static final field3745 I = 34466
 .field public static final new I = 34202
-.field public static final null I = 32937
+.field public static final field3746 I = 32937
 .field public static final this I = 34030
-.field public static final char I = 34028
-.field public static final else I = 34065
-.field public static final "enum" I = 33994
-.field public static final do I = 34010
+.field public static final field3747 I = 34028
+.field public static final field3748 I = 34065
+.field public static final field3749 I = 33994
+.field public static final field3750 I = 34010
 
 .method static native nglCompressedTexSubImage2DBO : (IIIIIIIIJJ)V
 .end method
@@ -104,15 +104,15 @@
 .method static native nglMultiTexCoord1f : (IFJ)V
 .end method
 
-.method public static else : (IIIIIIJ)V
+.method public static method3944 : (IIIIIIJ)V
     .code stack 10 locals 10
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     dup
 L4:     getfield Field org/lwjgl/opengl/kb QC J
 L7:     dup2
 L8:     lstore 8
-L10:    invokestatic Method org/lwjgl/l break (J)V
-L13:    invokestatic Method org/lwjgl/opengl/Zd goto (Lorg/lwjgl/opengl/kb;)V
+L10:    invokestatic Method org/lwjgl/l method2052 (J)V
+L13:    invokestatic Method org/lwjgl/opengl/Zd method5428 (Lorg/lwjgl/opengl/kb;)V
 L16:    iload_0
 L17:    iload_1
 L18:    iload_2
@@ -130,21 +130,21 @@ L32:
 .method static native nglMultiTexCoord3f : (IFFFJ)V
 .end method
 
-.method public static else : (Ljava/nio/DoubleBuffer;)V
+.method public static method3945 : (Ljava/nio/DoubleBuffer;)V
     .code stack 5 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb hN J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    aload_0
 L12:    dup
 L13:    bipush 16
 L15:    iconst_1
 L16:    dup
 L17:    pop2
-L18:    invokestatic Method org/lwjgl/l break (Ljava/nio/DoubleBuffer;I)V
-L21:    invokestatic Method org/lwjgl/MemoryUtil else (Ljava/nio/DoubleBuffer;)J
+L18:    invokestatic Method org/lwjgl/l method2056 (Ljava/nio/DoubleBuffer;I)V
+L21:    invokestatic Method org/lwjgl/MemoryUtil method1840 (Ljava/nio/DoubleBuffer;)J
 L24:    lload_1
 L25:    invokestatic Method org/lwjgl/opengl/GL13 nglMultTransposeMatrixd (JJ)V
 L28:    return
@@ -158,13 +158,13 @@ L29:
 .method static native nglLoadTransposeMatrixd : (JJ)V
 .end method
 
-.method public static break : (IFFF)V
+.method public static method3946 : (IFFF)V
     .code stack 6 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb bq J
 L6:     dup2
 L7:     lstore 4
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    fload_1
 L14:    fload_2
@@ -176,13 +176,13 @@ L22:
     .end code
 .end method
 
-.method public static break : (IF)V
+.method public static method3947 : (IF)V
     .code stack 4 locals 4
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb uj J
 L6:     dup2
 L7:     lstore_2
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    fload_1
 L13:    lload_2
@@ -195,9 +195,9 @@ L18:
 .method static native nglCompressedTexImage1DBO : (IIIIIIJJ)V
 .end method
 
-.method public static else : (IIIIILjava/nio/ByteBuffer;)V
+.method public static method3948 : (IIIIILjava/nio/ByteBuffer;)V
     .code stack 10 locals 9
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     astore 6
 L5:     aload 5
 L7:     aload 6
@@ -205,9 +205,9 @@ L9:     dup
 L10:    getfield Field org/lwjgl/opengl/kb It J
 L13:    dup2
 L14:    lstore 7
-L16:    invokestatic Method org/lwjgl/l break (J)V
-L19:    invokestatic Method org/lwjgl/opengl/Zd short (Lorg/lwjgl/opengl/kb;)V
-L22:    invokestatic Method org/lwjgl/l break (Ljava/nio/ByteBuffer;)V
+L16:    invokestatic Method org/lwjgl/l method2052 (J)V
+L19:    invokestatic Method org/lwjgl/opengl/Zd method5446 (Lorg/lwjgl/opengl/kb;)V
+L22:    invokestatic Method org/lwjgl/l method2034 (Ljava/nio/ByteBuffer;)V
 L25:    iload_0
 L26:    iload_1
 L27:    iload_2
@@ -216,7 +216,7 @@ L29:    iload 4
 L31:    aload 5
 L33:    invokevirtual Method java/nio/ByteBuffer remaining ()I
 L36:    aload 5
-L38:    invokestatic Method org/lwjgl/MemoryUtil const (Ljava/nio/ByteBuffer;)J
+L38:    invokestatic Method org/lwjgl/MemoryUtil method1873 (Ljava/nio/ByteBuffer;)J
 L41:    lload 7
 L43:    invokestatic Method org/lwjgl/opengl/GL13 nglCompressedTexSubImage1D (IIIIIIJJ)V
 L46:    return
@@ -224,15 +224,15 @@ L47:
     .end code
 .end method
 
-.method public static else : (I)V
+.method public static method3949 : (I)V
     .code stack 5 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     dup
 L4:     getfield Field org/lwjgl/opengl/kb fD J
 L7:     dup2
 L8:     lstore_1
-L9:     invokestatic Method org/lwjgl/l break (J)V
-L12:    invokestatic Method org/lwjgl/opengl/w const (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
+L12:    invokestatic Method org/lwjgl/opengl/w method5768 (Lorg/lwjgl/opengl/kb;)Lorg/lwjgl/opengl/P;
 L15:    iload_0
 L16:    ldc 33984
 L18:    isub
@@ -260,15 +260,15 @@ L5:
     .end code
 .end method
 
-.method public static break : (IIIIIIJ)V
+.method public static method3950 : (IIIIIIJ)V
     .code stack 10 locals 10
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     dup
 L4:     getfield Field org/lwjgl/opengl/kb It J
 L7:     dup2
 L8:     lstore 8
-L10:    invokestatic Method org/lwjgl/l break (J)V
-L13:    invokestatic Method org/lwjgl/opengl/Zd goto (Lorg/lwjgl/opengl/kb;)V
+L10:    invokestatic Method org/lwjgl/l method2052 (J)V
+L13:    invokestatic Method org/lwjgl/opengl/Zd method5428 (Lorg/lwjgl/opengl/kb;)V
 L16:    iload_0
 L17:    iload_1
 L18:    iload_2
@@ -286,15 +286,15 @@ L32:
 .method static native nglMultiTexCoord2d : (IDDJ)V
 .end method
 
-.method public static else : (IIIIIIIIJ)V
+.method public static method3951 : (IIIIIIIIJ)V
     .code stack 12 locals 12
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     dup
 L4:     getfield Field org/lwjgl/opengl/kb PH J
 L7:     dup2
 L8:     lstore 10
-L10:    invokestatic Method org/lwjgl/l break (J)V
-L13:    invokestatic Method org/lwjgl/opengl/Zd goto (Lorg/lwjgl/opengl/kb;)V
+L10:    invokestatic Method org/lwjgl/l method2052 (J)V
+L13:    invokestatic Method org/lwjgl/opengl/Zd method5428 (Lorg/lwjgl/opengl/kb;)V
 L16:    iload_0
 L17:    iload_1
 L18:    iload_2
@@ -314,13 +314,13 @@ L36:
 .method static native nglClientActiveTexture : (IJ)V
 .end method
 
-.method public static break : (I)V
+.method public static method3952 : (I)V
     .code stack 4 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb WA J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    lload_1
 L13:    invokestatic Method org/lwjgl/opengl/GL13 nglActiveTexture (IJ)V
@@ -335,15 +335,15 @@ L17:
 .method static native nglCompressedTexSubImage1DBO : (IIIIIIJJ)V
 .end method
 
-.method public static break : (IIIIIIIIJ)V
+.method public static method3953 : (IIIIIIIIJ)V
     .code stack 12 locals 12
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     dup
 L4:     getfield Field org/lwjgl/opengl/kb fT J
 L7:     dup2
 L8:     lstore 10
-L10:    invokestatic Method org/lwjgl/l break (J)V
-L13:    invokestatic Method org/lwjgl/opengl/Zd goto (Lorg/lwjgl/opengl/kb;)V
+L10:    invokestatic Method org/lwjgl/l method2052 (J)V
+L13:    invokestatic Method org/lwjgl/opengl/Zd method5428 (Lorg/lwjgl/opengl/kb;)V
 L16:    iload_0
 L17:    iload_1
 L18:    iload_2
@@ -363,9 +363,9 @@ L36:
 .method static native nglMultTransposeMatrixd : (JJ)V
 .end method
 
-.method public static break : (IIIIIIIIILjava/nio/ByteBuffer;)V
+.method public static method3954 : (IIIIIIIIILjava/nio/ByteBuffer;)V
     .code stack 14 locals 13
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     astore 10
 L5:     aload 9
 L7:     aload 10
@@ -373,9 +373,9 @@ L9:     dup
 L10:    getfield Field org/lwjgl/opengl/kb xI J
 L13:    dup2
 L14:    lstore 11
-L16:    invokestatic Method org/lwjgl/l break (J)V
-L19:    invokestatic Method org/lwjgl/opengl/Zd short (Lorg/lwjgl/opengl/kb;)V
-L22:    invokestatic Method org/lwjgl/l break (Ljava/nio/ByteBuffer;)V
+L16:    invokestatic Method org/lwjgl/l method2052 (J)V
+L19:    invokestatic Method org/lwjgl/opengl/Zd method5446 (Lorg/lwjgl/opengl/kb;)V
+L22:    invokestatic Method org/lwjgl/l method2034 (Ljava/nio/ByteBuffer;)V
 L25:    iload_0
 L26:    iload_1
 L27:    iload_2
@@ -388,7 +388,7 @@ L37:    iload 8
 L39:    aload 9
 L41:    invokevirtual Method java/nio/ByteBuffer remaining ()I
 L44:    aload 9
-L46:    invokestatic Method org/lwjgl/MemoryUtil const (Ljava/nio/ByteBuffer;)J
+L46:    invokestatic Method org/lwjgl/MemoryUtil method1873 (Ljava/nio/ByteBuffer;)J
 L49:    lload 11
 L51:    invokestatic Method org/lwjgl/opengl/GL13 nglCompressedTexSubImage3D (IIIIIIIIIIJJ)V
 L54:    return
@@ -396,9 +396,9 @@ L55:
     .end code
 .end method
 
-.method public static else : (IIIIIIILjava/nio/ByteBuffer;)V
+.method public static method3955 : (IIIIIIILjava/nio/ByteBuffer;)V
     .code stack 12 locals 11
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     astore 8
 L5:     aload 7
 L7:     aload 8
@@ -406,9 +406,9 @@ L9:     dup
 L10:    getfield Field org/lwjgl/opengl/kb fT J
 L13:    dup2
 L14:    lstore 9
-L16:    invokestatic Method org/lwjgl/l break (J)V
-L19:    invokestatic Method org/lwjgl/opengl/Zd short (Lorg/lwjgl/opengl/kb;)V
-L22:    invokestatic Method org/lwjgl/l break (Ljava/nio/ByteBuffer;)V
+L16:    invokestatic Method org/lwjgl/l method2052 (J)V
+L19:    invokestatic Method org/lwjgl/opengl/Zd method5446 (Lorg/lwjgl/opengl/kb;)V
+L22:    invokestatic Method org/lwjgl/l method2034 (Ljava/nio/ByteBuffer;)V
 L25:    iload_0
 L26:    iload_1
 L27:    iload_2
@@ -419,7 +419,7 @@ L33:    iload 6
 L35:    aload 7
 L37:    invokevirtual Method java/nio/ByteBuffer remaining ()I
 L40:    aload 7
-L42:    invokestatic Method org/lwjgl/MemoryUtil const (Ljava/nio/ByteBuffer;)J
+L42:    invokestatic Method org/lwjgl/MemoryUtil method1873 (Ljava/nio/ByteBuffer;)J
 L45:    lload 9
 L47:    invokestatic Method org/lwjgl/opengl/GL13 nglCompressedTexSubImage2D (IIIIIIIIJJ)V
 L50:    return
@@ -427,9 +427,9 @@ L51:
     .end code
 .end method
 
-.method public static break : (IIIIIIILjava/nio/ByteBuffer;)V
+.method public static method3956 : (IIIIIIILjava/nio/ByteBuffer;)V
     .code stack 12 locals 11
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     astore 8
 L5:     aload 7
 L7:     aload 8
@@ -437,9 +437,9 @@ L9:     dup
 L10:    getfield Field org/lwjgl/opengl/kb PH J
 L13:    dup2
 L14:    lstore 9
-L16:    invokestatic Method org/lwjgl/l break (J)V
-L19:    invokestatic Method org/lwjgl/opengl/Zd short (Lorg/lwjgl/opengl/kb;)V
-L22:    invokestatic Method org/lwjgl/l break (Ljava/nio/ByteBuffer;)V
+L16:    invokestatic Method org/lwjgl/l method2052 (J)V
+L19:    invokestatic Method org/lwjgl/opengl/Zd method5446 (Lorg/lwjgl/opengl/kb;)V
+L22:    invokestatic Method org/lwjgl/l method2034 (Ljava/nio/ByteBuffer;)V
 L25:    iload_0
 L26:    iload_1
 L27:    iload_2
@@ -450,7 +450,7 @@ L33:    iload 6
 L35:    aload 7
 L37:    invokevirtual Method java/nio/ByteBuffer remaining ()I
 L40:    aload 7
-L42:    invokestatic Method org/lwjgl/MemoryUtil const (Ljava/nio/ByteBuffer;)J
+L42:    invokestatic Method org/lwjgl/MemoryUtil method1873 (Ljava/nio/ByteBuffer;)J
 L45:    lload 9
 L47:    invokestatic Method org/lwjgl/opengl/GL13 nglCompressedTexImage3D (IIIIIIIIJJ)V
 L50:    return
@@ -458,13 +458,13 @@ L51:
     .end code
 .end method
 
-.method public static break : (ID)V
+.method public static method3957 : (ID)V
     .code stack 5 locals 5
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb Ym J
 L6:     dup2
 L7:     lstore_3
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    dload_1
 L13:    lload_3
@@ -474,15 +474,15 @@ L18:
     .end code
 .end method
 
-.method public static break : (IIIIIIIJ)V
+.method public static method3958 : (IIIIIIIJ)V
     .code stack 11 locals 11
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     dup
 L4:     getfield Field org/lwjgl/opengl/kb CB J
 L7:     dup2
 L8:     lstore 9
-L10:    invokestatic Method org/lwjgl/l break (J)V
-L13:    invokestatic Method org/lwjgl/opengl/Zd goto (Lorg/lwjgl/opengl/kb;)V
+L10:    invokestatic Method org/lwjgl/l method2052 (J)V
+L13:    invokestatic Method org/lwjgl/opengl/Zd method5428 (Lorg/lwjgl/opengl/kb;)V
 L16:    iload_0
 L17:    iload_1
 L18:    iload_2
@@ -498,9 +498,9 @@ L34:
     .end code
 .end method
 
-.method public static break : (IILjava/nio/IntBuffer;)V
+.method public static method3959 : (IILjava/nio/IntBuffer;)V
     .code stack 6 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     astore_3
 L4:     aload_2
 L5:     aload_3
@@ -508,13 +508,13 @@ L6:     dup
 L7:     getfield Field org/lwjgl/opengl/kb Wk J
 L10:    dup2
 L11:    lstore 4
-L13:    invokestatic Method org/lwjgl/l break (J)V
-L16:    invokestatic Method org/lwjgl/opengl/Zd else (Lorg/lwjgl/opengl/kb;)V
-L19:    invokestatic Method org/lwjgl/l else (Ljava/nio/IntBuffer;)V
+L13:    invokestatic Method org/lwjgl/l method2052 (J)V
+L16:    invokestatic Method org/lwjgl/opengl/Zd method5449 (Lorg/lwjgl/opengl/kb;)V
+L19:    invokestatic Method org/lwjgl/l method2043 (Ljava/nio/IntBuffer;)V
 L22:    iload_0
 L23:    iload_1
 L24:    aload_2
-L25:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/IntBuffer;)J
+L25:    invokestatic Method org/lwjgl/MemoryUtil method1884 (Ljava/nio/IntBuffer;)J
 L28:    lload 4
 L30:    invokestatic Method org/lwjgl/opengl/GL13 nglGetCompressedTexImage (IIJJ)V
 L33:    return
@@ -522,9 +522,9 @@ L34:
     .end code
 .end method
 
-.method public static break : (IIIIILjava/nio/ByteBuffer;)V
+.method public static method3960 : (IIIIILjava/nio/ByteBuffer;)V
     .code stack 10 locals 9
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     astore 6
 L5:     aload 5
 L7:     aload 6
@@ -532,9 +532,9 @@ L9:     dup
 L10:    getfield Field org/lwjgl/opengl/kb QC J
 L13:    dup2
 L14:    lstore 7
-L16:    invokestatic Method org/lwjgl/l break (J)V
-L19:    invokestatic Method org/lwjgl/opengl/Zd short (Lorg/lwjgl/opengl/kb;)V
-L22:    invokestatic Method org/lwjgl/l break (Ljava/nio/ByteBuffer;)V
+L16:    invokestatic Method org/lwjgl/l method2052 (J)V
+L19:    invokestatic Method org/lwjgl/opengl/Zd method5446 (Lorg/lwjgl/opengl/kb;)V
+L22:    invokestatic Method org/lwjgl/l method2034 (Ljava/nio/ByteBuffer;)V
 L25:    iload_0
 L26:    iload_1
 L27:    iload_2
@@ -543,7 +543,7 @@ L29:    iload 4
 L31:    aload 5
 L33:    invokevirtual Method java/nio/ByteBuffer remaining ()I
 L36:    aload 5
-L38:    invokestatic Method org/lwjgl/MemoryUtil const (Ljava/nio/ByteBuffer;)J
+L38:    invokestatic Method org/lwjgl/MemoryUtil method1873 (Ljava/nio/ByteBuffer;)J
 L41:    lload 7
 L43:    invokestatic Method org/lwjgl/opengl/GL13 nglCompressedTexImage1D (IIIIIIJJ)V
 L46:    return
@@ -554,15 +554,15 @@ L47:
 .method static native nglCompressedTexSubImage2D : (IIIIIIIIJJ)V
 .end method
 
-.method public static break : (IIJ)V
+.method public static method3961 : (IIJ)V
     .code stack 6 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     dup
 L4:     getfield Field org/lwjgl/opengl/kb Wk J
 L7:     dup2
 L8:     lstore 4
-L10:    invokestatic Method org/lwjgl/l break (J)V
-L13:    invokestatic Method org/lwjgl/opengl/Zd for (Lorg/lwjgl/opengl/kb;)V
+L10:    invokestatic Method org/lwjgl/l method2052 (J)V
+L13:    invokestatic Method org/lwjgl/opengl/Zd method5436 (Lorg/lwjgl/opengl/kb;)V
 L16:    iload_0
 L17:    iload_1
 L18:    lload_2
@@ -573,13 +573,13 @@ L25:
     .end code
 .end method
 
-.method public static break : (IDDDD)V
+.method public static method3962 : (IDDDD)V
     .code stack 11 locals 11
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb Rk J
 L6:     dup2
 L7:     lstore 9
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    dload_1
 L14:    dload_3
@@ -592,15 +592,15 @@ L25:
     .end code
 .end method
 
-.method public static break : (IIIIIIIIIIJ)V
+.method public static method3963 : (IIIIIIIIIIJ)V
     .code stack 14 locals 14
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     dup
 L4:     getfield Field org/lwjgl/opengl/kb xI J
 L7:     dup2
 L8:     lstore 12
-L10:    invokestatic Method org/lwjgl/l break (J)V
-L13:    invokestatic Method org/lwjgl/opengl/Zd goto (Lorg/lwjgl/opengl/kb;)V
+L10:    invokestatic Method org/lwjgl/l method2052 (J)V
+L13:    invokestatic Method org/lwjgl/opengl/Zd method5428 (Lorg/lwjgl/opengl/kb;)V
 L16:    iload_0
 L17:    iload_1
 L18:    iload_2
@@ -628,13 +628,13 @@ L40:
 .method static native nglMultiTexCoord4f : (IFFFFJ)V
 .end method
 
-.method public static break : (IDD)V
+.method public static method3964 : (IDD)V
     .code stack 7 locals 7
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb ON J
 L6:     dup2
 L7:     lstore 5
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    dload_1
 L14:    dload_3
@@ -654,21 +654,21 @@ L21:
 .method static native nglCompressedTexImage2D : (IIIIIIIJJ)V
 .end method
 
-.method public static else : (Ljava/nio/FloatBuffer;)V
+.method public static method3965 : (Ljava/nio/FloatBuffer;)V
     .code stack 5 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb oE J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    aload_0
 L12:    dup
 L13:    bipush 16
 L15:    iconst_1
 L16:    dup
 L17:    pop2
-L18:    invokestatic Method org/lwjgl/l break (Ljava/nio/FloatBuffer;I)V
-L21:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/FloatBuffer;)J
+L18:    invokestatic Method org/lwjgl/l method2044 (Ljava/nio/FloatBuffer;I)V
+L21:    invokestatic Method org/lwjgl/MemoryUtil method1878 (Ljava/nio/FloatBuffer;)J
 L24:    lload_1
 L25:    invokestatic Method org/lwjgl/opengl/GL13 nglLoadTransposeMatrixf (JJ)V
 L28:    return
@@ -685,13 +685,13 @@ L29:
 .method static native nglCompressedTexImage3D : (IIIIIIIIJJ)V
 .end method
 
-.method public static break : (IFFFF)V
+.method public static method3966 : (IFFFF)V
     .code stack 7 locals 7
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb yC J
 L6:     dup2
 L7:     lstore 5
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    fload_1
 L14:    fload_2
@@ -707,13 +707,13 @@ L24:
 .method static native nglGetCompressedTexImageBO : (IIJJ)V
 .end method
 
-.method public static break : (IDDD)V
+.method public static method3967 : (IDDD)V
     .code stack 9 locals 9
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb fj J
 L6:     dup2
 L7:     lstore 7
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    dload_1
 L14:    dload_3
@@ -731,9 +731,9 @@ L23:
 .method static native nglCompressedTexImage1D : (IIIIIIJJ)V
 .end method
 
-.method public static break : (IILjava/nio/ShortBuffer;)V
+.method public static method3968 : (IILjava/nio/ShortBuffer;)V
     .code stack 6 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     astore_3
 L4:     aload_2
 L5:     aload_3
@@ -741,13 +741,13 @@ L6:     dup
 L7:     getfield Field org/lwjgl/opengl/kb Wk J
 L10:    dup2
 L11:    lstore 4
-L13:    invokestatic Method org/lwjgl/l break (J)V
-L16:    invokestatic Method org/lwjgl/opengl/Zd else (Lorg/lwjgl/opengl/kb;)V
-L19:    invokestatic Method org/lwjgl/l break (Ljava/nio/ShortBuffer;)V
+L13:    invokestatic Method org/lwjgl/l method2052 (J)V
+L16:    invokestatic Method org/lwjgl/opengl/Zd method5449 (Lorg/lwjgl/opengl/kb;)V
+L19:    invokestatic Method org/lwjgl/l method2057 (Ljava/nio/ShortBuffer;)V
 L22:    iload_0
 L23:    iload_1
 L24:    aload_2
-L25:    invokestatic Method org/lwjgl/MemoryUtil else (Ljava/nio/ShortBuffer;)J
+L25:    invokestatic Method org/lwjgl/MemoryUtil method1853 (Ljava/nio/ShortBuffer;)J
 L28:    lload 4
 L30:    invokestatic Method org/lwjgl/opengl/GL13 nglGetCompressedTexImage (IIJJ)V
 L33:    return
@@ -755,21 +755,21 @@ L34:
     .end code
 .end method
 
-.method public static break : (Ljava/nio/FloatBuffer;)V
+.method public static method3969 : (Ljava/nio/FloatBuffer;)V
     .code stack 5 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb Wj J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    aload_0
 L12:    dup
 L13:    bipush 16
 L15:    iconst_1
 L16:    dup
 L17:    pop2
-L18:    invokestatic Method org/lwjgl/l break (Ljava/nio/FloatBuffer;I)V
-L21:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/FloatBuffer;)J
+L18:    invokestatic Method org/lwjgl/l method2044 (Ljava/nio/FloatBuffer;I)V
+L21:    invokestatic Method org/lwjgl/MemoryUtil method1878 (Ljava/nio/FloatBuffer;)J
 L24:    lload_1
 L25:    invokestatic Method org/lwjgl/opengl/GL13 nglMultTransposeMatrixf (JJ)V
 L28:    return
@@ -777,9 +777,9 @@ L29:
     .end code
 .end method
 
-.method public static break : (IILjava/nio/ByteBuffer;)V
+.method public static method3970 : (IILjava/nio/ByteBuffer;)V
     .code stack 6 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     astore_3
 L4:     aload_2
 L5:     aload_3
@@ -787,13 +787,13 @@ L6:     dup
 L7:     getfield Field org/lwjgl/opengl/kb Wk J
 L10:    dup2
 L11:    lstore 4
-L13:    invokestatic Method org/lwjgl/l break (J)V
-L16:    invokestatic Method org/lwjgl/opengl/Zd else (Lorg/lwjgl/opengl/kb;)V
-L19:    invokestatic Method org/lwjgl/l break (Ljava/nio/ByteBuffer;)V
+L13:    invokestatic Method org/lwjgl/l method2052 (J)V
+L16:    invokestatic Method org/lwjgl/opengl/Zd method5449 (Lorg/lwjgl/opengl/kb;)V
+L19:    invokestatic Method org/lwjgl/l method2034 (Ljava/nio/ByteBuffer;)V
 L22:    iload_0
 L23:    iload_1
 L24:    aload_2
-L25:    invokestatic Method org/lwjgl/MemoryUtil const (Ljava/nio/ByteBuffer;)J
+L25:    invokestatic Method org/lwjgl/MemoryUtil method1873 (Ljava/nio/ByteBuffer;)J
 L28:    lload 4
 L30:    invokestatic Method org/lwjgl/opengl/GL13 nglGetCompressedTexImage (IIJJ)V
 L33:    return
@@ -801,13 +801,13 @@ L34:
     .end code
 .end method
 
-.method public static break : (IFF)V
+.method public static method3971 : (IFF)V
     .code stack 5 locals 5
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb ho J
 L6:     dup2
 L7:     lstore_3
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    fload_1
 L13:    fload_2
@@ -821,9 +821,9 @@ L19:
 .method static native nglCompressedTexSubImage1D : (IIIIIIJJ)V
 .end method
 
-.method public static break : (IIIIIILjava/nio/ByteBuffer;)V
+.method public static method3972 : (IIIIIILjava/nio/ByteBuffer;)V
     .code stack 11 locals 10
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     astore 7
 L5:     aload 6
 L7:     aload 7
@@ -831,9 +831,9 @@ L9:     dup
 L10:    getfield Field org/lwjgl/opengl/kb CB J
 L13:    dup2
 L14:    lstore 8
-L16:    invokestatic Method org/lwjgl/l break (J)V
-L19:    invokestatic Method org/lwjgl/opengl/Zd short (Lorg/lwjgl/opengl/kb;)V
-L22:    invokestatic Method org/lwjgl/l break (Ljava/nio/ByteBuffer;)V
+L16:    invokestatic Method org/lwjgl/l method2052 (J)V
+L19:    invokestatic Method org/lwjgl/opengl/Zd method5446 (Lorg/lwjgl/opengl/kb;)V
+L22:    invokestatic Method org/lwjgl/l method2034 (Ljava/nio/ByteBuffer;)V
 L25:    iload_0
 L26:    iload_1
 L27:    iload_2
@@ -843,7 +843,7 @@ L31:    iload 5
 L33:    aload 6
 L35:    invokevirtual Method java/nio/ByteBuffer remaining ()I
 L38:    aload 6
-L40:    invokestatic Method org/lwjgl/MemoryUtil const (Ljava/nio/ByteBuffer;)J
+L40:    invokestatic Method org/lwjgl/MemoryUtil method1873 (Ljava/nio/ByteBuffer;)J
 L43:    lload 8
 L45:    invokestatic Method org/lwjgl/opengl/GL13 nglCompressedTexImage2D (IIIIIIIJJ)V
 L48:    return
@@ -854,21 +854,21 @@ L49:
 .method static native nglMultiTexCoord3d : (IDDDJ)V
 .end method
 
-.method public static break : (Ljava/nio/DoubleBuffer;)V
+.method public static method3973 : (Ljava/nio/DoubleBuffer;)V
     .code stack 5 locals 3
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb Vf J
 L6:     dup2
 L7:     lstore_1
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    aload_0
 L12:    dup
 L13:    bipush 16
 L15:    iconst_1
 L16:    dup
 L17:    pop2
-L18:    invokestatic Method org/lwjgl/l break (Ljava/nio/DoubleBuffer;I)V
-L21:    invokestatic Method org/lwjgl/MemoryUtil else (Ljava/nio/DoubleBuffer;)J
+L18:    invokestatic Method org/lwjgl/l method2056 (Ljava/nio/DoubleBuffer;I)V
+L21:    invokestatic Method org/lwjgl/MemoryUtil method1840 (Ljava/nio/DoubleBuffer;)J
 L24:    lload_1
 L25:    invokestatic Method org/lwjgl/opengl/GL13 nglLoadTransposeMatrixd (JJ)V
 L28:    return
@@ -876,13 +876,13 @@ L29:
     .end code
 .end method
 
-.method public static break : (FZ)V
+.method public static method3974 : (FZ)V
     .code stack 4 locals 4
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb HN J
 L6:     dup2
 L7:     lstore_2
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    fload_0
 L12:    iload_1
 L13:    lload_2

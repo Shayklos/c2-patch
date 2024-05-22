@@ -1,9 +1,9 @@
 .version 49 0
 .class public final super enum Vf
 .super java/lang/Enum
-.field public static final enum else LVf;
-.field private static final synthetic "enum" [LVf;
-.field public static final enum do LVf;
+.field public static final enum field363 LVf;
+.field private static final synthetic field364 [LVf;
+.field public static final enum field365 LVf;
 
 .method public static <clinit> : ()V
     .code stack 6 locals 0
@@ -15,7 +15,7 @@ L7:     iconst_1
 L8:     dup
 L9:     pop2
 L10:    invokespecial Method Vf <init> (Ljava/lang/String;I)V
-L13:    putstatic Field Vf else LVf;
+L13:    putstatic Field Vf field363 LVf;
 L16:    new Vf
 L19:    dup
 L20:    ldc "SOUND_SPEECH"
@@ -24,7 +24,7 @@ L23:    dup
 L24:    dup
 L25:    pop2
 L26:    invokespecial Method Vf <init> (Ljava/lang/String;I)V
-L29:    putstatic Field Vf do LVf;
+L29:    putstatic Field Vf field365 LVf;
 L32:    iconst_2
 L33:    iconst_1
 L34:    dup
@@ -38,16 +38,16 @@ L43:    iconst_0
 L44:    iconst_1
 L45:    dup
 L46:    pop2
-L47:    getstatic Field Vf else LVf;
+L47:    getstatic Field Vf field363 LVf;
 L50:    aastore
 L51:    dup
 L52:    iconst_1
 L53:    dup
 L54:    dup
 L55:    pop2
-L56:    getstatic Field Vf do LVf;
+L56:    getstatic Field Vf field365 LVf;
 L59:    aastore
-L60:    putstatic Field Vf "enum" [LVf;
+L60:    putstatic Field Vf field364 [LVf;
 L63:    return
 L64:    
     .end code
@@ -66,7 +66,7 @@ L7:
 
 .method public static values : ()[LVf;
     .code stack 1 locals 0
-L0:     getstatic Field Vf "enum" [LVf;
+L0:     getstatic Field Vf field364 [LVf;
 L3:     invokevirtual Method [LVf; clone ()Ljava/lang/Object;
 L6:     checkcast [LVf;
 L9:     areturn

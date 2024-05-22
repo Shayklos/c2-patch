@@ -2,10 +2,10 @@
 .class public final super jouvieje/bass/structures/y
 .super jouvieje/bass/utils/m
 
-.method public catch : (F)V
+.method public method1251 : (F)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -14,7 +14,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/y do J
+L18:    getfield Field jouvieje/bass/structures/y field2319 J
 L21:    fload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_set_fFeedback (JF)V
 L25:    return
@@ -32,10 +32,10 @@ L5:
     .end code
 .end method
 
-.method public float : (F)V
+.method public method1211 : (F)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -44,7 +44,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/y do J
+L18:    getfield Field jouvieje/bass/structures/y field2319 J
 L21:    fload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_set_fDryMix (JF)V
 L25:    return
@@ -53,10 +53,10 @@ L26:
     .end code
 .end method
 
-.method public goto : ()I
+.method public method1228 : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -65,7 +65,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/y do J
+L18:    getfield Field jouvieje/bass/structures/y field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_get_lChannel (J)I
 L24:    ireturn
 L25:    
@@ -73,10 +73,10 @@ L25:
     .end code
 .end method
 
-.method public short : (F)V
+.method public method1212 : (F)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -85,7 +85,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/y do J
+L18:    getfield Field jouvieje/bass/structures/y field2319 J
 L21:    fload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_set_fWetMix (JF)V
 L25:    return
@@ -94,10 +94,10 @@ L26:
     .end code
 .end method
 
-.method public const : (F)V
+.method public method1213 : (F)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -106,7 +106,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/y do J
+L18:    getfield Field jouvieje/bass/structures/y field2319 J
 L21:    fload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_set_fRate (JF)V
 L25:    return
@@ -115,10 +115,10 @@ L26:
     .end code
 .end method
 
-.method public do : ()F
+.method public method1210 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -127,7 +127,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/y do J
+L18:    getfield Field jouvieje/bass/structures/y field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_get_fDryMix (J)F
 L24:    freturn
 L25:    
@@ -135,10 +135,10 @@ L25:
     .end code
 .end method
 
-.method public break : (I)V
+.method public method1180 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -147,7 +147,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/y do J
+L18:    getfield Field jouvieje/bass/structures/y field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_set_lChannel (JI)V
 L25:    return
@@ -156,10 +156,10 @@ L26:
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/y;
+.method public static method1252 : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/y;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     dup2
 L5:     lstore_1
 L6:     lconst_0
@@ -174,14 +174,14 @@ L18:    lload_1
 L19:    invokespecial Method jouvieje/bass/structures/y <init> (J)V
 L22:    areturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x3B\x00\x0E\x00\x02\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x3D\x00\x0E\x00\x02\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public for : ()F
+.method public method1214 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -190,7 +190,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/y do J
+L18:    getfield Field jouvieje/bass/structures/y field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_get_fRate (J)F
 L24:    freturn
 L25:    
@@ -198,10 +198,10 @@ L25:
     .end code
 .end method
 
-.method public catch : ()F
+.method public method1234 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -210,7 +210,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/y do J
+L18:    getfield Field jouvieje/bass/structures/y field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_get_fMaxSweep (J)F
 L24:    freturn
 L25:    
@@ -228,10 +228,10 @@ L6:
     .end code
 .end method
 
-.method public else : (F)V
+.method public method1202 : (F)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -240,7 +240,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/y do J
+L18:    getfield Field jouvieje/bass/structures/y field2319 J
 L21:    fload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_set_fMinSweep (JF)V
 L25:    return
@@ -249,26 +249,26 @@ L26:
     .end code
 .end method
 
-.method public float : ()V
+.method public method1203 : ()V
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifeq L16
 L9:     aload_0
-L10:    getfield Field jouvieje/bass/structures/y do J
+L10:    getfield Field jouvieje/bass/structures/y field2319 J
 L13:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_delete (J)V
 L16:    aload_0
 L17:    lconst_0
-L18:    putfield Field jouvieje/bass/structures/y do J
+L18:    putfield Field jouvieje/bass/structures/y field2319 J
 L21:    return
 L22:    
         .attribute StackMap b'\x00\x01\x00\x10\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public static short : ()Ljouvieje/bass/structures/y;
+.method public static method1253 : ()Ljouvieje/bass/structures/y;
     .code stack 4 locals 2
 L0:     invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_new ()J
 L3:     dup2
@@ -290,10 +290,10 @@ L27:
     .end code
 .end method
 
-.method public const : ()F
+.method public method1179 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -302,7 +302,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/y do J
+L18:    getfield Field jouvieje/bass/structures/y field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_get_fWetMix (J)F
 L24:    freturn
 L25:    
@@ -310,10 +310,10 @@ L25:
     .end code
 .end method
 
-.method public break : (F)V
+.method public method1181 : (F)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -322,7 +322,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/y do J
+L18:    getfield Field jouvieje/bass/structures/y field2319 J
 L21:    fload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_set_fMaxSweep (JF)V
 L25:    return
@@ -331,10 +331,10 @@ L26:
     .end code
 .end method
 
-.method public else : ()F
+.method public method1205 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -343,7 +343,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/y do J
+L18:    getfield Field jouvieje/bass/structures/y field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_get_fMinSweep (J)F
 L24:    freturn
 L25:    
@@ -351,10 +351,10 @@ L25:
     .end code
 .end method
 
-.method public break : ()F
+.method public method1237 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/y do J
+L1:     getfield Field jouvieje/bass/structures/y field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -363,7 +363,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/y do J
+L18:    getfield Field jouvieje/bass/structures/y field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_CHORUS_get_fFeedback (J)F
 L24:    freturn
 L25:    

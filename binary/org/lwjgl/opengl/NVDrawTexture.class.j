@@ -14,13 +14,13 @@ L5:
 .method static native nglDrawTextureNV : (IIFFFFFFFFFJ)V
 .end method
 
-.method public static break : (IIFFFFFFFFF)V
+.method public static method4892 : (IIFFFFFFFFF)V
     .code stack 13 locals 13
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb oe J
 L6:     dup2
 L7:     lstore 11
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    fload_2

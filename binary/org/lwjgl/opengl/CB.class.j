@@ -1,34 +1,34 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/CB
 .super java/lang/Object
-.field private static final byte I = 33366
-.field private static final "super" I = 4
-.field private int Z
-.field private short Z
-.field private goto I
-.field private static final break I = 33362
-.field private long I
-.field private static final void I = 33377
+.field private static final field3253 I = 33366
+.field private static final field3254 I = 4
+.field private field3255 Z
+.field private field3256 Z
+.field private field3257 I
+.field private static final field3258 I = 33362
+.field private field3259 I
+.field private static final field3260 I = 33377
 .field private try Z
-.field private const Z
+.field private field3261 Z
 .field private static final new I = 8
-.field private null Z
+.field private field3262 Z
 .field private this Z
-.field private static final char I = 4
-.field private else Z
-.field private "enum" Z
-.field private do I
+.field private static final field3263 I = 4
+.field private field3264 Z
+.field private field3265 Z
+.field private field3266 I
 
 .method public this : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/CB goto I
+L1:     getfield Field org/lwjgl/opengl/CB field3257 I
 L4:     ireturn
 L5:     
     .end code
 .end method
 
-.method public for : (Z)Lorg/lwjgl/opengl/CB;
+.method public method2954 : (Z)Lorg/lwjgl/opengl/CB;
     .code stack 3 locals 2
 L0:     iload_1
 L1:     aload_0
@@ -67,42 +67,42 @@ L13:
     .end code
 .end method
 
-.method public goto : ()Z
+.method public method2955 : ()Z
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/CB "enum" Z
+L1:     getfield Field org/lwjgl/opengl/CB field3265 Z
 L4:     ireturn
 L5:     
     .end code
 .end method
 
-.method public do : ()Z
+.method public method2956 : ()Z
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/CB short Z
+L1:     getfield Field org/lwjgl/opengl/CB field3256 Z
 L4:     ireturn
 L5:     
     .end code
 .end method
 
-.method public catch : (Z)Lorg/lwjgl/opengl/CB;
+.method public method2957 : (Z)Lorg/lwjgl/opengl/CB;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/CB goto I
+L1:     getfield Field org/lwjgl/opengl/CB field3257 I
 L4:     iconst_3
 L5:     iconst_1
 L6:     dup
 L7:     pop2
 L8:     if_icmplt L33
 L11:    aload_0
-L12:    getfield Field org/lwjgl/opengl/CB goto I
+L12:    getfield Field org/lwjgl/opengl/CB field3257 I
 L15:    iconst_3
 L16:    iconst_1
 L17:    dup
 L18:    pop2
 L19:    if_icmpne L43
 L22:    aload_0
-L23:    getfield Field org/lwjgl/opengl/CB long I
+L23:    getfield Field org/lwjgl/opengl/CB field3259 I
 L26:    iconst_2
 L27:    iconst_1
 L28:    dup
@@ -115,7 +115,7 @@ L39:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L42:    athrow
 L43:    iload_1
 L44:    aload_0
-L45:    getfield Field org/lwjgl/opengl/CB int Z
+L45:    getfield Field org/lwjgl/opengl/CB field3255 Z
 L48:    if_icmpne L54
 L51:    aload_0
 L52:    areturn
@@ -128,14 +128,14 @@ L62:    dup
 L63:    astore_2
 L64:    iload_1
 L65:    dup_x1
-L66:    putfield Field org/lwjgl/opengl/CB int Z
+L66:    putfield Field org/lwjgl/opengl/CB field3255 Z
 L69:    ifeq L80
 L72:    aload_2
 L73:    iconst_0
 L74:    iconst_1
 L75:    dup
 L76:    pop2
-L77:    putfield Field org/lwjgl/opengl/CB null Z
+L77:    putfield Field org/lwjgl/opengl/CB field3262 Z
 L80:    aload_2
 L81:    areturn
 L82:    
@@ -167,24 +167,24 @@ L18:    aload_1
 L19:    aload_0
 L20:    dup_x1
 L21:    invokespecial Method java/lang/Object <init> ()V
-L24:    getfield Field org/lwjgl/opengl/CB goto I
-L27:    putfield Field org/lwjgl/opengl/CB goto I
-L30:    getfield Field org/lwjgl/opengl/CB long I
-L33:    putfield Field org/lwjgl/opengl/CB long I
-L36:    getfield Field org/lwjgl/opengl/CB do I
-L39:    putfield Field org/lwjgl/opengl/CB do I
-L42:    getfield Field org/lwjgl/opengl/CB else Z
-L45:    putfield Field org/lwjgl/opengl/CB else Z
-L48:    getfield Field org/lwjgl/opengl/CB "enum" Z
-L51:    putfield Field org/lwjgl/opengl/CB "enum" Z
+L24:    getfield Field org/lwjgl/opengl/CB field3257 I
+L27:    putfield Field org/lwjgl/opengl/CB field3257 I
+L30:    getfield Field org/lwjgl/opengl/CB field3259 I
+L33:    putfield Field org/lwjgl/opengl/CB field3259 I
+L36:    getfield Field org/lwjgl/opengl/CB field3266 I
+L39:    putfield Field org/lwjgl/opengl/CB field3266 I
+L42:    getfield Field org/lwjgl/opengl/CB field3264 Z
+L45:    putfield Field org/lwjgl/opengl/CB field3264 Z
+L48:    getfield Field org/lwjgl/opengl/CB field3265 Z
+L51:    putfield Field org/lwjgl/opengl/CB field3265 Z
 L54:    getfield Field org/lwjgl/opengl/CB try Z
 L57:    putfield Field org/lwjgl/opengl/CB try Z
-L60:    getfield Field org/lwjgl/opengl/CB null Z
-L63:    putfield Field org/lwjgl/opengl/CB null Z
-L66:    getfield Field org/lwjgl/opengl/CB int Z
-L69:    putfield Field org/lwjgl/opengl/CB int Z
-L72:    getfield Field org/lwjgl/opengl/CB short Z
-L75:    putfield Field org/lwjgl/opengl/CB short Z
+L60:    getfield Field org/lwjgl/opengl/CB field3262 Z
+L63:    putfield Field org/lwjgl/opengl/CB field3262 Z
+L66:    getfield Field org/lwjgl/opengl/CB field3255 Z
+L69:    putfield Field org/lwjgl/opengl/CB field3255 Z
+L72:    getfield Field org/lwjgl/opengl/CB field3256 Z
+L75:    putfield Field org/lwjgl/opengl/CB field3256 Z
 L78:    getfield Field org/lwjgl/opengl/CB this Z
 L81:    putfield Field org/lwjgl/opengl/CB this Z
 L84:    return
@@ -192,7 +192,7 @@ L85:
     .end code
 .end method
 
-.method public break : (I)Lorg/lwjgl/opengl/CB;
+.method public method2958 : (I)Lorg/lwjgl/opengl/CB;
     .code stack 5 locals 2
 L0:     iload_1
 L1:     ifge L32
@@ -211,7 +211,7 @@ L28:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L31:    athrow
 L32:    iload_1
 L33:    aload_0
-L34:    getfield Field org/lwjgl/opengl/CB do I
+L34:    getfield Field org/lwjgl/opengl/CB field3266 I
 L37:    if_icmpne L43
 L40:    aload_0
 L41:    areturn
@@ -222,35 +222,35 @@ L47:    aload_0
 L48:    invokespecial Method org/lwjgl/opengl/CB <init> (Lorg/lwjgl/opengl/CB;)V
 L51:    dup
 L52:    iload_1
-L53:    putfield Field org/lwjgl/opengl/CB do I
+L53:    putfield Field org/lwjgl/opengl/CB field3266 I
 L56:    areturn
 L57:    
         .attribute StackMap b'\x00\x03\x00\x20\x00\x02\x07\x00\x02\x01\x00\x00\x00\x2A\x00\x00\x00\x01\x07\x00\x25\x00\x2B\x00\x02\x07\x00\x02\x01\x00\x00'
     .end code
 .end method
 
-.method public for : ()Z
+.method public method2959 : ()Z
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/CB int Z
+L1:     getfield Field org/lwjgl/opengl/CB field3255 Z
 L4:     ireturn
 L5:     
     .end code
 .end method
 
-.method public catch : ()Z
+.method public method2960 : ()Z
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/CB null Z
+L1:     getfield Field org/lwjgl/opengl/CB field3262 Z
 L4:     ireturn
 L5:     
     .end code
 .end method
 
-.method public float : ()I
+.method public method2961 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/CB do I
+L1:     getfield Field org/lwjgl/opengl/CB field3266 I
 L4:     ireturn
 L5:     
     .end code
@@ -342,25 +342,25 @@ L124:   aload_0
 L125:   iload_2
 L126:   aload_0
 L127:   iload_1
-L128:   putfield Field org/lwjgl/opengl/CB goto I
-L131:   putfield Field org/lwjgl/opengl/CB long I
+L128:   putfield Field org/lwjgl/opengl/CB field3257 I
+L131:   putfield Field org/lwjgl/opengl/CB field3259 I
 L134:   return
 L135:   
         .attribute StackMap b'\x00\x05\x00\x24\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x34\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x44\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x54\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x7C\x00\x03\x07\x00\x02\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public float : (Z)Lorg/lwjgl/opengl/CB;
+.method public method2962 : (Z)Lorg/lwjgl/opengl/CB;
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/CB goto I
+L1:     getfield Field org/lwjgl/opengl/CB field3257 I
 L4:     iconst_2
 L5:     iconst_1
 L6:     dup
 L7:     pop2
 L8:     if_icmpne L18
 L11:    aload_0
-L12:    getfield Field org/lwjgl/opengl/CB long I
+L12:    getfield Field org/lwjgl/opengl/CB field3259 I
 L15:    ifeq L28
 L18:    new java/lang/IllegalArgumentException
 L21:    dup
@@ -369,7 +369,7 @@ L24:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L27:    athrow
 L28:    iload_1
 L29:    aload_0
-L30:    getfield Field org/lwjgl/opengl/CB short Z
+L30:    getfield Field org/lwjgl/opengl/CB field3256 Z
 L33:    if_icmpne L39
 L36:    aload_0
 L37:    areturn
@@ -380,14 +380,14 @@ L43:    aload_0
 L44:    invokespecial Method org/lwjgl/opengl/CB <init> (Lorg/lwjgl/opengl/CB;)V
 L47:    dup
 L48:    iload_1
-L49:    putfield Field org/lwjgl/opengl/CB short Z
+L49:    putfield Field org/lwjgl/opengl/CB field3256 Z
 L52:    areturn
 L53:    
         .attribute StackMap b'\x00\x04\x00\x12\x00\x02\x07\x00\x02\x01\x00\x00\x00\x1C\x00\x02\x07\x00\x02\x01\x00\x00\x00\x26\x00\x00\x00\x01\x07\x00\x25\x00\x27\x00\x02\x07\x00\x02\x01\x00\x00'
     .end code
 .end method
 
-.method private static short : ()Lorg/lwjgl/opengl/D;
+.method private static method2963 : ()Lorg/lwjgl/opengl/D;
     .code stack 3 locals 0
 L0:     invokestatic Method org/lwjgl/LWJGLUtil getPlatform ()I
 L3:     lookupswitch
@@ -416,33 +416,33 @@ L60:
     .end code
 .end method
 
-.method public const : ()I
+.method public method2964 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/CB long I
+L1:     getfield Field org/lwjgl/opengl/CB field3259 I
 L4:     ireturn
 L5:     
     .end code
 .end method
 
-.method public short : (Z)Lorg/lwjgl/opengl/CB;
+.method public method2965 : (Z)Lorg/lwjgl/opengl/CB;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/CB goto I
+L1:     getfield Field org/lwjgl/opengl/CB field3257 I
 L4:     iconst_3
 L5:     iconst_1
 L6:     dup
 L7:     pop2
 L8:     if_icmplt L33
 L11:    aload_0
-L12:    getfield Field org/lwjgl/opengl/CB goto I
+L12:    getfield Field org/lwjgl/opengl/CB field3257 I
 L15:    iconst_3
 L16:    iconst_1
 L17:    dup
 L18:    pop2
 L19:    if_icmpne L43
 L22:    aload_0
-L23:    getfield Field org/lwjgl/opengl/CB long I
+L23:    getfield Field org/lwjgl/opengl/CB field3259 I
 L26:    iconst_2
 L27:    iconst_1
 L28:    dup
@@ -455,7 +455,7 @@ L39:    invokespecial Method java/lang/IllegalArgumentException <init> (Ljava/la
 L42:    athrow
 L43:    iload_1
 L44:    aload_0
-L45:    getfield Field org/lwjgl/opengl/CB null Z
+L45:    getfield Field org/lwjgl/opengl/CB field3262 Z
 L48:    if_icmpne L54
 L51:    aload_0
 L52:    areturn
@@ -468,14 +468,14 @@ L62:    dup
 L63:    astore_2
 L64:    iload_1
 L65:    dup_x1
-L66:    putfield Field org/lwjgl/opengl/CB null Z
+L66:    putfield Field org/lwjgl/opengl/CB field3262 Z
 L69:    ifeq L80
 L72:    aload_2
 L73:    iconst_0
 L74:    iconst_1
 L75:    dup
 L76:    pop2
-L77:    putfield Field org/lwjgl/opengl/CB int Z
+L77:    putfield Field org/lwjgl/opengl/CB field3255 Z
 L80:    aload_2
 L81:    areturn
 L82:    
@@ -501,7 +501,7 @@ L20:    ldc " Version="
 L22:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L25:    aload_0
 L26:    dup_x2
-L27:    getfield Field org/lwjgl/opengl/CB goto I
+L27:    getfield Field org/lwjgl/opengl/CB field3257 I
 L30:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L33:    bipush 46
 L35:    iconst_1
@@ -509,25 +509,25 @@ L36:    dup
 L37:    pop2
 L38:    invokevirtual Method java/lang/StringBuilder append (C)Ljava/lang/StringBuilder;
 L41:    aload_0
-L42:    getfield Field org/lwjgl/opengl/CB long I
+L42:    getfield Field org/lwjgl/opengl/CB field3259 I
 L45:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L48:    aload_1
 L49:    ldc " - Layer="
 L51:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L54:    aload_0
-L55:    getfield Field org/lwjgl/opengl/CB do I
+L55:    getfield Field org/lwjgl/opengl/CB field3266 I
 L58:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
 L61:    aload_1
 L62:    ldc " - Debug="
 L64:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L67:    aload_0
-L68:    getfield Field org/lwjgl/opengl/CB else Z
+L68:    getfield Field org/lwjgl/opengl/CB field3264 Z
 L71:    invokevirtual Method java/lang/StringBuilder append (Z)Ljava/lang/StringBuilder;
 L74:    aload_1
 L75:    ldc " - ForwardCompatible="
 L77:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L80:    aload_0
-L81:    getfield Field org/lwjgl/opengl/CB "enum" Z
+L81:    getfield Field org/lwjgl/opengl/CB field3265 Z
 L84:    invokevirtual Method java/lang/StringBuilder append (Z)Ljava/lang/StringBuilder;
 L87:    aload_1
 L88:    ldc " - RobustAccess="
@@ -557,7 +557,7 @@ L135:   ldc " - Profile="
 L137:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L140:   pop
 L141:   aload_0
-L142:   getfield Field org/lwjgl/opengl/CB null Z
+L142:   getfield Field org/lwjgl/opengl/CB field3262 Z
 L145:   ifeq L160
 L148:   aload_1
 L149:   dup
@@ -567,7 +567,7 @@ L155:   pop
 L156:   goto L186
 L159:   athrow
 L160:   aload_0
-L161:   getfield Field org/lwjgl/opengl/CB int Z
+L161:   getfield Field org/lwjgl/opengl/CB field3255 Z
 L164:   aload_1
 L165:   swap
 L166:   ifeq L179
@@ -583,11 +583,11 @@ L185:   aload_1
 L186:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L189:   areturn
 L190:   
-        .attribute StackMap b'\x00\x08\x00\x7F\x00\x00\x00\x01\x07\x00\x25\x00\x80\x00\x02\x07\x00\x02\x07\x00\x4B\x00\x01\x07\x00\x4B\x00\x82\x00\x02\x07\x00\x02\x07\x00\x4B\x00\x02\x07\x00\x4B\x07\x00\x90\x00\x86\x00\x02\x07\x00\x02\x07\x00\x4B\x00\x00\x00\x9F\x00\x00\x00\x01\x07\x00\x25\x00\xA0\x00\x02\x07\x00\x02\x07\x00\x4B\x00\x00\x00\xB3\x00\x02\x07\x00\x02\x07\x00\x4B\x00\x01\x07\x00\x4B\x00\xBA\x00\x02\x07\x00\x02\x07\x00\x4B\x00\x01\x07\x00\x4B'
+        .attribute StackMap b'\x00\x08\x00\x7F\x00\x00\x00\x01\x07\x00\x25\x00\x80\x00\x02\x07\x00\x02\x07\x00\x4E\x00\x01\x07\x00\x4E\x00\x82\x00\x02\x07\x00\x02\x07\x00\x4E\x00\x02\x07\x00\x4E\x07\x00\x99\x00\x86\x00\x02\x07\x00\x02\x07\x00\x4E\x00\x00\x00\x9F\x00\x00\x00\x01\x07\x00\x25\x00\xA0\x00\x02\x07\x00\x02\x07\x00\x4E\x00\x00\x00\xB3\x00\x02\x07\x00\x02\x07\x00\x4E\x00\x01\x07\x00\x4E\x00\xBA\x00\x02\x07\x00\x02\x07\x00\x4E\x00\x01\x07\x00\x4E'
     .end code
 .end method
 
-.method else : ()Ljava/nio/IntBuffer;
+.method method2966 : ()Ljava/nio/IntBuffer;
     .code stack 5 locals 5
 L0:     invokestatic Method org/lwjgl/LWJGLUtil getPlatform ()I
 L3:     iconst_2
@@ -598,7 +598,7 @@ L7:     if_icmpne L13
 L10:    aconst_null
 L11:    areturn
 L12:    athrow
-L13:    invokestatic Method org/lwjgl/opengl/CB short ()Lorg/lwjgl/opengl/D;
+L13:    invokestatic Method org/lwjgl/opengl/CB method2963 ()Lorg/lwjgl/opengl/D;
 L16:    astore_1
 L17:    iconst_0
 L18:    iconst_1
@@ -606,14 +606,14 @@ L19:    dup
 L20:    pop2
 L21:    istore_2
 L22:    aload_0
-L23:    getfield Field org/lwjgl/opengl/CB goto I
+L23:    getfield Field org/lwjgl/opengl/CB field3257 I
 L26:    iconst_1
 L27:    dup
 L28:    dup
 L29:    pop2
 L30:    if_icmpne L40
 L33:    aload_0
-L34:    getfield Field org/lwjgl/opengl/CB long I
+L34:    getfield Field org/lwjgl/opengl/CB field3259 I
 L37:    ifeq L43
 L40:    iinc 2 2
 L43:    iconst_0
@@ -621,7 +621,7 @@ L44:    iconst_1
 L45:    dup
 L46:    pop2
 L47:    aload_0
-L48:    getfield Field org/lwjgl/opengl/CB do I
+L48:    getfield Field org/lwjgl/opengl/CB field3266 I
 L51:    if_icmpge L57
 L54:    iinc 2 1
 L57:    iconst_0
@@ -630,19 +630,19 @@ L59:    dup
 L60:    pop2
 L61:    istore_3
 L62:    aload_0
-L63:    getfield Field org/lwjgl/opengl/CB else Z
+L63:    getfield Field org/lwjgl/opengl/CB field3264 Z
 L66:    ifeq L78
 L69:    iload_3
 L70:    aload_1
-L71:    invokeinterface InterfaceMethod org/lwjgl/opengl/D catch ()I 1
+L71:    invokeinterface InterfaceMethod org/lwjgl/opengl/D method2945 ()I 1
 L76:    ior
 L77:    istore_3
 L78:    aload_0
-L79:    getfield Field org/lwjgl/opengl/CB "enum" Z
+L79:    getfield Field org/lwjgl/opengl/CB field3265 Z
 L82:    ifeq L94
 L85:    iload_3
 L86:    aload_1
-L87:    invokeinterface InterfaceMethod org/lwjgl/opengl/D do ()I 1
+L87:    invokeinterface InterfaceMethod org/lwjgl/opengl/D method2943 ()I 1
 L92:    ior
 L93:    istore_3
 L94:    aload_0
@@ -656,7 +656,7 @@ L105:   pop2
 L106:   ior
 L107:   istore_3
 L108:   aload_0
-L109:   getfield Field org/lwjgl/opengl/CB const Z
+L109:   getfield Field org/lwjgl/opengl/CB field3261 Z
 L112:   ifeq L123
 L115:   iload_3
 L116:   bipush 8
@@ -678,26 +678,26 @@ L136:   dup
 L137:   pop2
 L138:   istore 4
 L140:   aload_0
-L141:   getfield Field org/lwjgl/opengl/CB null Z
+L141:   getfield Field org/lwjgl/opengl/CB field3262 Z
 L144:   ifeq L162
 L147:   iload 4
 L149:   aload_1
-L150:   invokeinterface InterfaceMethod org/lwjgl/opengl/D const ()I 1
+L150:   invokeinterface InterfaceMethod org/lwjgl/opengl/D method2949 ()I 1
 L155:   ior
 L156:   istore 4
 L158:   goto L199
 L161:   athrow
 L162:   aload_0
-L163:   getfield Field org/lwjgl/opengl/CB int Z
+L163:   getfield Field org/lwjgl/opengl/CB field3255 Z
 L166:   ifeq L183
 L169:   iload 4
 L171:   aload_1
-L172:   invokeinterface InterfaceMethod org/lwjgl/opengl/D for ()I 1
+L172:   invokeinterface InterfaceMethod org/lwjgl/opengl/D method2946 ()I 1
 L177:   ior
 L178:   istore 4
 L180:   goto L199
 L183:   aload_0
-L184:   getfield Field org/lwjgl/opengl/CB short Z
+L184:   getfield Field org/lwjgl/opengl/CB field3256 Z
 L187:   ifeq L199
 L190:   iload 4
 L192:   iconst_4
@@ -735,28 +735,28 @@ L237:   iadd
 L238:   invokestatic Method org/lwjgl/BufferUtils createIntBuffer (I)Ljava/nio/IntBuffer;
 L241:   astore_2
 L242:   aload_0
-L243:   getfield Field org/lwjgl/opengl/CB goto I
+L243:   getfield Field org/lwjgl/opengl/CB field3257 I
 L246:   iconst_1
 L247:   dup
 L248:   dup
 L249:   pop2
 L250:   if_icmpne L260
 L253:   aload_0
-L254:   getfield Field org/lwjgl/opengl/CB long I
+L254:   getfield Field org/lwjgl/opengl/CB field3259 I
 L257:   ifeq L295
 L260:   aload_2
 L261:   aload_1
-L262:   invokeinterface InterfaceMethod org/lwjgl/opengl/D break ()I 1
+L262:   invokeinterface InterfaceMethod org/lwjgl/opengl/D method2950 ()I 1
 L267:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L270:   aload_0
-L271:   getfield Field org/lwjgl/opengl/CB goto I
+L271:   getfield Field org/lwjgl/opengl/CB field3257 I
 L274:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L277:   aload_2
 L278:   aload_1
-L279:   invokeinterface InterfaceMethod org/lwjgl/opengl/D float ()I 1
+L279:   invokeinterface InterfaceMethod org/lwjgl/opengl/D method2948 ()I 1
 L284:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L287:   aload_0
-L288:   getfield Field org/lwjgl/opengl/CB long I
+L288:   getfield Field org/lwjgl/opengl/CB field3259 I
 L291:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L294:   pop2
 L295:   iconst_0
@@ -764,14 +764,14 @@ L296:   iconst_1
 L297:   dup
 L298:   pop2
 L299:   aload_0
-L300:   getfield Field org/lwjgl/opengl/CB do I
+L300:   getfield Field org/lwjgl/opengl/CB field3266 I
 L303:   if_icmpge L324
 L306:   aload_2
 L307:   aload_1
-L308:   invokeinterface InterfaceMethod org/lwjgl/opengl/D else ()I 1
+L308:   invokeinterface InterfaceMethod org/lwjgl/opengl/D method2944 ()I 1
 L313:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L316:   aload_0
-L317:   getfield Field org/lwjgl/opengl/CB do I
+L317:   getfield Field org/lwjgl/opengl/CB field3266 I
 L320:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L323:   pop
 L324:   iconst_0
@@ -782,7 +782,7 @@ L328:   iload_3
 L329:   if_icmpge L347
 L332:   aload_2
 L333:   aload_1
-L334:   invokeinterface InterfaceMethod org/lwjgl/opengl/D short ()I 1
+L334:   invokeinterface InterfaceMethod org/lwjgl/opengl/D method2951 ()I 1
 L339:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L342:   iload_3
 L343:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
@@ -795,7 +795,7 @@ L351:   iload 4
 L353:   if_icmpge L372
 L356:   aload_2
 L357:   aload_1
-L358:   invokeinterface InterfaceMethod org/lwjgl/opengl/D goto ()I 1
+L358:   invokeinterface InterfaceMethod org/lwjgl/opengl/D method2947 ()I 1
 L363:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L366:   iload 4
 L368:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
@@ -821,15 +821,15 @@ L401:   invokevirtual Method java/nio/IntBuffer rewind ()Ljava/nio/Buffer;
 L404:   pop2
 L405:   areturn
 L406:   
-        .attribute StackMap b'\x00\x17\x00\x0C\x00\x00\x00\x01\x07\x00\x25\x00\x0D\x00\x01\x07\x00\x02\x00\x00\x00\x28\x00\x03\x07\x00\x02\x07\x00\x9D\x01\x00\x00\x00\x2B\x00\x03\x07\x00\x02\x07\x00\x9D\x01\x00\x00\x00\x39\x00\x03\x07\x00\x02\x07\x00\x9D\x01\x00\x00\x00\x4E\x00\x04\x07\x00\x02\x07\x00\x9D\x01\x01\x00\x00\x00\x5E\x00\x04\x07\x00\x02\x07\x00\x9D\x01\x01\x00\x00\x00\x6C\x00\x04\x07\x00\x02\x07\x00\x9D\x01\x01\x00\x00\x00\x7B\x00\x04\x07\x00\x02\x07\x00\x9D\x01\x01\x00\x00\x00\x86\x00\x04\x07\x00\x02\x07\x00\x9D\x01\x01\x00\x00\x00\xA1\x00\x00\x00\x01\x07\x00\x25\x00\xA2\x00\x05\x07\x00\x02\x07\x00\x9D\x01\x01\x01\x00\x00\x00\xB7\x00\x05\x07\x00\x02\x07\x00\x9D\x01\x01\x01\x00\x00\x00\xC7\x00\x05\x07\x00\x02\x07\x00\x9D\x01\x01\x01\x00\x00\x00\xD3\x00\x05\x07\x00\x02\x07\x00\x9D\x01\x01\x01\x00\x00\x00\xDD\x00\x05\x07\x00\x02\x07\x00\x9D\x01\x01\x01\x00\x00\x00\xE3\x00\x05\x07\x00\x02\x07\x00\x9D\x01\x01\x01\x00\x00\x01\x04\x00\x05\x07\x00\x02\x07\x00\x9D\x07\x00\xAF\x01\x01\x00\x00\x01\x27\x00\x05\x07\x00\x02\x07\x00\x9D\x07\x00\xAF\x01\x01\x00\x00\x01\x44\x00\x05\x07\x00\x02\x07\x00\x9D\x07\x00\xAF\x01\x01\x00\x00\x01\x5B\x00\x05\x07\x00\x02\x07\x00\x9D\x07\x00\xAF\x01\x01\x00\x00\x01\x74\x00\x05\x07\x00\x02\x07\x00\x9D\x07\x00\xAF\x01\x01\x00\x00\x01\x87\x00\x05\x07\x00\x02\x07\x00\x9D\x07\x00\xAF\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x17\x00\x0C\x00\x00\x00\x01\x07\x00\x25\x00\x0D\x00\x01\x07\x00\x02\x00\x00\x00\x28\x00\x03\x07\x00\x02\x07\x00\xA7\x01\x00\x00\x00\x2B\x00\x03\x07\x00\x02\x07\x00\xA7\x01\x00\x00\x00\x39\x00\x03\x07\x00\x02\x07\x00\xA7\x01\x00\x00\x00\x4E\x00\x04\x07\x00\x02\x07\x00\xA7\x01\x01\x00\x00\x00\x5E\x00\x04\x07\x00\x02\x07\x00\xA7\x01\x01\x00\x00\x00\x6C\x00\x04\x07\x00\x02\x07\x00\xA7\x01\x01\x00\x00\x00\x7B\x00\x04\x07\x00\x02\x07\x00\xA7\x01\x01\x00\x00\x00\x86\x00\x04\x07\x00\x02\x07\x00\xA7\x01\x01\x00\x00\x00\xA1\x00\x00\x00\x01\x07\x00\x25\x00\xA2\x00\x05\x07\x00\x02\x07\x00\xA7\x01\x01\x01\x00\x00\x00\xB7\x00\x05\x07\x00\x02\x07\x00\xA7\x01\x01\x01\x00\x00\x00\xC7\x00\x05\x07\x00\x02\x07\x00\xA7\x01\x01\x01\x00\x00\x00\xD3\x00\x05\x07\x00\x02\x07\x00\xA7\x01\x01\x01\x00\x00\x00\xDD\x00\x05\x07\x00\x02\x07\x00\xA7\x01\x01\x01\x00\x00\x00\xE3\x00\x05\x07\x00\x02\x07\x00\xA7\x01\x01\x01\x00\x00\x01\x04\x00\x05\x07\x00\x02\x07\x00\xA7\x07\x00\xBD\x01\x01\x00\x00\x01\x27\x00\x05\x07\x00\x02\x07\x00\xA7\x07\x00\xBD\x01\x01\x00\x00\x01\x44\x00\x05\x07\x00\x02\x07\x00\xA7\x07\x00\xBD\x01\x01\x00\x00\x01\x5B\x00\x05\x07\x00\x02\x07\x00\xA7\x07\x00\xBD\x01\x01\x00\x00\x01\x74\x00\x05\x07\x00\x02\x07\x00\xA7\x07\x00\xBD\x01\x01\x00\x00\x01\x87\x00\x05\x07\x00\x02\x07\x00\xA7\x07\x00\xBD\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public const : (Z)Lorg/lwjgl/opengl/CB;
+.method public method2967 : (Z)Lorg/lwjgl/opengl/CB;
     .code stack 3 locals 2
 L0:     iload_1
 L1:     aload_0
-L2:     getfield Field org/lwjgl/opengl/CB "enum" Z
+L2:     getfield Field org/lwjgl/opengl/CB field3265 Z
 L5:     if_icmpne L11
 L8:     aload_0
 L9:     areturn
@@ -840,18 +840,18 @@ L15:    aload_0
 L16:    invokespecial Method org/lwjgl/opengl/CB <init> (Lorg/lwjgl/opengl/CB;)V
 L19:    dup
 L20:    iload_1
-L21:    putfield Field org/lwjgl/opengl/CB "enum" Z
+L21:    putfield Field org/lwjgl/opengl/CB field3265 Z
 L24:    areturn
 L25:    
         .attribute StackMap b'\x00\x02\x00\x0A\x00\x00\x00\x01\x07\x00\x25\x00\x0B\x00\x02\x07\x00\x02\x01\x00\x00'
     .end code
 .end method
 
-.method public else : (Z)Lorg/lwjgl/opengl/CB;
+.method public method2968 : (Z)Lorg/lwjgl/opengl/CB;
     .code stack 3 locals 2
 L0:     iload_1
 L1:     aload_0
-L2:     getfield Field org/lwjgl/opengl/CB else Z
+L2:     getfield Field org/lwjgl/opengl/CB field3264 Z
 L5:     if_icmpne L11
 L8:     aload_0
 L9:     areturn
@@ -862,18 +862,18 @@ L15:    aload_0
 L16:    invokespecial Method org/lwjgl/opengl/CB <init> (Lorg/lwjgl/opengl/CB;)V
 L19:    dup
 L20:    iload_1
-L21:    putfield Field org/lwjgl/opengl/CB else Z
+L21:    putfield Field org/lwjgl/opengl/CB field3264 Z
 L24:    areturn
 L25:    
         .attribute StackMap b'\x00\x02\x00\x0A\x00\x00\x00\x01\x07\x00\x25\x00\x0B\x00\x02\x07\x00\x02\x01\x00\x00'
     .end code
 .end method
 
-.method public break : (Z)Lorg/lwjgl/opengl/CB;
+.method public method2969 : (Z)Lorg/lwjgl/opengl/CB;
     .code stack 3 locals 2
 L0:     iload_1
 L1:     aload_0
-L2:     getfield Field org/lwjgl/opengl/CB const Z
+L2:     getfield Field org/lwjgl/opengl/CB field3261 Z
 L5:     if_icmpne L11
 L8:     aload_0
 L9:     areturn
@@ -884,17 +884,17 @@ L15:    aload_0
 L16:    invokespecial Method org/lwjgl/opengl/CB <init> (Lorg/lwjgl/opengl/CB;)V
 L19:    dup
 L20:    iload_1
-L21:    putfield Field org/lwjgl/opengl/CB const Z
+L21:    putfield Field org/lwjgl/opengl/CB field3261 Z
 L24:    areturn
 L25:    
         .attribute StackMap b'\x00\x02\x00\x0A\x00\x00\x00\x01\x07\x00\x25\x00\x0B\x00\x02\x07\x00\x02\x01\x00\x00'
     .end code
 .end method
 
-.method public break : ()Z
+.method public method2970 : ()Z
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/CB else Z
+L1:     getfield Field org/lwjgl/opengl/CB field3264 Z
 L4:     ireturn
 L5:     
     .end code

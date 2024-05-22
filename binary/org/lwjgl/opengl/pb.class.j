@@ -2,10 +2,10 @@
 .class public final super org/lwjgl/opengl/pb
 .super java/lang/Object
 .field public static final this I = 34929
-.field public static final char I = 35723
-.field public static final else I = 35657
-.field public static final "enum" I = 34930
-.field public static final do I = 35632
+.field public static final field5527 I = 35723
+.field public static final field5528 I = 35657
+.field public static final field5529 I = 34930
+.field public static final field5530 I = 35632
 
 .method private <init> : ()V
     .code stack 1 locals 1

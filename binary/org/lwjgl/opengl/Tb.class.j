@@ -6,7 +6,7 @@
 .method public bridge synthetic run : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/opengl/Tb break ()Ljava/awt/PointerInfo;
+L1:     invokevirtual Method org/lwjgl/opengl/Tb method1763 ()Ljava/awt/PointerInfo;
 L4:     areturn
 L5:     
     .end code
@@ -22,7 +22,7 @@ L5:
     .end code
 .end method
 
-.method public break : ()Ljava/awt/PointerInfo;
+.method public method1763 : ()Ljava/awt/PointerInfo;
     .code stack 1 locals 1
 L0:     invokestatic Method java/awt/MouseInfo getPointerInfo ()Ljava/awt/PointerInfo;
 L3:     areturn
@@ -33,5 +33,5 @@ L4:
 .innerclasses
     org/lwjgl/opengl/Tb [0] [0] static
 .end innerclasses
-.enclosing method org/lwjgl/opengl/SC else (Ljava/awt/Component;)Ljava/awt/Point;
+.enclosing method org/lwjgl/opengl/SC method5357 (Ljava/awt/Component;)Ljava/awt/Point;
 .end class

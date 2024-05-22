@@ -28,5 +28,5 @@ L5:
 .innerclasses
     org/lwjgl/opengl/Q [0] [0] static
 .end innerclasses
-.enclosing method org/lwjgl/opengl/o else ()V
+.enclosing method org/lwjgl/opengl/o method5631 ()V
 .end class

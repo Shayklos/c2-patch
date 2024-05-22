@@ -2,7 +2,7 @@
 .class public interface abstract E
 .super java/lang/Object
 
-.method public abstract break : (ILDF;)V
+.method public abstract method789 : (ILDF;)V
 .end method
 .innerclasses
     E hB [0] static interface abstract

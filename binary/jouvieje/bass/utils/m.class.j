@@ -1,7 +1,7 @@
 .version 46 0
 .class public super jouvieje/bass/utils/m
 .super java/lang/Object
-.field protected do J
+.field protected field2319 J
 
 .method public equals : (Ljava/lang/Object;)Z
     .code stack 4 locals 2
@@ -9,10 +9,10 @@ L0:     aload_1
 L1:     instanceof jouvieje/bass/utils/m
 L4:     ifeq L34
 L7:     aload_0
-L8:     getfield Field jouvieje/bass/utils/m do J
+L8:     getfield Field jouvieje/bass/utils/m field2319 J
 L11:    aload_1
 L12:    checkcast jouvieje/bass/utils/m
-L15:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L15:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L18:    lcmp
 L19:    ifne L28
 L22:    iconst_1
@@ -40,7 +40,7 @@ L39:
 .method public asString : ()Ljava/lang/String;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/m do J
+L1:     getfield Field jouvieje/bass/utils/m field2319 J
 L4:     dup2
 L5:     lstore_1
 L6:     lconst_0
@@ -61,8 +61,8 @@ L19:
     .code stack 3 locals 2
 L0:     aload_0
 L1:     aload_1
-L2:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
-L5:     putfield Field jouvieje/bass/utils/m do J
+L2:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
+L5:     putfield Field jouvieje/bass/utils/m field2319 J
 L8:     return
 L9:     
     .end code
@@ -71,7 +71,7 @@ L9:
 .method public isNull : ()Z
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/m do J
+L1:     getfield Field jouvieje/bass/utils/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L15
@@ -97,7 +97,7 @@ L0:     lconst_0
 L1:     aload_0
 L2:     dup_x2
 L3:     invokespecial Method java/lang/Object <init> ()V
-L6:     putfield Field jouvieje/bass/utils/m do J
+L6:     putfield Field jouvieje/bass/utils/m field2319 J
 L9:     return
 L10:    
     .end code
@@ -106,7 +106,7 @@ L10:
 .method public asString : (II)Ljava/lang/String;
     .code stack 4 locals 5
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/m do J
+L1:     getfield Field jouvieje/bass/utils/m field2319 J
 L4:     dup2
 L5:     lstore_3
 L6:     lconst_0
@@ -143,12 +143,12 @@ L47:
     .end code
 .end method
 
-.method protected static break : (Ljouvieje/bass/utils/m;)J
+.method protected static method1176 : (Ljouvieje/bass/utils/m;)J
     .code stack 2 locals 1
 L0:     aload_0
 L1:     ifnull L10
 L4:     aload_0
-L5:     getfield Field jouvieje/bass/utils/m do J
+L5:     getfield Field jouvieje/bass/utils/m field2319 J
 L8:     lreturn
 L9:     athrow
 L10:    lconst_0
@@ -161,7 +161,7 @@ L12:
 .method public asLong : ()J
     .code stack 2 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/m do J
+L1:     getfield Field jouvieje/bass/utils/m field2319 J
 L4:     lreturn
 L5:     
     .end code
@@ -170,12 +170,12 @@ L5:
 .method public asInt : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/m do J
+L1:     getfield Field jouvieje/bass/utils/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifeq L18
 L9:     aload_0
-L10:    getfield Field jouvieje/bass/utils/m do J
+L10:    getfield Field jouvieje/bass/utils/m field2319 J
 L13:    invokestatic Method jouvieje/bass/utils/MiscJNI asInt (J)I
 L16:    ireturn
 L17:    athrow
@@ -192,12 +192,12 @@ L23:
 .method public asDouble : ()D
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/m do J
+L1:     getfield Field jouvieje/bass/utils/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifeq L18
 L9:     aload_0
-L10:    getfield Field jouvieje/bass/utils/m do J
+L10:    getfield Field jouvieje/bass/utils/m field2319 J
 L13:    invokestatic Method jouvieje/bass/utils/MiscJNI asDouble (J)D
 L16:    dreturn
 L17:    athrow
@@ -213,7 +213,7 @@ L20:
 L0:     new jouvieje/bass/utils/m
 L3:     dup
 L4:     aload_0
-L5:     getfield Field jouvieje/bass/utils/m do J
+L5:     getfield Field jouvieje/bass/utils/m field2319 J
 L8:     lload_1
 L9:     ladd
 L10:    invokespecial Method jouvieje/bass/utils/m <init> (J)V
@@ -225,7 +225,7 @@ L14:
 .method public asByteBuffer : (II)Ljava/nio/ByteBuffer;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/m do J
+L1:     getfield Field jouvieje/bass/utils/m field2319 J
 L4:     iload_1
 L5:     i2l
 L6:     ladd
@@ -249,12 +249,12 @@ L27:
 .method public asFloat : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/utils/m do J
+L1:     getfield Field jouvieje/bass/utils/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifeq L18
 L9:     aload_0
-L10:    getfield Field jouvieje/bass/utils/m do J
+L10:    getfield Field jouvieje/bass/utils/m field2319 J
 L13:    invokestatic Method jouvieje/bass/utils/MiscJNI asFloat (J)F
 L16:    freturn
 L17:    athrow
@@ -265,7 +265,7 @@ L20:
     .end code
 .end method
 
-.method protected static break : (J)Ljouvieje/bass/utils/m;
+.method protected static method1177 : (J)Ljouvieje/bass/utils/m;
     .code stack 4 locals 2
 L0:     new jouvieje/bass/utils/m
 L3:     dup
@@ -282,7 +282,7 @@ L0:     lload_1
 L1:     aload_0
 L2:     dup_x2
 L3:     invokespecial Method java/lang/Object <init> ()V
-L6:     putfield Field jouvieje/bass/utils/m do J
+L6:     putfield Field jouvieje/bass/utils/m field2319 J
 L9:     return
 L10:    
     .end code

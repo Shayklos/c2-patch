@@ -1,16 +1,16 @@
 .version 49 0
 .class public final super enum vD
 .super java/lang/Enum
-.field public static final enum void LvD;
+.field public static final enum field356 LvD;
 .field public static final enum try LvD;
-.field public static final enum const LvD;
+.field public static final enum field357 LvD;
 .field public static final enum new LvD;
-.field public static final enum null LvD;
+.field public static final enum field358 LvD;
 .field public static final enum this LvD;
-.field public static final enum char LvD;
-.field public static final enum else LvD;
-.field public static final enum "enum" LvD;
-.field private static final synthetic do [LvD;
+.field public static final enum field359 LvD;
+.field public static final enum field360 LvD;
+.field public static final enum field361 LvD;
+.field private static final synthetic field362 [LvD;
 
 .method private <init> : (Ljava/lang/String;I)V
     .code stack 3 locals 3
@@ -25,7 +25,7 @@ L7:
 
 .method public static values : ()[LvD;
     .code stack 1 locals 0
-L0:     getstatic Field vD do [LvD;
+L0:     getstatic Field vD field362 [LvD;
 L3:     invokevirtual Method [LvD; clone ()Ljava/lang/Object;
 L6:     checkcast [LvD;
 L9:     areturn
@@ -54,7 +54,7 @@ L7:     iconst_1
 L8:     dup
 L9:     pop2
 L10:    invokespecial Method vD <init> (Ljava/lang/String;I)V
-L13:    putstatic Field vD char LvD;
+L13:    putstatic Field vD field359 LvD;
 L16:    new vD
 L19:    dup
 L20:    ldc "LEFT_TOP"
@@ -72,7 +72,7 @@ L39:    iconst_1
 L40:    dup
 L41:    pop2
 L42:    invokespecial Method vD <init> (Ljava/lang/String;I)V
-L45:    putstatic Field vD void LvD;
+L45:    putstatic Field vD field356 LvD;
 L48:    new vD
 L51:    dup
 L52:    ldc "CENTER"
@@ -81,7 +81,7 @@ L55:    iconst_1
 L56:    dup
 L57:    pop2
 L58:    invokespecial Method vD <init> (Ljava/lang/String;I)V
-L61:    putstatic Field vD null LvD;
+L61:    putstatic Field vD field358 LvD;
 L64:    new vD
 L67:    dup
 L68:    ldc "CENTER_TOP"
@@ -108,7 +108,7 @@ L104:   iconst_1
 L105:   dup
 L106:   pop2
 L107:   invokespecial Method vD <init> (Ljava/lang/String;I)V
-L110:   putstatic Field vD const LvD;
+L110:   putstatic Field vD field357 LvD;
 L113:   new vD
 L116:   dup
 L117:   ldc "RIGHT_TOP"
@@ -117,7 +117,7 @@ L121:   iconst_1
 L122:   dup
 L123:   pop2
 L124:   invokespecial Method vD <init> (Ljava/lang/String;I)V
-L127:   putstatic Field vD else LvD;
+L127:   putstatic Field vD field360 LvD;
 L130:   new vD
 L133:   dup
 L134:   ldc "RIGHT_BOTTOM"
@@ -126,7 +126,7 @@ L138:   iconst_1
 L139:   dup
 L140:   pop2
 L141:   invokespecial Method vD <init> (Ljava/lang/String;I)V
-L144:   putstatic Field vD "enum" LvD;
+L144:   putstatic Field vD field361 LvD;
 L147:   bipush 9
 L149:   iconst_1
 L150:   dup
@@ -140,7 +140,7 @@ L159:   iconst_0
 L160:   iconst_1
 L161:   dup
 L162:   pop2
-L163:   getstatic Field vD char LvD;
+L163:   getstatic Field vD field359 LvD;
 L166:   aastore
 L167:   dup
 L168:   iconst_1
@@ -154,14 +154,14 @@ L177:   iconst_2
 L178:   iconst_1
 L179:   dup
 L180:   pop2
-L181:   getstatic Field vD void LvD;
+L181:   getstatic Field vD field356 LvD;
 L184:   aastore
 L185:   dup
 L186:   iconst_3
 L187:   iconst_1
 L188:   dup
 L189:   pop2
-L190:   getstatic Field vD null LvD;
+L190:   getstatic Field vD field358 LvD;
 L193:   aastore
 L194:   dup
 L195:   iconst_4
@@ -182,23 +182,23 @@ L213:   bipush 6
 L215:   iconst_1
 L216:   dup
 L217:   pop2
-L218:   getstatic Field vD const LvD;
+L218:   getstatic Field vD field357 LvD;
 L221:   aastore
 L222:   dup
 L223:   bipush 7
 L225:   iconst_1
 L226:   dup
 L227:   pop2
-L228:   getstatic Field vD else LvD;
+L228:   getstatic Field vD field360 LvD;
 L231:   aastore
 L232:   dup
 L233:   bipush 8
 L235:   iconst_1
 L236:   dup
 L237:   pop2
-L238:   getstatic Field vD "enum" LvD;
+L238:   getstatic Field vD field361 LvD;
 L241:   aastore
-L242:   putstatic Field vD do [LvD;
+L242:   putstatic Field vD field362 [LvD;
 L245:   return
 L246:   
     .end code

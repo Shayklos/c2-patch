@@ -15,14 +15,14 @@ L5:
 .method public bridge synthetic run : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/D break ()Ljava/lang/Long;
+L1:     invokevirtual Method org/lwjgl/D method1758 ()Ljava/lang/Long;
 L4:     areturn
 L5:     
     .end code
     .exceptions java/lang/Exception
 .end method
 
-.method public break : ()Ljava/lang/Long;
+.method public method1758 : ()Ljava/lang/Long;
     .code stack 7 locals 4
 L0:     ldc Class org/lwjgl/opengl/Display
 L2:     ldc "getImplementation"
@@ -93,5 +93,5 @@ L90:
 .innerclasses
     org/lwjgl/D [0] [0] static
 .end innerclasses
-.enclosing method org/lwjgl/WindowsSysImplementation catch ()J
+.enclosing method org/lwjgl/WindowsSysImplementation method1771 ()J
 .end class

@@ -1,9 +1,9 @@
 .version 49 0
 .class public final super xB
 .super Qb
-.field public final synthetic do LZb;
+.field public final synthetic field1761 LZb;
 
-.method public else : ()[LEF;
+.method public method751 : ()[LEF;
     .code stack 5 locals 1
 L0:     iconst_3
 L1:     iconst_1
@@ -32,7 +32,7 @@ L29:    iconst_2
 L30:    iconst_1
 L31:    dup
 L32:    pop2
-L33:    getstatic Field EF char LEF;
+L33:    getstatic Field EF field431 LEF;
 L36:    aastore
 L37:    areturn
 L38:    
@@ -44,14 +44,14 @@ L38:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field xB do LZb;
+L3:     putfield Field xB field1761 LZb;
 L6:     invokespecial Method Qb <init> ()V
 L9:     return
 L10:    
     .end code
 .end method
 
-.method public break : (LRg;)F
+.method public method750 : (LRg;)F
     .code stack 1 locals 2
 L0:     ldc 3.6e-1f
 L2:     freturn
@@ -62,5 +62,5 @@ L3:
     EF eb [0] public static final enum
     xB [0] [0]
 .end innerclasses
-.enclosing method Zb "strictfp" ()V
+.enclosing method Zb method49 ()V
 .end class

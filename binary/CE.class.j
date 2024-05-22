@@ -3,20 +3,20 @@
 .super java/lang/Object
 .implements f
 
-.method public break : (LRg;)Ljava/lang/Object;
+.method public method712 : (LRg;)Ljava/lang/Object;
     .code stack 2 locals 2
 L0:     aload_1
-L1:     getfield Field Rg do F
+L1:     getfield Field Rg field241 F
 L4:     ldc 3.5e0f
 L6:     fcmpl
 L7:     ifle L31
 L10:    ldc 6e1f
 L12:    aload_1
-L13:    getfield Field Rg goto I
+L13:    getfield Field Rg field232 I
 L16:    i2f
 L17:    fmul
 L18:    aload_1
-L19:    getfield Field Rg do F
+L19:    getfield Field Rg field241 F
 L22:    fdiv
 L23:    invokestatic Method java/lang/Math round (F)I
 L26:    invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;

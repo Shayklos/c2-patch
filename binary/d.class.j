@@ -2,9 +2,9 @@
 .class public interface abstract d
 .super java/lang/Object
 
-.method public abstract else : (Lqc;)V
+.method public abstract method62 : (Lqc;)V
 .end method
 
-.method public abstract break : (Lqc;)V
+.method public abstract method75 : (Lqc;)V
 .end method
 .end class

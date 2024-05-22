@@ -1,9 +1,9 @@
 .version 49 0
 .class public final super enum LE
 .super java/lang/Enum
-.field public static final enum else LLE;
-.field private static final synthetic "enum" [LLE;
-.field public static final enum do LLE;
+.field public static final enum field632 LLE;
+.field private static final synthetic field633 [LLE;
+.field public static final enum field634 LLE;
 
 .method public static valueOf : (Ljava/lang/String;)LLE;
     .code stack 2 locals 1
@@ -18,7 +18,7 @@ L10:
 
 .method public static values : ()[LLE;
     .code stack 1 locals 0
-L0:     getstatic Field LE "enum" [LLE;
+L0:     getstatic Field LE field633 [LLE;
 L3:     invokevirtual Method [LLE; clone ()Ljava/lang/Object;
 L6:     checkcast [LLE;
 L9:     areturn
@@ -36,7 +36,7 @@ L7:     iconst_1
 L8:     dup
 L9:     pop2
 L10:    invokespecial Method LE <init> (Ljava/lang/String;I)V
-L13:    putstatic Field LE else LLE;
+L13:    putstatic Field LE field632 LLE;
 L16:    new LE
 L19:    dup
 L20:    ldc "Y"
@@ -45,7 +45,7 @@ L23:    dup
 L24:    dup
 L25:    pop2
 L26:    invokespecial Method LE <init> (Ljava/lang/String;I)V
-L29:    putstatic Field LE do LLE;
+L29:    putstatic Field LE field634 LLE;
 L32:    iconst_2
 L33:    iconst_1
 L34:    dup
@@ -59,16 +59,16 @@ L43:    iconst_0
 L44:    iconst_1
 L45:    dup
 L46:    pop2
-L47:    getstatic Field LE else LLE;
+L47:    getstatic Field LE field632 LLE;
 L50:    aastore
 L51:    dup
 L52:    iconst_1
 L53:    dup
 L54:    dup
 L55:    pop2
-L56:    getstatic Field LE do LLE;
+L56:    getstatic Field LE field634 LLE;
 L59:    aastore
-L60:    putstatic Field LE "enum" [LLE;
+L60:    putstatic Field LE field633 [LLE;
 L63:    return
 L64:    
     .end code

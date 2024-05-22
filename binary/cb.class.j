@@ -2,47 +2,47 @@
 .class public final super cb
 .super bC
 .field private this LYg;
-.field private static char Z
-.field private else LDF;
-.field private "enum" F
-.field private do Lqc;
+.field private static field1091 Z
+.field private field1092 LDF;
+.field private field977 F
+.field private field1093 Lqc;
 
-.method public int : ()V
+.method public method26 : ()V
     .code stack 7 locals 2
 L0:     aload_0
 L1:     dup
 L2:     dup2
-L3:     invokespecial Method bC int ()V
-L6:     getfield Field cb "enum" F
+L3:     invokespecial Method bC method26 ()V
+L6:     getfield Field cb field977 F
 L9:     f2i
 L10:    istore_1
 L11:    dup
-L12:    getfield Field cb "enum" F
-L15:    getstatic Field ib do F
+L12:    getfield Field cb field977 F
+L15:    getstatic Field ib field2312 F
 L18:    ldc 1e-1f
 L20:    fmul
 L21:    fadd
-L22:    putfield Field cb "enum" F
-L25:    getfield Field cb "enum" F
+L22:    putfield Field cb field977 F
+L25:    getfield Field cb field977 F
 L28:    fconst_2
 L29:    fcmpl
 L30:    iflt L48
 L33:    aload_0
 L34:    dup
 L35:    dup
-L36:    getfield Field cb "enum" F
+L36:    getfield Field cb field977 F
 L39:    fconst_2
 L40:    fsub
-L41:    putfield Field cb "enum" F
+L41:    putfield Field cb field977 F
 L44:    goto L25
 L47:    athrow
 L48:    iload_1
 L49:    aload_0
-L50:    getfield Field cb "enum" F
+L50:    getfield Field cb field977 F
 L53:    f2i
 L54:    if_icmpeq L197
 L57:    aload_0
-L58:    getfield Field cb "enum" F
+L58:    getfield Field cb field977 F
 L61:    f2i
 L62:    lookupswitch
             0 : L88
@@ -53,23 +53,23 @@ L89:    iconst_0
 L90:    ifne L89
 L93:    dup
 L94:    dup_x1
-L95:    getfield Field cb else LDF;
-L98:    invokevirtual Method DF break ()V
-L101:   getfield Field cb else LDF;
+L95:    getfield Field cb field1092 LDF;
+L98:    invokevirtual Method DF method74 ()V
+L101:   getfield Field cb field1092 LDF;
 L104:   aload_0
-L105:   invokespecial Method cb break ()Ljava/lang/String;
-L108:   invokevirtual Method DF break (Ljava/lang/String;)V
+L105:   invokespecial Method cb method501 ()Ljava/lang/String;
+L108:   invokevirtual Method DF method12 (Ljava/lang/String;)V
 L111:   goto L198
 L114:   athrow
 L115:   aload_0
-L116:   getfield Field cb else LDF;
+L116:   getfield Field cb field1092 LDF;
 L119:   new java/lang/StringBuilder
 L122:   dup
 L123:   invokespecial Method java/lang/StringBuilder <init> ()V
 L126:   iconst_0
 L127:   ldc "You're "
 L129:   invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
-L132:   invokestatic Method JB float ()F
+L132:   invokestatic Method JB method829 ()F
 L135:   fconst_0
 L136:   fcmpl
 L137:   ifne L145
@@ -79,28 +79,28 @@ L145:   ldc ""
 L147:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L150:   ldc "listening to "
 L152:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-L155:   invokestatic Method UE const ()Ljava/lang/String;
+L155:   invokestatic Method UE method426 ()Ljava/lang/String;
 L158:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L161:   ldc " by "
 L163:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-L166:   invokestatic Method UE float ()Ljava/lang/String;
+L166:   invokestatic Method UE method356 ()Ljava/lang/String;
 L169:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L172:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
-L175:   invokevirtual Method DF break (Ljava/lang/String;)V
-L178:   invokestatic Method UE catch ()Ljava/lang/String;
+L175:   invokevirtual Method DF method12 (Ljava/lang/String;)V
+L178:   invokestatic Method UE method421 ()Ljava/lang/String;
 L181:   ifnull L197
 L184:   aload_0
-L185:   getfield Field cb else LDF;
-L188:   invokestatic Method UE float ()Ljava/lang/String;
-L191:   invokestatic Method UE catch ()Ljava/lang/String;
-L194:   invokevirtual Method DF break (Ljava/lang/String;Ljava/lang/String;)V
+L185:   getfield Field cb field1092 LDF;
+L188:   invokestatic Method UE method356 ()Ljava/lang/String;
+L191:   invokestatic Method UE method421 ()Ljava/lang/String;
+L194:   invokevirtual Method DF method55 (Ljava/lang/String;Ljava/lang/String;)V
 L197:   aload_0
-L198:   getfield Field cb else LDF;
+L198:   getfield Field cb field1092 LDF;
 L201:   fconst_1
 L202:   dup
 L203:   dup_x1
 L204:   aload_0
-L205:   getfield Field cb "enum" F
+L205:   getfield Field cb field977 F
 L208:   fconst_1
 L209:   frem
 L210:   ldc 5e-1f
@@ -112,14 +112,14 @@ L218:   ldc 2.3e0f
 L220:   fmul
 L221:   ldc 5e-1f
 L223:   invokestatic Method java/lang/Math min (FF)F
-L226:   invokevirtual Method DF else (FFFF)V
+L226:   invokevirtual Method DF method604 (FFFF)V
 L229:   return
 L230:   
-        .attribute StackMap b'\x00\x0B\x00\x19\x00\x02\x07\x00\x02\x01\x00\x01\x07\x00\x02\x00\x2F\x00\x00\x00\x01\x07\x00\x2D\x00\x30\x00\x02\x07\x00\x02\x01\x00\x00\x00\x58\x00\x02\x07\x00\x02\x01\x00\x00\x00\x59\x00\x02\x07\x00\x02\x01\x00\x01\x07\x00\x02\x00\x72\x00\x00\x00\x01\x07\x00\x2D\x00\x73\x00\x02\x07\x00\x02\x01\x00\x00\x00\x91\x00\x02\x07\x00\x02\x01\x00\x02\x07\x00\x12\x07\x00\x3A\x00\x93\x00\x02\x07\x00\x02\x01\x00\x03\x07\x00\x12\x07\x00\x3A\x07\x00\x4F\x00\xC5\x00\x02\x07\x00\x02\x01\x00\x00\x00\xC6\x00\x02\x07\x00\x02\x01\x00\x01\x07\x00\x02'
+        .attribute StackMap b'\x00\x0B\x00\x19\x00\x02\x07\x00\x02\x01\x00\x01\x07\x00\x02\x00\x2F\x00\x00\x00\x01\x07\x00\x2E\x00\x30\x00\x02\x07\x00\x02\x01\x00\x00\x00\x58\x00\x02\x07\x00\x02\x01\x00\x00\x00\x59\x00\x02\x07\x00\x02\x01\x00\x01\x07\x00\x02\x00\x72\x00\x00\x00\x01\x07\x00\x2E\x00\x73\x00\x02\x07\x00\x02\x01\x00\x00\x00\x91\x00\x02\x07\x00\x02\x01\x00\x02\x07\x00\x12\x07\x00\x3D\x00\x93\x00\x02\x07\x00\x02\x01\x00\x03\x07\x00\x12\x07\x00\x3D\x07\x00\x52\x00\xC5\x00\x02\x07\x00\x02\x01\x00\x00\x00\xC6\x00\x02\x07\x00\x02\x01\x00\x01\x07\x00\x02'
     .end code
 .end method
 
-.method public break : (LgB;I)Z
+.method public method53 : (LgB;I)Z
     .code stack 4 locals 3
 L0:     aload_0
 L1:     getfield Field cb this LYg;
@@ -137,14 +137,14 @@ L16:    dup
 L17:    pop2
 L18:    if_icmpne L58
 L21:    aload_0
-L22:    invokevirtual Method cb import ()LgB;
+L22:    invokevirtual Method cb method50 ()LgB;
 L25:    aload_0
 L26:    getfield Field cb this LYg;
 L29:    if_acmpne L45
 L32:    iconst_1
 L33:    aload_0
-L34:    getfield Field cb null LFE;
-L37:    invokevirtual Method FE else ()V
+L34:    getfield Field cb field1136 LFE;
+L37:    invokevirtual Method FE method56 ()V
 L40:    iconst_1
 L41:    dup
 L42:    pop2
@@ -165,15 +165,15 @@ L60:    dup
 L61:    pop2
 L62:    ireturn
 L63:    
-        .attribute StackMap b'\x00\x05\x00\x0C\x00\x00\x00\x01\x07\x00\x2D\x00\x0D\x00\x03\x07\x00\x02\x07\x00\x79\x01\x00\x00\x00\x2C\x00\x00\x00\x01\x07\x00\x2D\x00\x2D\x00\x03\x07\x00\x02\x07\x00\x79\x01\x00\x00\x00\x3A\x00\x03\x07\x00\x02\x07\x00\x79\x01\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x0C\x00\x00\x00\x01\x07\x00\x2E\x00\x0D\x00\x03\x07\x00\x02\x07\x00\x80\x01\x00\x00\x00\x2C\x00\x00\x00\x01\x07\x00\x2E\x00\x2D\x00\x03\x07\x00\x02\x07\x00\x80\x01\x00\x00\x00\x3A\x00\x03\x07\x00\x02\x07\x00\x80\x01\x00\x00'
     .end code
 .end method
 
-.method public "strictfp" : ()V
+.method public method49 : ()V
     .code stack 17 locals 4
-L0:     getstatic Field Kc else LKc;
+L0:     getstatic Field Kc field1931 LKc;
 L3:     checkcast md
-L6:     invokevirtual Method md for ()V
+L6:     invokevirtual Method md method877 ()V
 L9:     new qc
 L12:    aload_0
 L13:    dup_x1
@@ -183,12 +183,12 @@ L16:    pop2
 L17:    dup
 L18:    new fG
 L21:    dup
-L22:    getstatic Field LE else LLE;
+L22:    getstatic Field LE field632 LLE;
 L25:    ldc 1.5e-1f
 L27:    invokespecial Method fG <init> (LLE;F)V
 L30:    invokespecial Method qc <init> (Ld;)V
-L33:    putfield Field cb do Lqc;
-L36:    getfield Field cb do Lqc;
+L33:    putfield Field cb field1093 Lqc;
+L36:    getfield Field cb field1093 Lqc;
 L39:    new KF
 L42:    dup
 L43:    ldc "Play online"
@@ -199,9 +199,9 @@ L51:    invokespecial Method CC <init> ()V
 L54:    invokespecial Method KF <init> (Ljava/lang/String;FLbC;)V
 L57:    dup
 L58:    astore_1
-L59:    invokevirtual Method qc float (LgB;)LgB;
+L59:    invokevirtual Method qc method36 (LgB;)LgB;
 L62:    aload_0
-L63:    getfield Field cb do Lqc;
+L63:    getfield Field cb field1093 Lqc;
 L66:    new KF
 L69:    dup
 L70:    ldc "Training"
@@ -212,9 +212,9 @@ L78:    invokespecial Method Gd <init> ()V
 L81:    invokespecial Method KF <init> (Ljava/lang/String;FLbC;)V
 L84:    dup
 L85:    astore_2
-L86:    invokevirtual Method qc float (LgB;)LgB;
+L86:    invokevirtual Method qc method36 (LgB;)LgB;
 L89:    aload_0
-L90:    getfield Field cb do Lqc;
+L90:    getfield Field cb field1093 Lqc;
 L93:    new KF
 L96:    dup
 L97:    ldc "Options"
@@ -225,10 +225,10 @@ L105:   invokespecial Method Lc <init> ()V
 L108:   invokespecial Method KF <init> (Ljava/lang/String;FLbC;)V
 L111:   dup
 L112:   astore_3
-L113:   invokevirtual Method qc float (LgB;)LgB;
+L113:   invokevirtual Method qc method36 (LgB;)LgB;
 L116:   pop
 L117:   pop2
-L118:   getstatic Field net/gewaltig/cultris/Cultris char Z
+L118:   getstatic Field net/gewaltig/cultris/Cultris field2393 Z
 L121:   ifne L227
 L124:   iconst_1
 L125:   new KF
@@ -246,10 +246,10 @@ L142:   aload_0
 L143:   invokespecial Method LC <init> (Lcb;)V
 L146:   invokespecial Method KF <init> (Ljava/lang/String;FLh;)V
 L149:   putfield Field cb this LYg;
-L152:   getfield Field cb do Lqc;
+L152:   getfield Field cb field1093 Lqc;
 L155:   aload_0
 L156:   getfield Field cb this LYg;
-L159:   invokevirtual Method qc float (LgB;)LgB;
+L159:   invokevirtual Method qc method36 (LgB;)LgB;
 L162:   pop
 L163:   iconst_1
 L164:   dup
@@ -301,7 +301,7 @@ L213:   aload_0
 L214:   getfield Field cb this LYg;
 L217:   aastore
 L218:   aastore
-L219:   invokestatic Method mC break ([[LgB;)V
+L219:   invokestatic Method mC method1702 ([[LgB;)V
 L222:   aload_0
 L223:   goto L278
 L226:   athrow
@@ -348,20 +348,20 @@ L270:   pop2
 L271:   aload_3
 L272:   aastore
 L273:   aastore
-L274:   invokestatic Method mC break ([[LgB;)V
+L274:   invokestatic Method mC method1702 ([[LgB;)V
 L277:   aload_0
-L278:   getfield Field cb do Lqc;
+L278:   getfield Field cb field1093 Lqc;
 L281:   new Vg
 L284:   dup
 L285:   ldc 1.6e1f
 L287:   fconst_0
 L288:   invokespecial Method Vg <init> (FF)V
-L291:   invokevirtual Method qc float (LgB;)LgB;
+L291:   invokevirtual Method qc method36 (LgB;)LgB;
 L294:   new qc
 L297:   dup
 L298:   new fG
 L301:   dup
-L302:   getstatic Field LE do LLE;
+L302:   getstatic Field LE field634 LLE;
 L305:   ldc 1e-1f
 L307:   invokespecial Method fG <init> (LLE;F)V
 L310:   invokespecial Method qc <init> (Ld;)V
@@ -375,14 +375,14 @@ L321:   dup
 L322:   new DF
 L325:   dup
 L326:   ldc "Cultris II"
-L328:   getstatic Field We "final" LWe;
+L328:   getstatic Field We field477 LWe;
 L331:   invokespecial Method DF <init> (Ljava/lang/String;LWe;)V
 L334:   ldc 1.5e-1f
 L336:   fconst_0
 L337:   dup
 L338:   dup_x1
 L339:   invokespecial Method SB <init> (LgB;FFFF)V
-L342:   invokevirtual Method qc float (LgB;)LgB;
+L342:   invokevirtual Method qc method36 (LgB;)LgB;
 L345:   new IF
 L348:   aload_1
 L349:   dup_x1
@@ -390,10 +390,10 @@ L350:   dup
 L351:   pop2
 L352:   dup
 L353:   aload_0
-L354:   getfield Field cb do Lqc;
+L354:   getfield Field cb field1093 Lqc;
 L357:   fconst_0
 L358:   dup
-L359:   getstatic Field FG char LFG;
+L359:   getstatic Field FG field330 LFG;
 L362:   iconst_0
 L363:   iconst_1
 L364:   dup
@@ -403,7 +403,7 @@ L367:   iconst_1
 L368:   dup
 L369:   pop2
 L370:   invokespecial Method IF <init> (LgB;FFLFG;ZI)V
-L373:   invokevirtual Method qc float (LgB;)LgB;
+L373:   invokevirtual Method qc method36 (LgB;)LgB;
 L376:   new qc
 L379:   dup
 L380:   new If
@@ -413,7 +413,7 @@ L387:   invokespecial Method qc <init> (Ld;)V
 L390:   dup
 L391:   astore_2
 L392:   aload_1
-L393:   invokevirtual Method qc float (LgB;)LgB;
+L393:   invokevirtual Method qc method36 (LgB;)LgB;
 L396:   aload_2
 L397:   aload_0
 L398:   dup_x1
@@ -429,64 +429,64 @@ L410:   dup
 L411:   pop2
 L412:   dup
 L413:   aload_0
-L414:   invokespecial Method cb break ()Ljava/lang/String;
+L414:   invokespecial Method cb method501 ()Ljava/lang/String;
 L417:   invokespecial Method DF <init> (Ljava/lang/String;)V
-L420:   putfield Field cb else LDF;
-L423:   getfield Field cb else LDF;
+L420:   putfield Field cb field1092 LDF;
+L423:   getfield Field cb field1092 LDF;
 L426:   iconst_1
 L427:   dup
 L428:   dup
 L429:   pop2
-L430:   invokevirtual Method DF const (Z)V
-L433:   getfield Field cb else LDF;
+L430:   invokevirtual Method DF method614 (Z)V
+L433:   getfield Field cb field1092 LDF;
 L436:   getstatic Field vD try LvD;
-L439:   invokevirtual Method DF break (LvD;)V
-L442:   getfield Field cb else LDF;
-L445:   ldc 2.4e-1f
-L447:   invokevirtual Method DF else (F)V
-L450:   getfield Field cb else LDF;
-L453:   fconst_1
-L454:   dup
-L455:   dup_x1
-L456:   fconst_0
-L457:   invokevirtual Method DF else (FFFF)V
-L460:   putfield Field cb "enum" F
-L463:   getstatic Field VD char Ljava/lang/Object;
-L466:   invokevirtual Method cb break (LgB;Ljava/lang/Object;)V
-L469:   new SB
-L472:   aload_0
-L473:   dup
-L474:   pop2
-L475:   dup
-L476:   aload_0
-L477:   getfield Field cb else LDF;
-L480:   fconst_0
-L481:   dup
-L482:   dup_x1
-L483:   ldc_w 5e-2f
-L486:   invokespecial Method SB <init> (LgB;FFFF)V
-L489:   getstatic Field VD else Ljava/lang/Object;
-L492:   invokevirtual Method cb break (LgB;Ljava/lang/Object;)V
-L495:   pop2
+L439:   invokevirtual Method DF method610 (LvD;)V
+L442:   getfield Field cb field1092 LDF;
+L445:   ldc_w 2.4e-1f
+L448:   invokevirtual Method DF method104 (F)V
+L451:   getfield Field cb field1092 LDF;
+L454:   fconst_1
+L455:   dup
+L456:   dup_x1
+L457:   fconst_0
+L458:   invokevirtual Method DF method604 (FFFF)V
+L461:   putfield Field cb field977 F
+L464:   getstatic Field VD field147 Ljava/lang/Object;
+L467:   invokevirtual Method cb method31 (LgB;Ljava/lang/Object;)V
+L470:   new SB
+L473:   aload_0
+L474:   dup
+L475:   pop2
+L476:   dup
+L477:   aload_0
+L478:   getfield Field cb field1092 LDF;
+L481:   fconst_0
+L482:   dup
+L483:   dup_x1
+L484:   ldc_w 5e-2f
+L487:   invokespecial Method SB <init> (LgB;FFFF)V
+L490:   getstatic Field VD field148 Ljava/lang/Object;
+L493:   invokevirtual Method cb method31 (LgB;Ljava/lang/Object;)V
 L496:   pop2
-L497:   return
-L498:   
-        .attribute StackMap b'\x00\x03\x00\xE2\x00\x00\x00\x01\x07\x00\x2D\x00\xE3\x00\x04\x07\x00\x02\x07\x00\xA4\x07\x00\xA4\x07\x00\xA4\x00\x00\x01\x16\x00\x04\x07\x00\x02\x07\x00\xA4\x07\x00\xA4\x07\x00\xA4\x00\x01\x07\x00\x02'
+L497:   pop2
+L498:   return
+L499:   
+        .attribute StackMap b'\x00\x03\x00\xE2\x00\x00\x00\x01\x07\x00\x2E\x00\xE3\x00\x04\x07\x00\x02\x07\x00\xAE\x07\x00\xAE\x07\x00\xAE\x00\x00\x01\x16\x00\x04\x07\x00\x02\x07\x00\xAE\x07\x00\xAE\x07\x00\xAE\x00\x01\x07\x00\x02'
     .end code
 .end method
 
-.method public assert : ()V
+.method public method46 : ()V
     .code stack 3 locals 1
-L0:     getstatic Field cb char Z
+L0:     getstatic Field cb field1091 Z
 L3:     ifne L13
-L6:     getstatic Field zg void Lzg;
+L6:     getstatic Field zg field460 Lzg;
 L9:     fconst_1
-L10:    invokestatic Method UE break (Lzg;F)V
+L10:    invokestatic Method UE method422 (Lzg;F)V
 L13:    iconst_0
 L14:    iconst_1
 L15:    dup
 L16:    pop2
-L17:    putstatic Field cb char Z
+L17:    putstatic Field cb field1091 Z
 L20:    return
 L21:    
         .attribute StackMap b'\x00\x01\x00\x0D\x00\x01\x07\x00\x02\x00\x00'
@@ -504,16 +504,16 @@ L5:
     .end code
 .end method
 
-.method public static synthetic break : (Lcb;)LFE;
+.method public static synthetic method579 : (Lcb;)LFE;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field cb null LFE;
+L1:     getfield Field cb field1136 LFE;
 L4:     areturn
 L5:     
     .end code
 .end method
 
-.method private break : ()Ljava/lang/String;
+.method private method501 : ()Ljava/lang/String;
     .code stack 1 locals 1
 L0:     ldc_w "Copyright \u00A92013 GEWALTIG entertainment. All rights reserved. Release 1.4c."
 L3:     areturn
@@ -527,7 +527,7 @@ L0:     fconst_0
 L1:     aload_0
 L2:     dup_x1
 L3:     invokespecial Method bC <init> ()V
-L6:     putfield Field cb "enum" F
+L6:     putfield Field cb field977 F
 L9:     return
 L10:    
     .end code
@@ -539,7 +539,7 @@ L0:     iconst_1
 L1:     dup
 L2:     dup
 L3:     pop2
-L4:     putstatic Field cb char Z
+L4:     putstatic Field cb field1091 Z
 L7:     return
 L8:     
     .end code

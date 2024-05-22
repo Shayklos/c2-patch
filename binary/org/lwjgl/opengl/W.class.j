@@ -2,41 +2,41 @@
 .class public final super org/lwjgl/opengl/W
 .super org/lwjgl/opengl/q
 
-.method public bridge synthetic float : ()V
+.method public bridge synthetic method69 : ()V
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokespecial Method org/lwjgl/opengl/q float ()V
+L1:     invokespecial Method org/lwjgl/opengl/q method69 ()V
 L4:     return
 L5:     
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public bridge synthetic break : (Lorg/lwjgl/opengl/h;)V
+.method public bridge synthetic method308 : (Lorg/lwjgl/opengl/h;)V
     .code stack 2 locals 2
 L0:     aload_0
 L1:     aload_1
-L2:     invokespecial Method org/lwjgl/opengl/q break (Lorg/lwjgl/opengl/h;)V
+L2:     invokespecial Method org/lwjgl/opengl/q method308 (Lorg/lwjgl/opengl/h;)V
 L5:     return
 L6:     
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public bridge synthetic const : ()Z
+.method public bridge synthetic method263 : ()Z
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokespecial Method org/lwjgl/opengl/q const ()Z
+L1:     invokespecial Method org/lwjgl/opengl/q method263 ()Z
 L4:     ireturn
 L5:     
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public bridge synthetic goto : ()Lorg/lwjgl/opengl/h;
+.method public bridge synthetic method310 : ()Lorg/lwjgl/opengl/h;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokespecial Method org/lwjgl/opengl/q goto ()Lorg/lwjgl/opengl/h;
+L1:     invokespecial Method org/lwjgl/opengl/q method310 ()Lorg/lwjgl/opengl/h;
 L4:     areturn
 L5:     
     .end code
@@ -52,65 +52,65 @@ L8:
     .end code
 .end method
 
-.method public bridge synthetic break : (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/CB;)V
+.method public bridge synthetic method313 : (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/CB;)V
     .code stack 3 locals 3
 L0:     aload_0
 L1:     aload_1
 L2:     aload_2
-L3:     invokespecial Method org/lwjgl/opengl/q break (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/CB;)V
+L3:     invokespecial Method org/lwjgl/opengl/q method313 (Lorg/lwjgl/opengl/h;Lorg/lwjgl/opengl/CB;)V
 L6:     return
 L7:     
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public bridge synthetic break : (I)V
+.method public bridge synthetic method14 : (I)V
     .code stack 2 locals 2
 L0:     aload_0
 L1:     iload_1
-L2:     invokespecial Method org/lwjgl/opengl/q break (I)V
+L2:     invokespecial Method org/lwjgl/opengl/q method14 (I)V
 L5:     return
 L6:     
     .end code
 .end method
 
-.method public bridge synthetic break : (FFF)V
+.method public bridge synthetic method312 : (FFF)V
     .code stack 4 locals 4
 L0:     aload_0
 L1:     fload_1
 L2:     fload_2
 L3:     fload_3
-L4:     invokespecial Method org/lwjgl/opengl/q break (FFF)V
+L4:     invokespecial Method org/lwjgl/opengl/q method312 (FFF)V
 L7:     return
 L8:     
     .end code
 .end method
 
-.method public bridge synthetic break : (Lorg/lwjgl/h;)V
+.method public bridge synthetic method311 : (Lorg/lwjgl/h;)V
     .code stack 2 locals 2
 L0:     aload_0
 L1:     aload_1
-L2:     invokespecial Method org/lwjgl/opengl/q break (Lorg/lwjgl/h;)V
+L2:     invokespecial Method org/lwjgl/opengl/q method311 (Lorg/lwjgl/h;)V
 L5:     return
 L6:     
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public bridge synthetic else : ()V
+.method public bridge synthetic method56 : ()V
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokespecial Method org/lwjgl/opengl/q else ()V
+L1:     invokespecial Method org/lwjgl/opengl/q method56 ()V
 L4:     return
 L5:     
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public bridge synthetic break : ()V
+.method public bridge synthetic method74 : ()V
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokespecial Method org/lwjgl/opengl/q break ()V
+L1:     invokespecial Method org/lwjgl/opengl/q method74 ()V
 L4:     return
 L5:     
     .end code
@@ -126,7 +126,7 @@ L5:
     .end code
 .end method
 
-.method public bridge synthetic for : ()Lorg/lwjgl/opengl/G;
+.method public bridge synthetic method309 : ()Lorg/lwjgl/opengl/G;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     invokevirtual Method org/lwjgl/opengl/W new ()Lorg/lwjgl/opengl/Jb;
@@ -136,10 +136,10 @@ L5:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public bridge synthetic catch : ()V
+.method public bridge synthetic method76 : ()V
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokespecial Method org/lwjgl/opengl/q catch ()V
+L1:     invokespecial Method org/lwjgl/opengl/q method76 ()V
 L4:     return
 L5:     
     .end code
@@ -152,19 +152,19 @@ L1:     aload_0
 L2:     dup_x1
 L3:     invokespecial Method org/lwjgl/opengl/q <init> ()V
 L6:     checkcast org/lwjgl/opengl/C
-L9:     invokeinterface InterfaceMethod org/lwjgl/opengl/C for ()Lorg/lwjgl/opengl/G; 1
+L9:     invokeinterface InterfaceMethod org/lwjgl/opengl/C method309 ()Lorg/lwjgl/opengl/G; 1
 L14:    checkcast org/lwjgl/opengl/Jb
-L17:    putfield Field org/lwjgl/opengl/W "enum" Lorg/lwjgl/opengl/Jb;
+L17:    putfield Field org/lwjgl/opengl/W field509 Lorg/lwjgl/opengl/Jb;
 L20:    return
 L21:    
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public bridge synthetic short : ()V
+.method public bridge synthetic method71 : ()V
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokespecial Method org/lwjgl/opengl/q short ()V
+L1:     invokespecial Method org/lwjgl/opengl/q method71 ()V
 L4:     return
 L5:     
     .end code

@@ -17,9 +17,9 @@ L13:
     .end code
 .end method
 
-.method public break : (LRg;)Z
+.method public method704 : (LRg;)Z
     .code stack 1 locals 2
-L0:     getstatic Field FE class Z
+L0:     getstatic Field FE field837 Z
 L3:     ireturn
 L4:     
     .end code

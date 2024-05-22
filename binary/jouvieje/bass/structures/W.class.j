@@ -2,10 +2,10 @@
 .class public final super jouvieje/bass/structures/W
 .super jouvieje/bass/utils/m
 
-.method public break : (Z)V
+.method public method1230 : (Z)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/W do J
+L1:     getfield Field jouvieje/bass/structures/W field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -14,7 +14,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/W do J
+L18:    getfield Field jouvieje/bass/structures/W field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_VOLUME_ENV_set_bFollow (JZ)V
 L25:    return
@@ -23,10 +23,10 @@ L26:
     .end code
 .end method
 
-.method public catch : ()Z
+.method public method1286 : ()Z
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/W do J
+L1:     getfield Field jouvieje/bass/structures/W field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -35,7 +35,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/W do J
+L18:    getfield Field jouvieje/bass/structures/W field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_VOLUME_ENV_get_bFollow (J)Z
 L24:    ireturn
 L25:    
@@ -43,10 +43,10 @@ L25:
     .end code
 .end method
 
-.method public float : ()Ljouvieje/bass/structures/Z;
+.method public method1383 : ()Ljouvieje/bass/structures/Z;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/W do J
+L1:     getfield Field jouvieje/bass/structures/W field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -55,7 +55,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/W do J
+L18:    getfield Field jouvieje/bass/structures/W field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_VOLUME_ENV_get_pNodes (J)J
 L24:    dup2
 L25:    lstore_1
@@ -66,8 +66,8 @@ L31:    aconst_null
 L32:    areturn
 L33:    athrow
 L34:    lload_1
-L35:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
-L38:    invokestatic Method jouvieje/bass/structures/Z else (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/Z;
+L35:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
+L38:    invokestatic Method jouvieje/bass/structures/Z method1388 (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/Z;
 L41:    areturn
 L42:    
         .attribute StackMap b'\x00\x03\x00\x11\x00\x01\x07\x00\x02\x00\x00\x00\x21\x00\x00\x00\x01\x07\x00\x24\x00\x22\x00\x02\x07\x00\x02\x04\x00\x00'
@@ -84,10 +84,10 @@ L6:
     .end code
 .end method
 
-.method public short : ()I
+.method public method1336 : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/W do J
+L1:     getfield Field jouvieje/bass/structures/W field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -96,7 +96,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/W do J
+L18:    getfield Field jouvieje/bass/structures/W field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_VOLUME_ENV_get_lNodeCount (J)I
 L24:    ireturn
 L25:    
@@ -113,10 +113,10 @@ L5:
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/W;
+.method public static method1384 : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/W;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     dup2
 L5:     lstore_1
 L6:     lconst_0
@@ -135,10 +135,10 @@ L23:
     .end code
 .end method
 
-.method public else : (I)V
+.method public method1197 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/W do J
+L1:     getfield Field jouvieje/bass/structures/W field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -147,7 +147,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/W do J
+L18:    getfield Field jouvieje/bass/structures/W field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_VOLUME_ENV_set_lChannel (JI)V
 L25:    return
@@ -156,10 +156,10 @@ L26:
     .end code
 .end method
 
-.method public break : (I)V
+.method public method1180 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/W do J
+L1:     getfield Field jouvieje/bass/structures/W field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -168,7 +168,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/W do J
+L18:    getfield Field jouvieje/bass/structures/W field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_VOLUME_ENV_set_lNodeCount (JI)V
 L25:    return
@@ -177,7 +177,7 @@ L26:
     .end code
 .end method
 
-.method public static const : ()Ljouvieje/bass/structures/W;
+.method public static method1385 : ()Ljouvieje/bass/structures/W;
     .code stack 4 locals 2
 L0:     invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_VOLUME_ENV_new ()J
 L3:     dup2
@@ -199,10 +199,10 @@ L27:
     .end code
 .end method
 
-.method public break : (Ljouvieje/bass/structures/Z;)V
+.method public method1386 : (Ljouvieje/bass/structures/Z;)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/W do J
+L1:     getfield Field jouvieje/bass/structures/W field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -211,20 +211,20 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/W do J
+L18:    getfield Field jouvieje/bass/structures/W field2319 J
 L21:    aload_1
-L22:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L22:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L25:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_VOLUME_ENV_set_pNodes (JJ)V
 L28:    return
 L29:    
-        .attribute StackMap b'\x00\x01\x00\x11\x00\x02\x07\x00\x02\x07\x00\x29\x00\x00'
+        .attribute StackMap b'\x00\x01\x00\x11\x00\x02\x07\x00\x02\x07\x00\x2A\x00\x00'
     .end code
 .end method
 
-.method public else : ()I
+.method public method1233 : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/W do J
+L1:     getfield Field jouvieje/bass/structures/W field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -233,7 +233,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/W do J
+L18:    getfield Field jouvieje/bass/structures/W field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_VOLUME_ENV_get_lChannel (J)I
 L24:    ireturn
 L25:    
@@ -241,19 +241,19 @@ L25:
     .end code
 .end method
 
-.method public break : ()V
+.method public method1218 : ()V
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/W do J
+L1:     getfield Field jouvieje/bass/structures/W field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifeq L16
 L9:     aload_0
-L10:    getfield Field jouvieje/bass/structures/W do J
+L10:    getfield Field jouvieje/bass/structures/W field2319 J
 L13:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_VOLUME_ENV_delete (J)V
 L16:    aload_0
 L17:    lconst_0
-L18:    putfield Field jouvieje/bass/structures/W do J
+L18:    putfield Field jouvieje/bass/structures/W field2319 J
 L21:    return
 L22:    
         .attribute StackMap b'\x00\x01\x00\x10\x00\x01\x07\x00\x02\x00\x00'

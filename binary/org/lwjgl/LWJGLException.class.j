@@ -1,7 +1,7 @@
 .version 49 0
 .class public final super org/lwjgl/LWJGLException
 .super java/lang/Exception
-.field private static final do J = 1L
+.field private static final field613 J = 1L
 
 .method public <init> : (Ljava/lang/String;)V
     .code stack 2 locals 2

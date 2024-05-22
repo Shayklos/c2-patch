@@ -2,14 +2,14 @@
 .class final super org/lwjgl/e
 .super java/lang/Object
 .implements java/security/PrivilegedExceptionAction
-.field final synthetic do Ljava/lang/Class;
+.field final synthetic field2477 Ljava/lang/Class;
 
 .method <init> : (Ljava/lang/Class;)V
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field org/lwjgl/e do Ljava/lang/Class;
+L3:     putfield Field org/lwjgl/e field2477 Ljava/lang/Class;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    
@@ -19,17 +19,17 @@ L10:
 .method public bridge synthetic run : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/e break ()Ljava/lang/reflect/Method;
+L1:     invokevirtual Method org/lwjgl/e method1759 ()Ljava/lang/reflect/Method;
 L4:     areturn
 L5:     
     .end code
     .exceptions java/lang/Exception
 .end method
 
-.method public break : ()Ljava/lang/reflect/Method;
+.method public method1759 : ()Ljava/lang/reflect/Method;
     .code stack 7 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/e do Ljava/lang/Class;
+L1:     getfield Field org/lwjgl/e field2477 Ljava/lang/Class;
 L4:     ldc "showDocument"
 L6:     iconst_1
 L7:     dup
@@ -55,5 +55,5 @@ L28:
 .innerclasses
     org/lwjgl/e [0] [0] static
 .end innerclasses
-.enclosing method org/lwjgl/Sys const (Ljava/lang/String;)Z
+.enclosing method org/lwjgl/Sys method1892 (Ljava/lang/String;)Z
 .end class

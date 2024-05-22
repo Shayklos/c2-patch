@@ -2,29 +2,29 @@
 .class public final super UE
 .super java/lang/Object
 .implements M
-.field private static for Z
-.field private static final case F = 4.5e-1f
-.field private static byte Ljava/util/concurrent/ThreadPoolExecutor;
-.field private static "super" I
-.field private static int Ljava/util/ArrayList;
-.field private static final short Ljava/util/List;
-.field private static goto Ljava/util/Hashtable;
-.field private static final break Ljava/util/List;
-.field private static final long D = 8e0
-.field private static void F
+.field private static field780 Z
+.field private static final field781 F = 4.5e-1f
+.field private static field782 Ljava/util/concurrent/ThreadPoolExecutor;
+.field private static field783 I
+.field private static field784 Ljava/util/ArrayList;
+.field private static final field785 Ljava/util/List;
+.field private static field786 Ljava/util/Hashtable;
+.field private static final field787 Ljava/util/List;
+.field private static final field788 D = 8e0
+.field private static field789 F
 .field private static final try D = 5e0
-.field private static final const D = 3e0
+.field private static final field790 D = 3e0
 .field private static final new I = 1
-.field private static null I
+.field private static field791 I
 .field private static this LUE;
-.field private static char Z
-.field private static else D
-.field private static final "enum" F = 1e0f
-.field private static final do Ljava/util/List;
+.field private static field792 Z
+.field private static field793 D
+.field private static final field794 F = 1e0f
+.field private static final field795 Ljava/util/List;
 
 .method public static try : ()V
     .code stack 7 locals 4
-L0:     invokestatic Method jouvieje/bass/BassInit const ()V
+L0:     invokestatic Method jouvieje/bass/BassInit method1170 ()V
 L3:     getstatic Field java/lang/System out Ljava/io/PrintStream;
 L6:     new java/lang/StringBuilder
 L9:     dup
@@ -32,7 +32,7 @@ L10:    invokespecial Method java/lang/StringBuilder <init> ()V
 L13:    iconst_0
 L14:    ldc "BASS "
 L16:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
-L19:    invokestatic Method jouvieje/bass/i class ()I
+L19:    invokestatic Method jouvieje/bass/i method1221 ()I
 L22:    invokestatic Method java/lang/Integer toHexString (I)Ljava/lang/String;
 L25:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L28:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
@@ -70,7 +70,7 @@ L70:    pop2
 L71:    iand
 L72:    ifne L83
 L75:    aload_3
-L76:    invokestatic Method OC break ()J
+L76:    invokestatic Method OC method1016 ()J
 L79:    invokevirtual Method jouvieje/bass/utils/m asPointer (J)Ljouvieje/bass/utils/m;
 L82:    astore_3
 L83:    iload_1
@@ -86,8 +86,8 @@ L95:    dup
 L96:    pop2
 L97:    dup
 L98:    invokespecial Method jouvieje/bass/utils/m <init> ()V
-L101:   invokestatic Method jouvieje/bass/i break (IIILjouvieje/bass/utils/m;Ljouvieje/bass/utils/m;)Z
-L104:   invokestatic Method jouvieje/bass/i catch ()I
+L101:   invokestatic Method jouvieje/bass/i method1420 (IIILjouvieje/bass/utils/m;Ljouvieje/bass/utils/m;)Z
+L104:   invokestatic Method jouvieje/bass/i method1192 ()I
 L107:   istore_0
 L108:   pop
 L109:   iload_0
@@ -119,14 +119,14 @@ L169:   iconst_1
 L170:   dup
 L171:   pop2
 L172:   istore_1
-L173:   invokestatic Method org/lwjgl/opengl/Display implements ()V
+L173:   invokestatic Method org/lwjgl/opengl/Display method2989 ()V
 L176:   ldc2_w 25L
 L179:   invokestatic Method java/lang/Thread sleep (J)V
-L182:   invokestatic Method org/lwjgl/opengl/Display implements ()V
+L182:   invokestatic Method org/lwjgl/opengl/Display method2989 ()V
 L185:   iinc 2 1
 L188:   ldc2_w 25L
 L191:   invokestatic Method java/lang/Thread sleep (J)V
-L194:   invokestatic Method org/lwjgl/opengl/Display implements ()V
+L194:   invokestatic Method org/lwjgl/opengl/Display method2989 ()V
 L197:   iload_2
 L198:   goto L50
 L201:   athrow
@@ -159,7 +159,7 @@ L269:   sipush 10000
 L272:   iconst_1
 L273:   dup
 L274:   pop2
-L275:   invokestatic Method jouvieje/bass/i break (II)Z
+L275:   invokestatic Method jouvieje/bass/i method1562 (II)Z
 L278:   iconst_4
 L279:   iconst_1
 L280:   dup
@@ -168,31 +168,31 @@ L282:   sipush 5000
 L285:   iconst_1
 L286:   dup
 L287:   pop2
-L288:   invokestatic Method jouvieje/bass/i break (II)Z
+L288:   invokestatic Method jouvieje/bass/i method1562 (II)Z
 L291:   iconst_0
 L292:   iconst_1
 L293:   dup
 L294:   pop2
-L295:   putstatic Field UE char Z
+L295:   putstatic Field UE field792 Z
 L298:   iconst_m1
 L299:   iconst_1
 L300:   dup
 L301:   pop2
-L302:   putstatic Field UE null I
+L302:   putstatic Field UE field791 I
 L305:   iconst_m1
 L306:   iconst_1
 L307:   dup
 L308:   pop2
-L309:   putstatic Field UE "super" I
-L312:   invokestatic Method JB float ()F
-L315:   putstatic Field UE void F
+L309:   putstatic Field UE field783 I
+L312:   invokestatic Method JB method829 ()F
+L315:   putstatic Field UE field789 F
 L318:   ldc "aztech_-_cosmic.mo3"
 L320:   ldc "Aztech a.k.a. Toby"
 L322:   aconst_null
 L323:   ldc "Cosmic"
-L325:   invokestatic Method UE break (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+L325:   invokestatic Method UE method423 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 L328:   pop2
-L329:   getstatic Field UE int Ljava/util/ArrayList;
+L329:   getstatic Field UE field784 Ljava/util/ArrayList;
 L332:   iconst_0
 L333:   iconst_1
 L334:   dup
@@ -200,361 +200,361 @@ L335:   pop2
 L336:   invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L339:   checkcast java/util/concurrent/Future
 L342:   invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
-L347:   getstatic Field zg do Lzg;
+L347:   getstatic Field zg field466 Lzg;
 L350:   bipush 1
 L352:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L355:   getstatic Field Vf else LVf;
+L355:   getstatic Field Vf field363 LVf;
 L358:   fconst_1
-L359:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
-L362:   getstatic Field zg void Lzg;
+L359:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
+L362:   getstatic Field zg field460 Lzg;
 L365:   bipush 2
 L367:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L370:   getstatic Field Vf else LVf;
+L370:   getstatic Field Vf field363 LVf;
 L373:   fconst_1
-L374:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
-L377:   getstatic Field zg goto Lzg;
+L374:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
+L377:   getstatic Field zg field457 Lzg;
 L380:   bipush 3
 L382:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L385:   getstatic Field Vf else LVf;
+L385:   getstatic Field Vf field363 LVf;
 L388:   ldc 8e-1f
-L390:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
-L393:   getstatic Field zg null Lzg;
+L390:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
+L393:   getstatic Field zg field462 Lzg;
 L396:   bipush 4
 L398:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L401:   getstatic Field Vf else LVf;
+L401:   getstatic Field Vf field363 LVf;
 L404:   fconst_1
-L405:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
-L408:   getstatic Field zg char Lzg;
+L405:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
+L408:   getstatic Field zg field463 Lzg;
 L411:   bipush 5
 L413:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L416:   getstatic Field Vf else LVf;
+L416:   getstatic Field Vf field363 LVf;
 L419:   fconst_1
-L420:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
-L423:   getstatic Field zg const Lzg;
+L420:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
+L423:   getstatic Field zg field461 Lzg;
 L426:   bipush 6
 L428:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L431:   getstatic Field Vf else LVf;
+L431:   getstatic Field Vf field363 LVf;
 L434:   fconst_1
-L435:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
+L435:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
 L438:   getstatic Field zg new Lzg;
 L441:   bipush 7
 L443:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L446:   getstatic Field Vf else LVf;
+L446:   getstatic Field Vf field363 LVf;
 L449:   ldc 5e-1f
-L451:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
-L454:   getstatic Field zg "super" Lzg;
+L451:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
+L454:   getstatic Field zg field454 Lzg;
 L457:   bipush 8
 L459:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L462:   getstatic Field Vf else LVf;
+L462:   getstatic Field Vf field363 LVf;
 L465:   ldc 3e-1f
-L467:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
-L470:   getstatic Field zg else Lzg;
+L467:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
+L470:   getstatic Field zg field464 Lzg;
 L473:   bipush 9
 L475:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L478:   getstatic Field Vf else LVf;
+L478:   getstatic Field Vf field363 LVf;
 L481:   fconst_1
-L482:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
+L482:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
 L485:   getstatic Field zg this Lzg;
 L488:   bipush 10
 L490:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L493:   getstatic Field Vf else LVf;
+L493:   getstatic Field Vf field363 LVf;
 L496:   ldc 3.5e-1f
-L498:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
-L501:   getstatic Field zg "enum" Lzg;
+L498:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
+L501:   getstatic Field zg field465 Lzg;
 L504:   bipush 11
 L506:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L509:   getstatic Field Vf else LVf;
+L509:   getstatic Field Vf field363 LVf;
 L512:   ldc 2e-1f
-L514:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
-L517:   getstatic Field zg byte Lzg;
+L514:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
+L517:   getstatic Field zg field453 Lzg;
 L520:   bipush 12
 L522:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L525:   getstatic Field Vf else LVf;
+L525:   getstatic Field Vf field363 LVf;
 L528:   fconst_1
-L529:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
-L532:   getstatic Field zg short Lzg;
+L529:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
+L532:   getstatic Field zg field456 Lzg;
 L535:   bipush 13
 L537:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L540:   getstatic Field Vf else LVf;
+L540:   getstatic Field Vf field363 LVf;
 L543:   ldc 7.5e-1f
-L545:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
-L548:   getstatic Field zg long Lzg;
+L545:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
+L548:   getstatic Field zg field459 Lzg;
 L551:   bipush 14
 L553:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L556:   getstatic Field Vf do LVf;
+L556:   getstatic Field Vf field365 LVf;
 L559:   fconst_1
-L560:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
-L563:   getstatic Field zg break Lzg;
+L560:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
+L563:   getstatic Field zg field458 Lzg;
 L566:   bipush 15
 L568:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L571:   getstatic Field Vf do LVf;
+L571:   getstatic Field Vf field365 LVf;
 L574:   fconst_1
-L575:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
+L575:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
 L578:   getstatic Field zg try Lzg;
 L581:   bipush 16
 L583:   invokestatic Method UE getNthLine (I)Ljava/lang/String;
-L586:   getstatic Field Vf do LVf;
+L586:   getstatic Field Vf field365 LVf;
 L589:   fconst_1
-L590:   invokestatic Method UE break (Lzg;Ljava/lang/String;LVf;F)V
-L593:   ldc "04-808rmx.mo3"
-L595:   ldc "bay tremore"
-L597:   aconst_null
-L598:   ldc "04-808rmx"
-L600:   invokestatic Method UE break (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-L603:   ldc "11-kobnik.mo3"
-L605:   ldc "prob"
-L607:   aconst_null
-L608:   ldc "kob nik-bonus track"
-L610:   invokestatic Method UE break (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-L613:   ldc "a&s-hark.mo3"
-L615:   ldc_w "assign and salice"
-L618:   aconst_null
-L619:   ldc_w "harke"
-L622:   invokestatic Method UE break (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-L625:   ldc_w "agn-unle.mo3"
-L628:   ldc_w "assign and salice"
-L631:   aconst_null
-L632:   ldc_w "unleash"
-L635:   invokestatic Method UE break (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-L638:   ldc_w "ambience jungle.mo3"
-L641:   ldc_w "mortimer twang"
-L644:   aconst_null
-L645:   ldc_w "ambience jungle"
-L648:   invokestatic Method UE break (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-L651:   ldc_w "anita.mo3"
-L654:   ldc_w "mortimer twang"
-L657:   aconst_null
-L658:   ldc_w "anita"
-L661:   invokestatic Method UE break (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-L664:   ldc_w "atom.mo3"
-L667:   ldc_w "dreamfish"
-L670:   aconst_null
-L671:   ldc_w "atom-sphere"
-L674:   invokestatic Method UE break (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-L677:   ldc_w "bangormx.mo3"
-L680:   ldc "bay tremore"
-L682:   aconst_null
-L683:   ldc_w "bango (bt d&b remix)"
-L686:   invokestatic Method UE break (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-L689:   ldc_w "bonustrk.mo3"
-L692:   ldc_w "esa ruoho"
-L695:   ldc_w "http://www.lackluster.org/"
-L698:   ldc_w "untitled bonus track"
-L701:   invokestatic Method UE break (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
-L704:   ldc_w "c-crab.mo3"
-L707:   ldc_w "Cactus"
-L710:   aconst_null
-L711:   ldc_w "The Crab Temple (HT)"
-L714:   invokestatic Method UE break [_176]
-L717:   ldc_w "chatter.mo3"
-L720:   ldc_w "Bassline"
-L723:   aconst_null
-L724:   ldc_w "Chattering"
-L727:   invokestatic Method UE break [_176]
-L730:   ldc_w "drumbass.mo3"
-L733:   ldc_w "substance"
-L736:   aconst_null
-L737:   ldc_w "drum^bass_frenzie"
-L740:   invokestatic Method UE break [_176]
-L743:   ldc_w "echtzeit.mo3"
-L746:   ldc_w "Jazz/Haujobb"
-L749:   aconst_null
-L750:   ldc_w "echtzeit-rmx"
-L753:   invokestatic Method UE break [_176]
-L756:   ldc_w "fern.mo3"
-L759:   ldc_w "styl"
-L762:   aconst_null
-L763:   ldc_w "fern pollen"
-L766:   invokestatic Method UE break [_176]
-L769:   ldc_w "flow.mo3"
-L772:   ldc_w "mortimer twang"
-L775:   aconst_null
-L776:   ldc_w "flow"
-L779:   invokestatic Method UE break [_176]
-L782:   ldc_w "kri#g4e.mo3"
-L785:   ldc_w "krii"
-L788:   aconst_null
-L789:   ldc_w "gone forever"
-L792:   invokestatic Method UE break [_176]
-L795:   ldc_w "kri#simd.mo3"
-L798:   ldc_w "krii"
-L801:   aconst_null
-L802:   ldc_w "shapes in motion"
-L805:   invokestatic Method UE break [_176]
-L808:   ldc_w "lia.mo3"
-L811:   ldc_w "muffler"
-L814:   aconst_null
-L815:   ldc_w "lia"
-L818:   invokestatic Method UE break [_176]
-L821:   ldc_w "material.mo3"
-L824:   ldc_w "fender"
-L827:   aconst_null
-L828:   ldc_w "material flows"
-L831:   invokestatic Method UE break [_176]
-L834:   ldc_w "mtz_beha.mo3"
-L837:   ldc_w "mentz (1998)"
-L840:   aconst_null
-L841:   ldc_w "bread of haste"
-L844:   invokestatic Method UE break [_176]
-L847:   ldc_w "mtz_keep.mo3"
-L850:   ldc_w "mentz (1998)"
-L853:   aconst_null
-L854:   ldc_w "keepin' it kool"
-L857:   invokestatic Method UE break [_176]
-L860:   ldc_w "mtz_lash.mo3"
-L863:   ldc_w "mentz (1998)"
-L866:   aconst_null
-L867:   ldc_w "last shadow"
-L870:   invokestatic Method UE break [_176]
-L873:   ldc_w "mtz_onme.mo3"
-L876:   ldc_w "mentz (1998)"
-L879:   aconst_null
-L880:   ldc_w "On me"
-L883:   invokestatic Method UE break [_176]
-L886:   ldc_w "s-j9a.mo3"
-L889:   ldc_w "SS"
-L892:   aconst_null
-L893:   ldc_w "Jungle tune #1"
-L896:   invokestatic Method UE break [_176]
-L899:   ldc_w "sm-kalku.mo3"
-L902:   ldc_w "stereoman"
-L905:   aconst_null
-L906:   ldc_w "keen until"
-L909:   invokestatic Method UE break [_176]
-L912:   ldc_w "smoof.mo3"
-L915:   ldc_w "Mefis"
-L918:   aconst_null
-L919:   ldc_w "connection busy"
-L922:   invokestatic Method UE break [_176]
-L925:   ldc_w "steady.mo3"
-L928:   ldc "bay tremore"
-L930:   aconst_null
-L931:   ldc_w "rockin' steady"
-L934:   invokestatic Method UE break [_176]
-L937:   ldc_w "sweetkng.mo3"
-L940:   ldc_w "mortimer twang"
-L943:   aconst_null
-L944:   ldc_w "s-w-e-e-t king mix"
-L947:   invokestatic Method UE break [_176]
-L950:   ldc_w "tdrmix1.mo3"
-L953:   ldc_w "TOWERX"
-L956:   aconst_null
-L957:   ldc_w "Tokyo D. Rcds mix 1"
-L960:   invokestatic Method UE break [_176]
-L963:   ldc_w "true.mo3"
-L966:   ldc_w "mortimer twang"
-L969:   aconst_null
-L970:   ldc_w "true"
-L973:   invokestatic Method UE break [_176]
-L976:   ldc_w "twisted.mo3"
-L979:   ldc "bay tremore"
-L981:   aconst_null
-L982:   ldc_w "twisted"
-L985:   invokestatic Method UE break [_176]
-L988:   ldc_w "warm.mo3"
-L991:   ldc_w "dreamfish"
-L994:   aconst_null
-L995:   ldc_w "warm"
-L998:   invokestatic Method UE break [_176]
-L1001:  ldc_w "tema1_1.mo3"
-L1004:  ldc_w "Victor Vergara Lujan"
-L1007:  aconst_null
-L1008:  ldc_w "tema1_1"
-L1011:  invokestatic Method UE break [_176]
-L1014:  pop
-L1015:  iconst_1
-L1016:  dup
-L1017:  pop2
-L1018:  getstatic Field UE int Ljava/util/ArrayList;
-L1021:  invokevirtual Method java/util/ArrayList size ()I
-L1024:  iconst_1
-L1025:  dup
-L1026:  dup_x2
-L1027:  dup
-L1028:  pop2
-L1029:  isub
-L1030:  iconst_1
-L1031:  dup
-L1032:  dup
-L1033:  pop2
-L1034:  isub
-L1035:  iconst_4
-L1036:  iconst_1
+L590:   invokestatic Method UE method424 (Lzg;Ljava/lang/String;LVf;F)V
+L593:   ldc_w "04-808rmx.mo3"
+L596:   ldc_w "bay tremore"
+L599:   aconst_null
+L600:   ldc_w "04-808rmx"
+L603:   invokestatic Method UE method423 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+L606:   ldc_w "11-kobnik.mo3"
+L609:   ldc_w "prob"
+L612:   aconst_null
+L613:   ldc_w "kob nik-bonus track"
+L616:   invokestatic Method UE method423 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+L619:   ldc_w "a&s-hark.mo3"
+L622:   ldc_w "assign and salice"
+L625:   aconst_null
+L626:   ldc_w "harke"
+L629:   invokestatic Method UE method423 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+L632:   ldc_w "agn-unle.mo3"
+L635:   ldc_w "assign and salice"
+L638:   aconst_null
+L639:   ldc_w "unleash"
+L642:   invokestatic Method UE method423 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+L645:   ldc_w "ambience jungle.mo3"
+L648:   ldc_w "mortimer twang"
+L651:   aconst_null
+L652:   ldc_w "ambience jungle"
+L655:   invokestatic Method UE method423 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+L658:   ldc_w "anita.mo3"
+L661:   ldc_w "mortimer twang"
+L664:   aconst_null
+L665:   ldc_w "anita"
+L668:   invokestatic Method UE method423 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+L671:   ldc_w "atom.mo3"
+L674:   ldc_w "dreamfish"
+L677:   aconst_null
+L678:   ldc_w "atom-sphere"
+L681:   invokestatic Method UE method423 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+L684:   ldc_w "bangormx.mo3"
+L687:   ldc_w "bay tremore"
+L690:   aconst_null
+L691:   ldc_w "bango (bt d&b remix)"
+L694:   invokestatic Method UE method423 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+L697:   ldc_w "bonustrk.mo3"
+L700:   ldc_w "esa ruoho"
+L703:   ldc_w "http://www.lackluster.org/"
+L706:   ldc_w "untitled bonus track"
+L709:   invokestatic Method UE method423 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+L712:   ldc_w "c-crab.mo3"
+L715:   ldc_w "Cactus"
+L718:   aconst_null
+L719:   ldc_w "The Crab Temple (HT)"
+L722:   invokestatic Method UE method423 [_183]
+L725:   ldc_w "chatter.mo3"
+L728:   ldc_w "Bassline"
+L731:   aconst_null
+L732:   ldc_w "Chattering"
+L735:   invokestatic Method UE method423 [_183]
+L738:   ldc_w "drumbass.mo3"
+L741:   ldc_w "substance"
+L744:   aconst_null
+L745:   ldc_w "drum^bass_frenzie"
+L748:   invokestatic Method UE method423 [_183]
+L751:   ldc_w "echtzeit.mo3"
+L754:   ldc_w "Jazz/Haujobb"
+L757:   aconst_null
+L758:   ldc_w "echtzeit-rmx"
+L761:   invokestatic Method UE method423 [_183]
+L764:   ldc_w "fern.mo3"
+L767:   ldc_w "styl"
+L770:   aconst_null
+L771:   ldc_w "fern pollen"
+L774:   invokestatic Method UE method423 [_183]
+L777:   ldc_w "flow.mo3"
+L780:   ldc_w "mortimer twang"
+L783:   aconst_null
+L784:   ldc_w "flow"
+L787:   invokestatic Method UE method423 [_183]
+L790:   ldc_w "kri#g4e.mo3"
+L793:   ldc_w "krii"
+L796:   aconst_null
+L797:   ldc_w "gone forever"
+L800:   invokestatic Method UE method423 [_183]
+L803:   ldc_w "kri#simd.mo3"
+L806:   ldc_w "krii"
+L809:   aconst_null
+L810:   ldc_w "shapes in motion"
+L813:   invokestatic Method UE method423 [_183]
+L816:   ldc_w "lia.mo3"
+L819:   ldc_w "muffler"
+L822:   aconst_null
+L823:   ldc_w "lia"
+L826:   invokestatic Method UE method423 [_183]
+L829:   ldc_w "material.mo3"
+L832:   ldc_w "fender"
+L835:   aconst_null
+L836:   ldc_w "material flows"
+L839:   invokestatic Method UE method423 [_183]
+L842:   ldc_w "mtz_beha.mo3"
+L845:   ldc_w "mentz (1998)"
+L848:   aconst_null
+L849:   ldc_w "bread of haste"
+L852:   invokestatic Method UE method423 [_183]
+L855:   ldc_w "mtz_keep.mo3"
+L858:   ldc_w "mentz (1998)"
+L861:   aconst_null
+L862:   ldc_w "keepin' it kool"
+L865:   invokestatic Method UE method423 [_183]
+L868:   ldc_w "mtz_lash.mo3"
+L871:   ldc_w "mentz (1998)"
+L874:   aconst_null
+L875:   ldc_w "last shadow"
+L878:   invokestatic Method UE method423 [_183]
+L881:   ldc_w "mtz_onme.mo3"
+L884:   ldc_w "mentz (1998)"
+L887:   aconst_null
+L888:   ldc_w "On me"
+L891:   invokestatic Method UE method423 [_183]
+L894:   ldc_w "s-j9a.mo3"
+L897:   ldc_w "SS"
+L900:   aconst_null
+L901:   ldc_w "Jungle tune #1"
+L904:   invokestatic Method UE method423 [_183]
+L907:   ldc_w "sm-kalku.mo3"
+L910:   ldc_w "stereoman"
+L913:   aconst_null
+L914:   ldc_w "keen until"
+L917:   invokestatic Method UE method423 [_183]
+L920:   ldc_w "smoof.mo3"
+L923:   ldc_w "Mefis"
+L926:   aconst_null
+L927:   ldc_w "connection busy"
+L930:   invokestatic Method UE method423 [_183]
+L933:   ldc_w "steady.mo3"
+L936:   ldc_w "bay tremore"
+L939:   aconst_null
+L940:   ldc_w "rockin' steady"
+L943:   invokestatic Method UE method423 [_183]
+L946:   ldc_w "sweetkng.mo3"
+L949:   ldc_w "mortimer twang"
+L952:   aconst_null
+L953:   ldc_w "s-w-e-e-t king mix"
+L956:   invokestatic Method UE method423 [_183]
+L959:   ldc_w "tdrmix1.mo3"
+L962:   ldc_w "TOWERX"
+L965:   aconst_null
+L966:   ldc_w "Tokyo D. Rcds mix 1"
+L969:   invokestatic Method UE method423 [_183]
+L972:   ldc_w "true.mo3"
+L975:   ldc_w "mortimer twang"
+L978:   aconst_null
+L979:   ldc_w "true"
+L982:   invokestatic Method UE method423 [_183]
+L985:   ldc_w "twisted.mo3"
+L988:   ldc_w "bay tremore"
+L991:   aconst_null
+L992:   ldc_w "twisted"
+L995:   invokestatic Method UE method423 [_183]
+L998:   ldc_w "warm.mo3"
+L1001:  ldc_w "dreamfish"
+L1004:  aconst_null
+L1005:  ldc_w "warm"
+L1008:  invokestatic Method UE method423 [_183]
+L1011:  ldc_w "tema1_1.mo3"
+L1014:  ldc_w "Victor Vergara Lujan"
+L1017:  aconst_null
+L1018:  ldc_w "tema1_1"
+L1021:  invokestatic Method UE method423 [_183]
+L1024:  pop
+L1025:  iconst_1
+L1026:  dup
+L1027:  pop2
+L1028:  getstatic Field UE field784 Ljava/util/ArrayList;
+L1031:  invokevirtual Method java/util/ArrayList size ()I
+L1034:  iconst_1
+L1035:  dup
+L1036:  dup_x2
 L1037:  dup
 L1038:  pop2
-L1039:  anewarray java/util/List
-L1042:  iconst_1
-L1043:  dup
-L1044:  pop2
-L1045:  dup
-L1046:  iconst_0
-L1047:  iconst_1
-L1048:  dup
-L1049:  pop2
-L1050:  getstatic Field UE int Ljava/util/ArrayList;
-L1053:  aastore
-L1054:  dup
-L1055:  iconst_1
-L1056:  dup
-L1057:  dup
-L1058:  pop2
-L1059:  getstatic Field UE break Ljava/util/List;
-L1062:  aastore
-L1063:  dup
-L1064:  iconst_2
+L1039:  isub
+L1040:  iconst_1
+L1041:  dup
+L1042:  dup
+L1043:  pop2
+L1044:  isub
+L1045:  iconst_4
+L1046:  iconst_1
+L1047:  dup
+L1048:  pop2
+L1049:  anewarray java/util/List
+L1052:  iconst_1
+L1053:  dup
+L1054:  pop2
+L1055:  dup
+L1056:  iconst_0
+L1057:  iconst_1
+L1058:  dup
+L1059:  pop2
+L1060:  getstatic Field UE field784 Ljava/util/ArrayList;
+L1063:  aastore
+L1064:  dup
 L1065:  iconst_1
 L1066:  dup
-L1067:  pop2
-L1068:  getstatic Field UE do Ljava/util/List;
-L1071:  aastore
-L1072:  dup
-L1073:  iconst_3
-L1074:  iconst_1
-L1075:  dup
-L1076:  pop2
-L1077:  getstatic Field UE short Ljava/util/List;
-L1080:  aastore
-L1081:  invokestatic Method OC break (II[Ljava/util/List;)V
-L1084:  invokestatic Method jouvieje/bass/i catch ()I
-L1087:  ifeq L1126
-L1090:  new java/lang/RuntimeException
-L1093:  dup
-L1094:  new java/lang/StringBuilder
-L1097:  dup
-L1098:  invokespecial Method java/lang/StringBuilder <init> ()V
-L1101:  iconst_0
-L1102:  ldc_w "EPIC BASS FAIL! (a"
-L1105:  invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
-L1108:  invokestatic Method jouvieje/bass/i catch ()I
-L1111:  invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
-L1114:  ldc ")"
-L1116:  invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-L1119:  invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
-L1122:  invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/String;)V
-L1125:  athrow
-L1126:  return
-L1127:  
-        .attribute StackMap b'\x00\x0E\x00\x32\x00\x03\x01\x01\x01\x00\x01\x01\x00\x53\x00\x04\x01\x01\x01\x07\x00\x6F\x00\x00\x00\x7E\x00\x00\x00\x01\x07\x01\xB1\x00\x7F\x00\x04\x01\x01\x01\x07\x00\x6F\x00\x00\x00\x9C\x00\x04\x01\x01\x01\x07\x00\x6F\x00\x00\x00\x9D\x00\x04\x01\x01\x01\x07\x00\x6F\x00\x01\x01\x00\xAD\x00\x04\x01\x01\x01\x07\x00\x6F\x00\x00\x00\xC9\x00\x00\x00\x01\x07\x01\xB1\x00\xCA\x00\x03\x01\x01\x01\x00\x00\x00\xCB\x00\x03\x01\x01\x01\x00\x01\x01\x00\xE4\x00\x03\x01\x01\x01\x00\x00\x00\xE7\x00\x03\x01\x01\x01\x00\x00\x01\x08\x00\x03\x01\x01\x01\x00\x00\x04\x66\x00\x03\x01\x01\x01\x00\x00'
+L1067:  dup
+L1068:  pop2
+L1069:  getstatic Field UE field787 Ljava/util/List;
+L1072:  aastore
+L1073:  dup
+L1074:  iconst_2
+L1075:  iconst_1
+L1076:  dup
+L1077:  pop2
+L1078:  getstatic Field UE field795 Ljava/util/List;
+L1081:  aastore
+L1082:  dup
+L1083:  iconst_3
+L1084:  iconst_1
+L1085:  dup
+L1086:  pop2
+L1087:  getstatic Field UE field785 Ljava/util/List;
+L1090:  aastore
+L1091:  invokestatic Method OC method1002 (II[Ljava/util/List;)V
+L1094:  invokestatic Method jouvieje/bass/i method1192 ()I
+L1097:  ifeq L1136
+L1100:  new java/lang/RuntimeException
+L1103:  dup
+L1104:  new java/lang/StringBuilder
+L1107:  dup
+L1108:  invokespecial Method java/lang/StringBuilder <init> ()V
+L1111:  iconst_0
+L1112:  ldc_w "EPIC BASS FAIL! (a"
+L1115:  invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
+L1118:  invokestatic Method jouvieje/bass/i method1192 ()I
+L1121:  invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
+L1124:  ldc ")"
+L1126:  invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+L1129:  invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
+L1132:  invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/String;)V
+L1135:  athrow
+L1136:  return
+L1137:  
+        .attribute StackMap b'\x00\x0E\x00\x32\x00\x03\x01\x01\x01\x00\x01\x01\x00\x53\x00\x04\x01\x01\x01\x07\x00\x70\x00\x00\x00\x7E\x00\x00\x00\x01\x07\x00\x85\x00\x7F\x00\x04\x01\x01\x01\x07\x00\x70\x00\x00\x00\x9C\x00\x04\x01\x01\x01\x07\x00\x70\x00\x00\x00\x9D\x00\x04\x01\x01\x01\x07\x00\x70\x00\x01\x01\x00\xAD\x00\x04\x01\x01\x01\x07\x00\x70\x00\x00\x00\xC9\x00\x00\x00\x01\x07\x00\x85\x00\xCA\x00\x03\x01\x01\x01\x00\x00\x00\xCB\x00\x03\x01\x01\x01\x00\x01\x01\x00\xE4\x00\x03\x01\x01\x01\x00\x00\x00\xE7\x00\x03\x01\x01\x01\x00\x00\x01\x08\x00\x03\x01\x01\x01\x00\x00\x04\x70\x00\x03\x01\x01\x01\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method
 
-.method public static break : (I)V
+.method public static method14 : (I)V
     .code stack 6 locals 2
         .catch java/lang/Exception from L0 to L228 using L230
-L0:     getstatic Field UE "super" I
+L0:     getstatic Field UE field783 I
 L3:     iconst_m1
 L4:     iconst_1
 L5:     dup
 L6:     pop2
 L7:     if_icmpeq L56
-L10:    getstatic Field UE int Ljava/util/ArrayList;
-L13:    getstatic Field UE "super" I
+L10:    getstatic Field UE field784 Ljava/util/ArrayList;
+L13:    getstatic Field UE field783 I
 L16:    invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L19:    checkcast java/util/concurrent/Future
 L22:    invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L27:    checkcast Dc
-L30:    getfield Field Dc "enum" Ljava/lang/Object;
+L30:    getfield Field Dc field1793 Ljava/lang/Object;
 L33:    checkcast jouvieje/bass/structures/b
 L36:    invokevirtual Method jouvieje/bass/structures/b asInt ()I
 L39:    iconst_2
@@ -566,21 +566,21 @@ L46:    sipush 1000
 L49:    iconst_1
 L50:    dup
 L51:    pop2
-L52:    invokestatic Method jouvieje/bass/i break (IIFI)Z
+L52:    invokestatic Method jouvieje/bass/i method1488 (IIFI)Z
 L55:    pop
-L56:    getstatic Field UE null I
+L56:    getstatic Field UE field791 I
 L59:    iconst_m1
 L60:    iconst_1
 L61:    dup
 L62:    pop2
 L63:    if_icmpeq L112
-L66:    getstatic Field UE int Ljava/util/ArrayList;
-L69:    getstatic Field UE null I
+L66:    getstatic Field UE field784 Ljava/util/ArrayList;
+L69:    getstatic Field UE field791 I
 L72:    invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L75:    checkcast java/util/concurrent/Future
 L78:    invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L83:    checkcast Dc
-L86:    getfield Field Dc "enum" Ljava/lang/Object;
+L86:    getfield Field Dc field1793 Ljava/lang/Object;
 L89:    checkcast jouvieje/bass/structures/b
 L92:    invokevirtual Method jouvieje/bass/structures/b asInt ()I
 L95:    iconst_2
@@ -592,24 +592,24 @@ L102:   sipush 1000
 L105:   iconst_1
 L106:   dup
 L107:   pop2
-L108:   invokestatic Method jouvieje/bass/i break (IIFI)Z
+L108:   invokestatic Method jouvieje/bass/i method1488 (IIFI)Z
 L111:   pop
 L112:   iconst_0
 L113:   iconst_1
 L114:   dup
 L115:   pop2
-L116:   putstatic Field UE for Z
+L116:   putstatic Field UE field780 Z
 L119:   iconst_0
 L120:   iconst_1
 L121:   dup
 L122:   pop2
-L123:   putstatic Field UE char Z
+L123:   putstatic Field UE field792 Z
 L126:   iconst_m1
 L127:   iconst_1
 L128:   dup
 L129:   pop2
-L130:   putstatic Field UE "super" I
-L133:   getstatic Field UE int Ljava/util/ArrayList;
+L130:   putstatic Field UE field783 I
+L133:   getstatic Field UE field784 Ljava/util/ArrayList;
 L136:   invokevirtual Method java/util/ArrayList size ()I
 L139:   iconst_1
 L140:   dup
@@ -618,39 +618,39 @@ L142:   pop2
 L143:   isub
 L144:   iload_0
 L145:   iadd
-L146:   putstatic Field UE null I
-L149:   getstatic Field UE int Ljava/util/ArrayList;
-L152:   getstatic Field UE null I
+L146:   putstatic Field UE field791 I
+L149:   getstatic Field UE field784 Ljava/util/ArrayList;
+L152:   getstatic Field UE field791 I
 L155:   invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L158:   checkcast java/util/concurrent/Future
 L161:   invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L166:   checkcast Dc
-L169:   getfield Field Dc "enum" Ljava/lang/Object;
+L169:   getfield Field Dc field1793 Ljava/lang/Object;
 L172:   checkcast jouvieje/bass/structures/b
 L175:   invokevirtual Method jouvieje/bass/structures/b asInt ()I
 L178:   iconst_2
 L179:   iconst_1
 L180:   dup
 L181:   pop2
-L182:   getstatic Field UE void F
+L182:   getstatic Field UE field789 F
 L185:   fconst_1
 L186:   fmul
-L187:   invokestatic Method jouvieje/bass/i else (IIF)Z
+L187:   invokestatic Method jouvieje/bass/i method1536 (IIF)Z
 L190:   pop
-L191:   getstatic Field UE int Ljava/util/ArrayList;
-L194:   getstatic Field UE null I
+L191:   getstatic Field UE field784 Ljava/util/ArrayList;
+L194:   getstatic Field UE field791 I
 L197:   invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L200:   checkcast java/util/concurrent/Future
 L203:   invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L208:   checkcast Dc
-L211:   getfield Field Dc "enum" Ljava/lang/Object;
+L211:   getfield Field Dc field1793 Ljava/lang/Object;
 L214:   checkcast jouvieje/bass/structures/b
 L217:   invokevirtual Method jouvieje/bass/structures/b asInt ()I
 L220:   iconst_1
 L221:   dup
 L222:   dup
 L223:   pop2
-L224:   invokestatic Method jouvieje/bass/i break (IZ)Z
+L224:   invokestatic Method jouvieje/bass/i method1483 (IZ)Z
 L227:   pop
 L228:   return
 L229:   athrow
@@ -659,7 +659,7 @@ L231:   aload_1
 L232:   invokevirtual Method java/lang/Exception printStackTrace ()V
 L235:   return
 L236:   
-        .attribute StackMap b'\x00\x04\x00\x38\x00\x01\x01\x00\x00\x00\x70\x00\x01\x01\x00\x00\x00\xE5\x00\x00\x00\x01\x07\x01\xB1\x00\xE6\x00\x01\x01\x00\x01\x07\x00\x3E'
+        .attribute StackMap b'\x00\x04\x00\x38\x00\x01\x01\x00\x00\x00\x70\x00\x01\x01\x00\x00\x00\xE5\x00\x00\x00\x01\x07\x00\x85\x00\xE6\x00\x01\x01\x00\x01\x07\x00\x3E'
     .end code
 .end method
 
@@ -678,12 +678,12 @@ L20:
     .end code
 .end method
 
-.method public static goto : ()Ljava/lang/String;
+.method public static method420 : ()Ljava/lang/String;
     .code stack 4 locals 3
 L0:     aconst_null
 L1:     astore_0
-L2:     invokestatic Method jouvieje/bass/BassInit const ()V
-L5:     invokestatic Method jouvieje/bass/structures/T const ()Ljouvieje/bass/structures/T;
+L2:     invokestatic Method jouvieje/bass/BassInit method1170 ()V
+L5:     invokestatic Method jouvieje/bass/structures/T method1371 ()Ljouvieje/bass/structures/T;
 L8:     astore_1
 L9:     iconst_1
 L10:    dup
@@ -692,10 +692,10 @@ L12:    pop2
 L13:    dup
 L14:    istore_2
 L15:    aload_1
-L16:    invokestatic Method jouvieje/bass/i break (ILjouvieje/bass/structures/T;)Z
+L16:    invokestatic Method jouvieje/bass/i method1528 (ILjouvieje/bass/structures/T;)Z
 L19:    ifeq L72
 L22:    aload_1
-L23:    invokevirtual Method jouvieje/bass/structures/T short ()I
+L23:    invokevirtual Method jouvieje/bass/structures/T method1336 ()I
 L26:    iconst_2
 L27:    iconst_1
 L28:    dup
@@ -709,7 +709,7 @@ L41:    iconst_0
 L42:    ldc_w "Default: "
 L45:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
 L48:    aload_1
-L49:    invokevirtual Method jouvieje/bass/structures/T float ()Ljava/lang/String;
+L49:    invokevirtual Method jouvieje/bass/structures/T method1269 ()Ljava/lang/String;
 L52:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L55:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L58:    dup
@@ -727,7 +727,7 @@ L77:    dup
 L78:    dup
 L79:    pop2
 L80:    aload_1
-L81:    invokestatic Method jouvieje/bass/i break (ILjouvieje/bass/structures/T;)Z
+L81:    invokestatic Method jouvieje/bass/i method1528 (ILjouvieje/bass/structures/T;)Z
 L84:    ifeq L112
 L87:    new java/lang/StringBuilder
 L90:    dup
@@ -736,64 +736,64 @@ L94:    iconst_0
 L95:    ldc_w "First: "
 L98:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
 L101:   aload_1
-L102:   invokevirtual Method jouvieje/bass/structures/T float ()Ljava/lang/String;
+L102:   invokevirtual Method jouvieje/bass/structures/T method1269 ()Ljava/lang/String;
 L105:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L108:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L111:   astore_0
 L112:   aload_1
-L113:   invokevirtual Method jouvieje/bass/structures/T else ()V
+L113:   invokevirtual Method jouvieje/bass/structures/T method1183 ()V
 L116:   aload_0
 L117:   areturn
 L118:   
-        .attribute StackMap b'\x00\x07\x00\x0F\x00\x03\x05\x07\x01\xD1\x01\x00\x01\x01\x00\x3F\x00\x00\x00\x01\x07\x01\xB1\x00\x40\x00\x03\x05\x07\x01\xD1\x01\x00\x00\x00\x47\x00\x00\x00\x01\x07\x01\xB1\x00\x48\x00\x03\x05\x07\x01\xD1\x01\x00\x00\x00\x49\x00\x03\x07\x01\xE3\x07\x01\xD1\x01\x00\x01\x07\x01\xE3\x00\x70\x00\x03\x07\x01\xE3\x07\x01\xD1\x01\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x0F\x00\x03\x05\x07\x01\xED\x01\x00\x01\x01\x00\x3F\x00\x00\x00\x01\x07\x00\x85\x00\x40\x00\x03\x05\x07\x01\xED\x01\x00\x00\x00\x47\x00\x00\x00\x01\x07\x00\x85\x00\x48\x00\x03\x05\x07\x01\xED\x01\x00\x00\x00\x49\x00\x03\x07\x01\xFF\x07\x01\xED\x01\x00\x01\x07\x01\xFF\x00\x70\x00\x03\x07\x01\xFF\x07\x01\xED\x01\x00\x00'
     .end code
 .end method
 
-.method public static do : ()V
+.method public static method89 : ()V
     .code stack 5 locals 4
-L0:     getstatic Field UE else D
+L0:     getstatic Field UE field793 D
 L3:     dconst_0
 L4:     dcmpl
 L5:     ifeq L10
 L8:     return
 L9:     athrow
         .catch java/lang/Exception from L10 to L149 using L151
-L10:    getstatic Field UE int Ljava/util/ArrayList;
-L13:    getstatic Field UE null I
+L10:    getstatic Field UE field784 Ljava/util/ArrayList;
+L13:    getstatic Field UE field791 I
 L16:    invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L19:    checkcast java/util/concurrent/Future
 L22:    invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L27:    checkcast Dc
-L30:    getfield Field Dc "enum" Ljava/lang/Object;
+L30:    getfield Field Dc field1793 Ljava/lang/Object;
 L33:    checkcast jouvieje/bass/structures/b
 L36:    invokevirtual Method jouvieje/bass/structures/b asInt ()I
-L39:    getstatic Field UE int Ljava/util/ArrayList;
-L42:    getstatic Field UE null I
+L39:    getstatic Field UE field784 Ljava/util/ArrayList;
+L42:    getstatic Field UE field791 I
 L45:    invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L48:    checkcast java/util/concurrent/Future
 L51:    invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L56:    checkcast Dc
-L59:    getfield Field Dc "enum" Ljava/lang/Object;
+L59:    getfield Field Dc field1793 Ljava/lang/Object;
 L62:    checkcast jouvieje/bass/structures/b
 L65:    invokevirtual Method jouvieje/bass/structures/b asInt ()I
 L68:    iconst_0
 L69:    iconst_1
 L70:    dup
 L71:    pop2
-L72:    invokestatic Method jouvieje/bass/i for (II)J
-L75:    invokestatic Method jouvieje/bass/i break (IJ)D
+L72:    invokestatic Method jouvieje/bass/i method1474 (II)J
+L75:    invokestatic Method jouvieje/bass/i method1433 (IJ)D
 L78:    dstore_0
-L79:    getstatic Field UE int Ljava/util/ArrayList;
-L82:    getstatic Field UE null I
+L79:    getstatic Field UE field784 Ljava/util/ArrayList;
+L82:    getstatic Field UE field791 I
 L85:    invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L88:    checkcast java/util/concurrent/Future
 L91:    invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L96:    checkcast Dc
-L99:    getfield Field Dc do Ljava/lang/Object;
+L99:    getfield Field Dc field1794 Ljava/lang/Object;
 L102:   checkcast java/lang/Double
 L105:   invokevirtual Method java/lang/Double doubleValue ()D
 L108:   dstore_2
-L109:   getstatic Field UE for Z
+L109:   getstatic Field UE field780 Z
 L112:   ifeq L123
 L115:   dload_2
 L116:   ldc2_w 3.6e1
@@ -806,13 +806,13 @@ L128:   dload_0
 L129:   dsub
 L130:   ldc2_w 5e0
 L133:   dsub
-L134:   putstatic Field UE else D
-L137:   getstatic Field UE else D
+L134:   putstatic Field UE field793 D
+L137:   getstatic Field UE field793 D
 L140:   dconst_0
 L141:   dcmpg
 L142:   ifge L161
 L145:   dconst_0
-L146:   putstatic Field UE else D
+L146:   putstatic Field UE field793 D
 L149:   return
 L150:   athrow
 L151:   astore_0
@@ -823,30 +823,30 @@ L157:   invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/Throw
 L160:   athrow
 L161:   return
 L162:   
-        .attribute StackMap b'\x00\x06\x00\x09\x00\x00\x00\x01\x07\x01\xB1\x00\x0A\x00\x00\x00\x00\x00\x7B\x00\x02\x03\x03\x00\x00\x00\x96\x00\x00\x00\x01\x07\x01\xB1\x00\x97\x00\x00\x00\x01\x07\x00\x3E\x00\xA1\x00\x02\x03\x03\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x09\x00\x00\x00\x01\x07\x00\x85\x00\x0A\x00\x00\x00\x00\x00\x7B\x00\x02\x03\x03\x00\x00\x00\x96\x00\x00\x00\x01\x07\x00\x85\x00\x97\x00\x00\x00\x01\x07\x00\x3E\x00\xA1\x00\x02\x03\x03\x00\x00'
     .end code
 .end method
 
-.method public static for : ()V
+.method public static method61 : ()V
     .code stack 6 locals 1
 L0:     iconst_0
 L1:     iconst_1
 L2:     dup
 L3:     pop2
-L4:     putstatic Field UE null I
+L4:     putstatic Field UE field791 I
 L7:     iconst_1
 L8:     dup
 L9:     dup
 L10:    pop2
-L11:    putstatic Field UE for Z
+L11:    putstatic Field UE field780 Z
         .catch java/lang/Exception from L14 to L84 using L86
-L14:    getstatic Field UE int Ljava/util/ArrayList;
-L17:    getstatic Field UE null I
+L14:    getstatic Field UE field784 Ljava/util/ArrayList;
+L17:    getstatic Field UE field791 I
 L20:    invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L23:    checkcast java/util/concurrent/Future
 L26:    invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L31:    checkcast Dc
-L34:    getfield Field Dc "enum" Ljava/lang/Object;
+L34:    getfield Field Dc field1793 Ljava/lang/Object;
 L37:    checkcast jouvieje/bass/structures/b
 L40:    dup
 L41:    astore_0
@@ -855,24 +855,24 @@ L45:    iconst_2
 L46:    iconst_1
 L47:    dup
 L48:    pop2
-L49:    getstatic Field UE void F
+L49:    getstatic Field UE field789 F
 L52:    ldc 4.5e-1f
 L54:    fmul
-L55:    invokestatic Method jouvieje/bass/i else (IIF)Z
+L55:    invokestatic Method jouvieje/bass/i method1536 (IIF)Z
 L58:    aload_0
 L59:    invokevirtual Method jouvieje/bass/structures/b asInt ()I
-L62:    invokestatic Method jouvieje/bass/i int (I)Z
+L62:    invokestatic Method jouvieje/bass/i method1461 (I)Z
 L65:    aload_0
 L66:    invokevirtual Method jouvieje/bass/structures/b asInt ()I
 L69:    iconst_1
 L70:    dup
 L71:    dup
 L72:    pop2
-L73:    invokestatic Method jouvieje/bass/i break (IZ)Z
+L73:    invokestatic Method jouvieje/bass/i method1483 (IZ)Z
 L76:    pop
 L77:    pop2
 L78:    invokestatic Method UE this ()LUE;
-L81:    invokestatic Method ib break (LM;)V
+L81:    invokestatic Method ib method1156 (LM;)V
 L84:    return
 L85:    athrow
 L86:    astore_0
@@ -883,7 +883,7 @@ L92:    invokespecial Method java/lang/RuntimeException <init> (Ljava/lang/Throw
 L95:    athrow
 L96:    athrow
 L97:    
-        .attribute StackMap b'\x00\x03\x00\x55\x00\x00\x00\x01\x07\x01\xB1\x00\x56\x00\x00\x00\x01\x07\x00\x3E\x00\x60\x00\x00\x00\x01\x07\x01\xB1'
+        .attribute StackMap b'\x00\x03\x00\x55\x00\x00\x00\x01\x07\x00\x85\x00\x56\x00\x00\x00\x01\x07\x00\x3E\x00\x60\x00\x00\x00\x01\x07\x00\x85'
     .end code
 .end method
 
@@ -908,36 +908,36 @@ L23:    new bf
 L26:    dup
 L27:    invokespecial Method bf <init> ()V
 L30:    invokespecial Method java/util/concurrent/ThreadPoolExecutor <init> (IIJLjava/util/concurrent/TimeUnit;Ljava/util/concurrent/BlockingQueue;Ljava/util/concurrent/ThreadFactory;)V
-L33:    putstatic Field UE byte Ljava/util/concurrent/ThreadPoolExecutor;
+L33:    putstatic Field UE field782 Ljava/util/concurrent/ThreadPoolExecutor;
 L36:    new java/util/Hashtable
 L39:    dup
 L40:    invokespecial Method java/util/Hashtable <init> ()V
-L43:    putstatic Field UE goto Ljava/util/Hashtable;
+L43:    putstatic Field UE field786 Ljava/util/Hashtable;
 L46:    new java/util/ArrayList
 L49:    dup
 L50:    invokespecial Method java/util/ArrayList <init> ()V
-L53:    putstatic Field UE int Ljava/util/ArrayList;
+L53:    putstatic Field UE field784 Ljava/util/ArrayList;
 L56:    new java/util/ArrayList
 L59:    dup
 L60:    invokespecial Method java/util/ArrayList <init> ()V
-L63:    putstatic Field UE break Ljava/util/List;
+L63:    putstatic Field UE field787 Ljava/util/List;
 L66:    new java/util/ArrayList
 L69:    dup
 L70:    invokespecial Method java/util/ArrayList <init> ()V
-L73:    putstatic Field UE do Ljava/util/List;
+L73:    putstatic Field UE field795 Ljava/util/List;
 L76:    new java/util/ArrayList
 L79:    dup
 L80:    invokespecial Method java/util/ArrayList <init> ()V
-L83:    putstatic Field UE short Ljava/util/List;
+L83:    putstatic Field UE field785 Ljava/util/List;
 L86:    return
 L87:    
     .end code
 .end method
 
-.method public static catch : ()Ljava/lang/String;
+.method public static method421 : ()Ljava/lang/String;
     .code stack 2 locals 0
-L0:     getstatic Field UE short Ljava/util/List;
-L3:     getstatic Field UE null I
+L0:     getstatic Field UE field785 Ljava/util/List;
+L3:     getstatic Field UE field791 I
 L6:     invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
 L11:    checkcast java/lang/String
 L14:    areturn
@@ -945,7 +945,7 @@ L15:
     .end code
 .end method
 
-.method public static break : (Lzg;F)V
+.method public static method422 : (Lzg;F)V
     .code stack 5 locals 4
 L0:     fload_1
 L1:     fconst_0
@@ -954,7 +954,7 @@ L3:     ifgt L8
 L6:     return
 L7:     athrow
         .catch java/lang/Exception from L8 to L38 using L43
-L8:     getstatic Field UE goto Ljava/util/Hashtable;
+L8:     getstatic Field UE field786 Ljava/util/Hashtable;
 L11:    aload_0
 L12:    invokevirtual Method java/util/Hashtable get (Ljava/lang/Object;)Ljava/lang/Object;
 L15:    checkcast java/util/concurrent/Future
@@ -964,7 +964,7 @@ L26:    dup
 L27:    astore_2
 L28:    ifnull L38
 L31:    aload_2
-L32:    getfield Field Qf "enum" LVf;
+L32:    getfield Field Qf field2062 LVf;
 L35:    ifnonnull L45
 L38:    return
 L39:    nop
@@ -975,12 +975,12 @@ L43:    astore_3
 L44:    return
 L45:    fload_1
 L46:    aload_2
-L47:    getfield Field Qf else F
+L47:    getfield Field Qf field2061 F
 L50:    fmul
 L51:    fstore_3
-L52:    getstatic Field pg do [I
+L52:    getstatic Field pg field5772 [I
 L55:    aload_2
-L56:    getfield Field Qf "enum" LVf;
+L56:    getfield Field Qf field2062 LVf;
 L59:    invokevirtual Method Vf ordinal ()I
 L62:    iaload
 L63:    lookupswitch
@@ -990,23 +990,23 @@ L63:    lookupswitch
 L88:    fload_3
 L89:    iconst_0
 L90:    ifne L102
-L93:    invokestatic Method JB catch ()F
+L93:    invokestatic Method JB method825 ()F
 L96:    fmul
 L97:    fstore_3
 L98:    aload_2
 L99:    goto L112
 L102:   goto L89
 L105:   fload_3
-L106:   invokestatic Method JB goto ()F
+L106:   invokestatic Method JB method818 ()F
 L109:   fmul
 L110:   fstore_3
 L111:   aload_2
-L112:   getfield Field Qf do Ljouvieje/bass/structures/E;
+L112:   getfield Field Qf field2063 Ljouvieje/bass/structures/E;
 L115:   iconst_0
 L116:   iconst_1
 L117:   dup
 L118:   pop2
-L119:   invokestatic Method jouvieje/bass/i break (Ljouvieje/bass/structures/E;Z)Ljouvieje/bass/structures/J;
+L119:   invokestatic Method jouvieje/bass/i method1591 (Ljouvieje/bass/structures/E;Z)Ljouvieje/bass/structures/J;
 L122:   dup
 L123:   astore_1
 L124:   invokevirtual Method jouvieje/bass/structures/J asInt ()I
@@ -1017,26 +1017,26 @@ L130:   pop2
 L131:   fload_3
 L132:   fconst_0
 L133:   fconst_1
-L134:   invokestatic Method OC else (FFF)F
-L137:   invokestatic Method jouvieje/bass/i else (IIF)Z
+L134:   invokestatic Method OC method1001 (FFF)F
+L137:   invokestatic Method jouvieje/bass/i method1536 (IIF)Z
 L140:   aload_1
 L141:   invokevirtual Method jouvieje/bass/structures/J asInt ()I
 L144:   iconst_1
 L145:   dup
 L146:   dup
 L147:   pop2
-L148:   invokestatic Method jouvieje/bass/i break (IZ)Z
+L148:   invokestatic Method jouvieje/bass/i method1483 (IZ)Z
 L151:   pop2
 L152:   return
 L153:   
-        .attribute StackMap b'\x00\x0C\x00\x07\x00\x00\x00\x01\x07\x01\xB1\x00\x08\x00\x02\x07\x00\x16\x02\x00\x00\x00\x26\x00\x03\x07\x00\x16\x02\x07\x00\x0A\x00\x00\x00\x27\x00\x00\x00\x01\x07\x01\xB1\x00\x2B\x00\x02\x07\x00\x16\x02\x00\x01\x07\x00\x3E\x00\x2D\x00\x03\x07\x00\x16\x02\x07\x00\x0A\x00\x00\x00\x58\x00\x04\x07\x00\x16\x02\x07\x00\x0A\x02\x00\x00\x00\x59\x00\x04\x07\x00\x16\x02\x07\x00\x0A\x02\x00\x01\x02\x00\x66\x00\x04\x07\x00\x16\x02\x07\x00\x0A\x02\x00\x01\x02\x00\x69\x00\x04\x07\x00\x16\x02\x07\x00\x0A\x02\x00\x00\x00\x6F\x00\x04\x07\x00\x16\x02\x07\x00\x0A\x02\x00\x00\x00\x70\x00\x04\x07\x00\x16\x02\x07\x00\x0A\x02\x00\x01\x07\x00\x0A'
+        .attribute StackMap b'\x00\x0C\x00\x07\x00\x00\x00\x01\x07\x00\x85\x00\x08\x00\x02\x07\x00\x16\x02\x00\x00\x00\x26\x00\x03\x07\x00\x16\x02\x07\x00\x0A\x00\x00\x00\x27\x00\x00\x00\x01\x07\x00\x85\x00\x2B\x00\x02\x07\x00\x16\x02\x00\x01\x07\x00\x3E\x00\x2D\x00\x03\x07\x00\x16\x02\x07\x00\x0A\x00\x00\x00\x58\x00\x04\x07\x00\x16\x02\x07\x00\x0A\x02\x00\x00\x00\x59\x00\x04\x07\x00\x16\x02\x07\x00\x0A\x02\x00\x01\x02\x00\x66\x00\x04\x07\x00\x16\x02\x07\x00\x0A\x02\x00\x01\x02\x00\x69\x00\x04\x07\x00\x16\x02\x07\x00\x0A\x02\x00\x00\x00\x6F\x00\x04\x07\x00\x16\x02\x07\x00\x0A\x02\x00\x00\x00\x70\x00\x04\x07\x00\x16\x02\x07\x00\x0A\x02\x00\x01\x07\x00\x0A'
     .end code
 .end method
 
-.method public static float : ()Ljava/lang/String;
+.method public static method356 : ()Ljava/lang/String;
     .code stack 2 locals 0
-L0:     getstatic Field UE break Ljava/util/List;
-L3:     getstatic Field UE null I
+L0:     getstatic Field UE field787 Ljava/util/List;
+L3:     getstatic Field UE field791 I
 L6:     invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
 L11:    checkcast java/lang/String
 L14:    areturn
@@ -1044,19 +1044,19 @@ L15:
     .end code
 .end method
 
-.method private static break : [_176]
+.method private static method423 : [_183]
     .code stack 8 locals 4
-L0:     getstatic Field UE break Ljava/util/List;
+L0:     getstatic Field UE field787 Ljava/util/List;
 L3:     aload_1
 L4:     invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L9:     getstatic Field UE do Ljava/util/List;
+L9:     getstatic Field UE field795 Ljava/util/List;
 L12:    aload_3
 L13:    invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L18:    getstatic Field UE short Ljava/util/List;
+L18:    getstatic Field UE field785 Ljava/util/List;
 L21:    aload_2
 L22:    invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L27:    getstatic Field UE int Ljava/util/ArrayList;
-L30:    getstatic Field UE byte Ljava/util/concurrent/ThreadPoolExecutor;
+L27:    getstatic Field UE field784 Ljava/util/ArrayList;
+L30:    getstatic Field UE field782 Ljava/util/concurrent/ThreadPoolExecutor;
 L33:    new Ug
 L36:    dup
 L37:    aload_0
@@ -1070,7 +1070,7 @@ L50:
     .end code
 .end method
 
-.method public break : ()Z
+.method public method227 : ()Z
     .code stack 3 locals 1
 L0:     iconst_0
 L1:     iconst_1
@@ -1082,11 +1082,11 @@ L5:
     .exceptions java/lang/Exception
 .end method
 
-.method private static break : (Lzg;Ljava/lang/String;LVf;F)V
+.method private static method424 : (Lzg;Ljava/lang/String;LVf;F)V
     .code stack 8 locals 4
-L0:     getstatic Field UE goto Ljava/util/Hashtable;
+L0:     getstatic Field UE field786 Ljava/util/Hashtable;
 L3:     aload_0
-L4:     getstatic Field UE byte Ljava/util/concurrent/ThreadPoolExecutor;
+L4:     getstatic Field UE field782 Ljava/util/concurrent/ThreadPoolExecutor;
 L7:     new Cf
 L10:    dup
 L11:    aload_1
@@ -1102,7 +1102,7 @@ L25:
     .exceptions java/io/IOException
 .end method
 
-.method public static short : ()Ljava/util/Map;
+.method public static method425 : ()Ljava/util/Map;
     .code stack 6 locals 4
 L0:     new java/util/ArrayList
 L3:     dup
@@ -1114,7 +1114,7 @@ L10:    dup
 L11:    pop2
 L12:    dup
 L13:    istore_1
-L14:    getstatic Field UE int Ljava/util/ArrayList;
+L14:    getstatic Field UE field784 Ljava/util/ArrayList;
 L17:    invokevirtual Method java/util/ArrayList size ()I
 L20:    if_icmpge L64
 L23:    new Dc
@@ -1123,10 +1123,10 @@ L27:    dup_x1
 L28:    dup
 L29:    pop2
 L30:    dup
-L31:    getstatic Field UE break Ljava/util/List;
+L31:    getstatic Field UE field787 Ljava/util/List;
 L34:    iload_1
 L35:    invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
-L40:    getstatic Field UE short Ljava/util/List;
+L40:    getstatic Field UE field785 Ljava/util/List;
 L43:    iload_1
 L44:    iinc 1 1
 L47:    invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
@@ -1159,9 +1159,9 @@ L107:   aload_2
 L108:   aload_1
 L109:   aload_3
 L110:   dup
-L111:   getfield Field Dc "enum" Ljava/lang/Object;
+L111:   getfield Field Dc field1793 Ljava/lang/Object;
 L114:   swap
-L115:   getfield Field Dc do Ljava/lang/Object;
+L115:   getfield Field Dc field1794 Ljava/lang/Object;
 L118:   invokevirtual Method java/util/LinkedHashMap put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 L121:   pop
 L122:   goto L89
@@ -1169,7 +1169,7 @@ L125:   athrow
 L126:   aload_1
 L127:   areturn
 L128:   
-        .attribute StackMap b'\x00\x06\x00\x0E\x00\x02\x07\x00\xB6\x01\x00\x01\x01\x00\x3F\x00\x00\x00\x01\x07\x01\xB1\x00\x40\x00\x02\x07\x00\xB6\x01\x00\x00\x00\x59\x00\x03\x07\x00\xB6\x07\x02\x60\x07\x02\x67\x00\x01\x07\x02\x67\x00\x7D\x00\x00\x00\x01\x07\x01\xB1\x00\x7E\x00\x03\x07\x00\xB6\x07\x02\x60\x07\x02\x67\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x0E\x00\x02\x07\x00\xBD\x01\x00\x01\x01\x00\x3F\x00\x00\x00\x01\x07\x00\x85\x00\x40\x00\x02\x07\x00\xBD\x01\x00\x00\x00\x59\x00\x03\x07\x00\xBD\x07\x02\x95\x07\x02\x9C\x00\x01\x07\x02\x9C\x00\x7D\x00\x00\x00\x01\x07\x00\x85\x00\x7E\x00\x03\x07\x00\xBD\x07\x02\x95\x07\x02\x9C\x00\x00'
     .end code
 .end method
 
@@ -1184,50 +1184,50 @@ L5:
 
 .method public fpsfoundhere : (F)Z
     .code stack 7 locals 6
-L0:     getstatic Field UE int Ljava/util/ArrayList;
-L3:     getstatic Field UE null I
+L0:     getstatic Field UE field784 Ljava/util/ArrayList;
+L3:     getstatic Field UE field791 I
 L6:     invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L9:     checkcast java/util/concurrent/Future
 L12:    invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L17:    checkcast Dc
-L20:    getfield Field Dc "enum" Ljava/lang/Object;
+L20:    getfield Field Dc field1793 Ljava/lang/Object;
 L23:    checkcast jouvieje/bass/structures/b
 L26:    invokevirtual Method jouvieje/bass/structures/b asInt ()I
-L29:    getstatic Field UE int Ljava/util/ArrayList;
-L32:    getstatic Field UE null I
+L29:    getstatic Field UE field784 Ljava/util/ArrayList;
+L32:    getstatic Field UE field791 I
 L35:    invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L38:    checkcast java/util/concurrent/Future
 L41:    invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L46:    checkcast Dc
-L49:    getfield Field Dc "enum" Ljava/lang/Object;
+L49:    getfield Field Dc field1793 Ljava/lang/Object;
 L52:    checkcast jouvieje/bass/structures/b
 L55:    invokevirtual Method jouvieje/bass/structures/b asInt ()I
 L58:    iconst_0
 L59:    iconst_1
 L60:    dup
 L61:    pop2
-L62:    invokestatic Method jouvieje/bass/i for (II)J
-L65:    invokestatic Method jouvieje/bass/i break (IJ)D
-L68:    getstatic Field UE else D
+L62:    invokestatic Method jouvieje/bass/i method1474 (II)J
+L65:    invokestatic Method jouvieje/bass/i method1433 (IJ)D
+L68:    getstatic Field UE field793 D
 L71:    dadd
 L72:    dstore_2
-L73:    getstatic Field UE int Ljava/util/ArrayList;
-L76:    getstatic Field UE null I
+L73:    getstatic Field UE field784 Ljava/util/ArrayList;
+L76:    getstatic Field UE field791 I
 L79:    invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L82:    checkcast java/util/concurrent/Future
 L85:    invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L90:    checkcast Dc
-L93:    getfield Field Dc do Ljava/lang/Object;
+L93:    getfield Field Dc field1794 Ljava/lang/Object;
 L96:    checkcast java/lang/Double
 L99:    invokevirtual Method java/lang/Double doubleValue ()D
 L102:   dstore 4
-L104:   getstatic Field UE for Z
+L104:   getstatic Field UE field780 Z
 L107:   ifeq L120
 L110:   dload 4
 L112:   ldc2_w 3.6e1
 L115:   invokestatic Method java/lang/Math min (DD)D
 L118:   dstore 4
-L120:   getstatic Field UE char Z
+L120:   getstatic Field UE field792 Z
 L123:   ifne L194
 L126:   dload_2
 L127:   ldc2_w 5e0
@@ -1241,14 +1241,14 @@ L141:   iconst_1
 L142:   dup
 L143:   dup
 L144:   pop2
-L145:   putstatic Field UE char Z
-L148:   getstatic Field UE int Ljava/util/ArrayList;
-L151:   getstatic Field UE null I
+L145:   putstatic Field UE field792 Z
+L148:   getstatic Field UE field784 Ljava/util/ArrayList;
+L151:   getstatic Field UE field791 I
 L154:   invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L157:   checkcast java/util/concurrent/Future
 L160:   invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L165:   checkcast Dc
-L168:   getfield Field Dc "enum" Ljava/lang/Object;
+L168:   getfield Field Dc field1793 Ljava/lang/Object;
 L171:   checkcast jouvieje/bass/structures/b
 L174:   invokevirtual Method jouvieje/bass/structures/b asInt ()I
 L177:   iconst_2
@@ -1260,23 +1260,23 @@ L184:   sipush 5000
 L187:   iconst_1
 L188:   dup
 L189:   pop2
-L190:   invokestatic Method jouvieje/bass/i break (IIFI)Z
+L190:   invokestatic Method jouvieje/bass/i method1488 (IIFI)Z
 L193:   pop
-L194:   getstatic Field UE char Z
+L194:   getstatic Field UE field792 Z
 L197:   ifne L263
-L200:   invokestatic Method JB float ()F
+L200:   invokestatic Method JB method829 ()F
 L203:   dup
 L204:   fstore_1
-L205:   getstatic Field UE void F
+L205:   getstatic Field UE field789 F
 L208:   fcmpl
 L209:   ifeq L263
-L212:   getstatic Field UE int Ljava/util/ArrayList;
-L215:   getstatic Field UE null I
+L212:   getstatic Field UE field784 Ljava/util/ArrayList;
+L215:   getstatic Field UE field791 I
 L218:   invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L221:   checkcast java/util/concurrent/Future
 L224:   invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L229:   checkcast Dc
-L232:   getfield Field Dc "enum" Ljava/lang/Object;
+L232:   getfield Field Dc field1793 Ljava/lang/Object;
 L235:   checkcast jouvieje/bass/structures/b
 L238:   invokevirtual Method jouvieje/bass/structures/b asInt ()I
 L241:   iconst_2
@@ -1290,11 +1290,11 @@ L249:   sipush 200
 L252:   iconst_1
 L253:   dup
 L254:   pop2
-L255:   invokestatic Method jouvieje/bass/i break (IIFI)Z
+L255:   invokestatic Method jouvieje/bass/i method1488 (IIFI)Z
 L258:   fload_1
-L259:   putstatic Field UE void F
+L259:   putstatic Field UE field789 F
 L262:   pop
-L263:   getstatic Field UE "super" I
+L263:   getstatic Field UE field783 I
 L266:   iconst_m1
 L267:   iconst_1
 L268:   dup
@@ -1308,21 +1308,21 @@ L280:   ldc2_w 8e0
 L283:   dsub
 L284:   dcmpl
 L285:   ifle L537
-L288:   getstatic Field UE "super" I
+L288:   getstatic Field UE field783 I
 L291:   iconst_m1
 L292:   iconst_1
 L293:   dup
 L294:   pop2
 L295:   if_icmpne L418
-L298:   getstatic Field UE null I
+L298:   getstatic Field UE field791 I
 L301:   iconst_1
 L302:   dup
 L303:   dup
 L304:   pop2
 L305:   iadd
-L306:   putstatic Field UE "super" I
-L309:   getstatic Field UE "super" I
-L312:   getstatic Field UE int Ljava/util/ArrayList;
+L306:   putstatic Field UE field783 I
+L309:   getstatic Field UE field783 I
+L312:   getstatic Field UE field784 Ljava/util/ArrayList;
 L315:   invokevirtual Method java/util/ArrayList size ()I
 L318:   iconst_1
 L319:   dup
@@ -1339,13 +1339,13 @@ L331:   iconst_0
 L332:   iconst_1
 L333:   dup
 L334:   pop2
-L335:   getstatic Field UE null I
+L335:   getstatic Field UE field791 I
 L338:   iconst_1
 L339:   dup
 L340:   dup
 L341:   pop2
 L342:   isub
-L343:   getstatic Field UE int Ljava/util/ArrayList;
+L343:   getstatic Field UE field784 Ljava/util/ArrayList;
 L346:   invokevirtual Method java/util/ArrayList size ()I
 L349:   iconst_1
 L350:   dup
@@ -1371,82 +1371,82 @@ L373:   iconst_0
 L374:   iconst_1
 L375:   dup
 L376:   pop2
-L377:   getstatic Field UE int Ljava/util/ArrayList;
+L377:   getstatic Field UE field784 Ljava/util/ArrayList;
 L380:   aastore
 L381:   dup
 L382:   iconst_1
 L383:   dup
 L384:   dup
 L385:   pop2
-L386:   getstatic Field UE break Ljava/util/List;
+L386:   getstatic Field UE field787 Ljava/util/List;
 L389:   aastore
 L390:   dup
 L391:   iconst_2
 L392:   iconst_1
 L393:   dup
 L394:   pop2
-L395:   getstatic Field UE do Ljava/util/List;
+L395:   getstatic Field UE field795 Ljava/util/List;
 L398:   aastore
 L399:   dup
 L400:   iconst_3
 L401:   iconst_1
 L402:   dup
 L403:   pop2
-L404:   getstatic Field UE short Ljava/util/List;
+L404:   getstatic Field UE field785 Ljava/util/List;
 L407:   aastore
-L408:   invokestatic Method OC break (II[Ljava/util/List;)V
+L408:   invokestatic Method OC method1002 (II[Ljava/util/List;)V
 L411:   iconst_0
 L412:   iconst_1
 L413:   dup
 L414:   pop2
-L415:   putstatic Field UE "super" I
-L418:   invokestatic Method JB float ()F
-L421:   putstatic Field UE void F
-L424:   getstatic Field UE int Ljava/util/ArrayList;
-L427:   getstatic Field UE "super" I
+L415:   putstatic Field UE field783 I
+L418:   invokestatic Method JB method829 ()F
+L421:   putstatic Field UE field789 F
+L424:   getstatic Field UE field784 Ljava/util/ArrayList;
+L427:   getstatic Field UE field783 I
 L430:   invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L433:   checkcast java/util/concurrent/Future
 L436:   invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L441:   checkcast Dc
-L444:   getfield Field Dc "enum" Ljava/lang/Object;
+L444:   getfield Field Dc field1793 Ljava/lang/Object;
 L447:   checkcast jouvieje/bass/structures/b
 L450:   invokevirtual Method jouvieje/bass/structures/b asInt ()I
-L453:   invokestatic Method jouvieje/bass/i int (I)Z
+L453:   invokestatic Method jouvieje/bass/i method1461 (I)Z
 L456:   pop
-L457:   getstatic Field UE int Ljava/util/ArrayList;
-L460:   getstatic Field UE "super" I
+L457:   getstatic Field UE field784 Ljava/util/ArrayList;
+L460:   getstatic Field UE field783 I
 L463:   invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L466:   checkcast java/util/concurrent/Future
 L469:   invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L474:   checkcast Dc
-L477:   getfield Field Dc "enum" Ljava/lang/Object;
+L477:   getfield Field Dc field1793 Ljava/lang/Object;
 L480:   checkcast jouvieje/bass/structures/b
 L483:   invokevirtual Method jouvieje/bass/structures/b asInt ()I
 L486:   iconst_2
 L487:   iconst_1
 L488:   dup
 L489:   pop2
-L490:   getstatic Field UE void F
+L490:   getstatic Field UE field789 F
 L493:   ldc 4.5e-1f
 L495:   fmul
-L496:   invokestatic Method jouvieje/bass/i else (IIF)Z
+L496:   invokestatic Method jouvieje/bass/i method1536 (IIF)Z
 L499:   pop
-L500:   getstatic Field UE int Ljava/util/ArrayList;
-L503:   getstatic Field UE "super" I
+L500:   getstatic Field UE field784 Ljava/util/ArrayList;
+L503:   getstatic Field UE field783 I
 L506:   invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L509:   checkcast java/util/concurrent/Future
 L512:   invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L517:   checkcast Dc
-L520:   getfield Field Dc "enum" Ljava/lang/Object;
+L520:   getfield Field Dc field1793 Ljava/lang/Object;
 L523:   checkcast jouvieje/bass/structures/b
 L526:   invokevirtual Method jouvieje/bass/structures/b asInt ()I
 L529:   iconst_1
 L530:   dup
 L531:   dup
 L532:   pop2
-L533:   invokestatic Method jouvieje/bass/i break (IZ)Z
+L533:   invokestatic Method jouvieje/bass/i method1483 (IZ)Z
 L536:   pop
-L537:   getstatic Field UE "super" I
+L537:   getstatic Field UE field783 I
 L540:   iconst_m1
 L541:   iconst_1
 L542:   dup
@@ -1462,31 +1462,31 @@ L558:   iconst_0
 L559:   iconst_1
 L560:   dup
 L561:   pop2
-L562:   putstatic Field UE char Z
-L565:   getstatic Field UE int Ljava/util/ArrayList;
-L568:   getstatic Field UE null I
+L562:   putstatic Field UE field792 Z
+L565:   getstatic Field UE field784 Ljava/util/ArrayList;
+L568:   getstatic Field UE field791 I
 L571:   invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L574:   checkcast java/util/concurrent/Future
 L577:   invokeinterface InterfaceMethod java/util/concurrent/Future get ()Ljava/lang/Object; 1
 L582:   checkcast Dc
-L585:   getfield Field Dc "enum" Ljava/lang/Object;
+L585:   getfield Field Dc field1793 Ljava/lang/Object;
 L588:   checkcast jouvieje/bass/structures/b
 L591:   invokevirtual Method jouvieje/bass/structures/b asInt ()I
-L594:   invokestatic Method jouvieje/bass/i int (I)Z
-L597:   getstatic Field UE "super" I
-L600:   putstatic Field UE null I
+L594:   invokestatic Method jouvieje/bass/i method1461 (I)Z
+L597:   getstatic Field UE field783 I
+L600:   putstatic Field UE field791 I
 L603:   dconst_0
-L604:   putstatic Field UE else D
+L604:   putstatic Field UE field793 D
 L607:   iconst_m1
 L608:   iconst_1
 L609:   dup
 L610:   pop2
-L611:   putstatic Field UE "super" I
+L611:   putstatic Field UE field783 I
 L614:   iconst_0
 L615:   iconst_1
 L616:   dup
 L617:   pop2
-L618:   putstatic Field UE for Z
+L618:   putstatic Field UE field780 Z
 L621:   pop
 L622:   iconst_0
 L623:   iconst_1
@@ -1499,10 +1499,10 @@ L627:
     .exceptions java/lang/Exception
 .end method
 
-.method public static const : ()Ljava/lang/String;
+.method public static method426 : ()Ljava/lang/String;
     .code stack 2 locals 0
-L0:     getstatic Field UE do Ljava/util/List;
-L3:     getstatic Field UE null I
+L0:     getstatic Field UE field795 Ljava/util/List;
+L3:     getstatic Field UE field791 I
 L6:     invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
 L11:    checkcast java/lang/String
 L14:    areturn
@@ -1510,10 +1510,10 @@ L15:
     .end code
 .end method
 
-.method public static else : ()V
+.method public static method56 : ()V
     .code stack 2 locals 2
         .catch java/lang/Exception from L0 to L37 using L83
-L0:     getstatic Field UE int Ljava/util/ArrayList;
+L0:     getstatic Field UE field784 Ljava/util/ArrayList;
 L3:     invokevirtual Method java/util/ArrayList iterator ()Ljava/util/Iterator;
 L6:     dup
 L7:     astore_0
@@ -1530,7 +1530,7 @@ L33:    pop
 L34:    goto L8
 L37:    athrow
         .catch java/lang/Exception from L38 to L79 using L83
-L38:    getstatic Field UE goto Ljava/util/Hashtable;
+L38:    getstatic Field UE field786 Ljava/util/Hashtable;
 L41:    invokevirtual Method java/util/Hashtable values ()Ljava/util/Collection;
 L44:    invokeinterface InterfaceMethod java/util/Collection iterator ()Ljava/util/Iterator; 1
 L49:    astore_0
@@ -1550,11 +1550,11 @@ L80:    nop
 L81:    nop
 L82:    athrow
 L83:    astore_0
-L84:    invokestatic Method jouvieje/bass/i else ()Z
+L84:    invokestatic Method jouvieje/bass/i method1584 ()Z
 L87:    pop
 L88:    return
 L89:    
-        .attribute StackMap b'\x00\x07\x00\x08\x00\x01\x07\x02\x67\x00\x01\x07\x02\x67\x00\x25\x00\x00\x00\x01\x07\x01\xB1\x00\x26\x00\x01\x07\x02\x67\x00\x00\x00\x32\x00\x01\x07\x02\x67\x00\x00\x00\x4F\x00\x00\x00\x01\x07\x01\xB1\x00\x53\x00\x00\x00\x01\x07\x00\x3E\x00\x54\x00\x01\x07\x00\x04\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x08\x00\x01\x07\x02\x9C\x00\x01\x07\x02\x9C\x00\x25\x00\x00\x00\x01\x07\x00\x85\x00\x26\x00\x01\x07\x02\x9C\x00\x00\x00\x32\x00\x01\x07\x02\x9C\x00\x00\x00\x4F\x00\x00\x00\x01\x07\x00\x85\x00\x53\x00\x00\x00\x01\x07\x00\x3E\x00\x54\x00\x01\x07\x00\x04\x00\x00'
     .end code
 .end method
 
@@ -1582,7 +1582,7 @@ L40:    aload_0
 L41:    invokevirtual Method java/io/BufferedReader close ()V
 L44:    return
 L45:    
-        .attribute StackMap b'\x00\x02\x00\x12\x00\x01\x07\x02\x80\x00\x00\x00\x28\x00\x02\x07\x02\x80\x07\x01\xE3\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x12\x00\x01\x07\x02\xB8\x00\x00\x00\x28\x00\x02\x07\x02\xB8\x07\x01\xFF\x00\x00'
         .linenumbertable
             L0 11
             L18 14
@@ -1651,7 +1651,7 @@ L89:    invokevirtual Method java/io/IOException printStackTrace ()V
 L92:    aconst_null
 L93:    areturn
 L94:    
-        .attribute StackMap b'\x00\x09\x00\x19\x00\x05\x01\x07\x01\xE3\x07\x01\xE3\x07\x02\x80\x01\x00\x00\x00\x32\x00\x05\x01\x07\x01\xE3\x07\x01\xE3\x07\x02\x80\x01\x00\x00\x00\x38\x00\x05\x01\x07\x01\xE3\x07\x01\xE3\x07\x02\x80\x01\x00\x00\x00\x3F\x00\x04\x01\x07\x01\xE3\x07\x01\xE3\x07\x02\x80\x00\x01\x07\x01\xB1\x00\x48\x00\x05\x01\x07\x01\xE3\x07\x01\xE3\x07\x02\x80\x07\x01\xB1\x00\x01\x07\x01\xB1\x00\x51\x00\x05\x01\x07\x01\xE3\x07\x01\xE3\x07\x02\x80\x07\x01\xB1\x00\x00\x00\x54\x00\x05\x01\x07\x01\xE3\x07\x01\xE3\x07\x02\x80\x01\x00\x00\x00\x57\x00\x03\x01\x07\x01\xE3\x07\x01\xE3\x00\x01\x07\x02\x4C\x00\x5C\x00\x04\x01\x07\x01\xE3\x07\x01\xE3\x07\x00\x04\x00\x00'
+        .attribute StackMap b'\x00\x09\x00\x19\x00\x05\x01\x07\x01\xFF\x07\x01\xFF\x07\x02\xB8\x01\x00\x00\x00\x32\x00\x05\x01\x07\x01\xFF\x07\x01\xFF\x07\x02\xB8\x01\x00\x00\x00\x38\x00\x05\x01\x07\x01\xFF\x07\x01\xFF\x07\x02\xB8\x01\x00\x00\x00\x3F\x00\x04\x01\x07\x01\xFF\x07\x01\xFF\x07\x02\xB8\x00\x01\x07\x00\x85\x00\x48\x00\x05\x01\x07\x01\xFF\x07\x01\xFF\x07\x02\xB8\x07\x00\x85\x00\x01\x07\x00\x85\x00\x51\x00\x05\x01\x07\x01\xFF\x07\x01\xFF\x07\x02\xB8\x07\x00\x85\x00\x00\x00\x54\x00\x05\x01\x07\x01\xFF\x07\x01\xFF\x07\x02\xB8\x01\x00\x00\x00\x57\x00\x03\x01\x07\x01\xFF\x07\x01\xFF\x00\x01\x07\x02\x80\x00\x5C\x00\x04\x01\x07\x01\xFF\x07\x01\xFF\x07\x00\x04\x00\x00'
         .linenumbertable
             L0 8
             L4 9
@@ -1682,5 +1682,5 @@ L94:
     pg UE [0] static synthetic
     zg UE [0] public static final enum
 .end innerclasses
-.const [_176] = Utf8 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+.const [_183] = Utf8 (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
 .end class

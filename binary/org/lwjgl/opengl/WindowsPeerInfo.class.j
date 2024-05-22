@@ -16,10 +16,10 @@ L8:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public final do : ()J
+.method public final method4673 : ()J
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/opengl/WindowsPeerInfo float ()Ljava/nio/ByteBuffer;
+L1:     invokevirtual Method org/lwjgl/opengl/WindowsPeerInfo method4677 ()Ljava/nio/ByteBuffer;
 L4:     invokestatic Method org/lwjgl/opengl/WindowsPeerInfo nGetHwnd (Ljava/nio/ByteBuffer;)J
 L7:     lreturn
 L8:     
@@ -32,7 +32,7 @@ L8:
 .method private static native nGetHwnd : (Ljava/nio/ByteBuffer;)J
 .end method
 
-.method protected static break : (JIILorg/lwjgl/opengl/PixelFormat;Ljava/nio/IntBuffer;ZZZZ)I
+.method protected static method4680 : (JIILorg/lwjgl/opengl/PixelFormat;Ljava/nio/IntBuffer;ZZZZ)I
     .code stack 10 locals 10
 L0:     lload_0
 L1:     iload_2
@@ -50,10 +50,10 @@ L19:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public final else : ()J
+.method public final method4674 : ()J
     .code stack 2 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/opengl/WindowsPeerInfo float ()Ljava/nio/ByteBuffer;
+L1:     invokevirtual Method org/lwjgl/opengl/WindowsPeerInfo method4677 ()Ljava/nio/ByteBuffer;
 L4:     invokestatic Method org/lwjgl/opengl/WindowsPeerInfo nGetHdc (Ljava/nio/ByteBuffer;)J
 L7:     lreturn
 L8:     

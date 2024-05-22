@@ -2,6 +2,6 @@
 .class public interface abstract G
 .super java/lang/Object
 
-.method public abstract break : (LD;)V
+.method public abstract method8 : (LD;)V
 .end method
 .end class

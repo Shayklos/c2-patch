@@ -37,7 +37,7 @@ L27:    iconst_3
 L28:    iconst_1
 L29:    dup
 L30:    pop2
-L31:    putfield Field VF else I
+L31:    putfield Field VF field879 I
 L34:    iconst_1
 L35:    dup
 L36:    pop2
@@ -46,7 +46,7 @@ L39:    iconst_1
 L40:    dup
 L41:    pop2
 L42:    invokestatic Method java/lang/Math max (II)I
-L45:    putfield Field VF do I
+L45:    putfield Field VF field881 I
 L48:    getfield Field VF this [[I
 L51:    iconst_2
 L52:    iconst_1
@@ -108,13 +108,13 @@ L117:   dup
 L118:   pop2
 L119:   iastore
 L120:   getfield Field VF this [[I
-L123:   invokestatic Method hE else ([[I)V
+L123:   invokestatic Method hE method1143 ([[I)V
 L126:   return
 L127:   
     .end code
 .end method
 
-.method public else : ()I
+.method public method183 : ()I
     .code stack 3 locals 1
 L0:     iconst_2
 L1:     iconst_1

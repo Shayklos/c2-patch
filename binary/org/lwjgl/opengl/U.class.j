@@ -1,7 +1,7 @@
 .version 49 0
 .class final super org/lwjgl/opengl/U
 .super java/lang/Object
-.field do I
+.field field5090 I
 
 .method private <init> : ()V
     .code stack 1 locals 1

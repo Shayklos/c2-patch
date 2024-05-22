@@ -1,12 +1,12 @@
 .version 49 0
 .class public final super df
 .super Uf
-.field public do LDF;
+.field public field1355 LDF;
 
-.method public break : (LRg;)Z
+.method public method704 : (LRg;)Z
     .code stack 9 locals 2
 L0:     aload_1
-L1:     getfield Field Rg do F
+L1:     getfield Field Rg field241 F
 L4:     dup
 L5:     fstore_1
 L6:     fconst_0
@@ -15,10 +15,10 @@ L8:     ifge L13
 L11:    fconst_0
 L12:    fstore_1
 L13:    aload_0
-L14:    getfield Field df do LDF;
+L14:    getfield Field df field1355 LDF;
 L17:    ifnull L72
 L20:    aload_0
-L21:    getfield Field df do LDF;
+L21:    getfield Field df field1355 LDF;
 L24:    ldc "%d:%05.2f"
 L26:    iconst_2
 L27:    iconst_1
@@ -53,7 +53,7 @@ L61:    frem
 L62:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
 L65:    aastore
 L66:    invokestatic Method java/lang/String format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-L69:    invokevirtual Method DF break (Ljava/lang/String;)V
+L69:    invokevirtual Method DF method12 (Ljava/lang/String;)V
 L72:    iconst_0
 L73:    iconst_1
 L74:    dup
@@ -64,7 +64,7 @@ L77:
     .end code
 .end method
 
-.method public break : ()LgB;
+.method public method700 : ()LgB;
     .code stack 7 locals 2
 L0:     new qc
 L3:     dup
@@ -84,19 +84,19 @@ L24:    dup
 L25:    ldc "Time"
 L27:    getstatic Field We try LWe;
 L30:    invokespecial Method DF <init> (Ljava/lang/String;LWe;)V
-L33:    getstatic Field VD do Ljava/lang/Object;
-L36:    invokevirtual Method qc break (LgB;Ljava/lang/Object;)V
+L33:    getstatic Field VD field150 Ljava/lang/Object;
+L36:    invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
 L39:    new DF
 L42:    aload_0
 L43:    dup
 L44:    pop2
 L45:    dup
 L46:    ldc " "
-L48:    getstatic Field We extends LWe;
+L48:    getstatic Field We field475 LWe;
 L51:    invokespecial Method DF <init> (Ljava/lang/String;LWe;)V
 L54:    dup_x1
-L55:    putfield Field df do LDF;
-L58:    invokevirtual Method qc float (LgB;)LgB;
+L55:    putfield Field df field1355 LDF;
+L58:    invokevirtual Method qc method36 (LgB;)LgB;
 L61:    pop
 L62:    aload_1
 L63:    areturn

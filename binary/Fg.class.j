@@ -1,26 +1,26 @@
 .version 49 0
 .class public super abstract Fg
 .super gB
-.field public static const Ljava/util/concurrent/LinkedBlockingDeque;
+.field public static field1142 Ljava/util/concurrent/LinkedBlockingDeque;
 .field public new F
-.field public null Ljava/lang/String;
+.field public field1143 Ljava/lang/String;
 .field public static this Ljava/util/Set;
-.field public static final char Ljava/lang/String;
-.field public static final else I = 64
-.field public static "enum" Ljava/util/concurrent/LinkedBlockingQueue;
-.field public static do Ljava/util/Map;
+.field public static final field1144 Ljava/lang/String;
+.field public static final field1145 I = 64
+.field public static field1146 Ljava/util/concurrent/LinkedBlockingQueue;
+.field public static field1147 Ljava/util/Map;
 
-.method public else : (Ljava/lang/String;)V
+.method public method7 : (Ljava/lang/String;)V
     .code stack 4 locals 3
 L0:     aload_0
 L1:     aload_1
-L2:     putfield Field Fg null Ljava/lang/String;
+L2:     putfield Field Fg field1143 Ljava/lang/String;
 L5:     new Dc
 L8:     dup
 L9:     aload_0
 L10:    invokevirtual Method java/lang/Object getClass ()Ljava/lang/Class;
 L13:    aload_0
-L14:    getfield Field Fg null Ljava/lang/String;
+L14:    getfield Field Fg field1143 Ljava/lang/String;
 L17:    invokespecial Method Dc <init> (Ljava/lang/Object;Ljava/lang/Object;)V
 L20:    astore_2
 L21:    getstatic Field Fg this Ljava/util/Set;
@@ -32,15 +32,15 @@ L34:    dup
 L35:    dup_x1
 L36:    fconst_1
 L37:    putfield Field Fg new F
-L40:    invokevirtual Method Fg break ()Ljava/lang/String;
-L43:    putfield Field Fg null Ljava/lang/String;
+L40:    invokevirtual Method Fg method501 ()Ljava/lang/String;
+L43:    putfield Field Fg field1143 Ljava/lang/String;
 L46:    return
 L47:    athrow
-L48:    invokestatic Method Fg else ()V
+L48:    invokestatic Method Fg method56 ()V
 L51:    aload_0
 L52:    fconst_0
 L53:    putfield Field Fg new F
-L56:    getstatic Field Fg do Ljava/util/Map;
+L56:    getstatic Field Fg field1147 Ljava/util/Map;
 L59:    aload_2
 L60:    invokeinterface InterfaceMethod java/util/Map containsKey (Ljava/lang/Object;)Z 2
 L65:    ifne L77
@@ -53,7 +53,7 @@ L78:    fconst_1
 L79:    putfield Field Fg new F
 L82:    return
 L83:    
-        .attribute StackMap b'\x00\x04\x00\x2F\x00\x00\x00\x01\x07\x00\x46\x00\x30\x00\x03\x07\x00\x02\x07\x00\x41\x07\x00\x1B\x00\x00\x00\x4D\x00\x03\x07\x00\x02\x07\x00\x41\x07\x00\x1B\x00\x00\x00\x52\x00\x03\x07\x00\x02\x07\x00\x41\x07\x00\x1B\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x2F\x00\x00\x00\x01\x07\x00\x36\x00\x30\x00\x03\x07\x00\x02\x07\x00\x38\x07\x00\x1C\x00\x00\x00\x4D\x00\x03\x07\x00\x02\x07\x00\x38\x07\x00\x1C\x00\x00\x00\x52\x00\x03\x07\x00\x02\x07\x00\x38\x07\x00\x1C\x00\x00'
     .end code
 .end method
 
@@ -70,26 +70,26 @@ L7:     fload_2
 L8:     aload_0
 L9:     invokespecial Method gB <init> ()V
 L12:    fload_3
-L13:    invokevirtual Method Fg const (FF)V
-L16:    putfield Field Fg case F
-L19:    putfield Field Fg char F
-L22:    invokevirtual Method Fg else (Ljava/lang/String;)V
+L13:    invokevirtual Method Fg method32 (FF)V
+L16:    putfield Field Fg field1128 F
+L19:    putfield Field Fg field1137 F
+L22:    invokevirtual Method Fg method7 (Ljava/lang/String;)V
 L25:    return
 L26:    
     .end code
 .end method
 
-.method public static break : (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Z)V
+.method public static method601 : (Ljava/lang/Class;Ljava/lang/String;Ljava/lang/String;Z)V
     .code stack 7 locals 4
-L0:     getstatic Field Fg "enum" Ljava/util/concurrent/LinkedBlockingQueue;
+L0:     getstatic Field Fg field1146 Ljava/util/concurrent/LinkedBlockingQueue;
 L3:     new Zd
 L6:     dup
 L7:     aload_0
 L8:     aload_1
 L9:     aload_2
-L10:    invokestatic Method OC for (Ljava/lang/String;)[B
+L10:    invokestatic Method OC method989 (Ljava/lang/String;)[B
 L13:    iload_3
-L14:    invokestatic Method Fg break ([BZ)Ljava/nio/ByteBuffer;
+L14:    invokestatic Method Fg method603 ([BZ)Ljava/nio/ByteBuffer;
 L17:    invokespecial Method Zd <init> (Ljava/lang/Object;Ljava/lang/Object;Ljava/lang/Object;)V
 L20:    invokevirtual Method java/util/concurrent/LinkedBlockingQueue add (Ljava/lang/Object;)Z
 L23:    pop
@@ -98,7 +98,7 @@ L25:
     .end code
 .end method
 
-.method public int : ()V
+.method public method26 : ()V
     .code stack 5 locals 2
 L0:     aload_0
 L1:     getfield Field Fg new F
@@ -112,10 +112,10 @@ L14:    dup
 L15:    aload_0
 L16:    invokevirtual Method java/lang/Object getClass ()Ljava/lang/Class;
 L19:    aload_0
-L20:    getfield Field Fg null Ljava/lang/String;
+L20:    getfield Field Fg field1143 Ljava/lang/String;
 L23:    invokespecial Method Dc <init> (Ljava/lang/Object;Ljava/lang/Object;)V
 L26:    astore_1
-L27:    getstatic Field Fg do Ljava/util/Map;
+L27:    getstatic Field Fg field1147 Ljava/util/Map;
 L30:    aload_1
 L31:    invokeinterface InterfaceMethod java/util/Map containsKey (Ljava/lang/Object;)Z 2
 L36:    ifeq L70
@@ -123,7 +123,7 @@ L39:    aload_0
 L40:    dup
 L41:    dup
 L42:    getfield Field Fg new F
-L45:    getstatic Field ib do F
+L45:    getstatic Field ib field2312 F
 L48:    ldc 4e0f
 L50:    fmul
 L51:    fadd
@@ -143,26 +143,26 @@ L74:    invokeinterface InterfaceMethod java/util/Set contains (Ljava/lang/Objec
 L79:    ifeq L90
 L82:    aload_0
 L83:    dup
-L84:    invokevirtual Method Fg break ()Ljava/lang/String;
-L87:    putfield Field Fg null Ljava/lang/String;
+L84:    invokevirtual Method Fg method501 ()Ljava/lang/String;
+L87:    putfield Field Fg field1143 Ljava/lang/String;
 L90:    return
 L91:    
-        .attribute StackMap b'\x00\x05\x00\x0A\x00\x00\x00\x01\x07\x00\x46\x00\x0B\x00\x01\x07\x00\x02\x00\x00\x00\x45\x00\x00\x00\x01\x07\x00\x46\x00\x46\x00\x02\x07\x00\x02\x07\x00\x1B\x00\x00\x00\x5A\x00\x02\x07\x00\x02\x07\x00\x1B\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x0A\x00\x00\x00\x01\x07\x00\x36\x00\x0B\x00\x01\x07\x00\x02\x00\x00\x00\x45\x00\x00\x00\x01\x07\x00\x36\x00\x46\x00\x02\x07\x00\x02\x07\x00\x1C\x00\x00\x00\x5A\x00\x02\x07\x00\x02\x07\x00\x1C\x00\x00'
     .end code
 .end method
 
 .method public background : (ZF)V
     .code stack 5 locals 5
-L0:     invokestatic Method Fg else ()V
+L0:     invokestatic Method Fg method56 ()V
 L3:     new Dc
 L6:     dup
 L7:     aload_0
 L8:     invokevirtual Method java/lang/Object getClass ()Ljava/lang/Class;
 L11:    aload_0
-L12:    getfield Field Fg null Ljava/lang/String;
+L12:    getfield Field Fg field1143 Ljava/lang/String;
 L15:    invokespecial Method Dc <init> (Ljava/lang/Object;Ljava/lang/Object;)V
 L18:    astore_3
-L19:    getstatic Field Fg do Ljava/util/Map;
+L19:    getstatic Field Fg field1147 Ljava/util/Map;
 L22:    aload_3
 L23:    invokeinterface InterfaceMethod java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object; 2
 L28:    checkcast java/lang/Integer
@@ -171,13 +171,13 @@ L32:    astore 4
 L34:    ifnonnull L66
 L37:    ldc ""
 L39:    aload_0
-L40:    getfield Field Fg null Ljava/lang/String;
+L40:    getfield Field Fg field1143 Ljava/lang/String;
 L43:    invokevirtual Method java/lang/String equals (Ljava/lang/Object;)Z
 L46:    ifne L64
-L49:    getstatic Field Fg const Ljava/util/concurrent/LinkedBlockingDeque;
+L49:    getstatic Field Fg field1142 Ljava/util/concurrent/LinkedBlockingDeque;
 L52:    aload_3
 L53:    invokevirtual Method java/util/concurrent/LinkedBlockingDeque remove (Ljava/lang/Object;)Z
-L56:    getstatic Field Fg const Ljava/util/concurrent/LinkedBlockingDeque;
+L56:    getstatic Field Fg field1142 Ljava/util/concurrent/LinkedBlockingDeque;
 L59:    aload_3
 L60:    invokevirtual Method java/util/concurrent/LinkedBlockingDeque addFirst (Ljava/lang/Object;)V
 L63:    pop
@@ -189,12 +189,12 @@ L70:    dup
 L71:    pop2
 L72:    aload 4
 L74:    invokevirtual Method java/lang/Integer intValue ()I
-L77:    invokestatic Method org/lwjgl/opengl/GL11 goto (II)V
+L77:    invokestatic Method org/lwjgl/opengl/GL11 method3824 (II)V
 L80:    sipush 3553
 L83:    iconst_1
 L84:    dup
 L85:    pop2
-L86:    invokestatic Method org/lwjgl/opengl/GL11 break (I)V
+L86:    invokestatic Method org/lwjgl/opengl/GL11 method3916 (I)V
 L89:    fconst_1
 L90:    dup
 L91:    dup_x1
@@ -209,81 +209,81 @@ L104:   goto L110
 L107:   athrow
 L108:   ldc 9e-1f
 L110:   fmul
-L111:   invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L111:   invokestatic Method org/lwjgl/opengl/GL11 method3888 (FFFF)V
 L114:   bipush 7
 L116:   iconst_1
 L117:   dup
 L118:   pop2
-L119:   invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
+L119:   invokestatic Method org/lwjgl/opengl/GL11 method3664 (I)V
 L122:   fconst_0
 L123:   fconst_1
-L124:   invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
+L124:   invokestatic Method org/lwjgl/opengl/GL11 method3650 (FF)V
 L127:   fconst_0
 L128:   aload_0
-L129:   getfield Field Fg break F
-L132:   invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
+L129:   getfield Field Fg field1132 F
+L132:   invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
 L135:   fconst_1
 L136:   dup
-L137:   invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
+L137:   invokestatic Method org/lwjgl/opengl/GL11 method3650 (FF)V
 L140:   fconst_0
 L141:   fconst_1
 L142:   aload_0
-L143:   getfield Field Fg catch F
+L143:   getfield Field Fg field1124 F
 L146:   aload_0
 L147:   dup_x2
-L148:   getfield Field Fg break F
-L151:   invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
+L148:   getfield Field Fg field1132 F
+L151:   invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
 L154:   fconst_0
-L155:   invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
-L158:   getfield Field Fg catch F
+L155:   invokestatic Method org/lwjgl/opengl/GL11 method3650 (FF)V
+L158:   getfield Field Fg field1124 F
 L161:   fconst_0
-L162:   invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
+L162:   invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
 L165:   fconst_0
-L166:   invokestatic Method org/lwjgl/opengl/GL11 catch (FF)V
+L166:   invokestatic Method org/lwjgl/opengl/GL11 method3650 (FF)V
 L169:   fconst_0
 L170:   dup
-L171:   invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
-L174:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
+L171:   invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
+L174:   invokestatic Method org/lwjgl/opengl/GL11 method3788 ()V
 L177:   sipush 3553
 L180:   iconst_1
 L181:   dup
 L182:   pop2
-L183:   invokestatic Method org/lwjgl/opengl/GL11 float (I)V
+L183:   invokestatic Method org/lwjgl/opengl/GL11 method3882 (I)V
 L186:   return
 L187:   
-        .attribute StackMap b'\x00\x06\x00\x40\x00\x05\x07\x00\x02\x01\x02\x07\x00\x1B\x07\x00\x77\x00\x00\x00\x41\x00\x00\x00\x01\x07\x00\x46\x00\x42\x00\x05\x07\x00\x02\x01\x02\x07\x00\x1B\x07\x00\x77\x00\x00\x00\x6B\x00\x00\x00\x01\x07\x00\x46\x00\x6C\x00\x05\x07\x00\x02\x01\x02\x07\x00\x1B\x07\x00\x77\x00\x04\x02\x02\x02\x02\x00\x6E\x00\x05\x07\x00\x02\x01\x02\x07\x00\x1B\x07\x00\x77\x00\x05\x02\x02\x02\x02\x02'
+        .attribute StackMap b'\x00\x06\x00\x40\x00\x05\x07\x00\x02\x01\x02\x07\x00\x1C\x07\x00\x7E\x00\x00\x00\x41\x00\x00\x00\x01\x07\x00\x36\x00\x42\x00\x05\x07\x00\x02\x01\x02\x07\x00\x1C\x07\x00\x7E\x00\x00\x00\x6B\x00\x00\x00\x01\x07\x00\x36\x00\x6C\x00\x05\x07\x00\x02\x01\x02\x07\x00\x1C\x07\x00\x7E\x00\x04\x02\x02\x02\x02\x00\x6E\x00\x05\x07\x00\x02\x01\x02\x07\x00\x1C\x07\x00\x7E\x00\x05\x02\x02\x02\x02\x02'
     .end code
 .end method
 
-.method public static else : ()V
+.method public static method56 : ()V
     .code stack 10 locals 2
-L0:     getstatic Field Fg "enum" Ljava/util/concurrent/LinkedBlockingQueue;
+L0:     getstatic Field Fg field1146 Ljava/util/concurrent/LinkedBlockingQueue;
 L3:     invokevirtual Method java/util/concurrent/LinkedBlockingQueue poll ()Ljava/lang/Object;
 L6:     checkcast Zd
 L9:     dup
 L10:    astore_0
 L11:    ifnull L309
-L14:    getstatic Field Fg do Ljava/util/Map;
+L14:    getstatic Field Fg field1147 Ljava/util/Map;
 L17:    new Dc
 L20:    dup
 L21:    aload_0
 L22:    dup
-L23:    getfield Field Zd else Ljava/lang/Object;
+L23:    getfield Field Zd field2178 Ljava/lang/Object;
 L26:    swap
-L27:    getfield Field Zd do Ljava/lang/Object;
+L27:    getfield Field Zd field2180 Ljava/lang/Object;
 L30:    invokespecial Method Dc <init> (Ljava/lang/Object;Ljava/lang/Object;)V
 L33:    invokeinterface InterfaceMethod java/util/Map containsKey (Ljava/lang/Object;)Z 2
 L38:    ifeq L45
 L41:    goto L0
 L44:    athrow
-L45:    invokestatic Method org/lwjgl/opengl/GL11 goto ()I
+L45:    invokestatic Method org/lwjgl/opengl/GL11 method3724 ()I
 L48:    istore_1
 L49:    sipush 3553
 L52:    iconst_1
 L53:    dup
 L54:    pop2
 L55:    iload_1
-L56:    invokestatic Method org/lwjgl/opengl/GL11 goto (II)V
+L56:    invokestatic Method org/lwjgl/opengl/GL11 method3824 (II)V
 L59:    sipush 3553
 L62:    iconst_1
 L63:    dup
@@ -296,7 +296,7 @@ L71:    sipush 9729
 L74:    iconst_1
 L75:    dup
 L76:    pop2
-L77:    invokestatic Method org/lwjgl/opengl/GL11 for (III)V
+L77:    invokestatic Method org/lwjgl/opengl/GL11 method3790 (III)V
 L80:    sipush 3553
 L83:    iconst_1
 L84:    dup
@@ -309,7 +309,7 @@ L92:    sipush 9987
 L95:    iconst_1
 L96:    dup
 L97:    pop2
-L98:    invokestatic Method org/lwjgl/opengl/GL11 for (III)V
+L98:    invokestatic Method org/lwjgl/opengl/GL11 method3790 (III)V
 L101:   sipush 3553
 L104:   iconst_1
 L105:   dup
@@ -322,7 +322,7 @@ L113:   sipush 10496
 L116:   iconst_1
 L117:   dup
 L118:   pop2
-L119:   invokestatic Method org/lwjgl/opengl/GL11 for (III)V
+L119:   invokestatic Method org/lwjgl/opengl/GL11 method3790 (III)V
 L122:   sipush 3553
 L125:   iconst_1
 L126:   dup
@@ -335,7 +335,7 @@ L134:   sipush 10496
 L137:   iconst_1
 L138:   dup
 L139:   pop2
-L140:   invokestatic Method org/lwjgl/opengl/GL11 for (III)V
+L140:   invokestatic Method org/lwjgl/opengl/GL11 method3790 (III)V
 L143:   sipush 3553
 L146:   iconst_1
 L147:   dup
@@ -345,9 +345,9 @@ L151:   iconst_1
 L152:   dup
 L153:   dup
 L154:   pop2
-L155:   invokestatic Method org/lwjgl/opengl/GL11 for (III)V
+L155:   invokestatic Method org/lwjgl/opengl/GL11 method3790 (III)V
 L158:   aload_0
-L159:   getfield Field Zd "enum" Ljava/lang/Object;
+L159:   getfield Field Zd field2179 Ljava/lang/Object;
 L162:   checkcast java/nio/ByteBuffer
 L165:   invokevirtual Method java/nio/ByteBuffer limit ()I
 L168:   sipush 12288
@@ -385,9 +385,9 @@ L212:   iconst_1
 L213:   dup
 L214:   pop2
 L215:   aload_0
-L216:   getfield Field Zd "enum" Ljava/lang/Object;
+L216:   getfield Field Zd field2179 Ljava/lang/Object;
 L219:   checkcast java/nio/ByteBuffer
-L222:   invokestatic Method org/lwjgl/opengl/GL11 break (IIIIIIIILjava/nio/ByteBuffer;)V
+L222:   invokestatic Method org/lwjgl/opengl/GL11 method3671 (IIIIIIIILjava/nio/ByteBuffer;)V
 L225:   goto L277
 L228:   athrow
 L229:   sipush 3553
@@ -420,17 +420,17 @@ L264:   iconst_1
 L265:   dup
 L266:   pop2
 L267:   aload_0
-L268:   getfield Field Zd "enum" Ljava/lang/Object;
+L268:   getfield Field Zd field2179 Ljava/lang/Object;
 L271:   checkcast java/nio/ByteBuffer
-L274:   invokestatic Method org/lwjgl/opengl/GL11 break (IIIIIIIILjava/nio/ByteBuffer;)V
-L277:   getstatic Field Fg do Ljava/util/Map;
+L274:   invokestatic Method org/lwjgl/opengl/GL11 method3671 (IIIIIIIILjava/nio/ByteBuffer;)V
+L277:   getstatic Field Fg field1147 Ljava/util/Map;
 L280:   new Dc
 L283:   dup
 L284:   aload_0
 L285:   dup
-L286:   getfield Field Zd else Ljava/lang/Object;
+L286:   getfield Field Zd field2178 Ljava/lang/Object;
 L289:   swap
-L290:   getfield Field Zd do Ljava/lang/Object;
+L290:   getfield Field Zd field2180 Ljava/lang/Object;
 L293:   invokespecial Method Dc <init> (Ljava/lang/Object;Ljava/lang/Object;)V
 L296:   iload_1
 L297:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
@@ -439,14 +439,14 @@ L305:   pop
 L306:   goto L0
 L309:   return
 L310:   
-        .attribute StackMap b'\x00\x07\x00\x00\x00\x00\x00\x00\x00\x2C\x00\x00\x00\x01\x07\x00\x46\x00\x2D\x00\x01\x07\x00\x58\x00\x00\x00\xE4\x00\x00\x00\x01\x07\x00\x46\x00\xE5\x00\x02\x07\x00\x58\x01\x00\x00\x01\x15\x00\x02\x07\x00\x58\x01\x00\x00\x01\x35\x00\x01\x07\x00\x58\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x00\x00\x00\x00\x00\x00\x2C\x00\x00\x00\x01\x07\x00\x36\x00\x2D\x00\x01\x07\x00\x5D\x00\x00\x00\xE4\x00\x00\x00\x01\x07\x00\x36\x00\xE5\x00\x02\x07\x00\x5D\x01\x00\x00\x01\x15\x00\x02\x07\x00\x5D\x01\x00\x00\x01\x35\x00\x01\x07\x00\x5D\x00\x00'
     .end code
 .end method
 
-.method public static break : (Ljava/lang/String;)Ljava/nio/ByteBuffer;
+.method public static method602 : (Ljava/lang/String;)Ljava/nio/ByteBuffer;
     .code stack 4 locals 2
 L0:     aload_0
-L1:     invokestatic Method OC const (Ljava/lang/String;)[B
+L1:     invokestatic Method OC method999 (Ljava/lang/String;)[B
 L4:     dup
 L5:     astore_1
 L6:     ifnonnull L12
@@ -458,15 +458,15 @@ L13:    iconst_1
 L14:    dup
 L15:    dup
 L16:    pop2
-L17:    invokestatic Method Fg break ([BZ)Ljava/nio/ByteBuffer;
+L17:    invokestatic Method Fg method603 ([BZ)Ljava/nio/ByteBuffer;
 L20:    areturn
 L21:    
-        .attribute StackMap b'\x00\x02\x00\x0B\x00\x00\x00\x01\x07\x00\x46\x00\x0C\x00\x02\x07\x00\x41\x07\x00\xD1\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0B\x00\x00\x00\x01\x07\x00\x36\x00\x0C\x00\x02\x07\x00\x38\x07\x00\xE6\x00\x00'
     .end code
     .exceptions java/io/IOException java/net/MalformedURLException
 .end method
 
-.method public break : ()Ljava/lang/String;
+.method public method501 : ()Ljava/lang/String;
     .code stack 1 locals 1
 L0:     ldc ""
 L2:     areturn
@@ -477,20 +477,20 @@ L3:
 .method public static <clinit> : ()V
     .code stack 7 locals 3
 L0:     ldc ""
-L2:     putstatic Field Fg char Ljava/lang/String;
+L2:     putstatic Field Fg field1144 Ljava/lang/String;
 L5:     new java/util/concurrent/LinkedBlockingDeque
 L8:     dup
 L9:     invokespecial Method java/util/concurrent/LinkedBlockingDeque <init> ()V
-L12:    putstatic Field Fg const Ljava/util/concurrent/LinkedBlockingDeque;
+L12:    putstatic Field Fg field1142 Ljava/util/concurrent/LinkedBlockingDeque;
 L15:    new java/util/concurrent/LinkedBlockingQueue
 L18:    dup
 L19:    invokespecial Method java/util/concurrent/LinkedBlockingQueue <init> ()V
-L22:    putstatic Field Fg "enum" Ljava/util/concurrent/LinkedBlockingQueue;
+L22:    putstatic Field Fg field1146 Ljava/util/concurrent/LinkedBlockingQueue;
 L25:    new java/util/HashMap
 L28:    dup
 L29:    invokespecial Method java/util/HashMap <init> ()V
 L32:    invokestatic Method java/util/Collections synchronizedMap (Ljava/util/Map;)Ljava/util/Map;
-L35:    putstatic Field Fg do Ljava/util/Map;
+L35:    putstatic Field Fg field1147 Ljava/util/Map;
 L38:    new java/util/HashSet
 L41:    dup
 L42:    invokespecial Method java/util/HashSet <init> ()V
@@ -510,7 +510,7 @@ L65:    bipush 40
 L67:    iconst_1
 L68:    dup
 L69:    pop2
-L70:    if_icmpge L133
+L70:    if_icmpge L134
 L73:    new java/lang/Thread
 L76:    dup
 L77:    new java/lang/StringBuilder
@@ -520,34 +520,34 @@ L82:    dup
 L83:    pop2
 L84:    dup
 L85:    invokespecial Method java/lang/StringBuilder <init> ()V
-L88:    ldc "Async icon loader #"
-L90:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-L93:    iload_1
-L94:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
-L97:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
-L100:   invokespecial Method java/lang/Thread <init> (Ljava/lang/Runnable;Ljava/lang/String;)V
-L103:   astore_2
-L104:   bipush 10
-L106:   aload_2
-L107:   dup_x1
-L108:   dup_x2
-L109:   iconst_1
-L110:   dup
+L88:    ldc_w "Async icon loader #"
+L91:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+L94:    iload_1
+L95:    invokevirtual Method java/lang/StringBuilder append (I)Ljava/lang/StringBuilder;
+L98:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
+L101:   invokespecial Method java/lang/Thread <init> (Ljava/lang/Runnable;Ljava/lang/String;)V
+L104:   astore_2
+L105:   bipush 10
+L107:   aload_2
+L108:   dup_x1
+L109:   dup_x2
+L110:   iconst_1
 L111:   dup
-L112:   pop2
-L113:   invokevirtual Method java/lang/Thread setDaemon (Z)V
-L116:   iconst_1
-L117:   dup
-L118:   iinc 1 1
-L121:   pop2
-L122:   invokevirtual Method java/lang/Thread setPriority (I)V
-L125:   invokevirtual Method java/lang/Thread start ()V
-L128:   iload_1
-L129:   goto L65
-L132:   athrow
-L133:   return
-L134:   
-        .attribute StackMap b'\x00\x03\x00\x41\x00\x02\x07\x00\x06\x01\x00\x01\x01\x00\x84\x00\x00\x00\x01\x07\x00\x46\x00\x85\x00\x02\x07\x00\x06\x01\x00\x00'
+L112:   dup
+L113:   pop2
+L114:   invokevirtual Method java/lang/Thread setDaemon (Z)V
+L117:   iconst_1
+L118:   dup
+L119:   iinc 1 1
+L122:   pop2
+L123:   invokevirtual Method java/lang/Thread setPriority (I)V
+L126:   invokevirtual Method java/lang/Thread start ()V
+L129:   iload_1
+L130:   goto L65
+L133:   athrow
+L134:   return
+L135:   
+        .attribute StackMap b'\x00\x03\x00\x41\x00\x02\x07\x00\x06\x01\x00\x01\x01\x00\x85\x00\x00\x00\x01\x07\x00\x36\x00\x86\x00\x02\x07\x00\x06\x01\x00\x00'
     .end code
     .runtime visible annotations
         .annotation Lme/coley/recaf/metadata/InsnComment;
@@ -556,7 +556,7 @@ L134:
     .end runtime
 .end method
 
-.method public static break : ([BZ)Ljava/nio/ByteBuffer;
+.method public static method603 : ([BZ)Ljava/nio/ByteBuffer;
     .code stack 7 locals 5
 L0:     invokestatic Method java/awt/Toolkit getDefaultToolkit ()Ljava/awt/Toolkit;
 L3:     aload_0
@@ -677,7 +677,7 @@ L166:   invokevirtual Method java/nio/ByteBuffer flip ()Ljava/nio/Buffer;
 L169:   pop
 L170:   areturn
 L171:   
-        .attribute StackMap b'\x00\x09\x00\x33\x00\x00\x00\x01\x07\x00\x46\x00\x34\x00\x03\x07\x00\xD1\x01\x07\x01\x16\x00\x04\x08\x00\x19\x08\x00\x19\x01\x01\x00\x38\x00\x03\x07\x00\xD1\x01\x07\x01\x16\x00\x05\x08\x00\x19\x08\x00\x19\x01\x01\x01\x00\x3D\x00\x03\x07\x00\xD1\x07\x01\x1C\x07\x01\x16\x00\x01\x07\x01\x1C\x00\x58\x00\x00\x00\x01\x07\x00\x46\x00\x59\x00\x03\x07\x00\xD1\x07\x01\x1C\x07\x01\x16\x00\x01\x07\x01\x0A\x00\x5E\x00\x03\x07\x00\xD1\x07\x01\x1C\x07\x01\x16\x00\x00\x00\x8E\x00\x05\x07\x00\xD1\x07\x00\xB8\x07\x01\x32\x01\x01\x00\x01\x01\x00\xA4\x00\x05\x07\x00\xD1\x07\x00\xB8\x07\x01\x32\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x09\x00\x33\x00\x00\x00\x01\x07\x00\x36\x00\x34\x00\x03\x07\x00\xE6\x01\x07\x01\x2B\x00\x04\x08\x00\x19\x08\x00\x19\x01\x01\x00\x38\x00\x03\x07\x00\xE6\x01\x07\x01\x2B\x00\x05\x08\x00\x19\x08\x00\x19\x01\x01\x01\x00\x3D\x00\x03\x07\x00\xE6\x07\x01\x31\x07\x01\x2B\x00\x01\x07\x01\x31\x00\x58\x00\x00\x00\x01\x07\x00\x36\x00\x59\x00\x03\x07\x00\xE6\x07\x01\x31\x07\x01\x2B\x00\x01\x07\x01\x1F\x00\x5E\x00\x03\x07\x00\xE6\x07\x01\x31\x07\x01\x2B\x00\x00\x00\x8E\x00\x05\x07\x00\xE6\x07\x00\xCA\x07\x01\x47\x01\x01\x00\x01\x01\x00\xA4\x00\x05\x07\x00\xE6\x07\x00\xCA\x07\x01\x47\x01\x01\x00\x00'
     .end code
 .end method
 .innerclasses

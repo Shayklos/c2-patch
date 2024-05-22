@@ -1,33 +1,33 @@
 .version 49 0
 .class public final super PE
 .super id
-.field private do LQD;
+.field private field1232 LQD;
 
 .method public background : (ZF)V
     .code stack 7 locals 4
-L0:     invokestatic Method FE goto ()V
+L0:     invokestatic Method FE method65 ()V
 L3:     fconst_0
 L4:     dup
 L5:     fconst_1
 L6:     ldc 3e-1f
 L8:     fload_2
 L9:     fmul
-L10:    invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L10:    invokestatic Method org/lwjgl/opengl/GL11 method3888 (FFFF)V
 L13:    bipush 6
 L15:    iconst_1
 L16:    dup
 L17:    pop2
-L18:    invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
+L18:    invokestatic Method org/lwjgl/opengl/GL11 method3664 (I)V
 L21:    aload_0
-L22:    getfield Field PE "enum" F
+L22:    getfield Field PE field977 F
 L25:    fconst_2
 L26:    fdiv
 L27:    aload_0
-L28:    getfield Field PE char F
+L28:    getfield Field PE field1226 F
 L31:    fconst_2
 L32:    fdiv
-L33:    invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
-L36:    getstatic Field PE else [F
+L33:    invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
+L36:    getstatic Field PE field1227 [F
 L39:    arraylength
 L40:    iconst_1
 L41:    dup
@@ -37,74 +37,74 @@ L44:    isub
 L45:    dup
 L46:    istore_3
 L47:    iflt L81
-L50:    getstatic Field PE else [F
+L50:    getstatic Field PE field1227 [F
 L53:    iload_3
 L54:    faload
 L55:    aload_0
-L56:    getfield Field PE "enum" F
+L56:    getfield Field PE field977 F
 L59:    fmul
-L60:    getstatic Field PE do [F
+L60:    getstatic Field PE field1228 [F
 L63:    iload_3
 L64:    iinc 3 -1
 L67:    faload
 L68:    aload_0
-L69:    getfield Field PE char F
+L69:    getfield Field PE field1226 F
 L72:    fmul
-L73:    invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
+L73:    invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
 L76:    iload_3
 L77:    goto L47
 L80:    athrow
-L81:    invokestatic Method org/lwjgl/opengl/GL11 float ()V
+L81:    invokestatic Method org/lwjgl/opengl/GL11 method3788 ()V
 L84:    fconst_1
 L85:    dup
 L86:    dup_x1
 L87:    fload_2
-L88:    invokestatic Method org/lwjgl/opengl/GL11 else (FFFF)V
+L88:    invokestatic Method org/lwjgl/opengl/GL11 method3888 (FFFF)V
 L91:    iconst_3
 L92:    iconst_1
 L93:    dup
 L94:    pop2
-L95:    invokestatic Method org/lwjgl/opengl/GL11 "strictfp" (I)V
+L95:    invokestatic Method org/lwjgl/opengl/GL11 method3664 (I)V
 L98:    iconst_0
 L99:    iconst_1
 L100:   dup
 L101:   pop2
 L102:   dup
 L103:   istore_3
-L104:   getstatic Field PE else [F
+L104:   getstatic Field PE field1227 [F
 L107:   arraylength
 L108:   if_icmpge L142
-L111:   getstatic Field PE else [F
+L111:   getstatic Field PE field1227 [F
 L114:   iload_3
 L115:   faload
 L116:   aload_0
-L117:   getfield Field PE "enum" F
+L117:   getfield Field PE field977 F
 L120:   fmul
-L121:   getstatic Field PE do [F
+L121:   getstatic Field PE field1228 [F
 L124:   iload_3
 L125:   iinc 3 1
 L128:   faload
 L129:   aload_0
-L130:   getfield Field PE char F
+L130:   getfield Field PE field1226 F
 L133:   fmul
-L134:   invokestatic Method org/lwjgl/opengl/GL11 break (FF)V
+L134:   invokestatic Method org/lwjgl/opengl/GL11 method3848 (FF)V
 L137:   iload_3
 L138:   goto L104
 L141:   athrow
-L142:   invokestatic Method org/lwjgl/opengl/GL11 float ()V
-L145:   invokestatic Method org/lwjgl/opengl/GL11 char ()V
+L142:   invokestatic Method org/lwjgl/opengl/GL11 method3788 ()V
+L145:   invokestatic Method org/lwjgl/opengl/GL11 method3672 ()V
 L148:   aload_0
-L149:   getfield Field PE "enum" F
+L149:   getfield Field PE field977 F
 L152:   fconst_2
 L153:   fdiv
 L154:   f2d
 L155:   aload_0
-L156:   getfield Field PE char F
+L156:   getfield Field PE field1226 F
 L159:   f2d
 L160:   ldc2_w 7.8e-1
 L163:   dmul
 L164:   dconst_0
-L165:   invokestatic Method org/lwjgl/opengl/GL11 catch (DDD)V
+L165:   invokestatic Method org/lwjgl/opengl/GL11 method3655 (DDD)V
 L168:   invokestatic Method FE new ()D
 L171:   d2f
 L172:   ldc 5e2f
@@ -122,35 +122,35 @@ L188:   fload_3
 L189:   fconst_1
 L190:   fconst_0
 L191:   dup_x1
-L192:   invokestatic Method org/lwjgl/opengl/GL11 for (FFFF)V
+L192:   invokestatic Method org/lwjgl/opengl/GL11 method3746 (FFFF)V
 L195:   aload_0
 L196:   dup
-L197:   getfield Field PE do LQD;
-L200:   invokevirtual Method QD catch ()F
+L197:   getfield Field PE field1232 LQD;
+L200:   invokevirtual Method QD method623 ()F
 L203:   fneg
 L204:   fconst_2
 L205:   fdiv
 L206:   f2d
 L207:   dconst_0
 L208:   dup2
-L209:   invokestatic Method org/lwjgl/opengl/GL11 catch (DDD)V
-L212:   getfield Field PE do LQD;
+L209:   invokestatic Method org/lwjgl/opengl/GL11 method3655 (DDD)V
+L212:   getfield Field PE field1232 LQD;
 L215:   iload_1
 L216:   fload_2
 L217:   invokevirtual Method QD background (ZF)V
-L220:   invokestatic Method org/lwjgl/opengl/GL11 do ()V
+L220:   invokestatic Method org/lwjgl/opengl/GL11 method3730 ()V
 L223:   return
 L224:   
-        .attribute StackMap b'\x00\x07\x00\x2F\x00\x04\x07\x00\x02\x01\x02\x01\x00\x01\x01\x00\x50\x00\x00\x00\x01\x07\x00\x2B\x00\x51\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00\x00\x68\x00\x04\x07\x00\x02\x01\x02\x01\x00\x01\x01\x00\x8D\x00\x00\x00\x01\x07\x00\x2B\x00\x8E\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00\x00\xBC\x00\x04\x07\x00\x02\x01\x02\x02\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x2F\x00\x04\x07\x00\x02\x01\x02\x01\x00\x01\x01\x00\x50\x00\x00\x00\x01\x07\x00\x2D\x00\x51\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00\x00\x68\x00\x04\x07\x00\x02\x01\x02\x01\x00\x01\x01\x00\x8D\x00\x00\x00\x01\x07\x00\x2D\x00\x8E\x00\x04\x07\x00\x02\x01\x02\x01\x00\x00\x00\xBC\x00\x04\x07\x00\x02\x01\x02\x02\x00\x00'
     .end code
 .end method
 
-.method public break : (FF)V
+.method public method599 : (FF)V
     .code stack 6 locals 3
 L0:     aload_0
 L1:     fload_1
 L2:     fload_2
-L3:     invokespecial Method id break (FF)V
+L3:     invokespecial Method id method599 (FF)V
 L6:     new QD
 L9:     aload_0
 L10:    dup_x1
@@ -162,7 +162,7 @@ L16:    fload_2
 L17:    ldc 7e-1f
 L19:    fmul
 L20:    invokespecial Method QD <init> (Ljava/lang/String;F)V
-L23:    putfield Field PE do LQD;
+L23:    putfield Field PE field1232 LQD;
 L26:    return
 L27:    
     .end code

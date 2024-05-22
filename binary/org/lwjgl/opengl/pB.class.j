@@ -11,7 +11,7 @@ L5:
     .end code
 .end method
 
-.method public static break : (IIIIIIIIIIIIIII)V
+.method public static method5703 : (IIIIIIIIIIIIIII)V
     .code stack 15 locals 15
 L0:     iload_0
 L1:     iload_1
@@ -28,7 +28,7 @@ L18:    iload 11
 L20:    iload 12
 L22:    iload 13
 L24:    iload 14
-L26:    invokestatic Method org/lwjgl/opengl/GL43 break (IIIIIIIIIIIIIII)V
+L26:    invokestatic Method org/lwjgl/opengl/GL43 method4583 (IIIIIIIIIIIIIII)V
 L29:    return
 L30:    
     .end code

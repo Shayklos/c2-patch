@@ -2,14 +2,14 @@
 .class final super org/lwjgl/C
 .super java/lang/Object
 .implements java/security/PrivilegedAction
-.field final synthetic do Ljava/lang/String;
+.field final synthetic field2428 Ljava/lang/String;
 
 .method <init> : (Ljava/lang/String;)V
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field org/lwjgl/C do Ljava/lang/String;
+L3:     putfield Field org/lwjgl/C field2428 Ljava/lang/String;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    
@@ -32,7 +32,7 @@ L19:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;
 L22:    getstatic Field java/io/File separator Ljava/lang/String;
 L25:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L28:    aload_0
-L29:    getfield Field org/lwjgl/C do Ljava/lang/String;
+L29:    getfield Field org/lwjgl/C field2428 Ljava/lang/String;
 L32:    invokestatic Method java/lang/System mapLibraryName (Ljava/lang/String;)Ljava/lang/String;
 L35:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L38:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
@@ -40,7 +40,7 @@ L41:    invokestatic Method java/lang/System load (Ljava/lang/String;)V
 L44:    goto L55
 L47:    athrow
 L48:    aload_0
-L49:    getfield Field org/lwjgl/C do Ljava/lang/String;
+L49:    getfield Field org/lwjgl/C field2428 Ljava/lang/String;
 L52:    invokestatic Method java/lang/System loadLibrary (Ljava/lang/String;)V
 L55:    aconst_null
 L56:    areturn
@@ -51,5 +51,5 @@ L57:
 .innerclasses
     org/lwjgl/C [0] [0] static
 .end innerclasses
-.enclosing method org/lwjgl/Sys else (Ljava/lang/String;)V
+.enclosing method org/lwjgl/Sys method1893 (Ljava/lang/String;)V
 .end class

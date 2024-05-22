@@ -1,27 +1,27 @@
 .version 49 0
 .class public final super enum zg
 .super java/lang/Enum
-.field public static final enum byte Lzg;
-.field public static final enum "super" Lzg;
-.field private static final synthetic int [Lzg;
-.field public static final enum short Lzg;
-.field public static final enum goto Lzg;
-.field public static final enum break Lzg;
-.field public static final enum long Lzg;
-.field public static final enum void Lzg;
+.field public static final enum field453 Lzg;
+.field public static final enum field454 Lzg;
+.field private static final synthetic field455 [Lzg;
+.field public static final enum field456 Lzg;
+.field public static final enum field457 Lzg;
+.field public static final enum field458 Lzg;
+.field public static final enum field459 Lzg;
+.field public static final enum field460 Lzg;
 .field public static final enum try Lzg;
-.field public static final enum const Lzg;
+.field public static final enum field461 Lzg;
 .field public static final enum new Lzg;
-.field public static final enum null Lzg;
+.field public static final enum field462 Lzg;
 .field public static final enum this Lzg;
-.field public static final enum char Lzg;
-.field public static final enum else Lzg;
-.field public static final enum "enum" Lzg;
-.field public static final enum do Lzg;
+.field public static final enum field463 Lzg;
+.field public static final enum field464 Lzg;
+.field public static final enum field465 Lzg;
+.field public static final enum field466 Lzg;
 
 .method public static values : ()[Lzg;
     .code stack 1 locals 0
-L0:     getstatic Field zg int [Lzg;
+L0:     getstatic Field zg field455 [Lzg;
 L3:     invokevirtual Method [Lzg; clone ()Ljava/lang/Object;
 L6:     checkcast [Lzg;
 L9:     areturn
@@ -48,7 +48,7 @@ L23:    dup
 L24:    dup
 L25:    pop2
 L26:    invokespecial Method zg <init> (Ljava/lang/String;I)V
-L29:    putstatic Field zg "super" Lzg;
+L29:    putstatic Field zg field454 Lzg;
 L32:    new zg
 L35:    dup
 L36:    ldc "COUNTDOWN"
@@ -57,7 +57,7 @@ L39:    iconst_1
 L40:    dup
 L41:    pop2
 L42:    invokespecial Method zg <init> (Ljava/lang/String;I)V
-L45:    putstatic Field zg char Lzg;
+L45:    putstatic Field zg field463 Lzg;
 L48:    new zg
 L51:    dup
 L52:    ldc "COUNTDOWN_DING"
@@ -66,7 +66,7 @@ L55:    iconst_1
 L56:    dup
 L57:    pop2
 L58:    invokespecial Method zg <init> (Ljava/lang/String;I)V
-L61:    putstatic Field zg const Lzg;
+L61:    putstatic Field zg field461 Lzg;
 L64:    new zg
 L67:    dup
 L68:    ldc "BLOCKED_BY_SPEED_BLOCK"
@@ -75,7 +75,7 @@ L71:    iconst_1
 L72:    dup
 L73:    pop2
 L74:    invokespecial Method zg <init> (Ljava/lang/String;I)V
-L77:    putstatic Field zg null Lzg;
+L77:    putstatic Field zg field462 Lzg;
 L80:    new zg
 L83:    dup
 L84:    ldc "IMPRESSIVE"
@@ -84,7 +84,7 @@ L87:    iconst_1
 L88:    dup
 L89:    pop2
 L90:    invokespecial Method zg <init> (Ljava/lang/String;I)V
-L93:    putstatic Field zg long Lzg;
+L93:    putstatic Field zg field459 Lzg;
 L96:    new zg
 L99:    dup
 L100:   ldc "PERFECT"
@@ -93,7 +93,7 @@ L104:   iconst_1
 L105:   dup
 L106:   pop2
 L107:   invokespecial Method zg <init> (Ljava/lang/String;I)V
-L110:   putstatic Field zg break Lzg;
+L110:   putstatic Field zg field458 Lzg;
 L113:   new zg
 L116:   dup
 L117:   ldc "GOD_LIKE"
@@ -111,7 +111,7 @@ L138:   iconst_1
 L139:   dup
 L140:   pop2
 L141:   invokespecial Method zg <init> (Ljava/lang/String;I)V
-L144:   putstatic Field zg else Lzg;
+L144:   putstatic Field zg field464 Lzg;
 L147:   new zg
 L150:   dup
 L151:   ldc "LINE_RECEIVED"
@@ -129,7 +129,7 @@ L172:   iconst_1
 L173:   dup
 L174:   pop2
 L175:   invokespecial Method zg <init> (Ljava/lang/String;I)V
-L178:   putstatic Field zg "enum" Lzg;
+L178:   putstatic Field zg field465 Lzg;
 L181:   new zg
 L184:   dup
 L185:   ldc "LINE_CLEARED"
@@ -138,7 +138,7 @@ L189:   iconst_1
 L190:   dup
 L191:   pop2
 L192:   invokespecial Method zg <init> (Ljava/lang/String;I)V
-L195:   putstatic Field zg byte Lzg;
+L195:   putstatic Field zg field453 Lzg;
 L198:   new zg
 L201:   dup
 L202:   ldc "PLAYFIELD_SHRUNK"
@@ -147,7 +147,7 @@ L206:   iconst_1
 L207:   dup
 L208:   pop2
 L209:   invokespecial Method zg <init> (Ljava/lang/String;I)V
-L212:   putstatic Field zg short Lzg;
+L212:   putstatic Field zg field456 Lzg;
 L215:   new zg
 L218:   dup
 L219:   ldc "UI_DIALOG"
@@ -156,7 +156,7 @@ L223:   iconst_1
 L224:   dup
 L225:   pop2
 L226:   invokespecial Method zg <init> (Ljava/lang/String;I)V
-L229:   putstatic Field zg do Lzg;
+L229:   putstatic Field zg field466 Lzg;
 L232:   new zg
 L235:   dup
 L236:   ldc "UI_SLIDE"
@@ -165,7 +165,7 @@ L240:   iconst_1
 L241:   dup
 L242:   pop2
 L243:   invokespecial Method zg <init> (Ljava/lang/String;I)V
-L246:   putstatic Field zg goto Lzg;
+L246:   putstatic Field zg field457 Lzg;
 L249:   new zg
 L252:   dup
 L253:   ldc "UI_TRANSITION"
@@ -174,7 +174,7 @@ L257:   iconst_1
 L258:   dup
 L259:   pop2
 L260:   invokespecial Method zg <init> (Ljava/lang/String;I)V
-L263:   putstatic Field zg void Lzg;
+L263:   putstatic Field zg field460 Lzg;
 L266:   bipush 16
 L268:   iconst_1
 L269:   dup
@@ -195,42 +195,42 @@ L287:   iconst_1
 L288:   dup
 L289:   dup
 L290:   pop2
-L291:   getstatic Field zg "super" Lzg;
+L291:   getstatic Field zg field454 Lzg;
 L294:   aastore
 L295:   dup
 L296:   iconst_2
 L297:   iconst_1
 L298:   dup
 L299:   pop2
-L300:   getstatic Field zg char Lzg;
+L300:   getstatic Field zg field463 Lzg;
 L303:   aastore
 L304:   dup
 L305:   iconst_3
 L306:   iconst_1
 L307:   dup
 L308:   pop2
-L309:   getstatic Field zg const Lzg;
+L309:   getstatic Field zg field461 Lzg;
 L312:   aastore
 L313:   dup
 L314:   iconst_4
 L315:   iconst_1
 L316:   dup
 L317:   pop2
-L318:   getstatic Field zg null Lzg;
+L318:   getstatic Field zg field462 Lzg;
 L321:   aastore
 L322:   dup
 L323:   iconst_5
 L324:   iconst_1
 L325:   dup
 L326:   pop2
-L327:   getstatic Field zg long Lzg;
+L327:   getstatic Field zg field459 Lzg;
 L330:   aastore
 L331:   dup
 L332:   bipush 6
 L334:   iconst_1
 L335:   dup
 L336:   pop2
-L337:   getstatic Field zg break Lzg;
+L337:   getstatic Field zg field458 Lzg;
 L340:   aastore
 L341:   dup
 L342:   bipush 7
@@ -244,7 +244,7 @@ L352:   bipush 8
 L354:   iconst_1
 L355:   dup
 L356:   pop2
-L357:   getstatic Field zg else Lzg;
+L357:   getstatic Field zg field464 Lzg;
 L360:   aastore
 L361:   dup
 L362:   bipush 9
@@ -258,44 +258,44 @@ L372:   bipush 10
 L374:   iconst_1
 L375:   dup
 L376:   pop2
-L377:   getstatic Field zg "enum" Lzg;
+L377:   getstatic Field zg field465 Lzg;
 L380:   aastore
 L381:   dup
 L382:   bipush 11
 L384:   iconst_1
 L385:   dup
 L386:   pop2
-L387:   getstatic Field zg byte Lzg;
+L387:   getstatic Field zg field453 Lzg;
 L390:   aastore
 L391:   dup
 L392:   bipush 12
 L394:   iconst_1
 L395:   dup
 L396:   pop2
-L397:   getstatic Field zg short Lzg;
+L397:   getstatic Field zg field456 Lzg;
 L400:   aastore
 L401:   dup
 L402:   bipush 13
 L404:   iconst_1
 L405:   dup
 L406:   pop2
-L407:   getstatic Field zg do Lzg;
+L407:   getstatic Field zg field466 Lzg;
 L410:   aastore
 L411:   dup
 L412:   bipush 14
 L414:   iconst_1
 L415:   dup
 L416:   pop2
-L417:   getstatic Field zg goto Lzg;
+L417:   getstatic Field zg field457 Lzg;
 L420:   aastore
 L421:   dup
 L422:   bipush 15
 L424:   iconst_1
 L425:   dup
 L426:   pop2
-L427:   getstatic Field zg void Lzg;
+L427:   getstatic Field zg field460 Lzg;
 L430:   aastore
-L431:   putstatic Field zg int [Lzg;
+L431:   putstatic Field zg field455 [Lzg;
 L434:   return
 L435:   
     .end code

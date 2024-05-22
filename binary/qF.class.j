@@ -1,25 +1,25 @@
 .version 49 0
 .class public super abstract qF
 .super java/lang/Object
-.field public final synthetic "enum" LIe;
-.field public do LuB;
+.field public final synthetic field2250 LIe;
+.field public field2251 LuB;
 
 .method private <init> : (LIe;)V
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field qF "enum" LIe;
+L3:     putfield Field qF field2250 LIe;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    
     .end code
 .end method
 
-.method public abstract break : (FFF)V
+.method public abstract method1131 : (FFF)V
 .end method
 
-.method public abstract break : ()F
+.method public abstract method1132 : ()F
 .end method
 
 .method public synthetic <init> : (LIe;Lpe;)V
@@ -32,17 +32,17 @@ L6:
     .end code
 .end method
 
-.method public break : (FF)V
+.method public method1133 : (FF)V
     .code stack 4 locals 3
 L0:     aload_0
 L1:     dup
-L2:     getfield Field qF do LuB;
-L5:     invokevirtual Method uB long ()V
-L8:     getfield Field qF do LuB;
+L2:     getfield Field qF field2251 LuB;
+L5:     invokevirtual Method uB method113 ()V
+L8:     getfield Field qF field2251 LuB;
 L11:    fload_1
 L12:    fload_2
 L13:    fconst_0
-L14:    invokevirtual Method uB break (FFF)V
+L14:    invokevirtual Method uB method312 (FFF)V
 L17:    return
 L18:    
     .end code

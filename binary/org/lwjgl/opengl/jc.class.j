@@ -1,14 +1,14 @@
 .version 49 0
 .class final super org/lwjgl/opengl/jc
 .super java/lang/Object
-.field else Ljava/lang/Object;
-.field "enum" Lorg/lwjgl/opengl/jc;
-.field final do I
+.field field5400 Ljava/lang/Object;
+.field field5401 Lorg/lwjgl/opengl/jc;
+.field final field5402 I
 
-.method public else : ()I
+.method public method5531 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/jc do I
+L1:     getfield Field org/lwjgl/opengl/jc field5402 I
 L4:     ireturn
 L5:     
     .end code
@@ -24,18 +24,18 @@ L4:     iload_1
 L5:     aload_0
 L6:     dup_x1
 L7:     invokespecial Method java/lang/Object <init> ()V
-L10:    putfield Field org/lwjgl/opengl/jc do I
-L13:    putfield Field org/lwjgl/opengl/jc else Ljava/lang/Object;
-L16:    putfield Field org/lwjgl/opengl/jc "enum" Lorg/lwjgl/opengl/jc;
+L10:    putfield Field org/lwjgl/opengl/jc field5402 I
+L13:    putfield Field org/lwjgl/opengl/jc field5400 Ljava/lang/Object;
+L16:    putfield Field org/lwjgl/opengl/jc field5401 Lorg/lwjgl/opengl/jc;
 L19:    return
 L20:    
     .end code
 .end method
 
-.method public break : ()Ljava/lang/Object;
+.method public method5532 : ()Ljava/lang/Object;
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/jc else Ljava/lang/Object;
+L1:     getfield Field org/lwjgl/opengl/jc field5400 Ljava/lang/Object;
 L4:     areturn
 L5:     
     .end code

@@ -12,7 +12,7 @@ L5:
     .end code
 .end method
 
-.method public break : (LRg;)Ljava/lang/Object;
+.method public method712 : (LRg;)Ljava/lang/Object;
     .code stack 8 locals 2
 L0:     ldc "%d:%04.1f"
 L2:     iconst_2
@@ -29,7 +29,7 @@ L14:    iconst_1
 L15:    dup
 L16:    pop2
 L17:    aload_1
-L18:    getfield Field Rg do F
+L18:    getfield Field Rg field241 F
 L21:    f2i
 L22:    bipush 60
 L24:    iconst_1
@@ -44,7 +44,7 @@ L34:    dup
 L35:    dup
 L36:    pop2
 L37:    aload_1
-L38:    getfield Field Rg do F
+L38:    getfield Field Rg field241 F
 L41:    ldc 6e1f
 L43:    frem
 L44:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;

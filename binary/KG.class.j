@@ -11,7 +11,7 @@ L5:
     .end code
 .end method
 
-.method public else : ()[LEF;
+.method public method751 : ()[LEF;
     .code stack 5 locals 1
 L0:     iconst_3
 L1:     iconst_1
@@ -40,7 +40,7 @@ L29:    iconst_2
 L30:    iconst_1
 L31:    dup
 L32:    pop2
-L33:    getstatic Field EF char LEF;
+L33:    getstatic Field EF field431 LEF;
 L36:    aastore
 L37:    areturn
 L38:    

@@ -27,11 +27,11 @@ L4:     ldc -Infinityf
 L6:     fconst_0
 L7:     ldc +Infinityf
 L9:     aload_0
-L10:    getfield Field Ig break F
-L13:    invokevirtual Method Ig break (FFFF)V
+L10:    getfield Field Ig field1132 F
+L13:    invokevirtual Method Ig method464 (FFFF)V
 L16:    fload_2
 L17:    invokespecial Method qc background (ZF)V
-L20:    invokevirtual Method Ig byte ()V
+L20:    invokevirtual Method Ig method417 ()V
 L23:    return
 L24:    
     .end code

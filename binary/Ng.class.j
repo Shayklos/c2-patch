@@ -2,27 +2,27 @@
 .class public final super Ng
 .super java/lang/Object
 .implements h
-.field public final synthetic else LgD;
-.field public final synthetic "enum" LgD;
-.field public final synthetic do LFE;
+.field public final synthetic field1597 LgD;
+.field public final synthetic field1598 LgD;
+.field public final synthetic field1599 LFE;
 
-.method public break : (LgB;)V
+.method public method728 : (LgB;)V
     .code stack 5 locals 2
 L0:     aload_0
 L1:     dup
-L2:     getfield Field Ng else LgD;
+L2:     getfield Field Ng field1597 LgD;
 L5:     iconst_1
 L6:     dup
 L7:     dup
 L8:     pop2
 L9:     invokestatic Method java/lang/Boolean valueOf (Z)Ljava/lang/Boolean;
-L12:    putfield Field gD do Ljava/lang/Object;
-L15:    getfield Field Ng do LFE;
+L12:    putfield Field gD field2273 Ljava/lang/Object;
+L15:    getfield Field Ng field1599 LFE;
 L18:    aload_0
-L19:    getfield Field Ng "enum" LgD;
-L22:    getfield Field gD do Ljava/lang/Object;
+L19:    getfield Field Ng field1598 LgD;
+L22:    getfield Field gD field2273 Ljava/lang/Object;
 L25:    checkcast jC
-L28:    invokevirtual Method FE break (LjC;)V
+L28:    invokevirtual Method FE method458 (LjC;)V
 L31:    return
 L32:    
     .end code
@@ -37,9 +37,9 @@ L3:     dup_x2
 L4:     aload_2
 L5:     aload_0
 L6:     aload_1
-L7:     putfield Field Ng else LgD;
-L10:    putfield Field Ng do LFE;
-L13:    putfield Field Ng "enum" LgD;
+L7:     putfield Field Ng field1597 LgD;
+L10:    putfield Field Ng field1599 LFE;
+L13:    putfield Field Ng field1598 LgD;
 L16:    invokespecial Method java/lang/Object <init> ()V
 L19:    return
 L20:    
@@ -48,5 +48,5 @@ L20:
 .innerclasses
     Ng [0] [0] static
 .end innerclasses
-.enclosing method vE break (LFE;I)V
+.enclosing method vE method574 (LFE;I)V
 .end class

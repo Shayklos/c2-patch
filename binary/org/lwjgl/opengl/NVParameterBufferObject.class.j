@@ -2,21 +2,21 @@
 .class public final super org/lwjgl/opengl/NVParameterBufferObject
 .super java/lang/Object
 .field public static final this I = 36259
-.field public static final char I = 36260
-.field public static final else I = 36257
-.field public static final "enum" I = 36258
-.field public static final do I = 36256
+.field public static final field4744 I = 36260
+.field public static final field4745 I = 36257
+.field public static final field4746 I = 36258
+.field public static final field4747 I = 36256
 
-.method public static break : (IIILjava/nio/FloatBuffer;)V
+.method public static method5069 : (IIILjava/nio/FloatBuffer;)V
     .code stack 8 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb yD J
 L6:     dup2
 L7:     lstore 4
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    aload_3
-L14:    invokestatic Method org/lwjgl/l break (Ljava/nio/FloatBuffer;)V
+L14:    invokestatic Method org/lwjgl/l method2048 (Ljava/nio/FloatBuffer;)V
 L17:    iload_1
 L18:    iload_2
 L19:    aload_3
@@ -27,7 +27,7 @@ L25:    dup
 L26:    pop2
 L27:    ishr
 L28:    aload_3
-L29:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/FloatBuffer;)J
+L29:    invokestatic Method org/lwjgl/MemoryUtil method1878 (Ljava/nio/FloatBuffer;)J
 L32:    lload 4
 L34:    invokestatic Method org/lwjgl/opengl/NVParameterBufferObject nglProgramBufferParametersfvNV (IIIIJJ)V
 L37:    return
@@ -50,16 +50,16 @@ L5:
 .method static native nglProgramBufferParametersIivNV : (IIIIJJ)V
 .end method
 
-.method public static else : (IIILjava/nio/IntBuffer;)V
+.method public static method5070 : (IIILjava/nio/IntBuffer;)V
     .code stack 8 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb wA J
 L6:     dup2
 L7:     lstore 4
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    aload_3
-L14:    invokestatic Method org/lwjgl/l else (Ljava/nio/IntBuffer;)V
+L14:    invokestatic Method org/lwjgl/l method2043 (Ljava/nio/IntBuffer;)V
 L17:    iload_1
 L18:    iload_2
 L19:    aload_3
@@ -70,7 +70,7 @@ L25:    dup
 L26:    pop2
 L27:    ishr
 L28:    aload_3
-L29:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/IntBuffer;)J
+L29:    invokestatic Method org/lwjgl/MemoryUtil method1884 (Ljava/nio/IntBuffer;)J
 L32:    lload 4
 L34:    invokestatic Method org/lwjgl/opengl/NVParameterBufferObject nglProgramBufferParametersIivNV (IIIIJJ)V
 L37:    return
@@ -81,16 +81,16 @@ L38:
 .method static native nglProgramBufferParametersfvNV : (IIIIJJ)V
 .end method
 
-.method public static break : (IIILjava/nio/IntBuffer;)V
+.method public static method5071 : (IIILjava/nio/IntBuffer;)V
     .code stack 8 locals 6
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb Yt J
 L6:     dup2
 L7:     lstore 4
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    aload_3
-L14:    invokestatic Method org/lwjgl/l else (Ljava/nio/IntBuffer;)V
+L14:    invokestatic Method org/lwjgl/l method2043 (Ljava/nio/IntBuffer;)V
 L17:    iload_1
 L18:    iload_2
 L19:    aload_3
@@ -101,7 +101,7 @@ L25:    dup
 L26:    pop2
 L27:    ishr
 L28:    aload_3
-L29:    invokestatic Method org/lwjgl/MemoryUtil break (Ljava/nio/IntBuffer;)J
+L29:    invokestatic Method org/lwjgl/MemoryUtil method1884 (Ljava/nio/IntBuffer;)J
 L32:    lload 4
 L34:    invokestatic Method org/lwjgl/opengl/NVParameterBufferObject nglProgramBufferParametersIuivNV (IIIIJJ)V
 L37:    return

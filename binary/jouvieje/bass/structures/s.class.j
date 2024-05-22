@@ -11,10 +11,10 @@ L5:
     .end code
 .end method
 
-.method public break : (Ljava/nio/IntBuffer;)V
+.method public method1207 : (Ljava/nio/IntBuffer;)V
     .code stack 5 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/s do J
+L1:     getfield Field jouvieje/bass/structures/s field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -23,10 +23,10 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/s do J
+L18:    getfield Field jouvieje/bass/structures/s field2319 J
 L21:    aload_1
 L22:    dup
-L23:    invokestatic Method jouvieje/bass/utils/e else (Ljava/nio/Buffer;)I
+L23:    invokestatic Method jouvieje/bass/utils/e method1682 (Ljava/nio/Buffer;)I
 L26:    i2l
 L27:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_MIX_set_lChannel (JLjava/nio/IntBuffer;J)V
 L30:    return
@@ -45,29 +45,29 @@ L6:
     .end code
 .end method
 
-.method public else : ()V
+.method public method1183 : ()V
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/s do J
+L1:     getfield Field jouvieje/bass/structures/s field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifeq L16
 L9:     aload_0
-L10:    getfield Field jouvieje/bass/structures/s do J
+L10:    getfield Field jouvieje/bass/structures/s field2319 J
 L13:    invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_MIX_delete (J)V
 L16:    aload_0
 L17:    lconst_0
-L18:    putfield Field jouvieje/bass/structures/s do J
+L18:    putfield Field jouvieje/bass/structures/s field2319 J
 L21:    return
 L22:    
         .attribute StackMap b'\x00\x01\x00\x10\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/s;
+.method public static method1208 : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/s;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     dup2
 L5:     lstore_1
 L6:     lconst_0
@@ -82,11 +82,11 @@ L18:    lload_1
 L19:    invokespecial Method jouvieje/bass/structures/s <init> (J)V
 L22:    areturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2B\x00\x0E\x00\x02\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2E\x00\x0E\x00\x02\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public static break : ()Ljouvieje/bass/structures/s;
+.method public static method1209 : ()Ljouvieje/bass/structures/s;
     .code stack 4 locals 2
 L0:     invokestatic Method jouvieje/bass/structures/StructureJNI BASS_BFX_MIX_new ()J
 L3:     dup2

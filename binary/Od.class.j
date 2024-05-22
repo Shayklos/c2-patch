@@ -2,8 +2,8 @@
 .class public final super Od
 .super java/lang/Object
 .implements java/lang/Runnable
-.field public final synthetic "enum" Lab;
-.field public final synthetic do LD;
+.field public final synthetic field1707 Lab;
+.field public final synthetic field1708 LD;
 
 .method public <init> : (Lab;LD;)V
     .code stack 5 locals 3
@@ -12,8 +12,8 @@ L1:     aload_0
 L2:     dup_x1
 L3:     dup_x2
 L4:     aload_1
-L5:     putfield Field Od "enum" Lab;
-L8:     putfield Field Od do LD;
+L5:     putfield Field Od field1707 Lab;
+L8:     putfield Field Od field1708 LD;
 L11:    invokespecial Method java/lang/Object <init> ()V
 L14:    return
 L15:    
@@ -40,8 +40,8 @@ L18:    iload_3
 L19:    aaload
 L20:    astore 4
 L22:    aload_0
-L23:    getfield Field Od "enum" Lab;
-L26:    getfield Field ab continue Ljava/util/Set;
+L23:    getfield Field Od field1707 Lab;
+L26:    getfield Field ab field745 Ljava/util/Set;
 L29:    invokeinterface InterfaceMethod java/util/Set iterator ()Ljava/util/Iterator; 1
 L34:    astore 5
 L36:    aload 5
@@ -52,15 +52,15 @@ L48:    invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Obj
 L53:    checkcast Dc
 L56:    dup
 L57:    astore 6
-L59:    getfield Field Dc do Ljava/lang/Object;
+L59:    getfield Field Dc field1794 Ljava/lang/Object;
 L62:    aload 4
 L64:    if_acmpne L36
 L67:    aload 6
-L69:    getfield Field Dc "enum" Ljava/lang/Object;
+L69:    getfield Field Dc field1793 Ljava/lang/Object;
 L72:    checkcast G
 L75:    aload_0
-L76:    getfield Field Od do LD;
-L79:    invokeinterface InterfaceMethod G break (LD;)V 2
+L76:    getfield Field Od field1708 LD;
+L79:    invokeinterface InterfaceMethod G method8 (LD;)V 2
 L84:    goto L36
 L87:    athrow
 L88:    iinc 3 1
@@ -69,11 +69,11 @@ L92:    goto L13
 L95:    athrow
 L96:    return
 L97:    
-        .attribute StackMap b'\x00\x06\x00\x0D\x00\x04\x07\x00\x02\x07\x00\x21\x01\x01\x00\x01\x01\x00\x24\x00\x06\x07\x00\x02\x07\x00\x21\x01\x01\x07\x00\x1B\x07\x00\x2D\x00\x00\x00\x57\x00\x00\x00\x01\x07\x00\x43\x00\x58\x00\x06\x07\x00\x02\x07\x00\x21\x01\x01\x07\x00\x1B\x07\x00\x2D\x00\x00\x00\x5F\x00\x00\x00\x01\x07\x00\x43\x00\x60\x00\x04\x07\x00\x02\x07\x00\x21\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x0D\x00\x04\x07\x00\x02\x07\x00\x21\x01\x01\x00\x01\x01\x00\x24\x00\x06\x07\x00\x02\x07\x00\x21\x01\x01\x07\x00\x1B\x07\x00\x2D\x00\x00\x00\x57\x00\x00\x00\x01\x07\x00\x45\x00\x58\x00\x06\x07\x00\x02\x07\x00\x21\x01\x01\x07\x00\x1B\x07\x00\x2D\x00\x00\x00\x5F\x00\x00\x00\x01\x07\x00\x45\x00\x60\x00\x04\x07\x00\x02\x07\x00\x21\x01\x01\x00\x00'
     .end code
 .end method
 .innerclasses
     Od [0] [0]
 .end innerclasses
-.enclosing method ab else (LD;)V
+.enclosing method ab method394 (LD;)V
 .end class

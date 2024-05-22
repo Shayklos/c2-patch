@@ -136,7 +136,7 @@ L23:
 .method public static createPointerBuffer : (I)Lorg/lwjgl/h;
     .code stack 1 locals 1
 L0:     iload_0
-L1:     invokestatic Method org/lwjgl/h short (I)Lorg/lwjgl/h;
+L1:     invokestatic Method org/lwjgl/h method272 (I)Lorg/lwjgl/h;
 L4:     areturn
 L5:     
     .end code

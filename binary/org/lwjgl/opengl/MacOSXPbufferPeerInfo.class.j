@@ -5,7 +5,7 @@
 .method private static native nDestroy : (Ljava/nio/ByteBuffer;)V
 .end method
 
-.method protected catch : ()V
+.method protected method4672 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
@@ -13,7 +13,7 @@ L1:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method protected const : ()V
+.method protected method4671 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
@@ -21,10 +21,10 @@ L1:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method public short : ()V
+.method public method4675 : ()V
     .code stack 1 locals 1
 L0:     aload_0
-L1:     invokevirtual Method org/lwjgl/opengl/MacOSXPbufferPeerInfo float ()Ljava/nio/ByteBuffer;
+L1:     invokevirtual Method org/lwjgl/opengl/MacOSXPbufferPeerInfo method4677 ()Ljava/nio/ByteBuffer;
 L4:     invokestatic Method org/lwjgl/opengl/MacOSXPbufferPeerInfo nDestroy (Ljava/nio/ByteBuffer;)V
 L7:     return
 L8:     
@@ -58,7 +58,7 @@ L18:    iconst_1
 L19:    dup
 L20:    pop2
 L21:    invokespecial Method org/lwjgl/opengl/MacOSXPeerInfo <init> (Lorg/lwjgl/opengl/PixelFormat;Lorg/lwjgl/opengl/CB;ZZZZ)V
-L24:    invokevirtual Method org/lwjgl/opengl/MacOSXPbufferPeerInfo float ()Ljava/nio/ByteBuffer;
+L24:    invokevirtual Method org/lwjgl/opengl/MacOSXPbufferPeerInfo method4677 ()Ljava/nio/ByteBuffer;
 L27:    iload_1
 L28:    iload_2
 L29:    invokestatic Method org/lwjgl/opengl/MacOSXPbufferPeerInfo nCreate (Ljava/nio/ByteBuffer;II)V

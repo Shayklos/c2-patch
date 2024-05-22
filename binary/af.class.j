@@ -1,43 +1,43 @@
 .version 49 0
 .class public final super af
 .super java/lang/Object
-.field private else F
-.field private "enum" F
-.field private do I
+.field private field2184 F
+.field private field2185 F
+.field private field2186 I
 
-.method public static synthetic const : (Laf;)F
+.method public static synthetic method1114 : (Laf;)F
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field af "enum" F
+L1:     getfield Field af field2185 F
 L4:     freturn
 L5:     
     .end code
 .end method
 
-.method public static synthetic else : (Laf;)F
+.method public static synthetic method1115 : (Laf;)F
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field af else F
+L1:     getfield Field af field2184 F
 L4:     freturn
 L5:     
     .end code
 .end method
 
-.method public static synthetic else : (Laf;F)F
+.method public static synthetic method1116 : (Laf;F)F
     .code stack 3 locals 2
 L0:     aload_0
 L1:     fload_1
 L2:     dup_x1
-L3:     putfield Field af "enum" F
+L3:     putfield Field af field2185 F
 L6:     freturn
 L7:     
     .end code
 .end method
 
-.method public static synthetic break : (Laf;)I
+.method public static synthetic method1117 : (Laf;)I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field af do I
+L1:     getfield Field af field2186 I
 L4:     ireturn
 L5:     
     .end code
@@ -52,24 +52,24 @@ L3:     dup_x2
 L4:     iload_1
 L5:     aload_0
 L6:     invokespecial Method java/lang/Object <init> ()V
-L9:     putfield Field af do I
+L9:     putfield Field af field2186 I
 L12:    dup_x1
-L13:    putfield Field af "enum" F
-L16:    putfield Field af else F
+L13:    putfield Field af field2185 F
+L16:    putfield Field af field2184 F
 L19:    return
 L20:    
     .end code
 .end method
 
-.method public static synthetic break : (Laf;F)F
+.method public static synthetic method1118 : (Laf;F)F
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
-L2:     getfield Field af "enum" F
+L2:     getfield Field af field2185 F
 L5:     fload_1
 L6:     fsub
 L7:     dup_x1
-L8:     putfield Field af "enum" F
+L8:     putfield Field af field2185 F
 L11:    freturn
 L12:    
     .end code

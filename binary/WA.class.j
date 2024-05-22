@@ -2,7 +2,7 @@
 .class public final super WA
 .super java/lang/Object
 .implements java/io/FilenameFilter
-.field private final do Ljava/lang/String; .fieldattributes
+.field private final field2150 Ljava/lang/String; .fieldattributes
     .synthetic
 .end fieldattributes
 
@@ -12,7 +12,7 @@ L0:     aload_1
 L1:     aload_0
 L2:     dup_x1
 L3:     invokespecial Method java/lang/Object <init> ()V
-L6:     putfield Field WA do Ljava/lang/String;
+L6:     putfield Field WA field2150 Ljava/lang/String;
 L9:     return
 L10:    
     .end code
@@ -26,7 +26,7 @@ L3:     invokevirtual Method java/lang/String endsWith (Ljava/lang/String;)Z
 L6:     ifeq L26
 L9:     aload_2
 L10:    aload_0
-L11:    getfield Field WA do Ljava/lang/String;
+L11:    getfield Field WA field2150 Ljava/lang/String;
 L14:    invokevirtual Method java/lang/String equals (Ljava/lang/Object;)Z
 L17:    ifne L26
 L20:    iconst_1

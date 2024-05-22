@@ -2,14 +2,14 @@
 .class public final super rb
 .super java/lang/Object
 .implements h
-.field public final synthetic do LUb;
+.field public final synthetic field1482 LUb;
 
-.method public break : (LgB;)V
+.method public method728 : (LgB;)V
     .code stack 11 locals 8
 L0:     aload_0
-L1:     getfield Field rb do LUb;
+L1:     getfield Field rb field1482 LUb;
 L4:     getfield Field Ub new Lnf;
-L7:     invokevirtual Method nf const ()Ljava/lang/String;
+L7:     invokevirtual Method nf method426 ()Ljava/lang/String;
 L10:    dup
 L11:    astore_2
 L12:    ifnull L27
@@ -76,8 +76,8 @@ L139:   aload 4
 L141:   invokespecial Method java/io/PrintWriter <init> (Ljava/io/File;)V
 L144:   astore_3
 L145:   aload_0
-L146:   getfield Field rb do LUb;
-L149:   invokevirtual Method Ub const ()Ljava/util/LinkedList;
+L146:   getfield Field rb field1482 LUb;
+L149:   invokevirtual Method Ub method4 ()Ljava/util/LinkedList;
 L152:   invokevirtual Method java/util/LinkedList iterator ()Ljava/util/Iterator;
 L155:   astore 6
 L157:   aload 6
@@ -88,7 +88,7 @@ L169:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Obj
 L174:   checkcast Dc
 L177:   dup
 L178:   astore 7
-L180:   getfield Field Dc "enum" Ljava/lang/Object;
+L180:   getfield Field Dc field1793 Ljava/lang/Object;
 L183:   ifnull L237
 L186:   new java/lang/StringBuilder
 L189:   aload_3
@@ -98,14 +98,14 @@ L192:   pop2
 L193:   dup
 L194:   invokespecial Method java/lang/StringBuilder <init> ()V
 L197:   aload 7
-L199:   getfield Field Dc "enum" Ljava/lang/Object;
+L199:   getfield Field Dc field1793 Ljava/lang/Object;
 L202:   checkcast ed
-L205:   getfield Field ed "super" Ljava/lang/String;
+L205:   getfield Field ed field701 Ljava/lang/String;
 L208:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L211:   ldc ": "
 L213:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L216:   aload 7
-L218:   getfield Field Dc do Ljava/lang/Object;
+L218:   getfield Field Dc field1794 Ljava/lang/Object;
 L221:   checkcast java/lang/String
 L224:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L227:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
@@ -121,7 +121,7 @@ L245:   iconst_0
 L246:   ldc "- "
 L248:   invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
 L251:   aload 7
-L253:   getfield Field Dc do Ljava/lang/Object;
+L253:   getfield Field Dc field1794 Ljava/lang/Object;
 L256:   checkcast java/lang/String
 L259:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L262:   ldc " -"
@@ -135,7 +135,7 @@ L280:   new qc
 L283:   dup
 L284:   new fG
 L287:   dup
-L288:   getstatic Field LE else LLE;
+L288:   getstatic Field LE field632 LLE;
 L291:   fconst_0
 L292:   invokespecial Method fG <init> (LLE;F)V
 L295:   invokespecial Method qc <init> (Ld;)V
@@ -149,12 +149,12 @@ L308:   dup
 L309:   new DF
 L312:   dup
 L313:   ldc "Chat log saved to"
-L315:   getstatic Field We float LWe;
+L315:   getstatic Field We field476 LWe;
 L318:   invokespecial Method DF <init> (Ljava/lang/String;LWe;)V
 L321:   fconst_0
 L322:   ldc 1.45e-1f
 L324:   invokespecial Method SB <init> (LgB;FF)V
-L327:   invokevirtual Method qc float (LgB;)LgB;
+L327:   invokevirtual Method qc method36 (LgB;)LgB;
 L330:   aload 4
 L332:   invokevirtual Method java/io/File getAbsolutePath ()Ljava/lang/String;
 L335:   astore 7
@@ -165,8 +165,8 @@ L343:   dup
 L344:   pop2
 L345:   dup
 L346:   aload 7
-L348:   getstatic Field We float LWe;
-L351:   getfield Field We long F
+L348:   getstatic Field We field476 LWe;
+L351:   getfield Field We field489 F
 L354:   iconst_1
 L355:   dup
 L356:   dup
@@ -177,14 +177,14 @@ L362:   aload_0
 L363:   aload 7
 L365:   invokespecial Method QC <init> (Lrb;Ljava/lang/String;)V
 L368:   invokespecial Method KF <init> (Ljava/lang/String;FZLh;)V
-L371:   invokevirtual Method qc float (LgB;)LgB;
+L371:   invokevirtual Method qc method36 (LgB;)LgB;
 L374:   pop2
 L375:   aload_0
-L376:   getfield Field rb do LUb;
+L376:   getfield Field rb field1482 LUb;
 L379:   getfield Field Ub try LtD;
 L382:   aload 6
-L384:   invokevirtual Method tD const (Lqc;)V
-L387:   goto L480
+L384:   invokevirtual Method tD method100 (Lqc;)V
+L387:   goto L481
 L390:   astore 5
 L392:   aload_3
 L393:   ifnull L407
@@ -207,35 +207,35 @@ L424:   goto L431
 L427:   astore 6
 L429:   aload 5
 L431:   invokevirtual Method java/lang/Exception printStackTrace ()V
-L434:   goto L480
-L437:   getstatic Field Kc else LKc;
-L440:   getstatic Field Pc do LPc;
-L443:   invokevirtual Method Kc else (LPc;)Led;
+L434:   goto L481
+L437:   getstatic Field Kc field1931 LKc;
+L440:   getstatic Field Pc field373 LPc;
+L443:   invokevirtual Method Kc method853 (LPc;)Led;
 L446:   dup
 L447:   astore_3
 L448:   aload_0
 L449:   swap
-L450:   ifnonnull L472
-L453:   getfield Field rb do LUb;
-L456:   invokestatic Method Ub break (LUb;)LFE;
-L459:   getstatic Field Ae else LAe;
-L462:   ldc "You can only chat when connected to GEWALTIG.net."
-L464:   invokevirtual Method FE break (LAe;Ljava/lang/String;)LjC;
-L467:   pop
-L468:   aload_0
-L469:   goto L481
-L472:   getfield Field rb do LUb;
-L475:   aload_3
-L476:   aload_2
-L477:   invokevirtual Method Ub else (Led;Ljava/lang/String;)V
-L480:   aload_0
-L481:   getfield Field rb do LUb;
-L484:   getfield Field Ub new Lnf;
-L487:   ldc ""
-L489:   invokevirtual Method nf break (Ljava/lang/String;)V
-L492:   return
-L493:   
-        .attribute StackMap b'\x00\x13\x00\x1B\x00\x03\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x00\x00\x00\x1C\x00\x00\x00\x01\x07\x00\x3A\x00\x1D\x00\x03\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x00\x00\x00\x87\x00\x06\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x05\x07\x00\x43\x07\x00\x3E\x00\x00\x00\x9D\x00\x07\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x3E\x07\x00\x82\x00\x00\x00\xEC\x00\x00\x00\x01\x07\x00\x3A\x00\xED\x00\x08\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x3E\x07\x00\x82\x07\x00\x8B\x00\x00\x01\x14\x00\x07\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x3E\x07\x00\x82\x00\x00\x01\x86\x00\x05\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x00\x01\x07\x00\x1F\x01\x95\x00\x06\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x1F\x00\x01\x07\x00\x1F\x01\x97\x00\x06\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x1F\x00\x00\x01\x99\x00\x06\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x1F\x00\x01\x07\x00\x43\x01\xAB\x00\x06\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x1F\x00\x01\x07\x00\x1F\x01\xAD\x00\x06\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x1F\x00\x00\x01\xAF\x00\x06\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x1F\x00\x01\x07\x00\x1F\x01\xB5\x00\x03\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x00\x00\x01\xD8\x00\x04\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x91\x00\x01\x07\x00\x02\x01\xE0\x00\x04\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x04\x00\x00\x01\xE1\x00\x04\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x04\x00\x01\x07\x00\x02'
+L450:   ifnonnull L473
+L453:   getfield Field rb field1482 LUb;
+L456:   invokestatic Method Ub method17 (LUb;)LFE;
+L459:   getstatic Field Ae field349 LAe;
+L462:   ldc_w "You can only chat when connected to GEWALTIG.net."
+L465:   invokevirtual Method FE method445 (LAe;Ljava/lang/String;)LjC;
+L468:   pop
+L469:   aload_0
+L470:   goto L482
+L473:   getfield Field rb field1482 LUb;
+L476:   aload_3
+L477:   aload_2
+L478:   invokevirtual Method Ub method3 (Led;Ljava/lang/String;)V
+L481:   aload_0
+L482:   getfield Field rb field1482 LUb;
+L485:   getfield Field Ub new Lnf;
+L488:   ldc ""
+L490:   invokevirtual Method nf method12 (Ljava/lang/String;)V
+L493:   return
+L494:   
+        .attribute StackMap b'\x00\x13\x00\x1B\x00\x03\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x00\x00\x00\x1C\x00\x00\x00\x01\x07\x00\x3A\x00\x1D\x00\x03\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x00\x00\x00\x87\x00\x06\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x05\x07\x00\x43\x07\x00\x3E\x00\x00\x00\x9D\x00\x07\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x3E\x07\x00\x83\x00\x00\x00\xEC\x00\x00\x00\x01\x07\x00\x3A\x00\xED\x00\x08\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x3E\x07\x00\x83\x07\x00\x8C\x00\x00\x01\x14\x00\x07\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x3E\x07\x00\x83\x00\x00\x01\x86\x00\x05\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x00\x01\x07\x00\x1F\x01\x95\x00\x06\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x1F\x00\x01\x07\x00\x1F\x01\x97\x00\x06\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x1F\x00\x00\x01\x99\x00\x06\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x1F\x00\x01\x07\x00\x43\x01\xAB\x00\x06\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x1F\x00\x01\x07\x00\x1F\x01\xAD\x00\x06\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x1F\x00\x00\x01\xAF\x00\x06\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x74\x07\x00\x43\x07\x00\x1F\x00\x01\x07\x00\x1F\x01\xB5\x00\x03\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x00\x00\x01\xD9\x00\x04\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x92\x00\x01\x07\x00\x02\x01\xE1\x00\x04\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x04\x00\x00\x01\xE2\x00\x04\x07\x00\x02\x07\x00\x38\x07\x00\x2F\x07\x00\x04\x00\x01\x07\x00\x02'
     .end code
 .end method
 
@@ -244,7 +244,7 @@ L493:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field rb do LUb;
+L3:     putfield Field rb field1482 LUb;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    

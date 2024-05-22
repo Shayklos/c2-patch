@@ -2,30 +2,30 @@
 .class public final super Cb
 .super java/lang/Object
 .implements h
-.field public final synthetic char Led;
-.field public final synthetic else LFE;
-.field public final synthetic "enum" Led;
-.field public final synthetic do Lqc;
+.field public final synthetic field1527 Led;
+.field public final synthetic field1528 LFE;
+.field public final synthetic field1529 Led;
+.field public final synthetic field1530 Lqc;
 
-.method public break : (LgB;)V
+.method public method728 : (LgB;)V
     .code stack 5 locals 2
 L0:     aload_0
-L1:     getfield Field Cb else LFE;
+L1:     getfield Field Cb field1528 LFE;
 L4:     aload_0
 L5:     dup_x1
-L6:     getfield Field Cb do Lqc;
-L9:     invokevirtual Method qc void ()LbC;
-L12:    invokevirtual Method FE break (LbC;)V
-L15:    getfield Field Cb else LFE;
+L6:     getfield Field Cb field1530 Lqc;
+L9:     invokevirtual Method qc method51 ()LbC;
+L12:    invokevirtual Method FE method203 (LbC;)V
+L15:    getfield Field Cb field1528 LFE;
 L18:    new le
 L21:    dup
 L22:    aload_0
 L23:    dup
-L24:    getfield Field Cb char Led;
+L24:    getfield Field Cb field1527 Led;
 L27:    swap
-L28:    getfield Field Cb "enum" Led;
+L28:    getfield Field Cb field1529 Led;
 L31:    invokespecial Method le <init> (Led;Led;)V
-L34:    invokevirtual Method FE else (LbC;)V
+L34:    invokevirtual Method FE method444 (LbC;)V
 L37:    return
 L38:    
     .end code
@@ -42,10 +42,10 @@ L6:     aload_2
 L7:     aload_0
 L8:     dup_x1
 L9:     aload_1
-L10:    putfield Field Cb else LFE;
-L13:    putfield Field Cb do Lqc;
-L16:    putfield Field Cb char Led;
-L19:    putfield Field Cb "enum" Led;
+L10:    putfield Field Cb field1528 LFE;
+L13:    putfield Field Cb field1530 Lqc;
+L16:    putfield Field Cb field1527 Led;
+L19:    putfield Field Cb field1529 Led;
 L22:    invokespecial Method java/lang/Object <init> ()V
 L25:    return
 L26:    
@@ -54,5 +54,5 @@ L26:
 .innerclasses
     Cb [0] [0] static
 .end innerclasses
-.enclosing method eD break (LFE;Led;Lqd;)Ljava/util/List;
+.enclosing method eD method1130 (LFE;Led;Lqd;)Ljava/util/List;
 .end class

@@ -1,10 +1,10 @@
 .version 49 0
 .class final super net/gewaltig/cultris/C
 .super java/awt/Label
-.field final synthetic char Lnet/gewaltig/cultris/Applet;
-.field final synthetic else Ljava/net/URL;
-.field private static final "enum" J = 1L
-.field final synthetic do I
+.field final synthetic field575 Lnet/gewaltig/cultris/Applet;
+.field final synthetic field576 Ljava/net/URL;
+.field private static final field577 J = 1L
+.field final synthetic field578 I
 
 .method public paint : (Ljava/awt/Graphics;)V
     .code stack 8 locals 5
@@ -12,7 +12,7 @@ L0:     aload_0
 L1:     dup
 L2:     aload_1
 L3:     invokespecial Method java/awt/Label paint (Ljava/awt/Graphics;)V
-L6:     getfield Field net/gewaltig/cultris/C else Ljava/net/URL;
+L6:     getfield Field net/gewaltig/cultris/C field576 Ljava/net/URL;
 L9:     ifnull L92
 L12:    aload_1
 L13:    dup
@@ -29,7 +29,7 @@ L29:    dup_x1
 L30:    invokevirtual Method net/gewaltig/cultris/C getText ()Ljava/lang/String;
 L33:    invokevirtual Method java/awt/FontMetrics stringWidth (Ljava/lang/String;)I
 L36:    istore 4
-L38:    getfield Field net/gewaltig/cultris/C do I
+L38:    getfield Field net/gewaltig/cultris/C field578 I
 L41:    iload 4
 L43:    isub
 L44:    iconst_2
@@ -48,7 +48,7 @@ L60:    dup
 L61:    pop2
 L62:    isub
 L63:    aload_0
-L64:    getfield Field net/gewaltig/cultris/C do I
+L64:    getfield Field net/gewaltig/cultris/C field578 I
 L67:    iload 4
 L69:    iadd
 L70:    iconst_2
@@ -84,9 +84,9 @@ L6:     aload 4
 L8:     aload_0
 L9:     dup_x1
 L10:    aload_1
-L11:    putfield Field net/gewaltig/cultris/C char Lnet/gewaltig/cultris/Applet;
-L14:    putfield Field net/gewaltig/cultris/C else Ljava/net/URL;
-L17:    putfield Field net/gewaltig/cultris/C do I
+L11:    putfield Field net/gewaltig/cultris/C field575 Lnet/gewaltig/cultris/Applet;
+L14:    putfield Field net/gewaltig/cultris/C field576 Ljava/net/URL;
+L17:    putfield Field net/gewaltig/cultris/C field578 I
 L20:    invokespecial Method java/awt/Label <init> (Ljava/lang/String;I)V
 L23:    return
 L24:    

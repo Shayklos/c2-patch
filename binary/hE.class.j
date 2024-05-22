@@ -2,7 +2,7 @@
 .class public final super hE
 .super java/lang/Object
 
-.method public static short : ([[I)V
+.method public static method1141 : ([[I)V
     .code stack 5 locals 3
 L0:     iconst_0
 L1:     iconst_1
@@ -36,7 +36,7 @@ L32:    aaload
 L33:    iload_2
 L34:    dup_x1
 L35:    iaload
-L36:    invokestatic Method hE break (I)I
+L36:    invokestatic Method hE method1145 (I)I
 L39:    iinc 2 1
 L42:    iastore
 L43:    iload_2
@@ -47,14 +47,14 @@ L51:    iload_1
 L52:    goto L6
 L55:    athrow
 L56:    aload_0
-L57:    invokestatic Method hE else ([[I)V
+L57:    invokestatic Method hE method1143 ([[I)V
 L60:    return
 L61:    
         .attribute StackMap b'\x00\x06\x00\x06\x00\x02\x07\x00\x08\x01\x00\x01\x01\x00\x11\x00\x03\x07\x00\x08\x01\x01\x00\x01\x01\x00\x2F\x00\x00\x00\x01\x07\x00\x0E\x00\x30\x00\x03\x07\x00\x08\x01\x01\x00\x00\x00\x37\x00\x00\x00\x01\x07\x00\x0E\x00\x38\x00\x02\x07\x00\x08\x01\x00\x00'
     .end code
 .end method
 
-.method public static const : ([[I)[I
+.method public static method1142 : ([[I)[I
     .code stack 5 locals 5
 L0:     new java/util/ArrayList
 L3:     dup
@@ -177,7 +177,7 @@ L5:
     .end code
 .end method
 
-.method public static else : ([[I)V
+.method public static method1143 : ([[I)V
     .code stack 7 locals 4
 L0:     iconst_0
 L1:     iconst_1
@@ -439,7 +439,7 @@ L320:
     .end code
 .end method
 
-.method public static break : (J)[[I
+.method public static method1144 : (J)[[I
     .code stack 5 locals 6
 L0:     bipush 10
 L2:     iconst_1
@@ -542,14 +542,14 @@ L142:   iload_1
 L143:   goto L95
 L146:   aload_2
 L147:   dup
-L148:   invokestatic Method hE else ([[I)V
+L148:   invokestatic Method hE method1143 ([[I)V
 L151:   areturn
 L152:   
-        .attribute StackMap b'\x00\x09\x00\x16\x00\x03\x04\x07\x00\x08\x01\x00\x01\x01\x00\x25\x00\x04\x04\x07\x00\x08\x01\x01\x00\x01\x01\x00\x40\x00\x00\x00\x01\x07\x00\x0E\x00\x41\x00\x04\x04\x07\x00\x08\x01\x01\x00\x00\x00\x48\x00\x00\x00\x01\x07\x00\x0E\x00\x49\x00\x03\x04\x07\x00\x08\x01\x00\x00\x00\x5F\x00\x05\x00\x01\x07\x00\x08\x01\x07\x00\x36\x00\x01\x01\x00\x6D\x00\x06\x00\x01\x07\x00\x08\x01\x07\x00\x36\x01\x00\x00\x00\x92\x00\x05\x00\x01\x07\x00\x08\x01\x07\x00\x36\x00\x00'
+        .attribute StackMap b'\x00\x09\x00\x16\x00\x03\x04\x07\x00\x08\x01\x00\x01\x01\x00\x25\x00\x04\x04\x07\x00\x08\x01\x01\x00\x01\x01\x00\x40\x00\x00\x00\x01\x07\x00\x0E\x00\x41\x00\x04\x04\x07\x00\x08\x01\x01\x00\x00\x00\x48\x00\x00\x00\x01\x07\x00\x0E\x00\x49\x00\x03\x04\x07\x00\x08\x01\x00\x00\x00\x5F\x00\x05\x00\x01\x07\x00\x08\x01\x07\x00\x37\x00\x01\x01\x00\x6D\x00\x06\x00\x01\x07\x00\x08\x01\x07\x00\x37\x01\x00\x00\x00\x92\x00\x05\x00\x01\x07\x00\x08\x01\x07\x00\x37\x00\x00'
     .end code
 .end method
 
-.method public static break : (I)I
+.method public static method1145 : (I)I
     .code stack 4 locals 1
 L0:     iload_0
 L1:     sipush -3841
@@ -562,7 +562,7 @@ L9:
     .end code
 .end method
 
-.method public static break : ([[I)[[I
+.method public static method1146 : ([[I)[[I
     .code stack 7 locals 3
 L0:     bipush 10
 L2:     iconst_1

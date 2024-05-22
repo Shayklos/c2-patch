@@ -2,19 +2,19 @@
 .class final super org/lwjgl/opengl/OA
 .super java/lang/Object
 .implements org/lwjgl/opengl/d
-.field final synthetic "enum" Lorg/lwjgl/opengl/XA;
-.field private static final do Ljava/lang/String;
+.field final synthetic field4930 Lorg/lwjgl/opengl/XA;
+.field private static final field4931 Ljava/lang/String;
 
 .method static <clinit> : ()V
     .code stack 1 locals 0
 L0:     ldc "/apps/compiz/plugins/workarounds/allscreens/options/legacy_fullscreen"
-L2:     putstatic Field org/lwjgl/opengl/OA do Ljava/lang/String;
+L2:     putstatic Field org/lwjgl/opengl/OA field4931 Ljava/lang/String;
 L5:     return
 L6:     
     .end code
 .end method
 
-.method public break : (Z)V
+.method public method5286 : (Z)V
     .code stack 5 locals 3
 L0:     bipush 7
 L2:     iconst_1
@@ -74,7 +74,7 @@ L65:    dup
 L66:    pop2
 L67:    ldc "bool"
 L69:    aastore
-L70:    invokestatic Method org/lwjgl/opengl/sA break ([Ljava/lang/String;)Ljava/util/List;
+L70:    invokestatic Method org/lwjgl/opengl/sA method5731 ([Ljava/lang/String;)Ljava/util/List;
 L73:    ifnonnull L86
 L76:    new org/lwjgl/LWJGLException
 L79:    dup
@@ -93,7 +93,7 @@ L99:    aload_2
 L100:   invokevirtual Method java/lang/InterruptedException printStackTrace ()V
 L103:   return
 L104:   
-        .attribute StackMap b'\x00\x04\x00\x56\x00\x02\x07\x00\x02\x01\x00\x00\x00\x61\x00\x00\x00\x01\x07\x00\x42\x00\x62\x00\x02\x07\x00\x02\x01\x00\x01\x07\x00\x1F\x00\x67\x00\x02\x07\x00\x02\x01\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x56\x00\x02\x07\x00\x02\x01\x00\x00\x00\x61\x00\x00\x00\x01\x07\x00\x43\x00\x62\x00\x02\x07\x00\x02\x01\x00\x01\x07\x00\x1F\x00\x67\x00\x02\x07\x00\x02\x01\x00\x00'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method
@@ -103,14 +103,14 @@ L104:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field org/lwjgl/opengl/OA "enum" Lorg/lwjgl/opengl/XA;
+L3:     putfield Field org/lwjgl/opengl/OA field4930 Lorg/lwjgl/opengl/XA;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    
     .end code
 .end method
 
-.method public break : ()Z
+.method public method5287 : ()Z
     .code stack 5 locals 2
 L0:     iconst_3
 L1:     iconst_1
@@ -141,7 +141,7 @@ L29:    dup
 L30:    pop2
 L31:    ldc "/apps/compiz/plugins/workarounds/allscreens/options/legacy_fullscreen"
 L33:    aastore
-L34:    invokestatic Method org/lwjgl/opengl/sA break ([Ljava/lang/String;)Ljava/util/List;
+L34:    invokestatic Method org/lwjgl/opengl/sA method5731 ([Ljava/lang/String;)Ljava/util/List;
 L37:    dup
 L38:    astore_1
 L39:    ifnull L51
@@ -164,7 +164,7 @@ L74:    invokevirtual Method java/lang/String trim ()Ljava/lang/String;
 L77:    invokestatic Method java/lang/Boolean parseBoolean (Ljava/lang/String;)Z
 L80:    ireturn
 L81:    
-        .attribute StackMap b'\x00\x02\x00\x33\x00\x02\x07\x00\x02\x07\x00\x4F\x00\x00\x00\x3D\x00\x02\x07\x00\x02\x07\x00\x4F\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x33\x00\x02\x07\x00\x02\x07\x00\x51\x00\x00\x00\x3D\x00\x02\x07\x00\x02\x07\x00\x51\x00\x00'
     .end code
     .exceptions org/lwjgl/LWJGLException
 .end method

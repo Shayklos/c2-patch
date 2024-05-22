@@ -1,7 +1,7 @@
 .version 49 0
 .class final super org/lwjgl/E
 .super org/lwjgl/c
-.field private static final do I = 23
+.field private static final field2485 I = 23
 
 .method <init> : ()V
     .code stack 1 locals 1
@@ -12,7 +12,7 @@ L5:
     .end code
 .end method
 
-.method public break : (Ljava/lang/String;)Z
+.method public method1773 : (Ljava/lang/String;)Z
     .code stack 3 locals 2
         .catch java/lang/Exception from L0 to L5 using L10
 L0:     aload_1
@@ -44,7 +44,7 @@ L39:
     .end code
 .end method
 
-.method public float : ()I
+.method public method1772 : ()I
     .code stack 3 locals 1
 L0:     bipush 23
 L2:     iconst_1

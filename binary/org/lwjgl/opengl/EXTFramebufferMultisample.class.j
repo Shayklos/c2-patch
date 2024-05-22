@@ -1,9 +1,9 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/EXTFramebufferMultisample
 .super java/lang/Object
-.field public static final else I = 36011
-.field public static final "enum" I = 36182
-.field public static final do I = 36183
+.field public static final field3337 I = 36011
+.field public static final field3338 I = 36182
+.field public static final field3339 I = 36183
 
 .method static native nglRenderbufferStorageMultisampleEXT : (IIIIIJ)V
 .end method
@@ -17,13 +17,13 @@ L5:
     .end code
 .end method
 
-.method public static break : (IIIII)V
+.method public static method3416 : (IIIII)V
     .code stack 7 locals 7
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb rK J
 L6:     dup2
 L7:     lstore 5
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    iload_1
 L14:    iload_2

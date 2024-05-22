@@ -1,19 +1,19 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/APPLEFlushBufferRange
 .super java/lang/Object
-.field public static final "enum" I = 35347
-.field public static final do I = 35346
+.field public static final field2717 I = 35347
+.field public static final field2718 I = 35346
 
 .method static native nglFlushMappedBufferRangeAPPLE : (IJJJ)V
 .end method
 
-.method public static break : (III)V
+.method public static method2167 : (III)V
     .code stack 5 locals 5
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb it J
 L6:     dup2
 L7:     lstore_3
-L8:     invokestatic Method org/lwjgl/l break (J)V
+L8:     invokestatic Method org/lwjgl/l method2052 (J)V
 L11:    iload_0
 L12:    iload_1
 L13:    iload_2
@@ -24,13 +24,13 @@ L19:
     .end code
 .end method
 
-.method public static break : (IJJ)V
+.method public static method2168 : (IJJ)V
     .code stack 7 locals 7
-L0:     invokestatic Method org/lwjgl/opengl/GLContext break ()Lorg/lwjgl/opengl/kb;
+L0:     invokestatic Method org/lwjgl/opengl/GLContext method4611 ()Lorg/lwjgl/opengl/kb;
 L3:     getfield Field org/lwjgl/opengl/kb hQ J
 L6:     dup2
 L7:     lstore 5
-L9:     invokestatic Method org/lwjgl/l break (J)V
+L9:     invokestatic Method org/lwjgl/l method2052 (J)V
 L12:    iload_0
 L13:    lload_1
 L14:    lload_3

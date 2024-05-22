@@ -2,7 +2,7 @@
 .class public super abstract org/lwjgl/M
 .super java/lang/Object
 .implements org/lwjgl/PointerWrapper
-.field protected final do J
+.field protected final field2496 J
 
 .method protected <init> : (J)V
     .code stack 4 locals 3
@@ -10,7 +10,7 @@ L0:     lload_1
 L1:     aload_0
 L2:     dup_x2
 L3:     invokespecial Method java/lang/Object <init> ()V
-L6:     putfield Field org/lwjgl/M do J
+L6:     putfield Field org/lwjgl/M field2496 J
 L9:     return
 L10:    
     .end code
@@ -20,17 +20,17 @@ L10:
     .code stack 2 locals 1
 L0:     aload_0
 L1:     dup
-L2:     invokevirtual Method org/lwjgl/M break ()V
-L5:     getfield Field org/lwjgl/M do J
+L2:     invokevirtual Method org/lwjgl/M method1834 ()V
+L5:     getfield Field org/lwjgl/M field2496 J
 L8:     lreturn
 L9:     
     .end code
 .end method
 
-.method public else : ()Z
+.method public method1833 : ()Z
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/M do J
+L1:     getfield Field org/lwjgl/M field2496 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifeq L15
@@ -50,12 +50,12 @@ L20:
     .end code
 .end method
 
-.method public final break : ()V
+.method public final method1834 : ()V
     .code stack 5 locals 1
 L0:     getstatic Field org/lwjgl/LWJGLUtil DEBUG Z
 L3:     ifeq L52
 L6:     aload_0
-L7:     invokevirtual Method org/lwjgl/M else ()Z
+L7:     invokevirtual Method org/lwjgl/M method1833 ()Z
 L10:    ifne L52
 L13:    new java/lang/IllegalStateException
 L16:    dup
@@ -83,9 +83,9 @@ L53:
 .method public hashCode : ()I
     .code stack 7 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/M do J
+L1:     getfield Field org/lwjgl/M field2496 J
 L4:     aload_0
-L5:     getfield Field org/lwjgl/M do J
+L5:     getfield Field org/lwjgl/M field2496 J
 L8:     bipush 32
 L10:    iconst_1
 L11:    dup
@@ -122,9 +122,9 @@ L24:    aload_1
 L25:    checkcast org/lwjgl/M
 L28:    astore_1
 L29:    aload_0
-L30:    getfield Field org/lwjgl/M do J
+L30:    getfield Field org/lwjgl/M field2496 J
 L33:    aload_1
-L34:    getfield Field org/lwjgl/M do J
+L34:    getfield Field org/lwjgl/M field2496 J
 L37:    lcmp
 L38:    ifeq L46
 L41:    iconst_0
@@ -155,7 +155,7 @@ L15:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;
 L18:    ldc " pointer (0x"
 L20:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L23:    aload_0
-L24:    getfield Field org/lwjgl/M do J
+L24:    getfield Field org/lwjgl/M field2496 J
 L27:    invokestatic Method java/lang/Long toHexString (J)Ljava/lang/String;
 L30:    invokevirtual Method java/lang/String toUpperCase ()Ljava/lang/String;
 L33:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;

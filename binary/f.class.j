@@ -2,7 +2,7 @@
 .class public interface abstract f
 .super java/lang/Object
 
-.method public abstract break : (LRg;)Ljava/lang/Object;
+.method public abstract method712 : (LRg;)Ljava/lang/Object;
 .end method
 .innerclasses
     f wD [0] static interface abstract

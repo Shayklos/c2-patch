@@ -1,7 +1,7 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/Ad
 .super java/lang/Object
-.field public static final do I = 35724
+.field public static final field3169 I = 35724
 
 .method private <init> : ()V
     .code stack 1 locals 1

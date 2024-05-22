@@ -1,7 +1,7 @@
 .version 49 0
 .class public final super synthetic cE
 .super java/lang/Object
-.field public static final synthetic do [I
+.field public static final synthetic field2202 [I
 
 .method public static <clinit> : ()V
     .code stack 5 locals 1
@@ -11,10 +11,10 @@ L4:     newarray int
 L6:     iconst_1
 L7:     dup
 L8:     pop2
-L9:     putstatic Field cE do [I
+L9:     putstatic Field cE field2202 [I
         .catch java/lang/NoSuchFieldError from L12 to L26 using L30
-L12:    getstatic Field cE do [I
-L15:    getstatic Field FG char LFG;
+L12:    getstatic Field cE field2202 [I
+L15:    getstatic Field FG field330 LFG;
 L18:    invokevirtual Method FG ordinal ()I
 L21:    iconst_1
 L22:    dup
@@ -25,8 +25,8 @@ L26:    goto L31
 L29:    athrow
 L30:    astore_0
         .catch java/lang/NoSuchFieldError from L31 to L45 using L49
-L31:    getstatic Field cE do [I
-L34:    getstatic Field FG else LFG;
+L31:    getstatic Field cE field2202 [I
+L34:    getstatic Field FG field331 LFG;
 L37:    invokevirtual Method FG ordinal ()I
 L40:    iconst_2
 L41:    iconst_1
@@ -37,8 +37,8 @@ L45:    goto L50
 L48:    athrow
 L49:    astore_0
         .catch java/lang/NoSuchFieldError from L50 to L64 using L65
-L50:    getstatic Field cE do [I
-L53:    getstatic Field FG "enum" LFG;
+L50:    getstatic Field cE field2202 [I
+L53:    getstatic Field FG field332 LFG;
 L56:    invokevirtual Method FG ordinal ()I
 L59:    iconst_3
 L60:    iconst_1

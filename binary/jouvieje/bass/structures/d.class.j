@@ -2,10 +2,10 @@
 .class public final super jouvieje/bass/structures/d
 .super jouvieje/bass/utils/m
 
-.method public break : (IB)V
+.method public method1262 : (IB)V
     .code stack 6 locals 3
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -41,7 +41,7 @@ L63:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String
 L66:    invokespecial Method java/lang/IndexOutOfBoundsException <init> (Ljava/lang/String;)V
 L69:    athrow
 L70:    aload_0
-L71:    getfield Field jouvieje/bass/structures/d do J
+L71:    getfield Field jouvieje/bass/structures/d field2319 J
 L74:    iload_1
 L75:    iload_2
 L76:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_set_UMID (JIB)V
@@ -51,10 +51,10 @@ L80:
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/d;
+.method public static method1263 : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/d;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     dup2
 L5:     lstore_1
 L6:     lconst_0
@@ -69,14 +69,14 @@ L18:    lload_1
 L19:    invokespecial Method jouvieje/bass/structures/d <init> (J)V
 L22:    areturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x3A\x00\x0E\x00\x02\x07\x00\x04\x04\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x3B\x00\x0E\x00\x02\x07\x00\x04\x04\x00\x00'
     .end code
 .end method
 
-.method public float : (IC)V
+.method public method1264 : (IC)V
     .code stack 6 locals 3
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -112,7 +112,7 @@ L63:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String
 L66:    invokespecial Method java/lang/IndexOutOfBoundsException <init> (Ljava/lang/String;)V
 L69:    athrow
 L70:    aload_0
-L71:    getfield Field jouvieje/bass/structures/d do J
+L71:    getfield Field jouvieje/bass/structures/d field2319 J
 L74:    iload_1
 L75:    iload_2
 L76:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_set_OriginationDate (JIC)V
@@ -125,7 +125,7 @@ L80:
 .method public this : ()J
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -134,7 +134,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/d do J
+L18:    getfield Field jouvieje/bass/structures/d field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_get_TimeReference (J)J
 L24:    lreturn
 L25:    
@@ -142,29 +142,29 @@ L25:
     .end code
 .end method
 
-.method public goto : ()V
+.method public method1188 : ()V
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifeq L16
 L9:     aload_0
-L10:    getfield Field jouvieje/bass/structures/d do J
+L10:    getfield Field jouvieje/bass/structures/d field2319 J
 L13:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_delete (J)V
 L16:    aload_0
 L17:    lconst_0
-L18:    putfield Field jouvieje/bass/structures/d do J
+L18:    putfield Field jouvieje/bass/structures/d field2319 J
 L21:    return
 L22:    
         .attribute StackMap b'\x00\x01\x00\x10\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public do : ()Ljava/lang/String;
+.method public method1265 : ()Ljava/lang/String;
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -173,7 +173,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/d do J
+L18:    getfield Field jouvieje/bass/structures/d field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_get_OriginationDate (J)Ljava/lang/String;
 L24:    areturn
 L25:    
@@ -181,10 +181,10 @@ L25:
     .end code
 .end method
 
-.method public for : ()Ljava/lang/String;
+.method public method1266 : ()Ljava/lang/String;
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -193,7 +193,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/d do J
+L18:    getfield Field jouvieje/bass/structures/d field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_get_OriginatorReference (J)Ljava/lang/String;
 L24:    areturn
 L25:    
@@ -201,10 +201,10 @@ L25:
     .end code
 .end method
 
-.method public catch : ()Ljava/nio/ByteBuffer;
+.method public method1267 : ()Ljava/nio/ByteBuffer;
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -213,7 +213,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/d do J
+L18:    getfield Field jouvieje/bass/structures/d field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_get_UMID (J)Ljava/nio/ByteBuffer;
 L24:    dup
 L25:    astore_1
@@ -228,7 +228,7 @@ L37:    invokevirtual Method java/nio/ByteBuffer order (Ljava/nio/ByteOrder;)Lja
 L40:    pop
 L41:    areturn
 L42:    
-        .attribute StackMap b'\x00\x03\x00\x11\x00\x01\x07\x00\x02\x00\x00\x00\x1F\x00\x00\x00\x01\x07\x00\x3A\x00\x20\x00\x02\x07\x00\x02\x07\x00\x5D\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x11\x00\x01\x07\x00\x02\x00\x00\x00\x1F\x00\x00\x00\x01\x07\x00\x3B\x00\x20\x00\x02\x07\x00\x02\x07\x00\x5F\x00\x00'
     .end code
 .end method
 
@@ -241,10 +241,10 @@ L5:
     .end code
 .end method
 
-.method public short : (IC)V
+.method public method1268 : (IC)V
     .code stack 6 locals 3
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -280,7 +280,7 @@ L63:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String
 L66:    invokespecial Method java/lang/IndexOutOfBoundsException <init> (Ljava/lang/String;)V
 L69:    athrow
 L70:    aload_0
-L71:    getfield Field jouvieje/bass/structures/d do J
+L71:    getfield Field jouvieje/bass/structures/d field2319 J
 L74:    iload_1
 L75:    iload_2
 L76:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_set_OriginatorReference (JIC)V
@@ -290,10 +290,10 @@ L80:
     .end code
 .end method
 
-.method public float : ()Ljava/lang/String;
+.method public method1269 : ()Ljava/lang/String;
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -302,7 +302,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/d do J
+L18:    getfield Field jouvieje/bass/structures/d field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_get_Description (J)Ljava/lang/String;
 L24:    areturn
 L25:    
@@ -310,10 +310,10 @@ L25:
     .end code
 .end method
 
-.method public short : ()Ljava/lang/String;
+.method public method1270 : ()Ljava/lang/String;
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -322,7 +322,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/d do J
+L18:    getfield Field jouvieje/bass/structures/d field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_get_OriginationTime (J)Ljava/lang/String;
 L24:    areturn
 L25:    
@@ -330,10 +330,10 @@ L25:
     .end code
 .end method
 
-.method public catch : (I)C
+.method public method1271 : (I)C
     .code stack 6 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -369,7 +369,7 @@ L65:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String
 L68:    invokespecial Method java/lang/IndexOutOfBoundsException <init> (Ljava/lang/String;)V
 L71:    athrow
 L72:    aload_0
-L73:    getfield Field jouvieje/bass/structures/d do J
+L73:    getfield Field jouvieje/bass/structures/d field2319 J
 L76:    iload_1
 L77:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_get_Description_element (JI)C
 L80:    ireturn
@@ -378,10 +378,10 @@ L81:
     .end code
 .end method
 
-.method public else : (J)V
+.method public method1272 : (J)V
     .code stack 4 locals 3
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -390,7 +390,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/d do J
+L18:    getfield Field jouvieje/bass/structures/d field2319 J
 L21:    lload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_set_TimeReference (JJ)V
 L25:    return
@@ -399,7 +399,7 @@ L26:
     .end code
 .end method
 
-.method public static const : ()Ljouvieje/bass/structures/d;
+.method public static method1273 : ()Ljouvieje/bass/structures/d;
     .code stack 4 locals 2
 L0:     invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_new ()J
 L3:     dup2
@@ -421,10 +421,10 @@ L27:
     .end code
 .end method
 
-.method public float : (I)C
+.method public method1274 : (I)C
     .code stack 6 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -460,7 +460,7 @@ L63:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String
 L66:    invokespecial Method java/lang/IndexOutOfBoundsException <init> (Ljava/lang/String;)V
 L69:    athrow
 L70:    aload_0
-L71:    getfield Field jouvieje/bass/structures/d do J
+L71:    getfield Field jouvieje/bass/structures/d field2319 J
 L74:    iload_1
 L75:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_get_OriginationTime_element (JI)C
 L78:    ireturn
@@ -469,10 +469,10 @@ L79:
     .end code
 .end method
 
-.method public short : (I)C
+.method public method1275 : (I)C
     .code stack 6 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -508,7 +508,7 @@ L63:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String
 L66:    invokespecial Method java/lang/IndexOutOfBoundsException <init> (Ljava/lang/String;)V
 L69:    athrow
 L70:    aload_0
-L71:    getfield Field jouvieje/bass/structures/d do J
+L71:    getfield Field jouvieje/bass/structures/d field2319 J
 L74:    iload_1
 L75:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_get_Originator_element (JI)C
 L78:    ireturn
@@ -517,10 +517,10 @@ L79:
     .end code
 .end method
 
-.method public const : (I)B
+.method public method1276 : (I)B
     .code stack 6 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -556,7 +556,7 @@ L63:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String
 L66:    invokespecial Method java/lang/IndexOutOfBoundsException <init> (Ljava/lang/String;)V
 L69:    athrow
 L70:    aload_0
-L71:    getfield Field jouvieje/bass/structures/d do J
+L71:    getfield Field jouvieje/bass/structures/d field2319 J
 L74:    iload_1
 L75:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_get_UMID_element (JI)B
 L78:    ireturn
@@ -565,10 +565,10 @@ L79:
     .end code
 .end method
 
-.method public else : ()S
+.method public method1277 : ()S
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -577,7 +577,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/d do J
+L18:    getfield Field jouvieje/bass/structures/d field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_get_Version (J)S
 L24:    ireturn
 L25:    
@@ -595,10 +595,10 @@ L6:
     .end code
 .end method
 
-.method public const : (IC)V
+.method public method1278 : (IC)V
     .code stack 6 locals 3
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -634,7 +634,7 @@ L63:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String
 L66:    invokespecial Method java/lang/IndexOutOfBoundsException <init> (Ljava/lang/String;)V
 L69:    athrow
 L70:    aload_0
-L71:    getfield Field jouvieje/bass/structures/d do J
+L71:    getfield Field jouvieje/bass/structures/d field2319 J
 L74:    iload_1
 L75:    iload_2
 L76:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_set_OriginationTime (JIC)V
@@ -644,10 +644,10 @@ L80:
     .end code
 .end method
 
-.method public else : (I)C
+.method public method1279 : (I)C
     .code stack 6 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -683,7 +683,7 @@ L63:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String
 L66:    invokespecial Method java/lang/IndexOutOfBoundsException <init> (Ljava/lang/String;)V
 L69:    athrow
 L70:    aload_0
-L71:    getfield Field jouvieje/bass/structures/d do J
+L71:    getfield Field jouvieje/bass/structures/d field2319 J
 L74:    iload_1
 L75:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_get_OriginationDate_element (JI)C
 L78:    ireturn
@@ -692,10 +692,10 @@ L79:
     .end code
 .end method
 
-.method public break : (S)V
+.method public method1280 : (S)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -704,7 +704,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/d do J
+L18:    getfield Field jouvieje/bass/structures/d field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_set_Version (JS)V
 L25:    return
@@ -713,10 +713,10 @@ L26:
     .end code
 .end method
 
-.method public break : (I)C
+.method public method1281 : (I)C
     .code stack 6 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -752,7 +752,7 @@ L63:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String
 L66:    invokespecial Method java/lang/IndexOutOfBoundsException <init> (Ljava/lang/String;)V
 L69:    athrow
 L70:    aload_0
-L71:    getfield Field jouvieje/bass/structures/d do J
+L71:    getfield Field jouvieje/bass/structures/d field2319 J
 L74:    iload_1
 L75:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_get_OriginatorReference_element (JI)C
 L78:    ireturn
@@ -761,10 +761,10 @@ L79:
     .end code
 .end method
 
-.method public else : (IC)V
+.method public method1282 : (IC)V
     .code stack 6 locals 3
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -800,7 +800,7 @@ L65:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String
 L68:    invokespecial Method java/lang/IndexOutOfBoundsException <init> (Ljava/lang/String;)V
 L71:    athrow
 L72:    aload_0
-L73:    getfield Field jouvieje/bass/structures/d do J
+L73:    getfield Field jouvieje/bass/structures/d field2319 J
 L76:    iload_1
 L77:    iload_2
 L78:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_set_Description (JIC)V
@@ -810,10 +810,10 @@ L82:
     .end code
 .end method
 
-.method public break : (IC)V
+.method public method1283 : (IC)V
     .code stack 6 locals 3
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -849,7 +849,7 @@ L63:    invokevirtual Method java/lang/StringBuffer toString ()Ljava/lang/String
 L66:    invokespecial Method java/lang/IndexOutOfBoundsException <init> (Ljava/lang/String;)V
 L69:    athrow
 L70:    aload_0
-L71:    getfield Field jouvieje/bass/structures/d do J
+L71:    getfield Field jouvieje/bass/structures/d field2319 J
 L74:    iload_1
 L75:    iload_2
 L76:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_set_Originator (JIC)V
@@ -859,10 +859,10 @@ L80:
     .end code
 .end method
 
-.method public break : ()Ljava/lang/String;
+.method public method1201 : ()Ljava/lang/String;
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/d do J
+L1:     getfield Field jouvieje/bass/structures/d field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -871,7 +871,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/d do J
+L18:    getfield Field jouvieje/bass/structures/d field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_BEXT_get_Originator (J)Ljava/lang/String;
 L24:    areturn
 L25:    

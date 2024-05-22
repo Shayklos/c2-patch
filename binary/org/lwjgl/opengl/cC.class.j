@@ -4,7 +4,7 @@
 
 .method public run : ()V
     .code stack 0 locals 1
-L0:     invokestatic Method org/lwjgl/opengl/Display instanceof ()V
+L0:     invokestatic Method org/lwjgl/opengl/Display method2993 ()V
 L3:     return
 L4:     
     .end code

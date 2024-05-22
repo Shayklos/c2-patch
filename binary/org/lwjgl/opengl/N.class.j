@@ -1,43 +1,43 @@
 .version 49 0
 .class public final super org/lwjgl/opengl/N
 .super java/lang/Object
-.field static final finally I = 8359
-.field static final "transient" I = 8324
+.field static final field4587 I = 8359
+.field static final field4588 I = 8324
 .field private static final while I = 8352
-.field public static final instanceof I = 8354
-.field static final "protected" I = 8315
-.field private static final import I = 8310
-.field static final "native" I = 8316
-.field public static final throws I = 8313
-.field static final "static" I = 8320
-.field private static final continue I = 8356
-.field static final extends I = 8317
-.field private static final float I = 8311
-.field private static final "final" I = 8307
-.field static final catch I = 8319
+.field public static final field4589 I = 8354
+.field static final field4590 I = 8315
+.field private static final field4591 I = 8310
+.field static final field4592 I = 8316
+.field public static final field4593 I = 8313
+.field static final field4594 I = 8320
+.field private static final field4595 I = 8356
+.field static final field4596 I = 8317
+.field private static final field4597 I = 8311
+.field private static final field4598 I = 8307
+.field static final field4599 I = 8319
 .field static final false I = 8318
-.field public static final class I = 8312
-.field private static final if I = 8313
+.field public static final field4600 I = 8312
+.field private static final field4601 I = 8313
 .field private static final true I = 8357
-.field private static final for I = 8306
-.field private static final case I = 8358
-.field static final byte I = 8321
-.field static final "super" I = 8322
-.field private static final int I = 8353
-.field private static final short I = 8305
-.field private static final goto I = 8309
-.field private static final break I = 8308
-.field private static final long I = 8314
-.field void Ljava/nio/IntBuffer;
+.field private static final field4602 I = 8306
+.field private static final field4603 I = 8358
+.field static final field4604 I = 8321
+.field static final field4605 I = 8322
+.field private static final field4606 I = 8353
+.field private static final field4607 I = 8305
+.field private static final field4608 I = 8309
+.field private static final field4609 I = 8308
+.field private static final field4610 I = 8314
+.field field4611 Ljava/nio/IntBuffer;
 .field static final try I = 8325
-.field private static final const I = 8312
+.field private static final field4612 I = 8312
 .field private static final new I = 8354
-.field private static final null I = 8355
+.field private static final field4613 I = 8355
 .field this Ljava/nio/IntBuffer;
-.field static final char I = 8323
-.field public static final else I = 8314
-.field private static final "enum" I = 8304
-.field static final do I = 8326
+.field static final field4614 I = 8323
+.field public static final field4615 I = 8314
+.field private static final field4616 I = 8304
+.field static final field4617 I = 8326
 
 .method public <init> : (ZZZZII)V
     .code stack 7 locals 7
@@ -80,7 +80,7 @@ L68:    iconst_1
 L69:    dup
 L70:    pop2
 L71:    invokestatic Method org/lwjgl/BufferUtils createIntBuffer (I)Ljava/nio/IntBuffer;
-L74:    putfield Field org/lwjgl/opengl/N void Ljava/nio/IntBuffer;
+L74:    putfield Field org/lwjgl/opengl/N field4611 Ljava/nio/IntBuffer;
 L77:    iconst_1
 L78:    dup
 L79:    pop2
@@ -89,7 +89,7 @@ L83:    putfield Field org/lwjgl/opengl/N this Ljava/nio/IntBuffer;
 L86:    iload_1
 L87:    ifeq L162
 L90:    aload_0
-L91:    getfield Field org/lwjgl/opengl/N void Ljava/nio/IntBuffer;
+L91:    getfield Field org/lwjgl/opengl/N field4611 Ljava/nio/IntBuffer;
 L94:    iload 4
 L96:    ifeq L109
 L99:    sipush 8352
@@ -104,7 +104,7 @@ L113:   dup
 L114:   pop2
 L115:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L118:   aload_0
-L119:   getfield Field org/lwjgl/opengl/N void Ljava/nio/IntBuffer;
+L119:   getfield Field org/lwjgl/opengl/N field4611 Ljava/nio/IntBuffer;
 L122:   iconst_1
 L123:   dup
 L124:   dup
@@ -132,7 +132,7 @@ L161:   athrow
 L162:   iload_2
 L163:   ifeq L232
 L166:   aload_0
-L167:   getfield Field org/lwjgl/opengl/N void Ljava/nio/IntBuffer;
+L167:   getfield Field org/lwjgl/opengl/N field4611 Ljava/nio/IntBuffer;
 L170:   iload 4
 L172:   ifeq L184
 L175:   sipush 8353
@@ -146,7 +146,7 @@ L188:   dup
 L189:   pop2
 L190:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L193:   aload_0
-L194:   getfield Field org/lwjgl/opengl/N void Ljava/nio/IntBuffer;
+L194:   getfield Field org/lwjgl/opengl/N field4611 Ljava/nio/IntBuffer;
 L197:   iconst_1
 L198:   dup
 L199:   dup
@@ -171,7 +171,7 @@ L231:   pop2
 L232:   iload_3
 L233:   ifeq L302
 L236:   aload_0
-L237:   getfield Field org/lwjgl/opengl/N void Ljava/nio/IntBuffer;
+L237:   getfield Field org/lwjgl/opengl/N field4611 Ljava/nio/IntBuffer;
 L240:   iload 4
 L242:   ifeq L254
 L245:   sipush 8356
@@ -185,7 +185,7 @@ L258:   dup
 L259:   pop2
 L260:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L263:   aload_0
-L264:   getfield Field org/lwjgl/opengl/N void Ljava/nio/IntBuffer;
+L264:   getfield Field org/lwjgl/opengl/N field4611 Ljava/nio/IntBuffer;
 L267:   iconst_1
 L268:   dup
 L269:   dup
@@ -234,7 +234,7 @@ L347:   iload 6
 L349:   invokevirtual Method java/nio/IntBuffer put (I)Ljava/nio/IntBuffer;
 L352:   pop2
 L353:   aload_0
-L354:   getfield Field org/lwjgl/opengl/N void Ljava/nio/IntBuffer;
+L354:   getfield Field org/lwjgl/opengl/N field4611 Ljava/nio/IntBuffer;
 L357:   invokevirtual Method java/nio/IntBuffer flip ()Ljava/nio/Buffer;
 L360:   aload_0
 L361:   getfield Field org/lwjgl/opengl/N this Ljava/nio/IntBuffer;

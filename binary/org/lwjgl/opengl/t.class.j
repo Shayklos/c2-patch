@@ -2,14 +2,14 @@
 .class super org/lwjgl/opengl/t
 .super java/lang/Object
 .field try I
-.field const I
+.field field4951 I
 .field new I
-.field null I
+.field field4952 I
 .field this I
-.field final char [Ljava/nio/Buffer;
-.field else I
-.field "enum" I
-.field final do [Ljava/nio/Buffer;
+.field final field4953 [Ljava/nio/Buffer;
+.field field4954 I
+.field field4955 I
+.field final field4956 [Ljava/nio/Buffer;
 
 .method <init> : (Lorg/lwjgl/opengl/kb;)V
     .code stack 4 locals 3
@@ -22,7 +22,7 @@ L11:    aload_1
 L12:    getfield Field org/lwjgl/opengl/kb rd Z
 L15:    ifeq L29
 L18:    ldc 34921
-L20:    invokestatic Method org/lwjgl/opengl/GL11 byte (I)I
+L20:    invokestatic Method org/lwjgl/opengl/GL11 method3721 (I)I
 L23:    istore_2
 L24:    aload_0
 L25:    goto L35
@@ -38,12 +38,12 @@ L36:    anewarray java/nio/Buffer
 L39:    iconst_1
 L40:    dup
 L41:    pop2
-L42:    putfield Field org/lwjgl/opengl/t do [Ljava/nio/Buffer;
+L42:    putfield Field org/lwjgl/opengl/t field4956 [Ljava/nio/Buffer;
 L45:    aload_1
 L46:    getfield Field org/lwjgl/opengl/kb hf Z
 L49:    ifeq L63
 L52:    ldc 34930
-L54:    invokestatic Method org/lwjgl/opengl/GL11 byte (I)I
+L54:    invokestatic Method org/lwjgl/opengl/GL11 method3721 (I)I
 L57:    istore_2
 L58:    aload_0
 L59:    goto L93
@@ -52,10 +52,10 @@ L63:    aload_1
 L64:    getfield Field org/lwjgl/opengl/kb kg Z
 L67:    ifne L77
 L70:    aload_1
-L71:    getfield Field org/lwjgl/opengl/kb else Z
+L71:    getfield Field org/lwjgl/opengl/kb field5446 Z
 L74:    ifeq L87
 L77:    ldc 34018
-L79:    invokestatic Method org/lwjgl/opengl/GL11 byte (I)I
+L79:    invokestatic Method org/lwjgl/opengl/GL11 method3721 (I)I
 L82:    istore_2
 L83:    aload_0
 L84:    goto L93
@@ -70,14 +70,14 @@ L94:    anewarray java/nio/Buffer
 L97:    iconst_1
 L98:    dup
 L99:    pop2
-L100:   putfield Field org/lwjgl/opengl/t char [Ljava/nio/Buffer;
+L100:   putfield Field org/lwjgl/opengl/t field4953 [Ljava/nio/Buffer;
 L103:   return
 L104:   
         .attribute StackMap b'\x00\x09\x00\x12\x00\x02\x07\x00\x02\x07\x00\x16\x00\x00\x00\x1C\x00\x00\x00\x01\x07\x00\x26\x00\x1D\x00\x02\x07\x00\x02\x07\x00\x16\x00\x00\x00\x23\x00\x03\x07\x00\x02\x07\x00\x16\x01\x00\x01\x07\x00\x02\x00\x3E\x00\x00\x00\x01\x07\x00\x26\x00\x3F\x00\x03\x07\x00\x02\x07\x00\x16\x01\x00\x00\x00\x4D\x00\x03\x07\x00\x02\x07\x00\x16\x01\x00\x00\x00\x57\x00\x03\x07\x00\x02\x07\x00\x16\x01\x00\x00\x00\x5D\x00\x03\x07\x00\x02\x07\x00\x16\x01\x00\x01\x07\x00\x02'
     .end code
 .end method
 
-.method break : ()V
+.method method5307 : ()V
     .code stack 18 locals 1
 L0:     iconst_0
 L1:     aload_0
@@ -98,25 +98,25 @@ L15:    dup_x1
 L16:    iconst_1
 L17:    dup
 L18:    pop2
-L19:    putfield Field org/lwjgl/opengl/t null I
+L19:    putfield Field org/lwjgl/opengl/t field4952 I
 L22:    iconst_1
 L23:    dup
 L24:    pop2
-L25:    putfield Field org/lwjgl/opengl/t const I
+L25:    putfield Field org/lwjgl/opengl/t field4951 I
 L28:    iconst_1
 L29:    dup
 L30:    pop2
 L31:    putfield Field org/lwjgl/opengl/t this I
-L34:    getfield Field org/lwjgl/opengl/t do [Ljava/nio/Buffer;
+L34:    getfield Field org/lwjgl/opengl/t field4956 [Ljava/nio/Buffer;
 L37:    aconst_null
 L38:    invokestatic Method java/util/Arrays fill ([Ljava/lang/Object;Ljava/lang/Object;)V
-L41:    getfield Field org/lwjgl/opengl/t char [Ljava/nio/Buffer;
+L41:    getfield Field org/lwjgl/opengl/t field4953 [Ljava/nio/Buffer;
 L44:    aconst_null
 L45:    invokestatic Method java/util/Arrays fill ([Ljava/lang/Object;Ljava/lang/Object;)V
 L48:    iconst_1
 L49:    dup
 L50:    pop2
-L51:    putfield Field org/lwjgl/opengl/t "enum" I
+L51:    putfield Field org/lwjgl/opengl/t field4955 I
 L54:    iconst_1
 L55:    dup
 L56:    pop2
@@ -128,13 +128,13 @@ L63:    putfield Field org/lwjgl/opengl/t try I
 L66:    iconst_1
 L67:    dup
 L68:    pop2
-L69:    putfield Field org/lwjgl/opengl/t else I
+L69:    putfield Field org/lwjgl/opengl/t field4954 I
 L72:    return
 L73:    
     .end code
 .end method
 
-.method break : (Lorg/lwjgl/opengl/t;I)V
+.method method5308 : (Lorg/lwjgl/opengl/t;I)V
     .code stack 7 locals 3
 L0:     iload_2
 L1:     iconst_2
@@ -150,51 +150,51 @@ L12:    aload_1
 L13:    aload_0
 L14:    dup_x1
 L15:    aload_1
-L16:    getfield Field org/lwjgl/opengl/t null I
-L19:    putfield Field org/lwjgl/opengl/t null I
-L22:    getfield Field org/lwjgl/opengl/t const I
-L25:    putfield Field org/lwjgl/opengl/t const I
+L16:    getfield Field org/lwjgl/opengl/t field4952 I
+L19:    putfield Field org/lwjgl/opengl/t field4952 I
+L22:    getfield Field org/lwjgl/opengl/t field4951 I
+L25:    putfield Field org/lwjgl/opengl/t field4951 I
 L28:    getfield Field org/lwjgl/opengl/t this I
 L31:    putfield Field org/lwjgl/opengl/t this I
-L34:    getfield Field org/lwjgl/opengl/t do [Ljava/nio/Buffer;
+L34:    getfield Field org/lwjgl/opengl/t field4956 [Ljava/nio/Buffer;
 L37:    iconst_1
 L38:    dup
 L39:    pop2
 L40:    aload_0
-L41:    getfield Field org/lwjgl/opengl/t do [Ljava/nio/Buffer;
+L41:    getfield Field org/lwjgl/opengl/t field4956 [Ljava/nio/Buffer;
 L44:    iconst_0
 L45:    dup_x1
 L46:    iconst_1
 L47:    dup
 L48:    pop2
 L49:    aload_0
-L50:    getfield Field org/lwjgl/opengl/t do [Ljava/nio/Buffer;
+L50:    getfield Field org/lwjgl/opengl/t field4956 [Ljava/nio/Buffer;
 L53:    arraylength
 L54:    invokestatic Method java/lang/System arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V
 L57:    aload_1
-L58:    getfield Field org/lwjgl/opengl/t char [Ljava/nio/Buffer;
+L58:    getfield Field org/lwjgl/opengl/t field4953 [Ljava/nio/Buffer;
 L61:    iconst_1
 L62:    dup
 L63:    pop2
 L64:    aload_0
-L65:    getfield Field org/lwjgl/opengl/t char [Ljava/nio/Buffer;
+L65:    getfield Field org/lwjgl/opengl/t field4953 [Ljava/nio/Buffer;
 L68:    iconst_0
 L69:    dup_x1
 L70:    iconst_1
 L71:    dup
 L72:    pop2
 L73:    aload_0
-L74:    getfield Field org/lwjgl/opengl/t char [Ljava/nio/Buffer;
+L74:    getfield Field org/lwjgl/opengl/t field4953 [Ljava/nio/Buffer;
 L77:    arraylength
 L78:    invokestatic Method java/lang/System arraycopy (Ljava/lang/Object;ILjava/lang/Object;II)V
 L81:    aload_1
 L82:    aload_0
 L83:    dup_x1
 L84:    aload_1
-L85:    getfield Field org/lwjgl/opengl/t "enum" I
-L88:    putfield Field org/lwjgl/opengl/t "enum" I
-L91:    getfield Field org/lwjgl/opengl/t else I
-L94:    putfield Field org/lwjgl/opengl/t else I
+L85:    getfield Field org/lwjgl/opengl/t field4955 I
+L88:    putfield Field org/lwjgl/opengl/t field4955 I
+L91:    getfield Field org/lwjgl/opengl/t field4954 I
+L94:    putfield Field org/lwjgl/opengl/t field4954 I
 L97:    iload_2
 L98:    iconst_1
 L99:    dup

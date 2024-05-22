@@ -1,7 +1,7 @@
 .version 49 0
 .class public final super Xf
 .super Uf
-.field private do F
+.field private field1366 F
 
 .method public <init> : ()V
     .code stack 3 locals 1
@@ -9,17 +9,17 @@ L0:     fconst_0
 L1:     aload_0
 L2:     dup_x1
 L3:     invokespecial Method Uf <init> ()V
-L6:     putfield Field Xf do F
+L6:     putfield Field Xf field1366 F
 L9:     return
 L10:    
     .end code
 .end method
 
-.method public break : (LRg;[[ILff;[I)Z
+.method public method699 : (LRg;[[ILff;[I)Z
     .code stack 6 locals 7
 L0:     aload_1
 L1:     getfield Field Rg this [[I
-L4:     invokestatic Method OC break ([[I)[[I
+L4:     invokestatic Method OC method1012 ([[I)[[I
 L7:     astore_2
 L8:     iconst_0
 L9:     iconst_1
@@ -140,10 +140,10 @@ L174:   iload_3
 L175:   goto L14
 L178:   aload_0
 L179:   dup
-L180:   getfield Field Xf do F
+L180:   getfield Field Xf field1366 F
 L183:   ldc 1.8e2f
 L185:   fadd
-L186:   putfield Field Xf do F
+L186:   putfield Field Xf field1366 F
 L189:   iconst_0
 L190:   iconst_1
 L191:   dup
@@ -154,9 +154,9 @@ L194:
     .end code
 .end method
 
-.method public break : (LRg;)Z
+.method public method704 : (LRg;)Z
     .code stack 5 locals 3
-L0:     getstatic Field ZF const Lsb;
+L0:     getstatic Field ZF field94 Lsb;
 L3:     dup
 L4:     astore_2
 L5:     ifnonnull L14
@@ -168,7 +168,7 @@ L12:    ireturn
 L13:    athrow
 L14:    aload_2
 L15:    aload_1
-L16:    invokevirtual Method sb else (LRg;)LLD;
+L16:    invokevirtual Method sb method139 (LRg;)LLD;
 L19:    dup
 L20:    astore_2
 L21:    ifnonnull L30
@@ -181,33 +181,33 @@ L29:    athrow
 L30:    aload_0
 L31:    dup
 L32:    dup_x1
-L33:    getfield Field Xf do F
+L33:    getfield Field Xf field1366 F
 L36:    ldc 1.2e0f
 L38:    fdiv
-L39:    getstatic Field ib do F
+L39:    getstatic Field ib field2312 F
 L42:    ldc 1e2f
 L44:    fmul
 L45:    fsub
-L46:    putfield Field Xf do F
-L49:    getfield Field Xf do F
+L46:    putfield Field Xf field1366 F
+L49:    getfield Field Xf field1366 F
 L52:    fconst_0
 L53:    fcmpg
 L54:    ifge L62
 L57:    aload_0
 L58:    fconst_0
-L59:    putfield Field Xf do F
+L59:    putfield Field Xf field1366 F
 L62:    aload_2
-L63:    getfield Field LD void LlG;
+L63:    getfield Field LD field139 LlG;
 L66:    aload_0
-L67:    getfield Field Xf do F
-L70:    invokevirtual Method lG catch (F)V
+L67:    getfield Field Xf field1366 F
+L70:    invokevirtual Method lG method651 (F)V
 L73:    iconst_0
 L74:    iconst_1
 L75:    dup
 L76:    pop2
 L77:    ireturn
 L78:    
-        .attribute StackMap b'\x00\x05\x00\x0D\x00\x00\x00\x01\x07\x00\x22\x00\x0E\x00\x03\x07\x00\x02\x07\x00\x15\x07\x00\x2D\x00\x00\x00\x1D\x00\x00\x00\x01\x07\x00\x22\x00\x1E\x00\x03\x07\x00\x02\x07\x00\x15\x07\x00\x38\x00\x00\x00\x3E\x00\x03\x07\x00\x02\x07\x00\x15\x07\x00\x38\x00\x00'
+        .attribute StackMap b'\x00\x05\x00\x0D\x00\x00\x00\x01\x07\x00\x22\x00\x0E\x00\x03\x07\x00\x02\x07\x00\x15\x07\x00\x2F\x00\x00\x00\x1D\x00\x00\x00\x01\x07\x00\x22\x00\x1E\x00\x03\x07\x00\x02\x07\x00\x15\x07\x00\x35\x00\x00\x00\x3E\x00\x03\x07\x00\x02\x07\x00\x15\x07\x00\x35\x00\x00'
     .end code
 .end method
 .innerclasses

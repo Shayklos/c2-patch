@@ -2,21 +2,21 @@
 .class public final super Nb
 .super java/lang/Object
 .implements java/util/Comparator
-.field public final synthetic do LCC;
+.field public final synthetic field1344 LCC;
 
-.method public break : (LUf;LUf;)I
+.method public method692 : (LUf;LUf;)I
     .code stack 3 locals 5
 L0:     aload_0
 L1:     dup
-L2:     getfield Field Nb do LCC;
+L2:     getfield Field Nb field1344 LCC;
 L5:     invokestatic Method CC try (LCC;)Led;
-L8:     getfield Field ed goto Ljava/util/Set;
+L8:     getfield Field ed field704 Ljava/util/Set;
 L11:    aload_1
 L12:    invokeinterface InterfaceMethod java/util/Set contains (Ljava/lang/Object;)Z 2
 L17:    istore_3
-L18:    getfield Field Nb do LCC;
+L18:    getfield Field Nb field1344 LCC;
 L21:    invokestatic Method CC try (LCC;)Led;
-L24:    getfield Field ed goto Ljava/util/Set;
+L24:    getfield Field ed field704 Ljava/util/Set;
 L27:    aload_2
 L28:    invokeinterface InterfaceMethod java/util/Set contains (Ljava/lang/Object;)Z 2
 L33:    istore 4
@@ -42,20 +42,20 @@ L58:    ifeq L87
 L61:    iload 4
 L63:    ifeq L87
 L66:    aload_1
-L67:    getfield Field Uf char I
+L67:    getfield Field Uf field1349 I
 L70:    aload_2
-L71:    getfield Field Uf char I
+L71:    getfield Field Uf field1349 I
 L74:    if_icmpeq L87
 L77:    aload_2
-L78:    getfield Field Uf char I
+L78:    getfield Field Uf field1349 I
 L81:    aload_1
-L82:    getfield Field Uf char I
+L82:    getfield Field Uf field1349 I
 L85:    isub
 L86:    ireturn
 L87:    aload_1
-L88:    getfield Field Uf "enum" Ljava/lang/String;
+L88:    getfield Field Uf field1351 Ljava/lang/String;
 L91:    aload_2
-L92:    getfield Field Uf "enum" Ljava/lang/String;
+L92:    getfield Field Uf field1351 Ljava/lang/String;
 L95:    invokevirtual Method java/lang/String compareTo (Ljava/lang/String;)I
 L98:    ireturn
 L99:    
@@ -68,7 +68,7 @@ L99:
 L0:     aload_0
 L1:     dup
 L2:     aload_1
-L3:     putfield Field Nb do LCC;
+L3:     putfield Field Nb field1344 LCC;
 L6:     invokespecial Method java/lang/Object <init> ()V
 L9:     return
 L10:    
@@ -82,7 +82,7 @@ L1:     aload_1
 L2:     checkcast Uf
 L5:     aload_2
 L6:     checkcast Uf
-L9:     invokevirtual Method Nb break (LUf;LUf;)I
+L9:     invokevirtual Method Nb method692 (LUf;LUf;)I
 L12:    ireturn
 L13:    
     .end code
@@ -90,5 +90,5 @@ L13:
 .innerclasses
     Nb [0] [0]
 .end innerclasses
-.enclosing method CC catch ()Lqc;
+.enclosing method CC method177 ()Lqc;
 .end class

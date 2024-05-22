@@ -5,7 +5,7 @@
 .method public try : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -14,7 +14,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_get_length (J)I
 L24:    ireturn
 L25:    
@@ -25,7 +25,7 @@ L25:
 .method public this : ()Ljouvieje/bass/utils/m;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -34,7 +34,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_get_data (J)J
 L24:    dup2
 L25:    lstore_1
@@ -45,17 +45,17 @@ L31:    aconst_null
 L32:    areturn
 L33:    athrow
 L34:    lload_1
-L35:    invokestatic Method jouvieje/bass/utils/m break (J)Ljouvieje/bass/utils/m;
+L35:    invokestatic Method jouvieje/bass/utils/m method1177 (J)Ljouvieje/bass/utils/m;
 L38:    areturn
 L39:    
         .attribute StackMap b'\x00\x03\x00\x11\x00\x01\x07\x00\x02\x00\x00\x00\x21\x00\x00\x00\x01\x07\x00\x1E\x00\x22\x00\x02\x07\x00\x02\x04\x00\x00'
     .end code
 .end method
 
-.method public goto : ()I
+.method public method1228 : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -64,7 +64,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_get_depth (J)I
 L24:    ireturn
 L25:    
@@ -72,10 +72,10 @@ L25:
     .end code
 .end method
 
-.method public catch : (I)V
+.method public method1227 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -84,7 +84,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_set_depth (JI)V
 L25:    return
@@ -93,7 +93,7 @@ L26:
     .end code
 .end method
 
-.method public static do : ()Ljouvieje/bass/structures/m;
+.method public static method1351 : ()Ljouvieje/bass/structures/m;
     .code stack 4 locals 2
 L0:     invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_new ()J
 L3:     dup2
@@ -115,10 +115,10 @@ L27:
     .end code
 .end method
 
-.method public float : (I)V
+.method public method1186 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -127,7 +127,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_set_height (JI)V
 L25:    return
@@ -136,10 +136,10 @@ L26:
     .end code
 .end method
 
-.method public short : (I)V
+.method public method1194 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -148,7 +148,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_set_width (JI)V
 L25:    return
@@ -157,10 +157,10 @@ L26:
     .end code
 .end method
 
-.method public for : ()Ljava/lang/String;
+.method public method1266 : ()Ljava/lang/String;
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -169,7 +169,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_get_mime (J)Ljava/lang/String;
 L24:    areturn
 L25:    
@@ -177,10 +177,10 @@ L25:
     .end code
 .end method
 
-.method public const : (Ljouvieje/bass/utils/m;)V
+.method public method1352 : (Ljouvieje/bass/utils/m;)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -189,9 +189,9 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    aload_1
-L22:    invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L22:    invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L25:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_set_data (JJ)V
 L28:    return
 L29:    
@@ -199,10 +199,10 @@ L29:
     .end code
 .end method
 
-.method public catch : ()I
+.method public method1192 : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -211,7 +211,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_get_apic (J)I
 L24:    ireturn
 L25:    
@@ -219,10 +219,10 @@ L25:
     .end code
 .end method
 
-.method public float : ()Ljava/lang/String;
+.method public method1269 : ()Ljava/lang/String;
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -231,7 +231,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_get_desc (J)Ljava/lang/String;
 L24:    areturn
 L25:    
@@ -239,10 +239,10 @@ L25:
     .end code
 .end method
 
-.method public const : (I)V
+.method public method1196 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -251,7 +251,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_set_length (JI)V
 L25:    return
@@ -260,10 +260,10 @@ L26:
     .end code
 .end method
 
-.method public short : ()I
+.method public method1336 : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -272,7 +272,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_get_height (J)I
 L24:    ireturn
 L25:    
@@ -280,29 +280,29 @@ L25:
     .end code
 .end method
 
-.method public const : ()V
+.method public method1249 : ()V
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifeq L16
 L9:     aload_0
-L10:    getfield Field jouvieje/bass/structures/m do J
+L10:    getfield Field jouvieje/bass/structures/m field2319 J
 L13:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_delete (J)V
 L16:    aload_0
 L17:    lconst_0
-L18:    putfield Field jouvieje/bass/structures/m do J
+L18:    putfield Field jouvieje/bass/structures/m field2319 J
 L21:    return
 L22:    
         .attribute StackMap b'\x00\x01\x00\x10\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public const : (Ljava/lang/String;)V
+.method public method1353 : (Ljava/lang/String;)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -311,7 +311,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    aload_1
 L22:    ifnonnull L30
 L25:    aconst_null
@@ -322,14 +322,14 @@ L31:    invokevirtual Method java/lang/String getBytes ()[B
 L34:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_set_mime (J[B)V
 L37:    return
 L38:    
-        .attribute StackMap b'\x00\x04\x00\x11\x00\x02\x07\x00\x02\x07\x00\x60\x00\x00\x00\x1D\x00\x00\x00\x01\x07\x00\x1E\x00\x1E\x00\x02\x07\x00\x02\x07\x00\x60\x00\x01\x04\x00\x22\x00\x02\x07\x00\x02\x07\x00\x60\x00\x02\x04\x07\x00\x66'
+        .attribute StackMap b'\x00\x04\x00\x11\x00\x02\x07\x00\x02\x07\x00\x68\x00\x00\x00\x1D\x00\x00\x00\x01\x07\x00\x1E\x00\x1E\x00\x02\x07\x00\x02\x07\x00\x68\x00\x01\x04\x00\x22\x00\x02\x07\x00\x02\x07\x00\x68\x00\x02\x04\x07\x00\x6E'
     .end code
 .end method
 
-.method public else : (I)V
+.method public method1197 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -338,7 +338,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_set_colors (JI)V
 L25:    return
@@ -347,10 +347,10 @@ L26:
     .end code
 .end method
 
-.method public else : ()I
+.method public method1233 : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -359,7 +359,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_get_colors (J)I
 L24:    ireturn
 L25:    
@@ -367,10 +367,10 @@ L25:
     .end code
 .end method
 
-.method public else : (Ljava/lang/String;)V
+.method public method1193 : (Ljava/lang/String;)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -379,7 +379,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    aload_1
 L22:    ifnonnull L30
 L25:    aconst_null
@@ -390,14 +390,14 @@ L31:    invokevirtual Method java/lang/String getBytes ()[B
 L34:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_set_desc (J[B)V
 L37:    return
 L38:    
-        .attribute StackMap b'\x00\x04\x00\x11\x00\x02\x07\x00\x02\x07\x00\x60\x00\x00\x00\x1D\x00\x00\x00\x01\x07\x00\x1E\x00\x1E\x00\x02\x07\x00\x02\x07\x00\x60\x00\x01\x04\x00\x22\x00\x02\x07\x00\x02\x07\x00\x60\x00\x02\x04\x07\x00\x66'
+        .attribute StackMap b'\x00\x04\x00\x11\x00\x02\x07\x00\x02\x07\x00\x68\x00\x00\x00\x1D\x00\x00\x00\x01\x07\x00\x1E\x00\x1E\x00\x02\x07\x00\x02\x07\x00\x68\x00\x01\x04\x00\x22\x00\x02\x07\x00\x02\x07\x00\x68\x00\x02\x04\x07\x00\x6E'
     .end code
 .end method
 
-.method public break : ()I
+.method public method1184 : ()I
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -406,7 +406,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_get_width (J)I
 L24:    ireturn
 L25:    
@@ -414,10 +414,10 @@ L25:
     .end code
 .end method
 
-.method public static else : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/m;
+.method public static method1354 : (Ljouvieje/bass/utils/m;)Ljouvieje/bass/structures/m;
     .code stack 4 locals 3
 L0:     aload_0
-L1:     invokestatic Method jouvieje/bass/utils/m break (Ljouvieje/bass/utils/m;)J
+L1:     invokestatic Method jouvieje/bass/utils/m method1176 (Ljouvieje/bass/utils/m;)J
 L4:     dup2
 L5:     lstore_1
 L6:     lconst_0
@@ -446,10 +446,10 @@ L6:
     .end code
 .end method
 
-.method public break : (I)V
+.method public method1180 : (I)V
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field jouvieje/bass/structures/m do J
+L1:     getfield Field jouvieje/bass/structures/m field2319 J
 L4:     lconst_0
 L5:     lcmp
 L6:     ifne L17
@@ -458,7 +458,7 @@ L12:    dup
 L13:    invokespecial Method java/lang/NullPointerException <init> ()V
 L16:    athrow
 L17:    aload_0
-L18:    getfield Field jouvieje/bass/structures/m do J
+L18:    getfield Field jouvieje/bass/structures/m field2319 J
 L21:    iload_1
 L22:    invokestatic Method jouvieje/bass/structures/StructureJNI TAG_FLAC_PICTURE_set_apic (JI)V
 L25:    return

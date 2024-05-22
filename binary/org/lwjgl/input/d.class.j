@@ -2,28 +2,28 @@
 .class final super org/lwjgl/input/d
 .super java/lang/Object
 .implements org/lwjgl/input/i
-.field private byte Ljava/util/ArrayList;
-.field private "super" [F
-.field private int [F
-.field private short I
-.field private goto [F
-.field private break I
-.field private long I
-.field private void I
+.field private field2584 Ljava/util/ArrayList;
+.field private field2585 [F
+.field private field2586 [F
+.field private field2587 I
+.field private field2588 [F
+.field private field2589 I
+.field private field2590 I
+.field private field2591 I
 .field private try Ljava/util/ArrayList;
-.field private const [Z
+.field private field2592 [Z
 .field private new Lnet/java/games/input/Controller;
-.field private null I
+.field private field2593 I
 .field private this [F
-.field private char [Lnet/java/games/input/Rumbler;
-.field private else Ljava/util/ArrayList;
-.field private "enum" I
-.field private do I
+.field private field2594 [Lnet/java/games/input/Rumbler;
+.field private field2595 Ljava/util/ArrayList;
+.field private field2596 I
+.field private field2597 I
 
-.method public int : ()F
+.method public method1968 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d void I
+L1:     getfield Field org/lwjgl/input/d field2591 I
 L4:     iconst_m1
 L5:     iconst_1
 L6:     dup
@@ -34,21 +34,21 @@ L12:    freturn
 L13:    athrow
 L14:    aload_0
 L15:    dup
-L16:    getfield Field org/lwjgl/input/d void I
-L19:    invokevirtual Method org/lwjgl/input/d float (I)F
+L16:    getfield Field org/lwjgl/input/d field2591 I
+L19:    invokevirtual Method org/lwjgl/input/d method1986 (I)F
 L22:    freturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2D\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2E\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public break : (F)V
+.method public method1969 : (F)V
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/input/d null I
+L2:     getfield Field org/lwjgl/input/d field2593 I
 L5:     fload_1
-L6:     invokevirtual Method org/lwjgl/input/d break (IF)V
+L6:     invokevirtual Method org/lwjgl/input/d method1972 (IF)V
 L9:     return
 L10:    
     .end code
@@ -84,7 +84,7 @@ L28:    dup
 L29:    pop2
 L30:    dup
 L31:    invokespecial Method java/util/ArrayList <init> ()V
-L34:    putfield Field org/lwjgl/input/d byte Ljava/util/ArrayList;
+L34:    putfield Field org/lwjgl/input/d field2584 Ljava/util/ArrayList;
 L37:    new java/util/ArrayList
 L40:    aload_0
 L41:    dup
@@ -98,33 +98,33 @@ L54:    dup
 L55:    pop2
 L56:    dup
 L57:    invokespecial Method java/util/ArrayList <init> ()V
-L60:    putfield Field org/lwjgl/input/d else Ljava/util/ArrayList;
+L60:    putfield Field org/lwjgl/input/d field2595 Ljava/util/ArrayList;
 L63:    iconst_1
 L64:    dup
 L65:    pop2
-L66:    putfield Field org/lwjgl/input/d null I
+L66:    putfield Field org/lwjgl/input/d field2593 I
 L69:    iconst_1
 L70:    dup
 L71:    pop2
-L72:    putfield Field org/lwjgl/input/d void I
+L72:    putfield Field org/lwjgl/input/d field2591 I
 L75:    iconst_1
 L76:    dup
 L77:    pop2
-L78:    putfield Field org/lwjgl/input/d break I
+L78:    putfield Field org/lwjgl/input/d field2589 I
 L81:    iconst_1
 L82:    dup
 L83:    pop2
-L84:    putfield Field org/lwjgl/input/d long I
+L84:    putfield Field org/lwjgl/input/d field2590 I
 L87:    iconst_1
 L88:    dup
 L89:    pop2
-L90:    putfield Field org/lwjgl/input/d short I
+L90:    putfield Field org/lwjgl/input/d field2587 I
 L93:    iconst_1
 L94:    dup
 L95:    pop2
-L96:    putfield Field org/lwjgl/input/d do I
+L96:    putfield Field org/lwjgl/input/d field2597 I
 L99:    putfield Field org/lwjgl/input/d new Lnet/java/games/input/Controller;
-L102:   putfield Field org/lwjgl/input/d "enum" I
+L102:   putfield Field org/lwjgl/input/d field2596 I
 L105:   invokeinterface InterfaceMethod net/java/games/input/Controller getComponents ()[Lnet/java/games/input/Component; 1
 L110:   dup
 L111:   astore_1
@@ -149,7 +149,7 @@ L136:   invokeinterface InterfaceMethod net/java/games/input/Component getIdenti
 L141:   instanceof net/java/games/input/Component$Identifier$Button
 L144:   ifeq L161
 L147:   aload_0
-L148:   getfield Field org/lwjgl/input/d byte Ljava/util/ArrayList;
+L148:   getfield Field org/lwjgl/input/d field2584 Ljava/util/ArrayList;
 L151:   aload 6
 L153:   invokevirtual Method java/util/ArrayList add (Ljava/lang/Object;)Z
 L156:   pop
@@ -161,7 +161,7 @@ L168:   getstatic Field net/java/games/input/Component$Identifier$Axis POV Lnet/
 L171:   invokevirtual Method java/lang/Object equals (Ljava/lang/Object;)Z
 L174:   ifeq L191
 L177:   aload_0
-L178:   getfield Field org/lwjgl/input/d else Ljava/util/ArrayList;
+L178:   getfield Field org/lwjgl/input/d field2595 Ljava/util/ArrayList;
 L181:   aload 6
 L183:   invokevirtual Method java/util/ArrayList add (Ljava/lang/Object;)Z
 L186:   pop
@@ -179,20 +179,20 @@ L209:   aload_0
 L210:   dup
 L211:   dup2
 L212:   dup2
-L213:   getfield Field org/lwjgl/input/d byte Ljava/util/ArrayList;
+L213:   getfield Field org/lwjgl/input/d field2584 Ljava/util/ArrayList;
 L216:   invokevirtual Method java/util/ArrayList size ()I
 L219:   newarray boolean
 L221:   iconst_1
 L222:   dup
 L223:   pop2
-L224:   putfield Field org/lwjgl/input/d const [Z
-L227:   getfield Field org/lwjgl/input/d else Ljava/util/ArrayList;
+L224:   putfield Field org/lwjgl/input/d field2592 [Z
+L227:   getfield Field org/lwjgl/input/d field2595 Ljava/util/ArrayList;
 L230:   invokevirtual Method java/util/ArrayList size ()I
 L233:   newarray float
 L235:   iconst_1
 L236:   dup
 L237:   pop2
-L238:   putfield Field org/lwjgl/input/d goto [F
+L238:   putfield Field org/lwjgl/input/d field2588 [F
 L241:   getfield Field org/lwjgl/input/d try Ljava/util/ArrayList;
 L244:   invokevirtual Method java/util/ArrayList size ()I
 L247:   newarray float
@@ -232,7 +232,7 @@ L291:   invokeinterface InterfaceMethod net/java/games/input/Component getIdenti
 L296:   instanceof net/java/games/input/Component$Identifier$Button
 L299:   ifeq L337
 L302:   aload_0
-L303:   getfield Field org/lwjgl/input/d const [Z
+L303:   getfield Field org/lwjgl/input/d field2592 [Z
 L306:   iload_3
 L307:   aload 7
 L309:   invokeinterface InterfaceMethod net/java/games/input/Component getPollData ()F 1
@@ -270,7 +270,7 @@ L380:   invokevirtual Method java/lang/Object equals (Ljava/lang/Object;)Z
 L383:   ifeq L392
 L386:   aload_0
 L387:   iload 4
-L389:   putfield Field org/lwjgl/input/d null I
+L389:   putfield Field org/lwjgl/input/d field2593 I
 L392:   aload 7
 L394:   invokeinterface InterfaceMethod net/java/games/input/Component getIdentifier ()Lnet/java/games/input/Component$Identifier; 1
 L399:   getstatic Field net/java/games/input/Component$Identifier$Axis Y Lnet/java/games/input/Component$Identifier$Axis;
@@ -278,7 +278,7 @@ L402:   invokevirtual Method java/lang/Object equals (Ljava/lang/Object;)Z
 L405:   ifeq L414
 L408:   aload_0
 L409:   iload 4
-L411:   putfield Field org/lwjgl/input/d void I
+L411:   putfield Field org/lwjgl/input/d field2591 I
 L414:   aload 7
 L416:   invokeinterface InterfaceMethod net/java/games/input/Component getIdentifier ()Lnet/java/games/input/Component$Identifier; 1
 L421:   getstatic Field net/java/games/input/Component$Identifier$Axis Z Lnet/java/games/input/Component$Identifier$Axis;
@@ -286,7 +286,7 @@ L424:   invokevirtual Method java/lang/Object equals (Ljava/lang/Object;)Z
 L427:   ifeq L436
 L430:   aload_0
 L431:   iload 4
-L433:   putfield Field org/lwjgl/input/d break I
+L433:   putfield Field org/lwjgl/input/d field2589 I
 L436:   aload 7
 L438:   invokeinterface InterfaceMethod net/java/games/input/Component getIdentifier ()Lnet/java/games/input/Component$Identifier; 1
 L443:   getstatic Field net/java/games/input/Component$Identifier$Axis RX Lnet/java/games/input/Component$Identifier$Axis;
@@ -294,7 +294,7 @@ L446:   invokevirtual Method java/lang/Object equals (Ljava/lang/Object;)Z
 L449:   ifeq L458
 L452:   aload_0
 L453:   iload 4
-L455:   putfield Field org/lwjgl/input/d long I
+L455:   putfield Field org/lwjgl/input/d field2590 I
 L458:   aload 7
 L460:   invokeinterface InterfaceMethod net/java/games/input/Component getIdentifier ()Lnet/java/games/input/Component$Identifier; 1
 L465:   getstatic Field net/java/games/input/Component$Identifier$Axis RY Lnet/java/games/input/Component$Identifier$Axis;
@@ -302,7 +302,7 @@ L468:   invokevirtual Method java/lang/Object equals (Ljava/lang/Object;)Z
 L471:   ifeq L480
 L474:   aload_0
 L475:   iload 4
-L477:   putfield Field org/lwjgl/input/d short I
+L477:   putfield Field org/lwjgl/input/d field2587 I
 L480:   aload 7
 L482:   invokeinterface InterfaceMethod net/java/games/input/Component getIdentifier ()Lnet/java/games/input/Component$Identifier; 1
 L487:   getstatic Field net/java/games/input/Component$Identifier$Axis RZ Lnet/java/games/input/Component$Identifier$Axis;
@@ -310,7 +310,7 @@ L490:   invokevirtual Method java/lang/Object equals (Ljava/lang/Object;)Z
 L493:   ifeq L502
 L496:   aload_0
 L497:   iload 4
-L499:   putfield Field org/lwjgl/input/d do I
+L499:   putfield Field org/lwjgl/input/d field2597 I
 L502:   iinc 4 1
 L505:   iinc 1 1
 L508:   iload_1
@@ -324,14 +324,14 @@ L521:   newarray float
 L523:   iconst_1
 L524:   dup
 L525:   pop2
-L526:   putfield Field org/lwjgl/input/d int [F
+L526:   putfield Field org/lwjgl/input/d field2586 [F
 L529:   getfield Field org/lwjgl/input/d try Ljava/util/ArrayList;
 L532:   invokevirtual Method java/util/ArrayList size ()I
 L535:   newarray float
 L537:   iconst_1
 L538:   dup
 L539:   pop2
-L540:   putfield Field org/lwjgl/input/d "super" [F
+L540:   putfield Field org/lwjgl/input/d field2585 [F
 L543:   iconst_0
 L544:   iconst_1
 L545:   dup
@@ -339,16 +339,16 @@ L546:   pop2
 L547:   dup
 L548:   istore 5
 L550:   aload_0
-L551:   getfield Field org/lwjgl/input/d int [F
+L551:   getfield Field org/lwjgl/input/d field2586 [F
 L554:   arraylength
 L555:   if_icmpge L583
 L558:   aload_0
 L559:   dup
-L560:   getfield Field org/lwjgl/input/d int [F
+L560:   getfield Field org/lwjgl/input/d field2586 [F
 L563:   iload 5
 L565:   fconst_1
 L566:   fastore
-L567:   getfield Field org/lwjgl/input/d "super" [F
+L567:   getfield Field org/lwjgl/input/d field2585 [F
 L570:   iload 5
 L572:   ldc 5e-2f
 L574:   iinc 5 1
@@ -358,17 +358,17 @@ L580:   goto L550
 L583:   aload_0
 L584:   aload_2
 L585:   invokeinterface InterfaceMethod net/java/games/input/Controller getRumblers ()[Lnet/java/games/input/Rumbler; 1
-L590:   putfield Field org/lwjgl/input/d char [Lnet/java/games/input/Rumbler;
+L590:   putfield Field org/lwjgl/input/d field2594 [Lnet/java/games/input/Rumbler;
 L593:   return
 L594:   
-        .attribute StackMap b'\x00\x16\x00\x7C\x00\x06\x07\x00\x02\x07\x00\x59\x07\x00\x53\x07\x00\x59\x01\x01\x00\x01\x01\x00\xA0\x00\x00\x00\x01\x07\x00\x2D\x00\xA1\x00\x07\x07\x00\x02\x07\x00\x59\x07\x00\x53\x07\x00\x59\x01\x01\x07\x00\x0A\x00\x00\x00\xBE\x00\x00\x00\x01\x07\x00\x2D\x00\xBF\x00\x07\x07\x00\x02\x07\x00\x59\x07\x00\x53\x07\x00\x59\x01\x01\x07\x00\x0A\x00\x00\x00\xC9\x00\x07\x07\x00\x02\x07\x00\x59\x07\x00\x53\x07\x00\x59\x01\x01\x07\x00\x0A\x00\x00\x00\xD1\x00\x06\x07\x00\x02\x07\x00\x59\x07\x00\x53\x07\x00\x59\x01\x01\x00\x00\x01\x17\x00\x07\x07\x00\x02\x01\x07\x00\x53\x01\x01\x07\x00\x59\x01\x00\x01\x01\x01\x46\x00\x08\x07\x00\x02\x01\x07\x00\x53\x01\x01\x07\x00\x59\x01\x07\x00\x0A\x00\x02\x07\x00\x76\x01\x01\x4A\x00\x08\x07\x00\x02\x01\x07\x00\x53\x01\x01\x07\x00\x59\x01\x07\x00\x0A\x00\x03\x07\x00\x76\x01\x01\x01\x51\x00\x08\x07\x00\x02\x01\x07\x00\x53\x01\x01\x07\x00\x59\x01\x07\x00\x0A\x00\x00\x01\x64\x00\x08\x07\x00\x02\x01\x07\x00\x53\x01\x01\x07\x00\x59\x01\x07\x00\x0A\x00\x00\x01\x88\x00\x08\x07\x00\x02\x01\x07\x00\x53\x01\x01\x07\x00\x59\x01\x07\x00\x0A\x00\x00\x01\x9E\x00\x08\x07\x00\x02\x01\x07\x00\x53\x01\x01\x07\x00\x59\x01\x07\x00\x0A\x00\x00\x01\xB4\x00\x08\x07\x00\x02\x01\x07\x00\x53\x01\x01\x07\x00\x59\x01\x07\x00\x0A\x00\x00\x01\xCA\x00\x08\x07\x00\x02\x01\x07\x00\x53\x01\x01\x07\x00\x59\x01\x07\x00\x0A\x00\x00\x01\xE0\x00\x08\x07\x00\x02\x01\x07\x00\x53\x01\x01\x07\x00\x59\x01\x07\x00\x0A\x00\x00\x01\xF6\x00\x08\x07\x00\x02\x01\x07\x00\x53\x01\x01\x07\x00\x59\x01\x07\x00\x0A\x00\x00\x01\xF9\x00\x08\x07\x00\x02\x01\x07\x00\x53\x01\x01\x07\x00\x59\x01\x07\x00\x0A\x00\x00\x02\x00\x00\x07\x07\x00\x02\x01\x07\x00\x53\x01\x01\x07\x00\x59\x01\x00\x00\x02\x26\x00\x07\x07\x00\x02\x01\x07\x00\x53\x01\x01\x01\x01\x00\x01\x01\x02\x47\x00\x07\x07\x00\x02\x01\x07\x00\x53\x01\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x16\x00\x7C\x00\x06\x07\x00\x02\x07\x00\x5C\x07\x00\x56\x07\x00\x5C\x01\x01\x00\x01\x01\x00\xA0\x00\x00\x00\x01\x07\x00\x2E\x00\xA1\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\x56\x07\x00\x5C\x01\x01\x07\x00\x0A\x00\x00\x00\xBE\x00\x00\x00\x01\x07\x00\x2E\x00\xBF\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\x56\x07\x00\x5C\x01\x01\x07\x00\x0A\x00\x00\x00\xC9\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\x56\x07\x00\x5C\x01\x01\x07\x00\x0A\x00\x00\x00\xD1\x00\x06\x07\x00\x02\x07\x00\x5C\x07\x00\x56\x07\x00\x5C\x01\x01\x00\x00\x01\x17\x00\x07\x07\x00\x02\x01\x07\x00\x56\x01\x01\x07\x00\x5C\x01\x00\x01\x01\x01\x46\x00\x08\x07\x00\x02\x01\x07\x00\x56\x01\x01\x07\x00\x5C\x01\x07\x00\x0A\x00\x02\x07\x00\x79\x01\x01\x4A\x00\x08\x07\x00\x02\x01\x07\x00\x56\x01\x01\x07\x00\x5C\x01\x07\x00\x0A\x00\x03\x07\x00\x79\x01\x01\x01\x51\x00\x08\x07\x00\x02\x01\x07\x00\x56\x01\x01\x07\x00\x5C\x01\x07\x00\x0A\x00\x00\x01\x64\x00\x08\x07\x00\x02\x01\x07\x00\x56\x01\x01\x07\x00\x5C\x01\x07\x00\x0A\x00\x00\x01\x88\x00\x08\x07\x00\x02\x01\x07\x00\x56\x01\x01\x07\x00\x5C\x01\x07\x00\x0A\x00\x00\x01\x9E\x00\x08\x07\x00\x02\x01\x07\x00\x56\x01\x01\x07\x00\x5C\x01\x07\x00\x0A\x00\x00\x01\xB4\x00\x08\x07\x00\x02\x01\x07\x00\x56\x01\x01\x07\x00\x5C\x01\x07\x00\x0A\x00\x00\x01\xCA\x00\x08\x07\x00\x02\x01\x07\x00\x56\x01\x01\x07\x00\x5C\x01\x07\x00\x0A\x00\x00\x01\xE0\x00\x08\x07\x00\x02\x01\x07\x00\x56\x01\x01\x07\x00\x5C\x01\x07\x00\x0A\x00\x00\x01\xF6\x00\x08\x07\x00\x02\x01\x07\x00\x56\x01\x01\x07\x00\x5C\x01\x07\x00\x0A\x00\x00\x01\xF9\x00\x08\x07\x00\x02\x01\x07\x00\x56\x01\x01\x07\x00\x5C\x01\x07\x00\x0A\x00\x00\x02\x00\x00\x07\x07\x00\x02\x01\x07\x00\x56\x01\x01\x07\x00\x5C\x01\x00\x00\x02\x26\x00\x07\x07\x00\x02\x01\x07\x00\x56\x01\x01\x01\x01\x00\x01\x01\x02\x47\x00\x07\x07\x00\x02\x01\x07\x00\x56\x01\x01\x01\x01\x00\x00'
     .end code
 .end method
 
-.method public float : ()F
+.method public method1970 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d null I
+L1:     getfield Field org/lwjgl/input/d field2593 I
 L4:     iconst_m1
 L5:     iconst_1
 L6:     dup
@@ -379,18 +379,18 @@ L12:    freturn
 L13:    athrow
 L14:    aload_0
 L15:    dup
-L16:    getfield Field org/lwjgl/input/d null I
-L19:    invokevirtual Method org/lwjgl/input/d break (I)F
+L16:    getfield Field org/lwjgl/input/d field2593 I
+L19:    invokevirtual Method org/lwjgl/input/d method1993 (I)F
 L22:    freturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2D\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2E\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public "enum" : ()F
+.method public method1971 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d do I
+L1:     getfield Field org/lwjgl/input/d field2597 I
 L4:     iconst_m1
 L5:     iconst_1
 L6:     dup
@@ -401,18 +401,18 @@ L12:    freturn
 L13:    athrow
 L14:    aload_0
 L15:    dup
-L16:    getfield Field org/lwjgl/input/d do I
-L19:    invokevirtual Method org/lwjgl/input/d float (I)F
+L16:    getfield Field org/lwjgl/input/d field2597 I
+L19:    invokevirtual Method org/lwjgl/input/d method1986 (I)F
 L22:    freturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2D\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2E\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public break : (IF)V
+.method public method1972 : (IF)V
     .code stack 3 locals 3
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d "super" [F
+L1:     getfield Field org/lwjgl/input/d field2585 [F
 L4:     iload_1
 L5:     fload_2
 L6:     fastore
@@ -421,10 +421,10 @@ L8:
     .end code
 .end method
 
-.method public "final" : ()F
+.method public method1973 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d do I
+L1:     getfield Field org/lwjgl/input/d field2597 I
 L4:     iconst_m1
 L5:     iconst_1
 L6:     dup
@@ -435,27 +435,27 @@ L12:    freturn
 L13:    athrow
 L14:    aload_0
 L15:    dup
-L16:    getfield Field org/lwjgl/input/d do I
-L19:    invokevirtual Method org/lwjgl/input/d break (I)F
+L16:    getfield Field org/lwjgl/input/d field2597 I
+L19:    invokevirtual Method org/lwjgl/input/d method1993 (I)F
 L22:    freturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2D\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2E\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
 .method public new : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d "enum" I
+L1:     getfield Field org/lwjgl/input/d field2596 I
 L4:     ireturn
 L5:     
     .end code
 .end method
 
-.method public void : ()F
+.method public method1974 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d null I
+L1:     getfield Field org/lwjgl/input/d field2593 I
 L4:     iconst_m1
 L5:     iconst_1
 L6:     dup
@@ -466,25 +466,25 @@ L12:    freturn
 L13:    athrow
 L14:    aload_0
 L15:    dup
-L16:    getfield Field org/lwjgl/input/d null I
-L19:    invokevirtual Method org/lwjgl/input/d float (I)F
+L16:    getfield Field org/lwjgl/input/d field2593 I
+L19:    invokevirtual Method org/lwjgl/input/d method1986 (I)F
 L22:    freturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2D\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2E\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public else : ()F
+.method public method1975 : ()F
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d else Ljava/util/ArrayList;
+L1:     getfield Field org/lwjgl/input/d field2595 Ljava/util/ArrayList;
 L4:     invokevirtual Method java/util/ArrayList size ()I
 L7:     ifne L13
 L10:    fconst_0
 L11:    freturn
 L12:    athrow
 L13:    aload_0
-L14:    getfield Field org/lwjgl/input/d goto [F
+L14:    getfield Field org/lwjgl/input/d field2588 [F
 L17:    iconst_0
 L18:    iconst_1
 L19:    dup
@@ -523,21 +523,21 @@ L69:    freturn
 L70:    fconst_0
 L71:    freturn
 L72:    
-        .attribute StackMap b'\x00\x07\x00\x0C\x00\x00\x00\x01\x07\x00\x2D\x00\x0D\x00\x01\x07\x00\x02\x00\x00\x00\x2B\x00\x02\x07\x00\x02\x02\x00\x00\x00\x2E\x00\x00\x00\x01\x07\x00\x2D\x00\x2F\x00\x02\x07\x00\x02\x02\x00\x00\x00\x44\x00\x02\x07\x00\x02\x02\x00\x00\x00\x46\x00\x02\x07\x00\x02\x02\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x0C\x00\x00\x00\x01\x07\x00\x2E\x00\x0D\x00\x01\x07\x00\x02\x00\x00\x00\x2B\x00\x02\x07\x00\x02\x02\x00\x00\x00\x2E\x00\x00\x00\x01\x07\x00\x2E\x00\x2F\x00\x02\x07\x00\x02\x02\x00\x00\x00\x44\x00\x02\x07\x00\x02\x02\x00\x00\x00\x46\x00\x02\x07\x00\x02\x02\x00\x00'
     .end code
 .end method
 
-.method public short : ()F
+.method public method1976 : ()F
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d else Ljava/util/ArrayList;
+L1:     getfield Field org/lwjgl/input/d field2595 Ljava/util/ArrayList;
 L4:     invokevirtual Method java/util/ArrayList size ()I
 L7:     ifne L13
 L10:    fconst_0
 L11:    freturn
 L12:    athrow
 L13:    aload_0
-L14:    getfield Field org/lwjgl/input/d goto [F
+L14:    getfield Field org/lwjgl/input/d field2588 [F
 L17:    iconst_0
 L18:    iconst_1
 L19:    dup
@@ -576,14 +576,14 @@ L70:    freturn
 L71:    fconst_0
 L72:    freturn
 L73:    
-        .attribute StackMap b'\x00\x07\x00\x0C\x00\x00\x00\x01\x07\x00\x2D\x00\x0D\x00\x01\x07\x00\x02\x00\x00\x00\x2C\x00\x02\x07\x00\x02\x02\x00\x00\x00\x2E\x00\x00\x00\x01\x07\x00\x2D\x00\x2F\x00\x02\x07\x00\x02\x02\x00\x00\x00\x44\x00\x02\x07\x00\x02\x02\x00\x00\x00\x47\x00\x02\x07\x00\x02\x02\x00\x00'
+        .attribute StackMap b'\x00\x07\x00\x0C\x00\x00\x00\x01\x07\x00\x2E\x00\x0D\x00\x01\x07\x00\x02\x00\x00\x00\x2C\x00\x02\x07\x00\x02\x02\x00\x00\x00\x2E\x00\x00\x00\x01\x07\x00\x2E\x00\x2F\x00\x02\x07\x00\x02\x02\x00\x00\x00\x44\x00\x02\x07\x00\x02\x02\x00\x00\x00\x47\x00\x02\x07\x00\x02\x02\x00\x00'
     .end code
 .end method
 
-.method public catch : (I)Ljava/lang/String;
+.method public method1977 : (I)Ljava/lang/String;
     .code stack 2 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d char [Lnet/java/games/input/Rumbler;
+L1:     getfield Field org/lwjgl/input/d field2594 [Lnet/java/games/input/Rumbler;
 L4:     iload_1
 L5:     aaload
 L6:     invokeinterface InterfaceMethod net/java/games/input/Rumbler getAxisName ()Ljava/lang/String; 1
@@ -595,7 +595,7 @@ L12:
 .method public try : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d long I
+L1:     getfield Field org/lwjgl/input/d field2590 I
 L4:     iconst_m1
 L5:     iconst_1
 L6:     dup
@@ -606,11 +606,11 @@ L12:    freturn
 L13:    athrow
 L14:    aload_0
 L15:    dup
-L16:    getfield Field org/lwjgl/input/d long I
-L19:    invokevirtual Method org/lwjgl/input/d float (I)F
+L16:    getfield Field org/lwjgl/input/d field2590 I
+L19:    invokevirtual Method org/lwjgl/input/d method1986 (I)F
 L22:    freturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2D\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2E\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
@@ -624,10 +624,10 @@ L8:
     .end code
 .end method
 
-.method public catch : ()F
+.method public method1978 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d short I
+L1:     getfield Field org/lwjgl/input/d field2587 I
 L4:     iconst_m1
 L5:     iconst_1
 L6:     dup
@@ -638,30 +638,30 @@ L12:    freturn
 L13:    athrow
 L14:    aload_0
 L15:    dup
-L16:    getfield Field org/lwjgl/input/d short I
-L19:    invokevirtual Method org/lwjgl/input/d break (I)F
+L16:    getfield Field org/lwjgl/input/d field2587 I
+L19:    invokevirtual Method org/lwjgl/input/d method1993 (I)F
 L22:    freturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2D\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2E\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public float : (F)V
+.method public method1979 : (F)V
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/input/d long I
+L2:     getfield Field org/lwjgl/input/d field2590 I
 L5:     fload_1
-L6:     invokevirtual Method org/lwjgl/input/d break (IF)V
+L6:     invokevirtual Method org/lwjgl/input/d method1972 (IF)V
 L9:     return
 L10:    
     .end code
 .end method
 
-.method public char : ()F
+.method public method1980 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d void I
+L1:     getfield Field org/lwjgl/input/d field2591 I
 L4:     iconst_m1
 L5:     iconst_1
 L6:     dup
@@ -672,30 +672,30 @@ L12:    freturn
 L13:    athrow
 L14:    aload_0
 L15:    dup
-L16:    getfield Field org/lwjgl/input/d void I
-L19:    invokevirtual Method org/lwjgl/input/d break (I)F
+L16:    getfield Field org/lwjgl/input/d field2591 I
+L19:    invokevirtual Method org/lwjgl/input/d method1993 (I)F
 L22:    freturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2D\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2E\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public else : (F)V
+.method public method1981 : (F)V
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/input/d void I
+L2:     getfield Field org/lwjgl/input/d field2591 I
 L5:     fload_1
-L6:     invokevirtual Method org/lwjgl/input/d break (IF)V
+L6:     invokevirtual Method org/lwjgl/input/d method1972 (IF)V
 L9:     return
 L10:    
     .end code
 .end method
 
-.method public do : ()F
+.method public method1982 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d break I
+L1:     getfield Field org/lwjgl/input/d field2589 I
 L4:     iconst_m1
 L5:     iconst_1
 L6:     dup
@@ -706,38 +706,38 @@ L12:    freturn
 L13:    athrow
 L14:    aload_0
 L15:    dup
-L16:    getfield Field org/lwjgl/input/d break I
-L19:    invokevirtual Method org/lwjgl/input/d float (I)F
+L16:    getfield Field org/lwjgl/input/d field2589 I
+L19:    invokevirtual Method org/lwjgl/input/d method1986 (I)F
 L22:    freturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2D\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2E\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public const : ()I
+.method public method1983 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d byte Ljava/util/ArrayList;
+L1:     getfield Field org/lwjgl/input/d field2584 Ljava/util/ArrayList;
 L4:     invokevirtual Method java/util/ArrayList size ()I
 L7:     ireturn
 L8:     
     .end code
 .end method
 
-.method public class : ()I
+.method public method1984 : ()I
     .code stack 1 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d char [Lnet/java/games/input/Rumbler;
+L1:     getfield Field org/lwjgl/input/d field2594 [Lnet/java/games/input/Rumbler;
 L4:     arraylength
 L5:     ireturn
 L6:     
     .end code
 .end method
 
-.method public long : ()F
+.method public method1985 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d break I
+L1:     getfield Field org/lwjgl/input/d field2589 I
 L4:     iconst_m1
 L5:     iconst_1
 L6:     dup
@@ -748,18 +748,18 @@ L12:    freturn
 L13:    athrow
 L14:    aload_0
 L15:    dup
-L16:    getfield Field org/lwjgl/input/d break I
-L19:    invokevirtual Method org/lwjgl/input/d break (I)F
+L16:    getfield Field org/lwjgl/input/d field2589 I
+L19:    invokevirtual Method org/lwjgl/input/d method1993 (I)F
 L22:    freturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2D\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2E\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public float : (I)F
+.method public method1986 : (I)F
     .code stack 2 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d "super" [F
+L1:     getfield Field org/lwjgl/input/d field2585 [F
 L4:     iload_1
 L5:     faload
 L6:     freturn
@@ -767,10 +767,10 @@ L7:
     .end code
 .end method
 
-.method public else : (IF)V
+.method public method1987 : (IF)V
     .code stack 2 locals 3
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d char [Lnet/java/games/input/Rumbler;
+L1:     getfield Field org/lwjgl/input/d field2594 [Lnet/java/games/input/Rumbler;
 L4:     iload_1
 L5:     aaload
 L6:     fload_2
@@ -780,7 +780,7 @@ L13:
     .end code
 .end method
 
-.method public goto : ()V
+.method public method1988 : ()V
     .code stack 11 locals 7
 L0:     aload_0
 L1:     getfield Field org/lwjgl/input/d new Lnet/java/games/input/Controller;
@@ -799,7 +799,7 @@ L29:    aload_1
 L30:    invokevirtual Method net/java/games/input/EventQueue getNextEvent (Lnet/java/games/input/Event;)Z
 L33:    ifeq L444
 L36:    aload_0
-L37:    getfield Field org/lwjgl/input/d byte Ljava/util/ArrayList;
+L37:    getfield Field org/lwjgl/input/d field2584 Ljava/util/ArrayList;
 L40:    aload_1
 L41:    invokevirtual Method net/java/games/input/Event getComponent ()Lnet/java/games/input/Component;
 L44:    invokevirtual Method java/util/ArrayList contains (Ljava/lang/Object;)Z
@@ -809,11 +809,11 @@ L51:    invokevirtual Method net/java/games/input/Event getComponent ()Lnet/java
 L54:    astore_3
 L55:    aload_0
 L56:    dup
-L57:    getfield Field org/lwjgl/input/d byte Ljava/util/ArrayList;
+L57:    getfield Field org/lwjgl/input/d field2584 Ljava/util/ArrayList;
 L60:    aload_3
 L61:    invokevirtual Method java/util/ArrayList indexOf (Ljava/lang/Object;)I
 L64:    istore 4
-L66:    getfield Field org/lwjgl/input/d const [Z
+L66:    getfield Field org/lwjgl/input/d field2592 [Z
 L69:    iload 4
 L71:    aload_1
 L72:    invokevirtual Method net/java/games/input/Event getValue ()F
@@ -850,9 +850,9 @@ L113:   iconst_1
 L114:   dup
 L115:   pop2
 L116:   invokespecial Method org/lwjgl/input/c <init> (Lorg/lwjgl/input/i;JIIZZ)V
-L119:   invokestatic Method org/lwjgl/input/G break (Lorg/lwjgl/input/c;)V
+L119:   invokestatic Method org/lwjgl/input/G method1926 (Lorg/lwjgl/input/c;)V
 L122:   aload_0
-L123:   getfield Field org/lwjgl/input/d else Ljava/util/ArrayList;
+L123:   getfield Field org/lwjgl/input/d field2595 Ljava/util/ArrayList;
 L126:   aload_1
 L127:   invokevirtual Method net/java/games/input/Event getComponent ()Lnet/java/games/input/Component;
 L130:   invokevirtual Method java/util/ArrayList contains (Ljava/lang/Object;)Z
@@ -863,22 +863,22 @@ L140:   astore_3
 L141:   aload_0
 L142:   dup
 L143:   dup2
-L144:   getfield Field org/lwjgl/input/d else Ljava/util/ArrayList;
+L144:   getfield Field org/lwjgl/input/d field2595 Ljava/util/ArrayList;
 L147:   aload_3
 L148:   invokevirtual Method java/util/ArrayList indexOf (Ljava/lang/Object;)I
 L151:   istore 4
-L153:   invokevirtual Method org/lwjgl/input/d else ()F
+L153:   invokevirtual Method org/lwjgl/input/d method1975 ()F
 L156:   fstore 5
-L158:   invokevirtual Method org/lwjgl/input/d short ()F
+L158:   invokevirtual Method org/lwjgl/input/d method1976 ()F
 L161:   fstore 6
-L163:   getfield Field org/lwjgl/input/d goto [F
+L163:   getfield Field org/lwjgl/input/d field2588 [F
 L166:   iload 4
 L168:   aload_1
 L169:   invokevirtual Method net/java/games/input/Event getValue ()F
 L172:   fastore
 L173:   fload 5
 L175:   aload_0
-L176:   invokevirtual Method org/lwjgl/input/d else ()F
+L176:   invokevirtual Method org/lwjgl/input/d method1975 ()F
 L179:   fcmpl
 L180:   ifeq L214
 L183:   new org/lwjgl/input/c
@@ -903,10 +903,10 @@ L205:   iconst_1
 L206:   dup
 L207:   pop2
 L208:   invokespecial Method org/lwjgl/input/c <init> (Lorg/lwjgl/input/i;JIIZZ)V
-L211:   invokestatic Method org/lwjgl/input/G break (Lorg/lwjgl/input/c;)V
+L211:   invokestatic Method org/lwjgl/input/G method1926 (Lorg/lwjgl/input/c;)V
 L214:   fload 6
 L216:   aload_0
-L217:   invokevirtual Method org/lwjgl/input/d short ()F
+L217:   invokevirtual Method org/lwjgl/input/d method1976 ()F
 L220:   fcmpl
 L221:   ifeq L255
 L224:   new org/lwjgl/input/c
@@ -931,7 +931,7 @@ L246:   iconst_1
 L247:   dup
 L248:   pop2
 L249:   invokespecial Method org/lwjgl/input/c <init> (Lorg/lwjgl/input/i;JIIZZ)V
-L252:   invokestatic Method org/lwjgl/input/G break (Lorg/lwjgl/input/c;)V
+L252:   invokestatic Method org/lwjgl/input/G method1926 (Lorg/lwjgl/input/c;)V
 L255:   aload_0
 L256:   getfield Field org/lwjgl/input/d try Ljava/util/ArrayList;
 L259:   aload_1
@@ -952,7 +952,7 @@ L290:   dup
 L291:   fstore 5
 L293:   invokestatic Method java/lang/Math abs (F)F
 L296:   aload_0
-L297:   getfield Field org/lwjgl/input/d "super" [F
+L297:   getfield Field org/lwjgl/input/d field2585 [F
 L300:   iload 4
 L302:   faload
 L303:   fcmpg
@@ -970,20 +970,20 @@ L326:   fstore 5
 L328:   fload 5
 L330:   invokestatic Method java/lang/Math abs (F)F
 L333:   aload_0
-L334:   getfield Field org/lwjgl/input/d int [F
+L334:   getfield Field org/lwjgl/input/d field2586 [F
 L337:   iload 4
 L339:   faload
 L340:   fcmpl
 L341:   ifle L356
 L344:   aload_0
-L345:   getfield Field org/lwjgl/input/d int [F
+L345:   getfield Field org/lwjgl/input/d field2586 [F
 L348:   iload 4
 L350:   fload 5
 L352:   invokestatic Method java/lang/Math abs (F)F
 L355:   fastore
 L356:   fload 5
 L358:   aload_0
-L359:   getfield Field org/lwjgl/input/d int [F
+L359:   getfield Field org/lwjgl/input/d field2586 [F
 L362:   iload 4
 L364:   faload
 L365:   fdiv
@@ -1000,7 +1000,7 @@ L380:   pop2
 L381:   iload 4
 L383:   dup
 L384:   aload_0
-L385:   getfield Field org/lwjgl/input/d null I
+L385:   getfield Field org/lwjgl/input/d field2593 I
 L388:   if_icmpne L401
 L391:   iconst_1
 L392:   dup
@@ -1015,7 +1015,7 @@ L403:   dup
 L404:   pop2
 L405:   iload 4
 L407:   aload_0
-L408:   getfield Field org/lwjgl/input/d void I
+L408:   getfield Field org/lwjgl/input/d field2591 I
 L411:   if_icmpne L421
 L414:   iconst_1
 L415:   dup
@@ -1027,7 +1027,7 @@ L422:   iconst_1
 L423:   dup
 L424:   pop2
 L425:   invokespecial Method org/lwjgl/input/c <init> (Lorg/lwjgl/input/i;JIIZZ)V
-L428:   invokestatic Method org/lwjgl/input/G break (Lorg/lwjgl/input/c;)V
+L428:   invokestatic Method org/lwjgl/input/G method1926 (Lorg/lwjgl/input/c;)V
 L431:   aload_2
 L432:   aload_0
 L433:   getfield Field org/lwjgl/input/d this [F
@@ -1037,14 +1037,14 @@ L440:   fastore
 L441:   goto L29
 L444:   return
 L445:   
-        .attribute StackMap b'\x00\x11\x00\x1C\x00\x03\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x00\x00\x00\x1D\x00\x03\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x00\x01\x07\x00\xB7\x00\x57\x00\x00\x00\x01\x07\x00\x2D\x00\x58\x00\x05\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x07\x00\x0A\x01\x00\x02\x07\x00\x76\x01\x00\x5C\x00\x05\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x07\x00\x0A\x01\x00\x03\x07\x00\x76\x01\x01\x00\x7A\x00\x03\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x00\x00\x00\xD6\x00\x07\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x07\x00\x0A\x01\x02\x02\x00\x00\x00\xFF\x00\x03\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x00\x00\x01\x36\x00\x06\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x07\x00\x0A\x01\x02\x00\x00\x01\x48\x00\x06\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x07\x00\x0A\x01\x02\x00\x00\x01\x64\x00\x06\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x07\x00\x0A\x01\x02\x00\x00\x01\x90\x00\x00\x00\x01\x07\x00\x2D\x01\x91\x00\x06\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x07\x00\x0A\x01\x02\x00\x06\x08\x01\x70\x08\x01\x70\x07\x00\x02\x04\x01\x01\x01\x97\x00\x06\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x07\x00\x0A\x01\x02\x00\x08\x08\x01\x70\x08\x01\x70\x07\x00\x02\x04\x01\x01\x01\x01\x01\xA5\x00\x06\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x07\x00\x0A\x01\x02\x00\x07\x08\x01\x70\x08\x01\x70\x07\x00\x02\x04\x01\x01\x01\x01\xA9\x00\x06\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x07\x00\x0A\x01\x02\x00\x08\x08\x01\x70\x08\x01\x70\x07\x00\x02\x04\x01\x01\x01\x01\x01\xBC\x00\x03\x07\x00\x02\x07\x00\xB0\x07\x00\xB7\x00\x00'
+        .attribute StackMap b'\x00\x11\x00\x1C\x00\x03\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x00\x00\x00\x1D\x00\x03\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x00\x01\x07\x00\xC9\x00\x57\x00\x00\x00\x01\x07\x00\x2E\x00\x58\x00\x05\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x07\x00\x0A\x01\x00\x02\x07\x00\x79\x01\x00\x5C\x00\x05\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x07\x00\x0A\x01\x00\x03\x07\x00\x79\x01\x01\x00\x7A\x00\x03\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x00\x00\x00\xD6\x00\x07\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x07\x00\x0A\x01\x02\x02\x00\x00\x00\xFF\x00\x03\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x00\x00\x01\x36\x00\x06\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x07\x00\x0A\x01\x02\x00\x00\x01\x48\x00\x06\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x07\x00\x0A\x01\x02\x00\x00\x01\x64\x00\x06\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x07\x00\x0A\x01\x02\x00\x00\x01\x90\x00\x00\x00\x01\x07\x00\x2E\x01\x91\x00\x06\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x07\x00\x0A\x01\x02\x00\x06\x08\x01\x70\x08\x01\x70\x07\x00\x02\x04\x01\x01\x01\x97\x00\x06\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x07\x00\x0A\x01\x02\x00\x08\x08\x01\x70\x08\x01\x70\x07\x00\x02\x04\x01\x01\x01\x01\x01\xA5\x00\x06\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x07\x00\x0A\x01\x02\x00\x07\x08\x01\x70\x08\x01\x70\x07\x00\x02\x04\x01\x01\x01\x01\xA9\x00\x06\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x07\x00\x0A\x01\x02\x00\x08\x08\x01\x70\x08\x01\x70\x07\x00\x02\x04\x01\x01\x01\x01\x01\xBC\x00\x03\x07\x00\x02\x07\x00\xC2\x07\x00\xC9\x00\x00'
     .end code
 .end method
 
-.method public short : (I)Z
+.method public method1989 : (I)Z
     .code stack 2 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d const [Z
+L1:     getfield Field org/lwjgl/input/d field2592 [Z
 L4:     iload_1
 L5:     baload
 L6:     ireturn
@@ -1052,22 +1052,22 @@ L7:
     .end code
 .end method
 
-.method public const : (F)V
+.method public method1990 : (F)V
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/input/d short I
+L2:     getfield Field org/lwjgl/input/d field2587 I
 L5:     fload_1
-L6:     invokevirtual Method org/lwjgl/input/d break (IF)V
+L6:     invokevirtual Method org/lwjgl/input/d method1972 (IF)V
 L9:     return
 L10:    
     .end code
 .end method
 
-.method public if : ()F
+.method public method1991 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d long I
+L1:     getfield Field org/lwjgl/input/d field2590 I
 L4:     iconst_m1
 L5:     iconst_1
 L6:     dup
@@ -1078,18 +1078,18 @@ L12:    freturn
 L13:    athrow
 L14:    aload_0
 L15:    dup
-L16:    getfield Field org/lwjgl/input/d long I
-L19:    invokevirtual Method org/lwjgl/input/d break (I)F
+L16:    getfield Field org/lwjgl/input/d field2590 I
+L19:    invokevirtual Method org/lwjgl/input/d method1993 (I)F
 L22:    freturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2D\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2E\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public else : (I)Ljava/lang/String;
+.method public method1992 : (I)Ljava/lang/String;
     .code stack 2 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d byte Ljava/util/ArrayList;
+L1:     getfield Field org/lwjgl/input/d field2584 Ljava/util/ArrayList;
 L4:     iload_1
 L5:     invokevirtual Method java/util/ArrayList get (I)Ljava/lang/Object;
 L8:     checkcast net/java/games/input/Component
@@ -1099,7 +1099,7 @@ L17:
     .end code
 .end method
 
-.method public break : (I)F
+.method public method1993 : (I)F
     .code stack 2 locals 2
 L0:     aload_0
 L1:     getfield Field org/lwjgl/input/d this [F
@@ -1110,7 +1110,7 @@ L7:
     .end code
 .end method
 
-.method public const : (I)Ljava/lang/String;
+.method public method1994 : (I)Ljava/lang/String;
     .code stack 2 locals 2
 L0:     aload_0
 L1:     getfield Field org/lwjgl/input/d try Ljava/util/ArrayList;
@@ -1123,10 +1123,10 @@ L17:
     .end code
 .end method
 
-.method public for : ()F
+.method public method1995 : ()F
     .code stack 4 locals 1
 L0:     aload_0
-L1:     getfield Field org/lwjgl/input/d short I
+L1:     getfield Field org/lwjgl/input/d field2587 I
 L4:     iconst_m1
 L5:     iconst_1
 L6:     dup
@@ -1137,39 +1137,39 @@ L12:    freturn
 L13:    athrow
 L14:    aload_0
 L15:    dup
-L16:    getfield Field org/lwjgl/input/d short I
-L19:    invokevirtual Method org/lwjgl/input/d float (I)F
+L16:    getfield Field org/lwjgl/input/d field2587 I
+L19:    invokevirtual Method org/lwjgl/input/d method1986 (I)F
 L22:    freturn
 L23:    
-        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2D\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x0D\x00\x00\x00\x01\x07\x00\x2E\x00\x0E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
-.method public short : (F)V
+.method public method1996 : (F)V
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/input/d do I
+L2:     getfield Field org/lwjgl/input/d field2597 I
 L5:     fload_1
-L6:     invokevirtual Method org/lwjgl/input/d break (IF)V
+L6:     invokevirtual Method org/lwjgl/input/d method1972 (IF)V
 L9:     return
 L10:    
     .end code
 .end method
 
-.method public catch : (F)V
+.method public method1997 : (F)V
     .code stack 3 locals 2
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/input/d break I
+L2:     getfield Field org/lwjgl/input/d field2589 I
 L5:     fload_1
-L6:     invokevirtual Method org/lwjgl/input/d break (IF)V
+L6:     invokevirtual Method org/lwjgl/input/d method1972 (IF)V
 L9:     return
 L10:    
     .end code
 .end method
 
-.method public break : ()Ljava/lang/String;
+.method public method1998 : ()Ljava/lang/String;
     .code stack 1 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/input/d new Lnet/java/games/input/Controller;

@@ -1,28 +1,28 @@
 .version 49 0
 .class final super org/lwjgl/opengl/WindowsKeyboard
 .super java/lang/Object
-.field private short I
-.field private final goto [B
-.field private break Z
-.field private long Z
-.field private void J
+.field private field5138 I
+.field private final field5139 [B
+.field private field5140 Z
+.field private field5141 Z
+.field private field5142 J
 .field private final try J
-.field private static final const I = 50
+.field private static final field5143 I = 50
 .field private new Z
-.field private static final null I = 0
+.field private static final field5144 I = 0
 .field private this I
-.field private char B
-.field private final else Lorg/lwjgl/opengl/aA;
-.field private final "enum" Ljava/nio/ByteBuffer;
-.field private final do [B
+.field private field5145 B
+.field private final field5146 Lorg/lwjgl/opengl/aA;
+.field private final field5147 Ljava/nio/ByteBuffer;
+.field private final field5148 [B
 
 .method private static native isWindowsNT : ()Z
 .end method
 
-.method else : (I)Z
+.method method5396 : (I)Z
     .code stack 4 locals 2
 L0:     aload_0
-L1:     getfield Field org/lwjgl/opengl/WindowsKeyboard do [B
+L1:     getfield Field org/lwjgl/opengl/WindowsKeyboard field5148 [B
 L4:     iload_1
 L5:     baload
 L6:     iconst_1
@@ -42,7 +42,7 @@ L21:    dup
 L22:    pop2
 L23:    ireturn
 L24:    
-        .attribute StackMap b'\x00\x02\x00\x12\x00\x00\x00\x01\x07\x00\x22\x00\x13\x00\x02\x07\x00\x02\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x12\x00\x00\x00\x01\x07\x00\x23\x00\x13\x00\x02\x07\x00\x02\x01\x00\x00'
     .end code
 .end method
 
@@ -72,7 +72,7 @@ L21:    newarray byte
 L23:    iconst_1
 L24:    dup
 L25:    pop2
-L26:    putfield Field org/lwjgl/opengl/WindowsKeyboard do [B
+L26:    putfield Field org/lwjgl/opengl/WindowsKeyboard field5148 [B
 L29:    iconst_1
 L30:    dup
 L31:    pop2
@@ -80,7 +80,7 @@ L32:    newarray byte
 L34:    iconst_1
 L35:    dup
 L36:    pop2
-L37:    putfield Field org/lwjgl/opengl/WindowsKeyboard goto [B
+L37:    putfield Field org/lwjgl/opengl/WindowsKeyboard field5139 [B
 L40:    new org/lwjgl/opengl/aA
 L43:    aload_0
 L44:    dup
@@ -91,12 +91,12 @@ L49:    iconst_1
 L50:    dup
 L51:    pop2
 L52:    invokespecial Method org/lwjgl/opengl/aA <init> (I)V
-L55:    putfield Field org/lwjgl/opengl/WindowsKeyboard else Lorg/lwjgl/opengl/aA;
+L55:    putfield Field org/lwjgl/opengl/WindowsKeyboard field5146 Lorg/lwjgl/opengl/aA;
 L58:    iconst_1
 L59:    dup
 L60:    pop2
 L61:    invokestatic Method java/nio/ByteBuffer allocate (I)Ljava/nio/ByteBuffer;
-L64:    putfield Field org/lwjgl/opengl/WindowsKeyboard "enum" Ljava/nio/ByteBuffer;
+L64:    putfield Field org/lwjgl/opengl/WindowsKeyboard field5147 Ljava/nio/ByteBuffer;
 L67:    putfield Field org/lwjgl/opengl/WindowsKeyboard try J
 L70:    return
 L71:    
@@ -104,7 +104,7 @@ L71:
     .exceptions org/lwjgl/LWJGLException
 .end method
 
-.method private else : (IB)I
+.method private method5397 : (IB)I
     .code stack 4 locals 3
 L0:     aload_0
 L1:     sipush 160
@@ -112,7 +112,7 @@ L4:     iconst_1
 L5:     dup
 L6:     pop2
 L7:     iload_2
-L8:     invokespecial Method org/lwjgl/opengl/WindowsKeyboard break (IB)Z
+L8:     invokespecial Method org/lwjgl/opengl/WindowsKeyboard method5399 (IB)Z
 L11:    ifeq L22
 L14:    sipush 160
 L17:    iconst_1
@@ -126,7 +126,7 @@ L26:    iconst_1
 L27:    dup
 L28:    pop2
 L29:    iload_2
-L30:    invokespecial Method org/lwjgl/opengl/WindowsKeyboard break (IB)Z
+L30:    invokespecial Method org/lwjgl/opengl/WindowsKeyboard method5399 (IB)Z
 L33:    ifeq L44
 L36:    sipush 161
 L39:    iconst_1
@@ -162,14 +162,14 @@ L80:    dup
 L81:    pop2
 L82:    ireturn
 L83:    
-        .attribute StackMap b'\x00\x06\x00\x15\x00\x00\x00\x01\x07\x00\x22\x00\x16\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x2B\x00\x00\x00\x01\x07\x00\x22\x00\x2C\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x3C\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x4C\x00\x03\x07\x00\x02\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x15\x00\x00\x00\x01\x07\x00\x23\x00\x16\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x2B\x00\x00\x00\x01\x07\x00\x23\x00\x2C\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x3C\x00\x03\x07\x00\x02\x01\x01\x00\x00\x00\x4C\x00\x03\x07\x00\x02\x01\x01\x00\x00'
     .end code
 .end method
 
 .method private static native GetAsyncKeyState : (I)I
 .end method
 
-.method private break : (IIBZ)I
+.method private method5398 : (IIBZ)I
     .code stack 3 locals 5
 L0:     iload_1
 L1:     tableswitch 16
@@ -182,7 +182,7 @@ L29:    iconst_0
 L30:    ifne L60
 L33:    iload_2
 L34:    iload_3
-L35:    invokespecial Method org/lwjgl/opengl/WindowsKeyboard else (IB)I
+L35:    invokespecial Method org/lwjgl/opengl/WindowsKeyboard method5397 (IB)I
 L38:    ireturn
 L39:    athrow
 L40:    iload 4
@@ -214,11 +214,11 @@ L81:    ireturn
 L82:    iload_1
 L83:    ireturn
 L84:    
-        .attribute StackMap b'\x00\x0A\x00\x1C\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x1D\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x01\x07\x00\x02\x00\x27\x00\x00\x00\x01\x07\x00\x22\x00\x28\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x34\x00\x00\x00\x01\x07\x00\x22\x00\x35\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x3C\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x01\x07\x00\x02\x00\x3F\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x4B\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x52\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x0A\x00\x1C\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x1D\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x01\x07\x00\x02\x00\x27\x00\x00\x00\x01\x07\x00\x23\x00\x28\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x34\x00\x00\x00\x01\x07\x00\x23\x00\x35\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x3C\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x01\x07\x00\x02\x00\x3F\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x4B\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00\x00\x52\x00\x05\x07\x00\x02\x01\x01\x01\x01\x00\x00'
     .end code
 .end method
 
-.method private break : (IB)Z
+.method private method5399 : (IB)Z
     .code stack 4 locals 4
 L0:     iload_1
 L1:     invokestatic Method org/lwjgl/opengl/WindowsKeyboard GetKeyState (I)I
@@ -234,10 +234,10 @@ L13:    pop2
 L14:    iand
 L15:    istore_3
 L16:    iload_1
-L17:    invokestatic Method org/lwjgl/opengl/L break (I)I
+L17:    invokestatic Method org/lwjgl/opengl/L method4657 (I)I
 L20:    istore_1
 L21:    aload_0
-L22:    getfield Field org/lwjgl/opengl/WindowsKeyboard do [B
+L22:    getfield Field org/lwjgl/opengl/WindowsKeyboard field5148 [B
 L25:    iload_1
 L26:    baload
 L27:    iconst_1
@@ -262,11 +262,11 @@ L49:    dup
 L50:    pop2
 L51:    ireturn
 L52:    
-        .attribute StackMap b'\x00\x02\x00\x2E\x00\x00\x00\x01\x07\x00\x22\x00\x2F\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x2E\x00\x00\x00\x01\x07\x00\x23\x00\x2F\x00\x04\x07\x00\x02\x01\x01\x01\x00\x00'
     .end code
 .end method
 
-.method private const : ()V
+.method private method5400 : ()V
     .code stack 7 locals 1
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/WindowsKeyboard new Z
@@ -278,17 +278,17 @@ L10:    iconst_1
 L11:    dup
 L12:    pop2
 L13:    putfield Field org/lwjgl/opengl/WindowsKeyboard new Z
-L16:    getfield Field org/lwjgl/opengl/WindowsKeyboard short I
+L16:    getfield Field org/lwjgl/opengl/WindowsKeyboard field5138 I
 L19:    aload_0
-L20:    getfield Field org/lwjgl/opengl/WindowsKeyboard char B
+L20:    getfield Field org/lwjgl/opengl/WindowsKeyboard field5145 B
 L23:    aload_0
 L24:    dup_x2
 L25:    getfield Field org/lwjgl/opengl/WindowsKeyboard this I
 L28:    aload_0
-L29:    getfield Field org/lwjgl/opengl/WindowsKeyboard void J
+L29:    getfield Field org/lwjgl/opengl/WindowsKeyboard field5142 J
 L32:    aload_0
-L33:    getfield Field org/lwjgl/opengl/WindowsKeyboard break Z
-L36:    invokespecial Method org/lwjgl/opengl/WindowsKeyboard break (IBIJZ)V
+L33:    getfield Field org/lwjgl/opengl/WindowsKeyboard field5140 Z
+L36:    invokespecial Method org/lwjgl/opengl/WindowsKeyboard method5401 (IBIJZ)V
 L39:    return
 L40:    
         .attribute StackMap b'\x00\x01\x00\x27\x00\x01\x07\x00\x02\x00\x00'
@@ -298,14 +298,14 @@ L40:
 .method private static native ToAscii : (IILjava/nio/ByteBuffer;Ljava/nio/ByteBuffer;I)I
 .end method
 
-.method private break : (IBIJZ)V
+.method private method5401 : (IBIJZ)V
     .code stack 5 locals 7
 L0:     aload_0
 L1:     dup
-L2:     getfield Field org/lwjgl/opengl/WindowsKeyboard "enum" Ljava/nio/ByteBuffer;
+L2:     getfield Field org/lwjgl/opengl/WindowsKeyboard field5147 Ljava/nio/ByteBuffer;
 L5:     invokevirtual Method java/nio/ByteBuffer clear ()Ljava/nio/Buffer;
 L8:     pop
-L9:     getfield Field org/lwjgl/opengl/WindowsKeyboard "enum" Ljava/nio/ByteBuffer;
+L9:     getfield Field org/lwjgl/opengl/WindowsKeyboard field5147 Ljava/nio/ByteBuffer;
 L12:    iload_1
 L13:    invokevirtual Method java/nio/ByteBuffer putInt (I)Ljava/nio/ByteBuffer;
 L16:    iload_2
@@ -330,23 +330,23 @@ L48:    dup
 L49:    pop2
 L50:    invokevirtual Method java/nio/ByteBuffer put (B)Ljava/nio/ByteBuffer;
 L53:    aload_0
-L54:    getfield Field org/lwjgl/opengl/WindowsKeyboard "enum" Ljava/nio/ByteBuffer;
+L54:    getfield Field org/lwjgl/opengl/WindowsKeyboard field5147 Ljava/nio/ByteBuffer;
 L57:    invokevirtual Method java/nio/ByteBuffer flip ()Ljava/nio/Buffer;
 L60:    aload_0
 L61:    dup
-L62:    getfield Field org/lwjgl/opengl/WindowsKeyboard else Lorg/lwjgl/opengl/aA;
+L62:    getfield Field org/lwjgl/opengl/WindowsKeyboard field5146 Lorg/lwjgl/opengl/aA;
 L65:    swap
-L66:    getfield Field org/lwjgl/opengl/WindowsKeyboard "enum" Ljava/nio/ByteBuffer;
-L69:    invokevirtual Method org/lwjgl/opengl/aA else (Ljava/nio/ByteBuffer;)Z
+L66:    getfield Field org/lwjgl/opengl/WindowsKeyboard field5147 Ljava/nio/ByteBuffer;
+L69:    invokevirtual Method org/lwjgl/opengl/aA method368 (Ljava/nio/ByteBuffer;)Z
 L72:    pop
 L73:    pop2
 L74:    return
 L75:    
-        .attribute StackMap b'\x00\x03\x00\x2D\x00\x00\x00\x01\x07\x00\x22\x00\x2E\x00\x06\x07\x00\x02\x01\x01\x01\x04\x01\x00\x01\x07\x00\x38\x00\x32\x00\x06\x07\x00\x02\x01\x01\x01\x04\x01\x00\x02\x07\x00\x38\x01'
+        .attribute StackMap b'\x00\x03\x00\x2D\x00\x00\x00\x01\x07\x00\x23\x00\x2E\x00\x06\x07\x00\x02\x01\x01\x01\x04\x01\x00\x01\x07\x00\x39\x00\x32\x00\x06\x07\x00\x02\x01\x01\x01\x04\x01\x00\x02\x07\x00\x39\x01'
     .end code
 .end method
 
-.method public break : (IJZ)V
+.method public method5402 : (IJZ)V
     .code stack 7 locals 5
 L0:     aload_0
 L1:     getfield Field org/lwjgl/opengl/WindowsKeyboard new Z
@@ -355,7 +355,7 @@ L7:     aload_0
 L8:     getfield Field org/lwjgl/opengl/WindowsKeyboard this I
 L11:    ifeq L18
 L14:    aload_0
-L15:    invokespecial Method org/lwjgl/opengl/WindowsKeyboard const ()V
+L15:    invokespecial Method org/lwjgl/opengl/WindowsKeyboard method5400 ()V
 L18:    aload_0
 L19:    getfield Field org/lwjgl/opengl/WindowsKeyboard new Z
 L22:    ifne L43
@@ -371,7 +371,7 @@ L33:    pop2
 L34:    iload_1
 L35:    lload_2
 L36:    iload 4
-L38:    invokespecial Method org/lwjgl/opengl/WindowsKeyboard break (IBIJZ)V
+L38:    invokespecial Method org/lwjgl/opengl/WindowsKeyboard method5401 (IBIJZ)V
 L41:    return
 L42:    athrow
 L43:    aload_0
@@ -379,54 +379,54 @@ L44:    iload_1
 L45:    putfield Field org/lwjgl/opengl/WindowsKeyboard this I
 L48:    return
 L49:    
-        .attribute StackMap b'\x00\x03\x00\x12\x00\x04\x07\x00\x02\x01\x04\x01\x00\x00\x00\x2A\x00\x00\x00\x01\x07\x00\x22\x00\x2B\x00\x04\x07\x00\x02\x01\x04\x01\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x12\x00\x04\x07\x00\x02\x01\x04\x01\x00\x00\x00\x2A\x00\x00\x00\x01\x07\x00\x23\x00\x2B\x00\x04\x07\x00\x02\x01\x04\x01\x00\x00'
     .end code
 .end method
 
-.method public break : (IIZBJZ)V
+.method public method5403 : (IIZBJZ)V
     .code stack 11 locals 8
 L0:     aload_0
 L1:     iload_1
 L2:     iload_2
 L3:     iload 4
 L5:     iload_3
-L6:     invokespecial Method org/lwjgl/opengl/WindowsKeyboard break (IIBZ)I
+L6:     invokespecial Method org/lwjgl/opengl/WindowsKeyboard method5398 (IIBZ)I
 L9:     istore_1
 L10:    iload 7
 L12:    ifne L34
 L15:    iload 4
-L17:    invokestatic Method org/lwjgl/opengl/WindowsKeyboard break (I)Z
+L17:    invokestatic Method org/lwjgl/opengl/WindowsKeyboard method5404 (I)Z
 L20:    aload_0
-L21:    getfield Field org/lwjgl/opengl/WindowsKeyboard goto [B
+L21:    getfield Field org/lwjgl/opengl/WindowsKeyboard field5139 [B
 L24:    iload_1
 L25:    baload
-L26:    invokestatic Method org/lwjgl/opengl/WindowsKeyboard break (I)Z
+L26:    invokestatic Method org/lwjgl/opengl/WindowsKeyboard method5404 (I)Z
 L29:    if_icmpne L34
 L32:    return
 L33:    athrow
 L34:    aload_0
 L35:    iconst_1
 L36:    aload_0
-L37:    invokespecial Method org/lwjgl/opengl/WindowsKeyboard const ()V
+L37:    invokespecial Method org/lwjgl/opengl/WindowsKeyboard method5400 ()V
 L40:    iconst_1
 L41:    dup
 L42:    pop2
 L43:    putfield Field org/lwjgl/opengl/WindowsKeyboard new Z
 L46:    iload_1
-L47:    invokestatic Method org/lwjgl/opengl/L break (I)I
+L47:    invokestatic Method org/lwjgl/opengl/L method4657 (I)I
 L50:    dup
 L51:    istore_2
 L52:    aload_0
-L53:    getfield Field org/lwjgl/opengl/WindowsKeyboard do [B
+L53:    getfield Field org/lwjgl/opengl/WindowsKeyboard field5148 [B
 L56:    arraylength
 L57:    if_icmpge L76
 L60:    aload_0
 L61:    dup
-L62:    getfield Field org/lwjgl/opengl/WindowsKeyboard do [B
+L62:    getfield Field org/lwjgl/opengl/WindowsKeyboard field5148 [B
 L65:    iload_2
 L66:    iload 4
 L68:    bastore
-L69:    getfield Field org/lwjgl/opengl/WindowsKeyboard goto [B
+L69:    getfield Field org/lwjgl/opengl/WindowsKeyboard field5139 [B
 L72:    iload_1
 L73:    iload 4
 L75:    bastore
@@ -440,21 +440,21 @@ L84:    iload 4
 L86:    aload_0
 L87:    dup_x1
 L88:    iload_2
-L89:    putfield Field org/lwjgl/opengl/WindowsKeyboard short I
-L92:    putfield Field org/lwjgl/opengl/WindowsKeyboard char B
-L95:    putfield Field org/lwjgl/opengl/WindowsKeyboard void J
+L89:    putfield Field org/lwjgl/opengl/WindowsKeyboard field5138 I
+L92:    putfield Field org/lwjgl/opengl/WindowsKeyboard field5145 B
+L95:    putfield Field org/lwjgl/opengl/WindowsKeyboard field5142 J
 L98:    iconst_1
 L99:    dup
 L100:   pop2
 L101:   putfield Field org/lwjgl/opengl/WindowsKeyboard this I
-L104:   putfield Field org/lwjgl/opengl/WindowsKeyboard break Z
+L104:   putfield Field org/lwjgl/opengl/WindowsKeyboard field5140 Z
 L107:   return
 L108:   
-        .attribute StackMap b'\x00\x03\x00\x21\x00\x00\x00\x01\x07\x00\x22\x00\x22\x00\x07\x07\x00\x02\x01\x01\x01\x01\x04\x01\x00\x00\x00\x4C\x00\x07\x07\x00\x02\x01\x01\x01\x01\x04\x01\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x21\x00\x00\x00\x01\x07\x00\x23\x00\x22\x00\x07\x07\x00\x02\x01\x01\x01\x01\x04\x01\x00\x00\x00\x4C\x00\x07\x07\x00\x02\x01\x01\x01\x01\x04\x01\x00\x00'
     .end code
 .end method
 
-.method private static break : (I)Z
+.method private static method5404 : (I)Z
     .code stack 4 locals 1
 L0:     iload_0
 L1:     iconst_1
@@ -479,51 +479,51 @@ L21:    dup
 L22:    pop2
 L23:    ireturn
 L24:    
-        .attribute StackMap b'\x00\x02\x00\x12\x00\x00\x00\x01\x07\x00\x22\x00\x13\x00\x01\x01\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x12\x00\x00\x00\x01\x07\x00\x23\x00\x13\x00\x01\x01\x00\x00'
     .end code
 .end method
 
 .method private static native ToUnicode : (IILjava/nio/ByteBuffer;Ljava/nio/CharBuffer;II)I
 .end method
 
-.method public break : (Z)V
+.method public method5405 : (Z)V
     .code stack 4 locals 2
 L0:     iload_1
 L1:     ifeq L21
 L4:     aload_0
-L5:     getfield Field org/lwjgl/opengl/WindowsKeyboard long Z
+L5:     getfield Field org/lwjgl/opengl/WindowsKeyboard field5141 Z
 L8:     ifne L36
 L11:    aload_0
 L12:    iconst_1
 L13:    dup
 L14:    dup
 L15:    pop2
-L16:    putfield Field org/lwjgl/opengl/WindowsKeyboard long Z
+L16:    putfield Field org/lwjgl/opengl/WindowsKeyboard field5141 Z
 L19:    return
 L20:    athrow
 L21:    aload_0
-L22:    getfield Field org/lwjgl/opengl/WindowsKeyboard long Z
+L22:    getfield Field org/lwjgl/opengl/WindowsKeyboard field5141 Z
 L25:    ifeq L36
 L28:    aload_0
 L29:    iconst_0
 L30:    iconst_1
 L31:    dup
 L32:    pop2
-L33:    putfield Field org/lwjgl/opengl/WindowsKeyboard long Z
+L33:    putfield Field org/lwjgl/opengl/WindowsKeyboard field5141 Z
 L36:    return
 L37:    
-        .attribute StackMap b'\x00\x03\x00\x14\x00\x00\x00\x01\x07\x00\x22\x00\x15\x00\x02\x07\x00\x02\x01\x00\x00\x00\x24\x00\x02\x07\x00\x02\x01\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x14\x00\x00\x00\x01\x07\x00\x23\x00\x15\x00\x02\x07\x00\x02\x01\x00\x00\x00\x24\x00\x02\x07\x00\x02\x01\x00\x00'
     .end code
 .end method
 
-.method public else : (Ljava/nio/ByteBuffer;)V
+.method public method5406 : (Ljava/nio/ByteBuffer;)V
     .code stack 3 locals 3
 L0:     aload_0
 L1:     aload_1
 L2:     dup_x1
 L3:     invokevirtual Method java/nio/ByteBuffer position ()I
 L6:     istore_2
-L7:     getfield Field org/lwjgl/opengl/WindowsKeyboard do [B
+L7:     getfield Field org/lwjgl/opengl/WindowsKeyboard field5148 [B
 L10:    invokevirtual Method java/nio/ByteBuffer put ([B)Ljava/nio/ByteBuffer;
 L13:    aload_1
 L14:    iload_2
@@ -534,21 +534,21 @@ L20:
     .end code
 .end method
 
-.method public else : ()V
+.method public method5407 : ()V
     .code stack 0 locals 1
 L0:     return
 L1:     
     .end code
 .end method
 
-.method public break : (Ljava/nio/ByteBuffer;)V
+.method public method5408 : (Ljava/nio/ByteBuffer;)V
     .code stack 2 locals 2
 L0:     aload_0
 L1:     dup
-L2:     invokespecial Method org/lwjgl/opengl/WindowsKeyboard const ()V
-L5:     getfield Field org/lwjgl/opengl/WindowsKeyboard else Lorg/lwjgl/opengl/aA;
+L2:     invokespecial Method org/lwjgl/opengl/WindowsKeyboard method5400 ()V
+L5:     getfield Field org/lwjgl/opengl/WindowsKeyboard field5146 Lorg/lwjgl/opengl/aA;
 L8:     aload_1
-L9:     invokevirtual Method org/lwjgl/opengl/aA break (Ljava/nio/ByteBuffer;)V
+L9:     invokevirtual Method org/lwjgl/opengl/aA method285 (Ljava/nio/ByteBuffer;)V
 L12:    return
 L13:    
     .end code
@@ -557,7 +557,7 @@ L13:
 .method private static native GetKeyboardState : (Ljava/nio/ByteBuffer;)I
 .end method
 
-.method public break : ()V
+.method public method5409 : ()V
     .code stack 10 locals 2
 L0:     iconst_0
 L1:     iconst_1
@@ -566,18 +566,18 @@ L3:     pop2
 L4:     dup
 L5:     istore_1
 L6:     aload_0
-L7:     getfield Field org/lwjgl/opengl/WindowsKeyboard goto [B
+L7:     getfield Field org/lwjgl/opengl/WindowsKeyboard field5139 [B
 L10:    arraylength
 L11:    if_icmpge L68
 L14:    aload_0
-L15:    getfield Field org/lwjgl/opengl/WindowsKeyboard goto [B
+L15:    getfield Field org/lwjgl/opengl/WindowsKeyboard field5139 [B
 L18:    iload_1
 L19:    baload
-L20:    invokestatic Method org/lwjgl/opengl/WindowsKeyboard break (I)Z
+L20:    invokestatic Method org/lwjgl/opengl/WindowsKeyboard method5404 (I)Z
 L23:    ifeq L60
 L26:    iload_1
 L27:    invokestatic Method org/lwjgl/opengl/WindowsKeyboard GetAsyncKeyState (I)I
-L30:    invokestatic Method org/lwjgl/opengl/WindowsKeyboard break (I)Z
+L30:    invokestatic Method org/lwjgl/opengl/WindowsKeyboard method5404 (I)Z
 L33:    ifne L60
 L36:    aload_0
 L37:    iload_1
@@ -598,14 +598,14 @@ L53:    iconst_0
 L54:    iconst_1
 L55:    dup
 L56:    pop2
-L57:    invokevirtual Method org/lwjgl/opengl/WindowsKeyboard break (IIZBJZ)V
+L57:    invokevirtual Method org/lwjgl/opengl/WindowsKeyboard method5403 (IIZBJZ)V
 L60:    iinc 1 1
 L63:    iload_1
 L64:    goto L6
 L67:    athrow
 L68:    return
 L69:    
-        .attribute StackMap b'\x00\x04\x00\x06\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\x3C\x00\x02\x07\x00\x02\x01\x00\x00\x00\x43\x00\x00\x00\x01\x07\x00\x22\x00\x44\x00\x02\x07\x00\x02\x01\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x06\x00\x02\x07\x00\x02\x01\x00\x01\x01\x00\x3C\x00\x02\x07\x00\x02\x01\x00\x00\x00\x43\x00\x00\x00\x01\x07\x00\x23\x00\x44\x00\x02\x07\x00\x02\x01\x00\x00'
     .end code
 .end method
 .end class

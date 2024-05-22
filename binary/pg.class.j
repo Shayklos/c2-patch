@@ -1,7 +1,7 @@
 .version 49 0
 .class public final super synthetic pg
 .super java/lang/Object
-.field public static final synthetic do [I
+.field public static final synthetic field5772 [I
 
 .method public static <clinit> : ()V
     .code stack 5 locals 1
@@ -11,10 +11,10 @@ L4:     newarray int
 L6:     iconst_1
 L7:     dup
 L8:     pop2
-L9:     putstatic Field pg do [I
+L9:     putstatic Field pg field5772 [I
         .catch java/lang/NoSuchFieldError from L12 to L26 using L30
-L12:    getstatic Field pg do [I
-L15:    getstatic Field Vf else LVf;
+L12:    getstatic Field pg field5772 [I
+L15:    getstatic Field Vf field363 LVf;
 L18:    invokevirtual Method Vf ordinal ()I
 L21:    iconst_1
 L22:    dup
@@ -25,8 +25,8 @@ L26:    goto L31
 L29:    athrow
 L30:    astore_0
         .catch java/lang/NoSuchFieldError from L31 to L45 using L47
-L31:    getstatic Field pg do [I
-L34:    getstatic Field Vf do LVf;
+L31:    getstatic Field pg field5772 [I
+L34:    getstatic Field Vf field365 LVf;
 L37:    invokevirtual Method Vf ordinal ()I
 L40:    iconst_2
 L41:    iconst_1

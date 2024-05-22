@@ -1,7 +1,7 @@
 .version 49 0
 .class public final super uD
 .super Uf
-.field private do I
+.field private field1411 I
 
 .method public <init> : (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IIZ)V
     .code stack 9 locals 7
@@ -15,17 +15,17 @@ L7:     aconst_null
 L8:     iload 5
 L10:    iload 6
 L12:    invokespecial Method Uf <init> (Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;IZ)V
-L15:    putfield Field uD do I
+L15:    putfield Field uD field1411 I
 L18:    return
 L19:    
     .end code
 .end method
 
-.method public break : (LRg;)Z
+.method public method704 : (LRg;)Z
     .code stack 4 locals 2
 L0:     aload_1
-L1:     getfield Field Rg case LqE;
-L4:     getstatic Field qE do LqE;
+L1:     getfield Field Rg field227 LqE;
+L4:     getstatic Field qE field631 LqE;
 L7:     if_acmpeq L16
 L10:    iconst_0
 L11:    iconst_1
@@ -47,12 +47,12 @@ L30:    pop2
 L31:    ireturn
 L32:    athrow
 L33:    aload_1
-L34:    getfield Field Rg else Lqd;
-L37:    getfield Field qd void Leb;
+L34:    getfield Field Rg field239 Lqd;
+L37:    getfield Field qd field761 Leb;
 L40:    instanceof sg
 L43:    ifeq L58
 L46:    aload_1
-L47:    invokevirtual Method Rg goto ()I
+L47:    invokevirtual Method Rg method237 ()I
 L50:    ifle L58
 L53:    iconst_0
 L54:    iconst_1
@@ -60,11 +60,11 @@ L55:    dup
 L56:    pop2
 L57:    ireturn
 L58:    aload_1
-L59:    getfield Field Rg else Lqd;
-L62:    getfield Field qd "enum" Ljava/util/Map;
+L59:    getfield Field Rg field239 Lqd;
+L62:    getfield Field qd field766 Ljava/util/Map;
 L65:    invokeinterface InterfaceMethod java/util/Map size ()I 1
 L70:    aload_0
-L71:    getfield Field uD do I
+L71:    getfield Field uD field1411 I
 L74:    if_icmplt L82
 L77:    iconst_1
 L78:    dup
@@ -77,7 +77,7 @@ L84:    dup
 L85:    pop2
 L86:    ireturn
 L87:    
-        .attribute StackMap b'\x00\x06\x00\x0F\x00\x00\x00\x01\x07\x00\x1B\x00\x10\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00\x00\x20\x00\x00\x00\x01\x07\x00\x1B\x00\x21\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00\x00\x3A\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00\x00\x52\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x0F\x00\x00\x00\x01\x07\x00\x1C\x00\x10\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00\x00\x20\x00\x00\x00\x01\x07\x00\x1C\x00\x21\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00\x00\x3A\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00\x00\x52\x00\x02\x07\x00\x02\x07\x00\x11\x00\x00'
     .end code
 .end method
 .end class

@@ -1,9 +1,9 @@
 .version 49 0
 .class final super org/lwjgl/input/F
 .super java/lang/Object
-.field final else Ljava/lang/Object;
-.field "enum" J
-.field final do J
+.field final field2555 Ljava/lang/Object;
+.field field2556 J
+.field final field2557 J
 
 .method <init> : (Ljava/lang/Object;JJ)V
     .code stack 9 locals 6
@@ -15,9 +15,9 @@ L5:     aload_1
 L6:     aload_0
 L7:     dup_x1
 L8:     invokespecial Method java/lang/Object <init> ()V
-L11:    putfield Field org/lwjgl/input/F else Ljava/lang/Object;
-L14:    putfield Field org/lwjgl/input/F do J
-L17:    putfield Field org/lwjgl/input/F "enum" J
+L11:    putfield Field org/lwjgl/input/F field2555 Ljava/lang/Object;
+L14:    putfield Field org/lwjgl/input/F field2557 J
+L17:    putfield Field org/lwjgl/input/F field2556 J
 L20:    return
 L21:    
     .end code

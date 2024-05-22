@@ -2,14 +2,14 @@
 .class public final super enum sE
 .super java/lang/Enum
 .field public try F
-.field private static final synthetic const [LsE;
+.field private static final synthetic field617 [LsE;
 .field public new F
-.field public static final enum null LsE;
+.field public static final enum field618 LsE;
 .field public static final enum this LsE;
-.field public static final enum char LsE;
-.field public else F
-.field public static final enum "enum" LsE;
-.field public do Ljava/lang/String;
+.field public static final enum field619 LsE;
+.field public field620 F
+.field public static final enum field621 LsE;
+.field public field622 Ljava/lang/String;
 
 .method public static <clinit> : ()V
     .code stack 8 locals 0
@@ -25,7 +25,7 @@ L11:    ldc 4.5e-1f
 L13:    ldc 3.5e-1f
 L15:    ldc "Red"
 L17:    invokespecial Method sE <init> (Ljava/lang/String;IFFFLjava/lang/String;)V
-L20:    putstatic Field sE char LsE;
+L20:    putstatic Field sE field619 LsE;
 L23:    new sE
 L26:    dup
 L27:    ldc "BLUE"
@@ -51,7 +51,7 @@ L57:    ldc 3e-1f
 L59:    dup_x1
 L60:    ldc "Green"
 L62:    invokespecial Method sE <init> (Ljava/lang/String;IFFFLjava/lang/String;)V
-L65:    putstatic Field sE null LsE;
+L65:    putstatic Field sE field618 LsE;
 L68:    new sE
 L71:    dup
 L72:    ldc "YELLOW"
@@ -64,7 +64,7 @@ L79:    dup
 L80:    ldc 5e-1f
 L82:    ldc "Yellow"
 L84:    invokespecial Method sE <init> (Ljava/lang/String;IFFFLjava/lang/String;)V
-L87:    putstatic Field sE "enum" LsE;
+L87:    putstatic Field sE field621 LsE;
 L90:    iconst_4
 L91:    iconst_1
 L92:    dup
@@ -78,7 +78,7 @@ L101:   iconst_0
 L102:   iconst_1
 L103:   dup
 L104:   pop2
-L105:   getstatic Field sE char LsE;
+L105:   getstatic Field sE field619 LsE;
 L108:   aastore
 L109:   dup
 L110:   iconst_1
@@ -92,16 +92,16 @@ L119:   iconst_2
 L120:   iconst_1
 L121:   dup
 L122:   pop2
-L123:   getstatic Field sE null LsE;
+L123:   getstatic Field sE field618 LsE;
 L126:   aastore
 L127:   dup
 L128:   iconst_3
 L129:   iconst_1
 L130:   dup
 L131:   pop2
-L132:   getstatic Field sE "enum" LsE;
+L132:   getstatic Field sE field621 LsE;
 L135:   aastore
-L136:   putstatic Field sE const [LsE;
+L136:   putstatic Field sE field617 [LsE;
 L139:   return
 L140:   
     .end code
@@ -122,9 +122,9 @@ L12:    aload_1
 L13:    iload_2
 L14:    invokespecial Method java/lang/Enum <init> (Ljava/lang/String;I)V
 L17:    putfield Field sE try F
-L20:    putfield Field sE else F
+L20:    putfield Field sE field620 F
 L23:    putfield Field sE new F
-L26:    putfield Field sE do Ljava/lang/String;
+L26:    putfield Field sE field622 Ljava/lang/String;
 L29:    return
 L30:    
     .end code
@@ -143,7 +143,7 @@ L10:
 
 .method public static values : ()[LsE;
     .code stack 1 locals 0
-L0:     getstatic Field sE const [LsE;
+L0:     getstatic Field sE field617 [LsE;
 L3:     invokevirtual Method [LsE; clone ()Ljava/lang/Object;
 L6:     checkcast [LsE;
 L9:     areturn

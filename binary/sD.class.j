@@ -1,9 +1,9 @@
 .version 49 0
 .class public final super sD
 .super java/awt/Frame
-.field private static final do J = 1L
+.field private static final field543 J = 1L
 
-.method public else : (LFE;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
+.method public method333 : (LFE;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)V
     .code stack 11 locals 7
         .catch java/lang/Throwable from L0 to L130 using L139
 L0:     new java/net/URL
@@ -57,7 +57,7 @@ L83:    aload_1
 L84:    aload_2
 L85:    aload_3
 L86:    aload 4
-L88:    invokespecial Method sD break (LFE;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+L88:    invokespecial Method sD method334 (LFE;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 L91:    ldc "UTF-8"
 L93:    invokestatic Method java/net/URLEncoder encode (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
 L96:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -87,7 +87,7 @@ L141:   aload_1
 L142:   aload_2
 L143:   aload 5
 L145:   invokevirtual Method java/lang/Throwable printStackTrace ()V
-L148:   invokestatic Method sD break (LFE;Ljava/lang/Throwable;)V
+L148:   invokestatic Method sD method335 (LFE;Ljava/lang/Throwable;)V
 L151:   iconst_0
 L152:   iconst_1
 L153:   dup
@@ -99,7 +99,7 @@ L159:
     .end code
 .end method
 
-.method private break : (LFE;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+.method private method334 : (LFE;Ljava/lang/Throwable;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
     .code stack 8 locals 7
 L0:     new java/io/ByteArrayOutputStream
 L3:     dup
@@ -154,13 +154,13 @@ L89:    new java/lang/StringBuilder
 L92:    dup
 L93:    invokespecial Method java/lang/StringBuilder <init> ()V
 L96:    iconst_0
-L97:    getstatic Field Pc do LPc;
-L100:   getfield Field Pc char Ljava/lang/String;
+L97:    getstatic Field Pc field373 LPc;
+L100:   getfield Field Pc field370 Ljava/lang/String;
 L103:   invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
 L106:   ldc "li"
 L108:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L111:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
-L114:   invokestatic Method JB const (Ljava/lang/String;)Ljava/lang/String;
+L114:   invokestatic Method JB method822 (Ljava/lang/String;)Ljava/lang/String;
 L117:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L120:   ldc "/"
 L122:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -168,13 +168,13 @@ L125:   new java/lang/StringBuilder
 L128:   dup
 L129:   invokespecial Method java/lang/StringBuilder <init> ()V
 L132:   iconst_0
-L133:   getstatic Field Pc do LPc;
-L136:   getfield Field Pc char Ljava/lang/String;
+L133:   getstatic Field Pc field373 LPc;
+L136:   getfield Field Pc field370 Ljava/lang/String;
 L139:   invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
 L142:   ldc "a"
 L144:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L147:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
-L150:   invokestatic Method JB const (Ljava/lang/String;)Ljava/lang/String;
+L150:   invokestatic Method JB method822 (Ljava/lang/String;)Ljava/lang/String;
 L153:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L156:   ldc ")"
 L158:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
@@ -203,7 +203,7 @@ L209:   invokespecial Method java/lang/StringBuilder <init> ()V
 L212:   iconst_0
 L213:   ldc "Adapter: "
 L215:   invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
-L218:   invokestatic Method org/lwjgl/opengl/Display if ()Ljava/lang/String;
+L218:   invokestatic Method org/lwjgl/opengl/Display method3025 ()Ljava/lang/String;
 L221:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L224:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L227:   invokevirtual Method java/io/PrintWriter println (Ljava/lang/String;)V
@@ -219,7 +219,7 @@ L244:   invokespecial Method java/lang/StringBuilder <init> ()V
 L247:   iconst_0
 L248:   ldc "Sound: "
 L250:   invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
-L253:   invokestatic Method UE goto ()Ljava/lang/String;
+L253:   invokestatic Method UE method420 ()Ljava/lang/String;
 L256:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L259:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L262:   invokevirtual Method java/io/PrintWriter println (Ljava/lang/String;)V
@@ -286,7 +286,7 @@ L399:   invokespecial Method java/lang/StringBuilder <init> ()V
 L402:   ldc "Machine: "
 L404:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L407:   ldc "uuid"
-L409:   invokestatic Method JB const (Ljava/lang/String;)Ljava/lang/String;
+L409:   invokestatic Method JB method822 (Ljava/lang/String;)Ljava/lang/String;
 L412:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
 L415:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
 L418:   invokevirtual Method java/io/PrintWriter println (Ljava/lang/String;)V
@@ -316,68 +316,68 @@ L471:   dup
 L472:   invokespecial Method java/lang/StringBuilder <init> ()V
 L475:   ldc "Time: "
 L477:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-L480:   ldc "%.1f"
-L482:   iconst_1
-L483:   dup
+L480:   ldc_w "%.1f"
+L483:   iconst_1
 L484:   dup
-L485:   pop2
-L486:   anewarray java/lang/Object
-L489:   iconst_1
-L490:   dup
-L491:   pop2
-L492:   dup
-L493:   iconst_0
-L494:   iconst_1
-L495:   dup
-L496:   pop2
-L497:   invokestatic Method OC else ()D
-L500:   invokestatic Method java/lang/Double valueOf (D)Ljava/lang/Double;
-L503:   aastore
-L504:   invokestatic Method java/lang/String format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-L507:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-L510:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
-L513:   invokevirtual Method java/io/PrintWriter println (Ljava/lang/String;)V
-L516:   aload_1
-L517:   aload 6
-L519:   ldc_w "-------------------------------------------"
-L522:   invokevirtual Method java/io/PrintWriter println (Ljava/lang/String;)V
-L525:   ifnull L534
-L528:   aload_1
-L529:   aload 6
-L531:   invokevirtual Method FE break (Ljava/io/PrintWriter;)V
-L534:   aload 6
-L536:   ldc_w "-------------------------------------------"
-L539:   invokevirtual Method java/io/PrintWriter println (Ljava/lang/String;)V
-L542:   aload_2
-L543:   dup
-L544:   aload 6
-L546:   invokevirtual Method java/lang/Throwable printStackTrace (Ljava/io/PrintWriter;)V
-L549:   invokevirtual Method java/lang/Throwable getCause ()Ljava/lang/Throwable;
-L552:   ifnull L578
-L555:   aload_2
-L556:   invokevirtual Method java/lang/Throwable getCause ()Ljava/lang/Throwable;
-L559:   dup
-L560:   astore_2
-L561:   dup
-L562:   aload 6
-L564:   ldc_w "Caused by "
-L567:   invokevirtual Method java/io/PrintWriter print (Ljava/lang/String;)V
-L570:   aload 6
-L572:   invokevirtual Method java/lang/Throwable printStackTrace (Ljava/io/PrintWriter;)V
-L575:   goto L549
-L578:   aload 6
-L580:   aload_3
-L581:   aload 6
-L583:   dup_x1
-L584:   ldc_w "-------------------------------------------"
-L587:   invokevirtual Method java/io/PrintWriter println (Ljava/lang/String;)V
-L590:   invokevirtual Method java/io/PrintWriter println (Ljava/lang/String;)V
-L593:   invokevirtual Method java/io/PrintWriter close ()V
-L596:   aload 5
-L598:   invokevirtual Method java/io/ByteArrayOutputStream toString ()Ljava/lang/String;
-L601:   areturn
-L602:   
-        .attribute StackMap b'\x00\x09\x00\xEB\x00\x00\x00\x01\x07\x00\x14\x00\xEC\x00\x07\x07\x00\x02\x07\x00\x67\x07\x00\x14\x07\x00\x6B\x07\x00\x6B\x07\x00\x82\x07\x00\x86\x00\x01\x07\x00\x80\x00\xF0\x00\x07\x07\x00\x02\x07\x00\x67\x07\x00\x14\x07\x00\x6B\x07\x00\x72\x07\x00\x82\x07\x00\x86\x00\x01\x07\x00\x86\x01\x0E\x00\x00\x00\x01\x07\x00\x14\x01\x0F\x00\x07\x07\x00\x02\x07\x00\x67\x07\x00\x14\x07\x00\x6B\x07\x00\x72\x07\x00\x82\x07\x00\x86\x00\x01\x07\x00\x80\x01\x13\x00\x07\x07\x00\x02\x07\x00\x67\x07\x00\x14\x07\x00\x6B\x07\x00\x72\x07\x00\x82\x07\x00\x86\x00\x01\x07\x00\x86\x02\x16\x00\x07\x07\x00\x02\x07\x00\x67\x07\x00\x14\x07\x00\x6B\x07\x00\x72\x07\x00\x82\x07\x00\x86\x00\x00\x02\x25\x00\x07\x07\x00\x02\x07\x00\x67\x07\x00\x14\x07\x00\x6B\x07\x00\x72\x07\x00\x82\x07\x00\x86\x00\x01\x07\x00\x14\x02\x42\x00\x07\x07\x00\x02\x07\x00\x67\x07\x00\x14\x07\x00\x6B\x07\x00\x72\x07\x00\x82\x07\x00\x86\x00\x00'
+L485:   dup
+L486:   pop2
+L487:   anewarray java/lang/Object
+L490:   iconst_1
+L491:   dup
+L492:   pop2
+L493:   dup
+L494:   iconst_0
+L495:   iconst_1
+L496:   dup
+L497:   pop2
+L498:   invokestatic Method OC method1015 ()D
+L501:   invokestatic Method java/lang/Double valueOf (D)Ljava/lang/Double;
+L504:   aastore
+L505:   invokestatic Method java/lang/String format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+L508:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+L511:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
+L514:   invokevirtual Method java/io/PrintWriter println (Ljava/lang/String;)V
+L517:   aload_1
+L518:   aload 6
+L520:   ldc_w "-------------------------------------------"
+L523:   invokevirtual Method java/io/PrintWriter println (Ljava/lang/String;)V
+L526:   ifnull L535
+L529:   aload_1
+L530:   aload 6
+L532:   invokevirtual Method FE method461 (Ljava/io/PrintWriter;)V
+L535:   aload 6
+L537:   ldc_w "-------------------------------------------"
+L540:   invokevirtual Method java/io/PrintWriter println (Ljava/lang/String;)V
+L543:   aload_2
+L544:   dup
+L545:   aload 6
+L547:   invokevirtual Method java/lang/Throwable printStackTrace (Ljava/io/PrintWriter;)V
+L550:   invokevirtual Method java/lang/Throwable getCause ()Ljava/lang/Throwable;
+L553:   ifnull L579
+L556:   aload_2
+L557:   invokevirtual Method java/lang/Throwable getCause ()Ljava/lang/Throwable;
+L560:   dup
+L561:   astore_2
+L562:   dup
+L563:   aload 6
+L565:   ldc_w "Caused by "
+L568:   invokevirtual Method java/io/PrintWriter print (Ljava/lang/String;)V
+L571:   aload 6
+L573:   invokevirtual Method java/lang/Throwable printStackTrace (Ljava/io/PrintWriter;)V
+L576:   goto L550
+L579:   aload 6
+L581:   aload_3
+L582:   aload 6
+L584:   dup_x1
+L585:   ldc_w "-------------------------------------------"
+L588:   invokevirtual Method java/io/PrintWriter println (Ljava/lang/String;)V
+L591:   invokevirtual Method java/io/PrintWriter println (Ljava/lang/String;)V
+L594:   invokevirtual Method java/io/PrintWriter close ()V
+L597:   aload 5
+L599:   invokevirtual Method java/io/ByteArrayOutputStream toString ()Ljava/lang/String;
+L602:   areturn
+L603:   
+        .attribute StackMap b'\x00\x09\x00\xEB\x00\x00\x00\x01\x07\x00\x14\x00\xEC\x00\x07\x07\x00\x02\x07\x00\x67\x07\x00\x14\x07\x00\x6B\x07\x00\x6B\x07\x00\x83\x07\x00\x87\x00\x01\x07\x00\x81\x00\xF0\x00\x07\x07\x00\x02\x07\x00\x67\x07\x00\x14\x07\x00\x6B\x07\x00\x72\x07\x00\x83\x07\x00\x87\x00\x01\x07\x00\x87\x01\x0E\x00\x00\x00\x01\x07\x00\x14\x01\x0F\x00\x07\x07\x00\x02\x07\x00\x67\x07\x00\x14\x07\x00\x6B\x07\x00\x72\x07\x00\x83\x07\x00\x87\x00\x01\x07\x00\x81\x01\x13\x00\x07\x07\x00\x02\x07\x00\x67\x07\x00\x14\x07\x00\x6B\x07\x00\x72\x07\x00\x83\x07\x00\x87\x00\x01\x07\x00\x87\x02\x17\x00\x07\x07\x00\x02\x07\x00\x67\x07\x00\x14\x07\x00\x6B\x07\x00\x72\x07\x00\x83\x07\x00\x87\x00\x00\x02\x26\x00\x07\x07\x00\x02\x07\x00\x67\x07\x00\x14\x07\x00\x6B\x07\x00\x72\x07\x00\x83\x07\x00\x87\x00\x01\x07\x00\x14\x02\x43\x00\x07\x07\x00\x02\x07\x00\x67\x07\x00\x14\x07\x00\x6B\x07\x00\x72\x07\x00\x83\x07\x00\x87\x00\x00'
     .end code
 .end method
 
@@ -440,7 +440,7 @@ L9:     dup
 L10:    dup_x2
 L11:    ldc_w "Cultris II"
 L14:    invokespecial Method java/awt/Frame <init> (Ljava/lang/String;)V
-L17:    invokestatic Method mD for ()Ljava/awt/Image;
+L17:    invokestatic Method mD method1708 ()Ljava/awt/Image;
 L20:    invokevirtual Method sD setIconImage (Ljava/awt/Image;)V
 L23:    iconst_1
 L24:    dup
@@ -716,7 +716,7 @@ L454:
     .exceptions java/lang/Exception
 .end method
 
-.method public static break : (LFE;Ljava/lang/Throwable;)V
+.method public static method335 : (LFE;Ljava/lang/Throwable;)V
     .code stack 7 locals 3
         .catch java/lang/Throwable from L0 to L70 using L74
 L0:     new java/io/PrintWriter
@@ -753,7 +753,7 @@ L50:    invokevirtual Method java/io/PrintWriter println (Ljava/lang/String;)V
 L53:    ifnull L61
 L56:    aload_0
 L57:    aload_2
-L58:    invokevirtual Method FE break (Ljava/io/PrintWriter;)V
+L58:    invokevirtual Method FE method461 (Ljava/io/PrintWriter;)V
 L61:    aload_1
 L62:    aload_2
 L63:    invokevirtual Method java/lang/Throwable printStackTrace (Ljava/io/PrintWriter;)V
@@ -764,10 +764,10 @@ L73:    athrow
 L74:    astore_2
 L75:    ldc_w "Cultris II"
 L78:    ldc_w "Cultris II crashed and we couldn't send a report automatically.\u000APlease post in our forum on http://gewaltig.net/ and attach the\u000Afile errlog.txt from the application directory.\u000A\u000AThank you very much!"
-L81:    invokestatic Method org/lwjgl/Sys break (Ljava/lang/String;Ljava/lang/String;)V
+L81:    invokestatic Method org/lwjgl/Sys method1890 (Ljava/lang/String;Ljava/lang/String;)V
 L84:    return
 L85:    
-        .attribute StackMap b'\x00\x04\x00\x3D\x00\x03\x07\x00\x67\x07\x00\x14\x07\x00\x86\x00\x00\x00\x49\x00\x00\x00\x01\x07\x00\x14\x00\x4A\x00\x02\x07\x00\x67\x07\x00\x14\x00\x01\x07\x00\x14\x00\x4B\x00\x03\x07\x00\x67\x07\x00\x14\x07\x00\x72\x00\x00'
+        .attribute StackMap b'\x00\x04\x00\x3D\x00\x03\x07\x00\x67\x07\x00\x14\x07\x00\x87\x00\x00\x00\x49\x00\x00\x00\x01\x07\x00\x14\x00\x4A\x00\x02\x07\x00\x67\x07\x00\x14\x00\x01\x07\x00\x14\x00\x4B\x00\x03\x07\x00\x67\x07\x00\x14\x07\x00\x72\x00\x00'
     .end code
 .end method
 .innerclasses

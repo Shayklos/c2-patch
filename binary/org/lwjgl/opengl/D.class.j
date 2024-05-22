@@ -2,30 +2,30 @@
 .class interface abstract org/lwjgl/opengl/D
 .super java/lang/Object
 
-.method public abstract goto : ()I
+.method public abstract method2947 : ()I
 .end method
 
-.method public abstract do : ()I
+.method public abstract method2943 : ()I
 .end method
 
-.method public abstract for : ()I
+.method public abstract method2946 : ()I
 .end method
 
-.method public abstract catch : ()I
+.method public abstract method2945 : ()I
 .end method
 
-.method public abstract float : ()I
+.method public abstract method2948 : ()I
 .end method
 
-.method public abstract short : ()I
+.method public abstract method2951 : ()I
 .end method
 
-.method public abstract const : ()I
+.method public abstract method2949 : ()I
 .end method
 
-.method public abstract else : ()I
+.method public abstract method2944 : ()I
 .end method
 
-.method public abstract break : ()I
+.method public abstract method2950 : ()I
 .end method
 .end class

@@ -2,7 +2,7 @@
 .class public interface abstract M
 .super java/lang/Object
 
-.method public abstract break : ()Z
+.method public abstract method227 : ()Z
     .exceptions java/lang/Exception
 .end method
 
