@@ -1,6 +1,7 @@
 @echo off
 :: Copy launcher batch files to a specified directory (e.g., one level up from resources)
 copy ..\launchers\*.bat ..
+copy ..\launchers\*.ps1 ..
 
 cd ..\resources\
 
