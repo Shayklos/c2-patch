@@ -19,6 +19,12 @@ class ColorPicker implements ChangeListener {
     ColorPicker() {
         setupFrame();
         frame.setVisible(true);
+
+        // Apply the first preset on startup
+        if (colorComboList.getItemCount() > 0) {
+            colorComboList.setSelectedIndex(0);  // Select the first item
+            applySelectedColor();  // Apply the color to the sliders
+        }
     }
 
     private void setupFrame() {
@@ -39,6 +45,7 @@ class ColorPicker implements ChangeListener {
     private void setupUIComponents(JPanel panel) {
         colorComboList = new JComboBox<>();
         colorComboList.setFont(uiFont);
+        colorComboList.addActionListener(e -> applySelectedColor()); // Apply selected color on change
         panel.add(colorComboList);
 
         hexLabel = new JLabel("HEX:");
@@ -125,9 +132,35 @@ class ColorPicker implements ChangeListener {
                 colorComboList.addItem(line);
             }
         } catch (IOException e) {
-            // Log error details for debugging
             e.printStackTrace();
             JOptionPane.showMessageDialog(frame, "Error loading color presets", "File Read Error", JOptionPane.ERROR_MESSAGE);
+        }
+    }
+
+    private void applySelectedColor() {
+        String selectedColor = (String) colorComboList.getSelectedItem();
+        if (selectedColor != null) {
+            // Split the preset to extract the name and RGB values
+            String[] parts = selectedColor.split(",");
+            if (parts.length == 4) { // Name + 3 RGB values
+                try {
+                    float red = Float.parseFloat(parts[1].trim());
+                    float green = Float.parseFloat(parts[2].trim());
+                    float blue = Float.parseFloat(parts[3].trim());
+
+                    // Convert float values (0-1) to int values (0-255)
+                    sliderR.setValue(Math.round(red * 255));
+                    sliderG.setValue(Math.round(green * 255));
+                    sliderB.setValue(Math.round(blue * 255));
+
+                    updateColor();  // Update the colored text field's background
+                } catch (NumberFormatException e) {
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(frame, "Invalid color values", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            } else {
+                JOptionPane.showMessageDialog(frame, "Invalid color format", "Error", JOptionPane.ERROR_MESSAGE);
+            }
         }
     }
 
@@ -139,22 +172,27 @@ class ColorPicker implements ChangeListener {
             sliderB.setValue(color.getBlue());
             updateColor();
         } catch (NumberFormatException e) {
-            // Log error details for debugging
             e.printStackTrace();
             JOptionPane.showMessageDialog(frame, "Invalid HEX code", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
     private void saveColorToFile() {
-        float red = sliderR.getValue() / 255.0f;
-        float green = sliderG.getValue() / 255.0f;
-        float blue = sliderB.getValue() / 255.0f;
-        String colorString = String.format("%.9f,%.9f,%.9f", red, green, blue);
         try {
+            // Ensure the settings directory exists
+            java.nio.file.Path settingsPath = Paths.get("settings");
+            if (!java.nio.file.Files.exists(settingsPath)) {
+                java.nio.file.Files.createDirectories(settingsPath);  // Create settings directory if not exists
+            }
+
+            float red = sliderR.getValue() / 255.0f;
+            float green = sliderG.getValue() / 255.0f;
+            float blue = sliderB.getValue() / 255.0f;
+            String colorString = String.format("%.9f,%.9f,%.9f", red, green, blue);
+
             java.nio.file.Files.writeString(Paths.get("settings/background-color.txt"), colorString);
             JOptionPane.showMessageDialog(frame, "Color saved successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
         } catch (IOException e) {
-            // Log error details for debugging
             e.printStackTrace();
             JOptionPane.showMessageDialog(frame, "Failed to save color!", "Error", JOptionPane.ERROR_MESSAGE);
         }
