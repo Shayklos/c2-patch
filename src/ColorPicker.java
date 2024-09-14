@@ -98,6 +98,9 @@ class ColorPicker implements ChangeListener {
         sliderRLabel.setText("Red: " + sliderR.getValue());
         sliderGLabel.setText("Green: " + sliderG.getValue());
         sliderBLabel.setText("Blue: " + sliderB.getValue());
+
+        // Update the hex text field when sliders change
+        updateHexFromColor();
     }
 
     private void updateColor() {
@@ -107,6 +110,14 @@ class ColorPicker implements ChangeListener {
         coloredTextField.setBackground(new Color(red, green, blue));
     }
 
+    private void updateHexFromColor() {
+        int red = sliderR.getValue();
+        int green = sliderG.getValue();
+        int blue = sliderB.getValue();
+        String hex = String.format("#%02X%02X%02X", red, green, blue);
+        hexTextField.setText(hex);
+    }
+
     private void loadColorPresets() {
         try (BufferedReader reader = new BufferedReader(new FileReader("settings/colorPresets.txt"))) {
             String line;
@@ -114,6 +125,8 @@ class ColorPicker implements ChangeListener {
                 colorComboList.addItem(line);
             }
         } catch (IOException e) {
+            // Log error details for debugging
+            e.printStackTrace();
             JOptionPane.showMessageDialog(frame, "Error loading color presets", "File Read Error", JOptionPane.ERROR_MESSAGE);
         }
     }
@@ -126,6 +139,8 @@ class ColorPicker implements ChangeListener {
             sliderB.setValue(color.getBlue());
             updateColor();
         } catch (NumberFormatException e) {
+            // Log error details for debugging
+            e.printStackTrace();
             JOptionPane.showMessageDialog(frame, "Invalid HEX code", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
@@ -139,6 +154,8 @@ class ColorPicker implements ChangeListener {
             java.nio.file.Files.writeString(Paths.get("settings/background-color.txt"), colorString);
             JOptionPane.showMessageDialog(frame, "Color saved successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
         } catch (IOException e) {
+            // Log error details for debugging
+            e.printStackTrace();
             JOptionPane.showMessageDialog(frame, "Failed to save color!", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
