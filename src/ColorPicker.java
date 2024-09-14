@@ -18,6 +18,7 @@ class ColorPicker implements ChangeListener {
 
     ColorPicker() {
         setupFrame();
+        // Initialize the color preview before calling applySelectedColor
         frame.setVisible(true);
 
         // Apply the first preset on startup
@@ -38,6 +39,12 @@ class ColorPicker implements ChangeListener {
         panel.setLayout(new GridLayout(0, 1));  // Single column, multiple rows.
         frame.add(panel, BorderLayout.CENTER);
 
+        // Initialize the coloredTextField first, before any other components
+        coloredTextField = new JTextField();
+        coloredTextField.setFont(uiFont);
+        coloredTextField.setEditable(false);
+        frame.add(coloredTextField, BorderLayout.SOUTH);  // Place color preview at the bottom
+
         setupUIComponents(panel);
         loadColorPresets();
     }
@@ -57,11 +64,6 @@ class ColorPicker implements ChangeListener {
         hexTextField.setToolTipText("Enter HEX color code");
         hexTextField.addActionListener(e -> updateColorFromHex());
         panel.add(hexTextField);
-
-        coloredTextField = new JTextField();
-        coloredTextField.setFont(uiFont);
-        coloredTextField.setEditable(false);
-        panel.add(coloredTextField);
 
         setupSliders(panel);
 
@@ -111,10 +113,12 @@ class ColorPicker implements ChangeListener {
     }
 
     private void updateColor() {
-        int red = sliderR.getValue();
-        int green = sliderG.getValue();
-        int blue = sliderB.getValue();
-        coloredTextField.setBackground(new Color(red, green, blue));
+        if (coloredTextField != null) {
+            int red = sliderR.getValue();
+            int green = sliderG.getValue();
+            int blue = sliderB.getValue();
+            coloredTextField.setBackground(new Color(red, green, blue));
+        }
     }
 
     private void updateHexFromColor() {
