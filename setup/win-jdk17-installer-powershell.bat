@@ -5,20 +5,22 @@ copy ..\launchers\*.ps1 ..
 
 cd ..\resources\
 
-:: Download the GraalVM JDK
-curl -o graalvm-jdk-17_windows-x64_bin.zip -LJO "https://download.oracle.com/graalvm/17/latest/graalvm-jdk-17_windows-x64_bin.zip"
+:: Download the latest Temurin 17 JDK
+curl -o temurin-jdk-17_windows-x64_bin.zip -LJO "https://api.github.com/repos/adoptium/temurin17-binaries/releases/latest" ^
+  | findstr /i "browser_download_url" | findstr /i "jdk_x64_windows_hotspot" | findstr /i ".zip" ^
+  | for /f "tokens=2 delims=: " %%A in ('findstr /i "https://"') do curl -LJO %%A
 
 :: Unzip the downloaded file
-powershell -command "Expand-Archive -Path graalvm-jdk-17_windows-x64_bin.zip -DestinationPath ."
+powershell -command "Expand-Archive -Path temurin-jdk-17_windows-x64_bin.zip -DestinationPath ."
 
 :: Remove the downloaded ZIP file
-del graalvm-jdk-17_windows-x64_bin.zip
+del temurin-jdk-17_windows-x64_bin.zip
 
-:: Remove older versions of GraalVM JDKs except the newest one
+:: Remove older versions of Temurin JDKs except the newest one
 powershell -command "
-$directories = Get-ChildItem -Directory | Where-Object { $_.Name -match 'graalvm-jdk-17' }
-$latestVersion = $directories | Sort-Object { [Version]($_.Name -replace 'graalvm-jdk-17_', '').Replace('+', '.') } -Descending | Select-Object -First 1
+$directories = Get-ChildItem -Directory | Where-Object { $_.Name -match 'jdk-17' }
+$latestVersion = $directories | Sort-Object { [Version]($_.Name -replace 'jdk-17_', '').Replace('+', '.') } -Descending | Select-Object -First 1
 $directories | Where-Object { $_ -ne $latestVersion } | Remove-Item -Recurse -Force
 "
 
-echo "Installation completed. GraalVM JDK is ready to use."
+echo "Installation completed. Temurin 17 JDK is ready to use."
