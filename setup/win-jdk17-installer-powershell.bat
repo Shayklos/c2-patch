@@ -1,23 +1,13 @@
 @echo off
-:: Copy launcher batch files to a specified directory (e.g., one level up from resources)
-copy ..\launchers\*.bat ..
-
 cd ..\resources\
-
-:: Download the GraalVM JDK
-curl -o graalvm-jdk-17_windows-x64_bin.zip -LJO "https://download.oracle.com/graalvm/17/latest/graalvm-jdk-17_windows-x64_bin.zip"
-
+ 
+:: Download the JDK
+curl -o OpenJDK17U-jdk_x64_windows_hotspot_17.0.9_9.zip -LJO "https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17.0.9+9.1/OpenJDK17U-jdk_x64_windows_hotspot_17.0.9_9.zip"
+ 
 :: Unzip the downloaded file
-powershell -command "Expand-Archive -Path graalvm-jdk-17_windows-x64_bin.zip -DestinationPath ."
-
+powershell -command "Expand-Archive -Path OpenJDK17U-jdk_x64_windows_hotspot_17.0.9_9.zip -DestinationPath ."
+ 
 :: Remove the downloaded ZIP file
-del graalvm-jdk-17_windows-x64_bin.zip
-
-:: Remove older versions of GraalVM JDKs except the newest one
-powershell -command "
-$directories = Get-ChildItem -Directory | Where-Object { $_.Name -match 'graalvm-jdk-17' }
-$latestVersion = $directories | Sort-Object { [Version]($_.Name -replace 'graalvm-jdk-17_', '').Replace('+', '.') } -Descending | Select-Object -First 1
-$directories | Where-Object { $_ -ne $latestVersion } | Remove-Item -Recurse -Force
-"
-
-echo "Installation completed. GraalVM JDK is ready to use."
+del OpenJDK17U-jdk_x64_windows_hotspot_17.0.9_9.zip
+ 
+copy ..\launchers\*.bat ..

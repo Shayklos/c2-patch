@@ -1,1 +1,2 @@
-".\resources\graalvm-jdk-17.0.11+7.1\bin\java" -cp cultris2.jar c2settings
+@echo off
+.\resources\jdk-17.0.9+9\bin\java.exe -cp "cultris2.jar" c2settings
