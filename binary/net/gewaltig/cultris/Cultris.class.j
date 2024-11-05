@@ -11,6 +11,7 @@
 .field public static backgroundcolorGreen F = 1e-1f
 .field public static backgroundcolorBlue F = 5e-1f
 .field public static backgroundcolorRed F = 5e-1f
+.field public static enable_enemy_sounds I = 1
 
 .method static method1722 : ()V
     .code stack 1 locals 0
@@ -21,7 +22,7 @@ L9:     goto L3
 L12:    athrow
 L13:    return
 L14:    
-        .attribute StackMap b'\x00\x03\x00\x03\x00\x00\x00\x00\x00\x0C\x00\x00\x00\x01\x07\x00\x27\x00\x0D\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x03\x00\x03\x00\x00\x00\x00\x00\x0C\x00\x00\x00\x01\x07\x00\x29\x00\x0D\x00\x00\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method
@@ -32,7 +33,7 @@ L0:     goto L4
 L3:     athrow
 L4:     return
 L5:     
-        .attribute StackMap b'\x00\x02\x00\x03\x00\x00\x00\x01\x07\x00\x27\x00\x04\x00\x00\x00\x00'
+        .attribute StackMap b'\x00\x02\x00\x03\x00\x00\x00\x01\x07\x00\x29\x00\x04\x00\x00\x00\x00'
     .end code
 .end method
 
@@ -57,7 +58,7 @@ L28:    return
 L29:    astore_0
 L30:    return
 L31:    
-        .attribute StackMap b'\x00\x07\x00\x0F\x00\x00\x00\x01\x07\x00\x27\x00\x10\x00\x00\x00\x01\x07\x00\x27\x00\x11\x00\x00\x00\x00\x00\x17\x00\x00\x00\x01\x07\x00\x27\x00\x18\x00\x00\x00\x01\x07\x00\x27\x00\x19\x00\x00\x00\x00\x00\x1D\x00\x00\x00\x01\x07\x00\x27'
+        .attribute StackMap b'\x00\x07\x00\x0F\x00\x00\x00\x01\x07\x00\x29\x00\x10\x00\x00\x00\x01\x07\x00\x29\x00\x11\x00\x00\x00\x00\x00\x17\x00\x00\x00\x01\x07\x00\x29\x00\x18\x00\x00\x00\x01\x07\x00\x29\x00\x19\x00\x00\x00\x00\x00\x1D\x00\x00\x00\x01\x07\x00\x29'
     .end code
 .end method
 
@@ -73,7 +74,7 @@ L5:
 .method public static main : ([Ljava/lang/String;)V
     .code stack 5 locals 4
 L0:     invokestatic Method net/gewaltig/cultris/Cultris method1723 ()V
-        .catch java/lang/Throwable from L3 to L78 using L85
+        .catch java/lang/Throwable from L3 to L84 using L91
 L3:     invokestatic Method FE readfpsvalue ()I
 L6:     putstatic Field net/gewaltig/cultris/Cultris framerate I
 L9:     invokestatic Method FE readhzvalue ()I
@@ -86,68 +87,70 @@ L27:    invokestatic Method ReadBackgroundColor getGreen ()F
 L30:    putstatic Field net/gewaltig/cultris/Cultris backgroundcolorGreen F
 L33:    invokestatic Method ReadBackgroundColor getBlue ()F
 L36:    putstatic Field net/gewaltig/cultris/Cultris backgroundcolorBlue F
-L39:    invokestatic Method net/gewaltig/cultris/Cultris method1725 ()V
-L42:    aload_0
-L43:    arraylength
-L44:    iconst_1
-L45:    dup
-L46:    dup
-L47:    pop2
-L48:    if_icmpne L75
-L51:    ldc "profile_run"
-L53:    aload_0
-L54:    iconst_0
-L55:    iconst_1
-L56:    dup
-L57:    pop2
-L58:    aaload
-L59:    invokevirtual Method java/lang/String equals (Ljava/lang/Object;)Z
-L62:    ifeq L75
-L65:    new net/gewaltig/cultris/i
-L68:    dup
-L69:    invokespecial Method net/gewaltig/cultris/i <init> ()V
-L72:    invokestatic Method ib method1156 (LM;)V
-L75:    invokestatic Method net/gewaltig/cultris/Cultris method1722 ()V
-L78:    invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
-L81:    goto L138
-L84:    athrow
-L85:    astore_1
-        .catch java/lang/Throwable from L86 to L89 using L94
-L86:    invokestatic Method org/lwjgl/opengl/Display method3009 ()V
-L89:    aload_1
-L90:    goto L96
-L93:    athrow
-L94:    astore_2
+L39:    invokestatic Method od readenemySFXtoggle ()I
+L42:    putstatic Field net/gewaltig/cultris/Cultris enable_enemy_sounds I
+L45:    invokestatic Method net/gewaltig/cultris/Cultris method1725 ()V
+L48:    aload_0
+L49:    arraylength
+L50:    iconst_1
+L51:    dup
+L52:    dup
+L53:    pop2
+L54:    if_icmpne L81
+L57:    ldc "profile_run"
+L59:    aload_0
+L60:    iconst_0
+L61:    iconst_1
+L62:    dup
+L63:    pop2
+L64:    aaload
+L65:    invokevirtual Method java/lang/String equals (Ljava/lang/Object;)Z
+L68:    ifeq L81
+L71:    new net/gewaltig/cultris/i
+L74:    dup
+L75:    invokespecial Method net/gewaltig/cultris/i <init> ()V
+L78:    invokestatic Method ib method1156 (LM;)V
+L81:    invokestatic Method net/gewaltig/cultris/Cultris method1722 ()V
+L84:    invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
+L87:    goto L144
+L90:    athrow
+L91:    astore_1
+        .catch java/lang/Throwable from L92 to L95 using L100
+L92:    invokestatic Method org/lwjgl/opengl/Display method3009 ()V
 L95:    aload_1
-L96:    invokevirtual Method java/lang/Throwable printStackTrace ()V
-        .catch java/lang/Throwable from L99 to L111 using L114
-        .catch [0] from L3 to L78 using L132
-        .catch [0] from L85 to L93 using L132
-        .catch [0] from L94 to L126 using L132
-L99:    new sD
-L102:   dup
-L103:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
-L106:   aload_1
-L107:   invokespecial Method sD <init> (LFE;Ljava/lang/Throwable;)V
-L110:   pop
-L111:   goto L126
-L114:   astore_2
-L115:   aload_2
-L116:   invokevirtual Method java/lang/Throwable printStackTrace ()V
-L119:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
-L122:   aload_1
-L123:   invokestatic Method sD method335 (LFE;Ljava/lang/Throwable;)V
-L126:   invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
-L129:   goto L138
-        .catch [0] from L132 to L133 using L132
-L132:   astore_3
-L133:   invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
-L136:   aload_3
-L137:   athrow
-L138:   invokestatic Method ib method1152 ()V
-L141:   return
-L142:   
-        .attribute StackMap b'\x00\x0A\x00\x4B\x00\x01\x07\x00\x82\x00\x00\x00\x54\x00\x00\x00\x01\x07\x00\x27\x00\x55\x00\x01\x07\x00\x82\x00\x01\x07\x00\x27\x00\x5D\x00\x00\x00\x01\x07\x00\x27\x00\x5E\x00\x02\x07\x00\x82\x07\x00\x27\x00\x01\x07\x00\x27\x00\x60\x00\x02\x07\x00\x82\x07\x00\x27\x00\x01\x07\x00\x27\x00\x72\x00\x02\x07\x00\x82\x07\x00\x27\x00\x01\x07\x00\x27\x00\x7E\x00\x02\x07\x00\x82\x07\x00\x27\x00\x00\x00\x84\x00\x01\x07\x00\x82\x00\x01\x07\x00\x27\x00\x8A\x00\x01\x07\x00\x82\x00\x00'
+L96:    goto L102
+L99:    athrow
+L100:   astore_2
+L101:   aload_1
+L102:   invokevirtual Method java/lang/Throwable printStackTrace ()V
+        .catch java/lang/Throwable from L105 to L117 using L120
+        .catch [0] from L3 to L84 using L138
+        .catch [0] from L91 to L99 using L138
+        .catch [0] from L100 to L132 using L138
+L105:   new sD
+L108:   dup
+L109:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
+L112:   aload_1
+L113:   invokespecial Method sD <init> (LFE;Ljava/lang/Throwable;)V
+L116:   pop
+L117:   goto L132
+L120:   astore_2
+L121:   aload_2
+L122:   invokevirtual Method java/lang/Throwable printStackTrace ()V
+L125:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
+L128:   aload_1
+L129:   invokestatic Method sD method335 (LFE;Ljava/lang/Throwable;)V
+L132:   invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
+L135:   goto L144
+        .catch [0] from L138 to L139 using L138
+L138:   astore_3
+L139:   invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
+L142:   aload_3
+L143:   athrow
+L144:   invokestatic Method ib method1152 ()V
+L147:   return
+L148:   
+        .attribute StackMap b'\x00\x0A\x00\x51\x00\x01\x07\x00\xA4\x00\x00\x00\x5A\x00\x00\x00\x01\x07\x00\x29\x00\x5B\x00\x01\x07\x00\xA4\x00\x01\x07\x00\x29\x00\x63\x00\x00\x00\x01\x07\x00\x29\x00\x64\x00\x02\x07\x00\xA4\x07\x00\x29\x00\x01\x07\x00\x29\x00\x66\x00\x02\x07\x00\xA4\x07\x00\x29\x00\x01\x07\x00\x29\x00\x78\x00\x02\x07\x00\xA4\x07\x00\x29\x00\x01\x07\x00\x29\x00\x84\x00\x02\x07\x00\xA4\x07\x00\x29\x00\x00\x00\x8A\x00\x01\x07\x00\xA4\x00\x01\x07\x00\x29\x00\x90\x00\x01\x07\x00\xA4\x00\x00'
     .end code
     .exceptions java/lang/Exception
     .runtime visible annotations
@@ -168,6 +171,9 @@ L142:
         .end annotation
         .annotation Lme/coley/recaf/metadata/InsnComment;
             At_12 = string "save backgroundcolor Blue value onto a field to read it later from FE"
+        .end annotation
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_14 = string "save enable_enemy_sounds value onto a field to read it later from od"
         .end annotation
     .end runtime
 .end method
@@ -402,7 +408,7 @@ L394:   checkcast md
 L397:   invokevirtual Method md method864 ()V
 L400:   return
 L401:   
-        .attribute StackMap b'\x00\x0D\x00\x1C\x00\x00\x00\x00\x00\x62\x00\x00\x00\x01\x07\x00\x27\x00\x63\x00\x00\x00\x01\x07\x00\x1C\x00\x68\x00\x01\x07\x00\x04\x00\x00\x00\x6D\x00\x00\x00\x00\x00\xA9\x00\x00\x00\x01\x07\x00\x27\x00\xAA\x00\x00\x00\x01\x07\x00\xBE\x00\xB2\x00\x00\x00\x00\x00\xE6\x00\x01\x07\x01\x27\x00\x00\x01\x11\x00\x01\x07\x01\x27\x00\x00\x01\x19\x00\x02\x07\x01\x27\x07\x01\x3A\x00\x00\x01\x61\x00\x04\x07\x01\x27\x07\x01\x3A\x07\x01\x47\x07\x01\x4A\x00\x00\x01\x6F\x00\x04\x07\x01\x27\x07\x01\x3A\x07\x01\x47\x07\x01\x4A\x00\x00'
+        .attribute StackMap b'\x00\x0D\x00\x1C\x00\x00\x00\x00\x00\x62\x00\x00\x00\x01\x07\x00\x29\x00\x63\x00\x00\x00\x01\x07\x00\x1E\x00\x68\x00\x01\x07\x00\x04\x00\x00\x00\x6D\x00\x00\x00\x00\x00\xA9\x00\x00\x00\x01\x07\x00\x29\x00\xAA\x00\x00\x00\x01\x07\x00\xC9\x00\xB2\x00\x00\x00\x00\x00\xE6\x00\x01\x07\x01\x32\x00\x00\x01\x11\x00\x01\x07\x01\x32\x00\x00\x01\x19\x00\x02\x07\x01\x32\x07\x01\x72\x00\x00\x01\x61\x00\x04\x07\x01\x32\x07\x01\x72\x07\x01\x50\x07\x01\x53\x00\x00\x01\x6F\x00\x04\x07\x01\x32\x07\x01\x72\x07\x01\x50\x07\x01\x53\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method
