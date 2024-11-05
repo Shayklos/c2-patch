@@ -12,7 +12,7 @@ display_help() {
     echo "Options:"
     echo "  --repackjar               Repack the cultris2 JAR file"
     echo "  --regenerate-jasm-files   Regenerate jasm files (.j)"
-    echo "  --create-binary           Create binary"
+    echo "  --create-binary-folder    Create binary"
     echo "  --help                    show help"
     exit 1
 }

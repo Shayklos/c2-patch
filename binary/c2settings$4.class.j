@@ -1,4 +1,4 @@
-.version 55 0
+.version 61 0
 .class super c2settings$4
 .super java/lang/Object
 .implements javax/swing/event/ChangeListener
@@ -20,10 +20,8 @@ L15:
         .linenumbertable
             L0 68
         .end linenumbertable
-        .localvariabletable
-            0 is this Lc2settings$4; from L0 to L15
-        .end localvariabletable
     .end code
+    .signature ()V
 .end method
 
 .method public stateChanged : (Ljavax/swing/event/ChangeEvent;)V
@@ -33,7 +31,7 @@ L1:     getfield Field c2settings$4 val$hzLabel Ljavax/swing/JLabel;
 L4:     aload_0
 L5:     getfield Field c2settings$4 val$hzSlider Ljavax/swing/JSlider;
 L8:     invokevirtual Method javax/swing/JSlider getValue ()I
-L11:    invokedynamic [_5]
+L11:    invokedynamic [_23]
 L16:    invokevirtual Method javax/swing/JLabel setText (Ljava/lang/String;)V
 L19:    return
 L20:    
@@ -41,19 +39,15 @@ L20:
             L0 71
             L19 72
         .end linenumbertable
-        .localvariabletable
-            0 is this Lc2settings$4; from L0 to L20
-            1 is e Ljavax/swing/event/ChangeEvent; from L0 to L20
-        .end localvariabletable
     .end code
 .end method
 .sourcefile "c2settings.java"
-.enclosing method c2settings lambda$main$0 ()V
+.enclosing method c2settings main ([Ljava/lang/String;)V
 .nesthost c2settings
+.bootstrapmethods
 .innerclasses
     c2settings$4 [0] [0]
     java/lang/invoke/MethodHandles$Lookup java/lang/invoke/MethodHandles Lookup public static final
 .end innerclasses
-.bootstrapmethods
-.const [_5] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Hz: \u0001" : makeConcatWithConstants (I)Ljava/lang/String;
+.const [_23] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Hz: \u0001" : makeConcatWithConstants (I)Ljava/lang/String;
 .end class

@@ -1,10 +1,11 @@
-.version 55 0
+.version 61 0
 .class public super c2settings
 .super java/lang/Object
 .field private static final SETTINGS_FOLDER Ljava/lang/String; = "settings/"
 .field private static final ANIMATION_TOGGLE_FILE Ljava/lang/String; = "settings/fe-animtoggle.txt"
 .field private static final BLUR_TOGGLE_FILE Ljava/lang/String; = "settings/FE-blurtoggle.txt"
 .field private static final SOUND_EFFECTS_LIST_FILE Ljava/lang/String; = "settings/UE-oggfiles.txt"
+.field private static final ENEMY_SOUND_TOGGLE_FILE Ljava/lang/String; = "settings/od-enable-enemy-sounds.txt"
 .field private static final SOUND_EFFECT_FILENAMES [Ljava/lang/String;
 
 .method public <init> : ()V
@@ -16,25 +17,19 @@ L5:
         .linenumbertable
             L0 12
         .end linenumbertable
-        .localvariabletable
-            0 is this Lc2settings; from L0 to L5
-        .end localvariabletable
     .end code
 .end method
 
 .method public static main : ([Ljava/lang/String;)V
     .code stack 1 locals 1
-L0:     invokedynamic [_3]
+L0:     invokedynamic [_9]
 L5:     invokestatic Method javax/swing/SwingUtilities invokeLater (Ljava/lang/Runnable;)V
 L8:     return
 L9:     
         .linenumbertable
-            L0 23
-            L8 154
+            L0 27
+            L8 126
         .end linenumbertable
-        .localvariabletable
-            0 is args [Ljava/lang/String; from L0 to L9
-        .end localvariabletable
     .end code
 .end method
 
@@ -44,43 +39,40 @@ L0:     aload_0
 L1:     areturn
 L2:     
         .linenumbertable
-            L0 157
+            L0 129
         .end linenumbertable
-        .localvariabletable
-            0 is filename Ljava/lang/String; from L0 to L2
-        .end localvariabletable
     .end code
 .end method
 
-.method private static loadSoundEffectStates : ([Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;Ljavax/swing/JSlider;Ljavax/swing/JSlider;)V
-    .code stack 3 locals 10
-        .catch java/io/IOException from L0 to L192 using L195
+.method private static loadSoundEffectStates : ([Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;Ljavax/swing/JSlider;Ljavax/swing/JSlider;)V
+    .code stack 3 locals 11
+        .catch java/io/IOException from L0 to L224 using L227
 L0:     new java/io/File
 L3:     dup
 L4:     ldc "settings/UE-oggfiles.txt"
 L6:     invokespecial Method java/io/File <init> (Ljava/lang/String;)V
-L9:     astore 5
-L11:    aload 5
+L9:     astore 6
+L11:    aload 6
 L13:    invokevirtual Method java/io/File exists ()Z
 L16:    ifeq L111
-L19:    aload 5
+L19:    aload 6
 L21:    invokevirtual Method java/io/File toPath ()Ljava/nio/file/Path;
 L24:    invokestatic Method java/nio/file/Files readAllLines (Ljava/nio/file/Path;)Ljava/util/List;
-L27:    astore 6
+L27:    astore 7
 L29:    iconst_0
-L30:    istore 7
+L30:    istore 8
 
         .stack append Object java/io/File Object java/util/List Integer
-L32:    iload 7
-L34:    aload 6
+L32:    iload 8
+L34:    aload 7
 L36:    invokeinterface InterfaceMethod java/util/List size ()I 1
 L41:    if_icmpge L111
-L44:    aload 6
-L46:    iload 7
+L44:    aload 7
+L46:    iload 8
 L48:    invokeinterface InterfaceMethod java/util/List get (I)Ljava/lang/Object; 2
 L53:    checkcast java/lang/String
-L56:    astore 8
-L58:    aload 8
+L56:    astore 9
+L58:    aload 9
 L60:    ldc "disabled_"
 L62:    invokevirtual Method java/lang/String startsWith (Ljava/lang/String;)Z
 L65:    ifne L72
@@ -91,146 +83,154 @@ L69:    goto L73
 L72:    iconst_0
 
         .stack stack_1 Integer
-L73:    istore 9
+L73:    istore 10
 L75:    aload_0
-L76:    iload 7
+L76:    iload 8
 L78:    aaload
-L79:    iload 9
+L79:    iload 10
 L81:    invokevirtual Method javax/swing/JToggleButton setSelected (Z)V
 L84:    aload_0
-L85:    iload 7
+L85:    iload 8
 L87:    aaload
-L88:    iload 9
+L88:    iload 10
 L90:    ifeq L99
 L93:    getstatic Field java/awt/Color BLACK Ljava/awt/Color;
 L96:    goto L102
 
         .stack full
-            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File Object java/util/List Integer Object java/lang/String Integer
+            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File Object java/util/List Integer Object java/lang/String Integer
             stack Object javax/swing/JToggleButton
         .end stack
 L99:    getstatic Field java/awt/Color RED Ljava/awt/Color;
 
         .stack full
-            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File Object java/util/List Integer Object java/lang/String Integer
+            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File Object java/util/List Integer Object java/lang/String Integer
             stack Object javax/swing/JToggleButton Object java/awt/Color
         .end stack
 L102:   invokevirtual Method javax/swing/JToggleButton setForeground (Ljava/awt/Color;)V
-L105:   iinc 7 1
+L105:   iinc 8 1
 L108:   goto L32
 
         .stack full
-            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File
+            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File
             stack
         .end stack
 L111:   ldc "settings/fe-animtoggle.txt"
 L113:   invokestatic Method c2settings readToggleFromFile (Ljava/lang/String;)Z
-L116:   istore 6
+L116:   istore 7
 L118:   aload_1
-L119:   iload 6
+L119:   iload 7
 L121:   invokevirtual Method javax/swing/JToggleButton setSelected (Z)V
 L124:   aload_1
-L125:   iload 6
+L125:   iload 7
 L127:   ifeq L136
 L130:   getstatic Field java/awt/Color BLACK Ljava/awt/Color;
 L133:   goto L139
 
         .stack full
-            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File Integer
+            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File Integer
             stack Object javax/swing/JToggleButton
         .end stack
 L136:   getstatic Field java/awt/Color RED Ljava/awt/Color;
 
         .stack full
-            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File Integer
+            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File Integer
             stack Object javax/swing/JToggleButton Object java/awt/Color
         .end stack
 L139:   invokevirtual Method javax/swing/JToggleButton setForeground (Ljava/awt/Color;)V
 L142:   ldc "settings/FE-blurtoggle.txt"
 L144:   invokestatic Method c2settings readToggleFromFile (Ljava/lang/String;)Z
-L147:   istore 7
+L147:   istore 8
 L149:   aload_2
-L150:   iload 7
+L150:   iload 8
 L152:   invokevirtual Method javax/swing/JToggleButton setSelected (Z)V
 L155:   aload_2
-L156:   iload 7
+L156:   iload 8
 L158:   ifeq L167
 L161:   getstatic Field java/awt/Color BLACK Ljava/awt/Color;
 L164:   goto L170
 
         .stack full
-            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File Integer Integer
+            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File Integer Integer
             stack Object javax/swing/JToggleButton
         .end stack
 L167:   getstatic Field java/awt/Color RED Ljava/awt/Color;
 
         .stack full
-            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File Integer Integer
+            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File Integer Integer
             stack Object javax/swing/JToggleButton Object java/awt/Color
         .end stack
 L170:   invokevirtual Method javax/swing/JToggleButton setForeground (Ljava/awt/Color;)V
-L173:   aload_3
-L174:   ldc "fps"
-L176:   invokestatic Method c2settings readSliderValueFromFile (Ljava/lang/String;)I
-L179:   invokevirtual Method javax/swing/JSlider setValue (I)V
-L182:   aload 4
-L184:   ldc "hz"
-L186:   invokestatic Method c2settings readSliderValueFromFile (Ljava/lang/String;)I
-L189:   invokevirtual Method javax/swing/JSlider setValue (I)V
-L192:   goto L202
+L173:   ldc "settings/od-enable-enemy-sounds.txt"
+L175:   invokestatic Method c2settings readToggleFromFile (Ljava/lang/String;)Z
+L178:   istore 9
+L180:   aload_3
+L181:   iload 9
+L183:   invokevirtual Method javax/swing/JToggleButton setSelected (Z)V
+L186:   aload_3
+L187:   iload 9
+L189:   ifeq L198
+L192:   getstatic Field java/awt/Color BLACK Ljava/awt/Color;
+L195:   goto L201
 
         .stack full
-            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider
+            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File Integer Integer Integer
+            stack Object javax/swing/JToggleButton
+        .end stack
+L198:   getstatic Field java/awt/Color RED Ljava/awt/Color;
+
+        .stack full
+            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider Object java/io/File Integer Integer Integer
+            stack Object javax/swing/JToggleButton Object java/awt/Color
+        .end stack
+L201:   invokevirtual Method javax/swing/JToggleButton setForeground (Ljava/awt/Color;)V
+L204:   aload 4
+L206:   ldc "fps"
+L208:   invokestatic Method c2settings readSliderValueFromFile (Ljava/lang/String;)I
+L211:   invokevirtual Method javax/swing/JSlider setValue (I)V
+L214:   aload 5
+L216:   ldc "hz"
+L218:   invokestatic Method c2settings readSliderValueFromFile (Ljava/lang/String;)I
+L221:   invokevirtual Method javax/swing/JSlider setValue (I)V
+L224:   goto L234
+
+        .stack full
+            locals Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JSlider
             stack Object java/io/IOException
         .end stack
-L195:   astore 5
-L197:   aload 5
-L199:   invokevirtual Method java/io/IOException printStackTrace ()V
+L227:   astore 6
+L229:   aload 6
+L231:   invokevirtual Method java/io/IOException printStackTrace ()V
 
         .stack same
-L202:   return
-L203:   
+L234:   return
+L235:   
         .linenumbertable
-            L0 162
-            L11 163
-            L19 164
-            L29 165
-            L44 166
-            L58 167
-            L75 168
-            L84 169
-            L105 165
-            L111 174
-            L118 175
-            L124 176
-            L142 178
-            L149 179
-            L155 180
-            L173 183
-            L182 184
-            L192 188
-            L195 186
-            L197 187
-            L202 189
+            L0 134
+            L11 135
+            L19 136
+            L29 137
+            L44 138
+            L58 139
+            L75 140
+            L84 141
+            L105 137
+            L111 146
+            L118 147
+            L124 148
+            L142 150
+            L149 151
+            L155 152
+            L173 155
+            L180 156
+            L186 157
+            L204 160
+            L214 161
+            L224 165
+            L227 163
+            L229 164
+            L234 166
         .end linenumbertable
-        .localvariabletable
-            8 is line Ljava/lang/String; from L58 to L105
-            9 is isEnabled Z from L75 to L105
-            7 is i I from L32 to L111
-            6 is lines Ljava/util/List; from L29 to L111
-            5 is listFile Ljava/io/File; from L11 to L192
-            6 is isAnimationOn Z from L118 to L192
-            7 is isBlurOn Z from L149 to L192
-            5 is e Ljava/io/IOException; from L197 to L202
-            0 is toggleSoundEffects [Ljavax/swing/JToggleButton; from L0 to L203
-            1 is toggleAnimation Ljavax/swing/JToggleButton; from L0 to L203
-            2 is toggleBlur Ljavax/swing/JToggleButton; from L0 to L203
-            3 is fpsSlider Ljavax/swing/JSlider; from L0 to L203
-            4 is hzSlider Ljavax/swing/JSlider; from L0 to L203
-        .end localvariabletable
-        .localvariabletypetable
-            6 is lines Ljava/util/List<Ljava/lang/String;>; from L29 to L111
-        .end localvariabletypetable
     .end code
 .end method
 
@@ -276,24 +276,17 @@ L56:    iconst_0
 L57:    ireturn
 L58:    
         .linenumbertable
-            L0 194
-            L9 195
-            L16 196
-            L32 197
-            L37 198
-            L41 199
-            L48 203
-            L51 201
-            L52 202
-            L56 204
+            L0 170
+            L9 171
+            L16 172
+            L32 173
+            L37 174
+            L41 175
+            L48 179
+            L51 177
+            L52 178
+            L56 180
         .end linenumbertable
-        .localvariabletable
-            2 is reader Ljava/io/BufferedReader; from L32 to L48
-            3 is line Ljava/lang/String; from L37 to L48
-            1 is file Ljava/io/File; from L9 to L48
-            1 is e Ljava/io/IOException; from L52 to L56
-            0 is fileName Ljava/lang/String; from L0 to L58
-        .end localvariabletable
     .end code
 .end method
 
@@ -304,7 +297,7 @@ L58:
 L0:     new java/io/File
 L3:     dup
 L4:     aload_0
-L5:     invokedynamic [_37]
+L5:     invokedynamic [_128]
 L10:    invokespecial Method java/io/File <init> (Ljava/lang/String;)V
 L13:    astore_1
 L14:    aload_1
@@ -340,153 +333,136 @@ L59:    bipush 60
 L61:    ireturn
 L62:    
         .linenumbertable
-            L0 209
-            L14 210
-            L21 211
-            L37 212
-            L45 213
-            L49 214
-            L51 218
-            L54 216
-            L55 217
-            L59 219
+            L0 185
+            L14 186
+            L21 187
+            L37 188
+            L45 189
+            L49 190
+            L51 194
+            L54 192
+            L55 193
+            L59 195
         .end linenumbertable
-        .localvariabletable
-            2 is reader Ljava/io/BufferedReader; from L37 to L51
-            3 is value I from L45 to L51
-            1 is file Ljava/io/File; from L14 to L51
-            1 is e Ljava/lang/Exception; from L55 to L59
-            0 is sliderName Ljava/lang/String; from L0 to L62
-        .end localvariabletable
     .end code
 .end method
 
-.method private static saveSettings : (ZZ[Ljavax/swing/JToggleButton;Ljavax/swing/JSlider;Ljavax/swing/JSlider;)V
-    .code stack 3 locals 9
+.method private static saveSettings : (ZZ[Ljavax/swing/JToggleButton;ZLjavax/swing/JSlider;Ljavax/swing/JSlider;)V
+    .code stack 3 locals 10
 L0:     ldc "settings/fe-animtoggle.txt"
 L2:     iload_0
 L3:     invokestatic Method c2settings saveToggleToFile (Ljava/lang/String;Z)V
 L6:     ldc "settings/FE-blurtoggle.txt"
 L8:     iload_1
 L9:     invokestatic Method c2settings saveToggleToFile (Ljava/lang/String;Z)V
-L12:    new java/util/ArrayList
-L15:    dup
-L16:    invokespecial Method java/util/ArrayList <init> ()V
-L19:    astore 5
-L21:    iconst_0
-L22:    istore 6
+L12:    ldc "settings/od-enable-enemy-sounds.txt"
+L14:    iload_3
+L15:    invokestatic Method c2settings saveToggleToFile (Ljava/lang/String;Z)V
+L18:    new java/util/ArrayList
+L21:    dup
+L22:    invokespecial Method java/util/ArrayList <init> ()V
+L25:    astore 6
+L27:    iconst_0
+L28:    istore 7
 
         .stack append Object java/util/List Integer
-L24:    iload 6
-L26:    aload_2
-L27:    arraylength
-L28:    if_icmpge L129
-L31:    getstatic Field c2settings SOUND_EFFECT_FILENAMES [Ljava/lang/String;
-L34:    iload 6
-L36:    aaload
-L37:    astore 7
-L39:    aload_2
-L40:    iload 6
+L30:    iload 7
+L32:    aload_2
+L33:    arraylength
+L34:    if_icmpge L135
+L37:    getstatic Field c2settings SOUND_EFFECT_FILENAMES [Ljava/lang/String;
+L40:    iload 7
 L42:    aaload
-L43:    invokevirtual Method javax/swing/JToggleButton isSelected ()Z
-L46:    istore 8
-L48:    iload 8
-L50:    ifne L90
-L53:    aload 7
-L55:    ldc "disabled_"
-L57:    invokevirtual Method java/lang/String startsWith (Ljava/lang/String;)Z
-L60:    ifeq L68
-L63:    aload 7
-L65:    goto L75
+L43:    astore 8
+L45:    aload_2
+L46:    iload 7
+L48:    aaload
+L49:    invokevirtual Method javax/swing/JToggleButton isSelected ()Z
+L52:    istore 9
+L54:    iload 9
+L56:    ifne L96
+L59:    aload 8
+L61:    ldc "disabled_"
+L63:    invokevirtual Method java/lang/String startsWith (Ljava/lang/String;)Z
+L66:    ifeq L74
+L69:    aload 8
+L71:    goto L81
 
         .stack append Object java/lang/String Integer
-L68:    aload 7
-L70:    invokedynamic [_46]
+L74:    aload 8
+L76:    invokedynamic [_156]
 
         .stack stack_1 Object java/lang/String
-L75:    astore 7
-L77:    aload_2
-L78:    iload 6
-L80:    aaload
-L81:    getstatic Field java/awt/Color RED Ljava/awt/Color;
-L84:    invokevirtual Method javax/swing/JToggleButton setForeground (Ljava/awt/Color;)V
-L87:    goto L113
+L81:    astore 8
+L83:    aload_2
+L84:    iload 7
+L86:    aaload
+L87:    getstatic Field java/awt/Color RED Ljava/awt/Color;
+L90:    invokevirtual Method javax/swing/JToggleButton setForeground (Ljava/awt/Color;)V
+L93:    goto L119
 
         .stack same
-L90:    aload 7
-L92:    ldc "disabled_"
-L94:    ldc ""
-L96:    invokevirtual Method java/lang/String replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-L99:    astore 7
-L101:   aload_2
-L102:   iload 6
-L104:   aaload
-L105:   ldc "Button.foreground"
-L107:   invokestatic Method javax/swing/UIManager getColor (Ljava/lang/Object;)Ljava/awt/Color;
-L110:   invokevirtual Method javax/swing/JToggleButton setForeground (Ljava/awt/Color;)V
+L96:    aload 8
+L98:    ldc "disabled_"
+L100:   ldc ""
+L102:   invokevirtual Method java/lang/String replace (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+L105:   astore 8
+L107:   aload_2
+L108:   iload 7
+L110:   aaload
+L111:   ldc "Button.foreground"
+L113:   invokestatic Method javax/swing/UIManager getColor (Ljava/lang/Object;)Ljava/awt/Color;
+L116:   invokevirtual Method javax/swing/JToggleButton setForeground (Ljava/awt/Color;)V
 
         .stack same
-L113:   aload 5
-L115:   aload 7
-L117:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
-L122:   pop
-L123:   iinc 6 1
-L126:   goto L24
+L119:   aload 6
+L121:   aload 8
+L123:   invokeinterface InterfaceMethod java/util/List add (Ljava/lang/Object;)Z 2
+L128:   pop
+L129:   iinc 7 1
+L132:   goto L30
 
         .stack chop 3
-L129:   new java/io/File
-L132:   dup
-L133:   ldc "settings/UE-oggfiles.txt"
-L135:   invokespecial Method java/io/File <init> (Ljava/lang/String;)V
-L138:   invokevirtual Method java/io/File toPath ()Ljava/nio/file/Path;
-L141:   aload 5
-L143:   iconst_0
-L144:   anewarray java/nio/file/OpenOption
-L147:   invokestatic Method java/nio/file/Files write (Ljava/nio/file/Path;Ljava/lang/Iterable;[Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;
-L150:   pop
-L151:   ldc "fps"
-L153:   aload_3
-L154:   invokevirtual Method javax/swing/JSlider getValue ()I
-L157:   invokestatic Method c2settings saveSliderValueToFile (Ljava/lang/String;I)V
-L160:   ldc "hz"
-L162:   aload 4
-L164:   invokevirtual Method javax/swing/JSlider getValue ()I
-L167:   invokestatic Method c2settings saveSliderValueToFile (Ljava/lang/String;I)V
-L170:   return
-L171:   
+L135:   new java/io/File
+L138:   dup
+L139:   ldc "settings/UE-oggfiles.txt"
+L141:   invokespecial Method java/io/File <init> (Ljava/lang/String;)V
+L144:   invokevirtual Method java/io/File toPath ()Ljava/nio/file/Path;
+L147:   aload 6
+L149:   iconst_0
+L150:   anewarray java/nio/file/OpenOption
+L153:   invokestatic Method java/nio/file/Files write (Ljava/nio/file/Path;Ljava/lang/Iterable;[Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;
+L156:   pop
+L157:   ldc "fps"
+L159:   aload 4
+L161:   invokevirtual Method javax/swing/JSlider getValue ()I
+L164:   invokestatic Method c2settings saveSliderValueToFile (Ljava/lang/String;I)V
+L167:   ldc "hz"
+L169:   aload 5
+L171:   invokevirtual Method javax/swing/JSlider getValue ()I
+L174:   invokestatic Method c2settings saveSliderValueToFile (Ljava/lang/String;I)V
+L177:   return
+L178:   
         .linenumbertable
-            L0 224
-            L6 225
-            L12 227
-            L21 228
-            L31 229
-            L39 230
-            L48 232
-            L53 233
-            L77 234
-            L90 236
-            L101 237
-            L113 240
-            L123 228
-            L129 243
-            L151 246
-            L160 247
-            L170 248
+            L0 199
+            L6 200
+            L12 201
+            L18 203
+            L27 204
+            L37 205
+            L45 206
+            L54 208
+            L59 209
+            L83 210
+            L96 212
+            L107 213
+            L119 216
+            L129 204
+            L135 219
+            L157 222
+            L167 223
+            L177 224
         .end linenumbertable
-        .localvariabletable
-            7 is filename Ljava/lang/String; from L39 to L123
-            8 is isEnabled Z from L48 to L123
-            6 is i I from L24 to L129
-            0 is toggleAnimation Z from L0 to L171
-            1 is toggleBlur Z from L0 to L171
-            2 is toggleSoundEffects [Ljavax/swing/JToggleButton; from L0 to L171
-            3 is fpsSlider Ljavax/swing/JSlider; from L0 to L171
-            4 is hzSlider Ljavax/swing/JSlider; from L0 to L171
-            5 is soundEffectLines Ljava/util/List; from L21 to L171
-        .end localvariabletable
-        .localvariabletypetable
-            5 is soundEffectLines Ljava/util/List<Ljava/lang/String;>; from L21 to L171
-        .end localvariabletypetable
     .end code
     .exceptions java/io/IOException
 .end method
@@ -543,22 +519,16 @@ L64:    invokevirtual Method java/io/FileWriter close ()V
 L67:    return
 L68:    
         .linenumbertable
-            L0 250
-            L9 251
-            L16 252
-            L26 253
-            L34 255
-            L39 258
-            L48 259
-            L63 260
-            L67 261
+            L0 227
+            L9 228
+            L16 229
+            L26 230
+            L34 232
+            L39 235
+            L48 236
+            L63 237
+            L67 238
         .end linenumbertable
-        .localvariabletable
-            0 is fileName Ljava/lang/String; from L0 to L68
-            1 is value Z from L0 to L68
-            2 is file Ljava/io/File; from L9 to L68
-            3 is writer Ljava/io/FileWriter; from L48 to L68
-        .end localvariabletable
     .end code
     .exceptions java/io/IOException
 .end method
@@ -568,7 +538,7 @@ L68:
 L0:     new java/io/File
 L3:     dup
 L4:     aload_0
-L5:     invokedynamic [_37]
+L5:     invokedynamic [_128]
 L10:    invokespecial Method java/io/File <init> (Ljava/lang/String;)V
 L13:    astore_2
 L14:    aload_2
@@ -603,28 +573,22 @@ L62:    invokevirtual Method java/io/FileWriter close ()V
 L65:    return
 L66:    
         .linenumbertable
-            L0 264
-            L14 265
-            L21 266
-            L31 267
-            L39 269
-            L44 272
-            L53 273
-            L61 274
-            L65 275
+            L0 241
+            L14 242
+            L21 243
+            L31 244
+            L39 246
+            L44 249
+            L53 250
+            L61 251
+            L65 252
         .end linenumbertable
-        .localvariabletable
-            0 is sliderName Ljava/lang/String; from L0 to L66
-            1 is value I from L0 to L66
-            2 is file Ljava/io/File; from L14 to L66
-            3 is writer Ljava/io/FileWriter; from L53 to L66
-        .end localvariabletable
     .end code
     .exceptions java/io/IOException
 .end method
 
-.method private static synthetic lambda$main$0 : ()V
-    .code stack 9 locals 21
+.method private static synthetic lambda$main$4 : ()V
+    .code stack 8 locals 22
 L0:     new javax/swing/JFrame
 L3:     dup
 L4:     ldc "C2 Settings"
@@ -669,371 +633,455 @@ L82:    new javax/swing/JLabel
 L85:    dup
 L86:    aload 4
 L88:    invokevirtual Method javax/swing/JSlider getValue ()I
-L91:    invokedynamic [_82]
+L91:    invokedynamic [_242]
 L96:    invokespecial Method javax/swing/JLabel <init> (Ljava/lang/String;)V
 L99:    astore 5
 L101:   aload 4
-L103:   new c2settings$1
-L106:   dup
-L107:   aload 5
-L109:   aload 4
-L111:   invokespecial Method c2settings$1 <init> (Ljavax/swing/JLabel;Ljavax/swing/JSlider;)V
-L114:   invokevirtual Method javax/swing/JSlider addChangeListener (Ljavax/swing/event/ChangeListener;)V
-L117:   new javax/swing/JSlider
-L120:   dup
-L121:   bipush 60
-L123:   sipush 1000
-L126:   bipush 60
-L128:   invokespecial Method javax/swing/JSlider <init> (III)V
-L131:   astore 6
-L133:   new javax/swing/JLabel
-L136:   dup
-L137:   aload 6
-L139:   invokevirtual Method javax/swing/JSlider getValue ()I
-L142:   invokedynamic [_87]
-L147:   invokespecial Method javax/swing/JLabel <init> (Ljava/lang/String;)V
-L150:   astore 7
-L152:   aload 6
-L154:   new c2settings$2
-L157:   dup
-L158:   aload 7
-L160:   aload 6
-L162:   invokespecial Method c2settings$2 <init> (Ljavax/swing/JLabel;Ljavax/swing/JSlider;)V
-L165:   invokevirtual Method javax/swing/JSlider addChangeListener (Ljavax/swing/event/ChangeListener;)V
-L168:   iconst_0
-L169:   istore 8
-L171:   new java/awt/Font
-L174:   dup
-L175:   ldc "Arial"
-L177:   iconst_0
-L178:   iload 8
-L180:   bipush 24
-L182:   iadd
-L183:   invokespecial Method java/awt/Font <init> (Ljava/lang/String;II)V
-L186:   astore 9
-L188:   aload 5
-L190:   aload 9
-L192:   invokevirtual Method javax/swing/JLabel setFont (Ljava/awt/Font;)V
-L195:   aload 4
-L197:   new c2settings$3
-L200:   dup
-L201:   aload 5
-L203:   aload 4
-L205:   invokespecial Method c2settings$3 <init> (Ljavax/swing/JLabel;Ljavax/swing/JSlider;)V
-L208:   invokevirtual Method javax/swing/JSlider addChangeListener (Ljavax/swing/event/ChangeListener;)V
-L211:   aload 7
-L213:   aload 9
-L215:   invokevirtual Method javax/swing/JLabel setFont (Ljava/awt/Font;)V
-L218:   aload 6
-L220:   new c2settings$4
-L223:   dup
-L224:   aload 7
-L226:   aload 6
-L228:   invokespecial Method c2settings$4 <init> (Ljavax/swing/JLabel;Ljavax/swing/JSlider;)V
-L231:   invokevirtual Method javax/swing/JSlider addChangeListener (Ljavax/swing/event/ChangeListener;)V
-L234:   getstatic Field c2settings SOUND_EFFECT_FILENAMES [Ljava/lang/String;
-L237:   arraylength
-L238:   anewarray javax/swing/JToggleButton
-L241:   astore 10
-L243:   iconst_0
-L244:   istore 11
+L103:   aload 5
+L105:   aload 4
+L107:   invokedynamic [_245]
+L112:   invokevirtual Method javax/swing/JSlider addChangeListener (Ljavax/swing/event/ChangeListener;)V
+L115:   new javax/swing/JSlider
+L118:   dup
+L119:   bipush 60
+L121:   sipush 1000
+L124:   bipush 60
+L126:   invokespecial Method javax/swing/JSlider <init> (III)V
+L129:   astore 6
+L131:   new javax/swing/JLabel
+L134:   dup
+L135:   aload 6
+L137:   invokevirtual Method javax/swing/JSlider getValue ()I
+L140:   invokedynamic [_253]
+L145:   invokespecial Method javax/swing/JLabel <init> (Ljava/lang/String;)V
+L148:   astore 7
+L150:   aload 6
+L152:   aload 7
+L154:   aload 6
+L156:   invokedynamic [_254]
+L161:   invokevirtual Method javax/swing/JSlider addChangeListener (Ljavax/swing/event/ChangeListener;)V
+L164:   iconst_0
+L165:   istore 8
+L167:   new java/awt/Font
+L170:   dup
+L171:   ldc_w "Arial"
+L174:   iconst_0
+L175:   iload 8
+L177:   bipush 24
+L179:   iadd
+L180:   invokespecial Method java/awt/Font <init> (Ljava/lang/String;II)V
+L183:   astore 9
+L185:   aload 5
+L187:   aload 9
+L189:   invokevirtual Method javax/swing/JLabel setFont (Ljava/awt/Font;)V
+L192:   aload 7
+L194:   aload 9
+L196:   invokevirtual Method javax/swing/JLabel setFont (Ljava/awt/Font;)V
+L199:   getstatic Field c2settings SOUND_EFFECT_FILENAMES [Ljava/lang/String;
+L202:   arraylength
+L203:   anewarray javax/swing/JToggleButton
+L206:   astore 10
+L208:   iconst_0
+L209:   istore 11
 
         .stack full
             locals Object javax/swing/JFrame Object javax/swing/JPanel Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JLabel Object javax/swing/JSlider Object javax/swing/JLabel Integer Object java/awt/Font Object [Ljavax/swing/JToggleButton; Integer
             stack
         .end stack
-L246:   iload 11
-L248:   getstatic Field c2settings SOUND_EFFECT_FILENAMES [Ljava/lang/String;
-L251:   arraylength
-L252:   if_icmpge L296
-L255:   getstatic Field c2settings SOUND_EFFECT_FILENAMES [Ljava/lang/String;
-L258:   iload 11
-L260:   aaload
-L261:   astore 12
-L263:   aload 10
-L265:   iload 11
-L267:   new javax/swing/JToggleButton
-L270:   dup
-L271:   aload 12
-L273:   invokestatic Method c2settings getSoundEffectLabel (Ljava/lang/String;)Ljava/lang/String;
-L276:   invokespecial Method javax/swing/JToggleButton <init> (Ljava/lang/String;)V
-L279:   aastore
-L280:   aload_1
-L281:   aload 10
-L283:   iload 11
-L285:   aaload
-L286:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
-L289:   pop
-L290:   iinc 11 1
-L293:   goto L246
+L211:   iload 11
+L213:   getstatic Field c2settings SOUND_EFFECT_FILENAMES [Ljava/lang/String;
+L216:   arraylength
+L217:   if_icmpge L261
+L220:   getstatic Field c2settings SOUND_EFFECT_FILENAMES [Ljava/lang/String;
+L223:   iload 11
+L225:   aaload
+L226:   astore 12
+L228:   aload 10
+L230:   iload 11
+L232:   new javax/swing/JToggleButton
+L235:   dup
+L236:   aload 12
+L238:   invokestatic Method c2settings getSoundEffectLabel (Ljava/lang/String;)Ljava/lang/String;
+L241:   invokespecial Method javax/swing/JToggleButton <init> (Ljava/lang/String;)V
+L244:   aastore
+L245:   aload_1
+L246:   aload 10
+L248:   iload 11
+L250:   aaload
+L251:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L254:   pop
+L255:   iinc 11 1
+L258:   goto L211
 
         .stack chop 1
-L296:   new javax/swing/JLabel
-L299:   dup
-L300:   ldc "No changes yet."
-L302:   invokespecial Method javax/swing/JLabel <init> (Ljava/lang/String;)V
-L305:   astore 11
-L307:   new c2settings$5
-L310:   dup
-L311:   aload 11
-L313:   invokespecial Method c2settings$5 <init> (Ljavax/swing/JLabel;)V
-L316:   astore 12
-L318:   aload_2
-L319:   aload 12
-L321:   invokevirtual Method javax/swing/JToggleButton addActionListener (Ljava/awt/event/ActionListener;)V
-L324:   aload_3
-L325:   aload 12
-L327:   invokevirtual Method javax/swing/JToggleButton addActionListener (Ljava/awt/event/ActionListener;)V
-L330:   aload 10
-L332:   astore 13
-L334:   aload 13
-L336:   arraylength
-L337:   istore 14
-L339:   iconst_0
-L340:   istore 15
+L261:   new javax/swing/JToggleButton
+L264:   dup
+L265:   ldc_w "Toggle Enemy Sound"
+L268:   invokespecial Method javax/swing/JToggleButton <init> (Ljava/lang/String;)V
+L271:   astore 11
+L273:   aload_1
+L274:   aload 11
+L276:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L279:   pop
+L280:   new javax/swing/JLabel
+L283:   dup
+L284:   ldc_w "No changes yet."
+L287:   invokespecial Method javax/swing/JLabel <init> (Ljava/lang/String;)V
+L290:   astore 12
+L292:   aload 12
+L294:   invokedynamic [_276]
+L299:   astore 13
+L301:   aload_2
+L302:   aload 13
+L304:   invokevirtual Method javax/swing/JToggleButton addActionListener (Ljava/awt/event/ActionListener;)V
+L307:   aload_3
+L308:   aload 13
+L310:   invokevirtual Method javax/swing/JToggleButton addActionListener (Ljava/awt/event/ActionListener;)V
+L313:   aload 10
+L315:   astore 14
+L317:   aload 14
+L319:   arraylength
+L320:   istore 15
+L322:   iconst_0
+L323:   istore 16
 
         .stack full
-            locals Object javax/swing/JFrame Object javax/swing/JPanel Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JLabel Object javax/swing/JSlider Object javax/swing/JLabel Integer Object java/awt/Font Object [Ljavax/swing/JToggleButton; Object javax/swing/JLabel Object java/awt/event/ActionListener Object [Ljavax/swing/JToggleButton; Integer Integer
+            locals Object javax/swing/JFrame Object javax/swing/JPanel Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JLabel Object javax/swing/JSlider Object javax/swing/JLabel Integer Object java/awt/Font Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JLabel Object java/awt/event/ActionListener Object [Ljavax/swing/JToggleButton; Integer Integer
             stack
         .end stack
-L342:   iload 15
-L344:   iload 14
-L346:   if_icmpge L369
-L349:   aload 13
-L351:   iload 15
-L353:   aaload
-L354:   astore 16
-L356:   aload 16
-L358:   aload 12
-L360:   invokevirtual Method javax/swing/JToggleButton addActionListener (Ljava/awt/event/ActionListener;)V
-L363:   iinc 15 1
-L366:   goto L342
+L325:   iload 16
+L327:   iload 15
+L329:   if_icmpge L352
+L332:   aload 14
+L334:   iload 16
+L336:   aaload
+L337:   astore 17
+L339:   aload 17
+L341:   aload 13
+L343:   invokevirtual Method javax/swing/JToggleButton addActionListener (Ljava/awt/event/ActionListener;)V
+L346:   iinc 16 1
+L349:   goto L325
 
         .stack chop 3
-L369:   new javax/swing/JButton
-L372:   dup
-L373:   ldc "Save Changes"
-L375:   invokespecial Method javax/swing/JButton <init> (Ljava/lang/String;)V
-L378:   astore 13
-L380:   aload 13
-L382:   new c2settings$6
-L385:   dup
-L386:   aload_2
-L387:   aload_3
-L388:   aload 10
-L390:   aload 4
-L392:   aload 6
-L394:   aload 11
-L396:   invokespecial Method c2settings$6 <init> (Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;[Ljavax/swing/JToggleButton;Ljavax/swing/JSlider;Ljavax/swing/JSlider;Ljavax/swing/JLabel;)V
-L399:   invokevirtual Method javax/swing/JButton addActionListener (Ljava/awt/event/ActionListener;)V
-L402:   invokestatic Method java/awt/Toolkit getDefaultToolkit ()Ljava/awt/Toolkit;
-L405:   invokevirtual Method java/awt/Toolkit getScreenSize ()Ljava/awt/Dimension;
-L408:   astore 14
-L410:   aload 14
-L412:   getfield Field java/awt/Dimension width I
-L415:   istore 15
-L417:   iload 15
-L419:   bipush 60
-L421:   idiv
-L422:   istore 8
-L424:   new java/awt/Font
-L427:   dup
-L428:   ldc "Arial"
-L430:   iconst_0
-L431:   iload 8
-L433:   invokespecial Method java/awt/Font <init> (Ljava/lang/String;II)V
-L436:   astore 16
-L438:   aload_2
-L439:   aload 16
-L441:   invokevirtual Method javax/swing/JToggleButton setFont (Ljava/awt/Font;)V
-L444:   aload_3
-L445:   aload 16
-L447:   invokevirtual Method javax/swing/JToggleButton setFont (Ljava/awt/Font;)V
-L450:   aload 10
-L452:   astore 17
-L454:   aload 17
-L456:   arraylength
-L457:   istore 18
-L459:   iconst_0
-L460:   istore 19
+L352:   aload 11
+L354:   aload 13
+L356:   invokevirtual Method javax/swing/JToggleButton addActionListener (Ljava/awt/event/ActionListener;)V
+L359:   new javax/swing/JButton
+L362:   dup
+L363:   ldc_w "Save Changes"
+L366:   invokespecial Method javax/swing/JButton <init> (Ljava/lang/String;)V
+L369:   astore 14
+L371:   aload 14
+L373:   aload_2
+L374:   aload_3
+L375:   aload 10
+L377:   aload 11
+L379:   aload 4
+L381:   aload 6
+L383:   aload 12
+L385:   invokedynamic [_289]
+L390:   invokevirtual Method javax/swing/JButton addActionListener (Ljava/awt/event/ActionListener;)V
+L393:   invokestatic Method java/awt/Toolkit getDefaultToolkit ()Ljava/awt/Toolkit;
+L396:   invokevirtual Method java/awt/Toolkit getScreenSize ()Ljava/awt/Dimension;
+L399:   astore 15
+L401:   aload 15
+L403:   getfield Field java/awt/Dimension width I
+L406:   istore 16
+L408:   iload 16
+L410:   bipush 60
+L412:   idiv
+L413:   istore 8
+L415:   new java/awt/Font
+L418:   dup
+L419:   ldc_w "Arial"
+L422:   iconst_0
+L423:   iload 8
+L425:   invokespecial Method java/awt/Font <init> (Ljava/lang/String;II)V
+L428:   astore 17
+L430:   aload_2
+L431:   aload 17
+L433:   invokevirtual Method javax/swing/JToggleButton setFont (Ljava/awt/Font;)V
+L436:   aload_3
+L437:   aload 17
+L439:   invokevirtual Method javax/swing/JToggleButton setFont (Ljava/awt/Font;)V
+L442:   aload 11
+L444:   aload 17
+L446:   invokevirtual Method javax/swing/JToggleButton setFont (Ljava/awt/Font;)V
+L449:   aload 10
+L451:   astore 18
+L453:   aload 18
+L455:   arraylength
+L456:   istore 19
+L458:   iconst_0
+L459:   istore 20
 
         .stack full
-            locals Object javax/swing/JFrame Object javax/swing/JPanel Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JLabel Object javax/swing/JSlider Object javax/swing/JLabel Integer Object java/awt/Font Object [Ljavax/swing/JToggleButton; Object javax/swing/JLabel Object java/awt/event/ActionListener Object javax/swing/JButton Object java/awt/Dimension Integer Object java/awt/Font Object [Ljavax/swing/JToggleButton; Integer Integer
+            locals Object javax/swing/JFrame Object javax/swing/JPanel Object javax/swing/JToggleButton Object javax/swing/JToggleButton Object javax/swing/JSlider Object javax/swing/JLabel Object javax/swing/JSlider Object javax/swing/JLabel Integer Object java/awt/Font Object [Ljavax/swing/JToggleButton; Object javax/swing/JToggleButton Object javax/swing/JLabel Object java/awt/event/ActionListener Object javax/swing/JButton Object java/awt/Dimension Integer Object java/awt/Font Object [Ljavax/swing/JToggleButton; Integer Integer
             stack
         .end stack
-L462:   iload 19
-L464:   iload 18
-L466:   if_icmpge L489
-L469:   aload 17
-L471:   iload 19
-L473:   aaload
-L474:   astore 20
-L476:   aload 20
-L478:   aload 16
-L480:   invokevirtual Method javax/swing/JToggleButton setFont (Ljava/awt/Font;)V
-L483:   iinc 19 1
-L486:   goto L462
+L461:   iload 20
+L463:   iload 19
+L465:   if_icmpge L488
+L468:   aload 18
+L470:   iload 20
+L472:   aaload
+L473:   astore 21
+L475:   aload 21
+L477:   aload 17
+L479:   invokevirtual Method javax/swing/JToggleButton setFont (Ljava/awt/Font;)V
+L482:   iinc 20 1
+L485:   goto L461
 
         .stack chop 3
-L489:   aload 13
-L491:   aload 16
-L493:   invokevirtual Method javax/swing/JButton setFont (Ljava/awt/Font;)V
-L496:   aload 10
-L498:   aload_2
-L499:   aload_3
-L500:   aload 4
-L502:   aload 6
-L504:   invokestatic Method c2settings loadSoundEffectStates ([Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;Ljavax/swing/JSlider;Ljavax/swing/JSlider;)V
-L507:   aload_1
-L508:   aload_2
-L509:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
-L512:   pop
-L513:   aload_1
-L514:   aload_3
-L515:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
-L518:   pop
-L519:   aload_1
-L520:   aload 5
-L522:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
-L525:   pop
-L526:   aload_1
-L527:   aload 4
-L529:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
-L532:   pop
-L533:   aload_1
-L534:   aload 7
-L536:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
-L539:   pop
-L540:   aload_1
-L541:   aload 6
-L543:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
-L546:   pop
-L547:   aload 10
-L549:   astore 17
-L551:   aload 17
-L553:   arraylength
-L554:   istore 18
-L556:   iconst_0
-L557:   istore 19
+L488:   aload 14
+L490:   aload 17
+L492:   invokevirtual Method javax/swing/JButton setFont (Ljava/awt/Font;)V
+L495:   aload 10
+L497:   aload_2
+L498:   aload_3
+L499:   aload 11
+L501:   aload 4
+L503:   aload 6
+L505:   invokestatic Method c2settings loadSoundEffectStates ([Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;Ljavax/swing/JSlider;Ljavax/swing/JSlider;)V
+L508:   aload_1
+L509:   aload_2
+L510:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L513:   pop
+L514:   aload_1
+L515:   aload_3
+L516:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L519:   pop
+L520:   aload_1
+L521:   aload 5
+L523:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L526:   pop
+L527:   aload_1
+L528:   aload 4
+L530:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L533:   pop
+L534:   aload_1
+L535:   aload 7
+L537:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L540:   pop
+L541:   aload_1
+L542:   aload 6
+L544:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L547:   pop
+L548:   aload 10
+L550:   astore 18
+L552:   aload 18
+L554:   arraylength
+L555:   istore 19
+L557:   iconst_0
+L558:   istore 20
 
         .stack append Object [Ljavax/swing/JToggleButton; Integer Integer
-L559:   iload 19
-L561:   iload 18
-L563:   if_icmpge L586
-L566:   aload 17
-L568:   iload 19
-L570:   aaload
-L571:   astore 20
-L573:   aload_1
-L574:   aload 20
-L576:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
-L579:   pop
-L580:   iinc 19 1
-L583:   goto L559
+L560:   iload 20
+L562:   iload 19
+L564:   if_icmpge L587
+L567:   aload 18
+L569:   iload 20
+L571:   aaload
+L572:   astore 21
+L574:   aload_1
+L575:   aload 21
+L577:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L580:   pop
+L581:   iinc 20 1
+L584:   goto L560
 
         .stack chop 3
-L586:   aload_1
-L587:   aload 13
-L589:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
-L592:   pop
-L593:   aload_1
-L594:   aload 11
-L596:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
-L599:   pop
-L600:   aload_0
-L601:   aload_1
-L602:   invokevirtual Method javax/swing/JFrame add (Ljava/awt/Component;)Ljava/awt/Component;
-L605:   pop
-L606:   aload_0
-L607:   iconst_1
-L608:   invokevirtual Method javax/swing/JFrame setVisible (Z)V
-L611:   return
-L612:   
+L587:   aload_1
+L588:   aload 14
+L590:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L593:   pop
+L594:   aload_1
+L595:   aload 12
+L597:   invokevirtual Method javax/swing/JPanel add (Ljava/awt/Component;)Ljava/awt/Component;
+L600:   pop
+L601:   aload_0
+L602:   aload_1
+L603:   invokevirtual Method javax/swing/JFrame add (Ljava/awt/Component;)Ljava/awt/Component;
+L606:   pop
+L607:   aload_0
+L608:   iconst_1
+L609:   invokevirtual Method javax/swing/JFrame setVisible (Z)V
+L612:   return
+L613:   
         .linenumbertable
-            L0 25
-            L10 26
-            L15 27
-            L25 29
-            L33 30
-            L46 32
-            L56 33
-            L66 35
-            L82 36
-            L101 38
-            L117 45
-            L133 46
-            L152 48
-            L168 55
-            L171 56
-            L188 59
-            L195 60
-            L211 67
-            L218 68
-            L234 76
-            L243 77
-            L255 78
-            L263 79
-            L280 80
-            L290 77
-            L296 85
-            L307 87
-            L318 97
-            L324 98
-            L330 99
-            L356 100
-            L363 99
-            L369 105
-            L380 106
-            L402 121
-            L410 122
-            L417 125
-            L424 128
-            L438 129
-            L444 130
-            L450 131
-            L476 132
-            L483 131
-            L489 134
-            L496 136
-            L507 138
-            L513 139
-            L519 140
-            L526 141
-            L533 142
-            L540 143
-            L547 144
-            L573 145
-            L580 144
-            L586 147
-            L593 148
-            L600 150
-            L606 151
-            L611 152
+            L0 28
+            L10 29
+            L15 30
+            L25 32
+            L33 33
+            L46 35
+            L56 36
+            L66 38
+            L82 39
+            L101 40
+            L115 42
+            L131 43
+            L150 44
+            L164 47
+            L167 48
+            L185 49
+            L192 50
+            L199 52
+            L208 53
+            L220 54
+            L228 55
+            L245 56
+            L255 53
+            L261 60
+            L273 61
+            L280 64
+            L292 66
+            L301 72
+            L307 73
+            L313 74
+            L339 75
+            L346 74
+            L352 77
+            L359 80
+            L371 81
+            L393 93
+            L401 94
+            L408 97
+            L415 100
+            L430 101
+            L436 102
+            L442 103
+            L449 104
+            L475 105
+            L482 104
+            L488 107
+            L495 109
+            L508 111
+            L514 112
+            L520 113
+            L527 114
+            L534 115
+            L541 116
+            L548 117
+            L574 118
+            L581 117
+            L587 120
+            L594 121
+            L601 123
+            L607 124
+            L612 125
         .end linenumbertable
-        .localvariabletable
-            12 is soundEffectFilename Ljava/lang/String; from L263 to L290
-            11 is i I from L246 to L296
-            16 is toggleSoundEffect Ljavax/swing/JToggleButton; from L356 to L363
-            20 is toggleSoundEffect Ljavax/swing/JToggleButton; from L476 to L483
-            20 is toggleSoundEffect Ljavax/swing/JToggleButton; from L573 to L580
-            0 is frame Ljavax/swing/JFrame; from L10 to L612
-            1 is panel Ljavax/swing/JPanel; from L33 to L612
-            2 is toggleAnimation Ljavax/swing/JToggleButton; from L56 to L612
-            3 is toggleBlur Ljavax/swing/JToggleButton; from L66 to L612
-            4 is fpsSlider Ljavax/swing/JSlider; from L82 to L612
-            5 is fpsLabel Ljavax/swing/JLabel; from L101 to L612
-            6 is hzSlider Ljavax/swing/JSlider; from L133 to L612
-            7 is hzLabel Ljavax/swing/JLabel; from L152 to L612
-            8 is fontSize I from L171 to L612
-            9 is labelFont Ljava/awt/Font; from L188 to L612
-            10 is toggleSoundEffects [Ljavax/swing/JToggleButton; from L243 to L612
-            11 is notificationLabel Ljavax/swing/JLabel; from L307 to L612
-            12 is toggleListener Ljava/awt/event/ActionListener; from L318 to L612
-            13 is saveButton Ljavax/swing/JButton; from L380 to L612
-            14 is screenSize Ljava/awt/Dimension; from L410 to L612
-            15 is screenWidth I from L417 to L612
-            16 is buttonFont Ljava/awt/Font; from L438 to L612
-        .end localvariabletable
+    .end code
+.end method
+
+.method private static synthetic lambda$main$3 : (Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;[Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;Ljavax/swing/JSlider;Ljavax/swing/JSlider;Ljavax/swing/JLabel;Ljava/awt/event/ActionEvent;)V
+    .code stack 6 locals 9
+        .catch java/io/IOException from L0 to L28 using L31
+L0:     aload_0
+L1:     invokevirtual Method javax/swing/JToggleButton isSelected ()Z
+L4:     aload_1
+L5:     invokevirtual Method javax/swing/JToggleButton isSelected ()Z
+L8:     aload_2
+L9:     aload_3
+L10:    invokevirtual Method javax/swing/JToggleButton isSelected ()Z
+L13:    aload 4
+L15:    aload 5
+L17:    invokestatic Method c2settings saveSettings (ZZ[Ljavax/swing/JToggleButton;ZLjavax/swing/JSlider;Ljavax/swing/JSlider;)V
+L20:    aload 6
+L22:    ldc_w "Changes saved successfully."
+L25:    invokevirtual Method javax/swing/JLabel setText (Ljava/lang/String;)V
+L28:    goto L46
+
+        .stack stack_1 Object java/io/IOException
+L31:    astore 8
+L33:    aload 6
+L35:    ldc_w "Error while saving changes."
+L38:    invokevirtual Method javax/swing/JLabel setText (Ljava/lang/String;)V
+L41:    aload 8
+L43:    invokevirtual Method java/io/IOException printStackTrace ()V
+
+        .stack same
+L46:    return
+L47:    
+        .linenumbertable
+            L0 84
+            L20 85
+            L28 89
+            L31 86
+            L33 87
+            L41 88
+            L46 90
+        .end linenumbertable
+    .end code
+.end method
+
+.method private static synthetic lambda$main$2 : (Ljavax/swing/JLabel;Ljava/awt/event/ActionEvent;)V
+    .code stack 2 locals 3
+L0:     aload_1
+L1:     invokevirtual Method java/awt/event/ActionEvent getSource ()Ljava/lang/Object;
+L4:     checkcast javax/swing/AbstractButton
+L7:     astore_2
+L8:     aload_2
+L9:     aload_2
+L10:    invokevirtual Method javax/swing/AbstractButton isSelected ()Z
+L13:    ifeq L22
+L16:    getstatic Field java/awt/Color BLACK Ljava/awt/Color;
+L19:    goto L25
+
+        .stack full
+            locals Object javax/swing/JLabel Object java/awt/event/ActionEvent Object javax/swing/AbstractButton
+            stack Object javax/swing/AbstractButton
+        .end stack
+L22:    getstatic Field java/awt/Color RED Ljava/awt/Color;
+
+        .stack full
+            locals Object javax/swing/JLabel Object java/awt/event/ActionEvent Object javax/swing/AbstractButton
+            stack Object javax/swing/AbstractButton Object java/awt/Color
+        .end stack
+L25:    invokevirtual Method javax/swing/AbstractButton setForeground (Ljava/awt/Color;)V
+L28:    aload_0
+L29:    aload_2
+L30:    invokevirtual Method javax/swing/AbstractButton getText ()Ljava/lang/String;
+L33:    invokedynamic [_343]
+L38:    invokevirtual Method javax/swing/JLabel setText (Ljava/lang/String;)V
+L41:    return
+L42:    
+        .linenumbertable
+            L0 67
+            L8 68
+            L28 69
+            L41 70
+        .end linenumbertable
+    .end code
+.end method
+
+.method private static synthetic lambda$main$1 : (Ljavax/swing/JLabel;Ljavax/swing/JSlider;Ljavax/swing/event/ChangeEvent;)V
+    .code stack 2 locals 3
+L0:     aload_0
+L1:     aload_1
+L2:     invokevirtual Method javax/swing/JSlider getValue ()I
+L5:     invokedynamic [_253]
+L10:    invokevirtual Method javax/swing/JLabel setText (Ljava/lang/String;)V
+L13:    return
+L14:    
+        .linenumbertable
+            L0 44
+        .end linenumbertable
+    .end code
+.end method
+
+.method private static synthetic lambda$main$0 : (Ljavax/swing/JLabel;Ljavax/swing/JSlider;Ljavax/swing/event/ChangeEvent;)V
+    .code stack 2 locals 3
+L0:     aload_0
+L1:     aload_1
+L2:     invokevirtual Method javax/swing/JSlider getValue ()I
+L5:     invokedynamic [_242]
+L10:    invokevirtual Method javax/swing/JLabel setText (Ljava/lang/String;)V
+L13:    return
+L14:    
+        .linenumbertable
+            L0 40
+        .end linenumbertable
     .end code
 .end method
 
@@ -1043,92 +1091,94 @@ L0:     bipush 16
 L2:     anewarray java/lang/String
 L5:     dup
 L6:     iconst_0
-L7:     ldc "exp-04-menu-bing.ogg"
-L9:     aastore
-L10:    dup
-L11:    iconst_1
-L12:    ldc "exp-01-menu-woosh.ogg"
-L14:    aastore
-L15:    dup
-L16:    iconst_2
-L17:    ldc "exp-07-book.ogg"
-L19:    aastore
-L20:    dup
-L21:    iconst_3
-L22:    ldc "exp-08-zap-error.ogg"
-L24:    aastore
-L25:    dup
-L26:    iconst_4
-L27:    ldc "exp-09-round-countdown.ogg"
-L29:    aastore
-L30:    dup
-L31:    iconst_5
-L32:    ldc "exp-10-round-start.ogg"
+L7:     ldc_w "exp-04-menu-bing.ogg"
+L10:    aastore
+L11:    dup
+L12:    iconst_1
+L13:    ldc_w "exp-01-menu-woosh.ogg"
+L16:    aastore
+L17:    dup
+L18:    iconst_2
+L19:    ldc_w "exp-07-book.ogg"
+L22:    aastore
+L23:    dup
+L24:    iconst_3
+L25:    ldc_w "exp-08-zap-error.ogg"
+L28:    aastore
+L29:    dup
+L30:    iconst_4
+L31:    ldc_w "exp-09-round-countdown.ogg"
 L34:    aastore
 L35:    dup
-L36:    bipush 6
-L38:    ldc "exp-16-harddrop-pure.ogg"
+L36:    iconst_5
+L37:    ldc_w "exp-10-round-start.ogg"
 L40:    aastore
 L41:    dup
-L42:    bipush 7
-L44:    ldc "exp-15-harddrop-pure-effect.ogg"
-L46:    aastore
-L47:    dup
-L48:    bipush 8
-L50:    ldc "exp-05-drop-effect.ogg"
-L52:    aastore
-L53:    dup
-L54:    bipush 9
-L56:    ldc "exp-02-attack-effect.ogg"
-L58:    aastore
-L59:    dup
-L60:    bipush 10
-L62:    ldc "exp-03-lines-in-end.ogg"
-L64:    aastore
-L65:    dup
-L66:    bipush 11
-L68:    ldc "exp-06-glass-shatter.ogg"
-L70:    aastore
-L71:    dup
-L72:    bipush 12
-L74:    ldc "exp-11-restricted-bpm-eat.ogg"
-L76:    aastore
-L77:    dup
-L78:    bipush 13
-L80:    ldc "exp-12-impressive.ogg"
+L42:    bipush 6
+L44:    ldc_w "exp-16-harddrop-pure.ogg"
+L47:    aastore
+L48:    dup
+L49:    bipush 7
+L51:    ldc_w "exp-15-harddrop-pure-effect.ogg"
+L54:    aastore
+L55:    dup
+L56:    bipush 8
+L58:    ldc_w "exp-05-drop-effect.ogg"
+L61:    aastore
+L62:    dup
+L63:    bipush 9
+L65:    ldc_w "exp-02-attack-effect.ogg"
+L68:    aastore
+L69:    dup
+L70:    bipush 10
+L72:    ldc_w "exp-03-lines-in-end.ogg"
+L75:    aastore
+L76:    dup
+L77:    bipush 11
+L79:    ldc_w "exp-06-glass-shatter.ogg"
 L82:    aastore
 L83:    dup
-L84:    bipush 14
-L86:    ldc "exp-13-perfect.ogg"
-L88:    aastore
-L89:    dup
-L90:    bipush 15
-L92:    ldc "exp-14-godlike.ogg"
-L94:    aastore
-L95:    putstatic Field c2settings SOUND_EFFECT_FILENAMES [Ljava/lang/String;
-L98:    return
-L99:    
+L84:    bipush 12
+L86:    ldc_w "exp-11-restricted-bpm-eat.ogg"
+L89:    aastore
+L90:    dup
+L91:    bipush 13
+L93:    ldc_w "exp-12-impressive.ogg"
+L96:    aastore
+L97:    dup
+L98:    bipush 14
+L100:   ldc_w "exp-13-perfect.ogg"
+L103:   aastore
+L104:   dup
+L105:   bipush 15
+L107:   ldc_w "exp-14-godlike.ogg"
+L110:   aastore
+L111:   putstatic Field c2settings SOUND_EFFECT_FILENAMES [Ljava/lang/String;
+L114:   return
+L115:   
         .linenumbertable
-            L0 18
+            L0 19
         .end linenumbertable
     .end code
 .end method
 .sourcefile "c2settings.java"
-.nestmembers c2settings$6 c2settings$5 c2settings$4 c2settings$3 c2settings$2 c2settings$1
+.bootstrapmethods
 .innerclasses
-    c2settings$6 [0] [0]
-    c2settings$5 [0] [0]
-    c2settings$4 [0] [0]
-    c2settings$3 [0] [0]
-    c2settings$2 [0] [0]
-    c2settings$1 [0] [0]
     java/lang/invoke/MethodHandles$Lookup java/lang/invoke/MethodHandles Lookup public static final
 .end innerclasses
-.bootstrapmethods
-.const [_3] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType ()V [_242] MethodType ()V : run ()Ljava/lang/Runnable;
-.const [_37] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "settings/FE-\u0001value.txt" : makeConcatWithConstants (Ljava/lang/String;)Ljava/lang/String;
-.const [_46] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "disabled_\u0001" : makeConcatWithConstants (Ljava/lang/String;)Ljava/lang/String;
-.const [_82] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "FPS: \u0001" : makeConcatWithConstants (I)Ljava/lang/String;
-.const [_87] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Hz: \u0001" : makeConcatWithConstants (I)Ljava/lang/String;
-.const [_242] = MethodHandle invokeStatic Method c2settings lambda$main$0 ()V
+.const [_9] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType ()V [_415] MethodType ()V : run ()Ljava/lang/Runnable;
+.const [_128] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "settings/FE-\u0001value.txt" : makeConcatWithConstants (Ljava/lang/String;)Ljava/lang/String;
+.const [_156] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "disabled_\u0001" : makeConcatWithConstants (Ljava/lang/String;)Ljava/lang/String;
+.const [_242] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "FPS: \u0001" : makeConcatWithConstants (I)Ljava/lang/String;
+.const [_245] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType (Ljavax/swing/event/ChangeEvent;)V [_432] MethodType (Ljavax/swing/event/ChangeEvent;)V : stateChanged (Ljavax/swing/JLabel;Ljavax/swing/JSlider;)Ljavax/swing/event/ChangeListener;
+.const [_253] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Hz: \u0001" : makeConcatWithConstants (I)Ljava/lang/String;
+.const [_254] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType (Ljavax/swing/event/ChangeEvent;)V [_437] MethodType (Ljavax/swing/event/ChangeEvent;)V : stateChanged (Ljavax/swing/JLabel;Ljavax/swing/JSlider;)Ljavax/swing/event/ChangeListener;
+.const [_276] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType (Ljava/awt/event/ActionEvent;)V [_442] MethodType (Ljava/awt/event/ActionEvent;)V : actionPerformed (Ljavax/swing/JLabel;)Ljava/awt/event/ActionListener;
+.const [_289] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType (Ljava/awt/event/ActionEvent;)V [_445] MethodType (Ljava/awt/event/ActionEvent;)V : actionPerformed (Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;[Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;Ljavax/swing/JSlider;Ljavax/swing/JSlider;Ljavax/swing/JLabel;)Ljava/awt/event/ActionListener;
+.const [_343] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Toggle changed: \u0001" : makeConcatWithConstants (Ljava/lang/String;)Ljava/lang/String;
+.const [_415] = MethodHandle invokeStatic Method c2settings lambda$main$4 ()V
+.const [_432] = MethodHandle invokeStatic Method c2settings lambda$main$0 (Ljavax/swing/JLabel;Ljavax/swing/JSlider;Ljavax/swing/event/ChangeEvent;)V
+.const [_437] = MethodHandle invokeStatic Method c2settings lambda$main$1 (Ljavax/swing/JLabel;Ljavax/swing/JSlider;Ljavax/swing/event/ChangeEvent;)V
+.const [_442] = MethodHandle invokeStatic Method c2settings lambda$main$2 (Ljavax/swing/JLabel;Ljava/awt/event/ActionEvent;)V
+.const [_445] = MethodHandle invokeStatic Method c2settings lambda$main$3 (Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;[Ljavax/swing/JToggleButton;Ljavax/swing/JToggleButton;Ljavax/swing/JSlider;Ljavax/swing/JSlider;Ljavax/swing/JLabel;Ljava/awt/event/ActionEvent;)V
 .end class

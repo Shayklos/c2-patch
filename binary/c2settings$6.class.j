@@ -1,4 +1,4 @@
-.version 55 0
+.version 61 0
 .class super c2settings$6
 .super java/lang/Object
 .implements java/awt/event/ActionListener
@@ -36,10 +36,8 @@ L38:
         .linenumbertable
             L0 106
         .end linenumbertable
-        .localvariabletable
-            0 is this Lc2settings$6; from L0 to L38
-        .end localvariabletable
     .end code
+    .signature ()V
 .end method
 
 .method public actionPerformed : (Ljava/awt/event/ActionEvent;)V
@@ -85,15 +83,10 @@ L56:
             L51 114
             L55 116
         .end linenumbertable
-        .localvariabletable
-            2 is ex Ljava/io/IOException; from L42 to L55
-            0 is this Lc2settings$6; from L0 to L56
-            1 is e Ljava/awt/event/ActionEvent; from L0 to L56
-        .end localvariabletable
     .end code
 .end method
 .sourcefile "c2settings.java"
-.enclosing method c2settings lambda$main$0 ()V
+.enclosing method c2settings main ([Ljava/lang/String;)V
 .nesthost c2settings
 .innerclasses
     c2settings$6 [0] [0]

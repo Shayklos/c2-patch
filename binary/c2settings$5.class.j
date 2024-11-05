@@ -1,4 +1,4 @@
-.version 55 0
+.version 61 0
 .class super c2settings$5
 .super java/lang/Object
 .implements java/awt/event/ActionListener
@@ -16,10 +16,8 @@ L10:
         .linenumbertable
             L0 87
         .end linenumbertable
-        .localvariabletable
-            0 is this Lc2settings$5; from L0 to L10
-        .end localvariabletable
     .end code
+    .signature ()V
 .end method
 
 .method public actionPerformed : (Ljava/awt/event/ActionEvent;)V
@@ -50,7 +48,7 @@ L28:    aload_0
 L29:    getfield Field c2settings$5 val$notificationLabel Ljavax/swing/JLabel;
 L32:    aload_2
 L33:    invokevirtual Method javax/swing/AbstractButton getText ()Ljava/lang/String;
-L36:    invokedynamic [_10]
+L36:    invokedynamic [_42]
 L41:    invokevirtual Method javax/swing/JLabel setText (Ljava/lang/String;)V
 L44:    return
 L45:    
@@ -60,20 +58,15 @@ L45:
             L28 92
             L44 93
         .end linenumbertable
-        .localvariabletable
-            0 is this Lc2settings$5; from L0 to L45
-            1 is e Ljava/awt/event/ActionEvent; from L0 to L45
-            2 is source Ljavax/swing/AbstractButton; from L8 to L45
-        .end localvariabletable
     .end code
 .end method
 .sourcefile "c2settings.java"
-.enclosing method c2settings lambda$main$0 ()V
+.enclosing method c2settings main ([Ljava/lang/String;)V
 .nesthost c2settings
+.bootstrapmethods
 .innerclasses
     c2settings$5 [0] [0]
     java/lang/invoke/MethodHandles$Lookup java/lang/invoke/MethodHandles Lookup public static final
 .end innerclasses
-.bootstrapmethods
-.const [_10] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Toggle changed: \u0001" : makeConcatWithConstants (Ljava/lang/String;)Ljava/lang/String;
+.const [_42] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Toggle changed: \u0001" : makeConcatWithConstants (Ljava/lang/String;)Ljava/lang/String;
 .end class
