@@ -1,5 +1,7 @@
 # c2-patch stable
 
+To set up, please visit the setup guide at https://c2.tail.ws/.
+
 Non-Invasive, trimmed down version with only minor tweaks. 
 
 Features
@@ -16,10 +18,6 @@ Blur and Animation a value from 0 to 1 (off and on)
 
 Audiosamples need to match the exact oggfile in the cultris2.jar in order to play. Do not change the order unless you want to swap sound effects.
 Therefore, if you wanna disable one, just add disabled_ in front of the sample you don't want.
-
-Simplified setup - Win 10 - same goes for linux, just pick the linux setup thingy.
-
-[how to video](https://github.com/zDEFz/c2-patch/raw/stable/setup/c2-setup-w10.mp4)
 
 # Contributing of cultris2 binary changes
 
