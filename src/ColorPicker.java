@@ -6,6 +6,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Paths;
+import java.util.Locale;
 
 class ColorPicker implements ChangeListener {
     static JFrame frame;
@@ -192,7 +193,9 @@ class ColorPicker implements ChangeListener {
             float red = sliderR.getValue() / 255.0f;
             float green = sliderG.getValue() / 255.0f;
             float blue = sliderB.getValue() / 255.0f;
-            String colorString = String.format("%.9f,%.9f,%.9f", red, green, blue);
+
+            // Use English locale to enforce dot as the decimal separator
+            String colorString = String.format(Locale.ENGLISH, "%.9f, %.9f, %.9f", red, green, blue);
 
             java.nio.file.Files.writeString(Paths.get("settings/background-color.txt"), colorString);
             JOptionPane.showMessageDialog(frame, "Color saved successfully!", "Success", JOptionPane.INFORMATION_MESSAGE);
