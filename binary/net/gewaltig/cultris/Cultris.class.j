@@ -75,83 +75,85 @@ L5:
 .method public static main : ([Ljava/lang/String;)V
     .code stack 5 locals 4
 L0:     invokestatic Method net/gewaltig/cultris/Cultris method1723 ()V
-        .catch java/lang/Throwable from L3 to L84 using L91
+        .catch java/lang/Throwable from L3 to L90 using L97
 L3:     invokestatic Method FE readfpsvalue ()I
 L6:     putstatic Field net/gewaltig/cultris/Cultris framerate I
 L9:     invokestatic Method FE readhzvalue ()I
 L12:    putstatic Field net/gewaltig/cultris/Cultris refreshrate I
 L15:    invokestatic Method FE readblurtoggle ()F
 L18:    putstatic Field net/gewaltig/cultris/Cultris blurtoggle F
-L21:    invokestatic Method ReadBackgroundColor getRed ()F
-L24:    putstatic Field net/gewaltig/cultris/Cultris backgroundcolorRed F
-L27:    invokestatic Method ReadBackgroundColor getGreen ()F
-L30:    putstatic Field net/gewaltig/cultris/Cultris backgroundcolorGreen F
-L33:    invokestatic Method ReadBackgroundColor getBlue ()F
-L36:    putstatic Field net/gewaltig/cultris/Cultris backgroundcolorBlue F
-L39:    invokestatic Method od readenemySFXtoggle ()I
-L42:    putstatic Field net/gewaltig/cultris/Cultris enable_enemy_sounds I
-L45:    invokestatic Method net/gewaltig/cultris/Cultris method1725 ()V
-L48:    aload_0
-L49:    arraylength
-L50:    iconst_1
-L51:    dup
-L52:    dup
-L53:    pop2
-L54:    if_icmpne L81
-L57:    ldc "profile_run"
-L59:    aload_0
-L60:    iconst_0
-L61:    iconst_1
-L62:    dup
-L63:    pop2
-L64:    aaload
-L65:    invokevirtual Method java/lang/String equals (Ljava/lang/Object;)Z
-L68:    ifeq L81
-L71:    new net/gewaltig/cultris/i
-L74:    dup
-L75:    invokespecial Method net/gewaltig/cultris/i <init> ()V
-L78:    invokestatic Method ib method1156 (LM;)V
-L81:    invokestatic Method net/gewaltig/cultris/Cultris method1722 ()V
-L84:    invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
-L87:    goto L144
-L90:    athrow
-L91:    astore_1
-        .catch java/lang/Throwable from L92 to L95 using L100
-L92:    invokestatic Method org/lwjgl/opengl/Display method3009 ()V
-L95:    aload_1
-L96:    goto L102
-L99:    athrow
-L100:   astore_2
+L21:    invokestatic Method readanimtoggle returnvalue ()I
+L24:    putstatic Field net/gewaltig/cultris/Cultris animtoggle I
+L27:    invokestatic Method ReadBackgroundColor getRed ()F
+L30:    putstatic Field net/gewaltig/cultris/Cultris backgroundcolorRed F
+L33:    invokestatic Method ReadBackgroundColor getGreen ()F
+L36:    putstatic Field net/gewaltig/cultris/Cultris backgroundcolorGreen F
+L39:    invokestatic Method ReadBackgroundColor getBlue ()F
+L42:    putstatic Field net/gewaltig/cultris/Cultris backgroundcolorBlue F
+L45:    invokestatic Method od readenemySFXtoggle ()I
+L48:    putstatic Field net/gewaltig/cultris/Cultris enable_enemy_sounds I
+L51:    invokestatic Method net/gewaltig/cultris/Cultris method1725 ()V
+L54:    aload_0
+L55:    arraylength
+L56:    iconst_1
+L57:    dup
+L58:    dup
+L59:    pop2
+L60:    if_icmpne L87
+L63:    ldc "profile_run"
+L65:    aload_0
+L66:    iconst_0
+L67:    iconst_1
+L68:    dup
+L69:    pop2
+L70:    aaload
+L71:    invokevirtual Method java/lang/String equals (Ljava/lang/Object;)Z
+L74:    ifeq L87
+L77:    new net/gewaltig/cultris/i
+L80:    dup
+L81:    invokespecial Method net/gewaltig/cultris/i <init> ()V
+L84:    invokestatic Method ib method1156 (LM;)V
+L87:    invokestatic Method net/gewaltig/cultris/Cultris method1722 ()V
+L90:    invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
+L93:    goto L150
+L96:    athrow
+L97:    astore_1
+        .catch java/lang/Throwable from L98 to L101 using L106
+L98:    invokestatic Method org/lwjgl/opengl/Display method3009 ()V
 L101:   aload_1
-L102:   invokevirtual Method java/lang/Throwable printStackTrace ()V
-        .catch java/lang/Throwable from L105 to L117 using L120
-        .catch [0] from L3 to L84 using L138
-        .catch [0] from L91 to L99 using L138
-        .catch [0] from L100 to L132 using L138
-L105:   new sD
-L108:   dup
-L109:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
-L112:   aload_1
-L113:   invokespecial Method sD <init> (LFE;Ljava/lang/Throwable;)V
-L116:   pop
-L117:   goto L132
-L120:   astore_2
-L121:   aload_2
-L122:   invokevirtual Method java/lang/Throwable printStackTrace ()V
-L125:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
-L128:   aload_1
-L129:   invokestatic Method sD method335 (LFE;Ljava/lang/Throwable;)V
-L132:   invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
-L135:   goto L144
-        .catch [0] from L138 to L139 using L138
-L138:   astore_3
-L139:   invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
-L142:   aload_3
-L143:   athrow
-L144:   invokestatic Method ib method1152 ()V
-L147:   return
-L148:   
-        .attribute StackMap b'\x00\x0A\x00\x51\x00\x01\x07\x00\xA5\x00\x00\x00\x5A\x00\x00\x00\x01\x07\x00\x2A\x00\x5B\x00\x01\x07\x00\xA5\x00\x01\x07\x00\x2A\x00\x63\x00\x00\x00\x01\x07\x00\x2A\x00\x64\x00\x02\x07\x00\xA5\x07\x00\x2A\x00\x01\x07\x00\x2A\x00\x66\x00\x02\x07\x00\xA5\x07\x00\x2A\x00\x01\x07\x00\x2A\x00\x78\x00\x02\x07\x00\xA5\x07\x00\x2A\x00\x01\x07\x00\x2A\x00\x84\x00\x02\x07\x00\xA5\x07\x00\x2A\x00\x00\x00\x8A\x00\x01\x07\x00\xA5\x00\x01\x07\x00\x2A\x00\x90\x00\x01\x07\x00\xA5\x00\x00'
+L102:   goto L108
+L105:   athrow
+L106:   astore_2
+L107:   aload_1
+L108:   invokevirtual Method java/lang/Throwable printStackTrace ()V
+        .catch java/lang/Throwable from L111 to L123 using L126
+        .catch [0] from L3 to L90 using L144
+        .catch [0] from L97 to L105 using L144
+        .catch [0] from L106 to L138 using L144
+L111:   new sD
+L114:   dup
+L115:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
+L118:   aload_1
+L119:   invokespecial Method sD <init> (LFE;Ljava/lang/Throwable;)V
+L122:   pop
+L123:   goto L138
+L126:   astore_2
+L127:   aload_2
+L128:   invokevirtual Method java/lang/Throwable printStackTrace ()V
+L131:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
+L134:   aload_1
+L135:   invokestatic Method sD method335 (LFE;Ljava/lang/Throwable;)V
+L138:   invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
+L141:   goto L150
+        .catch [0] from L144 to L145 using L144
+L144:   astore_3
+L145:   invokestatic Method net/gewaltig/cultris/Cultris method1724 ()V
+L148:   aload_3
+L149:   athrow
+L150:   invokestatic Method ib method1152 ()V
+L153:   return
+L154:   
+        .attribute StackMap b'\x00\x0A\x00\x57\x00\x01\x07\x00\xAE\x00\x00\x00\x60\x00\x00\x00\x01\x07\x00\x2A\x00\x61\x00\x01\x07\x00\xAE\x00\x01\x07\x00\x2A\x00\x69\x00\x00\x00\x01\x07\x00\x2A\x00\x6A\x00\x02\x07\x00\xAE\x07\x00\x2A\x00\x01\x07\x00\x2A\x00\x6C\x00\x02\x07\x00\xAE\x07\x00\x2A\x00\x01\x07\x00\x2A\x00\x7E\x00\x02\x07\x00\xAE\x07\x00\x2A\x00\x01\x07\x00\x2A\x00\x8A\x00\x02\x07\x00\xAE\x07\x00\x2A\x00\x00\x00\x90\x00\x01\x07\x00\xAE\x00\x01\x07\x00\x2A\x00\x96\x00\x01\x07\x00\xAE\x00\x00'
     .end code
     .exceptions java/lang/Exception
     .runtime visible annotations
@@ -165,16 +167,19 @@ L148:
             At_6 = string "save blurtoggle value onto a field to read it later from FE"
         .end annotation
         .annotation Lme/coley/recaf/metadata/InsnComment;
-            At_8 = string "save backgroundcolor Red value onto a field to read it later from FE"
+            At_8 = string "save animtoggle value onto a field"
         .end annotation
         .annotation Lme/coley/recaf/metadata/InsnComment;
-            At_10 = string "save backgroundcolor Green value onto a field to read it later from FE"
+            At_10 = string "save backgroundcolor Red value onto a field to read it later from FE"
         .end annotation
         .annotation Lme/coley/recaf/metadata/InsnComment;
-            At_12 = string "save backgroundcolor Blue value onto a field to read it later from FE"
+            At_12 = string "save backgroundcolor Green value onto a field to read it later from FE"
         .end annotation
         .annotation Lme/coley/recaf/metadata/InsnComment;
-            At_14 = string "save enable_enemy_sounds value onto a field to read it later from od"
+            At_14 = string "save backgroundcolor Blue value onto a field to read it later from FE"
+        .end annotation
+        .annotation Lme/coley/recaf/metadata/InsnComment;
+            At_16 = string "save enable_enemy_sounds value onto a field to read it later from od"
         .end annotation
     .end runtime
 .end method
@@ -228,188 +233,188 @@ L28:    ldc ""
 L30:    ldc "upftr"
 L32:    invokestatic Method JB method822 (Ljava/lang/String;)Ljava/lang/String;
 L35:    invokevirtual Method java/lang/String equals (Ljava/lang/Object;)Z
-L38:    ifne L109
+L38:    ifne L110
 L41:    getstatic Field java/lang/System out Ljava/io/PrintStream;
 L44:    new java/lang/StringBuilder
 L47:    dup
 L48:    invokespecial Method java/lang/StringBuilder <init> ()V
 L51:    iconst_0
-L52:    ldc "Removing update package "
-L54:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
-L57:    ldc "upftr"
-L59:    invokestatic Method JB method822 (Ljava/lang/String;)Ljava/lang/String;
-L62:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-L65:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
-L68:    invokevirtual Method java/io/PrintStream println (Ljava/lang/String;)V
-        .catch java/lang/Exception from L71 to L95 using L99
-L71:    new java/io/File
-L74:    dup
-L75:    ldc "upftr"
-L77:    invokestatic Method JB method822 (Ljava/lang/String;)Ljava/lang/String;
-L80:    invokespecial Method java/io/File <init> (Ljava/lang/String;)V
-L83:    dup
-L84:    astore_0
-L85:    invokevirtual Method java/io/File delete ()Z
-L88:    ifne L104
-L91:    aload_0
-L92:    invokevirtual Method java/io/File deleteOnExit ()V
-L95:    goto L104
-L98:    athrow
-L99:    astore_0
-L100:   aload_0
-L101:   invokevirtual Method java/lang/Exception printStackTrace ()V
-L104:   ldc "upftr"
-L106:   invokestatic Method JB method823 (Ljava/lang/String;)V
-L109:   ldc "load_successful"
-L111:   iconst_0
-L112:   iconst_1
-L113:   dup
-L114:   pop2
-L115:   invokestatic Method JB method827 (Ljava/lang/String;I)V
-L118:   invokestatic Method JB new ()V
-L121:   invokestatic Method org/lwjgl/Sys method1895 ()V
-L124:   getstatic Field java/lang/System out Ljava/io/PrintStream;
-L127:   new java/lang/StringBuilder
-L130:   dup
-L131:   invokespecial Method java/lang/StringBuilder <init> ()V
-L134:   iconst_0
-L135:   ldc_w "LWJGL "
-L138:   invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
-L141:   invokestatic Method org/lwjgl/Sys method1897 ()Ljava/lang/String;
-L144:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
-L147:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
-L150:   invokevirtual Method java/io/PrintStream println (Ljava/lang/String;)V
-L153:   invokestatic Method mD method1718 ()V
-        .catch java/lang/IllegalStateException from L156 to L166 using L170
-L156:   new FE
-L159:   dup
-L160:   invokespecial Method FE <init> ()V
-L163:   putstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
-L166:   goto L178
-L169:   athrow
-L170:   astore_0
-L171:   iconst_0
-L172:   iconst_1
-L173:   dup
-L174:   pop2
-L175:   invokestatic Method java/lang/System exit (I)V
-L178:   invokestatic Method UE try ()V
-L181:   invokestatic Method QD method52 ()V
-L184:   invokestatic Method java/util/Calendar getInstance ()Ljava/util/Calendar;
-L187:   dup
-L188:   astore_0
-L189:   iconst_5
-L190:   iconst_1
-L191:   dup
-L192:   pop2
-L193:   invokevirtual Method java/util/Calendar get (I)I
-L196:   iconst_1
-L197:   dup
+L52:    ldc_w "Removing update package "
+L55:    invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
+L58:    ldc "upftr"
+L60:    invokestatic Method JB method822 (Ljava/lang/String;)Ljava/lang/String;
+L63:    invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+L66:    invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
+L69:    invokevirtual Method java/io/PrintStream println (Ljava/lang/String;)V
+        .catch java/lang/Exception from L72 to L96 using L100
+L72:    new java/io/File
+L75:    dup
+L76:    ldc "upftr"
+L78:    invokestatic Method JB method822 (Ljava/lang/String;)Ljava/lang/String;
+L81:    invokespecial Method java/io/File <init> (Ljava/lang/String;)V
+L84:    dup
+L85:    astore_0
+L86:    invokevirtual Method java/io/File delete ()Z
+L89:    ifne L105
+L92:    aload_0
+L93:    invokevirtual Method java/io/File deleteOnExit ()V
+L96:    goto L105
+L99:    athrow
+L100:   astore_0
+L101:   aload_0
+L102:   invokevirtual Method java/lang/Exception printStackTrace ()V
+L105:   ldc "upftr"
+L107:   invokestatic Method JB method823 (Ljava/lang/String;)V
+L110:   ldc "load_successful"
+L112:   iconst_0
+L113:   iconst_1
+L114:   dup
+L115:   pop2
+L116:   invokestatic Method JB method827 (Ljava/lang/String;I)V
+L119:   invokestatic Method JB new ()V
+L122:   invokestatic Method org/lwjgl/Sys method1895 ()V
+L125:   getstatic Field java/lang/System out Ljava/io/PrintStream;
+L128:   new java/lang/StringBuilder
+L131:   dup
+L132:   invokespecial Method java/lang/StringBuilder <init> ()V
+L135:   iconst_0
+L136:   ldc_w "LWJGL "
+L139:   invokevirtual Method java/lang/StringBuilder insert (ILjava/lang/String;)Ljava/lang/StringBuilder;
+L142:   invokestatic Method org/lwjgl/Sys method1897 ()Ljava/lang/String;
+L145:   invokevirtual Method java/lang/StringBuilder append (Ljava/lang/String;)Ljava/lang/StringBuilder;
+L148:   invokevirtual Method java/lang/StringBuilder toString ()Ljava/lang/String;
+L151:   invokevirtual Method java/io/PrintStream println (Ljava/lang/String;)V
+L154:   invokestatic Method mD method1718 ()V
+        .catch java/lang/IllegalStateException from L157 to L167 using L171
+L157:   new FE
+L160:   dup
+L161:   invokespecial Method FE <init> ()V
+L164:   putstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
+L167:   goto L179
+L170:   athrow
+L171:   astore_0
+L172:   iconst_0
+L173:   iconst_1
+L174:   dup
+L175:   pop2
+L176:   invokestatic Method java/lang/System exit (I)V
+L179:   invokestatic Method UE try ()V
+L182:   invokestatic Method QD method52 ()V
+L185:   invokestatic Method java/util/Calendar getInstance ()Ljava/util/Calendar;
+L188:   dup
+L189:   astore_0
+L190:   iconst_5
+L191:   iconst_1
+L192:   dup
+L193:   pop2
+L194:   invokevirtual Method java/util/Calendar get (I)I
+L197:   iconst_1
 L198:   dup
-L199:   pop2
-L200:   if_icmpne L230
-L203:   aload_0
-L204:   iconst_2
-L205:   iconst_1
-L206:   dup
-L207:   pop2
-L208:   invokevirtual Method java/util/Calendar get (I)I
-L211:   bipush 7
-L213:   iconst_1
-L214:   dup
-L215:   pop2
-L216:   if_icmpne L230
-L219:   new QE
-L222:   dup
-L223:   invokespecial Method QE <init> ()V
-L226:   astore_1
-L227:   goto L281
-L230:   aload_0
-L231:   iconst_5
-L232:   iconst_1
-L233:   dup
-L234:   pop2
-L235:   invokevirtual Method java/util/Calendar get (I)I
-L238:   bipush 22
-L240:   iconst_1
-L241:   dup
-L242:   pop2
-L243:   if_icmple L273
-L246:   aload_0
-L247:   iconst_2
-L248:   iconst_1
-L249:   dup
-L250:   pop2
-L251:   invokevirtual Method java/util/Calendar get (I)I
-L254:   bipush 11
-L256:   iconst_1
-L257:   dup
-L258:   pop2
-L259:   if_icmpne L273
-L262:   new SF
-L265:   dup
-L266:   invokespecial Method SF <init> ()V
-L269:   astore_1
-L270:   goto L281
-L273:   new fe
-L276:   dup
-L277:   invokespecial Method fe <init> ()V
-L280:   astore_1
-L281:   new md
-L284:   dup
-L285:   ldc_w "server1.gewaltig.net"
-L288:   invokespecial Method md <init> (Ljava/lang/String;)V
-L291:   putstatic Field Kc field1931 LKc;
-L294:   new cb
-L297:   dup
-L298:   invokespecial Method cb <init> ()V
-L301:   astore_2
-L302:   new kD
-L305:   dup
-L306:   aload_2
-L307:   aload_1
-L308:   invokespecial Method kD <init> (LbC;Lgg;)V
-L311:   astore_3
-L312:   getstatic Field net/gewaltig/cultris/Cultris field2395 Z
-L315:   ifeq L353
-L318:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
-L321:   new CF
-L324:   dup
-L325:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
-L328:   aload_3
-L329:   aload_2
-L330:   aload_1
-L331:   invokespecial Method CF <init> (LFE;LbC;LbC;Lgg;)V
-L334:   invokevirtual Method FE method443 (Lgg;)V
-L337:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
-L340:   aload_3
-L341:   invokevirtual Method FE method444 (LbC;)V
-L344:   invokestatic Method cD method59 ()LcD;
-L347:   invokevirtual Method cD method56 ()V
-L350:   goto L367
-L353:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
-L356:   aload_1
-L357:   invokevirtual Method FE method443 (Lgg;)V
-L360:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
-L363:   aload_2
-L364:   invokevirtual Method FE method444 (LbC;)V
-L367:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
-L370:   invokestatic Method cD method59 ()LcD;
-L373:   invokevirtual Method FE method444 (LbC;)V
-L376:   invokestatic Method UE method61 ()V
-L379:   ldc "load_successful"
-L381:   iconst_1
-L382:   dup
+L199:   dup
+L200:   pop2
+L201:   if_icmpne L231
+L204:   aload_0
+L205:   iconst_2
+L206:   iconst_1
+L207:   dup
+L208:   pop2
+L209:   invokevirtual Method java/util/Calendar get (I)I
+L212:   bipush 7
+L214:   iconst_1
+L215:   dup
+L216:   pop2
+L217:   if_icmpne L231
+L220:   new QE
+L223:   dup
+L224:   invokespecial Method QE <init> ()V
+L227:   astore_1
+L228:   goto L282
+L231:   aload_0
+L232:   iconst_5
+L233:   iconst_1
+L234:   dup
+L235:   pop2
+L236:   invokevirtual Method java/util/Calendar get (I)I
+L239:   bipush 22
+L241:   iconst_1
+L242:   dup
+L243:   pop2
+L244:   if_icmple L274
+L247:   aload_0
+L248:   iconst_2
+L249:   iconst_1
+L250:   dup
+L251:   pop2
+L252:   invokevirtual Method java/util/Calendar get (I)I
+L255:   bipush 11
+L257:   iconst_1
+L258:   dup
+L259:   pop2
+L260:   if_icmpne L274
+L263:   new SF
+L266:   dup
+L267:   invokespecial Method SF <init> ()V
+L270:   astore_1
+L271:   goto L282
+L274:   new fe
+L277:   dup
+L278:   invokespecial Method fe <init> ()V
+L281:   astore_1
+L282:   new md
+L285:   dup
+L286:   ldc_w "server1.gewaltig.net"
+L289:   invokespecial Method md <init> (Ljava/lang/String;)V
+L292:   putstatic Field Kc field1931 LKc;
+L295:   new cb
+L298:   dup
+L299:   invokespecial Method cb <init> ()V
+L302:   astore_2
+L303:   new kD
+L306:   dup
+L307:   aload_2
+L308:   aload_1
+L309:   invokespecial Method kD <init> (LbC;Lgg;)V
+L312:   astore_3
+L313:   getstatic Field net/gewaltig/cultris/Cultris field2395 Z
+L316:   ifeq L354
+L319:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
+L322:   new CF
+L325:   dup
+L326:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
+L329:   aload_3
+L330:   aload_2
+L331:   aload_1
+L332:   invokespecial Method CF <init> (LFE;LbC;LbC;Lgg;)V
+L335:   invokevirtual Method FE method443 (Lgg;)V
+L338:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
+L341:   aload_3
+L342:   invokevirtual Method FE method444 (LbC;)V
+L345:   invokestatic Method cD method59 ()LcD;
+L348:   invokevirtual Method cD method56 ()V
+L351:   goto L368
+L354:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
+L357:   aload_1
+L358:   invokevirtual Method FE method443 (Lgg;)V
+L361:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
+L364:   aload_2
+L365:   invokevirtual Method FE method444 (LbC;)V
+L368:   getstatic Field net/gewaltig/cultris/Cultris field2394 LFE;
+L371:   invokestatic Method cD method59 ()LcD;
+L374:   invokevirtual Method FE method444 (LbC;)V
+L377:   invokestatic Method UE method61 ()V
+L380:   ldc "load_successful"
+L382:   iconst_1
 L383:   dup
-L384:   pop2
-L385:   invokestatic Method JB method827 (Ljava/lang/String;I)V
-L388:   invokestatic Method JB new ()V
-L391:   getstatic Field Kc field1931 LKc;
-L394:   checkcast md
-L397:   invokevirtual Method md method864 ()V
-L400:   return
-L401:   
-        .attribute StackMap b'\x00\x0D\x00\x1C\x00\x00\x00\x00\x00\x62\x00\x00\x00\x01\x07\x00\x2A\x00\x63\x00\x00\x00\x01\x07\x00\x1F\x00\x68\x00\x01\x07\x00\x04\x00\x00\x00\x6D\x00\x00\x00\x00\x00\xA9\x00\x00\x00\x01\x07\x00\x2A\x00\xAA\x00\x00\x00\x01\x07\x00\xCA\x00\xB2\x00\x00\x00\x00\x00\xE6\x00\x01\x07\x01\x33\x00\x00\x01\x11\x00\x01\x07\x01\x33\x00\x00\x01\x19\x00\x02\x07\x01\x33\x07\x01\x73\x00\x00\x01\x61\x00\x04\x07\x01\x33\x07\x01\x73\x07\x01\x51\x07\x01\x54\x00\x00\x01\x6F\x00\x04\x07\x01\x33\x07\x01\x73\x07\x01\x51\x07\x01\x54\x00\x00'
+L384:   dup
+L385:   pop2
+L386:   invokestatic Method JB method827 (Ljava/lang/String;I)V
+L389:   invokestatic Method JB new ()V
+L392:   getstatic Field Kc field1931 LKc;
+L395:   checkcast md
+L398:   invokevirtual Method md method864 ()V
+L401:   return
+L402:   
+        .attribute StackMap b'\x00\x0D\x00\x1C\x00\x00\x00\x00\x00\x63\x00\x00\x00\x01\x07\x00\x2A\x00\x64\x00\x00\x00\x01\x07\x00\x1F\x00\x69\x00\x01\x07\x00\x04\x00\x00\x00\x6E\x00\x00\x00\x00\x00\xAA\x00\x00\x00\x01\x07\x00\x2A\x00\xAB\x00\x00\x00\x01\x07\x00\xD3\x00\xB3\x00\x00\x00\x00\x00\xE7\x00\x01\x07\x01\x3C\x00\x00\x01\x12\x00\x01\x07\x01\x3C\x00\x00\x01\x1A\x00\x02\x07\x01\x3C\x07\x01\x7C\x00\x00\x01\x62\x00\x04\x07\x01\x3C\x07\x01\x7C\x07\x01\x5A\x07\x01\x5D\x00\x00\x01\x70\x00\x04\x07\x01\x3C\x07\x01\x7C\x07\x01\x5A\x07\x01\x5D\x00\x00'
     .end code
     .exceptions java/lang/Exception
 .end method
