@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Check required tools are installed
-required_tools=("curl" "wget" "tar")
+required_tools=("curl" "wget" "tar" "jq")
 for tool in "${required_tools[@]}"; do
     if ! command -v "$tool" &> /dev/null; then
         echo "$tool is required but not installed. Aborting."
@@ -20,13 +20,18 @@ mkdir -p "$TARGET_DIR"
 
 # --- Download and manage Temurin JDK ---
 TEMURIN_API_URL="https://api.github.com/repos/adoptium/temurin17-binaries/releases/latest"
-TEMURIN_DOWNLOAD_URL=$(curl -s $TEMURIN_API_URL | grep "browser_download_url" | grep "jdk_x64_linux_hotspot" | grep -v "debug" | grep -v "sha256" | grep -v ".sig" | grep -v ".json" | grep ".tar.gz" | cut -d '"' -f 4)
+TEMURIN_DOWNLOAD_URL=$(curl -s "$TEMURIN_API_URL" | jq -r '.assets[] | select(.name | contains("jdk_x64_linux_hotspot") and endswith(".tar.gz")).browser_download_url')
 TEMURIN_FILENAME=$(basename "$TEMURIN_DOWNLOAD_URL")
 
 # Download and extract the Temurin JDK
 wget -O "$TARGET_DIR/$TEMURIN_FILENAME" "$TEMURIN_DOWNLOAD_URL"
 tar xfv "$TARGET_DIR/$TEMURIN_FILENAME" -C "$TARGET_DIR"
-rm "$TEMURIN_FILENAME"
+rm "$TARGET_DIR/$TEMURIN_FILENAME"
+
+# Function to compare version strings
+version_greater() {
+    [ "$(printf '%s\n' "$1" "$2" | sort -V | tail -n 1)" == "$1" ]
+}
 
 # Remove older Temurin JDKs and keep only the latest
 newest_temurin=""

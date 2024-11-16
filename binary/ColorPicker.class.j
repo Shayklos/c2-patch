@@ -51,14 +51,14 @@ L48:    invokevirtual Method ColorPicker applySelectedColor ()V
 L51:    return
 L52:    
         .linenumbertable
-            L0 19
-            L4 17
-            L20 20
-            L24 22
-            L31 25
-            L40 26
-            L47 27
-            L51 29
+            L0 20
+            L4 18
+            L20 21
+            L24 23
+            L31 26
+            L40 27
+            L47 28
+            L51 30
         .end linenumbertable
     .end code
 .end method
@@ -123,21 +123,21 @@ L125:   invokevirtual Method ColorPicker loadColorPresets ()V
 L128:   return
 L129:   
         .linenumbertable
-            L0 32
-            L12 33
-            L19 34
-            L31 35
-            L38 36
-            L51 38
-            L59 39
-            L72 40
-            L81 43
-            L91 44
-            L101 45
-            L108 46
-            L119 48
-            L124 49
-            L128 50
+            L0 33
+            L12 34
+            L19 35
+            L31 36
+            L38 37
+            L51 39
+            L59 40
+            L72 41
+            L81 44
+            L91 45
+            L101 46
+            L108 47
+            L119 49
+            L124 50
+            L128 51
         .end linenumbertable
     .end code
 .end method
@@ -222,24 +222,24 @@ L171:   pop
 L172:   return
 L173:   
         .linenumbertable
-            L0 53
-            L10 54
-            L20 55
-            L32 56
-            L40 58
-            L53 59
-            L64 60
-            L73 62
-            L83 63
-            L93 64
-            L101 65
-            L113 66
-            L121 68
-            L126 70
-            L139 71
-            L150 72
-            L163 73
-            L172 74
+            L0 54
+            L10 55
+            L20 56
+            L32 57
+            L40 59
+            L53 60
+            L64 61
+            L73 63
+            L83 64
+            L93 65
+            L101 66
+            L113 67
+            L121 69
+            L126 71
+            L139 72
+            L150 73
+            L163 74
+            L172 75
         .end linenumbertable
     .end code
 .end method
@@ -363,28 +363,28 @@ L236:   pop
 L237:   return
 L238:   
         .linenumbertable
-            L0 77
-            L13 78
-            L24 79
-            L33 81
-            L51 82
-            L62 83
-            L70 84
-            L79 86
-            L92 87
-            L103 88
-            L112 90
-            L130 91
-            L141 92
-            L149 93
-            L158 95
-            L171 96
-            L182 97
-            L191 99
-            L209 100
-            L220 101
-            L228 102
-            L237 103
+            L0 78
+            L13 79
+            L24 80
+            L33 82
+            L51 83
+            L62 84
+            L70 85
+            L79 87
+            L92 88
+            L103 89
+            L112 91
+            L130 92
+            L141 93
+            L149 94
+            L158 96
+            L171 97
+            L182 98
+            L191 100
+            L209 101
+            L220 102
+            L228 103
+            L237 104
         .end linenumbertable
     .end code
 .end method
@@ -419,12 +419,12 @@ L62:    invokevirtual Method ColorPicker updateHexFromColor ()V
 L65:    return
 L66:    
         .linenumbertable
-            L0 106
-            L4 107
-            L23 108
-            L42 109
-            L61 112
-            L65 113
+            L0 107
+            L4 108
+            L23 109
+            L42 110
+            L61 113
+            L65 114
         .end linenumbertable
     .end code
 .end method
@@ -458,12 +458,12 @@ L43:    invokevirtual Method javax/swing/JTextField setBackground (Ljava/awt/Col
 L46:    return
 L47:    
         .linenumbertable
-            L0 116
-            L6 117
-            L14 118
-            L22 119
-            L30 120
-            L46 122
+            L0 117
+            L6 118
+            L14 119
+            L22 120
+            L30 121
+            L46 123
         .end linenumbertable
     .end code
 .end method
@@ -508,12 +508,12 @@ L61:    invokevirtual Method javax/swing/JTextField setText (Ljava/lang/String;)
 L64:    return
 L65:    
         .linenumbertable
-            L0 125
-            L8 126
-            L16 127
-            L24 128
-            L56 129
-            L64 130
+            L0 126
+            L8 127
+            L16 128
+            L24 129
+            L56 130
+            L64 131
         .end linenumbertable
     .end code
 .end method
@@ -584,16 +584,16 @@ L77:    invokestatic Method javax/swing/JOptionPane showMessageDialog (Ljava/awt
 L80:    return
 L81:    
         .linenumbertable
-            L0 133
-            L17 135
-            L26 136
-            L36 138
-            L43 133
-            L59 141
-            L62 138
-            L63 139
-            L67 140
-            L80 142
+            L0 134
+            L17 136
+            L26 137
+            L36 139
+            L43 134
+            L59 142
+            L62 139
+            L63 140
+            L67 141
+            L80 143
         .end linenumbertable
     .end code
 .end method
@@ -683,24 +683,24 @@ L145:   invokestatic Method javax/swing/JOptionPane showMessageDialog (Ljava/awt
 L148:   return
 L149:   
         .linenumbertable
-            L0 145
-            L10 146
-            L14 148
-            L22 149
-            L28 151
-            L38 152
-            L49 153
-            L60 156
-            L75 157
-            L91 158
-            L107 160
-            L111 164
-            L114 161
-            L115 162
-            L119 163
-            L132 164
-            L135 166
-            L148 169
+            L0 146
+            L10 147
+            L14 149
+            L22 150
+            L28 152
+            L38 153
+            L49 154
+            L60 157
+            L75 158
+            L91 159
+            L107 161
+            L111 165
+            L114 162
+            L115 163
+            L119 164
+            L132 165
+            L135 167
+            L148 170
         .end linenumbertable
     .end code
 .end method
@@ -745,23 +745,23 @@ L65:    invokestatic Method javax/swing/JOptionPane showMessageDialog (Ljava/awt
 L68:    return
 L69:    
         .linenumbertable
-            L0 173
-            L10 174
-            L21 175
-            L32 176
-            L43 177
-            L47 181
-            L50 178
-            L51 179
-            L55 180
-            L68 182
+            L0 174
+            L10 175
+            L21 176
+            L32 177
+            L43 178
+            L47 182
+            L50 179
+            L51 180
+            L55 181
+            L68 183
         .end linenumbertable
     .end code
 .end method
 
 .method private saveColorToFile : ()V
-    .code stack 5 locals 6
-        .catch java/io/IOException from L0 to L138 using L141
+    .code stack 6 locals 6
+        .catch java/io/IOException from L0 to L141 using L144
 L0:     ldc_w "settings"
 L3:     iconst_0
 L4:     anewarray java/lang/String
@@ -800,86 +800,87 @@ L64:    i2f
 L65:    ldc_w 2.55e2f
 L68:    fdiv
 L69:    fstore 4
-L71:    ldc_w "%.9f,%.9f,%.9f"
-L74:    iconst_3
-L75:    anewarray java/lang/Object
-L78:    dup
-L79:    iconst_0
-L80:    fload_2
-L81:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
-L84:    aastore
-L85:    dup
-L86:    iconst_1
-L87:    fload_3
-L88:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
-L91:    aastore
-L92:    dup
-L93:    iconst_2
-L94:    fload 4
-L96:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
-L99:    aastore
-L100:   invokestatic Method java/lang/String format (Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
-L103:   astore 5
-L105:   ldc_w "settings/background-color.txt"
-L108:   iconst_0
-L109:   anewarray java/lang/String
-L112:   invokestatic Method java/nio/file/Paths get (Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
-L115:   aload 5
-L117:   iconst_0
-L118:   anewarray java/nio/file/OpenOption
-L121:   invokestatic Method java/nio/file/Files writeString (Ljava/nio/file/Path;Ljava/lang/CharSequence;[Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;
-L124:   pop
-L125:   getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L128:   ldc_w "Color saved successfully!"
-L131:   ldc_w "Success"
-L134:   iconst_1
-L135:   invokestatic Method javax/swing/JOptionPane showMessageDialog (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V
-L138:   goto L159
+L71:    getstatic Field java/util/Locale ENGLISH Ljava/util/Locale;
+L74:    ldc_w "%.9f, %.9f, %.9f"
+L77:    iconst_3
+L78:    anewarray java/lang/Object
+L81:    dup
+L82:    iconst_0
+L83:    fload_2
+L84:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
+L87:    aastore
+L88:    dup
+L89:    iconst_1
+L90:    fload_3
+L91:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
+L94:    aastore
+L95:    dup
+L96:    iconst_2
+L97:    fload 4
+L99:    invokestatic Method java/lang/Float valueOf (F)Ljava/lang/Float;
+L102:   aastore
+L103:   invokestatic Method java/lang/String format (Ljava/util/Locale;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;
+L106:   astore 5
+L108:   ldc_w "settings/background-color.txt"
+L111:   iconst_0
+L112:   anewarray java/lang/String
+L115:   invokestatic Method java/nio/file/Paths get (Ljava/lang/String;[Ljava/lang/String;)Ljava/nio/file/Path;
+L118:   aload 5
+L120:   iconst_0
+L121:   anewarray java/nio/file/OpenOption
+L124:   invokestatic Method java/nio/file/Files writeString (Ljava/nio/file/Path;Ljava/lang/CharSequence;[Ljava/nio/file/OpenOption;)Ljava/nio/file/Path;
+L127:   pop
+L128:   getstatic Field ColorPicker frame Ljavax/swing/JFrame;
+L131:   ldc_w "Color saved successfully!"
+L134:   ldc_w "Success"
+L137:   iconst_1
+L138:   invokestatic Method javax/swing/JOptionPane showMessageDialog (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V
+L141:   goto L162
 
         .stack full
             locals Object ColorPicker
             stack Object java/io/IOException
         .end stack
-L141:   astore_1
-L142:   aload_1
-L143:   invokevirtual Method java/io/IOException printStackTrace ()V
-L146:   getstatic Field ColorPicker frame Ljavax/swing/JFrame;
-L149:   ldc_w "Failed to save color!"
-L152:   ldc_w "Error"
-L155:   iconst_0
-L156:   invokestatic Method javax/swing/JOptionPane showMessageDialog (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V
+L144:   astore_1
+L145:   aload_1
+L146:   invokevirtual Method java/io/IOException printStackTrace ()V
+L149:   getstatic Field ColorPicker frame Ljavax/swing/JFrame;
+L152:   ldc_w "Failed to save color!"
+L155:   ldc_w "Error"
+L158:   iconst_0
+L159:   invokestatic Method javax/swing/JOptionPane showMessageDialog (Ljava/awt/Component;Ljava/lang/Object;Ljava/lang/String;I)V
 
         .stack same
-L159:   return
-L160:   
+L162:   return
+L163:   
         .linenumbertable
-            L0 187
-            L11 188
-            L22 189
-            L31 192
-            L44 193
-            L57 194
-            L71 195
-            L105 197
-            L125 198
-            L138 202
-            L141 199
-            L142 200
-            L146 201
-            L159 203
+            L0 188
+            L11 189
+            L22 190
+            L31 193
+            L44 194
+            L57 195
+            L71 198
+            L108 200
+            L128 201
+            L141 205
+            L144 202
+            L145 203
+            L149 204
+            L162 206
         .end linenumbertable
     .end code
 .end method
 
 .method public static main : ([Ljava/lang/String;)V
     .code stack 1 locals 1
-L0:     invokedynamic [_372]
+L0:     invokedynamic [_381]
 L5:     invokestatic Method javax/swing/SwingUtilities invokeLater (Ljava/lang/Runnable;)V
 L8:     return
 L9:     
         .linenumbertable
-            L0 206
-            L8 207
+            L0 209
+            L8 210
         .end linenumbertable
     .end code
 .end method
@@ -891,7 +892,7 @@ L1:     invokevirtual Method ColorPicker saveColorToFile ()V
 L4:     return
 L5:     
         .linenumbertable
-            L0 72
+            L0 73
         .end linenumbertable
     .end code
 .end method
@@ -903,7 +904,7 @@ L1:     invokevirtual Method ColorPicker updateColorFromHex ()V
 L4:     return
 L5:     
         .linenumbertable
-            L0 65
+            L0 66
         .end linenumbertable
     .end code
 .end method
@@ -915,7 +916,7 @@ L1:     invokevirtual Method ColorPicker applySelectedColor ()V
 L4:     return
 L5:     
         .linenumbertable
-            L0 55
+            L0 56
         .end linenumbertable
     .end code
 .end method
@@ -924,15 +925,15 @@ L5:
 .innerclasses
     java/lang/invoke/MethodHandles$Lookup java/lang/invoke/MethodHandles Lookup public static final
 .end innerclasses
-.const [_112] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType (Ljava/awt/event/ActionEvent;)V [_418] MethodType (Ljava/awt/event/ActionEvent;)V : actionPerformed (LColorPicker;)Ljava/awt/event/ActionListener;
-.const [_141] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType (Ljava/awt/event/ActionEvent;)V [_421] MethodType (Ljava/awt/event/ActionEvent;)V : actionPerformed (LColorPicker;)Ljava/awt/event/ActionListener;
-.const [_156] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType (Ljava/awt/event/ActionEvent;)V [_424] MethodType (Ljava/awt/event/ActionEvent;)V : actionPerformed (LColorPicker;)Ljava/awt/event/ActionListener;
+.const [_112] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType (Ljava/awt/event/ActionEvent;)V [_427] MethodType (Ljava/awt/event/ActionEvent;)V : actionPerformed (LColorPicker;)Ljava/awt/event/ActionListener;
+.const [_141] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType (Ljava/awt/event/ActionEvent;)V [_430] MethodType (Ljava/awt/event/ActionEvent;)V : actionPerformed (LColorPicker;)Ljava/awt/event/ActionListener;
+.const [_156] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType (Ljava/awt/event/ActionEvent;)V [_433] MethodType (Ljava/awt/event/ActionEvent;)V : actionPerformed (LColorPicker;)Ljava/awt/event/ActionListener;
 .const [_199] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Red: \u0001" : makeConcatWithConstants (I)Ljava/lang/String;
 .const [_206] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Green: \u0001" : makeConcatWithConstants (I)Ljava/lang/String;
 .const [_207] = InvokeDynamic invokeStatic Method java/lang/invoke/StringConcatFactory makeConcatWithConstants (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/invoke/CallSite; String "Blue: \u0001" : makeConcatWithConstants (I)Ljava/lang/String;
-.const [_372] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType ()V [_440] MethodType ()V : run ()Ljava/lang/Runnable;
-.const [_418] = MethodHandle invokeVirtual Method ColorPicker lambda$setupUIComponents$0 (Ljava/awt/event/ActionEvent;)V
-.const [_421] = MethodHandle invokeVirtual Method ColorPicker lambda$setupUIComponents$1 (Ljava/awt/event/ActionEvent;)V
-.const [_424] = MethodHandle invokeVirtual Method ColorPicker lambda$setupUIComponents$2 (Ljava/awt/event/ActionEvent;)V
-.const [_440] = MethodHandle newInvokeSpecial Method ColorPicker <init> ()V
+.const [_381] = InvokeDynamic invokeStatic Method java/lang/invoke/LambdaMetafactory metafactory (Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; MethodType ()V [_449] MethodType ()V : run ()Ljava/lang/Runnable;
+.const [_427] = MethodHandle invokeVirtual Method ColorPicker lambda$setupUIComponents$0 (Ljava/awt/event/ActionEvent;)V
+.const [_430] = MethodHandle invokeVirtual Method ColorPicker lambda$setupUIComponents$1 (Ljava/awt/event/ActionEvent;)V
+.const [_433] = MethodHandle invokeVirtual Method ColorPicker lambda$setupUIComponents$2 (Ljava/awt/event/ActionEvent;)V
+.const [_449] = MethodHandle newInvokeSpecial Method ColorPicker <init> ()V
 .end class
