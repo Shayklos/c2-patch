@@ -197,7 +197,7 @@ L154:   goto L103
 L157:   athrow
 L158:   return
 L159:   
-        .attribute StackMap b'\x00\x06\x00\x1A\x00\x02\x07\x00\x02\x07\x00\xC6\x00\x00\x00\x50\x00\x00\x00\x01\x07\x00\xE7\x00\x51\x00\x01\x07\x00\x02\x00\x00\x00\x67\x00\x02\x07\x00\x02\x07\x00\xC6\x00\x00\x00\x9D\x00\x00\x00\x01\x07\x00\xE7\x00\x9E\x00\x01\x07\x00\x02\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x1A\x00\x02\x07\x00\x02\x07\x00\xC6\x00\x00\x00\x50\x00\x00\x00\x01\x07\x00\xEB\x00\x51\x00\x01\x07\x00\x02\x00\x00\x00\x67\x00\x02\x07\x00\x02\x07\x00\xC6\x00\x00\x00\x9D\x00\x00\x00\x01\x07\x00\xEB\x00\x9E\x00\x01\x07\x00\x02\x00\x00'
     .end code
 .end method
 
@@ -259,483 +259,483 @@ L94:    iconst_0
 L95:    iconst_1
 L96:    dup
 L97:    pop2
-L98:    bipush 9
-L100:   iconst_1
-L101:   dup
-L102:   pop2
-L103:   ldc_w 1.6e1f
-L106:   invokespecial Method zD <init> (IIF)V
-L109:   astore 4
-L111:   ldc_w "t"
-L114:   new pd
-L117:   aload 4
-L119:   dup_x2
-L120:   dup_x1
-L121:   dup
-L122:   pop2
-L123:   dup
-L124:   aload_0
-L125:   aload_3
-L126:   aload 4
-L128:   aload_1
-L129:   invokespecial Method pd <init> (LGd;LDF;LzD;Lqc;)V
-L132:   invokevirtual Method zD method128 (Lh;)V
-L135:   invokestatic Method JB method831 (Ljava/lang/String;)I
-L138:   invokevirtual Method zD method14 (I)V
-L141:   new DF
-L144:   aload_1
-L145:   dup_x1
-L146:   dup
-L147:   pop2
-L148:   dup
-L149:   ldc_w "Opponents"
-L152:   invokespecial Method DF <init> (Ljava/lang/String;)V
-L155:   invokevirtual Method qc method36 (LgB;)LgB;
-L158:   aload_1
-L159:   aload 4
-L161:   iconst_4
-L162:   iconst_1
-L163:   dup
-L164:   pop2
-L165:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
-L168:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
-L171:   new SB
-L174:   aload_1
-L175:   dup_x1
-L176:   dup
-L177:   pop2
-L178:   dup
-L179:   aload_3
-L180:   ldc_w 2e-1f
-L183:   fconst_0
-L184:   dup
-L185:   dup_x1
-L186:   invokespecial Method SB <init> (LgB;FFFF)V
-L189:   invokevirtual Method qc method36 (LgB;)LgB;
-L192:   new Vg
-L195:   aload_1
-L196:   dup_x1
-L197:   dup
-L198:   pop2
-L199:   dup
-L200:   invokespecial Method Vg <init> ()V
-L203:   invokevirtual Method qc method36 (LgB;)LgB;
-L206:   new Vg
-L209:   aload_1
-L210:   dup_x1
-L211:   dup_x2
-L212:   dup
-L213:   pop2
-L214:   dup
-L215:   fconst_0
-L216:   ldc_w 5e-1f
-L219:   invokespecial Method Vg <init> (FF)V
-L222:   bipush 7
-L224:   iconst_1
-L225:   dup
-L226:   pop2
-L227:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
-L230:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
-L233:   new DF
-L236:   dup
-L237:   ldc ""
-L239:   invokespecial Method DF <init> (Ljava/lang/String;)V
-L242:   astore_3
-L243:   new zD
-L246:   dup
-L247:   iconst_0
-L248:   iconst_1
-L249:   dup
-L250:   pop2
-L251:   sipush 399
-L254:   iconst_1
-L255:   dup
-L256:   pop2
-L257:   ldc_w 1.6e1f
-L260:   invokespecial Method zD <init> (IIF)V
-L263:   dup
-L264:   astore 5
-L266:   dup
-L267:   ldc_w "u"
-L270:   aload 5
-L272:   dup_x2
-L273:   new Nc
-L276:   aload 5
-L278:   dup
-L279:   pop2
-L280:   dup
-L281:   aload_0
-L282:   aload 5
-L284:   aload_3
-L285:   aload_1
-L286:   invokespecial Method Nc <init> (LGd;LzD;LDF;Lqc;)V
-L289:   invokevirtual Method zD method128 (Lh;)V
-L292:   invokestatic Method JB method831 (Ljava/lang/String;)I
-L295:   istore 6
-L297:   iconst_0
-L298:   iconst_1
-L299:   dup
-L300:   pop2
-L301:   invokevirtual Method zD method14 (I)V
-L304:   iconst_1
-L305:   dup
+L98:    sipush 1000
+L101:   iconst_1
+L102:   dup
+L103:   pop2
+L104:   ldc_w 1.6e1f
+L107:   invokespecial Method zD <init> (IIF)V
+L110:   astore 4
+L112:   ldc_w "t"
+L115:   new pd
+L118:   aload 4
+L120:   dup_x2
+L121:   dup_x1
+L122:   dup
+L123:   pop2
+L124:   dup
+L125:   aload_0
+L126:   aload_3
+L127:   aload 4
+L129:   aload_1
+L130:   invokespecial Method pd <init> (LGd;LDF;LzD;Lqc;)V
+L133:   invokevirtual Method zD method128 (Lh;)V
+L136:   invokestatic Method JB method831 (Ljava/lang/String;)I
+L139:   invokevirtual Method zD method14 (I)V
+L142:   new DF
+L145:   aload_1
+L146:   dup_x1
+L147:   dup
+L148:   pop2
+L149:   dup
+L150:   ldc_w "Opponents"
+L153:   invokespecial Method DF <init> (Ljava/lang/String;)V
+L156:   invokevirtual Method qc method36 (LgB;)LgB;
+L159:   aload_1
+L160:   aload 4
+L162:   iconst_4
+L163:   iconst_1
+L164:   dup
+L165:   pop2
+L166:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
+L169:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
+L172:   new SB
+L175:   aload_1
+L176:   dup_x1
+L177:   dup
+L178:   pop2
+L179:   dup
+L180:   aload_3
+L181:   ldc_w 2e-1f
+L184:   fconst_0
+L185:   dup
+L186:   dup_x1
+L187:   invokespecial Method SB <init> (LgB;FFFF)V
+L190:   invokevirtual Method qc method36 (LgB;)LgB;
+L193:   new Vg
+L196:   aload_1
+L197:   dup_x1
+L198:   dup
+L199:   pop2
+L200:   dup
+L201:   invokespecial Method Vg <init> ()V
+L204:   invokevirtual Method qc method36 (LgB;)LgB;
+L207:   new Vg
+L210:   aload_1
+L211:   dup_x1
+L212:   dup_x2
+L213:   dup
+L214:   pop2
+L215:   dup
+L216:   fconst_0
+L217:   ldc_w 5e-1f
+L220:   invokespecial Method Vg <init> (FF)V
+L223:   bipush 7
+L225:   iconst_1
+L226:   dup
+L227:   pop2
+L228:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
+L231:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
+L234:   new DF
+L237:   dup
+L238:   ldc ""
+L240:   invokespecial Method DF <init> (Ljava/lang/String;)V
+L243:   astore_3
+L244:   new zD
+L247:   dup
+L248:   iconst_0
+L249:   iconst_1
+L250:   dup
+L251:   pop2
+L252:   sipush 399
+L255:   iconst_1
+L256:   dup
+L257:   pop2
+L258:   ldc_w 1.6e1f
+L261:   invokespecial Method zD <init> (IIF)V
+L264:   dup
+L265:   astore 5
+L267:   dup
+L268:   ldc_w "u"
+L271:   aload 5
+L273:   dup_x2
+L274:   new Nc
+L277:   aload 5
+L279:   dup
+L280:   pop2
+L281:   dup
+L282:   aload_0
+L283:   aload 5
+L285:   aload_3
+L286:   aload_1
+L287:   invokespecial Method Nc <init> (LGd;LzD;LDF;Lqc;)V
+L290:   invokevirtual Method zD method128 (Lh;)V
+L293:   invokestatic Method JB method831 (Ljava/lang/String;)I
+L296:   istore 6
+L298:   iconst_0
+L299:   iconst_1
+L300:   dup
+L301:   pop2
+L302:   invokevirtual Method zD method14 (I)V
+L305:   iconst_1
 L306:   dup
-L307:   pop2
-L308:   invokevirtual Method zD method14 (I)V
-L311:   iload 6
-L313:   invokevirtual Method zD method14 (I)V
-L316:   new DF
-L319:   aload_1
-L320:   dup
-L321:   pop2
-L322:   dup
-L323:   ldc_w "Difficulty"
-L326:   invokespecial Method DF <init> (Ljava/lang/String;)V
-L329:   invokevirtual Method qc method36 (LgB;)LgB;
-L332:   aload_1
-L333:   aload 5
-L335:   iconst_4
-L336:   iconst_1
-L337:   dup
-L338:   pop2
-L339:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
-L342:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
-L345:   new SB
-L348:   aload_1
-L349:   dup_x1
-L350:   dup
-L351:   pop2
-L352:   dup
-L353:   aload_3
-L354:   ldc_w 2e-1f
-L357:   fconst_0
-L358:   dup
-L359:   dup_x1
-L360:   invokespecial Method SB <init> (LgB;FFFF)V
-L363:   invokevirtual Method qc method36 (LgB;)LgB;
-L366:   new Vg
-L369:   aload_1
-L370:   dup_x1
-L371:   dup
-L372:   pop2
-L373:   dup
-L374:   invokespecial Method Vg <init> ()V
-L377:   invokevirtual Method qc method36 (LgB;)LgB;
-L380:   new Vg
-L383:   aload_1
-L384:   dup_x1
-L385:   dup
-L386:   pop2
-L387:   dup
-L388:   invokespecial Method Vg <init> ()V
-L391:   invokevirtual Method qc method36 (LgB;)LgB;
-L394:   aload_1
-L395:   aload_2
-L396:   bipush 6
-L398:   iconst_1
-L399:   dup
-L400:   pop2
-L401:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
-L404:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
-L407:   new Vg
-L410:   aload_1
-L411:   dup_x1
-L412:   dup
-L413:   pop2
-L414:   dup
-L415:   fconst_0
-L416:   ldc_w 5e-1f
-L419:   invokespecial Method Vg <init> (FF)V
-L422:   bipush 7
-L424:   iconst_1
-L425:   dup
-L426:   pop2
-L427:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
-L430:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
-L433:   new qc
-L436:   dup
-L437:   new og
-L440:   dup
-L441:   iconst_1
-L442:   dup
+L307:   dup
+L308:   pop2
+L309:   invokevirtual Method zD method14 (I)V
+L312:   iload 6
+L314:   invokevirtual Method zD method14 (I)V
+L317:   new DF
+L320:   aload_1
+L321:   dup
+L322:   pop2
+L323:   dup
+L324:   ldc_w "Difficulty"
+L327:   invokespecial Method DF <init> (Ljava/lang/String;)V
+L330:   invokevirtual Method qc method36 (LgB;)LgB;
+L333:   aload_1
+L334:   aload 5
+L336:   iconst_4
+L337:   iconst_1
+L338:   dup
+L339:   pop2
+L340:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
+L343:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
+L346:   new SB
+L349:   aload_1
+L350:   dup_x1
+L351:   dup
+L352:   pop2
+L353:   dup
+L354:   aload_3
+L355:   ldc_w 2e-1f
+L358:   fconst_0
+L359:   dup
+L360:   dup_x1
+L361:   invokespecial Method SB <init> (LgB;FFFF)V
+L364:   invokevirtual Method qc method36 (LgB;)LgB;
+L367:   new Vg
+L370:   aload_1
+L371:   dup_x1
+L372:   dup
+L373:   pop2
+L374:   dup
+L375:   invokespecial Method Vg <init> ()V
+L378:   invokevirtual Method qc method36 (LgB;)LgB;
+L381:   new Vg
+L384:   aload_1
+L385:   dup_x1
+L386:   dup
+L387:   pop2
+L388:   dup
+L389:   invokespecial Method Vg <init> ()V
+L392:   invokevirtual Method qc method36 (LgB;)LgB;
+L395:   aload_1
+L396:   aload_2
+L397:   bipush 6
+L399:   iconst_1
+L400:   dup
+L401:   pop2
+L402:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
+L405:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
+L408:   new Vg
+L411:   aload_1
+L412:   dup_x1
+L413:   dup
+L414:   pop2
+L415:   dup
+L416:   fconst_0
+L417:   ldc_w 5e-1f
+L420:   invokespecial Method Vg <init> (FF)V
+L423:   bipush 7
+L425:   iconst_1
+L426:   dup
+L427:   pop2
+L428:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
+L431:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
+L434:   new qc
+L437:   dup
+L438:   new og
+L441:   dup
+L442:   iconst_1
 L443:   dup
-L444:   pop2
-L445:   fconst_0
-L446:   ldc_w 2e-1f
-L449:   invokespecial Method og <init> (IFF)V
-L452:   invokespecial Method qc <init> (Ld;)V
-L455:   astore_3
-L456:   new java/util/HashMap
-L459:   aload_0
-L460:   dup_x1
-L461:   dup
-L462:   pop2
-L463:   dup
-L464:   invokespecial Method java/util/HashMap <init> ()V
-L467:   putfield Field Gd field203 Ljava/util/Map;
-L470:   getstatic Field GF field1804 Ljava/util/HashMap;
-L473:   invokevirtual Method java/util/HashMap entrySet ()Ljava/util/Set;
-L476:   invokeinterface InterfaceMethod java/util/Set iterator ()Ljava/util/Iterator; 1
-L481:   astore 6
-L483:   pop
-L484:   pop2
+L444:   dup
+L445:   pop2
+L446:   fconst_0
+L447:   ldc_w 2e-1f
+L450:   invokespecial Method og <init> (IFF)V
+L453:   invokespecial Method qc <init> (Ld;)V
+L456:   astore_3
+L457:   new java/util/HashMap
+L460:   aload_0
+L461:   dup_x1
+L462:   dup
+L463:   pop2
+L464:   dup
+L465:   invokespecial Method java/util/HashMap <init> ()V
+L468:   putfield Field Gd field203 Ljava/util/Map;
+L471:   getstatic Field GF field1804 Ljava/util/HashMap;
+L474:   invokevirtual Method java/util/HashMap entrySet ()Ljava/util/Set;
+L477:   invokeinterface InterfaceMethod java/util/Set iterator ()Ljava/util/Iterator; 1
+L482:   astore 6
+L484:   pop
 L485:   pop2
 L486:   pop2
-L487:   aload 6
-L489:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
-L494:   ifeq L573
-L497:   aload 6
-L499:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
-L504:   checkcast java/util/Map$Entry
-L507:   astore 7
-L509:   aload_0
-L510:   getfield Field Gd field203 Ljava/util/Map;
-L513:   aload 7
-L515:   invokeinterface InterfaceMethod java/util/Map$Entry getKey ()Ljava/lang/Object; 1
-L520:   new Tg
-L523:   dup
-L524:   aload 7
-L526:   invokeinterface InterfaceMethod java/util/Map$Entry getValue ()Ljava/lang/Object; 1
-L531:   checkcast java/lang/String
-L534:   invokespecial Method Tg <init> (Ljava/lang/String;)V
-L537:   invokeinterface InterfaceMethod java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
-L542:   pop
-L543:   aload_3
-L544:   aload_0
-L545:   getfield Field Gd field203 Ljava/util/Map;
-L548:   aload 7
-L550:   invokeinterface InterfaceMethod java/util/Map$Entry getKey ()Ljava/lang/Object; 1
-L555:   invokeinterface InterfaceMethod java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object; 2
-L560:   checkcast gB
-L563:   invokevirtual Method qc method36 (LgB;)LgB;
-L566:   pop
-L567:   aload 6
-L569:   goto L489
-L572:   athrow
-        .catch java/lang/NullPointerException from L573 to L596 using L599
-L573:   aload_0
-L574:   getfield Field Gd field203 Ljava/util/Map;
-L577:   ldc "w"
-L579:   invokestatic Method JB method831 (Ljava/lang/String;)I
-L582:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
-L585:   invokeinterface InterfaceMethod java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object; 2
-L590:   checkcast Tg
-L593:   invokevirtual Method Tg method56 ()V
-L596:   goto L626
-L599:   astore 6
-L601:   aload_0
-L602:   getfield Field Gd field203 Ljava/util/Map;
-L605:   invokeinterface InterfaceMethod java/util/Map values ()Ljava/util/Collection; 1
-L610:   invokeinterface InterfaceMethod java/util/Collection iterator ()Ljava/util/Iterator; 1
-L615:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
-L620:   checkcast Tg
-L623:   invokevirtual Method Tg method56 ()V
-L626:   new DF
-L629:   dup
-L630:   ldc_w "Game mode"
-L633:   invokespecial Method DF <init> (Ljava/lang/String;)V
-L636:   astore 6
-L638:   aload_1
-L639:   aload 6
-L641:   dup
-L642:   getstatic Field vD new LvD;
-L645:   invokevirtual Method DF method610 (LvD;)V
-L648:   invokevirtual Method qc method36 (LgB;)LgB;
-L651:   aload_1
-L652:   aload_3
-L653:   iconst_4
-L654:   iconst_1
-L655:   dup
-L656:   pop2
-L657:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
-L660:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
-L663:   new Yg
-L666:   dup
-L667:   ldc_w "Start game"
-L670:   new Pb
-L673:   dup
-L674:   aload_0
-L675:   aload 4
-L677:   aload 5
-L679:   aload_2
-L680:   invokespecial Method Pb <init> (LGd;LzD;LzD;LPg;)V
-L683:   invokespecial Method Yg <init> (Ljava/lang/String;Lh;)V
-L686:   astore 7
-L688:   new DF
-L691:   dup
-L692:   ldc_w "Improve your skills by playing against the computer."
-L695:   invokespecial Method DF <init> (Ljava/lang/String;)V
-L698:   astore_2
-L699:   iconst_1
-L700:   aload_2
-L701:   dup_x1
-L702:   getstatic Field vD new LvD;
-L705:   invokevirtual Method DF method610 (LvD;)V
-L708:   iconst_1
-L709:   dup
-L710:   pop2
-L711:   invokevirtual Method DF method95 (Z)V
-L714:   pop
-L715:   iconst_4
-L716:   iconst_1
-L717:   dup
-L718:   pop2
-L719:   aload_0
-L720:   getfield Field Gd field203 Ljava/util/Map;
-L723:   invokeinterface InterfaceMethod java/util/Map size ()I 1
-L728:   iadd
-L729:   iconst_1
-L730:   dup
+L487:   pop2
+L488:   aload 6
+L490:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
+L495:   ifeq L574
+L498:   aload 6
+L500:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
+L505:   checkcast java/util/Map$Entry
+L508:   astore 7
+L510:   aload_0
+L511:   getfield Field Gd field203 Ljava/util/Map;
+L514:   aload 7
+L516:   invokeinterface InterfaceMethod java/util/Map$Entry getKey ()Ljava/lang/Object; 1
+L521:   new Tg
+L524:   dup
+L525:   aload 7
+L527:   invokeinterface InterfaceMethod java/util/Map$Entry getValue ()Ljava/lang/Object; 1
+L532:   checkcast java/lang/String
+L535:   invokespecial Method Tg <init> (Ljava/lang/String;)V
+L538:   invokeinterface InterfaceMethod java/util/Map put (Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object; 3
+L543:   pop
+L544:   aload_3
+L545:   aload_0
+L546:   getfield Field Gd field203 Ljava/util/Map;
+L549:   aload 7
+L551:   invokeinterface InterfaceMethod java/util/Map$Entry getKey ()Ljava/lang/Object; 1
+L556:   invokeinterface InterfaceMethod java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object; 2
+L561:   checkcast gB
+L564:   invokevirtual Method qc method36 (LgB;)LgB;
+L567:   pop
+L568:   aload 6
+L570:   goto L490
+L573:   athrow
+        .catch java/lang/NullPointerException from L574 to L597 using L600
+L574:   aload_0
+L575:   getfield Field Gd field203 Ljava/util/Map;
+L578:   ldc "w"
+L580:   invokestatic Method JB method831 (Ljava/lang/String;)I
+L583:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
+L586:   invokeinterface InterfaceMethod java/util/Map get (Ljava/lang/Object;)Ljava/lang/Object; 2
+L591:   checkcast Tg
+L594:   invokevirtual Method Tg method56 ()V
+L597:   goto L627
+L600:   astore 6
+L602:   aload_0
+L603:   getfield Field Gd field203 Ljava/util/Map;
+L606:   invokeinterface InterfaceMethod java/util/Map values ()Ljava/util/Collection; 1
+L611:   invokeinterface InterfaceMethod java/util/Collection iterator ()Ljava/util/Iterator; 1
+L616:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
+L621:   checkcast Tg
+L624:   invokevirtual Method Tg method56 ()V
+L627:   new DF
+L630:   dup
+L631:   ldc_w "Game mode"
+L634:   invokespecial Method DF <init> (Ljava/lang/String;)V
+L637:   astore 6
+L639:   aload_1
+L640:   aload 6
+L642:   dup
+L643:   getstatic Field vD new LvD;
+L646:   invokevirtual Method DF method610 (LvD;)V
+L649:   invokevirtual Method qc method36 (LgB;)LgB;
+L652:   aload_1
+L653:   aload_3
+L654:   iconst_4
+L655:   iconst_1
+L656:   dup
+L657:   pop2
+L658:   invokestatic Method java/lang/Integer valueOf (I)Ljava/lang/Integer;
+L661:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
+L664:   new Yg
+L667:   dup
+L668:   ldc_w "Start game"
+L671:   new Pb
+L674:   dup
+L675:   aload_0
+L676:   aload 4
+L678:   aload 5
+L680:   aload_2
+L681:   invokespecial Method Pb <init> (LGd;LzD;LzD;LPg;)V
+L684:   invokespecial Method Yg <init> (Ljava/lang/String;Lh;)V
+L687:   astore 7
+L689:   new DF
+L692:   dup
+L693:   ldc_w "Improve your skills by playing against the computer. Difficulty may impact FPS."
+L696:   invokespecial Method DF <init> (Ljava/lang/String;)V
+L699:   astore_2
+L700:   iconst_1
+L701:   aload_2
+L702:   dup_x1
+L703:   getstatic Field vD new LvD;
+L706:   invokevirtual Method DF method610 (LvD;)V
+L709:   iconst_1
+L710:   dup
+L711:   pop2
+L712:   invokevirtual Method DF method95 (Z)V
+L715:   pop
+L716:   iconst_4
+L717:   iconst_1
+L718:   dup
+L719:   pop2
+L720:   aload_0
+L721:   getfield Field Gd field203 Ljava/util/Map;
+L724:   invokeinterface InterfaceMethod java/util/Map size ()I 1
+L729:   iadd
+L730:   iconst_1
 L731:   dup
-L732:   pop2
-L733:   multianewarray [[LgB; 2
-L737:   astore_3
-L738:   aload_0
-L739:   iconst_0
-L740:   iconst_1
-L741:   aload_3
-L742:   dup_x1
-L743:   iconst_0
-L744:   iconst_1
-L745:   dup
-L746:   pop2
-L747:   aaload
-L748:   iconst_0
-L749:   iconst_1
-L750:   dup
-L751:   pop2
-L752:   aload 4
-L754:   aastore
-L755:   iconst_1
-L756:   dup
-L757:   pop2
-L758:   aaload
-L759:   iconst_0
-L760:   iconst_1
-L761:   dup
-L762:   pop2
-L763:   aload 5
-L765:   aastore
-L766:   iconst_1
-L767:   dup
-L768:   pop2
-L769:   istore 5
-L771:   getfield Field Gd field203 Ljava/util/Map;
-L774:   invokeinterface InterfaceMethod java/util/Map values ()Ljava/util/Collection; 1
-L779:   invokeinterface InterfaceMethod java/util/Collection iterator ()Ljava/util/Iterator; 1
-L784:   dup
-L785:   astore 6
-L787:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
-L792:   ifeq L831
-L795:   aload 6
-L797:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
-L802:   checkcast Tg
-L805:   astore 8
-L807:   aload 6
-L809:   aload_3
-L810:   iconst_2
-L811:   iconst_1
-L812:   dup
-L813:   pop2
-L814:   iload 5
-L816:   iadd
-L817:   aaload
-L818:   iconst_0
-L819:   iconst_1
-L820:   dup
-L821:   pop2
-L822:   aload 8
-L824:   iinc 5 1
-L827:   aastore
-L828:   goto L787
-L831:   aload_3
-L832:   iconst_3
-L833:   aload_3
-L834:   dup_x1
-L835:   iconst_2
-L836:   iconst_1
-L837:   dup
-L838:   pop2
-L839:   aload_0
-L840:   getfield Field Gd field203 Ljava/util/Map;
-L843:   invokeinterface InterfaceMethod java/util/Map size ()I 1
-L848:   iadd
-L849:   aaload
-L850:   iconst_0
-L851:   iconst_1
-L852:   dup
-L853:   pop2
-L854:   aload 7
-L856:   aastore
-L857:   iconst_1
-L858:   dup
-L859:   pop2
-L860:   aload_0
-L861:   getfield Field Gd field203 Ljava/util/Map;
-L864:   invokeinterface InterfaceMethod java/util/Map size ()I 1
-L869:   iadd
-L870:   aaload
-L871:   iconst_0
-L872:   iconst_1
-L873:   dup
-L874:   pop2
-L875:   aload 4
-L877:   aastore
-L878:   invokestatic Method mC method1702 ([[LgB;)V
-L881:   new Fd
-L884:   dup
-L885:   new fG
-L888:   aload_0
-L889:   dup_x1
-L890:   dup
-L891:   pop2
-L892:   dup
-L893:   getstatic Field LE field634 LLE;
-L896:   ldc 1e-1f
-L898:   invokespecial Method fG <init> (LLE;F)V
-L901:   aload 7
-L903:   invokespecial Method Fd <init> (LGd;Ld;LYg;)V
-L906:   dup
-L907:   astore 6
-L909:   dup
-L910:   new SB
-L913:   aload 6
-L915:   dup_x1
-L916:   dup
-L917:   pop2
-L918:   dup
-L919:   aload_2
-L920:   ldc_w 2e-1f
-L923:   invokespecial Method SB <init> (LgB;F)V
-L926:   getstatic Field dg field337 Ldg;
-L929:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
-L932:   new SB
-L935:   aload 6
-L937:   dup_x2
-L938:   dup
-L939:   pop2
-L940:   dup
-L941:   aload_1
-L942:   ldc_w 2e-1f
-L945:   invokespecial Method SB <init> (LgB;F)V
-L948:   getstatic Field dg field337 Ldg;
-L951:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
-L954:   new SB
-L957:   aload 6
-L959:   dup
-L960:   pop2
-L961:   dup
-L962:   aload 7
-L964:   ldc_w 2e-1f
-L967:   dup
-L968:   fconst_0
-L969:   dup_x2
-L970:   invokespecial Method SB <init> (LgB;FFFF)V
-L973:   getstatic Field dg this Ldg;
-L976:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
-L979:   areturn
-L980:   
-        .attribute StackMap b'\x00\x0A\x00\x2C\x00\x00\x00\x01\x07\x00\xE7\x00\x2D\x00\x02\x07\x00\x02\x07\x00\x5C\x00\x03\x08\x00\x17\x08\x00\x17\x07\x00\xFE\x00\x31\x00\x02\x07\x00\x02\x07\x00\x5C\x00\x04\x08\x00\x17\x08\x00\x17\x07\x00\xFE\x01\x01\xE9\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\xF4\x07\x00\x5C\x07\x01\x13\x07\x01\x13\x07\x00\xC6\x00\x01\x07\x00\xC6\x02\x3C\x00\x00\x00\x01\x07\x00\xE7\x02\x3D\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\xF4\x07\x00\x5C\x07\x01\x13\x07\x01\x13\x07\x00\xC6\x00\x00\x02\x57\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\xF4\x07\x00\x5C\x07\x01\x13\x07\x01\x13\x07\x00\xC6\x00\x01\x07\x00\xED\x02\x72\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\xF4\x07\x00\x5C\x07\x01\x13\x07\x01\x13\x07\x01\x59\x00\x00\x03\x13\x00\x08\x07\x00\x02\x07\x00\x5C\x07\x00\x2F\x07\x01\x70\x07\x01\x13\x01\x07\x00\xC6\x07\x01\x5D\x00\x01\x07\x00\xC6\x03\x3F\x00\x08\x07\x00\x02\x07\x00\x5C\x07\x00\x2F\x07\x01\x70\x07\x01\x13\x01\x07\x00\xC6\x07\x01\x5D\x00\x00'
+L732:   dup
+L733:   pop2
+L734:   multianewarray [[LgB; 2
+L738:   astore_3
+L739:   aload_0
+L740:   iconst_0
+L741:   iconst_1
+L742:   aload_3
+L743:   dup_x1
+L744:   iconst_0
+L745:   iconst_1
+L746:   dup
+L747:   pop2
+L748:   aaload
+L749:   iconst_0
+L750:   iconst_1
+L751:   dup
+L752:   pop2
+L753:   aload 4
+L755:   aastore
+L756:   iconst_1
+L757:   dup
+L758:   pop2
+L759:   aaload
+L760:   iconst_0
+L761:   iconst_1
+L762:   dup
+L763:   pop2
+L764:   aload 5
+L766:   aastore
+L767:   iconst_1
+L768:   dup
+L769:   pop2
+L770:   istore 5
+L772:   getfield Field Gd field203 Ljava/util/Map;
+L775:   invokeinterface InterfaceMethod java/util/Map values ()Ljava/util/Collection; 1
+L780:   invokeinterface InterfaceMethod java/util/Collection iterator ()Ljava/util/Iterator; 1
+L785:   dup
+L786:   astore 6
+L788:   invokeinterface InterfaceMethod java/util/Iterator hasNext ()Z 1
+L793:   ifeq L832
+L796:   aload 6
+L798:   invokeinterface InterfaceMethod java/util/Iterator next ()Ljava/lang/Object; 1
+L803:   checkcast Tg
+L806:   astore 8
+L808:   aload 6
+L810:   aload_3
+L811:   iconst_2
+L812:   iconst_1
+L813:   dup
+L814:   pop2
+L815:   iload 5
+L817:   iadd
+L818:   aaload
+L819:   iconst_0
+L820:   iconst_1
+L821:   dup
+L822:   pop2
+L823:   aload 8
+L825:   iinc 5 1
+L828:   aastore
+L829:   goto L788
+L832:   aload_3
+L833:   iconst_3
+L834:   aload_3
+L835:   dup_x1
+L836:   iconst_2
+L837:   iconst_1
+L838:   dup
+L839:   pop2
+L840:   aload_0
+L841:   getfield Field Gd field203 Ljava/util/Map;
+L844:   invokeinterface InterfaceMethod java/util/Map size ()I 1
+L849:   iadd
+L850:   aaload
+L851:   iconst_0
+L852:   iconst_1
+L853:   dup
+L854:   pop2
+L855:   aload 7
+L857:   aastore
+L858:   iconst_1
+L859:   dup
+L860:   pop2
+L861:   aload_0
+L862:   getfield Field Gd field203 Ljava/util/Map;
+L865:   invokeinterface InterfaceMethod java/util/Map size ()I 1
+L870:   iadd
+L871:   aaload
+L872:   iconst_0
+L873:   iconst_1
+L874:   dup
+L875:   pop2
+L876:   aload 4
+L878:   aastore
+L879:   invokestatic Method mC method1702 ([[LgB;)V
+L882:   new Fd
+L885:   dup
+L886:   new fG
+L889:   aload_0
+L890:   dup_x1
+L891:   dup
+L892:   pop2
+L893:   dup
+L894:   getstatic Field LE field634 LLE;
+L897:   ldc 1e-1f
+L899:   invokespecial Method fG <init> (LLE;F)V
+L902:   aload 7
+L904:   invokespecial Method Fd <init> (LGd;Ld;LYg;)V
+L907:   dup
+L908:   astore 6
+L910:   dup
+L911:   new SB
+L914:   aload 6
+L916:   dup_x1
+L917:   dup
+L918:   pop2
+L919:   dup
+L920:   aload_2
+L921:   ldc_w 2e-1f
+L924:   invokespecial Method SB <init> (LgB;F)V
+L927:   getstatic Field dg field337 Ldg;
+L930:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
+L933:   new SB
+L936:   aload 6
+L938:   dup_x2
+L939:   dup
+L940:   pop2
+L941:   dup
+L942:   aload_1
+L943:   ldc_w 2e-1f
+L946:   invokespecial Method SB <init> (LgB;F)V
+L949:   getstatic Field dg field337 Ldg;
+L952:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
+L955:   new SB
+L958:   aload 6
+L960:   dup
+L961:   pop2
+L962:   dup
+L963:   aload 7
+L965:   ldc_w 2e-1f
+L968:   dup
+L969:   fconst_0
+L970:   dup_x2
+L971:   invokespecial Method SB <init> (LgB;FFFF)V
+L974:   getstatic Field dg this Ldg;
+L977:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
+L980:   areturn
+L981:   
+        .attribute StackMap b'\x00\x0A\x00\x2C\x00\x00\x00\x01\x07\x00\xEB\x00\x2D\x00\x02\x07\x00\x02\x07\x00\x5C\x00\x03\x08\x00\x17\x08\x00\x17\x07\x01\x42\x00\x31\x00\x02\x07\x00\x02\x07\x00\x5C\x00\x04\x08\x00\x17\x08\x00\x17\x07\x01\x42\x01\x01\xEA\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\xF4\x07\x00\x5C\x07\x01\x11\x07\x01\x11\x07\x00\xC6\x00\x01\x07\x00\xC6\x02\x3D\x00\x00\x00\x01\x07\x00\xEB\x02\x3E\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\xF4\x07\x00\x5C\x07\x01\x11\x07\x01\x11\x07\x00\xC6\x00\x00\x02\x58\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\xF4\x07\x00\x5C\x07\x01\x11\x07\x01\x11\x07\x00\xC6\x00\x01\x07\x00\xED\x02\x73\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\xF4\x07\x00\x5C\x07\x01\x11\x07\x01\x11\x07\x01\x89\x00\x00\x03\x14\x00\x08\x07\x00\x02\x07\x00\x5C\x07\x00\x2F\x07\x01\x6E\x07\x01\x11\x01\x07\x00\xC6\x07\x01\x5B\x00\x01\x07\x00\xC6\x03\x40\x00\x08\x07\x00\x02\x07\x00\x5C\x07\x00\x2F\x07\x01\x6E\x07\x01\x11\x01\x07\x00\xC6\x07\x01\x5B\x00\x00'
     .end code
 .end method
 
@@ -946,7 +946,7 @@ L302:   invokespecial Method Gd method210 (LPc;LmG;LTe;)V
 L305:   goto L272
 L308:   return
 L309:   
-        .attribute StackMap b'\x00\x0E\x00\x12\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x00\xC6\x00\x01\x07\x00\xC6\x00\x33\x00\x00\x00\x01\x07\x00\xE7\x00\x34\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x00\xC6\x00\x00\x00\x35\x00\x00\x00\x01\x07\x00\xE7\x00\x36\x00\x04\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x00\x00\x00\x71\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x00\xFE\x00\x00\x00\x86\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x00\xFE\x00\x00\x00\x8B\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x00\xFE\x00\x00\x00\xAA\x00\x06\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x00\xFE\x07\x01\xC9\x00\x00\x00\xC2\x00\x06\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x00\xFE\x07\x01\xC9\x00\x00\x00\xDF\x00\x04\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x00\x00\x01\x06\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x01\x59\x00\x00\x01\x10\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x00\xC6\x00\x01\x07\x00\xC6\x01\x34\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x00\xC6\x00\x00'
+        .attribute StackMap b'\x00\x0E\x00\x12\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x00\xC6\x00\x01\x07\x00\xC6\x00\x33\x00\x00\x00\x01\x07\x00\xEB\x00\x34\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x00\xC6\x00\x00\x00\x35\x00\x00\x00\x01\x07\x00\xEB\x00\x36\x00\x04\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x00\x00\x00\x71\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x01\x42\x00\x00\x00\x86\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x01\x42\x00\x00\x00\x8B\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x01\x42\x00\x00\x00\xAA\x00\x06\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x01\x42\x07\x01\xC9\x00\x00\x00\xC2\x00\x06\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x01\x42\x07\x01\xC9\x00\x00\x00\xDF\x00\x04\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x00\x00\x01\x06\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x01\x89\x00\x00\x01\x10\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x00\xC6\x00\x01\x07\x00\xC6\x01\x34\x00\x05\x07\x00\x02\x07\x00\x14\x07\x00\x27\x07\x01\xA2\x07\x00\xC6\x00\x00'
     .end code
 .end method
 
@@ -1215,7 +1215,7 @@ L537:   getstatic Field dg this Ldg;
 L540:   invokevirtual Method qc method31 (LgB;Ljava/lang/Object;)V
 L543:   areturn
 L544:   
-        .attribute StackMap b'\x00\x08\x00\x4B\x00\x04\x07\x00\x02\x07\x00\x5C\x07\x00\x5C\x07\x00\xC6\x00\x01\x07\x00\xC6\x00\x9C\x00\x00\x00\x01\x07\x00\xE7\x00\x9D\x00\x04\x07\x00\x02\x07\x00\x5C\x07\x00\x5C\x07\x00\xC6\x00\x00\x00\xB7\x00\x00\x00\x01\x07\x00\xE7\x00\xB8\x00\x04\x07\x00\x02\x07\x00\x5C\x07\x00\x5C\x07\x00\xC6\x00\x01\x07\x00\xED\x00\xD2\x00\x04\x07\x00\x02\x07\x00\x5C\x07\x00\x5C\x07\x01\x59\x00\x00\x01\x53\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\x2F\x07\x01\x70\x07\x01\x5D\x01\x07\x00\xC6\x00\x01\x07\x00\xC6\x01\x7A\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\x2F\x07\x01\x70\x07\x01\x5D\x01\x07\x00\xC6\x00\x00'
+        .attribute StackMap b'\x00\x08\x00\x4B\x00\x04\x07\x00\x02\x07\x00\x5C\x07\x00\x5C\x07\x00\xC6\x00\x01\x07\x00\xC6\x00\x9C\x00\x00\x00\x01\x07\x00\xEB\x00\x9D\x00\x04\x07\x00\x02\x07\x00\x5C\x07\x00\x5C\x07\x00\xC6\x00\x00\x00\xB7\x00\x00\x00\x01\x07\x00\xEB\x00\xB8\x00\x04\x07\x00\x02\x07\x00\x5C\x07\x00\x5C\x07\x00\xC6\x00\x01\x07\x00\xED\x00\xD2\x00\x04\x07\x00\x02\x07\x00\x5C\x07\x00\x5C\x07\x01\x89\x00\x00\x01\x53\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\x2F\x07\x01\x6E\x07\x01\x5B\x01\x07\x00\xC6\x00\x01\x07\x00\xC6\x01\x7A\x00\x07\x07\x00\x02\x07\x00\x5C\x07\x00\x2F\x07\x01\x6E\x07\x01\x5B\x01\x07\x00\xC6\x00\x00'
     .end code
 .end method
 
@@ -1380,7 +1380,7 @@ L205:   aload_2
 L206:   invokevirtual Method DF method12 (Ljava/lang/String;)V
 L209:   return
 L210:   
-        .attribute StackMap b'\x00\x06\x00\x40\x00\x00\x00\x01\x07\x00\xE7\x00\x41\x00\x02\x07\x00\x02\x07\x01\xA2\x00\x01\x07\x02\x03\x00\x48\x00\x02\x07\x00\x02\x07\x01\xA2\x00\x02\x07\x02\x03\x07\x01\x59\x00\x5F\x00\x04\x07\x00\x02\x07\x01\xA2\x07\x00\xFE\x07\x00\xC6\x00\x00\x00\x9B\x00\x00\x00\x01\x07\x00\xE7\x00\x9C\x00\x04\x07\x00\x02\x07\x01\xA2\x07\x00\xFE\x07\x00\xC6\x00\x00'
+        .attribute StackMap b'\x00\x06\x00\x40\x00\x00\x00\x01\x07\x00\xEB\x00\x41\x00\x02\x07\x00\x02\x07\x01\xA2\x00\x01\x07\x02\x03\x00\x48\x00\x02\x07\x00\x02\x07\x01\xA2\x00\x02\x07\x02\x03\x07\x02\x34\x00\x5F\x00\x04\x07\x00\x02\x07\x01\xA2\x07\x01\x42\x07\x00\xC6\x00\x00\x00\x9B\x00\x00\x00\x01\x07\x00\xEB\x00\x9C\x00\x04\x07\x00\x02\x07\x01\xA2\x07\x01\x42\x07\x00\xC6\x00\x00'
     .end code
 .end method
 
