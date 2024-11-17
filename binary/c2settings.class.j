@@ -625,7 +625,7 @@ L65:    astore_3
 L66:    new javax/swing/JSlider
 L69:    dup
 L70:    bipush 60
-L72:    sipush 1000
+L72:    sipush 2000
 L75:    bipush 60
 L77:    invokespecial Method javax/swing/JSlider <init> (III)V
 L80:    astore 4

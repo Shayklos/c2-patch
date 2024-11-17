@@ -35,7 +35,7 @@ public class c2settings {
             JToggleButton toggleAnimation = new JToggleButton("Toggle Animation");
             JToggleButton toggleBlur = new JToggleButton("Toggle Blur");
 
-            JSlider fpsSlider = new JSlider(60, 1000, 60);
+            JSlider fpsSlider = new JSlider(60, 2000, 60);
             JLabel fpsLabel = new JLabel("FPS: " + fpsSlider.getValue());
             fpsSlider.addChangeListener(e -> fpsLabel.setText("FPS: " + fpsSlider.getValue()));
 
