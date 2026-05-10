@@ -1,5 +1,5 @@
 Set this to 1 to enable one key finesse, 0 to disable. 
-ONE_KEY_FINESSE_ENABLED=1
+ONE_KEY_FINESSE_ENABLED=0
 
 Adjust the matrix below so it matches your keyboard layout. Do not change the >: part. Separate each key with a space.
 Use key names from the above list. Make sure the keys that are bound on your in-game
