@@ -1,0 +1,8 @@
+enabled
+1
+
+Combo goal (Currently not configurable)
+15
+
+Combo in which to start printing stats (Currently not configurable)
+9
