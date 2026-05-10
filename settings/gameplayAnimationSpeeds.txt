@@ -1,0 +1,5 @@
+Line placement animation speed, i.e. how fast the trail of the harddrop disappears. 12 is default. 24 is azazea's speed. 2 is drunkard. Can be as high as needed but at some point no difference can be appreciated. Negative values possible, don't recommend...
+12
+
+Line clear animation speed, i.e. how fast the white lines disappear. 16 is default. 32 is azazeas' speed. Higher values make it almost instant, lower values is drunkard.
+16
