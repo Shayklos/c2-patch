@@ -1,5 +1,9 @@
 #!/bin/bash
-export DIR="$(dirname "$(readlink -f "$0")")"  # Get the script's directory
+SCRIPT_PATH="$(readlink -f "$0")" # Get the absolute path to this script
+SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
+
+cd "$SCRIPT_DIR/.." # move to project root
+export DIR="$(pwd)" # get absolute path of project root
 
 # Find the Java executable for JDK-17 Temurin
 export javaexec=$(find "$DIR/resources" -type f -name 'java' | grep 'jdk-17')

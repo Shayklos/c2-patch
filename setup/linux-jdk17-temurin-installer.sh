@@ -9,6 +9,9 @@ for tool in "${required_tools[@]}"; do
     fi
 done
 
+# Run venv setup script
+python3 ../scripts/setup_venv.py
+
 # Define the base directory relative to the script's location
 cd "$(dirname "$0")" || exit
 
@@ -53,8 +56,5 @@ for dir in "$TARGET_DIR/jdk-"*; do
 done
 
 echo "Newest Temurin JDK retained: $newest_temurin"
-
-echo "Copying launchers"
-cp ../launchers/*.sh ../
 
 echo "Done!"

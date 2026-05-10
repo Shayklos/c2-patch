@@ -1,4 +1,14 @@
 @echo off
+
+:: Check if Python exists
+where python >nul 2>&1 || (
+    echo Python not found.
+    pause
+    exit /b 1
+)
+
+python "%~dp0..\scripts\setup_venv.py"
+
 cd ..\resources\
 
 :: Define the download URL
@@ -15,6 +25,3 @@ powershell -command "Expand-Archive -Path %filename% -DestinationPath ."
 
 :: Remove the downloaded ZIP file
 del %filename%
-
-:: Copy launcher batch files
-copy ..\launchers\*.bat ..

@@ -1,3 +1,5 @@
 replays/
 settings/block_list.txt
 settings/display_modes.txt
+venv/
+resources/jdk-*

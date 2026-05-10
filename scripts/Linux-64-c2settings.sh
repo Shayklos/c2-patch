@@ -1,13 +1,9 @@
 #!/bin/bash
+SCRIPT_PATH="$(readlink -f "$0")" # Get the absolute path to this script
+SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
 
-if command -v mangohud &> /dev/null; then
-    echo "MangoHud is installed."
-else
-    echo "MangoHud is not installed. Please install it using your package manager."
-    exit 1
-fi
-
-export DIR="$(dirname "$(readlink -f "$0")")"  # Get the script's directory
+cd "$SCRIPT_DIR/.." # move to project root
+export DIR="$(pwd)" # get absolute path of project root
 
 # Find the Java executable for JDK-17 Temurin
 export javaexec=$(find "$DIR/resources" -type f -name 'java' | grep 'jdk-17')
@@ -24,7 +20,7 @@ cd "$DIR"
 
 # Check if the chosen Java executable is found and launch the application
 if [ -f "$java_to_use" ]; then
-	mangohud --dlsym    "$java_to_use" -Djava.library.path="$DIR/resources/libs/" -jar "$DIR/cultris2.jar"
+    "$java_to_use" -Djava.library.path="$DIR/resources/libs/" -cp "$DIR/cultris2.jar" c2settings
 else
     echo "Java executable not found. Please ensure you've installed Temurin JDK correctly in the resources directory."
 fi
