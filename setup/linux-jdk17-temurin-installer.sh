@@ -58,3 +58,6 @@ done
 echo "Newest Temurin JDK retained: $newest_temurin"
 
 echo "Done!"
+
+cd ..
+python3 cultris2.py
