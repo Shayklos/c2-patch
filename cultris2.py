@@ -1,14 +1,9 @@
 import sys
 import os
 import subprocess
-from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout, QGridLayout, QMessageBox
-from PySide6.QtGui import QPixmap, QIcon
-from PySide6.QtCore import Qt
 from pathlib import Path
 
 root_dir = Path(__file__).parent.resolve()
-app = QApplication([])
-window = QWidget()
 
 def ensure_venv():
     venv_path = root_dir / "venv"
@@ -20,12 +15,20 @@ def ensure_venv():
 
     if str(venv_python).lower() not in sys.executable.lower():
         if venv_python.exists():
+            print(f"Using {venv_python}")
             os.execv(str(venv_python), [str(venv_python)] + sys.argv)
         else:
-            print("Venv not found. Please run installer first.")
+            print("venv directory not found. Please run installer first.")
             sys.exit(1)
 
 ensure_venv()
+
+from PySide6.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout, QGridLayout, QMessageBox
+from PySide6.QtGui import QPixmap, QIcon
+from PySide6.QtCore import Qt
+
+app = QApplication([])
+window = QWidget()
 
 def check_temurin():
     resources_path = root_dir / "resources"
