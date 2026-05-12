@@ -1,0 +1,5 @@
+Print general info in the console: (Logins, who won last round, saved replays, etc)
+1
+
+Print players chatting in the console:
+1
