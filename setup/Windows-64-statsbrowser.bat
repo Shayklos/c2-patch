@@ -22,20 +22,13 @@ if not defined latestDir (
 
 if not exist "%ROOT%bin" mkdir "%ROOT%bin"
 
-if not exist "%ROOT%bin\RecFileParser.class" (
-    "!latestDir!\bin\javac.exe" -cp "%LIBS%" -d "%ROOT%bin" "%ROOT%src\RecFileParser.java"
-    if errorlevel 1 (
-        echo Compilation failed.
-        pause & exit /b 1
-    )
+echo Compilation du StatsBrowser...
+"!latestDir!\bin\javac.exe" -cp "%ROOT%bin;%LIBS%" -d "%ROOT%bin" "%ROOT%src\StatsBrowser.java" "%ROOT%src\RecFileParser.java"
+if errorlevel 1 (
+    echo Compilation failed.
+    pause & exit /b 1
 )
 
-if "%~1"=="" (
-    "!latestDir!\%javaExe%" -cp "%ROOT%bin;%LIBS%" RecFileParser --folder "%ROOT%replays"
-) else if "%~1"=="--folder" (
-    "!latestDir!\%javaExe%" -cp "%ROOT%bin;%LIBS%" RecFileParser --folder "%~f2"
-) else (
-    "!latestDir!\%javaExe%" -cp "%ROOT%bin;%LIBS%" RecFileParser %*
-)
+start "" "!latestDir!\%javaExe%" -cp "%ROOT%bin;%LIBS%" StatsBrowser
 
 endlocal

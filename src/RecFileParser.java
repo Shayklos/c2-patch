@@ -25,13 +25,16 @@ import java.util.zip.*;
 public class RecFileParser {
 
     private static final String DB_PATH = "replays/full_stats.db";
+    private static File replayRoot = new File("replays").getAbsoluteFile();
 
     public static void main(String[] args) throws Exception {
         List<File> recs = new ArrayList<>();
         if (args.length == 0 || (args.length == 1 && args[0].equals("--folder"))) {
             collectRecs(new File("replays"), recs);
         } else if (args[0].equals("--folder")) {
-            collectRecs(new File(args[1]), recs);
+            File folder = new File(args[1]).getAbsoluteFile();
+            replayRoot = folder;
+            collectRecs(folder, recs);
         } else {
             for (String a : args) recs.add(new File(a).getAbsoluteFile());
         }
@@ -53,8 +56,13 @@ public class RecFileParser {
             pool.submit(() -> {
                 for (File f : batch) {
                     try {
-                        ParsedReplay r = parse(f.getAbsoluteFile());
-                        synchronized (conn) { insertReplay(conn, r); }
+                        String relPath = replayRoot.toPath().relativize(f.getAbsoluteFile().toPath()).toString().replace('\\', '/');
+                        boolean skip;
+                        synchronized (conn) { skip = alreadyInDb(conn, relPath); }
+                        if (!skip) {
+                            ParsedReplay r = parse(f.getAbsoluteFile());
+                            synchronized (conn) { insertReplay(conn, r); }
+                        }
                     } catch (Exception e) {
                         errors.incrementAndGet();
                         System.err.println("ERROR " + f.getName() + ": " + e.getMessage());
@@ -209,6 +217,13 @@ public class RecFileParser {
         }
     }
 
+    private static boolean alreadyInDb(Connection conn, String path) throws SQLException {
+        try (PreparedStatement ps = conn.prepareStatement("SELECT 1 FROM replays WHERE path=? LIMIT 1")) {
+            ps.setString(1, path);
+            try (ResultSet rs = ps.executeQuery()) { return rs.next(); }
+        }
+    }
+
     // -------------------------------------------------------------------------
     // Parser
     // -------------------------------------------------------------------------
@@ -354,7 +369,7 @@ public class RecFileParser {
 
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         ParsedReplay r = new ParsedReplay();
-        r.path      = file.getPath().replace('\\', '/');
+        r.path      = replayRoot.toPath().relativize(file.toPath()).toString().replace('\\', '/');
         r.folder    = file.getParentFile().getName();
         r.filename  = file.getName();
         r.fileDate  = sdf.format(new java.util.Date(file.lastModified()));
