@@ -143,6 +143,8 @@ public class RecFileParser {
             st.execute("CREATE INDEX IF NOT EXISTS idx_ps_path ON player_stats(replay_path)");
             st.execute("CREATE INDEX IF NOT EXISTS idx_ps_name ON player_stats(name)");
             st.execute("CREATE INDEX IF NOT EXISTS idx_ps_odid ON player_stats(od_id)");
+            st.execute("CREATE INDEX IF NOT EXISTS idx_replays_date ON replays(file_date)");
+            st.execute("CREATE INDEX IF NOT EXISTS idx_ps_name_path ON player_stats(name, replay_path)");
         }
         return conn;
     }
