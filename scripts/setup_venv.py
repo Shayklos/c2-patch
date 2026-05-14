@@ -1,5 +1,4 @@
 import sys
-import os
 import subprocess
 from pathlib import Path
 
@@ -11,9 +10,6 @@ if sys.platform == "win32":
     venv_python = venv_path / "Scripts" / "python.exe"
 else:
     venv_python = venv_path / "bin" / "python"
-
-def is_powershell():
-    return 'PSModulePath' in os.environ
 
 def setup_venv():
     print("Setting up virtual environment...")

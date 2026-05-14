@@ -43,9 +43,8 @@ def play():
             subprocess.Popen(["bash", "scripts/Linux-64-cultris2.sh"])
         elif sys.platform == "win32": 
             subprocess.Popen(["./scripts/Windows-64-cultris2.bat"])
-        sys.exit(0)
     except Exception as e: 
-        QMessageBox.critical(window, "Error", e) 
+        QMessageBox.critical(window, "Error", str(e)) 
     sys.exit(0)
 
 def settings(): 
@@ -55,7 +54,7 @@ def settings():
         elif sys.platform == "win32": 
             subprocess.Popen(["./scripts/Windows-64-c2settings.bat"]) 
     except Exception as e:
-        QMessageBox.critical(window, "Error", e)
+        QMessageBox.critical(window, "Error", str(e))
 
 def color_picker(): 
     try: 
@@ -64,7 +63,7 @@ def color_picker():
         elif sys.platform == "win32": 
             subprocess.Popen(["./scripts/Windows-64-colorpicker.bat"]) 
     except Exception as e: 
-        QMessageBox.critical(window, "Error", e) 
+        QMessageBox.critical(window, "Error", str(e)) 
 
 def sound_replacer():
     try: 
@@ -90,7 +89,7 @@ def sound_replacer():
         elif sys.platform == "win32": 
             subprocess.Popen(["powershell.exe", "-NoExit", "-File", "./scripts/Windows-64-soundreplacer.bat"]) 
     except Exception as e: 
-        QMessageBox.critical(window, "Error", e)
+        QMessageBox.critical(window, "Error", str(e))
 
 
 check_temurin()
