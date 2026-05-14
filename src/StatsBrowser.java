@@ -47,54 +47,120 @@ public class StatsBrowser {
     private javax.swing.Timer searchTimer;
     private JLabel statusLabel;
     private JLabel entryCountLabel;
+    private JPopupMenu colMenu;
     private void launchReplay(String path) {
-        try {
-            // Attempt direct launch if we have access to the class
-            // This only works if StatsBrowser is running in the same JVM as the game
-            try {
-                Class<?> zzClass = Class.forName("zz_1114");
-                java.lang.reflect.Method launchMethod = zzClass.getMethod("loadReplayDirect", String.class);
-                launchMethod.invoke(null, path);
-                showStatus("Launched replay directly!");
-                return;
-            } catch (Exception ignored) {}
+        File file = new File(path);
+        if (!file.exists()) file = new File("replays", path);
 
-            // Fallback: Copy to clipboard
-            // Convert path to relative format using forward slashes
-            String relativePath = path.replace("\\", "/");
-            if (relativePath.contains("/replays/")) {
-                relativePath = relativePath.substring(relativePath.indexOf("replays/"));
-            } else if (!relativePath.startsWith("replays/")) {
-                // If it's just a filename or partial path, ensure it starts with replays/
-                // Search for the last occurrence of replays/ to be safe
-                int idx = relativePath.lastIndexOf("replays/");
-                if (idx != -1) {
-                    relativePath = relativePath.substring(idx);
-                } else {
-                    // Fallback: If no 'replays/' found but it's a relative path from the app root
-                    // we assume it belongs in the replays folder
-                    if (!new File(path).isAbsolute()) {
-                        relativePath = "replays/" + relativePath;
-                    }
+        if (file.exists()) {
+            // Launch Cultris with the agent to auto-play the replay, no recording
+            final File replayFile = file;
+            new Thread(() -> {
+                try {
+                    String javaHome = System.getProperty("java.home");
+                    String javaBin = javaHome + File.separator + "bin" + File.separator + "java";
+                    ProcessBuilder pb = new ProcessBuilder(
+                        javaBin,
+                        "-javaagent:video-agent.jar",
+                        "-Dsun.java2d.opengl=True",
+                        "-Djava.library.path=resources/libs",
+                        "-Drecord.input=" + replayFile.getAbsolutePath(),
+                        "-jar", "cultris2.jar"
+                    );
+                    pb.directory(new File("."));
+                    pb.inheritIO();
+                    pb.start();
+                    SwingUtilities.invokeLater(() -> showStatus("Launched replay: " + replayFile.getName()));
+                } catch (Exception ex) {
+                    SwingUtilities.invokeLater(() -> showStatus("Error: " + ex.getMessage()));
                 }
-            }
-            
+            }).start();
+            return;
+        }
+
+        // Fallback: copy command to clipboard
+        try {
+            String relativePath = path.replace("\\", "/");
+            int idx = relativePath.lastIndexOf("replays/");
+            if (idx != -1) relativePath = relativePath.substring(idx);
             String cmd = "/cmd replay " + relativePath;
             java.awt.datatransfer.StringSelection selection = new java.awt.datatransfer.StringSelection(cmd);
             Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, selection);
-            
-            showStatus("Launch command copied to clipboard! Paste in-game to play.");
-            
+            showStatus("Replay command copied to clipboard!");
         } catch (Exception e) {
-            showStatus("Error launching: " + e.getMessage());
+            showStatus("Error: " + e.getMessage());
         }
+    }
+
+    private void exportToVideo(String replayPath, boolean mediumQuality) {
+        File file = new File(replayPath);
+        if (!file.exists()) {
+            file = new File("replays", replayPath);
+        }
+        if (!file.exists()) {
+            JOptionPane.showMessageDialog(frame, "Replay file not found!");
+            return;
+        }
+
+        JFileChooser fileChooser = new JFileChooser();
+        fileChooser.setDialogTitle("Save Video As" + (mediumQuality ? " (Medium Quality)" : ""));
+        fileChooser.setSelectedFile(new File(file.getName().replace(".rec", ".mp4")));
+        
+        if (fileChooser.showSaveDialog(frame) == JFileChooser.APPROVE_OPTION) {
+            File outputFile = fileChooser.getSelectedFile();
+            final File finalReplayFile = file;
+            new Thread(() -> {
+                try {
+                    if (mediumQuality) {
+                        runVideoConversion(finalReplayFile, outputFile, 0.5, "23", "ultrafast");
+                    } else {
+                        runVideoConversion(finalReplayFile, outputFile, 1.0, "18", "slow");
+                    }
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                    SwingUtilities.invokeLater(() -> JOptionPane.showMessageDialog(frame, "Error: " + ex.getMessage()));
+                }
+            }).start();
+        }
+    }
+
+    private void runVideoConversion(File replayFile, File outputFile, double scale, String crf, String preset) throws Exception {
+        String javaHome = System.getProperty("java.home");
+        String javaBin = javaHome + File.separator + "bin" + File.separator + "java";
+
+        ProcessBuilder pb = new ProcessBuilder(
+            javaBin,
+            "-javaagent:video-agent.jar",
+            "-Dsun.java2d.opengl=True",
+            "-Djava.library.path=resources/libs",
+            "-Drecord.input=" + replayFile.getAbsolutePath(),
+            "-Drecord.output=" + outputFile.getAbsolutePath(),
+            "-Drecord.scale=" + scale,
+            "-Drecord.crf=" + crf,
+            "-Drecord.preset=" + preset,
+            "-jar", "cultris2.jar"
+        );
+        pb.directory(new File("."));
+        pb.inheritIO();
+
+        SwingUtilities.invokeLater(() -> showStatus("Recording... crf=" + crf));
+        Process p = pb.start();
+        int exitCode = p.waitFor();
+
+        SwingUtilities.invokeLater(() -> {
+            if (exitCode == 0) {
+                showStatus("Recording finished!");
+                JOptionPane.showMessageDialog(frame, "Recording finished: " + outputFile.getName());
+            } else {
+                showStatus("Recording failed (exit " + exitCode + ")");
+                JOptionPane.showMessageDialog(frame, "Recording failed with exit code: " + exitCode);
+            }
+        });
     }
 
     private void showStatus(String msg) {
         statusLabel.setText(msg);
         statusLabel.setForeground(TEXT_ACCENT);
-        
-        // Clear status after 5 seconds
         javax.swing.Timer timer = new javax.swing.Timer(5000, e -> statusLabel.setText("Ready"));
         timer.setRepeats(false);
         timer.start();
@@ -143,6 +209,27 @@ public class StatsBrowser {
         centerPanel.setBackground(BG_DARK);
         
         centerPanel.add(createTablePanel(), BorderLayout.CENTER);
+
+        // Populate column visibility menu now that statsTable exists (skip hidden Path and OD_ID)
+        for (int ci = 0; ci < statsTable.getColumnCount() - 2; ci++) {
+            final int colIdx = ci;
+            JCheckBoxMenuItem item = new JCheckBoxMenuItem(statsTable.getColumnName(ci), true);
+            item.setBackground(BG_PANEL);
+            item.setForeground(TEXT_PRIMARY);
+            item.addActionListener(ev -> {
+                TableColumn tc = statsTable.getColumnModel().getColumn(colIdx);
+                if (item.isSelected()) {
+                    tc.setMinWidth(15);
+                    tc.setMaxWidth(Integer.MAX_VALUE);
+                    tc.setPreferredWidth(75);
+                } else {
+                    tc.setMinWidth(0);
+                    tc.setMaxWidth(0);
+                    tc.setPreferredWidth(0);
+                }
+            });
+            colMenu.add(item);
+        }
         
         chartPanel = new ChartPanel();
         JScrollPane chartScroll = new JScrollPane(chartPanel);
@@ -224,11 +311,10 @@ public class StatsBrowser {
         });
 
         JButton btnColumns = createStyledButton("Columns \u25BC");
-        JPopupMenu colMenu = new JPopupMenu();
+        colMenu = new JPopupMenu();
         colMenu.setBackground(BG_PANEL);
         colMenu.setBorder(BorderFactory.createLineBorder(BORDER_COLOR));
         btnColumns.addActionListener(e -> colMenu.show(btnColumns, 0, btnColumns.getHeight()));
-        btnColumns.putClientProperty("menu", colMenu); // link for later
         
         JButton btnExport = createStyledButton("Export CSV");
         btnExport.addActionListener(e -> exportToCSV());
@@ -350,7 +436,7 @@ public class StatsBrowser {
             "Lines", "Pieces", "Sent", "Blocked", "Alive (s)", "Tetrises", "Garbage Sent",
             "Peak Incoming", "Peak Single Atk", "Peak Sent/Pc", "Peak Lines Clr",
             "Garb. Received", "Garb. Rec. Evts", "Peak Garb. Hit", "Garb. Sent Evts",
-            "Tetrises Stream", "Pieces Stream", "Path"
+            "Tetrises Stream", "Pieces Stream", "Path", "OD_ID"
         };
         
         tableModel = new DefaultTableModel(columns, 0) {
@@ -363,11 +449,11 @@ public class StatsBrowser {
 
         statsTable = new JTable(tableModel);
         
-        // Hide the "Path" column
-        TableColumn pathCol = statsTable.getColumnModel().getColumn(25);
-        pathCol.setMinWidth(0);
-        pathCol.setMaxWidth(0);
-        pathCol.setPreferredWidth(0);
+        // Hide internal columns
+        for (int hi : new int[]{25, 26}) {
+            TableColumn c = statsTable.getColumnModel().getColumn(hi);
+            c.setMinWidth(0); c.setMaxWidth(0); c.setPreferredWidth(0);
+        }
         
         statsTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         styleTable(statsTable);
@@ -406,8 +492,28 @@ public class StatsBrowser {
             if (row != -1) {
                 int modelRow = statsTable.convertRowIndexToModel(row);
                 String playerName = (String) tableModel.getValueAt(modelRow, 2);
-                searchPlayerField.setText(playerName);
+                    searchPlayerField.setText(playerName);
                 loadData();
+            }
+        });
+
+        JMenuItem exportVideoItem = createStyledMenuItem("Export to Video (MP4 - High Quality)");
+        exportVideoItem.addActionListener(e -> {
+            int row = statsTable.getSelectedRow();
+            if (row != -1) {
+                int modelRow = statsTable.convertRowIndexToModel(row);
+                String path = (String) tableModel.getValueAt(modelRow, 25);
+                exportToVideo(path, false);
+            }
+        });
+
+        JMenuItem exportVideoMediumItem = createStyledMenuItem("Export to Video (MP4 - Medium Quality)");
+        exportVideoMediumItem.addActionListener(e -> {
+            int row = statsTable.getSelectedRow();
+            if (row != -1) {
+                int modelRow = statsTable.convertRowIndexToModel(row);
+                String path = (String) tableModel.getValueAt(modelRow, 25);
+                exportToVideo(path, true);
             }
         });
 
@@ -437,8 +543,30 @@ public class StatsBrowser {
             }
         });
 
+        JMenuItem openProfileItem = createStyledMenuItem("Open Profile");
+        openProfileItem.addActionListener(e -> {
+            int row = statsTable.getSelectedRow();
+            if (row != -1) {
+                int modelRow = statsTable.convertRowIndexToModel(row);
+                int odId = (Integer) tableModel.getValueAt(modelRow, 26);
+                if (odId > 0) {
+                    try {
+                        Desktop.getDesktop().browse(new java.net.URI("https://gewaltig.net/ProfileView/" + odId));
+                    } catch (Exception ex) {
+                        showStatus("Error opening profile: " + ex.getMessage());
+                    }
+                } else {
+                    showStatus("No profile ID for this player.");
+                }
+            }
+        });
+
         popupMenu.add(historyItem);
         popupMenu.addSeparator();
+        popupMenu.add(openProfileItem);
+        popupMenu.addSeparator();
+        popupMenu.add(exportVideoItem);
+        popupMenu.add(exportVideoMediumItem);
         popupMenu.add(folderItem);
         popupMenu.add(copyPathItem);
 
@@ -770,7 +898,7 @@ public class StatsBrowser {
                             rs.getInt("peak_incoming"), rs.getInt("peak_single_attack"), rs.getInt("peak_sent_per_piece"), rs.getInt("peak_lines_cleared"),
                             rs.getInt("garbage_received"), rs.getInt("garbage_received_events"), rs.getInt("peak_garbage_hit"), rs.getInt("garbage_sent_events"),
                             rs.getInt("tetrises_from_stream"), rs.getInt("pieces_from_stream"),
-                            rs.getString("replay_path")
+                            rs.getString("replay_path"), rs.getInt("od_id")
                         });
                     }
                 }
