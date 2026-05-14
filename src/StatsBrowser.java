@@ -45,7 +45,70 @@ public class StatsBrowser {
     private JTextField fromDateField;
     private JTextField toDateField;
     private javax.swing.Timer searchTimer;
+    private JLabel statusLabel;
     private JLabel entryCountLabel;
+    private void launchReplay(String path) {
+        try {
+            // Attempt direct launch if we have access to the class
+            // This only works if StatsBrowser is running in the same JVM as the game
+            try {
+                Class<?> zzClass = Class.forName("zz_1114");
+                java.lang.reflect.Method launchMethod = zzClass.getMethod("loadReplayDirect", String.class);
+                launchMethod.invoke(null, path);
+                showStatus("Launched replay directly!");
+                return;
+            } catch (Exception ignored) {}
+
+            // Fallback: Copy to clipboard
+            // Convert path to relative format using forward slashes
+            String relativePath = path.replace("\\", "/");
+            if (relativePath.contains("/replays/")) {
+                relativePath = relativePath.substring(relativePath.indexOf("replays/"));
+            } else if (!relativePath.startsWith("replays/")) {
+                // If it's just a filename or partial path, ensure it starts with replays/
+                // Search for the last occurrence of replays/ to be safe
+                int idx = relativePath.lastIndexOf("replays/");
+                if (idx != -1) {
+                    relativePath = relativePath.substring(idx);
+                } else {
+                    // Fallback: If no 'replays/' found but it's a relative path from the app root
+                    // we assume it belongs in the replays folder
+                    if (!new File(path).isAbsolute()) {
+                        relativePath = "replays/" + relativePath;
+                    }
+                }
+            }
+            
+            String cmd = "/cmd replay " + relativePath;
+            java.awt.datatransfer.StringSelection selection = new java.awt.datatransfer.StringSelection(cmd);
+            Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, selection);
+            
+            showStatus("Launch command copied to clipboard! Paste in-game to play.");
+            
+        } catch (Exception e) {
+            showStatus("Error launching: " + e.getMessage());
+        }
+    }
+
+    private void showStatus(String msg) {
+        statusLabel.setText(msg);
+        statusLabel.setForeground(TEXT_ACCENT);
+        
+        // Clear status after 5 seconds
+        javax.swing.Timer timer = new javax.swing.Timer(5000, e -> statusLabel.setText("Ready"));
+        timer.setRepeats(false);
+        timer.start();
+    }
+
+    private JMenuItem createStyledMenuItem(String text) {
+        JMenuItem item = new JMenuItem(text);
+        item.setBackground(BG_DARK);
+        item.setForeground(TEXT_PRIMARY);
+        item.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+        item.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
+        return item;
+    }
+
     private JComboBox<String> rankFilter;
     private JComboBox<String> gameTypeFilter;
     
@@ -97,6 +160,10 @@ public class StatsBrowser {
         JLabel dbStatus = new JLabel("Database: " + new File(DB_PATH).getAbsolutePath());
         dbStatus.setForeground(TEXT_SECONDARY);
         bottomPanel.add(dbStatus);
+        
+        statusLabel = new JLabel("Ready");
+        statusLabel.setForeground(TEXT_ACCENT);
+        bottomPanel.add(statusLabel);
         
         entryCountLabel = new JLabel(" | 0 entries");
         entryCountLabel.setForeground(TEXT_SECONDARY);
@@ -283,18 +350,25 @@ public class StatsBrowser {
             "Lines", "Pieces", "Sent", "Blocked", "Alive (s)", "Tetrises", "Garbage Sent",
             "Peak Incoming", "Peak Single Atk", "Peak Sent/Pc", "Peak Lines Clr",
             "Garb. Received", "Garb. Rec. Evts", "Peak Garb. Hit", "Garb. Sent Evts",
-            "Tetrises Stream", "Pieces Stream"
+            "Tetrises Stream", "Pieces Stream", "Path"
         };
         
         tableModel = new DefaultTableModel(columns, 0) {
             @Override public boolean isCellEditable(int row, int col) { return false; }
             @Override public Class<?> getColumnClass(int col) {
-                if (col >= 3) return col == 12 ? Float.class : Integer.class;
+                if (col >= 3 && col <= 24) return col == 12 ? Float.class : Integer.class;
                 return String.class;
             }
         };
 
         statsTable = new JTable(tableModel);
+        
+        // Hide the "Path" column
+        TableColumn pathCol = statsTable.getColumnModel().getColumn(25);
+        pathCol.setMinWidth(0);
+        pathCol.setMaxWidth(0);
+        pathCol.setPreferredWidth(0);
+        
         statsTable.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
         styleTable(statsTable);
 
@@ -305,6 +379,83 @@ public class StatsBrowser {
             new RowSorter.SortKey(1, SortOrder.DESCENDING), // Replay
             new RowSorter.SortKey(3, SortOrder.ASCENDING)   // Rank
         ));
+
+        // Launch Replay on Double-Click
+        statsTable.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                if (e.getClickCount() == 2) {
+                    int viewRow = statsTable.getSelectedRow();
+                    if (viewRow != -1) {
+                        int modelRow = statsTable.convertRowIndexToModel(viewRow);
+                        String path = (String) tableModel.getValueAt(modelRow, 25);
+                        launchReplay(path);
+                    }
+                }
+            }
+        });
+
+        // Context Menu
+        JPopupMenu popupMenu = new JPopupMenu();
+        popupMenu.setBackground(BG_DARK);
+        popupMenu.setBorder(BorderFactory.createLineBorder(BORDER_COLOR));
+
+        JMenuItem historyItem = createStyledMenuItem("Player History");
+        historyItem.addActionListener(e -> {
+            int row = statsTable.getSelectedRow();
+            if (row != -1) {
+                int modelRow = statsTable.convertRowIndexToModel(row);
+                String playerName = (String) tableModel.getValueAt(modelRow, 2);
+                searchPlayerField.setText(playerName);
+                loadData();
+            }
+        });
+
+        JMenuItem folderItem = createStyledMenuItem("Open Folder");
+        folderItem.addActionListener(e -> {
+            int row = statsTable.getSelectedRow();
+            if (row != -1) {
+                int modelRow = statsTable.convertRowIndexToModel(row);
+                String path = (String) tableModel.getValueAt(modelRow, 25);
+                try {
+                    Desktop.getDesktop().open(new File(path).getParentFile());
+                } catch (Exception ex) {
+                    showStatus("Error opening folder: " + ex.getMessage());
+                }
+            }
+        });
+
+        JMenuItem copyPathItem = createStyledMenuItem("Copy Full Path");
+        copyPathItem.addActionListener(e -> {
+            int row = statsTable.getSelectedRow();
+            if (row != -1) {
+                int modelRow = statsTable.convertRowIndexToModel(row);
+                String path = (String) tableModel.getValueAt(modelRow, 25);
+                java.awt.datatransfer.StringSelection selection = new java.awt.datatransfer.StringSelection(path);
+                Toolkit.getDefaultToolkit().getSystemClipboard().setContents(selection, selection);
+                showStatus("Path copied to clipboard!");
+            }
+        });
+
+        popupMenu.add(historyItem);
+        popupMenu.addSeparator();
+        popupMenu.add(folderItem);
+        popupMenu.add(copyPathItem);
+
+        statsTable.setComponentPopupMenu(popupMenu);
+        
+        // Ensure right-click selects the row
+        statsTable.addMouseListener(new MouseAdapter() {
+            @Override
+            public void mousePressed(MouseEvent e) {
+                if (SwingUtilities.isRightMouseButton(e)) {
+                    int row = statsTable.rowAtPoint(e.getPoint());
+                    if (row != -1) {
+                        statsTable.setRowSelectionInterval(row, row);
+                    }
+                }
+            }
+        });
 
         JScrollPane scrollPane = new JScrollPane(statsTable);
         scrollPane.setBackground(BG_DARK);
@@ -618,7 +769,8 @@ public class StatsBrowser {
                             rs.getInt("tetrises"), rs.getInt("garbage_sent"),
                             rs.getInt("peak_incoming"), rs.getInt("peak_single_attack"), rs.getInt("peak_sent_per_piece"), rs.getInt("peak_lines_cleared"),
                             rs.getInt("garbage_received"), rs.getInt("garbage_received_events"), rs.getInt("peak_garbage_hit"), rs.getInt("garbage_sent_events"),
-                            rs.getInt("tetrises_from_stream"), rs.getInt("pieces_from_stream")
+                            rs.getInt("tetrises_from_stream"), rs.getInt("pieces_from_stream"),
+                            rs.getString("replay_path")
                         });
                     }
                 }
