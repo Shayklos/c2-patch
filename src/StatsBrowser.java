@@ -27,6 +27,8 @@ public class StatsBrowser {
     private static final Color BG_HEADER = new Color(50, 52, 58);
     private static final Color BG_INPUT = new Color(50, 52, 58);
     private static final Color BG_BUTTON = new Color(70, 130, 180);
+    private static final Color BG_POPUP = new Color(55, 58, 66);
+    private static final Color BG_POPUP_HOVER = new Color(70, 130, 180);
     private static final Color TEXT_PRIMARY = new Color(230, 230, 235);
     private static final Color TEXT_SECONDARY = new Color(160, 165, 175);
     private static final Color TEXT_ACCENT = new Color(100, 180, 255);
@@ -167,22 +169,39 @@ public class StatsBrowser {
     }
 
     private JMenuItem createStyledMenuItem(String text) {
-        JMenuItem item = new JMenuItem(text);
-        item.setBackground(BG_DARK);
+        JMenuItem item = new JMenuItem(text) {
+            @Override protected void paintComponent(Graphics g) {
+                if (isArmed() || isSelected()) {
+                    g.setColor(BG_POPUP_HOVER);
+                    g.fillRect(0, 0, getWidth(), getHeight());
+                } else {
+                    g.setColor(BG_POPUP);
+                    g.fillRect(0, 0, getWidth(), getHeight());
+                }
+                super.paintComponent(g);
+            }
+        };
+        item.setBackground(BG_POPUP);
         item.setForeground(TEXT_PRIMARY);
+        item.setOpaque(false);
         item.setFont(new Font("Segoe UI", Font.PLAIN, 13));
-        item.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
+        item.setBorder(BorderFactory.createEmptyBorder(6, 12, 6, 12));
         return item;
     }
 
     private JComboBox<String> rankFilter;
     private JComboBox<String> gameTypeFilter;
+    private JTextField minSpmField;
+    private JTextField minBpmField;
     
     // Chart
     private ChartPanel chartPanel;
+    private int[] rowGroupIndex = new int[0]; // cached per-row group index for O(1) cell renderer
     private List<ChartData> comboChartData = new ArrayList<>();
     private List<ChartData> spmChartData = new ArrayList<>();
     private List<ChartData> winChartData = new ArrayList<>();
+    private List<ChartData> blockerChartData = new ArrayList<>();
+    private List<ChartData> tetrisChartData = new ArrayList<>();
 
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new StatsBrowser().createAndShowGUI());
@@ -214,8 +233,9 @@ public class StatsBrowser {
         for (int ci = 0; ci < statsTable.getColumnCount() - 2; ci++) {
             final int colIdx = ci;
             JCheckBoxMenuItem item = new JCheckBoxMenuItem(statsTable.getColumnName(ci), true);
-            item.setBackground(BG_PANEL);
+            item.setBackground(BG_POPUP);
             item.setForeground(TEXT_PRIMARY);
+            item.setOpaque(true);
             item.addActionListener(ev -> {
                 TableColumn tc = statsTable.getColumnModel().getColumn(colIdx);
                 if (item.isSelected()) {
@@ -274,6 +294,22 @@ public class StatsBrowser {
         UIManager.put("ScrollBar.background", BG_DARK);
         UIManager.put("ScrollBar.thumb", BG_HEADER);
         UIManager.put("ScrollBar.track", BG_DARK);
+        // Popup / menu readability
+        UIManager.put("PopupMenu.background", BG_POPUP);
+        UIManager.put("PopupMenu.foreground", TEXT_PRIMARY);
+        UIManager.put("MenuItem.background", BG_POPUP);
+        UIManager.put("MenuItem.foreground", TEXT_PRIMARY);
+        UIManager.put("MenuItem.selectionBackground", BG_POPUP_HOVER);
+        UIManager.put("MenuItem.selectionForeground", Color.WHITE);
+        UIManager.put("CheckBoxMenuItem.background", BG_POPUP);
+        UIManager.put("CheckBoxMenuItem.foreground", TEXT_PRIMARY);
+        UIManager.put("CheckBoxMenuItem.selectionBackground", BG_POPUP_HOVER);
+        UIManager.put("CheckBoxMenuItem.selectionForeground", Color.WHITE);
+        // JOptionPane dialogs
+        UIManager.put("OptionPane.background", BG_PANEL);
+        UIManager.put("OptionPane.messageForeground", TEXT_PRIMARY);
+        UIManager.put("Button.background", BG_BUTTON);
+        UIManager.put("Button.foreground", TEXT_PRIMARY);
     }
 
     private JPanel createHeaderPanel() {
@@ -312,8 +348,8 @@ public class StatsBrowser {
 
         JButton btnColumns = createStyledButton("Columns \u25BC");
         colMenu = new JPopupMenu();
-        colMenu.setBackground(BG_PANEL);
-        colMenu.setBorder(BorderFactory.createLineBorder(BORDER_COLOR));
+        colMenu.setBackground(BG_POPUP);
+        colMenu.setBorder(BorderFactory.createLineBorder(TEXT_ACCENT.darker()));
         btnColumns.addActionListener(e -> colMenu.show(btnColumns, 0, btnColumns.getHeight()));
         
         JButton btnExport = createStyledButton("Export CSV");
@@ -347,7 +383,20 @@ public class StatsBrowser {
         JButton btnLastMonth = createStyledButton("Last Month");
         btnLastMonth.addActionListener(e -> setDateFilter(30));
         JButton btnAllTime = createStyledButton("All Time");
-        btnAllTime.addActionListener(e -> setDateFilter(-1));
+        btnAllTime.addActionListener(e -> {
+            String player = searchPlayerField.getText().trim();
+            String combo  = minComboField.getText().trim();
+            String spm    = minSpmField.getText().trim();
+            String bpm    = minBpmField.getText().trim();
+            boolean noFilters = player.isEmpty() && combo.isEmpty() && spm.isEmpty() && bpm.isEmpty();
+            if (noFilters) {
+                int choice = JOptionPane.showConfirmDialog(frame,
+                    "No filters are set. Loading all-time data may take a long time.\nContinue?",
+                    "All Time", JOptionPane.OK_CANCEL_OPTION, JOptionPane.WARNING_MESSAGE);
+                if (choice != JOptionPane.OK_OPTION) return;
+            }
+            setDateFilter(-1);
+        });
 
         row1.add(lblFrom);
         row1.add(fromDateField);
@@ -371,6 +420,16 @@ public class StatsBrowser {
         minComboField = createStyledTextField();
         minComboField.setPreferredSize(new Dimension(50, 30));
 
+        JLabel lblSpm = new JLabel("Min SPM:");
+        lblSpm.setForeground(TEXT_SECONDARY);
+        minSpmField = createStyledTextField();
+        minSpmField.setPreferredSize(new Dimension(50, 30));
+
+        JLabel lblBpm = new JLabel("Min BPM:");
+        lblBpm.setForeground(TEXT_SECONDARY);
+        minBpmField = createStyledTextField();
+        minBpmField.setPreferredSize(new Dimension(50, 30));
+
         JLabel lblRank = new JLabel("Rank:");
         lblRank.setForeground(TEXT_SECONDARY);
         rankFilter = new JComboBox<>(new String[]{"All", "1 (Winner)", "2", "3", "4", "5", "6", "Top 3"});
@@ -390,6 +449,10 @@ public class StatsBrowser {
         row2.add(searchPlayerField);
         row2.add(lblCombo);
         row2.add(minComboField);
+        row2.add(lblSpm);
+        row2.add(minSpmField);
+        row2.add(lblBpm);
+        row2.add(minBpmField);
         row2.add(lblRank);
         row2.add(rankFilter);
         row2.add(lblType);
@@ -408,6 +471,8 @@ public class StatsBrowser {
         };
         searchPlayerField.getDocument().addDocumentListener(dl);
         minComboField.getDocument().addDocumentListener(dl);
+        minSpmField.getDocument().addDocumentListener(dl);
+        minBpmField.getDocument().addDocumentListener(dl);
         fromDateField.getDocument().addDocumentListener(dl);
         toDateField.getDocument().addDocumentListener(dl);
 
@@ -483,8 +548,8 @@ public class StatsBrowser {
 
         // Context Menu
         JPopupMenu popupMenu = new JPopupMenu();
-        popupMenu.setBackground(BG_DARK);
-        popupMenu.setBorder(BorderFactory.createLineBorder(BORDER_COLOR));
+        popupMenu.setBackground(BG_POPUP);
+        popupMenu.setBorder(BorderFactory.createLineBorder(TEXT_ACCENT.darker()));
 
         JMenuItem historyItem = createStyledMenuItem("Player History");
         historyItem.addActionListener(e -> {
@@ -700,19 +765,7 @@ public class StatsBrowser {
                     }
                 }
                 
-                // Calculate group index for alternating colors
-                int groupIndex = 0;
-                if (row > 0) {
-                    // This is slightly inefficient but for small/medium tables it's fine.
-                    // A better way would be to cache this or use a custom model.
-                    for (int i = 0; i < row; i++) {
-                        int m1 = table.convertRowIndexToModel(i);
-                        int m2 = table.convertRowIndexToModel(i + 1);
-                        if (!table.getModel().getValueAt(m1, 1).equals(table.getModel().getValueAt(m2, 1))) {
-                            groupIndex++;
-                        }
-                    }
-                }
+                int groupIndex = (modelRow < rowGroupIndex.length) ? rowGroupIndex[modelRow] : 0;
 
                 // Winner check
                 boolean isWinner = false;
@@ -756,8 +809,20 @@ public class StatsBrowser {
         for(int i=0; i<table.getColumnCount(); i++) table.getColumnModel().getColumn(i).setCellRenderer(cellRenderer);
     }
 
+    private JFileChooser createNativeFileChooser() {
+        try {
+            UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+            JFileChooser fc = new JFileChooser();
+            UIManager.setLookAndFeel(UIManager.getCrossPlatformLookAndFeelClassName());
+            setupDarkTheme();
+            return fc;
+        } catch (Exception e) {
+            return new JFileChooser();
+        }
+    }
+
     private void exportToCSV() {
-        JFileChooser fileChooser = new JFileChooser();
+        JFileChooser fileChooser = createNativeFileChooser();
         fileChooser.setDialogTitle("Export to CSV (Excel compatible)");
         fileChooser.setSelectedFile(new File("stats_export.csv"));
         
@@ -826,10 +891,16 @@ public class StatsBrowser {
         comboChartData.clear();
         spmChartData.clear();
         winChartData.clear();
+        blockerChartData.clear();
+        tetrisChartData.clear();
 
         String playerFilter = searchPlayerField.getText().trim();
         int minCombo = 0;
         try { minCombo = Integer.parseInt(minComboField.getText().trim()); } catch(Exception ignored) {}
+        int minSpm = 0;
+        try { minSpm = Integer.parseInt(minSpmField.getText().trim()); } catch(Exception ignored) {}
+        int minBpm = 0;
+        try { minBpm = Integer.parseInt(minBpmField.getText().trim()); } catch(Exception ignored) {}
         
         String fromDate = fromDateField.getText().trim();
         String toDate = toDateField.getText().trim();
@@ -841,10 +912,10 @@ public class StatsBrowser {
         
         String typeFilter = (String) gameTypeFilter.getSelectedItem();
         String typeClause = "";
-        if ("Regular".equals(typeFilter)) typeClause = " AND r.filename NOT LIKE 'challenge-%'";
-        else if ("Challenge".equals(typeFilter)) typeClause = " AND r.filename LIKE 'challenge-%'";
+        if ("Regular".equals(typeFilter)) typeClause = " AND {R}.filename NOT LIKE 'challenge-%'";
+        else if ("Challenge".equals(typeFilter)) typeClause = " AND {R}.filename LIKE 'challenge-%'";
         
-        query += typeClause;
+        query += typeClause.replace("{R}", "r");
         
         List<Object> args = new ArrayList<>();
         if (!playerFilter.isEmpty()) {
@@ -854,6 +925,14 @@ public class StatsBrowser {
         if (minCombo > 0) {
             query += " AND ps.max_combo >= ?";
             args.add(minCombo);
+        }
+        if (minSpm > 0) {
+            query += " AND ps.alive_s > 0 AND (ps.sent * 60.0 / ps.alive_s) >= ?";
+            args.add(minSpm);
+        }
+        if (minBpm > 0) {
+            query += " AND ps.avg_bpm >= ?";
+            args.add(minBpm);
         }
         if (!fromDate.isEmpty()) {
             query += " AND r.file_date >= ?";
@@ -903,50 +982,53 @@ public class StatsBrowser {
                     }
                 }
             }
-            if (entryCountLabel != null) entryCountLabel.setText(" | " + tableModel.getRowCount() + " entries");
+            // Build group index cache: each model row gets an integer group number
+            // so the cell renderer can do O(1) lookup instead of O(n) per cell
+            int rowCount = tableModel.getRowCount();
+            rowGroupIndex = new int[rowCount];
+            int group = 0;
+            for (int i = 0; i < rowCount; i++) {
+                if (i > 0 && !tableModel.getValueAt(i, 1).equals(tableModel.getValueAt(i - 1, 1))) group++;
+                rowGroupIndex[i] = group;
+            }
+            if (entryCountLabel != null) entryCountLabel.setText(" | " + rowCount + " entries");
         } catch (Exception e) {
             if(e.getMessage().contains("out of memory")) {
                 // Ignore initial error if DB doesn't exist yet
             }
         }
         
-        // Load Chart Data (Top 10 Combos with count)
-        String comboQuery = "WITH MaxCombos AS (SELECT ps.name, MAX(ps.max_combo) as mc FROM player_stats ps JOIN replays r ON ps.replay_path = r.path WHERE 1=1 " + typeClause;
-        if (!playerFilter.isEmpty()) comboQuery += " AND ps.name LIKE '%" + playerFilter.replace("'", "''") + "%' ";
-        if (minCombo > 0) comboQuery += " AND ps.max_combo >= " + minCombo + " ";
-        if (!fromDate.isEmpty()) comboQuery += " AND r.file_date >= '" + fromDate.replace("'", "''") + " 00:00:00' ";
-        if (!toDate.isEmpty()) comboQuery += " AND r.file_date <= '" + toDate.replace("'", "''") + " 23:59:59' ";
-        comboQuery += "GROUP BY ps.name) " +
-                      "SELECT m.name, m.mc, COUNT(p.max_combo) as cnt " +
-                      "FROM MaxCombos m JOIN player_stats p ON p.name = m.name AND p.max_combo = m.mc " +
-                      "JOIN replays r ON p.replay_path = r.path " +
-                      "WHERE 1=1 ";
-        if (!fromDate.isEmpty()) comboQuery += " AND r.file_date >= '" + fromDate.replace("'", "''") + " 00:00:00' ";
-        if (!toDate.isEmpty()) comboQuery += " AND r.file_date <= '" + toDate.replace("'", "''") + " 23:59:59' ";
-        comboQuery += "GROUP BY m.name, m.mc ORDER BY m.mc DESC, cnt DESC LIMIT 10";
-        
-        // Load Chart Data (Top 10 SPM)
-        String spmQuery = "SELECT ps.name, MAX(CASE WHEN ps.alive_s > 0 THEN (ps.sent * 60.0 / ps.alive_s) ELSE 0 END) as ms FROM player_stats ps JOIN replays r ON ps.replay_path = r.path WHERE 1=1 " + typeClause;
-        if (!playerFilter.isEmpty()) spmQuery += " AND ps.name LIKE '%" + playerFilter.replace("'", "''") + "%' ";
-        if (minCombo > 0) spmQuery += " AND ps.max_combo >= " + minCombo + " ";
-        if (!fromDate.isEmpty()) spmQuery += " AND r.file_date >= '" + fromDate.replace("'", "''") + " 00:00:00' ";
-        if (!toDate.isEmpty()) spmQuery += " AND r.file_date <= '" + toDate.replace("'", "''") + " 23:59:59' ";
-        spmQuery += "GROUP BY ps.name ORDER BY ms DESC LIMIT 10";
-        
-        // Load Chart Data (Top 10 Winners)
-        String winQuery = "SELECT ps.name, COUNT(*) as wins FROM player_stats ps JOIN replays r ON ps.replay_path = r.path WHERE ps.rank = 1 AND r.filename NOT LIKE 'challenge-%' " + typeClause;
-        if (!playerFilter.isEmpty()) winQuery += " AND ps.name LIKE '%" + playerFilter.replace("'", "''") + "%' ";
-        if (minCombo > 0) winQuery += " AND ps.max_combo >= " + minCombo + " ";
-        if (!fromDate.isEmpty()) winQuery += " AND r.file_date >= '" + fromDate.replace("'", "''") + " 00:00:00' ";
-        if (!toDate.isEmpty()) winQuery += " AND r.file_date <= '" + toDate.replace("'", "''") + " 23:59:59' ";
-        winQuery += "GROUP BY ps.name ORDER BY wins DESC LIMIT 10";
+        // Shared filter conditions (no table prefix — reused with different aliases)
+        String whereFilters = typeClause;
+        if (!playerFilter.isEmpty()) whereFilters += " AND {P}.name LIKE '%" + playerFilter.replace("'", "''") + "%'";
+        if (minCombo > 0)            whereFilters += " AND {P}.max_combo >= " + minCombo;
+        if (minSpm > 0)              whereFilters += " AND {P}.alive_s > 0 AND ({P}.sent * 60.0 / {P}.alive_s) >= " + minSpm;
+        if (minBpm > 0)              whereFilters += " AND {P}.avg_bpm >= " + minBpm;
+        if (!fromDate.isEmpty())     whereFilters += " AND {R}.file_date >= '" + fromDate.replace("'", "''") + " 00:00:00'";
+        if (!toDate.isEmpty())       whereFilters += " AND {R}.file_date <= '" + toDate.replace("'", "''") + " 23:59:59'";
+
+        // cf = shared FROM+WHERE with ps/r aliases (used by all simple chart queries)
+        String cf = " FROM player_stats ps JOIN replays r ON ps.replay_path = r.path WHERE 1=1"
+                  + whereFilters.replace("{P}", "ps").replace("{R}", "r");
+
+        // For each (user, combo) pair where combo >= 10, count occurrences, then take top 10 by combo DESC
+        String wfC = whereFilters.replace("{P}", "ps").replace("{R}", "r");
+        String comboQuery =
+            "SELECT ps.name, ps.max_combo, COUNT(*) as cnt" +
+            " FROM player_stats ps JOIN replays r ON ps.replay_path = r.path" +
+            " WHERE ps.max_combo >= 10" + wfC +
+            " GROUP BY ps.name, ps.max_combo ORDER BY ps.max_combo DESC, cnt DESC LIMIT 10";
+        String spmQuery     = "SELECT ps.name, CASE WHEN ps.alive_s > 0 THEN (ps.sent * 60.0 / ps.alive_s) ELSE 0 END as ms" + cf + " AND ps.alive_s > 0 ORDER BY ms DESC LIMIT 10";
+        String winQuery     = "SELECT ps.name, COUNT(*) as wins" + cf + " AND ps.rank = 1 AND r.filename NOT LIKE 'challenge-%' GROUP BY ps.name ORDER BY wins DESC LIMIT 10";
+        String blockerQuery = "SELECT ps.name, ps.blocked as mb"             + cf + " AND r.filename NOT LIKE 'challenge-%' ORDER BY mb DESC LIMIT 5";
+        String tetrisQuery  = "SELECT ps.name, ps.tetrises_from_stream as mt" + cf + " AND r.filename NOT LIKE 'challenge-%' ORDER BY mt DESC LIMIT 5";
 
         try (Connection conn = DriverManager.getConnection("jdbc:sqlite:" + DB_PATH);
              Statement st = conn.createStatement()) {
-             
+
             try (ResultSet rs = st.executeQuery(comboQuery)) {
                 while(rs.next()) {
-                    comboChartData.add(new ChartData(rs.getString("name"), rs.getInt("mc"), "(x" + rs.getInt("cnt") + ")"));
+                    comboChartData.add(new ChartData(rs.getString("name"), rs.getInt("max_combo"), "x" + rs.getInt("cnt")));
                 }
             }
             try (ResultSet rs = st.executeQuery(spmQuery)) {
@@ -959,7 +1041,17 @@ public class StatsBrowser {
                     winChartData.add(new ChartData(rs.getString("name"), rs.getInt("wins"), "wins"));
                 }
             }
-        } catch(Exception ignored) {}
+            try (ResultSet rs = st.executeQuery(blockerQuery)) {
+                while(rs.next()) {
+                    blockerChartData.add(new ChartData(rs.getString("name"), rs.getInt("mb"), ""));
+                }
+            }
+            try (ResultSet rs = st.executeQuery(tetrisQuery)) {
+                while(rs.next()) {
+                    tetrisChartData.add(new ChartData(rs.getString("name"), rs.getInt("mt"), ""));
+                }
+            }
+        } catch(Exception ex) { ex.printStackTrace(); }
         
         chartPanel.repaint();
     }
@@ -983,13 +1075,16 @@ public class StatsBrowser {
             g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
 
             int chartHeight = 260;
+            int smallChartHeight = 180;
             drawBarChart(g2, "Top 10 Max Combo", comboChartData, 0, 0, getWidth(), chartHeight, new Color(59, 130, 246, 180));
             drawBarChart(g2, "Top 10 SPM", spmChartData, 0, chartHeight, getWidth(), chartHeight, new Color(16, 185, 129, 180));
             drawBarChart(g2, "Top 10 Winners", winChartData, 0, chartHeight * 2, getWidth(), chartHeight, new Color(245, 158, 11, 180));
-            
-            // Adjust preferred size if content is larger
-            if (getPreferredSize().height != chartHeight * 3 + 20) {
-                setPreferredSize(new Dimension(300, chartHeight * 3 + 20));
+            drawBarChart(g2, "Top 5 Blockers (single game)", blockerChartData, 0, chartHeight * 3, getWidth(), smallChartHeight, new Color(239, 68, 68, 180));
+            drawBarChart(g2, "Top 5 Tetrises (single game)", tetrisChartData, 0, chartHeight * 3 + smallChartHeight, getWidth(), smallChartHeight, new Color(168, 85, 247, 180));
+
+            int totalHeight = chartHeight * 3 + smallChartHeight * 2 + 20;
+            if (getPreferredSize().height != totalHeight) {
+                setPreferredSize(new Dimension(300, totalHeight));
                 revalidate();
             }
         }
