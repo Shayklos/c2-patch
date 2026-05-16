@@ -169,21 +169,10 @@ public class StatsBrowser {
     }
 
     private JMenuItem createStyledMenuItem(String text) {
-        JMenuItem item = new JMenuItem(text) {
-            @Override protected void paintComponent(Graphics g) {
-                if (isArmed() || isSelected()) {
-                    g.setColor(BG_POPUP_HOVER);
-                    g.fillRect(0, 0, getWidth(), getHeight());
-                } else {
-                    g.setColor(BG_POPUP);
-                    g.fillRect(0, 0, getWidth(), getHeight());
-                }
-                super.paintComponent(g);
-            }
-        };
+        JMenuItem item = new JMenuItem(text);
         item.setBackground(BG_POPUP);
         item.setForeground(TEXT_PRIMARY);
-        item.setOpaque(false);
+        item.setOpaque(true);
         item.setFont(new Font("Segoe UI", Font.PLAIN, 13));
         item.setBorder(BorderFactory.createEmptyBorder(6, 12, 6, 12));
         return item;
@@ -232,7 +221,13 @@ public class StatsBrowser {
         // Populate column visibility menu now that statsTable exists (skip hidden Path and OD_ID)
         for (int ci = 0; ci < statsTable.getColumnCount() - 2; ci++) {
             final int colIdx = ci;
-            JCheckBoxMenuItem item = new JCheckBoxMenuItem(statsTable.getColumnName(ci), true);
+            JCheckBoxMenuItem item = new JCheckBoxMenuItem(statsTable.getColumnName(ci), true) {
+                @Override protected void paintComponent(Graphics g) {
+                    g.setColor(isArmed() || isSelected() ? BG_POPUP_HOVER : BG_POPUP);
+                    g.fillRect(0, 0, getWidth(), getHeight());
+                    super.paintComponent(g);
+                }
+            };
             item.setBackground(BG_POPUP);
             item.setForeground(TEXT_PRIMARY);
             item.setOpaque(true);
