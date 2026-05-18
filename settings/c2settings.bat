@@ -13,6 +13,7 @@ for /D %%I in ("%baseDir%\*") do (
 )
 
 if defined latestDir (
+    cd /d "%ROOT%"
     "!latestDir!\%javaExe%" -cp "%~dp0bin" c2settings
     pause
 ) else (
