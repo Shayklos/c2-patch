@@ -19,6 +19,6 @@ if not defined latestDir (
     exit /b 1
 )
 
-start "" "!latestDir!\%javaExe%" -jar "%ROOT%statsbrowser.jar"
+start "" "!latestDir!\%javaExe%" -jar "%ROOT%replays\statsbrowser.jar"
 
 endlocal

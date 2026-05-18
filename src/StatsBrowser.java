@@ -17,7 +17,22 @@ import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
 
 public class StatsBrowser {
-    private static final String DB_PATH = "replays/full_stats.db";
+    private static final File PROJECT_ROOT = resolveProjectRoot();
+    private static final String DB_PATH = new File(PROJECT_ROOT, "replays/full_stats.db").getAbsolutePath();
+
+    private static File resolveProjectRoot() {
+        try {
+            File jar = new File(StatsBrowser.class.getProtectionDomain().getCodeSource().getLocation().toURI());
+            System.out.println("[StatsBrowser] jar location: " + jar.getAbsolutePath());
+            File parent = jar.getParentFile();
+            File root = (parent != null && parent.getName().equals("replays")) ? parent.getParentFile() : (parent != null ? parent : new File("."));
+            System.out.println("[StatsBrowser] PROJECT_ROOT resolved to: " + root.getAbsolutePath());
+            return root;
+        } catch (Exception e) {
+            System.out.println("[StatsBrowser] resolveProjectRoot error: " + e);
+            return new File(".");
+        }
+    }
 
     // Dark theme colors matching ReplayBrowser
     private static final Color BG_DARK = new Color(30, 30, 35);
@@ -51,25 +66,34 @@ public class StatsBrowser {
     private JLabel entryCountLabel;
     private JPopupMenu colMenu;
     private void launchReplay(String path) {
+        System.out.println("[launchReplay] path from DB: " + path);
         File file = new File(path);
-        if (!file.exists()) file = new File("replays", path);
+        System.out.println("[launchReplay] try absolute: " + file.getAbsolutePath() + " exists=" + file.exists());
+        if (!file.exists()) file = new File(PROJECT_ROOT, "replays/" + path);
+        System.out.println("[launchReplay] try replays/: " + file.getAbsolutePath() + " exists=" + file.exists());
+        if (!file.exists()) file = new File(PROJECT_ROOT, path);
+        System.out.println("[launchReplay] try root/: " + file.getAbsolutePath() + " exists=" + file.exists());
 
         if (file.exists()) {
-            // Launch Cultris with the agent to auto-play the replay, no recording
             final File replayFile = file;
             new Thread(() -> {
                 try {
                     String javaHome = System.getProperty("java.home");
                     String javaBin = javaHome + File.separator + "bin" + File.separator + "java";
+                    String libs = PROJECT_ROOT + "/resources/libs/";
                     ProcessBuilder pb = new ProcessBuilder(
                         javaBin,
-                        "-javaagent:video-agent.jar",
+                        "-javaagent:" + new File(PROJECT_ROOT, "replays/video-agent.jar").getAbsolutePath(),
                         "-Dsun.java2d.opengl=True",
-                        "-Djava.library.path=resources/libs",
+                        "-Djava.library.path=" + new File(PROJECT_ROOT, "resources/libs").getAbsolutePath(),
                         "-Drecord.input=" + replayFile.getAbsolutePath(),
-                        "-jar", "cultris2.jar"
+                        "-cp", new File(PROJECT_ROOT, "cultris2.jar").getAbsolutePath()
+                            + File.pathSeparator + libs + "sqlite-jdbc-3.45.3.0.jar"
+                            + File.pathSeparator + libs + "slf4j-api-2.0.9.jar"
+                            + File.pathSeparator + libs + "slf4j-nop-2.0.9.jar",
+                        "net.gewaltig.cultris.Cultris"
                     );
-                    pb.directory(new File("."));
+                    pb.directory(PROJECT_ROOT);
                     pb.inheritIO();
                     pb.start();
                     SwingUtilities.invokeLater(() -> showStatus("Launched replay: " + replayFile.getName()));
@@ -96,9 +120,8 @@ public class StatsBrowser {
 
     private void exportToVideo(String replayPath, boolean mediumQuality) {
         File file = new File(replayPath);
-        if (!file.exists()) {
-            file = new File("replays", replayPath);
-        }
+        if (!file.exists()) file = new File(PROJECT_ROOT, "replays/" + replayPath);
+        if (!file.exists()) file = new File(PROJECT_ROOT, replayPath);
         if (!file.exists()) {
             JOptionPane.showMessageDialog(frame, "Replay file not found!");
             return;
@@ -129,20 +152,25 @@ public class StatsBrowser {
     private void runVideoConversion(File replayFile, File outputFile, double scale, String crf, String preset) throws Exception {
         String javaHome = System.getProperty("java.home");
         String javaBin = javaHome + File.separator + "bin" + File.separator + "java";
+        String libs = PROJECT_ROOT + "/resources/libs/";
 
         ProcessBuilder pb = new ProcessBuilder(
             javaBin,
-            "-javaagent:video-agent.jar",
+            "-javaagent:" + new File(PROJECT_ROOT, "replays/video-agent.jar").getAbsolutePath(),
             "-Dsun.java2d.opengl=True",
-            "-Djava.library.path=resources/libs",
+            "-Djava.library.path=" + new File(PROJECT_ROOT, "resources/libs").getAbsolutePath(),
             "-Drecord.input=" + replayFile.getAbsolutePath(),
             "-Drecord.output=" + outputFile.getAbsolutePath(),
             "-Drecord.scale=" + scale,
             "-Drecord.crf=" + crf,
             "-Drecord.preset=" + preset,
-            "-jar", "cultris2.jar"
+            "-cp", new File(PROJECT_ROOT, "cultris2.jar").getAbsolutePath()
+                + File.pathSeparator + libs + "sqlite-jdbc-3.45.3.0.jar"
+                + File.pathSeparator + libs + "slf4j-api-2.0.9.jar"
+                + File.pathSeparator + libs + "slf4j-nop-2.0.9.jar",
+            "net.gewaltig.cultris.Cultris"
         );
-        pb.directory(new File("."));
+        pb.directory(PROJECT_ROOT);
         pb.inheritIO();
 
         SwingUtilities.invokeLater(() -> showStatus("Recording... crf=" + crf));
