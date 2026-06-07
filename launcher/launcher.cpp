@@ -11,13 +11,14 @@
 #include <vector>
 #include <string>
 #include <filesystem>
+#include "launcher.hpp"
 
 using std::string;
 
 namespace fs = std::filesystem;
 
 
-void check_temurin(fs::path path) {
+void check_temurin(const fs::path& path) {
     fs::path resources_path = path / "resources";
     std::vector<fs::path> jdk_folders;
 
@@ -69,7 +70,7 @@ void settings() {
 
     #if defined(__linux__)
         program = "bash";
-    arguments << "scripts/Linux-64-c2settings.sh";
+        arguments << "scripts/Linux-64-c2settings.sh";
         success = QProcess::startDetached(program, arguments);
 
     #elif defined(_WIN32) || defined(_WIN64)
@@ -95,7 +96,7 @@ void color_picker() {
 
     #if defined(__linux__)
         program = "bash";
-    arguments << "scripts/Linux-64-colorpicker.sh";
+        arguments << "scripts/Linux-64-colorpicker.sh";
         success = QProcess::startDetached(program, arguments);
 
     #elif defined(_WIN32) || defined(_WIN64)
@@ -121,7 +122,7 @@ void stats_browser() {
 
     #if defined(__linux__)
         program = "bash";
-    arguments << "scripts/linux-64-statsbrowser.sh";
+        arguments << "scripts/linux-64-statsbrowser.sh";
         success = QProcess::startDetached(program, arguments);
 
     #elif defined(_WIN32) || defined(_WIN64)
@@ -212,7 +213,7 @@ int main(int argc, char *argv[]) {
     window.setWindowIcon(QIcon(QString::fromStdString(icon_path.string())));
 
     QPixmap pixmap = QPixmap(QString::fromStdString(header_path.string()));
-    pixmap.scaledToWidth(700);
+    pixmap = pixmap.scaledToWidth(900);
     header.setPixmap(pixmap);
     header.setAlignment(Qt::AlignTop | Qt::AlignHCenter);
     header.setFixedHeight(pixmap.height());
