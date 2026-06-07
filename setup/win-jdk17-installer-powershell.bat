@@ -7,8 +7,6 @@ where python >nul 2>&1 || (
     exit /b 1
 )
 
-python "%~dp0..\scripts\setup_venv.py"
-
 cd ..\resources\
 
 :: Define the download URL
@@ -25,3 +23,12 @@ powershell -command "Expand-Archive -Path %filename% -DestinationPath ."
 
 :: Remove the downloaded ZIP file
 del %filename%
+
+cd ..\launcher
+
+call meson setup build
+call meson compile -C build -v
+call meson install -C build
+
+cd ..
+cultris2.exe

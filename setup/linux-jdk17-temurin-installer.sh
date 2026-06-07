@@ -9,9 +9,6 @@ for tool in "${required_tools[@]}"; do
     fi
 done
 
-# Run venv setup script
-python3 ../scripts/setup_venv.py
-
 # Define the base directory relative to the script's location
 cd "$(dirname "$0")" || exit
 
@@ -57,7 +54,14 @@ done
 
 echo "Newest Temurin JDK retained: $newest_temurin"
 
-echo "Done!"
+cd ../launcher
+
+meson setup build
+meson compile -C build -v
+meson install -C build
 
 cd ..
-python3 cultris2.py
+
+echo "Done!"
+
+./cultris2
