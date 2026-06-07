@@ -17,6 +17,8 @@ powershell -command "Expand-Archive -Path %filename% -DestinationPath ."
 :: Remove the downloaded ZIP file
 del %filename%
 
+python -m pip install meson ninja
+
 cd ..\launcher
 
 call meson setup build
