@@ -9,6 +9,9 @@ project(
 qt6 = import('qt6')
 qt6_dep = dependency('qt6', modules: ['Widgets'])
 
+fs = import('fs')
+parent_dir = fs.parent(meson.project_source_root())
+
 dependencies = [
   qt6_dep
 ]
@@ -24,10 +27,11 @@ processed = qt6.preprocess(
 
 exe = executable(
   'cultris2',
-  processed,
+  [sources, processed],
   install : true,
+  install_dir : parent_dir,
   dependencies : dependencies,
-  gui_app : true,
+  win_subsystem : 'windows',
 )
 
 test('basic', exe)
