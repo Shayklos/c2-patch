@@ -1,12 +1,5 @@
 @echo off
 
-:: Check if Python exists
-where python >nul 2>&1 || (
-    echo Python not found.
-    pause
-    exit /b 1
-)
-
 cd ..\resources\
 
 :: Define the download URL
