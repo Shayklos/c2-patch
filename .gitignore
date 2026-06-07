@@ -1,4 +1,6 @@
-replays/
+replays/*
+!replays/statsbrowser.jar
+!replays/video-agent.jar
 settings/block_list.txt
 settings/display_modes.txt
 venv/
