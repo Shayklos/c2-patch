@@ -24,7 +24,7 @@ void check_temurin(const fs::path& path) {
 
     if (fs::exists(resources_path) && fs::is_directory(resources_path)) {
         for (const auto& entry : fs::directory_iterator(resources_path)) {
-            std::string filename = entry.path().filename().string();
+            string filename = entry.path().filename().string();
             if (entry.is_directory() && filename.rfind("jdk-17", 0) == 0)
                 jdk_folders.push_back(entry.path());
         }
@@ -144,7 +144,7 @@ void stats_browser() {
 
 void sound_replacer() {
     #if defined(__linux__)
-        std::vector<std::string> terminals = {
+        std::vector<string> terminals = {
             "gnome-terminal", "konsole", "xfce4-terminal", "xterm", "lxterminal", "mate-terminal"
         };
 
@@ -220,24 +220,26 @@ int main(int argc, char *argv[]) {
     header.setScaledContents(false);
     layout->addWidget(&header, Qt::AlignTop);
 
-    QGridLayout grid;
     QPushButton btn_play("Play");
+    layout->addWidget(&btn_play);
+    
+    QGridLayout grid;
     QPushButton btn_settings("Settings");
     QPushButton btn_colorpicker("Color Picker");
     QPushButton btn_soundreplacer("Sound Replacer");
+    QPushButton btn_statsbrowser("Stats Browser");
     
-    grid.addWidget(&btn_play, 0, 0);
-    grid.addWidget(&btn_settings, 0, 1);
-    grid.addWidget(&btn_colorpicker, 1, 0);
-    grid.addWidget(&btn_soundreplacer, 1, 1);
+    grid.addWidget(&btn_settings, 0, 0);
+    grid.addWidget(&btn_colorpicker, 0, 1);
+    grid.addWidget(&btn_soundreplacer, 1, 0);
+    grid.addWidget(&btn_statsbrowser, 1, 1);
 
     grid.setHorizontalSpacing(10);
     grid.setVerticalSpacing(10);
 
     layout->addLayout(&grid);
     
-    QPushButton btn_statsbrowser("Stats Browser");
-    layout->addWidget(&btn_statsbrowser);
+    
 
     QObject::connect(&btn_play, &QPushButton::clicked, []() {play();});
     QObject::connect(&btn_settings, &QPushButton::clicked, []() {settings();});
