@@ -1,5 +1,5 @@
 enabled
-1
+0
 
 Combo goal (Currently not configurable)
 15
