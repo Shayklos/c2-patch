@@ -6,11 +6,11 @@ set "url=https://github.com/adoptium/temurin17-binaries/releases/download/jdk-17
 
 for %%F in ("%url%") do set "filename=%%~nxF"
 
-curl -o %filename% -LJO "%url%"
-
-powershell -command "Expand-Archive -Path %filename% -DestinationPath ."
-    
-del %filename%
+if not exist "%filename%" (
+    curl -o %filename% -LJO "%url%"
+    powershell -command "Expand-Archive -Path %filename% -DestinationPath ."  
+    del %filename%
+)
 
 python -m pip install PySide6-Essentials
 
@@ -20,7 +20,21 @@ chcp 65001 >nul
 
 for /f "tokens=2*" %%a in ('reg query "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders" /v Desktop 2^>nul') do set "DESKTOP_PATH=%%b"
 
-powershell -command "$s = (New-Object -COM WScript.Shell).CreateShortcut('%DESKTOP_PATH%\Cultris II Launcher.lnk'); $s.TargetPath = 'pythonw.exe'; $s.Arguments = '\"%~dp0c2-launcher.py\"'; $s.IconLocation = '%~dp0resources\icon.ico'; $s.Save()"
+pushd "%~dp0.."
+set "ROOT_DIR=%CD%"
+popd
+
+set "FULL_ICON_PATH=%ROOT_DIR%\launcher\resources\icon.ico"
+
+powershell -Command ^
+    "$sh = New-Object -COM WScript.Shell; " ^
+    "$desktop = [Environment]::GetFolderPath('Desktop'); " ^
+    "$lnk = $sh.CreateShortcut($desktop + '\Cultris II Patch Launcher.lnk'); " ^
+    "$lnk.TargetPath = 'pythonw.exe'; " ^
+    "$lnk.WorkingDirectory = '%ROOT_DIR%'; " ^
+    "$lnk.Arguments = '\"%ROOT_DIR%\c2-launcher.py\"'; " ^
+    "$lnk.IconLocation = '%FULL_ICON_PATH%'; " ^
+    "$lnk.Save()"
 
 echo Shortcut created at %DESKTOP_PATH%
 
