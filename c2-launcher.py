@@ -17,34 +17,48 @@ def check_temurin():
         QMessageBox.critical(window, "Error", "Java executable not found. Please ensure you've installed Temurin JDK correctly in the resources directory.")
         sys.exit(1)
 
+def run_script_win(script_name, new_window=False):
+    script_path = str(root_dir / "scripts" / script_name)
+    cwd = str(root_dir / "scripts")
+    
+    if new_window:
+        subprocess.Popen(
+            ['powershell', '-NoExit', '-ExecutionPolicy', 'Bypass', '-Command', f'& "{script_path}"'], 
+            cwd=cwd
+        )
+    else:
+        subprocess.Popen(
+            ['powershell', '-WindowStyle', 'Hidden', '-Command', f'& "{script_path}"'], 
+            cwd=cwd
+        )
+
 def play():
-    try: 
-        if sys.platform == "linux": 
-            subprocess.Popen(["bash", "scripts/Linux-64-cultris2.sh"])
-        elif sys.platform == "win32": 
-            subprocess.Popen(["./scripts/Windows-64-cultris2.bat"])
+    try:
+        if sys.platform == "linux":
+            subprocess.Popen(["bash", str(root_dir / "scripts/Linux-64-cultris2.sh")], cwd=root_dir / "scripts")
+        elif sys.platform == "win32":
+            run_script_win("Windows-64-cultris2.bat", new_window=False)
         sys.exit(0)
-    except Exception as e: 
-        QMessageBox.critical(window, "Error", e) 
-    sys.exit(0)
-
-def settings(): 
-    try: 
-        if sys.platform == "linux": 
-            subprocess.Popen(["bash", "scripts/Linux-64-c2settings.sh"]) 
-        elif sys.platform == "win32": 
-            subprocess.Popen(["./scripts/Windows-64-c2settings.bat"]) 
     except Exception as e:
-        QMessageBox.critical(window, "Error", e)
+        QMessageBox.critical(window, "Error", str(e))
 
-def color_picker(): 
-    try: 
-        if sys.platform == "linux": 
-            subprocess.Popen(["bash", "scripts/Linux-64-colorpicker.sh"]) 
-        elif sys.platform == "win32": 
-            subprocess.Popen(["./scripts/Windows-64-colorpicker.bat"]) 
-    except Exception as e: 
-        QMessageBox.critical(window, "Error", e) 
+def settings():
+    try:
+        if sys.platform == "linux":
+            subprocess.Popen(["bash", str(root_dir / "scripts/Linux-64-c2settings.sh")], cwd=root_dir / "scripts")
+        elif sys.platform == "win32":
+            run_script_win("Windows-64-c2settings.bat", new_window=False)
+    except Exception as e:
+        QMessageBox.critical(window, "Error", str(e))
+
+def color_picker():
+    try:
+        if sys.platform == "linux":
+            subprocess.Popen(["bash", str(root_dir / "scripts/Linux-64-colorpicker.sh")], cwd=root_dir / "scripts")
+        elif sys.platform == "win32":
+            run_script_win("Windows-64-colorpicker.bat", new_window=False)
+    except Exception as e:
+        QMessageBox.critical(window, "Error", str(e))
 
 def sound_replacer():
     try: 
@@ -68,7 +82,7 @@ def sound_replacer():
                 except FileNotFoundError:
                     continue
         elif sys.platform == "win32": 
-            subprocess.Popen(["powershell.exe", "-NoExit", "-File", "./scripts/Windows-64-soundreplacer.bat"]) 
+            run_script_win("Windows-soundreplacer.bat", new_window=True)
     except Exception as e: 
         QMessageBox.critical(window, "Error", e)
 
@@ -77,7 +91,7 @@ def stats_browser():
         if sys.platform == "linux":
             subprocess.Popen(["bash", "scripts/linux-64-statsbrowser.sh"]) 
         elif sys.platform == "win32": 
-            subprocess.Popen(["./scripts/Windows-64-statsbrowser.bat"]) 
+            run_script_win("Windows-64-statsbrowser.bat", new_window=False)
     except Exception as e: 
         QMessageBox.critical(window, "Error", e) 
 

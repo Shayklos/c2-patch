@@ -2,7 +2,8 @@
 setlocal enabledelayedexpansion
 
 rem Set the target directory
-set "scriptDir=%~dp0"
+cd /d "%~dp0..\"
+set "scriptDir=%CD%\"
 set "baseDir=%scriptDir%resources"
 set "javaExe=bin\java.exe"
 set "latestDir="
