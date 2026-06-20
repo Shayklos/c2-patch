@@ -1,12 +1,16 @@
 #!/bin/bash
 
-required_tools=("curl" "wget" "tar" "jq" "meson")
+required_tools=("curl" "wget" "tar" "jq") 
 for tool in "${required_tools[@]}"; do
     if ! command -v "$tool" &> /dev/null; then
         echo "$tool is required but not installed. Aborting."
         exit 1
     fi
 done
+
+if ! python3 -c "import PySide6" &> /dev/null; then
+    echo "pyside6 is required but not installed. Aborting."
+fi
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 MAIN_DIR="$(dirname "$SCRIPT_DIR")"
@@ -53,17 +57,31 @@ done
 
 echo "Newest Temurin JDK retained: $newest_temurin"
 
-cd "$LAUNCHER_DIR" || exit
-
-if [ -d "build" ]; then
-    rm -rf build
+if [ -f "$HOME/.config/user-dirs.dirs" ]; then
+    source "$HOME/.config/user-dirs.dirs"
+    DESKTOP_PATH="${XDG_DESKTOP_DIR:-$HOME/Desktop}"
+else
+    DESKTOP_PATH="$HOME/Desktop"
 fi
 
-meson setup build
-meson compile -C build -v
-meson install -C build
+DESKTOP_FILE="$DESKTOP_PATH/cultris.desktop"
+
+cd ..
+cat <<EOF > "$DESKTOP_FILE"
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Cultris II Patch Launcher
+Path=$DESKTOP_PATH/c2-patch/
+Exec=/usr/bin/python3 "$(pwd)/c2-launcher.py"
+Icon=$(pwd)/launcher/resources/icon.png
+Terminal=false
+Categories=Game;
+EOF
+
+chmod +x "$DESKTOP_FILE"
+echo "Shortcut created at $DESKTOP_PATH"
 
 echo "Done!"
 
-cd ..
-"$LAUNCHER_EXE"
+python3 c2-launcher.py
