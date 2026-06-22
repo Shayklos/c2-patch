@@ -84,7 +84,7 @@ def sound_replacer():
         elif sys.platform == "win32": 
             run_script_win("Windows-soundreplacer.bat", new_window=True)
     except Exception as e: 
-        QMessageBox.critical(window, "Error", e)
+        QMessageBox.critical(window, "Error", str(e))
 
 def stats_browser():
     try:
@@ -93,7 +93,7 @@ def stats_browser():
         elif sys.platform == "win32": 
             run_script_win("Windows-64-statsbrowser.bat", new_window=False)
     except Exception as e: 
-        QMessageBox.critical(window, "Error", e) 
+        QMessageBox.critical(window, "Error", str(e)) 
 
 check_temurin()
 
