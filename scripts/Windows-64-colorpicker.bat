@@ -3,8 +3,8 @@ setlocal enabledelayedexpansion
 
 rem Set the base directory to search for Java executables
 cd /d "%~dp0..\"
-set "scriptDir=%CD%\"
-set "baseDir=%scriptDir%resources"
+set "scriptDir=%CD%"
+set "baseDir=%scriptDir%\resources"
 set "javaExe=bin\java.exe"
 set "latestDir="
 

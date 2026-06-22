@@ -3,8 +3,8 @@ setlocal enabledelayedexpansion
 
 rem Always resolve paths relative to this bat file's location
 cd /d "%~dp0..\"
-set "ROOT=%CD%\"
-set "baseDir=%ROOT%resources"
+set "ROOT=%CD%"
+set "baseDir=%ROOT%\resources"
 set "javaExe=bin\javaw.exe"
 set "latestDir="
 
