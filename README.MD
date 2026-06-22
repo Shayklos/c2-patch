@@ -1,29 +1,15 @@
-# c2-patch stable
+# Cultris II Community Patch
 
-To set up, please visit the setup guide at https://c2.tail.ws/.
+## Installation
 
-Non-Invasive, trimmed down version with only minor tweaks. 
+1. Download the repository files [clicking here](https://github.com/Shayklos/c2-patch/archive/refs/heads/stable.zip).
 
-Features
-- Adjust FPS
-- Adjust Hz
-- Toggle Blur
-- Toggle Animation
-- Toggle Audiosamples (internally renamed from exp-01 [...] to a more meaningful one
+2. Unzip it wherever you like.
 
-Game reads from settings/*.txt
+3. Execute the installer that is located in the `setup` folder. (`win-jdk17-installer-powershell.bat` if you're on Windows)
 
-FPS and Hz expects a value starting at 60.
-Blur and Animation a value from 0 to 1 (off and on)
+4. You can open the game by going back to the root folder, and execute the launcher that has been moved there (`Windows-64-Start-cultris2.bat` if you're on Windows).
 
-Audiosamples need to match the exact oggfile in the cultris2.jar in order to play. Do not change the order unless you want to swap sound effects.
-Therefore, if you wanna disable one, just add disabled_ in front of the sample you don't want.
+## Customize your client
 
-# Contributing of cultris2 binary changes
-
-1. Make changes of cultris2.jar in Recaf.
-2. Extract the modified class from cultris2.jar to a different directory.
-3. Pass the class over to Krakatau2 like `./krak2 dis --out OC-http-handling-and-game-parameters.j /home/blu/git25/c2-patch/binary/OC.class`.
-4. Add the new .J file into `src/<classname>` and git add it
-5. Commit the Cultris2.jar along with the change
-
+In the settings folder you'll find many text files. Most of these you can edit with the c2settings.bat inside the folder. Others (like background or teams colors) you can modify by directly editing the text files. 

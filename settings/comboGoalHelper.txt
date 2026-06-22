@@ -1,8 +1,14 @@
-enabled
+Enabled
 0
 
-Combo goal (Currently not configurable)
-15
+Combo goal
+14
 
-Combo in which to start printing stats (Currently not configurable)
+Combo at which to start printing the stats in chat
 9
+
+Whether to print max hypothetical combo
+1
+
+Theoretical max combo. You shouldn't change this unless you're going for the 16
+15

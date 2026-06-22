@@ -55,11 +55,11 @@ public class c2settings {
     };
 
     // ----------------------------------------------------------------------------
-    private JToggleButton tbAnim, tbBlur, tbEnemySound, tbComboHelper, tbExplicitTimer;
+    private JToggleButton tbAnim, tbBlur, tbEnemySound, tbComboHelper, tbExplicitTimer, tbPrintHypotheticalMax;
     private JToggleButton tbConsoleGeneral, tbConsoleChat;
     private JToggleButton tbReplayOn;
     private JToggleButton[] tbSounds;
-    private JSpinner spBlur, spFps, spHz, spHardDrop, spLineClear;
+    private JSpinner spBlur, spFps, spHz, spHardDrop, spLineClear, spComboHelperGoal, spComboHelperPrintStart;
     private JComboBox<String> cbVerbosity;
     private JLabel statusLabel;
 
@@ -107,7 +107,7 @@ public class c2settings {
 
         loadAll();
 
-        frame.setSize(560, 680);
+        frame.setSize(1280, 720);
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
     }
@@ -161,8 +161,14 @@ public class c2settings {
             "Default 16  |  fast: 32  |  drunkard: low value  |  higher = more instant");
 
         p.add(sectionHeader("Helpers"));
-        tbComboHelper   = addToggleRow(p, "Combo goal helper", "Shows a combo target overlay during play");
         tbExplicitTimer = addToggleRow(p, "Explicit combo timer", "Display the combo timer explicitly on screen");
+        tbComboHelper   = addToggleRow(p, "Combo goal helper", "Shows a combo target overlay during play");
+        spComboHelperGoal = addSpinnerRow(p, "", 14, 3, 16, 1,
+            "Goal", "Goal");
+        spComboHelperPrintStart = addSpinnerRow(p, "", 9, 0, 16, 1,
+            "At which point to start printing in chat", "At which point to start printing in chat");
+        tbPrintHypotheticalMax = addToggleRow(p, "", "Whether to print the hypothetical max combo");
+
 
         return scrollWrap(p);
     }
@@ -232,6 +238,9 @@ public class c2settings {
         try {
             List<String> lines = Files.readAllLines(new File(F_COMBO_HELPER).toPath());
             if (lines.size() >= 2) setToggle(tbComboHelper, "1".equals(lines.get(1).trim()));
+            if (lines.size() >= 5) spComboHelperGoal.setValue(parseInt(lines.get(4), 14));
+            if (lines.size() >= 11) spComboHelperPrintStart.setValue(parseInt(lines.get(10), 10));
+            if (lines.size() >= 14) setToggle(tbPrintHypotheticalMax, "1".equals(lines.get(13).trim()));
         } catch (IOException ignored) {}
 
         setToggle(tbExplicitTimer, readBool(F_EXPLICIT_TIMER, false));
@@ -277,11 +286,18 @@ public class c2settings {
                 + "Line clear animation speed, i.e. how fast the white lines disappear. 16 is default. 32 is azazeas' speed. Higher values make it almost instant, lower values is drunkard.\n"
                 + spLineClear.getValue());
 
-            try {
-                List<String> lines = Files.readAllLines(new File(F_COMBO_HELPER).toPath());
-                if (lines.size() >= 2) lines.set(1, tbComboHelper.isSelected() ? "1" : "0");
-                Files.write(new File(F_COMBO_HELPER).toPath(), lines);
-            } catch (IOException ignored) {}
+            writeFile(F_COMBO_HELPER,
+                "Enabled\n"
+                + (tbComboHelper.isSelected() ? "1" : "0") + "\n\n"
+                + "Combo goal\n"
+                + spComboHelperGoal.getValue() + "\n\n"
+                + "Combo at which to start printing the stats in chat\n"
+                + spComboHelperPrintStart.getValue() + "\n\n"
+                + "Whether to print max hypothetical combo\n"
+                + (tbPrintHypotheticalMax.isSelected() ? "1" : "0") + "\n\n"
+                + "Theoretical max combo. You shouldn't change this unless you're going for the 16\n"
+                + "15"
+                );
 
             writeFile(F_CONSOLE_PRINTING,
                 "Print general info in the console: (Logins, who won last round, saved replays, etc)\n"
@@ -343,14 +359,19 @@ public class c2settings {
     }
 
     private JSpinner addSpinnerRow(JPanel parent, String label, int def, int min, int max, int step, String tooltip, String hint) {
-        Color rowBg = parent.getComponentCount() % 2 == 0 ? BG_ROW : BG_ROW_ALT;
-
-        JPanel row = row(rowBg);
+        JPanel row = row(parent.getComponentCount() % 2 == 0 ? BG_ROW : BG_ROW_ALT);
 
         JLabel lbl = new JLabel(label);
         lbl.setFont(baseFont());
         lbl.setForeground(FG);
-        if (!tooltip.isEmpty()) lbl.setToolTipText(tooltip);
+        lbl.setPreferredSize(new Dimension(210, 28)); // IMPORTANT: match toggle row
+        if (!tooltip.isEmpty()) {
+            lbl.setToolTipText(tooltip);
+        }
+
+        JLabel hintLbl = new JLabel(hint == null ? "" : hint);
+        hintLbl.setFont(smallFont());
+        hintLbl.setForeground(FG_DIM);
 
         JSpinner sp = new JSpinner(new SpinnerNumberModel(def, min, max, step));
         sp.setPreferredSize(new Dimension(90, 30));
@@ -358,25 +379,13 @@ public class c2settings {
         styleSpinner(sp);
 
         row.add(lbl);
+        row.add(hintLbl);
         row.add(Box.createHorizontalGlue());
         row.add(sp);
+
         parent.add(row);
-
-        if (hint != null && !hint.isEmpty()) {
-            JPanel hintRow = new JPanel(new BorderLayout());
-            hintRow.setBackground(rowBg);
-            hintRow.setBorder(new EmptyBorder(0, 12, 6, 12));
-            hintRow.setMaximumSize(new Dimension(Integer.MAX_VALUE, 20));
-            JLabel hintLbl = new JLabel(hint);
-            hintLbl.setFont(smallFont());
-            hintLbl.setForeground(FG_DIM);
-            hintRow.add(hintLbl, BorderLayout.WEST);
-            parent.add(hintRow);
-        }
-
         return sp;
-    }
-
+}
     private JPanel sectionHeader(String title) {
         JPanel h = new JPanel(new BorderLayout());
         h.setBackground(BG_SECTION);
