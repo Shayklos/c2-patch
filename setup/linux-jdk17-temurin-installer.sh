@@ -65,17 +65,16 @@ else
     DESKTOP_PATH="$HOME/Desktop"
 fi
 
-DESKTOP_FILE="$DESKTOP_PATH/cultris.desktop"
+DESKTOP_FILE="$DESKTOP_PATH/cultris2.desktop"
 
-cd ..
 cat <<EOF > "$DESKTOP_FILE"
 [Desktop Entry]
-Version=1.0
+Version=9.5
 Type=Application
 Name=Cultris II Patch Launcher
-Path=$DESKTOP_PATH/c2-patch/
-Exec=/usr/bin/python3 "$(pwd)/c2-launcher.py"
-Icon=$(pwd)/launcher/resources/icon.png
+Path=$SCRIPT_DIR
+Exec=/usr/bin/python3 "$SCRIPT_DIR/c2-launcher.py"
+Icon=$SCRIPT_DIR/launcher/resources/icon.png
 Terminal=false
 Categories=Game;
 EOF
