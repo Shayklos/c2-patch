@@ -58,6 +58,8 @@ done
 
 echo "Newest Temurin JDK retained: $newest_temurin"
 
+cd ..
+
 if [ -f "$HOME/.config/user-dirs.dirs" ]; then
     source "$HOME/.config/user-dirs.dirs"
     DESKTOP_PATH="${XDG_DESKTOP_DIR:-$HOME/Desktop}"
@@ -72,9 +74,9 @@ cat <<EOF > "$DESKTOP_FILE"
 Version=9.5
 Type=Application
 Name=Cultris II Patch Launcher
-Path=$SCRIPT_DIR
-Exec=/usr/bin/python3 "$SCRIPT_DIR/c2-launcher.py"
-Icon=$SCRIPT_DIR/launcher/resources/icon.png
+Path=$MAIN_DIR
+Exec=/usr/bin/python3 "$MAIN_DIR/c2-launcher.py"
+Icon=$MAIN_DIR/launcher/resources/icon.png
 Terminal=false
 Categories=Game;
 EOF
