@@ -10,6 +10,7 @@ done
 
 if ! python3 -c "import PySide6" &> /dev/null; then
     echo "pyside6 is required but not installed. Aborting."
+    exit 1
 fi
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
