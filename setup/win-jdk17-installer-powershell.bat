@@ -18,9 +18,9 @@ cd ..
 
 chcp 65001 >nul
 
-set "ROOT_DIR=%~dp0"
+set "CURRENT_DIR=%~dp0"
 
-if "%ROOT_DIR:~-1%"=="\" set "ROOT_DIR=%ROOT_DIR:~0,-1%"
+for %%I in ("%CURRENT_DIR%\..") do set "ROOT_DIR=%%~fI"
 
 for /f "tokens=2*" %%a in ('reg query "HKCU\Software\Microsoft\Windows\CurrentVersion\Explorer\Shell Folders" /v Desktop 2^>nul') do set "DESKTOP_PATH=%%b"
 
